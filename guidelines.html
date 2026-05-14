@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アセット使用ガイドライン | はいぱーつよつよ</title>
+  <meta name="description" content="はいぱーつよつよアセット使用ガイドライン">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .gl-main {
+      padding: 7rem 1.5rem 5rem;
+      min-height: 100vh;
+    }
+    .gl-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gl-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .gl-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 900;
+      margin: 0.75rem 0 0.5rem;
+    }
+    .gl-header p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .gl-section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+    }
+    .gl-section-title {
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .gl-section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      border-radius: 2px;
+      background: var(--bar-color, var(--blue));
+      flex-shrink: 0;
+    }
+    .gl-text {
+      font-size: 0.9rem;
+      line-height: 1.85;
+      color: var(--text-muted);
+    }
+    .gl-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .gl-list li {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: var(--text);
+      padding: 0.9rem 1.1rem;
+      background: var(--bg);
+      border-radius: var(--r);
+      border-left: 3px solid var(--item-color, var(--red));
+      position: relative;
+    }
+    .gl-list li .gl-note {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+    .gl-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: var(--red);
+      color: #fff;
+      vertical-align: middle;
+      margin-left: 0.4rem;
+    }
+    .gl-badge.r18g { background: var(--orange); }
+    .gl-examples {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.9rem;
+    }
+    .gl-example-block {
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+    .gl-example-block.ng {
+      background: #FFF2F2;
+      border: 1px solid #FFCCCC;
+    }
+    .gl-example-block.ok {
+      background: #F0FFF5;
+      border: 1px solid #B2EAC8;
+    }
+    .gl-example-label {
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin: 0 0 0.5rem;
+      color: var(--text);
+    }
+    .gl-example-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .gl-example-block.ng ul li::before { content: '✗ '; color: var(--red); font-weight: 700; }
+    .gl-example-block.ok ul li::before { content: '✓ '; color: #22AA55; font-weight: 700; }
+    .gl-example-block ul li { color: var(--text-muted); }
+
+    .gl-notice {
+      background: #FFF8E7;
+      border: 1px solid #FFD966;
+      border-radius: var(--r);
+      padding: 1.1rem 1.25rem;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      color: #7A6000;
+      margin-top: 1.5rem;
+    }
+    .gl-notice strong { color: #5A4500; }
+  </style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ">
+    </a>
+    <a href="index.html" class="btn btn-secondary" style="font-size:0.78rem;padding:0.5rem 1.1rem;">← トップへ戻る</a>
+  </div>
+</nav>
+
+<main class="gl-main">
+  <div class="gl-container">
+
+    <div class="gl-header">
+      <div class="section-dots" style="justify-content:center"><span class="d-red"></span><span class="d-blue"></span><span class="d-yellow"></span></div>
+      <h1>アセット使用ガイドライン</h1>
+      <p>はいぱーつよつよ — Asset Usage Guidelines</p>
+    </div>
+
+    <!-- 対象コンテンツ -->
+    <div class="gl-section">
+      <p class="gl-section-title" style="--bar-color:var(--blue)">対象コンテンツ</p>
+      <p class="gl-text">
+        本ガイドラインは、<strong>はいぱーつよつよ</strong> が制作・販売する以下のすべてのアセットに適用されます。
+      </p>
+      <br>
+      <ul class="gl-list">
+        <li style="--item-color:var(--blue)">アバター</li>
+        <li style="--item-color:var(--blue)">衣装</li>
+        <li style="--item-color:var(--blue)">ギミック</li>
+      </ul>
+    </div>
+
+    <!-- 適用対象ユーザー -->
+    <div class="gl-section">
+      <p class="gl-section-title" style="--bar-color:var(--yellow)">適用対象ユーザー</p>
+      <p class="gl-text">本ガイドラインは次のユーザーに適用されます。</p>
+      <br>
+      <ul class="gl-list">
+        <li style="--item-color:var(--yellow)">個人、または法人格を持たない団体</li>
+        <li style="--item-color:var(--yellow)">当ショップが販売するアセットの所有者、および所有していない方も含みます</li>
+        <li style="--item-color:var(--yellow)">法人・法人格を有する団体の方は、<a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline;text-underline-offset:2px">はいぱーつよつよ Booth ショップ</a>のメッセージ機能よりご連絡ください</li>
+      </ul>
+    </div>
+
+    <!-- 利用条件 -->
+    <div class="gl-section">
+      <p class="gl-section-title" style="--bar-color:var(--red)">利用条件 — 公開できないコンテンツ</p>
+      <p class="gl-text">以下に該当するコンテンツは、はいぱーつよつよのアセットを使用して公開することができません。</p>
+      <br>
+      <ul class="gl-list">
+        <li style="--item-color:var(--red)">
+          はいぱーつよつよの名誉・品位・尊厳を傷つけるもの
+        </li>
+        <li style="--item-color:var(--red)">
+          反社会的なもの
+        </li>
+        <li style="--item-color:var(--red)">
+          第三者の権利を侵害する、またはその恐れのあるもの
+        </li>
+        <li style="--item-color:var(--red)">
+          当ショップを公式と錯誤させる、またその恐れのあるもの
+        </li>
+        <li style="--item-color:var(--orange)">
+          性的表現・暴力表現を含むコンテンツで、当ショップ名またはアセット名が容易に検索できる状態で公開するもの
+          <span class="gl-note">※ 棲み分け（タグ設定・年齢制限など）を必ず行ってください。</span>
+        </li>
+        <li style="--item-color:var(--orange)">
+          X（Twitter）や VRChat などの各プラットフォームの利用規約に違反する性的表現・暴力表現を含むもの
+        </li>
+        <li style="--item-color:var(--orange)">
+          R18 または R18G <span class="gl-badge">R18</span><span class="gl-badge r18g">R18G</span> に該当する性的表現・暴力表現は棲み分けを行ったうえで公開してください
+
+          <div class="gl-examples">
+            <div class="gl-example-block ng">
+              <p class="gl-example-label"><span class="gl-badge">R18</span> 棲み分け必須の例</p>
+              <ul>
+                <li>内性器が見えている状態の露出を含む表現</li>
+                <li>性行為・性交を描写または強く連想させる表現</li>
+                <li>過度に性的な衣装で性的要素を強調したもの</li>
+                <li>性的な体液・行為の痕跡を描写したもの</li>
+              </ul>
+            </div>
+            <div class="gl-example-block ng">
+              <p class="gl-example-label"><span class="gl-badge r18g">R18G</span> 棲み分け必須の例</p>
+              <ul>
+                <li>過度な流血・内臓・身体損壊の描写</li>
+                <li>切断・解体などの詳細な描写</li>
+                <li>拷問・虐待の詳細な描写</li>
+                <li>死体の損壊を強調した表現</li>
+              </ul>
+            </div>
+            <div class="gl-example-block ok">
+              <p class="gl-example-label">✅ 棲み分けなしで公開できる例（おおむね R15 以下）</p>
+              <ul>
+                <li>水着・下着姿（性的強調のないもの）</li>
+                <li>過剰にデフォルメされた性器の表現（写実的でないもの）</li>
+                <li>アバター素体の裸（性的要素を強調していないもの）</li>
+                <li>キス・抱擁などのスキンシップ表現</li>
+                <li>戦闘シーンで血がにじむ程度の軽度な暴力表現</li>
+                <li>ホラー演出（お化け・ゾンビ風など）で過度な損壊を伴わないもの</li>
+                <li>コミカルな暴力表現（アニメ的なドタバタ・吹き飛びなど）</li>
+                <li>義手・義足などの補装具表現、幽霊・半透明など足がない表現を含む欠損表現（損壊を強調しないもの）</li>
+                <li>タバコ・お酒などの嗜好品を伴う表現</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li style="--item-color:var(--red)">
+          特定の思想・宗教・政治的メッセージの発信または布教を目的としたもの
+          <span class="gl-note">※ クリスマス・ハロウィン・お正月など、一般的な季節行事・文化イベントとして広く認知されているものは問題ありません。</span>
+        </li>
+        <li style="--item-color:var(--red)">
+          本ガイドラインを拡大解釈し、他者に対して私警行為を行う、またはその恐れのあるもの
+          <span class="gl-note">※ ガイドラインの解釈・運用権限は はいぱーつよつよ に帰属します。</span>
+        </li>
+      </ul>
+
+      <div class="gl-notice">
+        ⚠️ <strong>注意</strong>　本ガイドラインは VN3ライセンス Ver.1.10 に基づく利用規約と併せてご確認ください。
+        両者に矛盾がある場合は、より厳しい条件が優先されます。<br>
+        ご不明な点は <a href="https://discord.com/invite/XZtswheNxA" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Discord（yak555 / 空飛ぶはいぱーつよつよ教）</a> までお問い合わせください。
+      </div>
+    </div>
+
+    <!-- AI ガイドライン -->
+    <div class="gl-section">
+      <p class="gl-section-title" style="--bar-color:var(--blue)">AI 利用ガイドライン</p>
+
+      <p class="gl-text" style="margin-bottom:1.25rem">
+        はいぱーつよつよでは、AI の利用を <strong>再現性のある使用</strong>（一般的な学習で誰でも同様の結果を得られるもの）と
+        <strong>再現性のない使用</strong>（イラスト・特殊表現の翻訳・音声など個人の創作性に依存するもの）に分けて考えています。
+      </p>
+
+      <p class="gl-section-title" style="--bar-color:var(--blue);font-size:0.88rem;margin-bottom:0.75rem">🤖 はいぱーつよつよ自身の AI 使用方針</p>
+      <ul class="gl-list" style="margin-bottom:1.5rem">
+        <li style="--item-color:var(--green)">
+          <strong>再現性のあるもの — 使用することがあります</strong>
+          <span class="gl-note">シェーダー・プログラム・コード・文章・テキスト翻訳 など</span>
+        </li>
+        <li style="--item-color:var(--blue)">
+          <strong>再現性はないが、単純な模様やアイコン — 使用することがあります</strong>
+          <span class="gl-note">メニューアイコン・テクスチャの幾何学模様 など</span>
+        </li>
+        <li style="--item-color:var(--red)">
+          <strong>再現性がなく著作権が不透明なもの — 使用しません</strong>
+          <span class="gl-note">イラスト・商品画像のロゴ・背景画像・3Dモデル など</span>
+        </li>
+        <li style="--item-color:var(--red)">
+          <strong>再現性はあるが、クオリティを担保できないもの — 使用しません</strong>
+          <span class="gl-note">翻訳など、品質の確認が困難なもの</span>
+        </li>
+      </ul>
+
+      <p class="gl-section-title" style="--bar-color:var(--orange);font-size:0.88rem;margin-bottom:0.75rem">📋 ユーザーの AI 使用ルール</p>
+      <ul class="gl-list">
+        <li style="--item-color:var(--green)">
+          <strong>スクリーンショット・撮影画像の AI 読み込み — 問題ありません</strong>
+          <span class="gl-note">はいぱーつよつよのアセットを使用した撮影画像・スクリーンショット等は AI に読み込ませても構いません。</span>
+        </li>
+        <li style="--item-color:var(--green)">
+          <strong>AI で作成した素材の AI 読み込み — 問題ありません</strong>
+          <span class="gl-note">AI によって生成された素材・データを AI に読み込ませることは問題ありません。</span>
+        </li>
+        <li style="--item-color:var(--red)">
+          <strong>商品内部データの AI 読み込み — 禁止</strong>
+          <span class="gl-note">商品に含まれる FBX・テクスチャ・マテリアル・オブジェクト構造・アニメーション等の内部データを AI に読み込ませることを禁止します。</span>
+        </li>
+      </ul>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem">
+      <a href="terms.html" class="btn btn-secondary" style="margin-right:0.75rem">利用規約 全文を読む</a>
+      <a href="index.html" class="btn btn-secondary">← トップへ戻る</a>
+    </div>
+
+  </div>
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

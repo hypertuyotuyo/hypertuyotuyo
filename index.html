@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はいぱーつよつよ | Hyper TuyoTuyo</title>
+  <meta name="description" content="VRChatアバター・衣装・ギミック制作サークル「はいぱーつよつよ」の公式サイト。Boothにて販売中。">
+  <meta property="og:title"       content="はいぱーつよつよ | Hyper TuyoTuyo">
+  <meta property="og:description" content="VRChatアバター・衣装・ギミック制作サークル">
+  <meta property="og:image"       content="data/hypertuyotuyo.png">
+  <meta property="og:type"        content="website">
+  <meta name="twitter:card"       content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Particle canvas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="#works">作品</a></li>
+      <li><a href="#license">利用規約</a></li>
+      <li><a href="#guidelines">使用ガイドライン</a></li>
+      <li><a href="#contact">リンク</a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="nav-booth">ショップへ</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="nav-mobile" id="mobile-nav">
+  <button class="nav-mobile-close" id="mobile-close" aria-label="閉じる">✕</button>
+  <a href="#works">作品</a>
+  <a href="#license">利用規約</a>
+  <a href="#guidelines">使用ガイドライン</a>
+  <a href="#contact">リンク</a>
+  <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" style="color:var(--orange)">ショップへ →</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero" class="hero">
+  <!-- Anime sky background -->
+  <div class="hero-sky">
+    <svg viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#6DC8F0"/>
+          <stop offset="100%" stop-color="#B2E4F8"/>
+        </linearGradient>
+      </defs>
+      <rect width="1440" height="700" fill="url(#skyGrad)"/>
+
+      <!-- Buildings left -->
+      <rect x="-5"  y="548" width="88"  height="200" fill="white" opacity="0.93"/>
+      <rect x="10"  y="565" width="16" height="16" fill="#9ED6EE"/><rect x="36"  y="565" width="16" height="16" fill="#9ED6EE"/><rect x="62"  y="565" width="16" height="16" fill="#9ED6EE"/>
+      <rect x="10"  y="591" width="16" height="16" fill="#9ED6EE"/><rect x="36"  y="591" width="16" height="16" fill="#9ED6EE"/><rect x="62"  y="591" width="16" height="16" fill="#9ED6EE"/>
+      <rect x="10"  y="617" width="16" height="16" fill="#9ED6EE"/><rect x="36"  y="617" width="16" height="16" fill="#9ED6EE"/><rect x="62"  y="617" width="16" height="16" fill="#9ED6EE"/>
+
+      <rect x="88"  y="575" width="80"  height="173" fill="white" opacity="0.88"/>
+      <rect x="103" y="592" width="15" height="15" fill="#9ED6EE"/><rect x="128" y="592" width="15" height="15" fill="#9ED6EE"/>
+      <rect x="103" y="617" width="15" height="15" fill="#9ED6EE"/><rect x="128" y="617" width="15" height="15" fill="#9ED6EE"/>
+      <rect x="103" y="642" width="15" height="15" fill="#9ED6EE"/><rect x="128" y="642" width="15" height="15" fill="#9ED6EE"/>
+
+      <rect x="172" y="495" width="115" height="253" fill="white" opacity="0.96"/>
+      <rect x="190" y="514" width="17" height="17" fill="#9ED6EE"/><rect x="219" y="514" width="17" height="17" fill="#9ED6EE"/><rect x="248" y="514" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="190" y="541" width="17" height="17" fill="#9ED6EE"/><rect x="219" y="541" width="17" height="17" fill="#9ED6EE"/><rect x="248" y="541" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="190" y="568" width="17" height="17" fill="#9ED6EE"/><rect x="219" y="568" width="17" height="17" fill="#9ED6EE"/><rect x="248" y="568" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="190" y="595" width="17" height="17" fill="#9ED6EE"/><rect x="219" y="595" width="17" height="17" fill="#9ED6EE"/><rect x="248" y="595" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="190" y="622" width="17" height="17" fill="#9ED6EE"/><rect x="219" y="622" width="17" height="17" fill="#9ED6EE"/><rect x="248" y="622" width="17" height="17" fill="#9ED6EE"/>
+
+      <rect x="291" y="560" width="78"  height="188" fill="white" opacity="0.85"/>
+      <rect x="306" y="578" width="15" height="15" fill="#9ED6EE"/><rect x="331" y="578" width="15" height="15" fill="#9ED6EE"/>
+      <rect x="306" y="603" width="15" height="15" fill="#9ED6EE"/><rect x="331" y="603" width="15" height="15" fill="#9ED6EE"/>
+      <rect x="306" y="628" width="15" height="15" fill="#9ED6EE"/><rect x="331" y="628" width="15" height="15" fill="#9ED6EE"/>
+
+      <rect x="373" y="535" width="98"  height="213" fill="white" opacity="0.82"/>
+      <rect x="390" y="553" width="16" height="16" fill="#9ED6EE"/><rect x="416" y="553" width="16" height="16" fill="#9ED6EE"/><rect x="442" y="553" width="16" height="16" fill="#9ED6EE"/>
+      <rect x="390" y="579" width="16" height="16" fill="#9ED6EE"/><rect x="416" y="579" width="16" height="16" fill="#9ED6EE"/><rect x="442" y="579" width="16" height="16" fill="#9ED6EE"/>
+      <rect x="390" y="605" width="16" height="16" fill="#9ED6EE"/><rect x="416" y="605" width="16" height="16" fill="#9ED6EE"/><rect x="442" y="605" width="16" height="16" fill="#9ED6EE"/>
+
+      <!-- Buildings right -->
+      <rect x="969"  y="530" width="95"  height="218" fill="white" opacity="0.82"/>
+      <rect x="986"  y="548" width="16" height="16" fill="#9ED6EE"/><rect x="1012" y="548" width="16" height="16" fill="#9ED6EE"/><rect x="1038" y="548" width="16" height="16" fill="#9ED6EE"/>
+      <rect x="986"  y="574" width="16" height="16" fill="#9ED6EE"/><rect x="1012" y="574" width="16" height="16" fill="#9ED6EE"/><rect x="1038" y="574" width="16" height="16" fill="#9ED6EE"/>
+      <rect x="986"  y="600" width="16" height="16" fill="#9ED6EE"/><rect x="1012" y="600" width="16" height="16" fill="#9ED6EE"/><rect x="1038" y="600" width="16" height="16" fill="#9ED6EE"/>
+
+      <rect x="1068" y="498" width="105" height="250" fill="white" opacity="0.90"/>
+      <rect x="1085" y="516" width="17" height="17" fill="#9ED6EE"/><rect x="1112" y="516" width="17" height="17" fill="#9ED6EE"/><rect x="1139" y="516" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1085" y="543" width="17" height="17" fill="#9ED6EE"/><rect x="1112" y="543" width="17" height="17" fill="#9ED6EE"/><rect x="1139" y="543" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1085" y="570" width="17" height="17" fill="#9ED6EE"/><rect x="1112" y="570" width="17" height="17" fill="#9ED6EE"/><rect x="1139" y="570" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1085" y="597" width="17" height="17" fill="#9ED6EE"/><rect x="1112" y="597" width="17" height="17" fill="#9ED6EE"/><rect x="1139" y="597" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1085" y="624" width="17" height="17" fill="#9ED6EE"/><rect x="1112" y="624" width="17" height="17" fill="#9ED6EE"/>
+
+      <rect x="1177" y="550" width="80"  height="198" fill="white" opacity="0.88"/>
+      <rect x="1193" y="568" width="15" height="15" fill="#9ED6EE"/><rect x="1218" y="568" width="15" height="15" fill="#9ED6EE"/>
+      <rect x="1193" y="593" width="15" height="15" fill="#9ED6EE"/><rect x="1218" y="593" width="15" height="15" fill="#9ED6EE"/>
+      <rect x="1193" y="618" width="15" height="15" fill="#9ED6EE"/><rect x="1218" y="618" width="15" height="15" fill="#9ED6EE"/>
+
+      <rect x="1261" y="462" width="108" height="286" fill="white" opacity="0.96"/>
+      <rect x="1278" y="480" width="17" height="17" fill="#9ED6EE"/><rect x="1305" y="480" width="17" height="17" fill="#9ED6EE"/><rect x="1332" y="480" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1278" y="507" width="17" height="17" fill="#9ED6EE"/><rect x="1305" y="507" width="17" height="17" fill="#9ED6EE"/><rect x="1332" y="507" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1278" y="534" width="17" height="17" fill="#9ED6EE"/><rect x="1305" y="534" width="17" height="17" fill="#9ED6EE"/><rect x="1332" y="534" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1278" y="561" width="17" height="17" fill="#9ED6EE"/><rect x="1305" y="561" width="17" height="17" fill="#9ED6EE"/><rect x="1332" y="561" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1278" y="588" width="17" height="17" fill="#9ED6EE"/><rect x="1305" y="588" width="17" height="17" fill="#9ED6EE"/><rect x="1332" y="588" width="17" height="17" fill="#9ED6EE"/>
+      <rect x="1278" y="615" width="17" height="17" fill="#9ED6EE"/><rect x="1305" y="615" width="17" height="17" fill="#9ED6EE"/>
+
+      <!-- Antenna tower -->
+      <polygon points="1388,700 1398,310 1408,700" fill="white" opacity="0.75"/>
+      <rect x="1380" y="405" width="36" height="4" fill="white" opacity="0.8"/>
+      <rect x="1378" y="455" width="40" height="4" fill="white" opacity="0.8"/>
+      <rect x="1376" y="505" width="44" height="4" fill="white" opacity="0.8"/>
+      <rect x="1374" y="555" width="48" height="4" fill="white" opacity="0.8"/>
+      <rect x="1372" y="605" width="52" height="4" fill="white" opacity="0.8"/>
+      <rect x="1395" y="270" width="6"  height="45" fill="white" opacity="0.9"/>
+      <rect x="1388" y="292" width="20" height="4"  fill="white" opacity="0.8"/>
+      <rect x="1386" y="303" width="24" height="4"  fill="white" opacity="0.8"/>
+
+      <!-- Clouds -->
+      <g class="cloud-left">
+        <ellipse cx="155" cy="165" rx="75" ry="52" fill="white"/>
+        <ellipse cx="100" cy="182" rx="52" ry="38" fill="white"/>
+        <ellipse cx="210" cy="182" rx="52" ry="38" fill="white"/>
+        <ellipse cx="130" cy="196" rx="60" ry="44" fill="white"/>
+        <ellipse cx="182" cy="196" rx="56" ry="42" fill="white"/>
+      </g>
+
+      <g class="cloud-center">
+        <ellipse cx="720" cy="290" rx="230" ry="155" fill="white"/>
+        <ellipse cx="530" cy="330" rx="150" ry="115" fill="white"/>
+        <ellipse cx="910" cy="330" rx="150" ry="115" fill="white"/>
+        <ellipse cx="610" cy="360" rx="170" ry="125" fill="white"/>
+        <ellipse cx="830" cy="360" rx="170" ry="125" fill="white"/>
+        <ellipse cx="720" cy="390" rx="200" ry="140" fill="white"/>
+      </g>
+
+      <g class="cloud-right">
+        <ellipse cx="1272" cy="143" rx="92" ry="63" fill="white"/>
+        <ellipse cx="1196" cy="163" rx="63" ry="47" fill="white"/>
+        <ellipse cx="1348" cy="163" rx="63" ry="47" fill="white"/>
+        <ellipse cx="1232" cy="177" rx="72" ry="52" fill="white"/>
+        <ellipse cx="1312" cy="177" rx="67" ry="50" fill="white"/>
+      </g>
+
+      <g class="cloud-small">
+        <ellipse cx="510" cy="98"  rx="52" ry="35" fill="white" opacity="0.85"/>
+        <ellipse cx="468" cy="111" rx="36" ry="26" fill="white" opacity="0.85"/>
+        <ellipse cx="552" cy="111" rx="36" ry="26" fill="white" opacity="0.85"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="hero-logo">
+    </div>
+
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===================== WORKS ===================== -->
+<section id="works" class="section">
+  <div class="products-marquee">
+    <div class="products-track">
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8337421" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8337421.jpg" alt="ハンマー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">ハンマー</p><p class="product-price">¥ 600</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8149936" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8149936.jpg" alt="星降る月浴衣" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">星降る月浴衣</p><p class="product-price">¥ 800~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8079432" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8079432.jpg" alt="獄門しのぶ" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">獄門しのぶ</p><p class="product-price">¥ 1,200~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7968241" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7968241.jpg" alt="狛犬セーラー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">狛犬セーラー</p><p class="product-price">¥ 800~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7889178" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7889178.jpg" alt="オフィスチェア" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">オフィスチェア</p><p class="product-price">¥ 750~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8005759" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8005759.jpg" alt="はいぱーつよつよバッジ" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">はいぱーつよつよバッジ</p><p class="product-price">無料</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7791136" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7791136.jpg" alt="はいぱーボール" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">はいぱーボール</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7681778" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7681778.jpg" alt="スプーン＆フォーク" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">スプーン＆フォーク</p><p class="product-price">¥ 730~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7640303" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7640303.jpg" alt="しゃぼん玉の術" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">しゃぼん玉の術</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7548369" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7548369.jpg" alt="お酒" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">お酒</p><p class="product-price">¥ 700~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7489015" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7489015.jpg" alt="スプレー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">スプレー</p><p class="product-price">¥ 700~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7437947" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7437947.jpg" alt="HYPER WING" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">HYPER WING</p><p class="product-price">¥ 780</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7283670" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7283670.jpg" alt="風遁の術" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">風遁の術</p><p class="product-price">¥ 700</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7208624" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7208624.jpg" alt="ストロー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">ストロー</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7039954" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7039954.jpg" alt="ガラス破壊" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">ガラス破壊</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/6020050" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/6020050.jpg" alt="変わり身の術" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">変わり身の術</p><p class="product-price">¥ 700~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/6600129" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/6600129.jpg" alt="Let's Goショッピングカート" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">Let's Goショッピングカート</p><p class="product-price">¥ 300~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/5813805" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/5813805.jpg" alt="わりばしガン" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">わりばしガン</p><p class="product-price">¥ 500</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8337421" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8337421.jpg" alt="ハンマー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">ハンマー</p><p class="product-price">¥ 600</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8149936" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8149936.jpg" alt="星降る月浴衣" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">星降る月浴衣</p><p class="product-price">¥ 800~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8079432" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8079432.jpg" alt="獄門しのぶ" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">獄門しのぶ</p><p class="product-price">¥ 1,200~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7968241" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7968241.jpg" alt="狛犬セーラー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">狛犬セーラー</p><p class="product-price">¥ 800~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7889178" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7889178.jpg" alt="オフィスチェア" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">オフィスチェア</p><p class="product-price">¥ 750~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/8005759" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/8005759.jpg" alt="はいぱーつよつよバッジ" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">はいぱーつよつよバッジ</p><p class="product-price">無料</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7791136" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7791136.jpg" alt="はいぱーボール" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">はいぱーボール</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7681778" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7681778.jpg" alt="スプーン＆フォーク" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">スプーン＆フォーク</p><p class="product-price">¥ 730~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7640303" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7640303.jpg" alt="しゃぼん玉の術" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">しゃぼん玉の術</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7548369" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7548369.jpg" alt="お酒" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">お酒</p><p class="product-price">¥ 700~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7489015" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7489015.jpg" alt="スプレー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">スプレー</p><p class="product-price">¥ 700~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7437947" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7437947.jpg" alt="HYPER WING" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">HYPER WING</p><p class="product-price">¥ 780</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7283670" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7283670.jpg" alt="風遁の術" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">風遁の術</p><p class="product-price">¥ 700</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7208624" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7208624.jpg" alt="ストロー" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">ストロー</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/7039954" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/7039954.jpg" alt="ガラス破壊" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">ガラス破壊</p><p class="product-price">¥ 500~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/6020050" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/6020050.jpg" alt="変わり身の術" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">変わり身の術</p><p class="product-price">¥ 700~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/6600129" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/6600129.jpg" alt="Let's Goショッピングカート" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">Let's Goショッピングカート</p><p class="product-price">¥ 300~</p></div></a>
+      <a href="https://hyper-tuyotuyo.booth.pm/items/5813805" target="_blank" rel="noopener" class="product-card"><div class="product-img"><img src="assets/img/products/5813805.jpg" alt="わりばしガン" loading="lazy"><div class="product-overlay">Boothで見る</div></div><div class="product-info"><p class="product-name">わりばしガン</p><p class="product-price">¥ 500</p></div></a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="text-center reveal" style="margin-top:2.5rem">
+      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="btn btn-primary">Boothでもっと見る</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== LICENSE ===================== -->
+<section id="license" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-dots"><span class="d-blue"></span><span class="d-orange"></span><span class="d-red"></span></div>
+      <h2 class="section-title">利用規約</h2>
+      <p class="section-desc">VN3ライセンス Ver.1.10 準拠（バージョン 1.00）</p>
+    </div>
+
+    <div class="license-grid">
+      <div class="license-item allow reveal">
+        <span class="license-icon">✅</span>
+        <div>
+          <strong>個人利用</strong>
+          <p>営利・非営利を問わず許可</p>
+        </div>
+      </div>
+      <div class="license-item allow reveal">
+        <span class="license-icon">✅</span>
+        <div>
+          <strong>VRChat 等へのアップロード</strong>
+          <p>自己利用目的で許可</p>
+        </div>
+      </div>
+      <div class="license-item allow reveal">
+        <span class="license-icon">✅</span>
+        <div>
+          <strong>映像・配信・放送</strong>
+          <p>YouTube 等の利用許可</p>
+        </div>
+      </div>
+      <div class="license-item allow reveal">
+        <span class="license-icon">✅</span>
+        <div>
+          <strong>調整・改変</strong>
+          <p>ウェイト修正・テクスチャ変更など</p>
+        </div>
+      </div>
+      <div class="license-item allow reveal">
+        <span class="license-icon">✅</span>
+        <div>
+          <strong>二次創作</strong>
+          <p>営利・非営利問わず配布可</p>
+        </div>
+      </div>
+      <div class="license-item allow reveal">
+        <span class="license-icon">✅</span>
+        <div>
+          <strong>グッズ・ゲーム組込み</strong>
+          <p>有体物・ソフトウェアへの利用許可</p>
+        </div>
+      </div>
+      <div class="license-item deny reveal">
+        <span class="license-icon">❌</span>
+        <div>
+          <strong>再配布・データ配布</strong>
+          <p>改変の有無を問わず禁止</p>
+        </div>
+      </div>
+      <div class="license-item deny reveal">
+        <span class="license-icon">🏢</span>
+        <div>
+          <strong>法人利用</strong>
+          <p>個別にお問い合わせください</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="license-note reveal">
+      ⚠️ &nbsp;性的表現・暴力的表現は小学校低学年が思いつく程度まで許可（棲み分け必須）。
+      クリスマス・ハロウィン等の文化的祭事は許可。
+      宗教的布教は<strong style="color:var(--yellow)">空飛ぶはいぱーつよつよ教</strong>に限り許可。その他の宗教・政治活動は禁止。
+    </div>
+
+    <div class="text-center reveal">
+      <a href="terms.html" class="btn btn-outline">利用規約 全文を読む</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GUIDELINES ===================== -->
+<section id="guidelines" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-dots"><span class="d-blue"></span><span class="d-red"></span><span class="d-yellow"></span></div>
+      <h2 class="section-title">使用ガイドライン</h2>
+      <p class="section-desc">アセットをご利用いただく際の注意事項</p>
+    </div>
+    <div class="text-center reveal">
+      <a href="guidelines.html" class="btn btn-primary">使用ガイドラインを読む</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-dots"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-orange"></span></div>
+      <h2 class="section-title">リンク・連絡先</h2>
+    </div>
+
+    <div class="contact-grid">
+      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="contact-card booth reveal">
+        <div class="contact-icon booth-icon">BOOTH</div>
+        <span class="contact-label">Booth ショップ</span>
+        <span class="contact-url">hyper-tuyotuyo.booth.pm</span>
+      </a>
+
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener" class="contact-card x reveal">
+        <div class="contact-icon x-icon">𝕏</div>
+        <span class="contact-label">X (Twitter)</span>
+        <span class="contact-url">@Yak_HyperTYTY</span>
+      </a>
+
+      <a href="https://discord.com/invite/XZtswheNxA" target="_blank" rel="noopener" class="contact-card discord reveal">
+        <div class="contact-icon discord-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        </div>
+        <span class="contact-label">空飛ぶはいぱーつよつよ教</span>
+        <span class="contact-url">Discord サーバー</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="footer-logo">
+    <p class="footer-copy">© はいぱーつよつよ All rights reserved.</p>
+    <p class="footer-vn3">本サイトに掲載の利用規約はVN3ライセンスVer.1.10に準拠しています。</p>
+    <p class="footer-built">Built with <a href="https://claude.ai/code" target="_blank" rel="noopener">Claude Code</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
