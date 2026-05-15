@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found | はいぱーつよつよ</title>
+  <meta name="description" content="お探しのページが見つかりませんでした。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/404.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="data/hypertuyotuyo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .error-code {
+      font-family: var(--font-en);
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--red), var(--orange), var(--yellow));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+      filter: drop-shadow(0 0 40px rgba(255,48,112,0.35));
+    }
+
+    .error-dots {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .error-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .d-r { background: var(--red); }
+    .d-b { background: var(--blue); }
+    .d-o { background: var(--orange); }
+
+    .error-title {
+      font-family: var(--font-ja);
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      font-weight: 900;
+      color: var(--text);
+    }
+
+    .error-sub {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 400px;
+      line-height: 1.8;
+    }
+
+    .error-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--red), var(--orange));
+      color: #fff;
+      font-family: var(--font-ja);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.75rem 2rem;
+      border-radius: 100px;
+      box-shadow: 0 0 24px rgba(255,48,112,0.4);
+      transition: var(--t);
+      margin-top: 0.5rem;
+    }
+    .error-home:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(255,48,112,0.6);
+    }
+
+    .error-logo {
+      width: 72px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html#works">作品</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="terms.html">利用規約</a></li>
+      <li><a href="guidelines.html">使用ガイドライン</a></li>
+      <li><a href="index.html#contact">リンク</a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="nav-booth">ショップへ</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===================== 404 ===================== -->
+<main class="error-page">
+  <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="error-logo">
+
+  <div class="error-dots">
+    <span class="d-r"></span>
+    <span class="d-b"></span>
+    <span class="d-o"></span>
+  </div>
+
+  <div class="error-code">404</div>
+
+  <p class="error-title">ページが見つかりません</p>
+  <p class="error-sub">
+    お探しのページは移動・削除されたか、<br>URLが正しくない可能性があります。
+  </p>
+
+  <a href="index.html" class="error-home">
+    ← トップページへ戻る
+  </a>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="footer-logo">
+    <p class="footer-copy">© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
