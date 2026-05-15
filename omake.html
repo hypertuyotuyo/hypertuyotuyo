@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おまけ：空飛ぶはいぱーつよつよ教 ひみつの教典 | はいぱーつよつよ</title>
+  <meta name="description" content="空飛ぶはいぱーつよつよ教の非公式・非公認・完全にふざけた教典です。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="https://hyper-tuyotuyo.com/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://hyper-tuyotuyo.com/assets/css/style.css">
+  <style>
+    .omake-main {
+      padding: 7rem 1.5rem 5rem;
+      min-height: 100vh;
+    }
+    .omake-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .omake-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .omake-header h1 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 900;
+      margin: 0.75rem 0 0.5rem;
+    }
+    .secret-badge {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+    .omake-notice {
+      background: #FFF8E7;
+      border: 1px solid #FFD966;
+      border-radius: var(--r);
+      padding: 1rem 1.25rem;
+      font-size: 0.85rem;
+      line-height: 1.85;
+      color: #7A6000;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .kyoten-section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+    }
+    .kyoten-title {
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .kyoten-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      border-radius: 2px;
+      background: var(--bar-color, var(--blue));
+      flex-shrink: 0;
+    }
+    .kyoten-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .kyoten-list li {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text);
+      padding: 1rem 1.1rem 1rem 1.3rem;
+      background: var(--bg);
+      border-radius: var(--r);
+      border-left: 3px solid var(--item-color, var(--blue));
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+    }
+    .kyoten-list li .rule-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+    .kyoten-list li .rule-body {
+      flex: 1;
+    }
+    .kyoten-list li .rule-note {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+    .article-num {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 0.15rem;
+      letter-spacing: 0.03em;
+    }
+    .stamp {
+      text-align: center;
+      margin: 2.5rem 0 1rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+    .stamp-box {
+      display: inline-block;
+      border: 2px solid var(--red);
+      border-radius: 8px;
+      padding: 0.5rem 1.5rem;
+      color: var(--red);
+      font-weight: 900;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      margin: 0.5rem;
+      transform: rotate(-3deg);
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="https://hyper-tuyotuyo.com/" class="nav-logo">
+      <img src="https://hyper-tuyotuyo.com/data/hypertuyotuyo.png" alt="はいぱーつよつよ">
+    </a>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <a href="https://hyper-tuyotuyo.com/" class="btn btn-secondary" style="font-size:0.78rem;padding:0.5rem 1.1rem;">← トップへ戻る</a>
+    </div>
+  </div>
+</nav>
+
+<main class="omake-main">
+  <div class="omake-container">
+
+    <div class="omake-header">
+      <div class="section-dots" style="justify-content:center"><span class="d-red"></span><span class="d-blue"></span><span class="d-yellow"></span></div>
+      <span class="secret-badge">🔒 ひみつのページ</span>
+      <h1>空飛ぶはいぱーつよつよ教<br>ひみつの教典</h1>
+      <p style="color:var(--text-muted);font-size:0.88rem;">非公式 ／ 非公認 ／ 完全にふざけてる</p>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem;">制定日：不明　／　たぶん宇宙の始まりから</p>
+    </div>
+
+    <div class="omake-notice">
+      ⚠️ このページは <strong>ネタページ</strong> です。法的効力は一切ありません。<br>
+      本当の利用規約は <a href="https://hyper-tuyotuyo.com/terms.html" style="color:var(--blue)">こちら</a>、アセット使用ガイドラインは <a href="https://hyper-tuyotuyo.com/guidelines.html" style="color:var(--blue)">こちら</a> をご確認ください。
+    </div>
+
+    <!-- 前文 -->
+    <div class="kyoten-section">
+      <p class="kyoten-title" style="--bar-color:var(--yellow)">🛸 前文</p>
+      <p style="font-size:0.9rem;line-height:1.9;color:var(--text-muted)">
+        ここに集いし者は、空飛ぶはいぱーつよつよ教の教えに従い、VRの海を正しく、楽しく、わりばしガンを携えて生きることを誓うものとする。<br>
+        以下に掲げる教典は、信徒の日常を豊かにするために定められたものである。<strong>たぶん。</strong>
+      </p>
+    </div>
+
+    <!-- 教典本文 -->
+    <div class="kyoten-section">
+      <p class="kyoten-title" style="--bar-color:var(--blue)">📜 教典 第一章：アバターの性に関する掟</p>
+      <ul class="kyoten-list">
+        <li style="--item-color:var(--blue)">
+          <span class="rule-icon">👦</span>
+          <span class="rule-body">
+            <span class="article-num">第一条</span>
+            性別不詳のアバターはお得なので<strong>男の子</strong>とする。
+            <span class="rule-note">理由：男の子だと思って見ていた方がお得感がある。異論は認める（が、教義である）。</span>
+          </span>
+        </li>
+        <li style="--item-color:var(--yellow)">
+          <span class="rule-icon">🗣️</span>
+          <span class="rule-body">
+            <span class="article-num">第二条</span>
+            性別不詳アバター<strong>女の子派派閥</strong>と論議しても良いが、<strong>喧嘩してはいけない</strong>。
+            <span class="rule-note">我々は平和な宗教である。ただし第一条が正しいという前提で議論すること。</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 禁忌 -->
+    <div class="kyoten-section">
+      <p class="kyoten-title" style="--bar-color:var(--red)">🚫 教典 第二章：禁忌と戒律</p>
+      <ul class="kyoten-list">
+        <li style="--item-color:var(--red)">
+          <span class="rule-icon">🥒</span>
+          <span class="rule-body">
+            <span class="article-num">第三条</span>
+            きゅうりをアバターに持たせては<strong>ならない</strong>。
+            <span class="rule-note">理由は言わなくてもわかる。わからない人はそのままでいてください。</span>
+          </span>
+        </li>
+        <li style="--item-color:var(--orange)">
+          <span class="rule-icon">👦</span>
+          <span class="rule-body">
+            <span class="article-num">第四条</span>
+            センシティブなネタは<strong>小学生低学年男子が考えつくもの</strong>までとする。
+            <span class="rule-note">うんちとかおならとかのレベル。それ以上はわりばしガンの射程圏内に入ります。</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 制裁 -->
+    <div class="kyoten-section">
+      <p class="kyoten-title" style="--bar-color:var(--green)">🔫 教典 第三章：邪教徒への対応</p>
+      <ul class="kyoten-list">
+        <li style="--item-color:var(--green)">
+          <span class="rule-icon">🥢</span>
+          <span class="rule-body">
+            <span class="article-num">第五条</span>
+            無い胸を盛ったアバターは<strong>邪教徒</strong>であるため、<strong>わりばしガンで威嚇して良い</strong>ものとする。
+            <span class="rule-note">「わりばしガン」は当ショップで販売中の正規アセットです。邪教徒への使用は信徒の義務です（嘘）。<br><a href="https://hyper-tuyotuyo.booth.pm/items/5813805" target="_blank" rel="noopener" style="color:var(--blue)">→ わりばしガンはこちら</a></span>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 後記 -->
+    <div class="kyoten-section" style="background:linear-gradient(135deg,#f8f9ff 0%,#fff 100%)">
+      <p class="kyoten-title" style="--bar-color:var(--text-muted)">✨ 後記</p>
+      <p style="font-size:0.88rem;line-height:1.9;color:var(--text-muted)">
+        以上が空飛ぶはいぱーつよつよ教の教典である。<br>
+        信徒よ、VRの世界を正しく飛び回りたまえ。<br>
+        そしてきゅうりは持つな。
+      </p>
+    </div>
+
+    <div class="stamp">
+      <div class="stamp-box">非公認</div>
+      <div class="stamp-box" style="transform:rotate(2deg)">ネタです</div>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem">
+      <a href="https://hyper-tuyotuyo.com/guidelines.html" class="btn btn-secondary" style="margin-right:0.75rem">本物のガイドラインを読む</a>
+      <a href="https://hyper-tuyotuyo.com/" class="btn btn-secondary">← トップへ戻る</a>
+    </div>
+
+  </div>
+</main>
+
+<script src="https://hyper-tuyotuyo.com/assets/js/main.js"></script>
+</body>
+</html>
