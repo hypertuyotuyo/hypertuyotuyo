@@ -25,12 +25,12 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <ul class="nav-links">
-      <li><a href="#works">作品</a></li>
+      <li><a href="#works" data-i18n="nav.works">作品</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#license">利用規約</a></li>
-      <li><a href="#guidelines">使用ガイドライン</a></li>
-      <li><a href="#contact">リンク</a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="nav-booth">ショップへ</a></li>
+      <li><a href="#license" data-i18n="nav.license">利用規約</a></li>
+      <li><a href="#guidelines" data-i18n="nav.guidelines">使用ガイドライン</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">リンク</a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="nav-booth" data-i18n="nav.shop">ショップへ</a></li><li class="lang-switcher"><button class="lang-btn" id="lang-btn">🌐 <span id="lang-current">JA</span></button><div class="lang-dropdown" id="lang-dropdown"><button class="lang-option" data-lang="ja">日本語</button><button class="lang-option" data-lang="en">English</button><button class="lang-option" data-lang="ko">한국어</button><button class="lang-option" data-lang="zh">中文</button></div></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
       <span></span><span></span><span></span>
@@ -41,12 +41,12 @@
 <!-- Mobile nav overlay -->
 <div class="nav-mobile" id="mobile-nav">
   <button class="nav-mobile-close" id="mobile-close" aria-label="閉じる">✕</button>
-  <a href="#works">作品</a>
+  <a href="#works" data-i18n="nav.works">作品</a>
   <a href="#about">About</a>
-  <a href="#license">利用規約</a>
-  <a href="#guidelines">使用ガイドライン</a>
-  <a href="#contact">リンク</a>
-  <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" style="color:var(--orange)">ショップへ →</a>
+  <a href="#license" data-i18n="nav.license">利用規約</a>
+  <a href="#guidelines" data-i18n="nav.guidelines">使用ガイドライン</a>
+  <a href="#contact" data-i18n="nav.contact">リンク</a>
+  <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" style="color:var(--orange)" data-i18n="nav.shop">ショップへ</a>
 </div>
 
 <!-- ===================== HERO ===================== -->
@@ -218,7 +218,7 @@
   <div class="container">
 
     <div class="text-center reveal" style="margin-top:2.5rem">
-      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="btn btn-primary">Boothでもっと見る</a>
+      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="works.more">Boothでもっと見る</a>
     </div>
   </div>
 </section>
@@ -235,9 +235,9 @@
       <img src="data/about.png" alt="はいぱーつよつよ" style="width:200px;height:200px;object-fit:cover;border-radius:50%;box-shadow:0 4px 24px rgba(0,0,0,0.12);">
       <div style="max-width:480px">
         <p style="font-size:1rem;line-height:2;color:var(--text)">
-          VRChatで創作活動しています！！！つよいです！！はいぱーつよつよです！！！可愛いのつくるのだいすきです！！！！！
+          <span data-i18n="about.bio">VRChatで創作活動しています！！！つよいです！！はいぱーつよつよです！！！可愛いのつくるのだいすきです！！！！！</span>
         </p>
-        <a href="https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:1.25rem;display:inline-block">VRChat プロフィール</a>
+        <a href="https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:1.25rem;display:inline-block" data-i18n="about.profile">VRChat プロフィール</a>
       </div>
     </div>
   </div>
@@ -249,15 +249,15 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-dots"><span class="d-blue"></span><span class="d-orange"></span><span class="d-red"></span></div>
-      <h2 class="section-title">利用規約・使用ガイドライン</h2>
-      <p class="section-desc">VN3ライセンス Ver.1.10 準拠（バージョン 2.0）</p>
+      <h2 class="section-title" data-i18n="license.title">利用規約・使用ガイドライン</h2>
+      <p class="section-desc" data-i18n="license.desc">VN3ライセンス Ver.1.10 準拠（バージョン 2.0）</p>
     </div>
 
     <!-- 利用規約 簡易一覧 -->
     <div class="accordion-item reveal">
-      <button class="accordion-header" type="button">📋 許諾範囲 簡易一覧</button>
+      <button class="accordion-header" type="button" data-i18n="acc.terms">📋 許諾範囲 簡易一覧</button>
       <div class="accordion-body">
-        <table class="accordion-table">
+        <table class="accordion-table" data-i18n-table="terms">
           <thead><tr><th>項目</th><th>可否</th><th>備考</th></tr></thead>
           <tbody>
             <tr><td>個人利用</td><td class="ok">✅ 許可</td><td>営利・非営利を問わず</td></tr>
@@ -288,14 +288,14 @@
       </div>
     </div>
     <div class="text-center reveal" style="margin-bottom:2.5rem">
-      <a href="terms.html" class="btn btn-primary">利用規約 全文を読む</a>
+      <a href="terms.html" class="btn btn-primary" data-i18n="btn.terms">利用規約 全文を読む</a>
     </div>
 
     <!-- 使用ガイドライン 簡易一覧 -->
     <div class="accordion-item reveal">
-      <button class="accordion-header" type="button">📋 使用ガイドライン 簡易一覧</button>
+      <button class="accordion-header" type="button" data-i18n="acc.guidelines">📋 使用ガイドライン 簡易一覧</button>
       <div class="accordion-body">
-        <table class="accordion-table">
+        <table class="accordion-table" data-i18n-table="guidelines">
           <thead><tr><th>項目</th><th>可否</th><th>備考</th></tr></thead>
           <tbody>
             <tr><td>対象コンテンツ</td><td class="ok">✅</td><td>アバター・アバター衣装・アバターギミック</td></tr>
@@ -316,7 +316,7 @@
       </div>
     </div>
     <div class="text-center reveal">
-      <a href="guidelines.html" class="btn btn-primary">使用ガイドラインを読む</a>
+      <a href="guidelines.html" class="btn btn-primary" data-i18n="btn.guidelines">使用ガイドラインを読む</a>
     </div>
   </div>
 </section>
@@ -326,13 +326,13 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-dots"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-orange"></span></div>
-      <h2 class="section-title">リンク・連絡先</h2>
+      <h2 class="section-title" data-i18n="contact.title">リンク・連絡先</h2>
     </div>
 
     <div class="contact-grid">
       <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="contact-card booth reveal">
         <div class="contact-icon booth-icon">BOOTH</div>
-        <span class="contact-label">Booth ショップ</span>
+        <span class="contact-label" data-i18n="contact.booth">Booth ショップ</span>
         <span class="contact-url">hyper-tuyotuyo.booth.pm</span>
       </a>
 
@@ -346,8 +346,8 @@
         <div class="contact-icon discord-icon">
           <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
         </div>
-        <span class="contact-label">空飛ぶはいぱーつよつよ教</span>
-        <span class="contact-url">Discord サーバー</span>
+        <span class="contact-label" data-i18n="contact.discord">空飛ぶはいぱーつよつよ教</span>
+        <span class="contact-url" data-i18n="contact.disc.sub">Discord サーバー</span>
       </a>
     </div>
   </div>
@@ -358,11 +358,12 @@
   <div class="container">
     <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="footer-logo">
     <p class="footer-copy">© はいぱーつよつよ All rights reserved.</p>
-    <p class="footer-vn3">本サイトに掲載の利用規約はVN3ライセンスVer.1.10に準拠しています。</p>
+    <p class="footer-vn3" data-i18n="footer.vn3">本サイトに掲載の利用規約はVN3ライセンスVer.1.10に準拠しています。</p>
     <p class="footer-built">Built with <a href="https://claude.ai/code" target="_blank" rel="noopener">Claude Code</a></p>
   </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>

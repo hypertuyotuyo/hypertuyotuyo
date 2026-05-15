@@ -159,7 +159,10 @@
     <a href="index.html" class="nav-logo">
       <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ">
     </a>
-    <a href="index.html" class="btn btn-secondary" style="font-size:0.78rem;padding:0.5rem 1.1rem;">← トップへ戻る</a>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <div class="lang-switcher"><button class="lang-btn" id="lang-btn">🌐 <span id="lang-current">JA</span></button><div class="lang-dropdown" id="lang-dropdown"><button class="lang-option" data-lang="ja">日本語</button><button class="lang-option" data-lang="en">English</button><button class="lang-option" data-lang="ko">한국어</button><button class="lang-option" data-lang="zh">中文</button></div></div>
+      <a href="index.html" class="btn btn-secondary" style="font-size:0.78rem;padding:0.5rem 1.1rem;" data-i18n="nav.back">← トップへ戻る</a>
+    </div>
   </div>
 </nav>
 
@@ -168,14 +171,17 @@
 
     <div class="gl-header">
       <div class="section-dots" style="justify-content:center"><span class="d-red"></span><span class="d-blue"></span><span class="d-yellow"></span></div>
-      <h1>アセット使用ガイドライン</h1>
+      <h1 data-i18n="gl.h1">アセット使用ガイドライン</h1>
       <p>はいぱーつよつよ — Asset Usage Guidelines</p>
-      <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem">制定日：2024年5月5日　／　最終更新：2026年5月15日</p>
+      <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem" data-i18n="gl.dates">制定日：2024年5月5日　／　最終更新：2026年5月15日</p>
     </div>
+
+    <!-- ja-only notice for non-JA users -->
+    <div data-i18n-jaonly="gl.jaonly" style="display:none;background:#FFF8E7;border:1px solid #FFD966;border-radius:var(--r);padding:0.85rem 1.1rem;margin-bottom:1.5rem;font-size:0.85rem;color:#7A6000"></div>
 
     <!-- 対象コンテンツ -->
     <div class="gl-section">
-      <p class="gl-section-title" style="--bar-color:var(--blue)">対象コンテンツ</p>
+      <p class="gl-section-title" style="--bar-color:var(--blue)" data-i18n="gl.sec.target">対象コンテンツ</p>
       <p class="gl-text">
         本ガイドラインは、<strong>はいぱーつよつよ</strong> が制作・販売する以下のすべてのアセットに適用されます。
       </p>
@@ -189,7 +195,7 @@
 
     <!-- 適用対象ユーザー -->
     <div class="gl-section">
-      <p class="gl-section-title" style="--bar-color:var(--yellow)">適用対象ユーザー</p>
+      <p class="gl-section-title" style="--bar-color:var(--yellow)" data-i18n="gl.sec.users">適用対象ユーザー</p>
       <p class="gl-text">本ガイドラインは次のユーザーに適用されます。</p>
       <br>
       <ul class="gl-list">
@@ -201,7 +207,7 @@
 
     <!-- 利用条件 -->
     <div class="gl-section">
-      <p class="gl-section-title" style="--bar-color:var(--red)">利用条件 — 公開できないコンテンツ</p>
+      <p class="gl-section-title" style="--bar-color:var(--red)" data-i18n="gl.sec.conditions">利用条件 — 公開できないコンテンツ</p>
       <p class="gl-text">以下に該当するコンテンツは、はいぱーつよつよのアセットを使用して公開することができません。</p>
       <br>
       <ul class="gl-list">
@@ -273,25 +279,24 @@
       </ul>
 
       <div class="gl-notice">
-        ⚠️ <strong>注意</strong>　本ガイドラインは VN3ライセンス Ver.1.10 に基づく利用規約と併せてご確認ください。
-        プラットフォームや他ショップ様の利用規約とも合わせて、各規約のうち、より厳しい条件が優先されます。<br>
-        ご不明な点は <a href="https://discord.com/invite/XZtswheNxA" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Discord（yak555 / 空飛ぶはいぱーつよつよ教）</a> までお問い合わせください。
+        ⚠️ <strong>注意</strong>　<span data-i18n="gl.notice">本ガイドラインは VN3ライセンス Ver.1.10 に基づく利用規約と併せてご確認ください。プラットフォームや他ショップ様の利用規約とも合わせて、各規約のうち、より厳しい条件が優先されます。</span><br>
+        <span data-i18n="gl.notice.contact">ご不明な点は</span> <a href="https://discord.com/invite/XZtswheNxA" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline" data-i18n="gl.notice.discord">Discord（yak555 / 空飛ぶはいぱーつよつよ教）</a><span data-i18n="gl.notice.end"> までお問い合わせください。</span>
       </div>
       <div class="gl-notice" style="background:#FFF0F3;border-color:#FF3070;color:#7A0030;margin-top:0.75rem">
-        🚫 <strong>正規販売店について</strong>　当ショップのアセットは <strong>Booth（hyper-tuyotuyo.booth.pm）のみ</strong>で販売しています。Booth 以外のサイト・サービスからダウンロードまたは購入した場合、ライセンスは一切付与されず、著作権法違反に該当します。
+        🚫 <strong data-i18n="gl.booth.title">正規販売店について</strong>　<span data-i18n-html="gl.booth.body">当ショップのアセットは <strong>Booth（hyper-tuyotuyo.booth.pm）のみ</strong>で販売しています。Booth 以外のサイト・サービスからダウンロードまたは購入した場合、ライセンスは一切付与されず、著作権法違反に該当します。</span>
       </div>
     </div>
 
     <!-- AI ガイドライン -->
     <div class="gl-section">
-      <p class="gl-section-title" style="--bar-color:var(--blue)">AI 利用ガイドライン</p>
+      <p class="gl-section-title" style="--bar-color:var(--blue)" data-i18n="gl.sec.ai">AI 利用ガイドライン</p>
 
       <p class="gl-text" style="margin-bottom:1.25rem">
         はいぱーつよつよでは、AI の利用を <strong>再現性のある使用</strong>（一般的な学習で誰でも同様の結果を得られるもの）と
         <strong>再現性のない使用</strong>（イラスト・特殊表現の翻訳・音声など個人の創作性に依存するもの）に分けて考えています。
       </p>
 
-      <p class="gl-section-title" style="--bar-color:var(--blue);font-size:0.88rem;margin-bottom:0.75rem">🤖 はいぱーつよつよ自身の AI 使用方針</p>
+      <p class="gl-section-title" style="--bar-color:var(--blue);font-size:0.88rem;margin-bottom:0.75rem" data-i18n="gl.sec.ai.creator">🤖 はいぱーつよつよ自身の AI 使用方針</p>
       <ul class="gl-list" style="margin-bottom:1.5rem">
         <li style="--item-color:var(--green)">
           <strong>再現性のあるもの — 使用することがあります</strong>
@@ -312,7 +317,7 @@
         </li>
       </ul>
 
-      <p class="gl-section-title" style="--bar-color:var(--orange);font-size:0.88rem;margin-bottom:0.75rem">📋 ユーザーの AI 使用ルール</p>
+      <p class="gl-section-title" style="--bar-color:var(--orange);font-size:0.88rem;margin-bottom:0.75rem" data-i18n="gl.sec.ai.user">📋 ユーザーの AI 使用ルール</p>
       <ul class="gl-list">
         <li style="--item-color:var(--green)">
           <strong>スクリーンショット・撮影画像の AI 読み込み — 問題ありません</strong>
@@ -330,13 +335,14 @@
     </div>
 
     <div style="text-align:center;margin-top:2rem">
-      <a href="terms.html" class="btn btn-secondary" style="margin-right:0.75rem">利用規約 全文を読む</a>
-      <a href="index.html" class="btn btn-secondary">← トップへ戻る</a>
+      <a href="terms.html" class="btn btn-secondary" style="margin-right:0.75rem" data-i18n="gl.link.terms">利用規約も確認する</a>
+      <a href="index.html" class="btn btn-secondary" data-i18n="nav.back">← トップへ戻る</a>
     </div>
 
   </div>
 </main>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>

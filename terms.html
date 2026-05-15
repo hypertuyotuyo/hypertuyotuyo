@@ -21,7 +21,10 @@
     <a href="index.html" class="nav-logo">
       <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ">
     </a>
-    <a href="index.html" class="btn btn-secondary" style="font-size:0.78rem;padding:0.5rem 1.1rem;">← トップへ戻る</a>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <div class="lang-switcher"><button class="lang-btn" id="lang-btn">🌐 <span id="lang-current">JA</span></button><div class="lang-dropdown" id="lang-dropdown"><button class="lang-option" data-lang="ja">日本語</button><button class="lang-option" data-lang="en">English</button><button class="lang-option" data-lang="ko">한국어</button><button class="lang-option" data-lang="zh">中文</button></div></div>
+      <a href="index.html" class="btn btn-secondary" style="font-size:0.78rem;padding:0.5rem 1.1rem;" data-i18n="nav.back">← トップへ戻る</a>
+    </div>
   </div>
 </nav>
 
@@ -31,21 +34,21 @@
 
     <div class="terms-header">
       <span class="section-label">LICENSE</span>
-      <h1>はいぱーつよつよ 3Dモデル利用規約</h1>
-      <p>VN3ライセンスVer.1.10準拠 ／ 規約バージョン 2.0</p>
-      <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem">制定日：2024年5月5日　／　最終更新：2026年5月15日</p>
+      <h1 data-i18n="terms.h1">はいぱーつよつよ 3Dモデル利用規約</h1>
+      <p data-i18n="terms.ver">VN3ライセンスVer.1.10準拠 ／ 規約バージョン 2.0</p>
+      <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem" data-i18n="terms.dates">制定日：2024年5月5日　／　最終更新：2026年5月15日</p>
     </div>
 
     <!-- Sales channel notice -->
     <div style="background:#FFF0F3;border-left:4px solid #FF3070;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:0.88rem;line-height:1.9;color:var(--text)">
-      🚫 <strong>正規販売店について</strong><br>
-      当ショップのアセットは <strong>Booth（hyper-tuyotuyo.booth.pm）のみ</strong>で販売しています。Booth 以外のサイト・サービスからダウンロードまたは購入した場合、本利用規約に基づくライセンスは一切付与されず、著作権法違反に該当します。
+      🚫 <strong data-i18n="terms.booth.title">正規販売店について</strong><br>
+      <span data-i18n-html="terms.booth.body">当ショップのアセットは <strong>Booth（hyper-tuyotuyo.booth.pm）のみ</strong>で販売しています。Booth 以外のサイト・サービスからダウンロードまたは購入した場合、本利用規約に基づくライセンスは一切付与されず、著作権法違反に該当します。</span>
     </div>
 
     <!-- Quick reference -->
     <div class="terms-quick">
-      <h2>📋 許諾範囲 簡易一覧</h2>
-      <table class="terms-table">
+      <h2 data-i18n="acc.terms">📋 許諾範囲 簡易一覧</h2>
+      <table class="terms-table" data-i18n-table="terms">
         <thead>
           <tr><th>項目</th><th>可否</th><th>備考</th></tr>
         </thead>
@@ -80,14 +83,17 @@
     <!-- Full text -->
     <div class="terms-body">
 
+      <!-- ja-only notice for non-JA users -->
+      <div data-i18n-jaonly="terms.jaonly" style="display:none;background:#FFF8E7;border:1px solid #FFD966;border-radius:var(--r);padding:0.85rem 1.1rem;margin-bottom:1.5rem;font-size:0.85rem;color:#7A6000"></div>
+
       <p>
         はいぱーつよつよ（以下「権利者」といいます）は、はいぱーつよつよ3Dモデル利用規約（以下「本利用規約」といいます）に従って、本利用規約に定義される本データの利用をユーザーに対して許諾（以下「本許諾」といいます）します。ユーザーは、本データの利用開始前に本利用規約の内容を必ず確認してください。なお、ユーザーは、方法を問わず本データの購入、ダウンロード、インストール等の利用の開始時点で、本利用規約に同意したものとみなします。なお、ユーザーが未成年者等の制限行為能力者である場合、本利用規約への同意にあたり、事前に保護者等の法定代理人の同意を得なければなりません。
       </p>
 
       <!-- ===== 基本条項 ===== -->
-      <h2>基本条項</h2>
+      <h2 data-i18n="terms.sec.basic">基本条項</h2>
 
-      <h3>第１条（語の定義）</h3>
+      <h3 data-i18n="terms.art1">第１条（語の定義）</h3>
       <p>本利用規約で用いる語は以下の定義に従います。</p>
       <ul>
         <li><strong>「本データ」</strong>：個別条件の許諾対象データに記載されたデータおよび、そのパーツ。</li>
@@ -103,7 +109,7 @@
         <li><strong>「権利義務の譲渡等」</strong>：権利義務の全部または一部を第三者に譲渡し、貸与し、もしくは担保に供しまたは引き受けさせること。</li>
       </ul>
 
-      <h3>第２条（利用の許諾）</h3>
+      <h3 data-i18n="terms.art2">第２条（利用の許諾）</h3>
       <ol>
         <li>権利者はユーザーに対して本データを、本利用規約に記載された方法によって、個別条件の許諾期間および許諾の変更等に記載の期間内に、全世界においてユーザーが自ら利用することを、非排他的に許諾します。ただし、ユーザーが未成年者等の制限行為能力者の場合は、予め保護者等の法定代理人の同意を得ている場合に限られます。</li>
         <li>個別条件の定めと基本条項の定めに矛盾や抵触がある場合、前者が優先するものとします。また、特記事項の定めと他の定めに関しては、前者が優先するものとします。</li>
@@ -113,18 +119,18 @@
         <li>本利用規約に記載のない方法で本データを利用する場合は、事前に権利者の明示的な許諾を要します。</li>
       </ol>
 
-      <h3>第３条（免責）</h3>
+      <h3 data-i18n="terms.art3">第３条（免責）</h3>
       <p>
         本データは現状有姿で提供されます。権利者は特定の利用目的への適合性、第三者の権利の非侵害、瑕疵の不存在および、法令、文化、商慣習または利用過程に起因する事項の保証を行いません。本データの利用に関する責任はユーザーが負い、権利者を免責するものとします。本データの利用、または利用できなかったことにより生じた損害について、権利者は一切の責任を負いません。権利者が責任を負う場合であっても、権利者に故意または重過失がなく、法令で禁止される場合を除き、権利者の賠償責任は本データの提供価格を上限として直接かつ通常の損害に限られるものとします。
       </p>
 
-      <h3>第４条（権利の帰属・オープンソースソフトウェア等の取り扱い）</h3>
+      <h3 data-i18n="terms.art4">第４条（権利の帰属・オープンソースソフトウェア等の取り扱い）</h3>
       <ol>
         <li>本データおよびパーツ（全部か一部かを問わず、その形式に関わらず）の著作権を含む知的財産権その他の権利は、権利者または第三者に帰属します。本利用規約で明示的に規定される場合を除き、権利者はいかなる権利もユーザーに付与するものではありません。</li>
         <li>本データには、第三者が権利を有するソフトウェアやオープンソースソフトウェア等が含まれる場合があります。これらは、これらに適用される個別のライセンス（以下「オープンソースライセンス等」といいます）に従ってライセンスが付与されます。本利用規約はオープンソースライセンス等に基づくユーザーの権利を制限せず、それに代わる権利を付与しません。</li>
       </ol>
 
-      <h3>第５条（禁止行為・許諾の解除）</h3>
+      <h3 data-i18n="terms.art5">第５条（禁止行為・許諾の解除）</h3>
       <ol>
         <li>ユーザーは、本データを利用して以下各号の行為をしてはならないものとします。
           <ol type="a">
@@ -140,20 +146,20 @@
         <li>ユーザーが本利用規約に反した場合、権利者は本許諾を解除することができるものとします。この場合、当該解除により生じた一切の不利益に関して、権利者は責を負いません。</li>
       </ol>
 
-      <h3>第６条（賠償責任・紛争の解決）</h3>
+      <h3 data-i18n="terms.art6">第６条（賠償責任・紛争の解決）</h3>
       <ol>
         <li>ユーザーは、本利用規約に反することにより権利者または第三者に対して損害を与えた場合、直接、間接を問わず一切の損害賠償の責を負うものとします。また、当該損害が最小限に止まるよう、ユーザーの責任と費用をもって措置を講じるものとします。</li>
         <li>ユーザーが本利用規約に反したことで、権利者と第三者に紛争が生じた場合、ユーザーの責任と費用をもって当該紛争の解決を行うものとします。</li>
       </ol>
 
-      <h3>第７条（反社会的勢力の排除）</h3>
+      <h3 data-i18n="terms.art7">第７条（反社会的勢力の排除）</h3>
       <ol>
         <li>ユーザーは（法人の場合はその役員または従業員に関して）、反社会的勢力（暴力団、暴力団員、暴力団員でなくなった時から5年を経過しない者、暴力団準構成員、暴力団関係企業、総会屋等、社会運動等標ぼうゴロまたは特殊知能暴力集団等、その他これらに準ずる者をいいます）に該当しないこと、また暴力的行為、詐術・脅迫行為、業務妨害行為等違法行為を行わないことを、将来にわたっても表明し、保証するものとします。</li>
         <li>ユーザーは反社会的勢力に本データおよびパーツ（改変されたものを含む）の提供、または調整もしくは改変の委託をしてはならないものとします。</li>
         <li>ユーザーが本条各項に反した場合は、権利者はなんらの催告を要せずに本許諾を解除することができるものとします。</li>
       </ol>
 
-      <h3>第８条（準拠法等）</h3>
+      <h3 data-i18n="terms.art8">第８条（準拠法等）</h3>
       <ol>
         <li>本利用規約の準拠法は日本法とし、日本法によってのみ解釈されるものとします。本利用規約に関して生じる一切の紛争については、権利者の所在地を管轄する日本国内の裁判所を第一審の専属的合意管轄裁判所とします。</li>
         <li>本許諾は日本語によってなされるものとします。本利用規約の翻訳がある場合でも、当該翻訳は参考のために添付されたものに過ぎず、権利者およびユーザーを一切拘束しません。</li>
@@ -161,12 +167,12 @@
       </ol>
 
       <!-- ===== 個別条件 ===== -->
-      <h2>個別条件</h2>
+      <h2 data-i18n="terms.sec.ind">個別条件</h2>
 
-      <h3>1. 許諾対象データ</h3>
+      <h3 data-i18n="terms.ind1">1. 許諾対象データ</h3>
       <p>はいぱーつよつよアバター、アバター衣装、アバターギミック</p>
 
-      <h3>2. 利用条件</h3>
+      <h3 data-i18n="terms.ind2">2. 利用条件</h3>
 
       <p><strong>（1）利用主体</strong></p>
       <ul>
@@ -223,7 +229,7 @@
         <li><strong>W. 権利義務の譲渡等</strong>：許可しません。</li>
       </ul>
 
-      <h3>3. 権利者および権利者への問い合わせ先</h3>
+      <h3 data-i18n="terms.ind3">3. 権利者および権利者への問い合わせ先</h3>
       <ul>
         <li>権利者：はいぱーつよつよ</li>
         <li>Discord：<a href="https://discord.com/invite/XZtswheNxA" target="_blank" rel="noopener" style="color:var(--blue2)">yak555（空飛ぶはいぱーつよつよ教）</a></li>
@@ -231,28 +237,28 @@
         <li>ウェブサイト：<a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" style="color:var(--blue2)">hyper-tuyotuyo.booth.pm</a></li>
       </ul>
 
-      <h3>4. クレジット表記</h3>
+      <h3 data-i18n="terms.ind4">4. クレジット表記</h3>
       <p>はいぱーつよつよ</p>
 
-      <h3>5. 推奨するハッシュタグ</h3>
+      <h3 data-i18n="terms.ind5">5. 推奨するハッシュタグ</h3>
       <p>#はいぱーつよつよ</p>
 
-      <h3>6. 許諾期間および許諾の変更等</h3>
+      <h3 data-i18n="terms.ind6">6. 許諾期間および許諾の変更等</h3>
       <p>
         許諾期間はユーザーとなった日から開始され、権利者によって利用の終了が指示されるまでとします。また、権利者から別途指示がある場合、当該指示は他の定めに優先するものとし、ユーザーはこれに従うか、または利用を終了しなければなりません。権利者が管理するウェブサイトやブログ等に指示を掲示し、合理的な方法で周知した場合も同様とします。従って、ユーザーは、合理的な範囲内で定期的に権利者の発信する情報を確認しなければなりません。
       </p>
 
-      <h3>7. 利用規約のバージョン</h3>
+      <h3 data-i18n="terms.ind7">7. 利用規約のバージョン</h3>
       <p>2.0</p>
 
       <div class="note" style="margin-top:2rem">
-        <p>この利用規約は、VN3ライセンス利用規約ジェネレータVer.1.11の出力を元に、はいぱーつよつよが独自に作成した規約です。VN3ライセンスVer.1.10に準拠しています。</p>
+        <p data-i18n="terms.vn3note">この利用規約は、VN3ライセンス利用規約ジェネレータVer.1.11の出力を元に、はいぱーつよつよが独自に作成した規約です。VN3ライセンスVer.1.10に準拠しています。</p>
       </div>
 
     </div><!-- /.terms-body -->
 
     <div style="text-align:center;margin-top:3rem">
-      <a href="index.html" class="btn btn-secondary">← トップへ戻る</a>
+      <a href="index.html" class="btn btn-secondary" data-i18n="nav.back">← トップへ戻る</a>
     </div>
 
   </div><!-- /.terms-container -->
@@ -262,10 +268,11 @@
   <div class="container">
     <img src="data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="footer-logo">
     <p class="footer-copy">© はいぱーつよつよ All rights reserved.</p>
-    <p class="footer-vn3">本利用規約はVN3ライセンスVer.1.10に準拠しています。</p>
+    <p class="footer-vn3" data-i18n="footer.vn3">本利用規約はVN3ライセンスVer.1.10に準拠しています。</p>
   </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>
