@@ -1,1 +1,6 @@
 # Cloudflare Pages handles .html routing automatically
+
+# Trailing slash redirects
+/terms/       /terms        301
+/guidelines/  /guidelines   301
+/404/         /404          301
