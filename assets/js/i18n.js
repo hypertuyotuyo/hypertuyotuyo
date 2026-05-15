@@ -15,6 +15,7 @@
       'works.more':     'Boothでもっと見る',
       /* index — about */
       'about.bio':      'VRChatで創作活動しています！！！つよいです！！はいぱーつよつよです！！！可愛いのつくるのだいすきです！！！！！',
+      'about.concept':  'VRChatという仮想空間の中で、子どもの頃ただの木の棒が最強の剣に見えていたあの童心や、躊躇なく着ていたあの可愛い衣装を、もう一度体験できるようなギミックや衣装・アバターを作っています！',
       'about.profile':  'VRChat プロフィール',
       /* index — license section */
       'license.title':  '利用規約・使用ガイドライン',
@@ -57,7 +58,7 @@
       'terms.jaonly':      null,
       /* guidelines page — section titles */
       'gl.h1':             'アセット使用ガイドライン',
-      'gl.dates':          '制定日：2024年5月5日　／　最終更新：2026年5月15日',
+      'gl.dates':          '制定日：2024年5月5日　／　最終更新：2026年5月16日',
       'gl.notice':         '本ガイドラインは VN3ライセンス Ver.1.10 に基づく利用規約と併せてご確認ください。プラットフォームや他ショップ様の利用規約とも合わせて、各規約のうち、より厳しい条件が優先されます。',
       'gl.notice.contact': 'ご不明な点は',
       'gl.notice.discord': 'Discord（yak555 / 空飛ぶはいぱーつよつよ教）',
@@ -73,6 +74,7 @@
       'gl.sec.ai.creator': '🤖 はいぱーつよつよ自身の 生成AI 使用方針',
       'gl.sec.ai.user':    '📋 ユーザーの 生成AI 使用ルール',
       'gl.link.terms':     '利用規約も確認する',
+      'gl.intro':          'VRChat内では、VRChat自体の利用規約を守る限り、はいぱーつよつよのガイドラインを気にせず自由に楽しんでいただいて構いません。VRChatの外での利用については、はいぱーつよつよのブランドイメージを守るためにガイドラインを設けています。',
       'gl.jaonly':         null,
       /* guidelines — 対象コンテンツ */
       'gl.target.intro':   '本ガイドラインは、<strong>はいぱーつよつよ</strong> が制作・販売する以下のすべてのアセットに適用されます。',
@@ -157,6 +159,7 @@
       'nav.back':       '← Back to Top',
       'works.more':     'View more on Booth',
       'about.bio':      'Creating in VRChat!!! I\'m strong!! I\'m Hyper TuyoTuyo!!! I love making cute things!!!!!',
+      'about.concept':  'In VRChat, I create gimmicks, outfits, and avatars that let you relive the childhood wonder of seeing an ordinary stick as the mightiest sword — or wearing whatever cute thing you wanted without a second thought!',
       'about.profile':  'VRChat Profile',
       'license.title':  'Terms & Guidelines',
       'license.desc':   'VN3 License Ver.1.10 compliant (Version 2.0)',
@@ -195,7 +198,7 @@
       'terms.jaonly':      '⚠️ Headings are translated for reference. The legally binding text remains in Japanese.',
       /* guidelines page — section titles */
       'gl.h1':             'Asset Usage Guidelines',
-      'gl.dates':          'Established: May 5, 2024 / Last updated: May 15, 2026',
+      'gl.dates':          'Established: May 5, 2024 / Last updated: May 16, 2026',
       'gl.notice':         'Please read these guidelines together with the VN3 License Ver.1.10 terms. When multiple rules apply, the strictest condition takes precedence.',
       'gl.notice.contact': 'For questions, contact us on',
       'gl.notice.discord': 'Discord (yak555 / Flying Hyper TuyoTuyo Religion)',
@@ -211,6 +214,7 @@
       'gl.sec.ai.creator': '🤖 Creator\'s Generative AI Usage Policy',
       'gl.sec.ai.user':    '📋 User Generative AI Usage Rules',
       'gl.link.terms':     'Also check Terms of Use',
+      'gl.intro':          'Within VRChat, as long as you follow VRChat\'s own Terms of Service, feel free to enjoy yourself without worrying about Hyper TuyoTuyo\'s guidelines. For use outside of VRChat, we have established these guidelines to protect the Hyper TuyoTuyo brand image.',
       'gl.jaonly':         '⚠️ Section headings are translated for reference. Body text remains in Japanese.',
       /* guidelines — Target Content */
       'gl.target.intro':   'These guidelines apply to all assets created and sold by <strong>Hyper TuyoTuyo</strong>.',
