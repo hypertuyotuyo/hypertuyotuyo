@@ -74,7 +74,6 @@
       'gl.sec.ai.creator': '🤖 はいぱーつよつよ自身の 生成AI 使用方針',
       'gl.sec.ai.user':    '📋 ユーザーの 生成AI 使用ルール',
       'gl.link.terms':     '利用規約も確認する',
-      'gl.intro':          'VRChat内では、VRChat自体の利用規約を守る限り、はいぱーつよつよのガイドラインを気にせず自由に楽しんでいただいて構いません。VRChatの外での利用については、はいぱーつよつよのブランドイメージを守るためにガイドラインを設けています。',
       'gl.jaonly':         null,
       /* guidelines — 対象コンテンツ */
       'gl.target.intro':   '本ガイドラインは、<strong>はいぱーつよつよ</strong> が制作・販売する以下のすべてのアセットに適用されます。',
@@ -214,7 +213,6 @@
       'gl.sec.ai.creator': '🤖 Creator\'s Generative AI Usage Policy',
       'gl.sec.ai.user':    '📋 User Generative AI Usage Rules',
       'gl.link.terms':     'Also check Terms of Use',
-      'gl.intro':          'Within VRChat, as long as you follow VRChat\'s own Terms of Service, feel free to enjoy yourself without worrying about Hyper TuyoTuyo\'s guidelines. For use outside of VRChat, we have established these guidelines to protect the Hyper TuyoTuyo brand image.',
       'gl.jaonly':         '⚠️ Section headings are translated for reference. Body text remains in Japanese.',
       /* guidelines — Target Content */
       'gl.target.intro':   'These guidelines apply to all assets created and sold by <strong>Hyper TuyoTuyo</strong>.',
