@@ -307,7 +307,7 @@
       ['その他の宗教・政治活動',                'ng',      '❌ 禁止',       ''],
       ['調整・改変',                            'ok',      '✅ 許可',       'ウェイト微修正・テクスチャ変更など'],
       ['他モデルの改変への流用',                'ok',      '✅ 許可',       ''],
-      ['改変の外部委託',                        'partial', '⚠️ 条件付き',  'ユーザー間のみ許可'],
+      ['改変の外部委託',                        'partial', '⚠️ 条件付き',  '本アセット購入者同士のみ許可'],
       ['未改変での再配布',                      'ng',      '❌ 禁止',       ''],
       ['改変データの配布',                      'ng',      '❌ 禁止',       ''],
       ['映像・配信・放送',                      'ok',      '✅ 許可',       'YouTube等を含む'],
@@ -318,6 +318,7 @@
       ['二次創作（ファンアート等）',            'ok',      '✅ 許可',       '営利・非営利問わず配布可'],
       ['クレジット表記',                        'partial', '任意',           '不要だがあると嬉しい'],
       ['権利義務の譲渡',                        'ng',      '❌ 禁止',       ''],
+      ['AI学習・トレーニングデータへの利用',    'ng',      '❌ 禁止',       ''],
     ],
     en: [
       ['Personal use',                           'ok',      '✅ Permitted',   'Commercial & non-commercial'],
@@ -332,7 +333,7 @@
       ['Other religious / political activities', 'ng',      '❌ Prohibited',  ''],
       ['Adjustments / Modifications',            'ok',      '✅ Permitted',   'Weight tweaks, texture changes, etc.'],
       ['Use for modifying other models',         'ok',      '✅ Permitted',   ''],
-      ['Outsourcing modifications',              'partial', '⚠️ Conditional', 'Between users only'],
+      ['Outsourcing modifications',              'partial', '⚠️ Conditional', 'Between purchasers of this asset only'],
       ['Redistribution without modification',    'ng',      '❌ Prohibited',  ''],
       ['Distribution of modified data',          'ng',      '❌ Prohibited',  ''],
       ['Video / Streaming / Broadcasting',       'ok',      '✅ Permitted',   'Including YouTube, etc.'],
@@ -343,6 +344,7 @@
       ['Fan creation (fan art, etc.)',           'ok',      '✅ Permitted',   'Commercial & non-commercial distribution OK'],
       ['Credit attribution',                     'partial', 'Optional',       'Not required but appreciated'],
       ['Transfer of rights / obligations',       'ng',      '❌ Prohibited',  ''],
+      ['Use for AI / machine learning training', 'ng',      '❌ Prohibited',  ''],
     ],
   };
 
