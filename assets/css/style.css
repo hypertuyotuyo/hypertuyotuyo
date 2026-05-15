@@ -909,3 +909,99 @@ img { display: block; max-width: 100%; }
   .terms-body { padding: 1.5rem; }
   .terms-table { font-size: 0.77rem; }
 }
+
+/* ===== ACCORDION ===== */
+.accordion-item {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  background: var(--surface);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(12px);
+}
+.accordion-header {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: var(--font-jp);
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+  color: var(--text);
+  user-select: none;
+  transition: background var(--t);
+  border-radius: var(--r);
+}
+.accordion-header:hover { background: var(--surface2); }
+.accordion-header::after {
+  content: "▾";
+  margin-left: auto;
+  font-size: 1.1rem;
+  transition: transform 0.25s;
+  color: var(--text-muted);
+}
+.accordion-item.open .accordion-header::after { transform: rotate(-180deg); }
+
+/* Peek 5 rows when closed */
+.accordion-body {
+  max-height: 215px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 1.25rem 1.25rem;
+}
+.accordion-item.open .accordion-body { max-height: 3000px; }
+
+/* Fade overlay when closed */
+.accordion-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.55) 35%,
+    rgba(255,255,255,0.88) 65%,
+    rgba(255,255,255,0.97) 100%
+  );
+  pointer-events: none;
+  border-radius: 0 0 var(--r) var(--r);
+  transition: opacity 0.25s;
+}
+.accordion-item.open::after { opacity: 0; }
+/* Whole item clickable when closed */
+.accordion-item:not(.open) { cursor: pointer; }
+.accordion-item.open { cursor: default; }
+
+.accordion-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  line-height: 1.6;
+}
+.accordion-table th,
+.accordion-table td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.accordion-table th {
+  background: var(--surface2);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+.accordion-table tr:last-child td { border-bottom: none; }
+.accordion-table .ok     { color: #16a34a; font-weight: 700; white-space: nowrap; }
+.accordion-table .ng     { color: var(--red); font-weight: 700; white-space: nowrap; }
+.accordion-table .partial{ color: #d97706; font-weight: 700; white-space: nowrap; }
+.accordion-table .ask    { color: var(--blue); font-weight: 700; white-space: nowrap; }

@@ -127,3 +127,16 @@ document.querySelectorAll('.reveal').forEach(el => {
   });
   io.observe(el);
 });
+
+// ============================================
+// Accordion
+// ============================================
+document.querySelectorAll('.accordion-item').forEach(item => {
+  item.addEventListener('click', (e) => {
+    if (!item.classList.contains('open')) {
+      item.classList.add('open');
+    } else if (e.target.closest('.accordion-header')) {
+      item.classList.remove('open');
+    }
+  });
+});
