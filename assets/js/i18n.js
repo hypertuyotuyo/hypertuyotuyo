@@ -59,7 +59,7 @@
       /* guidelines page — section titles */
       'gl.h1':             'アセット使用ガイドライン',
       'gl.dates':          '制定日：2024年5月5日　／　最終更新：2026年5月16日',
-      'gl.notice':         '本ガイドラインは VN3ライセンス Ver.1.10 に基づく利用規約と併せてご確認ください。プラットフォームや他ショップ様の利用規約とも合わせて、各規約のうち、より厳しい条件が優先されます。',
+      'gl.notice':         '利用規約と合わせてご確認ください。他のショップ様のアバターや衣装と合わせて導入する際にも、各規約のうち、より厳しい条件が優先されます。',
       'gl.notice.contact': 'ご不明な点は',
       'gl.notice.discord': 'Discord（yak555 / 空飛ぶはいぱーつよつよ教）',
       'gl.notice.end':     'までお問い合わせください。',
@@ -198,7 +198,7 @@
       /* guidelines page — section titles */
       'gl.h1':             'Asset Usage Guidelines',
       'gl.dates':          'Established: May 5, 2024 / Last updated: May 16, 2026',
-      'gl.notice':         'Please read these guidelines together with the VN3 License Ver.1.10 terms. When multiple rules apply, the strictest condition takes precedence.',
+      'gl.notice':         'Please read these guidelines together with our Terms of Use. This also applies when using assets alongside avatars or outfits from other shops — the strictest condition among all applicable rules takes precedence.',
       'gl.notice.contact': 'For questions, contact us on',
       'gl.notice.discord': 'Discord (yak555 / Flying Hyper TuyoTuyo Religion)',
       'gl.notice.end':     '.',
