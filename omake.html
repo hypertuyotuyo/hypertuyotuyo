@@ -118,6 +118,48 @@
       margin-bottom: 0.15rem;
       letter-spacing: 0.03em;
     }
+    .quote-block {
+      border-left: 3px solid var(--border);
+      padding: 0.9rem 1.2rem;
+      margin: 0.75rem 0;
+      background: var(--bg);
+      border-radius: 0 var(--r) var(--r) 0;
+    }
+    .quote-block p {
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: var(--text);
+      margin: 0;
+      font-weight: 700;
+    }
+    .sasiseoso-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .sasiseoso-table tr {
+      border-bottom: 1px solid var(--border);
+    }
+    .sasiseoso-table tr:last-child {
+      border-bottom: none;
+    }
+    .sasiseoso-table td {
+      padding: 0.85rem 0.5rem;
+      line-height: 1.75;
+      vertical-align: top;
+    }
+    .sasiseoso-table td:first-child {
+      font-size: 1.5rem;
+      width: 2.5rem;
+      text-align: center;
+      padding-right: 0.75rem;
+    }
+    .sasiseoso-table td:nth-child(2) {
+      font-weight: 900;
+      font-size: 1.05rem;
+      width: 2rem;
+      color: var(--blue);
+    }
     .stamp {
       text-align: center;
       margin: 2.5rem 0 1rem;
@@ -137,6 +179,13 @@
       margin: 0.5rem;
       transform: rotate(-3deg);
       opacity: 0.75;
+    }
+    .credit-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2.5rem;
+      line-height: 2;
     }
   </style>
 </head>
@@ -181,7 +230,7 @@
       </p>
     </div>
 
-    <!-- 教典本文 -->
+    <!-- 第一章：性 -->
     <div class="kyoten-section">
       <p class="kyoten-title" style="--bar-color:var(--blue)">📜 教典 第一章：アバターの性に関する掟</p>
       <ul class="kyoten-list">
@@ -190,7 +239,7 @@
           <span class="rule-body">
             <span class="article-num">第一条</span>
             性別不詳のアバターはお得なので<strong>男の子</strong>とする。
-            <span class="rule-note">理由：男の子だと思って見ていた方がお得感がある。異論は認める（が、教義である）。</span>
+            <span class="rule-note">男の子と女の子の違いは、生えてるか生えてないかの些細なものである。お得感の差は大きい。</span>
           </span>
         </li>
         <li style="--item-color:var(--yellow)">
@@ -204,7 +253,7 @@
       </ul>
     </div>
 
-    <!-- 禁忌 -->
+    <!-- 第二章：禁忌 -->
     <div class="kyoten-section">
       <p class="kyoten-title" style="--bar-color:var(--red)">🚫 教典 第二章：禁忌と戒律</p>
       <ul class="kyoten-list">
@@ -213,7 +262,7 @@
           <span class="rule-body">
             <span class="article-num">第三条</span>
             きゅうりをアバターに持たせては<strong>ならない</strong>。
-            <span class="rule-note">理由は言わなくてもわかる。わからない人はそのままでいてください。</span>
+            <span class="rule-note">理由は乃々テンシアのみぞ知る。はいぱーつよつよはよくわかってないです。</span>
           </span>
         </li>
         <li style="--item-color:var(--orange)">
@@ -221,13 +270,13 @@
           <span class="rule-body">
             <span class="article-num">第四条</span>
             センシティブなネタは<strong>小学生低学年男子が考えつくもの</strong>までとする。
-            <span class="rule-note">うんちとかおならとかのレベル。それ以上はわりばしガンの射程圏内に入ります。</span>
+            <span class="rule-note">えっちなことはいくないと思います！！「ちんちんついてるついてないすごい！！」くらいのえっちさでいこう。それ以上はわりばしガンの射程圏内に入ります。</span>
           </span>
         </li>
       </ul>
     </div>
 
-    <!-- 制裁 -->
+    <!-- 第三章：邪教徒 -->
     <div class="kyoten-section">
       <p class="kyoten-title" style="--bar-color:var(--green)">🔫 教典 第三章：邪教徒への対応</p>
       <ul class="kyoten-list">
@@ -240,6 +289,55 @@
           </span>
         </li>
       </ul>
+    </div>
+
+    <!-- 格言集 -->
+    <div class="kyoten-section">
+      <p class="kyoten-title" style="--bar-color:var(--blue)">💬 教典 第四章：空飛ぶはいぱーつよつよ教の格言</p>
+
+      <div class="quote-block">
+        <p>「できない」は嘘つきの言葉。君もやればできる。さあ、Blenderを開こう。</p>
+      </div>
+
+      <div class="quote-block">
+        <p>自らを強いと信じた瞬間、人は止まる。<br>自らを弱しと疑い続ける者にのみ、明日は開かれる。</p>
+      </div>
+
+      <div class="quote-block">
+        <p>AIには愛がない。だからこそ足りない愛を注ぎ込もう。</p>
+      </div>
+    </div>
+
+    <!-- さしすせそ -->
+    <div class="kyoten-section">
+      <p class="kyoten-title" style="--bar-color:var(--yellow)">🔤 空飛ぶはいぱーつよつよ教のさしすせそ</p>
+      <table class="sasiseoso-table">
+        <tr>
+          <td>🔥</td>
+          <td>さ</td>
+          <td>更なる向上を目指せ</td>
+        </tr>
+        <tr>
+          <td>💀</td>
+          <td>し</td>
+          <td>死ぬまで知識を得よ</td>
+        </tr>
+        <tr>
+          <td>🙅</td>
+          <td>す</td>
+          <td>「素晴らしい」は甘えの言葉</td>
+        </tr>
+        <tr>
+          <td>🩸</td>
+          <td>せ</td>
+          <td>センスは血が滲む努力で得るもの</td>
+        </tr>
+        <tr>
+          <td>😑</td>
+          <td>そ</td>
+          <td>そんなわけないでしょ</td>
+        </tr>
+      </table>
     </div>
 
     <!-- 後記 -->
@@ -261,6 +359,11 @@
       <a href="https://hyper-tuyotuyo.com/guidelines.html" class="btn btn-secondary" style="margin-right:0.75rem">本物のガイドラインを読む</a>
       <a href="https://hyper-tuyotuyo.com/" class="btn btn-secondary">← トップへ戻る</a>
     </div>
+
+    <p class="credit-note">
+      このページのノリ：はいぱーつよつよ　／　文章：AIさん<br>
+      AIには愛がない。だからこそ足りない愛を注ぎ込もう。
+    </p>
 
   </div>
 </main>
