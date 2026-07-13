@@ -58,7 +58,7 @@
       'terms.jaonly':      null,
       /* guidelines page — section titles */
       'gl.h1':             'アセット使用ガイドライン',
-      'gl.dates':          '制定日：2024年5月5日　／　最終更新：2026年5月16日',
+      'gl.dates':          '制定日：2024年5月5日　／　最終更新：2026年7月14日',
       'gl.notice':         '利用規約と合わせてご確認ください。他のショップ様のアバターや衣装と合わせて導入する際にも、各規約のうち、より厳しい条件が優先されます。',
       'gl.notice.contact': 'ご不明な点は',
       'gl.notice.discord': 'Discord（yak555 / 空飛ぶはいぱーつよつよ教）',
@@ -197,7 +197,7 @@
       'terms.jaonly':      '⚠️ Headings are translated for reference. The legally binding text remains in Japanese.',
       /* guidelines page — section titles */
       'gl.h1':             'Asset Usage Guidelines',
-      'gl.dates':          'Established: May 5, 2024 / Last updated: May 16, 2026',
+      'gl.dates':          'Established: May 5, 2024 / Last updated: July 14, 2026',
       'gl.notice':         'Please read these guidelines together with our Terms of Use. This also applies when using assets alongside avatars or outfits from other shops — the strictest condition among all applicable rules takes precedence.',
       'gl.notice.contact': 'For questions, contact us on',
       'gl.notice.discord': 'Discord (yak555 / Flying Hyper TuyoTuyo Religion)',
