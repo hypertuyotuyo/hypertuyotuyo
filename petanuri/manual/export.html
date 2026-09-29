@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>書き出し | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="PNG・PSD・マテリアル・書き出しのにじみ（パディング）">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/export">
+  <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title">ぺたぬり3D</a>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">作例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="マニュアルの目次">
+    <p class="mn-side-title">マニュアル</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面とパネル</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export" aria-current="page">書き出し</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 書き出し</p>
+    <h1 class="mn-h1">書き出し</h1>
+    <p class="mn-intro">仕上がったテクスチャを、画像やマテリアルとして書き出します。</p>
+    <p class="mn-proof">画面・名前・操作は変わることがあります。画像はサンプルのモデルを使った画面です。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#png">PNG で書き出す</a></li><li><a href="#psd">PSD で書き出す・読み込む</a></li><li><a href="#pad">書き出しのにじみ（パディング）</a></li><li><a href="#mat">マテリアルを書き出す</a></li></ul></div>
+    <section class="mn-sec" id="png"><h2>PNG で書き出す</h2><ol class="mn-steps"><li>ファイル → PNG 書き出し を選びます。</li><li>選んでいるセット、または全部のセットを書き出せます。ファイル名は &lt;マテリアル名&gt;.png です。</li></ol><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="248" height="709" alt="ファイルメニュー" loading="lazy"><figcaption>ファイルメニュー</figcaption></figure></section><section class="mn-sec" id="psd"><h2>PSD で書き出す・読み込む</h2><ul class="mn-list"><li>ファイル → PSD 書き出し で、レイヤー・表示・不透明度・合成モード・クリッピング・透明度保護・フォルダ・レイヤーマスク・調整レイヤーを保ったまま書き出します。<span class="tier std">Standard</span></li><li>PSD を読み込むときは、ウィンドウにドロップすると、ファイル名が同じマテリアルへ入ります。<span class="tier std">Standard</span></li><li>アバターに付いてくる改変用 PSD を読み込んで、続きから描くこともできます。<span class="tier std">Standard</span></li></ul><div class="mn-tip warn">調整レイヤーの式は、ほかのアプリで開くと少し違う見た目になることがあります。</div></section><section class="mn-sec" id="pad"><h2>書き出しのにじみ（パディング）</h2><p>UV の島の外へ、縁の色を広げて書き出します。広げないと、縮小やミップマップで UV の継ぎ目（シーム）に線が見えることがあります。</p><ul class="mn-list"><li>なし・4・8（既定）・16・32 px・島の外を全部埋める から選べます（ファイル → 書き出しのにじみ…・設定・マテリアルの書き出しの窓）。</li><li>PNG・PSD の合成画像・マテリアルの画像に効きます。PSD のレイヤーそのものは描いたままです。</li></ul></section><section class="mn-sec" id="mat"><h2>マテリアルを書き出す <span class="tier pro">Pro</span></h2><p>lilToon 用のマテリアルを .unitypackage で書き出せます。くわしくは <a href="/petanuri/manual/material#export">仕上がりと lilToon のマテリアル</a> へ。</p></section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/pose"><small>← 前へ</small>ポーズ・ブレンドシェイプ・頂点グループ</a><a class="next" href="/petanuri/manual/keys"><small>次へ →</small>ショートカットとペン操作</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

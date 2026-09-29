@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UV の区画と表示範囲 | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="UV を並べて直接塗る・表示範囲・メッシュの線">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/uv">
+  <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title">ぺたぬり3D</a>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">作例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="マニュアルの目次">
+    <p class="mn-side-title">マニュアル</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv" aria-current="page">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面とパネル</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ UV の区画と表示範囲</p>
+    <h1 class="mn-h1">UV の区画と表示範囲</h1>
+    <p class="mn-intro">3D ビューのとなりに UV（テクスチャの展開図）を並べて、どちらからでも塗れます。</p>
+    <p class="mn-proof">画面・名前・操作は変わることがあります。画像はサンプルのモデルを使った画面です。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#uv">UV の区画を出す</a></li><li><a href="#isolate">表示範囲（選んだ所だけ出して塗る）</a></li><li><a href="#wire">メッシュの線・境界線</a></li></ul></div>
+    <section class="mn-sec" id="uv"><h2>UV の区画を出す</h2><ol class="mn-steps"><li><kbd>U</kbd> キー（表示 → UV）で、3D の隣に UV の区画が出ます。境目のドラッグで広さを変えられます。</li><li>出るのは、選んでいるテクスチャセットの UV です（左上に名前）。</li><li>UV の区画の上でも、ペン・筆・消しゴム・塗りつぶし・グラデーション・スポイト・ぼかし・指先などが使えます。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D ビューのとなりに UV の区画を並べた画面" loading="lazy"><figcaption>3D と UV を並べたところ</figcaption></figure><ul class="mn-list"><li>UV の区画を触っている間は、3D ビューでブラシの円に入る面が<strong>赤く光ります</strong>。3D を触っている間は、UV の区画に塗る位置が赤い点で出ます。</li><li>ホイールで拡大縮小、中ドラッグ・<kbd>Space</kbd>＋ドラッグで移動、「全体」で全体表示。「線」で UV の線、「島の縁」で島の輪郭。</li><li>見出しの ⟲・⟳ で 15° ずつ回せます（回したまま塗れます）。</li></ul></section><section class="mn-sec" id="isolate"><h2>表示範囲（選んだ所だけ出して塗る）</h2><ol class="mn-steps"><li>UV の区画や 3D で、島・面を選びます（島で選択・面で選択・投げ縄など）。</li><li>3D ビューの左上の表示範囲のアイコン・<kbd>Shift</kbd>＋<kbd>H</kbd>・UV の見出しの「選んだ所だけ表示」を押します。</li><li>選んだ所だけが 3D に出ます。<kbd>Alt</kbd>＋<kbd>H</kbd> で全部表示に戻ります。</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="UV で選んだ所だけを 3D に出したところ" loading="lazy"><figcaption>UV で選んだ所だけを 3D に表示</figcaption></figure></div><div class="mn-tip">隠した所は奥行きにも入らないので、服の下の体・髪の内側など、奥の面が見えて塗れます。隠した所は塗られません。</div></section><section class="mn-sec" id="wire"><h2>メッシュの線・境界線</h2><ul class="mn-list"><li>3D ビューの左上のアイコン（表示 → メッシュの線／境界線）で、ポリゴンの線と UV の継ぎ目を出せます。</li><li>アイコンの下の ▼ で、濃さ・色（青・黒・白）・裏側の線も出すかを選べます。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="メッシュの線の設定" loading="lazy"><figcaption>メッシュの線の ▼ の設定</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="599" height="720" alt="見えている面の線だけ" loading="lazy"><figcaption>見えている面だけ</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="599" height="720" alt="裏側の線も出したところ" loading="lazy"><figcaption>裏側・奥の線も</figcaption></figure></div></section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/layers"><small>← 前へ</small>レイヤー</a><a class="next" href="/petanuri/manual/screen"><small>次へ →</small>画面とパネル</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

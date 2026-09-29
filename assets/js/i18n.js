@@ -13,6 +13,11 @@
       'nav.back':       '← トップへ戻る',
       /* index — works */
       'works.more':     'Boothでもっと見る',
+      /* index — hero（2026-09-29） */
+      'hero.catch':     '木の棒が、<br>最強の剣だったころ。',
+      'hero.lead':      'あのころの気持ちでもう一度遊べる、VRChat のアバター・衣装・ギミックを作っています。',
+      'hero.shop':      'BOOTH のショップ',
+      'hero.works':     '作品を見る',
       /* index — about */
       'about.bio':      'VRChatで創作活動しています！！！つよいです！！はいぱーつよつよです！！！可愛いのつくるのだいすきです！！！！！',
       'about.concept':  'VRChatという仮想空間の中で、子どもの頃ただの木の棒が最強の剣に見えていたあの童心や、躊躇なく着ていたあの可愛い衣装を、もう一度体験できるようなギミックや衣装・アバターを作っています！',
@@ -20,8 +25,8 @@
       /* index — license section */
       'license.title':  '利用規約・使用ガイドライン',
       'license.desc':   'VN3ライセンス Ver.1.10 準拠（バージョン 2.0）',
-      'acc.terms':      '📋 許諾範囲 簡易一覧',
-      'acc.guidelines': '📋 使用ガイドライン 簡易一覧',
+      'acc.terms':      '許諾範囲の早見表',
+      'acc.guidelines': '使用ガイドラインの早見表',
       'btn.terms':      '利用規約 全文を読む',
       'btn.guidelines': '使用ガイドラインを読む',
       /* index — contact */
@@ -156,13 +161,17 @@
       'nav.shop':       'Shop',
       'nav.back':       '← Back to Top',
       'works.more':     'View more on Booth',
+      'hero.catch':     'Back when a stick<br>was the strongest sword.',
+      'hero.lead':      'We make VRChat avatars, outfits and gimmicks that let you play like that again.',
+      'hero.shop':      'Shop on BOOTH',
+      'hero.works':     'See our works',
       'about.bio':      'Creating in VRChat!!! I\'m strong!! I\'m Hyper TuyoTuyo!!! I love making cute things!!!!!',
       'about.concept':  'In VRChat, I create gimmicks, outfits, and avatars that let you relive the childhood wonder of seeing an ordinary stick as the mightiest sword — or wearing whatever cute thing you wanted without a second thought!',
       'about.profile':  'VRChat Profile',
       'license.title':  'Terms & Guidelines',
       'license.desc':   'VN3 License Ver.1.10 compliant (Version 2.0)',
-      'acc.terms':      '📋 License Summary',
-      'acc.guidelines': '📋 Guidelines Summary',
+      'acc.terms':      'License at a glance',
+      'acc.guidelines': 'Guidelines at a glance',
       'btn.terms':      'Read Full Terms',
       'btn.guidelines': 'Read Guidelines',
       'contact.title':  'Links & Contact',

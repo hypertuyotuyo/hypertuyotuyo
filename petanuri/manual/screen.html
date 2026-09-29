@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画面とパネル | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="パネルの配置・タブ・折りたたみ・アイコンの帯・四隅のアイコン・3D ナビ・右クリック・設定">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/screen">
+  <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title">ぺたぬり3D</a>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">作例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="マニュアルの目次">
+    <p class="mn-side-title">マニュアル</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen" aria-current="page">画面とパネル</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 画面とパネル</p>
+    <h1 class="mn-h1">画面とパネル</h1>
+    <p class="mn-intro">パネルは好きな所へ動かせます。配置は次の起動でも戻ります。</p>
+    <p class="mn-proof">画面・名前・操作は変わることがあります。画像はサンプルのモデルを使った画面です。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#dock">パネルを動かす</a></li><li><a href="#tabs">タブ・折りたたみ・アイコンの帯</a></li><li><a href="#hud">3D ビューの四隅</a></li><li><a href="#ctx">右クリックのメニュー</a></li><li><a href="#settings">設定（ヘルプ → 設定）</a></li></ul></div>
+    <section class="mn-sec" id="dock"><h2>パネルを動かす</h2><ul class="mn-list"><li>パネルの見出しをドラッグして、離した所で決まります。</li><li>列・段の中ほど：その列・段に差し込む。列・段の端：隣に新しい列・段を作る。3D ビューの端：その側に新しい列・段。それ以外：浮いたウィンドウ。</li><li>境目のドラッグで幅・高さを変えます（ダブルクリックで元に戻す）。</li><li>表示メニュー → ウィンドウの配置を元に戻す で、はじめの配置に戻ります。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-dock.webp" width="1400" height="840" alt="パネルを左右 2 列・下に段で並べた画面" loading="lazy"><figcaption>左右に 2 列、下に段を置いた例</figcaption></figure></section><section class="mn-sec" id="tabs"><h2>タブ・折りたたみ・アイコンの帯</h2><ul class="mn-list"><li><strong>折りたたむ</strong>：見出しをクリックすると見出しだけになります。使わないパネルを畳むと、ほかが広く使えます。</li><li><strong>タブにする</strong>：見出しを、別のパネルの見出しの上へドラッグします（「ここに重ねるとタブにする」と出たら離す）。タブを外へドラッグすると切り離せます。</li><li><strong>アイコンの帯</strong>：列の上の「&lt;」「&gt;」で、列がアイコンだけの細い帯になります。アイコンを押すと、そのパネルだけが横に出ます。</li><li><strong>ツールバー</strong>：上のつまみで浮かせて、横・縦を切り替えられます。</li></ul></section><section class="mn-sec" id="hud"><h2>3D ビューの四隅</h2><ul class="mn-list"><li><strong>左上</strong>：メッシュの線・表示の形式（塗った色のまま・2 値トゥーン・陰影・仕上がり）・片面／両面・対称で描く X Y Z・表示範囲。</li><li><strong>上の真ん中</strong>：ペイント／ポーズの切り替え。</li><li><strong>右上</strong>：正面・背面・右・左・上・下・透視／平行・全体表示。</li><li><strong>右下</strong>：3D ナビ・別の角度の小窓。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="998" height="56" alt="3D ビューの上のアイコン" loading="lazy"><figcaption>上の列のアイコン</figcaption></figure><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo.webp" width="234" height="218" alt="3D ナビ" loading="lazy"><figcaption>3D ナビ（軸の丸で視点・球で回転・虫めがねでズーム・手のひらで移動）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="998" height="900" alt="陰影表示と別の角度の小窓" loading="lazy"><figcaption>陰影の表示と、右下の「別の角度の小窓」</figcaption></figure></div></section><section class="mn-sec" id="ctx"><h2>右クリックのメニュー</h2><p>押した所に合ったメニューが出ます（3D ビュー・UV の区画・レイヤー・テクスチャセット・サブツール・カラーセット など）。3D ビューでは、ここの色を取る・このセットを選ぶ・この島だけ表示・視点・対称で描く などがすぐ選べます。</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="506" height="493" alt="3D ビューの右クリックメニュー" loading="lazy"><figcaption>3D ビューの右クリックのメニュー</figcaption></figure></section><section class="mn-sec" id="settings"><h2>設定（ヘルプ → 設定）</h2><ul class="mn-list"><li>操作：<kbd>Space</kbd>＋ドラッグの割り当て・右クリック（マウス）をメニューにするかポップアップパレットにするか。</li><li><strong>ペン：筆圧の効き方</strong>（やわらかい＝軽い力でも太く／かたい＝強く押したときだけ）。右の板をペンで押して試せます。</li><li>画面の色：ライト（既定）／ダーク。</li><li>キー割り当て：＋ を押してからキーを押すと割り当て。× で外す。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="820" height="560" alt="設定の画面" loading="lazy"><figcaption>設定</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="ダークモードの画面" loading="lazy"><figcaption>ダークモード</figcaption></figure></div></section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/uv"><small>← 前へ</small>UV の区画と表示範囲</a><a class="next" href="/petanuri/manual/sets"><small>次へ →</small>テクスチャセット</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポーズ・ブレンドシェイプ・頂点グループ | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="ポーズを付けて塗る・表情の形で塗る・ボーンの重みから範囲">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/pose">
+  <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title">ぺたぬり3D</a>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">作例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="マニュアルの目次">
+    <p class="mn-side-title">マニュアル</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面とパネル</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose" aria-current="page">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ ポーズ・ブレンドシェイプ・頂点グループ</p>
+    <h1 class="mn-h1">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></h1>
+    <p class="mn-intro">3D モデルのボーン・ブレンドシェイプ・頂点グループを使って、T ポーズのままでは塗りにくい所を塗ります。</p>
+    <p class="mn-proof">画面・名前・操作は変わることがあります。画像はサンプルのモデルを使った画面です。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#pose">ポーズモード</a></li><li><a href="#blend">ブレンドシェイプ</a></li><li><a href="#vgroup">頂点グループから範囲を作る</a></li></ul></div>
+    <section class="mn-sec" id="pose"><h2>ポーズモード</h2><ol class="mn-steps"><li>3D ビューの上の真ん中の「ポーズ」を押します（ポーズモードの間は描きません）。</li><li>関節の点・メッシュ・右のパネル「ポーズ」の一覧で、ボーンを選びます。</li><li>出てきたつまみで回します（上の列で 回転／移動・つまみの向き を切り替え）。パネルで角度を数字で打ち込むこともできます。</li><li>「ペイント」に戻ると、そのポーズの形で塗れます（サンプルのモデルで 0.4 秒ほど）。</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/pose-mode.webp" width="998" height="900" alt="ポーズモードで腕を回しているところ" loading="lazy"><figcaption>ポーズモード</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/pose-paint.webp" width="640" height="801" alt="腕を下ろしたままペイントに戻ったところ" loading="lazy"><figcaption>そのまま塗れます</figcaption></figure></div><div class="mn-tip">わきの下・腕の内側など、T ポーズでは描きにくい所にべんりです。「戻す」「全部戻す」で元の姿勢に。ポーズは作業ファイルに保存されます。</div></section><section class="mn-sec" id="blend"><h2>ブレンドシェイプ</h2><ul class="mn-list"><li>右のパネル「ブレンドシェイプ」に、モデルのブレンドシェイプ（シェイプキー）がメッシュごとに並びます。</li><li>つまみ（0〜100）で形が変わり、その形のまま表示・塗り・当たり判定が働きます。</li><li>絞り込み・0 以外だけ・全部 0 に。値は作業ファイルに保存されます。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshapes.webp" width="299" height="420" alt="ブレンドシェイプのパネル" loading="lazy"><figcaption>パネル「ブレンドシェイプ」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/blendshape.webp" width="599" height="810" alt="表情のブレンドシェイプを動かした顔" loading="lazy"><figcaption>表情を変えたまま描き込めます</figcaption></figure></div></section><section class="mn-sec" id="vgroup"><h2>頂点グループから範囲を作る</h2><ol class="mn-steps"><li>右のパネル「頂点グループ」で、グループ（ボーンの重み）にチェックを入れます（いくつでも）。</li><li>「選択範囲にする」「足す」「引く」「この範囲だけ表示」を押します。</li><li>塗る範囲がそこだけになります。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups.webp" width="299" height="470" alt="頂点グループのパネル" loading="lazy"><figcaption>パネル「頂点グループ」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups-3d.webp" width="599" height="900" alt="胴の頂点グループから作った選択範囲" loading="lazy"><figcaption>胴の重みから作った範囲</figcaption></figure></div><div class="mn-tip">「重みの強さで」を入れると、重みがそのまま塗る強さになって、境目がなめらかになります。</div></section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/ao"><small>← 前へ</small>AO を焼く</a><a class="next" href="/petanuri/manual/export"><small>次へ →</small>書き出し</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テクスチャセット | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="テクスチャセットを選ぶ・解像度・メモリの節約・行き場のないセット">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/sets">
+  <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title">ぺたぬり3D</a>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">作例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="マニュアルの目次">
+    <p class="mn-side-title">マニュアル</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面とパネル</a></li><li><a href="/petanuri/manual/sets" aria-current="page">テクスチャセット</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ テクスチャセット</p>
+    <h1 class="mn-h1">テクスチャセット</h1>
+    <p class="mn-intro">マテリアルごとに「テクスチャセット」ができます。セットごとにレイヤーと解像度を持っています。</p>
+    <p class="mn-proof">画面・名前・操作は変わることがあります。画像はサンプルのモデルを使った画面です。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#choose">テクスチャセットを選ぶ</a></li><li><a href="#sleep">メモリの節約</a></li><li><a href="#orphan">行き場のないセット（! の印）</a></li></ul></div>
+    <section class="mn-sec" id="choose"><h2>テクスチャセットを選ぶ</h2><ul class="mn-list"><li>描けるのは選んでいるセットだけです。パネルで行を押す・モデルの上で <kbd>Alt</kbd>＋右クリック・右クリックの「このセットを選ぶ」で選びます。</li><li>チェックでセットの表示／非表示、右の欄で解像度（512〜4096）を切り替えます。</li><li>元に戻す・やり直しは、セットを選び直しても続けて使えます。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="299" height="327" alt="テクスチャセットのパネル" loading="lazy"><figcaption>テクスチャセットのパネル（GPU メモリの見積もりつき）</figcaption></figure><div class="mn-tip warn">解像度 4096 は Standard からの予定です。</div></section><section class="mn-sec" id="sleep"><h2>メモリの節約</h2><ul class="mn-list"><li>選んでいないセットは、見た目はそのままで GPU のメモリを空けて休ませます。</li><li>選び直すと、2048 で 0.2 秒ほど、4096 で 0.5〜1.5 秒ほどで描けるようになります。</li><li>保存・書き出し・AO・全セットに掛けるフィルターは、休んでいるセットにもそのまま効きます。</li></ul></section><section class="mn-sec" id="orphan"><h2>行き場のないセット（! の印）</h2><p><a href="/petanuri/manual/start#reload">モデルを読み直した</a>とき、新しいモデルに無いマテリアルのセットは消さずに <strong>!</strong> を付けて残します。</p><ol class="mn-steps"><li>! の付いたセットを押します。</li><li>移すレイヤー（はじめは全部）と、移す先のセットを選んで「移す」。</li><li>移す先のレイヤーの一番上に、同じ並びで入ります。「元のセットにも残す」なら写すだけです。</li></ol><div class="mn-tip">! のセットは 3D には出ず、描けません。書き出しと AO にも入りません。「このセットを消す…」で消せます。</div></section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/screen"><small>← 前へ</small>画面とパネル</a><a class="next" href="/petanuri/manual/material"><small>次へ →</small>仕上がりと lilToon のマテリアル</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

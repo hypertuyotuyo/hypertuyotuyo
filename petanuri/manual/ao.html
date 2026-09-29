@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AO を焼く | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="光が届きにくい所の暗さを、形から計算してレイヤーに">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/ao">
+  <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title">ぺたぬり3D</a>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">作例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="マニュアルの目次">
+    <p class="mn-side-title">マニュアル</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面とパネル</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao" aria-current="page">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ AO を焼く</p>
+    <h1 class="mn-h1">AO を焼く <span class="tier pro">Pro</span></h1>
+    <p class="mn-intro">わきの下・あごの下・前髪の下・指の間・服の重なりなど、周りの物に遮られて暗くなる所を、テクスチャセットごとに計算します。</p>
+    <p class="mn-proof">画面・名前・操作は変わることがあります。画像はサンプルのモデルを使った画面です。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#bake">焼き方</a></li><li><a href="#options">べんりな設定</a></li></ul></div>
+    <section class="mn-sec" id="bake"><h2>焼き方</h2><ol class="mn-steps"><li>レイヤー → AO を焼く… を開きます。</li><li>表で、焼くセット・影を落とすセットを選びます（はじめは見えているセットが入っています）。</li><li>品質（レイの数・テクセルの中）と、影の届く距離（近く 3cm・ふつう 8cm・広く 20cm）を選びます。</li><li>「焼く」を押します。各セットの一番上に、乗算のレイヤー「AO」が足されます。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="AO を焼くの窓" loading="lazy"><figcaption>AO を焼くの窓</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="599" height="810" alt="AO を焼いた後" loading="lazy"><figcaption>焼いた後（腕を下ろしたポーズのまま焼いています）</figcaption></figure></div><div class="mn-tip">今のポーズ・ブレンドシェイプの形のまま焼きます。焼いている間も 3D ビューは動かせます。テクスチャセット 6 つ・2048 のサンプルのモデルで 30 秒ほどでした（開発者の PC・GPU で計算）。</div></section><section class="mn-sec" id="options"><h2>べんりな設定</h2><ul class="mn-list"><li>「ほかの影を受けない」：服の下の体など、覆われて真っ黒になるときに。</li><li>「モデルの高さに合わせる」：距離をモデルの大きさに比例させます。</li><li>仕上がりの強さ・コントラストで濃さを調整できます。</li><li>カットアウト・半透明のマテリアルは、絵の抜けた所から光が通ります（髪の毛先など）。</li><li>書き出し：lilToon の「影 AO」にも書けます。PNG（&lt;セット名&gt;_AO.png）でも保存できます。</li></ul><div class="mn-tip">元に戻す 1 回で、全部のセットの分が戻ります。</div></section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/material"><small>← 前へ</small>仕上がりと lilToon のマテリアル</a><a class="next" href="/petanuri/manual/pose"><small>次へ →</small>ポーズ・ブレンドシェイプ・頂点グループ</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>
