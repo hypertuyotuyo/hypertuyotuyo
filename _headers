@@ -1,6 +1,0 @@
-# ぺたぬり3D のページは URL を知っている人だけに見せる（トップからリンクしない・検索に出さない）。
-# ページの meta robots に加えて、画像・CSS などにも検索よけを付ける
-/petanuri
-  X-Robots-Tag: noindex, nofollow
-/petanuri/*
-  X-Robots-Tag: noindex, nofollow

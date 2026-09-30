@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ぺたぬり3D ～アニメ塗り向け 3D ペイント～ | はいぱーつよつよ</title>
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="アニメ・イラスト風特化3Dペイントツール「ぺたぬり3D」。3D モデルに直接塗れて、UV を探さずに描けます。仕上がったテクスチャは PNG・PSD で書き出せます。">
+  <meta name="description" content="アニメ・イラスト風特化3Dペイントツール「ぺたぬり3D」（開発中・近日リリース）。3D モデルに直接塗れて、UV を探さずに描けます。仕上がったテクスチャは PNG・PSD で書き出せます。無料の Lite 版もあります（予定）。">
   <meta property="og:title" content="ぺたぬり3D ～アニメ塗り向け 3D ペイント～">
-  <meta property="og:description" content="アニメ・イラスト風特化3Dペイントツール。3D モデルに直接塗れて、UV を探さずに描けます。">
+  <meta property="og:description" content="開発中・近日リリース。3D モデルに直接塗れる、アニメ・イラスト風特化の 3D ペイントツール。UV を探さずに描けます。無料版あり（予定）。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri">
-  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/app-toon-full.webp">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta name="twitter:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri">
   <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,29 +45,25 @@
 <section class="pn-hero" aria-labelledby="pn-hero-title">
   <div class="pn-wrap pn-hero-grid">
     <div>
+      <p class="pn-status"><span class="dot" aria-hidden="true"></span>開発中・近日リリース</p>
       <p class="pn-eyebrow">アニメ・イラスト風特化3Dペイントツール！</p>
       <h1 id="pn-hero-title" class="pn-logo-word">ぺたぬり<span class="n3d">3D</span></h1>
       <span class="pn-logo-sub">～アニメ塗り向け 3D ペイント～</span>
       <p class="pn-hero-lead">3D モデルに直接塗れるペイントツールです。<br>UV を探さずに、見たままの場所に描けます。<br>仕上がったテクスチャは PNG・PSD で書き出せます。</p>
       <div class="pn-btns">
         <a href="#features" class="btn pn-btn pn-btn-main">機能を見る</a>
-        <a href="/petanuri/manual" class="btn pn-btn pn-btn-sub">マニュアル</a>
+        <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener" class="btn pn-btn pn-btn-sub">X で最新情報を見る</a>
       </div>
       <dl class="pn-hero-meta">
         <div><b>Windows</b> 10 / 11</div>
         <div><b>FBX</b>・glTF・VRM・OBJ ほか</div>
         <div><b>Lite</b> 無料（予定）</div>
       </dl>
+      <p class="pn-temp-note">※ 掲載している画像は、すべて開発中の仮のものです。あとで差し替えます。</p>
     </div>
-    <figure class="pn-hero-paint">
-      <div class="pn-compare" data-auto>
-        <img src="/petanuri/assets/img/before-plain.webp" width="599" height="864" alt="描く前のサンプルのモデル（顔と体はもとのテクスチャ）" fetchpriority="high">
-        <div class="after"><img src="/petanuri/assets/img/after-painted.webp" width="599" height="864" alt="服を塗った後のサンプルのモデル"></div>
-        <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
-        <span class="lbl l">描く前</span><span class="lbl r">描いた後</span>
-        <input type="range" min="0" max="100" value="50" aria-label="描く前と描いた後を見比べる">
-      </div>
-      <figcaption>つまみを動かすと見比べられます。服の柄は全部 3D の上で塗っています。</figcaption>
+    <figure class="pn-hero-paint pn-hero-model">
+      <img src="/petanuri/assets/img/hero-shinobu.webp" width="799" height="924" alt="ぺたぬり3D で描いた、ののつよシリーズの「獄門しのぶ」" fetchpriority="high">
+      <figcaption>画像は開発中の仮のものです</figcaption>
     </figure>
   </div>
 </section>
@@ -74,27 +73,27 @@
   <div class="pn-wrap">
     <div class="pn-sec-head pn-reveal">
       <div><span class="pn-sec-no">01 — WORKS</span><h2 id="pn-gallery-title" class="pn-h2">服も、小物も。</h2></div>
-      <p class="pn-sec-lead">アバターの体だけでなく、衣装・アクセサリー・ワールドの小物まで、UV のある 3D モデルなら塗れます。どれも白いモデルから、ぺたぬり3D だけで塗りました。画像にカーソルを乗せると、塗った色のままの表示に切り替わります。</p>
+      <p class="pn-sec-lead">アバターの体だけでなく、衣装やアクセサリー・小物まで、UV のある 3D モデルなら塗れます。ののつよシリーズの衣装と小物を、ぺたぬり3D で描きました。画像にカーソルを乗せると、塗った色のままの表示に切り替わります。</p>
     </div>
     <div class="pn-gallery">
-      <figure class="g-a pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-a.webp" width="698" height="698" alt="セーラー服の衣装を塗った作例（仕上がり表示）" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-a-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>セーラー服</b>部分ごとの塗りつぶし。裾と襟のラインは「部分 × 選択範囲」、胸の星は画像を 3D に貼って</figcaption></figure>
-      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-b.webp" width="698" height="698" alt="パーカーとスカートを塗った作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-b-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>パーカーとスカート</b>スカートのチェック、袖のボーダー、胸のハート</figcaption></figure>
-      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-b.webp" width="698" height="698" alt="かぼちゃの小物を塗った作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-b-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>かぼちゃ</b>溝の影は乗算レイヤー、つやは質感のブラシ</figcaption></figure>
-      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-c.webp" width="698" height="698" alt="びんの小物を塗った作例。ラベルに縦書きの文字" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-c-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>びん</b>ラベルは画像を貼って、つやは入り抜きペン</figcaption></figure>
-      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-a.webp" width="698" height="698" alt="ハンマーの小物を塗った作例。柄にななめの縞" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-a-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>ハンマー</b>柄のななめ縞、左右対称の星</figcaption></figure>
-      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-d.webp" width="698" height="698" alt="いすの小物を塗った作例。布に質感" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-d-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>いす</b>布の質感はブラシ集の質感ブラシで</figcaption></figure>
-      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-c.webp" width="698" height="698" alt="模様のペンで塗った作例。身ごろはギンガムチェック、スカートはタータンチェック、袖はニット" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-c-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
-        <figcaption><b>模様のペン</b>身ごろはギンガム、スカートはタータン、袖はニット、靴下はボーダー。部分を選んで上からなぞるだけ</figcaption></figure>
+      <figure class="g-a pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-komainu.webp" width="698" height="698" alt="狛犬セーラーを描いた作例（仕上がり表示）" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>狛犬セーラー</b>ののつよシリーズの衣装。セーラーの襟とリボン、裾の模様まで</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-yukata.webp" width="698" height="698" alt="星降る月浴衣を描いた作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-yukata-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>星降る月浴衣</b>大きな袖と帯の飾り</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-furin.webp" width="698" height="698" alt="風鈴を描いた作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>風鈴</b>獄門しのぶの小物</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magichat.webp" width="698" height="698" alt="魔法の帽子を描いた作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>魔法の帽子</b>星羽の魔導衣の小物</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-starfeather.webp" width="698" height="698" alt="星羽の魔導衣を描いた作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-starfeather-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>星羽の魔導衣</b>ローブの星の柄とブーツ</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-starcloak.webp" width="698" height="698" alt="星のマントを描いた作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/prop-starcloak-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>星のマント</b>星降る月浴衣の小物。内側は星空</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-soen.webp" width="698" height="698" alt="蒼炎の水衣を描いた作例" loading="lazy"><img class="alt" src="/petanuri/assets/img/outfit-soen-flat.webp" width="698" height="698" alt="" loading="lazy"></div>
+        <figcaption><b>蒼炎の水衣</b>マントとスカートの炎の柄</figcaption></figure>
       <div class="g-text pn-reveal">
         <h3>塗り方はいつもどおり</h3>
         <p>ペンで線を引き、塗りつぶしで色を置き、クリッピングしたレイヤーに影とつやを重ねる。2D のイラストと同じ手順を、そのまま 3D の上で進められます。</p>
-        <p class="pn-note">作例のモデルは、はいぱーつよつよのショップの商品データです。画像はサンプルです。</p>
+        <p class="pn-note">作例は、はいぱーつよつよのショップの「ののつよ」シリーズの商品データです。画像は開発中の仮のもので、あとで差し替えます。</p>
       </div>
     </div>
   </div>
@@ -108,6 +107,17 @@
       <p class="pn-sec-lead">塗った色から仕上がりの見た目まで、同じ画面の中で確かめられます。つまみを左右に動かすと見比べられます。</p>
     </div>
     <div class="pn-compare-wrap">
+      <div class="pn-compare-block pn-reveal">
+        <h3>描く前 → 描いた後</h3>
+        <p>白いモデルから、しのぶの毛並みや模様まで 3D の上で描きました。</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/before-plain.webp" width="599" height="864" alt="描く前の白いしのぶ" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/after-painted.webp" width="599" height="864" alt="描いた後のしのぶ" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">描く前</span><span class="lbl r">描いた後</span>
+          <input type="range" min="0" max="100" value="50" aria-label="描く前と描いた後を見比べる">
+        </div>
+      </div>
       <div class="pn-compare-block pn-reveal">
         <h3>塗った色 → 仕上がり表示 <span class="tier pro">Pro</span></h3>
         <p>lilToon と同じ計算の影・リムライト・輪郭線を付けた見た目で確認しながら塗れます。</p>
@@ -175,8 +185,8 @@
     </div>
     <div class="pn-show rev pn-reveal">
       <div class="pn-show-media"><div class="pn-duo">
-        <img class="pn-shot" src="/petanuri/assets/img/layers-outfit.webp" width="299" height="416" alt="レイヤーパネル。服・ボーダー柄（クリッピング）・ハートのレイヤー" loading="lazy">
-        <img class="pn-shot" src="/petanuri/assets/img/uv-pane.webp" width="496" height="900" alt="UV の区画。3D で塗ったボーダー柄が UV の上にも出ている" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/layers-outfit.webp" width="299" height="368" alt="レイヤーパネル。ほっぺ・腕の星・下地のレイヤー" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/uv-pane.webp" width="496" height="900" alt="UV の区画。しのぶの体のテクスチャ" loading="lazy">
       </div></div>
       <div>
         <span class="pn-show-no">LAYERS</span>
@@ -203,8 +213,8 @@
     </div>
     <div class="pn-show rev pn-reveal">
       <div class="pn-show-media"><div class="pn-duo">
-        <img class="pn-shot" src="/petanuri/assets/img/pose-mode.webp" width="998" height="900" alt="ポーズモード。関節の点と回転のつまみで腕を下ろしている" loading="lazy">
-        <img class="pn-shot" src="/petanuri/assets/img/pose-paint.webp" width="640" height="801" alt="腕を下ろしたポーズのまま、ペイントモードに戻ったところ" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-mode.webp" width="998" height="900" alt="ポーズモード。関節の点と回転のつまみで前足を下ろし、首をかしげている" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-paint.webp" width="640" height="801" alt="前足を下ろしたポーズのまま、ペイントモードに戻ったところ" loading="lazy">
       </div></div>
       <div>
         <span class="pn-show-no">POSE</span>
@@ -224,7 +234,7 @@
   <div class="pn-wrap">
     <div class="pn-sec-head pn-reveal">
       <div><span class="pn-sec-no">05 — ALL FEATURES</span><h2 id="pn-feat-title" class="pn-h2">機能一覧</h2></div>
-      <p class="pn-sec-lead">いま入っている機能の一覧です。印の無い機能は、無料の Lite から使えます。</p>
+      <p class="pn-sec-lead">開発中の今の時点で入っている機能の一覧です。印の無い機能は、無料の Lite から使えます。発売までに変わることがあります。</p>
     </div>
     <div class="pn-filter" role="group" aria-label="版で絞り込む">
       <button type="button" data-tier="all" aria-pressed="true" data-say="すべての機能を表示しています">すべて</button>
@@ -410,7 +420,7 @@
   <div class="pn-wrap">
     <div class="pn-sec-head pn-reveal">
       <div><span class="pn-sec-no">06 — PRICE</span><h2 id="pn-price-title" class="pn-h2">価格</h2></div>
-      <p class="pn-sec-lead">BOOTH で販売します。価格と版の分け方は予定です。</p>
+      <p class="pn-sec-lead">近日、BOOTH で販売します。価格と版の分け方は予定で、変わることがあります。</p>
     </div>
     <div class="pn-plans pn-reveal">
       <div class="pn-plan lite">
@@ -497,11 +507,12 @@
       <span class="pn-sec-no">08 — FAQ</span>
       <h2 class="pn-h2" style="margin-bottom:1.5rem">よくある質問</h2>
       <div class="pn-faq">
+        <details><summary>いつ使えますか？</summary><div>いま開発中で、近日 BOOTH で公開する予定です。公開日や最新の画面は <a class="pn-textlink" href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>でお知らせします。</div></details>
         <details><summary>無料の Lite 版だけでも使えますか？</summary><div>はい。3D に直接描く・ブラシ・左右対称・UV の区画・PNG 書き出し・作業ファイルの保存など、ふだんの塗りに使う機能は Lite で使える予定です。レイヤーはテクスチャセットごとに下地を含めて 3 枚まで、解像度は 2048 までです。</div></details>
         <details><summary>ほかのショップのアバターや衣装でも使えますか？</summary><div>FBX などの 3D モデルで、UV（テクスチャの展開）があれば塗れます。モデルのデータの利用条件は、それぞれの規約をご確認ください。</div></details>
         <details><summary>Mac で使えますか？</summary><div>いまのところ Windows 10 / 11 だけです。</div></details>
         <details><summary>「PC が保護されました」と出ました</summary><div>署名なしのアプリなので、はじめて起動するときに出ることがあります。「詳細情報」→「実行」で起動できます。<a href="/petanuri/manual/start">はじめかた</a>もご覧ください。</div></details>
-        <details><summary>どこで買えますか？</summary><div>BOOTH で販売します。価格は予定で、変わることがあります。</div></details>
+        <details><summary>どこで買えますか？</summary><div>近日、<a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener">はいぱーつよつよの BOOTH</a> で販売します。価格は予定で、変わることがあります。</div></details>
       </div>
     </div>
   </div>
@@ -517,6 +528,7 @@
       <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener">BOOTH ショップ</a>
       <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
     </nav>
+    <p>ぺたぬり3D の開発には AI エージェント（コードを書く AI）を使っています。画像生成 AI は使っていません。</p>
     <p>© はいぱーつよつよ All rights reserved.　lilToon は lilxyzw さんのシェーダーです（MIT ライセンス）。</p>
   </div>
 </footer>
