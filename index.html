@@ -26,6 +26,7 @@
   <div class="nav-inner">
     <a href="/" class="nav-logo" aria-label="はいぱーつよつよ トップ"><img src="/data/hypertuyotuyo.png" alt="" width="49" height="34"></a>
     <ul class="nav-links">
+      <li><a href="#tool" data-i18n="nav.tools">ツール</a></li>
       <li><a href="#works" data-i18n="nav.works">作品</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#license" data-i18n="nav.license">利用規約</a></li>
@@ -42,6 +43,7 @@
 <!-- Mobile nav overlay -->
 <div class="nav-mobile" id="mobile-nav">
   <button class="nav-mobile-close" id="mobile-close" aria-label="閉じる">✕</button>
+  <a href="#tool" data-i18n="nav.tools">ツール</a>
   <a href="#works" data-i18n="nav.works">作品</a>
   <a href="#about">About</a>
   <a href="#license" data-i18n="nav.license">利用規約</a>
@@ -64,6 +66,37 @@
         <a href="#works" class="btn btn-outline" data-i18n="hero.works">作品を見る</a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===================== TOOL（開発中・2026-09-30） ===================== -->
+<section id="tool" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="tool.title">ツール</h2>
+    </div>
+    <article class="tool-card">
+      <a href="/petanuri" class="tool-visual" aria-label="ぺたぬり3D のページへ">
+        <img src="/petanuri/assets/img/hero-shinobu.webp" alt="" width="640" height="739" loading="lazy">
+      </a>
+      <div class="tool-body">
+        <p class="tool-status"><span class="dot" aria-hidden="true"></span><span data-i18n="tool.status">開発中・近日リリース</span></p>
+        <h3 class="tool-name">ぺたぬり<span>3D</span></h3>
+        <p class="tool-kind" data-i18n="tool.kind">アニメ・イラスト風特化 3D ペイントツール</p>
+        <p class="tool-lead" data-i18n="tool.lead">3D モデルに、イラストツールの描き味でそのまま描けるペイントツールを作っています。UV を探さずに、見たままの場所に塗れます。</p>
+        <ul class="tool-points">
+          <li data-i18n="tool.p1">3D に直接描ける。UV の継ぎ目をまたいでも線が割れない</li>
+          <li data-i18n="tool.p2">ポーズ・ブレンドシェイプを付けたまま塗れる</li>
+          <li data-i18n="tool.p3">lilToon 風の見た目で確かめて、そのまま書き出し</li>
+        </ul>
+        <p class="tool-free" data-i18n="tool.free">無料の Lite 版もあります（予定）</p>
+        <p class="tool-note" data-i18n="tool.note">※ 画面は開発中です。</p>
+        <div class="tool-btns">
+          <a href="/petanuri" class="btn btn-primary" data-i18n="tool.more">くわしく見る</a>
+          <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="tool.x">X で最新情報</a>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
