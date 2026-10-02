@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /skill.md
+
+Sitemap: https://hyper-tuyotuyo.com/sitemap.xml

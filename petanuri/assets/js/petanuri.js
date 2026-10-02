@@ -27,6 +27,18 @@
     }
   }
 
+  // ---- 上の画面：最初は静止画、ページの読み込みが済んだら動く画像に替える（表示の速さのため。2026-10-02） ----
+  if (!reduce) {
+    var swapAnim = function () {
+      document.querySelectorAll('img[data-anim]').forEach(function (img) {
+        var a = new Image();
+        a.onload = function () { img.src = a.src; };
+        a.src = img.getAttribute('data-anim');
+      });
+    };
+    if (document.readyState === 'complete') swapAnim(); else window.addEventListener('load', swapAnim);
+  }
+
   // ---- ふわっと出る（同じ親の中で少しずつずらす） ----
   var items = document.querySelectorAll('.pn-reveal');
   if (reduce || !('IntersectionObserver' in window)) {

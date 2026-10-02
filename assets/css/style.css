@@ -215,6 +215,7 @@ img { display: block; max-width: 100%; }
 }
 /* ロゴ：白いふちの切り抜きシール */
 .hero-logo-wrap {
+  margin: 0; font-size: inherit; line-height: 0; /* h1（2026-10-02 SEO）。見た目は前の div のまま */
   justify-self: center;
   width: min(100%, 560px);
   padding: clamp(1rem, 3vw, 2rem) clamp(1.2rem, 3vw, 2.2rem);

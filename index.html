@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>はいぱーつよつよ | Hyper TuyoTuyo</title>
-  <meta name="description" content="VRChatアバター・衣装・ギミック制作サークル「はいぱーつよつよ」の公式サイト。Boothにて販売中。">
-  <meta property="og:title"       content="はいぱーつよつよ | Hyper TuyoTuyo">
-  <meta property="og:description" content="VRChatアバター・衣装・ギミック制作サークル">
+  <title>はいぱーつよつよ｜VRChat のアバター・衣装・ギミックと 3D ペイントツール「ぺたぬり3D」</title>
+  <meta name="description" content="VRChat 向けのアバター・衣装・アバターギミックを作る創作サークル「はいぱーつよつよ」の公式サイト。BOOTH で販売中の作品一覧、VRChat アバターのテクスチャを 3D に直接描けるペイントツール「ぺたぬり3D」、VN3 ライセンス準拠の利用規約と使用ガイドラインを掲載しています。">
+  <meta property="og:title"       content="はいぱーつよつよ｜VRChat のアバター・衣装・ギミック">
+  <meta property="og:description" content="VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークルの公式サイト">
   <meta property="og:url"         content="https://hyper-tuyotuyo.com/">
   <meta property="og:image"       content="https://hyper-tuyotuyo.com/data/hypertuyotuyo.png">
   <meta property="og:type"        content="website">
@@ -17,6 +17,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="/data/hypertuyotuyo.png" type="image/png">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://hyper-tuyotuyo.com/#org",
+   "name": "はいぱーつよつよ",
+   "alternateName": "Hyper TuyoTuyo",
+   "url": "https://hyper-tuyotuyo.com/",
+   "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+   "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+   "sameAs": [
+    "https://hyper-tuyotuyo.booth.pm/",
+    "https://x.com/Yak_HyperTYTY",
+    "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://hyper-tuyotuyo.com/#site",
+   "name": "はいぱーつよつよ",
+   "url": "https://hyper-tuyotuyo.com/",
+   "inLanguage": "ja",
+   "publisher": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
 </head>
 <body>
 
@@ -55,9 +91,9 @@
 <!-- ===================== HERO ===================== -->
 <section id="hero" class="hero">
   <div class="hero-inner">
-    <div class="hero-logo-wrap">
-      <img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" class="hero-logo" width="1000" height="700">
-    </div>
+    <h1 class="hero-logo-wrap">
+      <img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ（VRChat のアバター・衣装・ギミック）" class="hero-logo" width="1000" height="700" fetchpriority="high">
+    </h1>
     <div class="hero-copy">
       <p class="hero-catch" data-i18n-html="hero.catch">木の棒が、<br>最強の剣だったころ。</p>
       <p class="hero-lead" data-i18n="hero.lead">あのころの気持ちでもう一度遊べる、VRChat のアバター・衣装・ギミックを作っています。</p>
@@ -77,13 +113,13 @@
     </div>
     <article class="tool-card">
       <a href="/petanuri" class="tool-visual" aria-label="ぺたぬり3D のページへ">
-        <img src="/petanuri/assets/img/hero-shinobu.webp" alt="" width="640" height="739" loading="lazy">
+        <img src="/petanuri/assets/img/hero-shinobu.webp" alt="ぺたぬり3D でテクスチャを塗った VRChat アバター「獄門しのぶ」と、同時に塗られた UV" width="640" height="739" loading="lazy">
       </a>
       <div class="tool-body">
         <p class="tool-status"><span class="dot" aria-hidden="true"></span><span data-i18n="tool.status">開発中・近日リリース</span></p>
         <h3 class="tool-name"><img src="/petanuri/assets/img/brand/logo.svg" alt="ぺたぬり3D" width="794" height="319" loading="lazy"></h3>
         <p class="tool-kind" data-i18n="tool.kind">アニメ・イラスト風特化 3D ペイントツール</p>
-        <p class="tool-lead" data-i18n="tool.lead">3D モデルに、イラストツールの描き味でそのまま描けるペイントツールを作っています。UV を探さずに、見たままの場所に塗れます。</p>
+        <p class="tool-lead" data-i18n="tool.lead">VRChat のアバターや衣装などの 3D モデルに、イラストツールの描き味でそのままテクスチャを描けるペイントツールを作っています。UV を探さずに、見たままの場所に塗れます。</p>
         <ul class="tool-points">
           <li data-i18n="tool.p1">3D に直接描ける。UV の継ぎ目をまたいでも線が割れない</li>
           <li data-i18n="tool.p2">ポーズ・ブレンドシェイプを付けたまま塗れる</li>
@@ -107,24 +143,24 @@
       <h2 class="section-title" data-i18n="nav.works">作品</h2>
     </div>
     <ul class="sticker-wall">
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8337421" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8337421.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">ハンマー</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8149936" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8149936.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">星降る月浴衣</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8079432" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8079432.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">獄門しのぶ</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7968241" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7968241.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">狛犬セーラー</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7889178" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7889178.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">オフィスチェア</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8005759" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8005759.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">はいぱーつよつよバッジ</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7791136" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7791136.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">はいぱーボール</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7681778" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7681778.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">スプーン＆フォーク</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7640303" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7640303.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">しゃぼん玉の術</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7548369" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7548369.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">お酒</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7489015" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7489015.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">スプレー</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7437947" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7437947.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">HYPER WING</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7283670" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7283670.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">風遁の術</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7208624" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7208624.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">ストロー</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7039954" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7039954.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">ガラス破壊</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/6020050" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/6020050.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">変わり身の術</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/6600129" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/6600129.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">Let's Goショッピングカート</span></a></li>
-      <li><a href="https://hyper-tuyotuyo.booth.pm/items/5813805" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/5813805.jpg" alt="" width="400" height="400" loading="lazy"></span><span class="sticker-name">わりばしガン</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8337421" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8337421.jpg" alt="ハンマー（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">ハンマー</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8149936" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8149936.jpg" alt="星降る月浴衣（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">星降る月浴衣</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8079432" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8079432.jpg" alt="獄門しのぶ（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">獄門しのぶ</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7968241" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7968241.jpg" alt="狛犬セーラー（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">狛犬セーラー</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7889178" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7889178.jpg" alt="オフィスチェア（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">オフィスチェア</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/8005759" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/8005759.jpg" alt="はいぱーつよつよバッジ（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">はいぱーつよつよバッジ</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7791136" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7791136.jpg" alt="はいぱーボール（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">はいぱーボール</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7681778" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7681778.jpg" alt="スプーン＆フォーク（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">スプーン＆フォーク</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7640303" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7640303.jpg" alt="しゃぼん玉の術（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">しゃぼん玉の術</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7548369" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7548369.jpg" alt="お酒（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">お酒</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7489015" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7489015.jpg" alt="スプレー（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">スプレー</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7437947" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7437947.jpg" alt="HYPER WING（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">HYPER WING</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7283670" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7283670.jpg" alt="風遁の術（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">風遁の術</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7208624" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7208624.jpg" alt="ストロー（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">ストロー</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/7039954" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/7039954.jpg" alt="ガラス破壊（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">ガラス破壊</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/6020050" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/6020050.jpg" alt="変わり身の術（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">変わり身の術</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/6600129" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/6600129.jpg" alt="Let's Goショッピングカート（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">Let's Goショッピングカート</span></a></li>
+      <li><a href="https://hyper-tuyotuyo.booth.pm/items/5813805" target="_blank" rel="noopener" class="sticker"><span class="sticker-img"><img src="/assets/img/products/5813805.jpg" alt="わりばしガン（VRChat 向けアセット）" width="400" height="400" loading="lazy"></span><span class="sticker-name">わりばしガン</span></a></li>
     </ul>
     <div class="works-more">
       <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="works.more">Boothでもっと見る</a>
@@ -193,7 +229,7 @@
       </div>
     </div>
     <div class="text-center reveal" style="margin-bottom:2.5rem">
-      <a href="/terms.html" class="btn btn-primary" data-i18n="btn.terms">利用規約 全文を読む</a>
+      <a href="/terms" class="btn btn-primary" data-i18n="btn.terms">利用規約 全文を読む</a>
     </div>
 
     <!-- 使用ガイドライン 簡易一覧 -->
@@ -221,7 +257,7 @@
       </div>
     </div>
     <div class="text-center reveal">
-      <a href="/guidelines.html" class="btn btn-primary" data-i18n="btn.guidelines">使用ガイドラインを読む</a>
+      <a href="/guidelines" class="btn btn-primary" data-i18n="btn.guidelines">使用ガイドラインを読む</a>
     </div>
   </div>
 </section>
