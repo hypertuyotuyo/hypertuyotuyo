@@ -23,6 +23,7 @@
       'tool.free':      '無料の Lite 版もあります',
             'tool.more':      'くわしく見る',
       'tool.x':         'X で最新情報',
+      'tool.booth':     'BOOTH で見る',
       /* index — works */
       'works.more':     'Boothでもっと見る',
       /* index — hero（2026-09-29） */
@@ -183,6 +184,7 @@
       'tool.free':      'A free Lite edition is available',
             'tool.more':      'Learn more',
       'tool.x':         'Updates on X',
+      'tool.booth':     'View on BOOTH',
       'works.more':     'View more on Booth',
       'hero.catch':     'Back when a stick<br>was the strongest sword.',
       'hero.lead':      'We make VRChat avatars, outfits and gimmicks that let you play like that again.',
