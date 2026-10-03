@@ -237,6 +237,11 @@ body.pn-body {
 .pn-plan-desc { font-size: 0.84rem; color: var(--ink-2); margin-top: 0.3rem; min-height: 2.8em; line-height: 1.7; }
 .pn-price { font-family: var(--pn-display); font-size: 2.5rem; font-weight: 800; margin: 1rem 0 0; line-height: 1.1; font-feature-settings: "palt"; }
 .pn-price small { font-size: 0.95rem; font-weight: 700; margin-left: 0.15rem; }
+/* 発売記念セール（2026-11-02 まで）。終わったら HTML の .pn-was・.pn-sale-* と一緒に外してよい */
+.pn-was { display: block; font-size: 1rem; font-weight: 700; color: var(--ink-3); text-decoration-thickness: 2px; margin-bottom: 0.15rem; }
+.pn-table .pn-was { display: inline; font-size: 0.85em; }
+.pn-sale-tag { display: inline-block; width: fit-content; align-self: flex-start; margin-top: 0.5rem; padding: 0.15rem 0.7rem; border-radius: 999px; background: var(--accent); color: #fff; font-size: 0.78rem; font-weight: 700; }
+.pn-sale-lead { display: inline-block; margin-top: 0.5rem; font-weight: 700; color: var(--accent-dark); }
 .pn-plan .pn-plan-note { font-size: 0.76rem; color: var(--ink-3); margin: 0.2rem 0 1.2rem; }
 .pn-plan-up { margin-top: 1.4rem; font-size: 0.88rem; line-height: 1.9; color: var(--ink-2); }
 .pn-plan ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
