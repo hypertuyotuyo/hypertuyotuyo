@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>目次 | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
-  <meta name="description" content="ぺたぬり3D の使い方。はじめかた・描く・レイヤー・UV・書き出しなど。">
+  <meta name="description" content="ぺたぬり3D の使い方。はじめかた・描く・スタンプと模様・選択範囲と変形・レイヤー・UV・画面と環境設定・テクスチャセット・lilToon のマテリアル・AO・ポーズ・書き出し・Unity との連携・ショートカット。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -18,7 +18,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="目次 | ぺたぬり3D マニュアル | はいぱーつよつよ">
-  <meta property="og:description" content="ぺたぬり3D の使い方。はじめかた・描く・レイヤー・UV・書き出しなど。">
+  <meta property="og:description" content="ぺたぬり3D の使い方。はじめかた・描く・スタンプと模様・選択範囲と変形・レイヤー・UV・画面と環境設定・テクスチャセット・lilToon のマテリアル・AO・ポーズ・書き出し・Unity との連携・ショートカット。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/manual">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="website">
@@ -74,33 +74,37 @@
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ マニュアル</p>
     <h1 class="mn-h1">ぺたぬり3D マニュアル</h1>
-    <p class="mn-intro">はじめての方は「はじめかた」→「描く」の順にどうぞ。<span class="tier pro">Pro</span> の付いたページは Pro 版の機能です（予定）。</p>
-    <p class="mn-proof">開発中のツールです。画面・名前・操作は変わることがあります。版の分け方（Lite・Standard・Pro）は予定です。</p>
+    <p class="mn-intro">はじめての方は「はじめかた」→「描く」の順にどうぞ。<span class="tier std">Standard</span> の付いた機能は Standard と Pro で、<span class="tier pro">Pro</span> の付いたページ・機能は Pro で使えます。印の無い機能は、無料の Lite から使えます。</p>
+    <p class="mn-proof">このマニュアルは ぺたぬり3D v1.0.0 の画面と操作で書いています。キーは初めの割り当てです（割り当て直すと、アプリの中の説明は今のキーで出ます）。</p>
     <div class="mn-cards"><a class="mn-card pn-reveal" href="/petanuri/manual/start">
       <div class="thumb"><img src="/petanuri/assets/img/newproject.webp" width="780" height="920" alt="" loading="lazy"></div>
-      <div class="body"><h2>はじめかた</h2><p>起動・新規作成・作業ファイルを開く・保存・自動保存・モデルの読み直し・バージョン・Pro へのアップグレード</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/draw">
-      <div class="thumb"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="900" alt="" loading="lazy"></div>
-      <div class="body"><h2>描く</h2><p>ペン・筆・ブラシ集・消しゴム・色混ぜ・塗りつぶし・グラデーション・スポイト・色・左右対称（効く道具の一覧）</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/edit">
-      <div class="thumb"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="" loading="lazy"></div>
-      <div class="body"><h2>選択範囲・変形・文字・定規</h2><p>選択範囲・コピーと貼り付け・変形・画像を貼る・文字・定規</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/layers">
-      <div class="thumb"><img src="/petanuri/assets/img/layers-outfit.webp" width="299" height="368" alt="" loading="lazy"></div>
-      <div class="body"><h2>レイヤー</h2><p>レイヤー・合成モード・フォルダ・マスク・調整レイヤー・フィルター・自動塗り・作業の履歴</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/uv">
-      <div class="thumb"><img src="/petanuri/assets/img/uv-pane.webp" width="496" height="900" alt="" loading="lazy"></div>
-      <div class="body"><h2>UV の区画と表示範囲</h2><p>UV を並べて直接塗る・UV のガイド・つなげて塗る・表示範囲・隠すペン・周りを薄く見せる・隠し方の保存・メッシュの線</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/screen">
-      <div class="thumb"><img src="/petanuri/assets/img/m-dock.webp" width="1400" height="840" alt="" loading="lazy"></div>
-      <div class="body"><h2>画面とパネル</h2><p>パネルの配置・タブ・折りたたみ・アイコンの帯・ツールの並べ替え・よく使うツール・四隅のアイコン・3D ナビ・右クリック・設定</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/sets">
-      <div class="thumb"><img src="/petanuri/assets/img/m-memory.webp" width="299" height="330" alt="" loading="lazy"></div>
-      <div class="body"><h2>テクスチャセット</h2><p>テクスチャセットを選ぶ・2 つのセットをまたいで描く・解像度・メモリの節約・行き場のないセット</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/material">
-      <div class="thumb"><img src="/petanuri/assets/img/toon.webp" width="599" height="864" alt="" loading="lazy"></div>
-      <div class="body"><h2>仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></h2><p>lilToon の見た目で確かめる・影色やマスクを塗る・.unitypackage で書き出す</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/ao">
-      <div class="thumb"><img src="/petanuri/assets/img/ao-after.webp" width="599" height="810" alt="" loading="lazy"></div>
-      <div class="body"><h2>AO を焼く <span class="tier pro">Pro</span></h2><p>光が届きにくい所の暗さを、形から計算してレイヤーに</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/pose">
-      <div class="thumb"><img src="/petanuri/assets/img/pose-mode.webp" width="998" height="900" alt="" loading="lazy"></div>
+      <div class="body"><h2>はじめかた</h2><p>起動・チュートリアル・サンプル・新規作成・保存と自動保存・モデルの読み直し・版のちがい・Pro へのアップグレード</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/draw">
+      <div class="thumb"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="" loading="lazy"></div>
+      <div class="body"><h2>描く</h2><p>ツールとサブツール・裏側にも塗る・ブラシの設定・色混ぜ・塗りつぶし・グラデーション・図形・色・左右対称（効く道具の一覧）</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/deco">
+      <div class="thumb"><img src="/petanuri/assets/img/m-stamp.webp" width="900" height="896" alt="" loading="lazy"></div>
+      <div class="body"><h2>スタンプ・模様・凹凸・2D キャンバス</h2><p>デコレーション・スタンプ・模様のペン（服の柄）・凹凸（縫い目・しわ）・2D キャンバス</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/edit">
+      <div class="thumb"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="" loading="lazy"></div>
+      <div class="body"><h2>選択範囲・変形・文字・定規</h2><p>選択範囲・移動・変形ツール・3D の上での変形（自由変形・ワープ）・画像を貼る・文字・定規</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/layers">
+      <div class="thumb"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="" loading="lazy"></div>
+      <div class="body"><h2>レイヤー</h2><p>レイヤーのパネル・フォルダ・マスク・レイヤープロパティ・境界線・調整レイヤー・フィルター・自動塗り・作業の履歴</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/uv">
+      <div class="thumb"><img src="/petanuri/assets/img/uv-pane.webp" width="324" height="416" alt="" loading="lazy"></div>
+      <div class="body"><h2>UV の区画と表示範囲</h2><p>UV を並べて直接塗る・グリッド線と吸着・つなげて塗る・表示範囲・隠すペン・隠し方の保存・メッシュの線</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/screen">
+      <div class="thumb"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="" loading="lazy"></div>
+      <div class="body"><h2>画面・パネル・環境設定</h2><p>はじめの配置・パネルを動かす・ツールバー・よく使うツール・3D ビューの四隅・光の向き・右クリック・環境設定</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/sets">
+      <div class="thumb"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="" loading="lazy"></div>
+      <div class="body"><h2>テクスチャセットとオブジェクト</h2><p>テクスチャセットを選ぶ・メインとサブ・解像度・下地の入れ替え・オブジェクトの表示と非表示・メモリの節約</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/material">
+      <div class="thumb"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="" loading="lazy"></div>
+      <div class="body"><h2>仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></h2><p>lilToon の見た目で確かめる（β版）・影色やマスクを塗る・マテリアルを分ける・.mat の読み込み・.unitypackage で書き出す</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/ao">
+      <div class="thumb"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="" loading="lazy"></div>
+      <div class="body"><h2>AO を焼く <span class="tier pro">Pro</span></h2><p>光が届きにくい所の暗さを、形から計算してレイヤーに（オブジェクトごとにも）</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/pose">
+      <div class="thumb"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="" loading="lazy"></div>
       <div class="body"><h2>ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></h2><p>ポーズを付けて塗る・人型のボーンの色分け・ポーズの左右対称・表情の形で塗る・ボーンの重みから範囲</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/export">
-      <div class="thumb"><img src="/petanuri/assets/img/m-filemenu.webp" width="388" height="624" alt="" loading="lazy"></div>
-      <div class="body"><h2>書き出し</h2><p>PNG・PSD・書き出し先のフォルダ・マテリアル・書き出しのにじみ（パディング）</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/keys">
-      <div class="thumb"><img src="/petanuri/assets/img/m-settings.webp" width="820" height="560" alt="" loading="lazy"></div>
-      <div class="body"><h2>ショートカットとペン操作</h2><p>キー・ペン・マウスの操作の一覧</p></div></a></div>
+      <div class="thumb"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="" loading="lazy"></div>
+      <div class="body"><h2>書き出し</h2><p>PNG・PSD・書き出しのにじみ（パディング）・書き出し先のフォルダ・マテリアル</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/unity">
+      <div class="thumb"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="" loading="lazy"></div>
+      <div class="body"><h2>Unity から塗る・AI 連携</h2><p>Unity からアバターを選んで塗る（保存すると Unity に映る）・AI 連携（MCP）</p></div></a><a class="mn-card pn-reveal" href="/petanuri/manual/keys">
+      <div class="thumb"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="" loading="lazy"></div>
+      <div class="body"><h2>ショートカットとペン操作</h2><p>ショートカット一覧（F1）・ペンとマウス・視点・キーの一覧・キーの割り当て・筆圧が効かないとき</p></div></a></div>
   </main>
 </div>
 <footer class="pn-footer">
