@@ -49,7 +49,9 @@
       'contact.discord':'空飛ぶはいぱーつよつよ教',
       'contact.disc.sub':'Discord サーバー',
       /* footer */
-      'footer.vn3':     '本サイトに掲載の利用規約はVN3ライセンスVer.1.10に準拠しています。',
+      'footer.toolTerms':'ぺたぬり3D ツール利用規約',
+      'terms.tool.notice':'ぺたぬり3D の使用条件は、<a href="/petanuri/terms">ツール利用規約</a>をご覧ください。本ページは3Dモデル・衣装・ギミック等の商品用規約です。',
+      'footer.vn3':'3Dモデル・衣装・ギミックの商品用規約はVN3ライセンスVer.1.10に準拠しています。',
       /* terms page */
       'terms.h1':       'はいぱーつよつよ 3Dモデル利用規約',
       'terms.ver':      'VN3ライセンスVer.1.10準拠 ／ 規約バージョン 2.0',
@@ -205,7 +207,9 @@
       'contact.booth':  'Booth Shop',
       'contact.discord':'Flying Hyper TuyoTuyo Religion',
       'contact.disc.sub':'Discord Server',
-      'footer.vn3':     'The terms on this site comply with VN3 License Ver.1.10.',
+      'footer.toolTerms':'PetaNuri3D Software Terms',
+      'terms.tool.notice':'For PetaNuri3D, please see the <a href="/petanuri/terms">Software Terms</a>. This page covers 3D models, outfits and avatar gimmicks.',
+      'footer.vn3':'The terms for 3D models, outfits and avatar gimmicks are based on VN3 License Ver.1.10.',
       'terms.h1':       'Hyper TuyoTuyo 3D Model Terms of Use',
       'terms.ver':      'VN3 License Ver.1.10 compliant / Version 2.0',
       'terms.dates':    'Established: May 5, 2024 / Last updated: May 15, 2026',
