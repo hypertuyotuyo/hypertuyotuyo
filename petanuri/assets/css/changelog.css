@@ -1,0 +1,36 @@
+/* 更新履歴。紹介ページ・マニュアルと共通の書体・色を使う。 */
+.pn-history { max-width: 1000px; margin: 0 auto; padding: 6.5rem 1.5rem 4rem; }
+.pn-history-head { margin-bottom: 2.4rem; }
+.pn-history-lead { color: var(--ink-2); line-height: 1.9; margin-bottom: .7rem; }
+.pn-history-note { font-size: .85rem; color: var(--ink-2); line-height: 1.8; }
+.pn-history-jump { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.4rem; }
+.pn-history-jump a { border: 1px solid var(--line-2); border-radius: 999px; padding: .55rem 1rem; font-size: .85rem; font-weight: 700; background: var(--panel); }
+.pn-history-jump a:hover { border-color: var(--accent); color: var(--accent-dark); }
+.pn-history-jump span { font-size: .75rem; margin-left: .3rem; color: var(--ink-2); }
+.pn-release { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem 2.2rem; margin-bottom: 1.5rem; }
+.pn-release-upcoming { border-top: 4px solid var(--accent); }
+.pn-release-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem .8rem; }
+.pn-release-meta h2 { font-family: var(--pn-display); font-size: 1.6rem; font-weight: 800; line-height: 1.3; }
+.pn-release-meta p { font-size: .8rem; color: var(--ink-2); margin-left: auto; }
+.pn-release-status { font-size: .75rem; font-weight: 700; padding: .25rem .7rem; border-radius: 999px; white-space: nowrap; }
+.pn-release-status.upcoming { background: var(--accent-soft); color: var(--accent-dark); }
+.pn-release-status.released { background: var(--paper-2); color: var(--ink-2); }
+.pn-release-title { font-family: var(--pn-display); font-size: clamp(1.05rem, 2.2vw, 1.25rem); font-weight: 800; line-height: 1.6; margin-top: .7rem; }
+.pn-release-summary { color: var(--ink-2); font-size: .92rem; line-height: 1.9; margin-top: 1rem; }
+.pn-release-group { border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: 1.5rem; }
+.pn-release-group h3 { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; font-size: 1rem; font-weight: 700; margin-bottom: .9rem; }
+.pn-release-group ul, .pn-release-list { padding-left: 1.2rem; font-size: .92rem; line-height: 1.95; }
+.pn-release-list { margin-top: 1.3rem; }
+.pn-release li + li { margin-top: .65rem; }
+.pn-release li::marker { color: var(--accent-dark); }
+.pn-release-tip { border-left: 3px solid var(--accent); padding: .65rem 1rem; background: var(--paper); font-size: .85rem; line-height: 1.9; margin-top: 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.pn-release kbd { font-family: var(--pn-text); font-size: .78rem; padding: .05rem .3rem; border: 1px solid var(--line-2); border-bottom-width: 2px; border-radius: 4px; white-space: nowrap; background: var(--paper); }
+.pn-history-download { padding: 1.4rem 0 0; }
+.pn-history-download h2 { font-family: var(--pn-display); font-size: 1.15rem; font-weight: 800; margin-bottom: .6rem; }
+.pn-history-download p { font-size: .9rem; color: var(--ink-2); line-height: 1.9; margin-bottom: 1.1rem; }
+@media (max-width: 560px) {
+  .pn-history { padding: 5.5rem 1rem 3rem; }
+  .pn-release { padding: 1.3rem 1.1rem; }
+  .pn-release-meta p { margin-left: 0; flex-basis: 100%; }
+  .pn-release-group ul, .pn-release-list { font-size: .88rem; }
+}
