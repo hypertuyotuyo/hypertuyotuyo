@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UV view and visible area | PetaNuri3D manual | HYPERtuyotuyo</title>
+  <meta name="description" content="Side-by-side UV painting, grid/snapping, UV guide, seam-continuous painting, visible area (show/hide selected), Hide pen, faint surrounding display, visibility presets, mesh/seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/uv">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/uv">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/uv">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/uv">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/uv">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/uv">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="UV view and visible area | PetaNuri3D manual | HYPERtuyotuyo">
+  <meta property="og:description" content="Side-by-side UV painting, grid/snapping, UV guide, seam-continuous painting, visible area (show/hide selected), Hide pen, faint surrounding display, visibility presets, mesh/seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/uv">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Manual",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "UV view and visible area",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en/manual/uv"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "UV view and visible area | PetaNuri3D Manual",
+   "description": "Side-by-side UV painting, grid/snapping, UV guide, seam-continuous painting, visible area (show/hide selected), Hide pen, faint surrounding display, visibility presets, mesh/seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/uv",
+   "inLanguage": "en",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual",
+    "name": "PetaNuri3D Manual"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="Menu">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="Back to HYPERtuyotuyo home"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/en" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="Choose language"><option value="ja" data-url="/petanuri/manual/uv">日本語</option><option value="en" data-url="/petanuri/en/manual/uv" selected>English</option><option value="ko" data-url="/petanuri/ko/manual/uv">한국어</option><option value="zh" data-url="/petanuri/zh/manual/uv">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/en">Introduction</a></li>
+      <li><a href="/petanuri/en#gallery">Examples</a></li>
+      <li><a href="/petanuri/en#features">Features</a></li>
+      <li><a href="/petanuri/en#price">Pricing</a></li>
+      <li><a href="/petanuri/en/manual">Manual</a></li>
+      <li><a href="/petanuri/en/changelog">Changelog</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="Manual contents">
+    <p class="mn-side-title">Manual</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
+    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, surface relief and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv" aria-current="page">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / UV view and visible area</p>
+    <h1 class="mn-h1">UV view and visible area</h1>
+    <p class="mn-intro">Place UV (the unwrapped texture map) beside 3D and paint in either. Hide front areas with Visible area to paint the body under clothes or inside hair.</p>
+    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#uv">Show UV view</a></li><li><a href="#grid">Grid and snapping</a></li><li><a href="#uvnav">UV guide (zoom/move)</a></li><li><a href="#seam">Beyond island edges (seam-continuous painting)</a></li><li><a href="#isolate">Visible area (show/hide selected)</a></li><li><a href="#hidepen">Hide pen and the bar below 3D</a></li><li><a href="#ghost">Dim surroundings</a></li><li><a href="#presets">Save visibility presets</a></li><li><a href="#wire">Mesh lines and seam lines</a></li></ul></div>
+    <section class="mn-sec" id="uv"><h2>Show UV view</h2><ul class="mn-list"><li>Three layouts: 3D only, 3D beside UV, UV only. From 3D only, use UV at the 3D right edge (<kbd>U</kbd> or View → UV) to show both. Drag the divider to resize.</li><li>When side by side, × at the UV top right closes UV (3D only); × at the 3D top right closes 3D (UV only).<kbd>Shift</kbd>＋<kbd>U</kbd>  toggles UV only ⇔ side by side. Last layout is remembered.</li><li>Shows UVs for the selected texture set (name at top left), updating when the set changes.</li><li>Pens, brushes, erasers, polygon fill, fill, enclosed fill, gradients, shapes, stamps, eyedropper, blur and smudge also work in UV.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="UV beside the 3D view" loading="lazy"><figcaption>3D and UV side by side</figcaption></figure><ul class="mn-list"><li>While using UV, faces under the brush circle in 3D <strong>glow red</strong>. While using 3D, a red dot marks the painting position in UV.</li><li>Wheel zooms; middle drag or <kbd>Space</kbd> + drag pans; Frame all fits the view. Lines shows UV lines; Island edges shows outlines (▼ sets color/opacity).</li><li>Header ⟲/⟳ rotate in 15° steps (paint while rotated).</li><li>Header Symmetry X/Y/Z matches the 3D top-left toggles (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</li><li>When UV is narrow, header buttons that do not fit move into ⋯.</li></ul></section><section class="mn-sec" id="grid"><h2>Grid and snapping</h2><ul class="mn-list"><li>Grid in the UV header toggles grid lines. Adjacent ▼ chooses subdivisions (2, 4, 8, 16, 32, 64, 128 per texture side) and snapping. Pixels per cell also appear there.</li><li>Lines are display-only and excluded from artwork, saves and exports.</li><li><strong>“Snap move/transform to grid”</strong> (enabled by default, only with grid visible): when moving a UV frame for Move/transform, Transform (<kbd>Ctrl</kbd>＋<kbd>T</kbd>) or Paste image on UV, corners/center snap near grid lines. Corner/edge handles, free-transform corners and warp points snap too.</li><li><kbd>Ctrl</kbd>  temporarily disables snapping while held. 3D frames do not snap.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV grid with its ▼ settings open" loading="lazy"><figcaption>Grid lines and ▼ (subdivisions/snapping)</figcaption></figure></section><section class="mn-sec" id="uvnav"><h2>UV guide (zoom/move)</h2><p>A navigator similar to the 3D one appears at UV top right. Operate entirely with a pen.</p><ul class="mn-list"><li><strong>Magnifier</strong>: drag vertically to zoom (up zooms in).<strong>Hand</strong>: drag to pan.<strong>Square</strong>: frame all.</li><li>Move using the top handle; resize at the left/bottom edges or bottom-left corner.</li><li>— collapses to a small circular icon; click to restore (also View → UV → UV guide).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV view with zoom/pan/frame-all navigator at top right" loading="lazy"><figcaption>UV top-right navigator</figcaption></figure></section><section class="mn-sec" id="seam"><h2>Beyond island edges (seam-continuous painting)</h2><ul class="mn-list"><li>While painting in UV, a brush circle extending beyond an island will <strong>not paint another island merely adjacent in UV but distant in 3D</strong>.</li><li>In the header, <strong>“Paint across seams”</strong> (on by default) continues excess strokes beyond an island&#x27;s seam onto connected faces in 3D without breaks. Off paints only within the current island (same toggle in context menu and View → UV).</li><li>Outside islands (unused UV areas), the brush is a faint dotted circle with ×. Strokes started outside begin painting upon entering an island. Text, shapes, stamps and gradients can be placed from outside islands.</li></ul></section><section class="mn-sec" id="isolate"><h2>Visible area (show/hide selected)</h2><ol class="mn-steps"><li>Select islands/faces in UV or 3D (island/face selection, lasso, vertex groups etc.).</li><li>Use the Visible area icon at the 3D top left, <kbd>Shift</kbd>＋<kbd>H</kbd> or Show selected only in the UV header to show only selected areas in 3D.</li><li><kbd>H</kbd> (Hide selected in the UV header) hides selected areas; add more repeatedly.</li><li><kbd>Alt</kbd>＋<kbd>H</kbd>  returns to Show all.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="Only UV-selected areas shown in 3D" loading="lazy"><figcaption>Show only UV-selected areas in 3D</figcaption></figure><ul class="mn-list"><li>After Show selected only, changing the selection automatically updates visibility (click again to show all).</li><li><strong>Hiding deselects the area</strong>. Paint visible areas directly. Restore the deselected area using Restore selection below 3D or  <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>  undoes it.</li><li>3D right-click → Hide this island / Show only this island directly hides/shows the clicked island (selection and Undo history remain unchanged).</li><li><strong>Visible area icon ▼</strong>: Left has From selection (Show selected only, Hide selected, Show selected too, Hide pen) and Hidden areas (Invert, Show all, Expand/Shrink, Show faintly). Right has Visibility presets (saved list). Use this when nothing is hidden.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="Visible area ▼: From selection/Hidden areas at left, preset list at right" loading="lazy"><figcaption>Visible area ▼ dialog</figcaption></figure><div class="mn-tip">Hidden areas do not write depth, so the body under clothes or inside hair becomes visible and paintable. Hidden parts are neither painted nor picked by eyedropper/fill. Hide entire objects (meshes) too (<a href="/petanuri/en/manual/sets#objects">Show/hide objects</a>).</div><div class="mn-tip warn">Hiding/showing is excluded from Undo (<kbd>Ctrl</kbd>＋<kbd>Z</kbd>) history. Restore with Show all or a saved visibility preset.</div></section><section class="mn-sec" id="hidepen"><h2>Hide pen and the bar below 3D</h2><p>Trace areas to hide them directly, useful for painting behind overlapping cloth.</p><ol class="mn-steps"><li>Choose Hide in the left toolbar (or toggle Hide pen in the bar below 3D).</li><li>Choose Hide faces (quads hide both triangles together) or Hide islands (whole UV islands) as the sub tool.</li><li>Traced 3D areas disappear. Clicking in UV hides them too.</li><li>Click Hide pen again to return to the previous tool.</li></ol><div class="mn-tip">One stroke does not hide newly revealed faces behind the front. Trace again to hide them too.</div><p><strong>The bottom-center bar below 3D</strong> appears only while something is hidden or the Hide pen is active. Shows Hide pen, Faces/Islands, Visibility presets ▼, current status (Preset: name / Partially hidden, unsaved preset / Showing selected only) and Show all.</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="Cape hidden, with bar below 3D" loading="lazy"><figcaption>Hidden cape and the bar below 3D</figcaption></figure></section><section class="mn-sec" id="ghost"><h2>Dim surroundings</h2><ul class="mn-list"><li>While hidden, Show surroundings faintly below 3D displays hidden areas translucently so you can paint with context.</li><li>The adjacent slider adjusts opacity (5–80%). Also available under Hidden areas → Show faintly in ▼.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="Hidden cape displayed translucently" loading="lazy"><figcaption>Hidden cape shown faintly</figcaption></figure><div class="mn-tip">Faintly shown hidden areas still cannot be painted.</div></section><section class="mn-sec" id="presets"><h2>Save visibility presets</h2><p>Name and save frequently used visibility states to recall them anytime.</p><ol class="mn-steps"><li>Hide the desired areas.</li><li>Below 3D, Visibility presets ▼ (or Visible area ▼) → Save current visibility; enter a name (matching names overwrite).</li><li>Click a name in the same list to restore that visibility.</li></ol><ul class="mn-list"><li>Manage visibility presets (rename/delete) changes names or deletes them.</li><li>Saved and current visibility states are stored in .petanuri projects and remain available after reopening.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="Visibility preset list and Save current visibility menu" loading="lazy"><figcaption>Save visibility presets</figcaption></figure></section><section class="mn-sec" id="wire"><h2>Mesh lines and seam lines</h2><ul class="mn-list"><li>Use top-left 3D icons (View → Lines and rulers → Mesh lines / Seam lines) to show polygon edges and UV seams/island edges. Toggle seam lines with  <kbd>Alt</kbd>＋<kbd>W</kbd>  too.</li><li>▼ below the icon sets opacity, color (blue/black/white) and whether to show back/hidden lines.</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="Mesh line settings" loading="lazy"><figcaption>Mesh lines ▼ settings</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="Lines only on visible faces" loading="lazy"><figcaption>Visible faces only</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="Back-face lines also shown" loading="lazy"><figcaption>Back and hidden lines too</figcaption></figure></div></section>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/layers"><small>← Previous</small>Layer</a><a class="next" href="/petanuri/en/manual/screen"><small>Next →</small>Interface, panels and preferences</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="Footer">
+      <a href="/">HYPERtuyotuyo home</a>
+      <a href="/petanuri/en">PetaNuri3D</a>
+      <a href="/petanuri/en/manual">Manual</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/en/changelog">Changelog</a>
+      <a href="/petanuri/terms">Terms of use (Japanese)</a>
+    </nav>
+    <p>© HYPERtuyotuyo All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

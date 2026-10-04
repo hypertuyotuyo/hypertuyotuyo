@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity에서 칠하기·AI 연동 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
+  <meta name="description" content="Unity에서 prefab 선택 후 &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)·저장하면 Unity에 반영·애드온 설치·저장 위치·원본 파일은 변경하지 않음·AI(MCP 클라이언트)에서 조작. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/unity">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/unity">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/unity">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/unity">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/unity">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/unity">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="Unity에서 칠하기·AI 연동 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
+  <meta property="og:description" content="Unity에서 prefab 선택 후 &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)·저장하면 Unity에 반영·애드온 설치·저장 위치·원본 파일은 변경하지 않음·AI(MCP 클라이언트)에서 조작. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/unity">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "매뉴얼",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Unity에서 칠하기·AI 연동",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual/unity"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Unity에서 칠하기·AI 연동 | PetaNuri3D 매뉴얼",
+   "description": "Unity에서 prefab 선택 후 'ぺたぬり3D で塗る'(PetaNuri3D로 칠하기)·저장하면 Unity에 반영·애드온 설치·저장 위치·원본 파일은 변경하지 않음·AI(MCP 클라이언트)에서 조작. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/unity",
+   "inLanguage": "ko",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual",
+    "name": "PetaNuri3D 매뉴얼"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="메뉴">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="하이퍼 츠요츠요 홈으로"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="40" height="28"></a>
+    <a href="/petanuri/ko" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="언어 선택"><option value="ja" data-url="/petanuri/manual/unity">日本語</option><option value="en" data-url="/petanuri/en/manual/unity">English</option><option value="ko" data-url="/petanuri/ko/manual/unity" selected>한국어</option><option value="zh" data-url="/petanuri/zh/manual/unity">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/ko">소개 페이지</a></li>
+      <li><a href="/petanuri/ko#gallery">표시 예시</a></li>
+      <li><a href="/petanuri/ko#features">기능 목록</a></li>
+      <li><a href="/petanuri/ko#price">가격</a></li>
+      <li><a href="/petanuri/ko/manual">매뉴얼</a></li>
+      <li><a href="/petanuri/ko/changelog">업데이트 내역</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="매뉴얼 목차">
+    <p class="mn-side-title">매뉴얼</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
+    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·요철·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity" aria-current="page">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / Unity에서 칠하기·AI 연동</p>
+    <h1 class="mn-h1">Unity에서 칠하기·AI 연동</h1>
+    <p class="mn-intro">Unity에서 아바타를 선택하여 PetaNuri3D를 실행하고 바로 칠할 수 있습니다. 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
+    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#unity">Unity에서 실행하여 칠하기</a></li><li><a href="#ai">AI 연동(MCP)</a></li></ul></div>
+    <section class="mn-sec" id="unity"><h2>Unity에서 실행하여 칠하기</h2><ul class="mn-list"><li>Unity에서 prefab(아바타 등)을 선택하고 &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)를 누르면 PetaNuri3D가 실행되어 해당 모델을 칠할 수 있습니다.</li><li>칠한 그림은 <strong>PetaNuri3D 또는 Unity에서 저장할 때 </strong> Unity 씬에 반영되며 칠한 텍스처가 Unity 프로젝트에 저장됩니다(칠하는 동안 Unity 모습은 바뀌지 않음).</li><li>사용 환경: Unity 2022.3(VRChat 아바타 제작용 Unity). 같은 컴퓨터의 Unity에만 연결됩니다.</li></ul><h3>처음 한 번만: Unity에 애드온 설치</h3><ol class="mn-steps"><li>PetaNuri3D 폴더의 &#x27;unity&#x27; 폴더에 PetaNuri3D-Unity.unitypackage가 있습니다.</li><li>Unity에서 프로젝트를 연 채 PetaNuri3D-Unity.unitypackage를 Project 영역에 드래그합니다(Assets → &#x27;Import Package&#x27; → &#x27;Custom Package&#x27;도 가능).</li><li>&#x27;Import&#x27;를 눌러 위 메뉴 바에 &#x27;ぺたぬり3D&#x27;가 표시되면 설치 완료입니다(에디터 안에서만 실행되며 업로드할 아바타에는 포함되지 않음).</li></ol><h3>칠하기</h3><ol class="mn-steps"><li>Unity에서 Hierarchy의 아바타(씬 안의 오브젝트) 또는 Project의 prefab을 선택합니다.</li><li>메뉴 바의 &#x27;ぺたぬり3D&#x27; → &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)를 누릅니다(우클릭에도 있음). 처음 한 번만 PetaNuri3D 폴더의 PetaNuri3D-win_x64.exe를 선택합니다.</li><li>PetaNuri3D가 실행되어 Unity 모델이 표시됩니다. 텍스처 세트는 머티리얼 메인 텍스처별로 생성되며 원래 텍스처가 그대로 바탕이 됩니다(해상도 유지. Lite는 최대 2048).</li><li>PetaNuri3D 또는 Unity에서 저장(<kbd>Ctrl</kbd>＋<kbd>S</kbd>)하면 양쪽 모두 저장되며 칠한 그림이 Unity에 반영됩니다.</li></ol><ul class="mn-list"><li>작업 파일은 Assets/PetaNuri/(이름)/(이름).petanuri, 칠한 텍스처는 Assets/PetaNuri/(이름)/Textures/의 PNG(가져오기 설정은 원래 텍스처에 맞춤), 머티리얼은 같은 위치의 Materials/에 복사본을 만들어 사용합니다.</li><li><strong>원본 FBX·머티리얼·텍스처·prefab은 변경하지 않습니다</strong>. Project prefab에서 시작했다면 Prefab Variant를 만들어 해당 변형을 칠합니다.</li><li>Unity에서 실행한 PetaNuri3D는 칠하기용 화면이 됩니다(새로 만들기·작업 파일 열기·모델 다시 불러오기·다른 이름으로 저장은 표시되지 않음).</li><li>PetaNuri3D를 닫으면 연동이 종료되며 Unity가 &#x27;그대로 사용/원래 모습으로 복원&#x27;을 묻습니다(씬의 아바타를 칠한 경우).</li><li>다음에 다시 &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)를 누르면 작업 파일을 열어 이어 칠할 수 있습니다.</li></ul><div class="mn-tip">자세한 과정이나 연결되지 않을 때는 PetaNuri3D의 unity 폴더에 있는 &#x27;Unity連携の使い方.txt&#x27;를 참고하세요.</div></section><section class="mn-sec" id="ai"><h2>AI 연동(MCP)</h2><ul class="mn-list"><li>AI(MCP 클라이언트)에서 PetaNuri3D를 조작할 수 있습니다(그리기·색과 브러시·시점·레이어·화면 촬영·PNG 내보내기 등).</li><li>기본은 OFF입니다. 사용하려면 파일 → 환경 설정 → &#x27;AI 연동&#x27;의 &#x27;AI 연동(MCP) 사용&#x27;을 켭니다.</li><li>MCP 클라이언트에 stdio 서버로 등록합니다: 명령 node, 인수  &lt;PetaNuri3D 폴더 &gt;\mcp\server.mjs(node v20 이상). 설정 예시는 같은 곳의 &#x27;연결 방법&#x27;에 있으며 &#x27;복사&#x27;로 복사할 수 있습니다.</li><li>서버는 AI 쪽에서 실행합니다. PetaNuri3D가 같은 컴퓨터의 정해진 포트에 자동으로 연결하며 연결되면 아래 힌트에 안내됩니다. 다른 웹사이트에서는 연결할 수 없습니다.</li><li><strong>run_js</strong>(앱 안에서 임의의 프로그램을 실행하는 명령)는  <span class="tier pro">Pro</span> 전용입니다. ON만으로 실행되지 않으며 &#x27;run_js(임의의 프로그램 실행) 허용&#x27;을 켰을 때만 실행됩니다. 신뢰할 수 있는 AI 클라이언트만 등록하세요.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="환경 설정의 AI 연동 항목" loading="lazy"><figcaption>파일 → 환경 설정 → &#x27;AI 연동&#x27;</figcaption></figure></section>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/export"><small>← 이전</small>내보내기</a><a class="next" href="/petanuri/ko/manual/keys"><small>다음 →</small>단축키와 펜 조작</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="49" height="34"></a>
+    <nav aria-label="푸터">
+      <a href="/">하이퍼 츠요츠요 홈</a>
+      <a href="/petanuri/ko">PetaNuri3D</a>
+      <a href="/petanuri/ko/manual">매뉴얼</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/ko/changelog">업데이트 내역</a>
+      <a href="/petanuri/terms">이용약관 (일본어)</a>
+    </nav>
+    <p>© 하이퍼 츠요츠요 All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

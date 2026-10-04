@@ -23,6 +23,13 @@
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri">
+  <!-- languages:end -->
   <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
   <meta property="og:site_name" content="はいぱーつよつよ">
   <meta property="og:locale" content="ja_JP">
@@ -56,7 +63,12 @@
    "applicationCategory": "DesignApplication",
    "applicationSubCategory": "3D ペイント・テクスチャ制作",
    "operatingSystem": "Windows 11",
-   "inLanguage": "ja",
+   "inLanguage": [
+    "ja",
+    "en",
+    "ko",
+    "zh-Hans"
+   ],
    "publisher": {
     "@id": "https://hyper-tuyotuyo.com/#org"
    },
@@ -75,7 +87,7 @@
    "offers": [
     {
      "@type": "Offer",
-     "name": "ぺたぬり3D Lite",
+     "name": "PetaNuri3D Lite",
      "price": "0",
      "priceCurrency": "JPY",
      "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
@@ -83,7 +95,7 @@
     },
     {
      "@type": "Offer",
-     "name": "ぺたぬり3D Standard",
+     "name": "PetaNuri3D Standard",
      "price": "1500",
      "priceCurrency": "JPY",
      "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
@@ -92,7 +104,7 @@
     },
     {
      "@type": "Offer",
-     "name": "ぺたぬり3D Pro",
+     "name": "PetaNuri3D Pro",
      "price": "3000",
      "priceCurrency": "JPY",
      "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
@@ -214,6 +226,7 @@
   <div class="pn-nav-inner">
     <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
     <a href="/petanuri" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="ぺたぬり3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="言語を選ぶ"><option value="ja" data-url="/petanuri" selected>日本語</option><option value="en" data-url="/petanuri/en">English</option><option value="ko" data-url="/petanuri/ko">한국어</option><option value="zh" data-url="/petanuri/zh">简体中文</option></select>
     <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
     <ul class="pn-nav-links" id="pn-links">
       <li><a href="#gallery">表示例</a></li>
@@ -542,7 +555,7 @@
           <li data-tier="std"><span class="tx">境界線（レイヤーの縁取りを、後から直せる形で）</span><span class="tier std">Standard</span></li>
           <li data-tier="std"><span class="tx">調整レイヤー 8 種（色相・彩度・明度／明るさ・コントラスト／レベル補正／グラデーションマップ など）</span><span class="tier std">Standard</span></li>
           <li data-tier="std"><span class="tx">フィルター 10 種（ぼかし・シャープ・色調補正 など。モデルで見ながら値を決める）</span><span class="tier std">Standard</span></li>
-          <li data-tier="std"><span class="tx">グラデーションマップの色の点 32 個・プリセット 220 個</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">グラデーションマップの色の点 32 個・プリセット 240 個</span><span class="tier std">Standard</span></li>
           <li data-tier="lite"><span class="tx">作業の履歴（押した所まで一気に戻る）</span></li>
           <li data-tier="lite"><span class="tx">描いていないレイヤーを休ませて、GPU のメモリを節約</span></li>
         </ul>

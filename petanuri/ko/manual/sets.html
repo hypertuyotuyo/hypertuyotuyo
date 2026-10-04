@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스처 세트와 오브젝트 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
+  <meta name="description" content="텍스처 세트 선택·메인과 서브(두 세트에 걸쳐 그리기)·해상도·바탕 이미지 교체·이미지나 PSD 추가·오브젝트별 표시와 숨김·메모리 절약·대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/sets">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/sets">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/sets">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/sets">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/sets">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/sets">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="텍스처 세트와 오브젝트 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
+  <meta property="og:description" content="텍스처 세트 선택·메인과 서브(두 세트에 걸쳐 그리기)·해상도·바탕 이미지 교체·이미지나 PSD 추가·오브젝트별 표시와 숨김·메모리 절약·대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/sets">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "매뉴얼",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "텍스처 세트와 오브젝트",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual/sets"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "텍스처 세트와 오브젝트 | PetaNuri3D 매뉴얼",
+   "description": "텍스처 세트 선택·메인과 서브(두 세트에 걸쳐 그리기)·해상도·바탕 이미지 교체·이미지나 PSD 추가·오브젝트별 표시와 숨김·메모리 절약·대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/sets",
+   "inLanguage": "ko",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual",
+    "name": "PetaNuri3D 매뉴얼"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="메뉴">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="하이퍼 츠요츠요 홈으로"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="40" height="28"></a>
+    <a href="/petanuri/ko" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="언어 선택"><option value="ja" data-url="/petanuri/manual/sets">日本語</option><option value="en" data-url="/petanuri/en/manual/sets">English</option><option value="ko" data-url="/petanuri/ko/manual/sets" selected>한국어</option><option value="zh" data-url="/petanuri/zh/manual/sets">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/ko">소개 페이지</a></li>
+      <li><a href="/petanuri/ko#gallery">표시 예시</a></li>
+      <li><a href="/petanuri/ko#features">기능 목록</a></li>
+      <li><a href="/petanuri/ko#price">가격</a></li>
+      <li><a href="/petanuri/ko/manual">매뉴얼</a></li>
+      <li><a href="/petanuri/ko/changelog">업데이트 내역</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="매뉴얼 목차">
+    <p class="mn-side-title">매뉴얼</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
+    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·요철·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets" aria-current="page">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 텍스처 세트와 오브젝트</p>
+    <h1 class="mn-h1">텍스처 세트와 오브젝트</h1>
+    <p class="mn-intro">머티리얼별로 &#x27;텍스처 세트&#x27;가 생성됩니다. 각 세트에 레이어와 해상도가 있습니다. 모델 오브젝트(메시)별로 숨길 수도 있습니다.</p>
+    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#choose">텍스처 세트 선택</a></li><li><a href="#cross">메인과 서브(두 세트에 걸쳐 그리기)</a></li><li><a href="#files">바탕 이미지 교체·이미지나 PSD 추가</a></li><li><a href="#objects">오브젝트 표시·숨김</a></li><li><a href="#sleep">메모리 절약</a></li><li><a href="#orphan">대상이 없는 세트(! 표시)</a></li></ul></div>
+    <section class="mn-sec" id="choose"><h2>텍스처 세트 선택</h2><ul class="mn-list"><li>3D 뷰에서 <strong>다른 세트 위에서 그리기 시작하면 해당 세트로 자동 전환한 후 그립니다 </strong>. 펜 옆에 세트 이름이 표시됩니다.</li><li>쉬는 세트는 깨우는 동안 &#x27;텍스처 세트 변경 중…&#x27;이 표시됩니다. 그동안의 펜 움직임을 기억하고 깨어나면 그대로 그리므로 선이 빠지지 않습니다.</li><li>자동 전환을 중지하려면 3D 뷰 왼쪽 아래 &#x27;터치한 곳으로 전환&#x27;을 끕니다(우클릭 메뉴에도 있음).</li><li>수동 선택도 가능합니다: 패널 행 누르기·모델 위에서  <kbd>Alt</kbd>+ 우클릭·우클릭 &#x27;이 세트 선택&#x27;. 다시 선택하면 해당 세트가 3D에서 잠시 색으로 강조됩니다.</li><li>체크로 세트 표시/숨김, 오른쪽 항목으로 해상도(512~4096. Lite는 최대 2048)를 전환합니다. 해상도 변경 시 실행 취소 내역이 지워지므로 변경 전에 확인합니다.</li><li>세트를 다시 선택해도 실행 취소·다시 실행을 이어서 사용할 수 있습니다.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="텍스처 세트 패널" loading="lazy"><figcaption>텍스처 세트 패널(GPU 메모리 예상 사용량 포함)</figcaption></figure><div class="mn-tip">스탬프용 2D 캔버스는 작업용 특수 세트입니다. 모델 목록에 섞지 않으며 편집 중에는 패널에 표시합니다. 모델 메인·서브와 별도로 편집하고 작업 파일에는 함께 저장합니다(<a href="/petanuri/ko/manual/deco#canvas2d">스탬프용 2D 캔버스</a>).</div></section><section class="mn-sec" id="cross"><h2>메인과 서브(두 세트에 걸쳐 그리기)</h2><ul class="mn-list"><li>깨어 있어 그릴 수 있는 세트는 선택한 세트(<strong>메인</strong>)와 바로 전에 선택한 세트(<strong>서브</strong>) 두 개입니다. 3D 뷰 왼쪽 아래에 이름이 표시됩니다(서브를 누르면 메인과 교체). 패널에서 메인 행은 분홍색, 서브 행은 파란색입니다.</li><li>이 두 세트에 한 번의 선으로 걸쳐 그릴 수 있습니다. 목 이음매처럼 얼굴과 몸 경계를 넘어 칠하려면 두 세트를 각각 한 번 누른 후 그립니다. 실행 취소 한 번으로 둘 다 되돌립니다.</li><li>걸쳐 그리지 않고 시작한 세트에만 그리려면 왼쪽 아래 <strong>&#x27;걸쳐 그리기&#x27;</strong>를 끕니다(우클릭 메뉴에도 같은 전환 있음).</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="3D 뷰 왼쪽 아래. 누른 곳으로 전환·메인·서브·걸쳐 그리기" loading="lazy"><figcaption>3D 뷰 왼쪽 아래(누른 곳으로 전환·메인·서브·걸쳐 그리기)</figcaption></figure><div class="mn-tip">UV 영역에서는 메인 세트에만 그립니다. 오른쪽 아래 서브 UV가 작게 표시됩니다(누르면 서브가 메인이 됨).</div></section><section class="mn-sec" id="files"><h2>바탕 이미지 교체·이미지나 PSD 추가</h2><p>텍스처 세트 패널 행의 우클릭 또는 행 오른쪽 &#x27;…&#x27;에서:</p><ul class="mn-list"><li><strong>바탕 이미지 교체</strong>: 해당 세트 바탕 레이어 그림을 선택한 이미지(PNG·JPEG·WebP·BMP·GIF·TGA)로 교체합니다. 크기가 다르면 해상도에 맞춥니다.</li><li><strong>이미지를 레이어로 가져오기</strong>: 선택한 이미지를 해당 세트 UV 위에 놓는 틀을 표시합니다(<kbd>Enter</kbd> 로 새 레이어에).</li><li><strong>PSD 가져오기(레이어 교체)</strong>: 해당 세트 레이어를 PSD 레이어로 교체합니다(<span class="tier std">Standard</span>).</li><li><strong>lilToon 머티리얼 불러오기</strong>: .mat·.unitypackage를 해당 세트에 가져옵니다(<span class="tier pro">Pro</span>).</li><li>이미지·PSD·.mat를 행 위에 드롭해도 가져옵니다. 선택하지 않은 세트에도 가져올 수 있습니다. 모두 실행 취소할 수 있습니다.</li></ul></section><section class="mn-sec" id="objects"><h2>오브젝트 표시·숨김</h2><p>오른쪽 &#x27;오브젝트&#x27; 패널에 모델 오브젝트(머리카락·옷·소품 등의 메시)가 원래 계층의 들여쓰기로 표시됩니다. 각 행에 눈 버튼·이름·사용하는 텍스처 세트 표시가 있습니다.</p><ul class="mn-list"><li>눈 버튼으로 숨기기·표시.<kbd>Alt</kbd>+ 누르면 &#x27;이것만 표시&#x27;, 다시 누르면 전체 표시. 3D 우클릭에도 &#x27;이 오브젝트 숨기기&#x27;·&#x27;이 오브젝트만 표시&#x27;가 있습니다.</li><li>이름을 누르면 오브젝트가 3D에서 잠시 강조됩니다. 세트 표시를 누르면 해당 텍스처 세트를 선택합니다.</li><li>숨긴 오브젝트는 3D에 표시되지 않고 히트 판정·채색도 되지 않습니다(뒷면·가려진 면에도 칠하기·대칭 쪽·채우기·그라데이션도 동일). 안쪽 물체가 그대로 보여 칠할 수 있습니다.</li><li>텍스처(레이어)는 유지되며 PNG·PSD·머티리얼 내보내기도 바뀌지 않습니다. 숨김 상태는 작업 파일에 저장됩니다. 전체 표시는 <kbd>Alt</kbd>＋<kbd>H</kbd> 입니다.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="오브젝트 패널에서 일부 오브젝트를 숨긴 모습" loading="lazy"><figcaption>오브젝트 패널</figcaption></figure></section><section class="mn-sec" id="sleep"><h2>메모리 절약</h2><ul class="mn-list"><li>선택하지 않은 세트는 모습이 유지된 채 GPU 메모리를 비워 쉬게 합니다.</li><li>다시 선택하면 2048은 약 0.2초, 4096은 약 0.5~1.5초 후 그릴 수 있습니다.</li><li>저장·내보내기·AO·모든 세트에 적용하는 필터는 쉬는 세트에도 그대로 적용됩니다.</li></ul></section><section class="mn-sec" id="orphan"><h2>대상이 없는 세트(! 표시)</h2><p><a href="/petanuri/ko/manual/start#reload">모델을 다시 불러옴</a>때 새 모델에 없는 머티리얼의 세트는 삭제하지 않고  <strong>!</strong> 표시를 붙여 유지합니다.</p><ol class="mn-steps"><li>!가 있는 세트를 누릅니다.</li><li>이동할 레이어(기본은 전체)와 대상 세트를 선택하고 &#x27;옮기기&#x27;를 누릅니다.</li><li>대상 세트 레이어 맨 위에 같은 순서로 들어갑니다. &#x27;원래 세트에도 유지&#x27;는 복사만 합니다.</li></ol><div class="mn-tip">! 세트는 3D에 표시되지 않으며 그릴 수 없습니다. 내보내기와 AO에도 포함되지 않습니다. &#x27;이 세트 삭제&#x27;로 삭제할 수 있습니다.</div></section>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/screen"><small>← 이전</small>화면·패널·환경 설정</a><a class="next" href="/petanuri/ko/manual/material"><small>다음 →</small>마무리 모습과 lilToon 머티리얼</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="49" height="34"></a>
+    <nav aria-label="푸터">
+      <a href="/">하이퍼 츠요츠요 홈</a>
+      <a href="/petanuri/ko">PetaNuri3D</a>
+      <a href="/petanuri/ko/manual">매뉴얼</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/ko/changelog">업데이트 내역</a>
+      <a href="/petanuri/terms">이용약관 (일본어)</a>
+    </nav>
+    <p>© 하이퍼 츠요츠요 All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

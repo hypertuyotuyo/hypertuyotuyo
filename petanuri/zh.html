@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetaNuri3D｜直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具（提供免费版）</title>
+  <meta name="description" content="PetaNuri3D 是面向动漫风格的 Windows 3D 绘画工具，可为 VRChat 等使用的 3D 虚拟形象、服装和道具直接在 3D 表面绘制纹理。无需寻找 UV，在看到的位置直接绘画，可导出 PNG、PSD。支持 FBX、VRM，可用 lilToon 效果预览，也可从 Unity 启动绘制。提供免费 Lite 版（BOOTH 销售）。">
+  <meta property="og:title" content="PetaNuri3D｜直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具（提供免费版）">
+  <meta property="og:description" content="PetaNuri3D 是面向动漫风格的 Windows 3D 绘画工具，可为 VRChat 等使用的 3D 虚拟形象、服装和道具直接在 3D 表面绘制纹理。无需寻找 UV，在看到的位置直接绘画，可导出 PNG、PSD。支持 FBX、VRM，可用 lilToon 效果预览，也可从 Unity 启动绘制。提供免费 Lite 版（BOOTH 销售）。">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta name="twitter:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://hyper-tuyotuyo.com/#org",
+   "name": "はいぱーつよつよ",
+   "alternateName": "Hyper TuyoTuyo",
+   "url": "https://hyper-tuyotuyo.com/",
+   "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+   "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+   "sameAs": [
+    "https://hyper-tuyotuyo.booth.pm/",
+    "https://x.com/Yak_HyperTYTY",
+    "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+   "name": "PetaNuri3D",
+   "alternateName": "PetaNuri3D",
+   "url": "https://hyper-tuyotuyo.com/petanuri/zh",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "description": "PetaNuri3D 是面向动漫风格的 Windows 3D 绘画工具，可为 VRChat 等使用的 3D 虚拟形象、服装和道具直接在 3D 表面绘制纹理。无需寻找 UV，在看到的位置直接绘画，可导出 PNG、PSD。支持 FBX、VRM，可用 lilToon 效果预览，也可从 Unity 启动绘制。提供免费 Lite 版（BOOTH 销售）。",
+   "applicationCategory": "DesignApplication",
+   "applicationSubCategory": "3D 绘画与纹理制作",
+   "operatingSystem": "Windows 11",
+   "inLanguage": [
+    "ja",
+    "en",
+    "ko",
+    "zh-Hans"
+   ],
+   "publisher": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "featureList": [
+    "直接在 3D 模型上绘画",
+    "也能绘制背面和被遮挡的面",
+    "无需寻找 UV 即可绘画",
+    "在 3D 模型上移动已绘制的内容",
+    "仅用数位笔即可操作",
+    "左右对称绘制",
+    "从 Unity 启动绘制",
+    "通过 PSD 往返编辑并保留图层",
+    "查看 lilToon 风格效果",
+    "保持姿势绘制和烘焙 AO"
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Lite",
+     "price": "0",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock"
+    },
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Standard",
+     "price": "1500",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock",
+     "priceValidUntil": "2026-11-02"
+    },
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Pro",
+     "price": "3000",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock",
+     "priceValidUntil": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "在哪里购买？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "BOOTH 商品页面有售。Lite 免费，Standard 为 2,500 日元，Pro 为 4,000 日元。发售纪念优惠截至 11/2，期间 Standard 为 1,500 日元、Pro 为 3,000 日元。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "只用免费的 Lite 版也可以吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。直接在 3D 上绘画、画笔、图章、图案、左右对称、UV 区域、选区、变换、文字、导出 PNG、保存工程文件、从 Unity 启动等日常绘制功能，Lite 均可使用。每个纹理集最多 4 个图层（含底色），最高分辨率 2048。没有水印。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以用于 VRChat 虚拟形象吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。打开 VRChat 等使用的 3D 虚拟形象、服装和道具（FBX、VRM 等），即可直接在 3D 上绘制纹理。绘制的纹理可导出为 PNG、PSD 并导入 Unity。在 Unity 选中虚拟形象并点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制），会启动 PetaNuri3D，保存后反映到 Unity（所有版本均可使用）。Pro 还可将 lilToon 材质导出为 .unitypackage。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "会改写原虚拟形象文件吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不会。从 Unity 绘制时也不会改写原 FBX、材质、纹理、prefab。绘制内容会存入 Unity 项目的 Assets/PetaNuri/。单独使用 PetaNuri3D 时，也只会读取模型文件。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "没有其他 3D 软件或绘画软件也能使用吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。仅用 PetaNuri3D 即可打开模型、绘制并将纹理导出为 PNG。若想保留图层继续润色，可导出 PSD（Standard 起可用），再使用自己的绘画软件接着绘制。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "购买 Standard 后可以升级到 Pro 吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。将 BOOTH“升级到 Pro”提供的文件安装到 Standard，并重启应用即可变为 Pro。工程文件和设置均会保留。详细信息请参阅使用手册。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以用于其他店铺的虚拟形象或服装吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "只要是有 UV（纹理展开）的 FBX 等 3D 模型，即可绘制。请分别确认模型数据的使用条款。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "能在 Mac 使用吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "目前仅支持 Windows（Windows 11。也能在 Windows 10 运行，但不属于支持范围）。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "出现“Windows 已保护你的电脑”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "因为应用未签名，首次启动时可能出现此提示。点击“更多信息”→“仍要运行”即可启动。入门也可参考。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "如何得知新版本发布？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "启动时（每天最多一次）会检查是否有新版本，并在界面右下角通知。检查时仅获取版本号，不会发送作品或设置。最新消息也会在 X（@Yak_HyperTYTY）公布。"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+
+<nav class="pn-nav" aria-label="菜单">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="返回 HYPERtuyotuyo 首页"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/zh" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="选择语言"><option value="ja" data-url="/petanuri">日本語</option><option value="en" data-url="/petanuri/en">English</option><option value="ko" data-url="/petanuri/ko">한국어</option><option value="zh" data-url="/petanuri/zh" selected>简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="#gallery">效果示例</a></li>
+      <li><a href="#points">功能介绍</a></li>
+      <li><a href="#features">功能列表</a></li>
+      <li><a href="#price">价格</a></li>
+      <li><a href="/petanuri/zh/manual">使用手册</a></li>
+      <li><a href="/petanuri/zh/changelog">更新记录</a></li>
+      <li><a href="/petanuri/terms">使用条款（日语）</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="pn-hero" aria-labelledby="pn-hero-title">
+  <div class="pn-wrap pn-hero-grid">
+    <div>
+      <h1 id="pn-hero-title" class="pn-logo-word"><span class="pn-eyebrow">专为动漫、插画风格打造的 3D 绘画工具，可直接在 VRChat 等使用的 3D 虚拟形象、服装和道具上绘画！</span><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="794" height="319"></h1>
+      <span class="pn-logo-sub">～面向动漫风格的 3D 绘画～</span>
+      <p class="pn-hero-lead">可直接为 VRChat 等使用的 3D 虚拟形象、<br>服装和道具绘制纹理，<br>是一款 3D 绘画工具。<br>无需寻找 UV，在看到的位置直接绘画。<br>完成的纹理可导出为 PNG、PSD。</p>
+      <div class="pn-btns">
+        <a href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener" class="btn pn-btn pn-btn-main">在 BOOTH 查看（Lite 免费）</a>
+        <a href="#features" class="btn pn-btn pn-btn-sub">查看功能</a>
+        <a href="#price" class="btn pn-btn pn-btn-sub">价格与版本区别</a>
+      </div>
+      <dl class="pn-hero-meta">
+        <div><b>Windows</b> 11</div>
+        <div><b>FBX</b>、glTF、VRM、OBJ 等</div>
+        <div><b>Lite</b> 免费</div>
+      </dl>
+    </div>
+    <figure class="pn-hero-paint pn-hero-model pn-hero-window">
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="/petanuri/assets/img/hero-tool-still.webp">
+        <!-- 最初は軽い静止画（47KB）を出し、読み込みが済んでから動く画像（約 800KB）に替える（petanuri.js。表示の速さのため） -->
+        <img src="/petanuri/assets/img/hero-tool-still.webp" data-anim="/petanuri/assets/img/hero-tool.webp" width="880" height="650" alt="PetaNuri3D 界面。用填充工具将 VRChat 虚拟形象“獄門しのぶ”涂成藏青色，再逐个部件上色，右侧 UV 同步显示颜色" fetchpriority="high">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery" class="pn-section" aria-labelledby="pn-gallery-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">01 — EXAMPLES</span><h2 id="pn-gallery-title" class="pn-h2">服装和道具也能绘制。</h2></div>
+      <p class="pn-sec-lead">不仅是虚拟形象的身体，服装、配饰和道具也可以绘制。只要 3D 模型有 UV，就能上色。以下是在 PetaNuri3D 中打开ののつよ系列服装和道具的示例（纹理来自原模型）。</p>
+    </div>
+    <div class="pn-gallery">
+      <figure class="g-a pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开狛犬セーラー的示例" loading="lazy"></div>
+        <figcaption><b>狛犬セーラー</b>ののつよ系列服装。从水手领和蝴蝶结，到裙摆图案</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-yukata-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开星降る月浴衣的示例" loading="lazy"></div>
+        <figcaption><b>星降る月浴衣</b>宽大的袖子与腰带装饰</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开风铃的示例" loading="lazy"></div>
+        <figcaption><b>风铃</b>獄門しのぶ的道具</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开魔法帽的示例" loading="lazy"></div>
+        <figcaption><b>魔法帽</b>星羽の魔導衣的道具</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-starfeather-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开星羽の魔導衣的示例" loading="lazy"></div>
+        <figcaption><b>星羽の魔導衣</b>长袍上的星纹与靴子</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magicstaff-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开星羽の杖的示例" loading="lazy"></div>
+        <figcaption><b>星羽の杖</b>星羽の魔導衣的道具</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-soen-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开蒼炎の水衣的示例" loading="lazy"></div>
+        <figcaption><b>蒼炎の水衣</b>披风和裙子上的火焰图案</figcaption></figure>
+      <div class="g-text pn-reveal">
+        <h3>按熟悉的方式绘画</h3>
+        <p>用钢笔画线，用填充工具铺色，在剪贴图层上叠加阴影和光泽。绘制 2D 插画的流程，也能直接用在 3D 模型上。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BEFORE / AFTER ===================== -->
+<section class="pn-section tint" aria-labelledby="pn-ba-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">02 — BEFORE / AFTER</span><h2 id="pn-ba-title" class="pn-h2">绘制前与绘制后</h2></div>
+      <p class="pn-sec-lead">从绘制的颜色到最终效果，都能在同一个界面中查看。左右移动滑块即可对比。</p>
+    </div>
+    <div class="pn-compare-wrap">
+      <div class="pn-compare-block pn-reveal">
+        <h3>绘制前 → 绘制后（效果示例）</h3>
+        <p>白色模型加入纹理后的变化（效果示例。纹理来自原模型）。</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/before-plain.webp" width="524" height="702" alt="绘制前的白色しのぶ" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="加入纹理的しのぶ（效果示例）" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">绘制前</span><span class="lbl r">绘制后</span>
+          <input type="range" min="0" max="100" value="50" aria-label="对比绘制前后">
+        </div>
+      </div>
+      <div class="pn-compare-block pn-reveal">
+        <h3>绘制的颜色 → 最终效果显示 <span class="tier pro">Pro</span></h3>
+        <p>可在带有阴影、边缘光和轮廓线的效果中绘制（β 版），计算方式与 lilToon 相同。</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="按绘制颜色原样显示" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="lilToon 风格的最终效果显示" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">绘制颜色</span><span class="lbl r">最终效果</span>
+          <input type="range" min="0" max="100" value="50" aria-label="对比绘制颜色与最终效果">
+        </div>
+      </div>
+      <div class="pn-compare-block pn-reveal">
+        <h3>烘焙 AO 前 → 烘焙后 <span class="tier pro">Pro</span></h3>
+        <p>计算腋下、下巴下方、头发内侧等光线不易到达位置的暗部，并生成图层。</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/ao-before.webp" width="550" height="810" alt="烘焙 AO 前" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="烘焙 AO 后。腋下和下巴下方出现阴影" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">烘焙前</span><span class="lbl r">烘焙后</span>
+          <input type="range" min="0" max="100" value="50" aria-label="对比 AO 烘焙前后">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POINTS ===================== -->
+<section id="points" class="pn-section" aria-labelledby="pn-points-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">03 — FEATURES</span><h2 id="pn-points-title" class="pn-h2">功能介绍</h2></div>
+      <p class="pn-sec-lead">以绘制 2D 插画的手感，为 3D 模型绘制纹理的工具。</p>
+    </div>
+    <div class="pn-points pn-reveal">
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>直接在 3D 模型上绘画</h3><p>转动视角，用钢笔在看到的位置绘制。笔画直接写入 UV 纹理。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>也能绘制背面和被遮挡的面</h3><p>画笔能直接触及头发内侧、衣服重叠处等不易看到的位置，也可隐藏前方部分来绘制后方。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>无需寻找 UV 即可绘画</h3><p>将 UV 区域放在旁边，即可在 3D 和 UV 两侧绘制。跨过接缝时，笔画和模糊效果也不会断开。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>在 3D 模型上移动已绘制的内容</h3><p>可直接用模型上的操作框移动、缩放、旋转、自由变换和扭曲。文字也能就地输入。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>仅用数位笔即可操作</h3><p>支持笔压。用侧键转动视角，通过就地弹出的调色板切换颜色和画笔。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>左右对称绘制</h3><p>按 M 键开启左右对称。可组合 X、Y、Z，在 UV 区域绘制时也有效。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>从 Unity 启动绘制</h3><p>在 Unity 选中虚拟形象并点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制）。保存后会反映到 Unity。不会改写原文件（所有版本均可使用）。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>通过 PSD 往返编辑并保留图层 <span class="tier std">Standard</span></h3><p>PSD 导入、导出可保留 26 种混合模式、文件夹、蒙版和调整图层。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>查看 lilToon 风格效果 <span class="tier pro">Pro</span></h3><p>可在带有阴影、边缘光、MatCap 和轮廓线的显示中绘制（β 版），并将材质导出为 .unitypackage。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>保持姿势绘制和烘焙 AO <span class="tier pro">Pro</span></h3><p>移动骨骼设置姿势后，可保持该形态绘制。也可计算光线不易到达位置的暗部并生成图层。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SHOWCASE ===================== -->
+<section class="pn-section tint" aria-labelledby="pn-show-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">04 — SCREEN</span><h2 id="pn-show-title" class="pn-h2">界面与用法</h2></div>
+      <p class="pn-sec-lead">介绍 4 个常用界面。详细操作请参阅<a class="pn-textlink" href="/petanuri/zh/manual">使用手册</a>。</p>
+    </div>
+    <div class="pn-show pn-reveal">
+      <div class="pn-show-media"><img class="pn-shot" src="/petanuri/assets/img/app-full.webp" width="1400" height="840" alt="3D 视图与 UV 区域并排显示的界面" loading="lazy"></div>
+      <div>
+        <span class="pn-show-no">3D × UV</span>
+        <h3>并排显示 3D 和 UV，可在任一侧绘制</h3>
+        <p>3D 视图中的笔画会立即反映到旁边的 UV 区域。在 UV 区域移动画笔时，3D 模型对应位置会显示红色提示。</p>
+        <ul>
+          <li>钢笔、毛笔、填充、渐变、模糊等工具也可在 UV 上使用</li>
+          <li>UV 区域可显示网格线，使移动、变换框吸附到网格</li>
+          <li>使用“仅显示所选部分”、隐藏笔和按对象显示，也能绘制服装下面的身体和头发内侧</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show rev pn-reveal">
+      <div class="pn-show-media"><div class="pn-duo">
+        <img class="pn-shot" src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="图层面板。脸颊、手臂星形和底色图层" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/uv-pane.webp" width="324" height="416" alt="UV 区域。しのぶ的身体纹理" loading="lazy">
+      </div></div>
+      <div>
+        <span class="pn-show-no">LAYERS</span>
+        <h3>与 2D 插画相同的图层操作</h3>
+        <p>支持剪贴、锁定透明像素、文件夹、图层蒙版和 26 种混合模式。文字会成为可重新输入的文字图层。</p>
+        <ul>
+          <li>纹理可导出 PNG，PSD 则能保留图层 <span class="tier std">Standard</span></li>
+          <li>图层描边、调整图层和滤镜，可在之后继续修改 <span class="tier std">Standard</span></li>
+          <li>导入虚拟形象附带的修改用 PSD，接着绘制 <span class="tier std">Standard</span></li>
+          <li>导出时扩边（Padding），减少纹理接缝处的细线</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show pn-reveal">
+      <div class="pn-show-media"><img class="pn-shot" src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右对称绘制，一侧手臂的星形也出现在另一侧" loading="lazy"></div>
+      <div>
+        <span class="pn-show-no">BRUSH</span>
+        <h3>从动漫平涂到厚涂的画笔</h3>
+        <p>从 G 笔、圆笔、入笔/出笔笔，到水彩晕染、毛笔和厚涂画笔集。混色、涂抹和模糊也能在 3D 模型上使用。</p>
+        <ul>
+          <li>5 种钢笔、12 种毛笔、33 种画笔集、12 种混色工具、13 种装饰</li>
+          <li>绘制服装图案的 15 种图案笔、图章和图形。绘制前会在落笔位置显示预览</li>
+          <li>绘制缝线和褶皱的凹凸工具 <span class="tier pro">Pro</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show rev pn-reveal">
+      <div class="pn-show-media"><div class="pn-duo">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="姿势模式。通过关节点和旋转手柄放下前腿，并倾斜脖子" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="保持放下前腿的姿势返回绘制模式" loading="lazy">
+      </div></div>
+      <div>
+        <span class="pn-show-no">POSE</span>
+        <h3>保持姿势和混合形状绘制 <span class="tier pro">Pro</span></h3>
+        <p>旋转骨骼设置姿势后，可保持该形态绘制。调整表情混合形状后，也能继续绘制。</p>
+        <ul>
+          <li>从关节点、网格或列表选中骨骼，并用手柄旋转</li>
+          <li>从顶点组（骨骼权重）创建绘制区域</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURE LIST ===================== -->
+<section id="features" class="pn-section" aria-labelledby="pn-feat-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">05 — ALL FEATURES</span><h2 id="pn-feat-title" class="pn-h2">功能列表</h2></div>
+      <p class="pn-sec-lead">以下为 v1.1.0 的主要功能。新增与修复详情请参阅 <a href="/petanuri/zh/changelog">更新记录</a>。未标注的功能从免费 Lite 版起即可使用。</p>
+    </div>
+    <div class="pn-filter" role="group" aria-label="按版本筛选">
+      <button type="button" data-tier="all" aria-pressed="true" data-say="当前显示所有功能">全部</button>
+      <button type="button" data-tier="lite" aria-pressed="false" data-say="突出显示 Lite 可用的功能">Lite</button>
+      <button type="button" data-tier="std" aria-pressed="false" data-say="突出显示 Standard 可用的功能">Standard</button>
+      <button type="button" data-tier="pro" aria-pressed="false" data-say="Pro 可使用所有功能">Pro</button>
+    </div>
+    <p class="pn-legend">无标记＝Lite 起可用　<span class="tier std">Standard</span> Standard 和 Pro　<span class="tier pro">Pro</span> 仅 Pro<span id="pn-filter-status" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></span></p>
+    <div class="pn-feats">
+      <div class="pn-feat pn-reveal" data-c="#FF6FA5">
+        <h3>绘制</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">直接在 3D 模型上用钢笔绘制（支持笔压、沿表面绘制）</span></li>
+          <li data-tier="lite"><span class="tx">也绘制背面和被遮挡的面（所有画笔，默认开启）</span></li>
+          <li data-tier="lite"><span class="tx">5 种钢笔（G 笔、圆笔、针管笔、入笔/出笔笔、实心笔）</span></li>
+          <li data-tier="lite"><span class="tx">12 种毛笔（柔软笔、喷枪、水彩晕染、平笔、毛笔、铅笔、粉笔、喷雾、减淡、加深等）</span></li>
+          <li data-tier="lite"><span class="tx">33 种画笔集（铅笔、细笔、叠涂、厚涂、水边、飞溅、树叶、海绵等）</span></li>
+          <li data-tier="lite"><span class="tx">13 种装饰（闪光、星星、心形、花、樱花、音符、雪花等）</span></li>
+          <li data-tier="lite"><span class="tx">7 种橡皮擦＋透明色（保留画笔手感来擦除）</span></li>
+          <li data-tier="lite"><span class="tx">图形（直线、矩形、椭圆、多边形、曲线、连接点的曲线）</span></li>
+          <li data-tier="lite"><span class="tx">复制辅助工具、改名、排序、初始化、分配按键</span></li>
+          <li data-tier="lite"><span class="tx">11 种笔尖＋附带 31 个笔尖，可从图片或画笔文件导入笔尖</span></li>
+          <li data-tier="lite"><span class="tx">纸张纹理（附带 6 张、15 种图案、自选图片）</span></li>
+          <li data-tier="lite"><span class="tx">26 种绘制模式＋“绘制在后方”“变亮”“变暗”</span></li>
+          <li data-tier="lite"><span class="tx">防抖（平滑、1€、牵引）、入笔/出笔、笔压曲线</span></li>
+          <li data-tier="lite"><span class="tx">按速度调整粗细、粗细和浓度变化、笔的倾倒、倾斜和扭转</span></li>
+          <li data-tier="lite"><span class="tx">画笔大小可使用屏幕 px 或纹理 px（1〜1000）</span></li>
+          <li data-tier="lite"><span class="tx">画笔大小列表（一键选择常用大小）</span></li>
+          <li data-tier="std"><span class="tx">导出、导入画笔设置（.petabrush）</span><span class="tier std">Standard</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/draw">绘制工具用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FFB800">
+        <h3>图章、图案、凹凸</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">图章（贴自选图片，悬停时预览落点）</span></li>
+          <li data-tier="lite"><span class="tx">15 种图案笔（条纹、圆点、方格、苏格兰格、菱形格、针织等）</span></li>
+          <li data-tier="lite"><span class="tx">图章用画布（保存图层，将合成效果直接注册为图章）</span></li>
+          <li data-tier="pro"><span class="tx">9 种凹凸（缝线、滚边、十字绣、铆钉、褶皱等，绘制到法线贴图）</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/deco">图章、图案用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#6EC3FF">
+        <h3>上色与混色</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">填充（按 UV 岛、整个材质）</span></li>
+          <li data-tier="lite"><span class="tx">填充封闭区域（容差、闭合间隙、延伸到线条下方）</span></li>
+          <li data-tier="lite"><span class="tx">面填充（填满划过的面）</span></li>
+          <li data-tier="lite"><span class="tx">渐变（颜色与透明度、最多32点、240种预设）</span></li>
+          <li data-tier="lite"><span class="tx">12 种模糊、涂抹、混色工具（UV 接缝处不断开）</span></li>
+          <li data-tier="lite"><span class="tx">混色中的“颜料量”“颜色延伸”</span></li>
+          <li data-tier="lite"><span class="tx">自动上色（根据线稿和提示颜色生成底色）</span></li>
+          <li data-tier="lite"><span class="tx">亮度转为透明度（将 AO 的白色背景变透明）</span></li>
+          <li data-tier="lite"><span class="tx">附加 2D 绘画功能（无需模型绘制、导出 PNG）</span></li>
+          <li data-tier="pro"><span class="tx">轻松烘焙（Easy Bake）：肌肤、服装、道具的12种润色效果</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">柔和阴影、上下／点渐变、凹陷与凸起、投影</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">烘焙边缘光、光泽、织纹与色差、薄处透光色</span><span class="tier pro">Pro</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FFB800">
+        <h3>色彩</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">5 种选色方式（色环＋方块、色环＋三角、方块＋色相条、色盘、滑块）</span></li>
+          <li data-tier="lite"><span class="tx">颜色、颜色值（HEX、RGB、HSV）和最近使用的颜色分别显示在面板中</span></li>
+          <li data-tier="lite"><span class="tx">颜色集（创建、排序、改名、读写 .gpl）</span></li>
+          <li data-tier="lite"><span class="tx">吸管（显示颜色、图层、周围平均色），随时按 Alt 使用</span></li>
+          <li data-tier="lite"><span class="tx">拾取屏幕任意位置的颜色（包括窗口外）</span></li>
+          <li data-tier="lite"><span class="tx">参考图面板（粘贴、缩放、翻转、旋转、吸管）</span></li>
+          <li data-tier="lite"><span class="tx">弹出调色板（用数位笔侧键在当前位置打开圆形调色板）</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FF9A6B">
+        <h3>左右对称与尺子</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">对称绘制 X（左右）、Y（前后）、Z（上下），可同时开启多轴</span></li>
+          <li data-tier="lite"><span class="tx">镜像中心（模型中心、原点、自选位置）</span></li>
+          <li data-tier="lite"><span class="tx">两侧形状略有差异的服装，也能匹配邻近的面绘制</span></li>
+          <li data-tier="lite"><span class="tx">在 UV 区域绘制时，对称也有效</span></li>
+          <li data-tier="lite"><span class="tx">5 种尺子（直线、曲线、同心圆、放射线、平行线）</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#3FCB9E">
+        <h3>选区、变换、文字</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">9 种选区（矩形、椭圆、套索、折线、自动选择、UV 岛、面、选择笔、选择擦除）</span></li>
+          <li data-tier="lite"><span class="tx">同时选择背面和被遮挡的面（环绕身体一周）</span></li>
+          <li data-tier="lite"><span class="tx">选区工具条（反选、扩展、收缩、羽化边缘、填充、清除、转到新图层）</span></li>
+          <li data-tier="lite"><span class="tx">移动、变换工具（抓住点击位置的图像并移动）</span></li>
+          <li data-tier="lite"><span class="tx">在 3D 或 UV 上进行变换（移动、缩放、旋转、翻转、自由变换、扭曲）</span></li>
+          <li data-tier="lite"><span class="tx">复制、剪切、粘贴、添加图片（带摆放框）</span></li>
+          <li data-tier="lite"><span class="tx">将图片贴到 3D（从视角投影）或 UV 上</span></li>
+          <li data-tier="lite"><span class="tx">就地输入文字（横排、竖排、描边、按字符设置颜色和大小、本机字体）</span></li>
+          <li data-tier="lite"><span class="tx">文字图层（之后可重新输入）</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/edit">选区、变换、文字用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#A98BF0">
+        <h3>图层</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">最多 4 个图层（每个纹理集，含底色）</span></li>
+          <li data-tier="std"><span class="tx">不限图层数</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">26 种混合模式</span></li>
+          <li data-tier="lite"><span class="tx">剪贴、锁定透明像素、锁定、不透明度、向下合并、多选</span></li>
+          <li data-tier="lite"><span class="tx">图层文件夹（穿透、组合混合）</span></li>
+          <li data-tier="lite"><span class="tx">图层蒙版（从选区创建、反转、应用）</span></li>
+          <li data-tier="lite"><span class="tx">图层属性面板</span></li>
+          <li data-tier="std"><span class="tx">描边（可之后修改的图层边框）</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">8 种调整图层（色相、饱和度、明度／亮度、对比度／色阶／渐变映射等）</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">10 种滤镜（模糊、锐化、色调调整等，可在模型上预览并调整）</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">渐变映射的 32 个色标、240 个预设</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">历史记录（一次撤销到点击的步骤）</span></li>
+          <li data-tier="lite"><span class="tx">让未绘制的图层休眠，节省 GPU 内存</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/layers">图层用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#1A6BFF">
+        <h3>UV 与显示</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">将 UV 区域放在 3D 旁边直接绘制（也可仅显示 UV）</span></li>
+          <li data-tier="lite"><span class="tx">绘制位置提示（3D↔UV 中对应位置显示红色）</span></li>
+          <li data-tier="lite"><span class="tx">UV 网格线与移动、变换吸附</span></li>
+          <li data-tier="lite"><span class="tx">旋转、缩放 UV 区域，显示 UV 岛边缘，跨接缝连续绘制</span></li>
+          <li data-tier="lite"><span class="tx">显示范围（仅显示选中的 UV 岛或面，绘制后方的面）、隐藏笔、保存隐藏预设</span></li>
+          <li data-tier="lite"><span class="tx">按对象（网格）显示、隐藏</span></li>
+          <li data-tier="lite"><span class="tx">网格线、接缝线（仅可见面／包括背面）</span></li>
+          <li data-tier="lite"><span class="tx">显示方式（绘制颜色原样、二值卡通、光影）和光照方向</span></li>
+          <li data-tier="lite"><span class="tx">单面／双面、透视／正交、另一角度的小视窗</span></li>
+          <li data-tier="lite"><span class="tx">3D 导航、数字小键盘视角、右上角视角按钮</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/uv">UV 区域用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#E0457B">
+        <h3>lilToon 与材质</h3>
+        <ul>
+          <li data-tier="pro"><span class="tx">“最终效果”显示，β 版（与 lilToon 相同计算方式的阴影、MatCap、边缘光、逆光、边缘阴影、自发光、轮廓线）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">用熟悉的画笔绘制阴影色、阴影蒙版、阴影 AO、法线贴图及各类蒙版（在图层文件夹中）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">主颜色 2nd/3rd</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">逐材质设置参数（名称与 lilToon 一致）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">使用同一纹理，按对象分配不同材质</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">将 lilToon 材质导出为 .unitypackage（图片已分配）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">从 lilToon 材质（.mat）开始、导入</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/material">最终效果与材质用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#8A6500">
+        <h3>发挥 3D 优势</h3>
+        <ul>
+          <li data-tier="pro"><span class="tx">姿势模式（旋转骨骼，保持形态绘制；人形骨骼分类着色、左右对称）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">混合形状（保持表情等形态绘制）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">从顶点组（骨骼权重）创建绘制区域</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">烘焙 AO（GPU 计算，也可按对象处理；输出为正片叠底图层、lilToon 阴影 AO、PNG）</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/pose">姿势、混合形状用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#22AA77">
+        <h3>打开、保存、纹理集</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">打开 FBX、glTF、GLB、VRM、OBJ、DAE</span></li>
+          <li data-tier="lite"><span class="tx">新建界面（逐纹理集选择分辨率及起始底色、图片）</span></li>
+          <li data-tier="std"><span class="tx">从 PSD 开始</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">自动寻找模型使用的图片并作为底色</span></li>
+          <li data-tier="lite"><span class="tx">示例模型与教程</span></li>
+          <li data-tier="lite"><span class="tx">不限纹理集数量（按材质）</span></li>
+          <li data-tier="lite"><span class="tx">分辨率 512〜2048</span></li>
+          <li data-tier="std"><span class="tx">分辨率 4096</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">工程文件（.petanuri）、每 5 分钟自动保存、最近使用的文件</span></li>
+          <li data-tier="lite"><span class="tx">重新加载模型（保留绘制内容，只更新形状）</span></li>
+          <li data-tier="lite"><span class="tx">跨两个纹理集绘制；让未选中的纹理集休眠，节省 GPU 内存</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/start">入门 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FF6FA5">
+        <h3>导出与联动</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">导出 PNG（逐材质、批量）</span></li>
+          <li data-tier="std"><span class="tx">PSD 导入</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">导出 PSD（保留文件夹、蒙版、调整图层和剪贴）</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">导出扩边（Padding）4〜32 px、填满 UV 岛外区域</span></li>
+          <li data-tier="pro"><span class="tx">材质导出（.unitypackage）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="lite"><span class="tx">从 Unity 启动绘制（保存后反映到 Unity，附带插件）</span></li>
+          <li data-tier="lite"><span class="tx">通过 AI 联动（MCP）操作</span></li>
+          <li data-tier="pro"><span class="tx">AI 联动 run_js（在应用中运行程序）</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/export">导出用法 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#6EC3FF">
+        <h3>界面与操作</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">自由摆放面板（列、行、浮动、合并为标签）</span></li>
+          <li data-tier="lite"><span class="tx">折叠面板、仅显示图标的窄栏</span></li>
+          <li data-tier="lite"><span class="tx">工具栏放在左、右、上、下，工具排序、常用工具条</span></li>
+          <li data-tier="lite"><span class="tx">对应当前区域的右键菜单</span></li>
+          <li data-tier="lite"><span class="tx">自由设置按键（适合左手控制器）、可保持打开并继续工作的快捷键列表</span></li>
+          <li data-tier="lite"><span class="tx">调整笔压响应、试画校准、支持 WinTab</span></li>
+          <li data-tier="lite"><span class="tx">浅色／深色界面、日语、English、한국어、中文</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/zh/manual/screen">界面与面板用法 →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICE ===================== -->
+<section id="price" class="pn-section tint" aria-labelledby="pn-price-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">06 — PRICE</span><h2 id="pn-price-title" class="pn-h2">价格</h2></div>
+      <p class="pn-sec-lead"><a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener">BOOTH</a> 销售。请先试用免费 Lite 版。<br><!-- 発売記念セール（2026-11-02 まで）。終わったら .pn-sale-* と <s class="pn-was"> を外して通常の価格だけに戻し、seo.py の SALE_END も消す --><span class="pn-sale-lead">发售纪念优惠中！（截至 11/2）Standard 1,500 日元、Pro 3,000 日元</span></p>
+    </div>
+    <p class="pn-btns pn-reveal" style="margin-bottom:2rem"><a href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener" class="btn pn-btn pn-btn-main">前往 BOOTH 商品页面</a></p>
+    <div class="pn-plans pn-reveal">
+      <div class="pn-plan lite">
+        <div class="pn-plan-name">Lite</div>
+        <p class="pn-plan-desc">免费使用直接在 3D 上绘画的基础功能。</p>
+        <div class="pn-price">免费</div><div class="pn-plan-note">下载版（Windows）</div>
+        <ul>
+          <li>钢笔、毛笔、画笔集、图章、图案、左右对称、UV 区域</li>
+          <li>选区、3D 上的变换、文字</li>
+          <li>最多 4 个图层（每个纹理集，含底色）</li>
+          <li>最高分辨率 2048</li>
+          <li>导出 PNG、保存工程文件</li>
+          <li>从 Unity 启动绘制</li>
+          <li class="no">导入、导出 PSD</li>
+          <li class="no">滤镜、调整图层、描边</li>
+        </ul>
+      </div>
+      <div class="pn-plan std">
+        <div class="pn-plan-name">Standard</div>
+        <p class="pn-plan-desc">适合想自由添加图层、深入绘制的人。</p>
+        <div class="pn-price"><s class="pn-was">2,500 日元</s>1,500<small>日元</small></div><div class="pn-sale-tag">发售纪念优惠，截至 11/2</div><div class="pn-plan-note">下载版（Windows）</div>
+        <ul>
+          <li>Lite 的全部功能</li>
+          <li>不限图层数</li>
+          <li>分辨率 4096</li>
+          <li>导入、导出 PSD（保留图层）</li>
+          <li>滤镜、调整图层、描边</li>
+          <li>导出、导入画笔设置</li>
+          <li class="no">姿势、混合形状、顶点组</li>
+          <li class="no">lilToon 功能、AO</li>
+        </ul>
+      </div>
+      <div class="pn-plan pro">
+        <div class="pn-plan-name">Pro</div>
+        <p class="pn-plan-desc">包括 3D 专属功能在内的全部功能。</p>
+        <div class="pn-price"><s class="pn-was">4,000 日元</s>3,000<small>日元</small></div><div class="pn-sale-tag">发售纪念优惠，截至 11/2</div><div class="pn-plan-note">下载版（Windows）</div>
+        <ul>
+          <li>Standard 的全部功能</li>
+          <li>姿势模式、混合形状</li>
+          <li>从顶点组创建选区</li>
+          <li>lilToon 最终效果显示（β 版）、绘制阴影色与蒙版、凹凸</li>
+          <li>材质设置、导出（.unitypackage）</li>
+          <li>烘焙 AO</li>
+          <li>AI 联动的 run_js</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pn-plan-up pn-reveal">购买 Standard 后，也可通过 BOOTH 的“升级到 Pro”获得 Pro（安装升级文件并重启即可，工程文件和设置会保留）。详细信息请参阅<a class="pn-textlink" href="/petanuri/zh/manual/start#upgrade">使用手册</a>。</p>
+    <div class="pn-table-wrap pn-reveal">
+      <table class="pn-table">
+        <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">版本区别</caption>
+        <thead><tr><th scope="col">比较项目</th><th scope="col">LITE</th><th scope="col">STANDARD</th><th scope="col">PRO</th></tr></thead>
+        <tbody>
+          <tr><td>价格<br><small>（发售纪念优惠截至 11/2）</small></td><td>免费</td><td><s class="pn-was">2,500 日元</s> 1,500日元</td><td><s class="pn-was">4,000 日元</s> 3,000日元</td></tr>
+          <tr><td>图层（每个纹理集，含底色）</td><td>最多 4 个</td><td>不限</td><td>不限</td></tr>
+          <tr><td>分辨率</td><td>最高 2048</td><td>最高 4096</td><td>最高 4096</td></tr>
+          <tr><td>钢笔、毛笔、画笔集、橡皮擦、混色、图章、图案</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>左右对称、UV 区域、选区、变换、文字、尺子</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>导出 PNG</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>从 Unity 启动绘制</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>导入、导出 PSD</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>滤镜、调整图层、描边</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>导出、导入画笔设置</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>姿势、混合形状、顶点组</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>lilToon 最终效果显示（β 版）、材质设置和导出、凹凸</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>烘焙 AO</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>AI 联动的 run_js</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPEC / FAQ ===================== -->
+<section class="pn-section" aria-labelledby="pn-spec-title">
+  <div class="pn-wrap pn-two">
+    <div class="pn-reveal">
+      <span class="pn-sec-no">07 — SPEC</span>
+      <h2 id="pn-spec-title" class="pn-h2" style="margin-bottom:1.5rem">运行环境</h2>
+      <dl class="pn-spec">
+        <div><dt>OS</dt><dd>Windows 11（64bit）。无需安装。也可在 Windows 10 运行，但不属于支持范围</dd></div>
+        <div><dt>可打开的 3D 模型</dt><dd>FBX・glTF・GLB・VRM・OBJ・DAE</dd></div>
+        <div><dt>导出</dt><dd>PNG、PSD、.unitypackage（lilToon 材质）</dd></div>
+        <div><dt>工程文件</dt><dd>.petanuri（将模型、图层、设置保存为一个文件）</dd></div>
+        <div><dt>与 Unity 联动</dt><dd>Unity 2022.3（附带插件，所有版本均可使用）</dd></div>
+        <div><dt>界面语言</dt><dd>日语、English、한국어、中文</dd></div>
+      </dl>
+    </div>
+    <div class="pn-reveal">
+      <span class="pn-sec-no">08 — FAQ</span>
+      <h2 class="pn-h2" style="margin-bottom:1.5rem">常见问题</h2>
+      <div class="pn-faq">
+        <details><summary>在哪里购买？</summary><div><a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener">BOOTH 商品页面</a>有售。Lite 免费，Standard 为 2,500 日元，Pro 为 4,000 日元。发售纪念优惠截至 11/2，期间 Standard 为 1,500 日元、Pro 为 3,000 日元。</div></details>
+        <details><summary>只用免费的 Lite 版也可以吗？</summary><div>可以。直接在 3D 上绘画、画笔、图章、图案、左右对称、UV 区域、选区、变换、文字、导出 PNG、保存工程文件、从 Unity 启动等日常绘制功能，Lite 均可使用。每个纹理集最多 4 个图层（含底色），最高分辨率 2048。没有水印。</div></details>
+        <details><summary>可以用于 VRChat 虚拟形象吗？</summary><div>可以。打开 VRChat 等使用的 3D 虚拟形象、服装和道具（FBX、VRM 等），即可直接在 3D 上绘制纹理。绘制的纹理可导出为 PNG、PSD 并导入 Unity。在 Unity 选中虚拟形象并点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制），会启动 PetaNuri3D，保存后反映到 Unity（所有版本均可使用）。Pro 还可将 lilToon 材质导出为 .unitypackage。</div></details>
+        <details><summary>会改写原虚拟形象文件吗？</summary><div>不会。从 Unity 绘制时也不会改写原 FBX、材质、纹理、prefab。绘制内容会存入 Unity 项目的 Assets/PetaNuri/。单独使用 PetaNuri3D 时，也只会读取模型文件。</div></details>
+        <details><summary>没有其他 3D 软件或绘画软件也能使用吗？</summary><div>可以。仅用 PetaNuri3D 即可打开模型、绘制并将纹理导出为 PNG。若想保留图层继续润色，可导出 PSD（Standard 起可用），再使用自己的绘画软件接着绘制。</div></details>
+        <details><summary>购买 Standard 后可以升级到 Pro 吗？</summary><div>可以。将 BOOTH“升级到 Pro”提供的文件安装到 Standard，并重启应用即可变为 Pro。工程文件和设置均会保留。详细信息请参阅<a class="pn-textlink" href="/petanuri/zh/manual/start#upgrade">使用手册</a>。</div></details>
+        <details><summary>可以用于其他店铺的虚拟形象或服装吗？</summary><div>只要是有 UV（纹理展开）的 FBX 等 3D 模型，即可绘制。请分别确认模型数据的使用条款。</div></details>
+        <details><summary>能在 Mac 使用吗？</summary><div>目前仅支持 Windows（Windows 11。也能在 Windows 10 运行，但不属于支持范围）。</div></details>
+        <details><summary>出现“Windows 已保护你的电脑”</summary><div>因为应用未签名，首次启动时可能出现此提示。点击“更多信息”→“仍要运行”即可启动。<a href="/petanuri/zh/manual/start">入门</a>也可参考。</div></details>
+        <details><summary>如何得知新版本发布？</summary><div>启动时（每天最多一次）会检查是否有新版本，并在界面右下角通知。检查时仅获取版本号，不会发送作品或设置。最新消息也会在 <a class="pn-textlink" href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>公布。</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="页脚">
+      <a href="/">HYPERtuyotuyo 首页</a>
+      <a href="/petanuri/zh/manual">PetaNuri3D 使用手册</a>
+      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener">BOOTH 店铺</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+      <a href="/petanuri/zh/changelog">更新记录</a>
+      <a href="/petanuri/terms">使用条款（日语）</a>
+    </nav>
+    <p>PetaNuri3D 开发中使用了 AI 代理（编写代码的 AI）。未使用图像生成 AI。</p>
+    <p>© HYPERtuyotuyo All rights reserved.　lilToon 是 lilxyzw 创作的着色器（MIT 许可证）。</p>
+  </div>
+</footer>
+
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

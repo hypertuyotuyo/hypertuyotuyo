@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选区、变换、文字、尺子 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
+  <meta name="description" content="选区与选区工具条、移动/变换工具、3D 上的变换（缩放、旋转、自由变换、扭曲）、复制与粘贴、添加图片、向 3D／UV 贴图、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/edit">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/edit">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/edit">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/edit">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/edit">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/edit">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="选区、变换、文字、尺子 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
+  <meta property="og:description" content="选区与选区工具条、移动/变换工具、3D 上的变换（缩放、旋转、自由变换、扭曲）、复制与粘贴、添加图片、向 3D／UV 贴图、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/edit">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "使用手册",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "选区、变换、文字、尺子",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual/edit"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "选区、变换、文字、尺子 | PetaNuri3D 使用手册",
+   "description": "选区与选区工具条、移动/变换工具、3D 上的变换（缩放、旋转、自由变换、扭曲）、复制与粘贴、添加图片、向 3D／UV 贴图、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/edit",
+   "inLanguage": "zh-Hans",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual",
+    "name": "PetaNuri3D 使用手册"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="菜单">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="返回 HYPERtuyotuyo 首页"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/zh" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="选择语言"><option value="ja" data-url="/petanuri/manual/edit">日本語</option><option value="en" data-url="/petanuri/en/manual/edit">English</option><option value="ko" data-url="/petanuri/ko/manual/edit">한국어</option><option value="zh" data-url="/petanuri/zh/manual/edit" selected>简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/zh">产品介绍</a></li>
+      <li><a href="/petanuri/zh#gallery">效果示例</a></li>
+      <li><a href="/petanuri/zh#features">功能列表</a></li>
+      <li><a href="/petanuri/zh#price">价格</a></li>
+      <li><a href="/petanuri/zh/manual">使用手册</a></li>
+      <li><a href="/petanuri/zh/changelog">更新记录</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="手册目录">
+    <p class="mn-side-title">使用手册</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
+    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、凹凸、2D 画布</a></li><li><a href="/petanuri/zh/manual/edit" aria-current="page">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 选区、变换、文字、尺子</p>
+    <h1 class="mn-h1">选区、变换、文字、尺子</h1>
+    <p class="mn-intro">用于限定绘制区域、移动已绘制内容、贴文字或图片。变换框可出现在 3D 模型和 UV 区域中。</p>
+    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#select">选区</a></li><li><a href="#selbar">选区工具条</a></li><li><a href="#move">移动/变换工具</a></li><li><a href="#transform">变换（Ctrl＋T）与 3D 操作框</a></li><li><a href="#warp">自由变换、扭曲</a></li><li><a href="#copy">复制、剪切、粘贴</a></li><li><a href="#image">添加图片、贴图</a></li><li><a href="#text">文字</a></li><li><a href="#ruler">尺子</a></li></ul></div>
+    <section class="mn-sec" id="select"><h2>选区</h2><ol class="mn-steps"><li>选择“选区”工具（<kbd>S</kbd>），从辅助工具选择形状。</li><li>在 3D 视图（或 UV 区域）拖动、描画或点击选择。</li><li>选择期间，绘制、填充、擦除、滤镜、渐变<strong>仅在选区内</strong>生效。外侧略微变暗，边界显示虚线。</li><li><kbd>Ctrl</kbd>＋<kbd>D</kbd> 可取消选择。</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="仅在选区内绘制的效果与下方选区工具条" loading="lazy"><figcaption>可仅在选区内绘制</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="选区工具属性" loading="lazy"><figcaption>选择方式设置</figcaption></figure></div><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">选择方式</th></tr></thead><tbody><tr><td>矩形、椭圆</td><td>拖动</td></tr><tr><td>套索</td><td>画线围出区域</td></tr><tr><td>折线</td><td>点击放置点，点击起点、双击或按 Enter 闭合</td></tr><tr><td>自动选择</td><td>与点击位置颜色相近的连通区域</td></tr><tr><td>按 UV 岛选择</td><td>整个点击的 UV 岛</td></tr><tr><td>按面选择</td><td>划过的整个面</td></tr><tr><td>选择笔、选择擦除</td><td>用画笔描画来添加、减去</td></tr></tbody></table></div><ul class="mn-list"><li>开始点击时按 <kbd>Shift</kbd>＝添加、<kbd>Alt</kbd>＝减去、<kbd>Shift</kbd>＋<kbd>Alt</kbd>＝交集。</li><li>开启“也选择背面和被遮挡的面”时，会选中屏幕形状对应区域直至背面的所有部分。<strong>环绕身体一周</strong>选择，适合绘制服装条纹。</li><li>“选区”菜单：全选 <kbd>Ctrl</kbd>＋<kbd>A</kbd>、反选 <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd>、扩展／收缩／羽化边缘、选择图层已绘制区域、从选区创建蒙版、用前景色填充、清除内部（<kbd>Delete</kbd>）、显示虚线（<kbd>Ctrl</kbd>＋<kbd>H</kbd>）、恢复选区（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>）。</li><li>有选区时，不能绘制未选中的纹理集。</li></ul><div class="mn-tip">对图层缩略图使用 <kbd>Ctrl</kbd>＋点击，可将已绘制区域设为选区（<kbd>Shift</kbd> 添加、<kbd>Alt</kbd> 减去）。</div></section><section class="mn-sec" id="selbar"><h2>选区工具条</h2><p>有选区时，3D 区域下方会出现选区工具条。在左侧“选择中”标签之后排列图标按钮（悬停笔尖或光标可显示名称和快捷键）。</p><ul class="mn-list"><li>取消（有颜色的按钮）、反选｜扩展、收缩、羽化边缘｜填充、清除｜转到新图层 ▾（复制／剪切）、其他 ▾（蒙版、仅显示选中部分、隐藏、虚线）。</li><li>窄屏下，扩展、收缩、羽化边缘会合并到“范围 ▾”。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="3D 下方选区工具条" loading="lazy"><figcaption>选区工具条</figcaption></figure></section><section class="mn-sec" id="move"><h2>移动/变换工具</h2><ol class="mn-steps"><li>选择“移动·变形”工具（<kbd>V</kbd>）。</li><li>在 3D 模型（或 UV 区域）点击要移动的图像。会选择点击处有绘制内容的最上层图层，并显示该图像的框（“自动选择图层”；关闭则使用当前选中图层）。</li><li>按住并拖动可立即移动。拖角点缩放，拖上方圆点旋转。</li><li><kbd>Enter</kbd> 或切换其他工具来确认，按<kbd>Esc</kbd> 取消。点击框外会确认，并切换到点击位置的图层。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="3D 模型上的变换框及框下工具条" loading="lazy"><figcaption>可直接在 3D 模型上移动绘制内容</figcaption></figure><ul class="mn-list"><li>若有选区，仅移动选区内部。确认后作为一次撤销步骤。</li><li>在工具属性选择框形（缩放、旋转／自由变换／扭曲）及扭曲网格数量。</li><li>点击文字图层会显示文字框（框内拖动可移动，双击可重新输入）。</li></ul></section><section class="mn-sec" id="transform"><h2>变换（Ctrl＋T）与 3D 操作框</h2><ul class="mn-list"><li><strong>变换</strong>（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）：有选区时显示移动选区的框，否则移动整个图层。</li><li>框会在 <strong>3D 区域（模型上待移动图像附近）和 UV 区域两侧</strong>显示。操作任一框，另一框也同步跟随。若图像在 3D 中可见，无需打开 UV 区域即可操作。</li><li>拖动框内移动、拖角点缩放（<kbd>Shift</kbd> 可改变宽高比）、拖边单轴缩放、拖上方圆点旋转（<kbd>Shift</kbd> 以15°为步进）。还可左右、上下翻转。将边或角拖过对侧即可翻转。</li><li>在 3D 操作框上也可使用右键、中键拖动、滚轮或<kbd>Space</kbd>＋拖动调整视角。视角变化时，框会跟随。</li><li>UV 区域显示网格线时，操作框会吸附网格（<a href="/petanuri/zh/manual/uv#grid">网格线与吸附</a>）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="UV 区域变换框" loading="lazy"><figcaption>变换框（UV 区域）</figcaption></figure></section><section class="mn-sec" id="warp"><h2>自由变换、扭曲</h2><p>变换、移动/变换工具、添加图片、粘贴、向 3D／UV 贴图的框下工具条有3个图标（缩放、旋转／自由变换／扭曲）。</p><ul class="mn-list"><li><strong>自由变换</strong>：分别拖动4个角点改变形状（如透视效果般贴图）。</li><li><strong>变形</strong>：拖动网格点弯曲图像。网格为3×3（工具条也可选4×4、5×5）。</li><li>两种方式均可拖动上方圆点或角外侧少许位置旋转（<kbd>Shift</kbd> 以15°为步进）。拖动内部移动整体。</li><li>切换模式时保留形状。确认后作为一次撤销步骤（移动选区时也一样）。向 3D 贴图时，会将屏幕上的形状投影到可见面。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="移动扭曲网格点来弯曲图像" loading="lazy"><figcaption>变形</figcaption></figure></section><section class="mn-sec" id="copy"><h2>复制、剪切、粘贴</h2><ul class="mn-list"><li><strong>复制</strong>（<kbd>Ctrl</kbd>＋<kbd>C</kbd>）・<strong>剪切</strong>（<kbd>Ctrl</kbd>＋<kbd>X</kbd>）：复制或剪切选区内部（无选区则为整个图层）。多选图层时也只处理当前选中的一个图层。</li><li><strong>粘贴</strong>（<kbd>Ctrl</kbd>＋<kbd>V</kbd>）：在同一 UV 位置粘贴到新图层，可立即变换。</li><li>锁定、隐藏或锁定透明像素的图层不能剪切或清除（会提示原因）。</li></ul></section><section class="mn-sec" id="image"><h2>添加图片、贴图</h2><ul class="mn-list"><li><strong>添加图像</strong>（文件 → 导入 → 将图片导入为图层、拖入图片、对外部复制的图片使用 <kbd>Ctrl</kbd>＋<kbd>V</kbd>）：显示图片摆放框。UV 区域打开时放在 UV 上，否则放在 3D 中央（投影到可见面）。保留宽高比和透明区域。</li><li>调整框后按 <kbd>Enter</kbd> ，会加入以文件名命名的新图层。<kbd>Esc</kbd> 取消则不保留任何内容。框下工具条“铺满整个纹理”也可将图片拉伸至整个 UV（适合按 UV 尺寸绘制的图片）。</li><li><strong>将图像贴到 3D</strong>（编辑 → 将图片贴到 3D）：在 3D 上调整框，按<kbd>Enter</kbd> 投影到模型可见面。调整期间可以移动视角。“斜面也保持浓度”可避免斜面颜色变淡。</li><li><strong>将图像贴到 UV</strong>（编辑 → 将图片贴到 UV）：在 UV 区域调整框，贴入新图层。</li></ul><div class="mn-tip">左右对称和选区也有效。</div></section><section class="mn-sec" id="text"><h2>文字</h2><ol class="mn-steps"><li>选择“文字”工具（<kbd>T</kbd>），点击 3D 视图（或 UV 区域）。</li><li>显示框和文字窗口，<strong>可立即在框上输入</strong>。也支持日语输入，转换候选显示在文字旁边。</li><li><kbd>Ctrl</kbd>＋<kbd>Enter</kbd> 确认（输入时的 <kbd>Enter</kbd> 用于换行）。<kbd>Esc</kbd> 第一次停止输入（框保留），第二次取消。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="在 3D 框上就地输入文字" loading="lazy"><figcaption>文字可就地输入</figcaption></figure><ul class="mn-list"><li>在文字窗口设置字体、大小、颜色、粗体、斜体、竖排、行距、字距、对齐和描边。颜色直接使用颜色面板前景色，描边使用背景色。</li><li><strong>按字符修改</strong>：选中文字后修改颜色、大小、字体、粗体、斜体、字距、描边，只影响选中文字。不选择时修改会用于之后输入的文字。</li><li>输入时，工具快捷键（如<kbd>E</kbd> 切换橡皮擦）不生效。移动框需按住 <kbd>Ctrl</kbd> 拖动。</li><li>可选择本机安装的所有字体。也可导入字体文件（.ttf、.otf），仅本次运行有效。</li></ul><h3>重新输入文字（文字图层）</h3><ul class="mn-list"><li>选择“到新图层”贴入的文字（贴入 UV 时始终如此）会成为<strong>文字图层</strong>，图层列表中显示“T”标记。</li><li>双击图层列表、右键 →“重新输入文字”、或用文字工具点击文字，可按贴入时的状态重新打开。各字符的颜色和大小也保留。</li><li>在文字图层用钢笔等添加绘制内容后，标记会变为“T＋”。重新输入时会丢失后来绘制的内容，要保留请画在其他图层。</li><li>右键 →“栅格化”可转为普通图层（不能重新输入）。文字数据也存入工程文件，重新打开后仍可重输。PSD 中保存为普通图层。</li></ul></section><section class="mn-sec" id="ruler"><h2>尺子</h2><ul class="mn-list"><li>让笔画吸附尺子。直线、曲线仅影响在尺子附近开始的笔画；同心圆、放射线、平行线则在任意位置有效。</li><li>创建：直线、平行线用拖动，同心圆、放射线以点击位置为中心，曲线通过放置点后按 <kbd>Enter</kbd> 或双击完成。尺子圆点可拖动移动。</li><li>3D 区域尺子固定在屏幕上，不随视角移动。UV 区域也可单独放置。</li><li>显示 → 线与尺子 → 吸附尺子（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd>）可切换，也可删除尺子。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="沿放射线尺子绘制" loading="lazy"><figcaption>放射线尺子</figcaption></figure><div class="mn-tip"><strong>放置曲线控制点期间</strong>，按<kbd>Ctrl</kbd>＋<kbd>Z</kbd> 可撤销最后放置的一个点。<kbd>Ctrl</kbd>＋<kbd>Y</kbd> 或 <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd> 可重做控制点撤销。<kbd>Enter</kbd>或双击确认尺子后，快捷键恢复普通历史记录操作。</div></section>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/deco"><small>← 上一页</small>图章、图案、凹凸、2D 画布</a><a class="next" href="/petanuri/zh/manual/layers"><small>下一页 →</small>图层</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="页脚">
+      <a href="/">HYPERtuyotuyo 首页</a>
+      <a href="/petanuri/zh">PetaNuri3D</a>
+      <a href="/petanuri/zh/manual">使用手册</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+      <a href="/petanuri/zh/changelog">更新记录</a>
+      <a href="/petanuri/terms">使用条款（日语）</a>
+    </nav>
+    <p>© HYPERtuyotuyo All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

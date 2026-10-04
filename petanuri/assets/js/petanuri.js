@@ -3,6 +3,24 @@
   'use strict';
   var root = document.documentElement;
   root.classList.remove('no-js');
+  // Native links keep the selected language across chapters without replacing page content.
+  var language = document.querySelector('.pn-language');
+  if (language) {
+    language.addEventListener('change', function () {
+      var option = language.options[language.selectedIndex];
+      try { localStorage.setItem('petanuri-language', option.value); } catch (e) { /* Storage may be disabled. */ }
+      window.location.assign(option.getAttribute('data-url') + window.location.hash);
+    });
+    var preferred;
+    try { preferred = localStorage.getItem('petanuri-language'); } catch (e) { /* Links work without storage. */ }
+    // Honor an explicit localized URL. Saved preference applies to Japanese entry links.
+    if (language.value === 'ja' && preferred && preferred !== 'ja') {
+      var saved = Array.prototype.find.call(language.options, function (option) { return option.value === preferred; });
+      if (saved) window.location.replace(saved.getAttribute('data-url') + window.location.hash);
+    } else if (language.value !== 'ja') {
+      try { localStorage.setItem('petanuri-language', language.value); } catch (e) { /* Preference is optional. */ }
+    }
+  }
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // ---- ナビ：スクロールで下線、スマホのメニュー ----

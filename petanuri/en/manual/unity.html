@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint from Unity and AI integration | PetaNuri3D manual | HYPERtuyotuyo</title>
+  <meta name="description" content="Select a Unity prefab and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D), save to update Unity, install the add-on, output paths, original files preserved and AI/MCP controls. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/unity">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/unity">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/unity">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/unity">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/unity">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/unity">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="Paint from Unity and AI integration | PetaNuri3D manual | HYPERtuyotuyo">
+  <meta property="og:description" content="Select a Unity prefab and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D), save to update Unity, install the add-on, output paths, original files preserved and AI/MCP controls. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/unity">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Manual",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Paint from Unity and AI integration",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en/manual/unity"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Paint from Unity and AI integration | PetaNuri3D Manual",
+   "description": "Select a Unity prefab and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D), save to update Unity, install the add-on, output paths, original files preserved and AI/MCP controls. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/unity",
+   "inLanguage": "en",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual",
+    "name": "PetaNuri3D Manual"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="Menu">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="Back to HYPERtuyotuyo home"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/en" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="Choose language"><option value="ja" data-url="/petanuri/manual/unity">日本語</option><option value="en" data-url="/petanuri/en/manual/unity" selected>English</option><option value="ko" data-url="/petanuri/ko/manual/unity">한국어</option><option value="zh" data-url="/petanuri/zh/manual/unity">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/en">Introduction</a></li>
+      <li><a href="/petanuri/en#gallery">Examples</a></li>
+      <li><a href="/petanuri/en#features">Features</a></li>
+      <li><a href="/petanuri/en#price">Pricing</a></li>
+      <li><a href="/petanuri/en/manual">Manual</a></li>
+      <li><a href="/petanuri/en/changelog">Changelog</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="Manual contents">
+    <p class="mn-side-title">Manual</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
+    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, surface relief and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity" aria-current="page">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Paint from Unity and AI integration</p>
+    <h1 class="mn-h1">Paint from Unity and AI integration</h1>
+    <p class="mn-intro">Select an avatar in Unity, launch PetaNuri3D and paint directly. Available in all editions (Lite/Standard/Pro).</p>
+    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#unity">Launch from Unity and paint</a></li><li><a href="#ai">AI integration (MCP)</a></li></ul></div>
+    <section class="mn-sec" id="unity"><h2>Launch from Unity and paint</h2><ul class="mn-list"><li>Select a prefab (such as an avatar) in Unity and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D) to launch the app with that model.</li><li>Your painting updates in the Unity scene <strong>when you save in PetaNuri3D or Unity</strong> . Painted textures enter the Unity project (Unity’s appearance does not change while painting).</li><li>Supports Unity 2022.3 (used for VRChat avatars). Connects only to Unity on the same computer.</li></ul><h3>One-time setup: install the Unity add-on</h3><ol class="mn-steps"><li>PetaNuri3D-Unity.unitypackage is in the unity folder inside PetaNuri3D.</li><li>With the Unity project open, drag PetaNuri3D-Unity.unitypackage into Project (or Assets → Import Package → Custom Package).</li><li>Click Import. Setup is complete when “ぺたぬり3D” (PetaNuri3D) appears in the top menu bar (editor-only; not included in uploaded avatars).</li></ol><h3>Paint</h3><ol class="mn-steps"><li>Select an avatar in Hierarchy (scene object) or a prefab in Project.</li><li>Choose “ぺたぬり3D” → “ぺたぬり3D で塗る” (PetaNuri3D → Paint with PetaNuri3D) from the menu bar (also right-click). First time only, select PetaNuri3D-win_x64.exe in the app folder.</li><li>PetaNuri3D launches with the Unity model. Texture sets follow material main textures; original textures become Base (original resolution, capped at 2048 in Lite).</li><li>Save in PetaNuri3D or Unity (<kbd>Ctrl</kbd>＋<kbd>S</kbd>) to save both and update the painting in Unity.</li></ol><ul class="mn-list"><li>Projects: Assets/PetaNuri/(name)/(name).petanuri. Painted textures: PNGs in Assets/PetaNuri/(name)/Textures/ (import settings match originals). Copied materials go in Materials/ alongside them.</li><li><strong>Original FBX, materials, textures and prefabs remain unchanged</strong>. Starting from a Project prefab creates a Prefab Variant to paint instead.</li><li>Launched from Unity, PetaNuri3D shows a dedicated painting interface (New, Open project, Reload model and Save as are hidden).</li><li>Closing PetaNuri3D ends integration. For scene avatars, Unity asks Keep using this / Restore original appearance.</li><li>Choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D) again to reopen the project and continue.</li></ul><div class="mn-tip">For detailed instructions or connection trouble, see Unity連携の使い方.txt in the app&#x27;s unity folder.</div></section><section class="mn-sec" id="ai"><h2>AI integration (MCP)</h2><ul class="mn-list"><li>AI/MCP clients can control PetaNuri3D (drawing, colors/brushes, views, layers, screenshots, PNG export etc.).</li><li>Off by default. Enable File → Preferences → AI integration → Enable AI integration (MCP) to use it.</li><li>Register a stdio server in your MCP client: command node, argument  &lt;PetaNuri3D folder&gt;\mcp\server.mjs (Node v20 or later). Connection instructions there include example settings with a Copy button.</li><li>The AI client starts the server. PetaNuri3D automatically connects to a fixed port on the same computer and reports connection in the bottom hint. Other websites cannot connect.</li><li><strong>run_js</strong> (runs arbitrary programs inside the app) requires  <span class="tier pro">Pro</span> . Enabling MCP alone is insufficient; enable Allow run_js (arbitrary program execution) too. Register only trusted AI clients.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="AI integration section in Preferences" loading="lazy"><figcaption>File → Preferences → AI integration</figcaption></figure></section>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/export"><small>← Previous</small>Export</a><a class="next" href="/petanuri/en/manual/keys"><small>Next →</small>Shortcuts and pen controls</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="Footer">
+      <a href="/">HYPERtuyotuyo home</a>
+      <a href="/petanuri/en">PetaNuri3D</a>
+      <a href="/petanuri/en/manual">Manual</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/en/changelog">Changelog</a>
+      <a href="/petanuri/terms">Terms of use (Japanese)</a>
+    </nav>
+    <p>© HYPERtuyotuyo All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

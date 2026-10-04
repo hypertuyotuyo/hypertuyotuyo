@@ -58,6 +58,25 @@ body.pn-body {
 .pn-burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .pn-burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* Language links are available on every localized product/manual page. */
+.pn-language { order: 2; flex: 0 0 auto; max-width: 9rem; min-height: 36px; padding: 0.35rem 0.65rem; border: 1px solid var(--line-2); border-radius: 8px; background: var(--paper); color: var(--ink); font: inherit; font-size: 0.85rem; }
+.pn-nav-links { order: 1; }
+.pn-burger { order: 3; }
+.pn-language + .pn-burger { margin-left: 0; }
+html[lang="en"] { --pn-text: Arial, sans-serif; --pn-display: Arial, sans-serif; }
+html[lang="ko"] { --pn-text: 'Noto Sans KR', 'Malgun Gothic', sans-serif; --pn-display: 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
+html[lang="zh-Hans"] { --pn-text: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; --pn-display: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; }
+html[lang="ko"] .pn-body { word-break: keep-all; }
+.pn-body p, .pn-body li, .pn-body dd, .pn-body h1, .pn-body h2, .pn-body h3 { overflow-wrap: anywhere; }
+@media (max-width: 1280px) {
+  .pn-nav:has(.pn-language) .pn-nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--paper); border-bottom: 1px solid var(--line); padding: 0.3rem 0.8rem 0.8rem; }
+  .pn-nav:has(.pn-language) .pn-nav-links.open { display: flex; }
+  .pn-nav:has(.pn-language) .pn-nav-links li { width: 100%; }
+  .pn-nav:has(.pn-language) .pn-nav-links a { padding: 0.8rem 1rem; }
+  .pn-language { margin-left: auto; }
+  .pn-language + .pn-burger { display: flex; }
+}
+
 /* ---------- Layout ---------- */
 .pn-wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
 .pn-section { position: relative; z-index: 1; padding: clamp(4rem, 8vw, 6.5rem) 0; }

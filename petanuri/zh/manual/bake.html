@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轻松烘焙、质感与阴影 - PetaNuri3D 使用手册</title>
+  <meta name="description" content="介绍轻松烘焙的12种润色效果、添加红润的位置、柔和阴影、渐变、凹陷与凸起、边缘光、光泽、织纹、投影和透光色。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/bake">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/bake">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/bake">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/bake">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/bake">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/bake">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="轻松烘焙、质感与阴影 - PetaNuri3D 使用手册">
+  <meta property="og:description" content="介绍轻松烘焙的12种润色效果、添加红润的位置、柔和阴影、渐变、凹陷与凸起、边缘光、光泽、织纹、投影和透光色。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/bake">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "使用手册",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "轻松烘焙、质感与阴影 Pro",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual/bake"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "轻松烘焙、质感与阴影 Pro | PetaNuri3D 使用手册",
+   "description": "介绍轻松烘焙的12种润色效果、添加红润的位置、柔和阴影、渐变、凹陷与凸起、边缘光、光泽、织纹、投影和透光色。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/bake",
+   "inLanguage": "zh-Hans",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual",
+    "name": "PetaNuri3D 使用手册"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="菜单">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="返回 HYPERtuyotuyo 首页"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/zh" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="选择语言"><option value="ja" data-url="/petanuri/manual/bake">日本語</option><option value="en" data-url="/petanuri/en/manual/bake">English</option><option value="ko" data-url="/petanuri/ko/manual/bake">한국어</option><option value="zh" data-url="/petanuri/zh/manual/bake" selected>简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/zh">产品介绍</a></li>
+      <li><a href="/petanuri/zh#gallery">效果示例</a></li>
+      <li><a href="/petanuri/zh#features">功能列表</a></li>
+      <li><a href="/petanuri/zh#price">价格</a></li>
+      <li><a href="/petanuri/zh/manual">使用手册</a></li>
+      <li><a href="/petanuri/zh/changelog">更新记录</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="手册目录">
+    <p class="mn-side-title">使用手册</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
+    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、凹凸、2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake" aria-current="page">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 轻松烘焙、质感与阴影</p>
+    <h1 class="mn-h1">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></h1>
+    <p class="mn-intro">根据模型形状计算阴影、光泽、织纹等并写入图层。可使用“轻松烘焙”一次完成初步润色，或用“烘焙”逐项添加效果。这些功能从 v1.1.0 起提供。</p>
+    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#easy">用轻松烘焙制作底层效果</a></li><li><a href="#presets">12 种润色效果</a></li><li><a href="#blush">添加红润的位置</a></li><li><a href="#common">单项烘焙与预览</a></li><li><a href="#shade">柔和阴影、凹陷与凸起</a></li><li><a href="#gradient">上下或点渐变</a></li><li><a href="#material">边缘光、光泽、织纹与色差</a></li><li><a href="#rays">光照投影、薄处透光色</a></li><li><a href="#finish">烘焙后的调整与保存</a></li></ul></div>
+    <section class="mn-sec" id="easy"><h2>用轻松烘焙制作底层效果</h2>
+      <ol class="mn-steps"><li>打开模型，选择要处理的纹理集。底色和原纹理会保留，继续作为基础。</li><li><strong>滤镜 → 轻松烘焙</strong>，在“效果”中选择肌肤、服装或道具等预设。</li><li>通过“预览”查看效果，调整“整体强度”“光的左右”“光照仰角”“高光量”。带织纹或色差的润色效果还会显示“材质细节”。</li><li>肌肤润色时，可按需指定<a href="#blush">添加红润的位置</a>。</li><li><strong>“烘焙到图层组”</strong>来确认。每种效果的图层与透明的“细节绘制”图层会放入一个文件夹，可直接继续绘画。</li></ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-easy-bake-v110.webp" width="410" height="415" alt="轻松烘焙的服装・缎面风格。调整整体强度、光照和光泽的界面" loading="lazy"><figcaption>轻松烘焙设置（服装｜缎面风格）</figcaption></figure>
+      <div class="mn-tip">在新建界面也可勾选<strong>“创建后打开轻松烘焙”</strong>并选择目标纹理集。默认不勾选。创建后会打开设置界面，预览使用临时图层显示，确认后才成为正式图层。</div>
+    </section>
+    <section class="mn-sec" id="presets"><h2>12 种润色效果</h2>
+      <ul class="mn-list"><li><strong>皮肤</strong>：白皙・健康红润／温暖红润／淡雅插画风／有深度的阴影。组合柔和阴影、凹陷阴影和光泽；部分效果还会添加整体色调。</li><li><strong>服装</strong>：柔软布料／缎面风格／牛仔风格／皮革风格／淡雅色差。根据材质组合织纹、色差、光泽和边缘光。</li><li><strong>道具</strong>：硬质材料。添加凹陷阴影、清晰光泽与边缘光。</li><li><strong>通用</strong>：温暖光照／蓝色边缘光。为肌肤、服装或道具添加光照颜色。</li></ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-bake-before-v110.webp" width="702" height="940" alt="示例模型应用轻松烘焙前" loading="lazy"><figcaption>烘焙前</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-bake-after-v110.webp" width="702" height="940" alt="同一视角下烘焙服装・缎面风格后的示例模型" loading="lazy"><figcaption>烘焙服装｜缎面风格后。使用相同视角和“保持绘制颜色”进行对比</figcaption></figure></div>
+      <p>预设会在保留原色的基础上叠加效果。若想让肤色与脸部一致，先匹配底色，再从较低烘焙强度开始，便于调整。</p>
+    </section>
+    <section class="mn-sec" id="blush"><h2>添加红润的位置</h2>
+      <p>自行指定脸颊、手肘、膝盖等需要红润的位置。点周围会添加柔和红润，可通过“红润强度”“红润范围”调整，同时保留白皙感。</p>
+      <ol class="mn-steps"><li>选择肌肤润色效果，点击<strong>“添加位置”</strong>，在 3D 视图指定位置。</li><li>要移动选中的点，可拖动 3D 视图移动手柄，或输入 X、Y、Z 坐标。</li><li>重复点击“添加位置”可添加多个位置，最多 16 个。在列表选中不需要的点，点击“删除所选位置”即可删除。</li><li>检查范围和强度后烘焙。红润会成为单独的“指定位置的红润”图层，之后可调整不透明度。</li></ol>
+      <div class="mn-tip">本功能不会自动识别脸颊或膝盖。未放置点时，不会添加局部红润。“红润范围”为相对于模型高度的比例。</div>
+    </section>
+    <section class="mn-sec" id="common"><h2>单项烘焙与预览</h2>
+      <p>如需逐项使用效果，请从<strong>滤镜 → 烘焙 → 各项功能</strong>打开。<a href="/petanuri/zh/manual/ao">烘焙 AO</a>也在此子菜单中。</p>
+      <ul class="mn-list"><li>阴影、渐变、凹陷、边缘光、光泽、织纹在修改设置后会即时预览。目标为当前选中且可见的纹理集。勾选“应用于所有显示中的纹理集”可处理多个纹理集。</li><li>预览中可转动视角查看。点击“烘焙到新图层”确认，点击“取消”或窗口 × 恢复原状。</li><li>预览使用较低分辨率以保持流畅，确认时会按纹理集分辨率重新生成。细密织纹和阴影也请检查确认后的效果。</li><li>“投射阴影”“薄处透光色”“AO”需要先选目标和质量，再进行计算。会显示进度，可中途取消。</li></ul>
+      <div class="mn-tip">烘焙的是纹理颜色。烘焙后转动视角或移动其他软件中的灯光，已绘制的光影位置也不会改变。要检查底色，可使用“保持绘制颜色”。</div>
+    </section>
+    <section class="mn-sec" id="shade"><h2>柔和阴影、凹陷与凸起</h2>
+      <h3>烘焙柔和明暗</h3><p>根据面方向与指定光照生成柔和阴影。通过“光的左右”“光照仰角”调整方向，通过“阴影范围”“边界柔和度”“阴影浓度”“阴影颜色”调整效果。可从斜上方、正上方、侧方或清晰阴影预设开始。</p>
+      <p>此功能本身不会生成头发或服装重叠所投射的阴影。处理重叠阴影时，可组合使用<a href="#rays">“烘焙投射阴影”</a>。</p>
+      <h3>增强凹陷与凸起</h3><p>检测形状的弯曲，为凹陷添加阴影、凸起添加亮色。“细节宽度”为模型高度的比例。凹陷和凸起可分别设置强度与颜色。</p>
+      <ul class="mn-list"><li><strong>边界柔和度</strong>：让检测到的凹陷、凸起转换为颜色时的边界更平缓。</li><li><strong>阴影模糊</strong>：沿表面平滑阴影本身。细小锯齿明显时可提高此值。0 表示不模糊。</li><li>提供柔和立体感／仅凹陷阴影／仅凸起亮部预设。</li></ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-curvature-v110.webp" width="410" height="501" alt="强调凹陷与凸起的设置。可分别调整阴影模糊与边界柔和度" loading="lazy"><figcaption>增强凹陷与凸起</figcaption></figure>
+    </section>
+    <section class="mn-sec" id="gradient"><h2>上下或点渐变</h2>
+      <p><strong>“烘焙上下或点渐变”</strong>可编辑颜色和透明度色标，通过“颜色分布”的按钮选择划分依据。</p>
+      <ul class="mn-list"><li><strong>表面方向</strong>：从朝下的面到朝上的面逐渐变色。适合表现下方反光或为朝上的面提亮。</li><li><strong>高度</strong>：从模型下方到上方逐渐变色。适合裙摆或发梢的颜色变化。</li><li><strong>距点距离</strong>：从指定中心向外逐渐变色。使用“在3D视图中指定中心”，可在模型表面或空白空间放置点。通过移动手柄或 X、Y、Z 坐标改变位置。</li></ul>
+      <p>点距离的“扩散距离”为模型高度的比例。通过“边界位置”“混合宽度”“颜色浓度”调整分布。指定点之前无法确认点距离烘焙。</p>
+      <p>点击色带添加色标，为各色标设置颜色、位置和不透明度。240 种预设可按分类或名称查找。自定义渐变可通过“保存当前”注册。编辑方法与<a href="/petanuri/zh/manual/draw#gradient">绘制工具渐变</a>相同。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-gradient-bake-v110.webp" width="410" height="757" alt="烘焙上下/点渐变。颜色和透明度色带、预设、颜色分布按钮" loading="lazy"><figcaption>渐变设置</figcaption></figure>
+    </section>
+    <section class="mn-sec" id="material"><h2>边缘光、光泽、织纹与色差</h2>
+      <ul class="mn-list"><li><strong>烘焙边缘光</strong>：根据指定光照和观看方向，为轮廓附近的面添加光色。用“扩散”调整宽度，也可使用蓝色边缘或暖色逆光等预设。</li><li><strong>烘焙光泽高光</strong>：根据指定光照和观看方向添加光泽亮部。提高“扩散”可获得柔和光泽，降低则得到硬质材料的窄高光。提供肌肤、缎面、硬质材料预设。</li><li><strong>烘焙织纹与色彩变化</strong>：在“纹理”按钮中选择织纹或色差，调整大小、编号、颜色和强度。更改编号可改变图案分布。大小为模型高度的比例。</li></ul>
+      <div class="mn-tip">织纹按照 3D 空间的轴和面方向生成，而非沿 UV 线生成。要为袖子、裙摆等手动指定织纹方向，也可使用<a href="/petanuri/zh/manual/deco#pattern">图案笔</a>。这些烘焙用于颜色表现，不会生成法线贴图或实际反射参数。</div>
+    </section>
+    <section class="mn-sec" id="rays"><h2>光照投影、薄处透光色</h2>
+      <h3>烘焙投射阴影</h3><ol class="mn-steps"><li>打开 滤镜 → 烘焙 →“烘焙投射阴影”。</li><li>设置光照左右、上下方向，阴影柔和度、强度、颜色、阴影距离和质量。</li><li>逐纹理集选择“接收阴影”“投射阴影”。例如将阴影烘焙到 body，而让头发和服装仅投射阴影。</li><li>点击“烘焙到新图层”计算。按当前姿势的重叠关系生成阴影。</li></ol>
+      <h3>烘焙薄处透光色</h3><p>向面内侧检测，为附近有另一侧面的薄处着色。适合有厚度的封闭耳朵、手指和道具等，添加柔和的透光色表现。</p>
+      <ol class="mn-steps"><li>打开 滤镜 → 烘焙 →“烘焙薄处透光色”。</li><li>设置“薄度检测距离（cm）”“透光色强度”“透光色”“质量”，并勾选目标纹理集的“烘焙”。</li><li>点击“烘焙到新图层”计算。</li></ol>
+      <div class="mn-tip warn">开放的单层布片不适用于薄处透光色。若内侧有其他面，也会检测到与该面的距离，请检查结果并调整强度。这不是让光实际穿透材质的设置。</div>
+    </section>
+    <section class="mn-sec" id="finish"><h2>烘焙后的调整与保存</h2>
+      <ul class="mn-list"><li>烘焙效果为普通绘制图层。可降低图层不透明度、隐藏不需要的效果、用蒙版限定范围，或用橡皮擦局部擦除。</li><li>轻松烘焙将效果分为独立图层，因此也可减弱阴影、保留红润。在“细节绘制”图层添加颜色，可继续绘画而不破坏烘焙结果。</li><li>烘焙确认后可用 <kbd>Ctrl</kbd>＋<kbd>Z</kbd> 撤销。再次烘焙会新增图层。叠加过多时，可隐藏或删除旧效果进行对比。</li><li><strong>.petanuri</strong> 格式保存可保留生成的所有图层。PNG 会合成可见效果，PSD 则可按图层导出（<a href="/petanuri/zh/manual/export">导出</a>）。</li></ul>
+    </section>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/ao"><small>← 上一页</small>烘焙 AO</a><a class="next" href="/petanuri/zh/manual/pose"><small>下一页 →</small>姿势、混合形状、顶点组</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="页脚">
+      <a href="/">HYPERtuyotuyo 首页</a>
+      <a href="/petanuri/zh">PetaNuri3D</a>
+      <a href="/petanuri/zh/manual">使用手册</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+      <a href="/petanuri/zh/changelog">更新记录</a>
+      <a href="/petanuri/terms">使用条款（日语）</a>
+    </nav>
+    <p>© HYPERtuyotuyo All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

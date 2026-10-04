@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetaNuri3D | VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구(무료 버전 제공)</title>
+  <meta name="description" content="PetaNuri3D는 VRChat 등에서 사용하는 3D 아바타·의상·소품의 텍스처를 3D 위에 직접 그릴 수 있는 애니메이션 채색용 3D 페인트 도구입니다(Windows). UV를 찾지 않고 보이는 위치에 칠하고 PNG·PSD로 내보낼 수 있습니다. FBX·VRM 지원, lilToon 모습으로 확인, Unity에서 실행하여 칠하기를 지원합니다. 무료 Lite 버전 제공(BOOTH에서 판매 중).">
+  <meta property="og:title" content="PetaNuri3D | VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구(무료 버전 제공)">
+  <meta property="og:description" content="PetaNuri3D는 VRChat 등에서 사용하는 3D 아바타·의상·소품의 텍스처를 3D 위에 직접 그릴 수 있는 애니메이션 채색용 3D 페인트 도구입니다(Windows). UV를 찾지 않고 보이는 위치에 칠하고 PNG·PSD로 내보낼 수 있습니다. FBX·VRM 지원, lilToon 모습으로 확인, Unity에서 실행하여 칠하기를 지원합니다. 무료 Lite 버전 제공(BOOTH에서 판매 중).">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta name="twitter:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://hyper-tuyotuyo.com/#org",
+   "name": "はいぱーつよつよ",
+   "alternateName": "Hyper TuyoTuyo",
+   "url": "https://hyper-tuyotuyo.com/",
+   "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+   "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+   "sameAs": [
+    "https://hyper-tuyotuyo.booth.pm/",
+    "https://x.com/Yak_HyperTYTY",
+    "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+   "name": "PetaNuri3D",
+   "alternateName": "PetaNuri3D",
+   "url": "https://hyper-tuyotuyo.com/petanuri/ko",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "description": "PetaNuri3D는 VRChat 등에서 사용하는 3D 아바타·의상·소품의 텍스처를 3D 위에 직접 그릴 수 있는 애니메이션 채색용 3D 페인트 도구입니다(Windows). UV를 찾지 않고 보이는 위치에 칠하고 PNG·PSD로 내보낼 수 있습니다. FBX·VRM 지원, lilToon 모습으로 확인, Unity에서 실행하여 칠하기를 지원합니다. 무료 Lite 버전 제공(BOOTH에서 판매 중).",
+   "applicationCategory": "DesignApplication",
+   "applicationSubCategory": "3D 페인팅 및 텍스처 제작",
+   "operatingSystem": "Windows 11",
+   "inLanguage": [
+    "ja",
+    "en",
+    "ko",
+    "zh-Hans"
+   ],
+   "publisher": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "featureList": [
+    "3D 모델에 직접 칠하기",
+    "뒷면·가려진 면에도 닿습니다",
+    "UV를 찾지 않고 그리기",
+    "그린 그림을 3D 위에서 이동",
+    "펜만으로 조작",
+    "좌우 대칭으로 그리기",
+    "Unity에서 실행하여 칠하기",
+    "레이어를 유지하며 PSD로 주고받기",
+    "lilToon 모습으로 확인",
+    "포즈를 취한 채 칠하기·AO 베이크"
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Lite",
+     "price": "0",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock"
+    },
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Standard",
+     "price": "1500",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock",
+     "priceValidUntil": "2026-11-02"
+    },
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Pro",
+     "price": "3000",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock",
+     "priceValidUntil": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "어디에서 구매하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "BOOTH 상품 페이지에서 판매합니다. Lite는 무료, Standard는 2,500엔, Pro는 4,000엔입니다. 11/2까지 출시 기념 할인으로 Standard는 1,500엔, Pro는 3,000엔입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "무료 Lite 버전만으로도 사용할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. 3D에 직접 그리기·브러시·스탬프·패턴·좌우 대칭·UV 영역·선택 범위·변형·텍스트·PNG 내보내기·작업 파일 저장·Unity에서 실행 등 평소 채색에 쓰는 기능을 Lite에서 사용할 수 있습니다. 레이어는 텍스처 세트별로 바탕을 포함하여 최대 4장, 해상도는 최대 2048입니다. 워터마크는 없습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "VRChat 아바타에 사용할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. VRChat 등에서 쓰는 3D 아바타·의상·소품(FBX·VRM 등)을 열어 텍스처를 3D 위에 직접 그릴 수 있습니다. 그린 텍스처는 PNG·PSD로 내보내 Unity에 넣을 수 있습니다. Unity에서 아바타를 선택하고 'ぺたぬり3D で塗る'(PetaNuri3D로 칠하기)를 누르면 PetaNuri3D가 실행되며 저장할 때 Unity에 반영됩니다(모든 버전). Pro는 lilToon 머티리얼을 .unitypackage로 내보낼 수 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "원본 아바타 파일이 변경되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아니요. Unity에서 칠할 때도 원본 FBX·머티리얼·텍스처·prefab은 변경하지 않으며 칠한 결과는 Unity 프로젝트의 Assets/PetaNuri/에 저장됩니다. PetaNuri3D만 사용할 때도 모델 파일은 읽기만 합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "다른 3D 소프트웨어나 페인트 소프트웨어 없이도 사용할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. PetaNuri3D만으로 모델을 열고 칠하고 텍스처를 PNG로 내보낼 수 있습니다. 레이어를 유지하여 마무리하려면 PSD로 내보내고(Standard부터) 사용하는 페인트 소프트웨어에서 이어서 그릴 수 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Standard 구매 후 Pro로 업그레이드할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. BOOTH의 'Pro로 업그레이드'에서 받은 파일을 Standard에 넣고 다시 실행하면 Pro가 됩니다. 작업 파일과 설정도 유지됩니다. 자세한 내용은 매뉴얼을 참고하세요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "다른 샵의 아바타나 의상에도 사용할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "FBX 등의 3D 모델에 UV(텍스처 펼치기)가 있으면 칠할 수 있습니다. 모델 데이터의 이용 조건은 각각의 약관을 확인하세요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mac에서 사용할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "현재는 Windows만 지원합니다(Windows 11. Windows 10에서도 실행되지만 지원 대상이 아닙니다)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "'Windows의 PC 보호'가 표시됩니다",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "서명되지 않은 앱이므로 처음 실행할 때 표시될 수 있습니다. '추가 정보' → '실행'으로 실행할 수 있습니다.시작 방법도 참고하세요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "새 버전은 어떻게 확인하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "실행 시(하루 최대 1회) 새 버전이 있는지 확인하여 화면 오른쪽 아래에 알려줍니다. 버전 번호만 확인하며 작품이나 설정은 어디에도 전송하지 않습니다. 최신 정보는  X(@Yak_HyperTYTY)에서도 안내합니다."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+
+<nav class="pn-nav" aria-label="메뉴">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="하이퍼 츠요츠요 홈으로"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="40" height="28"></a>
+    <a href="/petanuri/ko" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="언어 선택"><option value="ja" data-url="/petanuri">日本語</option><option value="en" data-url="/petanuri/en">English</option><option value="ko" data-url="/petanuri/ko" selected>한국어</option><option value="zh" data-url="/petanuri/zh">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="#gallery">표시 예시</a></li>
+      <li><a href="#points">할 수 있는 일</a></li>
+      <li><a href="#features">기능 목록</a></li>
+      <li><a href="#price">가격</a></li>
+      <li><a href="/petanuri/ko/manual">매뉴얼</a></li>
+      <li><a href="/petanuri/ko/changelog">업데이트 내역</a></li>
+      <li><a href="/petanuri/terms">이용약관 (일본어)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="pn-hero" aria-labelledby="pn-hero-title">
+  <div class="pn-wrap pn-hero-grid">
+    <div>
+      <h1 id="pn-hero-title" class="pn-logo-word"><span class="pn-eyebrow">VRChat 등에서 사용하는 3D 아바타·의상·소품에 직접 그리는, 애니메이션·일러스트 스타일에 특화된 3D 페인트 도구!</span><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="794" height="319"></h1>
+      <span class="pn-logo-sub">~ 애니메이션 채색용 3D 페인트 ~</span>
+      <p class="pn-hero-lead">VRChat 등에서 사용하는 3D 아바타와 <br>의상·소품에 텍스처를 직접 칠할 수 있는 <br>3D 페인트 도구입니다.<br>UV를 찾지 않고 보이는 위치에 그릴 수 있습니다.<br>완성한 텍스처는 PNG·PSD로 내보낼 수 있습니다.</p>
+      <div class="pn-btns">
+        <a href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener" class="btn pn-btn pn-btn-main">BOOTH에서 보기(Lite 무료)</a>
+        <a href="#features" class="btn pn-btn pn-btn-sub">기능 보기</a>
+        <a href="#price" class="btn pn-btn pn-btn-sub">가격과 버전별 차이</a>
+      </div>
+      <dl class="pn-hero-meta">
+        <div><b>Windows</b> 11</div>
+        <div><b>FBX</b>·glTF·VRM·OBJ 등</div>
+        <div><b>Lite</b> 무료</div>
+      </dl>
+    </div>
+    <figure class="pn-hero-paint pn-hero-model pn-hero-window">
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="/petanuri/assets/img/hero-tool-still.webp">
+        <!-- 最初は軽い静止画（47KB）を出し、読み込みが済んでから動く画像（約 800KB）に替える（petanuri.js。表示の速さのため） -->
+        <img src="/petanuri/assets/img/hero-tool-still.webp" data-anim="/petanuri/assets/img/hero-tool.webp" width="880" height="650" alt="PetaNuri3D 화면. VRChat 아바타 &#x27;獄門しのぶ&#x27;를 채우기로 남색으로 칠하고 부품별로 색을 칠하면 오른쪽 UV에도 동시에 색이 적용됩니다" fetchpriority="high">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery" class="pn-section" aria-labelledby="pn-gallery-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">01 — EXAMPLES</span><h2 id="pn-gallery-title" class="pn-h2">의상도, 소품도.</h2></div>
+      <p class="pn-sec-lead">아바타의 몸뿐 아니라 의상·액세서리·소품까지, UV가 있는 3D 모델이라면 칠할 수 있습니다. 아래는 노노츠요 시리즈의 의상과 소품을 PetaNuri3D로 연 표시 예시입니다(텍스처는 원래 모델의 것입니다).</p>
+    </div>
+    <div class="pn-gallery">
+      <figure class="g-a pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="狛犬セーラー를 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>狛犬セーラー</b>노노츠요 시리즈 의상. 세일러 칼라와 리본, 옷단 무늬까지</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-yukata-flat.webp" width="698" height="698" alt="星降る月浴衣를 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>星降る月浴衣</b>넓은 소매와 오비 장식</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="풍경을 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>풍경</b>獄門しのぶ의 소품</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="마법 모자를 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>마법 모자</b>星羽の魔導衣의 소품</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-starfeather-flat.webp" width="698" height="698" alt="星羽の魔導衣를 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>星羽の魔導衣</b>로브의 별무늬와 부츠</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magicstaff-flat.webp" width="698" height="698" alt="星羽の杖를 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>星羽の杖</b>星羽の魔導衣의 소품</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-soen-flat.webp" width="698" height="698" alt="蒼炎の水衣를 PetaNuri3D로 연 표시 예시" loading="lazy"></div>
+        <figcaption><b>蒼炎の水衣</b>망토와 스커트의 불꽃 무늬</figcaption></figure>
+      <div class="g-text pn-reveal">
+        <h3>평소와 같은 채색 방법</h3>
+        <p>펜으로 선을 그리고 채우기로 색을 넣고, 클리핑한 레이어에 그림자와 광택을 더합니다. 2D 일러스트와 같은 과정을 3D 위에서 그대로 진행할 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BEFORE / AFTER ===================== -->
+<section class="pn-section tint" aria-labelledby="pn-ba-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">02 — BEFORE / AFTER</span><h2 id="pn-ba-title" class="pn-h2">칠하기 전과 칠한 후</h2></div>
+      <p class="pn-sec-lead">칠한 색부터 마무리 모습까지 같은 화면에서 확인할 수 있습니다. 손잡이를 좌우로 움직여 비교하세요.</p>
+    </div>
+    <div class="pn-compare-wrap">
+      <div class="pn-compare-block pn-reveal">
+        <h3>칠하기 전 → 칠한 후(표시 예시)</h3>
+        <p>흰 모델에 텍스처를 적용하면 이렇게 달라집니다(표시 예시. 텍스처는 원래 모델의 것입니다).</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/before-plain.webp" width="524" height="702" alt="칠하기 전의 흰 시노부" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="텍스처가 적용된 시노부(표시 예시)" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">칠하기 전</span><span class="lbl r">칠한 후</span>
+          <input type="range" min="0" max="100" value="50" aria-label="칠하기 전과 칠한 후 비교">
+        </div>
+      </div>
+      <div class="pn-compare-block pn-reveal">
+        <h3>칠한 색 → 마무리 모습 표시 <span class="tier pro">Pro</span></h3>
+        <p>lilToon과 같은 계산으로 그림자·림 라이트·윤곽선을 적용한 모습(β 버전)을 확인하며 칠할 수 있습니다.</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="칠한 색 그대로 표시" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="lilToon 모습으로 마무리 표시" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">칠한 색</span><span class="lbl r">마무리 모습</span>
+          <input type="range" min="0" max="100" value="50" aria-label="칠한 색과 마무리 모습 비교">
+        </div>
+      </div>
+      <div class="pn-compare-block pn-reveal">
+        <h3>AO 베이크 전 → 베이크 후 <span class="tier pro">Pro</span></h3>
+        <p>겨드랑이·턱 아래·머리카락 안쪽 등 빛이 닿기 어려운 곳의 어두움을 계산하여 레이어로 만듭니다.</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/ao-before.webp" width="550" height="810" alt="AO 베이크 전" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="AO 베이크 후. 겨드랑이와 턱 아래에 그림자가 있습니다" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">베이크 전</span><span class="lbl r">베이크 후</span>
+          <input type="range" min="0" max="100" value="50" aria-label="AO 베이크 전과 후 비교">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POINTS ===================== -->
+<section id="points" class="pn-section" aria-labelledby="pn-points-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">03 — FEATURES</span><h2 id="pn-points-title" class="pn-h2">할 수 있는 일</h2></div>
+      <p class="pn-sec-lead">3D 모델의 텍스처를 2D 일러스트와 같은 감각으로 그리는 도구입니다.</p>
+    </div>
+    <div class="pn-points pn-reveal">
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>3D 모델에 직접 칠하기</h3><p>시점을 돌려 보이는 위치에 펜으로 그릴 수 있습니다. 그린 내용은 UV 텍스처에 그대로 적용됩니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>뒷면·가려진 면에도 닿습니다</h3><p>머리카락 안쪽이나 겹친 옷처럼 잘 보이지 않는 곳에도 브러시가 닿습니다. 앞쪽을 숨기고 안쪽을 칠할 수도 있습니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>UV를 찾지 않고 그리기</h3><p>UV 영역을 옆에 배치하면 3D와 UV 어느 쪽에서든 칠할 수 있습니다. 이음매를 넘어도 선이나 흐리기 효과가 끊어지지 않습니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>그린 그림을 3D 위에서 이동</h3><p>이동·확대/축소·회전·자유 변형·워프를 모델 위의 틀로 바로 조작할 수 있습니다. 텍스트도 그 자리에서 입력할 수 있습니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>펜만으로 조작</h3><p>필압을 지원합니다. 사이드 버튼으로 시점을 돌리고 그 자리에 뜨는 팔레트로 색과 브러시를 바꿀 수 있습니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>좌우 대칭으로 그리기</h3><p>M 키로 좌우 대칭을 켭니다. X·Y·Z를 조합할 수 있으며 UV 영역에 칠할 때도 적용됩니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Unity에서 실행하여 칠하기</h3><p>Unity에서 아바타를 선택하고 &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)를 실행하세요. 저장하면 Unity에 반영됩니다. 원본 파일은 변경하지 않습니다(모든 버전).</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>레이어를 유지하며 PSD로 주고받기 <span class="tier std">Standard</span></h3><p>합성 모드 26종·폴더·마스크·조정 레이어를 유지한 채 PSD를 읽고 쓸 수 있습니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>lilToon 모습으로 확인 <span class="tier pro">Pro</span></h3><p>그림자·림 라이트·매트캡·윤곽선이 있는 표시(β 버전)로 칠하고 머티리얼을 .unitypackage로 내보낼 수 있습니다.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>포즈를 취한 채 칠하기·AO 베이크 <span class="tier pro">Pro</span></h3><p>본을 움직여 포즈를 만들고 그 상태로 칠할 수 있습니다. 빛이 닿기 어려운 곳의 어두움을 계산하여 레이어로 만들 수 있습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SHOWCASE ===================== -->
+<section class="pn-section tint" aria-labelledby="pn-show-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">04 — SCREEN</span><h2 id="pn-show-title" class="pn-h2">화면과 사용법</h2></div>
+      <p class="pn-sec-lead">자주 쓰는 화면 4가지를 소개합니다. 자세한 조작 방법은 <a class="pn-textlink" href="/petanuri/ko/manual">매뉴얼</a>을 참고하세요.</p>
+    </div>
+    <div class="pn-show pn-reveal">
+      <div class="pn-show-media"><img class="pn-shot" src="/petanuri/assets/img/app-full.webp" width="1400" height="840" alt="3D 뷰와 UV 영역을 나란히 배치한 화면" loading="lazy"></div>
+      <div>
+        <span class="pn-show-no">3D × UV</span>
+        <h3>3D와 UV를 나란히 놓고 어느 쪽에서든 칠하기</h3>
+        <p>3D 뷰에서 칠한 내용은 옆의 UV 영역에 즉시 반영됩니다. UV 영역에서 브러시를 움직이면 3D의 해당 위치가 빨갛게 표시됩니다.</p>
+        <ul>
+          <li>펜·붓·채우기·그라데이션·흐리기 등을 UV 위에서도 사용할 수 있습니다</li>
+          <li>UV 영역에 격자선을 표시하고 이동·변형 틀을 격자에 스냅할 수 있습니다</li>
+          <li>&#x27;선택한 부분만 표시&#x27;·숨기기 펜·오브젝트별 표시로 옷 아래의 몸이나 머리카락 안쪽도 칠할 수 있습니다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show rev pn-reveal">
+      <div class="pn-show-media"><div class="pn-duo">
+        <img class="pn-shot" src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="레이어 패널. 볼·팔의 별·바탕 레이어" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/uv-pane.webp" width="324" height="416" alt="UV 영역. 시노부 몸의 텍스처" loading="lazy">
+      </div></div>
+      <div>
+        <span class="pn-show-no">LAYERS</span>
+        <h3>2D 일러스트와 같은 레이어 조작</h3>
+        <p>클리핑·투명 픽셀 잠금·폴더·레이어 마스크·합성 모드 26종을 지원합니다. 텍스트는 다시 입력할 수 있는 텍스트 레이어가 됩니다.</p>
+        <ul>
+          <li>텍스처를 PNG로 내보내기. PSD는 레이어를 유지 <span class="tier std">Standard</span></li>
+          <li>레이어 테두리(테두리)·조정 레이어·필터를 나중에 수정할 수 있는 형태로 <span class="tier std">Standard</span></li>
+          <li>아바타에 포함된 편집용 PSD를 가져와 이어서 그릴 수 있습니다 <span class="tier std">Standard</span></li>
+          <li>내보내기 번짐(패딩)으로 이음매에 선이 덜 생기는 텍스처 만들기</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show pn-reveal">
+      <div class="pn-show-media"><img class="pn-shot" src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="좌우 대칭으로 한쪽 팔에 그린 별이 반대쪽 팔에도 적용되어 있습니다" loading="lazy"></div>
+      <div>
+        <span class="pn-show-no">BRUSH</span>
+        <h3>애니메이션 채색부터 두꺼운 채색까지 지원하는 브러시</h3>
+        <p>G펜·둥근 펜·입출 펜부터 수채화 번짐·모필·두꺼운 채색용 브러시 모음까지. 색 혼합·손가락·흐리기도 3D 위에서 사용할 수 있습니다.</p>
+        <ul>
+          <li>펜 5종·붓 12종·브러시 모음 33종·색 혼합 12종·장식 13종</li>
+          <li>옷 무늬를 칠하는 패턴 펜 15종·스탬프·도형. 칠하기 전에 적용 위치에 미리보기가 표시됩니다</li>
+          <li>봉제선과 주름을 그리는 요철 도구 <span class="tier pro">Pro</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show rev pn-reveal">
+      <div class="pn-show-media"><div class="pn-duo">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="포즈 모드. 관절 점과 회전 손잡이로 앞다리를 내리고 고개를 기울인 모습" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="앞다리를 내린 포즈 그대로 페인트 모드로 돌아온 모습" loading="lazy">
+      </div></div>
+      <div>
+        <span class="pn-show-no">POSE</span>
+        <h3>포즈·블렌드 셰이프를 적용한 채 칠하기 <span class="tier pro">Pro</span></h3>
+        <p>본을 회전하여 포즈를 만들고 그 상태로 칠할 수 있습니다. 표정 블렌드 셰이프를 움직인 상태에서도 그릴 수 있습니다.</p>
+        <ul>
+          <li>관절 점·메시·목록에서 본을 선택하고 손잡이로 회전합니다</li>
+          <li>정점 그룹(본 가중치)으로 칠할 범위를 만들 수 있습니다</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURE LIST ===================== -->
+<section id="features" class="pn-section" aria-labelledby="pn-feat-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">05 — ALL FEATURES</span><h2 id="pn-feat-title" class="pn-h2">기능 목록</h2></div>
+      <p class="pn-sec-lead">v1.1.0의 주요 기능입니다. 추가·수정 사항은  <a href="/petanuri/ko/changelog">업데이트 내역</a>을 참고하세요. 표시가 없는 기능은 무료 Lite부터 사용할 수 있습니다.</p>
+    </div>
+    <div class="pn-filter" role="group" aria-label="버전별 필터">
+      <button type="button" data-tier="all" aria-pressed="true" data-say="모든 기능을 표시하고 있습니다">전체</button>
+      <button type="button" data-tier="lite" aria-pressed="false" data-say="Lite에서 사용할 수 있는 기능을 진하게 표시합니다">Lite</button>
+      <button type="button" data-tier="std" aria-pressed="false" data-say="Standard에서 사용할 수 있는 기능을 진하게 표시합니다">Standard</button>
+      <button type="button" data-tier="pro" aria-pressed="false" data-say="Pro는 모든 기능을 사용할 수 있습니다">Pro</button>
+    </div>
+    <p class="pn-legend">표시 없음 = Lite부터　<span class="tier std">Standard</span> Standard 및 Pro　<span class="tier pro">Pro</span> Pro 전용<span id="pn-filter-status" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></span></p>
+    <div class="pn-feats">
+      <div class="pn-feat pn-reveal" data-c="#FF6FA5">
+        <h3>그리기</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">3D 모델에 펜으로 직접 그리기(필압 지원·면을 따르는 채색)</span></li>
+          <li data-tier="lite"><span class="tx">뒷면·가려진 면에도 칠하기(모든 브러시. 기본 켜짐)</span></li>
+          <li data-tier="lite"><span class="tx">펜 5종(G펜·둥근 펜·밀리펜·입출 펜·단색 칠 펜)</span></li>
+          <li data-tier="lite"><span class="tx">붓 12종(부드러운 붓·에어브러시·수채화 번짐·평붓·모필·연필·분필·스프레이·닷지·번 등)</span></li>
+          <li data-tier="lite"><span class="tx">브러시 모음 33종(연필·가는 붓·덧칠·두꺼운 채색·물 테두리·물보라·나뭇잎·스펀지 등)</span></li>
+          <li data-tier="lite"><span class="tx">장식 13종(반짝임·별·하트·꽃·벚꽃·음표·눈 결정 등)</span></li>
+          <li data-tier="lite"><span class="tx">지우개 7종 + 투명색(브러시의 느낌 그대로 지우기)</span></li>
+          <li data-tier="lite"><span class="tx">도형(직선·사각형·타원·다각형·곡선·점을 잇는 곡선)</span></li>
+          <li data-tier="lite"><span class="tx">보조 도구 복제·이름 변경·재정렬·초기화·키 할당</span></li>
+          <li data-tier="lite"><span class="tx">팁 11종 + 포함된 팁 31개, 이미지나 브러시 파일에서 팁 가져오기</span></li>
+          <li data-tier="lite"><span class="tx">종이 질감(포함 이미지 6장·패턴 15종·원하는 이미지)</span></li>
+          <li data-tier="lite"><span class="tx">그리기 모드 26종 + &#x27;뒤에 그리기&#x27;·&#x27;밝게&#x27;·&#x27;어둡게&#x27;</span></li>
+          <li data-tier="lite"><span class="tx">손떨림 보정(매끄럽게·1€·끈 당기기)·시작/끝 조절·필압 곡선</span></li>
+          <li data-tier="lite"><span class="tx">속도에 따른 굵기·굵기와 농도 변화·펜 눕히기·기울기·회전</span></li>
+          <li data-tier="lite"><span class="tx">브러시 크기를 화면 px 또는 텍스처 px로 지정(1~1000)</span></li>
+          <li data-tier="lite"><span class="tx">브러시 크기 목록(자주 쓰는 크기를 한 번에)</span></li>
+          <li data-tier="std"><span class="tx">브러시 설정 내보내기·가져오기(.petabrush)</span><span class="tier std">Standard</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/draw">그리기 도구 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FFB800">
+        <h3>스탬프·패턴·요철</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">스탬프(원하는 이미지 붙이기. 커서를 대면 적용 위치에 미리보기)</span></li>
+          <li data-tier="lite"><span class="tx">패턴 펜 15종(스트라이프·물방울·깅엄 체크·타탄 체크·아가일·니트 등)</span></li>
+          <li data-tier="lite"><span class="tx">스탬프용 캔버스(레이어와 함께 저장·보이는 모습 그대로 스탬프 등록)</span></li>
+          <li data-tier="pro"><span class="tx">요철 9종(봉제선·파이핑·크로스 스티치·징·주름 등. 노멀 맵에 그리기)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/deco">스탬프·패턴 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#6EC3FF">
+        <h3>칠하기·혼합</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">채우기(UV 아일랜드별·머티리얼 전체)</span></li>
+          <li data-tier="lite"><span class="tx">둘러싸인 영역 채우기(허용치·틈 닫기·선 아래로 확장)</span></li>
+          <li data-tier="lite"><span class="tx">폴리곤 칠하기(그은 면 전체)</span></li>
+          <li data-tier="lite"><span class="tx">그라데이션(색과 투명도·최대 32점·프리셋 240종)</span></li>
+          <li data-tier="lite"><span class="tx">흐리기·손가락·색 혼합 12종(UV 이음매에서 끊기지 않음)</span></li>
+          <li data-tier="lite"><span class="tx">색 혼합의 &#x27;물감 양&#x27;·&#x27;색 늘이기&#x27;</span></li>
+          <li data-tier="lite"><span class="tx">자동 채색(선화와 힌트 색으로 밑칠 만들기)</span></li>
+          <li data-tier="lite"><span class="tx">휘도를 투명도로 변환(AO의 흰 배경을 투명하게)</span></li>
+          <li data-tier="lite"><span class="tx">추가 2D 페인트(모델 없이 그리기·PNG 내보내기)</span></li>
+          <li data-tier="pro"><span class="tx">간편 베이크(Easy Bake): 피부·의상·소품용 마무리 12종</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">부드러운 명암·위아래/포인트 그라데이션·오목한 곳과 볼록한 곳·드리운 그림자</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">가장자리 빛·광택·직물 결과 색 얼룩·얇은 부분의 투과색 베이크</span><span class="tier pro">Pro</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FFB800">
+        <h3>색</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">색 선택 방식 5종(링 + 사각형·링 + 삼각형·사각형 + 색상 바·원판·슬라이더)</span></li>
+          <li data-tier="lite"><span class="tx">색·색 값(HEX·RGB·HSV)·최근 사용한 색을 별도 패널로</span></li>
+          <li data-tier="lite"><span class="tx">컬러 세트(만들기·재정렬·이름·.gpl 읽기/쓰기)</span></li>
+          <li data-tier="lite"><span class="tx">스포이트(표시색·레이어·주변 평균), Alt로 언제든 사용</span></li>
+          <li data-tier="lite"><span class="tx">화면 어디에서든 색 가져오기(창 밖도 가능)</span></li>
+          <li data-tier="lite"><span class="tx">참고 이미지 패널(붙여넣기·확대·반전·회전·스포이트)</span></li>
+          <li data-tier="lite"><span class="tx">팝업 팔레트(펜 사이드 버튼으로 그 자리에 원형 팔레트 표시)</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FF9A6B">
+        <h3>좌우 대칭·자</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">대칭 그리기 X(좌우)·Y(앞뒤)·Z(위아래), 여러 축을 동시에</span></li>
+          <li data-tier="lite"><span class="tx">대칭 중심(모델 중심·원점·원하는 위치)</span></li>
+          <li data-tier="lite"><span class="tx">좌우 모양이 조금 다른 옷도 가까운 면을 대응시켜 칠하기</span></li>
+          <li data-tier="lite"><span class="tx">UV 영역에 칠할 때도 대칭 적용</span></li>
+          <li data-tier="lite"><span class="tx">자 5종(직선·곡선·동심원·방사선·평행선)</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#3FCB9E">
+        <h3>선택 범위·변형·텍스트</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">선택 범위 9종(사각형·타원·올가미·꺾은선·자동 선택·아일랜드·면·선택 펜·선택 지우개)</span></li>
+          <li data-tier="lite"><span class="tx">뒷면·가려진 면도 한꺼번에 선택(몸 둘레 전체)</span></li>
+          <li data-tier="lite"><span class="tx">선택 범위 바(반전·확장·축소·경계 흐리기·칠하기·지우기·새 레이어로)</span></li>
+          <li data-tier="lite"><span class="tx">이동·변형 도구(누른 위치의 그림을 잡고 이동)</span></li>
+          <li data-tier="lite"><span class="tx">3D와 UV 위에서 변형(이동·확대/축소·회전·반전·자유 변형·워프)</span></li>
+          <li data-tier="lite"><span class="tx">복사·잘라내기·붙여넣기·이미지 추가(배치 틀 포함)</span></li>
+          <li data-tier="lite"><span class="tx">이미지를 3D에 붙이기(시점에서 투영)·UV에 붙이기</span></li>
+          <li data-tier="lite"><span class="tx">그 자리에서 텍스트 입력(가로쓰기·세로쓰기·테두리·글자별 색과 크기·이 PC의 글꼴)</span></li>
+          <li data-tier="lite"><span class="tx">텍스트 레이어(나중에 다시 입력 가능)</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#A98BF0">
+        <h3>레이어</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">레이어 최대 4장(텍스처 세트별·바탕 포함)</span></li>
+          <li data-tier="std"><span class="tx">레이어 무제한</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">합성 모드 26종</span></li>
+          <li data-tier="lite"><span class="tx">클리핑·투명 픽셀 잠금·잠금·불투명도·아래 레이어와 병합·다중 선택</span></li>
+          <li data-tier="lite"><span class="tx">레이어 폴더(통과·한꺼번에 합성)</span></li>
+          <li data-tier="lite"><span class="tx">레이어 마스크(선택 범위로 만들기·반전·적용)</span></li>
+          <li data-tier="lite"><span class="tx">레이어 속성 패널</span></li>
+          <li data-tier="std"><span class="tx">테두리(레이어 테두리를 나중에 수정할 수 있는 형태로)</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">조정 레이어 8종(색상·채도·명도/밝기·대비/레벨 보정/그라데이션 맵 등)</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">필터 10종(흐리기·선명하게·색조 보정 등. 모델을 보며 값 조정)</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">그라데이션 맵 색 점 32개·프리셋 240개</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">작업 내역(누른 지점까지 한 번에 되돌리기)</span></li>
+          <li data-tier="lite"><span class="tx">그리지 않는 레이어를 쉬게 하여 GPU 메모리 절약</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/layers">레이어 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#1A6BFF">
+        <h3>UV·보기</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">UV 영역을 3D 옆에 놓고 직접 칠하기(UV만 표시 가능)</span></li>
+          <li data-tier="lite"><span class="tx">칠할 위치 미리보기(3D↔UV에서 빨갛게 표시)</span></li>
+          <li data-tier="lite"><span class="tx">UV 격자선과 이동·변형 스냅</span></li>
+          <li data-tier="lite"><span class="tx">UV 영역 회전·확대·아일랜드 가장자리 표시·이음매 너머로 이어서 칠하기</span></li>
+          <li data-tier="lite"><span class="tx">표시 범위(선택한 아일랜드·면만 표시하여 안쪽 면 칠하기)·숨기기 펜·숨김 상태 저장</span></li>
+          <li data-tier="lite"><span class="tx">오브젝트(메시)별 표시·숨김</span></li>
+          <li data-tier="lite"><span class="tx">메시 선·이음선(보이는 면만/뒷면도)</span></li>
+          <li data-tier="lite"><span class="tx">표시 방식(칠한 색 그대로·2단계 툰·명암)과 빛 방향</span></li>
+          <li data-tier="lite"><span class="tx">단면/양면·원근/평행·다른 각도의 작은 창</span></li>
+          <li data-tier="lite"><span class="tx">3D 내비·숫자 키패드 시점·오른쪽 위 시점 버튼</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/uv">UV 영역 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#E0457B">
+        <h3>lilToon·머티리얼</h3>
+        <ul>
+          <li data-tier="pro"><span class="tx">&#x27;마무리 모습&#x27; 표시·β 버전(lilToon과 같은 계산의 그림자·매트캡·림 라이트·역광·림 셰이드·발광·윤곽선)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">그림자 색·그림자 마스크·그림자 AO·노멀 맵·각종 마스크를 평소 브러시로 칠하기(레이어 폴더에서)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">메인 컬러 2nd/3rd</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">머티리얼 설정(lilToon 명칭에 맞춘 항목)을 머티리얼별로</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">같은 텍스처를 쓰면서 오브젝트별로 다른 머티리얼 지정</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">lilToon용 머티리얼을 .unitypackage로 내보내기(이미지도 할당 완료)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">lilToon 머티리얼(.mat)로 시작·가져오기</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/material">마무리 모습과 머티리얼 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#8A6500">
+        <h3>3D 활용</h3>
+        <ul>
+          <li data-tier="pro"><span class="tx">포즈 모드(본을 회전하여 그 상태로 칠하기. 휴머노이드 본 색 구분·좌우 대칭)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">블렌드 셰이프(표정 등 변형된 상태로 칠하기)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">정점 그룹(본 가중치)으로 칠할 범위 만들기</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">AO 베이크(GPU 계산. 오브젝트별 가능. 곱하기 레이어·lilToon 그림자 AO·PNG로)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#22AA77">
+        <h3>열기·저장·텍스처 세트</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">FBX·glTF·GLB·VRM·OBJ·DAE 열기</span></li>
+          <li data-tier="lite"><span class="tx">새로 만들기 화면(세트별 해상도와 시작 상태: 색·이미지)</span></li>
+          <li data-tier="std"><span class="tx">PSD로 시작</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">모델이 쓰는 이미지를 자동으로 찾아 바탕에 적용</span></li>
+          <li data-tier="lite"><span class="tx">샘플 모델과 튜토리얼</span></li>
+          <li data-tier="lite"><span class="tx">텍스처 세트 수 무제한(머티리얼별)</span></li>
+          <li data-tier="lite"><span class="tx">해상도 512~2048</span></li>
+          <li data-tier="std"><span class="tx">해상도 4096</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">작업 파일(.petanuri)·5분마다 자동 저장·최근 사용한 파일</span></li>
+          <li data-tier="lite"><span class="tx">모델 다시 불러오기(그린 내용은 유지하고 형태만 갱신)</span></li>
+          <li data-tier="lite"><span class="tx">두 세트에 걸쳐 그리기·선택하지 않은 세트를 쉬게 하여 GPU 메모리 절약</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/start">시작 방법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FF6FA5">
+        <h3>내보내기·연동</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">PNG 내보내기(머티리얼별·일괄)</span></li>
+          <li data-tier="std"><span class="tx">PSD 가져오기</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">PSD 내보내기(폴더·마스크·조정 레이어·클리핑도 유지)</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">내보내기 번짐(패딩) 4~32 px·아일랜드 밖 전체 채우기</span></li>
+          <li data-tier="pro"><span class="tx">머티리얼 내보내기 (.unitypackage)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="lite"><span class="tx">Unity에서 실행하여 칠하기(저장하면 Unity에 반영. 애드온 포함)</span></li>
+          <li data-tier="lite"><span class="tx">AI 연동(MCP)으로 조작</span></li>
+          <li data-tier="pro"><span class="tx">AI 연동 run_js(앱 안에서 프로그램 실행)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/export">내보내기 사용법 →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#6EC3FF">
+        <h3>화면·조작</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">패널을 원하는 위치로(열·행·플로팅·탭으로 묶기)</span></li>
+          <li data-tier="lite"><span class="tx">패널 접기·아이콘만 있는 좁은 바</span></li>
+          <li data-tier="lite"><span class="tx">도구 모음을 왼쪽·오른쪽·위·아래로·도구 재정렬·자주 쓰는 도구 바</span></li>
+          <li data-tier="lite"><span class="tx">위치에 맞는 우클릭 메뉴</span></li>
+          <li data-tier="lite"><span class="tx">자유로운 키 할당(왼손 입력 장치용)·열어 둔 채 작업할 수 있는 단축키 목록</span></li>
+          <li data-tier="lite"><span class="tx">필압 반응 조정·시험 그리기로 맞추기·WinTab 지원</span></li>
+          <li data-tier="lite"><span class="tx">라이트/다크 화면·日本語·English·한국어·中文</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/ko/manual/screen">화면과 패널 사용법 →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICE ===================== -->
+<section id="price" class="pn-section tint" aria-labelledby="pn-price-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">06 — PRICE</span><h2 id="pn-price-title" class="pn-h2">가격</h2></div>
+      <p class="pn-sec-lead"><a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener">BOOTH</a> 에서 판매합니다. 먼저 무료 Lite로 사용해 보세요.<br><!-- 発売記念セール（2026-11-02 まで）。終わったら .pn-sale-* と <s class="pn-was"> を外して通常の価格だけに戻し、seo.py の SALE_END も消す --><span class="pn-sale-lead">출시 기념 할인 중!(11/2까지) Standard 1,500엔·Pro 3,000엔</span></p>
+    </div>
+    <p class="pn-btns pn-reveal" style="margin-bottom:2rem"><a href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener" class="btn pn-btn pn-btn-main">BOOTH 상품 페이지로</a></p>
+    <div class="pn-plans pn-reveal">
+      <div class="pn-plan lite">
+        <div class="pn-plan-name">Lite</div>
+        <p class="pn-plan-desc">3D에 직접 칠하는 기본 기능을 무료로.</p>
+        <div class="pn-price">무료</div><div class="pn-plan-note">다운로드 버전(Windows)</div>
+        <ul>
+          <li>펜·붓·브러시 모음·스탬프·패턴·좌우 대칭·UV 영역</li>
+          <li>선택 범위·3D 위에서 변형·텍스트</li>
+          <li>레이어 최대 4장(세트별·바탕 포함)</li>
+          <li>해상도 최대 2048</li>
+          <li>PNG 내보내기·작업 파일 저장</li>
+          <li>Unity에서 실행하여 칠하기</li>
+          <li class="no">PSD 가져오기·내보내기</li>
+          <li class="no">필터·조정 레이어·테두리</li>
+        </ul>
+      </div>
+      <div class="pn-plan std">
+        <div class="pn-plan-name">Standard</div>
+        <p class="pn-plan-desc">레이어 수를 신경 쓰지 않고 그리고 싶은 분께.</p>
+        <div class="pn-price"><s class="pn-was">2,500엔</s>1,500<small>엔</small></div><div class="pn-sale-tag">출시 기념 할인 11/2까지</div><div class="pn-plan-note">다운로드 버전(Windows)</div>
+        <ul>
+          <li>Lite의 모든 기능</li>
+          <li>레이어 무제한</li>
+          <li>해상도 4096</li>
+          <li>PSD 가져오기·내보내기(레이어 유지)</li>
+          <li>필터·조정 레이어·테두리</li>
+          <li>브러시 설정 내보내기·가져오기</li>
+          <li class="no">포즈·블렌드 셰이프·정점 그룹</li>
+          <li class="no">lilToon 기능·AO</li>
+        </ul>
+      </div>
+      <div class="pn-plan pro">
+        <div class="pn-plan-name">Pro</div>
+        <p class="pn-plan-desc">3D만의 기능까지 모두.</p>
+        <div class="pn-price"><s class="pn-was">4,000엔</s>3,000<small>엔</small></div><div class="pn-sale-tag">출시 기념 할인 11/2까지</div><div class="pn-plan-note">다운로드 버전(Windows)</div>
+        <ul>
+          <li>Standard의 모든 기능</li>
+          <li>포즈 모드·블렌드 셰이프</li>
+          <li>정점 그룹으로 범위 만들기</li>
+          <li>lilToon 마무리 모습 표시(β 버전)·그림자 색과 마스크 칠하기·요철</li>
+          <li>머티리얼 설정·내보내기(.unitypackage)</li>
+          <li>AO 굽기</li>
+          <li>AI 연동의 run_js</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pn-plan-up pn-reveal">Standard 구매 후에도 BOOTH의 &#x27;Pro로 업그레이드&#x27;로 Pro를 사용할 수 있습니다(업그레이드 파일을 넣고 다시 실행하면 됩니다. 작업 파일·설정은 유지됩니다). 자세한 내용은 <a class="pn-textlink" href="/petanuri/ko/manual/start#upgrade">매뉴얼</a>을 참고하세요.</p>
+    <div class="pn-table-wrap pn-reveal">
+      <table class="pn-table">
+        <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">버전별 차이</caption>
+        <thead><tr><th scope="col">비교 항목</th><th scope="col">LITE</th><th scope="col">STANDARD</th><th scope="col">PRO</th></tr></thead>
+        <tbody>
+          <tr><td>가격<br><small>(11/2까지 출시 기념 할인)</small></td><td>무료</td><td><s class="pn-was">2,500엔</s> 1,500엔</td><td><s class="pn-was">4,000엔</s> 3,000엔</td></tr>
+          <tr><td>레이어(텍스처 세트별·바탕 포함)</td><td>최대 4장</td><td>무제한</td><td>무제한</td></tr>
+          <tr><td>해상도</td><td>최대 2048</td><td>최대 4096</td><td>최대 4096</td></tr>
+          <tr><td>펜·붓·브러시 모음·지우개·색 혼합·스탬프·패턴</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>좌우 대칭·UV 영역·선택 범위·변형·텍스트·자</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>PNG 내보내기</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>Unity에서 실행하여 칠하기</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>PSD 가져오기·내보내기</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>필터·조정 레이어·테두리</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>브러시 설정 내보내기·가져오기</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>포즈·블렌드 셰이프·정점 그룹</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>lilToon 마무리 모습 표시(β 버전)·머티리얼 설정과 내보내기·요철</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>AO 굽기</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>AI 연동의 run_js</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPEC / FAQ ===================== -->
+<section class="pn-section" aria-labelledby="pn-spec-title">
+  <div class="pn-wrap pn-two">
+    <div class="pn-reveal">
+      <span class="pn-sec-no">07 — SPEC</span>
+      <h2 id="pn-spec-title" class="pn-h2" style="margin-bottom:1.5rem">실행 환경</h2>
+      <dl class="pn-spec">
+        <div><dt>OS</dt><dd>Windows 11(64bit). 설치 불필요. Windows 10에서도 실행되지만 지원 대상이 아닙니다</dd></div>
+        <div><dt>열 수 있는 3D 모델</dt><dd>FBX・glTF・GLB・VRM・OBJ・DAE</dd></div>
+        <div><dt>내보내기</dt><dd>PNG·PSD·.unitypackage(lilToon용 머티리얼)</dd></div>
+        <div><dt>작업 파일</dt><dd>.petanuri(모델·레이어·설정을 하나로)</dd></div>
+        <div><dt>Unity 연동</dt><dd>Unity 2022.3(애드온 포함. 모든 버전에서 사용 가능)</dd></div>
+        <div><dt>화면 언어</dt><dd>日本語·English·한국어·中文</dd></div>
+      </dl>
+    </div>
+    <div class="pn-reveal">
+      <span class="pn-sec-no">08 — FAQ</span>
+      <h2 class="pn-h2" style="margin-bottom:1.5rem">자주 묻는 질문</h2>
+      <div class="pn-faq">
+        <details><summary>어디에서 구매하나요?</summary><div><a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener">BOOTH 상품 페이지</a>에서 판매합니다. Lite는 무료, Standard는 2,500엔, Pro는 4,000엔입니다. 11/2까지 출시 기념 할인으로 Standard는 1,500엔, Pro는 3,000엔입니다.</div></details>
+        <details><summary>무료 Lite 버전만으로도 사용할 수 있나요?</summary><div>네. 3D에 직접 그리기·브러시·스탬프·패턴·좌우 대칭·UV 영역·선택 범위·변형·텍스트·PNG 내보내기·작업 파일 저장·Unity에서 실행 등 평소 채색에 쓰는 기능을 Lite에서 사용할 수 있습니다. 레이어는 텍스처 세트별로 바탕을 포함하여 최대 4장, 해상도는 최대 2048입니다. 워터마크는 없습니다.</div></details>
+        <details><summary>VRChat 아바타에 사용할 수 있나요?</summary><div>네. VRChat 등에서 쓰는 3D 아바타·의상·소품(FBX·VRM 등)을 열어 텍스처를 3D 위에 직접 그릴 수 있습니다. 그린 텍스처는 PNG·PSD로 내보내 Unity에 넣을 수 있습니다. Unity에서 아바타를 선택하고 &#x27;ぺたぬり3D で塗る&#x27;(PetaNuri3D로 칠하기)를 누르면 PetaNuri3D가 실행되며 저장할 때 Unity에 반영됩니다(모든 버전). Pro는 lilToon 머티리얼을 .unitypackage로 내보낼 수 있습니다.</div></details>
+        <details><summary>원본 아바타 파일이 변경되나요?</summary><div>아니요. Unity에서 칠할 때도 원본 FBX·머티리얼·텍스처·prefab은 변경하지 않으며 칠한 결과는 Unity 프로젝트의 Assets/PetaNuri/에 저장됩니다. PetaNuri3D만 사용할 때도 모델 파일은 읽기만 합니다.</div></details>
+        <details><summary>다른 3D 소프트웨어나 페인트 소프트웨어 없이도 사용할 수 있나요?</summary><div>네. PetaNuri3D만으로 모델을 열고 칠하고 텍스처를 PNG로 내보낼 수 있습니다. 레이어를 유지하여 마무리하려면 PSD로 내보내고(Standard부터) 사용하는 페인트 소프트웨어에서 이어서 그릴 수 있습니다.</div></details>
+        <details><summary>Standard 구매 후 Pro로 업그레이드할 수 있나요?</summary><div>네. BOOTH의 &#x27;Pro로 업그레이드&#x27;에서 받은 파일을 Standard에 넣고 다시 실행하면 Pro가 됩니다. 작업 파일과 설정도 유지됩니다. 자세한 내용은 <a class="pn-textlink" href="/petanuri/ko/manual/start#upgrade">매뉴얼</a>을 참고하세요.</div></details>
+        <details><summary>다른 샵의 아바타나 의상에도 사용할 수 있나요?</summary><div>FBX 등의 3D 모델에 UV(텍스처 펼치기)가 있으면 칠할 수 있습니다. 모델 데이터의 이용 조건은 각각의 약관을 확인하세요.</div></details>
+        <details><summary>Mac에서 사용할 수 있나요?</summary><div>현재는 Windows만 지원합니다(Windows 11. Windows 10에서도 실행되지만 지원 대상이 아닙니다).</div></details>
+        <details><summary>&#x27;Windows의 PC 보호&#x27;가 표시됩니다</summary><div>서명되지 않은 앱이므로 처음 실행할 때 표시될 수 있습니다. &#x27;추가 정보&#x27; → &#x27;실행&#x27;으로 실행할 수 있습니다.<a href="/petanuri/ko/manual/start">시작 방법</a>도 참고하세요.</div></details>
+        <details><summary>새 버전은 어떻게 확인하나요?</summary><div>실행 시(하루 최대 1회) 새 버전이 있는지 확인하여 화면 오른쪽 아래에 알려줍니다. 버전 번호만 확인하며 작품이나 설정은 어디에도 전송하지 않습니다. 최신 정보는  <a class="pn-textlink" href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>에서도 안내합니다.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="49" height="34"></a>
+    <nav aria-label="푸터">
+      <a href="/">하이퍼 츠요츠요 홈</a>
+      <a href="/petanuri/ko/manual">PetaNuri3D 매뉴얼</a>
+      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener">BOOTH 샵</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/ko/changelog">업데이트 내역</a>
+      <a href="/petanuri/terms">이용약관 (일본어)</a>
+    </nav>
+    <p>PetaNuri3D 개발에는 AI 에이전트(코드를 작성하는 AI)를 사용합니다. 이미지 생성 AI는 사용하지 않습니다.</p>
+    <p>© 하이퍼 츠요츠요 All rights reserved. lilToon은 lilxyzw 님의 셰이더입니다(MIT 라이선스).</p>
+  </div>
+</footer>
+
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

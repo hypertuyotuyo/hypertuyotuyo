@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마무리 모습과 lilToon 머티리얼 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
+  <meta name="description" content="lilToon 모습(마무리 모습·β 버전)으로 확인·그림자 색과 마스크 칠하기(칠할 대상 폴더)·메인 컬러 2nd/3rd·머티리얼 나누기·lilToon 머티리얼 가져오기·.unitypackage 내보내기. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/material">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/material">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/material">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/material">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/material">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/material">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="마무리 모습과 lilToon 머티리얼 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
+  <meta property="og:description" content="lilToon 모습(마무리 모습·β 버전)으로 확인·그림자 색과 마스크 칠하기(칠할 대상 폴더)·메인 컬러 2nd/3rd·머티리얼 나누기·lilToon 머티리얼 가져오기·.unitypackage 내보내기. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/material">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "매뉴얼",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "마무리 모습과 lilToon 머티리얼 Pro",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual/material"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "마무리 모습과 lilToon 머티리얼 Pro | PetaNuri3D 매뉴얼",
+   "description": "lilToon 모습(마무리 모습·β 버전)으로 확인·그림자 색과 마스크 칠하기(칠할 대상 폴더)·메인 컬러 2nd/3rd·머티리얼 나누기·lilToon 머티리얼 가져오기·.unitypackage 내보내기. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/material",
+   "inLanguage": "ko",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-04",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual",
+    "name": "PetaNuri3D 매뉴얼"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="메뉴">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="하이퍼 츠요츠요 홈으로"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="40" height="28"></a>
+    <a href="/petanuri/ko" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="언어 선택"><option value="ja" data-url="/petanuri/manual/material">日本語</option><option value="en" data-url="/petanuri/en/manual/material">English</option><option value="ko" data-url="/petanuri/ko/manual/material" selected>한국어</option><option value="zh" data-url="/petanuri/zh/manual/material">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/ko">소개 페이지</a></li>
+      <li><a href="/petanuri/ko#gallery">표시 예시</a></li>
+      <li><a href="/petanuri/ko#features">기능 목록</a></li>
+      <li><a href="/petanuri/ko#price">가격</a></li>
+      <li><a href="/petanuri/ko/manual">매뉴얼</a></li>
+      <li><a href="/petanuri/ko/changelog">업데이트 내역</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side" aria-label="매뉴얼 목차">
+    <p class="mn-side-title">매뉴얼</p>
+    <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
+    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·요철·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material" aria-current="page">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 마무리 모습과 lilToon 머티리얼</p>
+    <h1 class="mn-h1">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></h1>
+    <p class="mn-intro">lilToon과 같은 계산의 모습(그림자·매트캡·림 라이트·윤곽선 등)을 확인하며 칠하고 설정과 함께 머티리얼로 내보낼 수 있습니다. 이 페이지의 기능은 Pro에서 사용할 수 있습니다.</p>
+    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <p class="mn-proof">&#x27;마무리 모습(lilToon)&#x27;은 β 버전입니다. lilToon(2.3 계열)과 같은 계산으로 표시하지만 Unity 안의 모습과 조금 다를 수 있습니다.</p>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#look">&#x27;마무리 모습&#x27;으로 보기</a></li><li><a href="#channels">그림자 색·마스크 등 칠하기(칠할 대상)</a></li><li><a href="#main2">메인 컬러 2nd·메인 컬러 3rd</a></li><li><a href="#split">머티리얼 나누기</a></li><li><a href="#lil">lilToon 머티리얼 불러오기</a></li><li><a href="#export">머티리얼 내보내기</a></li></ul></div>
+    <section class="mn-sec" id="look"><h2>&#x27;마무리 모습&#x27;으로 보기</h2><ul class="mn-list"><li>3D 뷰 왼쪽 위 표시 방식 아이콘 4개의 오른쪽 끝(우클릭 → 보기)에서 &#x27;마무리 모습&#x27;으로 설정합니다.</li><li>그림자(그림자 색 1·그림자 색 2·경계 색)·노멀 맵·매트캡·매트캡 2nd·림 라이트·역광 라이트·림 셰이드·발광·윤곽선을 lilToon(2.3 계열)과 같은 계산으로 표시합니다.</li><li>빛 방향은 표시 방식의 ▼ 또는 &#x27;머티리얼&#x27; 패널의 &#x27;표시와 빛&#x27;에서 설정합니다. &#x27;카메라를 따라가는 빛&#x27;은 시점을 돌려도 빛이 같게 비추어 칠하기 쉬워집니다.</li><li>&#x27;머티리얼&#x27; 패널 항목 이름은 lilToon 설정 화면 명칭에 맞췄습니다. &#x27;다른 머티리얼에도 복사&#x27;로 모두 같은 설정을 적용할 수 있습니다.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="마무리 모습 표시. 그림자·림 라이트·윤곽선 적용" loading="lazy"><figcaption>마무리 모습 표시</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="머티리얼 패널" loading="lazy"><figcaption>&#x27;머티리얼&#x27; 패널(위에 머티리얼 목록)</figcaption></figure></div><figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="마무리 모습으로 표시한 전체 화면" loading="lazy"><figcaption>마무리 모습 표시 화면</figcaption></figure></section><section class="mn-sec" id="channels"><h2>그림자 색·마스크 등 칠하기(칠할 대상)</h2><ol class="mn-steps"><li>패널의 &#x27;칠하기:&#x27; 버튼(우클릭 → 칠할 대상도 가능)으로 칠할 대상을 선택합니다.</li><li>레이어 패널의 메인 컬러 위에 칠할 대상 폴더(예: &#x27;그림자 색 1&#x27;)가 생성되고 안의 레이어가 선택됩니다. 안에서는 일반 레이어처럼 추가·삭제·겹치기·마스크·클리핑을 사용할 수 있습니다.</li><li>평소의 펜·붓·채우기·그라데이션·흐리기·필터로 그대로 칠합니다.</li><li>위 중앙 &#x27;컬러로 돌아가기&#x27;(또는 폴더 밖 레이어 누르기)로 일반 색 채색으로 돌아갑니다.</li></ol><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="레이어 패널에 생성된 칠할 대상 폴더" loading="lazy"><figcaption>칠할 대상 폴더</figcaption></figure><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">칠할 대상</th><th scope="col">어떻게 적용되나요?</th></tr></thead><tbody><tr><td>그림자 색 1·그림자 색 2</td><td>칠한 곳의 그림자가 해당 색이 됩니다(피부 붉은 기·머리카락 그림자 푸른 기 등)</td></tr><tr><td>그림자 마스크</td><td>흰색 = 그림자 적용·검은색 = 그림자 미적용</td></tr><tr><td>그림자 AO</td><td>검을수록 그림자가 나타나기 쉬움(목 주변·머리카락 안쪽·겹친 옷)</td></tr><tr><td>노멀 맵</td><td>높이로 칠합니다. 흰색으로 볼록하게·검은색으로 파기(옷 주름·봉제선·머리카락 결에 사용.<a href="/petanuri/ko/manual/deco#bump">요철</a>도구도 가능)</td></tr><tr><td>매트캡 마스크·윤곽선 폭</td><td>흰색 = 적용·검은색 = 미적용</td></tr><tr><td>림 라이트 색·발광 텍스처</td><td>칠한 색을 곱하기/칠한 곳만 칠한 색으로 발광</td></tr></tbody></table></div><ul class="mn-list"><li>그 외에도 그림자 색 3·그림자 흐리기 마스크·색조 보정 마스크·알파 마스크·발광 마스크·발광 2nd·역광 라이트 색·림 셰이드 마스크·윤곽선 색·노멀 맵 2nd 마스크·글리터 색을 칠할 수 있습니다(우클릭 → 칠할 대상 → 기타 마스크).</li><li>밝기만 읽는 칠할 대상은 위 중앙 흰색·회색·검은색으로 전환할 수 있습니다. &#x27;이것만 보기&#x27;로 해당 대상 그림만 표시합니다. &#x27;삭제&#x27;로 칠하지 않은 상태로 되돌립니다.</li><li>한 머티리얼의 마무리 모습 표시에 동시에 사용할 수 있는 텍스처는 최대 16개입니다(초과하면 &#x27;더 이상 추가할 수 없습니다&#x27; 표시).</li></ul></section><section class="mn-sec" id="main2"><h2>메인 컬러 2nd·메인 컬러 3rd</h2><ul class="mn-list"><li>&#x27;머티리얼&#x27; 패널의 &#x27;메인 컬러 2nd&#x27;·&#x27;메인 컬러 3rd&#x27;에서 &#x27;사용&#x27;을 켜면 레이어 패널 맨 위에 같은 이름의 폴더가 생성됩니다.</li><li>폴더 안의 레이어만 메인 컬러 2nd(3rd) 텍스처가 됩니다(메인 그림에 섞이지 않음). 겹치는 방식(색·불투명도·합성 모드·마스크)은 패널에서 정합니다.</li><li>내보내기에서는 별도 이미지(&lt;이름&gt;_main2nd.png 등)가 되며 머티리얼에서는 lilToon의 &#x27;메인 컬러 2nd/3rd&#x27;에 적용됩니다.</li></ul></section><section class="mn-sec" id="split"><h2>머티리얼 나누기</h2><ul class="mn-list"><li>처음에는 텍스처 세트마다 같은 이름의 머티리얼 하나가 있습니다. 나누지 않으면 아무것도 바뀌지 않습니다.</li><li>같은 텍스처(칠할 그림)를 유지하면서 오브젝트별로 그림자 색·매트캡·림 라이트·윤곽선 등의 설정을 바꿀 수 있습니다(예: 머리카락 텍스처를 유지하며 동물 귀만 빨간 그림자).</li><li>나누기: 오브젝트 패널의 행 또는 3D의 해당 오브젝트 우클릭 → &#x27;이 오브젝트만 별도 머티리얼로&#x27;. &#x27;머티리얼 할당&#x27;으로 사용할 머티리얼을 선택할 수 있습니다.</li><li>&#x27;머티리얼&#x27; 패널 위 목록에서 추가·이름 변경·삭제·재정렬합니다(순서 = 겹친 곳의 우선순위). 3D에서 누른 곳의 머티리얼로 패널이 전환되며 아래 상태 바에 &#x27;머티리얼: 이름(텍스처 세트 이름)&#x27;이 표시됩니다.</li><li>내보내기는 머티리얼마다 .mat 하나입니다(같은 텍스처 참조).</li></ul></section><section class="mn-sec" id="lil"><h2>lilToon 머티리얼 불러오기</h2><ul class="mn-list"><li>파일 → 가져오기 → lilToon 머티리얼 가져오기로 .mat 또는 해당 .mat를 포함한 .unitypackage를 선택합니다(창에 드롭도 가능). 새로 만들기의 &#x27;시작&#x27;에서도 선택할 수 있습니다.</li><li>그리기 모드·그림자·노멀 맵·매트캡·림 라이트·발광·윤곽선·메인 컬러 2nd/3rd 등의 설정과 텍스처(메인 컬러 → 바탕, 그림자 색·마스크 등 → 칠할 대상)를 가져옵니다.</li><li>텍스처는 .mat 주변 프로젝트에서 찾습니다. 찾지 못한 텍스처는 목록에 표시되므로 이미지를 선택합니다.</li><li>PetaNuri3D가 재현하지 않는 설정(광택·퍼·스텐실 등)은 값을 유지하며 내보낼 때 원래대로 돌아갑니다.</li><li>내보내면 원래 .mat와 같은 위치·같은 ID를 유지하며 변경한 설정과 다시 그린 텍스처만 덮어씁니다.</li></ul></section><section class="mn-sec" id="export"><h2>머티리얼 내보내기</h2><ol class="mn-steps"><li>파일 → 내보내기 → 머티리얼 내보내기(패널의 &#x27;내보내기&#x27;도 가능)를 선택합니다.</li><li>내보낼 머티리얼·폴더 이름·내보내기 번짐을 선택합니다.</li><li>.unitypackage로 내보내거나 폴더(프로젝트 Assets)에 직접 씁니다. .unitypackage는 더블클릭 또는 드래그로 프로젝트에 가져올 수 있습니다.</li></ol><ul class="mn-list"><li>머티리얼(.mat)과 메인 컬러 이미지·그림자 색·마스크·노멀 맵·매트캡 이미지가 포함되며 할당도 완료됩니다.</li><li>같은 작업을 같은 폴더 이름으로 다시 내보내면 이전에 가져온 내용을 덮어씁니다(모델 할당 유지).</li></ul><div class="mn-tip warn">내보내는 것은 lilToon용 머티리얼입니다. 가져오는 프로젝트에 lilToon을 설치해 두세요(없으면 머티리얼이 분홍색으로 표시).</div></section>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/sets"><small>← 이전</small>텍스처 세트와 오브젝트</a><a class="next" href="/petanuri/ko/manual/ao"><small>다음 →</small>AO 굽기</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="49" height="34"></a>
+    <nav aria-label="푸터">
+      <a href="/">하이퍼 츠요츠요 홈</a>
+      <a href="/petanuri/ko">PetaNuri3D</a>
+      <a href="/petanuri/ko/manual">매뉴얼</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/ko/changelog">업데이트 내역</a>
+      <a href="/petanuri/terms">이용약관 (일본어)</a>
+    </nav>
+    <p>© 하이퍼 츠요츠요 All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

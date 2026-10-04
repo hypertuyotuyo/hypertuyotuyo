@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetaNuri3D | Paint textures directly on 3D avatars, outfits and accessories for VRChat and more (free edition available)</title>
+  <meta name="description" content="PetaNuri3D is a Windows 3D painting tool for anime-style textures on avatars, outfits and accessories used in VRChat and more. Paint directly where you see it, without searching the UV map, and export to PNG or PSD. Supports FBX and VRM, lilToon previews, and painting from Unity. A free Lite edition is available on BOOTH.">
+  <meta property="og:title" content="PetaNuri3D | Paint textures directly on 3D avatars, outfits and accessories for VRChat and more (free edition available)">
+  <meta property="og:description" content="PetaNuri3D is a Windows 3D painting tool for anime-style textures on avatars, outfits and accessories used in VRChat and more. Paint directly where you see it, without searching the UV map, and export to PNG or PSD. Supports FBX and VRM, lilToon previews, and painting from Unity. A free Lite edition is available on BOOTH.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta name="twitter:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://hyper-tuyotuyo.com/#org",
+   "name": "はいぱーつよつよ",
+   "alternateName": "Hyper TuyoTuyo",
+   "url": "https://hyper-tuyotuyo.com/",
+   "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+   "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+   "sameAs": [
+    "https://hyper-tuyotuyo.booth.pm/",
+    "https://x.com/Yak_HyperTYTY",
+    "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+   "name": "PetaNuri3D",
+   "alternateName": "PetaNuri3D",
+   "url": "https://hyper-tuyotuyo.com/petanuri/en",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "description": "PetaNuri3D is a Windows 3D painting tool for anime-style textures on avatars, outfits and accessories used in VRChat and more. Paint directly where you see it, without searching the UV map, and export to PNG or PSD. Supports FBX and VRM, lilToon previews, and painting from Unity. A free Lite edition is available on BOOTH.",
+   "applicationCategory": "DesignApplication",
+   "applicationSubCategory": "3D painting and texture creation",
+   "operatingSystem": "Windows 11",
+   "inLanguage": [
+    "ja",
+    "en",
+    "ko",
+    "zh-Hans"
+   ],
+   "publisher": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "featureList": [
+    "Paint directly on 3D models",
+    "Reach back and hidden faces",
+    "Paint without searching the UV map",
+    "Move artwork on the model",
+    "Operate with just a pen",
+    "Paint symmetrically",
+    "Launch from Unity and paint",
+    "PSD round trips with layers intact",
+    "Preview the lilToon look",
+    "Paint in a pose and bake AO"
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Lite",
+     "price": "0",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock"
+    },
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Standard",
+     "price": "1500",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock",
+     "priceValidUntil": "2026-11-02"
+    },
+    {
+     "@type": "Offer",
+     "name": "PetaNuri3D Pro",
+     "price": "3000",
+     "priceCurrency": "JPY",
+     "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
+     "availability": "https://schema.org/InStock",
+     "priceValidUntil": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Where can I buy it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "BOOTH product page offers all editions. Lite is free, Standard is ¥2,500 and Pro is ¥4,000. During the launch sale through November 2, Standard is ¥1,500 and Pro is ¥3,000."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use just the free Lite edition?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Lite includes everyday painting features: direct 3D painting, brushes, stamps, patterns, symmetry, UV view, selections, transforms, text, PNG export, project saving and launching from Unity. It allows up to 4 layers per texture set including the base, and resolution up to 2048. There is no watermark."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use it for VRChat avatars?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Open avatars, outfits and accessories (FBX, VRM and more) used in VRChat and paint textures directly in 3D. Export PNG or PSD textures to Unity. Select an avatar in Unity and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D) to launch the app; saving updates Unity (all editions). Pro can export lilToon materials as .unitypackage."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will it overwrite the original avatar files?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Even when painting from Unity, original FBX, materials, textures and prefabs stay unchanged; painted assets go into Assets/PetaNuri/ in the Unity project. When used on its own, PetaNuri3D only reads the model file."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use it without other 3D or painting software?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. PetaNuri3D alone can open a model, paint it and export PNG textures. To continue in another painting app with layers intact, export PSD (Standard and above)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I upgrade to Pro after buying Standard?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Install the file from BOOTH's “Upgrade to Pro” into Standard and restart to activate Pro. Projects and settings are preserved. For details, see Manual."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work with avatars and outfits from other shops?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can paint 3D models such as FBX files if they have UVs (texture coordinates). Please check each model's terms of use."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use it on Mac?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Currently Windows only (Windows 11; also runs on Windows 10, which is not supported)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "“Windows protected your PC” appeared",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As the app is unsigned, this may appear on first launch. Choose “More info” → “Run anyway” to start it.Getting started has more information."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I find out about new versions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At startup (at most once a day), the app checks for new versions and notifies you at the bottom right. It checks only the version number; your artwork and settings are never sent. Latest information is also available in the  X(@Yak_HyperTYTY)."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+
+<nav class="pn-nav" aria-label="Menu">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="Back to HYPERtuyotuyo home"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/en" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="Choose language"><option value="ja" data-url="/petanuri">日本語</option><option value="en" data-url="/petanuri/en" selected>English</option><option value="ko" data-url="/petanuri/ko">한국어</option><option value="zh" data-url="/petanuri/zh">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="#gallery">Examples</a></li>
+      <li><a href="#points">What you can do</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#price">Pricing</a></li>
+      <li><a href="/petanuri/en/manual">Manual</a></li>
+      <li><a href="/petanuri/en/changelog">Changelog</a></li>
+      <li><a href="/petanuri/terms">Terms of use (Japanese)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="pn-hero" aria-labelledby="pn-hero-title">
+  <div class="pn-wrap pn-hero-grid">
+    <div>
+      <h1 id="pn-hero-title" class="pn-logo-word"><span class="pn-eyebrow">A 3D painting tool for anime and illustration styles: paint directly on avatars, outfits and accessories for VRChat and more!</span><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="794" height="319"></h1>
+      <span class="pn-logo-sub">~ 3D painting for anime-style art ~</span>
+      <p class="pn-hero-lead">A 3D painting tool for applying textures directly<br>to avatars, outfits and accessories<br>used in VRChat and more.<br>Paint where you see it, without searching the UV map.<br>Export finished textures as PNG or PSD.</p>
+      <div class="pn-btns">
+        <a href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener" class="btn pn-btn pn-btn-main">View on BOOTH (Lite is free)</a>
+        <a href="#features" class="btn pn-btn pn-btn-sub">Explore features</a>
+        <a href="#price" class="btn pn-btn pn-btn-sub">Prices and editions</a>
+      </div>
+      <dl class="pn-hero-meta">
+        <div><b>Windows</b> 11</div>
+        <div><b>FBX</b>, glTF, VRM, OBJ and more</div>
+        <div><b>Lite</b> Free</div>
+      </dl>
+    </div>
+    <figure class="pn-hero-paint pn-hero-model pn-hero-window">
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="/petanuri/assets/img/hero-tool-still.webp">
+        <!-- 最初は軽い静止画（47KB）を出し、読み込みが済んでから動く画像（約 800KB）に替える（petanuri.js。表示の速さのため） -->
+        <img src="/petanuri/assets/img/hero-tool-still.webp" data-anim="/petanuri/assets/img/hero-tool.webp" width="880" height="650" alt="PetaNuri3D interface. 獄門しのぶ, a VRChat avatar, is filled navy with the bucket tool. Painting individual parts also updates the UV view on the right." fetchpriority="high">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery" class="pn-section" aria-labelledby="pn-gallery-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">01 — EXAMPLES</span><h2 id="pn-gallery-title" class="pn-h2">Outfits and accessories, too.</h2></div>
+      <p class="pn-sec-lead">Paint not only avatar bodies, but also outfits and accessories: any 3D model with UVs. These examples show outfits and accessories from the ののつよ series in PetaNuri3D (using the original model textures).</p>
+    </div>
+    <div class="pn-gallery">
+      <figure class="g-a pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="狛犬セーラー displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>狛犬セーラー</b>An outfit from the ののつよ series: from the sailor collar and ribbon to the hem pattern</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-yukata-flat.webp" width="698" height="698" alt="星降る月浴衣 displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>星降る月浴衣</b>Wide sleeves and obi decorations</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="Wind chime displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>Wind chime</b>An accessory for 獄門しのぶ</figcaption></figure>
+      <figure class="g-c pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="Magic hat displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>Magic hat</b>An accessory for 星羽の魔導衣</figcaption></figure>
+      <figure class="g-b pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-starfeather-flat.webp" width="698" height="698" alt="星羽の魔導衣 displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>星羽の魔導衣</b>Stars on the robe and boots</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/prop-magicstaff-flat.webp" width="698" height="698" alt="星羽の杖 displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>星羽の杖</b>An accessory for 星羽の魔導衣</figcaption></figure>
+      <figure class="g-g pn-reveal"><div class="flip"><img src="/petanuri/assets/img/outfit-soen-flat.webp" width="698" height="698" alt="蒼炎の水衣 displayed in PetaNuri3D" loading="lazy"></div>
+        <figcaption><b>蒼炎の水衣</b>Flame patterns on the cape and skirt</figcaption></figure>
+      <div class="g-text pn-reveal">
+        <h3>Paint the way you know</h3>
+        <p>Draw lines with a pen, lay down colors with fill, and add shadows and highlights on clipped layers. Follow the same steps as a 2D illustration, directly on a 3D model.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BEFORE / AFTER ===================== -->
+<section class="pn-section tint" aria-labelledby="pn-ba-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">02 — BEFORE / AFTER</span><h2 id="pn-ba-title" class="pn-h2">Before and after painting</h2></div>
+      <p class="pn-sec-lead">Check both the painted colors and the final look in one screen. Move the slider left or right to compare.</p>
+    </div>
+    <div class="pn-compare-wrap">
+      <div class="pn-compare-block pn-reveal">
+        <h3>Before → after painting (example)</h3>
+        <p>Here is how a white model changes with textures (example using the original model textures).</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/before-plain.webp" width="524" height="702" alt="White 獄門しのぶ before painting" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="獄門しのぶ with textures (example)" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">Before painting</span><span class="lbl r">After painting</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare before and after painting">
+        </div>
+      </div>
+      <div class="pn-compare-block pn-reveal">
+        <h3>Painted colors → final look <span class="tier pro">Pro</span></h3>
+        <p>Paint with a beta preview of shadows, rim light and outlines calculated the same way as lilToon.</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="Unlit view of the painted colors" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="Final look with lilToon" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">Painted color</span><span class="lbl r">Final look</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare painted colors and final look">
+        </div>
+      </div>
+      <div class="pn-compare-block pn-reveal">
+        <h3>Before → after baking AO <span class="tier pro">Pro</span></h3>
+        <p>Calculate darkness where light is blocked, such as under arms, under the chin and inside hair, and create a layer from it.</p>
+        <div class="pn-compare">
+          <img src="/petanuri/assets/img/ao-before.webp" width="550" height="810" alt="Before baking AO" loading="lazy">
+          <div class="after"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="After baking AO: shadows under the arms and chin" loading="lazy"></div>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <span class="lbl l">Before baking</span><span class="lbl r">After baking</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare before and after baking AO">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POINTS ===================== -->
+<section id="points" class="pn-section" aria-labelledby="pn-points-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">03 — FEATURES</span><h2 id="pn-points-title" class="pn-h2">What you can do</h2></div>
+      <p class="pn-sec-lead">A tool for painting 3D model textures as naturally as a 2D illustration.</p>
+    </div>
+    <div class="pn-points pn-reveal">
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Paint directly on 3D models</h3><p>Rotate the view and draw with a pen where you see it. Your strokes go straight onto the UV texture.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Reach back and hidden faces</h3><p>Every brush reaches hard-to-see areas, such as inside hair and overlapping clothes. Hide the front to paint behind it.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Paint without searching the UV map</h3><p>Place the UV view beside the model and paint in either view. Lines and blur remain continuous across seams.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Move artwork on the model</h3><p>Move, scale, rotate, free-transform and warp using the frame on the model. Type text right there, too.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Operate with just a pen</h3><p>Supports pen pressure. Rotate the view with a side button, and switch colors and brushes using a palette that opens at the cursor.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Paint symmetrically</h3><p>Press M for left-right symmetry. Combine X, Y and Z symmetry, including when painting in the UV view.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Launch from Unity and paint</h3><p>Select an avatar in Unity and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D). Saving updates Unity. Original files are preserved (all editions).</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>PSD round trips with layers intact <span class="tier std">Standard</span></h3><p>Import and export PSDs preserving 26 blend modes, folders, masks and adjustment layers.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Preview the lilToon look <span class="tier pro">Pro</span></h3><p>Paint with shadows, rim light, matcaps and outlines in a beta preview, then export materials as .unitypackage.</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Paint in a pose and bake AO <span class="tier pro">Pro</span></h3><p>Pose the bones and paint in that shape. Calculate darkness where light is blocked and turn it into a layer.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SHOWCASE ===================== -->
+<section class="pn-section tint" aria-labelledby="pn-show-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">04 — SCREEN</span><h2 id="pn-show-title" class="pn-h2">Interface and workflow</h2></div>
+      <p class="pn-sec-lead">Here are four commonly used screens. For detailed instructions, see the <a class="pn-textlink" href="/petanuri/en/manual">Manual</a>.</p>
+    </div>
+    <div class="pn-show pn-reveal">
+      <div class="pn-show-media"><img class="pn-shot" src="/petanuri/assets/img/app-full.webp" width="1400" height="840" alt="3D view and UV view side by side" loading="lazy"></div>
+      <div>
+        <span class="pn-show-no">3D × UV</span>
+        <h3>Paint in 3D or UV, side by side</h3>
+        <p>Strokes in 3D immediately appear in the adjacent UV view. Move a brush over the UV view to highlight the matching model area in red.</p>
+        <ul>
+          <li>Use pens, brushes, fill, gradients and blur on the UV map too</li>
+          <li>Show a UV grid and snap move/transform frames to it</li>
+          <li>Use “Show selected only,” the Hide pen and per-object visibility to paint under clothes and inside hair</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show rev pn-reveal">
+      <div class="pn-show-media"><div class="pn-duo">
+        <img class="pn-shot" src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="Layers panel: cheeks, arm stars and base layers" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/uv-pane.webp" width="324" height="416" alt="UV view: 獄門しのぶ body texture" loading="lazy">
+      </div></div>
+      <div>
+        <span class="pn-show-no">LAYERS</span>
+        <h3>Layers work like a 2D illustration</h3>
+        <p>Supports clipping, transparency lock, folders, layer masks and 26 blend modes. Text remains in editable text layers.</p>
+        <ul>
+          <li>Export textures to PNG, or PSD to keep the layers <span class="tier std">Standard</span></li>
+          <li>Layer strokes, adjustment layers and filters remain editable <span class="tier std">Standard</span></li>
+          <li>Import an avatar&#x27;s customization PSD and continue painting <span class="tier std">Standard</span></li>
+          <li>Export padding helps prevent visible seam lines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show pn-reveal">
+      <div class="pn-show-media"><img class="pn-shot" src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="Symmetry mirrors a star from one arm onto the other" loading="lazy"></div>
+      <div>
+        <span class="pn-show-no">BRUSH</span>
+        <h3>Brushes for anime coloring and painterly art</h3>
+        <p>From G-pens, mapping pens and tapered pens to watercolor bleed, ink brushes and painterly brush collections. Blend, smudge and blur directly in 3D.</p>
+        <ul>
+          <li>5 pens, 12 brushes, 33 brush-collection presets, 12 blend tools and 13 decoration tools</li>
+          <li>15 pattern pens, stamps and shapes for clothing patterns. A preview shows where they will land before painting</li>
+          <li>Surface relief tools for seams and wrinkles <span class="tier pro">Pro</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pn-show rev pn-reveal">
+      <div class="pn-show-media"><div class="pn-duo">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="Pose mode: joint points and rotation handles lower the front legs and tilt the neck" loading="lazy">
+        <img class="pn-shot" src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="Back in Paint mode, with the front legs still lowered" loading="lazy">
+      </div></div>
+      <div>
+        <span class="pn-show-no">POSE</span>
+        <h3>Paint with poses and blend shapes <span class="tier pro">Pro</span></h3>
+        <p>Rotate bones to pose the model, then paint in that shape. Paint with facial blend shapes applied, too.</p>
+        <ul>
+          <li>Select bones using joint points, the mesh or the list, then rotate with handles</li>
+          <li>Create painting selections from vertex groups (bone weights)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURE LIST ===================== -->
+<section id="features" class="pn-section" aria-labelledby="pn-feat-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">05 — ALL FEATURES</span><h2 id="pn-feat-title" class="pn-h2">Features</h2></div>
+      <p class="pn-sec-lead">Main features in v1.1.0. For details of additions and fixes, see the  <a href="/petanuri/en/changelog">Changelog</a>. Features without a badge are available in the free Lite edition.</p>
+    </div>
+    <div class="pn-filter" role="group" aria-label="Filter by edition">
+      <button type="button" data-tier="all" aria-pressed="true" data-say="Showing all features">All</button>
+      <button type="button" data-tier="lite" aria-pressed="false" data-say="Features available in Lite are highlighted">Lite</button>
+      <button type="button" data-tier="std" aria-pressed="false" data-say="Features available in Standard are highlighted">Standard</button>
+      <button type="button" data-tier="pro" aria-pressed="false" data-say="Pro includes every feature">Pro</button>
+    </div>
+    <p class="pn-legend">No badge = Lite and above　<span class="tier std">Standard</span> Standard and Pro　<span class="tier pro">Pro</span> Pro only<span id="pn-filter-status" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></span></p>
+    <div class="pn-feats">
+      <div class="pn-feat pn-reveal" data-c="#FF6FA5">
+        <h3>Draw</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Draw directly on 3D models (pen pressure and surface-aligned painting)</span></li>
+          <li data-tier="lite"><span class="tx">Also paint back and hidden faces (all brushes, enabled by default)</span></li>
+          <li data-tier="lite"><span class="tx">5 pens (G-pen, mapping pen, fineliner, tapered pen and solid pen)</span></li>
+          <li data-tier="lite"><span class="tx">12 brushes (soft brush, airbrush, watercolor bleed, flat brush, ink brush, pencil, chalk, spray, dodge, burn and more)</span></li>
+          <li data-tier="lite"><span class="tx">33 brush-collection presets (pencil, fine brush, glazing, painterly, water edge, splatter, leaves, sponge and more)</span></li>
+          <li data-tier="lite"><span class="tx">13 decoration tools (sparkles, stars, hearts, flowers, cherry blossoms, musical notes, snowflakes and more)</span></li>
+          <li data-tier="lite"><span class="tx">7 erasers plus transparent color (erase with any brush&#x27;s feel)</span></li>
+          <li data-tier="lite"><span class="tx">Shapes (line, rectangle, ellipse, polygon, curve and point-to-point curve)</span></li>
+          <li data-tier="lite"><span class="tx">Duplicate, rename, reorder and reset sub tools; assign shortcuts</span></li>
+          <li data-tier="lite"><span class="tx">11 tip types plus 31 bundled tips; import tips from images and brush files</span></li>
+          <li data-tier="lite"><span class="tx">Paper texture (6 bundled images, 15 patterns or your own image)</span></li>
+          <li data-tier="lite"><span class="tx">26 drawing modes plus Behind, Lighten and Darken</span></li>
+          <li data-tier="lite"><span class="tx">Stabilization (smooth, 1€ and tether), taper and pressure curve</span></li>
+          <li data-tier="lite"><span class="tx">Size by speed; size and opacity variation; pen tilt, direction and rotation</span></li>
+          <li data-tier="lite"><span class="tx">Brush size in screen or texture pixels (1–1000)</span></li>
+          <li data-tier="lite"><span class="tx">Brush size list (quick access to favorite sizes)</span></li>
+          <li data-tier="std"><span class="tx">Export/import brush settings (.petabrush)</span><span class="tier std">Standard</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/draw">Drawing tool instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FFB800">
+        <h3>Stamps, patterns and surface relief</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Stamps (apply your own images, with a placement preview on hover)</span></li>
+          <li data-tier="lite"><span class="tx">15 pattern pens (stripes, dots, gingham, tartan, argyle, knit and more)</span></li>
+          <li data-tier="lite"><span class="tx">Stamp canvas (save with layers and register the visible result as a stamp)</span></li>
+          <li data-tier="pro"><span class="tx">9 surface relief types (seams, piping, cross-stitch, studs, wrinkles and more; painted on a normal map)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/deco">Stamp and pattern instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#6EC3FF">
+        <h3>Filling and blending</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Fill (UV island or entire material)</span></li>
+          <li data-tier="lite"><span class="tx">Fill enclosed areas (tolerance, gap closing and expansion beneath lines)</span></li>
+          <li data-tier="lite"><span class="tx">Polygon fill (fill entire faces you trace)</span></li>
+          <li data-tier="lite"><span class="tx">Gradient (color and opacity, up to 32 stops and 240 presets)</span></li>
+          <li data-tier="lite"><span class="tx">Blur, smudge and 12 blend tools (continuous across UV seams)</span></li>
+          <li data-tier="lite"><span class="tx">Blend settings: “Paint amount” and “Color stretch”</span></li>
+          <li data-tier="lite"><span class="tx">Auto fill (create base colors from line art and color hints)</span></li>
+          <li data-tier="lite"><span class="tx">Convert luminance to opacity (make an AO white background transparent)</span></li>
+          <li data-tier="lite"><span class="tx">Bonus 2D painting (draw without a model and export PNG)</span></li>
+          <li data-tier="pro"><span class="tx">Easy Bake: 12 finishes for skin, outfits and accessories</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Soft shading, directional/point gradients, cavities and ridges, and cast shadows</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Bake rim light, highlights, fabric texture/color variation and thin-area translucency color</span><span class="tier pro">Pro</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FFB800">
+        <h3>Color</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">5 color picker styles (ring + square, ring + triangle, square + hue bar, disc and sliders)</span></li>
+          <li data-tier="lite"><span class="tx">Separate panels for color, color values (HEX/RGB/HSV) and recent colors</span></li>
+          <li data-tier="lite"><span class="tx">Color sets (create, reorder, rename and import/export .gpl)</span></li>
+          <li data-tier="lite"><span class="tx">Eyedropper (displayed color, layer or surrounding average); hold Alt anytime</span></li>
+          <li data-tier="lite"><span class="tx">Pick colors anywhere on screen, including outside the window</span></li>
+          <li data-tier="lite"><span class="tx">Reference image panel (paste, zoom, flip, rotate and pick colors)</span></li>
+          <li data-tier="lite"><span class="tx">Popup palette (a circular palette at the cursor, opened by the pen side button)</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FF9A6B">
+        <h3>Symmetry and rulers</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Paint symmetrically across X (left-right), Y (front-back) and Z (top-bottom); combine any axes</span></li>
+          <li data-tier="lite"><span class="tx">Symmetry center (model center, origin or custom position)</span></li>
+          <li data-tier="lite"><span class="tx">Match nearby faces when painting clothes with slightly different left and right shapes</span></li>
+          <li data-tier="lite"><span class="tx">Symmetry also works in the UV view</span></li>
+          <li data-tier="lite"><span class="tx">5 rulers (straight, curve, concentric circles, radial and parallel)</span></li>
+        </ul>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#3FCB9E">
+        <h3>Selections, transforms and text</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">9 selection tools (rectangle, ellipse, lasso, polyline, auto select, island, face, selection pen and selection eraser)</span></li>
+          <li data-tier="lite"><span class="tx">Select back and hidden faces too (all around the body)</span></li>
+          <li data-tier="lite"><span class="tx">Selection bar (invert, expand, shrink, feather, fill, clear or move to a new layer)</span></li>
+          <li data-tier="lite"><span class="tx">Move/transform tool (grab the artwork where you click and move it)</span></li>
+          <li data-tier="lite"><span class="tx">Transform (move, scale, rotate, flip, free transform and warp) in both 3D and UV</span></li>
+          <li data-tier="lite"><span class="tx">Copy, cut, paste and add images (with placement frames)</span></li>
+          <li data-tier="lite"><span class="tx">Paste images onto 3D (project from the view) or UV</span></li>
+          <li data-tier="lite"><span class="tx">Type text in place (horizontal/vertical, stroke, per-character color/size and fonts installed on this PC)</span></li>
+          <li data-tier="lite"><span class="tx">Text layers (edit the text later)</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/edit">Selection, transform and text instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#A98BF0">
+        <h3>Layer</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Up to 4 layers (per texture set, including the base)</span></li>
+          <li data-tier="std"><span class="tx">Unlimited layers</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">26 blend modes</span></li>
+          <li data-tier="lite"><span class="tx">Clipping, transparency lock, lock, opacity, merge down and multiple selection</span></li>
+          <li data-tier="lite"><span class="tx">Layer folders (Pass through or composite as a group)</span></li>
+          <li data-tier="lite"><span class="tx">Layer masks (create from a selection, invert and apply)</span></li>
+          <li data-tier="lite"><span class="tx">Layer properties panel</span></li>
+          <li data-tier="std"><span class="tx">Stroke (editable layer outline)</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">8 adjustment layers (hue/saturation/lightness, brightness/contrast, levels, gradation map and more)</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">10 filters (blur, sharpen, color correction and more; adjust while previewing the model)</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">Gradation maps: 32 color stops and 240 presets</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">History (jump back to any entry)</span></li>
+          <li data-tier="lite"><span class="tx">Unload inactive layers to save GPU memory</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/layers">Layer instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#1A6BFF">
+        <h3>UV and display</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Paint in the UV view beside 3D (UV-only view also available)</span></li>
+          <li data-tier="lite"><span class="tx">Paint target preview (red highlighting between 3D and UV)</span></li>
+          <li data-tier="lite"><span class="tx">UV grid and move/transform snapping</span></li>
+          <li data-tier="lite"><span class="tx">Rotate/zoom UV view, show island edges and continue strokes across seams</span></li>
+          <li data-tier="lite"><span class="tx">Visible area (show only selected islands/faces to paint behind), Hide pen and saved visibility presets</span></li>
+          <li data-tier="lite"><span class="tx">Show/hide individual objects (meshes)</span></li>
+          <li data-tier="lite"><span class="tx">Mesh and seam lines (visible faces only or back faces too)</span></li>
+          <li data-tier="lite"><span class="tx">Display modes (unlit painted colors, two-tone toon and shaded) and light direction</span></li>
+          <li data-tier="lite"><span class="tx">Single/double-sided, perspective/orthographic and alternate-angle mini views</span></li>
+          <li data-tier="lite"><span class="tx">3D navigator, numpad views and top-right view buttons</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/uv">UV view instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#E0457B">
+        <h3>lilToon and materials</h3>
+        <ul>
+          <li data-tier="pro"><span class="tx">Final look, beta (lilToon-equivalent shadows, matcaps, rim light, backlight, rim shade, emission and outlines)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Paint shadow colors, shadow masks, shadow AO, normal maps and other masks with regular brushes (in layer folders)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Main color 2nd/3rd</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Per-material settings using lilToon&#x27;s terminology</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Separate materials per object while keeping shared textures</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Export lilToon materials as .unitypackage (textures already assigned)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Start from or import lilToon material files (.mat)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/material">Final look and material instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#8A6500">
+        <h3>Make use of 3D</h3>
+        <ul>
+          <li data-tier="pro"><span class="tx">Pose mode (rotate bones and paint in that shape; humanoid bone colors and symmetry)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Blend shapes (paint with expressions and other shapes applied)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Create painting selections from vertex groups (bone weights)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">Bake AO (GPU calculation, optionally per object; Multiply layer, lilToon shadow AO or PNG)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/pose">Pose and blend shape instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#22AA77">
+        <h3>Open, save and texture sets</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Open FBX, glTF, GLB, VRM, OBJ and DAE</span></li>
+          <li data-tier="lite"><span class="tx">New project screen (resolution and starting color/image per set)</span></li>
+          <li data-tier="std"><span class="tx">Start from a PSD</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">Automatically find model textures to use as a base</span></li>
+          <li data-tier="lite"><span class="tx">Sample models and tutorial</span></li>
+          <li data-tier="lite"><span class="tx">Unlimited texture sets (per material)</span></li>
+          <li data-tier="lite"><span class="tx">Resolution 512–2048</span></li>
+          <li data-tier="std"><span class="tx">Resolution 4096</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">Project files (.petanuri), autosave every 5 minutes and recent files</span></li>
+          <li data-tier="lite"><span class="tx">Reload the model (update its shape while preserving artwork)</span></li>
+          <li data-tier="lite"><span class="tx">Paint across two sets; unload unselected sets to save GPU memory</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/start">Getting started →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#FF6FA5">
+        <h3>Export and integration</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">PNG export (individual materials or all together)</span></li>
+          <li data-tier="std"><span class="tx">PSD import</span><span class="tier std">Standard</span></li>
+          <li data-tier="std"><span class="tx">PSD export (preserves folders, masks, adjustment layers and clipping)</span><span class="tier std">Standard</span></li>
+          <li data-tier="lite"><span class="tx">Export padding: 4–32 px or fill all space outside islands</span></li>
+          <li data-tier="pro"><span class="tx">Material export (.unitypackage)</span><span class="tier pro">Pro</span></li>
+          <li data-tier="lite"><span class="tx">Launch from Unity and paint (saving updates Unity; add-on included)</span></li>
+          <li data-tier="lite"><span class="tx">AI integration (MCP) controls</span></li>
+          <li data-tier="pro"><span class="tx">AI integration run_js (run programs inside the app)</span><span class="tier pro">Pro</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/export">Export instructions →</a></p>
+      </div>
+
+      <div class="pn-feat pn-reveal" data-c="#6EC3FF">
+        <h3>Interface and controls</h3>
+        <ul>
+          <li data-tier="lite"><span class="tx">Place panels anywhere (columns, rows, floating or grouped into tabs)</span></li>
+          <li data-tier="lite"><span class="tx">Collapse panels or use a narrow icon strip</span></li>
+          <li data-tier="lite"><span class="tx">Toolbars on any side, tool reordering and favorite-tool strips</span></li>
+          <li data-tier="lite"><span class="tx">Contextual right-click menus</span></li>
+          <li data-tier="lite"><span class="tx">Custom key bindings (for shortcut devices); shortcut list stays open while you work</span></li>
+          <li data-tier="lite"><span class="tx">Adjust pen pressure using test strokes; WinTab support</span></li>
+          <li data-tier="lite"><span class="tx">Light/dark interface; Japanese, English, Korean and Chinese</span></li>
+        </ul>
+        <p class="more"><a href="/petanuri/en/manual/screen">Interface and panel instructions →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICE ===================== -->
+<section id="price" class="pn-section tint" aria-labelledby="pn-price-title">
+  <div class="pn-wrap">
+    <div class="pn-sec-head pn-reveal">
+      <div><span class="pn-sec-no">06 — PRICE</span><h2 id="pn-price-title" class="pn-h2">Pricing</h2></div>
+      <p class="pn-sec-lead"><a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener">BOOTH</a>  sells PetaNuri3D. Start with the free Lite edition.<br><!-- 発売記念セール（2026-11-02 まで）。終わったら .pn-sale-* と <s class="pn-was"> を外して通常の価格だけに戻し、seo.py の SALE_END も消す --><span class="pn-sale-lead">Launch sale through November 2! Standard ¥1,500 / Pro ¥3,000</span></p>
+    </div>
+    <p class="pn-btns pn-reveal" style="margin-bottom:2rem"><a href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener" class="btn pn-btn pn-btn-main">BOOTH product page</a></p>
+    <div class="pn-plans pn-reveal">
+      <div class="pn-plan lite">
+        <div class="pn-plan-name">Lite</div>
+        <p class="pn-plan-desc">Core features for painting directly in 3D, for free.</p>
+        <div class="pn-price">Free</div><div class="pn-plan-note">Download edition (Windows)</div>
+        <ul>
+          <li>Pens, brushes, brush collections, stamps, patterns, symmetry and UV view</li>
+          <li>Selections, transforms on the model and text</li>
+          <li>Up to 4 layers (per set, including the base)</li>
+          <li>Resolution up to 2048</li>
+          <li>PNG export and project saving</li>
+          <li>Launch from Unity and paint</li>
+          <li class="no">PSD import/export</li>
+          <li class="no">Filters, adjustment layers and strokes</li>
+        </ul>
+      </div>
+      <div class="pn-plan std">
+        <div class="pn-plan-name">Standard</div>
+        <p class="pn-plan-desc">For those who want to paint without worrying about layer limits.</p>
+        <div class="pn-price"><s class="pn-was">¥2,500</s>1,500<small>JPY</small></div><div class="pn-sale-tag">Launch sale through November 2</div><div class="pn-plan-note">Download edition (Windows)</div>
+        <ul>
+          <li>Everything in Lite</li>
+          <li>Unlimited layers</li>
+          <li>Resolution 4096</li>
+          <li>PSD import/export (with layers)</li>
+          <li>Filters, adjustment layers and strokes</li>
+          <li>Brush settings import/export</li>
+          <li class="no">Poses, blend shapes and vertex groups</li>
+          <li class="no">lilToon features and AO</li>
+        </ul>
+      </div>
+      <div class="pn-plan pro">
+        <div class="pn-plan-name">Pro</div>
+        <p class="pn-plan-desc">Every feature, including those unique to 3D.</p>
+        <div class="pn-price"><s class="pn-was">¥4,000</s>3,000<small>JPY</small></div><div class="pn-sale-tag">Launch sale through November 2</div><div class="pn-plan-note">Download edition (Windows)</div>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>Pose mode and blend shapes</li>
+          <li>Selections from vertex groups</li>
+          <li>lilToon Final look (beta), painting shadow colors/masks and surface relief</li>
+          <li>Material settings/export (.unitypackage)</li>
+          <li>Bake AO</li>
+          <li>AI integration run_js</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pn-plan-up pn-reveal">Upgrade from Standard with “Upgrade to Pro” on BOOTH (install the upgrade file and restart; projects and settings are preserved). For details, see <a class="pn-textlink" href="/petanuri/en/manual/start#upgrade">Manual</a>.</p>
+    <div class="pn-table-wrap pn-reveal">
+      <table class="pn-table">
+        <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Edition comparison</caption>
+        <thead><tr><th scope="col">Feature</th><th scope="col">LITE</th><th scope="col">STANDARD</th><th scope="col">PRO</th></tr></thead>
+        <tbody>
+          <tr><td>Pricing<br><small>(launch sale through November 2)</small></td><td>Free</td><td><s class="pn-was">¥2,500</s> ¥1,500</td><td><s class="pn-was">¥4,000</s> ¥3,000</td></tr>
+          <tr><td>Layers (per texture set, including the base)</td><td>Up to 4</td><td>Unlimited</td><td>Unlimited</td></tr>
+          <tr><td>Resolution</td><td>Up to 2048</td><td>Up to 4096</td><td>Up to 4096</td></tr>
+          <tr><td>Pens, brushes, brush collections, erasers, blending, stamps and patterns</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>Symmetry, UV view, selections, transforms, text and rulers</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>PNG export</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>Launch from Unity and paint</td><td class="y">○</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>PSD import/export</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>Filters, adjustment layers and strokes</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>Brush settings import/export</td><td class="n">—</td><td class="y">○</td><td class="y">○</td></tr>
+          <tr><td>Poses, blend shapes and vertex groups</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>lilToon Final look (beta), material settings/export and surface relief</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>Bake AO</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+          <tr><td>AI integration run_js</td><td class="n">—</td><td class="n">—</td><td class="y">○</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPEC / FAQ ===================== -->
+<section class="pn-section" aria-labelledby="pn-spec-title">
+  <div class="pn-wrap pn-two">
+    <div class="pn-reveal">
+      <span class="pn-sec-no">07 — SPEC</span>
+      <h2 id="pn-spec-title" class="pn-h2" style="margin-bottom:1.5rem">System requirements</h2>
+      <dl class="pn-spec">
+        <div><dt>OS</dt><dd>Windows 11 (64-bit). No installation required. Also runs on Windows 10, which is not supported</dd></div>
+        <div><dt>Supported 3D models</dt><dd>FBX・glTF・GLB・VRM・OBJ・DAE</dd></div>
+        <div><dt>Export</dt><dd>PNG, PSD and .unitypackage (lilToon materials)</dd></div>
+        <div><dt>Project file</dt><dd>.petanuri (model, layers and settings in one file)</dd></div>
+        <div><dt>Unity link</dt><dd>Unity 2022.3 (add-on included; available in all editions)</dd></div>
+        <div><dt>Interface languages</dt><dd>Japanese, English, Korean and Chinese</dd></div>
+      </dl>
+    </div>
+    <div class="pn-reveal">
+      <span class="pn-sec-no">08 — FAQ</span>
+      <h2 class="pn-h2" style="margin-bottom:1.5rem">FAQ</h2>
+      <div class="pn-faq">
+        <details><summary>Where can I buy it?</summary><div><a class="pn-textlink" href="https://hyper-tuyotuyo.booth.pm/items/8917534" target="_blank" rel="noopener">BOOTH product page</a> offers all editions. Lite is free, Standard is ¥2,500 and Pro is ¥4,000. During the launch sale through November 2, Standard is ¥1,500 and Pro is ¥3,000.</div></details>
+        <details><summary>Can I use just the free Lite edition?</summary><div>Yes. Lite includes everyday painting features: direct 3D painting, brushes, stamps, patterns, symmetry, UV view, selections, transforms, text, PNG export, project saving and launching from Unity. It allows up to 4 layers per texture set including the base, and resolution up to 2048. There is no watermark.</div></details>
+        <details><summary>Can I use it for VRChat avatars?</summary><div>Yes. Open avatars, outfits and accessories (FBX, VRM and more) used in VRChat and paint textures directly in 3D. Export PNG or PSD textures to Unity. Select an avatar in Unity and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D) to launch the app; saving updates Unity (all editions). Pro can export lilToon materials as .unitypackage.</div></details>
+        <details><summary>Will it overwrite the original avatar files?</summary><div>No. Even when painting from Unity, original FBX, materials, textures and prefabs stay unchanged; painted assets go into Assets/PetaNuri/ in the Unity project. When used on its own, PetaNuri3D only reads the model file.</div></details>
+        <details><summary>Can I use it without other 3D or painting software?</summary><div>Yes. PetaNuri3D alone can open a model, paint it and export PNG textures. To continue in another painting app with layers intact, export PSD (Standard and above).</div></details>
+        <details><summary>Can I upgrade to Pro after buying Standard?</summary><div>Yes. Install the file from BOOTH&#x27;s “Upgrade to Pro” into Standard and restart to activate Pro. Projects and settings are preserved. For details, see <a class="pn-textlink" href="/petanuri/en/manual/start#upgrade">Manual</a>.</div></details>
+        <details><summary>Does it work with avatars and outfits from other shops?</summary><div>You can paint 3D models such as FBX files if they have UVs (texture coordinates). Please check each model&#x27;s terms of use.</div></details>
+        <details><summary>Can I use it on Mac?</summary><div>Currently Windows only (Windows 11; also runs on Windows 10, which is not supported).</div></details>
+        <details><summary>“Windows protected your PC” appeared</summary><div>As the app is unsigned, this may appear on first launch. Choose “More info” → “Run anyway” to start it.<a href="/petanuri/en/manual/start">Getting started</a> has more information.</div></details>
+        <details><summary>How do I find out about new versions?</summary><div>At startup (at most once a day), the app checks for new versions and notifies you at the bottom right. It checks only the version number; your artwork and settings are never sent. Latest information is also available in the  <a class="pn-textlink" href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="Footer">
+      <a href="/">HYPERtuyotuyo home</a>
+      <a href="/petanuri/en/manual">PetaNuri3D manual</a>
+      <a href="https://hyper-tuyotuyo.booth.pm/" target="_blank" rel="noopener">BOOTH shop</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/en/changelog">Changelog</a>
+      <a href="/petanuri/terms">Terms of use (Japanese)</a>
+    </nav>
+    <p>PetaNuri3D is developed using AI agents (AI that writes code). No image-generation AI is used.</p>
+    <p>© HYPERtuyotuyo All rights reserved. lilToon is a shader by lilxyzw (MIT license).</p>
+  </div>
+</footer>
+
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

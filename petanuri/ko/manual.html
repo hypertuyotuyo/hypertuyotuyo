@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>목차 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
+  <meta name="description" content="PetaNuri3D 사용법. 시작 방법·그리기·스탬프와 패턴·선택 범위와 변형·레이어·UV·화면과 환경 설정·텍스처 세트·lilToon 머티리얼·AO·포즈·내보내기·Unity 연동·단축키.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="목차 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
+  <meta property="og:description" content="PetaNuri3D 사용법. 시작 방법·그리기·스탬프와 패턴·선택 범위와 변형·레이어·UV·화면과 환경 설정·텍스처 세트·lilToon 머티리얼·AO·포즈·내보내기·Unity 연동·단축키.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "매뉴얼",
+     "item": "https://hyper-tuyotuyo.com/petanuri/ko/manual"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="메뉴">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="하이퍼 츠요츠요 홈으로"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="40" height="28"></a>
+    <a href="/petanuri/ko" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="언어 선택"><option value="ja" data-url="/petanuri/manual">日本語</option><option value="en" data-url="/petanuri/en/manual">English</option><option value="ko" data-url="/petanuri/ko/manual" selected>한국어</option><option value="zh" data-url="/petanuri/zh/manual">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/ko">소개 페이지</a></li>
+      <li><a href="/petanuri/ko#gallery">표시 예시</a></li>
+      <li><a href="/petanuri/ko#features">기능 목록</a></li>
+      <li><a href="/petanuri/ko#price">가격</a></li>
+      <li><a href="/petanuri/ko/manual" aria-current="page">매뉴얼</a></li>
+      <li><a href="/petanuri/ko/changelog">업데이트 내역</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap" style="grid-template-columns:1fr">
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / 매뉴얼</p>
+    <h1 class="mn-h1">PetaNuri3D 매뉴얼</h1>
+    <p class="mn-intro">처음 사용하는 분은 &#x27;시작 방법&#x27; → &#x27;그리기&#x27; 순으로 읽어 보세요.<span class="tier std">Standard</span> 표시가 있는 기능은 Standard와 Pro에서,<span class="tier pro">Pro</span> 표시가 있는 페이지·기능은 Pro에서 사용할 수 있습니다. 표시가 없는 기능은 무료 Lite부터 사용할 수 있습니다.</p>
+    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <p class="mn-proof">이 매뉴얼은 PetaNuri3D v1.1.0 조작을 설명합니다. 키는 기본 할당입니다(다시 할당하면 앱의 설명에는 현재 키가 표시됩니다).</p>
+    <div class="mn-cards"><a class="mn-card pn-reveal" href="/petanuri/ko/manual/start">
+      <div class="thumb"><img src="/petanuri/assets/img/newproject.webp" width="780" height="920" alt="" loading="lazy"></div>
+      <div class="body"><h2>시작 방법</h2><p>실행·튜토리얼·샘플·새로 만들기·저장과 자동 저장·모델 다시 불러오기·버전별 차이·Pro로 업그레이드</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/draw">
+      <div class="thumb"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="" loading="lazy"></div>
+      <div class="body"><h2>그리기</h2><p>도구와 보조 도구·뒷면에도 칠하기·브러시 설정·색 혼합·채우기·색과 투명도 그라데이션·투명색·도형·색·좌우 대칭(적용 도구 목록)</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/deco">
+      <div class="thumb"><img src="/petanuri/assets/img/m-stamp.webp" width="900" height="896" alt="" loading="lazy"></div>
+      <div class="body"><h2>스탬프·패턴·요철·2D 캔버스</h2><p>장식·스탬프·패턴 펜(옷 무늬)·요철(봉제선·주름)·스탬프용 2D 캔버스·2D 페인트</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/edit">
+      <div class="thumb"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="" loading="lazy"></div>
+      <div class="body"><h2>선택 범위·변형·텍스트·자</h2><p>선택 범위·이동·변형 도구·3D 위에서 변형(자유 변형·워프)·이미지 붙이기·텍스트·자</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/layers">
+      <div class="thumb"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="" loading="lazy"></div>
+      <div class="body"><h2>레이어</h2><p>레이어 패널·폴더·마스크·레이어 속성·테두리·조정 레이어·필터·자동 채색·작업 내역</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/uv">
+      <div class="thumb"><img src="/petanuri/assets/img/uv-pane.webp" width="324" height="416" alt="" loading="lazy"></div>
+      <div class="body"><h2>UV 영역과 표시 범위</h2><p>UV를 나란히 놓고 직접 칠하기·격자선과 스냅·이어 칠하기·표시 범위·숨기기 펜·숨김 상태 저장·메시 선</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/screen">
+      <div class="thumb"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="" loading="lazy"></div>
+      <div class="body"><h2>화면·패널·환경 설정</h2><p>기본 배치·패널 이동·도구 모음·자주 쓰는 도구·3D 뷰 네 모서리·빛 방향·우클릭·환경 설정</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/sets">
+      <div class="thumb"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="" loading="lazy"></div>
+      <div class="body"><h2>텍스처 세트와 오브젝트</h2><p>텍스처 세트 선택·메인과 서브·해상도·바탕 교체·오브젝트 표시와 숨김·메모리 절약</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/material">
+      <div class="thumb"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="" loading="lazy"></div>
+      <div class="body"><h2>마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></h2><p>lilToon 모습으로 확인(β 버전)·그림자 색과 마스크 칠하기·머티리얼 나누기·.mat 가져오기·.unitypackage 내보내기</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/ao">
+      <div class="thumb"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="" loading="lazy"></div>
+      <div class="body"><h2>AO 굽기 <span class="tier pro">Pro</span></h2><p>빛이 닿기 어려운 곳의 어두움을 형태로 계산하여 레이어로 만들기(오브젝트별도 가능)</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/bake"><div class="thumb"><img src="/petanuri/assets/img/m-bake-after-v110.webp" width="702" height="940" alt="" loading="lazy"></div><div class="body"><h2>간편 베이크·질감과 명암 <span class="tier pro">Pro</span></h2><p>피부·의상·소품용 마무리 12종·혈색을 더할 위치·명암·그라데이션·오목한 곳·가장자리 빛·광택·직물 결·드리운 그림자·투과색</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/pose">
+      <div class="thumb"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="" loading="lazy"></div>
+      <div class="body"><h2>포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></h2><p>포즈를 취해 칠하기·휴머노이드 본 색 구분·포즈 좌우 대칭·표정 상태에서 칠하기·본 가중치로 범위 만들기</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/export">
+      <div class="thumb"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="" loading="lazy"></div>
+      <div class="body"><h2>내보내기</h2><p>PNG·PSD·내보내기 번짐(패딩)·내보내기 폴더·머티리얼</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/unity">
+      <div class="thumb"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="" loading="lazy"></div>
+      <div class="body"><h2>Unity에서 칠하기·AI 연동</h2><p>Unity에서 아바타를 선택하여 칠하기(저장하면 Unity에 반영)·AI 연동(MCP)</p></div></a><a class="mn-card pn-reveal" href="/petanuri/ko/manual/keys">
+      <div class="thumb"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="" loading="lazy"></div>
+      <div class="body"><h2>단축키와 펜 조작</h2><p>단축키 목록(F1)·펜과 마우스·시점·키 목록·키 할당·필압이 작동하지 않을 때</p></div></a></div>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="하이퍼 츠요츠요" width="49" height="34"></a>
+    <nav aria-label="푸터">
+      <a href="/">하이퍼 츠요츠요 홈</a>
+      <a href="/petanuri/ko">PetaNuri3D</a>
+      <a href="/petanuri/ko/manual">매뉴얼</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/ko/changelog">업데이트 내역</a>
+      <a href="/petanuri/terms">이용약관 (일본어)</a>
+    </nav>
+    <p>© 하이퍼 츠요츠요 All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>

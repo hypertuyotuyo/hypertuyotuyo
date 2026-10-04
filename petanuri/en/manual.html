@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contents | PetaNuri3D manual | HYPERtuyotuyo</title>
+  <meta name="description" content="How to use PetaNuri3D: getting started, drawing, stamps/patterns, selections/transforms, layers, UV, interface/preferences, texture sets, lilToon materials, AO, poses, exports, Unity integration and shortcuts.">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="Contents | PetaNuri3D manual | HYPERtuyotuyo">
+  <meta property="og:description" content="How to use PetaNuri3D: getting started, drawing, stamps/patterns, selections/transforms, layers, UV, interface/preferences, texture sets, lilToon materials, AO, poses, exports, Unity integration and shortcuts.">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Manual",
+     "item": "https://hyper-tuyotuyo.com/petanuri/en/manual"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="Menu">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="Back to HYPERtuyotuyo home"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/en" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="Choose language"><option value="ja" data-url="/petanuri/manual">日本語</option><option value="en" data-url="/petanuri/en/manual" selected>English</option><option value="ko" data-url="/petanuri/ko/manual">한국어</option><option value="zh" data-url="/petanuri/zh/manual">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/en">Introduction</a></li>
+      <li><a href="/petanuri/en#gallery">Examples</a></li>
+      <li><a href="/petanuri/en#features">Features</a></li>
+      <li><a href="/petanuri/en#price">Pricing</a></li>
+      <li><a href="/petanuri/en/manual" aria-current="page">Manual</a></li>
+      <li><a href="/petanuri/en/changelog">Changelog</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap" style="grid-template-columns:1fr">
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / Manual</p>
+    <h1 class="mn-h1">PetaNuri3D manual</h1>
+    <p class="mn-intro">New users: start with “Getting started,” then “Drawing.”<span class="tier std">Standard</span>  features are available in Standard and Pro; <span class="tier pro">Pro</span>  pages and features require Pro. Unmarked features are available in the free Lite edition.</p>
+    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <p class="mn-proof">This manual covers PetaNuri3D v1.1.0. Keys shown are the default bindings (after rebinding, in-app tips show your current keys).</p>
+    <div class="mn-cards"><a class="mn-card pn-reveal" href="/petanuri/en/manual/start">
+      <div class="thumb"><img src="/petanuri/assets/img/newproject.webp" width="780" height="920" alt="" loading="lazy"></div>
+      <div class="body"><h2>Getting started</h2><p>Launch, tutorial, samples, new projects, saving/autosave, reloading models, editions and upgrading to Pro</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/draw">
+      <div class="thumb"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="" loading="lazy"></div>
+      <div class="body"><h2>Draw</h2><p>Tools/sub tools, back-face painting, brush settings, blending, fill, color/opacity gradients, transparent color, shapes, colors and symmetry (supported tools)</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/deco">
+      <div class="thumb"><img src="/petanuri/assets/img/m-stamp.webp" width="900" height="896" alt="" loading="lazy"></div>
+      <div class="body"><h2>Stamps, patterns, surface relief and 2D canvas</h2><p>Decorations, stamps, pattern pens for fabric, surface relief for seams/wrinkles, stamp 2D canvas and 2D painting</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/edit">
+      <div class="thumb"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="" loading="lazy"></div>
+      <div class="body"><h2>Selections, transforms, text and rulers</h2><p>Selections, move/transform tool, transforms in 3D (free transform/warp), pasted images, text and rulers</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/layers">
+      <div class="thumb"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="" loading="lazy"></div>
+      <div class="body"><h2>Layer</h2><p>Layers panel, folders, masks, layer properties, strokes, adjustment layers, filters, auto fill and history</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/uv">
+      <div class="thumb"><img src="/petanuri/assets/img/uv-pane.webp" width="324" height="416" alt="" loading="lazy"></div>
+      <div class="body"><h2>UV view and visible area</h2><p>Paint directly in a side-by-side UV view, grid/snapping, seam-continuous painting, visible area, Hide pen, visibility presets and mesh lines</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/screen">
+      <div class="thumb"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="" loading="lazy"></div>
+      <div class="body"><h2>Interface, panels and preferences</h2><p>Default layout, moving panels, toolbar, favorite tools, the four corners of the 3D view, light direction, right-click menus and preferences</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/sets">
+      <div class="thumb"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="" loading="lazy"></div>
+      <div class="body"><h2>Texture sets and objects</h2><p>Select texture sets, main/sub sets, resolution, replacing the base, object visibility and memory savings</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/material">
+      <div class="thumb"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="" loading="lazy"></div>
+      <div class="body"><h2>Final look and lilToon materials <span class="tier pro">Pro</span></h2><p>Preview lilToon (beta), paint shadow colors/masks, separate materials, import .mat and export .unitypackage</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/ao">
+      <div class="thumb"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="" loading="lazy"></div>
+      <div class="body"><h2>Bake AO <span class="tier pro">Pro</span></h2><p>Calculate darkness where light is blocked from model geometry and create a layer (also per object)</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/bake"><div class="thumb"><img src="/petanuri/assets/img/m-bake-after-v110.webp" width="702" height="940" alt="" loading="lazy"></div><div class="body"><h2>Easy Bake, materials and shading <span class="tier pro">Pro</span></h2><p>12 finishes for skin/outfits/accessories, blush points, shading, gradients, cavities, rim light, highlights, fabric texture, cast shadows and translucency color</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/pose">
+      <div class="thumb"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="" loading="lazy"></div>
+      <div class="body"><h2>Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></h2><p>Paint in poses, humanoid bone colors, pose symmetry, paint with expressions and select from bone weights</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/export">
+      <div class="thumb"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="" loading="lazy"></div>
+      <div class="body"><h2>Export</h2><p>PNG, PSD, export padding, output folders and materials</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/unity">
+      <div class="thumb"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="" loading="lazy"></div>
+      <div class="body"><h2>Paint from Unity and AI integration</h2><p>Select an avatar in Unity to paint (saving updates Unity); AI integration (MCP)</p></div></a><a class="mn-card pn-reveal" href="/petanuri/en/manual/keys">
+      <div class="thumb"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="" loading="lazy"></div>
+      <div class="body"><h2>Shortcuts and pen controls</h2><p>Shortcut list (F1), pen/mouse controls, views, key list, rebinding and troubleshooting pen pressure</p></div></a></div>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="Footer">
+      <a href="/">HYPERtuyotuyo home</a>
+      <a href="/petanuri/en">PetaNuri3D</a>
+      <a href="/petanuri/en/manual">Manual</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X(@Yak_HyperTYTY)</a>
+      <a href="/petanuri/en/changelog">Changelog</a>
+      <a href="/petanuri/terms">Terms of use (Japanese)</a>
+    </nav>
+    <p>© HYPERtuyotuyo All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+</body>
+</html>
