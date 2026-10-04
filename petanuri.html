@@ -426,7 +426,7 @@
   <div class="pn-wrap">
     <div class="pn-sec-head pn-reveal">
       <div><span class="pn-sec-no">05 — ALL FEATURES</span><h2 id="pn-feat-title" class="pn-h2">機能一覧</h2></div>
-      <p class="pn-sec-lead">v1.0.0 に入っている機能の一覧です。印の無い機能は、無料の Lite から使えます。</p>
+      <p class="pn-sec-lead">v1.1.0 の主な機能です。追加・修正の詳細は <a href="/petanuri/changelog">更新履歴</a>をご覧ください。印の無い機能は、無料の Lite から使えます。</p>
     </div>
     <div class="pn-filter" role="group" aria-label="版で絞り込む">
       <button type="button" data-tier="all" aria-pressed="true" data-say="すべての機能を表示しています">すべて</button>
@@ -439,13 +439,13 @@
       <div class="pn-feat pn-reveal" data-c="#FF6FA5">
         <h3>描く</h3>
         <ul>
-          <li data-tier="lite"><span class="tx">3D モデルに直接ペンで描く（筆圧つき）</span></li>
+          <li data-tier="lite"><span class="tx">3D モデルに直接ペンで描く（筆圧つき・面に沿う塗り方）</span></li>
           <li data-tier="lite"><span class="tx">裏側・隠れた面にも塗る（全部のブラシ。はじめから入）</span></li>
           <li data-tier="lite"><span class="tx">ペン 5 種（G ペン・丸ペン・ミリペン・入り抜きペン・べた塗りペン）</span></li>
           <li data-tier="lite"><span class="tx">筆 12 種（柔らか筆・エアブラシ・水彩にじみ・平筆・毛筆・鉛筆・チョーク・スプレー・覆い焼き・焼き込み など）</span></li>
           <li data-tier="lite"><span class="tx">ブラシ集 33 種（鉛筆・細筆・重ね塗り・厚塗り・水の縁・しぶき・葉っぱ・スポンジ など）</span></li>
           <li data-tier="lite"><span class="tx">デコレーション 13 種（キラキラ・星・ハート・花・桜・音符・雪の結晶 など）</span></li>
-          <li data-tier="lite"><span class="tx">消しゴム 7 種（硬め・軟らかめ・ざっくり・練り消し・レイヤー貫通 など）</span></li>
+          <li data-tier="lite"><span class="tx">消しゴム 7 種＋透明色（ブラシの描き味のまま消す）</span></li>
           <li data-tier="lite"><span class="tx">図形（直線・長方形・楕円・多角形・曲線・点をつなぐ曲線）</span></li>
           <li data-tier="lite"><span class="tx">サブツールの複製・名前変更・並べ替え・初期化・キーの割り当て</span></li>
           <li data-tier="lite"><span class="tx">先端 11 種＋同梱の先端 31 個、画像やブラシのファイルから先端を読み込み</span></li>
@@ -465,7 +465,7 @@
         <ul>
           <li data-tier="lite"><span class="tx">スタンプ（好きな画像を貼る。かざすと付く所に見本）</span></li>
           <li data-tier="lite"><span class="tx">模様のペン 15 種（ストライプ・水玉・ギンガムチェック・タータンチェック・アーガイル・ニット など）</span></li>
-          <li data-tier="lite"><span class="tx">2D キャンバス（平らな所に描いて、スタンプ・3D・UV・PNG に）</span></li>
+          <li data-tier="lite"><span class="tx">スタンプ用キャンバス（レイヤー付きで保存・見た目をそのままスタンプ登録）</span></li>
           <li data-tier="pro"><span class="tx">凹凸 9 種（縫い目・パイピング・クロスステッチ・鋲・しわ など。ノーマルマップに描く）</span><span class="tier pro">Pro</span></li>
         </ul>
         <p class="more"><a href="/petanuri/manual/deco">スタンプ・模様の使い方 →</a></p>
@@ -477,10 +477,15 @@
           <li data-tier="lite"><span class="tx">塗りつぶし（UV の島ごと・マテリアル全体）</span></li>
           <li data-tier="lite"><span class="tx">囲まれた所を塗る（許容差・隙間閉じ・線の下へ広げる）</span></li>
           <li data-tier="lite"><span class="tx">ポリゴン塗り（なぞった面を丸ごと）</span></li>
-          <li data-tier="lite"><span class="tx">グラデーション（描画色→背景色・→透明・円形。裏側にも 3D の線に沿って）</span></li>
+          <li data-tier="lite"><span class="tx">グラデーション（色と透明度・最大32点・240種のプリセット）</span></li>
           <li data-tier="lite"><span class="tx">ぼかし・指先・色混ぜ 12 種（UV の継ぎ目で割れない）</span></li>
           <li data-tier="lite"><span class="tx">色混ぜの「絵の具の量」「色延び」</span></li>
           <li data-tier="lite"><span class="tx">自動塗り（線画とヒントの色から下塗りを作る）</span></li>
+          <li data-tier="lite"><span class="tx">輝度を透明度に変換（AO の白背景を透明に）</span></li>
+          <li data-tier="lite"><span class="tx">おまけの 2D ペイント（モデルなしで描く・PNG 書き出し）</span></li>
+          <li data-tier="pro"><span class="tx">お手軽ベイク（Easy Bake）：肌・衣装・小物の12種の仕上げ</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">柔らかい陰影・上下／ポイントのグラデーション・くぼみとふくらみ・落ち影</span><span class="tier pro">Pro</span></li>
+          <li data-tier="pro"><span class="tx">縁の光・つや・布目と色むら・薄い部分の透け色を焼く</span><span class="tier pro">Pro</span></li>
         </ul>
       </div>
 
