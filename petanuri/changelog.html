@@ -84,18 +84,19 @@
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ 更新履歴</p>
     <h1 class="mn-h1">更新履歴</h1>
     <p class="pn-history-lead">新しくできること、描き味や操作の改善、直した不具合をまとめています。</p>
-    <p class="pn-history-note">BOOTH から更新するときは、ダウンロードするファイル名が v1.1.0 になっていることを確認してください。</p>
-    <nav class="pn-history-jump" aria-label="バージョンへ移動">
-      <a href="#v1-1-0">v1.1.0 <span>最新</span></a>
+    <p class="pn-history-note">BOOTH から更新するときは、ダウンロードするファイル名が v1.1.1 になっていることを確認してください。</p>
+    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-1-1">v1.1.1 <span>最新</span></a>
+      <a href="#v1-1-0">v1.1.0 <span>配布済み</span></a>
       <a href="#v1-0-2">v1.0.2 <span>v1.1.0 に統合</span></a>
       <a href="#v1-0-1">v1.0.1</a>
       <a href="#v1-0-0">v1.0.0</a>
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-1-0" aria-labelledby="v1-1-0-title">
+  <article class="pn-release" id="v1-1-1" aria-labelledby="v1-1-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-1-1-title">v1.1.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-05">2026-10-05</time></p></div><p class="pn-release-title">描画と操作の選択肢を追加</p></header><ul class="pn-release-list"><li>3D空間のグラデーション（全版）：通常のグラデーションツールでモデルの面や空間に点を置き、点からの距離で塗れます。移動ハンドル・XYZ座標・半径と色／透明度プリセットで調整し、選択中のレイヤーへプレビュー後に適用。元に戻す1回で戻せ、キャンセルは元の絵に戻ります。通常の空間グラデーションとProの点からのグラデーションベイクに、距離の輪・色と透明度の帯・数値表示を追加。白いつまみで広がる距離、色のつまみで各色の位置を動かすと、数値や色の編集にも反映されます。ガイドは表示を切り替えられ、ベイクの境界の位置・混ざる幅にも対応します。</li><li>32pxからのテクスチャ（全版）：32／64／128／256pxを新規作成と解像度変更に追加。作業ファイルの保存・再開とPNG出力にも対応。最大解像度は版ごとの従来値です。</li><li>カラー補助スライダー（全版）：上のカラーフィールドと色相バーを保ったまま、下のRGB／HSVスライダーを切り替え。選択を次回起動にも保持します。</li><li>カメラ操作（全版）：右ボタン式・中ボタン式・Altボタン式を選べます。ペンのサイドボタンが中クリックを送る場合の視点操作も改善しました。</li><li>隠した側への対称描画（全版）：対称の設定で有効にすると、3Dのペン・ブラシ・消しゴム・スタンプで、隠した対称側にも描けます。既定はOFF。UV描画と塗りつぶしは対象外です。</li><li>VRMの透明部分（全版）：VRM0／VRM1の元画像と透明設定・カットオフ・不透明度を保持。透明設定が異なるマテリアルは同じ画像でも別のセットとして扱います。</li><li>外部ブラシ先端（全版）：ABR・GBR・GIH・画像・ZIPをサブツールへ登録。SUT内の読み取れるPNG画像も先端として読み込めます。元の設定・色・混色の完全再現ではありません。SUTは縮小画像や先端以外の素材を含む場合があります。</li><li>MToonプレビュー（Pro・β）：マテリアルの「表示と光」で切り替え、VRM0／VRM1の材質を見ながら描けます。作業ファイルへの保存とUndo／Redoに対応。UVアニメーションは静止表示で、MToon材質の完全な往復出力には対応していません。</li><li>血色の左右対称（Pro）：お手軽ベイクの「血色を足す場所」に「左右対称に血色を足す」を追加。描画と同じX対称中心を使い、点を動かすと反対側も追従します。</li><li>レイヤー一覧の縦拡張（全版）：パネルを下へ広げたとき、一覧が一定の高さで止まる問題を修正。ドッキング・タブ・独立ウィンドウでも高さに追従します。</li><li>描き味・操作・多言語の修正：入力途中の筆サイズの跳ねと斜め面での筆中心のずれ、ベイク中のAltカメラ操作、英語のサイズボタンと韓国語のベイクボタンの折返し、外部ブラシのエラー通知と対称中心の説明を改善しました。</li><li>説明表示の整理（全版）：ベイク・グラデーション・ブラシ・カメラ設定などの長い説明を丸い「？」から確認できます。ホバー・クリック・タッチ・キーボードに対応し、点指定の現在状態や警告は画面に残します。</li></ul><p class="pn-release-tip">ペンタブの中ボタンは合成入力とHuion実機で確認しました。Wacom実機での確認は未実施です。</p></article>
+<article class="pn-release" id="v1-1-0" aria-labelledby="v1-1-0-title">
     <header class="pn-release-head">
-      <div class="pn-release-meta"><h2 id="v1-1-0-title">v1.1.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-04">2026年10月4日</time></p></div>
+      <div class="pn-release-meta"><h2 id="v1-1-0-title">v1.1.0</h2><span class="pn-release-status released">配布済み</span><p><time datetime="2026-10-04">2026年10月4日</time></p></div>
       <p class="pn-release-title">お手軽ベイクと、描き込み前の仕上げ</p>
     </header>
     <p class="pn-release-summary">肌・衣装・小物の仕上げを選べる「お手軽ベイク（Easy Bake）」を追加しました。光・つや・生地の表情を調整してから、すぐに描き込めます。面に沿う描画、グラデーション、v1.0.2 の書き出し改善も含まれます。</p>

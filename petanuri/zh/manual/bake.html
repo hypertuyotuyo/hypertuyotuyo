@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/bake",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-04",
+   "dateModified": "2026-10-05",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -131,7 +131,7 @@
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 轻松烘焙、质感与阴影</p>
     <h1 class="mn-h1">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></h1>
     <p class="mn-intro">根据模型形状计算阴影、光泽、织纹等并写入图层。可使用“轻松烘焙”一次完成初步润色，或用“烘焙”逐项添加效果。这些功能从 v1.1.0 起提供。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
     <div class="mn-toc"><b>本页内容</b><ul><li><a href="#easy">用轻松烘焙制作底层效果</a></li><li><a href="#presets">12 种润色效果</a></li><li><a href="#blush">添加红润的位置</a></li><li><a href="#common">单项烘焙与预览</a></li><li><a href="#shade">柔和阴影、凹陷与凸起</a></li><li><a href="#gradient">上下或点渐变</a></li><li><a href="#material">边缘光、光泽、织纹与色差</a></li><li><a href="#rays">光照投影、薄处透光色</a></li><li><a href="#finish">烘焙后的调整与保存</a></li></ul></div>
     <section class="mn-sec" id="easy"><h2>用轻松烘焙制作底层效果</h2>
       <ol class="mn-steps"><li>打开模型，选择要处理的纹理集。底色和原纹理会保留，继续作为基础。</li><li><strong>滤镜 → 轻松烘焙</strong>，在“效果”中选择肌肤、服装或道具等预设。</li><li>通过“预览”查看效果，调整“整体强度”“光的左右”“光照仰角”“高光量”。带织纹或色差的润色效果还会显示“材质细节”。</li><li>肌肤润色时，可按需指定<a href="#blush">添加红润的位置</a>。</li><li><strong>“烘焙到图层组”</strong>来确认。每种效果的图层与透明的“细节绘制”图层会放入一个文件夹，可直接继续绘画。</li></ol>
@@ -147,7 +147,7 @@
       <p>自行指定脸颊、手肘、膝盖等需要红润的位置。点周围会添加柔和红润，可通过“红润强度”“红润范围”调整，同时保留白皙感。</p>
       <ol class="mn-steps"><li>选择肌肤润色效果，点击<strong>“添加位置”</strong>，在 3D 视图指定位置。</li><li>要移动选中的点，可拖动 3D 视图移动手柄，或输入 X、Y、Z 坐标。</li><li>重复点击“添加位置”可添加多个位置，最多 16 个。在列表选中不需要的点，点击“删除所选位置”即可删除。</li><li>检查范围和强度后烘焙。红润会成为单独的“指定位置的红润”图层，之后可调整不透明度。</li></ol>
       <div class="mn-tip">本功能不会自动识别脸颊或膝盖。未放置点时，不会添加局部红润。“红润范围”为相对于模型高度的比例。</div>
-    </section>
+    <div class="mn-tip">启用“左右对称添加红润色”后，另一侧也会烘焙相同强度的血色，中心与绘制的X对称设置共用。移动原始点时另一侧同步移动，不重复中心或已有对称点。最多使用16处位置及其镜像，默认关闭。</div></section>
     <section class="mn-sec" id="common"><h2>单项烘焙与预览</h2>
       <p>如需逐项使用效果，请从<strong>滤镜 → 烘焙 → 各项功能</strong>打开。<a href="/petanuri/zh/manual/ao">烘焙 AO</a>也在此子菜单中。</p>
       <ul class="mn-list"><li>阴影、渐变、凹陷、边缘光、光泽、织纹在修改设置后会即时预览。目标为当前选中且可见的纹理集。勾选“应用于所有显示中的纹理集”可处理多个纹理集。</li><li>预览中可转动视角查看。点击“烘焙到新图层”确认，点击“取消”或窗口 × 恢复原状。</li><li>预览使用较低分辨率以保持流畅，确认时会按纹理集分辨率重新生成。细密织纹和阴影也请检查确认后的效果。</li><li>“投射阴影”“薄处透光色”“AO”需要先选目标和质量，再进行计算。会显示进度，可中途取消。</li></ul>

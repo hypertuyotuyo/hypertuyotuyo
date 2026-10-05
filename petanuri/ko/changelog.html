@@ -84,18 +84,19 @@
     <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / 업데이트 내역</p>
     <h1 class="mn-h1">업데이트 내역</h1>
     <p class="pn-history-lead">새 기능, 그리기 느낌과 조작 개선, 수정한 버그를 정리했습니다.</p>
-    <p class="pn-history-note">BOOTH에서 업데이트할 때 다운로드하는 파일 이름이 v1.1.0인지 확인하세요.</p>
-    <nav class="pn-history-jump" aria-label="버전으로 이동">
-      <a href="#v1-1-0">v1.1.0 <span>최신</span></a>
+    <p class="pn-history-note">BOOTH에서 업데이트할 때 다운로드 파일 이름에 v1.1.1이 표시되어 있는지 확인해 주세요.</p>
+    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-1-1">v1.1.1 <span>최신</span></a>
+      <a href="#v1-1-0">v1.1.0 <span>배포 완료</span></a>
       <a href="#v1-0-2">v1.0.2 <span>v1.1.0에 통합</span></a>
       <a href="#v1-0-1">v1.0.1</a>
       <a href="#v1-0-0">v1.0.0</a>
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-1-0" aria-labelledby="v1-1-0-title">
+  <article class="pn-release" id="v1-1-1" aria-labelledby="v1-1-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-1-1-title">v1.1.1</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-05">2026-10-05</time></p></div><p class="pn-release-title">그리기와 조작 선택지를 넓히는 업데이트</p></header><ul class="pn-release-list"><li>3D 공간 그라데이션(모든 버전): 일반 그라데이션 도구로 모델 표면이나 빈 공간에 점을 놓고 점과의 거리로 칠합니다. 이동 핸들·XYZ 좌표·반경과 색/불투명도 프리셋을 조정해 선택한 레이어에서 미리 본 뒤 적용합니다. 한 번의 실행 취소로 되돌릴 수 있으며 취소하면 원래 그림으로 돌아갑니다. 일반 공간 그라데이션과 Pro의 점 거리 그라데이션 베이크에 거리의 링·색과 불투명도 띠·값 표시를 추가합니다. 흰색 핸들로 퍼지는 거리, 색 핸들로 각 색의 위치를 움직이면 숫자 설정과 색 편집에도 반영됩니다. 가이드는 숨길 수 있으며 베이크의 경계 위치와 혼합 폭도 반영합니다.</li><li>32px부터의 텍스처(모든 버전): 새로 만들기와 해상도 변경에 32/64/128/256px를 추가했습니다. 작업 파일 저장·다시 열기와 PNG 출력도 지원하며 버전별 최대 해상도는 기존과 같습니다.</li><li>색상 보조 슬라이더(모든 버전): 위의 색상 필드와 색상 막대를 유지하면서 아래 슬라이더를 RGB/HSV로 전환합니다. 선택은 다시 실행해도 유지됩니다.</li><li>카메라 조작(모든 버전): 오른쪽 버튼식·가운데 버튼식·Alt 버튼식을 선택할 수 있습니다. 펜 측면 버튼이 가운데 클릭을 보내는 경우의 시점 조작도 개선했습니다.</li><li>숨긴 쪽의 대칭 그리기(모든 버전): 대칭 설정에서 켜면 3D 펜·브러시·지우개·스탬프로 숨긴 대칭 쪽에도 그릴 수 있습니다. 기본값은 꺼짐이며 UV 그리기와 채우기는 제외됩니다.</li><li>VRM 투명 부분(모든 버전): VRM0/VRM1의 원본 이미지와 투명 설정·컷오프·불투명도를 유지합니다. 같은 이미지라도 투명 설정이 다른 재질은 별도의 텍스처 세트로 처리합니다.</li><li>외부 브러시 끝 이미지(모든 버전): ABR·GBR·GIH·이미지·ZIP을 보조 도구로 등록합니다. SUT 안에서 읽을 수 있는 PNG 이미지도 끝 이미지로 가져옵니다. 원래 설정·색·혼색을 완전히 재현하지 않으며 SUT에는 축소 이미지나 끝 이미지 외의 소재가 포함될 수 있습니다.</li><li>MToon 미리보기(Pro·베타): 재질의 표시와 조명 설정에서 전환하여 VRM0/VRM1 재질을 보며 그릴 수 있습니다. 작업 파일 저장과 실행 취소·다시 실행을 지원합니다. UV 애니메이션은 정지 상태로 표시하며 MToon 재질의 완전한 왕복 출력은 지원하지 않습니다.</li><li>혈색의 좌우 대칭(Pro): 간편 베이크의 혈색 위치에 좌우 대칭 옵션을 추가했습니다. 그리기와 같은 X 대칭 중심을 사용하며 점을 움직이면 반대쪽도 따라갑니다.</li><li>레이어 목록의 세로 확장(모든 버전): 패널을 아래로 늘려도 목록이 일정 높이에서 멈추던 문제를 수정했습니다. 도킹·탭·독립 창에서도 높이에 맞춰 확장됩니다.</li><li>그리기·조작·다국어 수정: 입력 중 브러시 크기의 급변과 기울어진 면에서의 브러시 중심 오차, 베이크 미리보기 중 Alt 카메라 조작, 영어 크기 버튼과 한국어 베이크 버튼의 줄바꿈, 외부 브러시 오류 알림과 대칭 중심 설명을 개선했습니다.</li><li>설명 표시 정리(모든 에디션): 베이크, 그라데이션, 브러시, 카메라 조작 등의 긴 설명을 원형 물음표 아이콘에서 볼 수 있습니다. 마우스 올리기, 클릭, 터치, 키보드를 지원하며 현재 점 지정 안내와 경고는 화면에 계속 표시됩니다.</li></ul><p class="pn-release-tip">펜의 가운데 버튼 조작은 합성 입력과 Huion 기기에서 확인했습니다. Wacom 실기기 검증은 아직 진행하지 못했습니다.</p></article>
+<article class="pn-release" id="v1-1-0" aria-labelledby="v1-1-0-title">
     <header class="pn-release-head">
-      <div class="pn-release-meta"><h2 id="v1-1-0-title">v1.1.0</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-04">2026년 10월 4일</time></p></div>
+      <div class="pn-release-meta"><h2 id="v1-1-0-title">v1.1.0</h2><span class="pn-release-status released">배포 완료</span><p><time datetime="2026-10-04">2026년 10월 4일</time></p></div>
       <p class="pn-release-title">간편 베이크와 그리기 전 마무리</p>
     </header>
     <p class="pn-release-summary">피부·의상·소품의 마무리를 선택하는 &#x27;간편 베이크(Easy Bake)&#x27;를 추가했습니다. 빛·광택·원단의 느낌을 조정한 후 바로 그릴 수 있습니다. 면을 따르는 그리기, 그라데이션, v1.0.2의 내보내기 개선도 포함됩니다.</p>
