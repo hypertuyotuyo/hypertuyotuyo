@@ -131,7 +131,7 @@
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 轻松烘焙、质感与阴影</p>
     <h1 class="mn-h1">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></h1>
     <p class="mn-intro">根据模型形状计算阴影、光泽、织纹等并写入图层。可使用“轻松烘焙”一次完成初步润色，或用“烘焙”逐项添加效果。这些功能从 v1.1.0 起提供。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p><p class="mn-proof">本页以“v1.2.0：”开头的说明为发布前预告，目前提供的版本为 v1.1.2。</p>
+    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
     <div class="mn-toc"><b>本页内容</b><ul><li><a href="#easy">用轻松烘焙制作底层效果</a></li><li><a href="#presets">12 种润色效果</a></li><li><a href="#blush">添加红润的位置</a></li><li><a href="#common">单项烘焙与预览</a></li><li><a href="#shade">柔和阴影、凹陷与凸起</a></li><li><a href="#gradient">上下或点渐变</a></li><li><a href="#material">边缘光、光泽、织纹与色差</a></li><li><a href="#rays">光照投影、薄处透光色</a></li><li><a href="#finish">烘焙后的调整与保存</a></li></ul></div>
     <section class="mn-sec" id="easy"><h2>用轻松烘焙制作底层效果</h2>
       <ol class="mn-steps"><li>打开模型，选择要处理的纹理集。底色和原纹理会保留，继续作为基础。</li><li><strong>滤镜 → 轻松烘焙</strong>，在“效果”中选择肌肤、服装或道具等预设。</li><li>通过“预览”查看效果，调整“整体强度”“光的左右”“光照仰角”“高光量”。带织纹或色差的润色效果还会显示“材质细节”。</li><li>肌肤润色时，可按需指定<a href="#blush">添加红润的位置</a>。</li><li><strong>“烘焙到图层组”</strong>来确认。每种效果的图层与透明的“细节绘制”图层会放入一个文件夹，可直接继续绘画。</li></ol>
@@ -159,7 +159,7 @@
       <h3>增强凹陷与凸起</h3><p>检测形状的弯曲，为凹陷添加阴影、凸起添加亮色。“细节宽度”为模型高度的比例。凹陷和凸起可分别设置强度与颜色。</p>
       <ul class="mn-list"><li><strong>边界柔和度</strong>：让检测到的凹陷、凸起转换为颜色时的边界更平缓。</li><li><strong>阴影模糊</strong>：沿表面平滑阴影本身。细小锯齿明显时可提高此值。0 表示不模糊。</li><li>提供柔和立体感／仅凹陷阴影／仅凸起亮部预设。</li></ul>
       <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-curvature-v110.webp" width="410" height="501" alt="强调凹陷与凸起的设置。可分别调整阴影模糊与边界柔和度" loading="lazy"><figcaption>增强凹陷与凸起</figcaption></figure>
-    <div class="mn-tip">v1.2.0：卡通阴影与天使光环（Pro）：滤镜 → 烘焙 中的“烘焙卡通阴影（第一层阴影/第二层阴影）”按光线方向将阴影清晰分成两层并生成新图层（可调两层的位置、浓度、颜色和边界模糊）。“烘焙天使光环（头发高光）”在所选纹理集（头发）的指定高度添加环状高光带（带宽、锯齿、边缘柔和度、观察方向）。</div><div class="mn-tip">v1.2.0：“强调凹陷与凸起”新增预设“主线（凹陷处的细线）”“主线（较粗、较柔和）”“棱线高光（凸起处的细线）”。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-toon-shade-v120.webp" width="434" height="609" alt="烘焙卡通阴影窗口" loading="lazy"><figcaption>烘焙卡通阴影（第一层阴影/第二层阴影）</figcaption></figure></section>
+    <div class="mn-tip">卡通阴影与天使光环（Pro）：滤镜 → 烘焙 中的“烘焙卡通阴影（第一层阴影/第二层阴影）”按光线方向将阴影清晰分成两层并生成新图层（可调两层的位置、浓度、颜色和边界模糊）。“烘焙天使光环（头发高光）”在所选纹理集（头发）的指定高度添加环状高光带（带宽、锯齿、边缘柔和度、观察方向）。</div><div class="mn-tip">“强调凹陷与凸起”新增预设“主线（凹陷处的细线）”“主线（较粗、较柔和）”“棱线高光（凸起处的细线）”。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-toon-shade-v120.webp" width="434" height="609" alt="烘焙卡通阴影窗口" loading="lazy"><figcaption>烘焙卡通阴影（第一层阴影/第二层阴影）</figcaption></figure></section>
     <section class="mn-sec" id="gradient"><h2>上下或点渐变</h2>
       <p><strong>“烘焙上下或点渐变”</strong>可编辑颜色和透明度色标，通过“颜色分布”的按钮选择划分依据。</p>
       <ul class="mn-list"><li><strong>表面方向</strong>：从朝下的面到朝上的面逐渐变色。适合表现下方反光或为朝上的面提亮。</li><li><strong>高度</strong>：从模型下方到上方逐渐变色。适合裙摆或发梢的颜色变化。</li><li><strong>距点距离</strong>：从指定中心向外逐渐变色。使用“在3D视图中指定中心”，可在模型表面或空白空间放置点。通过移动手柄或 X、Y、Z 坐标改变位置。</li></ul>
