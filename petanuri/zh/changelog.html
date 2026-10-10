@@ -95,7 +95,86 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">新增安装程序与新笔、小窗口与画面旋转以及 lilToon 设置</p></header><ul class="pn-release-list"><li>安装程序（所有版本）：新增 Windows 用 setup（BOOTH 上以 zip 提供，解压后双击其中的 setup 安装）。无需管理员权限（按用户安装），会登记到开始菜单，也可设置双击打开项目文件（.petanuri）。运行新版 setup 即可覆盖更新，设置、项目文件、笔刷和升级保持不变。ZIP 也会暂时一并提供。</li><li>在应用内更新（Windows）：从新版本通知打开 BOOTH 资料库，应用找到下载的 setup（保持 zip 或在解压后的文件夹中均可）后，可用“安装并重新启动”完成替换（从本版本之后的更新开始可用）。</li><li>笔触手感（所有版本）：默认改为“仅靠压感入笔收笔”，起笔不再出现墨团、收笔不再拖出细尾。老用户启动时会看到一次提示。可在偏好设置 → 笔与输入 →“笔触手感”中改回“按长度入笔收笔”。</li><li>绘制工具（所有版本）：新增液化笔（推动、膨胀、收缩、漩涡、还原）以及对齐纹理像素清晰绘制的像素笔。按纹理集设置的“按像素显示（不插值）”（⋯ 或右键；256px 及以下的纹理集默认开启）可让小纹理边缘不再模糊。</li><li>绘制（所有版本）：套索填充；透明色可用于填充、多边形填充、图形和渐变；在 3D 视图中绘制时也可涂到边距（边距最大 128px，平滑扩展）；Ctrl＋拖动调整笔刷数值；图案笔与纸张质感的纹理角度；D 键恢复默认颜色；Alt／Ctrl＋Backspace 填充。</li><li>选区、图层与蒙版（所有版本）：选择所有相似颜色、选区的移动与变形也可对称、图层左右镜像复制、蒙版的复制、粘贴与拖动、以黑白绘制和查看蒙版、用前景色为重复图案重新上色。</li><li>导出（所有版本）：将所选图层导出为 PNG（逐个／叠加为一张）、将 UV 贴图导出为 PNG、导出分辨率（512～8192）。导出 PSD 时，不再把带描边效果的图层与其剪贴图层合并为一张（Standard、Pro）。</li><li>显示与界面（所有版本）：可将 3D 或 UV 之一放入小窗口（可放在面板上方并锁定）、3D 视图画面旋转与 UV 视图任意角度、3D 导航与 UV 指引的按钮排列、抓手工具、预设倍率（Ctrl＋1·2·3）、以最后绘制的位置为中心旋转、工具箱面板、透明处的棋盘格显示与 Alpha 镂空、显示预设。</li><li>操作（所有版本）：笔按钮上设置的中键、右键、后退／前进，在 Windows Ink 和 WinTab 下都能在 3D・UV 上使用（中键旋转 3D、右键拖动、右键菜单等）。另新增多个子工具共用同一按键、标尺栏、无法绘制时显示原因，以及帮助 →“联系我们（支持、功能需求、错误报告）”。</li><li>滤镜与调整图层（Standard、Pro）：新增色调曲线、色彩平衡、色温、自然饱和度、替换颜色、曝光度、动感模糊、径向模糊、高反差保留、杂色、马赛克、提取线稿、浮雕，并将菜单整理为子菜单。可从选区创建调整图层的蒙版。</li><li>lilToon 与材质（Pro）：新增边缘光的光照方向影响、轮廓线高光、反射设置与立方体贴图、闪粉形状、MatCap 自定义法线贴图、渐变映射、发光渐变、各向异性反射、抖动、溶解、视差与 AudioLink，均支持 .mat 的导入与导出，绘制目标也增加了。</li><li>法线贴图、烘焙与姿势（Pro）：法线贴图图像图层、用图案添加质感、以法线贴图颜色查看、卡通阴影、天使光环与主线预设、从 UV 边缘绘制、姿势预设、混合形状数值的复制粘贴与加载 .anim。</li><li>模型与性能（所有版本）：修正 glTF、glb、VRM 的 UV 方向，并将没有材质的 FBX 按对象拆分为纹理集打开。拾取、贴合表面的笔刷与撤销更快，自动保存改用快速格式。</li><li>修复：有时无法用 × 关闭的问题（卡住时按两次 ×）、睡眠恢复后自动保存停止的问题、较大的项目文件（约 150MB 起）无法打开或无法从自动保存恢复的问题、在 UV 视图放大绘制时线条变淡的问题、3D 变形（Ctrl＋T）的框不出现或跳动的问题、笔尖残留光标的问题等。</li></ul><p class="pn-release-tip">注意：打开旧版本保存的 glTF、glb、VRM 项目时，3D 外观不变，但 UV 视图中的图像会上下颠倒（导出的 PNG 与原模型方向一致）。</p><p class="pn-release-tip">注意：v1.2.0 的自动保存采用新的快速格式，v1.1.2 及更早版本无法读取其中的图层图像。手动保存的项目文件仍为原格式。</p></article>
+  <article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">新增安装程序与新笔、小窗口与画面旋转以及 lilToon 设置</p></header>
+<p class="pn-release-summary">根据大家的需求，新增了许多功能。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
+<section class="pn-release-part" aria-labelledby="v120-major"><h3 class="pn-release-part-title" id="v120-major">重大变更</h3>
+<section class="pn-release-group" aria-labelledby="v120-installer"><h4 id="v120-installer">现在可以用安装程序安装</h4>
+<ul>
+<li>解压 setup 压缩包，双击其中的 setup.exe 即可安装（无需管理员权限）</li>
+<li>从下次更新起，可直接用应用中的“安装并重新启动”更新</li>
+<li>Standard、Pro 仍可像以前一样使用 ZIP 版</li>
+</ul></section>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v120-notice"><h4 id="v120-notice">注意（从旧版本更新的用户）</h4>
+<ul>
+<li>更新时，请先保存作品并关闭应用，再运行新的 setup 或解压新的 ZIP</li>
+<li>笔触手感的默认设置改为“仅靠压感入笔收笔”<span class="pn-release-sub">改回原来的手感：偏好设置 → 笔与输入 →“笔触手感”→“按长度入笔收笔”</span></li>
+<li>修正了 glTF、glb、VRM 的 UV 上下方向<span class="pn-release-sub">旧版本的项目文件在 UV 视图中的图像会上下颠倒（3D 外观不变）</span></li>
+<li>自动保存采用了新格式（v1.1.2 及更早版本无法读取 v1.2.0 的自动保存）</li>
+<li>将 Standard 升级为 Pro 的用户，请同时重新安装 v1.2.0 的升级文件</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v120-new"><h3 class="pn-release-part-title" id="v120-new">新功能</h3>
+<section class="pn-release-group" aria-labelledby="v120-draw"><h4 id="v120-draw">绘制</h4>
+<ul>
+<li>液化笔（推动、膨胀、收缩、漩涡等，也支持对称）</li>
+<li>像素笔（对齐纹理像素清晰绘制）</li>
+<li>按像素显示纹理（按纹理集切换；256px 及以下默认开启）</li>
+<li>套索填充</li>
+<li>在 3D 中绘制也能涂到边距（最大 128px，平滑）</li>
+<li>Ctrl＋拖动调整笔刷大小、硬度、不透明度和笔尖角度</li>
+<li>纹理角度、D 键将前景色／背景色恢复为黑／白、Alt／Ctrl＋Backspace 填充</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v120-select"><h4 id="v120-select">选区、图层与蒙版</h4>
+<ul>
+<li>选择所有相似颜色，选区的移动与变形也可对称</li>
+<li>图层左右镜像复制</li>
+<li>蒙版的复制、粘贴与黑白绘制</li>
+<li>将所选图层或 UV 贴图导出为 PNG，并可指定导出分辨率（512～8192）</li>
+<li>以棋盘格显示透明区域，以及 Alpha 镂空显示</li>
+<li>显示预设（为对象的显示／隐藏状态命名并保存）</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v120-screen"><h4 id="v120-screen">界面与操作</h4>
+<ul>
+<li>可将 3D 或 UV 之一放入小窗口（也可放在面板上方）</li>
+<li>画面旋转（可像纸张一样倾斜着画）</li>
+<li>抓手工具、用 Ctrl＋1·2·3 切换预设倍率</li>
+<li>工具箱面板、标尺栏</li>
+<li>笔按钮（中键、右键、后退／前进）在 Windows Ink 和 WinTab 下都能使用</li>
+<li>帮助 → 联系我们</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v120-filter"><h4 id="v120-filter">滤镜与调整图层 <span class="tier std">Standard</span> <span class="tier pro">Pro</span></h4>
+<ul>
+<li>色调曲线、色彩平衡、色温、自然饱和度、替换颜色、曝光度</li>
+<li>动感模糊、径向模糊、高反差保留、添加／减少杂色、马赛克、提取线稿、浮雕<span class="pn-release-sub">（可通过 PSD 往返保留的是色调曲线、色彩平衡、自然饱和度和曝光度）</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v120-pro"><h4 id="v120-pro">Pro 新增功能 <span class="tier pro">Pro</span></h4>
+<ul>
+<li>大幅增加 lilToon 设置（反射、闪粉形状、各向异性反射、AudioLink 等，也支持 .mat 的读写）</li>
+<li>可将法线贴图图像和图案质感（针织、牛仔等）作为图层使用</li>
+<li>卡通阴影与天使光环的烘焙，以及主线等预设</li>
+<li>滤镜 →“从 UV 边缘绘制”</li>
+<li>姿势预设、混合形状的复制粘贴、加载 Unity 的 .anim</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v120-fix"><h3 class="pn-release-part-title" id="v120-fix">改进与修复</h3>
+<section class="pn-release-group" aria-labelledby="v120-usability"><h4 id="v120-usability">易用性</h4>
+<ul>
+<li>绘制、撤销与自动保存更轻快（大型模型尤为明显）</li>
+<li>头发束等重复使用同一 UV 的部分也能在 3D 中绘制</li>
+<li>新增英语、韩语、中文翻译</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v120-fixes"><h4 id="v120-fixes">问题修复</h4>
+<ul>
+<li>有时无法用 × 关闭（卡住时按两次 × 即可关闭）</li>
+<li>睡眠恢复后自动保存可能停止，导致无法保存</li>
+<li>较大的项目文件（约 150MB 起）无法打开或无法从自动保存恢复</li>
+<li>在 UV 视图放大绘制时线条变淡；3D 变形（Ctrl＋T）的框不出现或跳动</li>
+<li>笔尖残留光标；用中键旋转会马上停止</li>
+<li>导出 PSD 时，带描边效果的图层与剪贴图层会合并为一张</li>
+<li>此外还修复了许多小问题</li>
+</ul></section>
+</section>
+</article>
 <article class="pn-release" id="v1-1-2" aria-labelledby="v1-1-2-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-1-2-title">v1.1.2</h2><span class="pn-release-status released">已发布</span><p><time datetime="2026-10-07">2026-10-07</time></p></div><p class="pn-release-title">新增图层整理、UV 绘制范围与更多操作设置</p></header><ul class="pn-release-list"><li>图层颜色标签（所有版本）：为图层和文件夹添加 8 种颜色标记以便整理。可一次应用到多个选中图层，列表上方的“按颜色显示”可只显示该颜色的图层。标签保存在项目中，PSD 导出与导入（Standard、Pro）时与 Photoshop 图层颜色互通。</li><li>UV 视图的绘制范围与边距（所有版本）：在左下选择“UV 内／边距内／全部”。除画笔、毛笔和橡皮外，图形、填充、渐变、图章、模糊和涂抹也遵循此范围。边距（0～32px 或全部）与导出共用同一数值，并可显示边距线。另新增“在新图层上生成边距”滤镜。</li><li>重复图案（所有版本）：可在图层属性中，将图像文件、参考图像或图案以上下左右重复的方式铺满图层，也可对齐 UV 接缝。</li><li>相机与显示（所有版本）：偏好设置 → 操作 → 相机新增“Unity 方式”。可在 3D 视图右上透视／平行的 ▼ 中将视角设为 5～120°，并新增隐藏纹理、仅显示网格线的显示方式。</li><li>界面配色（所有版本）：在偏好设置 → 界面中更改窗口、面板、按钮、文字、强调色、3D 背景和工具栏的颜色。浅色与深色分别保存，可恢复初始配色。</li><li>笔与操作（所有版本）：菜单和按钮可用笔按下后松开来确定（按钮上的长按行为可在偏好设置中选择）。新增长按按键临时切换工具的时间（0.15～2 秒）、快捷键设置的导出与导入，以及锁定面板布局。</li><li>界面改进（所有版本）：菜单右侧新增新建、打开、保存与撤销、重做按钮。放不下的长菜单可在边缘滚动。对称绘制时显示对称参考线和对侧光标，常用工具栏可分别在 3D 与 UV 中显示。</li><li>图层与纹理集（所有版本）：缩略图大小（小至特大）、将按钮栏放在上方的设置、多图层一起拖动、重命名时拖动选择文字。可移除纹理集的副集，重新加载模型时会询问纹理已变化的纹理集是否替换底色。</li><li>绘制与语言（所有版本）：图形线宽与笔刷大小联动，参考图像吸管光标更易看清。补全英文、韩文、中文的缺失翻译，并在随附的使用说明中加入 v1.1.2 功能说明。</li><li>修复：多边形填充与 3D 按面选择有时涂到远处三角形的问题、英文／韩文／中文下导出窗口等内容无法显示的问题、带边距导出时接缝偶尔出现线条的问题、剪贴图层颜色进入相邻 UV 岛的问题、不透明度滑块显示停止的问题等。</li></ul></article>
 <article class="pn-release" id="v1-1-1" aria-labelledby="v1-1-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-1-1-title">v1.1.1</h2><span class="pn-release-status released">已发布</span><p><time datetime="2026-10-05">2026-10-05</time></p></div><p class="pn-release-title">拓展绘制与操作方式的更新</p></header><ul class="pn-release-list"><li>3D空间渐变（所有版本）：用普通渐变工具在模型表面或空白空间放置点，按与点的距离绘制。通过移动手柄、XYZ坐标、半径以及颜色/不透明度预设调整，在所选图层预览后应用。一次撤销即可恢复，取消则回到原图。普通空间渐变和 Pro 的点距离渐变烘焙新增距离环、颜色/不透明度色带和数值标签。拖动白色手柄调整扩散距离，拖动颜色手柄调整各颜色的位置，同时同步数值控件和颜色编辑器。引导可隐藏，烘焙的环位置也会反映边界位置和混合宽度。</li><li>最低32px纹理（所有版本）：新建与调整分辨率支持32/64/128/256px，支持项目保存、重新打开和PNG导出。各版本最高分辨率保持不变。</li><li>颜色辅助滑块（所有版本）：保留上方颜色区域和色相条，切换下方RGB/HSV滑块。重启后保留选择。</li><li>相机操作（所有版本）：可选择右键式、中键式或 Alt 键式。也改善了笔侧键发送中键点击时的视角操作。</li><li>隐藏面的对称绘制（所有版本）：在对称设置中启用后，3D画笔、笔刷、橡皮和印章也会作用于隐藏的对称面。默认关闭，不适用于UV绘制和填充。</li><li>VRM透明部分（所有版本）：保留VRM0/VRM1原始图像、透明设置、截断值和不透明度。透明设置不同的材质即使共用图像，也使用独立纹理集。</li><li>外部笔刷笔尖（所有版本）：将ABR、GBR、GIH、图像和ZIP注册为子工具，也可读取SUT中可识别的PNG作为笔尖。不会完整复现原始设置、颜色和混色。SUT可能包含缩略图或其他素材。</li><li>MToon预览（Pro，测试版）：在材质的显示与光照设置中切换，参考VRM0/VRM1材质效果绘制。支持项目保存和撤销/重做。UV动画静态显示，不支持MToon材质的完整往返导出。</li><li>血色左右对称（Pro）：轻松烘焙的血色位置新增左右对称选项，使用与绘制相同的X对称中心，移动点时另一侧同步移动。</li><li>图层列表纵向扩展（所有版本）：修复面板向下扩展时列表停留在固定高度的问题，停靠、选项卡和独立窗口均随可用高度调整。</li><li>绘制、操作和多语言修复：改善输入中笔刷大小跳变、倾斜表面的笔刷中心偏移、烘焙预览中的Alt相机操作、英文大小按钮及韩文烘焙按钮换行、外部笔刷错误消息和对称中心说明。</li><li>精简说明（所有版本）：烘焙、渐变、笔刷和相机操作等较长的说明可通过圆形问号图标查看。支持悬停、点击、触控和键盘操作；当前点选提示和警告仍显示在界面中。</li></ul></article>
 <article class="pn-release" id="v1-1-0" aria-labelledby="v1-1-0-title">

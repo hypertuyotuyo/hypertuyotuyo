@@ -34,3 +34,16 @@
   .pn-release-meta p { margin-left: 0; flex-basis: 100%; }
   .pn-release-group ul, .pn-release-list { font-size: .88rem; }
 }
+/* v1.2.0 から：記事の中の大きなまとまり（大きな変更・新しい機能・改善と修正）と、その下の小見出し（h4）・1 行 1 項目の箇条書き */
+.pn-release-part { margin-top: 1.9rem; }
+.pn-release-part-title { display: flex; align-items: center; gap: .8rem; font-family: var(--pn-display); font-size: .95rem; font-weight: 800; color: var(--accent-dark); letter-spacing: .04em; }
+.pn-release-part-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.pn-release-part .pn-release-group { border-top: 0; margin-top: 1.2rem; padding-top: 0; }
+.pn-release-group h4 { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; font-size: 1rem; font-weight: 700; margin-bottom: .45rem; }
+.pn-release-part li + li { margin-top: .3rem; }
+.pn-release-sub { display: block; color: var(--ink-2); font-size: .92em; }
+.pn-release-notice ul { background: var(--paper); border-left: 3px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: .7rem 1rem .7rem 2.1rem; }
+@media (max-width: 560px) {
+  .pn-release-part-title { font-size: .9rem; }
+  .pn-release-notice ul { padding: .6rem .8rem .6rem 1.8rem; }
+}
