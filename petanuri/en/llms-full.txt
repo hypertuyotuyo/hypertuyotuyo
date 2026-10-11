@@ -1,0 +1,868 @@
+# PetaNuri3D v1.2.0 — Specifications and How-To (for AI chat)
+
+> **Note to the AI**: This document covers the specifications and usage of the 3D painting app PetaNuri3D v1.2.0 (released 2026-10-10). When answering users:
+> 1. Give on-screen text exactly as written in “...” here (e.g. File → “Preferences” → “Controls” → “Camera control template”). Menu paths are joined with →. “...” marks the app's English interface text; '...' marks other phrasing.
+> 2. Do not guess features, operations or values not written here. Answer 'This is not covered in this document, so I don't know' and point to Help → “Contact (support, feature requests, bug reports)” in the app.
+> 3. Features differ by edition (Lite, Standard, Pro). [Standard] = Standard and Pro; [Pro] = Pro only. Unmarked = all editions, including the free Lite. If the answer depends on an unknown edition, ask (shown in Help → “About PetaNuri3D”).
+> 4. Keys are default bindings; users may have rebound them (current keys: shortcut list, F1).
+> 5. If the user's version is newer than v1.2.0, tell them to check the changelog and manual on the official site.
+> 6. For users whose interface language is not English, do not guess the on-screen text in their language; you may give the English wording. Japanese original of this document: https://hyper-tuyotuyo.com/petanuri/llms-full.txt
+
+- Primary sources: manual https://hyper-tuyotuyo.com/petanuri/en/manual · changelog https://hyper-tuyotuyo.com/petanuri/en/changelog
+- Written 2026-10-11 (covers v1.2.0)
+
+---
+
+## 1. Overview
+
+- PetaNuri3D paints textures of 3D avatars, outfits and accessories directly on the 3D model. Made for anime and illustration-style coloring.
+- Paint where you see it without searching the UV map; strokes go straight into the UV texture. Stack layers as in 2D illustration.
+- Author/distributor: HYPERtuyotuyo, on BOOTH (Lite is free). Product page https://hyper-tuyotuyo.booth.pm/items/8917534
+
+| Item | Details |
+|---|---|
+| System requirements | Windows 11 (64-bit). Runs on Windows 10 but unsupported. No Mac or other OS |
+| 3D models | FBX, glTF (self-contained single file), GLB, VRM, OBJ, DAE |
+| Images for base/layers | PNG, JPEG, WebP, BMP, GIF, TGA; PSD [Standard] |
+| Export | PNG; PSD [Standard]; lilToon materials (.unitypackage or folder) [Pro]; UV map PNG |
+| Project file | .petanuri (model, layers, settings in one file) |
+| Unity integration | Unity 2022.3. Add-on included. All editions |
+| Interface languages | Japanese, English, Korean, Chinese (Simplified) |
+| Settings location | %APPDATA%\PetaNuri3D (sub tools, key bindings, window layout, color sets, reference images, etc.) |
+
+### Install and launch
+
+- Installer (all editions): extract the setup zip from BOOTH (PetaNuri3D-<edition>-v<version>-setup.zip), double-click setup.exe inside → “Next”. No admin rights (installs for your user only) to %LOCALAPPDATA%\Programs\PetaNuri3D; launch from the Start menu. Desktop icon and opening .petanuri by double-click are chosen during setup.
+- Zip version: extract, put the PetaNuri3D folder anywhere, double-click PetaNuri3D-win_x64.exe (no install). It also uses resources.neu in the same folder, so move the whole folder.
+- Uninstall: Windows Settings → Apps → Installed apps → “ぺたぬり3D” (PetaNuri3D). Settings and projects are kept.
+- At launch the center shows “New”, “Open project file”, “Try the sample” (recent files and autosaves open here too), and “Start a 2D painting” below “Try the sample”.
+
+---
+
+## 2. Editions (Lite, Standard, Pro)
+
+- Edition: badge next to the name at top left (Lite or Pro; Standard has none) or Help → “About PetaNuri3D”.
+- Prices: see the BOOTH product page https://hyper-tuyotuyo.booth.pm/items/8917534 (not stated here; if asked, point to BOOTH). Standard can become Pro with “Upgrade to Pro”.
+
+| Feature | Lite (free) | Standard | Pro |
+|---|---|---|---|
+| Draw, paint, erase, blend, fill, symmetry, UV view, selections, transforms, text, rulers, auto fill | ○ | ○ | ○ |
+| Stamps, pattern pens, decorations, Liquify, Pixel pen | ○ | ○ | ○ |
+| Convert luminance to opacity, draw with transparency, color/opacity gradients, 2D painting | ○ | ○ | ○ |
+| PNG export, saving projects, painting launched from Unity, AI integration (MCP) | ○ | ○ | ○ |
+| Layers (per texture set, incl. base) | Up to 4 | Unlimited | Unlimited |
+| Resolution | 32–2048 | 32–4096 | 32–4096 |
+| PSD import/export | — | ○ | ○ |
+| Filters, adjustment layers, strokes (layer outlines) | — | ○ | ○ |
+| Brush settings export/import (.petabrush) | — | ○ | ○ |
+| Poses, blend shapes, vertex groups | — | — | ○ |
+| Final look (lilToon/MToon look, beta), material settings, paint targets, Bump tools, lilToon material import/export | — | — | ○ |
+| Easy Bake, other bakes (shading, cast shadows, etc.), Bake AO, Paint from UV edges | — | — | ○ |
+| AI integration run_js (runs programs inside the app) | — | — | ○ |
+
+- Lite layer count: paint layers (incl. base) and adjustment layers count; folders and masks don't. At 4 the panel shows “Layers 4 / 4 (incl. base, Lite)” and “Add”/“Duplicate” get a lock icon.
+- Lite: unavailable features are dimmed with a small lock in menus, buttons and right-click menus (click to see which edition has them). Standard: Pro-only entry points are hidden (only Help → “Upgrade to Pro” shows).
+- No watermark in any edition. Texture sets are unlimited.
+- Projects from any edition open. Layers over the limit, 4096 sets and settings of unavailable features are kept and survive saving.
+
+---
+
+## 3. Interface layout
+
+### Default layout
+
+- Left: Sub tool, Tool properties, Brush size, Reference image; toolbar at the far left.
+- Center: 3D view (UV view can sit on its right).
+- Right, 3 columns: beside 3D, Texture set, Layer properties, Layer; next, Color, Color values, Color set / Recent colors, History; far right, Objects and Pro panels (Vertex groups, Material, Blend shapes, Pose) folded into an icon strip.
+- Below 1400 window width, the color column also goes into the far-right strip.
+- Top: menu bar (File, Edit, Layer, Selection, Filters, Display, Help); right of File, the “New”, “Open”, “Save” and “Undo”, “Redo” buttons.
+
+### Panels
+
+- Drag a panel header and release to place it (into a column/row; new column/row at an edge; elsewhere it floats). Drag borders to resize (double-click resets).
+- Click a header to collapse. Drop on another header to make tabs. The < > buttons at a column's top fold it into an icon-only strip.
+- Show/hide: Display → “Windows”, or header right-click → “Hide this panel”.
+- Display → Windows → “Lock panel layout” fixes panels; “Reset window layout” restores the default.
+- A floating window can be locked alone with the lock at its top right.
+- Toolbar: drag its grip to dock left/right/top/bottom. Button right-click → “Toolbar position”, “Toolbar icon size” (large/small), “Reset order”. The sun/moon switch at its end toggles light ⇔ dark.
+- Favorite tools: toolbar button or sub tool right-click → “Add to favorites”. Shown in small strips above 3D and UV (+ on a strip adds the current sub tool).
+- Display → Windows → “Toolbox”: tools in a grid (foreground/background colors below).
+
+### 3D view corners
+
+| Position | Contents |
+|---|---|
+| Top left | Mesh lines, display mode, single/double-sided, symmetry X Y Z, visible area (▼ for settings) |
+| Top center | Paint/Pose toggle [Pro]; “Back to color” while painting a paint target; “◀ Back to previous layer” after Bump |
+| Top right | Front, Back, Right, Left, Top, Bottom, perspective/orthographic (▼: field of view 5–120°, default 30°), Frame all |
+| Bottom right | 3D navigator (sphere rotates, magnifier, hand, view rotation ⟲ angle ⟳, Frame all, perspective/orthographic), alternate-angle mini view |
+| Bottom left | “Switch on touch”, main and sub texture sets, “Paint across” |
+| Bottom center | Selection bar; bar shown while parts are hidden |
+
+### Display modes and light (3D top left)
+
+- Modes: “Painted colors as-is (unlit)”, “Two-tone toon”, “Shaded (shows surface relief)”, “Wireframe only”, “Final look (lilToon/MToon, beta)” [Pro].
+- ▼ under the mode icon: light direction (drag the sphere, horizontal/elevation, “Follow camera”).
+- Single-sided (back faces not drawn) / double-sided (visible back faces get painted too).
+- Transparent areas show as a checkerboard in 3D (Display → Shading → “Show transparent areas as a checkerboard”, on by default; off = gray).
+- Show as pixels: no texture interpolation, each texel a square (display only). Set row ⋯ / right-click → “Show as pixels (no interpolation)”; on by default for sets of 256px or less. All sets: Display → Shading → “Show all sets' textures as pixels (no interpolation)”.
+
+### Right-click menus
+
+- Menus fit the clicked place (3D view, UV view, layers, texture sets, sub tools, color sets, history, panel headers, etc.).
+- 3D view: pick color here, select this set, select layer painted here, hide this island, show only this island, hide this object, show only this object, view, paint symmetrically (→ “Set symmetry center here”), etc.
+- Preferences → Controls → “Right-click” set to “Popup palette” opens the palette with right-click.
+
+---
+
+## 4. Tools (toolbar order)
+
+Tap a tool key to switch; hold it while drawing to use that tool only meanwhile (release returns). Tool properties are remembered per sub tool.
+
+| Tool | Key | Sub tools |
+|---|---|---|
+| Pen | P | G-pen, Round pen, Fineliner, Taper pen, Solid fill pen, Pixel pen |
+| Brush | B | Soft brush, Airbrush, Flat fill, Pencil, Chalk, Spray, Watercolor bleed, Flat brush, Dodge, Burn, Shadow (multiply), Ink brush |
+| Brush collection | — | 33 incl. Pencil, Mechanical pencil, Fine brush, Ink brush, Flat brush, Glazing, Painterly, Watercolor edge, Splatter, Leaves, Sponge |
+| Eraser | E | Hard, Soft, Rough, Kneaded eraser, Through all layers (+2 bundled) |
+| Decoration | — | Sparkle, Star, Heart, Flower, Cherry blossom, Music note, Snowflake, Polka dots, Bubble, Crescent moon, Diamond, Four-leaf clover, Drop |
+| Stamp | — | Stamp, Stamp (scatter) |
+| Pattern | — | Vertical stripes, Horizontal stripes, Diagonal stripes, Polka dots, Small polka dots, Checkerboard, Gingham, Tartan, Argyle, Herringbone, Denim (twill), Knit, Heart, Star, Crosshatch |
+| Bump [Pro] | — | Stitches (dotted, indented), Stitch (puffy), Seam (groove), Piping (raised), Cross stitch, Zigzag stitch, Studs (rivets), Wrinkles, Bulge |
+| Blend | J | Blur, Smudge, Blend (3 each +3 bundled) |
+| Liquify | — | Push, Bloat, Pinch, Twirl (right), Twirl (left), Restore |
+| Fill | G | Fill island, Whole material, Fill enclosed area, Polygon fill, Lasso fill |
+| Gradient | — | Color and opacity, Foreground → background, Foreground → transparent, Radial (foreground color to transparent) |
+| Shape | — | Line, Rectangle, Ellipse, Polygon (fill/outline), Curve, Curve (connect points) |
+| Eyedropper | I | Sample displayed color, Sample from layer |
+| Move/transform | V | Move/transform tool |
+| Hand | — | Hand |
+| Selection | S | Rectangle, Ellipse, Lasso, Polyline, Auto select, Select by island, Select by face, Selection pen, Selection eraser |
+| Hide pen | — | Hide by face, Hide by island |
+| Text | T | Horizontal text, Vertical |
+| Ruler | — | Straight, Curve, Concentric, Radial, Parallel |
+
+### Common drawing settings (Tool properties)
+
+- “Also paint back and hidden faces” (Eraser: “Also erase back and hidden faces”): also paints back/inner faces hidden from view, within a sphere of the brush circle's apparent size. Default on for Pen, Brush, Brush collection, Eraser, Gradient; off for Decoration, Pattern, Bump. Blur, Smudge, Blend, Stamp affect visible faces only. On thick parts it can reach the far side.
+- “3D brush projection”: “Follow the surface” (default; less stretching on angled faces) / “Match the screen” (projects from the camera). Blur has it too.
+- Size basis per sub tool: “Follow settings” / “Fixed on texture” / “Variable on screen”. “Follow settings” uses Preferences → “Painting” → “Brush size unit”. Size 1–1000.
+- Tips: Round, Square, Flat brush, Pencil, Chalk, Spray, Watercolor, Ink brush, Sparkle, Star, Heart, plus 31 bundled. “Load” adds images (black on white) or tip images from other painting apps' brush files (.abr, .gbr, .gih, bundled .zip, .sut) (all editions). The original brush's pressure behavior, mixing, etc. are not reproduced.
+- “Build-up (darker with each pass)”; 26 rendering modes plus “Behind (unpainted areas only)”, “Lighten”, “Darken”.
+- Stabilization type: Smooth / 1€ / String. Taper start/end. Dynamics (size by speed, variation, tilt, direction, rotation). Pressure curve (size/opacity).
+- Paper texture: 6 bundled images, 15 patterns or any image; rotate with “Pattern angle”.
+- “Pixel (crisp, snapped to the texel grid)”: paints like the Pixel pen.
+- “Paint into padding outside islands in 3D too” (Pen, Brush, Eraser): when a 3D stroke ends, extends it outside the UV island by the padding width (never into neighboring islands). Width = “Padding width (px)” (shared with the UV view's lower left and export padding).
+- Brush size: one click in the left “Brush size” panel, [ ] keys, Ctrl+Alt+horizontal drag, Ctrl+right-drag (horizontal size, vertical hardness), Ctrl+left-drag (horizontal opacity, vertical tip angle).
+- Icons under the sub tool list: duplicate, rename, delete, reset, export, export all, import (.petabrush export/import [Standard]). Drag to reorder. “Small” “Medium” “Large” above the list set tile size.
+
+### Tool notes
+
+- Pixel pen: paints a crisp square of brush-size texels on the texel grid (1 = 1 texel, 3 = 3×3; no color blending; pressure doesn't change size).
+- Blend tool: “Blur” (“Blur spread”), “Smudge” (drags color), “Blend” (“Paint amount” 0 only blends existing colors; “Color stretch”). Computed on the 3D surface, so no breaks at UV seams. Blur and Smudge also work in UV; Blend is 3D only.
+- Liquify: warps the painting where traced (one Ctrl+Z per trace). Crosses UV seams in 3D; stays inside islands in UV. Respects selections and lock transparency.
+- Fill: “Fill island” (whole clicked UV island), “Whole material”, “Fill enclosed area” (reference, tolerance, “Close gaps”, “Expand”), “Polygon fill” (whole traced faces), “Lasso fill” (enclosed area in foreground color).
+- Gradient: drag start → end in 3D (or UV) (Shift: 45° steps). “Color and opacity stops” under “Color” in Tool properties: 2–32 stops, 240 presets, “Save current”. Linear or radial. “Paint from a 3D point” spreads colors by radius from a point in 3D space (preview, then apply to the selected layer). Opacity-0 parts keep the colors below.
+- Shape: fill or outline. Shift = square/circle; “Draw from center”. Polygons 3–12 sides. Curve: release, move to bend, click to finish. Curve (connect points): double-click or Enter finishes (“Close” makes a loop). Line width follows brush size.
+- Eyedropper: hold Alt in any tool. Shift+I picks anywhere on screen (even outside the window).
+- Hand: left-drag moves the view (Ctrl in 3D zooms).
+- Text: click 3D (or UV) and type in the frame. Font (fonts on this PC; import .ttf/.otf), size, color (foreground), bold, italic, vertical, line/character spacing, alignment, stroke (background color). Ctrl+Enter applies. Pasting “To new layer” makes a retypable text layer (11-15).
+- Ruler: strokes snap to it. Straight/curve rulers affect only strokes started near them; concentric/radial/parallel work anywhere. Straight/parallel: drag; concentric/radial: click sets the center; curve: place points, then Enter or double-click (Ctrl+Z removes the last point meanwhile). 3D and UV views get separate rulers. The bar below the view toggles snapping or deletes.
+
+### Decoration, Stamp, Pattern, Bump
+
+- Decoration: scatters ornaments along the stroke (size/direction vary slightly), in the foreground color.
+- Stamp: add PNGs etc. with “Import image” in Tool properties, pick one, click on 3D to stamp (drag repeats at the spacing). Hover shows a translucent preview. Uses the image's colors (transparent parts skipped); “Paint with foreground color” uses only the shape. Size, opacity, spacing, angle, random rotation, size variation, scatter, rotate along stroke, size by pressure. Up to 60 imported images kept. Draw your own with “Draw in 2D canvas” (chapter 7).
+- Pattern: pen painting only the pattern parts in foreground color. Repeats on the texture (distorted UVs distort it). “Pattern size”, “Pattern strength”, invert light/dark, application mode, “Pattern angle”. Same patterns under “Paper texture” → “Pattern” of other pens.
+- Bump [Pro]: drawing moves into the “Normal map” folder in the Layer panel (created if missing) and paints height (no black lines on color layers). Height in Tool properties. Afterwards, “◀ Back to previous layer” at the 3D top center. Visible in Final look; exports as a normal map image.
+
+### Color
+
+- Color panel: 5 picker styles (ring + square, ring + triangle, square + hue bar, disc + lightness bar, sliders).
+- Color values panel: foreground/background, HEX, pick from screen, RGB/HSV, opacity, transparent color button (checkerboard).
+- X swaps foreground/background. D resets to black/white (also the small button at the lower left of the two squares).
+- Recent colors: last 12 colors actually painted or picked. Color set: add with “+ Current color”, drag to reorder, read/write .gpl.
+- Reference image panel: open, drop or paste (Ctrl+V) and pick colors with the eyedropper.
+- Transparent color (C, or the checkerboard button in Color values): erases on the selected layer with the brush's tip, hardness and pressure. Fill, polygon fill, shapes and gradients erase too when transparent. Not on lock-transparency layers.
+
+### Popup palette (pen only)
+
+- Over 3D/UV, press the pen side button and release without moving: a circular palette opens there (dragging rotates).
+- Outer ring: favorite sub tools (+ adds; long-press/right-click removes; up to 10). Inside: hue ring and square, recent colors, label dragged up/down for brush size.
+- Click outside or Esc closes.
+
+---
+
+## 5. Menu list (v1.2.0)
+
+Item names as in the app; default keys in parentheses.
+
+### File
+- “New (choose a 3D model)” (Ctrl+N), “Open project file (.petanuri)” (Ctrl+O), “Save project file” (Ctrl+S), “Save as” (Ctrl+Shift+S), “Recent files”, “Open from autosave”
+- “Import” → “Import image as layer”, “Import PSD (replace layers)” [Standard], “Replace base image (selected set)”, “Load lilToon material (.mat, .unitypackage)” [Pro], “Open reference image”
+- “Export” → “Export PNG (selected set)”, “Export PNG (all sets)”, “Export as PNG (selected layers)”, “Export UV map as PNG (selected set)”, “Export PSD (selected set)” [Standard], “Export PSD (all sets)” [Standard], “Export materials (.unitypackage / folder)” [Pro]
+- “Reload model (keep painting)”
+- “Preferences” (Ctrl+Alt+Shift+K)
+
+### Edit
+- “Undo” (Ctrl+Z), “Redo” (Ctrl+Y)
+- “Paint symmetrically” → “X (left/right)” (M), “Y (front/back)”, “Z (up/down)”
+- “Fill with foreground color” (Alt+Backspace), “Fill with background color” (Ctrl+Backspace)
+- “Copy” (Ctrl+C), “Cut” (Ctrl+X), “Paste” (Ctrl+V)
+- “Transform (on 3D/UV)” (Ctrl+T), “Paste image onto 3D”, “Paste image onto UV”, “Add text”
+
+### Layer
+- “New layer” (Ctrl+Shift+N), “Duplicate layer” (Ctrl+J), “Delete layer”, “Clear layer” (Delete)
+- “Folder” → “New folder” (Ctrl+G), “Put selected layers in a folder” (Ctrl+Shift+G), “Ungroup folder”
+- “Adjustment layers” [Standard] → Hue/Saturation/Lightness, Brightness/Contrast, Levels, Invert, Grayscale, Posterize, Threshold, Gradation map, Curves, Color Balance, Exposure, Color Temperature, Vibrance, Replace Color, Add noise
+- “Mask” → “Add reveal-all mask”, “Add hide-all mask”, “Create mask from selection”, “Paint on mask”, “Enable mask”, “Show mask area”, “Invert mask”, “Apply mask (bake into pixels)”, “Delete mask”, “Copy mask”, “Paste mask”, “Copy this layer's brightness as a mask”, “Show mask in black & white”, “Paint masks with the brightness of the color (white = show, black = hide)”
+- “Stroke” → “Stroke settings” [Standard], “Show stroke”, “Copy stroke”, “Paste stroke” [Standard], “Clear stroke”, “Bake stroke into pixels”
+- “Mirror copy left/right”
+- “Merge” → “Merge with layer below” (Ctrl+E), “Merge selected layers”, “Merge folder”, “Merge visible layers”
+- “Stacking order” → “Move up one”, “Move down one”
+- “Clipping & locks” → “Toggle clipping” (Ctrl+Alt+G), “Toggle lock transparency”, “Toggle lock”
+- “Auto fill (fill regions from color hints)”
+
+### Selection
+- “Select all” (Ctrl+A), “Deselect” (Ctrl+D), “Restore selection (last deselected)” (Ctrl+Shift+D), “Invert selection” (Ctrl+Shift+I)
+- “Expand selection”, “Contract selection”, “Feather edge”
+- “Select painted area of layer”, “Select all similar colors (foreground color)”, “Create mask from selection”, “Copy selection to new layer”, “Cut selection to new layer”, “Fill selection with foreground color”, “Clear inside selection” (Delete)
+- “Show selection outline” (Ctrl+H)
+
+### Filters
+- “Color adjustment” [Standard] → Hue/Saturation/Lightness, Brightness/Contrast, Levels, Curves, Color Balance, Exposure, Color Temperature, Vibrance, Replace Color
+- “Tone” [Standard] → Invert, Grayscale, Posterize, Threshold, Gradation map
+- “Blur & Sharpen” [Standard] → Gaussian blur, Motion Blur, Radial Blur, Sharpen (unsharp mask), High Pass
+- “Noise” [Standard] → Add noise, Reduce Noise (Median), Mosaic
+- “Stylize” [Standard] → Extract Lines, Emboss
+- “Apply to all visible texture sets” [Standard]
+- “Convert luminance to opacity” (all editions)
+- “Create padding on a new layer” (all editions), “Paint from UV edges (new layer)” [Pro]
+- “Easy Bake” [Pro]
+- “Bake” [Pro] → “Bake AO (areas darkened by surroundings)”, “Export AO as PNG (last bake result)”, “Bake cast shadows”, “Bake thin-surface tint”, “Bake soft shading”, “Bake gradients by orientation, height or point”, “Bake rim light”, “Bake gloss highlights”, “Bake weave and color variation”, “Bake toon shade (1st, 2nd)”, “Bake angel ring (hair highlight)”, “Enhance cavities and bulges”
+
+### Display
+- “Shading” → “Painted colors as-is (unlit)”, “Two-tone toon”, “Shaded (shows surface relief)”, “Wireframe only”, “Final look (lilToon/MToon, beta)” [Pro], “Single-sided display (back faces are not drawn)”, “Double-sided (paint visible back faces too)”, “Show all sets' textures as pixels (no interpolation)”, “Show transparent areas as a checkerboard”, “Set paint target back to color” [Pro]
+- “View” → “Frame all” (F), “Front view” (Numpad 1), “Back view” (Ctrl+Numpad 1), “Right view” (Numpad 3), “Left view” (Ctrl+Numpad 3), “Top view” (Numpad 7), “Bottom view” (Ctrl+Numpad 7), “Perspective/orthographic” (Numpad 5)
+- “Visible area” → “Show selected only” (Shift+H), “Hide selected” (H), “Also show selected”, “Invert visible area”, “Show all” (Alt+H)
+- “Lines & rulers” → “Mesh wireframe”, “Seam lines (UV seams and island edges)” (Alt+W), “Snap to ruler” (Ctrl+Alt+R), “Remove ruler”
+- UV → “UV (side by side with 3D)” (U), “UV only (hide 3D)” (Shift+U), “UV in a small window (3D full)”, “3D in a small window (UV full)”, “UV guide (zoom/move)”, “UV: continue painting past islands onto neighbors connected in 3D”, “UV grid”, “Snap to UV grid”
+- “Mode & pose” → “Paint mode”, “Pose mode (move bones)” [Pro], “Reset entire pose”, “Symmetric posing”, “Copy pose left → right”, “Copy pose right → left” [Pro]
+- “Windows” → show/hide each panel (Toolbar, Toolbox, Sub tool, Tool properties, Brush size, Reference image, Color, Color values, Layer, Layer properties, Color set, Recent colors, Texture set, Objects, Vertex groups, Material, Blend shapes, Pose, History), “3D navigator (bring it back with the icon at bottom right)”, “Alternate-angle mini view”, “Favorite tools (3D view)”, “Favorite tools (UV view)”, “Lock panel layout”, “Reset window layout”
+- “Show/hide palettes” (Tab)
+
+### Help
+- “Shortcut list” (F1), “Tutorial (guided tour)”, “Manual (Web)”, “Contact (support, feature requests, bug reports)”, “Check for updates”, “About PetaNuri3D”, “Upgrade to Pro” (in Standard)
+
+---
+
+## 6. Layers, blend modes, masks, selections, filters
+
+### Layer basics
+- Layers stack per texture set (material). The bottom “Base” holds the color/image chosen in New (paintable).
+- Panel top to bottom: set switcher (2+ sets) → blend mode, opacity → clipping, lock transparency, lock icons → list → buttons (add, folder, adjustment, duplicate, delete, merge, mask, move up, move down, more).
+- 26 blend modes (Normal, Multiply, Screen, Overlay, Add, Soft light, Hard light, Hue, Color, Luminosity, etc.). Folders: “Pass through” (default); other modes combine the contents first.
+- Multi-select: Ctrl+click individual, Shift+click range (visibility, blend mode, opacity, clipping, locks, delete, duplicate, put in folder, merge, color tags apply together).
+- Alt+] / Alt+[ selects the layer above/below. 3D right-click → “Select layer painted here”.
+- Ctrl+click a thumbnail: select its painted area (Shift adds, Alt subtracts).
+- Color tags: color box at a row's left or right-click → “Color tag” (none, red, orange, yellow, green, cyan, blue, purple, gray). “Show by color” above the list filters by color. Maps to/from PSD layer colors (cyan becomes blue).
+- More (…) → “Thumbnail size” (small, medium, large, extra large), “Put the button row on top”.
+- Mirror copy: Layer → “Mirror copy left/right” (also row right-click): “Left side → Right side” / “Right side → Left side” (as seen from the model). Works even if left/right UVs differ. “Copy to a new layer” option.
+- Repeating pattern: Layer properties → “Repeating pattern” → “Choose a pattern to fill…” fills the layer with an image file, reference image or pattern (in foreground color) repeating in all directions (replaces current pixels). Can fit UV seams. “Recolor with foreground color”, “Back to image colors”.
+- Text layers: T mark. Double-click or right-click → “Retype text” reopens. Painting on it makes the mark T+, and retyping erases the additions. Right-click → “Rasterize” makes a normal layer.
+
+### Layer properties panel
+- Selected layer's type and name, adjustment values, stroke visibility, “Add”, “Settings”, “Retype text” (text layers), mask status, repeating pattern.
+
+### Masks
+- “Mask” button → add a show-all or hide-all mask (or from a selection). Click the mask thumbnail to paint on it.
+- Default: paint with foreground brightness (white = show, black = hide, gray = half). With “Paint masks with the brightness of the color” off: painting shows, eraser hides.
+- Shift+click mask thumbnail: enable/disable; Alt+click: black-and-white view.
+- Copy/paste masks (also to other sets). Drag a mask thumbnail to another row to move; Alt+drag copies.
+
+### Stroke (layer outline) [Standard]
+- Outlines a layer without changing its artwork. Open via layer right-click → “Stroke”, Layer → “Stroke”, or “Add”/“Settings” in Layer properties. Rows with one show fx.
+- Settings: size (texture px), position (outside, inside, center), blend mode, opacity, color. OK (Enter) / Cancel (Esc).
+- Computed on UV, so outlines crossing island edges may look cut there in 3D.
+- Lite shows strokes in opened projects unchanged and can show/hide, copy, clear, bake into pixels.
+
+### Selections
+- Drawing, painting, erasing, filters, gradients affect only the inside. Ctrl+D deselects.
+- At start: Shift = add, Alt = subtract, Shift+Alt = intersect.
+- “Also select back and hidden faces”: selects everything matching the screen shape through to the back (all around the body).
+- With a selection, unselected texture sets can't be painted.
+- Selection bar (below 3D): Deselect, Invert | Expand, Contract, Feather | Fill, Clear | To new layer ▾ (copy/cut), Other ▾ (mask, show selected only, hide, outline).
+- “Select all similar colors (foreground color)”: areas near the foreground color across the whole texture (connected or not). Tolerance, source (all layers / current layer), mode (new, add, subtract).
+
+### Move, transform, copy
+- Move/transform tool (V): the topmost layer painted at the click is selected and framed (“Auto-select layer”). Drag moves, corners scale, top circle rotates. Enter or another tool applies; Esc cancels.
+- Transform (Ctrl+T): the selection, else the whole layer. Frames in both 3D and UV; either works. Shift: change aspect ratio / 15° steps. Flip horizontal/vertical.
+- Bar under the frame: “Scale/rotate” / “Free transform” / “Warp” (grid 3×3, 4×4, 5×5). With symmetry on and a one-sided selection, “Mirror too” appears.
+- With the UV grid shown, frames snap to it (not while holding Ctrl).
+- Copy/cut use only the active layer. Paste goes to a new layer at the same UV position, ready to transform. Locked, hidden and lock-transparency layers aren't cut or cleared.
+
+### History and undo
+- Undo Ctrl+Z, Redo Ctrl+Y (Ctrl+Shift+Z). Up to 30 steps. Click a row in the “History” panel to jump to just after that step.
+- Not recorded: visible area, object visibility, blend shapes, view, display mode and other display changes, app settings.
+- Changing resolution or reloading the model clears all undo history.
+
+### Adjustment layers and filters [Standard]
+- Adjustment layers: “Adjust” button or Layer → “Adjustment layers”. Correct without rewriting layers below; values in Layer properties; limit with masks or clipping; mask can be made from a selection.
+- Filters: act on the selected layer's pixels (or “Apply to all visible texture sets”). Model updates live; OK (Enter) / Cancel (Esc). Blur/sharpen compute within each UV island.
+- Gradation map: dark → light mapped to the gradient's left → right. Up to 32 stops, 240 presets.
+- Convert luminance to opacity (all editions): white → transparent, darker → more opaque black. Not for base, masks, adjustment layers. Unlock lock/lock transparency first.
+- Create padding on a new layer (all editions): only the island edge colors spread outward, on a new layer.
+- Paint from UV edges (new layer) [Pro]: foreground-color line or gradient on a new layer by distance from UV island edges (shape, side: inside/outside/both, distance).
+
+### Auto fill (base colors from line art)
+- Layer → “Auto fill (fill regions from color hints)” → “Create hint layer” → roughly place colors on it → “Run”. A layer filled per line-enclosed area with the hint colors appears just below the line art.
+- Gaps in lines leak. “Fill across UV seams” continues even when front and back are separate islands.
+
+---
+
+## 7. 3D-specific features
+
+### UV view
+- Layouts: 3D only / side by side / UV only. U (or UV at the 3D view's right edge) = side by side; Shift+U toggles UV only ⇔ side by side.
+- Shows the selected set's UVs. Pen, Brush, Eraser, Polygon fill, Fill, Fill enclosed area, Gradient, Shape, Stamp, Eyedropper, Blur, Smudge work in UV.
+- Using UV, faces under the brush glow red in 3D; using 3D, a red dot marks the spot in UV.
+- Wheel zooms; middle-drag or Space+drag pans. UV guide at top right (magnifier, hand, square = frame all, ⟲ ⟳ rotate 15°). Shift+wheel rotates 5°. Ctrl+1/2/3 zoom presets (default 100%, 200%, 50%).
+- Header: “Lines”, “Island edges” (▼ color/opacity), “Grid” (▼ 2–128 divisions, snapping), “Paint across seams”, symmetry X/Y/Z, “Padding line”.
+- “Paint across seams” (default on): strokes past an island's seam continue onto faces connected in 3D. Off: current island only.
+- Paint area (UV lower left): “In UV” (inside islands), “In padding” (islands + padding band), “Everywhere” (whole texture). No effect on 3D painting.
+- Small 3D/UV window: when side by side, the button under ✕ at top right makes one a small window (⇄ swaps, ▣ back to side by side, lock pins it).
+
+### Padding (export bleed)
+- Spreads edge colors outside UV islands. Without it, downscaling or mipmaps can show lines at UV seams.
+- Values: none, 4, 8 (default), 16, 32, 64, 128 px, or fill all outside islands. Shared by the export dialog, material export dialog and UV lower left.
+- Applies to PNG, PSD composite and material images (PSD layers stay as painted).
+
+### Symmetry (paint symmetrically)
+- X (left/right) at the 3D top left, or M. Y (front/back) and Z (up/down) combine.
+- ▼ settings: mirror center “Model center”, “Origin”, “Custom” (value in cm or “Click on the model to set”; “Snap to vertex”), “Mirror partner search range” (0–3%, default 1%), “Show symmetry guides”, “Line strength”, “Show cursor on the mirrored side”, “Mirror painting on hidden parts” (default off).
+- “Model center” = where the shape is most symmetric.
+- When posed, the mirror spot is taken from the original pose.
+
+| Tool | 3D view | UV view |
+|---|---|---|
+| Pen, Brush, Brush collection, Decoration, Pattern, Bump, Eraser, Blur, Smudge | ○ | ○ |
+| Stamp | ○ | ○ (image mirrored on the mirrored side) |
+| Blend | ○ | ― (not available in UV) |
+| Fill, Fill enclosed area, Polygon fill, Shape | ○ | ○ |
+| Gradient | △ | △ |
+| Text, pasted images | ○ | ○ (mirrored when applied) |
+| Selection pen, Selection eraser, Select by face | ○ | ○ |
+| Selection (Rectangle, Ellipse, Lasso, Polyline, Auto select, Select by island) | × | × |
+| Transform, Move | ― | × |
+| Hide pen | × | × |
+
+- △ Gradient: no symmetry when “Also paint back and hidden faces” is on.
+- Unsupported tools cross out X/Y/Z at the 3D top left.
+
+### Texture sets
+- One set per material, each with its own layers and resolution (32–4096; Lite up to 2048).
+- Starting a 3D stroke on another set switches to it (turn off: “Switch on touch”, 3D bottom left). Manually: click a panel row, Alt+right-click the model, or right-click → “Select this set”.
+- Main and sub: the selected set (main, pink) and the previous one (sub, blue) can be painted in one stroke (“Paint across”, 3D bottom left). UV view shows main only. × right of the “Sub” label removes the sub.
+- Set row right-click / “…”: replace base image, import image as layer, import PSD (replace layers) [Standard], load lilToon material [Pro], show as pixels (no interpolation), “Reset pixel display to automatic (on for 256px or less)”, “Alpha cutout (hide transparency in 3D)” (display only), export UV map as PNG.
+- Images, PSDs and .mat files can be dropped onto rows.
+- Unselected sets free GPU memory (look unchanged; reselecting takes ~0.2 s at 2048, 0.5–1.5 s at 4096).
+- Changing resolution clears undo history (save first).
+- Orphan sets (! mark): sets whose material vanished after reloading the model. Click to move layers to another set; “Delete this set”.
+
+### Showing and hiding objects
+- “Objects” panel lists meshes in their original hierarchy. Eye button hides/shows (Alt+click = “Show only this”).
+- Hidden objects aren't painted; what's behind becomes visible and paintable. Exports unchanged. Alt+H shows all.
+- Display presets: “Save current state” at the panel bottom stores hidden objects (and shape key values in Pro) under a name (up to 10).
+
+### Visible area, Hide pen
+- Select islands/faces in UV or 3D, then Shift+H (show selected only), H (hide selected), Alt+H (show all).
+- Hide pen (toolbar): “Hide by face”, “Hide by island” hide what you trace.
+- Bar below 3D: “Hide pen”, faces/islands, “Hide presets” ▼, current state, “Show all”, “Dim surroundings” (5–80%).
+- Save: “Hide presets” ▼ → “Save current hide preset” (stored in the project).
+- Hiding/showing isn't in undo history. Hidden parts can't be painted directly (except via “Mirror painting on hidden parts”).
+
+### Mesh lines and seam lines
+- Icons at the 3D top left (Display → Lines & rulers). Seam lines: Alt+W. ▼: opacity, color (blue, black, white), show back/hidden lines.
+
+### Poses, blend shapes, vertex groups [Pro]
+- Pose mode: “Pose” at the 3D top center (no painting meanwhile). Select bones by joint point, mesh or the “Pose” panel; rotate with handles (numeric angles too). Back in “Paint”, paint in that shape. “Reset”, “Reset all”. Saved in the project.
+- Humanoid body bones orange, fingers green, secondary-motion bones small blue. “Humanoid only” hides secondary bones (name-based, may miss).
+- “Symmetric posing”, “Mirror L→R”, “Mirror R→L”.
+- Pose presets: “Save current state” at the bottom of the “Pose” panel (up to 10).
+- Blend shapes: sliders (0–100) in the “Blend shapes” panel; display and painting use that shape. “Copy values”, “Paste”, “Load .anim” (first frame of a Unity facial animation).
+- Vertex groups: check in the “Vertex groups” panel → “Make selection”, “Add”, “Subtract”, “Show only this area”. “By weight strength” smooths boundaries.
+
+### Final look and lilToon materials [Pro]
+- “Final look (lilToon/MToon, beta)”: shadows (shadow colors 1/2, border color), normal map, matcap, rim light, backlight, rim shade, emission, outlines, etc., computed as in lilToon (2.3 series). May differ slightly from Unity.
+- “Material” panel: names follow lilToon's settings screen. “Display and lighting” (light direction, “Light follows camera”, switch to MToon), “Copy to other materials”.
+- Paint targets: “Paint:” buttons (or right-click → paint target). A target folder (e.g. “Shadow color 1”) appears in the Layer panel; paint inside with usual tools. “Back to color” at top center returns to normal painting.
+
+| Paint target | Effect |
+|---|---|
+| Shadow color 1, Shadow color 2 | Shadows in painted areas take that color |
+| Shadow mask | White = shadow, black = none |
+| Shadow AO | Darker = shadows appear more easily |
+| Normal map | Paint height (white raises, black carves) |
+| MatCap mask, Outline width | White = on, black = off |
+| Rim light color, Emission texture | Multiplies by painted color / painted areas glow |
+
+- Others (right-click → paint target → “Other masks”): shadow color 3, shadow blur mask, color adjustment mask, alpha mask, emission mask, emission 2nd, backlight color, rim shade mask, outline color, normal map 2nd mask, glitter color, smoothness, metallic, reflection color, etc.
+- Up to 16 textures at once per material.
+- Main color 2nd/3rd: “On” in the “Material” panel creates a same-named folder; only its layers form that texture (exported separately, e.g. <name>_main2nd.png).
+- Separate materials: object row or 3D right-click → “Give only this object a separate material”; change shadow colors etc. with the same texture.
+- Normal map images made elsewhere can be added as layers. For DirectX-style images, turn on “DirectX orientation (green flipped)” in Layer properties.
+- “Add texture from a pattern”: lays knit, denim, canvas, herringbone, etc. bumps into the normal map folder.
+- Bump tools draw in the “Normal map” folder; afterwards, “◀ Back to previous layer”. If faint, raise normal map strength in the “Material” panel.
+
+### Bake [Pro]
+- Easy Bake: Filters → “Easy Bake” → pick a “Finish” → “Preview” → “Overall strength”, “Light horizontal angle”, “Light elevation”, “Highlight amount” (fabric finishes: “Surface detail”) → “Bake into a layer folder”. One folder gets a layer per effect plus a transparent “Paint details” layer.
+- 12 finishes: Skin (Fair and rosy / Warm blush / Soft illustration / Deeper shading), Clothing (Soft fabric / Satin style / Denim style / Leather style / Soft color variation), Props (Hard surface), General (Warm light / Blue rim light).
+- Blush spots: in skin finishes, “Add a location” → pick in 3D (up to 16). “Blush strength”, “Blush spread”, “Add blush symmetrically”. Cheeks are not found automatically.
+- “Open Easy Bake after creation” can also be checked in New.
+- Individual bakes (Filters → Bake): soft shading, gradients by orientation/height/point (face direction, height, distance from a point), enhance cavities and bulges (incl. line art presets), rim light, gloss highlights, weave and color variation, toon shade (1st, 2nd), angel ring, cast shadows (per set “Receive shadows”, “Cast shadows”), thin-surface tint. “Bake to a new layer” applies.
+- Bakes write texture colors; moving the view or light later doesn't move them. Results are normal layers (opacity, masks, eraser; Ctrl+Z undoes).
+- Bake AO: Filters → Bake → “Bake AO (areas darkened by surroundings)” → sets to bake, shadow-casting sets, “Objects”, quality, shadow distance (near 3cm, normal 8cm, wide 20cm, custom) → “Bake”. Adds a Multiply layer AO at the top of each set. Uses the current pose and blend shapes.
+- AO settings: “Ignore other shadows” (if the body under clothes turns black), “Scale to the model's height”, strength, contrast. Can also write to lilToon's “Shadow AO” or PNG (<set name>_AO.png).
+
+### 2D canvas, 2D painting
+- Stamp 2D canvas: “Draw in 2D canvas” in Stamp tool properties. Draw a square (256–4096; Lite up to 2048) in the UV view, then “Register as stamp”; “Return to model editing” goes back. Saved in the project, excluded from model texture exports.
+- 2D painting: “Start a 2D painting” on the startup screen; square canvas without a model. Saves as .petanuri; “Export PNG” below the canvas.
+
+---
+
+## 8. Import and export
+
+### New (open a 3D model)
+- File → “New (choose a 3D model)” (Ctrl+N). Dropping a 3D model on the window doesn't open it.
+- Per set, choose resolution and “Start with”: “Color” (white default; also “Model color”), “Image”, PSD [Standard], “lilToon material” [Pro]. Sets may differ.
+- If the model's images are nearby (same folder or a Texture folder) or embedded, those sets start with “Image” automatically.
+- “Bulk” at the top sets resolutions together or picks multiple images. Files named like a set (body.psd → body) go into it.
+- glTF/glb/VRM UVs are flipped vertically on open to match FBX (exported PNGs keep the original images' orientation).
+- UVs outside 0–1 are mapped to equivalent positions of a repeating texture (model file untouched). Unpaintable areas are reported at the lower right.
+- FBX without materials opens with one set per object.
+
+### Saving and autosave
+- Project (.petanuri): File → “Save project file” (Ctrl+S); model, all layers and settings. Open with Ctrl+O or by dropping it on the window.
+- * in the title = unsaved changes.
+- Autosave every 5 minutes; File → “Open from autosave” (latest 3 per project). Autosaves use the fast format (unreadable in v1.1.2 and earlier).
+- Preferences → “Painting” → “Save project files in the fast format” applies it to manual saves (opens in v1.2.0 or later).
+- Partly unreadable projects get “(incomplete)” in the name; saving then uses “Save as”.
+
+### Reload model
+- File → “Reload model (keep painting)” → “Reload the same file” or “Choose file”.
+- Sets match by material name; same-named sets keep layers and settings. Artwork stays at its UV positions even if UVs change (shifts where UVs moved a lot).
+- New materials get the resolution/start screen. For sets whose texture changed: “Replace the base with the new texture?”
+- Reloading clears undo history.
+
+### Importing images, PSDs, materials
+- Import image as layer (File → Import, drop, Ctrl+V): a placement frame → Enter = new layer. “Fill whole texture” stretches over the whole UV.
+- Paste image onto 3D (Edit): fit the frame in 3D, Enter projects onto visible faces. “Full strength on angled faces”.
+- PSD [Standard]: dropped on the window, goes into the material with the same file name. Import an avatar's customization PSD to continue painting.
+- lilToon material [Pro]: .mat or .unitypackage. Imports settings and textures (main color → base, shadow colors/masks → paint targets). Missing textures are listed to select. Unpreviewed settings (fur, stencil, etc.) keep their values.
+
+### Export
+
+| Export | Menu | File name / content |
+|---|---|---|
+| PNG | File → Export → “Export PNG (selected set)” / “Export PNG (all sets)” | <material name>.png; visible layers composited (strokes, bakes included) |
+| Selected layers PNG | “Export as PNG (selected layers)”, layer right-click | Transparent background. 2+ layers: “One by one” (<material name>_<layer name>.png) or “Combine into one image” (<material name>_layers.png) |
+| UV map | “Export UV map as PNG (selected set)” | <material name>_uv.png. Resolution, line color (white, black, foreground), background (transparent, black, white), line width, “Draw island edges twice as thick” |
+| PSD [Standard] | “Export PSD (selected set)” / “Export PSD (all sets)” | Keeps layers, visibility, opacity, blend modes, clipping, lock transparency, folders, masks, adjustment layers. Strokes baked into layers; text layers become normal layers |
+| Materials [Pro] | “Export materials (.unitypackage / folder)” | lilToon .mat and images (already assigned). One .mat per material |
+| AO [Pro] | Filters → Bake → “Export AO as PNG (last bake result)” | <set name>_AO.png |
+
+- Export dialog: padding, destination, “Resolution” (scale to 512–8192; PNG, selected layers, materials).
+- “Select folder” + “Export to this folder without asking each time” skips the prompt (same names overwritten); “Remove” undoes it. “Open the folder after exporting” is on by default.
+- Sets with Main color 2nd/3rd folders export separate PNGs.
+- PSD: paint-target, normal-map and Main color 2nd/3rd folders are written as hidden groups (restored on import). Adjustment layers stay adjustment layers (gradation maps keep stops) but may look slightly different in other apps. Of those added in v1.2.0, Curves, Color Balance, Vibrance, Exposure round-trip through PSD as adjustment layers.
+- Re-exporting materials under the same folder name overwrites the previous import. The receiving project needs lilToon (otherwise pink).
+
+### Paint from Unity (all editions)
+- Unity 2022.3; only Unity on the same PC.
+- Add-on: drag PetaNuri3D-Unity.unitypackage from the unity folder in the PetaNuri3D folder into Unity's Project window → Import. Done when “ぺたぬり3D” (PetaNuri3D) appears in the menu bar (editor only; not in uploaded avatars).
+- Project: Assets/PetaNuri/(name)/(name).petanuri; textures: Assets/PetaNuri/(name)/Textures/; material copies: Materials/ there. Original FBX, materials, textures and prefabs aren't modified (starting from a Project prefab creates a Prefab Variant).
+- Details and connection trouble: Unity連携の使い方.txt (Unity integration guide) in the unity folder.
+
+### AI integration (MCP)
+- An AI (MCP client) can operate PetaNuri3D (drawing, colors and brushes, view, layers, screenshots, PNG export, etc.). Off by default.
+- Turn on File → “Preferences” → “AI integration” → “Use AI integration (MCP)”. Register as a stdio server in the MCP client: command node, argument <PetaNuri3D folder>/mcp/server.mjs (node 20 or later). Example: “How to connect” → “Copy” there.
+- Connects only within this PC (127.0.0.1, ports 47321–47330).
+- run_js [Pro] works only with “Allow run_js (run arbitrary code)” on. Use only with trusted AI clients.
+
+---
+
+## 9. Preferences
+
+File → “Preferences” (Ctrl+Alt+Shift+K). Categories on the left. Descriptions: hover a name or the round ?.
+
+| Category | Section | Items (defaults) |
+|---|---|---|
+| Interface | Display | “Theme color”: Light (default) / Dark. “Color scheme”: window background, panels, buttons, text, main, secondary, 3D background, toolbar (separate for light/dark; “Reset colors to defaults”). “3D navigator size”: 100% |
+| Interface | Language | Japanese (default), English, Korean, Chinese (Simplified) |
+| Pen & input | Stroke feel | “How tapering is made”: “Taper by pressure only” (default) / “Taper by length”. “Taper-out method”: “Thin afterwards” (default) / “Delayed output” (taper by length only) |
+| Pen & input | Pen pressure | “Response” (soft–firm, default normal), “Min” 0%, “Max” 100%, “Calibrate with test strokes”, “Reset to defaults”, “Current pressure” |
+| Pen & input | Tablet | “Read pen pressure directly (WinTab)”: off, “Check WinTab status”, “Copy” |
+| Pen & input | Reduce lag | “Show pen strokes early (reduce lag)”: off, “Predicted preview line”: on, “Let Windows draw the pen tip line first”: off |
+| Pen & input | Menus and buttons | “Pressing and releasing with the pen also confirms”: on, “Long press on buttons”: “Release to confirm” (default) / “Long press opens the right-click menu” |
+| Controls | Camera | “Space+drag”: rotate (default) / “Pan”. “Camera control template”: “Right-button style” (default) / “Middle-button style” / “Alt + mouse buttons” / “Unity style”. “Orthographic for axis views”: on, “Key zoom centers on cursor”: off, “Orbit around the last painted spot”: off |
+| Controls | Mouse | “Right-click”: menu (default) / “Popup palette” |
+| Controls | Keyboard | “Hold a tool key to switch temporarily”: on, “Hold time”: 0.50 s (0.15–2 s), “Zoom presets (UV / 2D)”: 1 = 100%, 2 = 200%, 3 = 50% |
+| Key binding | — | Per category, click + then press a key; × removes. “Reset to defaults”, “Reset key bindings”, “Export key bindings” / “Import key bindings” (JSON) |
+| Painting | Brush | “Brush size unit”: screen px (default) / texture px |
+| Painting | Performance | “Rest layers you aren't drawing on”: on, “Save project files in the fast format (opens in v1.2.0 or later)”: off |
+| System | Startup | “Show the tutorial on next startup”, “Check for updates at startup”: on |
+| AI integration | AI integration (MCP) | “Use AI integration (MCP)”: off, “How to connect”, “Allow run_js (run arbitrary code)” [Pro]: off |
+
+- Camera templates: Right-button style = right-drag rotates, middle-drag pans. Middle-button style = middle-drag rotates, Shift+middle pans, Ctrl+middle zooms. Alt + mouse buttons = in 3D, Alt+left rotates, Alt+middle pans, Alt+right zooms (3D eyedropper = I; Alt+Shift+left-drag rotates in 90° steps; Shift+right-drag turns the light). Unity style = right-drag rotates, middle-drag pans, Alt+left/middle/right also work. Space controls and the wheel work in all.
+- Not in Preferences: painting across two sets (3D bottom left), continuing past UV islands (UV header), export padding and destination (export dialog), mirror partner search range (symmetry ▼).
+
+---
+
+## 10. Shortcuts (default bindings)
+
+### Pen and mouse
+
+| Input | Action |
+|---|---|
+| Pen tip / left button | Draw |
+| Right-drag (pen side button) | Rotate |
+| Middle-drag | Pan (rotate with Middle-button style) |
+| Wheel | Zoom (Shift+wheel rotates the view 5° steps) |
+| Space+drag / Shift+Space+drag / Ctrl+Space+drag | Rotate / pan / zoom |
+| Release right button without moving | Mouse: right-click menu; pen side button: popup palette |
+| Shift+click | Straight line from the previous stroke's end |
+| Ctrl+Alt+horizontal drag | Brush size |
+| Ctrl+right-drag / Ctrl+left-drag | Size and hardness / opacity and tip angle |
+| Hold Alt | Eyedropper |
+| Pen eraser end | Eraser |
+| Alt+right-click on the model | Select the texture set there |
+| Draw holding a tool key | That tool meanwhile |
+
+- Middle click, right-click and back/forward assigned to pen buttons work over 3D and UV with both Windows Ink and WinTab (hold the middle-click button and move the pen to rotate).
+
+### Keys
+
+| Key | Action |
+|---|---|
+| P, B, E, J, G, I, V, S, T | Pen, Brush, Eraser, Blend, Fill, Eyedropper, Move/transform, Selection, Text |
+| [ ] | Brush size (1–1000) |
+| X / D / C | Swap foreground/background / reset to black and white / toggle draw with transparency |
+| M | Paint symmetrically (X, left/right) |
+| U / Shift+U | Show UV / UV only ⇔ side by side |
+| Tab | Hide palettes |
+| Shift+I | Pick color from screen |
+| Shift+H / H / Alt+H | Show selected only / hide selected / show all |
+| Alt+W | Seam lines |
+| Ctrl+1, 2, 3 | Zoom presets (UV / 2D) |
+| Ctrl+N / Ctrl+O / Ctrl+S / Ctrl+Shift+S | New / open / save / save as |
+| Ctrl+Z / Ctrl+Y (Ctrl+Shift+Z) | Undo / redo |
+| Ctrl+C, X, V, T | Copy, cut, paste, transform |
+| Alt+Backspace / Ctrl+Backspace | Fill with foreground / background color |
+| Ctrl+Shift+N / Ctrl+G / Ctrl+J / Ctrl+E | New layer / new folder / duplicate / merge with layer below |
+| Ctrl+Shift+G | Put selected layers in a folder |
+| Alt+] / Alt+[ | Select layer above / below |
+| Ctrl+Alt+G | Toggle clipping |
+| Delete | Clear (inside the selection if any) |
+| Ctrl+A / Ctrl+D / Ctrl+Shift+I | Select all / deselect / invert |
+| Ctrl+Shift+D | Restore selection |
+| Ctrl+H | Show selection outline |
+| Ctrl+Alt+R | Snap to ruler |
+| F1 | Shortcut list |
+| Ctrl+Alt+Shift+K | Preferences |
+
+### Views (numpad)
+
+| Key | Action |
+|---|---|
+| 1 / 3 / 7 | Front / right / top (Ctrl: opposite side) |
+| 2, 4, 6, 8 | Rotate 15° steps (Ctrl: pan) |
+| 5 | Perspective / orthographic |
+| 9 | Opposite side |
+| + / - | Zoom |
+| . / F / Home | Frame all |
+
+- Unbound actions (delete layer, toggle lock, rotate view left, etc.) can get keys in Preferences → “Key binding”, or via right-click on a toolbar button, sub tool tile or panel header → “Assign key”.
+- For one key on several sub tools, “Share (cycle on each press)” moves to the next sub tool on each press.
+- The F1 list can stay open while working and be filtered with “Search”.
+- Shortcuts don't work while typing text.
+
+---
+
+## 11. Tasks → steps
+
+### 11-1. Open an FBX (or other model) and start painting
+1. File → “New (choose a 3D model)” (Ctrl+N); choose FBX, glTF, GLB, VRM, OBJ or DAE.
+2. Per texture set, choose resolution and “Start with” (original textures nearby → “Image” automatically; to start from white, “Color”).
+3. Click “New”.
+4. Toolbar Pen (P), sub tool such as “G-pen”; pick a color in the Color panel.
+5. Trace on the model in 3D (it switches to the set you start on).
+6. Rotate: right-drag (pen side button) or Space+drag; zoom: wheel.
+7. Save: File → “Save project file” (Ctrl+S) as .petanuri.
+- To try: “Try the sample” on the startup screen opens a sample model (Lite too). Guided tour: Help → “Tutorial (guided tour)”.
+
+### 11-2. Paint on separate layers; clip shadows
+1. “Add” in the Layer panel (Ctrl+Shift+N) makes a new layer.
+2. For shadows, make it just above the base-color layer and turn on clipping (Ctrl+Alt+G) (stays inside the painted area below).
+3. Paint the shadow color. Blend mode (Layer panel top; 26 modes, e.g. Multiply, Screen, Overlay) changes how it combines. Highlights likewise on another layer.
+4. Keep color layers below the line art for clean lines.
+- Lite: up to 4 layers per set, incl. base.
+
+### 11-3. Different shadow color per base color
+1. Pick the base color with the eyedropper (Alt) as foreground color.
+2. Selection → “Select all similar colors (foreground color)” selects all such areas (tolerance sets the range).
+3. On the shadow layer, paint a matching shadow color (inside the selection only). Ctrl+D deselects.
+
+### 11-4. Paint shadow colors as lilToon shadow colors [Pro]
+1. Display mode → “Final look (lilToon/MToon, beta)”.
+2. “Material” panel → “Paint:” → “Shadow color 1” (etc.) (or 3D right-click → paint target).
+3. Paint with usual tools on layers in the “Shadow color 1” folder in the Layer panel (shadows there take that color).
+4. “Back to color” at the 3D top center returns to color painting.
+5. Finally File → Export → “Export materials (.unitypackage / folder)”.
+
+### 11-5. Paint symmetrically
+1. Click X (left/right) at the 3D top left (M).
+2. Drawing also paints the other side (pens, brushes, stamps, fills, shapes, etc.; see the chapter 7 table).
+3. If off, pick the center in ▼: “Model center”, “Origin”, “Custom”. For slightly asymmetric clothes, raise “Mirror partner search range” (0–3%).
+4. To copy one-sided painting later: Layer → “Mirror copy left/right” → “Left side → Right side” or “Right side → Left side”.
+5. Transforming (Ctrl+T) a one-sided selection: “Mirror too” in the bar moves the other side too.
+
+### 11-6. Paint only a UV island or part
+- Whole island one color: Fill (G) → “Fill island”, click. Whole material: “Whole material”.
+- Area enclosed by lines: Fill → “Fill enclosed area” (“Close gaps” stops at line gaps; “Expand” goes under lines).
+- Only inside a part: Selection (S) → “Select by island” first (only the inside is affected). For band patterns on clothes, intersect the island selection with the band shape (“Intersect”, Shift+Alt) before painting.
+- All around the body: turn on “Also select back and hidden faces” in Selection tool properties and enclose.
+
+### 11-7. Paint hidden areas (body under clothes, inside hair)
+1. Hide objects: eye button of the obstacle (clothes, hair) in the “Objects” panel (or 3D right-click → “Hide this object”).
+2. Hide faces/islands: toolbar “Hide pen” → “Hide by face” or “Hide by island”; trace what's in front.
+3. To see the surroundings, “Dim surroundings” in the bar below 3D.
+4. Afterwards Alt+H (show all). Save frequent ones: “Hide presets” ▼ → “Save current hide preset”.
+- “Also paint back and hidden faces” (default on for pens, brushes, etc.) reaches some areas without hiding.
+
+### 11-8. Paint across two texture sets (e.g. neck seam)
+1. Touch the face set and the body set once each (the selected becomes main, the previous sub).
+2. With “Paint across” (3D bottom left) on, one stroke paints both (one undo reverts both).
+
+### 11-9. Export textures as PNG
+1. File → Export → “Export PNG (selected set)” or “Export PNG (all sets)”.
+2. In the dialog choose padding (default 8px), destination, “Resolution” if needed → “Export”.
+3. <material name>.png is created; use it instead of the original texture (swapping it in Unity etc. is outside this document).
+- Lines at seams: increase padding (16, 32 px, etc.).
+
+### 11-10. Launch from Unity and paint (saving updates Unity)
+1. First time: drag PetaNuri3D-Unity.unitypackage from the unity folder in the PetaNuri3D folder into Unity's Project window → Import.
+2. Select an avatar in Hierarchy or a prefab in Project, menu bar “ぺたぬり3D” → “ぺたぬり3D で塗る” (PetaNuri3D → Paint with PetaNuri3D) (also in right-click). First time only, select PetaNuri3D-win_x64.exe.
+3. PetaNuri3D opens with the model (original textures as base, original resolution).
+4. Save in PetaNuri3D or Unity (Ctrl+S); the painting appears in Unity (Unity's view doesn't change while painting).
+5. Closing PetaNuri3D ends the link; Unity asks “Keep using this” / “Restore original appearance”. “ぺたぬり3D で塗る” (Paint with PetaNuri3D) again continues later.
+- If the exe moved (e.g. switched to the setup version), select it again in Unity.
+
+### 11-11. Exchange via PSD [Standard]
+- Export: File → Export → “Export PSD (selected set)” or “Export PSD (all sets)”. Keeps layers, folders, masks, blend modes, clipping, adjustment layers; continue in your painting software.
+- Import: drop a PSD on the window (goes to the material with the same file name), File → Import → “Import PSD (replace layers)”, or the set row's right-click. That set's layers are replaced by the PSD's (undoable).
+- Start from PSD: set the set's start to PSD in New.
+- An avatar's customization PSD can be imported to continue painting.
+
+### 11-12. Prevent lines at seams
+1. Increase export padding (none, 4, 8, 16, 32, 64, 128 px, fill all outside islands).
+2. To paint outside islands while painting in 3D, turn on “Paint into padding outside islands in 3D too” in Pen/Brush/Eraser tool properties.
+3. In the UV view, set the lower-left paint area to “In padding”.
+4. For a layer of the finished painting's edges spread outward: Filters → “Create padding on a new layer”.
+
+### 11-13. Add patterns (stripes, checks) to clothes
+- Chosen areas: toolbar “Pattern”, pick a pattern; paints only the pattern in foreground color (“Pattern size”, “Pattern strength”, “Pattern angle”).
+- Whole layer: Layer properties → “Repeating pattern” → “Choose a pattern to fill…” → image, reference image or pattern (can fit UV seams). “Recolor with foreground color” changes its color.
+- As bumps [Pro]: “Add texture from a pattern” in the normal map section of the “Material” panel.
+
+### 11-14. Apply logos, images, decals
+- Same image repeatedly: “Import image” in Stamp tool properties, click on 3D (hover previews). “Paint with foreground color” uses just the shape.
+- One positioned image: Edit → “Paste image onto 3D” → fit the frame in 3D, Enter (projects onto visible faces). For an image made to the UV layout, “Fill whole texture” in the bar under the frame after importing.
+- Draw your own stamp: “Draw in 2D canvas” in Stamp tool properties → draw → “Register as stamp”.
+
+### 11-15. Add text
+1. Text tool (T): click 3D (or UV), type in the frame (IME input such as Japanese works).
+2. In the text dialog set font, size, color (foreground), stroke (background color), vertical, etc. Select characters first to change only them.
+3. Ctrl+Enter applies (Enter = line break). First Esc stops typing; second cancels.
+4. Edit later: double-click the text layer (T mark) → “Retype text”.
+
+### 11-16. Move, resize, bend artwork
+1. Move/transform (V): click the artwork (its layer is selected and framed), or Transform (Ctrl+T).
+2. Drag inside to move, corners to scale, top circle to rotate; 3D or UV frame.
+3. To reshape: “Free transform” (4 corners) or “Warp” (grid points) in the bar under the frame.
+4. Enter applies; Esc cancels.
+
+### 11-17. Add a gradient
+1. Select the layer; toolbar “Gradient”.
+2. Pick a sub tool (Foreground → background, Foreground → transparent, etc.) or, under “Color” in Tool properties, “Color and opacity stops” for presets/stops.
+3. Drag start → end in 3D (linear or radial). With “Also paint back and hidden faces” on, it reaches back faces too, e.g. hair roots to tips.
+- From a point in 3D space: “Paint from a 3D point”. Baking by height or facing: [Pro] Filters → Bake → “Bake gradients by orientation, height or point”.
+
+### 11-18. Base colors from line art (Auto fill)
+1. Prepare a line-art layer (lines closed on visible faces).
+2. Layer → “Auto fill (fill regions from color hints)” → “Create hint layer”.
+3. Roughly place each color in its area on the hint layer.
+4. “Run”: a layer filled per enclosed area appears just below the line art.
+
+### 11-19. Bake AO and recolor its shadows [Pro]
+1. Filters → Bake → “Bake AO (areas darkened by surroundings)” → sets, quality, shadow distance → “Bake”. A Multiply layer AO is created.
+2. To recolor, select the AO layer → Filters → “Convert luminance to opacity” (white transparent, dark black).
+3. Turn on lock transparency and paint any shadow color.
+- Too strong: rebake with strength 0.6–0.8. Black under clothes: “Ignore other shadows”.
+
+### 11-20. Base shading with Easy Bake [Pro]
+1. Select the texture set.
+2. Filters → “Easy Bake” → pick skin, outfit, accessory, etc. in “Finish”.
+3. Watching “Preview”, adjust “Overall strength”, “Light horizontal angle”, “Light elevation”, “Highlight amount” (skin: blush spots via “Add a location”).
+4. “Bake into a layer folder”. Add painting on its “Paint details” layer; weaken effect layers with opacity.
+
+### 11-21. Pose to paint underarms etc. [Pro]
+1. “Pose” at the 3D top center.
+2. Click an arm joint point (orange), rotate with handles to lower the arm (numbers in the “Pose” panel too).
+3. Back in “Paint”, paint in that shape.
+4. Afterwards “Reset all”. Save frequent poses with “Save current state”.
+- To paint with an expression, move sliders in the “Blend shapes” panel.
+
+### 11-22. After editing the model (FBX), update the shape and keep the painting
+1. File → “Reload model (keep painting)” → “Reload the same file” or “Choose file”.
+2. For new materials, choose resolution and start → “Reload”.
+3. Sets of removed materials remain with !; click to move their layers to another set.
+- Artwork shifts where UVs changed a lot. Reloading clears undo history.
+
+### 11-23. Calibrate pen pressure / when it doesn't work
+1. File → “Preferences” → “Pen & input” → “Pen pressure” → “Calibrate with test strokes” → draw 3+ lines with normal force → “Calibrate”.
+2. If no pressure, press the pad there with the pen and check “Route”. If “None (arriving as a mouse)”, turn on Windows Ink in the pen tablet settings, or turn on “Read pen pressure directly (WinTab)” under “Tablet”.
+3. Still wrong: “Check WinTab status” → move the pen over the window → “Copy”, and send it via Contact with your tablet model and driver version.
+
+### 11-24. Pen-only operation
+- Rotate: drag with the side button. Colors, brush size, favorite sub tools: press the side button and release without moving (popup palette).
+- Zoom/pan: 3D navigator (bottom right) or the UV guide's magnifier and hand.
+- Add to the favorite-tool strips (above 3D/UV) with +.
+
+### 11-25. Familiar camera controls
+1. File → “Preferences” → “Controls” → “Camera control template”: “Right-button style”, “Middle-button style”, “Alt + mouse buttons” or “Unity style”.
+2. For Space+drag panning, set “Space+drag” there to “Pan”.
+3. For close-up detail, turn on “Orbit around the last painted spot”.
+
+### 11-26. Rebind keys / move them to another PC
+1. File → “Preferences” → “Key binding”: click an item's +, press a key (× removes).
+2. Or right-click a tool button or sub tool → “Assign key”.
+3. “Export key bindings” to JSON; “Import key bindings” on the other PC.
+
+### 11-27. Pixel-art style
+1. In New, set the resolution to 32/64/128/256 (to change later, save first; undo history is cleared).
+2. Paint with Pen → “Pixel pen” (size 1 = 1 texel).
+3. Sets of 256px or less start with “Show as pixels” (display only; exports unchanged).
+
+### 11-28. Standard → Pro
+1. Buy “Upgrade to Pro” on BOOTH; get the upgrade file (PetaNuri3D-Pro.petapack).
+2. Help → “Upgrade to Pro” → “Choose file” (or drop it on the window, or put it in the exe's folder).
+3. Restart PetaNuri3D; it becomes Pro (projects and settings unchanged).
+- Standard only. The file works only with the same PetaNuri3D version.
+
+### 11-29. Update to a new version
+1. Save and close the app.
+2. Download the new version from your BOOTH purchase history (Lite: product page); run the new setup (installs over it; settings, projects, brushes, upgrade kept) or extract the new zip.
+3. If Standard was upgraded to Pro, also reinstall the upgrade file of the same version.
+- From v1.2.0, downloading the setup from the update notice lets you install with “Install and restart” (from the update after v1.2.0).
+
+### 11-30. Contact support
+1. Help → “Contact (support, feature requests, bug reports)”; choose a type (support (how-to questions), feature requests, bug reports).
+2. A text with the needed info (edition, version, screen size, etc.) is made (no file locations). Fill the blanks, “Copy”.
+3. Open the BOOTH shop or Discord, paste and send.
+
+---
+
+## 12. FAQ and troubleshooting
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| “Windows protected your PC” at launch | Can appear on first launch | “More info” → “Run anyway” |
+| Dropping a 3D model doesn't open it | Models can't be opened by drop | File → “New (choose a 3D model)” or “Reload model” (.petanuri can be dropped) |
+| Can't add layers / lock on “Add” | Lite: 4 per set incl. base | Merge layers, or Standard/Pro |
+| Can't choose 4096 | Lite: up to 2048 | Standard/Pro |
+| Dimmed menu with lock | Not in this edition (Lite) | Click to see which edition |
+| Can't paint (no-entry cursor) | Locked, lock transparency, hidden, outside selection, other set during a selection, etc. | Read the reason; unlock / Ctrl+D / Alt+H |
+| Transparent color doesn't erase | Lock transparency on | Turn it off |
+| Color also lands on the back | “Also paint back and hidden faces” on (default) reached through a thick part | Smaller brush or turn it off |
+| Symmetry doesn't work | Unsupported tool (selections, Hide pen, Blend in UV, etc.) | See chapter 7 table; crossed-out X/Y/Z = unsupported tool |
+| Mirror side misaligned | Center off / sides differ | Re-pick the center in symmetry ▼; raise “Mirror partner search range” |
+| Can't paint outside islands in UV | Paint area “In UV” | Set it to “In padding” or “Everywhere” (lower left) |
+| Blend not usable in UV | 3D-only tool | Use in 3D (Blur/Smudge work in UV) |
+| Seam lines in exported PNG | Too little padding | Increase padding (11-12) |
+| Older projects show the UV view upside down (glTF, glb, VRM) | v1.2.0 fixed UV orientation | 3D unchanged; exported PNGs match the original model; saving again updates it |
+| Tapering feels different | v1.2.0 default “Taper by pressure only” | Preferences → “Pen & input” → “Stroke feel” → “Taper by length” |
+| v1.1.2 or older can't open autosaves | v1.2.0 autosaves use the fast format | Open in v1.2.0 or later |
+| Won't close with × / frozen | — | Press × again to quit (unsaved changes lost) |
+| Saving/autosave stopped after sleep | Internal file access stalled | Quit, reopen, File → “Open from autosave” |
+| Crashed | — | File → “Open from autosave” (every 5 min, latest 3) |
+| “(incomplete)” in project name | Partly unreadable | Saving uses “Save as” to protect the original |
+| Upgraded but not Pro | Not restarted / version mismatch | Restart; install the upgrade file of the same version |
+| Back to Standard after updating | Upgrade file fits only its version | Install the new version's upgrade file |
+| Exported material pink in Unity | No lilToon in the project | Install lilToon in the receiving project |
+| “ぺたぬり3D で塗る” (Paint with PetaNuri3D) in Unity doesn't launch | exe moved (zip → setup, etc.) | Select the exe again in Unity; see Unity連携の使い方.txt |
+| Final look differs slightly from Unity | Final look is beta | Check in Unity |
+| Bumps hard to see [Pro] | — | Use “Final look”; raise normal map strength in the “Material” panel |
+| AO turns the body under clothes black [Pro] | Covered, no light | Turn on “Ignore other shadows”, rebake |
+| Small textures look blurry | Interpolated display | Set right-click → “Show as pixels (no interpolation)” |
+| Checkerboard in transparent areas in 3D | Transparent-area display | Turn off Display → Shading → “Show transparent areas as a checkerboard” (gray) |
+| Panel layout messed up | — | Display → Windows → “Reset window layout” |
+| Don't want panels to move | — | Display → Windows → “Lock panel layout” |
+| Long press opens the right-click menu | Non-buttons such as layer rows do that on long press | For buttons: Preferences → “Pen & input” → “Long press on buttons” |
+| Keys don't work while typing | Shortcuts paused during text input | Apply first (Ctrl+Enter) |
+| Can't undo | 30 steps; display/settings not recorded; cleared by resolution change or model reload | — |
+| AI integration (MCP) won't connect | Off by default | Preferences → “AI integration” → turn on “Use AI integration (MCP)”; node 20+ |
+| Want to use a Mac | Windows only | — |
+| Models from other shops? | Paintable if they have UVs | Check each model's terms |
+| May I sell textures I make? | Allowed by the tool's terms | Personal, commercial, sale, distribution, commissions; no credit needed. Follow the original models'/materials' terms separately |
+| May I give the app or Pro file to others? | No | No redistribution, sharing or lending (terms of use) |
+| How do I learn of new versions? | Checked at startup (max once a day); notice at bottom right | Help → “Check for updates” anytime; only the version number is checked |
+
+---
+
+## 13. Not available / not planned (v1.2.0)
+
+Same categories as the official 'Feature requests and status' page https://hyper-tuyotuyo.com/petanuri/en/requests. Items 'under consideration' carry no promise of whether or when. The AI should say 'not in the current version' and not promise plans.
+
+### Not planned
+- Versions other than Windows (Mac, iPad, etc.): no plans for now (Windows only).
+- Editing a filter's settings after applying it (e.g. Gaussian blur as an adjustment layer): hard with the current architecture. Some (Curves, Color Balance, etc.) are adjustable later as adjustment layers.
+- Switching tools only while Ctrl or Shift is held: conflicts with existing controls (Ctrl+drag, Shift+click lines). Drawing while holding a tool key switches only while held.
+- Importing another app's layer structure as is: not aiming to replace other software. Images (PNG, PSD) can be imported.
+- Showing other shaders' materials converted to lilToon: settings differ per shader, so looks can't be matched. Final look supports only lilToon and MToon (beta).
+- Moving artwork to new UVs after redoing the UVs: positions can't be mapped cleanly when UVs change (reloading the model keeps artwork at its UV positions).
+- Creating or playing GIF animations: not an animation app.
+- Vector lines (points/curves editable after drawing) and vector masks: decided not to add.
+
+### Current limitations
+- 3D models can't be opened by dropping (use New).
+- Material export is lilToon only. Full MToon material round-trip export isn't possible.
+- Other painting apps' brushes: only tip images are imported (settings and mixing not reproduced).
+- Imported fonts (.ttf, .otf) last for that session only.
+- Undo is 30 steps.
+- No setting stops a long pen press from opening the right-click menu (only button behavior: Preferences → “Pen & input” → “Long press on buttons”).
+
+### Under consideration (not in this version; no promised timing or support)
+- Fill layers (color easily changed later)
+- Semi-transparent reference image as a sketch guide
+- Showing transparent meshes (blush, bang shadows, etc.) with multiply
+- Fur fluffiness preview
+- Previewing shaders other than lilToon
+- Normal maps and other textures per UV island (partly possible with Pro's “Add texture from a pattern” plus selections)
+- Panels and 3D/UV views in separate windows outside the app window (currently small windows inside it)
+- Toolbar anywhere along screen edges
+- Two-finger view control on touchpads/touch screens
+- A 3D navigator button to lock the view orientation
+- Panning with a pen button while hovering
+- Loading FBX directly from .unitypackage
+- Previewing GIF artwork animated like lilToon Main color 2nd/3rd
+
+---
+
+## 14. Contact and links
+
+- In the app: Help → “Contact (support, feature requests, bug reports)” (11-30).
+- BOOTH shop HYPERtuyotuyo (はいぱーつよつよ) https://hyper-tuyotuyo.booth.pm/ : “Contact the shop” at the page bottom (BOOTH login required).
+- Discord server 空飛ぶはいぱーつよつよ教 (HYPERtuyotuyo's community server; Japanese name) https://discord.gg/XZtswheNxA : its contact channel.
+- News: X (@Yak_HyperTYTY) https://x.com/Yak_HyperTYTY
+- Official site https://hyper-tuyotuyo.com/petanuri/en / Manual https://hyper-tuyotuyo.com/petanuri/en/manual / Changelog https://hyper-tuyotuyo.com/petanuri/en/changelog / Terms of use https://hyper-tuyotuyo.com/petanuri/terms (Japanese) / Feature requests and status https://hyper-tuyotuyo.com/petanuri/en/requests
+- Terms in brief: don't distribute or sell the app or Pro pack without permission. Your textures and illustrations may be used personally, commercially, sold, distributed and for commissions (no credit needed). Follow the terms of others' models and materials too.
