@@ -210,6 +210,7 @@
 <li>ペンを浮かせたまま、ペンのボタンで平行移動する</li>
 <li>3D モデルの入ったパッケージ（.unitypackage）から、そのまま FBX を読み込む</li>
 <li>GIF の絵を、lilToon のメインカラー 2nd・3rd のように動かして見る</li>
+<li>iPad 版・Mac 版など、Windows 以外の版<span class="pn-release-sub">やるとしても、アップデートが完全に落ち着いてからになります。</span></li>
 </ul>
 </article>
 
@@ -217,14 +218,13 @@
 <p class="pn-release-summary">1 行目がいただいた要望、2 行目が理由です。</p>
 <ul class="pn-release-list">
 <li>フィルターを掛けた後で、そのフィルターの設定を変える（ガウスぼかしなどを調整レイヤーにする）<span class="pn-release-sub">今の作りでは難しいためです。トーンカーブ・カラーバランスなど一部は、調整レイヤーで後から変えられます。</span></li>
-<li>ベクターペン（描いた後も点や曲線を直せる線）<span class="pn-release-sub">確認版で試しましたが、入れないことにしました。</span></li>
+<li>ベクターペン（描いた後も点や曲線を直せる線）<span class="pn-release-sub">ぺたぬり3D は、3D ビューで描いた線を UV のテクスチャに写して塗る作りです。ベクターの線を後から直すたびに、UV の島の境目やテクスチャセットをまたぐ所・ポーズで形が変わった所まで正しく描き直すのが構造上難しく、入れないことにしました。</span></li>
 <li>ベクター形式のマスク<span class="pn-release-sub">ベクターペンと一緒にやめました。</span></li>
 <li>Ctrl・Shift を押している間だけ、ほかのツールに切り替える<span class="pn-release-sub">今の操作（Ctrl＋ドラッグ・Shift＋クリックの直線）とぶつかるためです。ツールのキーを押したまま描けば、押している間だけ切り替わります。</span></li>
-<li>ほかのソフトのレイヤーの作りを、そのまま読み込む<span class="pn-release-sub">ほかのソフトの代わりを目指していないためです。画像（PNG・PSD）は読み込めます。</span></li>
-<li>ほかのシェーダーのマテリアルを、lilToon に変えて表示する<span class="pn-release-sub">シェーダーごとに設定の意味が違い、見た目をそろえられないためです。</span></li>
+<li>ほかのソフトのレイヤーの作りを、そのまま読み込む<span class="pn-release-sub">ほかのアプリと連携すると、そのアプリのライセンスを確かめる必要があり、保守もとても大きくなるためです。画像（PNG・PSD）は読み込めます。</span></li>
+<li>ほかのシェーダーのマテリアルを、lilToon に変えて表示する<span class="pn-release-sub">ほかのシェーダーに対応すると、そのシェーダーのライセンスを確かめる必要があり、保守もとても大きくなるためです。</span></li>
 <li>UV を作り直した後、描いた絵を新しい UV に合わせて移す<span class="pn-release-sub">UV が変わると絵の場所の対応が取れず、きれいに移せないためです。</span></li>
 <li>GIF のアニメーションを作る・再生する<span class="pn-release-sub">アニメーションを作るソフトではないためです。</span></li>
-<li>iPad 版・Mac 版など、Windows 以外の版<span class="pn-release-sub">今のところ予定はありません。</span></li>
 </ul>
 </article>
 

@@ -824,14 +824,14 @@ File → “Preferences” (Ctrl+Alt+Shift+K). Categories on the left. Descripti
 Same categories as the official 'Feature requests and status' page https://hyper-tuyotuyo.com/petanuri/en/requests. Items 'under consideration' carry no promise of whether or when. The AI should say 'not in the current version' and not promise plans.
 
 ### Not planned
-- Versions other than Windows (Mac, iPad, etc.): no plans for now (Windows only).
+- Versions other than Windows (Mac, iPad, etc.): under consideration; if it happens, only after updates have fully settled down (Windows only for now).
 - Editing a filter's settings after applying it (e.g. Gaussian blur as an adjustment layer): hard with the current architecture. Some (Curves, Color Balance, etc.) are adjustable later as adjustment layers.
 - Switching tools only while Ctrl or Shift is held: conflicts with existing controls (Ctrl+drag, Shift+click lines). Drawing while holding a tool key switches only while held.
-- Importing another app's layer structure as is: not aiming to replace other software. Images (PNG, PSD) can be imported.
-- Showing other shaders' materials converted to lilToon: settings differ per shader, so looks can't be matched. Final look supports only lilToon and MToon (beta).
+- Importing another app's layer structure as is: working with other apps would require checking each app's license, and maintenance would become enormous. Images (PNG, PSD) can be imported.
+- Showing other shaders' materials converted to lilToon: supporting other shaders would require checking each shader's license, and maintenance would become enormous. Final look supports only lilToon and MToon (beta).
 - Moving artwork to new UVs after redoing the UVs: positions can't be mapped cleanly when UVs change (reloading the model keeps artwork at its UV positions).
 - Creating or playing GIF animations: not an animation app.
-- Vector lines (points/curves editable after drawing) and vector masks: decided not to add.
+- Vector lines (points/curves editable after drawing) and vector masks: decided not to add. Lines drawn in the 3D view are transferred onto the UV texture, so redrawing a line correctly after every edit, across UV island borders, texture sets, and pose-changed shapes, is structurally hard.
 
 ### Current limitations
 - 3D models can't be opened by dropping (use New).
