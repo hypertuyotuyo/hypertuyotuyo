@@ -87,7 +87,8 @@
     <p class="pn-history-lead">새 기능, 그리기 느낌과 조작 개선, 수정한 버그를 정리했습니다.</p>
     <p class="pn-history-note">BOOTH에서 업데이트할 때 다운로드 파일 이름에 v1.2.0이 표시되어 있는지 확인해 주세요.</p>
     <p class="pn-history-note">받은 요청의 대응 현황은 <a class="pn-textlink" href="/petanuri/ko/requests">요청과 대응 현황</a> 페이지에 정리했습니다.</p>
-    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-2-0">v1.2.0 <span>최신</span></a>
+    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-2-1">v1.2.1 <span>v1.2.1 공개 준비 중</span></a>
+      <a href="#v1-2-0">v1.2.0 <span>최신</span></a>
       <a href="#v1-1-2">v1.1.2 <span>배포 완료</span></a>
       <a href="#v1-1-1">v1.1.1 <span>배포 완료</span></a>
       <a href="#v1-1-0">v1.1.0 <span>배포 완료</span></a>
@@ -97,7 +98,65 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">설치 프로그램과 새 펜, 작은 창과 화면 회전, lilToon 설정 추가</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 공개 준비 중</span><p>공개일 미정</p></div><p class="pn-release-title">발광 합성 모드와 3D 마우스, 펜 사이드 버튼 개선</p></header>
+<p class="pn-release-tip">이 페이지의 v1.2.1 내용은 공개 전 안내입니다. 현재 배포 버전은 v1.2.0입니다.</p>
+<p class="pn-release-summary">보내 주신 요청을 바탕으로 기능을 추가하고 버그를 수정했습니다. 따로 표시하지 않은 기능은 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v121-notice"><h4 id="v121-notice">주의(이전 버전에서 업데이트하는 분께)</h4>
+<ul>
+<li>업데이트할 때는 작업을 저장하고 앱을 닫은 뒤, 새 setup을 실행하거나 새 ZIP을 풀어 주세요</li>
+<li>v1.2.0을 사용 중인 분은 앱의 새 버전 알림에서 업데이트할 수 있습니다<span class="pn-release-sub">“BOOTH에서 다운로드”로 setup zip을 내려받으면 “설치하고 다시 시작”으로 교체됩니다</span></li>
+<li>Standard를 Pro로 업그레이드한 분은 v1.2.1 업그레이드도 다시 넣어 주세요<span class="pn-release-sub">“설치하고 다시 시작”을 쓸 때 업그레이드 파일도 내려받아 두면 함께 교체됩니다</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">새 기능</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">그리기·레이어</h4>
+<ul>
+<li>합성 모드 &#x27;더하기(발광)&#x27;·&#x27;색상 닷지(발광)&#x27;<span class="pn-release-sub">불투명도를 낮춘 곳·부드러운 붓의 가장자리·아래가 투명한 곳에서도 빛나듯이 밝게 얹힙니다(레이어·폴더·브러시의 그리기 모드 등)</span></li>
+<li>스탬프의 &#x27;다음에 놓일 위치를 흐리게 표시&#x27;(끄면 간격 앞쪽의 흐린 미리보기를 표시하지 않습니다)</li>
+<li>키 등으로 선택한 레이어까지 레이어 목록을 자동으로 스크롤(닫힌 폴더는 엽니다. 끌 수도 있습니다)</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">화면과 조작</h4>
+<ul>
+<li>3D 마우스(6축으로 움직이는 장치)로 시점을 움직일 수 있게(Windows)</li>
+<li>회전을 시작한 커서 위치를 중심으로 회전(환경 설정 → 조작 → 카메라. 처음에는 꺼짐)</li>
+<li>시작 화면에 3D 모델·작업 파일을 드롭해서 시작할 수 있게</li>
+<li>3D를 작은 창으로 했을 때는 시작 화면을 UV 영역에 표시</li>
+<li>메뉴 아이콘을 통일했습니다</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">펜</h4>
+<ul>
+<li>&#x27;펜으로 길게 누르면 메뉴 열기&#x27;를 끌 수 있게(환경 설정 → 펜·입력 → 메뉴와 버튼)</li>
+<li>&#x27;펜 사이드 버튼의 가운데·오른쪽 클릭 받기&#x27;를 선택할 수 있게(같은 곳. 앱(exe)일 때)</li>
+<li>문의에 자동으로 들어가는 정보에 펜·카메라 조작 정보를 추가했습니다</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">개선과 수정</h3>
+<section class="pn-release-group" aria-labelledby="v121-sidebutton"><h4 id="v121-sidebutton">펜 사이드 버튼(액정 태블릿·펜 태블릿)</h4>
+<ul>
+<li>사이드 버튼(가운데 클릭)을 떼도 3D가 계속 도는 경우가 있음</li>
+<li>기종에 따라 사이드 버튼의 가운데 클릭이 작동하지 않거나, 드래그가 조금 움직이다 멈춤</li>
+<li>펜 끝으로 그릴 수 없고 3D에서는 회전, UV에서는 평행 이동이 됨(펜 끝과 동시에 오른쪽 클릭을 보내는 드라이버)</li>
+<li>사이드 버튼의 가운데를 누르고 바로 펜 끝을 대면 시점이 움직이지 않고 선이 됨</li>
+<li>UV 영역에서 사이드 버튼의 가운데가 작동하지 않음(UV에서는 평행 이동이 됩니다)</li>
+<li>멈추지 않을 때는 Esc를 누르거나 펜 끝으로 한 번 탭하면 멈춥니다</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">버그 수정</h4>
+<ul>
+<li>펜으로 같은 곳을 계속 칠하면 오른쪽 클릭 메뉴가 나오는 경우가 있음</li>
+<li>Unity 방식의 Alt+오른쪽 드래그 확대 방향이 Unity와 반대였음(아래로 드래그하면 확대되도록 했습니다)</li>
+<li>메뉴가 열린 채로 확대 키·휠을 쓰면 앱 화면 전체가 확대·축소됨</li>
+<li>올가미로 칠하기가 UV 뷰·2D 캔버스에서 칠해지지 않거나 다른 텍스처 세트 위에서 작동하지 않음</li>
+<li>모자이크·선명하게·하이 패스 등이 투명 위에 그린 선에 적용되지 않음 <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>필터 창에 선택 범위 안에만 적용된다는 것을 표시 <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>레이어를 선택하면 목록의 행이 밀리거나 아래쪽 레이어가 가려짐</li>
+<li>&#x27;여기에 그린 레이어 선택&#x27;이 쉬고 있는 세트·보이지 않는 곳에서 올바르게 선택하지 않음</li>
+<li>3D에서 크게 확대해 가는 펜으로 칠하면 선이 끊기는 경우가 있음</li>
+<li>다시 할당한 키가 메뉴에 올바르게 표시되지 않거나 이전 버전에서 할당한 키와 중복됨</li>
+<li>문의 창에서 Enter를 누르면 닫혀 버림</li>
+<li>그 밖에도 자잘한 버그를 많이 고쳤습니다</li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">설치 프로그램과 새 펜, 작은 창과 화면 회전, lilToon 설정 추가</p></header>
 <p class="pn-release-summary">보내 주신 요청을 바탕으로 많은 기능을 추가했습니다. 따로 표시하지 않은 기능은 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
 <section class="pn-release-part" aria-labelledby="v120-major"><h3 class="pn-release-part-title" id="v120-major">큰 변경</h3>
 <section class="pn-release-group" aria-labelledby="v120-installer"><h4 id="v120-installer">설치 프로그램으로 설치할 수 있게 되었습니다</h4>

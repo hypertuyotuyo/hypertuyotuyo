@@ -87,7 +87,7 @@
     <p class="pn-history-lead">Please check here before contacting us. Requests we have received so far are sorted into “Done,” “Planned,” “Under consideration,” and “Not planned.”</p>
     <p class="pn-history-note">As of 2026-10-11 (latest version: v1.2.0).</p>
     <nav class="pn-history-jump" aria-label="Jump to section"><a href="#done">Done</a>
-      <a href="#planned">Planned <span>v1.2.1</span></a>
+      <a href="#planned">Planned <span>Next version or later</span></a>
       <a href="#considering">Under consideration</a>
       <a href="#declined">Not planned</a>
     </nav>
@@ -104,6 +104,25 @@
 
   <article class="pn-release" id="done" aria-labelledby="done-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="done-title">Done</h2><span class="pn-release-status released">Available</span></div></header>
 <p class="pn-release-summary">Unless noted, these work in every edition (Lite, Standard, Pro). See the manual for how to use them and the changelog for fixed bugs.</p>
+<section class="pn-release-group" aria-labelledby="done-v121"><h3 id="done-v121">v1.2.1</h3>
+<ul>
+<li>Blend modes “Add (glow)” and “Color dodge (glow)” (they glow even over transparent and semi-transparent areas)</li>
+<li>Move the view with a 3D mouse (a six-axis input device)</li>
+<li>Orbit the view around the point under the cursor where you start orbiting</li>
+<li>A setting to stop a long pen press from opening the right-click menu</li>
+<li>Start by dropping a 3D model or project file onto the start screen</li>
+<li>Consistent icons in menus</li>
+<li>Fixes for the pen side button (middle/right click) when moving the view: the view kept rotating after release, stopped partway, or the pen tip could not draw</li>
+<li>A long pen press no longer opens the right-click menu while you are drawing a line or painting</li>
+<li>A setting to hide the faint preview of the next stamp placement</li>
+<li>In the Unity-style camera controls, the Alt+right-drag zoom direction now matches Unity</li>
+<li>The layer list no longer jumps when you select a layer, and it scrolls to layers selected with keys and the like</li>
+<li>Keep the contact window open when pressing Enter (it adds a line break in the text field)</li>
+<li>Fix for the whole app window zooming in or out when using zoom keys or the wheel while a menu was open</li>
+<li>Fixes for Lasso fill (in the UV view and 2D canvas it left a selection without filling; it did not work over other texture sets)</li>
+<li>Fix for Mosaic, Sharpen, and High Pass having no effect on lines drawn over transparency</li>
+<li>Show “Applies only inside the selection” in filter windows when a selection exists</li>
+</ul></section>
 <section class="pn-release-group" aria-labelledby="done-v120"><h3 id="done-v120">v1.2.0</h3>
 <ul>
 <li>Tilt the view like paper while drawing (view rotation in the 3D view; the UV view can also be turned to any angle)</li>
@@ -174,21 +193,10 @@
 </ul></section>
 </article>
 
-  <article class="pn-release pn-release-upcoming" id="planned" aria-labelledby="planned-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="planned-title">Planned</h2><span class="pn-release-status upcoming">v1.2.1</span></div></header>
-<p class="pn-release-summary">This version is in preparation. Contents and timing may change.</p>
+  <article class="pn-release pn-release-upcoming" id="planned" aria-labelledby="planned-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="planned-title">Planned</h2><span class="pn-release-status upcoming">Next version or later</span></div></header>
+<p class="pn-release-summary">Planned for the next version or later. Contents and timing may change.</p>
 <ul class="pn-release-list">
-<li>Blend modes “Add (glow)” and “Color dodge (glow)” (they glow even over transparent and semi-transparent areas)</li>
-<li>Move the view with a 3D mouse (a six-axis input device)</li>
-<li>Orbit the view around the point under the cursor where you start orbiting</li>
-<li>A setting to stop a long pen press from opening the right-click menu</li>
-<li>Start by dropping a 3D model or project file onto the start screen</li>
-<li>Consistent icons in menus</li>
 <li>Preview for “Paint from UV edges”</li>
-<li>Keep the contact window open when pressing Enter (it adds a line break in the text field)</li>
-<li>Fix for the whole app window zooming in or out when using zoom keys or the wheel while a menu was open</li>
-<li>Fixes for Lasso fill (in the UV view and 2D canvas it left a selection without filling; it did not work over other texture sets)</li>
-<li>Fix for Mosaic, Sharpen, and High Pass having no effect on lines drawn over transparency</li>
-<li>Show “Applies only inside the selection” in filter windows when a selection exists</li>
 </ul>
 </article>
 

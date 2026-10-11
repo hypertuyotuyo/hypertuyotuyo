@@ -87,7 +87,8 @@
     <p class="pn-history-lead">汇总新增功能、绘制手感与操作改进，以及已修复的问题。</p>
     <p class="pn-history-note">从 BOOTH 更新时，请确认下载文件名包含 v1.2.0。</p>
     <p class="pn-history-note">收到的需求的处理状况汇总在<a class="pn-textlink" href="/petanuri/zh/requests">需求与处理状况</a>页面中。</p>
-    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-2-0">v1.2.0 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-2-1">v1.2.1 <span>v1.2.1 准备发布中</span></a>
+      <a href="#v1-2-0">v1.2.0 <span>最新</span></a>
       <a href="#v1-1-2">v1.1.2 <span>已发布</span></a>
       <a href="#v1-1-1">v1.1.1 <span>已发布</span></a>
       <a href="#v1-1-0">v1.1.0 <span>已发布</span></a>
@@ -97,7 +98,65 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">新增安装程序与新笔、小窗口与画面旋转以及 lilToon 设置</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 准备发布中</span><p>发布日期待定</p></div><p class="pn-release-title">发光混合模式、3D 鼠标支持与笔侧键改进</p></header>
+<p class="pn-release-tip">本页的 v1.2.1 内容为发布前的预告。当前发布版本为 v1.2.0。</p>
+<p class="pn-release-summary">根据大家的需求，新增了功能并修复了问题。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v121-notice"><h4 id="v121-notice">注意（从旧版本更新的用户）</h4>
+<ul>
+<li>更新时，请先保存作品并关闭应用，再运行新的 setup 或解压新的 ZIP</li>
+<li>使用 v1.2.0 的用户，可通过应用中的新版本通知进行更新<span class="pn-release-sub">用“在 BOOTH 下载”下载 setup 压缩包后，即可通过“安装并重新启动”替换</span></li>
+<li>将 Standard 升级为 Pro 的用户，请同时重新安装 v1.2.1 的升级文件<span class="pn-release-sub">使用“安装并重新启动”时，如果也下载了升级文件，会一并替换</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新功能</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">绘制与图层</h4>
+<ul>
+<li>混合模式“相加（发光）”“颜色减淡（发光）”<span class="pn-release-sub">即使在降低不透明度处、柔软笔刷边缘或下方透明处，也会像发光一样明亮叠加（图层、文件夹、画笔绘制模式等）</span></li>
+<li>图章的“淡淡显示下一个放置位置”（关闭后不再显示间隔前方的淡色预览）</li>
+<li>图层列表自动滚动到用按键等选中的图层（会展开关闭的文件夹；也可关闭此功能）</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">界面与操作</h4>
+<ul>
+<li>可用 3D 鼠标（六轴输入设备）移动视角（Windows）</li>
+<li>以开始旋转时光标所在处为中心旋转（偏好设置 → 操作 → 相机；默认关闭）</li>
+<li>可将 3D 模型或工程文件拖放到启动界面直接开始</li>
+<li>3D 放入小窗口时，启动界面显示在 UV 区域</li>
+<li>统一了菜单图标</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">钢笔</h4>
+<ul>
+<li>可关闭“用笔长按弹出菜单”（偏好设置 → 笔与输入 → 菜单和按钮）</li>
+<li>可选择“接收笔侧键的中键／右键点击”（同一位置；应用（exe）中）</li>
+<li>联系时自动附带的信息中新增了笔和相机操作的信息</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">改进与修复</h3>
+<section class="pn-release-group" aria-labelledby="v121-sidebutton"><h4 id="v121-sidebutton">笔侧键（数位屏・数位板）</h4>
+<ul>
+<li>松开侧键（中键）后，3D 有时仍持续旋转</li>
+<li>部分机型上，侧键中键无效，或拖动时移动一点就停止</li>
+<li>笔尖无法绘制，在 3D 中变为旋转、在 UV 中变为平移（与笔尖同时发送右键的驱动）</li>
+<li>按下侧键中键后立即落笔，视角不动反而画出线条</li>
+<li>在 UV 区域中侧键中键无效（在 UV 中现为平移）</li>
+<li>无法停止时，按 Esc 或用笔尖点击一次即可停止</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">问题修复</h4>
+<ul>
+<li>用笔在同一处持续涂抹时，有时会弹出右键菜单</li>
+<li>Unity 方式中 Alt+右键拖动的缩放方向与 Unity 相反（现在向下拖动为放大）</li>
+<li>菜单打开时使用缩放键或滚轮，整个应用界面会被放大・缩小</li>
+<li>套索填充在 UV 视图・2D 画布中不填充，在其他纹理集上无效</li>
+<li>马赛克、锐化、高反差保留等对透明区域上的线条无效 <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>滤镜窗口会显示仅应用于选区内 <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>选择图层时，列表行会错位，靠下的图层被遮住</li>
+<li>“选择在此处绘制的图层”在休眠的纹理集或不可见的位置无法正确选择</li>
+<li>在 3D 中大幅放大并用细笔绘制时，线条有时会断开</li>
+<li>重新分配的快捷键在菜单中显示不正确，或与旧版本中分配的快捷键重复</li>
+<li>在联系窗口中按 Enter 会关闭窗口</li>
+<li>此外还修复了许多小问题</li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">新增安装程序与新笔、小窗口与画面旋转以及 lilToon 设置</p></header>
 <p class="pn-release-summary">根据大家的需求，新增了许多功能。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
 <section class="pn-release-part" aria-labelledby="v120-major"><h3 class="pn-release-part-title" id="v120-major">重大变更</h3>
 <section class="pn-release-group" aria-labelledby="v120-installer"><h4 id="v120-installer">现在可以用安装程序安装</h4>

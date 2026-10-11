@@ -87,7 +87,7 @@
     <p class="pn-history-lead">联系我们之前请先查看。至今收到的需求分为“已支持”“计划支持”“考虑中”“不支持”进行汇总。</p>
     <p class="pn-history-note">内容截至 2026-10-11（最新版本为 v1.2.0）。</p>
     <nav class="pn-history-jump" aria-label="跳转到分类"><a href="#done">已支持</a>
-      <a href="#planned">计划支持 <span>v1.2.1</span></a>
+      <a href="#planned">计划支持 <span>下个版本以后</span></a>
       <a href="#considering">考虑中</a>
       <a href="#declined">不支持</a>
     </nav>
@@ -104,6 +104,25 @@
 
   <article class="pn-release" id="done" aria-labelledby="done-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="done-title">已支持</h2><span class="pn-release-status released">可用</span></div></header>
 <p class="pn-release-summary">未特别注明的功能在所有版本（Lite・Standard・Pro）中均可使用。详细用法请看使用手册，已修复的问题请看更新记录。</p>
+<section class="pn-release-group" aria-labelledby="done-v121"><h3 id="done-v121">v1.2.1</h3>
+<ul>
+<li>混合模式“相加（发光）”“颜色减淡（发光）”（在透明或半透明处也会像发光一样叠加）</li>
+<li>用 3D 鼠标（六轴输入设备）移动视角</li>
+<li>以开始旋转时光标所在处为中心旋转视角</li>
+<li>用笔长按时不弹出右键菜单的设置</li>
+<li>把 3D 模型或工程文件拖到启动画面即可开始</li>
+<li>统一菜单图标</li>
+<li>修复用笔侧键（中键／右键）移动视角时，松开后仍持续旋转、中途停止、笔尖无法绘制的问题</li>
+<li>绘制线条或填色过程中，用笔长按不再弹出右键菜单</li>
+<li>不显示图章“下一个放置位置”淡色预览的设置</li>
+<li>Unity 方式相机操作中，Alt+右键拖动的缩放方向与 Unity 一致</li>
+<li>选择图层时列表不再自行移动，并会滚动到用按键等选中的图层</li>
+<li>在联系窗口中按 Enter 不会关闭窗口（在文本栏中换行）</li>
+<li>修复菜单打开时使用缩放键或滚轮，整个应用界面被放大・缩小的问题</li>
+<li>修复套索填充（在 UV 视图・2D 画布中不填充却留下选区、在其他纹理集上无效）</li>
+<li>修复马赛克・锐化・高反差保留对透明区域上的线条无效的问题</li>
+<li>有选区时，在滤镜窗口中显示“只应用于选区内”</li>
+</ul></section>
 <section class="pn-release-group" aria-labelledby="done-v120"><h3 id="done-v120">v1.2.0</h3>
 <ul>
 <li>像转动纸张一样倾斜画面绘制（3D 视图的画面旋转。UV 视图也可转到任意角度）</li>
@@ -174,21 +193,10 @@
 </ul></section>
 </article>
 
-  <article class="pn-release pn-release-upcoming" id="planned" aria-labelledby="planned-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="planned-title">计划支持</h2><span class="pn-release-status upcoming">v1.2.1</span></div></header>
-<p class="pn-release-summary">这是正在准备中的版本。内容和时间可能会有变化。</p>
+  <article class="pn-release pn-release-upcoming" id="planned" aria-labelledby="planned-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="planned-title">计划支持</h2><span class="pn-release-status upcoming">下个版本以后</span></div></header>
+<p class="pn-release-summary">计划在下个版本以后支持。内容和时间可能会有变化。</p>
 <ul class="pn-release-list">
-<li>混合模式“相加（发光）”“颜色减淡（发光）”（在透明或半透明处也会像发光一样叠加）</li>
-<li>用 3D 鼠标（六轴输入设备）移动视角</li>
-<li>以开始旋转时光标所在处为中心旋转视角</li>
-<li>用笔长按时不弹出右键菜单的设置</li>
-<li>把 3D 模型或工程文件拖到启动画面即可开始</li>
-<li>统一菜单图标</li>
 <li>“从 UV 边缘绘制”的预览</li>
-<li>在联系窗口中按 Enter 不会关闭窗口（在文本栏中换行）</li>
-<li>修复菜单打开时使用缩放键或滚轮，整个应用界面被放大・缩小的问题</li>
-<li>修复套索填充（在 UV 视图・2D 画布中不填充却留下选区、在其他纹理集上无效）</li>
-<li>修复马赛克・锐化・高反差保留对透明区域上的线条无效的问题</li>
-<li>有选区时，在滤镜窗口中显示“只应用于选区内”</li>
 </ul>
 </article>
 

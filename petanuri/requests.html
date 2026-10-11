@@ -87,7 +87,7 @@
     <p class="pn-history-lead">お問い合わせの前にご覧ください。これまでにいただいた要望を、「対応済み」「対応予定」「検討中」「対応しない」に分けてまとめています。</p>
     <p class="pn-history-note">2026-10-11 時点の内容です（最新は v1.2.0）。</p>
     <nav class="pn-history-jump" aria-label="区分へ移動"><a href="#done">対応済み</a>
-      <a href="#planned">対応予定 <span>v1.2.1</span></a>
+      <a href="#planned">対応予定 <span>次の版以降</span></a>
       <a href="#considering">検討中</a>
       <a href="#declined">対応しない</a>
     </nav>
@@ -104,6 +104,25 @@
 
   <article class="pn-release" id="done" aria-labelledby="done-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="done-title">対応済み</h2><span class="pn-release-status released">使えます</span></div></header>
 <p class="pn-release-summary">とくに書いていない物は全版（Lite・Standard・Pro）で使えます。くわしい使い方はマニュアルを、直した不具合は更新履歴をご覧ください。</p>
+<section class="pn-release-group" aria-labelledby="done-v121"><h3 id="done-v121">v1.2.1</h3>
+<ul>
+<li>合成モード「加算（発光）」「覆い焼き（発光）」（透明な所や半透明の所でも光るように乗る）</li>
+<li>3D マウス（6 軸で動かす機器）で視点を動かす</li>
+<li>回し始めたときのカーソルの所を中心に視点を回す</li>
+<li>ペンの長押しで右クリックのメニューを出さない設定</li>
+<li>起動画面に 3D モデル・作業ファイルを落として始める</li>
+<li>メニューのアイコンをそろえる</li>
+<li>ペンのサイドボタン（中・右クリック）で視点を動かすとき、離しても回り続ける・途中で止まる・ペン先で描けない不具合の直し</li>
+<li>線や塗りを描いている途中に、ペンの長押しで右クリックのメニューが出ないように</li>
+<li>スタンプの「次に置く所」の薄い見本を出さない設定</li>
+<li>Unity 式のカメラ操作で、Alt＋右ドラッグのズームの向きを Unity と同じに</li>
+<li>レイヤーを選んでも一覧が勝手に動かないように・キーなどで選んだレイヤーまで一覧を送る</li>
+<li>お問い合わせの窓で、Enter を押しても閉じないように（文の欄では改行）</li>
+<li>メニューが出たまま拡大のキーやホイールを使うと、アプリの画面全体が拡大・縮小された不具合の直し</li>
+<li>投げ縄で塗るの直し（UV ビュー・2D キャンバスで塗られずに選択範囲が残る、ほかのテクスチャセットの上で効かない）</li>
+<li>透明の上に描いた線に、モザイク・シャープ・ハイパスが効かない所の直し</li>
+<li>選択範囲があるとき、フィルターの窓に「選択範囲の中だけに掛けます」と出す</li>
+</ul></section>
 <section class="pn-release-group" aria-labelledby="done-v120"><h3 id="done-v120">v1.2.0</h3>
 <ul>
 <li>画面を紙のように傾けて描く（3D ビューの画面の回転。UV ビューも好きな角度に）</li>
@@ -174,21 +193,10 @@
 </ul></section>
 </article>
 
-  <article class="pn-release pn-release-upcoming" id="planned" aria-labelledby="planned-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="planned-title">対応予定</h2><span class="pn-release-status upcoming">v1.2.1</span></div></header>
-<p class="pn-release-summary">準備中の版です。内容や時期は変わることがあります。</p>
+  <article class="pn-release pn-release-upcoming" id="planned" aria-labelledby="planned-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="planned-title">対応予定</h2><span class="pn-release-status upcoming">次の版以降</span></div></header>
+<p class="pn-release-summary">次の版以降で対応する予定です。内容や時期は変わることがあります。</p>
 <ul class="pn-release-list">
-<li>合成モード「加算（発光）」「覆い焼き（発光）」（透明な所や半透明の所でも光るように乗る）</li>
-<li>3D マウス（6 軸で動かす機器）で視点を動かす</li>
-<li>回し始めたときのカーソルの所を中心に視点を回す</li>
-<li>ペンの長押しで右クリックのメニューを出さない設定</li>
-<li>起動画面に 3D モデル・作業ファイルを落として始める</li>
-<li>メニューのアイコンをそろえる</li>
 <li>「UV の縁から塗る」のプレビュー</li>
-<li>お問い合わせの窓で、Enter を押しても閉じないように（文の欄では改行）</li>
-<li>メニューが出たまま拡大のキーやホイールを使うと、アプリの画面全体が拡大・縮小された不具合の直し</li>
-<li>投げ縄で塗るの直し（UV ビュー・2D キャンバスで塗られずに選択範囲が残る、ほかのテクスチャセットの上で効かない）</li>
-<li>透明の上に描いた線に、モザイク・シャープ・ハイパスが効かない所の直し</li>
-<li>選択範囲があるとき、フィルターの窓に「選択範囲の中だけに掛けます」と出す</li>
 </ul>
 </article>
 

@@ -87,7 +87,8 @@
     <p class="pn-history-lead">新しくできること、描き味や操作の改善、直した不具合をまとめています。</p>
     <p class="pn-history-note">BOOTH から更新するときは、ダウンロードするファイル名が v1.2.0 になっていることを確認してください。</p>
     <p class="pn-history-note">いただいた要望の対応状況は、<a class="pn-textlink" href="/petanuri/requests">要望と対応状況</a>のページにまとめています。</p>
-    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-2-0">v1.2.0 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-2-1">v1.2.1 <span>v1.2.1 公開準備中</span></a>
+      <a href="#v1-2-0">v1.2.0 <span>最新</span></a>
       <a href="#v1-1-2">v1.1.2 <span>配布済み</span></a>
       <a href="#v1-1-1">v1.1.1 <span>配布済み</span></a>
       <a href="#v1-1-0">v1.1.0 <span>配布済み</span></a>
@@ -97,7 +98,65 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">インストーラーと新しいペン、小窓と画面の回転、lilToon の設定を追加</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 公開準備中</span><p>公開日未定</p></div><p class="pn-release-title">発光の合成モードと 3D マウス、ペンのサイドボタンの改善</p></header>
+<p class="pn-release-tip">このページの v1.2.1 の内容は公開前の案内です。現在の配布版は v1.2.0 です。</p>
+<p class="pn-release-summary">いただいた要望をもとに、機能の追加と不具合の修正をしました。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v121-notice"><h4 id="v121-notice">ご注意（前の版から更新する方へ）</h4>
+<ul>
+<li>更新するときは、作業を保存してアプリを閉じてから、新しい setup を実行するか、新しい ZIP を展開してください</li>
+<li>v1.2.0 をお使いの方は、アプリの新しいバージョンのお知らせから更新できます<span class="pn-release-sub">「BOOTH でダウンロード」で setup の zip をダウンロードすると、「インストールして再起動」で入れ替わります</span></li>
+<li>Standard を Pro にしている方は、v1.2.1 のアップグレードも入れ直してください<span class="pn-release-sub">「インストールして再起動」のときは、アップグレードのファイルもダウンロードしておくと一緒に入れ替わります</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新しい機能</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">描く・レイヤー</h4>
+<ul>
+<li>合成モード「加算（発光）」「覆い焼き（発光）」<span class="pn-release-sub">不透明度を下げた所・やわらかい筆の縁・下が透明な所でも、光るように明るく乗ります（レイヤー・フォルダ・ブラシの描画モードなど）</span></li>
+<li>スタンプの「次に置く所を薄く表示」（切ると、間隔の先の薄い見本を出しません）</li>
+<li>キーなどで選んだレイヤーまで、レイヤーの一覧を自動で送る（閉じたフォルダは開きます。切ることもできます）</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">画面と操作</h4>
+<ul>
+<li>3D マウス（6 軸で動かす機器）で視点を動かせるように（Windows）</li>
+<li>回し始めたカーソルの所を中心に回す（環境設定 → 操作 → カメラ。はじめは切）</li>
+<li>起動画面に 3D モデル・作業ファイルを落として始められるように</li>
+<li>3D を小窓にしているときは、起動画面を UV の区画に出すように</li>
+<li>メニューのアイコンをそろえました</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">ペン</h4>
+<ul>
+<li>「ペンの長押しでメニューを出す」を切れるように（環境設定 → ペン・入力 → メニュー・ボタン）</li>
+<li>「ペンのサイドボタンの中・右クリックを受け取る」を選べるように（同じ所。アプリ（exe）のとき）</li>
+<li>お問い合わせの自動の情報に、ペン・カメラの操作の情報を足しました</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">改善と修正</h3>
+<section class="pn-release-group" aria-labelledby="v121-sidebutton"><h4 id="v121-sidebutton">ペンのサイドボタン（液タブ・ペンタブ）</h4>
+<ul>
+<li>サイドボタン（中クリック）を離しても、3D が回り続けることがある</li>
+<li>機種によって、サイドボタンの中クリックが効かない・ドラッグが少し動いて止まる</li>
+<li>ペン先で描けず、3D では回転・UV では平行移動になる（ペン先と同時に右クリックを送るドライバ）</li>
+<li>サイドボタンの中を押してすぐペン先を付けると、視点が動かずに線になる</li>
+<li>UV の区画でサイドボタンの中が効かない（UV では平行移動になります）</li>
+<li>止まらなくなったときは、Esc か、ペン先で 1 回タップで止まります</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">不具合の修正</h4>
+<ul>
+<li>ペンで同じ所を塗り続けると、右クリックのメニューが出ることがある</li>
+<li>Unity 式の Alt＋右ドラッグのズームの向きが Unity と逆だった（下へドラッグで寄るようにしました）</li>
+<li>メニューが出たまま拡大のキー・ホイールを使うと、アプリの画面全体が拡大・縮小された</li>
+<li>投げ縄で塗るが、UV ビュー・2D キャンバスで塗られない・ほかのテクスチャセットの上で効かない</li>
+<li>モザイク・シャープ・ハイパスなどが、透明の上に描いた線に効かない <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>フィルターの窓に、選択範囲の中だけに掛かることを出すように <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>レイヤーを選ぶと、一覧の行がずれる・下の方のレイヤーが隠れる</li>
+<li>「ここに描いたレイヤーを選ぶ」が、休んでいるセット・見えていない所で正しく選ばない</li>
+<li>3D でうんと寄って細いペンで塗ると、線が途切れることがある</li>
+<li>割り当て直したキーがメニューに正しく出ない・前の版で割り当てたキーと二重になる</li>
+<li>お問い合わせの窓で Enter を押すと閉じてしまう</li>
+<li>ほかにも細かな不具合をたくさん直しました</li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">インストーラーと新しいペン、小窓と画面の回転、lilToon の設定を追加</p></header>
 <p class="pn-release-summary">いただいた要望をもとに、たくさんの機能を追加しました。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
 <section class="pn-release-part" aria-labelledby="v120-major"><h3 class="pn-release-part-title" id="v120-major">大きな変更</h3>
 <section class="pn-release-group" aria-labelledby="v120-installer"><h4 id="v120-installer">インストーラーで入れられるようになりました</h4>
