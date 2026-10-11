@@ -58,30 +58,3 @@
 .pn-requests .pn-release-group li + li, .pn-requests .pn-release-list li + li { margin-top: .35rem; }
 .pn-requests .pn-release li .tier { margin-left: .2rem; }
 .pn-history-download .pn-btns { margin-top: .2rem; }
-/* AI に聞く（ai.html）：コピーのボタンが主役 */
-.pn-ai-visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.pn-ai-copy { background: var(--panel); border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: var(--radius); padding: 2rem 2.2rem; margin-bottom: 1.5rem; text-align: center; }
-.btn.pn-btn.pn-ai-copy-btn { font-size: 1.1rem; padding: 1.1rem 2.2rem; max-width: 100%; white-space: normal; line-height: 1.5; cursor: pointer; }
-.pn-ai-meta { font-size: .82rem; color: var(--ink-2); margin-top: .8rem; }
-.pn-ai-lang-note { font-size: .85rem; color: var(--ink-2); margin-top: .4rem; }
-.pn-ai-status { min-height: 1.6em; font-size: .9rem; font-weight: 700; color: var(--accent-dark); margin-top: .7rem; line-height: 1.7; }
-.pn-ai-status:empty { min-height: 0; margin-top: 0; }
-.pn-ai-fallback { text-align: left; margin-top: 1rem; }
-.pn-ai-fallback-label { display: block; font-size: .85rem; color: var(--ink-2); margin-bottom: .4rem; line-height: 1.7; }
-.pn-ai-fallback textarea { width: 100%; box-sizing: border-box; font: .8rem/1.6 ui-monospace, Consolas, monospace; padding: .7rem; border: 1px solid var(--line-2); border-radius: var(--radius-sm); background: var(--paper); color: var(--ink); resize: vertical; }
-.pn-ai-sublinks { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .6rem 1.4rem; margin-top: 1.2rem; }
-.pn-ai-alt { background: none; border: 0; padding: 0 0 1px; font: inherit; font-weight: 700; font-size: .9rem; color: var(--ink-2); border-bottom: 2px solid var(--line-2); cursor: pointer; }
-.pn-ai-alt:hover { color: var(--accent-dark); border-bottom-color: var(--accent); }
-.pn-ai-steps { list-style: decimal; }
-.pn-ai-url-note { font-size: .85rem; color: var(--ink-2); margin-top: 1rem; line-height: 1.8; }
-.pn-ai-url code { display: inline-block; max-width: 100%; overflow-wrap: anywhere; font-size: .82rem; padding: .3rem .6rem; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; }
-.pn-ai-examples { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.2rem; padding: 0; }
-.pn-ai-examples li + li { margin-top: 0; }
-.pn-ai-example { font: inherit; font-size: .88rem; text-align: left; line-height: 1.6; padding: .55rem 1rem; border: 1px solid var(--line-2); border-radius: 999px; background: var(--paper); color: var(--ink); cursor: pointer; transition: border-color .15s, background-color .15s; }
-.pn-ai-example:hover { border-color: var(--accent); }
-.pn-ai-example.copied { border-color: var(--accent); background: var(--accent-soft); }
-@media (max-width: 560px) {
-  .pn-ai-copy { padding: 1.4rem 1.1rem; }
-  .btn.pn-btn.pn-ai-copy-btn { font-size: 1rem; padding: 1rem 1.3rem; width: 100%; }
-  .pn-ai-example { border-radius: var(--radius-sm); }
-}

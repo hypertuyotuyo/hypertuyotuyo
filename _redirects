@@ -2,3 +2,9 @@
 
 # Trailing slash redirects (all pages)
 /:path+/  /:path+  301
+
+# The "Ask AI" page (/petanuri/ai) was removed on 2026-10-11. Send old links to each language's manual.
+/petanuri/ai  /petanuri/manual  301
+/petanuri/en/ai  /petanuri/en/manual  301
+/petanuri/ko/ai  /petanuri/ko/manual  301
+/petanuri/zh/ai  /petanuri/zh/manual  301

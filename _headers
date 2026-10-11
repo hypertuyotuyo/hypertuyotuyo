@@ -1,9 +1,0 @@
-# Cloudflare Pages のヘッダー。AI 向けの文書（.txt）を UTF-8 の文字として返す（文字化けを防ぐ）
-/llms.txt
-  Content-Type: text/plain; charset=utf-8
-/petanuri/llms.txt
-  Content-Type: text/plain; charset=utf-8
-/petanuri/llms-full.txt
-  Content-Type: text/plain; charset=utf-8
-/petanuri/en/llms-full.txt
-  Content-Type: text/plain; charset=utf-8
