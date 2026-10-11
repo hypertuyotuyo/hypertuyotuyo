@@ -67,6 +67,8 @@ html[lang="en"] { --pn-text: Arial, sans-serif; --pn-display: Arial, sans-serif;
 html[lang="ko"] { --pn-text: 'Noto Sans KR', 'Malgun Gothic', sans-serif; --pn-display: 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
 html[lang="zh-Hans"] { --pn-text: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; --pn-display: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; }
 html[lang="ko"] .pn-body { word-break: keep-all; }
+/* 英語はナビの文字が長いので、1 行に収まるよう左右の余白を少し詰める（要望・AI に聞くを足したとき。2026-10-11） */
+@media (min-width: 1281px) { html[lang="en"] .pn-nav-links { gap: 0.15rem; } html[lang="en"] .pn-nav-links a { padding-left: 0.5rem; padding-right: 0.5rem; } }
 .pn-body p, .pn-body li, .pn-body dd, .pn-body h1, .pn-body h2, .pn-body h3 { overflow-wrap: anywhere; }
 @media (max-width: 1280px) {
   .pn-nav:has(.pn-language) .pn-nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--paper); border-bottom: 1px solid var(--line); padding: 0.3rem 0.8rem 0.8rem; }
@@ -332,6 +334,7 @@ html[lang="ko"] .pn-body { word-break: keep-all; }
 .mn-h1 { font-family: var(--pn-display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.3; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
 .mn-intro { font-size: 0.98rem; line-height: 2; color: var(--ink-2); margin-bottom: 1rem; }
 .mn-proof { font-size: 0.78rem; color: var(--ink-3); border-left: 3px solid var(--line-2); padding: 0.2rem 0 0.2rem 0.8rem; margin-bottom: 2rem; line-height: 1.8; }
+.mn-proof + .mn-proof-links { margin-top: -1.3rem; }  /* マニュアルの目次の、AI に聞く・要望へのリンクの注記は前の注記に詰める */
 .mn-toc { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; margin-bottom: 2.8rem; }
 .mn-toc b { font-size: 0.8rem; color: var(--ink-3); }
 .mn-toc ul { list-style: none; padding: 0; margin: 0.4rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.3rem; }
