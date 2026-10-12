@@ -289,6 +289,7 @@ html[lang="ko"] .pn-body { word-break: keep-all; }
 .pn-spec div { display: grid; grid-template-columns: 8.5em 1fr; gap: 1rem; padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
 .pn-spec dt { font-size: 0.86rem; font-weight: 700; }
 .pn-spec dd { font-size: 0.88rem; line-height: 1.8; color: var(--ink-2); }
+.pn-spec-note { margin-top: 1rem; font-size: 0.82rem; line-height: 1.8; color: var(--ink-2); }
 .pn-faq { border-top: 3px solid var(--ink); }
 .pn-faq details { border-bottom: 1px solid var(--line); }
 .pn-faq summary { cursor: pointer; padding: 1rem 2.5rem 1rem 0; font-weight: 700; font-size: 0.94rem; list-style: none; position: relative; }
