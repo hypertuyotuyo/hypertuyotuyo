@@ -368,7 +368,7 @@
       <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>ペンだけで操作できる</h3><p>筆圧に対応。サイドボタンで視点を回し、その場に出るパレットで色とブラシを切り替えられます。</p></div>
       <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>左右対称で描ける</h3><p>M キーで左右対称に。X・Y・Z を組み合わせられ、UV の区画で塗るときにも効きます。</p></div>
       <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>Unity から起動して塗れる</h3><p>Unity でアバターを選んで「ぺたぬり3D で塗る」。保存すると Unity に映ります。元のファイルは書き換えません（どの版でも）。</p></div>
-      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>レイヤーを保ったまま PSD で往復 <span class="tier std">Standard</span></h3><p>合成モード 26 種・フォルダ・マスク・調整レイヤーを保ったまま PSD で読み書きできます。</p></div>
+      <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>レイヤーを保ったまま PSD で往復 <span class="tier std">Standard</span></h3><p>合成モード 28 種・フォルダ・マスク・調整レイヤーを保ったまま PSD で読み書きできます。</p></div>
       <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>lilToon の見た目で確認できる <span class="tier pro">Pro</span></h3><p>影・リムライト・マットキャップ・輪郭線付きの表示（β版）で塗り、マテリアルを .unitypackage で書き出せます。</p></div>
       <div class="pn-point"><span class="no" aria-hidden="true"></span><h3>ポーズを付けたまま塗れる・AO を焼ける <span class="tier pro">Pro</span></h3><p>ボーンを動かしてポーズを付け、その形のまま塗れます。光が届きにくい所の暗さを計算して、レイヤーにできます。</p></div>
     </div>
@@ -403,7 +403,7 @@
       <div>
         <span class="pn-show-no">LAYERS</span>
         <h3>2D のイラストと同じレイヤー操作</h3>
-        <p>クリッピング・透明度保護・フォルダ・レイヤーマスク・合成モード 26 種に対応しています。文字は打ち直せる文字レイヤーになります。</p>
+        <p>クリッピング・透明度保護・フォルダ・レイヤーマスク・合成モード 28 種に対応しています。文字は打ち直せる文字レイヤーになります。</p>
         <ul>
           <li>テクスチャは PNG で書き出し。PSD ならレイヤーを保ったまま <span class="tier std">Standard</span></li>
           <li>レイヤーの縁取り（境界線）・調整レイヤー・フィルターは、後から直せる形で <span class="tier std">Standard</span></li>
@@ -421,7 +421,7 @@
         <ul>
           <li>ペン 6 種・筆 12 種・ブラシ集 33 種・色混ぜ 12 種・デコレーション 13 種</li>
           <li>服の柄を塗る模様のペン 15 種・スタンプ・図形。塗る前に、付く所に見本が出ます</li>
-          <li>縫い目やしわを描く凹凸のツール <span class="tier pro">Pro</span></li>
+          <li>縫い目を描画色で描くステッチのツール（しわ・ふくらみは凹凸で）</li>
         </ul>
       </div>
     </div>
@@ -448,7 +448,7 @@
   <div class="pn-wrap">
     <div class="pn-sec-head pn-reveal">
       <div><span class="pn-sec-no">05 — ALL FEATURES</span><h2 id="pn-feat-title" class="pn-h2">機能一覧</h2></div>
-      <p class="pn-sec-lead">v1.2.0 の主な機能です。追加・修正の詳細は <a href="/petanuri/changelog">更新履歴</a>をご覧ください。印の無い機能は、無料の Lite から使えます。</p><div class="mn-tip" id="release-preview-121"><strong>v1.2.1 公開準備中</strong><p>v1.2.1 では、v1.2.0 をお使いの方からの報告をもとに、WinTab の筆圧を入れるとペンが反応しなくなる件、メニューを開いたまま画面全体が拡大される件、自動保存が止まる件などを直しました。補助のプログラムは本体の中に入り、ツール「凹凸」は「ステッチ」になって縫い目を描画色で描けます。3D マウス、合成モード「加算（発光）」「覆い焼き（発光）」、ぼかし・色混ぜの改善なども入ります。</p><a href="/petanuri/changelog#v1-2-1">v1.2.1 の追加・修正の内容を見る（公開準備中）</a></div><div class="mn-tip" id="release-preview"><strong>v1.2.0 を公開しました</strong><p>Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p><p>v1.2.0 では、Windows のインストーラー（setup）、ゆがみペン・ドットペン、3D・UV の小窓と画面の回転、選んだレイヤー・UV マップの PNG 書き出し、色のフィルター、lilToon の設定（Pro）などを追加しました。書き味は筆圧だけで入り抜きを既定にし、glTF・glb・VRM の UV の向きや、× で閉じられなくなることがある不具合なども直しました。</p><a href="/petanuri/changelog#v1-2-0">v1.2.0 の追加・修正の内容を見る</a></div>
+      <p class="pn-sec-lead">v1.2.1 の主な機能です。追加・修正の詳細は <a href="/petanuri/changelog">更新履歴</a>をご覧ください。印の無い機能は、無料の Lite から使えます。</p><div class="mn-tip" id="release-preview"><strong>v1.2.1 を公開しました</strong><p>Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p><p>v1.2.1 では、v1.2.0 をお使いの方からの報告をもとに、WinTab の筆圧を入れるとペンが反応しなくなる件、メニューを開いたまま画面全体が拡大される件、自動保存が止まる件などを直しました。補助のプログラムは本体の中に入り、ツール「凹凸」は「ステッチ」になって縫い目を描画色で描けます。3D マウス、合成モード「加算（発光）」「覆い焼き（発光）」、ぼかし・色混ぜの改善なども入ります。</p><a href="/petanuri/changelog#v1-2-1">v1.2.1 の追加・修正の内容を見る</a></div>
     </div>
     <div class="pn-filter" role="group" aria-label="版で絞り込む">
       <button type="button" data-tier="all" aria-pressed="true" data-say="すべての機能を表示しています">すべて</button>
@@ -472,7 +472,7 @@
           <li data-tier="lite"><span class="tx">サブツールの複製・名前変更・並べ替え・初期化・キーの割り当て</span></li>
           <li data-tier="lite"><span class="tx">先端 24 種＋同梱の先端 31 個、画像やブラシのファイルから先端を読み込み</span></li>
           <li data-tier="lite"><span class="tx">紙の質感（同梱 6 枚・模様 15 種・好きな画像）</span></li>
-          <li data-tier="lite"><span class="tx">描画モード 26 種＋「後ろに描く」「明るく」「暗く」</span></li>
+          <li data-tier="lite"><span class="tx">描画モード 28 種＋「後ろに描く」「明るく」「暗く」</span></li>
           <li data-tier="lite"><span class="tx">手ぶれ補正（なめらか・1€・糸引き）・入り抜き・筆圧の曲線</span></li>
           <li data-tier="lite"><span class="tx">速さで太さ・太さや濃さのばらつき・ペンの寝かせ・傾き・ねじれ</span></li>
           <li data-tier="lite"><span class="tx">ブラシの大きさを画面の px かテクスチャの px で（1〜1000）</span></li>
@@ -483,12 +483,12 @@
       </div>
 
       <div class="pn-feat pn-reveal" data-c="#FFB800">
-        <h3>スタンプ・模様・凹凸</h3>
+        <h3>スタンプ・模様・ステッチ</h3>
         <ul>
           <li data-tier="lite"><span class="tx">スタンプ（好きな画像を貼る。かざすと付く所に見本）</span></li>
           <li data-tier="lite"><span class="tx">模様のペン 15 種（ストライプ・水玉・ギンガムチェック・タータンチェック・アーガイル・ニット など）</span></li>
           <li data-tier="lite"><span class="tx">スタンプ用キャンバス（レイヤー付きで保存・見た目をそのままスタンプ登録）</span></li>
-          <li data-tier="pro"><span class="tx">凹凸 9 種（縫い目・パイピング・クロスステッチ・鋲・しわ など。ノーマルマップに描く）</span><span class="tier pro">Pro</span></li>
+          <li data-tier="lite"><span class="tx">ステッチ 9 種（縫い目・パイピング・クロスステッチ・鋲 など。描画色で描く。しわ・ふくらみと「ノーマルマップのフォルダに描く」は Pro）</span></li>
         </ul>
         <p class="more"><a href="/petanuri/manual/deco">スタンプ・模様の使い方 →</a></p>
       </div>
@@ -556,7 +556,7 @@
         <ul>
           <li data-tier="lite"><span class="tx">レイヤー 4 枚まで（テクスチャセットごと・下地を含む）</span></li>
           <li data-tier="std"><span class="tx">レイヤー無制限</span><span class="tier std">Standard</span></li>
-          <li data-tier="lite"><span class="tx">合成モード 26 種</span></li>
+          <li data-tier="lite"><span class="tx">合成モード 28 種</span></li>
           <li data-tier="lite"><span class="tx">クリッピング・透明度保護・ロック・不透明度・下と結合・複数選択</span></li>
           <li data-tier="lite"><span class="tx">レイヤーフォルダ（通過・まとめて合成）</span></li>
           <li data-tier="lite"><span class="tx">レイヤーマスク（選択範囲から作る・反転・適用）</span></li>
