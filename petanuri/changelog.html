@@ -98,61 +98,80 @@
     </nav>
   </header>
 
-  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 公開準備中</span><p>公開日未定</p></div><p class="pn-release-title">発光の合成モードと 3D マウス、ペンのサイドボタンの改善</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 公開準備中</span><p>2026-10-16（予定）</p></div><p class="pn-release-title">WinTab とペンの直し、補助を本体へ、ステッチ、3D マウスと発光の合成モード</p></header>
 <p class="pn-release-tip">このページの v1.2.1 の内容は公開前の案内です。現在の配布版は v1.2.0 です。</p>
-<p class="pn-release-summary">いただいた要望をもとに、機能の追加と不具合の修正をしました。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
+<p class="pn-release-summary">v1.2.0 をお使いの方からの報告をもとに、不具合の修正と、いくつかの機能の追加をしました。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
+<section class="pn-release-part" aria-labelledby="v121-major"><h3 class="pn-release-part-title" id="v121-major">大きな変更</h3>
+<section class="pn-release-group" aria-labelledby="v121-host"><h4 id="v121-host">補助のプログラムを本体の中に入れました（Windows）</h4>
+<ul>
+<li>tools フォルダの補助のプログラム（閉じる見張り・ペンのサイドボタン・WinTab の筆圧・3D マウス・ペンの線を先に表示）は、ぺたぬり3D の本体の中で動きます。使い方・設定は変わりません<span class="pn-release-sub">書体の一覧・Unity の .meta の検索・更新の確認・書き出したファイルを開く所も、PowerShell などを起こさずに本体の中で行います</span></li>
+<li>setup で上書きすると、前の版の tools の補助は消えます。ZIP で使っている方は、新しいフォルダに展開してください（AO を CUDA で焼く補助は今までどおり別のプログラムです）</li>
+<li>「ペンの線を先に表示」の窓は、ぺたぬり3D が前にあるときだけ出ます</li>
+</ul></section>
 <section class="pn-release-group pn-release-notice" aria-labelledby="v121-notice"><h4 id="v121-notice">ご注意（前の版から更新する方へ）</h4>
 <ul>
 <li>更新するときは、作業を保存してアプリを閉じてから、新しい setup を実行するか、新しい ZIP を展開してください</li>
 <li>v1.2.0 をお使いの方は、アプリの新しいバージョンのお知らせから更新できます<span class="pn-release-sub">「BOOTH でダウンロード」で setup の zip をダウンロードすると、「インストールして再起動」で入れ替わります</span></li>
 <li>Standard を Pro にしている方は、v1.2.1 のアップグレードも入れ直してください<span class="pn-release-sub">「インストールして再起動」のときは、アップグレードのファイルもダウンロードしておくと一緒に入れ替わります</span></li>
+<li>ペンタブのドライバを入れ直す・更新するときは、ぺたぬり3D を閉じてから行ってください（WinTab を使っていると、ドライバのファイルを開いたままになります）</li>
+<li>ツール「凹凸」は「ステッチ」になりました（下の「変わったこと」）</li>
 </ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">直したこと</h3>
+<section class="pn-release-group" aria-labelledby="v121-save"><h4 id="v121-save">保存・起動</h4>
+<ul>
+<li>自動保存の途中で止まり、手で保存できない・閉じられないことがあった（作業ファイルが大きいほど起きやすい）<span class="pn-release-sub">自動保存の途中でも手の保存を先にし、保存先の窓が返ってこないときは「待つ／前の保存をやめて続ける」を選べるようにし、自動保存そのものも軽くしました</span></li>
+<li>大きい作業ファイル・PSD（32MB を超える物）を開くのが遅い</li>
+<li>画面が固まって × を 2 回押して閉じたとき、裏に画面のプロセスが残ることがあった</li>
+<li>アプリの中身が読めないとき・起動でつながらなかったときに、英語のページが出ることがあった（日本語の案内にし、自動でつなぎ直します）</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">ペン・ペンタブ</h4>
+<ul>
+<li>「筆圧を直接読む（WinTab）」を入れると、ペン自体が反応しなくなることがあった（Wacom など）<span class="pn-release-sub">つなぎ方を変えました。効かないときは、環境設定 → ペン・入力 → タブレット の「WinTab のつなぎ方：探し直す」を押してください</span></li>
+<li>WinTab が効いていれば、Windows Ink のペンにも WinTab の筆圧（と傾き）を使うようにしました（同じ所で切れます）</li>
+<li>ペンのサイドボタン（液タブ・ペンタブ。Wacom・XP-Pen・Huion・GAOMON で確かめました）：離しても 3D が回り続ける／中クリックが効かない／ドラッグが少し動いて止まる／ペン先で描けず回転や平行移動になる／UV の区画で中が効かない<span class="pn-release-sub">止まらなくなったときは、Esc か、ペン先で 1 回タップで止まります</span></li>
+<li>ペンで同じ所を塗り続けると、右クリックのメニューが出ることがある</li>
+<li>メニューを開いたまま Ctrl＋＋／－やホイール（液タブのダイヤルも）を使うと、アプリの画面全体が拡大・縮小された（再起動まで戻らない）<span class="pn-release-sub">どの操作でも画面全体は拡大しないようにしました（環境設定の表示サイズはそのまま使えます）</span></li>
+<li>3D でうんと寄って細いペンで塗ると、線が途切れることがある</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">そのほか</h4>
+<ul>
+<li>Unity 式の Alt＋右ドラッグのズームの向きが Unity と逆だった（下へドラッグで寄るようにしました）</li>
+<li>投げ縄で塗るが、UV ビュー・2D キャンバスで塗られない・ほかのテクスチャセットの上で効かない</li>
+<li>モザイク・シャープ・ハイパスなどが、透明の上に描いた線に効かない <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>「UV の縁から塗る」で、縁からの始まりを 0 にしても島の端（パディング）が塗られなかった <span class="tier pro">Pro</span></li>
+<li>レイヤーを選ぶと、一覧の行がずれる・下の方のレイヤーが隠れる</li>
+<li>「ここに描いたレイヤーを選ぶ」が、休んでいるセット・見えていない所で正しく選ばない</li>
+<li>割り当て直したキーがメニューに正しく出ない・前の版で割り当てたキーと二重になる</li>
+<li>選択範囲が小さいと、移動・変形の「対称にも」が出ないことがあった</li>
+<li>お問い合わせの窓で Enter を押すと閉じてしまう</li>
+<li>英語・韓国語・中国語の画面で、お問い合わせの窓の文の問いかけが日本語のままだった</li>
+<li>ほかにも細かな不具合を直しました</li>
+</ul></section>
+</section>
 <section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新しい機能</h3>
 <section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">描く・レイヤー</h4>
 <ul>
 <li>合成モード「加算（発光）」「覆い焼き（発光）」<span class="pn-release-sub">不透明度を下げた所・やわらかい筆の縁・下が透明な所でも、光るように明るく乗ります（レイヤー・フォルダ・ブラシの描画モードなど）</span></li>
-<li>スタンプの「次に置く所を薄く表示」（切ると、間隔の先の薄い見本を出しません）</li>
-<li>キーなどで選んだレイヤーまで、レイヤーの一覧を自動で送る（閉じたフォルダは開きます。切ることもできます）</li>
+<li>ぼかしは、なぞるほど・往復するほど溶け合うように（ツールプロパティで前の効き方に戻せます）</li>
+<li>色混ぜは、広くやわらかく溶け合うように</li>
+<li>スタンプの「次に置く所を薄く表示」を切れるように</li>
+<li>「UV の縁から塗る」の窓にプレビューと色の選び方 <span class="tier pro">Pro</span></li>
+<li>キーなどで選んだレイヤーまで、レイヤーの一覧を自動で送る</li>
 </ul></section>
 <section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">画面と操作</h4>
 <ul>
-<li>3D マウス（6 軸で動かす機器）で視点を動かせるように（Windows）</li>
+<li>3D マウス（3Dconnexion SpaceMouse など、6 軸で動かす機器）で視点を動かせるように（Windows）<span class="pn-release-sub">感度などは 環境設定 → 操作 → 3D マウス</span></li>
 <li>回し始めたときのカーソルの所を中心に回す（環境設定 → 操作 → カメラ。はじめは切）</li>
 <li>起動画面に 3D モデル・作業ファイルを落として始められるように</li>
-<li>3D を小窓にしているときは、起動画面を UV の区画に出すように</li>
-<li>メニューのアイコンをそろえました</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">ペン</h4>
-<ul>
-<li>「ペンの長押しでメニューを出す」を切れるように（環境設定 → ペン・入力 → メニュー・ボタン）</li>
-<li>「ペンのサイドボタンの中・右クリックを受け取る」を選べるように（同じ所。アプリ（exe）のとき）</li>
-<li>お問い合わせの自動の情報に、ペン・カメラの操作の情報を足しました</li>
+<li>「ペンの長押しでメニューを出す」「ペンのサイドボタンの中・右クリックを受け取る」を切れるように（環境設定 → ペン・入力 → メニュー・ボタン）</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">改善と修正</h3>
-<section class="pn-release-group" aria-labelledby="v121-sidebutton"><h4 id="v121-sidebutton">ペンのサイドボタン（液タブ・ペンタブ）</h4>
+<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">変わったこと</h3>
+<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">ツール「凹凸」が「ステッチ」に</h4>
 <ul>
-<li>サイドボタン（中クリック）を離しても、3D が回り続けることがある</li>
-<li>機種によって、サイドボタンの中クリックが効かない・ドラッグが少し動いて止まる</li>
-<li>ペン先で描けず、3D では回転・UV では平行移動になる（ペン先と同時に右クリックを送るドライバ）</li>
-<li>サイドボタンの中を押してすぐペン先を付けると、視点が動かずに線になる</li>
-<li>UV の区画でサイドボタンの中が効かない（UV では平行移動になります）</li>
-<li>止まらなくなったときは、Esc か、ペン先で 1 回タップで止まります</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">不具合の修正</h4>
-<ul>
-<li>ペンで同じ所を塗り続けると、右クリックのメニューが出ることがある</li>
-<li>Unity 式の Alt＋右ドラッグのズームの向きが Unity と逆だった（下へドラッグで寄るようにしました）</li>
-<li>メニューが出たまま拡大のキー・ホイールを使うと、アプリの画面全体が拡大・縮小された</li>
-<li>投げ縄で塗るが、UV ビュー・2D キャンバスで塗られない・ほかのテクスチャセットの上で効かない</li>
-<li>モザイク・シャープ・ハイパスなどが、透明の上に描いた線に効かない <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
-<li>フィルターの窓に、選択範囲の中だけに掛かることを出すように <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
-<li>レイヤーを選ぶと、一覧の行がずれる・下の方のレイヤーが隠れる</li>
-<li>「ここに描いたレイヤーを選ぶ」が、休んでいるセット・見えていない所で正しく選ばない</li>
-<li>3D でうんと寄って細いペンで塗ると、線が途切れることがある</li>
-<li>割り当て直したキーがメニューに正しく出ない・前の版で割り当てたキーと二重になる</li>
-<li>お問い合わせの窓で Enter を押すと閉じてしまう</li>
-<li>ほかにも細かな不具合をたくさん直しました</li>
+<li>縫い目（点線・ふっくら・縫い合わせ・パイピング・クロスステッチ・ジグザグ・鋲）は、描画色で今のレイヤーに描きます（全版。2D キャンバスでも）<span class="pn-release-sub">凹凸にしたいときは、ツールプロパティの「ノーマルマップのフォルダに描く」を入れてください（Pro。しわ・ふくらみは今までどおり高さで描きます）</span></li>
+<li>前の版で保存したサブツールのうち、何も変えていない縫い目は 1 回だけ新しい動き（描画色で描く）になります。大きさや名前を変えた物は今までどおり高さで描きます</li>
 </ul></section>
 </section>
 </article>

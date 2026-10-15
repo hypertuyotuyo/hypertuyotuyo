@@ -98,61 +98,80 @@
     </nav>
   </header>
 
-  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 in preparation</span><p>Release date TBD</p></div><p class="pn-release-title">Glow blend modes, 3D mouse support, and pen side button improvements</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status upcoming">v1.2.1 in preparation</span><p>2026-10-16 (planned)</p></div><p class="pn-release-title">WinTab and pen fixes, helpers moved into the main program, Stitch, 3D mouse and glow blend modes</p></header>
 <p class="pn-release-tip">The v1.2.1 information on this page is a preview before release. The current version is v1.2.0.</p>
-<p class="pn-release-summary">Based on your requests, this update adds new features and fixes bugs. Anything not marked otherwise is available in all editions (Lite, Standard, and Pro).</p>
+<p class="pn-release-summary">Based on reports from v1.2.0 users, this update fixes bugs and adds several features. Anything not marked otherwise is available in all editions (Lite, Standard, and Pro).</p>
+<section class="pn-release-part" aria-labelledby="v121-major"><h3 class="pn-release-part-title" id="v121-major">Major changes</h3>
+<section class="pn-release-group" aria-labelledby="v121-host"><h4 id="v121-host">Helper programs now run inside the main program (Windows)</h4>
+<ul>
+<li>The helper programs in the tools folder (close watcher, pen side button, WinTab pressure, 3D mouse, show pen stroke first) now run inside the PetaNuri3D executable. Usage and settings are unchanged<span class="pn-release-sub">The font list, Unity .meta search, update check and opening exported files are also handled inside the main program without launching PowerShell or similar</span></li>
+<li>Installing over an older version with setup removes the old helpers in tools. If you use the ZIP, extract it into a new folder (the CUDA AO baking helper remains a separate program)</li>
+<li>The “Show pen stroke first” overlay now appears only while PetaNuri3D is in front</li>
+</ul></section>
 <section class="pn-release-group pn-release-notice" aria-labelledby="v121-notice"><h4 id="v121-notice">Notes (if you are updating from an earlier version)</h4>
 <ul>
 <li>Before updating, save your work and close the app, then run the new setup or extract the new ZIP</li>
 <li>If you use v1.2.0, you can update from the new-version notice in the app<span class="pn-release-sub">Use “Download on BOOTH” to download the setup zip, then “Install and restart” replaces the app</span></li>
 <li>If you upgraded Standard to Pro, install the v1.2.1 upgrade again as well<span class="pn-release-sub">When using “Install and restart,” download the upgrade file too and it is replaced at the same time</span></li>
+<li>Close PetaNuri3D before reinstalling or updating your tablet driver (with WinTab in use, the driver’s files stay open)</li>
+<li>The Bump tool is now called Stitch (see “Changes” below)</li>
 </ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">Fixes</h3>
+<section class="pn-release-group" aria-labelledby="v121-save"><h4 id="v121-save">Saving and startup</h4>
+<ul>
+<li>Autosave could get stuck, making it impossible to save manually or close (more likely with large project files)<span class="pn-release-sub">Manual saves now take priority even during an autosave, you can choose “Wait / Cancel the previous save and continue” when the save-location window does not come back, and autosave itself is lighter</span></li>
+<li>Large project files and PSDs (over 32 MB) were slow to open</li>
+<li>After closing a frozen window by pressing × twice, a display process could remain in the background</li>
+<li>An English page could appear when the app’s contents could not be read or the startup connection failed (now a localized message, and it reconnects automatically)</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">Pen and pen tablet</h4>
+<ul>
+<li>Turning on “Read pressure directly (WinTab)” could make the pen stop responding entirely (Wacom and others)<span class="pn-release-sub">The connection method has changed. If it does not work, press “WinTab connection: Search again” in Preferences → Pen &amp; input → Tablet</span></li>
+<li>When WinTab is working, WinTab pressure (and tilt) is now also used for Windows Ink pens (can be turned off in the same place)</li>
+<li>Pen side button (pen displays and tablets; tested with Wacom, XP-Pen, Huion and GAOMON): 3D kept rotating after release / middle click did not work / dragging moved a little and stopped / the pen tip rotated or panned instead of drawing / middle did not work in the UV view<span class="pn-release-sub">If the view does not stop, press Esc or tap once with the pen tip</span></li>
+<li>Painting the same spot with the pen for a while could open the right-click menu</li>
+<li>Using Ctrl+plus/minus or the wheel (including pen display dials) while a menu was open zoomed the whole app window (and it stayed that way until restart)<span class="pn-release-sub">The whole window no longer zooms with any input (the display size setting in Preferences still works)</span></li>
+<li>Painting with a thin pen while zoomed far in on 3D could leave gaps in the line</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">Other fixes</h4>
+<ul>
+<li>The zoom direction of Alt+right-drag in Unity style was the opposite of Unity (dragging down now zooms in)</li>
+<li>Lasso fill did not fill in the UV view or 2D canvas, and did not work over other texture sets</li>
+<li>Mosaic, Sharpen, High Pass, and others had no effect on lines drawn over transparency <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+<li>In “Paint from UV edges,” the island rim (padding) was not painted even with the start distance set to 0 <span class="tier pro">Pro</span></li>
+<li>Selecting a layer shifted the rows in the list or hid layers near the bottom</li>
+<li>“Select layer painted here” did not select correctly on unloaded sets or in areas that are not visible</li>
+<li>Reassigned keys were not shown correctly in menus, or clashed with keys assigned in an earlier version</li>
+<li>With a small selection, “Also on the mirrored side” in Move/Transform sometimes did not appear</li>
+<li>Pressing Enter in the contact window closed it</li>
+<li>In the English, Korean and Chinese interfaces, the prompts in the contact window text were still in Japanese</li>
+<li>Other minor bugs were fixed too</li>
+</ul></section>
+</section>
 <section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">New features</h3>
 <section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">Drawing and layers</h4>
 <ul>
 <li>Blend modes “Add (glow)” and “Color dodge (glow)”<span class="pn-release-sub">They brighten as if glowing even where opacity is lowered, at soft brush edges, and over transparent areas (for layers, folders, brush drawing modes, and more)</span></li>
-<li>Stamp option “Show the next placement faintly” (turn it off to hide the faint preview of the next placement)</li>
-<li>The layer list scrolls automatically to a layer selected with keys and the like (closed folders are opened; this can be turned off)</li>
+<li>Blur now blends more the more you stroke back and forth (the old behavior can be restored in Tool properties)</li>
+<li>Color mix now blends more widely and softly</li>
+<li>The stamp’s “Show the next placement faintly” can now be turned off</li>
+<li>Preview and color selection in the “Paint from UV edges” window <span class="tier pro">Pro</span></li>
+<li>The layer list scrolls automatically to a layer selected with keys and the like</li>
 </ul></section>
 <section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">Interface and controls</h4>
 <ul>
-<li>Move the view with a 3D mouse (a six-axis input device) (Windows)</li>
+<li>Move the view with a 3D mouse (a six-axis device such as the 3Dconnexion SpaceMouse) (Windows)<span class="pn-release-sub">Sensitivity and more: Preferences → Controls → 3D mouse</span></li>
 <li>Orbit around the point under the cursor when orbiting starts (Preferences → Controls → Camera; off by default)</li>
 <li>Start by dropping a 3D model or project file onto the startup screen</li>
-<li>When 3D is in a small window, the startup screen appears in the UV view</li>
-<li>Menu icons are now consistent</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-pen"><h4 id="v121-pen">Pen</h4>
-<ul>
-<li>“Long press with the pen opens the menu” can now be turned off (Preferences → Pen &amp; input → Menus and buttons)</li>
-<li>“Receive middle/right clicks from the pen side button” can now be chosen (same place; in the app (exe))</li>
-<li>The information added automatically to contact messages now includes pen and camera control details</li>
+<li>“Long press with the pen opens the menu” and “Receive middle/right clicks from the pen side button” can now be turned off (Preferences → Pen &amp; input → Menus and buttons)</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">Improvements and fixes</h3>
-<section class="pn-release-group" aria-labelledby="v121-sidebutton"><h4 id="v121-sidebutton">Pen side button (pen displays and pen tablets)</h4>
+<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">Changes</h3>
+<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">The Bump tool is now Stitch</h4>
 <ul>
-<li>The 3D view could keep rotating after releasing the side button (middle click)</li>
-<li>On some models, the side button middle click did not work, or dragging moved a little and then stopped</li>
-<li>The pen tip could not draw and rotated 3D or panned UV instead (drivers that send a right-click together with the pen tip)</li>
-<li>Pressing the side button (middle) and then touching the pen tip right away drew a line instead of moving the view</li>
-<li>The side button (middle) did not work in the UV view (it now pans in UV)</li>
-<li>If the view does not stop, press Esc or tap once with the pen tip</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-fixes"><h4 id="v121-fixes">Bug fixes</h4>
-<ul>
-<li>Painting the same spot with the pen for a while could open the right-click menu</li>
-<li>The zoom direction of Alt+right-drag in Unity style was the opposite of Unity (dragging down now zooms in)</li>
-<li>Using zoom keys or the wheel while a menu was open zoomed the whole app window</li>
-<li>Lasso fill did not fill in the UV view or 2D canvas, and did not work over other texture sets</li>
-<li>Mosaic, Sharpen, High Pass, and others had no effect on lines drawn over transparency <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
-<li>Filter windows now show when a filter applies only inside the selection <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
-<li>Selecting a layer shifted the rows in the list or hid layers near the bottom</li>
-<li>“Select layer painted here” did not select correctly on unloaded sets or in areas that are not visible</li>
-<li>Painting with a thin pen while zoomed far in on 3D could leave gaps in the line</li>
-<li>Reassigned keys were not shown correctly in menus, or clashed with keys assigned in an earlier version</li>
-<li>Pressing Enter in the contact window closed it</li>
-<li>Many other small bugs were fixed</li>
+<li>Stitches (dotted, puffy, seam, piping, cross stitch, zigzag, rivet) now draw in the foreground color on the current layer (all editions; also on the 2D canvas)<span class="pn-release-sub">To make bumps instead, turn on “Draw in the normal map folder” in Tool properties (Pro; Wrinkle and Bulge still draw by height)</span></li>
+<li>Among sub tools saved by an earlier version, unchanged stitch tools switch once to the new behavior (drawing in the foreground color); ones whose size or name you changed keep drawing by height</li>
 </ul></section>
 </section>
 </article>
