@@ -117,7 +117,32 @@
 <li>工具“凹凸”已更名为“缝线”（见下方“变更”）</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">修复</h3>
+<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">变更</h3>
+<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">工具“凹凸”更名为“缝线”</h4>
+<ul>
+<li>针脚（虚线、鼓起、拼缝、滚边、十字绣、锯齿、铆钉）用前景色绘制到当前图层（所有版本，2D 画布上也可以）<span class="pn-release-sub">想做成凹凸时，请开启工具属性中的“在法线贴图文件夹中绘制”（Pro；褶皱、鼓包照旧以高度绘制）</span></li>
+<li>旧版本保存的子工具中，未做更改的针脚会一次性切换为新动作（用前景色绘制）；更改过大小或名称的照旧以高度绘制</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新功能</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">绘制与图层</h4>
+<ul>
+<li>混合模式“相加（发光）”“颜色减淡（发光）”<span class="pn-release-sub">即使在降低不透明度处、柔软笔刷边缘或下方透明处，也会像发光一样明亮叠加（图层、文件夹、画笔绘制模式等）</span></li>
+<li>模糊会随涂抹、来回次数增加而融合（可在工具属性中恢复以前的效果）</li>
+<li>混色融合得更宽更柔和</li>
+<li>可关闭图章的“淡淡显示下一个放置位置”</li>
+<li>“从 UV 边缘绘制”窗口新增预览和颜色选择 <span class="tier pro">Pro</span></li>
+<li>图层列表自动滚动到用按键等选中的图层</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">界面与操作</h4>
+<ul>
+<li>可用 3D 鼠标（3Dconnexion SpaceMouse 等六轴设备）操作视角（Windows）<span class="pn-release-sub">灵敏度等在 偏好设置 → 操作 → 3D 鼠标</span></li>
+<li>以开始旋转时光标所在处为中心旋转（偏好设置 → 操作 → 相机；默认关闭）</li>
+<li>可将 3D 模型或工程文件拖放到启动界面直接开始</li>
+<li>可关闭“用笔长按弹出菜单”“接收笔侧键的中键／右键点击”（偏好设置 → 笔与输入 → 菜单和按钮）</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">问题修复</h3>
 <section class="pn-release-group" aria-labelledby="v121-save"><h4 id="v121-save">保存与启动</h4>
 <ul>
 <li>自动保存有时会卡住，导致无法手动保存或关闭（工程文件越大越容易发生）<span class="pn-release-sub">自动保存过程中也会优先手动保存；保存位置窗口没有返回时可选择“等待／取消上一次保存并继续”；自动保存本身也更轻量</span></li>
@@ -147,31 +172,6 @@
 <li>在联系窗口中按 Enter 会关闭窗口</li>
 <li>英语、韩语、中文界面中，联系窗口文本的提问部分仍是日语</li>
 <li>还修复了其他细小问题</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新功能</h3>
-<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">绘制与图层</h4>
-<ul>
-<li>混合模式“相加（发光）”“颜色减淡（发光）”<span class="pn-release-sub">即使在降低不透明度处、柔软笔刷边缘或下方透明处，也会像发光一样明亮叠加（图层、文件夹、画笔绘制模式等）</span></li>
-<li>模糊会随涂抹、来回次数增加而融合（可在工具属性中恢复以前的效果）</li>
-<li>混色融合得更宽更柔和</li>
-<li>可关闭图章的“淡淡显示下一个放置位置”</li>
-<li>“从 UV 边缘绘制”窗口新增预览和颜色选择 <span class="tier pro">Pro</span></li>
-<li>图层列表自动滚动到用按键等选中的图层</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">界面与操作</h4>
-<ul>
-<li>可用 3D 鼠标（3Dconnexion SpaceMouse 等六轴设备）操作视角（Windows）<span class="pn-release-sub">灵敏度等在 偏好设置 → 操作 → 3D 鼠标</span></li>
-<li>以开始旋转时光标所在处为中心旋转（偏好设置 → 操作 → 相机；默认关闭）</li>
-<li>可将 3D 模型或工程文件拖放到启动界面直接开始</li>
-<li>可关闭“用笔长按弹出菜单”“接收笔侧键的中键／右键点击”（偏好设置 → 笔与输入 → 菜单和按钮）</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">变更</h3>
-<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">工具“凹凸”更名为“缝线”</h4>
-<ul>
-<li>针脚（虚线、鼓起、拼缝、滚边、十字绣、锯齿、铆钉）用前景色绘制到当前图层（所有版本，2D 画布上也可以）<span class="pn-release-sub">想做成凹凸时，请开启工具属性中的“在法线贴图文件夹中绘制”（Pro；褶皱、鼓包照旧以高度绘制）</span></li>
-<li>旧版本保存的子工具中，未做更改的针脚会一次性切换为新动作（用前景色绘制）；更改过大小或名称的照旧以高度绘制</li>
 </ul></section>
 </section>
 </article>

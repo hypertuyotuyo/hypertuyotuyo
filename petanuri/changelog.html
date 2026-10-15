@@ -117,7 +117,32 @@
 <li>ツール「凹凸」は「ステッチ」になりました（下の「変わったこと」）</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">直したこと</h3>
+<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">変更点</h3>
+<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">ツール「凹凸」が「ステッチ」に</h4>
+<ul>
+<li>縫い目（点線・ふっくら・縫い合わせ・パイピング・クロスステッチ・ジグザグ・鋲）は、描画色で今のレイヤーに描きます（全版。2D キャンバスでも）<span class="pn-release-sub">凹凸にしたいときは、ツールプロパティの「ノーマルマップのフォルダに描く」を入れてください（Pro。しわ・ふくらみは今までどおり高さで描きます）</span></li>
+<li>前の版で保存したサブツールのうち、何も変えていない縫い目は 1 回だけ新しい動き（描画色で描く）になります。大きさや名前を変えた物は今までどおり高さで描きます</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新機能</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">描く・レイヤー</h4>
+<ul>
+<li>合成モード「加算（発光）」「覆い焼き（発光）」<span class="pn-release-sub">不透明度を下げた所・やわらかい筆の縁・下が透明な所でも、光るように明るく乗ります（レイヤー・フォルダ・ブラシの描画モードなど）</span></li>
+<li>ぼかしは、なぞるほど・往復するほど溶け合うように（ツールプロパティで前の効き方に戻せます）</li>
+<li>色混ぜは、広くやわらかく溶け合うように</li>
+<li>スタンプの「次に置く所を薄く表示」を切れるように</li>
+<li>「UV の縁から塗る」の窓にプレビューと色の選び方 <span class="tier pro">Pro</span></li>
+<li>キーなどで選んだレイヤーまで、レイヤーの一覧を自動で送る</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">画面と操作</h4>
+<ul>
+<li>3D マウス（3Dconnexion SpaceMouse など、6 軸で動かす機器）で視点を動かせるように（Windows）<span class="pn-release-sub">感度などは 環境設定 → 操作 → 3D マウス</span></li>
+<li>回し始めたときのカーソルの所を中心に回す（環境設定 → 操作 → カメラ。はじめは切）</li>
+<li>起動画面に 3D モデル・作業ファイルを落として始められるように</li>
+<li>「ペンの長押しでメニューを出す」「ペンのサイドボタンの中・右クリックを受け取る」を切れるように（環境設定 → ペン・入力 → メニュー・ボタン）</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">不具合修正</h3>
 <section class="pn-release-group" aria-labelledby="v121-save"><h4 id="v121-save">保存・起動</h4>
 <ul>
 <li>自動保存の途中で止まり、手で保存できない・閉じられないことがあった（作業ファイルが大きいほど起きやすい）<span class="pn-release-sub">自動保存の途中でも手の保存を先にし、保存先の窓が返ってこないときは「待つ／前の保存をやめて続ける」を選べるようにし、自動保存そのものも軽くしました</span></li>
@@ -149,31 +174,6 @@
 <li>ほかにも細かな不具合を直しました</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">新しい機能</h3>
-<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">描く・レイヤー</h4>
-<ul>
-<li>合成モード「加算（発光）」「覆い焼き（発光）」<span class="pn-release-sub">不透明度を下げた所・やわらかい筆の縁・下が透明な所でも、光るように明るく乗ります（レイヤー・フォルダ・ブラシの描画モードなど）</span></li>
-<li>ぼかしは、なぞるほど・往復するほど溶け合うように（ツールプロパティで前の効き方に戻せます）</li>
-<li>色混ぜは、広くやわらかく溶け合うように</li>
-<li>スタンプの「次に置く所を薄く表示」を切れるように</li>
-<li>「UV の縁から塗る」の窓にプレビューと色の選び方 <span class="tier pro">Pro</span></li>
-<li>キーなどで選んだレイヤーまで、レイヤーの一覧を自動で送る</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">画面と操作</h4>
-<ul>
-<li>3D マウス（3Dconnexion SpaceMouse など、6 軸で動かす機器）で視点を動かせるように（Windows）<span class="pn-release-sub">感度などは 環境設定 → 操作 → 3D マウス</span></li>
-<li>回し始めたときのカーソルの所を中心に回す（環境設定 → 操作 → カメラ。はじめは切）</li>
-<li>起動画面に 3D モデル・作業ファイルを落として始められるように</li>
-<li>「ペンの長押しでメニューを出す」「ペンのサイドボタンの中・右クリックを受け取る」を切れるように（環境設定 → ペン・入力 → メニュー・ボタン）</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">変わったこと</h3>
-<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">ツール「凹凸」が「ステッチ」に</h4>
-<ul>
-<li>縫い目（点線・ふっくら・縫い合わせ・パイピング・クロスステッチ・ジグザグ・鋲）は、描画色で今のレイヤーに描きます（全版。2D キャンバスでも）<span class="pn-release-sub">凹凸にしたいときは、ツールプロパティの「ノーマルマップのフォルダに描く」を入れてください（Pro。しわ・ふくらみは今までどおり高さで描きます）</span></li>
-<li>前の版で保存したサブツールのうち、何も変えていない縫い目は 1 回だけ新しい動き（描画色で描く）になります。大きさや名前を変えた物は今までどおり高さで描きます</li>
-</ul></section>
-</section>
 </article>
 <article class="pn-release" id="v1-2-0" aria-labelledby="v1-2-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-0-title">v1.2.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-10">2026-10-10</time></p></div><p class="pn-release-title">インストーラーと新しいペン、小窓と画面の回転、lilToon の設定を追加</p></header>
 <p class="pn-release-summary">いただいた要望をもとに、たくさんの機能を追加しました。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
@@ -193,7 +193,7 @@
 <li>Standard を Pro にしている方は、v1.2.0 のアップグレードも入れ直してください</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v120-new"><h3 class="pn-release-part-title" id="v120-new">新しい機能</h3>
+<section class="pn-release-part" aria-labelledby="v120-new"><h3 class="pn-release-part-title" id="v120-new">新機能</h3>
 <section class="pn-release-group" aria-labelledby="v120-draw"><h4 id="v120-draw">描く</h4>
 <ul>
 <li>ゆがみペン（押し出す・膨らませる・縮める・渦など。対称にも対応）</li>
@@ -243,7 +243,7 @@
 <li>髪の束など、同じ UV を使い回した所も 3D で塗れるように</li>
 <li>英語・韓国語・中国語の訳を追加</li>
 </ul></section>
-<section class="pn-release-group" aria-labelledby="v120-fixes"><h4 id="v120-fixes">不具合の修正</h4>
+<section class="pn-release-group" aria-labelledby="v120-fixes"><h4 id="v120-fixes">不具合修正</h4>
 <ul>
 <li>× で閉じられないことがある（固まったときは × を 2 回で閉じます）</li>
 <li>スリープ明けに自動保存が止まり、保存できなくなることがある</li>

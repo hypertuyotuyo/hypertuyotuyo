@@ -117,7 +117,32 @@
 <li>The Bump tool is now called Stitch (see “Changes” below)</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">Fixes</h3>
+<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">Changes</h3>
+<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">The Bump tool is now Stitch</h4>
+<ul>
+<li>Stitches (dotted, puffy, seam, piping, cross stitch, zigzag, rivet) now draw in the foreground color on the current layer (all editions; also on the 2D canvas)<span class="pn-release-sub">To make bumps instead, turn on “Draw in the normal map folder” in Tool properties (Pro; Wrinkle and Bulge still draw by height)</span></li>
+<li>Among sub tools saved by an earlier version, unchanged stitch tools switch once to the new behavior (drawing in the foreground color); ones whose size or name you changed keep drawing by height</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">New features</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">Drawing and layers</h4>
+<ul>
+<li>Blend modes “Add (glow)” and “Color dodge (glow)”<span class="pn-release-sub">They brighten as if glowing even where opacity is lowered, at soft brush edges, and over transparent areas (for layers, folders, brush drawing modes, and more)</span></li>
+<li>Blur now blends more the more you stroke back and forth (the old behavior can be restored in Tool properties)</li>
+<li>Color mix now blends more widely and softly</li>
+<li>The stamp’s “Show the next placement faintly” can now be turned off</li>
+<li>Preview and color selection in the “Paint from UV edges” window <span class="tier pro">Pro</span></li>
+<li>The layer list scrolls automatically to a layer selected with keys and the like</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">Interface and controls</h4>
+<ul>
+<li>Move the view with a 3D mouse (a six-axis device such as the 3Dconnexion SpaceMouse) (Windows)<span class="pn-release-sub">Sensitivity and more: Preferences → Controls → 3D mouse</span></li>
+<li>Orbit around the point under the cursor when orbiting starts (Preferences → Controls → Camera; off by default)</li>
+<li>Start by dropping a 3D model or project file onto the startup screen</li>
+<li>“Long press with the pen opens the menu” and “Receive middle/right clicks from the pen side button” can now be turned off (Preferences → Pen &amp; input → Menus and buttons)</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">Bug fixes</h3>
 <section class="pn-release-group" aria-labelledby="v121-save"><h4 id="v121-save">Saving and startup</h4>
 <ul>
 <li>Autosave could get stuck, making it impossible to save manually or close (more likely with large project files)<span class="pn-release-sub">Manual saves now take priority even during an autosave, you can choose “Wait / Cancel the previous save and continue” when the save-location window does not come back, and autosave itself is lighter</span></li>
@@ -147,31 +172,6 @@
 <li>Pressing Enter in the contact window closed it</li>
 <li>In the English, Korean and Chinese interfaces, the prompts in the contact window text were still in Japanese</li>
 <li>Other minor bugs were fixed too</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">New features</h3>
-<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">Drawing and layers</h4>
-<ul>
-<li>Blend modes “Add (glow)” and “Color dodge (glow)”<span class="pn-release-sub">They brighten as if glowing even where opacity is lowered, at soft brush edges, and over transparent areas (for layers, folders, brush drawing modes, and more)</span></li>
-<li>Blur now blends more the more you stroke back and forth (the old behavior can be restored in Tool properties)</li>
-<li>Color mix now blends more widely and softly</li>
-<li>The stamp’s “Show the next placement faintly” can now be turned off</li>
-<li>Preview and color selection in the “Paint from UV edges” window <span class="tier pro">Pro</span></li>
-<li>The layer list scrolls automatically to a layer selected with keys and the like</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">Interface and controls</h4>
-<ul>
-<li>Move the view with a 3D mouse (a six-axis device such as the 3Dconnexion SpaceMouse) (Windows)<span class="pn-release-sub">Sensitivity and more: Preferences → Controls → 3D mouse</span></li>
-<li>Orbit around the point under the cursor when orbiting starts (Preferences → Controls → Camera; off by default)</li>
-<li>Start by dropping a 3D model or project file onto the startup screen</li>
-<li>“Long press with the pen opens the menu” and “Receive middle/right clicks from the pen side button” can now be turned off (Preferences → Pen &amp; input → Menus and buttons)</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">Changes</h3>
-<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">The Bump tool is now Stitch</h4>
-<ul>
-<li>Stitches (dotted, puffy, seam, piping, cross stitch, zigzag, rivet) now draw in the foreground color on the current layer (all editions; also on the 2D canvas)<span class="pn-release-sub">To make bumps instead, turn on “Draw in the normal map folder” in Tool properties (Pro; Wrinkle and Bulge still draw by height)</span></li>
-<li>Among sub tools saved by an earlier version, unchanged stitch tools switch once to the new behavior (drawing in the foreground color); ones whose size or name you changed keep drawing by height</li>
 </ul></section>
 </section>
 </article>

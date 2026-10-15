@@ -117,7 +117,32 @@
 <li>도구 &#x27;요철&#x27;은 &#x27;스티치&#x27;가 되었습니다(아래 &#x27;바뀐 것&#x27;)</li>
 </ul></section>
 </section>
-<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">고친 것</h3>
+<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">변경 사항</h3>
+<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">도구 &#x27;요철&#x27;이 &#x27;스티치&#x27;로</h4>
+<ul>
+<li>바늘땀(점선·도톰·솔기·파이핑·크로스 스티치·지그재그·리벳)은 전경색으로 지금의 레이어에 그립니다(모든 버전. 2D 캔버스에서도)<span class="pn-release-sub">요철로 만들고 싶을 때는 도구 속성의 &#x27;노멀 맵 폴더에 그리기&#x27;를 켜 주세요(Pro. 주름·부풀림은 지금까지와 같이 높이로 그립니다)</span></li>
+<li>이전 버전에서 저장한 보조 도구 중 아무것도 바꾸지 않은 바늘땀은 한 번만 새 동작(전경색으로 그리기)이 됩니다. 크기나 이름을 바꾼 것은 지금까지와 같이 높이로 그립니다</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">새 기능</h3>
+<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">그리기·레이어</h4>
+<ul>
+<li>합성 모드 &#x27;더하기(발광)&#x27;·&#x27;색상 닷지(발광)&#x27;<span class="pn-release-sub">불투명도를 낮춘 곳·부드러운 붓의 가장자리·아래가 투명한 곳에서도 빛나듯이 밝게 얹힙니다(레이어·폴더·브러시의 그리기 모드 등)</span></li>
+<li>흐리기는 문지를수록·왕복할수록 섞이게(도구 속성에서 이전 방식으로 되돌릴 수 있음)</li>
+<li>색 섞기는 넓고 부드럽게 섞이게</li>
+<li>스탬프의 &#x27;다음에 놓일 위치를 흐리게 표시&#x27;를 끌 수 있게</li>
+<li>&#x27;UV 가장자리에서 칠하기&#x27; 창에 미리보기와 색 선택 <span class="tier pro">Pro</span></li>
+<li>키 등으로 선택한 레이어까지 레이어 목록을 자동으로 스크롤</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">화면과 조작</h4>
+<ul>
+<li>3D 마우스(3Dconnexion SpaceMouse 등 6축으로 움직이는 장치)로 시점을 움직일 수 있게(Windows)<span class="pn-release-sub">감도 등은 환경 설정 → 조작 → 3D 마우스</span></li>
+<li>회전을 시작할 때의 커서 위치를 중심으로 회전(환경 설정 → 조작 → 카메라. 처음에는 꺼짐)</li>
+<li>시작 화면에 3D 모델·작업 파일을 드롭해서 시작할 수 있게</li>
+<li>&#x27;펜으로 길게 누르면 메뉴 열기&#x27;·&#x27;펜 사이드 버튼의 가운데·오른쪽 클릭 받기&#x27;를 끌 수 있게(환경 설정 → 펜·입력 → 메뉴와 버튼)</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v121-fix"><h3 class="pn-release-part-title" id="v121-fix">버그 수정</h3>
 <section class="pn-release-group" aria-labelledby="v121-save"><h4 id="v121-save">저장·시작</h4>
 <ul>
 <li>자동 저장 도중에 멈춰 수동 저장이나 닫기가 안 되는 경우가 있었음(작업 파일이 클수록 잘 일어남)<span class="pn-release-sub">자동 저장 도중에도 수동 저장을 먼저 하고, 저장 위치 창이 돌아오지 않을 때는 &#x27;기다리기／이전 저장을 취소하고 계속&#x27;을 고를 수 있게 했으며, 자동 저장 자체도 가볍게 했습니다</span></li>
@@ -147,31 +172,6 @@
 <li>문의 창에서 Enter를 누르면 닫혀 버림</li>
 <li>영어·한국어·중국어 화면에서 문의 창 문장의 질문 부분이 일본어 그대로였음</li>
 <li>그 밖의 자잘한 버그도 고쳤습니다</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-new"><h3 class="pn-release-part-title" id="v121-new">새 기능</h3>
-<section class="pn-release-group" aria-labelledby="v121-draw"><h4 id="v121-draw">그리기·레이어</h4>
-<ul>
-<li>합성 모드 &#x27;더하기(발광)&#x27;·&#x27;색상 닷지(발광)&#x27;<span class="pn-release-sub">불투명도를 낮춘 곳·부드러운 붓의 가장자리·아래가 투명한 곳에서도 빛나듯이 밝게 얹힙니다(레이어·폴더·브러시의 그리기 모드 등)</span></li>
-<li>흐리기는 문지를수록·왕복할수록 섞이게(도구 속성에서 이전 방식으로 되돌릴 수 있음)</li>
-<li>색 섞기는 넓고 부드럽게 섞이게</li>
-<li>스탬프의 &#x27;다음에 놓일 위치를 흐리게 표시&#x27;를 끌 수 있게</li>
-<li>&#x27;UV 가장자리에서 칠하기&#x27; 창에 미리보기와 색 선택 <span class="tier pro">Pro</span></li>
-<li>키 등으로 선택한 레이어까지 레이어 목록을 자동으로 스크롤</li>
-</ul></section>
-<section class="pn-release-group" aria-labelledby="v121-screen"><h4 id="v121-screen">화면과 조작</h4>
-<ul>
-<li>3D 마우스(3Dconnexion SpaceMouse 등 6축으로 움직이는 장치)로 시점을 움직일 수 있게(Windows)<span class="pn-release-sub">감도 등은 환경 설정 → 조작 → 3D 마우스</span></li>
-<li>회전을 시작할 때의 커서 위치를 중심으로 회전(환경 설정 → 조작 → 카메라. 처음에는 꺼짐)</li>
-<li>시작 화면에 3D 모델·작업 파일을 드롭해서 시작할 수 있게</li>
-<li>&#x27;펜으로 길게 누르면 메뉴 열기&#x27;·&#x27;펜 사이드 버튼의 가운데·오른쪽 클릭 받기&#x27;를 끌 수 있게(환경 설정 → 펜·입력 → 메뉴와 버튼)</li>
-</ul></section>
-</section>
-<section class="pn-release-part" aria-labelledby="v121-changed"><h3 class="pn-release-part-title" id="v121-changed">바뀐 것</h3>
-<section class="pn-release-group" aria-labelledby="v121-stitch"><h4 id="v121-stitch">도구 &#x27;요철&#x27;이 &#x27;스티치&#x27;로</h4>
-<ul>
-<li>바늘땀(점선·도톰·솔기·파이핑·크로스 스티치·지그재그·리벳)은 전경색으로 지금의 레이어에 그립니다(모든 버전. 2D 캔버스에서도)<span class="pn-release-sub">요철로 만들고 싶을 때는 도구 속성의 &#x27;노멀 맵 폴더에 그리기&#x27;를 켜 주세요(Pro. 주름·부풀림은 지금까지와 같이 높이로 그립니다)</span></li>
-<li>이전 버전에서 저장한 보조 도구 중 아무것도 바꾸지 않은 바늘땀은 한 번만 새 동작(전경색으로 그리기)이 됩니다. 크기나 이름을 바꾼 것은 지금까지와 같이 높이로 그립니다</li>
 </ul></section>
 </section>
 </article>
