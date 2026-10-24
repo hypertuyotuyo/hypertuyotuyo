@@ -87,7 +87,8 @@
     <p class="pn-history-lead">New features, improvements to painting and controls, and fixed bugs.</p>
     <p class="pn-history-note">When updating from BOOTH, check that the downloaded file name includes v1.2.1.</p>
     <p class="pn-history-note">The status of feature requests is listed on the <a class="pn-textlink" href="/petanuri/en/requests">Requests and status</a> page.</p>
-    <nav class="pn-history-jump" aria-label="Jump to version"><a href="#v1-2-1">v1.2.1 <span>Latest</span></a>
+    <nav class="pn-history-jump" aria-label="Jump to version"><a href="#v1-3-0">v1.3.0 <span>v1.3.0 in preparation</span></a>
+      <a href="#v1-2-1">v1.2.1 <span>Latest</span></a>
       <a href="#v1-2-0">v1.2.0 <span>Released</span></a>
       <a href="#v1-1-2">v1.1.2 <span>Released</span></a>
       <a href="#v1-1-1">v1.1.1 <span>Released</span></a>
@@ -98,7 +99,100 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status released">Latest</span><p><time datetime="2026-10-15">2026-10-15</time></p></div><p class="pn-release-title">WinTab and pen fixes, helpers moved into the main program, Stitch, 3D mouse and glow blend modes</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status upcoming">v1.3.0 in preparation</span><p>Release date to be announced</p></div><p class="pn-release-title">Automatic updates from inside the app, a fix for picking colors from the screen, lace brushes, and fitting your painting when UVs change</p></header>
+<p class="pn-release-tip">The v1.3.0 information on this page is a preview before release. The current release is v1.2.1.</p>
+<p class="pn-release-summary">You can now update automatically from inside the app. This version adds drawing and integration features and fixes many bugs (it also includes everything planned for v1.2.2). Unless noted otherwise, features are available in all editions (Lite, Standard, Pro).</p>
+<section class="pn-release-part" aria-labelledby="v130-major"><h3 class="pn-release-part-title" id="v130-major">Major changes</h3>
+<section class="pn-release-group" aria-labelledby="v130-update"><h4 id="v130-update">Automatic updates from inside the app (Windows)</h4>
+<ul>
+<li>When a new version is out, a notice appears, and with a single confirmation the app downloads it, verifies it (signature and contents), replaces itself, and restarts<span class="pn-release-sub">You can also turn off automatic downloading at startup (Preferences → System → Startup). If the update cannot be fetched from the official site, the app falls back to the usual guidance to download from BOOTH</span></li>
+<li>The distribution format has changed: each edition is now a single ZIP. The extracted “PetaNuri3D” folder contains the program and setup.exe<span class="pn-release-sub">Install with setup.exe, or run PetaNuri3D-win_x64.exe in the folder directly (do not take setup.exe out on its own; use the whole folder)</span></li>
+</ul></section>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v130-notice"><h4 id="v130-notice">Notes (if you are updating from an earlier version)</h4>
+<ul>
+<li>Updating from v1.2.1 or earlier must be done by hand this one time<span class="pn-release-sub">Save your work, close the app, extract the ZIP, and double-click setup.exe inside (it installs over the place where you installed with setup before). The Install and restart feature of v1.2.1 and earlier cannot find the new ZIP format</span></li>
+<li>If you upgraded Standard to Pro, you do not need to install the upgrade file again (it stays Pro after future updates too)</li>
+<li>Please also update the Unity integration add-on <span class="tier pro">Pro</span><span class="pn-release-sub">The integration protocol was updated to carry Main color 2nd/3rd. The previous add-on still connects, but 2nd/3rd are not transferred</span></li>
+<li>If you open a project file with merged normal map images in an earlier version, colors may shift by a few levels. Please edit it in v1.3.0</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-changed"><h3 class="pn-release-part-title" id="v130-changed">Changes</h3>
+<section class="pn-release-group" aria-labelledby="v130-behavior"><h4 id="v130-behavior">Drawing and file handling</h4>
+<ul>
+<li>The Pro upgrade file is no longer tied to a version (once installed, you stay Pro even after updating; files you purchased before also keep working)</li>
+<li>Stamp images are now used at their original resolution without shrinking (previously the long side was reduced to 1,024 px)</li>
+<li>Removed the limit on how many imported brush tips and patterns can be saved</li>
+<li>With Paint across, the brush no longer spills onto texture sets the pen tip is not on (painting eyes could also paint the skin)</li>
+<li>You can choose not to darken outside the selection (menu Selection → Darken outside the selection)</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-new"><h3 class="pn-release-part-title" id="v130-new">New features</h3>
+<section class="pn-release-group" aria-labelledby="v130-draw"><h4 id="v130-draw">Drawing and color</h4>
+<ul>
+<li>Change to foreground color (keep transparency): changes only the painted areas to the current foreground color, handy for recoloring line art (Edit menu, layer right-click)</li>
+<li>Lace brushes (scallop, picot, small flowers, mesh): the pattern runs as a band along the stroke, so it stays connected around curves, corners, and in 3D</li>
+<li>Brush tip images in the Shape tool: draw stitches and more lined up along the outline of a shape</li>
+<li>Brush tips can now be chosen for Blur, Smudge, and Blend too</li>
+<li>Eyedropper magnifier: shows a magnified view around the spot you pick (3D and UV; can be turned off in tool properties)</li>
+<li>Mirror copy the selected artwork to the opposite side, and mirror copy masks left/right</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-model"><h4 id="v130-model">Models and integration</h4>
+<ul>
+<li>When you reload a model and its UVs have changed, your painting is fitted to the new UVs (automatic with the Blender and Unity integrations)</li>
+<li>Save without the model (FBX): a small project file for sharing. When opened, you choose the model on your computer</li>
+<li>The Unity integration also loads and writes back lilToon Main color 2nd/3rd <span class="tier pro">Pro</span></li>
+<li>Merging normal map images <span class="tier pro">Pro</span></li>
+<li>Export 2D paintings as PSD <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-screen"><h4 id="v130-screen">Interface and controls</h4>
+<ul>
+<li>Camera orientation lock in the 3D navigator (stops only rotation; panning and zooming still work)</li>
+<li>Rotation/zoom sliders under the navigator (Preferences → Interface → Display, or right-click the navigator)</li>
+<li>UV background in the Preferences color scheme</li>
+<li>Right-click the toolbar for Columns: Auto or Columns: Always 1. Tools that do not fit can be scrolled with the wheel and more</li>
+<li>Traditional Chinese (中文（繁體）) display</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-fix"><h3 class="pn-release-part-title" id="v130-fix">Bug fixes</h3>
+<section class="pn-release-group" aria-labelledby="v130-pick"><h4 id="v130-pick">Pick color from screen (exe version)</h4>
+<ul>
+<li>In v1.2.1, Pick color from screen could not be used (it was always canceled right after opening, sometimes showing “EyeDropper is not available”)<span class="pn-release-sub">PetaNuri3D now uses its own eyedropper instead of the display engine’s (WebView2). Watch the loupe (magnified view and color values) and click or press Enter/Space to pick. Arrow keys move one pixel at a time (10 with Shift); Esc or right-click cancels (it picks from a capture of the screen taken when you start, so videos and the like appear frozen)</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-save"><h4 id="v130-save">Saving and loading</h4>
+<ul>
+<li>When the destination ran out of space, a truncated file could replace the project file while “Saved” was shown (the original file is now kept and you are notified)</li>
+<li>When the destination stopped responding, the app stayed on “Saving…” without telling you</li>
+<li>Large PSDs (over about 115 MB or 50 layers) could not be loaded due to insufficient memory (this was also why the Main color 2nd PSD was not loaded via the Unity integration)</li>
+<li>Loading or exporting large PSDs and saving heavy project files froze the screen for a long time and used a lot of memory</li>
+<li>Autosaves of separate works could end up in the same group, deleting the earlier work’s autosaves</li>
+<li>Reloading a model made all hidden objects visible again</li>
+<li>In 2D painting, PSDs could not be loaded from the menu</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-paint"><h4 id="v130-paint">Draw</h4>
+<ul>
+<li>On hair and layered clothing, the mirrored side was slightly off when drawing symmetrically</li>
+<li>Smudge worked differently on the left and right when symmetry was on</li>
+<li>Filling gaps inside a layer with a thick border made the border spread out in a jagged way</li>
+<li>Lightly erasing with the airbrush and similar tools in the transparent color left a grainy look</li>
+<li>In PNG export, padding stopped at 32 px even when set to 64 or 128 px</li>
+<li>Ctrl+= / Ctrl+- stopped zooming in and out</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-layers"><h4 id="v130-layers">Layers and merging</h4>
+<ul>
+<li>Merging a folder containing the base and similar operations removed the base’s special status (the undeletable bottom layer)</li>
+<li>Hidden or locked layers and folders could disappear when merging, or could be merged when they should not</li>
+<li>Ungrouping a folder silently dropped its opacity, blend mode, and mask (you are now notified when they are dropped)</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-link"><h4 id="v130-link">Integration</h4>
+<ul>
+<li>When exporting to Unity, a .meta file in use by Unity could be rewritten with a new ID if it could not be read <span class="tier pro">Pro</span></li>
+<li>Exporting a lilToon material reverted settings you had changed in Unity after loading it <span class="tier pro">Pro</span></li>
+<li>If the backup before overwriting in the Blender integration could not be made, the file was overwritten without a backup</li>
+<li>Other minor bugs were fixed too</li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status released">Latest</span><p><time datetime="2026-10-15">2026-10-15</time></p></div><p class="pn-release-title">WinTab and pen fixes, helpers moved into the main program, Stitch, 3D mouse and glow blend modes</p></header>
 <p class="pn-release-summary">Based on reports from v1.2.0 users, this update fixes bugs and adds several features. Anything not marked otherwise is available in all editions (Lite, Standard, and Pro).</p>
 <section class="pn-release-part" aria-labelledby="v121-major"><h3 class="pn-release-part-title" id="v121-major">Major changes</h3>
 <section class="pn-release-group" aria-labelledby="v121-host"><h4 id="v121-host">Helper programs now run inside the main program (Windows)</h4>

@@ -87,7 +87,8 @@
     <p class="pn-history-lead">汇总新增功能、绘制手感与操作改进，以及已修复的问题。</p>
     <p class="pn-history-note">从 BOOTH 更新时，请确认下载文件名包含 v1.2.1。</p>
     <p class="pn-history-note">收到的需求的处理状况汇总在<a class="pn-textlink" href="/petanuri/zh/requests">需求与处理状况</a>页面中。</p>
-    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-2-1">v1.2.1 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-3-0">v1.3.0 <span>v1.3.0 准备发布中</span></a>
+      <a href="#v1-2-1">v1.2.1 <span>最新</span></a>
       <a href="#v1-2-0">v1.2.0 <span>已发布</span></a>
       <a href="#v1-1-2">v1.1.2 <span>已发布</span></a>
       <a href="#v1-1-1">v1.1.1 <span>已发布</span></a>
@@ -98,7 +99,100 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-15">2026-10-15</time></p></div><p class="pn-release-title">WinTab 与笔的修复、辅助程序并入主程序、缝线、3D 鼠标与发光混合模式</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status upcoming">v1.3.0 准备发布中</span><p>发布日期未定</p></div><p class="pn-release-title">在应用内自动更新、修复从屏幕取色、蕾丝笔刷、UV 改变时对齐绘画</p></header>
+<p class="pn-release-tip">本页中 v1.3.0 的内容是发布前的预告。当前发布版本为 v1.2.1。</p>
+<p class="pn-release-summary">现在可以在应用内自动更新。此版本新增了绘制功能和联动功能，并修复了大量问题（原定的 v1.2.2 内容也包含在此版本中）。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
+<section class="pn-release-part" aria-labelledby="v130-major"><h3 class="pn-release-part-title" id="v130-major">重大变更</h3>
+<section class="pn-release-group" aria-labelledby="v130-update"><h4 id="v130-update">现在可以在应用内自动更新（Windows）</h4>
+<ul>
+<li>有新版本时会显示通知，只需确认 1 次，即可完成下载、校验（签名和内容）、替换和重新启动<span class="pn-release-sub">也可以设置为启动时不自动下载（偏好设置 → 系统 → 启动）。无法从官方网站获取时，会像以前一样改为提示从 BOOTH 下载</span></li>
+<li>发布形式已改变：每个版本 1 个 ZIP。解压后的“PetaNuri3D”文件夹中包含主程序和 setup.exe<span class="pn-release-sub">请用 setup.exe 安装，或直接运行文件夹中的 PetaNuri3D-win_x64.exe（不要只取出 setup.exe，请连同整个文件夹一起使用）</span></li>
+</ul></section>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v130-notice"><h4 id="v130-notice">注意（从旧版本更新的用户）</h4>
+<ul>
+<li>从 v1.2.1 及更早版本更新时，仅这一次需要手动进行<span class="pn-release-sub">请保存作品并关闭应用，解压 ZIP，然后双击其中的 setup.exe（会覆盖安装到之前用 setup 安装的位置）。v1.2.1 及更早版本的“安装并重新启动”无法找到新形式的 ZIP</span></li>
+<li>已将 Standard 升级为 Pro 的用户，无需重新导入升级文件（今后更新后也仍为 Pro）</li>
+<li>请同时更新 Unity 联动插件 <span class="tier pro">Pro</span><span class="pn-release-sub">为传递主颜色 2nd／3rd，更新了联动协议。旧插件仍可连接，但不会传递 2nd／3rd</span></li>
+<li>在旧版本中打开合并了法线贴图图像的工程文件时，颜色可能会变化几个色阶。请在 v1.3.0 中编辑</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-changed"><h3 class="pn-release-part-title" id="v130-changed">变更</h3>
+<section class="pn-release-group" aria-labelledby="v130-behavior"><h4 id="v130-behavior">绘制方式与文件处理</h4>
+<ul>
+<li>Pro 升级文件不再受版本限制（导入一次后，更新到新版本也仍为 Pro。以前购买的文件也可直接使用）</li>
+<li>印章图像不再缩小，按原始分辨率使用（以前会将长边缩小到 1,024px）</li>
+<li>取消了导入的笔刷笔尖和图案的保存数量上限</li>
+<li>“跨纹理集绘制”时，笔刷不再溢出到笔尖未落在其上的纹理集（以前画眼睛时可能会涂到皮肤）</li>
+<li>可以选择不使选区外变暗的显示（菜单“选区 → 使选区外变暗”）</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-new"><h3 class="pn-release-part-title" id="v130-new">新功能</h3>
+<section class="pn-release-group" aria-labelledby="v130-draw"><h4 id="v130-draw">绘制与颜色</h4>
+<ul>
+<li>改为前景色（保持透明度）：仅将已绘制部分的颜色改为当前前景色，适合为线稿换色（编辑菜单、图层右键）</li>
+<li>蕾丝笔刷（扇贝边、狗牙边、小花、网眼）：沿线条排列成带状，在曲线、拐角和 3D 上也能连贯</li>
+<li>图形工具可使用笔尖图像：可沿图形轮廓排列绘制缝线等</li>
+<li>模糊、涂抹、混色也可选择笔刷笔尖</li>
+<li>吸管放大镜：放大显示取色位置周围（3D、UV。可在工具属性中关闭）</li>
+<li>将选区内的绘画镜像复制到另一侧，蒙版也可左右镜像复制</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-model"><h4 id="v130-model">模型与联动</h4>
+<ul>
+<li>重新加载模型且 UV 改变时，将已绘制的绘画对齐到新 UV（Blender、Unity 联动时自动进行）</li>
+<li>不含模型（FBX）保存：用于分发的小型工程文件。打开时选择本地的模型</li>
+<li>Unity 联动时也读取并写回 lilToon 的主颜色 2nd／3rd <span class="tier pro">Pro</span></li>
+<li>合并法线贴图图像 <span class="tier pro">Pro</span></li>
+<li>将 2D 绘画导出为 PSD <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-screen"><h4 id="v130-screen">界面与操作</h4>
+<ul>
+<li>3D 导航中的相机方向锁定（只停止旋转，仍可平移和缩放）</li>
+<li>导航下方的旋转、缩放滑块（偏好设置 → 界面 → 显示，也可在导航上右键）</li>
+<li>偏好设置的配色中新增“UV 背景”</li>
+<li>在工具栏上右键可选“列数：自动”“列数：始终 1 列”。放不下的工具可用滚轮等翻动</li>
+<li>繁体中文（中文（繁體））显示</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-fix"><h3 class="pn-release-part-title" id="v130-fix">问题修复</h3>
+<section class="pn-release-group" aria-labelledby="v130-pick"><h4 id="v130-pick">从屏幕取色（exe 版）</h4>
+<ul>
+<li>v1.2.1 中无法使用“从屏幕取色”（打开后总是立即被取消，有时还会显示“EyeDropper is not available”）<span class="pn-release-sub">不再使用显示引擎（WebView2）的吸管，改用 PetaNuri3D 自己的吸管。看着放大镜（放大画面和颜色值），单击或按 Enter／Space 取色。方向键每次移动 1 像素（按住 Shift 为 10 像素），按 Esc 或右键单击取消（取色基于开始时截取的画面，因此视频等会显示为静止）</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-save"><h4 id="v130-save">保存与读取</h4>
+<ul>
+<li>保存位置空间不足时，可能会用中途截断的文件替换工程文件并显示“已保存”（现在会保留原文件并提示）</li>
+<li>保存位置停止响应时，会一直显示“保存中…”而不作任何提示</li>
+<li>大型 PSD（超过约 115MB 或 50 个图层）因内存不足无法读取（Unity 联动时无法读取主颜色 2nd 的 PSD 也是这个原因）</li>
+<li>读取、导出大型 PSD 或保存大型工程文件时，画面会长时间卡住并占用大量内存</li>
+<li>不同作品的自动保存可能被归为同一组，导致之前作品的自动保存被删除</li>
+<li>重新加载模型后，隐藏的对象会全部重新显示</li>
+<li>在 2D 绘画中无法从菜单读取 PSD</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-paint"><h4 id="v130-paint">绘制</h4>
+<ul>
+<li>在头发和多层衣物上对称绘制时，另一侧会稍有偏移</li>
+<li>对称时使用涂抹，左右效果不同</li>
+<li>带着粗描边填补内侧漏涂处时，描边会呈锯齿状扩张</li>
+<li>用喷枪等以透明色轻轻擦除时，痕迹看起来很粗糙</li>
+<li>PNG 导出时，即使将外扩（填充）设为 64、128px，也会停在 32px</li>
+<li>Ctrl＋＝／Ctrl＋－ 无法放大、缩小</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-layers"><h4 id="v130-layers">图层与合并</h4>
+<ul>
+<li>合并包含底色的文件夹等操作时，底色的特殊处理（无法删除的底层）会丢失</li>
+<li>隐藏或锁定的图层、文件夹在合并时可能消失，或被意外合并</li>
+<li>解除文件夹时，文件夹的不透明度、混合模式和蒙版会被悄悄移除（现在移除时会提示）</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-link"><h4 id="v130-link">联动</h4>
+<ul>
+<li>导出到 Unity 时，若无法读取 Unity 正在使用的 .meta，可能会用新 ID 重写 <span class="tier pro">Pro</span></li>
+<li>导出 lilToon 材质时，读取后在 Unity 中更改的设置会被还原 <span class="tier pro">Pro</span></li>
+<li>Blender 联动中无法创建覆盖前的副本时，会在没有副本的情况下覆盖</li>
+<li>还修复了其他细小问题</li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-15">2026-10-15</time></p></div><p class="pn-release-title">WinTab 与笔的修复、辅助程序并入主程序、缝线、3D 鼠标与发光混合模式</p></header>
 <p class="pn-release-summary">根据 v1.2.0 用户的反馈，修复了问题并新增了一些功能。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
 <section class="pn-release-part" aria-labelledby="v121-major"><h3 class="pn-release-part-title" id="v121-major">重大变更</h3>
 <section class="pn-release-group" aria-labelledby="v121-host"><h4 id="v121-host">辅助程序已并入主程序（Windows）</h4>

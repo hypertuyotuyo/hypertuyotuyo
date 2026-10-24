@@ -87,7 +87,8 @@
     <p class="pn-history-lead">新しくできること、描き味や操作の改善、直した不具合をまとめています。</p>
     <p class="pn-history-note">BOOTH から更新するときは、ダウンロードするファイル名が v1.2.1 になっていることを確認してください。</p>
     <p class="pn-history-note">いただいた要望の対応状況は、<a class="pn-textlink" href="/petanuri/requests">要望と対応状況</a>のページにまとめています。</p>
-    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-2-1">v1.2.1 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-3-0">v1.3.0 <span>v1.3.0 公開準備中</span></a>
+      <a href="#v1-2-1">v1.2.1 <span>最新</span></a>
       <a href="#v1-2-0">v1.2.0 <span>配布済み</span></a>
       <a href="#v1-1-2">v1.1.2 <span>配布済み</span></a>
       <a href="#v1-1-1">v1.1.1 <span>配布済み</span></a>
@@ -98,7 +99,100 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-15">2026-10-15</time></p></div><p class="pn-release-title">WinTab とペンの直し、補助を本体へ、ステッチ、3D マウスと発光の合成モード</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status upcoming">v1.3.0 公開準備中</span><p>公開日未定</p></div><p class="pn-release-title">アプリの中から自動で更新、画面から色を取るの直し、レースのブラシ、UV が変わったときの絵合わせ</p></header>
+<p class="pn-release-tip">このページの v1.3.0 の内容は公開前の案内です。現在の配布版は v1.2.1 です。</p>
+<p class="pn-release-summary">アプリの中から自動で更新できるようになりました。描く機能・連携の追加と、たくさんの不具合の修正を入れています（予定していた v1.2.2 の分もこの版に入っています）。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
+<section class="pn-release-part" aria-labelledby="v130-major"><h3 class="pn-release-part-title" id="v130-major">大きな変更</h3>
+<section class="pn-release-group" aria-labelledby="v130-update"><h4 id="v130-update">アプリの中から自動で更新できるようになりました（Windows）</h4>
+<ul>
+<li>新しい版があるとお知らせが出て、確認 1 回で、ダウンロード・確認（署名・中身）・入れ替え・再起動まで行います<span class="pn-release-sub">起動のときに自動でダウンロードしない設定もあります（環境設定 → システム → 起動）。公式サイトから取れないときは、今までどおり BOOTH でダウンロードする案内に戻ります</span></li>
+<li>配布の形が変わりました：各版 ZIP 1 つです。展開した「PetaNuri3D」フォルダに本体と setup.exe が入っています<span class="pn-release-sub">setup.exe で入れるか、フォルダの PetaNuri3D-win_x64.exe をそのまま起動してください（setup.exe だけを取り出さず、フォルダごと使ってください）</span></li>
+</ul></section>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v130-notice"><h4 id="v130-notice">ご注意（前の版から更新する方へ）</h4>
+<ul>
+<li>v1.2.1 以前からの更新は、今回だけ手で行ってください<span class="pn-release-sub">作業を保存してアプリを閉じ、ZIP を展開して、中の setup.exe をダブルクリックします（前に setup で入れた所に上書きで入ります）。v1.2.1 以前のアプリの「インストールして再起動」は、新しい形の ZIP を見つけられません</span></li>
+<li>Standard を Pro にしている方は、アップグレードのファイルの入れ直しは要りません（これからも、更新しても Pro のままです）</li>
+<li>Unity 連携のアドオンも新しくしてください <span class="tier pro">Pro</span><span class="pn-release-sub">メインカラー2nd／3rd を運ぶため、連携の約束を新しくしました。前のアドオンでもつながりますが、2nd／3rd は運ばれません</span></li>
+<li>ノーマルマップ画像を結合した作業ファイルを前の版で開くと、色が数階調変わることがあります。v1.3.0 で編集してください</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-changed"><h3 class="pn-release-part-title" id="v130-changed">変更点</h3>
+<section class="pn-release-group" aria-labelledby="v130-behavior"><h4 id="v130-behavior">描き方・ファイルの扱い</h4>
+<ul>
+<li>Pro へのアップグレードのファイルが、バージョンに縛られなくなりました（一度入れれば、新しいバージョンにしても Pro のまま。今までに購入したファイルもそのまま使えます）</li>
+<li>スタンプの画像を縮めずに、元の解像度で使うように（前は長辺 1,024px に縮めていました）</li>
+<li>読み込んだブラシの先端・模様の保存の数の上限を無くしました</li>
+<li>「またいで描く」で、ペン先が乗っていないテクスチャセットにはブラシがはみ出さないように（目を描くと肌まで塗られることがありました）</li>
+<li>選択範囲の外を暗くしない表示を選べるように（メニュー「選択範囲 → 選択範囲の外を暗くする」）</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-new"><h3 class="pn-release-part-title" id="v130-new">新機能</h3>
+<section class="pn-release-group" aria-labelledby="v130-draw"><h4 id="v130-draw">描く・色</h4>
+<ul>
+<li>描画色に変える（透明度はそのまま）：描いてある所の色だけを今の描画色に。線画の色替えに（編集メニュー・レイヤーの右クリック）</li>
+<li>レースのブラシ（スカラップ・ピコット・小花・網目）：線に沿った帯で並ぶので、曲線・角・3D でもつながります</li>
+<li>図形ツールで先端画像を使えるように：ステッチなどを図形の輪郭に沿って並べて描けます</li>
+<li>ぼかし・指先・色混ぜでもブラシの先端を選べるように</li>
+<li>スポイトの拡大鏡：取る所のまわりを拡大して見せます（3D・UV。ツールプロパティで切れます）</li>
+<li>選択範囲の絵を反対側へミラーコピー・マスクも左右にミラーコピー</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-model"><h4 id="v130-model">モデル・連携</h4>
+<ul>
+<li>モデルを読み直して UV が変わったとき、描いた絵を新しい UV に合わせる（Blender・Unity 連携では自動）</li>
+<li>モデル（FBX）を含めずに保存：配る用の小さな作業ファイル。開くと手元のモデルを選びます</li>
+<li>Unity 連携で lilToon のメインカラー2nd／3rd も読み込み・書き戻し <span class="tier pro">Pro</span></li>
+<li>ノーマルマップ画像の結合 <span class="tier pro">Pro</span></li>
+<li>2D ペイントの絵を PSD で書き出す <span class="tier std">Standard</span> <span class="tier pro">Pro</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-screen"><h4 id="v130-screen">画面と操作</h4>
+<ul>
+<li>3D ナビにカメラの向きのロック（回転だけ止めて、移動・拡大縮小はできる）</li>
+<li>ナビの下に回転・拡大縮小のスライダー（環境設定 → インターフェイス → 表示。ナビの右クリックからも）</li>
+<li>環境設定の配色に「UV 背景」</li>
+<li>ツールバーの右クリックで「列：自動」「列：いつも 1 列」。入りきらない道具はホイールなどで送れます</li>
+<li>繁体字中国語（中文（繁體））の表示</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v130-fix"><h3 class="pn-release-part-title" id="v130-fix">不具合修正</h3>
+<section class="pn-release-group" aria-labelledby="v130-pick"><h4 id="v130-pick">画面から色を取る（exe 版）</h4>
+<ul>
+<li>v1.2.1 で「画面から色を取る」が使えなかった（開いた直後に必ず取り消されていました。「EyeDropper is not available」と出ることも）<span class="pn-release-sub">表示エンジン（WebView2）のスポイトをやめて、ぺたぬり3D 自身のスポイトにしました。ルーペ（拡大と色の値）を見ながら、クリック・Enter・Space で取ります。矢印キーで 1 画素ずつ（Shift で 10 画素）、Esc・右クリックでやめます（始めたときの画面を写して取るので、動画などは止まって見えます）</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-save"><h4 id="v130-save">保存・読み込み</h4>
+<ul>
+<li>保存先の空きが足りないとき、途中で切れたファイルで作業ファイルを置き換えて「保存しました」と出ることがあった（元のファイルを残して知らせます）</li>
+<li>保存先の応答が止まると「保存中…」のまま何も知らせなかった</li>
+<li>大きい PSD（115MB・50 レイヤーを超えるような物）が、メモリが足りず読み込めなかった（Unity 連携でメインカラー2nd の PSD が読まれないのもこれが原因でした）</li>
+<li>大きい PSD の読み込み・書き出しや重い作業ファイルの保存で、画面が長く止まり、メモリを多く使っていた</li>
+<li>別々の作業の自動保存が同じ組になって、前の作業の分が消えることがあった</li>
+<li>モデルを読み直すと、隠していたオブジェクトが全部見えるようになっていた</li>
+<li>2D ペイントで、メニューから PSD を読み込めなかった</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-paint"><h4 id="v130-paint">描く</h4>
+<ul>
+<li>髪や重ね着で、対称に描いたときに反対側が少しずれていた</li>
+<li>対称で指先を使うと左右で効き方が違った</li>
+<li>太い境界線を付けたまま内側の塗り残しを埋めると、境界線がガクガク広がった</li>
+<li>エアブラシなどを透明色で使って薄く消すと、跡がざらついて見えた</li>
+<li>PNG の書き出しで、まわりの広げ（パディング）を 64・128px にしても 32px で止まっていた</li>
+<li>Ctrl＋＝／Ctrl＋－ で寄る・引くが効かなくなっていた</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-layers"><h4 id="v130-layers">レイヤー・結合</h4>
+<ul>
+<li>下地を含むフォルダの結合などで、下地の扱い（消せない土台）が無くなっていた</li>
+<li>非表示・ロック中のレイヤーやフォルダが、結合で消えたり、結合できてしまったりしていた</li>
+<li>フォルダを解除すると、フォルダの不透明度・合成モード・マスクが黙って外れていた（外れるときは知らせます）</li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v130-link"><h4 id="v130-link">連携</h4>
+<ul>
+<li>Unity への書き出しで、Unity が使っている .meta を読めないとき、新しい ID で書き直してしまうことがあった <span class="tier pro">Pro</span></li>
+<li>lilToon のマテリアルを書き出すと、読み込んだ後に Unity で変えた設定が戻っていた <span class="tier pro">Pro</span></li>
+<li>Blender 連携の上書きの前の写しを作れなかったとき、写しなしで上書きしていた</li>
+<li>ほかにも細かな不具合を直しました</li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-2-1" aria-labelledby="v1-2-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-2-1-title">v1.2.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-15">2026-10-15</time></p></div><p class="pn-release-title">WinTab とペンの直し、補助を本体へ、ステッチ、3D マウスと発光の合成モード</p></header>
 <p class="pn-release-summary">v1.2.0 をお使いの方からの報告をもとに、不具合の修正と、いくつかの機能の追加をしました。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
 <section class="pn-release-part" aria-labelledby="v121-major"><h3 class="pn-release-part-title" id="v121-major">大きな変更</h3>
 <section class="pn-release-group" aria-labelledby="v121-host"><h4 id="v121-host">補助のプログラムを本体の中に入れました（Windows）</h4>
