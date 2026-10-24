@@ -5,20 +5,20 @@
   "files": {
     "lite": {
       "url": "update/PetaNuri3D-Lite-v1.3.0.zip",
-      "size": 12372690,
-      "sha256": "89683b7e19a2e96ba128945934c8db5480057accf5f614121f8ac0c8b32876d2",
+      "size": 12372545,
+      "sha256": "4d7ec9d6ab50ba3d9b481e3bb86538aef7f6be47be9978c4b977873c855dd657",
       "kind": "zip"
     },
     "standard": {
       "url": "update/PetaNuri3D-Standard-v1.3.0.pnenc",
-      "size": 12616496,
-      "sha256": "03d73ac4e7d757398bdebed2f44c5976ce91e2195d843293057cec4eaf4ca599",
+      "size": 12616217,
+      "sha256": "9c6e5bcaf7dfdacbe22c5a39ce403929d32bda2daa615f59db396aba61302c21",
       "kind": "enc"
     },
     "pro": {
       "url": "update/PetaNuri3D-Pro-v1.3.0.pnenc",
-      "size": 12615718,
-      "sha256": "53fc33135aba50c283381473aff026aea0585f794be793a0b08c77acf6ca14e2",
+      "size": 12616289,
+      "sha256": "cea79becaf940a4740c98352418c5aea15322a7344910f472c075f2ddeb5b412",
       "kind": "enc"
     }
   }
