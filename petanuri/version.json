@@ -1,5 +1,25 @@
 {
-  "version": "1.2.1",
+  "version": "1.3.0",
   "url": "https://hyper-tuyotuyo.booth.pm/items/8917534",
-  "notes": "WinTab の筆圧を入れるとペンが反応しなくなる件、メニューを開いたまま画面全体が拡大される件、自動保存が止まる件などを直しました。補助のプログラムは本体の中に入り、ツール「凹凸」は「ステッチ」になりました。3D マウス、合成モード「加算（発光）」「覆い焼き（発光）」なども追加。BOOTHで配布中の v1.2.1 へ更新できます。"
+  "notes": "アプリの中から自動で更新できるようになりました。「画面から色を取る」が v1.2.1 の exe で効かなかった件を直し、大きい PSD が読み込めない件なども直しました。レースのブラシ、モデルを読み直したときに絵を新しい UV に合わせる機能なども追加。v1.2.1 からは今回だけ、BOOTH の ZIP を展開して中の setup.exe で入れてください（次の版からはアプリの中で更新できます）。",
+  "files": {
+    "lite": {
+      "url": "update/PetaNuri3D-Lite-v1.3.0.zip",
+      "size": 12372690,
+      "sha256": "89683b7e19a2e96ba128945934c8db5480057accf5f614121f8ac0c8b32876d2",
+      "kind": "zip"
+    },
+    "standard": {
+      "url": "update/PetaNuri3D-Standard-v1.3.0.pnenc",
+      "size": 12616496,
+      "sha256": "03d73ac4e7d757398bdebed2f44c5976ce91e2195d843293057cec4eaf4ca599",
+      "kind": "enc"
+    },
+    "pro": {
+      "url": "update/PetaNuri3D-Pro-v1.3.0.pnenc",
+      "size": 12615718,
+      "sha256": "53fc33135aba50c283381473aff026aea0585f794be793a0b08c77acf6ca14e2",
+      "kind": "enc"
+    }
+  }
 }
