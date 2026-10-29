@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/ao",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,130 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao" aria-current="page">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao" aria-current="page">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ AO を焼く</p>
     <h1 class="mn-h1">AO を焼く <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">わきの下・あごの下・前髪の下・指の間・服の重なりなど、周りの物に遮られて暗くなる所を、テクスチャセットごとに計算します。この機能は Pro で使えます。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#bake">焼き方</a></li><li><a href="#objects">オブジェクトを選んで焼く</a></li><li><a href="#options">べんりな設定</a></li></ul></div>
-    <section class="mn-sec" id="bake"><h2>焼き方</h2><ol class="mn-steps"><li>フィルター → ベイク → AO を焼く を開きます。</li><li>表で、焼くセット・影を落とすセットを選びます（はじめは見えているセットが入っています）。</li><li>「オブジェクト」の欄で、焼くオブジェクトを選べます（全部・なし。名前を押すと 3D で少し光ります）。</li><li>品質（レイの数・テクセルの中）と、影の届く距離（近く 3cm・ふつう 8cm・広く 20cm・数値）を選びます。</li><li>「焼く」を押します。各セットの一番上に、乗算のレイヤー「AO」が足されます。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="AO を焼くの窓" loading="lazy"><figcaption>AO を焼くの窓</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="AO を焼いた後" loading="lazy"><figcaption>焼いた後</figcaption></figure></div><div class="mn-tip">今のポーズ・ブレンドシェイプの形のまま焼きます。焼いている間も 3D ビューは動かせます。キャンセルで止めると何も変わりません。</div><div class="mn-tip">AO の白い背景を透明にして影の色を変えるには、<a href="/petanuri/manual/layers#alpha">輝度を透明度に変換</a>を使えます。面の向きからの柔らかい陰影や、光の落ち影を足すには、<a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影</a>のページへ。</div></section><section class="mn-sec" id="objects"><h2>オブジェクトを選んで焼く</h2><ul class="mn-list"><li>書くのは、選んだオブジェクトの UV の所（と島の外へ少し広げた所）だけです。同じテクスチャセットのほかのオブジェクトの所は今のままです。</li><li>影の計算は「選んだ物だけで影を計算」（既定）と「全体の形で影を計算」（選んでいない物も影を落とす）から選べます。</li><li>選び方はモデルごとに覚えます。</li></ul></section><section class="mn-sec" id="options"><h2>べんりな設定</h2><ul class="mn-list"><li>「ほかの影を受けない」：服の下の体など、覆われて真っ黒になるときに。</li><li>「モデルの高さに合わせる」：距離をモデルの大きさに比例させます。</li><li>仕上がりの強さ・コントラストで濃さを調整できます。</li><li>カットアウト・半透明のマテリアルは、絵の抜けた所から光が通ります（髪の毛先など）。</li><li>書き出し：lilToon の「影 AO」にも書けます（マテリアルの書き出しで一緒に出ます）。PNG（&lt;セット名&gt;_AO.png）でも保存できます。影が強すぎると感じたら、強さを 0.6〜0.8 にして焼き直してください。</li></ul><div class="mn-tip">元に戻す 1 回で、全部のセットの分が戻ります。</div></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/material"><small>← 前へ</small>仕上がりと lilToon のマテリアル</a><a class="next" href="/petanuri/manual/bake"><small>次へ →</small>お手軽ベイク・質感と陰影</a></nav>
+    <p class="mn-intro">わきの下・あごの下・前髪の下・指の間・服の重なりなど、周りの物に遮られて暗くなる所（AO）を計算して、レイヤーに焼きます。今のポーズとブレンドシェイプの形のまま焼けます。</p>
+    <p class="mn-proof">Pro の機能です。Lite ではメニューに鍵の印が付き、Standard ではメニューに出ません（<a href="/petanuri/manual/start#editions">版のちがい</a>）。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>フィルター → ベイク →「AO を焼く（周りに遮られて暗くなる所）」を開きます（<a href="#bake">くわしく</a>）。</li>
+      <li>表で焼くテクスチャセットを確かめて、「焼く」を押します。各セットの一番上に、乗算のレイヤー「AO」が足されます（<a href="#bake">くわしく</a>）。</li>
+      <li>濃すぎたら、レイヤー「AO」の不透明度を下げるか、「強さ」を下げて焼き直します（<a href="#options">くわしく</a>）。</li>
+      <li>小物など一部だけに焼くときは、「オブジェクト」で選びます（<a href="#objects">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#bake">AO を焼く</a></li><li><a href="#objects">一部のオブジェクトだけに焼く</a></li><li><a href="#options">濃さと品質を整える</a></li><li><a href="#output">lilToon の影AO・PNG にする</a></li></ul></div>
+
+    <section class="mn-sec" id="bake" data-keywords="アンビエントオクルージョン ambient occlusion 環境遮蔽 陰 暗がり 隙間 ベイク 焼き込み">
+      <h2>AO を焼く</h2>
+      <p>モデルの形から、光が届きにくい所を暗くした絵を作ります。陰影の下塗りや、立体感を足したいときに使います。</p>
+      <ol class="mn-steps">
+        <li>フィルター → ベイク →「AO を焼く（周りに遮られて暗くなる所）」を開きます。</li>
+        <li>「焼くテクスチャセット」の表で、焼くセットに印を入れます。はじめは見えているセットが入っています。</li>
+        <li>「品質」と「影の届く距離」を選びます。迷ったら初めのままでかまいません。</li>
+        <li>「焼く」を押します。各セットの一番上に、乗算のレイヤー「AO」が足されます。</li>
+        <li>窓は「閉じる」か × で閉じます。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="AO を焼くの窓" loading="lazy"><figcaption>AO を焼くの窓</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-before.webp" width="550" height="810" alt="AO を焼く前のモデル" loading="lazy"><figcaption>焼く前</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="AO を焼いた後。わきの下やあごの下が暗くなっている" loading="lazy"><figcaption>焼いた後</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>焼いている間も 3D ビューは動かせます。「キャンセル」で止めると、何も変わりません。</li>
+        <li>元に戻す 1 回で、全部のセットの分が戻ります。</li>
+        <li>かかる時間の目安：テクスチャセット 6 つ・解像度 2048 のアバターで、初めの設定のまま 30 秒ほど（GPU で計算したとき）。</li>
+        <li>描画モードが「カットアウト」「半透明」のセットは、絵の抜けた所から光が通ります（髪の毛先など）。「不透明」は透明度を見ません（<a href="/petanuri/manual/material#look-panel">描画モード</a>）。</li>
+      </ul>
+
+      <h3 id="bake-sets">焼くテクスチャセットの表</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">列</th><th scope="col">意味</th></tr></thead><tbody>
+        <tr><td>焼く</td><td>このセットのテクスチャに AO を焼きます（ほかの物の影を受けます）</td></tr>
+        <tr><td>影を落とす</td><td>このセットが、ほかのセットにも影を落とします。外すと自分にだけ落とします</td></tr>
+        <tr><td>ほかの影を受けない</td><td>ほかのセットの影を受けません。服の下の体など、覆われて真っ黒になるときに入れます</td></tr>
+      </tbody></table></div>
+      <p>例えば体（body）に焼き、髪や服は「影を落とす」だけにすると、髪や服の影が体に入ります。</p>
+
+      <h3 id="bake-quality">品質と影の届く距離</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">選べるもの</th></tr></thead><tbody>
+        <tr><td>レイの数</td><td>1 テクセルあたり 64〜4096 本（初めは 512 本）。多いほど粒が消えますが、時間がかかります</td></tr>
+        <tr><td>テクセルの中</td><td>1×1（真ん中だけ・速い）・2×2・4×4（16 か所で調べる。縁がなめらか。初め）</td></tr>
+        <tr><td>距離</td><td>近く（3cm・指の間・襟元・髪の生え際など接する所だけ）・普通（8cm・前髪の下・わき・あごの下・スカートの裾も。初め）・広く（20cm・写実寄り。腕で体の横も暗くなる）・数値（下の数 cm）</td></tr>
+        <tr><td>モデルの高さに合わせる（高さ 1.5m のときの距離）</td><td>距離を、モデルの高さに比例させます。窓の中に、実際に届く距離が出ます</td></tr>
+      </tbody></table></div>
+
+      <h3 id="bake-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>服の下の体が真っ黒になる</b>：体のセットの「ほかの影を受けない」を入れて焼き直します。</li>
+        <li><b>粒々（ざらつき）が目立つ</b>：「レイの数」を増やすか、「テクセルの中」を 4×4 にします。詳しい設定の「ディザ」で、濃淡の段も目立たなくなります。</li>
+        <li><b>髪の毛先から光が通らない</b>：髪のマテリアルの描画モードを「カットアウト」か「半透明」にしてから焼きます。</li>
+        <li><b>メニューに無い・鍵が付いている</b>：Pro の機能です。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="objects" data-keywords="メッシュ 部分 一部だけ 小物 鈴 アクセサリー 選んで">
+      <h2>一部のオブジェクトだけに焼く</h2>
+      <p>窓の「オブジェクト」で、焼く物をオブジェクト（メッシュ）単位で選べます。例えばサンプルの「しのぶ」なら、furin だけを選ぶと鈴だけに焼けます。</p>
+      <ol class="mn-steps">
+        <li>「オブジェクト」の欄で「なし」を押して、全部外します。</li>
+        <li>焼きたいオブジェクトに印を入れます。名前を押すと、3D で少し光ります。</li>
+        <li>影の計算のしかたを選んで、「焼く」を押します。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>書くのは、選んだオブジェクトの UV の所（と、島の外へ少し広げた所）だけです。同じテクスチャセットのほかのオブジェクトの所は、今のままです。</li>
+        <li>「選んだ物だけで影を計算」（初め）：選んだオブジェクトの形だけで計算します。体などほかの物の影は入りません。</li>
+        <li>「全体の形で影を計算」：選んでいない物も影を落とします。体に近い所が暗くなります。</li>
+        <li>選んだオブジェクトを持たないセットには焼きません。全部選んでいるときは、モデル全体で焼きます。</li>
+        <li>選び方はモデルごとに覚えます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="options" data-keywords="強さ 薄く 弱く コントラスト 詳しい設定 減衰 GPU CPU CUDA 島の外 パディング">
+      <h2>濃さと品質を整える</h2>
+      <p>焼いた AO が濃すぎる・薄すぎるときは、焼いた後でも、焼く前でも整えられます。</p>
+      <ul class="mn-list">
+        <li><b>焼いた後</b>：レイヤー「AO」の不透明度を下げます。マスクや消しゴムで、要らない所だけ消すこともできます。</li>
+        <li><b>焼く前</b>：「仕上がり」の「強さ」（0 で白）と「コントラスト」で濃さを変えます。</li>
+        <li>「初期値に戻す」で、設定を初めに戻せます（セットの選び方はそのまま）。</li>
+      </ul>
+      <h3 id="options-detail">詳しい設定</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>減り方</td><td>なめらか（遠い当たりほど弱く。初め）・直線・なし（距離の中なら同じ強さ）</td></tr>
+        <tr><td>法線</td><td>なめらか（補間した法線のまわり。初め）・面の向き</td></tr>
+        <tr><td>計算</td><td>自動（GPU。使えなければ CPU）・CUDA（NVIDIA の GPU。アプリ（exe）だけ・試し中）・CPU（とても遅い）</td></tr>
+        <tr><td>GPU の結果を CPU で確かめる</td><td>セットごとに少しだけ、計算の結果を確かめます</td></tr>
+        <tr><td>セットに入らないメッシュも影を落とす</td><td>塗れないメッシュ（UV の無い物など）も、影を落とす物に入れます</td></tr>
+        <tr><td>島の外へ</td><td>島の外へ広げる幅（px）。「自動」なら決めてくれます</td></tr>
+        <tr><td>島の外を全部埋める</td><td>縮めても、縁に背景が混ざりません</td></tr>
+        <tr><td>ディザ</td><td>なめらかな濃淡の段を目立たなくします</td></tr>
+        <tr><td>面から浮かす</td><td>調べ始める位置を、面から浮かす距離です（mm。身長 1.5m のとき）</td></tr>
+        <tr><td>半透明の近く</td><td>この mm 以内の半透明は無視します（頬の赤みなどの板）</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">AO の白い所を透明にして、影の色を変えたいときは、<a href="/petanuri/manual/layers#alpha">輝度を透明度に変換</a>が使えます。面の向きからの柔らかい陰影や、光の落ち影を足すときは、<a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影</a>へ。</div>
+    </section>
+
+    <section class="mn-sec" id="output" data-keywords="影AO AOマップ AO Map ShadowBorderMask 書き出し png 保存 lilToon">
+      <h2>lilToon の影AO・PNG にする</h2>
+      <p>窓の「書き出し」で、焼いた AO をどこに入れるかを選べます。いくつ選んでもかまいません。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">入る所</th></tr></thead><tbody>
+        <tr><td>レイヤー「AO」を足す（乗算。セットの一番上）</td><td>テクスチャの色に焼き込みます（初め）</td></tr>
+        <tr><td>lilToon の「影AO」（AO Map）にも書く</td><td>マテリアルの塗る先「影AO」のフォルダの一番上に、AO のレイヤーを足します。暗い所ほど影が出やすくなり、<a href="/petanuri/manual/material#export">マテリアルの書き出し</a>で一緒に出ます</td></tr>
+        <tr><td>焼いたら PNG でも保存する（&lt;セット名&gt;_AO.png）</td><td>AO だけの画像を保存します</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>あとからでも、フィルター → ベイク →「AO を PNG で書き出す（最後に焼いた結果）」で保存できます。島の外は AO の設定の広げ方で埋めます（書き出しのにじみの方が広ければ、そちら）。</li>
+        <li>影AO に書くとき、そのセットで影を使っていなければ「影を使う」に切り替えます（元に戻すと戻ります）。</li>
+      </ul>
+      <div class="mn-tip">lilToon の AO マップは、影の境界をずらす働きをします。影が強すぎると感じたら、「強さ」を 0.6〜0.8 にして焼き直してください。</div>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影</a></li><li><a href="/petanuri/manual/material#channels">影色・マスクを塗る（塗る先）</a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ</a></li><li><a href="/petanuri/manual/layers#props">レイヤープロパティ</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/material"><small>← 前へ</small>lilToon のマテリアル</a><a class="next" href="/petanuri/manual/bake"><small>次へ →</small>お手軽ベイク</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +265,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

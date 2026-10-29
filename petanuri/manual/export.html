@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/export",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,230 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export" aria-current="page">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export" aria-current="page">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 書き出し</p>
     <h1 class="mn-h1">書き出し</h1>
-    <p class="mn-intro">仕上がったテクスチャを、画像やマテリアルとして書き出します。メニューは ファイル → 書き出し です。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#png">PNG で書き出す</a></li><li><a href="#psd">PSD で書き出す・読み込む</a></li><li><a href="#pad">書き出しのにじみ（パディング）</a></li><li><a href="#dir">書き出し先のフォルダ</a></li><li><a href="#mat">マテリアルを書き出す</a></li></ul></div>
-    <section class="mn-sec" id="png"><h2>PNG で書き出す</h2><ol class="mn-steps"><li>ファイル → 書き出し → PNG で書き出す を選びます。</li><li>小さな窓で、書き出しのにじみと書き出し先を選んで「書き出す」を押します。</li><li>選んでいるセット、または全部のセットを書き出せます。ファイル名は &lt;マテリアル名&gt;.png です。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="ファイル → 書き出し のメニュー" loading="lazy"><figcaption>ファイル → 書き出し</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="書き出しの窓。にじみと書き出し先" loading="lazy"><figcaption>書き出しの窓</figcaption></figure></div><div class="mn-tip">メインカラー2nd／3rd のフォルダがあるセットは、別々の PNG で書き出します。境界線などの効果は、効果込みの絵になります。</div><div class="mn-tip">ベイクの光・影・質感は、見えているレイヤーの色として PNG に入ります。スタンプ用 2D キャンバスの作業用セットは、モデルのテクスチャ出力から除外します。モデルなしの 2D ペイントの PNG は、キャンバス下の「PNG を書き出す」から保存できます。</div><div class="mn-tip">選んだレイヤーを PNG（全版）：レイヤーの右クリックの「このレイヤーを PNG で書き出す」、何枚か選んで「選んだレイヤーを PNG で書き出す」、または ファイル → 書き出し → PNG で書き出す（選んだレイヤー）。背景は透明です。2 枚以上なら「1 枚ずつ」（＜マテリアル名＞_＜レイヤー名＞.png）か「重ねて 1 枚に」（＜マテリアル名＞_layers.png）を選びます。</div><div class="mn-tip">書き出しの窓の「解像度」で、テクスチャセットの解像度と別の大きさ（512〜8192）に縮小・拡大して書き出せます（PNG・選んだレイヤー・マテリアル。にじみはセットの解像度で付けてから縮めます）。</div><div class="mn-tip">UV マップ（全版）：ファイル → 書き出し →「UV マップを PNG で書き出す（選択中のセット）」（テクスチャセットの右クリックにも）で、UV の線を ＜マテリアル名＞_uv.png にします。解像度・線の色（白・黒・描画色）・地（透明・黒・白）・線の太さと、「島の縁を 2 倍の太さで描く」かどうかを選べます。</div><div class="mn-figs"><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="書き出しの窓の解像度の欄" loading="lazy"><figcaption>書き出しの解像度</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="UV マップを PNG で書き出す窓" loading="lazy"><figcaption>UV マップを PNG で書き出す</figcaption></figure></div></section><section class="mn-sec" id="psd"><h2>PSD で書き出す・読み込む <span class="tier std">Standard</span></h2><ul class="mn-list"><li>ファイル → 書き出し → PSD で書き出す で、レイヤー・表示・不透明度・合成モード・クリッピング・透明度保護・フォルダ・レイヤーマスク・調整レイヤー（グラデーションマップは色の点のまま）を保ったまま書き出します。</li><li>境界線は画素に焼いたレイヤーで書きます。文字レイヤーはふつうのレイヤーになります。塗る先・ノーマルマップ・メインカラー2nd／3rd のフォルダは、非表示のグループで書きます（読み込むと元に戻ります）。</li><li>PSD をウィンドウにドロップすると、ファイル名が同じマテリアルへ入ります。テクスチャセットのパネルの行から読み込むこともできます。</li><li>アバターに付いてくる改変用 PSD を読み込んで、続きから描くこともできます。</li></ul><div class="mn-tip warn">調整レイヤーの式は、ほかのアプリで開くと少し違う見た目になることがあります。</div><div class="mn-tip">PSD（Standard・Pro）：境界線・ドロップシャドウ・外側の光彩だけの土台とクリッピングしたレイヤーは、1 枚にまとめずに別々のまま書き、効果だけを焼いた「（レイヤー名）（効果）」のレイヤーを上に足します（塗りの不透明度・オーバーレイ・内側の効果などがあれば、今までどおり 1 枚に）。</div></section><section class="mn-sec" id="pad"><h2>書き出しのにじみ（パディング）</h2><p>UV の島の外へ、縁の色を広げて書き出します。広げないと、縮小やミップマップで UV の継ぎ目（シーム）に線が見えることがあります。</p><ul class="mn-list"><li>なし・4・8（既定）・16・32・64・128 px・島の外を全部埋める から選べます（書き出しの窓・マテリアルの書き出しの窓）。</li><li>PNG・PSD の合成画像・マテリアルの画像に効きます。PSD のレイヤーそのものは描いたままです。</li></ul><p>v1.1.0 では、4096px の画像で「全部」を選んだときも、余白の最後まで埋めて書き出せます。</p><div class="mn-tip">パディングの値は UV の区画の左下と共通です。筆の縁のうすい所は描いた所とみなさず、不透明な所の色を島の外へ広げてから、うすい所を上に重ねます（継ぎ目に下地の色の線が出にくくなりました）。「パディングを新規レイヤーに作る」も同じ決まりです。</div><div class="mn-tip">パディングの広がり方：島の外の画素は、まっすぐの距離でいちばん近い島の画素の色になります（斜めの縁も階段にならず、なめらかに広がります）。Unity 連携へ送る絵も、書き出しの PNG と同じです。</div></section><section class="mn-sec" id="dir"><h2>書き出し先のフォルダ</h2><ul class="mn-list"><li>書き出しの保存先のダイアログは、前に書き出したフォルダから開きます。</li><li>書き出しの窓の「フォルダを選ぶ」で決めておき、<strong>「毎回聞かずにこのフォルダへ書き出す」</strong>を入れると、PNG・PSD・AO・.unitypackage の書き出しで保存先を聞かずに、そのフォルダへ書きます。「外す」で、毎回聞くのに戻ります。</li><li>マテリアルのフォルダへの書き出し（Assets を選ぶ）は、前に選んだ Assets から開きます。</li></ul><div class="mn-tip warn">「毎回聞かずに」のときは、同じ名前のファイルは上書きされます。</div><p>「書き出したらフォルダを開く」は、初めから入っています。完了した画像をエクスプローラーで確認でき、不要ならチェックを外せます。保存先を決めた後は「書き出し中…」と進み具合を表示します。</p></section><section class="mn-sec" id="mat"><h2>マテリアルを書き出す <span class="tier pro">Pro</span></h2><p>lilToon 用のマテリアルを .unitypackage で書き出せます。くわしくは <a href="/petanuri/manual/material#export">仕上がりと lilToon のマテリアル</a> へ。</p></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/pose"><small>← 前へ</small>ポーズ・ブレンドシェイプ・頂点グループ</a><a class="next" href="/petanuri/manual/unity"><small>次へ →</small>Unity から塗る・AI 連携</a></nav>
+    <p class="mn-intro">塗ったテクスチャを、Unity などで使う画像（PNG・PSD）にします。作業ファイル（.petanuri）の保存は続きを描くための物で、モデルに貼る画像にはなりません。画像にするのが「書き出し」です。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>ファイル → 書き出し → PNG で書き出す（全セット）で、全部のテクスチャを 1 回で PNG にします（<a href="#png">くわしく</a>）。</li>
+      <li>窓の「にじみ（パディング）」は、はじめの 8 px のままで大丈夫です。ゲームの中で継ぎ目に線が見えたら広げます（<a href="#pad">くわしく</a>）。</li>
+      <li>同じフォルダへ何度も書き出すなら、「毎回聞かずにこのフォルダへ書き出す」を入れます（<a href="#dir">くわしく</a>）。</li>
+      <li>レイヤーを分けたまま渡すなら、PSD で書き出します <span class="tier std">Standard</span>（<a href="#psd">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#kinds">書き出せる物と、作業ファイルとのちがい</a></li><li><a href="#png">PNG で書き出す</a></li><li><a href="#layers-png">選んだレイヤーだけを PNG にする</a></li><li><a href="#uvmap">UV マップを PNG で書き出す</a></li><li><a href="#psd">PSD で書き出す・読み込む</a></li><li><a href="#pad">書き出しのにじみ（パディング）</a></li><li><a href="#dir">書き出し先のフォルダ</a></li><li><a href="#canvas2d">2D ペイントの絵を書き出す</a></li><li><a href="#mat">lilToon のマテリアル・AO を書き出す</a></li></ul></div>
+
+    <section class="mn-sec" id="kinds" data-keywords="エクスポート 出力 保存 セーブ 画像にする テクスチャを保存 png psd 違い 作業ファイル petanuri unity に入れる テクスチャを画像に 画像にしたい 画像で保存 完成">
+      <h2>書き出せる物と、作業ファイルとのちがい</h2>
+      <p>書き出しは、どれも ファイル → 書き出し から選びます。テクスチャセットの行の右クリックからも、そのセットだけを書き出せます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ほしい物</th><th scope="col">メニュー</th></tr></thead><tbody>
+        <tr><td>選んでいるセットのテクスチャ</td><td>PNG で書き出す（選択中のセット）（<a href="#png">くわしく</a>）</td></tr>
+        <tr><td>全部のセットのテクスチャ</td><td>PNG で書き出す（全セット）（<a href="#png">くわしく</a>）</td></tr>
+        <tr><td>一部のレイヤーだけの絵</td><td>PNG で書き出す（選んだレイヤー）（<a href="#layers-png">くわしく</a>）</td></tr>
+        <tr><td>UV の線の下絵</td><td>UV マップを PNG で書き出す（選択中のセット）（<a href="#uvmap">くわしく</a>）</td></tr>
+        <tr><td>レイヤーを分けたままの絵 <span class="tier std">Standard</span></td><td>PSD で書き出す（選択中のセット）／（全セット）（<a href="#psd">くわしく</a>）</td></tr>
+        <tr><td>lilToon のマテリアル <span class="tier pro">Pro</span></td><td>マテリアルを書き出す（.unitypackage・フォルダ）（<a href="#mat">くわしく</a>）</td></tr>
+        <tr><td>AO の画像 <span class="tier pro">Pro</span></td><td>フィルター → ベイク →「AO を PNG で書き出す（最後に焼いた結果）」（<a href="#mat">くわしく</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="ファイル → 書き出し のメニュー" loading="lazy"><figcaption>ファイル → 書き出し</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col"></th><th scope="col">作業ファイル（.petanuri）</th><th scope="col">書き出した PNG</th></tr></thead><tbody>
+        <tr><td>中身</td><td>モデル・全部のレイヤー・設定</td><td>見えているレイヤーを重ねた 1 枚の絵</td></tr>
+        <tr><td>開けるアプリ</td><td>ぺたぬり3D だけ</td><td>Unity・ほかのペイントソフトなど</td></tr>
+        <tr><td>操作</td><td>ファイル → 作業ファイルを保存（<kbd>Ctrl</kbd>＋<kbd>S</kbd>）</td><td>ファイル → 書き出し</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">書き出した PNG から、レイヤーには戻せません。あとで直すときのために、作業ファイルも保存しておきます（<a href="/petanuri/manual/start#save">保存する</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="png" data-keywords="png 画像 テクスチャ出力 エクスポート 全部 まとめて 一括 ファイル名 縮小 拡大 512 1024 8192 テクスチャを画像に 画像にしたい 画像で保存">
+      <h2>PNG で書き出す</h2>
+      <p>テクスチャセットの絵を、1 セット 1 枚の PNG にします。Unity などでモデルに貼るのはこの画像です。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 書き出し →「PNG で書き出す（全セット）」を選びます。1 つだけなら「PNG で書き出す（選択中のセット）」です。</li>
+        <li>書き出しの窓で、「解像度」「にじみ（パディング）」「書き出し先」を確かめて、「書き出す」を押します。</li>
+        <li>保存先を聞かれたら、フォルダを選びます。全セットのときは、フォルダを 1 回選ぶだけです。</li>
+        <li>「〇〇 を書き出しました」と出て、書き出したフォルダがエクスプローラーで開きます。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="書き出しの窓。にじみと書き出し先" loading="lazy"><figcaption>書き出しの窓</figcaption></figure>
+      <h3 id="png-files">書き出されるファイル</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ファイル名</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>＜セット名＞.png</td><td>見えているレイヤーを重ねた絵。セット名はマテリアルの名前です</td></tr>
+        <tr><td>＜セット名＞_main2nd.png・＜セット名＞_main3rd.png <span class="tier pro">Pro</span></td><td>メインカラー2nd／3rd のフォルダがあるセット。そのマスクを塗っていれば、_mask の付いたファイルも（<a href="/petanuri/manual/material#main2">メインカラー2nd・3rd</a>）</td></tr>
+        <tr><td>＜セット名＞_normal.png <span class="tier pro">Pro</span></td><td>塗る先のノーマルマップのフォルダがあるセット（<a href="/petanuri/manual/material#channels">塗る先</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>同じ名前になるセットは、_2、_3 を付けて分けます。</li>
+        <li>表示を切ったセットも、全セットに入ります。行き場のないセット（!）は入りません。要るときは、その行の右クリックの「PNG で書き出す（島の外へ広げない）」で書き出します（<a href="/petanuri/manual/sets#orphan">行き場のないセット</a>）。</li>
+        <li>境界線などの効果は、効果込みの絵になります。お手軽ベイクなどで焼いた光・影・質感も、見えているレイヤーの色として入ります。</li>
+        <li>表示範囲やオブジェクトで隠していても、テクスチャはそのまま書き出します。</li>
+        <li>テクスチャセットの行の右クリックの「PNG で書き出す」でも、そのセットを書き出せます。</li>
+      </ul>
+      <h3 id="png-size">大きさを変えて書き出す</h3>
+      <p>書き出しの窓の「解像度」で、テクスチャセットの解像度と別の大きさにできます。「そのまま（セットの解像度）」・512×512・1024×1024・2048×2048・4096×4096・8192×8192 から選びます。</p>
+      <ul class="mn-list">
+        <li>にじみはセットの解像度で付けてから、縮小・拡大します。</li>
+        <li>PNG（選択中のセット・全セット）・選んだレイヤー・UV マップ・マテリアルの書き出しに効きます。PSD には効きません（いつもセットの解像度）。</li>
+        <li>描くときの解像度を変えるのは、テクスチャセットのパネルです（<a href="/petanuri/manual/sets#resolution">解像度を変える</a>）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="書き出しの窓の解像度の欄" loading="lazy"><figcaption>書き出しの解像度</figcaption></figure>
+      <h3 id="png-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>ゲームの中で、UV の継ぎ目に線が見える</b>：にじみが足りません。8 px より広げて書き出し直します（<a href="#pad">にじみ</a>）。</li>
+        <li><b>「〇〇を出している間は書き出せません」と出る</b>：変形の枠・フィルターのプレビューなどが出ています。確定（<kbd>Enter</kbd>）か取りやめ（<kbd>Esc</kbd>）をしてから書き出します。</li>
+        <li><b>「ほかの読み書きの途中です」と出る</b>：保存・自動保存・読み込みの途中です。終わってからもう一度押します。</li>
+        <li><b>「表示の処理が止まったため書き出せません」と出る</b>：作業ファイルか自動保存から開き直してから書き出します（<a href="/petanuri/manual/sets#memory">メモリの節約</a>）。</li>
+        <li><b>「PNG で書き出せるテクスチャセットがありません」と出る</b>：選んでいるのが行き場のないセット（!）です。ほかのセットを選ぶか、レイヤーを移してから書き出します。</li>
+        <li><b>押しても「書き出しをやめました」になる</b>：書き出しの窓か保存先の窓で、キャンセルを押しました。窓で変えた値も元に戻ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="layers-png" data-keywords="レイヤー単体 パーツ別 個別 透過png 背景透明 線画だけ 素材">
+      <h2>選んだレイヤーだけを PNG にする</h2>
+      <p>線画だけ・模様だけなど、一部のレイヤーを背景の透明な PNG にします。</p>
+      <ol class="mn-steps">
+        <li>レイヤーのパネルで、書き出すレイヤーを選びます（<kbd>Ctrl</kbd>／<kbd>Shift</kbd>＋クリックで何枚でも）。</li>
+        <li>ファイル → 書き出し →「PNG で書き出す（選んだレイヤー）」を選びます（レイヤーの右クリックの「選んだレイヤーを PNG で書き出す」「このレイヤーを PNG で書き出す」でも）。</li>
+        <li>2 枚以上なら、窓の「選んだレイヤー」で「1 枚ずつ（レイヤーごとのファイル）」か「重ねて 1 枚に」を選んで、「書き出す」を押します。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">選び方</th><th scope="col">ファイル名</th></tr></thead><tbody>
+        <tr><td>1 枚ずつ</td><td>＜セット名＞_＜レイヤー名＞.png</td></tr>
+        <tr><td>重ねて 1 枚に</td><td>＜セット名＞_layers.png（パネルの並びで、合成モードごと重ねます）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>背景は透明です。描いた所だけの絵なので、にじみは付けません。</li>
+        <li>前の選び方を覚えています。</li>
+        <li>2D ペイントでは使えません。「PNG で書き出す（選択中のセット）」で書き出します（<a href="#canvas2d">くわしく</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvmap" data-keywords="UVレイアウト UV展開図 ワイヤー 下絵 ガイド テンプレート ほかのソフトで描く">
+      <h2>UV マップを PNG で書き出す</h2>
+      <p>UV の線を PNG にします。ほかのペイントソフトで、下絵として重ねて描くときに使います。</p>
+      <ol class="mn-steps">
+        <li>書き出したいテクスチャセットを選びます。</li>
+        <li>ファイル → 書き出し →「UV マップを PNG で書き出す（選択中のセット）」を選びます（テクスチャセットの行の右クリックにも）。</li>
+        <li>窓で下の項目を選んで、「書き出す」を押します。＜セット名＞_uv.png ができます。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">選べる物</th></tr></thead><tbody>
+        <tr><td>解像度</td><td>そのまま（セットの解像度）・512〜8192</td></tr>
+        <tr><td>線の色</td><td>白・黒・描画色</td></tr>
+        <tr><td>地</td><td>透明・黒・白（透明なら、ほかのソフトで絵の上に重ねられます）</td></tr>
+        <tr><td>線の太さ</td><td>1・2・3・4・6・8px</td></tr>
+        <tr><td>島の縁</td><td>「島の縁を 2 倍の太さで描く」（はじめは入）</td></tr>
+        <tr><td>書き出し先</td><td>ほかの書き出しと同じ（<a href="#dir">くわしく</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="UV マップを PNG で書き出す窓" loading="lazy"><figcaption>UV マップを PNG で書き出す</figcaption></figure>
+      <ul class="mn-list">
+        <li>2D キャンバスには UV が無いので、書き出せません。3D モデルのテクスチャセットを選んでください。</li>
+        <li>ぺたぬり3D の中で UV の線を見るだけなら、UV の区画の「UV線」です（<a href="/petanuri/manual/uv#uv">UV を出して直接塗る</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="psd" data-keywords="psd photoshop フォトショップ レイヤー付き 改変用psd 読み込み インポート 続きから クリスタ">
+      <h2>PSD で書き出す・読み込む <span class="tier std">Standard</span></h2>
+      <p>レイヤーを分けたまま PSD にします。ほかのペイントソフトで続きを描くときや、改変用の PSD として配るときに使います。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 書き出し →「PSD で書き出す（選択中のセット）」か「PSD で書き出す（全セット）」を選びます。</li>
+        <li>書き出しの窓で、にじみと書き出し先を確かめて「書き出す」を押します。</li>
+        <li>＜セット名＞.psd ができます。終わると、大きさとレイヤーの数が出ます。</li>
+      </ol>
+      <h3 id="psd-keep">PSD に入る物</h3>
+      <ul class="mn-list">
+        <li>レイヤー・表示・不透明度・合成モード・クリッピング・透明度保護・フォルダ・レイヤーマスク・色タグ（レイヤーの色）を保ちます。</li>
+        <li>調整レイヤーも調整レイヤーのまま入ります（グラデーションマップは色の点のまま）。色相・彩度・明度の「色付け」は入りません。</li>
+        <li>境界線は、画素に焼いたレイヤーで書きます。文字レイヤーは、ふつうのレイヤーになります。</li>
+        <li>境界線・ドロップシャドウ・外側の光彩だけの土台と、クリッピングしたレイヤーは、別々のまま書きます。効果だけを焼いた「（レイヤー名）（効果）」のレイヤーを上に足します。塗りの不透明度・内側の効果などがあるときは、1 枚にまとめます。</li>
+        <li><span class="tier pro">Pro</span> 塗る先・ノーマルマップ・メインカラー2nd／3rd のフォルダは、非表示のグループで書きます。ぺたぬり3D で読み込むと元に戻ります。</li>
+        <li>合成画像（PSD を開かずに読む平らな絵）には、にじみが付きます。レイヤーそのものは描いたままです。</li>
+      </ul>
+      <div class="mn-tip warn">調整レイヤーの式は、ほかのアプリで開くと少し違う見た目になることがあります。</div>
+      <h3 id="psd-import">PSD を読み込む</h3>
+      <p>アバターに付いてくる改変用の PSD を読み込んで、続きから描けます。読み込むと、そのセットのレイヤーが PSD の中身で置き換わります。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 読み込み →「PSD を読み込む（レイヤーを置き換え）」を選びます。</li>
+        <li>PSD を選びます。ファイル名がセット名と同じセット（body.psd → body）に入ります。合うセットが無ければ、選んでいるセットに入ります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>PSD をウィンドウに落としても、同じように入ります。テクスチャセットの行に落とすと、そのセットに入ります（<a href="/petanuri/manual/sets#files">画像や PSD を足す</a>）。</li>
+        <li>大きさが違えば、セットの解像度に合わせて拡大縮小します。フォルダ・マスク・対応する調整レイヤーは、そのままです。</li>
+        <li>合わない合成モードは「通常」に、対応していない調整レイヤーは飛ばして、右下に注意を出します。</li>
+        <li>元に戻す（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>）1 回で戻せます。</li>
+        <li>新規作成のときに、始まりを「PSD」にして読み込むこともできます（<a href="/petanuri/manual/start#new">3D モデルを開く</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pad" data-keywords="パディング にじみ マージン ブリード シーム 継ぎ目 線が出る 白い線 黒い線 ミップマップ 隙間 dilation">
+      <h2>書き出しのにじみ（パディング）</h2>
+      <p>UV の島の外へ、縁の色を広げて書き出します。広げないと、ゲームの中で縮小やミップマップが掛かったとき、UV の継ぎ目（シーム）に線が見えることがあります。</p>
+      <ol class="mn-steps">
+        <li>書き出しの窓の「にじみ（パディング）」で、広げる幅を選びます。</li>
+        <li>「書き出す」を押します。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">選べる値</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>なし（島の外へ広げない）</td><td>島の外は広げません（下地が見えていれば下地の色）</td></tr>
+        <tr><td>4・8（はじめ）・16・32・64・128 px</td><td>島の縁から、その幅だけ色を広げます</td></tr>
+        <tr><td>島の外を全部埋める</td><td>島の外を、全部いちばん近い島の色で埋めます</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>PNG・PSD の合成画像・マテリアルの書き出しの画像（メインカラー・影色・マスク・ノーマルマップなど全部）に効きます。PSD のレイヤーそのものは広げません。</li>
+        <li>選んだレイヤーの PNG と UV マップには付けません。</li>
+        <li>値は UV の区画の左下の「パディング」と同じ値です。どちらで変えても両方が変わります。UV の区画で 1px ずつ決めた値も、窓に並びます（<a href="/petanuri/manual/uv#area">塗る範囲とパディング</a>）。</li>
+        <li>島の外の画素は、まっすぐの距離でいちばん近い島の画素の色になります。斜めの縁も階段にならず、なめらかに広がります。</li>
+        <li>筆の縁のうすい所は描いた所とみなさず、不透明な所の色を広げてから、うすい所を上に重ねます。継ぎ目に下地の色の線が出にくくなります。</li>
+        <li>Unity 連携で送る絵も、書き出しの PNG と同じ広げ方です（<a href="/petanuri/manual/unity">Unity から塗る</a>）。</li>
+      </ul>
+      <div class="mn-tip">書き出す前に UV の区画の「パディング線」を出すと、どこまで広がるか目で確かめられます。島の外も手で描き込みたいときは、塗る範囲を「パディング内」にします（<a href="/petanuri/manual/uv#area">くわしく</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="dir" data-keywords="保存先 出力先 フォルダ指定 毎回聞かない 上書き エクスプローラー 開かない">
+      <h2>書き出し先のフォルダ</h2>
+      <p>書き出しの窓の「書き出し先」で、決まったフォルダへ毎回書き出せるようにします。Unity のプロジェクトの Textures フォルダなどを選んでおくと便利です。</p>
+      <ol class="mn-steps">
+        <li>書き出しの窓の「フォルダを選ぶ」で、フォルダを選びます。</li>
+        <li>「毎回聞かずにこのフォルダへ書き出す（同じ名前のファイルは上書き）」を入れます。</li>
+        <li>次から、PNG・PSD・AO・.unitypackage の書き出しで保存先を聞かずに、そのフォルダへ書きます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>「外す」で、書き出すたびに保存先を聞くのに戻ります。</li>
+        <li>フォルダを決めていないときも、保存先の窓は前に書き出したフォルダから開きます。</li>
+        <li>「書き出したらフォルダを開く」は、はじめから入っています。書き終わると、そのフォルダをエクスプローラーで開きます。開かなくてよいときは外します。</li>
+        <li>書き出している間は「書き出し中…」と出て、終わるまで操作は止まります。</li>
+        <li>マテリアルのフォルダへの書き出し（Assets を選ぶ）は、前に選んだ Assets から開きます。</li>
+        <li>窓でキャンセルすると、窓の中で変えた値（にじみ・書き出し先など）は元に戻ります。</li>
+      </ul>
+      <div class="mn-tip warn">「毎回聞かずに」のときは、同じ名前のファイルは確かめずに上書きされます。</div>
+    </section>
+
+    <section class="mn-sec" id="canvas2d" data-keywords="2d イラスト モデルなし 平面 キャンバス スタンプ 2D-paint">
+      <h2>2D ペイントの絵を書き出す</h2>
+      <p>モデルを使わない 2D ペイントの絵も、PNG や PSD にできます。</p>
+      <ul class="mn-list">
+        <li>キャンバスの下のバーの「PNG を書き出す」で、2D-paint.png にします。ファイル → 書き出し →「PNG で書き出す（選択中のセット）」でも同じです。</li>
+        <li><span class="tier std">Standard</span> レイヤーのまま渡すなら、ファイル → 書き出し →「PSD で書き出す（選択中のセット）」で 2D-paint.psd にします。</li>
+        <li>全セット・選んだレイヤーの書き出しは、3D モデルのテクスチャセットのための物です。2D ペイントでは使えません。</li>
+        <li>作業ファイルの保存もできます（<a href="/petanuri/manual/deco#paint2d">モデルを使わない 2D ペイント</a>）。</li>
+      </ul>
+      <div class="mn-tip">スタンプ用 2D キャンバスの絵は、モデルの書き出しに入りません。「スタンプに登録」でスタンプにして使います（<a href="/petanuri/manual/deco#canvas2d">スタンプ用 2D キャンバス</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="mat" data-keywords="unitypackage マテリアル書き出し lilToon mat 影色 マスク AO アンビエントオクルージョン">
+      <h2>lilToon のマテリアル・AO を書き出す <span class="tier pro">Pro</span></h2>
+      <ul class="mn-list">
+        <li>lilToon のマテリアルは、ファイル → 書き出し →「マテリアルを書き出す（.unitypackage・フォルダ）」で、テクスチャと一緒に書き出します。窓には、にじみと書き出し先の欄もあります（<a href="/petanuri/manual/material#export">マテリアルを書き出す</a>）。</li>
+        <li>焼いた AO は、フィルター → ベイク →「AO を PNG で書き出す（最後に焼いた結果）」で ＜セット名＞_AO.png にします（<a href="/petanuri/manual/ao">AO を焼く</a>）。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/start#save">保存する・続きを開く</a></li><li><a href="/petanuri/manual/uv#area">塗る範囲とパディング</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/material#export">マテリアルを書き出す</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/pose"><small>← 前へ</small>ポーズ・ブレンドシェイプ</a><a class="next" href="/petanuri/manual/unity"><small>次へ →</small>Unity・AI 連携</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +365,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

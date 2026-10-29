@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/pose",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,165 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose" aria-current="page">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose" aria-current="page">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ ポーズ・ブレンドシェイプ・頂点グループ</p>
     <h1 class="mn-h1">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">3D モデルのボーン・ブレンドシェイプ・頂点グループを使って、T ポーズのままでは塗りにくい所を塗ります。このページの機能は Pro で使えます。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#pose">ポーズモード</a></li><li><a href="#humanoid">人型のボーンの色分け</a></li><li><a href="#posemirror">ポーズの左右対称</a></li><li><a href="#blend">ブレンドシェイプ</a></li><li><a href="#vgroup">頂点グループから範囲を作る</a></li></ul></div>
-    <section class="mn-sec" id="pose"><h2>ポーズモード</h2><ol class="mn-steps"><li>3D ビューの上の真ん中の「ポーズ」を押します（ポーズモードの間は描きません）。</li><li>関節の点・メッシュ・右のパネル「ポーズ」の一覧で、ボーンを選びます。</li><li>出てきたつまみで回します（上の列で 回転／移動・つまみの向き を切り替え）。パネルで角度を数字で打ち込むこともできます。</li><li>「ペイント」に戻ると、そのポーズの形で塗れます。</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="ポーズモードで腕を回しているところ" loading="lazy"><figcaption>ポーズモード</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="腕を下ろしたままペイントに戻ったところ" loading="lazy"><figcaption>そのまま塗れます</figcaption></figure></div><div class="mn-tip">わきの下・腕の内側など、T ポーズでは描きにくい所にべんりです。「戻す」「全部戻す」で元の姿勢に。ポーズは作業ファイルに保存されます。</div><div class="mn-tip">ポーズを付けたまま左右対称で描くと、元のポーズ（休みの姿勢）で対称の所に入ります。腕を曲げていても、反対の腕の同じ所に塗れます（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</div><div class="mn-tip">ポーズのプリセット（Pro）：パネル「ポーズ」の下の「今の状態を保存」で、今のポーズに名前を付けて覚えます（10 個まで）。「呼び出す」でそのポーズに（元に戻す 1 回で戻ります）・「上書き」・名前を変える・消す。作業ファイルに入ります。</div></section><section class="mn-sec" id="humanoid"><h2>人型のボーンの色分け</h2><ul class="mn-list"><li>人型の<strong>体</strong>のボーン（腰・背骨・胸・首・頭・肩・腕・脚・足）の関節の点は<strong>オレンジで大きめ</strong>、<strong>手の指は緑</strong>、それ以外（髪・スカート・しっぽなどの揺れ物）は小さい青で出ます。</li><li>押した所の近くに人型のボーンがあれば、ほかのボーンより先に選びます。</li><li>パネル「ポーズ」の一覧にも同じ色の印が付きます。<strong>「人型だけ」</strong>で揺れ物を隠して、体と手だけにできます。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pose-humanoid.webp" width="458" height="900" alt="ポーズモード。体の関節はオレンジ、手の指は緑、揺れ物は青" loading="lazy"><figcaption>体はオレンジ・手は緑・ほかは青</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-pose-panel.webp" width="298" height="473" alt="パネル「ポーズ」" loading="lazy"><figcaption>パネル「ポーズ」</figcaption></figure></div><div class="mn-tip warn">人型かどうかはボーンの名前で見分けています。名前の付け方によっては外れることがあります。</div></section><section class="mn-sec" id="posemirror"><h2>ポーズの左右対称</h2><ul class="mn-list"><li><strong>「対称でポーズ」</strong>を入れると、片側のボーンを動かすと、もう片側も鏡に写して動きます。</li><li><strong>「左→右に写す」「右→左に写す」</strong>で、片側のポーズを反対側へ写します（左右はキャラクターの左右。元に戻すは 1 回）。</li><li>上の真ん中の列・パネル「ポーズ」・右クリックから使えます。</li><li>左右の組は名前（Left／Right・.L／.R・_L／_R・末尾の L／R など）で決めます。名前で分からなければ、元のポーズで左右対称の位置にあるボーンを組にします。</li></ul></section><section class="mn-sec" id="blend"><h2>ブレンドシェイプ</h2><ul class="mn-list"><li>右のパネル「ブレンドシェイプ」に、モデルのブレンドシェイプ（シェイプキー）が並びます。メッシュが 2 つ以上あるときは、上のプルダウンでメッシュを選びます。</li><li>つまみ（0〜100）で形が変わり、その形のまま表示・塗り・当たり判定が働きます。</li><li>絞り込み・0 以外だけ・全部 0 に。値は作業ファイルに保存されます。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshapes.webp" width="298" height="420" alt="ブレンドシェイプのパネル" loading="lazy"><figcaption>パネル「ブレンドシェイプ」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/blendshape.webp" width="393" height="810" alt="表情のブレンドシェイプを動かした顔" loading="lazy"><figcaption>表情を変えたまま描き込めます</figcaption></figure></div><div class="mn-tip">「値をコピー」「貼り付け」で今の値（0 以外）をコピーして、別のモデルやあとで戻せます。「.anim を読み込む」で、Unity の表情のアニメーション（.anim）の最初のコマの値を当てます（メッシュは名前で合わせます）。パネルの下の「今の状態を保存」で、隠したオブジェクトとシェイプキーの値をまとめて表示のプリセットとして覚えられます。</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshape-v120.webp" width="298" height="439" alt="ブレンドシェイプのパネルの値のコピー・.anim の読み込みとプリセット" loading="lazy"><figcaption>ブレンドシェイプの値のコピー・.anim・プリセット</figcaption></figure></section><section class="mn-sec" id="vgroup"><h2>頂点グループから範囲を作る</h2><ol class="mn-steps"><li>右のパネル「頂点グループ」で、グループ（ボーンの重み）にチェックを入れます（いくつでも）。</li><li>「選択範囲にする」「足す」「引く」「この範囲だけ表示」を押します。</li><li>塗る範囲がそこだけになります。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups.webp" width="298" height="470" alt="頂点グループのパネル" loading="lazy"><figcaption>パネル「頂点グループ」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups-3d.webp" width="393" height="900" alt="胴の頂点グループから作った選択範囲" loading="lazy"><figcaption>胴の重みから作った範囲</figcaption></figure></div><div class="mn-tip">「重みの強さで」を入れると、重みがそのまま塗る強さになって、境目がなめらかになります。</div></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/bake"><small>← 前へ</small>お手軽ベイク・質感と陰影</a><a class="next" href="/petanuri/manual/export"><small>次へ →</small>書き出し</a></nav>
+    <p class="mn-intro">3D モデルのボーン・ブレンドシェイプ・頂点グループを使って、T ポーズのままでは塗りにくい所を塗ります。腕を下ろす・表情を変える・体の一部だけを選ぶ、ができます。</p>
+    <p class="mn-proof">Pro の機能です。Lite ではボタンに鍵の印が付き、パネルには説明だけが出ます。Standard では「ペイント／ポーズ」の切り替えや、パネル「ポーズ」「ブレンドシェイプ」「頂点グループ」が出ません（<a href="/petanuri/manual/start#editions">版のちがい</a>）。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>3D ビューの上の真ん中の「ポーズ」を押して、関節の点を押し、出てきたつまみで回します（<a href="#pose">くわしく</a>）。</li>
+      <li>「ペイント」に戻ると、そのポーズの形のまま塗れます（<a href="#pose">くわしく</a>）。</li>
+      <li>表情や体型を変えて塗るときは、右のパネル「ブレンドシェイプ」のつまみを動かします（<a href="#blend">くわしく</a>）。</li>
+      <li>体の一部だけを塗るときは、パネル「頂点グループ」で選んで「選択範囲にする」を押します（<a href="#vgroup">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#pose">ポーズを付けて、その形で塗る</a></li><li><a href="#humanoid">体・手・揺れ物のボーンを見分ける</a></li><li><a href="#posemirror">左右対称にポーズを付ける</a></li><li><a href="#blend">表情や体型を変えて塗る（ブレンドシェイプ）</a></li><li><a href="#vgroup">体の一部だけを塗る（頂点グループ）</a></li></ul></div>
+
+    <section class="mn-sec" id="pose" data-keywords="ボーン 骨 関節 腕を下ろす Tポーズ Aポーズ わき 脇の下 腕の内側 回転 ギズモ リグ アーマチュア">
+      <h2>ポーズを付けて、その形で塗る</h2>
+      <p>わきの下や腕の内側など、T ポーズでは描きにくい所を塗るときに使います。腕を下ろしてから塗ると、ペンが届きやすくなります。</p>
+      <ol class="mn-steps">
+        <li>3D ビューの上の真ん中の「ポーズ」を押します。ポーズモードの間は描けません。</li>
+        <li>動かしたいボーンの関節の点を押します。メッシュを押すと、その所をいちばん動かすボーンが選ばれます。</li>
+        <li>出てきたつまみをドラッグして回します。</li>
+        <li>「ペイント」を押して戻ります。塗る位置がポーズの形で作り直され、そのまま塗れます。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="ポーズモードで腕を回しているところ" loading="lazy"><figcaption>ポーズモード</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="腕を下ろしたままペイントに戻ったところ" loading="lazy"><figcaption>そのまま塗れます</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>ほかの入口：表示 → モードとポーズ →「ポーズモード（ボーンを動かす）」、3D ビューの右クリック →「ポーズモードにする（ボーンを動かす）」。</li>
+        <li>キーの割り当てで「ペイント／ポーズの切り替え」にキーを付けられます（<a href="/petanuri/manual/keys#assign">キーを割り当てる</a>）。</li>
+        <li>ポーズは作業ファイルに保存されます。ブレンドシェイプとも重ねられます。</li>
+      </ul>
+      <h3 id="pose-bar">ポーズモードの上の列</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ボタン</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>回転・移動</td><td>つまみで回すか、動かすかを切り替えます</td></tr>
+        <tr><td>ボーンの向き／ワールドの向き</td><td>つまみの向きを、ボーンに合わせるか、空間に合わせるかを切り替えます</td></tr>
+        <tr><td>戻す</td><td>選んだボーンを元の姿勢に戻します</td></tr>
+        <tr><td>全部戻す</td><td>ポーズを全部戻します</td></tr>
+        <tr><td>対称・左→右・右→左</td><td>左右対称の操作（<a href="#posemirror">左右対称</a>）</td></tr>
+      </tbody></table></div>
+      <p>同じ操作は、ポーズモードの右クリック（このボーンを選ぶ・回転（つまみ）・移動（つまみ）・選んだボーンを戻す・ペイントモードに戻る など）にもあります。</p>
+      <h3 id="pose-panel">パネル「ポーズ」で数字を打ち込む</h3>
+      <ul class="mn-list">
+        <li>右のパネル「ポーズ」の一覧からも、ボーンを選べます。「絞り込み」で名前を探せます。</li>
+        <li>選んだボーンの角度（X・Y・Z、度）と位置を、数字で打ち込めます。</li>
+        <li>「重みのあるボーン」を外すと、メッシュを動かさないボーンも全部並びます。</li>
+        <li>つまみの 1 回のドラッグ・1 回の打ち込みごとに、元に戻せます。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-pose-panel.webp" width="298" height="473" alt="パネル「ポーズ」" loading="lazy"><figcaption>パネル「ポーズ」</figcaption></figure>
+      <h3 id="pose-preset">ポーズを覚えて呼び出す（ポーズのプリセット）</h3>
+      <ol class="mn-steps">
+        <li>パネル「ポーズ」の下の「ポーズのプリセット」で、「今の状態を保存」を押します。今のポーズが名前つきで覚えられます（10 個まで）。</li>
+        <li>名前の欄で、名前を変えて <kbd>Enter</kbd> を押します。</li>
+        <li>使うときは「呼び出す」を押します。覚えていないボーンは、元の姿勢に戻ります。</li>
+      </ol>
+      <p>「上書き」で今のポーズに置き換え、× で消します。呼び出しは元に戻す 1 回で戻ります。プリセットは作業ファイルに入ります。</p>
+      <div class="mn-tip">ポーズを付けたまま左右対称で描くと、元の姿勢で対称の所に入ります。腕を曲げていても、反対の腕の同じ所に塗れます（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</div>
+      <h3 id="pose-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>描けない</b>：ポーズモードの間は描けません。上の真ん中の「ペイント」を押して戻ります。</li>
+        <li><b>「このモデルにはボーンがありません」と出る</b>：ボーン（アーマチュア）の無いモデルでは、ポーズを付けられません。</li>
+        <li><b>「ポーズ」のボタンが無い</b>：Standard では出ません。Pro の機能です。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="humanoid" data-keywords="ヒューマノイド 人型 色分け オレンジ 緑 青 揺れもの 髪 スカート しっぽ 指">
+      <h2>体・手・揺れ物のボーンを見分ける</h2>
+      <p>ポーズモードの関節の点は、ボーンの種類で色と大きさが変わります。腕や脚を選びたいときに、髪やスカートのボーンを押し間違えにくくなります。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">関節の点</th><th scope="col">ボーン</th></tr></thead><tbody>
+        <tr><td>オレンジ・大きめ</td><td>人型の体（腰・背骨・胸・首・頭・肩・腕・脚・足）。体どうしの骨の線もオレンジです</td></tr>
+        <tr><td>緑</td><td>手の指</td></tr>
+        <tr><td>青・小さめ</td><td>それ以外（髪・スカート・胸・しっぽなどの揺れ物）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>押した所の近くに人型のボーンがあれば、ほかのボーンより先に選びます。</li>
+        <li>パネル「ポーズ」の一覧にも同じ色の印が付きます。「人型だけ」を入れると、揺れ物を隠して体と手だけにできます。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pose-humanoid.webp" width="458" height="900" alt="ポーズモード。体の関節はオレンジ、手の指は緑、揺れ物は青" loading="lazy"><figcaption>体はオレンジ・手は緑・ほかは青</figcaption></figure></div>
+      <div class="mn-tip warn">人型かどうかは、ボーンの名前で見分けています。名前の付け方によっては、外れることがあります。</div>
+    </section>
+
+    <section class="mn-sec" id="posemirror" data-keywords="ミラー シンメトリー 反対側 左右 鏡 コピー 反転">
+      <h2>左右対称にポーズを付ける</h2>
+      <p>両腕を同じように下ろしたいときなどに使います。</p>
+      <ul class="mn-list">
+        <li><b>「対称でポーズ」</b>：入れると、片側のボーンを動かしたとき、もう片側も鏡に写して動きます。</li>
+        <li><b>「左→右に写す」「右→左に写す」</b>：片側のポーズを反対側へ写します。左右はキャラクターの左右です。元に戻すは 1 回で戻ります。</li>
+        <li>上の真ん中の列（対称・左→右・右→左）・パネル「ポーズ」・右クリック・表示 → モードとポーズ から使えます。</li>
+        <li>左右の組は名前（Left／Right・.L／.R・_L／_R・末尾の L／R など）で決めます。名前で分からないときは、元の姿勢で左右対称の位置にあるボーンを組にします。</li>
+      </ul>
+      <h3 id="posemirror-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「左右の組になるボーンが見つかりません」と出る</b>：ボーンの名前にも位置にも左右の手がかりが無いモデルです。片側ずつ動かしてください。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="シェイプキー 表情 口 目 閉じる 体型 胸 モーフ anim アニメーション フェイス">
+      <h2>表情や体型を変えて塗る（ブレンドシェイプ）</h2>
+      <p>モデルのブレンドシェイプ（シェイプキー）を効かせた形のまま塗れます。目を閉じた所や口の中など、元の形では見えない所を塗るときに使います。</p>
+      <ol class="mn-steps">
+        <li>右のパネル「ブレンドシェイプ」を開きます。</li>
+        <li>メッシュが 2 つ以上あるときは、上のプルダウンでメッシュを選びます（「すべてのメッシュ」も選べます）。</li>
+        <li>つまみ（0〜100）を動かします。手を止めると、その形で塗る位置が作り直されます。</li>
+        <li>そのまま塗ります。表示・塗り・当たり判定が、その形で働きます。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshapes.webp" width="298" height="420" alt="ブレンドシェイプのパネル" loading="lazy"><figcaption>パネル「ブレンドシェイプ」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/blendshape.webp" width="393" height="810" alt="表情のブレンドシェイプを動かした顔" loading="lazy"><figcaption>表情を変えたまま描き込めます</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>「絞り込み」で名前を探し、「0 以外だけ」で動かしている物だけを出します。「全部 0 に」で全部戻します。</li>
+        <li>値は作業ファイルに保存されます。</li>
+      </ul>
+      <h3 id="blend-copy">値をコピーする・.anim を読み込む</h3>
+      <ul class="mn-list">
+        <li>「値をコピー」で今の値（0 以外）をコピーし、「貼り付け」で戻します。別のモデルにも貼れます（ほかのシェイプキーは 0 になります）。</li>
+        <li>「.anim を読み込む」で、Unity の表情のアニメーション（.anim）の最初のコマの値を当てます。メッシュは名前で合わせます。.anim をテキストで開いて中身をコピーし、「貼り付け」でも同じです。</li>
+        <li>このモデルに無いシェイプキーがあると、その数を知らせます。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshape-v120.webp" width="298" height="439" alt="ブレンドシェイプのパネルの値のコピー・.anim の読み込みとプリセット" loading="lazy"><figcaption>ブレンドシェイプの値のコピー・.anim・プリセット</figcaption></figure>
+      <h3 id="blend-preset">表示のプリセット</h3>
+      <p>パネルの下の「表示のプリセット」で「今の状態を保存」を押すと、シェイプキーの値と、オブジェクトの表示・非表示をまとめて覚えます（10 個まで）。「呼び出す」で戻し、元に戻す 1 回で前の状態に戻ります。オブジェクトのパネルにも同じ一覧があります（<a href="/petanuri/manual/sets#objects">オブジェクトの表示</a>）。</p>
+      <h3 id="blend-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>シェイプキーが並ばない</b>：上のプルダウンで別のメッシュを選んでいるかもしれません。「すべてのメッシュ」にしてみてください。</li>
+        <li><b>貼り付けても何も変わらない</b>：コピーしたシェイプキーと同じ名前の物が、このモデルにありません。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="vgroup" data-keywords="ウェイト 重み ボーンウェイト 範囲 部位 腕だけ 胴だけ マスク 選択">
+      <h2>体の一部だけを塗る（頂点グループ）</h2>
+      <p>ボーンの重み（頂点グループ）から、塗る範囲や見せる範囲を作ります。腕だけ・胴だけを塗りたいときに、範囲を手で囲まずに済みます。</p>
+      <ol class="mn-steps">
+        <li>右のパネル「頂点グループ」で、使うグループに印を入れます。いくつでも選べます（<kbd>Shift</kbd>＋押すで、まとめて選べます）。</li>
+        <li>「選択範囲にする」を押します。塗る範囲が、そこだけになります。</li>
+        <li>そのまま塗ります。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups.webp" width="298" height="470" alt="頂点グループのパネル" loading="lazy"><figcaption>パネル「頂点グループ」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups-3d.webp" width="393" height="900" alt="胴の頂点グループから作った選択範囲" loading="lazy"><figcaption>胴の重みから作った範囲</figcaption></figure></div>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ボタン・項目</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>選択範囲にする</td><td>選んだグループの所を、選択範囲にします</td></tr>
+        <tr><td>足す・引く</td><td>今の選択範囲に足す・今の選択範囲から引く</td></tr>
+        <tr><td>この範囲だけ表示</td><td>選択範囲にして、その所だけ 3D に表示します（<a href="/petanuri/manual/uv#isolate">表示範囲</a>）</td></tr>
+        <tr><td>重みの強さで（境目をなめらかに）</td><td>重みがそのまま塗る強さになり、境目がなめらかになります</td></tr>
+        <tr><td>しきい値</td><td>これより小さい重みの所は入れません</td></tr>
+        <tr><td>絞り込み・全部外す</td><td>名前で探す・選んだグループを全部外す</td></tr>
+      </tbody></table></div>
+      <p>選択範囲の扱い（広げる・ぼかす・解除する など）は、<a href="/petanuri/manual/edit#select">選択範囲</a>のページへ。</p>
+      <h3 id="vgroup-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「選んだグループの重みのある面がありません」と出る</b>：「しきい値」を下げてみてください。</li>
+        <li><b>グループが並ばない</b>：そのモデルに頂点グループ（ボーンの重み）がありません。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/draw#mirror">左右対称で描く</a></li><li><a href="/petanuri/manual/edit#select">選択範囲</a></li><li><a href="/petanuri/manual/uv#isolate">表示範囲</a></li><li><a href="/petanuri/manual/ao">AO を焼く</a></li><li><a href="/petanuri/manual/sets#objects">オブジェクトの表示</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/bake"><small>← 前へ</small>お手軽ベイク</a><a class="next" href="/petanuri/manual/export"><small>次へ →</small>書き出し</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +300,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

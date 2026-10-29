@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/material",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,261 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material" aria-current="page">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material" aria-current="page">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 仕上がりと lilToon のマテリアル</p>
     <h1 class="mn-h1">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">lilToon と同じ計算の見た目（影・マットキャップ・リムライト・輪郭線など）で確かめながら塗れて、設定ごとマテリアルとして書き出せます。このページの機能は Pro で使えます。</p><p class="mn-proof">Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p>
-    <p class="mn-proof">「仕上がり（lilToon の見た目）」は β版です。lilToon（2.3 系）と同じ計算で見せていますが、Unity の中の見え方と少し違うことがあります。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#look">「仕上がり」で見る</a></li><li><a href="#channels">影色・マスクなどを塗る（塗る先）</a></li><li><a href="#main2">メインカラー2nd・メインカラー3rd</a></li><li><a href="#split">マテリアルを分ける</a></li><li><a href="#lil">lilToon のマテリアルを読み込む</a></li><li><a href="#export">マテリアルを書き出す</a></li></ul></div>
-    <section class="mn-sec" id="look"><h2>「仕上がり」で見る</h2><ul class="mn-list"><li>3D ビューの左上の、表示の形式の 4 つのアイコンの右端（右クリック → 表示）で「仕上がり」にします。</li><li>影（影色 1・影色 2・境界の色）・ノーマルマップ・マットキャップ・マットキャップ 2nd・リムライト・逆光ライト・リムシェード・発光・輪郭線を、lilToon（2.3 系）と同じ計算で見せます。</li><li>光の向きは、表示の形式の ▼ かパネル「マテリアル」の「表示と光」で。「カメラについてくる光」なら、視点を回しても当たり方が同じで塗りやすくなります。</li><li>パネル「マテリアル」の項目の名前は、lilToon の設定画面の呼び名にそろえています。「ほかのマテリアルにも写す」で全部を同じ設定にできます。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="仕上がり表示。影・リムライト・輪郭線が付いている" loading="lazy"><figcaption>仕上がり表示</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="マテリアルのパネル" loading="lazy"><figcaption>パネル「マテリアル」（上にマテリアルの一覧）</figcaption></figure></div><figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="仕上がり表示にした画面全体" loading="lazy"><figcaption>仕上がり表示の画面</figcaption></figure><div class="mn-tip">MToonの仕上がりプレビュー（Pro・β）：マテリアル → 表示と光でMToonを選びます。VRM0／VRM1から読み込んだ影・リム・発光・輪郭などを参考に描けます。調整はUndo／Redoでき、作業ファイルにも保存されます。</div><div class="mn-tip">これは描画中の見た目を確認する機能です。MToon材質の完全な往復出力には対応せず、PNG／PSDと既存のlilToon用マテリアル出力は従来どおりです。UVアニメーションは静止表示で、扱えないUV設定は理由を知らせ通常表示へ戻します。</div><div class="mn-tip">lilToon の設定の追加（Pro）：リムライトの「ライトの方向の影響度」（直接光・間接光）、輪郭線の「ハイライト」「ライトの明るさを反映」、光沢設定（滑らかさ・金属度・反射率・リアル／トゥーンの光沢・環境光の反射・キューブマップ）、ラメの形、マットキャップの「カスタムノーマルマップ」「ノーマルマップの強度」、色調補正のグラデーションマップ、発光のグラデーション、異方性反射、ディザ、ディゾルブ、視差、AudioLink を、lilToon と同じ計算で見せます。</div><div class="mn-tip">音や時間で変わる物は、「音の強さ（この表示だけ）」「表示の時刻」の値で止めて見せます（書き出しには入りません）。輪郭線の向き・メインカラー2nd／3rd のディゾルブなど表示に入らない設定も、値と画像を .mat に読み書きします。</div></section><section class="mn-sec" id="channels"><h2>影色・マスクなどを塗る（塗る先）</h2><ol class="mn-steps"><li>パネルの「塗る：」のボタン（右クリック → 塗る先 でも）で、塗る先を選びます。</li><li>レイヤーのパネルのメインカラーの上に、その塗る先のフォルダ（例「影色1」）ができて、中のレイヤーが選ばれます。中はふつうのレイヤーと同じで、足す・消す・重ねる・マスク・クリッピングが使えます。</li><li>いつものペン・筆・塗りつぶし・グラデーション・ぼかし・フィルターで、そのまま塗ります。</li><li>上の真ん中の「カラーに戻る」（かフォルダの外のレイヤーを押す）で、ふつうの色の塗りに戻ります。</li></ol><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="レイヤーのパネルにできた塗る先のフォルダ" loading="lazy"><figcaption>塗る先のフォルダ</figcaption></figure><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">塗る先</th><th scope="col">どう効く？</th></tr></thead><tbody><tr><td>影色 1・影色 2</td><td>塗った所の影がその色になります（肌の赤み・髪の影の青みなど）</td></tr><tr><td>影マスク</td><td>白＝影が付く・黒＝影を付けない</td></tr><tr><td>影 AO</td><td>黒いほど影が出やすい（首元・髪の内側・服の重なり）</td></tr><tr><td>ノーマルマップ</td><td>高さで塗ります。白で盛る・黒で彫る（服のしわ・縫い目・髪の筋に。<a href="/petanuri/manual/deco#bump">凹凸</a>のツールも）</td></tr><tr><td>マットキャップのマスク・輪郭線の幅</td><td>白＝効く・黒＝効かない</td></tr><tr><td>リムライト色・発光テクスチャ</td><td>塗った色を掛ける／塗った所だけが、塗った色で光る</td></tr></tbody></table></div><ul class="mn-list"><li>ほかにも、影色3・影のぼかしマスク・色調補正マスク・アルファマスク・発光マスク・発光2nd・逆光ライトの色・リムシェードのマスク・輪郭線の色・ノーマルマップ2nd のマスク・ラメの色を塗れます（右クリック → 塗る先 → そのほかのマスク）。</li><li>明るさだけを読む塗る先は、上の真ん中の 白・灰・黒 で持ち替えられます。「ここだけ見る」で、その塗る先の絵だけを表示します。「消す」で、塗る先を塗っていない状態に戻します。</li><li>1 つのマテリアルの仕上がりの表示で同時に使えるテクスチャは 16 までです（超えるときは「これ以上追加できません」と出ます）。</li></ul><div class="mn-tip">塗る先の追加（Pro）：「そのほかのマスク」に、滑らかさ・金属度・光沢の色・異方性反射のマスク・異方性反射のノイズ・ディゾルブのマスク・ディゾルブのノイズ・視差の高さ・AudioLinkのマスク を足しました（それぞれの設定を使っているとき）。</div><div class="mn-tip">ノーマルマップ画像のレイヤー（Pro）：ほかのソフトで作ったノーマルマップの画像も、ノーマルマップのフォルダの中にレイヤーとして入れられます（パネル「マテリアル」の「ノーマルマップの画像を足す」か、フォルダの中のレイヤーを選んで画像をウィンドウへドロップ）。DirectX の向きの画像は、レイヤープロパティの「DirectX の向き（緑が逆）」を入れます。読み込んだ .mat のノーマルマップも、このレイヤーになります。</div><div class="mn-tip">柄で質感を付ける（Pro）：マテリアルのノーマルマップの節の「柄で質感を付ける」で、ニット・デニム・キャンバス・ヘリンボーンなどの模様を、繰り返す凹凸としてフォルダに敷けます（大きさ・回す・つなぎ目はレイヤープロパティの「繰り返しの柄」、強さは「ノーマルマップ強度」）。フォルダの中のレイヤーを選んでいると、UV の区画は高さ（灰色）ではなくノーマルマップの色で見せます（表示 →「ノーマルマップのフォルダを高さ（灰色）で見る（UV）」で戻せます）。</div></section><section class="mn-sec" id="main2"><h2>メインカラー2nd・メインカラー3rd</h2><ul class="mn-list"><li>パネル「マテリアル」の「メインカラー2nd」「メインカラー3rd」で「使う」にすると、レイヤーパネルの一番上に同じ名前のフォルダができます。</li><li>フォルダの中に入れたレイヤーだけが、メインカラー2nd（3rd）のテクスチャになります（メインの絵には混ざりません）。重なり方（色・不透明度・合成モード・マスク）はパネルで決めます。</li><li>書き出しでは別々の画像（&lt;名前&gt;_main2nd.png など）になり、マテリアルでは lilToon の「メインカラー2nd／3rd」に入ります。</li></ul></section><section class="mn-sec" id="split"><h2>マテリアルを分ける</h2><ul class="mn-list"><li>はじめは、テクスチャセット 1 つにつき同じ名前のマテリアルが 1 つです。分けなければ何も変わりません。</li><li>同じテクスチャ（塗る絵）のまま、オブジェクトごとに影色・マットキャップ・リムライト・輪郭線などの設定を変えられます（例：髪のテクスチャのまま、ケモミミだけ影を赤く）。</li><li>分け方：オブジェクトのパネルの行か、3D でそのオブジェクトの上を右クリック →「このオブジェクトだけ別のマテリアルにする」。「マテリアルを割り当てる」で、どのマテリアルを使うか選べます。</li><li>パネル「マテリアル」の上の一覧で、足す・名前を変える・消す・並べ替え（並び＝重なった所の優先度）。3D で触った所のマテリアルにパネルが切り替わり、下のステータスバーに「マテリアル：名前（テクスチャセット名）」が出ます。</li><li>書き出しは、マテリアルごとに .mat が 1 つ（同じテクスチャを指します）。</li></ul></section><section class="mn-sec" id="lil"><h2>lilToon のマテリアルを読み込む</h2><ul class="mn-list"><li>ファイル → 読み込み → lilToon のマテリアルを読み込む で、.mat か、それが入った .unitypackage を選びます（ウィンドウへのドロップでも）。新規作成の「始まり」にも選べます。</li><li>描画モード・影・ノーマルマップ・マットキャップ・リムライト・発光・輪郭線・メインカラー2nd／3rd などの設定と、テクスチャ（メインカラー → 下地、影色・マスクなど → 塗る先）が入ります。</li><li>テクスチャは .mat のそばのプロジェクトから探します。見つからないテクスチャは一覧に出るので、画像を選びます。</li><li>ぺたぬり3D がまねていない設定（光沢・ファー・ステンシルなど）は、値をそのまま残して、書き出すと元のまま戻ります。</li><li>書き出すと、元の .mat と同じ場所・同じ ID のまま、変えた設定と描き直したテクスチャだけが書き換わります。</li></ul><div class="mn-tip">.mat の読み込み・書き出しは、追加した設定にも対応します。メインの画像は URP・HDRP 用の別名（_BaseMap・_BaseColorMap）でも読み、書き出すときも入れます。</div></section><section class="mn-sec" id="export"><h2>マテリアルを書き出す</h2><ol class="mn-steps"><li>ファイル → 書き出し → マテリアルを書き出す（パネルの「書き出し」でも）を選びます。</li><li>書き出すマテリアルとフォルダ名、書き出しのにじみを選びます。</li><li>.unitypackage に書き出すか、フォルダ（プロジェクトの Assets）へ直接書きます。.unitypackage は、ダブルクリックかドラッグでプロジェクトに読み込めます。</li></ol><ul class="mn-list"><li>マテリアル（.mat）と、メインカラーの画像・影色・マスク・ノーマルマップ・マットキャップの画像が入り、割り当て済みになります。</li><li>同じ作業を同じフォルダ名で書き出し直すと、前に読み込んだ物がそのまま上書きされます（モデルへの割り当てはそのまま）。</li></ul><div class="mn-tip warn">書き出すのは lilToon 用のマテリアルです。読み込む側のプロジェクトに lilToon を入れておいてください（入っていないとマテリアルがピンク色になります）。</div></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/sets"><small>← 前へ</small>テクスチャセットとオブジェクト</a><a class="next" href="/petanuri/manual/ao"><small>次へ →</small>AO を焼く</a></nav>
+    <p class="mn-intro">lilToon と同じ計算の見た目（影・マットキャップ・リムライト・輪郭線など）を見ながら塗れます。影色やマスクも塗って、設定ごと lilToon のマテリアルとして Unity へ渡せます。</p>
+    <p class="mn-proof">Pro の機能です。Lite ではメニューやアイコンに鍵の印が付き、パネル「マテリアル」には説明だけが出ます。Standard では入口が出ません（<a href="/petanuri/manual/start#editions">版のちがい</a>）。「仕上がり」は β版で、Unity の中の見え方と少し違うことがあります。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>3D ビューの左上の表示の形式のアイコンで「仕上がり」にすると、lilToon の見た目で塗れます（<a href="#look">くわしく</a>）。</li>
+      <li>影・リムライト・輪郭線などの設定は、右のパネル「マテリアル」で変えます（<a href="#look-panel">くわしく</a>）。</li>
+      <li>影色やマスクを塗るときは、パネルの「塗る：」のボタンで塗る先を選びます。終わったら「カラーに戻る」を押します（<a href="#channels">くわしく</a>）。</li>
+      <li>手持ちの lilToon のマテリアルは、ファイル → 読み込み → lilToon のマテリアルを読み込む で設定ごと入ります（<a href="#lil">くわしく</a>）。</li>
+      <li>Unity へは、ファイル → 書き出し → マテリアルを書き出す で .unitypackage にして渡します（<a href="#export">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#look">lilToon の見た目で確かめながら塗る</a></li><li><a href="#channels">影色・マスク・凹凸を塗る（塗る先）</a></li><li><a href="#main2">メインカラー2nd・3rd を重ねる</a></li><li><a href="#split">一部のオブジェクトだけ設定を変える</a></li><li><a href="#lil">lilToon のマテリアルを読み込む</a></li><li><a href="#export">マテリアルを書き出して Unity へ渡す</a></li></ul></div>
+
+    <section class="mn-sec" id="look" data-keywords="プレビュー トゥーン シェーダー 見た目 確認 ライティング ライト 影 リムライト アウトライン マットキャップ 光沢 β ベータ">
+      <h2>lilToon の見た目で確かめながら塗る</h2>
+      <p>表示の形式を「仕上がり」にすると、塗った色に lilToon と同じ計算の影や光が乗って見えます。Unity に持っていく前に、仕上がりを見ながら塗れます。</p>
+      <ol class="mn-steps">
+        <li>3D ビューの左上の、表示の形式の 5 つのアイコンのうち、右から 2 つめ（仕上がり）を押します。</li>
+        <li>いつもどおり描きます。描いた色に、影・リムライト・輪郭線などが乗って見えます。</li>
+        <li>塗った色だけを確かめたいときは、いちばん左の「塗った色のまま」に戻します。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>ほかの入口：表示 → 表示の形式 →「仕上がり（lilToon・MToon の見た目・β版）」、3D ビューの右クリック → 表示、パネル「マテリアル」の「仕上がり（lilToon の見た目・β版）を表示」。</li>
+        <li>見せるもの：影（影色1・影色2・影色3・境界の色）・ノーマルマップ・マットキャップ・マットキャップ2nd・リムライト・逆光ライト・リムシェード・発光・輪郭線・光沢設定・ラメ・異方性反射・ディザ・ディゾルブ・視差・AudioLink・色調補正。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="仕上がり表示。影・リムライト・輪郭線が付いている" loading="lazy"><figcaption>仕上がり表示</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="マテリアルのパネル" loading="lazy"><figcaption>パネル「マテリアル」（上にマテリアルの一覧）</figcaption></figure></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="仕上がり表示にした画面全体" loading="lazy"><figcaption>仕上がり表示の画面</figcaption></figure>
+
+      <h3 id="look-panel">パネル「マテリアル」で設定を変える</h3>
+      <p>設定はマテリアルごとです。項目の名前は、lilToon の設定画面の呼び名にそろえています。変えるたびに元に戻せます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">節</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>（一番上の一覧）</td><td>マテリアルの一覧。足す・名前を変える・消す・並べ替え（<a href="#split">マテリアルを分ける</a>）</td></tr>
+        <tr><td>表示と光</td><td>lilToon か MToon の見た目か・仕上がりの表示の入／切・光の向きと強さ</td></tr>
+        <tr><td>lilToon：○○.mat</td><td>.mat を読み込んだときだけ出ます。再現していない設定の一覧・読み込み元の関係を外す（<a href="#lil">読み込む</a>）</td></tr>
+        <tr><td>基本</td><td>描画モード（不透明・カットアウト・半透明）・ディザ（格子で透かす）・描画面・メインカラー・色調補正（グラデーションマップを含む）・アルファマスク</td></tr>
+        <tr><td>ディゾルブ</td><td>場所によって消していく（描画モードがカットアウト・半透明のとき）</td></tr>
+        <tr><td>メインカラー2nd・メインカラー3rd</td><td>重ねる色（<a href="#main2">メインカラー2nd・3rd</a>）</td></tr>
+        <tr><td>影</td><td>影色1〜3・範囲・ぼかし・境界の色など</td></tr>
+        <tr><td>ノーマルマップ</td><td>塗った高さの凹凸・ノーマルマップ強度・ノーマルマップ2nd（繰り返しの凹凸の画像）</td></tr>
+        <tr><td>異方性反射・視差・光沢設定</td><td>髪の筋のようなハイライト・見る向きでずれる凹凸・滑らかさ・金属度・反射率・環境光の反射・キューブマップ</td></tr>
+        <tr><td>マットキャップ・マットキャップ2nd</td><td>見本（やわらかいつや・くっきりしたつや・天使の輪（髪）・ふちの光・金属（乗算）・なじませ（乗算））か、読み込んだ画像（球を正面から見た絵）。カスタムノーマルマップも使えます</td></tr>
+        <tr><td>リムライト・逆光ライト・リムシェード</td><td>縁の光・光の反対側の縁・縁の影</td></tr>
+        <tr><td>ラメ</td><td>細かさ・粒の大きさ・見える角度・ランダムな色・形（キラ・星・ハート・ひし形・丸・十字か、読み込んだ画像）</td></tr>
+        <tr><td>発光・発光2nd</td><td>発光色・合成モード・グラデーション（時間で色が変わる）</td></tr>
+        <tr><td>AudioLink</td><td>ワールドの音に合わせて発光などを動かす（VRChat で効く）</td></tr>
+        <tr><td>輪郭線</td><td>色・太さ・ハイライト・ライトの明るさを反映・向きの画像</td></tr>
+        <tr><td>書き出し</td><td>「マテリアルを書き出す」「ほかのマテリアルにも写す」（全部を同じ設定に。塗る先の絵は写さない）「初期化」</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>音や時間で変わる物は、「音の強さ（この表示だけ）」「表示の時刻」の値で止めて見せます。この 2 つの値は書き出しに入りません。</li>
+        <li>表示に入らない設定（輪郭線の向き・メインカラー2nd／3rd のディゾルブ・AudioLink で頂点を動かす など）も、値と画像は .mat に読み書きします。</li>
+        <li>設定・塗る先の絵・読み込んだマットキャップの画像は、作業ファイル（.petanuri）に入ります。</li>
+      </ul>
+
+      <h3 id="look-light">光の向きを変える</h3>
+      <ul class="mn-list">
+        <li>パネル「マテリアル」の「表示と光」の「光の左右」「光の高さ」「光の強さ」で変えます。表示の形式のアイコンの横の ▼ からも変えられます（<a href="/petanuri/manual/screen#light">光の向き</a>）。</li>
+        <li>「カメラについてくる光」を入れると、視点を回しても光の当たり方が同じで、塗りやすくなります。外すと光はモデルに固定です。</li>
+        <li>この光は見た目の確認用です。書き出したマテリアルの光は、Unity で置いた場所の光で決まります。</li>
+      </ul>
+
+      <h3 id="mtoon">MToon の見た目で確かめる</h3>
+      <p>VRM のモデルを、MToon の見た目で確かめながら塗れます（表示用のプレビュー・β版）。</p>
+      <ol class="mn-steps">
+        <li>パネル「マテリアル」の「表示と光」で「MToon」を押します。</li>
+        <li>「仕上がり（MToon の見た目・β版）を表示」を押します。</li>
+        <li>MToon 用の色・影の位置・くっきり度・環境光・リム・発光・輪郭を調整しながら塗ります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>VRM0・VRM1 に MToon の設定があれば、その色・影・リム・発光・輪郭と補助の画像から始まります。無いモデルは標準の見た目で始まります。</li>
+        <li>「元の MToon 設定に戻す」は見た目の調整だけを戻します。描いたレイヤーは消えません。「lilToon」を押すと lilToon の見た目に戻ります。</li>
+        <li>調整は元に戻す・やり直しができ、作業ファイルにも入ります。</li>
+      </ul>
+      <div class="mn-tip warn">MToon は確かめるための表示です。PNG・PSD は描いた色のまま書き出し、マテリアルの書き出しは lilToon 用のままです。MToon のマテリアルや VRM は書き出しません。</div>
+
+      <h3 id="look-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「仕上がり」のアイコンに鍵が付いている・アイコンが無い</b>：Pro の機能です。Lite では鍵が付き、Standard では出ません。</li>
+        <li><b>Unity で見たときと少し違う</b>：β版のため、光や背景の違いで差が出ることがあります。光は確認用で、Unity では置いた場所の光で決まります。</li>
+        <li><b>MToon にしたら、ふつうの表示に戻った</b>：メインの画像の位置・倍率・回転を変えた UV の設定や、UV0 以外を使う画像には対応していません。戻るときに理由を知らせます。UV アニメーションは止めて表示します。</li>
+        <li><b>透明にしたい所が抜けない</b>：「基本」の描画モードを「カットアウト」か「半透明」にします。「不透明」では透明度を見ません。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="channels" data-keywords="チャンネル マスク 影マスク AO 影色 ノーマル 法線 凹凸 バンプ 高さ 発光 エミッション リム アウトライン 太さ マット 光沢 メタリック スムースネス ラメ グリッター">
+      <h2>影色・マスク・凹凸を塗る（塗る先）</h2>
+      <p>メインの色だけでなく、影色・影マスク・ノーマルマップ（凹凸）・発光などの画像も、いつものペンで塗れます。塗る先ごとに、レイヤーのパネルにフォルダができます。</p>
+      <ol class="mn-steps">
+        <li>パネル「マテリアル」の各節の「塗る：」のボタンを押して、塗る先を選びます（右クリック → 塗る先 でも選べます）。</li>
+        <li>レイヤーのパネルのメインカラーの上に、その塗る先のフォルダ（例「影色1」）ができて、中のレイヤーが選ばれます。</li>
+        <li>いつものペン・筆・塗りつぶし・グラデーション・ぼかし・フィルターで塗ります。</li>
+        <li>3D ビューの上の真ん中の「カラーに戻る」を押すと、ふつうの色の塗りに戻ります。フォルダの外のレイヤーを押しても戻ります。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="レイヤーのパネルにできた塗る先のフォルダ" loading="lazy"><figcaption>塗る先のフォルダ</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">塗る先</th><th scope="col">どう効く？</th></tr></thead><tbody>
+        <tr><td>影色1・影色2</td><td>塗った所の影がその色になります（肌の赤み・髪の影の青みなど）。塗っていない所は、元の色に設定の影色を掛けた色です</td></tr>
+        <tr><td>影マスク</td><td>白＝影が付く・黒＝影を付けない</td></tr>
+        <tr><td>影AO</td><td>黒いほど影が出やすい（首元・髪の内側・服の重なり）。<a href="/petanuri/manual/ao#output">AO を焼く</a>と、ここにも入れられます</td></tr>
+        <tr><td>ノーマルマップ</td><td>高さで塗ります。白で盛る・黒で彫る・灰色が平ら（服のしわ・縫い目・髪の筋に。<a href="#normal">ノーマルマップを塗る</a>）</td></tr>
+        <tr><td>マットキャップのマスク・マットキャップ2ndのマスク・輪郭線の幅</td><td>白＝効く・黒＝効かない</td></tr>
+        <tr><td>リムライト色</td><td>塗った色を掛けます（黒で消える）</td></tr>
+        <tr><td>発光テクスチャ</td><td>塗った所だけが、塗った色で光ります（設定の「発光色」を掛ける）</td></tr>
+      </tbody></table></div>
+
+      <h3 id="channels-more">そのほかの塗る先</h3>
+      <p>右クリック → 塗る先 → そのほかのマスク（影色3・色調補正・ラメなど）にも並びます。その機能を使っているときに塗れます。</p>
+      <ul class="mn-list">
+        <li>影：影色3・影のぼかしマスク（塗った所ほど影の境目がやわらかい）</li>
+        <li>色と透明：色調補正マスク（塗った所だけ補正）・アルファマスク（透け方を塗る）</li>
+        <li>発光：発光マスク・発光2ndテクスチャ・発光2ndのマスク</li>
+        <li>縁と輪郭：逆光ライトの色・リムシェードのマスク・輪郭線の色</li>
+        <li>質感：ノーマルマップ2ndのマスク・ラメの色（黒でラメが出ない）・滑らかさ・金属度（白＝設定どおり・黒＝0）・光沢の色・異方性反射のマスク・異方性反射のノイズ</li>
+        <li>そのほか：ディゾルブのマスク・ディゾルブのノイズ・視差の高さ（白＝手前・黒＝奥）・AudioLinkのマスク</li>
+      </ul>
+
+      <h3 id="channels-bar">塗っている間の、上の真ん中の列</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ボタン</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>白・灰・黒</td><td>描画色を持ち替えます。明るさだけを読む塗る先（マスク・影AO・ノーマルマップ・輪郭線の幅）は、色を選んでいても明るさで塗ります。カラーに戻ると、前の描画色に戻ります</td></tr>
+        <tr><td>全体を塗る</td><td>フォルダの中の描いているレイヤーを、描画色で全部塗ります</td></tr>
+        <tr><td>ここだけ見る</td><td>その塗る先の絵だけを表示します</td></tr>
+        <tr><td>消去</td><td>フォルダを中身ごと消して、塗っていない状態に戻します（<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻せます）</td></tr>
+        <tr><td>カラーに戻る</td><td>ふつうの色の塗りに戻ります（編集 →「塗る先をカラーに戻す」でも）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>フォルダの中はふつうのレイヤーと同じで、足す・消す・並べ替え・不透明度・合成モード・マスク・クリッピング・境界線・下と結合が使えます。中のレイヤーを重ねた絵が、その塗る先の画像になります。</li>
+        <li>フォルダは使っている塗る先だけ出ます。フォルダそのものは動かせず、消せません（消すときは「消去」）。</li>
+        <li>フォルダの中のレイヤーは、Lite のレイヤーの枚数に数えません。消しゴムで消した所は、塗っていない状態に戻ります。</li>
+        <li>UV の区画にも、塗っている塗る先の絵が出ます。</li>
+      </ul>
+
+      <h3 id="normal">ノーマルマップ（凹凸）を塗る</h3>
+      <ol class="mn-steps">
+        <li>パネル「マテリアル」の「ノーマルマップ」で「ノーマルマップを使う」を入れます。</li>
+        <li>「塗る：」の「ノーマルマップ」を押します。レイヤーの一番上に「ノーマルマップ」のフォルダができます。</li>
+        <li>白で盛り、黒で彫ります。ぼかしで柔らかくなります。強さは「ノーマルマップ強度」で後から変えられます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li><b>ほかのソフトで作ったノーマルマップの画像</b>：「ノーマルマップの画像を足す」か、フォルダの中のレイヤーを選んで画像をウィンドウへ落とします。高さではなく法線のまま入ります（レイヤーに「法線」の札）。DirectX の向きの画像は、レイヤープロパティの「DirectX の向き（緑が逆）」を入れます。</li>
+        <li><b>柄で質感を付ける</b>：ニット・デニム・キャンバス・ヘリンボーンなどの模様を、繰り返す凹凸として敷きます。大きさ・回す・つなぎ目はレイヤープロパティの「繰り返しの柄」で変えます。マスクで付ける所を決められます。</li>
+        <li>フォルダの中のレイヤーを選んでいる間、UV の区画は高さ（灰色）ではなく、ノーマルマップの色（青紫）で見せます。右クリック → 表示 →「ノーマルマップのフォルダを高さ（灰色）で見る（UV）」で灰色に戻せます。</li>
+        <li>凹凸を描くツールもあります（<a href="/petanuri/manual/deco#bump">凹凸</a>）。</li>
+        <li>書き出すと、PNG は &lt;名前&gt;_normal.png の 1 枚、PSD はグループ「ノーマルマップ」の中にレイヤーを分けたままになります。</li>
+      </ul>
+
+      <h3 id="channels-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「これ以上追加できません」と出る</b>：1 つのマテリアルの仕上がりの表示で同時に使えるテクスチャは 16 までです。ほかの機能を切るか、使っていない塗る先を「消去」すると使えます。</li>
+        <li><b>色を選んでも灰色でしか塗れない</b>：明るさだけを読む塗る先を塗っています。ふつうの色に戻るには「カラーに戻る」を押します。</li>
+        <li><b>塗る先のフォルダを消せない・動かせない</b>：フォルダは消せません。塗る先ごと消すときは、上の真ん中の「消去」を押します。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="main2" data-keywords="メインカラー2 メインカラー3 2nd 3rd セカンド サード 重ねる デカール 別テクスチャ">
+      <h2>メインカラー2nd・3rd を重ねる</h2>
+      <p>lilToon の「メインカラー2nd」「メインカラー3rd」用の絵を、メインの絵と分けて描けます。柄や模様を別の画像で重ねたいときに使います。</p>
+      <ol class="mn-steps">
+        <li>パネル「マテリアル」の「メインカラー2nd」で「メインカラー2ndを使う」を入れます。</li>
+        <li>レイヤーのパネルの一番上に「メインカラー2nd」のフォルダができます。</li>
+        <li>フォルダを選んで、レイヤーを足して描きます。ふつうのレイヤーをドラッグで中へ入れてもかまいません。</li>
+        <li>重なり方（色・不透明度・合成モード・ライトの明るさを反映）をパネルで決めます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>フォルダの中のレイヤーだけが 2nd（3rd）のテクスチャになり、メインの絵には混ざりません。合成モードは 通常・加算・スクリーン・乗算 です。</li>
+        <li>塗る先「メインカラー2ndのマスク」で、重なる所（白）と重ならない所（黒）を塗れます。</li>
+        <li>フォルダは動かせず、消せず、複製できません。中にレイヤーがある間は「使う」を外せません（中を空にすると外せて、フォルダも消えます）。</li>
+        <li>書き出しでは別々の画像（&lt;名前&gt;_main2nd.png・&lt;名前&gt;_main3rd.png と、塗ったマスク）になります。PSD ではフォルダのままで、読み込み直すとこのフォルダに戻ります。マテリアルでは lilToon の「メインカラー2nd／3rd」に入ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="split" data-keywords="マテリアルを増やす 複数マテリアル 割り当て 個別 ケモミミ 優先度">
+      <h2>一部のオブジェクトだけ設定を変える（マテリアルを分ける）</h2>
+      <p>同じテクスチャ（塗る絵）のまま、オブジェクトごとに影色・マットキャップ・リムライト・輪郭線などの設定を変えられます。例えば、髪のテクスチャのまま、ケモミミだけ影を赤くできます。</p>
+      <ol class="mn-steps">
+        <li>3D ビューでそのオブジェクトの上を右クリックするか、オブジェクトのパネルの行を右クリックします。</li>
+        <li>「このオブジェクトだけ別のマテリアルにする」を選びます。今のマテリアルの写しが、オブジェクトの名前で足されて割り当たります。</li>
+        <li>パネル「マテリアル」で、そのマテリアルの設定を変えます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>はじめは、テクスチャセット 1 つにつき同じ名前のマテリアルが 1 つです。分けなければ何も変わりません。</li>
+        <li>右クリックの「マテリアルを割り当てる」か、パネルの「オブジェクトに割り当てる」で、どのマテリアルを使うか選べます。選べるのは、同じテクスチャセットを使うマテリアルだけです。</li>
+        <li>パネルの上の一覧で、足す（今のマテリアルの写し）・名前を変える・消す・上へ・下へ ができます。テクスチャセットの元のマテリアルは消せません。</li>
+        <li>一覧の並びが優先度です。同じ所にオブジェクトが重なっているときは、上のマテリアルが選ばれます。</li>
+        <li>3D で触った所のマテリアルにパネルが切り替わり、下のステータスバーに「マテリアル：名前（テクスチャセット名）」が出ます。</li>
+        <li>書き出しは、マテリアルごとに .mat が 1 つです。テクスチャはテクスチャセットごとに 1 組で、同じ物を指します。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="lil" data-keywords="mat ユニティパッケージ インポート 取り込む 読み込み 既存 元のマテリアル 改変 上書き">
+      <h2>lilToon のマテリアルを読み込む</h2>
+      <p>アバターについている lilToon のマテリアルを読み込んで、設定と画像の続きから塗れます。書き出すと、元のマテリアルに描き直した分だけが入ります。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 読み込み →「lilToon のマテリアルを読み込む（.mat・.unitypackage）」を選びます。</li>
+        <li>.mat か、それが入った .unitypackage を選びます。ウィンドウに落としてもかまいません。</li>
+        <li>いくつも選んだときは、出てきた窓で、入れるテクスチャセットを確かめます（名前の合うセットに入ります）。</li>
+        <li>見つからないテクスチャがあれば一覧に出るので、画像を選びます（選ばなければ入れずに読み込みます）。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>新規作成の「始まり」でも選べます（<a href="/petanuri/manual/start#new-start">始まりの種類</a>）。</li>
+        <li>入る設定：描画モード・描画面・メインカラー・影・ノーマルマップ・マットキャップ／2nd・リムライト・逆光ライト・リムシェード・発光・輪郭線・メインカラー2nd／3rd など。</li>
+        <li>入る画像：メインカラー → 下地のレイヤー（PSD ならレイヤーごと）、2nd／3rd → そのフォルダ、影色・マスク・リムライト色・発光・輪郭線の幅・AO → 塗る先、マットキャップ → マットキャップ、ノーマルマップ → ノーマルマップのフォルダ（法線のまま）。</li>
+        <li>テクスチャは .mat のそばのプロジェクト（Assets・Packages）から探します。初めは数秒〜十数秒かかります。.unitypackage なら中から探します。</li>
+        <li>同じテクスチャを使う .mat をいくつも選ぶと、同じテクスチャセットに入り、2 つ目からは別のマテリアルになります。</li>
+        <li>読み込みは元に戻せます（1 手）。そのセットのマテリアルの設定・塗る先・下地の絵・メインカラー2nd／3rd は置き換わります。</li>
+      </ul>
+      <h3 id="lil-unsupported">再現していない設定</h3>
+      <p>ぺたぬり3D がまねていない設定（ステンシル・距離フェード・UV アニメーション・テクスチャのタイリング など）は、読み込んだ後に「再現していない設定」の一覧で知らせます。値はそのまま残り、書き出すと元のまま戻ります。一覧は、パネルの「lilToon：○○.mat」の節からも見られます。</p>
+      <h3 id="lil-write">元のマテリアルに書き戻す</h3>
+      <ul class="mn-list">
+        <li>読み込んだマテリアルを書き出すと、元の .mat と同じ場所・同じ ID のまま、変えた設定の行と描き直したテクスチャだけが書き換わります。変えていないテクスチャは書き出しません。</li>
+        <li>.unitypackage をプロジェクトに読み込むと、元のマテリアルとテクスチャがその場で上書きされます（モデルへの割り当てはそのまま）。</li>
+        <li>元が PNG でない・見つからなかったテクスチャを描き直したときは、.mat の隣に新しい PNG を作って差し替えます。</li>
+        <li>新しいマテリアルとして書き出したいときは、パネルの「読み込み元の関係を外す」を押します。</li>
+      </ul>
+      <div class="mn-tip warn">元のプロジェクトのファイルを上書きします。買ったアバターのマテリアルを直接書き換えたくないときは、先にプロジェクトをコピーしておくか、「読み込み元の関係を外す」を押してから書き出してください。</div>
+    </section>
+
+    <section class="mn-sec" id="export" data-keywords="unitypackage ユニティパッケージ エクスポート 出力 mat Unity に渡す 持っていく ピンク">
+      <h2>マテリアルを書き出して Unity へ渡す</h2>
+      <p>lilToon 用のマテリアル（.mat）と、塗った画像をまとめて書き出します。Unity に読み込むと、テクスチャが割り当て済みのマテリアルになります。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 書き出し →「マテリアルを書き出す（.unitypackage・フォルダ）」を選びます（パネル「マテリアル」の「マテリアルを書き出す」でも）。</li>
+        <li>「書き出すマテリアル」に印を入れます。</li>
+        <li>「書き出す先のフォルダ名（Assets の下）」・解像度・「にじみ（パディング）」を決めます。</li>
+        <li>「.unitypackage に書き出す」を押して、保存先を選びます。</li>
+        <li>Unity で、できた .unitypackage をダブルクリックするか、Project の欄へドラッグして読み込みます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>入る物：マテリアル（.mat）と、メインカラー・影色・マスク・ノーマルマップ・マットキャップなどの画像。塗る先は、その機能を使っているときだけ入ります。</li>
+        <li>「フォルダへ書き出す」：Unity のプロジェクトの Assets を選ぶと、.meta つきで直接書きます（アプリ（exe）だけ）。</li>
+        <li>画像は、島の外へ「にじみ（パディング）」の幅だけ色を広げます（<a href="/petanuri/manual/export#pad">書き出しのにじみ</a>）。</li>
+        <li>同じ作業を同じフォルダ名で書き出し直すと、前に読み込んだ物がそのまま上書きされます（モデルへの割り当てはそのまま）。</li>
+        <li>! の付いたセット（モデルに無いセット）は書き出しません。</li>
+      </ul>
+      <div class="mn-tip warn">書き出すのは lilToon（2.3 系）用のマテリアルです。読み込む側のプロジェクトに lilToon を入れておいてください。</div>
+      <h3 id="export-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Unity でマテリアルがピンク色になる</b>：そのプロジェクトに lilToon が入っていません。lilToon を入れると直ります。</li>
+        <li><b>「フォルダへ書き出す」が使えない</b>：アプリ（exe）でだけ使えます。.unitypackage に書き出してください。</li>
+        <li><b>アバターに映らない</b>：書き出したマテリアルを、モデルのマテリアルの欄に割り当ててください。元の .mat を読み込んで書き出したときは、元のマテリアルがそのまま上書きされます。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/ao">AO を焼く</a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影</a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/layers#folder">フォルダ・マスク</a></li><li><a href="/petanuri/manual/unity">Unity から塗る</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/sets"><small>← 前へ</small>テクスチャセット</a><a class="next" href="/petanuri/manual/ao"><small>次へ →</small>AO を焼く</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +396,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

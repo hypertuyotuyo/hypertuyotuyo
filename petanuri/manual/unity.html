@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/unity",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,184 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity" aria-current="page">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity" aria-current="page">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ Unity から塗る・AI 連携</p>
     <h1 class="mn-h1">Unity から塗る・AI 連携</h1>
-    <p class="mn-intro">Unity でアバターを選んでぺたぬり3D を起動し、そのまま塗れます。どの版（Lite・Standard・Pro）でも使えます。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#unity">Unity から起動して塗る</a></li><li><a href="#ai">AI 連携（MCP）</a></li></ul></div>
-    <section class="mn-sec" id="unity"><h2>Unity から起動して塗る</h2><ul class="mn-list"><li>Unity で prefab（アバターなど）を選んで「ぺたぬり3D で塗る」を押すと、ぺたぬり3D が起動してそのモデルを塗れます。</li><li>塗った絵は、<strong>ぺたぬり3D か Unity で保存したときに</strong> Unity のシーンに映り、塗ったテクスチャが Unity のプロジェクトに入ります（塗っている間は、Unity の見た目は変わりません）。</li><li>使えるもの：Unity 2022.3（VRChat のアバターを作る Unity）。同じパソコンの中の Unity とだけつながります。</li></ul><h3>はじめの 1 回だけ：Unity にアドオンを入れる</h3><ol class="mn-steps"><li>ぺたぬり3D のフォルダの中の「unity」フォルダに、PetaNuri3D-Unity.unitypackage があります。</li><li>Unity でプロジェクトを開いたまま、PetaNuri3D-Unity.unitypackage を Project の欄へドラッグします（Assets →「Import Package」→「Custom Package」でも）。</li><li>「Import」を押して、上のメニューバーに「ぺたぬり3D」が出れば入りました（エディターの中だけで動き、アップロードするアバターには入りません）。</li></ol><h3>塗る</h3><ol class="mn-steps"><li>Unity で、Hierarchy のアバター（シーンの中の物）か、Project の prefab を選びます。</li><li>メニューバーの「ぺたぬり3D」→「ぺたぬり3D で塗る」を押します（右クリックにもあります）。はじめての 1 回だけ、ぺたぬり3D のフォルダの PetaNuri3D-win_x64.exe を選びます。</li><li>ぺたぬり3D が起動して、Unity のモデルが出ます。テクスチャセットはマテリアルのメインのテクスチャごとで、元のテクスチャがそのまま下地になります（解像度も元のまま。Lite は 2048 まで）。</li><li>ぺたぬり3D か Unity で保存（<kbd>Ctrl</kbd>＋<kbd>S</kbd>）すると、両方が保存して、塗った絵が Unity に映ります。</li></ol><ul class="mn-list"><li>作業ファイルは Assets/PetaNuri/（名前）/（名前）.petanuri、塗ったテクスチャは Assets/PetaNuri/（名前）/Textures/ の PNG（取り込みの設定は元のテクスチャに合わせます）、マテリアルは同じ所の Materials/ に写しを作って使います。</li><li><strong>元の FBX・マテリアル・テクスチャ・prefab は書き換えません</strong>。Project の prefab から始めたときは、prefab の変種（Prefab Variant）を作って、そちらを塗ります。</li><li>Unity から起動したぺたぬり3D は、塗るための画面になります（新規作成・作業ファイルを開く・モデルを読み直す・名前を付けて保存は出ません）。</li><li>ぺたぬり3D を閉じると連携が終わり、Unity が「このまま使う／元の見た目に戻す」を聞きます（シーンの中のアバターを塗ったとき）。</li><li>次にもう一度「ぺたぬり3D で塗る」を押すと、作業ファイルを開いて続きから塗れます。</li></ul><div class="mn-tip">くわしい手順・つながらないときは、ぺたぬり3D の unity フォルダの「Unity連携の使い方.txt」をご覧ください。</div><div class="mn-tip">Unity 連携のアドオンの版（ぺたぬり3D と同じ番号）は、Unity のぺたぬり3D の窓の下と、つながったときの知らせに出ます。Unity 連携へ送るテクスチャは、書き出しの PNG と画素まで同じです。</div><div class="mn-tip">メインカラー2nd／3rd（Pro。v1.3.0 から）：lilToon のマテリアルで「メインカラー2nd」「メインカラー3rd」を使っていると、その画像（PSD も）・マスク・合成モードなどの設定も連携で開いたときに読み込み、描いて保存すると Unity にも書き戻します（元の PSD とマテリアルは書き換えません）。v1.3.0 のアドオンが要ります（前のアドオンでもつながりますが、2nd／3rd は運ばれません）。</div></section><section class="mn-sec" id="ai"><h2>AI 連携（MCP）</h2><ul class="mn-list"><li>AI（MCP クライアント）から、ぺたぬり3D を操作できます（描く・色とブラシ・視点・レイヤー・画面の撮影・PNG の書き出しなど）。</li><li>はじめは OFF です。使うときは ファイル → 環境設定 →「AI 連携」の「AI 連携（MCP）を使う」を入れます。</li><li>MCP クライアントに stdio のサーバーとして登録します：コマンド node、引数 &lt;ぺたぬり3D のフォルダ&gt;\mcp\server.mjs（node は v20 以上）。設定の例は、同じ所の「つなぎ方」にあり、「コピー」で写せます。</li><li>サーバーは AI 側が起動します。ぺたぬり3D が同じパソコンの中の決まった番号へ自動でつなぎに行き、つながると下のヒントに知らせが出ます。ほかのウェブサイトからはつなげません。</li><li><strong>run_js</strong>（アプリの中で任意のプログラムを動かす命令）は <span class="tier pro">Pro</span> だけです。ON にしただけでは動かず、「run_js（任意のプログラムの実行）を許可する」を入れたときだけ動きます。信頼できる AI クライアントだけを登録してください。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="環境設定の AI 連携の節" loading="lazy"><figcaption>ファイル → 環境設定 →「AI 連携」</figcaption></figure></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/export"><small>← 前へ</small>書き出し</a><a class="next" href="/petanuri/manual/keys"><small>次へ →</small>ショートカットとペン操作</a></nav>
+    <p class="mn-intro">Unity でアバターを選んでぺたぬり3D を起動し、そのまま塗れます。保存すると、塗った絵が Unity に映ります。AI（MCP クライアント）からぺたぬり3D を操作することもできます。</p>
+    <p class="mn-proof">Unity との連携と AI 連携は、どの版（Lite・Standard・Pro）でも使えます。AI 連携の run_js だけは Pro で使えます（<a href="/petanuri/manual/start#editions">版のちがい</a>）。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>初めの 1 回だけ、ぺたぬり3D のフォルダの unity\PetaNuri3D-Unity.unitypackage を Unity に入れます（<a href="#unity-install">くわしく</a>）。</li>
+      <li>Unity でアバターを選び、メニューバーの「ぺたぬり3D」→「ぺたぬり3D で塗る」を押します（<a href="#unity">くわしく</a>）。</li>
+      <li>塗ったら、ぺたぬり3D か Unity で <kbd>Ctrl</kbd>＋<kbd>S</kbd>。塗った絵が Unity に映ります（<a href="#unity-save">くわしく</a>）。</li>
+      <li>ぺたぬり3D の置き場所を変えたら、Unity でぺたぬり3D の場所を選び直します（<a href="#exe">くわしく</a>）。</li>
+      <li>AI から操作するときは、ファイル → 環境設定 →「AI 連携」で ON にします（<a href="#ai">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#unity">Unity から起動して塗る</a></li><li><a href="#unity-save">塗った絵を Unity に映す・終える</a></li><li><a href="#exe">ぺたぬり3D の場所を選び直す</a></li><li><a href="#ai">AI から操作する（MCP）</a></li></ul></div>
+
+    <section class="mn-sec" id="unity" data-keywords="ユニティ VRChat アバター prefab プレハブ 連携 アドオン 拡張 エディター unitypackage 起動">
+      <h2>Unity から起動して塗る</h2>
+      <p>Unity のアバターを、FBX を書き出さずにそのまま塗れます。元の FBX・マテリアル・テクスチャ・prefab は書き換えません。</p>
+      <ul class="mn-list">
+        <li>使えるもの：Unity 2022.3（VRChat のアバターを作る Unity）。同じパソコンの中の Unity とだけつながります。</li>
+        <li>塗れるのは FBX のメッシュだけです（FBX でない形は、ぺたぬり3D に出ません）。</li>
+      </ul>
+      <h3 id="unity-install">初めの 1 回だけ：Unity にアドオンを入れる</h3>
+      <ol class="mn-steps">
+        <li>ぺたぬり3D のフォルダの中の「unity」フォルダを開きます。PetaNuri3D-Unity.unitypackage が入っています。</li>
+        <li>Unity でプロジェクトを開いたまま、PetaNuri3D-Unity.unitypackage を Project の欄へドラッグします（Assets →「Import Package」→「Custom Package」でも）。</li>
+        <li>出てきた窓で「Import」を押します。</li>
+        <li>上のメニューバーに「ぺたぬり3D」が出れば入りました。</li>
+      </ol>
+      <p>アドオンは Assets/PetaNuri3D に入ります。エディターの中だけで動き、アップロードするアバターには入りません。</p>
+      <h3 id="unity-paint">塗る</h3>
+      <ol class="mn-steps">
+        <li>Unity で、Hierarchy のアバター（シーンの中の物）か、Project の prefab を選びます。</li>
+        <li>メニューバーの「ぺたぬり3D」→「ぺたぬり3D で塗る」を押します（Hierarchy・Project の右クリックにもあります）。</li>
+        <li>初めの 1 回だけ「ぺたぬり3D の場所を選んでください」と出るので、ぺたぬり3D のフォルダの PetaNuri3D-win_x64.exe を選びます。</li>
+        <li>ぺたぬり3D が起動して、Unity のモデルが出ます。いつもどおり塗ります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>テクスチャセットは、マテリアルのメインのテクスチャごとにできます。同じテクスチャを使うマテリアルは 1 つのセットになり、塗った絵は全部のマテリアルに映ります。</li>
+        <li>元のテクスチャがそのまま下地になります。解像度も元のテクスチャと同じです（Lite は 2048 まで）。テクスチャの無いマテリアルは、マテリアルの色から塗り始めます。</li>
+        <li>Unity で隠れている物は、ぺたぬり3D でも隠れています（オブジェクトのパネルで出せます）。</li>
+        <li>Unity から起動したぺたぬり3D は、塗るための画面です。題名は「ぺたぬり3D — Unity 連携（アバターの名前）」で、新規作成・作業ファイルを開く・最近使ったファイル・モデルを読み直す・名前を付けて保存は出ません。</li>
+        <li>もう一度「ぺたぬり3D で塗る」を押すと、開いているぺたぬり3D が前に出ます（2 つ目は起動しません）。</li>
+        <li><span class="tier pro">Pro</span> lilToon のマテリアルで「メインカラー2nd」「メインカラー3rd」を使っていると、その画像（PSD も）・マスク・合成モード・色も入り、レイヤーのパネルのそのフォルダに入ります（<a href="/petanuri/manual/material#main2">メインカラー2nd・3rd</a>）。Lite・Standard では入りません（Unity では元の 2nd・3rd のまま映ります）。</li>
+      </ul>
+      <h3 id="unity-window">ぺたぬり3D の窓（初めての人におすすめ）</h3>
+      <p>Unity のメニューバーの「ぺたぬり3D」→「ぺたぬり3D の窓を開く」で、上から順に確かめながら塗れる窓が開きます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">欄</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>1. ぺたぬり3D の場所（exe）</td><td>今の場所と、使えるかどうか。「選ぶ」「探す」「場所を開く」（<a href="#exe">場所を選び直す</a>）</td></tr>
+        <tr><td>2. 塗る物（prefab・シーンのアバター）</td><td>prefab かアバターを欄へドラッグするか、選んで「選択中の物を入れる」。塗れるメッシュの数とテクスチャセットが出ます。塗れないときは理由も出ます</td></tr>
+        <tr><td>3. 塗る</td><td>「ぺたぬり3D で塗る」と、今の状態（つながっていない・起動している・つながっている・切れた・保存した・終えた）。塗っている間は「ぺたぬり3D を前に出す」「保存して Unity に映す」「終える」「元の見た目に戻して終える」「塗った物のフォルダを見る」</td></tr>
+        <tr><td>4. 保存先と設定</td><td>塗った絵の行き先（Assets/PetaNuri/）・「Preferences を開く」・言葉の切り替え</td></tr>
+      </tbody></table></div>
+      <p>窓のいちばん下に、アドオンの版（ぺたぬり3D と同じ番号）が出ます。</p>
+    </section>
+
+    <section class="mn-sec" id="unity-save" data-keywords="反映 映らない 保存 セーブ Assets PetaNuri 書き戻す 元に戻す 終了 閉じる Prefab Variant 変種">
+      <h2>塗った絵を Unity に映す・終える</h2>
+      <p>塗っている間は、Unity の見た目は変わりません。ぺたぬり3D か Unity で保存すると、そのときに塗った絵が Unity に映ります。</p>
+      <ol class="mn-steps">
+        <li>ぺたぬり3D か Unity で <kbd>Ctrl</kbd>＋<kbd>S</kbd> を押します。両方が保存します。</li>
+        <li>Unity のシーンビューで、塗った絵が映ったことを確かめます。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">できる物</th><th scope="col">場所（Unity のプロジェクトの中）</th></tr></thead><tbody>
+        <tr><td>作業ファイル</td><td>Assets/PetaNuri/（名前）/（名前）.petanuri</td></tr>
+        <tr><td>塗ったテクスチャ</td><td>Assets/PetaNuri/（名前）/Textures/ の PNG（塗ったテクスチャだけ。取り込みの設定は元のテクスチャに合わせます）</td></tr>
+        <tr><td>マテリアル</td><td>Assets/PetaNuri/（名前）/Materials/（元のマテリアルの写し。塗ったテクスチャを使います）</td></tr>
+        <tr><td>メインカラー2nd／3rd <span class="tier pro">Pro</span></td><td>Textures/ の _main2nd.png・_main3rd.png（Unity から入った物を変えたときだけ。マスクは戻しません）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Project の prefab から始めたときは、prefab の変種（Prefab Variant）を Assets/PetaNuri/（名前）/ に作って、そちらを塗ります。アップロードするときは、できた「（名前） (PetaNuri)」の prefab をシーンに置いて使います。</li>
+        <li>次にもう一度「ぺたぬり3D で塗る」を押すと、作業ファイルを開いて、レイヤーごと続きから塗れます。</li>
+        <li>Unity 連携へ送るテクスチャは、書き出しの PNG と画素まで同じです。</li>
+      </ul>
+      <h3 id="unity-end">終える</h3>
+      <ul class="mn-list">
+        <li>ぺたぬり3D を閉じると、連携が終わります。閉じるときに「保存して終了」を選ぶと、塗った絵を Unity に送ってから閉じます。</li>
+        <li>シーンの中のアバターを塗ったときは、Unity が「このまま使う／元の見た目に戻す」を聞きます。「元の見た目に戻す」でも Assets/PetaNuri/ の物は残るので、また塗れば続きからです。Unity の元に戻す（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>）でもやり直せます。</li>
+        <li>一度も保存しないで閉じたときは、何も聞かずに元の見た目に戻し、作った物も消します。</li>
+        <li>Unity を先に閉じるときは、「保存して閉じる／閉じない／保存せずに閉じる」を聞きます。</li>
+      </ul>
+      <h3 id="unity-note">気をつけること</h3>
+      <ul class="mn-list">
+        <li>服の色替えなど、マテリアルを切り替えるアニメーションは、元のマテリアルを指しています。塗った絵を使うときは、アニメーションのマテリアルも差し替えてください。</li>
+        <li>同じアバターを 2 つの Unity で同時に塗らないでください。</li>
+        <li>Unity がスクリプトを読み直している間（コンパイル・Play の始め）は、少しの間つながりが切れますが、すぐにつなぎ直します。</li>
+      </ul>
+      <h3 id="unity-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>塗ったのに Unity の見た目が変わらない</b>：保存したときに映ります。ぺたぬり3D か Unity で <kbd>Ctrl</kbd>＋<kbd>S</kbd> を押してください。</li>
+        <li><b>「ぺたぬり3D で塗る」を押しても起動しない・英語のページが開く</b>：選んだ exe が違います。<a href="#exe">ぺたぬり3D の場所を選び直す</a>で、ZIP を展開したフォルダの PetaNuri3D-win_x64.exe を選んでください。</li>
+        <li><b>「ぺたぬり3D の中身がありません」と出る</b>：選んだ exe の隣に resources.neu がありません。ZIP を全部展開したフォルダの exe を選び直します。</li>
+        <li><b>「Unity のアドオンとぺたぬり3D の版が合いません」と出る</b>：ぺたぬり3D に入っている PetaNuri3D-Unity.unitypackage を入れ直します。メインカラー2nd／3rd を運ぶには、同じ版のアドオンが要ります。</li>
+        <li><b>「つなぐための番号（ポート 47360〜47369）が全部使われていました」と出る</b>：ほかの Unity を閉じてから、もう一度押します。</li>
+        <li><b>「選んだ物の中に、塗れる形（FBX のメッシュ）がありませんでした」と出る</b>：FBX のメッシュを持つ prefab かアバターを選んでください。</li>
+        <li><b>それでもつながらない</b>：Unity とぺたぬり3D の両方を起動し直してください。くわしくは、ぺたぬり3D の unity フォルダの「Unity連携の使い方.txt」へ。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="exe" data-keywords="パス 場所 移動 置き場所 フォルダを移した 動かない 起動しない Preferences 設定 再設定 exe 選び直し アップデート後">
+      <h2>ぺたぬり3D の場所を選び直す</h2>
+      <p>Unity のアドオンは、初めに選んだ PetaNuri3D-win_x64.exe の場所を覚えています。ぺたぬり3D のフォルダを動かした・新しいバージョンを別のフォルダに展開した、というときは場所を選び直します。</p>
+      <ol class="mn-steps">
+        <li>Unity のメニューバーの「ぺたぬり3D」→「ぺたぬり3D の窓を開く」を押します。</li>
+        <li>「1. ぺたぬり3D の場所（exe）」の「選ぶ」を押します。</li>
+        <li>新しい場所の「PetaNuri3D」フォルダの中の PetaNuri3D-win_x64.exe を選びます。</li>
+        <li>欄の下に「見つかりました。」と出れば終わりです。「この場所にファイルがありません」と出たら、選び直します。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>「探す」を押すと、デスクトップ・ダウンロード・ドキュメント・Program Files・各ドライブの直下にある「PetaNuri3D」のフォルダから探します。見つかった物の「これを使う」を押すと、その場所になります。</li>
+        <li>Unity の Edit →「Preferences」→「ぺたぬり3D」の「ぺたぬり3D の場所」でも直せます。</li>
+        <li>覚えている場所に exe が無いときは、「ぺたぬり3D で塗る」を押したときに「ぺたぬり3D の場所を選んでください」と出ます。</li>
+        <li>setup.exe で入れたときの場所は %LOCALAPPDATA%\Programs\PetaNuri3D です（<a href="/petanuri/manual/start#launch">入れる・起動する</a>）。</li>
+      </ul>
+      <div class="mn-tip warn">ZIP の中の exe や、別の exe は選べません。ダウンロードした ZIP は、右クリック →「すべて展開」してから、展開したフォルダの中の exe を選んでください。</div>
+    </section>
+
+    <section class="mn-sec" id="ai" data-keywords="MCP AI エージェント Claude 自動化 自動操作 スクリプト プログラム node 外部操作 API サーバー">
+      <h2>AI から操作する（MCP）</h2>
+      <p>AI（MCP クライアント）から、ぺたぬり3D を操作できます。描く・色とブラシ・視点・レイヤー・画面の撮影・PNG の書き出しなどを、AI に頼めます。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 環境設定 を開き、左の「AI 連携」を押します。</li>
+        <li>「AI 連携（MCP）を使う」を入れます。ON のまま次の起動にも残ります。</li>
+        <li>「つなぎ方」の「設定の例」の「コピー」を押します。</li>
+        <li>AI 側（MCP クライアント）の MCP の設定に、コピーした内容を貼って登録します。</li>
+        <li>AI を使い始めます。つながると、画面の下に「AI 連携：MCP サーバーにつながりました」と出ます。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="環境設定の AI 連携の節" loading="lazy"><figcaption>ファイル → 環境設定 →「AI 連携」</figcaption></figure>
+      <h3 id="ai-setup">つなぎ方の中身</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">値</th></tr></thead><tbody>
+        <tr><td>名前</td><td>petanuri3d</td></tr>
+        <tr><td>コマンド</td><td>node（バージョン 20 以上が要ります）</td></tr>
+        <tr><td>引数</td><td>&lt;ぺたぬり3D のフォルダ&gt;\mcp\server.mjs（窓には実際の場所が出ます）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>stdio のサーバーとして登録します。サーバーは AI 側が起動し、ぺたぬり3D が同じパソコンの中（127.0.0.1 の 47321〜47330 番）へ、自動でつなぎに行きます。</li>
+        <li>「状態」に、ON・OFF と、つながっているかが出ます。「今すぐ探す」で、すぐにつなぎに行きます。</li>
+        <li>AI のセッションがいくつあっても、全部につながります。ぺたぬり3D を 2 つ開いているときは、AI 側の list_instances で送り先を選べます。</li>
+        <li>ほかのウェブサイトからはつなげません。使わないときは「AI 連携（MCP）を使う」を外して OFF にします。</li>
+      </ul>
+      <h3 id="ai-tools">AI に頼めること</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分類</th><th scope="col">命令</th></tr></thead><tbody>
+        <tr><td>状態を見る</td><td>get_state（今の状態）・list_layers・screenshot（3D ビューを撮る）・pick（画面の点に何があるか）・uv_to_screen・read_pixel（テクスチャの 1 画素）</td></tr>
+        <tr><td>開く・書き出す</td><td>open_fbx（3D モデルを開く）・export_png</td></tr>
+        <tr><td>描く</td><td>select_tool・set_color・set_brush・stroke（1 本描く）・fill_at（島を塗りつぶす）・pick_color（スポイト）</td></tr>
+        <tr><td>レイヤーとセット</td><td>add_layer・select_layer・set_layer・select_set</td></tr>
+        <tr><td>視点とモード</td><td>view（視点）・set_mode（ペイント／ポーズの切り替え）</td></tr>
+        <tr><td>元に戻す</td><td>undo・redo</td></tr>
+        <tr><td><span class="tier pro">Pro</span></td><td>list_materials・material_edit（マテリアルの操作）・bake_ao（AO を焼く）・run_js（下）</td></tr>
+      </tbody></table></div>
+      <h3 id="ai-runjs">run_js を許可する <span class="tier pro">Pro</span></h3>
+      <p>run_js は、アプリの中で任意のプログラム（JavaScript）を動かす命令です。AI 連携を ON にしただけでは動きません。</p>
+      <ol class="mn-steps">
+        <li>ファイル → 環境設定 →「AI 連携」を開きます。</li>
+        <li>「run_js」の節の「run_js（任意のプログラムの実行）を許可する」を入れます。</li>
+      </ol>
+      <div class="mn-tip warn">アプリ（exe）では、ファイルの削除やコマンドの実行もできてしまいます。信頼できる AI クライアントだけを登録してください。Standard では run_js の節は出ません。</div>
+      <h3 id="ai-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>AI から「つながらない」と言われる</b>：「AI 連携（MCP）を使う」が OFF のことが多いです。ON にすると、数秒でつながります。</li>
+        <li><b>「このファイルが見つかりません」と出る</b>：配布物の mcp フォルダを、アプリ（exe）と同じフォルダに置いてください。</li>
+        <li><b>AI 側でサーバーが起動しない</b>：node（バージョン 20 以上）が入っているか確かめてください。</li>
+        <li><b>run_js が断られる</b>：Pro の版で、「run_js（任意のプログラムの実行）を許可する」を入れたときだけ動きます。</li>
+        <li><b>AI が描けないと言う</b>：ポーズモードの間は、stroke・fill_at が使えません。ペイントモードに戻してください。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/start#launch">入れる・起動する</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル</a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/screen#settings">環境設定</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/export"><small>← 前へ</small>書き出し</a><a class="next" href="/petanuri/manual/keys"><small>次へ →</small>ショートカット</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +319,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

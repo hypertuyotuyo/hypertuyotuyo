@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/uv",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,318 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv" aria-current="page">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv" aria-current="page">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ UV の区画と表示範囲</p>
     <h1 class="mn-h1">UV の区画と表示範囲</h1>
-    <p class="mn-intro">3D ビューのとなりに UV（テクスチャの展開図）を並べて、どちらからでも塗れます。服の下の体や髪の内側は、表示範囲で手前を隠して塗ります。</p><p class="mn-proof">Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#uv">UV の区画を出す</a></li><li><a href="#grid">グリッド線と吸着</a></li><li><a href="#uvnav">UV のガイド（ズーム・移動）</a></li><li><a href="#seam">島の外にはみ出したとき（つなげて塗る）</a></li><li><a href="#isolate">表示範囲（選んだ所だけ出す・隠す）</a></li><li><a href="#hidepen">隠すペン・3D の下のバー</a></li><li><a href="#ghost">周りを薄く見せる</a></li><li><a href="#presets">隠し方の保存</a></li><li><a href="#wire">メッシュの線・継ぎ目の線</a></li></ul></div>
-    <section class="mn-sec" id="uv"><h2>UV の区画を出す</h2><ul class="mn-list"><li>UV の出し方は 3 つ：3D だけ・3D と UV を並べる・UV だけ。3D だけのときは、3D ビューの右端の「UV」（<kbd>U</kbd>・表示 → UV）で並べます。境目のドラッグで広さを変えられます。</li><li>並べているときは、UV の区画の右上の × で UV を消す（3D だけ）、3D ビューの右上の × で 3D を消す（UV だけ）。<kbd>Shift</kbd>＋<kbd>U</kbd> で UV だけ ⇔ 並べるを切り替え。最後の出し方は次も同じです。</li><li>出るのは、選んでいるテクスチャセットの UV です（左上に名前）。セットを選び直すと切り替わります。</li><li>UV の区画の上でも、ペン・筆・消しゴム・ポリゴン塗り・塗りつぶし・囲まれた所・グラデーション・図形・スタンプ・スポイト・ぼかし・指先が使えます。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D ビューのとなりに UV の区画を並べた画面" loading="lazy"><figcaption>3D と UV を並べたところ</figcaption></figure><ul class="mn-list"><li>UV の区画を触っている間は、3D ビューでブラシの円に入る面が<strong>赤く光ります</strong>。3D を触っている間は、UV の区画に塗る位置が赤い点で出ます。</li><li>ホイールで拡大縮小、中ドラッグ・<kbd>Space</kbd>＋ドラッグで移動、UV のガイドの四角で全体表示。「線」で UV の線、「島の縁」で島の輪郭（▼ で色と濃さ）。</li><li>UV のガイドの下の段の ⟲・⟳ で 15° ずつ回せます（回したまま塗れます）。</li><li>見出しの「対称 X・Y・Z」は、3D の左上と同じ切り替えです（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</li><li>UV の区画が狭いときは、見出しに入らないボタンを「⋯」の板にしまいます。</li></ul><div class="mn-tip">塗る範囲（全版）：UV の区画の左下で「UV内」「パディング内」「全体」を選びます。UV内は今までどおり島の中だけ、パディング内は島と外側のパディングの帯の中、全体はテクスチャのどこにでも塗ります。ペン・筆・消しゴムのほか、図形・塗りつぶし・グラデーション・スタンプ・ぼかし・指先もこの範囲に従います（3D ビューで塗るときは今までどおり）。</div><div class="mn-tip">左下のパディング（0〜128px・全部）は、書き出しのにじみと同じ値です。見出しの「パディング線」で、島の縁からその幅だけ外側の線を表示できます。フィルター →「パディングを新規レイヤーに作る」で、島の縁の色を外へ広げた分だけを新しいレイヤーにできます（全版）。</div><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv-area-v112.webp" width="452" height="940" alt="UV の区画の左下の塗る範囲とパディング、パディング線" loading="lazy"><figcaption>塗る範囲とパディング線</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="パディングを新規レイヤーに作る窓" loading="lazy"><figcaption>パディングを新規レイヤーに作る</figcaption></figure></div><div class="mn-tip">3D・UV の小窓（全版）：3D と UV を並べているとき、右上の ✕ の下のボタンで、その方を小窓にします（もう一方が全体に）。UV の見出しの ⋯ の「UV を小窓に（3D を全体に）」「3D を小窓に（UV を全体に）」でも同じです。</div><div class="mn-tip">小窓は、アプリの窓の中ならパネルの上にも置けます。見出しをドラッグで移動、四辺・四隅で大きさ。⇄ で入れ替え、▣ で並べた表示に戻し、✕ で小窓の方を閉じます。右上の鍵で固定（もう一度押すと解除）。小さくすると、UV は塗る範囲の欄をたたんでガイドを小さく、3D はナビを小さくまとめます。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="3D を全体にして UV を小窓にした画面" loading="lazy"><figcaption>UV を小窓に</figcaption></figure><div class="mn-tip">3D でも島の外へパディングまで塗る（全版）：ペン・筆・消しゴムのツールプロパティで入れると、3D で描き終えたときに線を UV の島の外へパディングの幅だけ広げます（隣の島の中には入りません。元に戻す 1 回で線ごと戻ります）。幅は「パディングの幅（px）」で、UV の区画の左下・書き出しのにじみと同じ値です。</div><div class="mn-tip">UV の縁から塗る（Pro）：フィルター →「UV の縁から塗る（新しいレイヤー）」で、UV の島の縁からの距離で、線かグラデーションを新しいレイヤーに作ります。形（線・グラデーション）・向き（島の内側・島の外側・両方）・幅・縁からの始まり・ぼかし（テクスチャの px）・不透明度を決めます。色は「描画色」か「色を選ぶ」（カラーセットの見本・色の欄）から選べます（透明色のときは、今のレイヤーから消える所をそのまま見せます）。窓を開いている間は、UV と 3D に仮の線・グラデーションが出て、値を変えるとすぐ変わります（キャンセル・Esc で消えます）。「島の内側」では、島の外の縁（パディングの幅）にも、いちばん近い島の画素と同じ濃さで塗ります（「島の外の縁（パディング）にも塗る」で切れます）。選択範囲があればその中だけです。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uv-border-v121.webp" width="384" height="547" alt="UV の縁から塗るの窓。形・向き・幅・縁からの始まり・ぼかし・不透明度・島の外の縁にも塗る・色・プレビュー" loading="lazy"><figcaption>UV の縁から塗る（開いている間は UV と 3D に仮の線が出ます）</figcaption></figure></section><section class="mn-sec" id="grid"><h2>グリッド線と吸着</h2><ul class="mn-list"><li>UV の区画の見出しの「グリッド」で、マス目を出す・隠す。隣の ▼ で、マスの数（テクスチャの 1 辺を 2・4・8・16・32・64・128 に分ける）と吸着を選びます。1 マスが何 px かも ▼ の中に出ます。</li><li>線は表示だけで、描く絵・保存・書き出しには入りません。</li><li><strong>「移動・変形でグリッドに吸着する」</strong>（既定で入。グリッドを出しているときだけ）：UV の区画で移動・変形ツール・変形（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）・画像を UV に貼るの枠を動かすと、枠の 4 隅か真ん中がマス目の線の近くで吸い付きます。角・辺のつまみ、自由変形の角、ワープの点も吸い付きます。</li><li><kbd>Ctrl</kbd> を押している間は吸い付きません。3D の区画の上の枠では吸い付きません。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV の区画にグリッド線を出し、グリッドの ▼ を開いたところ" loading="lazy"><figcaption>グリッド線と ▼（マスの数・吸着）</figcaption></figure></section><section class="mn-sec" id="uvnav"><h2>UV のガイド（ズーム・移動）</h2><p>UV の区画の右上に、3D ナビと同じ形のガイドが出ます。ペンだけで操作できます。</p><ul class="mn-list"><li><strong>虫めがね</strong>を上下にドラッグで拡大・縮小（上で寄る）。<strong>手のひら</strong>をドラッグで移動。<strong>四角</strong>で全体表示。</li><li>上のつまみで好きな場所へ動かし、左・下の端と左下の角で大きさを変えられます。</li><li>「—」で小さな丸いアイコンにたたみ、押すと戻ります（表示 → UV → UV のガイド でも）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV の区画。右上にズーム・移動・全体のガイド" loading="lazy"><figcaption>UV の区画の右上のガイド</figcaption></figure><div class="mn-tip">回転（全版）：ガイドの下の段の ⟲・角度・⟳ で回します（⟲・⟳ で 15° ずつ、角度を押すと 0°。Shift＋ホイールで 5° ずつ）。好きな角度には、ガイドの回転のボタンを左右にドラッグ（ダブルクリックで 0°）か、Space＋Shift を押しながら区画をドラッグします。</div><div class="mn-tip">決まった倍率で表示（全版）：Ctrl＋1・2・3 で、UV の区画（2D キャンバスを開いていればそちら）を決まった倍率にします（はじめは 100%・200%・50%。100% はテクスチャの 1 画素が画面の 1 px）。倍率は ファイル → 環境設定 → 操作 の「決まった倍率（UV・2D）」で変えられます。</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-guide-v120.webp" width="168" height="101" alt="UV の区画の右上のガイドと回転の段" loading="lazy"><figcaption>UV のガイドの回転</figcaption></figure></section><section class="mn-sec" id="seam"><h2>島の外にはみ出したとき（つなげて塗る）</h2><ul class="mn-list"><li>UV の区画で塗るとき、円が UV の島の外にはみ出しても、UV の上で隣にあるだけの<strong>別の島（3D では離れた所）には塗りません</strong>。</li><li>見出しの<strong>「つなげて塗る」</strong>（はじめは入）：島の縁の継ぎ目からはみ出した分は、3D でその継ぎ目の向こうにつながる面へ続けて塗ります。継ぎ目で途切れません。切ると、描いている島の中だけに塗ります（右クリックのメニュー・表示 → UV にも同じ切り替え）。</li><li>塗る範囲が「UV内」のとき、UV の島の外（どの面にも使われていない所）では、ブラシの円が薄い点線と × になります。島の外から描き始めた線は、島に入った所から付きます。文字・図形・スタンプ・グラデーションは、島の外からでも置けます。</li></ul></section><section class="mn-sec" id="isolate"><h2>表示範囲（選んだ所だけ出す・隠す）</h2><ol class="mn-steps"><li>UV の区画や 3D で、島・面を選びます（島で選択・面で選択・投げ縄・頂点グループなど）。</li><li>3D ビューの左上の表示範囲のアイコン・<kbd>Shift</kbd>＋<kbd>H</kbd>・UV の見出しの「選んだ所だけ表示」で、選んだ所だけが 3D に出ます。</li><li><kbd>H</kbd>（UV の見出しの「選んだ所を隠す」）なら、選んだ所を隠します。何度でも足して隠せます。</li><li><kbd>Alt</kbd>＋<kbd>H</kbd> で全部表示に戻ります。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="UV で選んだ所だけを 3D に出したところ" loading="lazy"><figcaption>UV で選んだ所だけを 3D に表示</figcaption></figure><ul class="mn-list"><li>「選んだ所だけ表示」の後は、選択範囲を選び直すと、押し直さなくても表示が変わります（もう一度押すと全部表示）。</li><li><strong>隠すと選択範囲は外れます</strong>。見えている所にそのまま塗れます。外した選択範囲は、3D の下のバーの［選択範囲を戻す］か <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd> で戻せます。</li><li>3D の右クリックの「この島を隠す」「この島だけ表示」は、押した所の島をそのまま隠す・出します（選択範囲と元に戻すの履歴は変わりません）。</li><li><strong>表示範囲のアイコンの ▼</strong>：左に「選択範囲から」（選んだ所だけ表示・選んだ所を隠す・選んだ所も表示・隠すペン）と「隠した所」（反転・全部表示・広げる／狭める・薄く見せる）、右に「隠し方」（保存した隠し方の一覧）。何も隠していないときは、ここから操作します。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="表示範囲の ▼ の窓。左に選択範囲からと隠した所、右に隠し方の一覧" loading="lazy"><figcaption>表示範囲の ▼ の窓</figcaption></figure><div class="mn-tip">隠した所は奥行きにも入らないので、服の下の体・髪の内側など、奥の面が見えて塗れます。隠した所には直接描けず、スポイトや塗りつぶしでも拾いません。「隠した側にも対称描画」を入れた3Dの描画では、隠した対称側にも描けます。オブジェクト（メッシュ）ごとに隠すこともできます（<a href="/petanuri/manual/sets#objects">オブジェクトの表示・非表示</a>）。</div><div class="mn-tip warn">隠す・表示の操作は、元に戻す（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>）の履歴には入りません。戻すときは全部表示にするか、保存した隠し方を呼び出します。</div></section><section class="mn-sec" id="hidepen"><h2>隠すペン・3D の下のバー</h2><p>重なった布の奥を塗るときなどに、なぞった所をそのまま隠せます。</p><ol class="mn-steps"><li>左のツールバーの「隠すペン」を選びます（3D の下のバーの［隠すペン］でも入り切りできます）。</li><li>サブツールで「面で隠す」（四角形の面は三角形 2 枚まとめて）か「島で隠す」（UV の島ごと）を選びます。</li><li>3D でなぞった所が隠れます。UV の区画で押しても隠せます。</li><li>［隠すペン］をもう一度押すと、前のツールに戻ります。</li></ol><div class="mn-tip">1 回のなぞりでは、手前を隠して見えてきた奥の面までは隠しません。奥も隠したいときは、もう一度なぞります。</div><p><strong>3D の下の真ん中のバー</strong>は、隠している間と隠すペンの間だけ出ます。［隠すペン］［面｜島］［隠し方 ▼］と、今の隠し方（「隠し方：〇〇」・「一部を隠しています（保存していない隠し方）」・「選んだ所だけ表示しています」）・［全部表示］が並びます。</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="マントを隠して、3D の下にバーが出ているところ" loading="lazy"><figcaption>マントを隠したところと、3D の下のバー</figcaption></figure></section><section class="mn-sec" id="ghost"><h2>周りを薄く見せる</h2><ul class="mn-list"><li>隠している間、3D の下のバーの［周りを薄く見せる］で、隠した所を半透明で見せます。周りを確かめながら描けます。</li><li>横のつまみで濃さ（5〜80%）を変えます。▼ の窓の「隠した所」の「薄く見せる」でも同じです。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="隠したマントを半透明で見せたところ" loading="lazy"><figcaption>隠したマントを薄く見せたところ</figcaption></figure><div class="mn-tip">薄く見えていても、隠した所には直接描けません。対称の設定で「隠した側にも対称描画」を入れた場合は、3Dで反対側を塗ると隠した側にも描けます。</div></section><section class="mn-sec" id="presets"><h2>隠し方の保存</h2><p>よく使う隠し方に名前を付けてとっておき、いつでも同じ隠し方に戻せます。</p><ol class="mn-steps"><li>隠したい所を隠します。</li><li>3D の下のバーの［隠し方 ▼］（か、表示範囲の ▼ の窓）→「今の隠し方を保存」で名前を付けます（同じ名前なら上書き）。</li><li>同じ一覧から名前を押すと、その隠し方に戻ります。</li></ol><ul class="mn-list"><li>「隠し方の整理（名前・削除）」で、名前の変更・削除ができます。</li><li>保存した隠し方と今の隠し方は、作業ファイル（.petanuri）に入ります。開き直しても使えます。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="隠し方の一覧と、今の隠し方を保存のメニュー" loading="lazy"><figcaption>隠し方の保存</figcaption></figure></section><section class="mn-sec" id="wire"><h2>メッシュの線・継ぎ目の線</h2><ul class="mn-list"><li>3D ビューの左上のアイコン（表示 → 線と定規 → メッシュの線／継ぎ目の線）で、ポリゴンの線と、UV の継ぎ目・島の縁を出せます。継ぎ目の線は <kbd>Alt</kbd>＋<kbd>W</kbd> でも切り替えられます。</li><li>アイコンの下の ▼ で、濃さ・色（青・黒・白）・裏側／奥の線も出すかを選べます。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="メッシュの線の設定" loading="lazy"><figcaption>メッシュの線の ▼ の設定</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="見えている面の線だけ" loading="lazy"><figcaption>見えている面だけ</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="裏側の線も出したところ" loading="lazy"><figcaption>裏側・奥の線も</figcaption></figure></div></section>
-    <section class="mn-sec" id="v111-controls"><h2>v1.1.1の操作の変更</h2><p><a href="/petanuri/manual/screen#settings">カメラ操作</a> · <a href="/petanuri/manual/draw#mirror">隠した側への対称描画</a></p></section><nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/layers"><small>← 前へ</small>レイヤー</a><a class="next" href="/petanuri/manual/screen"><small>次へ →</small>画面・パネル・環境設定</a></nav>
+    <p class="mn-intro">3D ビューのとなりに UV（テクスチャの展開図）を並べて、どちらからでも塗れます。服の下の体や髪の内側のような奥の面は、表示範囲で手前を隠して塗ります。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li><kbd>U</kbd> で 3D のとなりに UV を並べます。UV の上でもそのまま塗れます（<a href="#uv">くわしく</a>）。</li>
+      <li>UV の区画の左下の「塗る範囲」で、島の中だけか、外のパディングまで塗るかを選びます（<a href="#area">くわしく</a>）。</li>
+      <li>奥を塗るときは、島や面を選んで <kbd>Shift</kbd>＋<kbd>H</kbd>（選んだ所だけ表示）か <kbd>H</kbd>（選んだ所を隠す）。<kbd>Alt</kbd>＋<kbd>H</kbd> で全部表示に戻ります（<a href="#isolate">くわしく</a>）。</li>
+      <li>重なった布は「隠すペン」でなぞって隠せます（<a href="#hidepen">くわしく</a>）。</li>
+      <li>UV の継ぎ目の位置は <kbd>Alt</kbd>＋<kbd>W</kbd>（継ぎ目の線）で 3D に出ます（<a href="#wire">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#uv">UV を出して直接塗る</a></li><li><a href="#uvnav">UV の表示を動かす（ズーム・移動・回転）</a></li><li><a href="#grid">グリッド線と吸着</a></li><li><a href="#area">塗る範囲とパディング（島の外まで塗る）</a></li><li><a href="#seam">島の外にはみ出したとき（つなげて塗る）</a></li><li><a href="#isolate">表示範囲（選んだ所だけ出す・隠す）</a></li><li><a href="#hidepen">なぞって隠す（隠すペン）と 3D の下のバー</a></li><li><a href="#ghost">隠した所を薄く見せる</a></li><li><a href="#presets">隠し方を保存する</a></li><li><a href="#wire">メッシュの線・継ぎ目の線を出す</a></li><li><a href="#uvborder">UV の縁に沿って塗る（UV の縁から塗る）</a></li><li><a href="#gltf">glTF・glb・VRM の UV の向き</a></li></ul></div>
+
+    <section class="mn-sec" id="uv" data-keywords="UVビュー UVエディタ 展開図 平面 2D 分割 並べて表示 UV表示 テクスチャに直接 小窓 ピクチャーインピクチャー">
+      <h2>UV を出して直接塗る</h2>
+      <p>UV の区画では、テクスチャの展開図の上に直接塗れます。3D では届きにくい所や、まっすぐな線を引きたい所に使います。</p>
+      <ol class="mn-steps">
+        <li><kbd>U</kbd> を押します（3D ビューの右端の「UV」か、表示 → UV → UV（3D の隣に並べる）でも）。3D のとなりに UV の区画が出ます。</li>
+        <li>境目をドラッグして、広さを合わせます。</li>
+        <li>UV の区画の上で、3D と同じように描きます。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D ビューのとなりに UV の区画を並べた画面" loading="lazy"><figcaption>3D と UV を並べたところ</figcaption></figure>
+      <ul class="mn-list">
+        <li>出るのは、選んでいるテクスチャセットの UV です（左上に名前）。セットを選び直すと切り替わります（<a href="/petanuri/manual/sets#choose">テクスチャセットを選ぶ</a>）。</li>
+        <li>使える道具：ペン・筆・消しゴム・ポリゴン塗り・塗りつぶし・囲まれた所を塗る・グラデーション・図形・スタンプ・スポイト・ぼかし・指先。</li>
+        <li>UV の区画を触っている間は、3D ビューでブラシの円に入る面が赤く光ります。3D を触っている間は、UV の区画に塗る位置が赤い点で出ます。</li>
+        <li>見出しの「対称 X・Y・Z」は、3D の左上と同じ切り替えです。UV で塗っても、3D の同じ軸で折り返した所に塗ります（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</li>
+        <li>右下には、サブのテクスチャセットの UV が小さく出ます。押すとサブがメインになります。✕ で隠し、「サブを出す」で戻せます（<a href="/petanuri/manual/sets#cross">メインとサブ</a>）。</li>
+      </ul>
+      <h3 id="uv-layout">出し方を切り替える（3D だけ・並べる・UV だけ・小窓）</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">出し方</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>3D と UV を並べる</td><td><kbd>U</kbd>・3D ビューの右端の「UV」・UV だけのときは UV の区画の左端の「3D」</td></tr>
+        <tr><td>3D だけ</td><td>UV の区画の右上の ✕（もう一度 <kbd>U</kbd> でも）</td></tr>
+        <tr><td>UV だけ</td><td>3D ビューの右上の ✕・<kbd>Shift</kbd>＋<kbd>U</kbd>（表示 → UV → UV だけ（3D を隠す））</td></tr>
+        <tr><td>片方を小窓にする</td><td>並べているときに、右上の ✕ の下のボタン。表示 → UV →「UV を小窓に（3D を全体に）」「3D を小窓に（UV を全体に）」でも</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>最後の出し方は、次に開いたときも同じです。</li>
+        <li>小窓は、アプリの窓の中ならパネルの上にも置けます。見出しのドラッグで移動、四辺・四隅で大きさを変えます。</li>
+        <li>小窓の ⇄ で全体と入れ替え、▣ で並べた表示に戻し、✕ で小窓の方を閉じます。右上の鍵で動かないように固定できます（もう一度押すと解除）。</li>
+        <li><kbd>Tab</kbd> でパネルを隠しても、小窓は残ります。2D キャンバスは小窓にできません。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="3D を全体にして UV を小窓にした画面" loading="lazy"><figcaption>UV を小窓にしたところ</figcaption></figure>
+      <h3 id="uv-lines">UV線・島の縁・パディング線を出す</h3>
+      <ul class="mn-list">
+        <li>見出しの「UV線」で UV の線、「島の縁」で島の輪郭、「パディング線」で島の縁からパディングの幅だけ外の線を、出す・隠すを切り替えます（<a href="#area">パディング</a>）。</li>
+        <li>となりの ▼ で、3 つの線の色と濃さ（5〜100%）を変えます。「初期の色に戻す」で元に戻ります。</li>
+        <li>UV の区画の右クリックにも、同じ切り替えがあります。</li>
+        <li>UV の線を画像にして、ほかのソフトで下絵に使うときは「UV マップを PNG で書き出す」です（<a href="/petanuri/manual/export#uvmap">くわしく</a>）。</li>
+      </ul>
+      <h3 id="uv-normal">ノーマルマップのフォルダを高さで見る</h3>
+      <p><span class="tier pro">Pro</span> 塗る先がノーマルマップのとき、UV の区画はふだんノーマルマップの色で見えます。3D の右クリック → 表示 →「ノーマルマップのフォルダを高さ（灰色）で見る（UV）」を入れると、描いた高さのまま灰色で見えます。白が盛り上がり、黒が彫られた所です（<a href="/petanuri/manual/material#channels">塗る先</a>）。</p>
+      <h3 id="uv-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>見出しのボタンが見当たらない</b>：UV の区画が狭いと、入らないボタンを「⋯」にしまいます。「⋯」を押すと出ます。</li>
+        <li><b>UV が出ない</b>：3D モデルを開くと出せます。先にモデルを開いてください。</li>
+        <li><b>塗れない所がある</b>：UV が 1 点に貼ってある面・0〜1 の外にかかる面・4 枚より多く重なった所は塗れません。開いたときに右下で知らせます。</li>
+        <li><b>島が 0〜1 の外に置いてある</b>：テクスチャのくり返しで同じ色になる、0〜1 の中の位置へ写して塗ります。モデルのファイルは変えません。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvnav" data-keywords="拡大 縮小 ズーム パン スクロール 回転 傾ける 100% 等倍 原寸 ナビ ガイド 全体表示">
+      <h2>UV の表示を動かす（ズーム・移動・回転）</h2>
+      <p>UV の区画は、マウスでもペンだけでも動かせます。右上のガイドは、3D ナビと同じ形です。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">したいこと</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>拡大・縮小</td><td>ホイール・ガイドの虫めがねを上下にドラッグ（上で寄る）</td></tr>
+        <tr><td>移動</td><td>中ボタンでドラッグ・<kbd>Space</kbd>＋ドラッグ・ガイドの手のひらをドラッグ</td></tr>
+        <tr><td>全体を出す</td><td>ガイドの四角・右クリックの「UV の全体表示」</td></tr>
+        <tr><td>回す</td><td>ガイドの下の段の ⟲・⟳ で 15° ずつ・<kbd>Shift</kbd>＋ホイールで 5° ずつ</td></tr>
+        <tr><td>好きな角度に回す</td><td>ガイドの回転のボタンを左右にドラッグ・<kbd>Space</kbd>＋<kbd>Shift</kbd> を押しながら区画をドラッグ</td></tr>
+        <tr><td>回転を戻す</td><td>ガイドの角度を押す（回転のボタンのダブルクリックでも 0°）</td></tr>
+        <tr><td>決まった倍率にする</td><td><kbd>Ctrl</kbd>＋<kbd>1</kbd>・<kbd>2</kbd>・<kbd>3</kbd>（はじめは 100%・200%・50%）</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV の区画。右上にズーム・移動・全体のガイド" loading="lazy"><figcaption>UV の区画の右上のガイド</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-guide-v120.webp" width="168" height="101" alt="UV のガイドと、下の段の回転" loading="lazy"><figcaption>ガイドの回転の段</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>回したままでも塗れます。</li>
+        <li>100% は、テクスチャの 1 画素が画面の 1 px です。倍率は ファイル → 環境設定 → 操作 の「決まった倍率（UV・2D）」で変えます。2D キャンバスを開いているときは、そちらに効きます。3D ビューでは使えません。</li>
+        <li>ガイドは上のつまみで好きな場所へ動かし、左・下の端と左下の角で大きさを変えます。「—」で小さな丸いアイコンにたたみ、押すと戻ります（表示 → UV → UV のガイド（ズーム・移動）でも）。</li>
+        <li>ファイル → 環境設定 → インターフェイス → 表示 の「ナビに回転・拡大縮小のスライダーを出す」を入れると、ガイドの下にスライダーが出ます（3D ナビにも）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="grid" data-keywords="マス目 方眼 格子 スナップ 吸い付く 整列 位置合わせ">
+      <h2>グリッド線と吸着</h2>
+      <p>マス目を出して、模様やワッペンの位置をそろえます。枠を動かすと、マス目の線に吸い付きます。</p>
+      <ol class="mn-steps">
+        <li>UV の区画の見出しの「グリッド」を押します。マス目が出ます。</li>
+        <li>となりの ▼ で「マスの数」を選びます。テクスチャの 1 辺を 2・4・8・16・32・64・128 に分けます。</li>
+        <li>移動・変形の枠を動かすと、枠の 4 隅か真ん中が、近くのマス目の線に吸い付きます。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV の区画にグリッド線を出し、グリッドの ▼ を開いたところ" loading="lazy"><figcaption>グリッド線と ▼（マスの数・吸着）</figcaption></figure>
+      <ul class="mn-list">
+        <li>1 マスが何 px かは ▼ の中に出ます（2048px を 16 に分けると 128px）。</li>
+        <li>線は表示だけで、描く絵・保存・書き出しには入りません。寄っても線は太くなりません。</li>
+        <li>「移動・変形でグリッドに吸着する」は、はじめから入っています。グリッドを出しているときだけ効きます。</li>
+        <li>吸い付くのは、移動・変形ツール・変形（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）・画像を UV に貼るの枠です。角・辺のつまみ、自由変形の角、ワープの点も吸い付きます（<a href="/petanuri/manual/edit#transform">変形</a>）。</li>
+        <li><kbd>Ctrl</kbd> を押している間は吸い付きません。3D の区画の上の枠も吸い付きません。</li>
+        <li>表示 → UV →「UV のグリッド」でも出せます。吸着の入り切りにキーを割り当てることもできます（<a href="/petanuri/manual/keys">ショートカット</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="area" data-keywords="パディング にじみ はみ出し 島の外 シーム 継ぎ目の線 白い線 隙間 マージン ブリード UV内 パディング内 全体">
+      <h2>塗る範囲とパディング（島の外まで塗る）</h2>
+      <p>UV の島の外側に、縁の色を少し広げておくと、ゲームの中で継ぎ目に線が出にくくなります。この広げた帯をパディングと呼びます。UV の区画の左下で、どこまで塗るかを選びます。</p>
+      <ol class="mn-steps">
+        <li>UV の区画の左下の「塗る範囲」で、「UV内」「パディング内」「全体」のどれかを押します。</li>
+        <li>「パディング内」なら、下のつまみでパディングの幅（0〜128px）を決めます。</li>
+        <li>UV の区画で塗ります。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">塗る範囲</th><th scope="col">塗れる所</th></tr></thead><tbody>
+        <tr><td>UV内（はじめ）</td><td>UV の島の中だけ。「つなげて塗る」が使えます（<a href="#seam">くわしく</a>）</td></tr>
+        <tr><td>パディング内</td><td>島と、その外のパディングの帯の中。ペン・図形などは隣の島にもはみ出します</td></tr>
+        <tr><td>全体</td><td>テクスチャのどこにでも。島の外・隣の島にもはみ出します</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-area-v112.webp" width="452" height="940" alt="UV の区画の左下の塗る範囲とパディング、パディング線" loading="lazy"><figcaption>塗る範囲とパディング線</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>ペン・筆・消しゴム・ポリゴン塗りのほか、図形・塗りつぶし・グラデーション・スタンプ・ぼかし・指先もこの範囲に従います。3D ビューで塗るときは変わりません。</li>
+        <li>「パディング内」「全体」の塗りつぶしは、塗った所を島の外へ広げます。</li>
+        <li>パディングの値は、<strong>書き出しのにじみと同じ値</strong>です（「書き出しと共通」）。どちらで変えても両方が変わります。「全部」は、書き出しの窓の「島の外を全部埋める」です（<a href="/petanuri/manual/export#pad">書き出しのにじみ</a>）。</li>
+        <li>左下の欄は ▼ で小さくたためます。小さいままでも、塗る範囲とつなげて塗るは使えます。</li>
+      </ul>
+      <h3 id="area-3d">3D で描いた線もパディングまで広げる</h3>
+      <p>ペン・筆・消しゴムのツールプロパティで「3D でも島の外へパディングまで塗る」を入れます。3D で描き終えたときに、線を島の外へパディングの幅だけ広げます。</p>
+      <ul class="mn-list">
+        <li>隣の島の中には入りません。元に戻す 1 回で、線ごと戻ります。</li>
+        <li>幅はツールプロパティの「パディングの幅（px）」です。UV の区画の左下・書き出しのにじみと同じ値です。</li>
+        <li>切っているときは、島の縁から少しだけ広げます。</li>
+      </ul>
+      <h3 id="area-layer">パディングだけのレイヤーを作る</h3>
+      <p>フィルター →「パディングを新規レイヤーに作る」で、今の絵（全部のレイヤーを重ねた色）の縁の色を、島の外へ広げた分だけを新しいレイヤーにします。島の中は透明で、選んでいるレイヤーのすぐ上に入ります。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="パディングを新規レイヤーに作る窓" loading="lazy"><figcaption>パディングを新規レイヤーに作る（幅を決めて「作る」）</figcaption></figure>
+      <div class="mn-tip">筆の縁のうすい所は描いた所とみなさず、不透明な所の色を島の外へ広げます。島の外の画素は、まっすぐの距離でいちばん近い島の画素の色になるので、斜めの縁からもなめらかに広がります。</div>
+    </section>
+
+    <section class="mn-sec" id="seam" data-keywords="継ぎ目 シーム 途切れる 切れる はみ出す 隣の島 またぐ つながる">
+      <h2>島の外にはみ出したとき（つなげて塗る）</h2>
+      <p>UV では離れていても、3D ではつながっている所があります。継ぎ目からはみ出した分を、3D でつながる面へ続けて塗れます。</p>
+      <ul class="mn-list">
+        <li>UV の区画で塗るとき、円が島の外にはみ出しても、UV の上で隣にあるだけの別の島（3D では離れた所）には塗りません。</li>
+        <li>左下の「つなげて塗る」（はじめは入）：島の縁の継ぎ目からはみ出した分は、3D でその継ぎ目の向こうにつながる面へ続けて塗ります。継ぎ目で線が途切れません。</li>
+        <li>切ると、描いている島の中だけに塗ります。右クリックの「島の外は 3D でつながる隣へ続けて塗る」・表示 → UV にも同じ切り替えがあります。</li>
+        <li>つなげて塗るは、塗る範囲が「UV内」のときだけ使えます。</li>
+      </ul>
+      <h3 id="seam-outside">島の外から描き始めたとき</h3>
+      <ul class="mn-list">
+        <li>塗る範囲が「UV内」のとき、どの面にも使われていない所では、ブラシの円が薄い点線になり × が付きます。ペン・筆・消しゴム・ポリゴン塗りでは描けません。</li>
+        <li>島の外から描き始めた線は、島に入った所から付きます。</li>
+        <li>文字・図形・スタンプ・グラデーションは、島の外からでも置けます（色が付くのは島の中）。</li>
+      </ul>
+      <h3 id="seam-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「このレイヤーでは継ぎ目をまたげません」と出る</b>：クリッピングのレイヤー（とそのマスク）は、下のレイヤーの形に合わせて塗るので、継ぎ目の向こうへは続けません。</li>
+        <li><b>「つなげて塗る」が押せない</b>：塗る範囲を「UV内」にしてください。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="isolate" data-keywords="隠す 非表示 ソロ 分離 アイソレート 服の下 内側 奥 中 見えない 塗れない 重なり 重なって塗れない 服の下 髪の内側 奥">
+      <h2>表示範囲（選んだ所だけ出す・隠す）</h2>
+      <p>服の下の体や髪の内側は、手前の面がじゃまで塗れません。表示範囲で手前を隠すと、奥の面がそのまま見えて塗れます。</p>
+      <ol class="mn-steps">
+        <li>UV の区画か 3D で、島や面を選びます（選択範囲の「島で選択」「面で選択」・投げ縄・頂点グループなど）。</li>
+        <li><kbd>Shift</kbd>＋<kbd>H</kbd> を押します（3D ビューの左上の表示範囲のアイコン・UV の見出しの「選んだ所だけ表示」でも）。選んだ所だけが 3D に出ます。</li>
+        <li>手前だけを隠すときは、<kbd>H</kbd>（「選んだ所を隠す」）を押します。何度でも足して隠せます。</li>
+        <li>塗り終わったら、<kbd>Alt</kbd>＋<kbd>H</kbd> で全部表示に戻します。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="UV で選んだ所だけを 3D に出したところ" loading="lazy"><figcaption>UV で選んだ所だけを 3D に表示</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>選んだ所だけ表示（<kbd>Shift</kbd>＋<kbd>H</kbd>）</td><td>選んだ島・面だけを出します。入れたまま選び直すと、押し直さなくても表示が変わります。もう一度押すと全部表示</td></tr>
+        <tr><td>選んだ所を隠す（<kbd>H</kbd>）</td><td>選んだ島・面を隠します。隠すと選択範囲は外れるので、見えている所にそのまま塗れます</td></tr>
+        <tr><td>選んだ所も表示</td><td>隠した所のうち、選んだ所を見えるように戻します</td></tr>
+        <tr><td>表示範囲を反転</td><td>見えている所と隠している所を入れ替えます</td></tr>
+        <tr><td>広げる・狭める</td><td>見えている所を、UV の上で決めた px（1〜64）だけ広げる・狭めます</td></tr>
+        <tr><td>全部表示（<kbd>Alt</kbd>＋<kbd>H</kbd>）</td><td>隠した所と、隠したオブジェクトを全部表示に戻します</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>どれも 表示 → 表示範囲 と、3D・UV の右クリックの「表示範囲」にあります。</li>
+        <li>外した選択範囲は、3D の下のバーの［選択範囲を戻す］か <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd> で戻せます。</li>
+        <li>隠している所は、UV の区画に斜線が出ます。隠している間は「全部表示」が目立つ色になります。</li>
+        <li>オブジェクト（メッシュ）ごとに隠すこともできます（<a href="/petanuri/manual/sets#objects">オブジェクトの表示・非表示</a>）。</li>
+      </ul>
+      <h3 id="isolate-island">押した島だけ隠す・出す（右クリック）</h3>
+      <ul class="mn-list">
+        <li>3D の右クリックの「この島を隠す」「この島だけ表示」は、押した所の島をそのまま隠す・出します。選択範囲と元に戻すの履歴は変わりません。</li>
+        <li>3D の右クリックの「この島を選ぶ（選択範囲）」は、押した島を選択範囲にします。</li>
+        <li>UV の区画の右クリックには「この島を選ぶ（選択範囲）」「この島を選択に足す」「この島だけ 3D に表示」「この島を 3D で隠す」があります。こちらは、その島を選んでから出す・隠すので、選択範囲が変わります。</li>
+      </ul>
+      <h3 id="isolate-pop">表示範囲の ▼ の窓</h3>
+      <p>3D ビューの左上の表示範囲のアイコンの下の ▼ で、表示範囲の操作をまとめた窓が出ます。何も隠していないときは、ここから操作します。</p>
+      <ul class="mn-list">
+        <li>左の上「選択範囲から」：選んだ所だけ表示・選んだ所を隠す・選んだ所も表示。「直接」の下に隠すペン。</li>
+        <li>左の下「隠した所」：反転・全部表示・広さ（px）と広げる・狭める・周りを薄く見せる。</li>
+        <li>右「隠し方」：今の隠し方の名前と、保存した隠し方の一覧（<a href="#presets">隠し方を保存する</a>）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="表示範囲の ▼ の窓。左に選択範囲からと隠した所、右に隠し方の一覧" loading="lazy"><figcaption>表示範囲の ▼ の窓</figcaption></figure>
+      <div class="mn-tip">隠した所は奥行きにも入らないので、奥の面がそのまま見えて塗れます。隠した所には直接描けず、スポイトや塗りつぶしでも拾いません。<span id="v111-controls"></span>対称の ▼ で「隠した側にも対称描画（3D ブラシ）」を入れると、3D のペン・ブラシ・消しゴム・スタンプで、隠した反対側にも対称で描けます（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</div>
+      <div class="mn-tip warn">隠す・表示の操作は、元に戻す（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>）の履歴に入りません。戻すときは全部表示にするか、保存した隠し方を呼び出します。</div>
+      <h3 id="isolate-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「先に島や面を選んでください」と出る</b>：何も選んでいません。選択範囲ツールの「島で選択」「面で選択」で 3D か UV の区画を押すか、右クリックの「この島を選ぶ（選択範囲）」で選んでから押します。UV の見出しのボタンは、選ぶまで薄く出ます。</li>
+        <li><b><kbd>Ctrl</kbd>＋<kbd>Z</kbd> で表示が戻らない</b>：隠す操作は履歴に入りません。<kbd>Alt</kbd>＋<kbd>H</kbd> か、3D の下のバーの「全部表示」で戻します。</li>
+        <li><b>隠したら選択範囲が消えた</b>：隠すと選択範囲は外れます。<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>（選択範囲を戻す）で戻ります。</li>
+        <li><b>モデルの一部が出てこない</b>：表示範囲かオブジェクトで隠したままです。<kbd>Alt</kbd>＋<kbd>H</kbd> で全部表示に戻します。隠した状態は作業ファイルに入るので、開き直しても隠れたままです。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="hidepen" data-keywords="隠すツール 非表示ペン マスク 布の奥 スカート フリル 重ね着 なぞる 重なって塗れない 奥が塗れない 首輪の内側 服の下">
+      <h2>なぞって隠す（隠すペン）と 3D の下のバー</h2>
+      <p>重なった布の奥を塗るときに、なぞった所をそのまま隠せます。先に選択範囲を作らなくて済みます。</p>
+      <ol class="mn-steps">
+        <li>左のツールバーの「隠すペン」を選びます（3D の下のバーの［隠すペン］でも入り切りできます）。</li>
+        <li>サブツールで「面で隠す」（四角形の面は三角形 2 枚まとめて）か「島で隠す」（UV の島ごと。布 1 枚・パーツ 1 つなど）を選びます。</li>
+        <li>3D でなぞると、なぞった所が隠れます。UV の区画で押しても隠せます。</li>
+        <li>［隠すペン］をもう一度押すと、前のツールに戻ります。</li>
+      </ol>
+      <div class="mn-tip">1 回のなぞりでは、手前を隠して見えてきた奥の面までは隠しません。奥も隠したいときは、もう一度なぞります。</div>
+      <h3 id="hidepen-bar">3D の下のバー</h3>
+      <p>3D ビューの下の真ん中のバーは、隠している間と隠すペンの間だけ出ます。</p>
+      <ul class="mn-list">
+        <li>［隠すペン］［面｜島］［隠し方 ▼］［選択範囲を戻す］［周りを薄く見せる］と、今の状態・［全部表示］が並びます。</li>
+        <li>今の状態は「隠し方：〇〇」（保存した隠し方のまま）・「一部を隠しています（保存していない隠し方）」・「選んだ所だけ表示しています」のどれかです。オブジェクトを隠しているときは「オブジェクトを n 個隠しています」も出ます。</li>
+        <li>［全部表示］を押すと、1 回で全部表示に戻ります。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="マントを隠して、3D の下にバーが出ているところ" loading="lazy"><figcaption>マントを隠したところと、3D の下のバー</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="ghost" data-keywords="半透明 透かす ゴースト うっすら 周り 確認">
+      <h2>隠した所を薄く見せる</h2>
+      <p>隠した所を半透明で見せて、周りを確かめながら描けます。</p>
+      <ol class="mn-steps">
+        <li>隠している間に、3D の下のバーの［周りを薄く見せる］を押します。隠した所が半透明で出ます。</li>
+        <li>横のつまみで濃さ（5〜80%）を変えます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>表示範囲の ▼ の窓の「隠した所」の「周りを薄く見せる」でも同じです（0% で見せない）。</li>
+        <li>薄く見えていても、隠した所には直接描けません。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="隠したマントを半透明で見せたところ" loading="lazy"><figcaption>隠したマントを薄く見せたところ</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="presets" data-keywords="プリセット 登録 呼び出し 切り替え 名前を付けて 覚える">
+      <h2>隠し方を保存する</h2>
+      <p>よく使う隠し方に名前を付けてとっておき、いつでも同じ隠し方に戻せます。</p>
+      <ol class="mn-steps">
+        <li>隠したい所を隠します。</li>
+        <li>3D の下のバーの［隠し方 ▼］→「今の隠し方を保存」を押して、名前を付けます（同じ名前なら上書き）。表示範囲の ▼ の窓からも保存できます。</li>
+        <li>同じ一覧から名前を押すと、その隠し方に戻ります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>「隠し方の整理（名前・削除）」で、名前の変更と削除ができます。</li>
+        <li>保存した隠し方と今の隠し方は、作業ファイル（.petanuri）に入ります。開き直しても使えます。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="隠し方の一覧と、今の隠し方を保存のメニュー" loading="lazy"><figcaption>隠し方の保存</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="wire" data-keywords="ワイヤーフレーム ポリゴン 辺 エッジ トポロジー シーム UVの切れ目 境目 確認">
+      <h2>メッシュの線・継ぎ目の線を出す</h2>
+      <p>ポリゴンの線や、UV の継ぎ目（島の縁）を 3D に重ねて出します。継ぎ目の近くを塗るときの目安になります。</p>
+      <ol class="mn-steps">
+        <li>3D ビューの左上の線のアイコンを押します（表示 → 線と定規 → メッシュの線 でも）。ポリゴンの線が出ます。</li>
+        <li>継ぎ目の線は、となりのボタンか <kbd>Alt</kbd>＋<kbd>W</kbd> で出します（表示 → 線と定規 → 継ぎ目の線（UV の継ぎ目・島の縁））。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>アイコンの下の ▼ で、線を出す・濃さ（5〜100%）・色（青・黒・白）・裏側・奥の線も出す（透けて見える）・継ぎ目の線を選べます。</li>
+        <li>ふだんは見えている面の線だけを出します。片面表示では、裏向きの面の線も出しません。</li>
+        <li>3D の右クリック → 表示 にも同じ切り替えがあります。</li>
+        <li>テクスチャを隠して線だけで見るときは、表示 → 表示の形式 →「線だけ（ワイヤーフレーム）」です。</li>
+        <li>継ぎ目の線は、レイヤーの「境界線」（縁取り）とは別の物です。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="メッシュの線の設定" loading="lazy"><figcaption>メッシュの線の ▼ の設定</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="見えている面の線だけ" loading="lazy"><figcaption>見えている面だけ</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="裏側の線も出したところ" loading="lazy"><figcaption>裏側・奥の線も</figcaption></figure></div>
+    </section>
+
+    <section class="mn-sec" id="uvborder" data-keywords="縁取り アウトライン 輪郭線 フチ 端 グラデーション 内側 外側 ライン 枠線">
+      <h2>UV の縁に沿って塗る（UV の縁から塗る） <span class="tier pro">Pro</span></h2>
+      <p>UV の島の縁からの距離で、線かグラデーションを新しいレイヤーに作ります。服の端の縁取りや、端だけ濃くする塗りに使います。</p>
+      <ol class="mn-steps">
+        <li>フィルター →「UV の縁から塗る（新しいレイヤー）」を選びます。窓を開いている間は、UV と 3D に仮の線が出ます。</li>
+        <li>「形」（線・グラデーション）と「向き」（島の内側・島の外側・両方）を選びます。</li>
+        <li>「幅」「縁からの始まり」「ぼかし」「不透明度」を合わせます。値を変えると、仮の線がすぐ変わります。</li>
+        <li>「色」で描画色か「色を選ぶ」を選び、「作る」を押します。新しいレイヤーができます。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uv-border-v121.webp" width="384" height="547" alt="UV の縁から塗るの窓。形・向き・幅・縁からの始まり・ぼかし・不透明度・島の外の縁にも塗る・色" loading="lazy"><figcaption>UV の縁から塗るの窓</figcaption></figure>
+      <ul class="mn-list">
+        <li>距離はテクスチャの px です。グラデーションは縁で濃く、幅の所で透明になります。</li>
+        <li>島どうしが接している所は、縁になりません。選択範囲があれば、その中だけに作ります。</li>
+        <li>「島の内側」では、島の外の縁（パディングの幅）にも、いちばん近い島の画素と同じ濃さで塗ります。「島の外の縁（パディング）にも塗る」を切ると塗りません。</li>
+        <li>「色を選ぶ」では、カラーセットの見本や色の欄から選べます。透明色のときは、新しいレイヤーを作らず、今のレイヤーからこの縁を消します。</li>
+        <li>キャンセルか <kbd>Esc</kbd> で仮の線は消えます。作った後は、元に戻す 1 回で戻ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gltf" data-keywords="vrm glb gltf 上下 逆 反転 さかさま 向き フリップ">
+      <h2>glTF・glb・VRM の UV の向き</h2>
+      <p>glTF は、画像の上下の数え方が FBX などと逆です。ぺたぬり3D は、glTF・glb・VRM を開くときに UV を上下返して、FBX と同じ向きにそろえます。Blender・UniVRM で読み込んだときと同じ向きです。</p>
+      <ul class="mn-list">
+        <li>モデルに入っている画像は、そのままの向きで下地に入ります。</li>
+        <li>UV の区画の絵・書き出す PNG・PSD・UV マップは、元の画像と同じ向きです。ほかの 3D ソフトでそのまま合います。</li>
+        <li>画像・PSD の読み込みも、上下を返さずにそのまま取り込みます。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/export#pad">書き出しのにじみ（パディング）</a></li><li><a href="/petanuri/manual/export#uvmap">UV マップを PNG で書き出す</a></li><li><a href="/petanuri/manual/edit#select">選択範囲</a></li><li><a href="/petanuri/manual/draw#mirror">左右対称で描く</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/layers"><small>← 前へ</small>レイヤー</a><a class="next" href="/petanuri/manual/sets"><small>次へ →</small>テクスチャセット</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +453,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

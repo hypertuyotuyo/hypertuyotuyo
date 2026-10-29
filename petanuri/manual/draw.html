@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/draw",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,532 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw" aria-current="page">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw" aria-current="page">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 描く</p>
     <h1 class="mn-h1">描く</h1>
-    <p class="mn-intro">3D ビューの上に、ペンで直接描きます。左のツールバーでツールを選び、サブツールとツールプロパティで描き味を決めます。</p><p class="mn-proof">Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#basic">まずは描いてみる</a></li><li><a href="#tools">ツールとサブツール</a></li><li><a href="#through">裏側・隠れた面にも塗る</a></li><li><a href="#props">ブラシの細かい設定</a></li><li><a href="#blend">ぼかし・指先・色混ぜ</a></li><li><a href="#fill">塗りつぶし・グラデーション・図形</a></li><li><a href="#gradient">色と透明度のグラデーション</a></li><li><a href="#color">色を選ぶ・スポイト</a></li><li><a href="#transparent">透明色で描く</a></li><li><a href="#mirror">左右対称で描く</a></li><li><a href="#popup">ポップアップパレット（ペンだけで使う）</a></li><li><a href="#works">服や小物にも</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>まずは描いてみる</h2><ol class="mn-steps"><li>3D ビューのモデルの上で描き始めると、そこのテクスチャセット（例：body）へ<strong>自動で移って</strong>から描きます（右のテクスチャセットのパネルで選んでもかまいません）。</li><li>左のツールバーでペン（<kbd>P</kbd>）を選び、サブツールで「G ペン」などを選びます。</li><li>色のパネルで色を選んで、3D ビューのモデルの上をなぞります。</li><li>回すときは右ドラッグ（ペンのサイドボタン）か <kbd>Space</kbd>＋ドラッグ、寄るときはホイールです。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="左のツールバーとサブツール・ツールプロパティ" loading="lazy"><figcaption>ツールバー・サブツール・ツールプロパティ</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="ぺたぬり3D の画面全体" loading="lazy"><figcaption>画面全体</figcaption></figure></div><div class="mn-tip">モデルの上で <kbd>Alt</kbd>＋右クリックしても、そこのセットを選べます。くわしくは<a href="/petanuri/manual/sets">テクスチャセット</a>のページへ。</div></section><section class="mn-sec" id="tools"><h2>ツールとサブツール</h2><p>ツールバーの並び（はじめの並び）です。ツールのキーを押して離すとそのツールに、押したまま描くとその間だけそのツールになり、離すと前のツールに戻ります。</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ツール</th><th scope="col">キー</th><th scope="col">サブツール</th></tr></thead><tbody><tr><td>ペン</td><td>P</td><td>G ペン・丸ペン・ミリペン・入り抜きペン・べた塗りペン</td></tr><tr><td>筆</td><td>B</td><td>柔らか筆・エアブラシ・平塗り・鉛筆・チョーク・スプレー・水彩にじみ・平筆・覆い焼き・焼き込み・影（乗算）・毛筆</td></tr><tr><td>ブラシ集</td><td></td><td>鉛筆・シャープペンシル・細筆・毛筆・平筆・重ね塗り・厚塗り・水の縁・しぶき・葉っぱ・スポンジなど 33 種</td></tr><tr><td>消しゴム</td><td>E</td><td>硬め・軟らかめ・ざっくり・練り消し・レイヤー貫通（と同梱の 2 つ）</td></tr><tr><td>デコレーション</td><td></td><td>キラキラ・星・ハート・花・桜・音符・雪の結晶・水玉・泡・三日月・ひし形・四つ葉・しずく（<a href="/petanuri/manual/deco#deco">デコレーション</a>）</td></tr><tr><td>スタンプ</td><td></td><td>スタンプ・スタンプ（散らす）（<a href="/petanuri/manual/deco#stamp">スタンプ</a>）</td></tr><tr><td>模様</td><td></td><td>ストライプ・水玉・ギンガムチェックなど 15 種（<a href="/petanuri/manual/deco#pattern">模様のペン</a>）</td></tr><tr><td>ステッチ</td><td></td><td>縫い目・パイピング・クロスステッチ・しわなど 9 種。縫い目は描画色で、しわ・ふくらみは高さで描く（<a href="/petanuri/manual/deco#bump">ステッチ</a>）</td></tr><tr><td>色混ぜ</td><td>J</td><td>ぼかし・指先・色混ぜ（各 3 種と同梱の 3 つ）</td></tr><tr><td>塗りつぶし</td><td>G</td><td>島を塗る・マテリアル全体・囲まれた所を塗る・ポリゴン塗り</td></tr><tr><td>グラデーション</td><td></td><td>描画色→背景色・描画色→透明・円形（描画色→透明）</td></tr><tr><td>図形</td><td></td><td>直線・長方形・楕円・多角形（塗り／枠線）・曲線・曲線（点をつなぐ）</td></tr><tr><td>スポイト</td><td>I</td><td>表示色を取得・レイヤーから取得</td></tr><tr><td>移動・変形</td><td>V</td><td><a href="/petanuri/manual/edit#move">移動・変形ツール</a></td></tr><tr><td>選択範囲</td><td>S</td><td><a href="/petanuri/manual/edit#select">選択範囲</a></td></tr><tr><td>隠すペン</td><td></td><td>面で隠す・島で隠す（<a href="/petanuri/manual/uv#hidepen">隠すペン</a>）</td></tr><tr><td>文字</td><td>T</td><td>横書き・縦書き（<a href="/petanuri/manual/edit#text">文字</a>）</td></tr><tr><td>定規</td><td></td><td>直線・曲線・同心円・放射線・平行線（<a href="/petanuri/manual/edit#ruler">定規</a>）</td></tr></tbody></table></div><ul class="mn-list"><li>サブツールの一覧の下のアイコンで、複製・名前・削除・初期化・書き出し・全部書き出し・読み込みができます（右クリックでも。名前を変えるのはダブルクリックでも）。並べ替えはドラッグで（ペンでもそのまま）。</li><li>ブラシの設定の書き出し・読み込み（.petabrush）は <span class="tier std">Standard</span> から使えます。読み込んだ先端の画像も一緒に入ります。</li><li>一覧の上の「小 中 大」でタイルの大きさを変えられます。小さくすると、下のツールプロパティが広く見えます。</li><li>ツールプロパティの値は、サブツールごとに覚えます。</li><li>ツールバーのボタン・サブツールのタイルを右クリック →「キーを割り当てる」で、好きなキーを付けられます（サブツールにも）。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="ブラシ集のサブツール" loading="lazy"><figcaption>ブラシ集</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="ブラシで引いた線の見本" loading="lazy"><figcaption>いろいろなブラシの線</figcaption></figure></div><div class="mn-tip">新しいツールとサブツール（全版）：ペンに「ドットペン」、塗りつぶしに「投げ縄で塗る」、ツールバーに「ゆがみ」（押し出す・膨らませる・縮める・渦（右）・渦（左）・元に戻す）と「手のひら」を足しました。表示 → ウィンドウ →「ツール一覧」で、ツールを格子に並べたパネルも出せます。</div><div class="mn-tip">ドットペン：テクスチャの画素の格子に合わせて、ブラシサイズの画素数ぶんをくっきり塗ります（1 なら 1 画素、3 なら 3×3。色は混ざりません）。筆圧・入り抜きで太さは変わらず、3D でも UV でも、対称でも使えます。ほかのペンでも、ツールプロパティの「ドット（画素の格子に合わせてくっきり）」で同じ塗り方になります。</div><div class="mn-tip">ゆがみ：描いてある絵を、なぞった所でゆがめます。1 回なぞるごとに Ctrl+Z 1 回で戻せます。3D ビューでは UV の切れ目をまたいでつながり、UV ビューでは島の中だけ。選択範囲・透明度保護を守り、対称でも描けます。手のひら：選んでいる間は、左ボタン・ペンのドラッグで表示を動かします（3D で Ctrl を押しながらで拡大縮小）。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="ドットペンで描き、テクスチャをドットのまま表示した 3D ビュー" loading="lazy"><figcaption>ドットペンとテクスチャをドットのまま表示</figcaption></figure></section><section class="mn-sec" id="through"><h2>裏側・隠れた面にも塗る</h2><p>ツールプロパティの不透明度のすぐ下の<strong>「裏側・隠れた面にも塗る」</strong>（消しゴムは「裏側・隠れた面も消す」）は、ペン先の下に見えている面を中心に、ブラシの円と同じ見た目の大きさの球の中を、カメラから見えない裏側・内側の面にも塗ります。髪の内側・服の重なり・指の間など、回り込んで見えにくい所を一度に塗れます。</p><ul class="mn-list"><li>ペン・筆・ブラシ集・消しゴム・グラデーションは、<strong>はじめから入</strong>です。切ると、見えている面だけに塗ります。</li><li>デコレーション・模様・ステッチにもあります（はじめは切）。ぼかし・指先・色混ぜ・スタンプは、画面に写っている色・画像を使うので、見えている面だけです。</li><li>硬さで縁がぼけます。画像の先端（鉛筆・チョーク・スプレー・ブラシ集の多くなど）も使えます。「面に沿う」では面の向きに合わせ、「画面に合わせる」では画面に見える先端の形を奥へ投影します。</li><li>選択範囲・隠した面・対称・透明度保護は、いつもどおり効きます。UV の区画で塗るときは関係ありません（もともと全部の面に付きます）。</li></ul><div class="mn-tip warn">厚みのある所を塗ると、反対側まで届くことがあります。ブラシの大きさに気を付けてください。</div></section><section class="mn-sec" id="props"><h2>ブラシの細かい設定</h2><ul class="mn-list"><li>上の「～」の線は、いまの設定で引いた見本です。設定を変えるとその場で変わります。</li><li><strong>大きさの基準</strong>：サブツールごとに「設定どおり／テクスチャで固定／画面で可変」。テクスチャで固定にすると、寄っても引いてもテクスチャに同じ太さで塗ります。設定どおりは、ファイル → 環境設定 → 描画 の「ブラシの大きさの単位」（画面の px／テクスチャの px）に従います。</li><li><strong>先端</strong>：丸・四角・平筆・鉛筆・チョーク・スプレー・水彩・毛筆・キラキラ・星・ハートと、同梱の先端 31 個。「読み込む」で画像（白地に黒で描いた形）や、ほかのペイントソフトのブラシのファイル（.abr・.gbr・.gih、まとめた .zip）も使えます。</li><li><strong>描き足し</strong>：同じ所を重ねるほど濃くなります（エアブラシ向け）。</li><li><strong>描画モード</strong>：乗算・スクリーン・オーバーレイ・加算（発光）など 28 種類で塗れます。「後ろに描く（まだ塗っていない所だけ）」「明るく」「暗く」もあります。</li><li><strong>補正の種類</strong>：なめらか（遅れて追う）／1€（ゆっくり描くときはぶれを強く抑え、速く描くときは遅れを減らす）／糸引き（ペン先から少し離れてついてくる。手の震えが消えます）。</li><li><strong>入り・抜き</strong>：描き始め・描き終わりを細くします。抜きは、ペンを離したときに線の最後を細く描き直すので、描いている間も遅れません。</li><li><strong>動き</strong>：速さで太さ・太さや濃さのばらつき・寝かせで太さや濃さ・ペンの傾きやねじれで先端を回す（寝かせ・ねじれは、それを送ってくるペンだけ）。</li><li><strong>筆圧の曲線</strong>：太さ・濃さそれぞれに、点を動かして効き方を決めます。</li><li><strong>紙の質感</strong>：塗る濃さに紙やキャンバスの目が入ります（同梱 6 枚・模様 15 種・好きな画像）。面に貼り付くので、視点を動かしてもずれません。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="ツールプロパティ。裏側・隠れた面にも塗る・先端・紙の質感などの設定" loading="lazy"><figcaption>ツールプロパティ</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="先端の一覧" loading="lazy"><figcaption>先端の一覧</figcaption></figure></div><div class="mn-tip">左の「ブラシサイズ」パネルで、よく使うサイズを一発で選べます。サイズは丸と数字の小さなタイルで、パネルを細くすると 1 列まで縮められます。タイルの最後の鉛筆か右クリックで、今のサイズを足す・外す。<kbd>[</kbd> <kbd>]</kbd> でもサイズを変えられます（1〜1000）。</div><div class="mn-tip"><strong>3D の塗り方</strong>：「面に沿う」は斜めの面でも筆跡が伸びにくく、v1.1.0 では未設定のブラシの初期値です。「画面に合わせる」はカメラから投影するので、斜めの面では筆跡が伸びます。サブツールごとに選べます。保存済みの設定は引き継ぎ、UV ビューでの描き方は変わりません。</div><div class="mn-tip">外部ブラシの先端を読み込む：サブツールの「読み込み」からABR・GBR・GIH・PNGなどの画像・SUT・ZIPを選びます。複数選択やパネルへのドロップも使え、登録後はそのまま描けます。全版で使えます。</div><div class="mn-tip">取り込むのは先端画像と取得できる初期サイズ・間隔などです。元のブラシエンジン・筆圧・混色・色を完全再現するものではありません。SUTは内部の読み取れるPNGを使うため、縮小画像や先端以外の素材になる場合があります。読み込み後にツールプロパティで調整してください。</div><div class="mn-tip">ABRは版1・2・6の画像先端、GBRは版1・2に対応。GIHの複数先端は個別に登録します。画像は透明度、または白を抜く形で先端にします。.petabrushの設定読み込み・書き出しはStandard以上です。</div><div class="mn-tip">書き味（全版）：ファイル → 環境設定 → ペン・入力 →「書き味」で、「筆圧だけで入り抜き」（既定）と「長さで入り抜き」（前の既定）を選べます。筆圧だけで入り抜きは、筆圧が弱くなる所がそのまま入り抜きになり、書き始めの玉・書き終わりの糸のような尾が出にくくなります（ペンのときだけ。マウス・タッチはいつも長さで入り抜き）。</div><div class="mn-tip">前の版から使っている方には、起動したときに 1 回だけ「書き味を改善しました」と出ます。「前の書き味に戻す」で長さで入り抜きに戻せます（あとからでも環境設定で変えられます）。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="環境設定のペン・入力の書き味の欄" loading="lazy"><figcaption>書き味</figcaption></figure></section><section class="mn-sec" id="blend"><h2>ぼかし・指先・色混ぜ</h2><ul class="mn-list"><li><strong>ぼかし</strong>：なぞった所をなめらかに。なぞるほど・往復するほど、色が溶け合います。「ぼかしの広さ」で効く範囲が変わります。</li><li><strong>指先</strong>：色を引きずって伸ばします。</li><li><strong>色混ぜ</strong>：なぞった所の色を拾って運び、描画色と混ぜながら塗ります。「絵の具の量」が 0 なら、塗ってある色だけをなじませます。「色延び」を上げると長く伸びます。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="色混ぜで 2 色をなじませたところ" loading="lazy"><figcaption>色混ぜで 2 色をなじませたところ</figcaption></figure><div class="mn-tip">どれも 3D の上で計算するので、UV の継ぎ目で割れません。ぼかし・指先は UV の区画でも使えます（色混ぜは 3D の区画だけ）。</div><div class="mn-tip">ぼかしにも「3D の塗り方」（面に沿う／画面に合わせる）が付きました。初期値は面に沿うで、ぼかしの掛かる範囲がペンと同じ形になります。</div><div class="mn-tip">ぼかしは、重ねるほど溶け合います（全版）：今の絵をぼかし直しながら、動いた距離の分だけ少しずつ寄せるので、強さの低いぼかし（平たいぼかしなど）でも重ねた分だけ効きます。1 本の線で同じ所を何度もこすっても、はっきりした境目や線画まで溶けきらないよう、効く回数に上限があります。UV の区画・2D キャンバスのぼかしも同じ効き方です。ツールプロパティの「重ねるほど溶け合う」を切ると、前の効き方（1 本の線の中では重ねても強くならない）に戻ります（はじめは入）。</div><div class="mn-tip">色混ぜは、筆が拾った色を筆の中でなじませてから運ぶので、境目の色が広くやわらかく混ざります（全版）。保存したサブツールの設定はそのままで、効き方だけが変わります。</div><div class="mn-tip">ぼかし・指先・色混ぜでも、ツールプロパティでブラシの先端を選べます（全版。v1.3.0 から）。</div></section><section class="mn-sec" id="fill"><h2>塗りつぶし・グラデーション・図形</h2><ul class="mn-list"><li><strong>島を塗る</strong>：押した UV の島を丸ごと塗ります。<strong>マテリアル全体</strong>：そのマテリアルを全部塗ります。</li><li><strong>囲まれた所を塗る</strong>：線で囲まれた所を押すと、その島の中で色の近い続いた所を塗ります。参照（すべてのレイヤー／選択中のレイヤー）・許容差・「隙間閉じ」（線の切れ目で止める）・「拡張」（線の下までもぐらせる）。</li><li><strong>ポリゴン塗り</strong>：なぞった面を丸ごと描画色で塗ります。</li><li><strong>グラデーション</strong>：3D ビューで始点から終点へドラッグします。「裏側・隠れた面にも塗る」（はじめから入）なら、押した所と離した所を結ぶ 3D の線に沿って、裏側・内側の面にも付きます（髪の根元から毛先へなど）。<kbd>Shift</kbd> で 45° 刻み。</li><li><strong>図形</strong>：直線・長方形・楕円・多角形（3〜12 角）を、塗りか枠線で。<kbd>Shift</kbd> で正方形・正円、「中心から描く」で始点が中心。曲線は、ドラッグして離した後に動かして曲げ、もう一度押して決めます。曲線（点をつなぐ）は押すごとに点を置き、ダブルクリックか <kbd>Enter</kbd> で決めます（「閉じる」で輪にして塗れます）。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="線で囲まれた所を塗りつぶしたところ" loading="lazy"><figcaption>囲まれた所を塗る</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="脚にグラデーションを付けたところ" loading="lazy"><figcaption>グラデーション</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="ポリゴン塗りで面を塗ったところ" loading="lazy"><figcaption>ポリゴン塗り（メッシュの線を出したところ）</figcaption></figure></div><div class="mn-tip">塗る用のレイヤーを線のレイヤーの下に作ると、線がきれいに残ります。</div><p>複数の色・透明度を使う手順は<a href="#gradient">色と透明度のグラデーション</a>へ。</p><div class="mn-tip">図形の線の太さは、ブラシサイズと連動します。ブラシサイズの一覧・[ ] キー・ポップアップパレットで変えると、図形の線の太さも変わります（図形のサブツールごとに残り、ペンの大きさは変わりません）。</div><div class="mn-tip">投げ縄で塗る（全版）：塗りつぶしのサブツール。3D・UV の区画・2D キャンバスの上をドラッグで囲むと、囲んだ所を描画色で塗ります（今の選択範囲はそのまま。元に戻す 1 回で戻ります）。3D でほかのテクスチャセットの上を囲んだときは、ペンの「触った所へ移る」と同じに、囲んだ所にいちばん多く写っているセットへ移ってから塗ります（「またいで描く」が入っていれば、サブのセットにも塗ります）。</div><div class="mn-tip">Alt＋Backspace で描画色、Ctrl＋Backspace で背景色で塗りつぶします（選択範囲があればその中、無ければ選んでいるレイヤーの全面。マスクに描いているときは色の明るさで）。D キー（色の 2 つの四角の左下の小さなボタンでも）で、描画色を黒・背景色を白に戻します。</div><div class="mn-tip">図形の先端画像（全版。v1.3.0 から）：図形ツールのツールプロパティで先端画像を選ぶと、ステッチなどを図形の輪郭に沿って並べて描きます。鉛筆・チョークなどの先端は、ペンと同じ間隔・ランダム回転で、つながった線になります。太さ・間隔・角度・線の向きに合わせた回転・ランダム回転を調整できます。「丸」を選ぶと、これまでの図形描画に戻ります。</div></section><section class="mn-sec" id="gradient"><h2>色と透明度のグラデーション</h2><p>グラデーションの描画ツールは、Lite から使えます。ツールプロパティの「色」で<strong>「色と透明度の点」</strong>を選ぶと、2 色だけでなく、色と透明度を組み合わせたグラデーションで描けます。「描画色→背景色」「描画色→透明」も選べます。</p><ol class="mn-steps"><li>プリセットから選ぶか、帯の空いている所をクリックして色の点を足します。点は 2〜32 個です。</li><li>点を選び、色・位置・不透明度を変えます。位置はドラッグでも変えられます。選んだ点をもう一度タップするか、ダブルクリックすると色を選べます。</li><li>不要な点は「点を消す」・<kbd>Delete</kbd>・帯から引き離す操作で消します。「描画色を入れる」「均等に並べる」「左右を入れ替え」も使えます。</li><li>240 種類のプリセットはグループと名前で探せます。透明入りのプリセットもあります。一覧はスクロールできます。名前を付けて「今のを保存」で、自分のプリセットを残せます。</li><li>線形か円形を選び、3D ビューまたは UV の上で始点から終点へドラッグして描きます。</li></ol><div class="mn-tip">グラデーションの不透明度を 0 にした部分は、下の色を残します。すでに描いた色を消す場合は、<a href="#transparent">透明色で描く</a>を使います。高さや面の向きに沿う陰影を新しいレイヤーへ焼く場合は、Pro の<a href="/petanuri/manual/bake#gradient">グラデーションのベイク</a>が便利です。</div><div id="spatial-gradient"><h3>3D空間の点からグラデーションを塗る</h3><p>通常のグラデーションでも、3D空間に置いた点から色を広げられます。モデルの外にも点を置けます。フィルターのベイクと違い、選択中の描画レイヤーへ適用します。</p><ol class="mn-steps"><li>塗るレイヤーを選び、グラデーションツールのツールプロパティで「3D空間の点から塗る」を押します。「3D空間のグラデーション」の窓が開きます。</li><li>3Dビューでモデルの面や空いている空間をクリックして、中心の点を置きます。点を動かすには移動ハンドルをドラッグするか、X・Y・Zの座標を入力します。</li><li>半径で色の広がる距離を変え、色と透明度の点やプリセットで色合いを調整します。透明な部分では下の色が残ります。</li><li>プレビューで確認して適用すると、選択中のレイヤーに描かれます。元に戻す1回で適用前へ戻せます。キャンセルするとレイヤーは元の絵に戻ります。</li></ol><div id="gradient-range-guide"><h3>距離と色の範囲ガイド</h3><p>外側の白いつまみをドラッグすると、色の広がる距離を変えられます。色のつまみは各色の位置を動かします。中心の移動ハンドルやXYZ座標はそのまま使え、つまみ・数値・色と透明度の編集は連動します。</p><p>輪は中心からの距離、帯は色と透明度を表します。各色の位置・色・不透明度の表示で確認できます。∅の付いた色は現在の範囲には現れません。ドラッグ中にEscを押すと、そのドラッグを取り消せます。</p><p>「範囲ガイドを表示」で輪・帯・色のつまみを表示／非表示にできます。中心の移動ハンドルは引き続き使えます。Proの「点からの距離」のグラデーションベイクにも同じガイドがあり、「境界の位置」「混ざる幅」を変えると輪や色の位置にも反映されます。</p></div><div class="mn-tip">従来の線形・円形のドラッグ操作と、UV上のグラデーションは引き続き使えます。高さや面の向きに沿う陰影を新しいレイヤーへ焼く場合は、Proのグラデーションのベイクを使います。</div></div></section><section class="mn-sec" id="color"><h2>色を選ぶ・スポイト</h2><ul class="mn-list"><li><strong>色</strong>のパネル：上のボタンで、選び方を 5 種類から切り替えます（リング＋四角・リング＋三角・四角＋色相バー・円盤＋明度バー・スライダー）。</li><li><strong>色の値</strong>のパネル：描画色／背景色・HEX・画面から色を取る・RGB／HSV の数値・不透明度。</li><li><strong>最近使った色</strong>：実際に塗った色・取った色の 12 個。押すと描画色になります。</li><li><kbd>X</kbd> で描画色と背景色を入れ替えます。</li><li><strong>スポイト</strong>：<kbd>Alt</kbd> を押している間は、どのツールからでもスポイトになります。</li><li><strong>画面から色を取る</strong>（<kbd>Shift</kbd>＋<kbd>I</kbd>）：ウィンドウの外も含めて、画面のどこからでも色を取れます。</li><li><strong>カラーセット</strong>：見本をタップで描画色に。「＋今の描画色」で足し、ドラッグで並べ替え。見本の削除は元に戻せます。.gpl のパレットも読み書きできます。</li><li><strong>参考画像</strong>：開く・落とす・貼り付け（<kbd>Ctrl</kbd>＋<kbd>V</kbd>）で表示して、スポイトで色を取れます。上の虫めがねで拡大・縮小、「100%」で等倍、四隅の印で全体に合わせます（ペンだけでも使えます）。</li></ul><div class="mn-tip">画面から色を取る（exe 版。v1.3.0 から）：始めたときの画面を写して、ルーペ（拡大と色の値）を出します。クリック・Enter・Space で取り、矢印キーで 1 画素ずつ（Shift で 10 画素）動かせます。Esc・右クリックでやめます。写した画面から取るので、動画などは止まって見えます。v1.2.1 の exe では、開いた直後に取り消されて使えませんでした。</div><div class="mn-tip">スポイトの拡大鏡（全版。v1.3.0 から）：スポイト（I・Alt を押している間）で、カーソルの所に丸い拡大鏡を出します。真ん中の枠が取る所、外の輪が取る色です。3D ビュー・UV ビューの両方で出ます。スポイトのツールプロパティの「拡大鏡を出す」で切れます（はじめは入）。</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="色と色の値のパネル" loading="lazy"><figcaption>色・色の値</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="カラーセットと最近使った色" loading="lazy"><figcaption>カラーセット｜最近使った色</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="参考画像パネル" loading="lazy"><figcaption>参考画像</figcaption></figure></div><div class="mn-tip">補助スライダーはRGB／HSVのボタンで切り替えます。上のカラーフィールドと色相バーの形は変わりません。HSVでは色相・鮮やかさ・明るさを調整でき、選んだ形式は次回起動にも残ります。</div><div class="mn-tip">Altボタン式のカメラ操作では、3DのAltはカメラに使います。3DのスポイトはIキー、UVのスポイトは従来どおりAltでも使えます。</div><div class="mn-tip">参考画像のスポイトでは、カーソルがスポイトの形になり、明るい画像でも暗い画像でも見えるように白い縁が付きます。先端が色を取る位置です。</div></section><section class="mn-sec" id="transparent"><h2>透明色で描く（同じブラシで消す）</h2><p>色の値のパネルの<strong>市松模様のボタン</strong>か <kbd>C</kbd> で、透明色へ切り替えます。ペン・筆・ブラシ集などのブラシで、先端の形・硬さ・筆圧・流量を活かしたまま、選択中の描画レイヤーの色を消せます。</p><p>もう一度 <kbd>C</kbd> を押すか、普通の描画色を選ぶと戻ります。透明度を保護したレイヤーでは消せないので、消したいときは透明度保護を解除します。</p><div class="mn-tip">透明色はブラシで消すための切り替えです。すべてのツールを消去に変える機能ではありません。</div><div class="mn-tip">透明色（全版）：塗りつぶし（島を塗る・マテリアル全体・囲まれた所）・ポリゴン塗り・図形も、透明色なら塗る所を消します。グラデーションは描画色の側ほど強く消します。透明度保護のレイヤーでは断ります。</div></section><section class="mn-sec" id="mirror"><h2>左右対称で描く</h2><ol class="mn-steps"><li>3D ビューの左上の <strong>X</strong>（左右）を押します（<kbd>M</kbd> キーでも）。</li><li>そのまま描くと、反対側にも同じように入ります。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右対称で片方の腕に描いた星が、反対の腕にも入ったところ" loading="lazy"><figcaption>片方の腕に描くと、反対にも入ります</figcaption></figure><ul class="mn-list"><li>Y（前後）・Z（上下）も、いくつでも同時に使えます（X と Z なら 4 か所に入ります）。</li><li>▼ で折り返しの中心を「モデルの中心」「原点」「指定」から選べます。「指定」は、数（cm）を入れるか「モデルの上を押して決める」で。「頂点に合わせる」なら、押した所にいちばん近い頂点の位置になります。3D の右クリック →「対称で描く」→「ここを対称の中心に」でも決められます。</li><li>「モデルの中心」の左右は、形がいちばん左右対称になる所です（片側だけの飾りや小物があっても、体の真ん中になります）。</li><li>▼ の<strong>「対称の相手を探す範囲」</strong>（0〜3%、既定 1%）：左右で少し形が違う服などで、折り返した所に面が無いとき、この範囲でいちばん近い面を反対側として塗ります。</li><li><strong>ツールプロパティのいちばん上</strong>と、<strong>UV の区画の見出し</strong>にも「対称 X・Y・Z」があります（3D の左上と同じ切り替えです）。対称が効かない道具では、そこに対称の欄が出ず、3D の左上の X・Y・Z に斜線が付きます。色混ぜのように UV の区画でだけ効かない道具では、理由が出ます。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="対称の ▼ の窓。中心と対称の相手を探す範囲" loading="lazy"><figcaption>対称の ▼（中心・相手を探す範囲）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="ツールプロパティの上の対称 X・Y・Z。X が入っている" loading="lazy"><figcaption>ツールプロパティの上の「対称」</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="色混ぜの対称の欄。UV の区画では効かない理由が出ている" loading="lazy"><figcaption>UV の区画で効かない道具は理由が出ます</figcaption></figure></div><p>どの道具で効くか（○ 効く・△ 条件つき・× 効かない・― 関係ない）。押した所・描いた形の鏡の位置にも同じ操作をして、元に戻すは 1 回です。</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">道具</th><th scope="col">3D の区画</th><th scope="col">UV の区画</th></tr></thead><tbody><tr><td>ペン・筆・ブラシ集・デコレーション・模様・ステッチ</td><td>○</td><td>○</td></tr><tr><td>消しゴム（レイヤー貫通も）</td><td>○</td><td>○</td></tr><tr><td>スタンプ</td><td>○</td><td>○（鏡の側は画像も鏡の向き）</td></tr><tr><td>ぼかし・指先</td><td>○</td><td>○</td></tr><tr><td>色混ぜ</td><td>○</td><td>―（UV の区画では使えない道具）</td></tr><tr><td>塗りつぶし（島・マテリアル全体）・囲まれた所を塗る</td><td>○</td><td>○</td></tr><tr><td>ポリゴン塗り</td><td>○</td><td>○</td></tr><tr><td>図形</td><td>○</td><td>○</td></tr><tr><td>グラデーション</td><td>△</td><td>△</td></tr><tr><td>文字・画像を貼る</td><td>○</td><td>○（確定したときに鏡の側にも入る）</td></tr><tr><td>選択ペン・選択消し・面で選択</td><td>○</td><td>○</td></tr><tr><td>選択範囲（長方形・楕円・投げ縄・折れ線・自動選択・島で選択）</td><td>×</td><td>×（範囲を囲んで決める道具）</td></tr><tr><td>変形・移動・変形ツール</td><td>―</td><td>×（今ある絵を動かす操作）</td></tr><tr><td>スポイト・定規を置く</td><td>―</td><td>―（定規に沿って描く線は対称になる）</td></tr><tr><td>隠すペン</td><td>×</td><td>×（表示を隠す道具）</td></tr></tbody></table></div><div class="mn-tip">△ グラデーション：3D の区画では、見えている面は直接の色のまま、鏡の側に入るのは見えていない面です。UV の区画では、透明を含むグラデーションで濃い方が入ります。「裏側・隠れた面にも塗る」が入のときは、どの面も 3D の線で直接付くので対称は使いません。</div><div class="mn-tip"><strong>ポーズを付けているときも</strong>、元のポーズ（休みの姿勢）で対称の所に塗ります。腕を曲げていても、反対の腕の同じ所に入ります（<a href="/petanuri/manual/pose#posemirror">ポーズ</a>）。</div><div class="mn-tip">「隠した側にも対称描画」を使う：対称の▼でチェックを入れ、片側を隠して見えている側を3Dで塗ると、隠した反対側にも同時に描けます。はじめはOFFです。ペン・ブラシ・消しゴム・スタンプに対応し、UV描画と塗りつぶしは対象外です。選択範囲外・ロックしたレイヤー・対象外のセットには描きません。</div><div class="mn-tip">対称の ▼ の「対称線を表示」と「線の濃さ」（10〜100%）で、対称の中心の線を 3D に出します。「反対側にもカーソルを出す」を入れると、塗る位置を折り返した所にも点線の円が出ます（反対側が面の後ろ・中のときは薄く出ます）。どちらもはじめは入です。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="対称線と反対側のカーソルが出ている 3D ビュー" loading="lazy"><figcaption>対称線と反対側のカーソル</figcaption></figure></section><section class="mn-sec" id="popup"><h2>ポップアップパレット（ペンだけで使う）</h2><ul class="mn-list"><li>3D・UV の上で、ペンのサイドボタンを押して<strong>動かさずに離す</strong>と、その場に丸いパレットが出ます（ドラッグすると今までどおり回転）。</li><li>外周：よく使うサブツール（「＋」で今のサブツールを足す、長押し・右クリックで外す。10 個まで）。内側：色相の輪と四角で描画色、上の小さな丸は最近使った色、下の札を上下にドラッグでブラシサイズ。</li><li>パレットの外を押す・<kbd>Esc</kbd> で閉じます。マウスで使うときは、ファイル → 環境設定 → 操作 の「右クリック」をポップアップパレットにします（右クリックのメニューの一番上の「ポップアップパレットを出す」でも出せます）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="ポップアップパレット" loading="lazy"><figcaption>ポップアップパレット</figcaption></figure></section><section class="mn-sec" id="works"><h2>服や小物にも</h2><p>アバターの体だけでなく、衣装や小物も同じ道具で塗れます。下は、ののつよシリーズの衣装と小物をぺたぬり3D で開いた表示例です。</p><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="狛犬セーラーをぺたぬり3D で開いた表示例" loading="lazy"><figcaption>狛犬セーラー</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="風鈴をぺたぬり3D で開いた表示例" loading="lazy"><figcaption>風鈴（獄門しのぶの小物）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="魔法の帽子をぺたぬり3D で開いた表示例" loading="lazy"><figcaption>魔法の帽子（星羽の魔導衣の小物）</figcaption></figure></div><div class="mn-tip">部分（UV の島）だけに線を引きたいときは、選択範囲の「島で選択」で部分を選び、「共通」で帯の形と重ねてから塗ります（<a href="/petanuri/manual/edit#select">選択範囲</a>）。</div></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/start"><small>← 前へ</small>はじめかた</a><a class="next" href="/petanuri/manual/deco"><small>次へ →</small>スタンプ・模様・ステッチ・2D キャンバス</a></nav>
+    <p class="mn-intro">3D モデルの上に、ペンで直接描きます。ツールの選び方、描き味の決め方、色の選び方、塗りつぶし・グラデーション・図形、左右対称で描くまでをまとめています。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>左のツールバーでペン（<kbd>P</kbd>）を押し、サブツールで「Gペン」を選びます（<a href="#basic">くわしく</a>）。</li>
+      <li>色のパネルで色を選んで、3D ビューのモデルの上をなぞります。描き始めた所のテクスチャセットへ自動で移ります（<a href="#basic">くわしく</a>）。</li>
+      <li>太さは <kbd>[</kbd> <kbd>]</kbd> か、左のブラシサイズのパネルで変えます（<a href="#props-size">くわしく</a>）。</li>
+      <li>消すときは消しゴム（<kbd>E</kbd>）か、<kbd>C</kbd> で透明色にして同じブラシで消します（<a href="#transparent">くわしく</a>）。</li>
+      <li>左右に同じように描くときは、3D ビューの左上の「X」を押します（<kbd>M</kbd>）（<a href="#mirror">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#basic">最初の 1 本を描く</a></li><li><a href="#tools">ツールとサブツールを選ぶ</a></li><li><a href="#props">描き味を決める（ツールプロパティ）</a></li><li><a href="#through">裏側・隠れた面にも塗る</a></li><li><a href="#color">色を選ぶ・スポイト</a></li><li><a href="#transparent">透明色で描く（同じブラシで消す）</a></li><li><a href="#mirror">左右対称で描く</a></li><li><a href="#blend">ぼかす・伸ばす・色を混ぜる</a></li><li><a href="#distort">描いた絵をゆがめる（ゆがみ）</a></li><li><a href="#fill">まとめて塗る（塗りつぶし）</a></li><li><a href="#gradient">グラデーションで塗る</a></li><li><a href="#shape">図形を描く</a></li><li><a href="#popup">ペンだけで色とサイズを変える（ポップアップパレット）</a></li><li><a href="#works">服や小物にも塗れます</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="はじめて 描き方 塗り方 線を引く ペイント 描けない 塗れない 色が付かない 回転 視点 ズーム 直線 shift">
+      <h2>最初の 1 本を描く</h2>
+      <p>モデルを開いたら、すぐに描けます。描く前にテクスチャセットを選ばなくても、描き始めた所のテクスチャセット（例：body）へ自動で移ります。</p>
+      <ol class="mn-steps">
+        <li>左のツールバーで「ペン」を押します（<kbd>P</kbd>）。</li>
+        <li>サブツールのパネルで「Gペン」を選びます。</li>
+        <li>色のパネルで描画色を選びます。</li>
+        <li>3D ビューのモデルの上をなぞります。なぞった所に線が入ります。</li>
+        <li>回すときは右ドラッグ（ペンのサイドボタン）か <kbd>Space</kbd>＋ドラッグ、寄るときはホイールです。</li>
+        <li>間違えたら <kbd>Ctrl</kbd>＋<kbd>Z</kbd> で 1 本ずつ戻します。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="左のツールバーとサブツール・ツールプロパティ" loading="lazy"><figcaption>ツールバー・サブツール・ツールプロパティ</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="ぺたぬり3D の画面全体" loading="lazy"><figcaption>画面全体</figcaption></figure></div>
+      <h3 id="basic-more">描くときに使える操作</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>＋クリック：前に描いた線の終わりから、まっすぐな線を引きます。</li>
+        <li><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋左右にドラッグ：ブラシサイズを変えます。</li>
+        <li><kbd>Ctrl</kbd>＋右ドラッグ（ペンのサイドボタン）：左右でブラシサイズ、上下で硬さを変えます。<kbd>Ctrl</kbd>＋ペン先のドラッグは、左右で不透明度、上下で先端の角度です。</li>
+        <li>ペンの消しゴム側でなぞると、消しゴムで消せます。</li>
+        <li>モデルの上で <kbd>Alt</kbd>＋右クリックすると、そこのテクスチャセットを選べます（<a href="/petanuri/manual/sets#choose">テクスチャセットを選ぶ</a>）。</li>
+        <li>UV ビューの上でも、同じ道具で描けます（<a href="/petanuri/manual/uv">UV と表示範囲</a>）。</li>
+      </ul>
+      <p>カメラの操作の方式やほかのキーは、<a href="/petanuri/manual/keys#pen">ペン・マウスの操作</a>へ。</p>
+      <h3 id="basic-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>なぞっても色が付かない</b>：画面の下の帯に理由が出ます。非表示のレイヤー・ロック中のレイヤー・フォルダには描けません。レイヤーのパネルで描けるレイヤーを選んでください（<a href="/petanuri/manual/layers#basic">レイヤー</a>）。</li>
+        <li><b>一部にだけ色が付かない</b>：選択範囲の外と、隠した所には描けません。透明度保護を入れたレイヤーでは、透明な所に描けません。</li>
+        <li><b>ほかのテクスチャセットの上で描けない</b>：「描き始めた所のセットへ自動で移る」が切れています。3D ビューの右クリック →「描き始めた所のセットへ自動で移る」を入れます。選択範囲があるときは、選ばれていないセットには描けません。</li>
+        <li><b>筆圧で太さが変わらない</b>：ツールプロパティの「筆圧でサイズ」が入っているか見てください。入っていても変わらないときは、<a href="/petanuri/manual/keys#pressure">筆圧が効かないとき</a>へ。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tools" data-keywords="ツールバー 道具 ブラシ 鉛筆 エアブラシ 水彩 消す ショートカット キー 持ち替え 一時切り替え ツール一覧 手のひら">
+      <h2>ツールとサブツールを選ぶ</h2>
+      <p>ツールバーでツールを選び、サブツールでその中の描き味を選びます。下ははじめの並びです（ツールバーは上・下・右にも動かせます。<a href="/petanuri/manual/screen#toolbar">ツールバー</a>）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ツール</th><th scope="col">キー</th><th scope="col">すること</th><th scope="col">サブツール</th></tr></thead><tbody>
+        <tr><td>ペン</td><td>P</td><td>くっきりした線を描く</td><td>Gペン・丸ペン・ミリペン・入り抜きペン・べた塗りペン・ドットペン（<a href="#dotpen">ドットペン</a>）</td></tr>
+        <tr><td>筆</td><td>B</td><td>やわらかい筆・質感のある筆で塗る</td><td>柔らか筆・エアブラシ・平塗り・鉛筆・チョーク・スプレー・水彩にじみ・平筆（向きに沿う）・覆い焼き（明るく）・焼き込み（暗く）・影（乗算）・毛筆</td></tr>
+        <tr><td>ブラシ集</td><td>—</td><td>同梱の質感のあるブラシで描く</td><td>鉛筆 2B・木炭（やわらか）・毛筆の線画・厚塗り（キャンバス）・しぶき（大）など 33 種（<a href="#brushset">ブラシ集</a>）</td></tr>
+        <tr><td>消しゴム</td><td>E</td><td>消す</td><td>硬め・柔らかめ・ざっくり・練り消し・レイヤー貫通と、同梱の 2 つ</td></tr>
+        <tr><td>デコレーション</td><td>—</td><td>キラキラなどの飾りを散らす</td><td>キラキラ・星・ハート・花・桜・レースなど 17 種（<a href="/petanuri/manual/deco#deco">デコレーション</a>）</td></tr>
+        <tr><td>スタンプ</td><td>—</td><td>画像を貼る</td><td>スタンプ・スタンプ（散らす）（<a href="/petanuri/manual/deco#stamp">スタンプ</a>）</td></tr>
+        <tr><td>模様</td><td>—</td><td>服の柄を塗る</td><td>ストライプ・水玉・ギンガムチェックなど 15 種（<a href="/petanuri/manual/deco#pattern">模様</a>）</td></tr>
+        <tr><td>ステッチ</td><td>—</td><td>縫い目・しわを描く</td><td>縫い目（点線）・パイピング・鋲（リベット）など 9 種（<a href="/petanuri/manual/deco#bump">ステッチ</a>）</td></tr>
+        <tr><td>色混ぜ</td><td>J</td><td>ぼかす・伸ばす・混ぜる</td><td>ぼかし・指先・色混ぜ（各 3 種と同梱の 3 つ）（<a href="#blend">色混ぜ</a>）</td></tr>
+        <tr><td>ゆがみ</td><td>—</td><td>描いた絵をゆがめる</td><td>押し出す・膨らませる・縮める・渦（右）・渦（左）・元に戻す（<a href="#distort">ゆがみ</a>）</td></tr>
+        <tr><td>塗りつぶし</td><td>G</td><td>島・囲まれた所などをまとめて塗る</td><td>島を塗る・マテリアル全体・囲まれた所を塗る・投げ縄で塗る・ポリゴン塗り（<a href="#fill">塗りつぶし</a>）</td></tr>
+        <tr><td>グラデーション</td><td>—</td><td>色が移り変わるように塗る</td><td>色と透明度・描画色→背景色・描画色→透明・円形（描画色→透明）（<a href="#gradient">グラデーション</a>）</td></tr>
+        <tr><td>図形</td><td>—</td><td>直線・四角・丸・曲線を描く</td><td>直線・長方形・長方形（枠線）・楕円・楕円（枠線）・多角形・多角形（枠線）・曲線・曲線（点をつなぐ）（<a href="#shape">図形</a>）</td></tr>
+        <tr><td>スポイト</td><td>I</td><td>色を取る</td><td>表示色を取得・レイヤーから取得（<a href="#eyedropper">スポイト</a>）</td></tr>
+        <tr><td>移動・変形</td><td>V</td><td>描いた絵を動かす・変形する</td><td>移動・変形（<a href="/petanuri/manual/edit#move">移動・変形ツール</a>）</td></tr>
+        <tr><td>手のひら</td><td>—</td><td>表示を動かす（描かない）</td><td>手のひら</td></tr>
+        <tr><td>選択範囲</td><td>S</td><td>描ける所を囲んで決める</td><td>長方形・楕円・投げ縄・折れ線・自動選択・島で選択・面で選択・選択ペン・選択消し（<a href="/petanuri/manual/edit#select">選択範囲</a>）</td></tr>
+        <tr><td>隠すペン</td><td>—</td><td>なぞった所を隠す</td><td>面で隠す・島で隠す（<a href="/petanuri/manual/uv#hidepen">隠すペン</a>）</td></tr>
+        <tr><td>文字</td><td>T</td><td>文字を入れる</td><td>横書き・縦書き（<a href="/petanuri/manual/edit#text">文字</a>）</td></tr>
+        <tr><td>定規</td><td>—</td><td>定規に沿って描く</td><td>直線定規・曲線定規・同心円定規・放射線定規・平行線定規（<a href="/petanuri/manual/edit#ruler">定規</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>ツールのキーを押して離すと、そのツールに切り替わります。押したまま描くと、その間だけそのツールになり、離すと前のツールに戻ります。</li>
+        <li>長押しとみなす時間（0.15〜2 秒、既定 0.5 秒）は、ファイル → 環境設定 → 操作 → キーボード で変えられます。この一時切り替えも、同じ所で切れます。</li>
+        <li>手のひら：選んでいる間は、左ボタン・ペンのドラッグで表示を動かします。3D ビューでは <kbd>Ctrl</kbd> を押しながらで拡大縮小です。</li>
+        <li>消しゴムの「レイヤー貫通」は、表示中の全部のレイヤーを一度に消します。「下地レイヤーは消さない」で下地を残せます。</li>
+        <li>表示 → ウィンドウ →「ツール一覧」で、ツールを格子に並べたパネルも出せます。下に描画色・背景色の四角も並びます。</li>
+      </ul>
+      <h3 id="tools-subtool">サブツールを増やす・並べ替える・キーを付ける</h3>
+      <p>ツールプロパティの値は、サブツールごとに覚えます。同じペンを太さ違いで持つときは、複製して別の名前を付けます。</p>
+      <ul class="mn-list">
+        <li>サブツールの一覧の下のアイコンで、左から「複製」「名前」「削除」「初期化」「書き出し」「全部書き出し」「読み込み」ができます。右クリックでも同じです。</li>
+        <li>名前はダブルクリックでも変えられます。並べ替えはドラッグです（ペンでもそのまま動かせます）。</li>
+        <li>一覧の上の「小 中 大」で、タイルの大きさを変えます。小さくすると、下のツールプロパティが広く見えます。</li>
+        <li>ツールバーのボタン・サブツールのタイルを右クリック →「キーを割り当てる」で、好きなキーを付けられます。同じキーを何個かのサブツールに付けるときは「一緒に使う（押すたびに入れ替え）」を選ぶと、押すたびに次のサブツールへ移ります。</li>
+        <li><span class="tier std">Standard</span> 「書き出し」「全部書き出し」「読み込み」で、ブラシの設定を .petabrush ファイルで受け渡せます。読み込んだ先端の画像も一緒に入ります。.petabrush はウィンドウに落としても読み込めます。</li>
+      </ul>
+      <div class="mn-tip warn">サブツールの削除は元に戻せません。Standard 以上なら、先に「書き出し」で残しておけます。</div>
+      <h3 id="tools-import">ほかのペイントソフトのブラシを読み込む</h3>
+      <ol class="mn-steps">
+        <li>サブツールの一覧の下の「読み込み」を押します。</li>
+        <li>.abr・.gbr・.gih・.sut・画像（PNG など）・それらをまとめた .zip を選びます。いくつでも選べます。</li>
+        <li>先端を使うサブツールが足されて、選ばれます。そのまま描けます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>サブツールのパネルに落としても読み込めます。画像を 3D・UV ビューに落としたときは、ブラシではなく画像として扱います。</li>
+        <li>読み込むのは、先端の形と名前・初期の大きさ・取れるときは間隔とアンチエイリアスです。元のソフトの描き味・混色・色は引き継がないので、ツールプロパティで整えます。</li>
+        <li>.abr は版 1・2・6 の画像の先端、.gbr は版 1・2 に対応します。.gih は 128 コマまでをランダムに使います。.sut は中の画像から先端を作ります（縮小画像などが入ることがあります）。</li>
+        <li>1 ファイル 64MB まで、.zip は 512 ファイル・展開後 64MB までです。読めない形式は理由が出ます。</li>
+        <li>どの版でも読み込めます。読み込んだ先端とサブツールは、次の起動でも残ります。</li>
+      </ul>
+      <h3 id="brushset">ブラシ集（同梱のブラシ）</h3>
+      <p>ツールバーの「ブラシ集」に、質感のある 33 のブラシが入っています。CC0（パブリックドメイン）で公開されているブラシ集を、このアプリの設定に置き換えた物です。描いた作品にも商用にも自由に使えます。</p>
+      <ul class="mn-list">
+        <li>エアブラシ（大）・基本の塗り広げ・楕円の筆・筆圧で太さの筆・細部の筆・鉛筆 H（下描き）・シャープペンシル・鉛筆 2B・細筆（ざらざら）・毛筆の線画・細筆（硬い縁・岩の質感）・ブロック筆（重ね塗り）・平筆（重ね塗り）・木炭（やわらか）・丸筆（重ね塗り）・重ね塗り（質感）・形取り（質感）・厚い毛筆（質感）・毛筆（傾きで肉付け）・毛筆（塗り込み）・熊手筆（ざらざら）・厚塗り（キャンバス）・水の縁・ばらばらの質感・キャンバスこすり・かすれ引っかき・しぶき（大）・しぶき（軽い）・くねくね・質感の下地・大きいスポンジ・ざらざらノイズ・葉っぱ</li>
+        <li>同じブラシ集のぼかし・指先（熊手ぼかし（指先）・質感ぼかし・平たいぼかし）は「色混ぜ」に、消しゴム（消しゴム（チョークの先）・練り消し（やわらか））は「消しゴム」にあります。</li>
+        <li>先端の「同梱ブラシ」（31 個）と紙の質感の「同梱」（6 枚）は、ほかのサブツールでも使えます。</li>
+        <li>元のブラシとまったく同じ描き味ではありません。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="ブラシ集のサブツール" loading="lazy"><figcaption>ブラシ集</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="ブラシで引いた線の見本" loading="lazy"><figcaption>いろいろなブラシの線</figcaption></figure></div>
+      <h3 id="dotpen">ドット絵を描く（ドットペン）</h3>
+      <p>ペンの「ドットペン」は、テクスチャの画素の格子に合わせて、ブラシサイズの画素数ぶんをくっきり塗ります。1 なら 1 画素、3 なら 3×3 で、色は混ざりません。ドット絵や、32・64px のような低い解像度のテクスチャに向きます。</p>
+      <ul class="mn-list">
+        <li>大きさはテクスチャの px です。筆圧・入り抜きで太さは変わりません。</li>
+        <li>3D ビューでは、ペン先の真ん中に見えている面の島の中だけに塗ります。対称で描くも効きます（反対側の同じ画素にも）。</li>
+        <li>ほかのペンでも、ツールプロパティの「ドット（画素の格子に合わせてくっきり）」を入れると同じ塗り方になります。</li>
+        <li>テクスチャをドットのまま表示すると、3D でも画素が四角く見えます（テクスチャセットの行の ⋯ →「ドットのまま表示（補間しない）」。<a href="/petanuri/manual/sets">テクスチャセット</a>）。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="ドットペンで描き、テクスチャをドットのまま表示した 3D ビュー" loading="lazy"><figcaption>ドットペンとテクスチャをドットのまま表示</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="props" data-keywords="ブラシ設定 ブラシの設定 筆圧 硬さ 濃さ 不透明度 間隔 手ぶれ補正 補正 入り抜き 筆圧カーブ ブレンドモード 合成モード 紙 テクスチャ ざらざら ガタガタ ギザギザ">
+      <h2>描き味を決める（ツールプロパティ）</h2>
+      <p>ツールプロパティのパネルで、選んでいるサブツールの描き味を決めます。いちばん上の「～」の線は、今の設定で引いた見本です。設定を変えると、その場で変わります。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>ブラシサイズ・大きさの基準</td><td>太さ（1〜1000）と、太さを画面とテクスチャのどちらで決めるか（<a href="#props-size">太さを決める</a>）</td></tr>
+        <tr><td>不透明度</td><td>1 回の濃さ</td></tr>
+        <tr><td>裏側・隠れた面にも塗る</td><td>見えない裏側・内側の面にも塗る（<a href="#through">裏側・隠れた面にも塗る</a>）</td></tr>
+        <tr><td>3D の塗り方</td><td>「面に沿う」か「画面に合わせる」（<a href="#props-3d">3D の塗り方</a>）</td></tr>
+        <tr><td>3D でも島の外へパディングまで塗る</td><td>描き終えたとき、線を UV の島の外へ「パディングの幅（px）」だけ広げます。継ぎ目に細い線が出るのを防ぎます。幅は書き出しのにじみと同じ値です（<a href="/petanuri/manual/export#pad">にじみ</a>）</td></tr>
+        <tr><td>先端</td><td>丸・四角・鉛筆など、ペン先の形（<a href="#props-tip">先端を選ぶ</a>）</td></tr>
+        <tr><td>硬さ</td><td>縁のくっきりさ。下げると縁がぼけます</td></tr>
+        <tr><td>間隔</td><td>先端を並べる間。広げると点の並びになります</td></tr>
+        <tr><td>手ぶれ補正</td><td>線のぶれを抑える強さ（<a href="#props-stroke">補正の種類</a>）</td></tr>
+        <tr><td>筆圧でサイズ・最小サイズ</td><td>筆圧で太さを変えるか、いちばん弱いときの太さ</td></tr>
+        <tr><td>筆圧で不透明度</td><td>筆圧で濃さを変えるか</td></tr>
+        <tr><td>アンチエイリアス</td><td>縁をなめらかにします</td></tr>
+        <tr><td>描き足し（重ねるほど濃く）・流量</td><td>同じ所を重ねるほど濃くなります（エアブラシ向け）。流量は 1 回の濃さです</td></tr>
+        <tr><td>ドット（画素の格子に合わせてくっきり）</td><td>画素の格子に合わせて塗ります（<a href="#dotpen">ドットペン</a>）</td></tr>
+        <tr><td>角度・ランダム回転・線の向きに回す</td><td>画像の先端の向き</td></tr>
+        <tr><td>散らし</td><td>先端を線の周りに散らします</td></tr>
+        <tr><td>描画モード</td><td>乗算・スクリーン・オーバーレイ・加算（発光）など、レイヤーの合成モードと同じ物と、「後ろに描く（塗っていない所だけ）」「明るく（覆い焼き）」「暗く（焼き込み）」</td></tr>
+        <tr><td>紙の質感</td><td>塗る濃さに紙の目を入れます（<a href="#paper">紙の質感</a>）</td></tr>
+        <tr><td>補正の種類・動き・筆圧の曲線</td><td>線の追い方・入り抜き・筆圧の効き方（<a href="#props-stroke">線の補正・入り抜き・筆圧</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="ツールプロパティ。裏側・隠れた面にも塗る・先端・紙の質感などの設定" loading="lazy"><figcaption>ツールプロパティ</figcaption></figure>
+      <h3 id="props-size">太さを決める（ブラシサイズ・大きさの基準）</h3>
+      <ul class="mn-list">
+        <li>左の「ブラシサイズ」パネルで、よく使うサイズを押して選べます。押して変わるのはサイズだけです（不透明度・硬さはツールプロパティで）。</li>
+        <li>サイズのタイルの最後の鉛筆か右クリックで、「今のサイズを足す」「選んだものを外す」「初期化」ができます。右クリックの「このサイズを外す」で、押したタイルをすぐ外せます。</li>
+        <li>パネルは幅で折り返すので、細くすると 1 列まで縮められます。</li>
+        <li><kbd>[</kbd> <kbd>]</kbd> でも太さを変えられます。キーの割り当てで「ブラシサイズの一覧で 1 つ大きく」「1 つ小さく」にもキーを付けられます。</li>
+        <li>図形を選んでいるときは図形の線の太さ（上限 500）が、ポリゴン塗り・面で選択では「拾う範囲」（上限 200）が変わります。</li>
+      </ul>
+      <p>「大きさの基準」は、寄ったり引いたりしたときの太さの決め方です。サブツールごとに選びます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">大きさの基準</th><th scope="col">太さ</th></tr></thead><tbody>
+        <tr><td>設定どおり（はじめ）</td><td>ファイル → 環境設定 → 描画 の「ブラシの大きさの単位」に従います。はじめは「画面の px」です</td></tr>
+        <tr><td>テクスチャで固定</td><td>寄っても引いても、テクスチャに同じ太さで塗ります（画面では寄ると太く見えます）</td></tr>
+        <tr><td>画面で可変</td><td>画面の上で同じ太さです。寄るとテクスチャには細く、引くと太く塗ります</td></tr>
+      </tbody></table></div>
+      <h3 id="props-3d">斜めの面で線を伸ばさない（3D の塗り方）</h3>
+      <p>ペン・筆・ブラシ集・消しゴム・ぼかしの「3D の塗り方」で選びます。「面に沿う」（はじめの値）は、斜めの面や縁でも線が伸びにくく、画像の先端も面の向きに合います。「画面に合わせる」はカメラから投影するので、斜めの面では伸びます。</p>
+      <p>UV ビューで描くときは、どちらでも同じです。</p>
+      <h3 id="props-tip">先端を選ぶ</h3>
+      <ul class="mn-list">
+        <li>「先端」を押して選びます。丸・四角・平筆・鉛筆・チョーク・スプレー・水彩・毛筆・キラキラ・星・ハートと、同梱ブラシの先端 31 個があります。</li>
+        <li>先端の一覧の「読み込む」で、画像（白地に黒で描いた形の PNG・JPEG）や、ほかのペイントソフトのブラシ（.abr・.gbr・.gih・.sut）、それらをまとめた .zip も先端にできます。</li>
+        <li>画像の先端では、「角度」「ランダム回転」「線の向きに回す」が出ます。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="先端の一覧" loading="lazy"><figcaption>先端の一覧</figcaption></figure>
+      <h3 id="paper">紙の質感を付ける</h3>
+      <p>ペン・筆・消しゴムなどの「紙の質感」で選ぶと、塗る濃さに紙やキャンバスの目が入ります。テクスチャの上でくり返すので、面に貼り付き、視点を動かしてもずれません。</p>
+      <ul class="mn-list">
+        <li>選べるのは、同梱の 6 枚と、模様の 15 種（<a href="/petanuri/manual/deco#pattern">模様</a>と同じ柄）です。「質感を読み込む」で好きな画像も使えます（明るい所ほど塗れます）。</li>
+        <li>「質感の倍率」「質感の角度」「質感の強さ」「質感の明暗を反転」で整えます。UV の島が逆さ・横向きの所は、「質感の角度」で柄の向きを合わせます。</li>
+        <li>「掛け方」は「掛け算（明るい所ほど塗れる）」か「引き算（暗い所から抜ける）」です。</li>
+      </ul>
+      <h3 id="props-stroke">線の補正・入り抜き・筆圧</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">補正の種類</th><th scope="col">効き方</th></tr></thead><tbody>
+        <tr><td>なめらか（遅れて追う）</td><td>ペン先を少し遅れて追い、線をなめらかにします</td></tr>
+        <tr><td>1€（速さで効き方が変わる）</td><td>ゆっくり描くときはぶれを強く抑え、速く描くときは遅れを減らします。「ゆっくりのときの補正」「速いときにゆるめる」で調整します</td></tr>
+        <tr><td>糸引き（一定の距離でついてくる）</td><td>ペン先から「糸の長さ」だけ離れてついてきます。手の震えが消えます</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>入り・抜き</strong>：描き始め・描き終わりを細くする長さです。抜きは、ペンを離したときに線の最後を細く描き直すので、描いている間は遅れません。</li>
+        <li><strong>動き</strong>：「速さで太さ」「太さのばらつき」「濃さのばらつき」「寝かせで太さ」「寝かせで濃さ」「ペンの傾きの向きで先端を回す」「ペンのねじれで先端を回す」。寝かせ・ねじれは、それを送ってくるペンだけで効きます。</li>
+        <li><strong>筆圧の曲線（太さ・濃さ）</strong>：点を動かして、筆圧の効き方を決めます（横が筆圧、縦が太さ・濃さ）。ダブルクリックでまっすぐに戻ります。</li>
+        <li><strong>書き味</strong>：ファイル → 環境設定 → ペン・入力 →「書き味」の「入り抜きの作り方」で、「筆圧だけで入り抜き（既定）」と「長さで入り抜き」を選べます。筆圧だけで入り抜きは、書き始めの玉・書き終わりの糸のような尾が出にくくなります（ペンのときだけ。マウスはいつも長さで入り抜き）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="環境設定のペン・入力の書き味の欄" loading="lazy"><figcaption>書き味</figcaption></figure>
+      <h3 id="props-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>寄ると線が細くなる・引くと太くなる</b>：「大きさの基準」を「テクスチャで固定」にします。</li>
+        <li><b>斜めの面で線が伸びる</b>：「3D の塗り方」を「面に沿う」にします。</li>
+        <li><b>線がペン先より遅れて出る</b>：「手ぶれ補正」を下げるか、「補正の種類」を「1€（速さで効き方が変わる）」にします。ファイル → 環境設定 → ペン・入力 →「遅れを減らす」の「ペンの線を先に表示（遅れを減らす）」も試してください。</li>
+        <li><b>書き始めに玉ができる・終わりに尾が出る</b>：書き味を「筆圧だけで入り抜き（既定）」にします。</li>
+        <li><b>UV の継ぎ目に細い線が残る</b>：「3D でも島の外へパディングまで塗る」を入れます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="through" data-keywords="裏面 裏側 内側 奥 貫通 回り込み 見えない所 髪の内側 両面表示 片面">
+      <h2>裏側・隠れた面にも塗る</h2>
+      <p>髪の内側・服の重なり・指の間など、回り込んで見えにくい所を一度に塗ります。ツールプロパティの不透明度のすぐ下の「裏側・隠れた面にも塗る」（消しゴムは「裏側・隠れた面も消す」）で入り切りします。</p>
+      <ul class="mn-list">
+        <li>ペン先の下に見えている面を中心に、ブラシの円と同じ見た目の大きさの球の中を、カメラから見えない裏側・内側の面にも塗ります。</li>
+        <li>ペン・筆・ブラシ集・消しゴム・グラデーションは、はじめから入です。デコレーション・模様・ステッチは、はじめは切です。切ると、見えている面だけに塗ります。</li>
+        <li>ぼかし・指先・色混ぜ・スタンプにはありません（画面に写っている色・画像を使うため）。UV ビューでは関係ありません（もともと全部の面に付きます）。</li>
+        <li>硬さで縁がぼけます。画像の先端は、画面で見える形のまま奥へ付きます。</li>
+        <li>選択範囲・隠した所・対称・透明度保護は、いつもどおり効きます。</li>
+      </ul>
+      <div class="mn-tip warn">厚みのある所を塗ると、反対側まで届きます。ブラシを小さくするか、切って見えている面だけに塗ってください。</div>
+      <h3 id="through-doubleside">表示の「片面」「両面」とのちがい</h3>
+      <p>3D ビューの左上の「片面」「両面」は、表示の切り替えです。「両面」にすると裏向きの面も表示され、見えている裏面にも塗れます。カメラから見えない面まで塗るのは「裏側・隠れた面にも塗る」です（<a href="/petanuri/manual/screen#hud">3D ビューの四隅</a>）。</p>
+    </section>
+
+    <section class="mn-sec" id="color" data-keywords="カラー カラーピッカー パレット 前景色 HEX RGB HSV 色相 彩度 明度 色を拾う スポイト 拡大鏡 ルーペ gpl 見本">
+      <h2>色を選ぶ・スポイト</h2>
+      <p>描く色（描画色）は、色のパネル・色の値のパネル・最近使った色・カラーセットで選びます。どれで選んでも、同じ描画色になります。</p>
+      <ul class="mn-list">
+        <li><strong>色</strong>：上のボタンで選び方を切り替えます。「リング＋四角」「リング＋三角」「四角＋色相バー」「円盤＋明度バー」「スライダー（RGB・HSV）」の 5 つです。</li>
+        <li><strong>色の値</strong>：描画色と背景色・HEX・画面から色を取る・RGB／HSV の数値・不透明度。右の ▾ で数値を広げ、▴ で小さくまとめます。</li>
+        <li><strong>最近使った色</strong>：実際に塗った色・取った色の 12 個（新しい順）。押すと描画色になります。</li>
+        <li>色の選び方の下に RGB／HSV のスライダーを出したときは、「RGB」「HSV」のボタンで切り替えます。選んだ形式は次の起動にも残ります。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="色と色の値のパネル" loading="lazy"><figcaption>色・色の値</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="カラーセットと最近使った色" loading="lazy"><figcaption>カラーセット｜最近使った色</figcaption></figure></div>
+      <h3 id="color-swap">描画色と背景色</h3>
+      <ul class="mn-list">
+        <li><kbd>X</kbd>（または ⇄）で、描画色と背景色を入れ替えます。</li>
+        <li><kbd>D</kbd>（2 つの四角の左下の小さなボタンでも）で、描画色を黒・背景色を白に戻します。</li>
+        <li><kbd>Alt</kbd>＋<kbd>Backspace</kbd> で描画色、<kbd>Ctrl</kbd>＋<kbd>Backspace</kbd> で背景色で塗りつぶします。選択範囲があればその中、無ければ選んでいるレイヤーの全面です。</li>
+      </ul>
+      <h3 id="eyedropper">スポイトで色を取る</h3>
+      <ul class="mn-list">
+        <li>スポイト（<kbd>I</kbd>）で押した所の色を取ります。サブツールは「表示色を取得」（見えている色）と「レイヤーから取得」（選んでいるレイヤーの色）です。</li>
+        <li><kbd>Alt</kbd> を押している間は、どのツールからでもスポイトになります。カメラ操作が Alt ボタン式のときは、3D ビューでは <kbd>I</kbd> を使います。</li>
+        <li>3D ビューの右クリック →「ここの色を取る」でも取れます。</li>
+        <li>「平均する範囲」を上げると、周りの色の平均を取ります。</li>
+        <li>スポイトの間は、カーソルの所に丸い拡大鏡が出ます。真ん中の枠が取る所、外の輪が取る色です。ツールプロパティの「拡大鏡を出す」で切れます。</li>
+      </ul>
+      <h3 id="screen-pick">画面のどこからでも色を取る</h3>
+      <ol class="mn-steps">
+        <li>色の値のパネルのスポイトのアイコンを押します（<kbd>Shift</kbd>＋<kbd>I</kbd>）。拡大と色の値のルーペが出ます。</li>
+        <li>取りたい所をクリックします。ウィンドウの外からも取れます。<kbd>Enter</kbd>・<kbd>Space</kbd> でも取れます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>矢印キーで 1 画素ずつ（<kbd>Shift</kbd> で 10 画素）動かせます。<kbd>Esc</kbd>・右クリックでやめます。</li>
+        <li>始めたときの画面を写して取るので、動画などは止まって見えます。</li>
+      </ul>
+      <h3 id="colorset">カラーセット</h3>
+      <ul class="mn-list">
+        <li>見本を押すと描画色になります。「＋今の描画色」で足し、ドラッグで並べ替え、ダブルクリックで見本に名前を付けます。</li>
+        <li>「置き換え」「削除」は選んだ見本に効きます。見本の削除は <kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻せます。「小」「中」「大」で見本の大きさを変えます。</li>
+        <li>「…」で、セットの新規・複製・名前・削除、書き出し（JSON／.gpl のパレット）、読み込みができます。.gpl はウィンドウのどこへ落としても読み込めます。</li>
+        <li><kbd>Space</kbd> を押しながらドラッグで、一覧をスクロールできます（ペン向け）。</li>
+      </ul>
+      <h3 id="color-reference">参考画像から色を取る</h3>
+      <ul class="mn-list">
+        <li>参考画像のパネルで、「開く」・パネルに落とす・パネルを押してから <kbd>Ctrl</kbd>＋<kbd>V</kbd> のどれかで画像を出します。</li>
+        <li>画像をクリック・ドラッグすると、その色を取ります。離すと最近使った色に入ります。</li>
+        <li>上の虫めがねで拡大・縮小、「100%」で等倍、四隅の印で全体に合わせます。ペンだけでも操作できます。</li>
+        <li>出した画像は、次に起動したときも戻ります。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="参考画像パネル" loading="lazy"><figcaption>参考画像</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="transparent" data-keywords="消す 消去 消しゴムの代わり アルファ 透明 抜く 削る 透明色">
+      <h2>透明色で描く（同じブラシで消す）</h2>
+      <p>色の値のパネルの市松模様のボタンか <kbd>C</kbd> で、描画色を透明色にします。ペン・筆・ブラシ集などの先端・硬さ・筆圧のまま、今のレイヤーの色を消せます。</p>
+      <ul class="mn-list">
+        <li>戻すときは、もう一度 <kbd>C</kbd> か市松模様のボタンを押します。描画色の四角を押す・色を選ぶでも戻ります。</li>
+        <li>塗りつぶし（島を塗る・マテリアル全体・囲まれた所を塗る）・ポリゴン塗り・図形も、透明色なら塗る所を消します。</li>
+        <li>グラデーションは、描画色の側ほど強く消します。</li>
+        <li>スタンプは、透明色にしても消しません。</li>
+      </ul>
+      <div class="mn-tip warn">透明度保護を入れたレイヤーでは消せません。消すときは、先に透明度保護を外します。</div>
+    </section>
+
+    <section class="mn-sec" id="mirror" data-keywords="ミラー シンメトリー 反対側 鏡 線対称 両側 同時 左右反転 対称描画 x軸">
+      <h2>左右対称で描く</h2>
+      <p>片側に描くと、反対側にも同じように入ります。顔や服の左右など、同じ形を両側に描くときに使います。</p>
+      <ol class="mn-steps">
+        <li>3D ビューの左上の「X」（左右）を押します（<kbd>M</kbd>）。</li>
+        <li>モデルの片側に描きます。反対側にも同じように入ります。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右対称で片方の腕に描いた星が、反対の腕にも入ったところ" loading="lazy"><figcaption>片方の腕に描くと、反対にも入ります</figcaption></figure>
+      <ul class="mn-list">
+        <li>「Y」（前後）・「Z」（上下）も、いくつでも同時に使えます（X と Z なら 4 か所に入ります）。</li>
+        <li>編集メニューや、3D ビューの右クリック →「対称で描く」でも切り替えられます。</li>
+        <li>ツールプロパティのいちばん上と、UV ビューの見出しにも「対称 X・Y・Z」があります（3D ビューの左上と同じ切り替えです）。</li>
+        <li>元に戻すは、反対側の分も合わせて 1 回です。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="ツールプロパティの上の対称 X・Y・Z。X が入っている" loading="lazy"><figcaption>ツールプロパティの上の「対称」</figcaption></figure>
+      <h3 id="mirror-center">折り返しの中心を決める</h3>
+      <p>X・Y・Z の横の ▼ で、折り返しの中心を「モデルの中心」「原点」「指定」から選びます。衣装だけの FBX などで、中心が体の真ん中からずれるときに使います。</p>
+      <ul class="mn-list">
+        <li><strong>モデルの中心</strong>：左右は、形がいちばん左右対称になる所です。片側だけの飾りや小物があっても、体の真ん中になります。</li>
+        <li><strong>原点</strong>：座標の原点で折り返します。</li>
+        <li><strong>指定</strong>：中心を X・Y・Z の cm で入れるか、「モデルの上を押して決める」で押した所にします。「頂点に合わせる」（はじめは入）なら、押した所にいちばん近い頂点の位置になります。</li>
+        <li>3D ビューの右クリック →「対称で描く」→「ここを対称の中心に」でも決められます。</li>
+        <li>決めると、対称の面が 3D に 2 秒ほど半透明で出ます。指定した位置は作業ファイルに残ります。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="対称の ▼ の窓。中心と対称の相手を探す範囲" loading="lazy"><figcaption>対称の ▼（中心・相手を探す範囲）</figcaption></figure>
+      <h3 id="mirror-options">▼ のそのほかの設定</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">はじめ</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>対称の相手を探す範囲</td><td>1%</td><td>0〜3%。折り返した所に面が無いとき（左右で少し形が違う服など）、この範囲でいちばん近い面を反対側として塗ります。0% は折り返した所だけです</td></tr>
+        <tr><td>隠した側にも対称描画（3D ブラシ）</td><td>切</td><td>表示範囲や隠すペンで片側を隠したまま、見えている側から反対側にも描きます。3D のペン・ブラシ・消しゴム・スタンプで効きます（UV ビュー・塗りつぶし・ぼかし・指先・色混ぜには効きません）</td></tr>
+        <tr><td>対称線を表示・線の濃さ</td><td>入</td><td>対称の中心の線を 3D に出します。濃さは 10〜100%</td></tr>
+        <tr><td>反対側にもカーソルを出す</td><td>入</td><td>塗る位置を折り返した所にも、点線の円を出します。反対側が面の後ろ・中のときは薄く出ます</td></tr>
+      </tbody></table></div>
+      <p>どの設定も、次の起動に残ります。</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="対称線と反対側のカーソルが出ている 3D ビュー" loading="lazy"><figcaption>対称線と反対側のカーソル</figcaption></figure>
+      <h3 id="mirror-tools">どの道具で効くか</h3>
+      <p>○ 効く・△ 条件つき・× 効かない・― 関係ない、です。対称が効かない道具を選ぶと、ツールプロパティの上の対称の欄が薄くなって理由が出ます。3D ビューの左上の X・Y・Z には斜線が付きます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">道具</th><th scope="col">3D ビュー</th><th scope="col">UV ビュー</th></tr></thead><tbody>
+        <tr><td>ペン・筆・ブラシ集・デコレーション・模様・ステッチ</td><td>○</td><td>○</td></tr>
+        <tr><td>消しゴム（レイヤー貫通も）</td><td>○</td><td>○</td></tr>
+        <tr><td>スタンプ</td><td>○</td><td>○（鏡の側は画像も鏡の向き）</td></tr>
+        <tr><td>ぼかし・指先</td><td>○</td><td>○</td></tr>
+        <tr><td>色混ぜ</td><td>○</td><td>―（UV ビューでは使えない道具）</td></tr>
+        <tr><td>ゆがみ</td><td>○</td><td>○</td></tr>
+        <tr><td>塗りつぶし（島・マテリアル全体）・囲まれた所を塗る</td><td>○</td><td>○</td></tr>
+        <tr><td>ポリゴン塗り</td><td>○</td><td>○</td></tr>
+        <tr><td>図形</td><td>○</td><td>○</td></tr>
+        <tr><td>グラデーション</td><td>△</td><td>△</td></tr>
+        <tr><td>文字・画像を貼る</td><td>○</td><td>○（確定したときに鏡の側にも入る）</td></tr>
+        <tr><td>選択ペン・選択消し・面で選択</td><td>○</td><td>○</td></tr>
+        <tr><td>選択範囲（長方形・楕円・投げ縄・折れ線・自動選択・島で選択）</td><td>×</td><td>×（範囲を囲んで決める道具）</td></tr>
+        <tr><td>移動・変形</td><td>―</td><td>×（今ある絵を動かす操作）</td></tr>
+        <tr><td>スポイト・定規を置く</td><td>―</td><td>―（定規に沿って描く線は対称になる）</td></tr>
+        <tr><td>隠すペン</td><td>×</td><td>×（表示を隠す道具）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="色混ぜの対称の欄。UV ビューでは効かない理由が出ている" loading="lazy"><figcaption>UV ビューで効かない道具は理由が出ます</figcaption></figure>
+      <div class="mn-tip">△ グラデーション：3D ビューでは、見えている面は直接の色のまま、鏡の側に入るのは見えていない面です。UV ビューでは、透明を含むグラデーションで濃い方が入ります。「裏側・隠れた面にも塗る」が入のときは、どの面も 3D の線で直接付くので、対称は使いません。</div>
+      <div class="mn-tip"><span class="tier pro">Pro</span> ポーズを付けているときも、元のポーズ（休みの姿勢）で対称の所に塗ります。腕を曲げていても、反対の腕の同じ所に入ります（<a href="/petanuri/manual/pose#posemirror">ポーズ</a>）。</div>
+      <h3 id="mirror-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>反対側の、ずれた所に入る</b>：折り返しの中心がずれています。▼ で中心を「原点」か「指定」にします（<a href="#mirror-center">中心を決める</a>）。</li>
+        <li><b>反対側の一部に入らない</b>：左右で形が少し違う所です。▼ の「対称の相手を探す範囲」を上げます。</li>
+        <li><b>片側を隠したら、反対側に入らない</b>：▼ の「隠した側にも対称描画（3D ブラシ）」を入れます。</li>
+        <li><b>UV ビューで描くと反対側に入らない</b>：反対側が別のテクスチャセット（マテリアル）にあると、UV ビューでは入りません。3D ビューで描いてください。</li>
+        <li><b>X・Y・Z に斜線が付いている</b>：今の道具では対称が効きません（<a href="#mirror-tools">どの道具で効くか</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="ぼかし ぼかす 指先 スマッジ 混色 なじませる にじませる 境目 溶かす 色混ぜ">
+      <h2>ぼかす・伸ばす・色を混ぜる</h2>
+      <p>色混ぜのツール（<kbd>J</kbd>）で、塗った色をなじませます。どれも 3D の上で計算するので、UV の継ぎ目で割れません。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">すること</th><th scope="col">主な設定</th></tr></thead><tbody>
+        <tr><td>ぼかし・ぼかし（強め・広く）・ぼかし（弱め・境目だけ）</td><td>なぞった所をなめらかにします。なぞるほど・往復するほど溶け合います</td><td>「ぼかしの広さ」「重ねるほど溶け合う」「3D の塗り方」</td></tr>
+        <tr><td>指先・指先（強く伸ばす）・指先（やわらか）</td><td>色を引きずって伸ばします</td><td>「強さ」</td></tr>
+        <tr><td>色混ぜ・色混ぜ（なじませ）・色混ぜ（こってり）</td><td>なぞった所の色を拾って運び、描画色と混ぜながら塗ります</td><td>「絵の具の量」「色延び」「すべてのレイヤーから色を拾う」</td></tr>
+        <tr><td>熊手ぼかし（指先）・質感ぼかし・平たいぼかし</td><td>同梱のブラシ集のぼかし・指先です</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>効き方は「強さ」で決めます（ほかの筆の不透明度にあたります）。</li>
+        <li>絵の具の量は描画色の割合です。0 なら、塗ってある色だけをなじませます。色延びを上げると、拾った色を長く運びます。</li>
+        <li>「重ねるほど溶け合う」（はじめは入）：同じ所を何度もなぞるほど溶け合います。1 本の線でこすり続けても、線画まで溶けきらないよう上限があります。切ると、1 本の線の中では重ねても強くなりません。</li>
+        <li>ぼかしの「3D の塗り方」が「面に沿う」なら、ぼかしの掛かる範囲がペンと同じ形になります。</li>
+        <li>ぼかし・指先・色混ぜでも、ツールプロパティで先端を選べます。</li>
+        <li>ぼかし・指先は UV ビューでも使えます。色混ぜは 3D ビューだけです。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="色混ぜで 2 色をなじませたところ" loading="lazy"><figcaption>色混ぜで 2 色をなじませたところ</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="distort" data-keywords="歪み ゆがませる リキファイ 変形 押し出す 膨らませる 縮める 渦 ねじる 線の形を直す">
+      <h2>描いた絵をゆがめる（ゆがみ）</h2>
+      <p>描いてある絵を、なぞった所でゆがめます。線の形を少し直したいときなどに使います。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>押し出す</td><td>動かした向きに絵を引きずります</td></tr>
+        <tr><td>膨らませる・縮める</td><td>なぞった所を外へ広げる・内へ寄せます</td></tr>
+        <tr><td>渦（右）・渦（左）</td><td>右回り（時計回り）・左回りに巻きます</td></tr>
+        <tr><td>元に戻す</td><td>ゆがみを掛け始める前の絵へ、なぞった所を少しずつ戻します</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>「強さ」（筆圧でも変わる）・「硬さ」（縁の効き方）・ブラシサイズは、ほかの筆と同じです。膨らませる・縮める・渦・元に戻すは、なぞった長さの分だけ効きます。</li>
+        <li>1 回なぞるごとに、<kbd>Ctrl</kbd>＋<kbd>Z</kbd> 1 回で戻せます。何度なぞっても、ぼやけていきません。</li>
+        <li>3D ビューでは、UV の切れ目をまたいでつながります。寄って描くほど細かく効きます。</li>
+        <li>UV ビューでは、UV の島の中だけをゆがめます。</li>
+        <li>選択範囲・透明度保護を守ります。対称で描くも効きます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="fill" data-keywords="バケツ 塗りつぶし ベタ塗り 下塗り 一括 閉じた所 囲み 投げ縄 面 ポリゴン 島 隙間 バケツ">
+      <h2>まとめて塗る（塗りつぶし）</h2>
+      <p>塗りつぶし（<kbd>G</kbd>）で、UV の島や線で囲まれた所などを一度に塗ります。塗る用のレイヤーを線のレイヤーの下に作ると、線がきれいに残ります。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">塗る所</th></tr></thead><tbody>
+        <tr><td>島を塗る</td><td>押した UV の島を丸ごと</td></tr>
+        <tr><td>マテリアル全体</td><td>押したマテリアルを全部</td></tr>
+        <tr><td>囲まれた所を塗る</td><td>線で囲まれた所。その島の中の、色の近い続いた所（<a href="#fill-region">くわしく</a>）</td></tr>
+        <tr><td>投げ縄で塗る</td><td>ドラッグで囲んだ所（<a href="#fill-lasso">くわしく</a>）</td></tr>
+        <tr><td>ポリゴン塗り</td><td>なぞった面を丸ごと（<a href="#fill-poly">くわしく</a>）</td></tr>
+      </tbody></table></div>
+      <p>島を塗る・マテリアル全体では、「アンチエイリアス（島の縁）」と不透明度を変えられます。</p>
+      <h3 id="fill-region">線で囲まれた所を塗る</h3>
+      <ol class="mn-steps">
+        <li>線画のレイヤーの下に、塗る用のレイヤーを作って選びます。</li>
+        <li>塗りつぶしのサブツール「囲まれた所を塗る」を選びます。</li>
+        <li>ツールプロパティの「参照」を「すべてのレイヤー」にします（線を別のレイヤーに描いたとき）。</li>
+        <li>塗りたい所を押します。線で止まって、描画色で塗れます。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">設定</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>参照</td><td>「すべてのレイヤー」か「選択中のレイヤー」の絵で、止まる線を見ます</td></tr>
+        <tr><td>許容差</td><td>どこまでの色の違いを同じとみなすか</td></tr>
+        <tr><td>隙間閉じ</td><td>0〜5。線を太らせて、小さな切れ目で止めます（n で 2n px くらいまでの切れ目）</td></tr>
+        <tr><td>拡張・縮小</td><td>−3〜3。＋で線の下までもぐらせ、線との間の白いすき間を消します</td></tr>
+        <tr><td>アンチエイリアス（縁を 1px なだらかに）</td><td>塗った縁をなめらかにします</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="線で囲まれた所を塗りつぶしたところ" loading="lazy"><figcaption>囲まれた所を塗る</figcaption></figure>
+      <h3 id="fill-lasso">投げ縄で囲んで塗る</h3>
+      <p>3D・UV ビュー・2D キャンバスの上をドラッグで囲むと、囲んだ所を描画色で塗ります。今の選択範囲はそのまま残り、元に戻す 1 回で戻ります。</p>
+      <p>3D ビューでほかのテクスチャセットの上を囲んだときは、囲んだ所にいちばん多く写っているセットへ移ってから塗ります。</p>
+      <h3 id="fill-poly">面ごとに塗る（ポリゴン塗り）</h3>
+      <p>なぞった面を丸ごと描画色で塗ります。拾う範囲はペン先の円の大きさです。「四角形ごとに塗る（三角形 2 つを 1 面に）」を切ると、三角形ごとに塗ります。</p>
+      <p>3D ビューの左上の「メッシュの線」を出すと、面の区切りが見えます（<a href="/petanuri/manual/uv#wire">メッシュの線</a>）。</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="ポリゴン塗りで面を塗ったところ" loading="lazy"><figcaption>ポリゴン塗り（メッシュの線を出したところ）</figcaption></figure>
+      <h3 id="fill-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>線の外まで塗れてしまう</b>：線に切れ目があります。「隙間閉じ」を上げます。</li>
+        <li><b>線のきわに白いすき間が残る</b>：「拡張・縮小」を＋にします。</li>
+        <li><b>別のレイヤーの線で止まらない</b>：「参照」を「すべてのレイヤー」にします。</li>
+        <li><b>線が細くなる・欠ける</b>：線と同じレイヤーに塗ると、「拡張・縮小」の分だけ線の上まで塗ります。<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻し、線の下に塗る用のレイヤーを作ってから塗ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gradient" data-keywords="グラデ 階調 フェード 透明グラデーション 毛先 プリセット 色の点 線形 円形 放射">
+      <h2>グラデーションで塗る</h2>
+      <p>色が移り変わるように塗ります。3D ビューの上で、始点から終点へドラッグします。</p>
+      <ol class="mn-steps">
+        <li>ツールバーの「グラデーション」を押します。</li>
+        <li>サブツールを選びます（「色と透明度」「描画色→背景色」「描画色→透明」「円形（描画色→透明）」）。</li>
+        <li>ツールプロパティの「形」で、「線形」か「円形」を選びます。</li>
+        <li>3D ビューで始点から終点へドラッグします。離すと塗れます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>線形は始点から終点の向き、円形は始点が中心でドラッグの長さが半径です。<kbd>Shift</kbd> を押しながらで 45° 刻みです。</li>
+        <li>「裏側・隠れた面にも塗る」（はじめは入）なら、押した所と離した所を結ぶ 3D の線に沿って、裏側・内側の面にも付きます（髪の根元から毛先へなど）。切ると、見えている面だけです。</li>
+        <li>塗るのは、選んでいるテクスチャセットの選択中のレイヤーです。選択範囲の外・隠した所は変わりません。</li>
+        <li>UV ビューの上でも、ドラッグで描けます。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="脚にグラデーションを付けたところ" loading="lazy"><figcaption>グラデーション</figcaption></figure>
+      <h3 id="gradient-stops">色と透明度の点で作る</h3>
+      <p>ツールプロパティの「色」を「色と透明度の点」にすると、いくつもの色と透明度を並べたグラデーションで塗れます。</p>
+      <ol class="mn-steps">
+        <li>帯の空いている所を押して、色の点を足します（2〜32 個）。</li>
+        <li>点を選び、位置と不透明度を変えます。位置は点のドラッグでも変えられます。</li>
+        <li>選んだ点をもう一度押すか、ダブルクリックして色を選びます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>点は「点を消す」・<kbd>Delete</kbd>・帯から下へ引き離す、で消します。「描画色を入れる」「均等に並べる」「左右を入れ替え」も使えます。</li>
+        <li>「プリセット ▾」で、240 種類のプリセットから選べます（透明入りもあります）。グループと名前で探せます。</li>
+        <li>「今のを保存」で、自分のプリセット（マイプリセット）に残せます。</li>
+        <li>不透明度を 0 にした所は、下の色が残ります。描いた色を消すときは<a href="#transparent">透明色</a>を使います。</li>
+      </ul>
+      <div class="mn-tip">高さや面の向きに沿う陰影を、新しいレイヤーに焼くときは、Pro の<a href="/petanuri/manual/bake#gradient">グラデーションのベイク</a>が便利です。</div>
+      <h3 id="spatial-gradient">3D 空間の点から広げる</h3>
+      <p>モデルの面や、モデルの外の空間に中心を置いて、そこからの 3D の距離で色を広げます。視点を動かしても色は変わりません。</p>
+      <ol class="mn-steps">
+        <li>塗るレイヤーを選びます。</li>
+        <li>グラデーションのツールプロパティの「3D 空間の点から塗る」を押します。「3D空間のグラデーション」の窓が開きます。</li>
+        <li>3D ビューで、モデルの面か空いている所を押して中心を置きます。</li>
+        <li>「広がる距離」と、色と透明度の点・プリセットで色の広がりを決めます。選んでいるレイヤーに、その場で写ります。</li>
+        <li>「レイヤーに塗る」を押して決めます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>決めた後は、元に戻す 1 回で戻せます。キャンセルすると、レイヤーは元の絵に戻ります。</li>
+        <li>3D モデル用の操作です。2D キャンバスでは、ふつうのドラッグで描きます。</li>
+      </ul>
+      <h3 id="gradient-range-guide">中心を動かす・広がる距離を決める</h3>
+      <ul class="mn-list">
+        <li>中心は、矢印・平面・中央のつまみをドラッグするか、X・Y・Z の座標を入れて動かします。</li>
+        <li>「3D ビューで中心を指定」で置き直し、「中心をクリア」で消します。点を置いている途中は <kbd>Esc</kbd> でやめます。</li>
+        <li>空間に置くときは、今の中心（まだ無ければモデルの中心）と同じ奥行きに置きます。</li>
+        <li>「広がる距離」は、モデルの高さに対する割合（%）です。</li>
+        <li>選択範囲・隠した所・透明度保護・マスクを守ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="shape" data-keywords="直線 四角 四角形 丸 円 正円 正方形 楕円 多角形 三角 曲線 スプライン ベジェ 枠 輪郭 図形ツール">
+      <h2>図形を描く</h2>
+      <p>図形のツールで、直線・長方形・楕円・多角形・曲線を描画色で描きます。3D ビューでも UV ビューでも描けます。</p>
+      <ol class="mn-steps">
+        <li>ツールバーの「図形」を押し、サブツールで形を選びます。</li>
+        <li>3D ビューで、始点から終点へドラッグします。</li>
+        <li>離すと、描画色で描かれます。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">描き方</th></tr></thead><tbody>
+        <tr><td>直線</td><td>ドラッグした 2 点を結びます。<kbd>Shift</kbd> で 45° 刻み</td></tr>
+        <tr><td>長方形・楕円・多角形</td><td>中を塗ります。<kbd>Shift</kbd> で正方形・正円・ゆがまない正多角形</td></tr>
+        <tr><td>長方形（枠線）・楕円（枠線）・多角形（枠線）</td><td>輪郭だけを描きます</td></tr>
+        <tr><td>曲線</td><td>ドラッグして離した後、マウスを動かすと曲がります。もう一度押すか <kbd>Enter</kbd> で決めます</td></tr>
+        <tr><td>曲線（点をつなぐ）</td><td>押すごとに点を置き（24 まで）、点を通るなめらかな線にします。ダブルクリックか <kbd>Enter</kbd> で決め、<kbd>Backspace</kbd> で 1 つ戻します</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>「中心から描く」を入れると、始点が中心になります。</li>
+        <li>多角形の「角の数」は 3〜12 です。上が角で、偶数なら上下が平らです。</li>
+        <li>曲線（点をつなぐ）で「閉じる（輪にする）」を入れると輪になり、「塗り方」を「塗り」にすると中を塗れます。自由な形の塗りつぶしに使えます。</li>
+        <li>「線の太さ」はブラシサイズとつながっています（上限 500）。ブラシサイズの一覧・<kbd>[</kbd> <kbd>]</kbd>・ポップアップパレットで変えても同じです。図形のサブツールごとに残り、ペンの大きさは変わりません。</li>
+        <li>ツールプロパティで先端の画像を選ぶと、図形の輪郭に沿って並べて描きます（ステッチ・レースなど）。「丸」を選ぶと、ふつうの線に戻ります。</li>
+        <li>見えている面だけに付き、元に戻す 1 回分です。描いている途中は <kbd>Esc</kbd> でやめます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="パレット 円形メニュー サイドボタン 左手デバイス 片手 ペンタブ ペンだけ クイックメニュー">
+      <h2>ペンだけで色とサイズを変える（ポップアップパレット）</h2>
+      <p>ペンのサイドボタンを、ペンを動かさずに押して離すと、その場に丸いパレットが出ます。よく使うサブツール・描画色・ブラシサイズを、ペンを持ったまま選べます。</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="ポップアップパレット" loading="lazy"><figcaption>ポップアップパレット</figcaption></figure>
+      <p>出し方・各部の使い方・マウスで出す設定は、<a href="/petanuri/manual/screen#popup">ポップアップパレット</a>にまとめています。</p>
+    </section>
+
+    <section class="mn-sec" id="works" data-keywords="衣装 小物 アクセサリー 帽子 表示例 作例">
+      <h2>服や小物にも塗れます</h2>
+      <p>アバターの体だけでなく、衣装や小物も同じ道具で塗れます。下は、ののつよシリーズの衣装と小物を、ぺたぬり3D で開いた表示例です。</p>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="狛犬セーラーをぺたぬり3D で開いた表示例" loading="lazy"><figcaption>狛犬セーラー</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="風鈴をぺたぬり3D で開いた表示例" loading="lazy"><figcaption>風鈴（獄門しのぶの小物）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="魔法の帽子をぺたぬり3D で開いた表示例" loading="lazy"><figcaption>魔法の帽子（星羽の魔導衣の小物）</figcaption></figure></div>
+      <div class="mn-tip">1 つの部分（UV の島）の中だけに線を引きたいときは、選択範囲の「島で選択」でその部分を選んでから描きます。選択範囲の外には描かれません（<a href="/petanuri/manual/edit#select">選択範囲</a>）。</div>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/screen"><small>← 前へ</small>画面・パネル・環境設定</a><a class="next" href="/petanuri/manual/deco"><small>次へ →</small>スタンプ・模様・ステッチ</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +667,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

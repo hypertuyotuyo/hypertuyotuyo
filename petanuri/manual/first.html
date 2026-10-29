@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はじめての方へ：サンプルを 10 分ほどで塗ってみる | ぺたぬり3D マニュアル | はいぱーつよつよ</title>
+  <meta name="description" content="サンプルのモデルで、開く・回す・描く・左右対称・保存・書き出しまでを 1 回通して試します。VRChat などで使われる 3D アバターや衣装や小物に直接テクスチャを描くペイントツール「ぺたぬり3D」の使い方です。">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/manual/first">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/first">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/first">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="はじめての方へ：サンプルを 10 分ほどで塗ってみる | ぺたぬり3D マニュアル | はいぱーつよつよ">
+  <meta property="og:description" content="サンプルのモデルで、開く・回す・描く・左右対称・保存・書き出しまでを 1 回通して試します。VRChat などで使われる 3D アバターや衣装や小物に直接テクスチャを描くペイントツール「ぺたぬり3D」の使い方です。">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/manual/first">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "はいぱーつよつよ",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "ぺたぬり3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "マニュアル",
+     "item": "https://hyper-tuyotuyo.com/petanuri/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "はじめての方へ：サンプルを 10 分ほどで塗ってみる",
+     "item": "https://hyper-tuyotuyo.com/petanuri/manual/first"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "はじめての方へ：サンプルを 10 分ほどで塗ってみる | ぺたぬり3D マニュアル",
+   "description": "サンプルのモデルで、開く・回す・描く・左右対称・保存・書き出しまでを 1 回通して試します。VRChat などで使われる 3D アバターや衣装や小物に直接テクスチャを描くペイントツール「ぺたぬり3D」の使い方です。",
+   "url": "https://hyper-tuyotuyo.com/petanuri/manual/first",
+   "inLanguage": "ja",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-30",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "ぺたぬり3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/manual",
+    "name": "ぺたぬり3D マニュアル"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="メニュー">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="はいぱーつよつよ トップへ"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="40" height="28"></a>
+    <a href="/petanuri" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="ぺたぬり3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="言語を選ぶ"><option value="ja" data-url="/petanuri/manual/first" selected>日本語</option><option value="en" data-url="/petanuri/en/manual">English</option><option value="ko" data-url="/petanuri/ko/manual">한국어</option><option value="zh" data-url="/petanuri/zh/manual">简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri">紹介ページ</a></li>
+      <li><a href="/petanuri#gallery">表示例</a></li>
+      <li><a href="/petanuri#features">機能一覧</a></li>
+      <li><a href="/petanuri#price">価格</a></li>
+      <li><a href="/petanuri/manual">マニュアル</a></li>
+      <li><a href="/petanuri/changelog">更新履歴</a></li>
+      <li><a href="/petanuri/requests">要望</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
+    <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first" aria-current="page">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ はじめての方へ：サンプルを 10 分ほどで塗ってみる</p>
+    <h1 class="mn-h1">はじめての方へ：サンプルを 10 分ほどで塗ってみる</h1>
+    <p class="mn-intro">練習用のモデル「しのぶ」で、開く・回す・描く・左右対称・塗りつぶし・保存と書き出しを、通しで 1 回やってみます。どの版（無料の Lite でも）でもできます。細かい設定は飛ばして、まず 1 回終わらせるのがこのページの目標です。</p>
+    <div class="mn-quick"><b>用意するもの</b><ol>
+      <li>ぺたぬり3D を入れた Windows の PC（入れ方は<a href="/petanuri/manual/start#launch">入れる・起動する</a>）。</li>
+      <li>マウス（ホイールと右ボタンがある物）か、ペンタブレット。</li>
+      <li>自分のモデルは要りません。サンプルのモデルはアプリに入っています。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの流れ</b><ul><li><a href="#open">1. しのぶを開く</a></li><li><a href="#look">2. 回して眺める</a></li><li><a href="#layer">3. 描くためのレイヤーを足す</a></li><li><a href="#draw">4. 色を選んで描く</a></li><li><a href="#mirror">5. 左右対称で描く</a></li><li><a href="#fill">6. 塗りつぶしで一気に塗る</a></li><li><a href="#uv">7. UV で確かめる</a></li><li><a href="#save">8. 保存して、テクスチャを書き出す</a></li><li><a href="#next">次に読むページ</a></li></ul></div>
+
+    <section class="mn-sec" id="open" data-keywords="チュートリアル サンプル 練習 起動画面 しのぶ 最初">
+      <h2>1. しのぶを開く</h2>
+      <p>起動画面から、練習用のモデルを開きます。</p>
+      <ol class="mn-steps">
+        <li>ぺたぬり3D を起動します。</li>
+        <li>真ん中の「<strong>サンプルで試す</strong>」を押します。</li>
+        <li>真ん中に「しのぶ」が出たら準備完了です。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="サンプルのモデル「しのぶ」" loading="lazy"><figcaption>サンプルのモデル「しのぶ」</figcaption></figure>
+      <ul class="mn-list">
+        <li>初めての起動では、操作の案内（チュートリアル）が出ます。案内に沿って進めても、「スキップ」か <kbd>Esc</kbd> で閉じてこのページで進めてもかまいません。</li>
+        <li>しのぶは部位ごとに<strong>テクスチャセット</strong>（1 枚のテクスチャのまとまり）が分かれています。描き始めた所のセットへ自動で移るので、今は気にしなくて大丈夫です。</li>
+      </ul>
+      <div class="mn-tip warn">サンプルのモデルは、ぺたぬり3D を試すためだけに使えます。取り出して配ったり、ほかの用途に使ったりしないでください。</div>
+    </section>
+
+    <section class="mn-sec" id="look" data-keywords="視点 カメラ 回転 回す ズーム 拡大 縮小 平行移動 パン 正面">
+      <h2>2. 回して眺める</h2>
+      <p>塗りたい所が見えるように、視点を動かします。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">したいこと</th><th scope="col">マウス</th><th scope="col">ペン</th></tr></thead><tbody>
+        <tr><td>回す</td><td>右ボタンでドラッグ</td><td>サイドボタンを押しながら動かす、か <kbd>Space</kbd>＋ドラッグ</td></tr>
+        <tr><td>平行に動かす</td><td>中ボタン（ホイール）でドラッグ</td><td><kbd>Shift</kbd>＋<kbd>Space</kbd>＋ドラッグ</td></tr>
+        <tr><td>寄る・引く</td><td>ホイールを回す</td><td><kbd>Ctrl</kbd>＋<kbd>Space</kbd>＋ドラッグ</td></tr>
+        <tr><td>正面から見る</td><td colspan="2">テンキーの <kbd>1</kbd></td></tr>
+        <tr><td>全体を見る</td><td colspan="2"><kbd>F</kbd></td></tr>
+      </tbody></table></div>
+      <p>左ボタン（ペン先）は描く操作です。迷ったら <kbd>F</kbd> で全体に戻ります。</p>
+      <div class="mn-tip">別のソフトに慣れた操作にしたいときは、あとで「カメラ操作のテンプレート」で変えられます（<a href="/petanuri/manual/keys#camera">カメラ操作のテンプレート</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="layer" data-keywords="レイヤー 追加 新規 重ねる 分ける">
+      <h2>3. 描くためのレイヤーを足す</h2>
+      <p>元の絵（下地）と分けて描くと、失敗してもそのレイヤーだけ消せます。</p>
+      <ol class="mn-steps">
+        <li>描きたい所（たとえば髪）の上で <kbd>Alt</kbd>＋右クリックします。そこのテクスチャセットが選ばれ、一瞬ふわっと色づきます。</li>
+        <li><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>N</kbd> を押します。レイヤーのパネルの下のいちばん左のボタンでも同じです。</li>
+        <li>レイヤーのパネルに新しいレイヤーが足され、選ばれた状態になります。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="レイヤーのパネル。レイヤーが何枚か重なっている" loading="lazy"><figcaption>レイヤーのパネル</figcaption></figure>
+      <div class="mn-tip">Lite では、テクスチャセットごとに下地を含めて 4 枚までです。この練習なら足ります。</div>
+    </section>
+
+    <section class="mn-sec" id="draw" data-keywords="ペン 描く 色 色を選ぶ 太さ ブラシサイズ 元に戻す やり直し 取り消し">
+      <h2>4. 色を選んで描く</h2>
+      <p>ペンで、しのぶの髪や耳をなぞってみます。</p>
+      <ol class="mn-steps">
+        <li><kbd>P</kbd> を押して、ペンにします。</li>
+        <li>右の「色」のパネルで、好きな色を押します。</li>
+        <li>しのぶの髪の上を、左ボタン（ペン先）でなぞります。</li>
+        <li>失敗したら <kbd>Ctrl</kbd>＋<kbd>Z</kbd> で 1 手戻します。やり直しは <kbd>Ctrl</kbd>＋<kbd>Y</kbd> です。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="色と色の値のパネル" loading="lazy"><figcaption>色のパネル</figcaption></figure>
+      <ul class="mn-list">
+        <li>線の太さは <kbd>[</kbd> で細く、<kbd>]</kbd> で太くなります。</li>
+        <li>しのぶの上で <kbd>Alt</kbd>＋クリックすると、そこの色を取れます（スポイト）。</li>
+        <li>消すときは <kbd>E</kbd> で消しゴムにします。</li>
+      </ul>
+      <h3 id="draw-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>ペンで描いても太さが変わらない</b>：筆圧が届いていません（<a href="/petanuri/manual/keys#pressure">筆圧が効かないとき</a>）。</li>
+        <li><b>描けない・線が出ない</b>：選んでいるレイヤーが非表示かロックになっていないか、レイヤーのパネルで見てください。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mirror" data-keywords="左右対称 ミラー シンメトリー 反対側 両側 鏡">
+      <h2>5. 左右対称で描く</h2>
+      <p>顔の片側に描くと、反対側にも同じ線が入ります。</p>
+      <ol class="mn-steps">
+        <li><kbd>M</kbd> を押します。3D ビューの左上の <strong>X</strong> に色が付きます。</li>
+        <li>しのぶの顔の片側（ほほなど）に描きます。</li>
+        <li>反対側にも同じ線が入ります。</li>
+        <li>終わったら、もう一度 <kbd>M</kbd> で切ります。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右対称で片方の腕に描いた星が、反対の腕にも入ったところ" loading="lazy"><figcaption>片方に描くと、反対側にも入る</figcaption></figure>
+      <p>くわしい設定（前後・上下の対称、中心の決め方）は<a href="/petanuri/manual/draw#mirror">対称で描く</a>にあります。</p>
+    </section>
+
+    <section class="mn-sec" id="fill" data-keywords="バケツ 塗りつぶし ベタ塗り 一気に 部位 島">
+      <h2>6. 塗りつぶしで一気に塗る</h2>
+      <p>服の 1 つの部分を、まとめて 1 色にします。</p>
+      <ol class="mn-steps">
+        <li><kbd>G</kbd> を押して、塗りつぶしにします。</li>
+        <li>サブツールのパネルで「島を塗る」を選びます。</li>
+        <li>塗りたい服の上をクリックします。クリックした所のひとつながりの部分（UV の<strong>島</strong>）が、描画色で塗られます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>思ったより広く塗れたら <kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻します。線で囲んだ中だけを塗るときは「囲まれた所を塗る」を使います（<a href="/petanuri/manual/draw#fill">塗りつぶし</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uv" data-keywords="UV 展開図 テクスチャ どこに入った 並べる">
+      <h2>7. UV で確かめる</h2>
+      <p>描いた線が、テクスチャの画像のどこに入ったかを見ます。</p>
+      <ol class="mn-steps">
+        <li><kbd>U</kbd> を押します。3D ビューの隣に UV（テクスチャの展開図）が出ます。</li>
+        <li>さっき描いた線が、UV の上のどこにあるかを見ます。UV の上にも、そのまま描けます。</li>
+        <li>もう一度 <kbd>U</kbd> で閉じます。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D ビューのとなりに UV の区画を並べた画面" loading="lazy"><figcaption>3D ビューと UV を並べたところ</figcaption></figure>
+      <div class="mn-tip">首輪の内側のように、重なっていて塗れない所は、ツールバーの「隠すペン」（目に斜線のアイコン）でなぞると手前の面が隠れて塗れます。<kbd>Alt</kbd>＋<kbd>H</kbd> で全部表示に戻ります（<a href="/petanuri/manual/uv#hidepen">隠すペン</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="save" data-keywords="保存 セーブ 書き出し エクスポート PNG 画像 テクスチャ 完成 Unity で使う">
+      <h2>8. 保存して、テクスチャを書き出す</h2>
+      <p>ぺたぬり3D には、作業を残す「保存」と、テクスチャの画像を作る「書き出し」の 2 つがあります。</p>
+      <ol class="mn-steps">
+        <li><kbd>Ctrl</kbd>＋<kbd>S</kbd> を押して、作業ファイル（.petanuri）に保存します。レイヤーを分けたまま残るので、あとで続きを直せます。</li>
+        <li>ファイル → 書き出し → PNG で書き出す（全セット） を選びます。</li>
+        <li>出てきた窓で、そのまま「書き出す」を押して、保存先を選びます。</li>
+        <li>テクスチャセットごとに、PNG の画像ができます（ファイル名はマテリアルの名前）。書き出したフォルダが開きます。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="書き出しの窓。にじみと書き出し先を選ぶ" loading="lazy"><figcaption>書き出しの窓</figcaption></figure>
+      <p>アバターやゲームエンジン（Unity など）で使うのは、この PNG です。作業ファイルはぺたぬり3D で続きを描くための物です。</p>
+    </section>
+
+    <section class="mn-sec" id="next" data-keywords="次 自分のモデル 続き 覚える 読む順番">
+      <h2>次に読むページ</h2>
+      <p>おつかれさまでした。これで、ぺたぬり3D のひと通りの流れができました。</p>
+      <ul class="mn-list">
+        <li><b>自分のモデルを塗る</b>：<a href="/petanuri/manual/start#new">3D モデルを開く（新規作成）</a></li>
+        <li><b>やりたいことが決まっている</b>：<a href="/petanuri/manual/howto">やりたいことから探す</a>か、上の検索</li>
+        <li><b>機能をひと通り覚えたい</b>：<a href="/petanuri/manual/screen">画面・パネル・環境設定</a>から順に読む</li>
+        <li><b>うまくいかない</b>：<a href="/petanuri/manual/trouble">困ったとき</a></li>
+      </ul>
+    </section>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual"><small>← 前へ</small>マニュアルのトップ</a><a class="next" href="/petanuri/manual/howto"><small>次へ →</small>やりたいことから探す</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="はいぱーつよつよ" width="49" height="34"></a>
+    <nav aria-label="フッター">
+      <a href="/">はいぱーつよつよ トップ</a>
+      <a href="/petanuri">ぺたぬり3D</a>
+      <a href="/petanuri/manual">マニュアル</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+      <a href="/petanuri/changelog">更新履歴</a>
+      <a href="/petanuri/requests">要望と対応状況</a>
+      <a href="/petanuri/terms">ツール利用規約</a>
+    </nav>
+    <p>© はいぱーつよつよ All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
+</body>
+</html>

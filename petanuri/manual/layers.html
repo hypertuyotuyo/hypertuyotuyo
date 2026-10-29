@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/layers",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,543 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers" aria-current="page">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers" aria-current="page">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ レイヤー</p>
     <h1 class="mn-h1">レイヤー</h1>
-    <p class="mn-intro">レイヤーは、テクスチャセットごとに重なっています。2D のイラストと同じ感覚で重ねて塗れます。</p><p class="mn-proof">Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#basic">レイヤーの基本</a></li><li><a href="#folder">フォルダ・レイヤーマスク</a></li><li><a href="#props">レイヤープロパティ</a></li><li><a href="#stroke">境界線（レイヤーの縁取り）</a></li><li><a href="#adjust">調整レイヤー・フィルター</a></li><li><a href="#alpha">輝度を透明度に変換</a></li><li><a href="#gradmap">グラデーションマップ</a></li><li><a href="#autofill">自動塗り（線画から下塗り）</a></li><li><a href="#history">作業の履歴と元に戻す</a></li><li><a href="#sleep">レイヤーを休ませる（メモリの節約）</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>レイヤーの基本</h2><ul class="mn-list"><li>パネルの一番上の見出しの行で、テクスチャセットを切り替えられます（2 つ以上のとき。右に解像度）。</li><li>その下に、合成モードと不透明度、クリッピング・透明度保護・ロックのアイコン（押すと入り切り。色が付いていれば入）。</li><li>下のアイコンのボタン：追加・フォルダ・調整・複製・削除・結合・マスク・1 つ上へ・1 つ下へ・そのほか（ペン先を置くと名前と今のキーが出ます）。</li><li>一番下の「下地」は、新規作成で決めた色・画像が入るレイヤーです。下地にもそのまま描けます。</li><li>合成モードは 28 種類（通常・乗算・スクリーン・オーバーレイ・加算・加算（発光）・覆い焼き（発光）・ソフトライト・ハードライト・色相・カラー・輝度 など）。</li><li><strong>複数選択</strong>：名前を <kbd>Ctrl</kbd>＋クリックで 1 枚ずつ、<kbd>Shift</kbd>＋クリックで間をまとめて。表示・合成モード・不透明度・クリッピング・保護・ロック・削除・複製・フォルダに入れる・結合がまとめて効きます（元に戻す 1 回）。</li><li>キーだけで選ぶ：<kbd>Alt</kbd>＋<kbd>]</kbd>（上のレイヤー）・<kbd>Alt</kbd>＋<kbd>[</kbd>（下のレイヤー）。3D の右クリック →「ここに描いたレイヤーを選ぶ」で、押した所に描いてあって見えているレイヤーを選べます（マスクで隠した所・不透明度 0% など、見えていない物は選びません）。</li><li>ペンでレイヤーの行をそのままドラッグして並べ替えられます。一覧のスクロールは <kbd>Space</kbd>＋ドラッグです。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="レイヤーパネル。ほっぺ・腕の星・下地" loading="lazy"><figcaption>ほっぺと腕の星をそれぞれのレイヤーに</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="レイヤーの右クリックメニュー" loading="lazy"><figcaption>右クリックのメニュー</figcaption></figure></div><div class="mn-tip warn">Lite はテクスチャセットごとに<strong>下地を含めてレイヤー 4 枚まで</strong>です（描くレイヤーと調整レイヤーを数えます。フォルダ・マスクは数えません）。4 枚になると、パネルの下に「レイヤー 4 / 4 枚（下地を含む・Lite）」と出て、「追加」「複製」に鍵の印が付きます。Standard からは何枚でも使えます。</div><div class="mn-tip">レイヤーを多く使うときは、パネルの境界を下へドラッグして一覧を広げられます。ドッキング・タブ・独立ウィンドウでも高さに合わせて一覧が伸び、上の設定と下の操作ボタンは残ります。</div><div class="mn-tip">色タグ（全版）：レイヤーの行の左の色の箱、または右クリック →「色タグ」で、なし・赤・橙・黄・緑・水・青・紫・灰から選びます。複数選んでいればまとめて付き、元に戻すは 1 回です。色の付いた行は左の帯と行の色で分かり、フォルダの色は中のレイヤーへ線で続きます。</div><div class="mn-tip">色タグのあるレイヤーがあると、一覧の上に「色で表示」と使っている色の丸が出ます。丸を押すと、その色のレイヤーだけを一覧に出します。色タグは作業ファイルに保存され、PSD の書き出し・読み込み（Standard・Pro）では Photoshop のレイヤーカラーと行き来します（水は青になります）。</div><div class="mn-tip">…（そのほか）の「サムネイルの大きさ」で、小（24px）・中（40px）・大（64px）・特大（96px）を選べます。同じ所の「ボタンの列を上に置く」で、下のボタンの列を一覧の上に動かせます。どちらも次の起動に残ります。</div><div class="mn-tip">複数選んだレイヤーのどれかをドラッグすると、選んだ全部が並びのまま動きます（フォルダの行の真ん中で離すとフォルダの中へ）。名前を変えている間は、マウスのドラッグで文字を選べます。</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="色タグを付けたレイヤーのパネル" loading="lazy"><figcaption>色タグと「色で表示」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="色タグを選ぶ小窓" loading="lazy"><figcaption>色タグを選ぶ</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="サムネイルを大きくしたレイヤーのパネル" loading="lazy"><figcaption>サムネイルの大きさ「大」</figcaption></figure></div><div class="mn-tip">左右にミラーコピー（全版）：レイヤー →「左右にミラーコピー」（レイヤーの行の右クリックにも）で、片側に描いた色を 3D モデルの反対側へ写します。「左半身 → 右半身」「右半身 → 左半身」（モデルから見た左右）。UV が左右で違っても相手の所に入り、選択範囲があればその中を写し先にします。「新しいレイヤーに写す」を入れると、写した所だけが新しいレイヤーに入ります。Ctrl+Z 1 回で戻ります。</div><div class="mn-tip">選択範囲の絵を反対側へ写す（選択範囲を写し元にする）・マスクを左右にミラーコピーもできます（v1.3.0 から）。</div><div class="mn-tip">描画色に変える（全版。v1.3.0 から）：編集 →「描画色に変える（透明度はそのまま）」（レイヤーの右クリックにも）で、選んでいるレイヤーの描いてある所の色だけを、今の描画色にまとめて変えます。濃さ（透明度）と透明な所はそのままなので、線画の色替えに使えます。選択範囲があればその中だけです。ノーマルマップ画像の層には使えません。</div><div class="mn-tip">ノーマルマップ画像の結合（Pro。v1.3.0 から）：ノーマルマップのフォルダの一番下から続く表示レイヤーを結合できます。フォルダの不透明度は 100%、フォルダのマスクは無効にしてください。結合できない組み合わせは、変える前に案内します。</div><div class="mn-tip">加算（発光）・覆い焼き（発光）（全版）：合成モードの「明るくする」の中にあります。レイヤー・フォルダ・調整レイヤーの合成モード、境界線の合成、ブラシの描画モードで選べます。ふつうの加算・覆い焼きカラーと違い、不透明度を下げた所ややわらかい筆の縁でも、加算（発光）は光が飽和するまで強く乗り、覆い焼き（発光）は明るい所ほど強く光ります（暗い所はあまり明るくしません）。下が透明な所でも、レイヤーの色が自分を照らすように明るく光ります。</div><div class="mn-tip">PSD（Standard・Pro）には、近い合成モード（覆い焼きリニア・覆い焼きカラー）で書き、レイヤー名の後ろに「[glow]」を付けます。ぺたぬり3D で読み込むと発光の版に戻ります（ほかのソフトでは、半透明の所・下が透明な所の見え方が変わります）。</div><div class="mn-tip">選んだレイヤーが見えるまで一覧を動かす（全版）：キー（Alt＋]・Alt＋[）、3D の右クリックの「ここに描いたレイヤーを選ぶ」、移動ツールの「自動でレイヤーを選ぶ」など、一覧の外でレイヤーを選んだときに、その行が見えていなければ見える所まで一覧をスクロールします（閉じたフォルダの中ならフォルダを開きます）。レイヤーパネルの …（そのほか）か、一覧の右クリックの「キーなどで選んだレイヤーが見えるまで一覧を動かす」で切れます（はじめは入）。</div></section><section class="mn-sec" id="folder"><h2>フォルダ・レイヤーマスク</h2><ul class="mn-list"><li><strong>フォルダ</strong>：「フォルダ」ボタン（<kbd>Ctrl</kbd>＋<kbd>G</kbd>）で作ります。<kbd>Shift</kbd>＋ボタン（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd>）で選択中のレイヤーをフォルダに入れます。行をフォルダの真ん中へドラッグすると中へ入ります。合成モード「通過」（既定）のほかのモードでは、中身を 1 枚にしてから重ねます。</li><li><strong>レイヤーマスク</strong>：「マスク」ボタン → 全部見せる／全部隠すマスクを追加（選択範囲からも）。マスクのサムネイルを押すとマスクに描けます（描く＝見せる・消しゴム＝隠す）。</li><li><kbd>Shift</kbd>＋マスクのサムネイルで有効／無効。「マスクの範囲を表示」・反転・適用（画素に焼く）・削除もできます。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="フォルダ・マスク・調整レイヤーの入ったレイヤーパネル" loading="lazy"><figcaption>フォルダ・マスク・調整レイヤー</figcaption></figure><div class="mn-tip">マスク（全版）：「マスク」ボタン・右クリックの「マスク」→「マスクをコピー」、ほかのレイヤーで「マスクを貼り付け」（別のテクスチャセットにも）。マスクのサムネイルをほかのレイヤーの行へドラッグすると移し、Alt＋ドラッグで写します。</div><div class="mn-tip">マスクに描くと、描画色の明るさがそのまま見せる量になります（白＝見せる・黒＝隠す・灰色＝半分）。前の描き方は「マスク」→「マスクに描画色の明るさで描く」を切ります。「マスクを白黒で表示」（Alt＋マスクのサムネイルでも）でマスクだけを白黒で見られ、「このレイヤーの明るさをマスクとしてコピー」で描いた白黒の絵をマスクにできます。</div></section><section class="mn-sec" id="props"><h2>レイヤープロパティ</h2><p>選んでいるレイヤーの設定をまとめたパネルです（はじめの配置では、レイヤーのパネルのすぐ上）。</p><ul class="mn-list"><li>見出しに、レイヤーの種類（レイヤー・フォルダ・文字レイヤー・調整レイヤー・塗る先のフォルダなど）と名前が出ます。</li><li>調整レイヤー：値の欄。スライダーを動かしている間は絵だけ変わり、離すと 1 手で元に戻せます。</li><li>画素のレイヤー・フォルダ・文字レイヤー：「境界線」の表示・「付ける」「設定」。</li><li>文字レイヤーは「文字を打ち直す」、マスクのあるレイヤーはマスクの状態。</li><li>合成モード・不透明度・クリッピング・透明度保護・ロックは、レイヤーのパネルで変えます。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="レイヤープロパティのパネル" loading="lazy"><figcaption>レイヤープロパティ</figcaption></figure><div class="mn-tip">繰り返しの柄（全版）：画素のレイヤーのレイヤープロパティの「繰り返しの柄」で「柄を選んで敷く…」から画像ファイル・参考画像・模様（描画色で）を選ぶと、上下左右に繰り返す柄としてレイヤーいっぱいに敷けます（今の画素は置き換わり、元に戻せます）。UV の継ぎ目に合わせることもできます。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="繰り返しの柄を敷いたレイヤーとレイヤープロパティ" loading="lazy"><figcaption>繰り返しの柄</figcaption></figure><div class="mn-tip">繰り返しの柄：一番上の行に今の柄の絵と名前が出て、押すと柄の一覧が開きます。すぐ下の「描画色で塗り直す」で柄の形はそのままで今の描画色にし、「画像の色に戻す」で元の色に戻します。</div></section><section class="mn-sec" id="stroke"><h2>境界線（レイヤーの縁取り） <span class="tier std">Standard</span></h2><p>レイヤーの絵そのものは変えずに、重ねるときに縁取りを付けます。後から太さや色を変えたり、切ったりできます。</p><ul class="mn-list"><li>開き方：レイヤーの右クリック →「境界線」・メニュー「レイヤー」→「境界線」・レイヤープロパティの「付ける」「設定」。境界線の付いたレイヤーの行には「fx」の印が出て、押すと同じ窓が開きます。</li><li>設定：サイズ（太さ。テクスチャの px）・位置（外側・内側・中央）・合成・不透明度・色。値を動かすとすぐ見た目が変わり、OK（<kbd>Enter</kbd>）で確定、キャンセル（<kbd>Esc</kbd>）で元どおり。</li><li>マスクを掛けた後の形に付きます。クリッピングしたレイヤーは土台の塗られている所に収まります。フォルダ・文字レイヤーにも付けられます。</li><li>右クリック →「境界線」：表示の切り替え・コピー・貼り付け（複数選択なら全部に）・消去・画素に焼く。</li><li>保存：作業ファイルには値ごと入ります。PNG・マテリアルの書き出しは境界線込みの絵、PSD は境界線を画素に焼いたレイヤーです。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="境界線の窓と、境界線の付いた絵" loading="lazy"><figcaption>境界線</figcaption></figure><div class="mn-tip">境界線は UV の上で計算するので、島の縁からはみ出した縁取りは、3D では島の縁で切れて見えることがあります。</div><div class="mn-tip warn">境界線を付ける・変えるのは Standard からです。Lite でも、開いた作業ファイルの境界線は見え方そのままで、表示・隠す・コピー・消去・画素に焼くができます。</div></section><section class="mn-sec" id="adjust"><h2>調整レイヤー・フィルター <span class="tier std">Standard</span></h2><ul class="mn-list"><li><strong>調整レイヤー</strong>：「調整」ボタン → 色相・彩度・明度／明るさ・コントラスト／レベル補正／階調の反転／グレースケール／ポスタリゼーション／しきい値／グラデーションマップ。下の絵を書き換えずに補正が掛かります。値はレイヤープロパティのパネルで変えます。マスクで効く範囲を限ったり、クリッピングですぐ下のレイヤーだけに効かせたりできます。</li><li><strong>フィルター</strong>（メニュー「フィルター」）：色相・彩度・明度／明るさ・コントラスト／レベル補正／ポスタリゼーション／しきい値／グラデーションマップ／ぼかし（ガウス）／シャープ（アンシャープマスク）／階調の反転／グレースケール。選択中のレイヤーに掛かります（「表示中の全テクスチャセットに掛ける」も）。</li><li>フィルターの窓では、値を動かすとモデルの見た目がその場で変わり、OK（<kbd>Enter</kbd>）で確定、キャンセル（<kbd>Esc</kbd>）で元どおり。窓を開いたままでも視点は動かせます。</li><li>ぼかし・シャープは UV の島の中だけで計算するので、島の縁が暗くなりません。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="フィルター「色相・彩度・明度」でマントの色を変えているところ" loading="lazy"><figcaption>色相・彩度・明度のフィルター</figcaption></figure><div class="mn-tip">フィルター（Standard・Pro）：メニュー「フィルター」を 色調補正・階調・ぼかし・シャープ・ノイズ・効果 の小メニューにまとめ、トーンカーブ・カラーバランス・色温度・自然な彩度・特定色の置き換え・露光量・移動ぼかし・放射状ぼかし・ハイパス・ノイズを加える・ノイズを減らす（メディアン）・モザイク・線画抽出・エンボスを足しました。</div><div class="mn-tip">調整レイヤーにも トーンカーブ・カラーバランス・色温度・自然な彩度・特定色の置き換え・露光量・ノイズを加える を足しました。PSD では トーンカーブ・カラーバランス・自然な彩度・露光量 を調整レイヤーのまま書き出し・読み込みします。調整レイヤーのマスクは選択範囲から作れます（今のマスクを置き換え）。</div><div class="mn-tip">透明の上に描いた線とフィルター（Standard・Pro）：モザイクはアルファ（透明度）もます目ごとに平均し、シャープ（アンシャープマスク）はアルファもくっきりさせます。ノイズを減らす（メディアン）は透明の上の点も消し、線画抽出・エンボス・ハイパスは透明な所を白い紙として明るさを見ます（線画抽出の線とハイパスの結果は、透明だった所にも出ます）。ハイパスを掛けた所は、平らな所や透明の広い所が 50% の灰になるので、合成モードをオーバーレイ・ソフトライトにして重ねて使えます。透明度保護のレイヤーでは、アルファは元のままです。</div><div class="mn-tip">選択範囲があるときは、フィルターの窓に「選択範囲の中だけに掛けます」と出ます。選択範囲の無いテクスチャセットがあるときは、「選択範囲が無いので変わりません」とセットの名前を出します。</div></section><section class="mn-sec" id="alpha"><h2>輝度を透明度に変換</h2><p><strong>フィルター → 輝度を透明度に変換</strong>は、Lite から使えます。白い背景を透明にし、暗い部分を黒い影として残します。AO の影だけを別の色にしたいときに使えます。</p><ol class="mn-steps"><li>AO などの、下地以外の描画レイヤーを選びます。ロックや透明度保護が入っていたら解除します。</li><li>「輝度を透明度に変換」を実行します。白は透明、暗い所ほど不透明な黒になります。</li><li>影の色を変えるときは、変換後に透明度保護を入れ、好きな色で塗ります。影の濃淡は透明度として残ります。</li></ol><div class="mn-tip">調整レイヤーではなく、選択中のレイヤーの画素を変換するフィルターです。下地・マスク・調整レイヤーには使えません。元の色を保ったまま透過する機能ではありません。<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻せます。</div></section><section class="mn-sec" id="gradmap"><h2>グラデーションマップ <span class="tier std">Standard</span></h2><ul class="mn-list"><li>暗い所 → 明るい所を、グラデーションの左 → 右の色に置き換えます。フィルターと調整レイヤーの両方にあります。</li><li>色の点は 32 個まで：帯をクリックで足す・ドラッグで動かす・下へ引き離して消す・ダブルクリックで色。点ごとの不透明度・均等に並べる・左右を入れ替え。</li><li>プリセットは 240 個（青・赤・夕焼け・虹・パステル・ネオン・メタル・肌・季節・写真の調色・アニメ塗りなど）。名前で探せます。今のグラデーションは「今のを保存」でマイプリセットに。</li><li>作業ファイル・PSD にも、色の点のまま残ります。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="グラデーションマップの窓。色の点とプリセットの一覧" loading="lazy"><figcaption>グラデーションマップ</figcaption></figure><p>描画ツールとベイクにも、同じ色と透明度の点の編集・プリセットがあります。描画ツールは Lite から、ベイクは Pro です（<a href="/petanuri/manual/draw#gradient">描画ツールのグラデーション</a>／<a href="/petanuri/manual/bake#gradient">ベイクのグラデーション</a>）。</p></section><section class="mn-sec" id="autofill"><h2>自動塗り（線画から下塗り）</h2><ol class="mn-steps"><li>レイヤー → 自動塗り を開き、「ヒントのレイヤーを作る」を押します。</li><li>ヒントのレイヤーに、塗りたい色をそれぞれの場所へざっと置きます。</li><li>「実行」を押すと、線で区切られた所ごとに、ヒントの色で塗ったレイヤーが線画のすぐ下にできます（線の下まで）。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="自動塗りの窓と、ヒントの色で塗り分けたところ" loading="lazy"><figcaption>自動塗り</figcaption></figure><div class="mn-tip">線は見えている面の上で閉じるように描いてください。途切れていると、そこから色が漏れます。「UV の継ぎ目をまたいで塗る」で、体の前と後ろが別の島でも続けて塗れます。</div></section><section class="mn-sec" id="history"><h2>作業の履歴と元に戻す</h2><ul class="mn-list"><li>右のパネル「作業の履歴」に、今までの操作が並びます。行を押すと、その操作の後まで一気に戻る／進みます。</li><li>元に戻す <kbd>Ctrl</kbd>＋<kbd>Z</kbd>・やり直し <kbd>Ctrl</kbd>＋<kbd>Y</kbd>（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>）。記録は最大 30 手です。</li><li>絵（レイヤー・マスク・塗る先・マテリアルの設定）を変える操作は元に戻せます。見え方だけを変える操作（表示範囲・オブジェクトの表示・ブレンドシェイプ・視点・表示の形式など）と、アプリの設定は入りません。</li><li>解像度を変えると、元に戻すの履歴は全部消えます（変える前に確かめます）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="作業の履歴パネル" loading="lazy"><figcaption>作業の履歴</figcaption></figure></section><section class="mn-sec" id="sleep"><h2>レイヤーを休ませる（メモリの節約）</h2><ul class="mn-list"><li>4096 のレイヤーをたくさん重ねるときのために、しばらく触っていないレイヤーを、描いていない間に縮めて持ちます（GPU のメモリを節約）。見た目・書き出し・保存はそのままです。</li><li>休んでいるレイヤーを選ぶ・描くと、その場で戻ります。たくさんのレイヤーを読み直すときは「準備しています…」と出てから切り替わります。</li><li>ファイル → 環境設定 → 描画 →「性能」で切れます（既定は入）。</li></ul></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/edit"><small>← 前へ</small>選択範囲・変形・文字・定規</a><a class="next" href="/petanuri/manual/uv"><small>次へ →</small>UV の区画と表示範囲</a></nav>
+    <p class="mn-intro">レイヤーは、テクスチャセットごとに重なっています。下塗り・影・模様をレイヤーに分けておくと、あとから色や濃さを直せます。重ね方・マスク・フィルターなど、レイヤーに掛ける機能もここにまとめています。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>レイヤーのパネルの「追加」（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>N</kbd>）で、新しいレイヤーを足します（<a href="#basic">くわしく</a>）。</li>
+      <li>行を押して選んだレイヤーに描きます。目のアイコンで表示・非表示、不透明度で濃さを変えます（<a href="#basic">くわしく</a>）。</li>
+      <li>影は、下塗りの上のレイヤーに「クリッピング」を入れ、合成モードを「乗算」にすると、はみ出さずに塗れます（<a href="#clip">くわしく</a>）。</li>
+      <li>一部を消さずに隠すときは、レイヤーマスクを使います（<a href="#mask">くわしく</a>）。</li>
+      <li>間違えたら <kbd>Ctrl</kbd>＋<kbd>Z</kbd>。作業の履歴のパネルで、何手か前まで一気に戻れます（<a href="#history">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#basic">レイヤーを足して描き分ける</a></li><li><a href="#blend">影や光を重ねる（合成モード）</a></li><li><a href="#clip">はみ出さずに塗る（クリッピング・保護・ロック）</a></li><li><a href="#folder">フォルダにまとめる</a></li><li><a href="#mask">一部を隠す（レイヤーマスク）</a></li><li><a href="#tag">一覧を見やすくする（色タグ・サムネイル）</a></li><li><a href="#props">レイヤープロパティのパネル</a></li><li><a href="#tile">繰り返しの柄を敷く</a></li><li><a href="#mirrorcopy">片側の絵を反対側へ写す</a></li><li><a href="#stroke">縁取りを付ける（境界線）</a></li><li><a href="#adjust">色をあとから変える（調整レイヤー）</a></li><li><a href="#filter">フィルターを掛ける</a></li><li><a href="#gradmap">グラデーションマップ</a></li><li><a href="#alpha">白を透明にする（輝度を透明度に変換）</a></li><li><a href="#padlayer">島の外へ色を広げたレイヤーを作る</a></li><li><a href="#autofill">線画から下塗りを作る（自動塗り）</a></li><li><a href="#history">元に戻す・作業の履歴</a></li><li><a href="#sleep">レイヤーを休ませる（メモリの節約）</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="レイヤー追加 新規 増やす 分ける 重ねる 消す 削除 複製 コピー 並べ替え 順番 名前変更 リネーム 結合 統合 一枚にする 下地 ベース 目のアイコン 非表示 増やせない 足せない 追加できない 4枚">
+      <h2>レイヤーを足して描き分ける</h2>
+      <p>描いた物は、選んでいるレイヤーに入ります。部分ごとにレイヤーを分けると、あとで消したり色を変えたりしやすくなります。</p>
+      <ol class="mn-steps">
+        <li>レイヤーのパネルの下の「追加」を押します。選んでいるレイヤーの上に、新しいレイヤーができます。</li>
+        <li>描きたいレイヤーの行を押して選びます。</li>
+        <li>描きます。</li>
+        <li>目のアイコンを押すと、表示・非表示が切り替わります。</li>
+        <li>名前をダブルクリックすると、名前を変えられます（<kbd>Enter</kbd> で決める）。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="レイヤーのパネル。ほっぺ・腕の星・下地" loading="lazy"><figcaption>ほっぺと腕の星を、それぞれのレイヤーに</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="レイヤーの行の右クリックのメニュー" loading="lazy"><figcaption>レイヤーの右クリックのメニュー</figcaption></figure></div>
+      <div class="mn-tip warn">Lite はテクスチャセットごとに、<strong>下地を含めてレイヤー 4 枚まで</strong>です（描くレイヤーと調整レイヤーを数えます。フォルダ・マスクは数えません）。4 枚になると、パネルの下に「レイヤー 4 / 4 枚（下地を含む・Lite）」と出て、「追加」「複製」に鍵の印が付きます。</div>
+      <h3 id="basic-panel">パネルの見方</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">所</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>一番上の見出しの行</td><td>テクスチャセットの切り替え（2 つ以上のとき。右に解像度）。テクスチャセットのパネルと並んでいるときは出ません</td></tr>
+        <tr><td>その下の行</td><td>合成モードと不透明度。クリッピング（↳）・透明度保護・ロックのアイコン（色が付いていれば入）。マスクがあれば、描く先（画素／マスク）とマスクの有効</td></tr>
+        <tr><td>一覧</td><td>上の行ほど手前に重なります。フォルダは ▶／▼ で開け閉めします</td></tr>
+        <tr><td>一番下の「下地」</td><td>新規作成で決めた色・画像が入るレイヤーです。下地にもそのまま描けます</td></tr>
+        <tr><td>下のボタン</td><td>追加・フォルダ・調整・複製・削除・結合・マスク・1 つ上へ・1 つ下へ・…（そのほか）。名前と今のキーは、ペン先を置くと出ます</td></tr>
+      </tbody></table></div>
+      <h3 id="basic-ops">レイヤーの操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">したいこと</th><th scope="col">操作</th><th scope="col">キー</th></tr></thead><tbody>
+        <tr><td>足す</td><td>「追加」・レイヤー →「新規レイヤー」</td><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>N</kbd></td></tr>
+        <tr><td>複製する</td><td>「複製」・レイヤー →「レイヤーを複製」</td><td><kbd>Ctrl</kbd>＋<kbd>J</kbd></td></tr>
+        <tr><td>レイヤーごと消す</td><td>「削除」・レイヤー →「レイヤーを削除」</td><td>—</td></tr>
+        <tr><td>中の絵だけ消す</td><td>レイヤー →「レイヤーを消去」（選択範囲があればその中）</td><td><kbd>Delete</kbd></td></tr>
+        <tr><td>重ね順を変える</td><td>行をドラッグ・「1 つ上へ」「1 つ下へ」（レイヤー → 重ね順）</td><td>—</td></tr>
+        <tr><td>名前を変える</td><td>名前をダブルクリック・右クリック →「名前を変える」</td><td>—</td></tr>
+        <tr><td>塗られている所を選択範囲にする</td><td>サムネイルを <kbd>Ctrl</kbd>＋押す（<kbd>Shift</kbd> で足す・<kbd>Alt</kbd> で削る）・右クリック →「塗られている所を選択」</td><td>—</td></tr>
+        <tr><td>PNG にする</td><td>右クリック →「このレイヤーを PNG で書き出す」。何枚か選んでいれば「選んだレイヤーを PNG で書き出す」（<a href="/petanuri/manual/export#png">書き出し</a>）</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>文字レイヤーは、ダブルクリックで打ち直しになります。名前は右クリックから変えます（<a href="/petanuri/manual/edit#retext">文字を打ち直す</a>）。</li>
+        <li>ロック中・非表示のレイヤーは消去できません（わけが下のヒントに出ます）。</li>
+        <li>行はペンでもドラッグして並べ替えられます。一覧のスクロールは <kbd>Space</kbd>＋ドラッグです。</li>
+      </ul>
+      <h3 id="merge">結合する</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目（レイヤー → 結合）</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>下のレイヤーと結合（<kbd>Ctrl</kbd>＋<kbd>E</kbd>）</td><td>選んでいるレイヤーを、すぐ下のレイヤーに重ねて 1 枚にします</td></tr>
+        <tr><td>選んだレイヤーを結合</td><td>2 枚以上選んだレイヤーを 1 枚にします</td></tr>
+        <tr><td>フォルダを結合</td><td>フォルダを 1 枚のレイヤーにします（右クリックでは「フォルダを 1 枚に結合」）</td></tr>
+        <tr><td>表示レイヤーを結合</td><td>見えているレイヤーを全部 1 枚にします</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>パネルの「結合」ボタンは、ふつうは下と結合、フォルダならフォルダを 1 枚、何枚か選んでいれば選んだレイヤーを結合します。</li>
+        <li>境界線の付いたレイヤーは、境界線を画素に焼いてから結合します。</li>
+        <li>調整レイヤーを下と結合すると、補正を下のレイヤーの画素に焼き込めます。</li>
+        <li><span class="tier pro">Pro</span> ノーマルマップのフォルダでは、一番下から続く表示レイヤーを結合できます。フォルダの不透明度は 100%、フォルダのマスクは無効にしておきます（<a href="/petanuri/manual/material#channels">塗る先</a>）。</li>
+      </ul>
+      <h3 id="multi">何枚かまとめて選ぶ</h3>
+      <ul class="mn-list">
+        <li>名前を <kbd>Ctrl</kbd>＋クリックで 1 枚ずつ足す・外す、<kbd>Shift</kbd>＋クリックで間をまとめて選びます（サムネイルの <kbd>Ctrl</kbd>＋押すは選択範囲なので別です）。</li>
+        <li>選んでいる間は、表示・合成モード・不透明度・クリッピング・透明度保護・ロック・色タグ・削除・複製・フォルダに入れる（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd>）・結合が、まとめて効きます。元に戻すは 1 回です。</li>
+        <li>選んだうちのどれかをドラッグすると、全部が並びのまま動きます。フォルダの行の真ん中で離すと、全部がフォルダの中へ入ります。</li>
+        <li>「1 つ上へ」「1 つ下へ」は 1 枚ずつです。コピー・切り取りも、選択中の 1 枚だけに効きます。</li>
+      </ul>
+      <h3 id="pick">キーや 3D から選ぶ</h3>
+      <ul class="mn-list">
+        <li><kbd>Alt</kbd>＋<kbd>]</kbd> で上のレイヤー、<kbd>Alt</kbd>＋<kbd>[</kbd> で下のレイヤーを選びます。</li>
+        <li>3D ビューか UV ビューの右クリック →「ここに描いたレイヤーを選ぶ」で、押した所に描いてある表示中のレイヤーが並びます。いちばん上には印が付きます。マスクで隠した所・不透明度 0% など、見えていない物は出ません。</li>
+        <li>移動・変形ツールの「自動でレイヤーを選ぶ」でも選べます（<a href="/petanuri/manual/edit#move">移動・変形ツール</a>）。</li>
+        <li>こうして選んだ行が見えていなければ、一覧が見える所まで動きます（閉じたフォルダは開きます）。切るときは、…（そのほか）か一覧の右クリックの「キーなどで選んだレイヤーが見えるまで一覧を動かす」を外します。</li>
+      </ul>
+      <h3 id="basic-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>レイヤーを足せない（Lite）</b>：Lite はテクスチャセットごとに、下地を含めて 4 枚までです。レイヤーを消すか結合すると、また足せます（<a href="/petanuri/manual/start#editions">版</a>）。</li>
+        <li><b>描いても色が出ない</b>：選んでいるレイヤーが非表示・ロック中か、描く先がマスクになっていないか見ます。上のレイヤーに隠れていることもあります。</li>
+        <li><b>違うレイヤーに描いていた</b>：<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻し、3D の右クリック →「ここに描いたレイヤーを選ぶ」で、描きたいレイヤーを選び直します。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="描画モード ブレンドモード 合成方法 乗算 影 スクリーン 発光 光らせる グロー 加算 オーバーレイ 不透明度 透明度 濃さ 薄くする">
+      <h2>影や光を重ねる（合成モード・不透明度）</h2>
+      <p>合成モードは、下の絵との混ぜ方です。影は「乗算」、光は「スクリーン」や「加算（発光）」がよく使われます。</p>
+      <ol class="mn-steps">
+        <li>影や光を描くレイヤーを選びます。</li>
+        <li>パネルの上の合成モードの欄で、合成モードを選びます。</li>
+        <li>不透明度で、濃さを合わせます。</li>
+      </ol>
+      <h3 id="blend-list">合成モードの一覧</h3>
+      <p>全部で 28 種類です。欄の中では、次のまとまりに分かれて並びます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">まとまり</th><th scope="col">合成モード</th></tr></thead><tbody>
+        <tr><td>—</td><td>通常</td></tr>
+        <tr><td>暗くする</td><td>比較（暗）・乗算・焼き込みカラー・焼き込みリニア・カラー比較（暗）</td></tr>
+        <tr><td>明るくする</td><td>比較（明）・スクリーン・覆い焼きカラー・加算（覆い焼きリニア）・加算（発光）・覆い焼き（発光）・カラー比較（明）</td></tr>
+        <tr><td>コントラスト</td><td>オーバーレイ・ソフトライト・ハードライト・ビビッドライト・リニアライト・ピンライト・ハードミックス</td></tr>
+        <tr><td>比較</td><td>差の絶対値・除外・減算・除算</td></tr>
+        <tr><td>色</td><td>色相・彩度・カラー・輝度</td></tr>
+      </tbody></table></div>
+      <p>フォルダには、もう 1 つ「通過」（はじめの値）があります（<a href="#folder">フォルダ</a>）。</p>
+      <h3 id="glow">加算（発光）・覆い焼き（発光）</h3>
+      <ul class="mn-list">
+        <li>ふつうの加算・覆い焼きカラーと違い、不透明度を下げた所や、柔らかい筆の縁でも強く光ります。</li>
+        <li>加算（発光）は光が飽和するまで乗り、覆い焼き（発光）は明るい所ほど強く光ります。下が透明な所でも、レイヤーの色で光ります。</li>
+        <li>レイヤー・フォルダ・調整レイヤーの合成モード、境界線の合成、ブラシの描画モードで選べます。</li>
+        <li>PSD には近い合成モード（覆い焼きリニア・覆い焼きカラー）で書き、レイヤー名の後ろに「[glow]」を付けます。ぺたぬり3D で読み込むと発光に戻ります。ほかのソフトでは、半透明の所の見え方が変わります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="clip" data-keywords="クリッピングマスク 下のレイヤーでクリッピング はみ出さない 塗り残し 透明部分をロック アルファロック 保護 鍵 描けない">
+      <h2>はみ出さずに塗る（クリッピング・透明度保護・ロック）</h2>
+      <p>下塗りの上から影や模様を塗るときに、塗った所の外へはみ出さないようにします。どれもパネルの上のアイコンで入り切りします。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">機能</th><th scope="col">すること</th><th scope="col">ほかの切り替え方</th></tr></thead><tbody>
+        <tr><td>クリッピング（↳）</td><td>このレイヤーを、すぐ下のレイヤーの塗られている所にだけ表示します（下のレイヤーが土台）</td><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>G</kbd>・右クリック →「下のレイヤーでクリッピング」</td></tr>
+        <tr><td>透明度保護</td><td>描いても、透明な所は透明のままです（色だけ変わります）</td><td>レイヤー → クリッピング・保護 →「透明度保護の切り替え」</td></tr>
+        <tr><td>ロック</td><td>描けないようにします</td><td>レイヤー → クリッピング・保護 →「ロックの切り替え」</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>下塗りのレイヤーを選び、「追加」で上にレイヤーを足します。</li>
+        <li>パネルの上のクリッピング（↳）のアイコンを押します。</li>
+        <li>合成モードを「乗算」にして、影を塗ります。下塗りの外には出ません。</li>
+      </ol>
+      <div class="mn-tip">クリッピングの絵は残っているので、下塗りを広げると、そこにも出てきます。透明度保護は、そのレイヤーの絵そのものの形を守ります。</div>
+    </section>
+
+    <section class="mn-sec" id="folder" data-keywords="グループ まとめる 整理 フォルダ分け 通過 パススルー ctrl+g">
+      <h2>フォルダにまとめる</h2>
+      <p>関係するレイヤーをフォルダにまとめると、一覧が短くなり、まとめて表示・非表示や不透明度を変えられます。</p>
+      <ol class="mn-steps">
+        <li>まとめたいレイヤーを選びます（何枚でも）。</li>
+        <li><kbd>Shift</kbd> を押しながら「フォルダ」ボタンを押します（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd>）。選んだレイヤーがフォルダに入ります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>「フォルダ」ボタンだけ（<kbd>Ctrl</kbd>＋<kbd>G</kbd>）なら、空のフォルダを作ります。</li>
+        <li>レイヤーの行をフォルダの行の真ん中へドラッグすると中へ、上半分・下半分なら上・下へ入ります。</li>
+        <li>合成モード「通過」（はじめの値）は、中身をフォルダの外の絵に直接重ねます。ほかのモードでは、中身を 1 枚にしてから重ねます。</li>
+        <li>フォルダをやめるのは、…（そのほか）か右クリックの「フォルダを解除」です。中身は外へ出ます。</li>
+        <li>フォルダにも、マスク・境界線を付けられます。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="フォルダ・マスク・調整レイヤーの入ったレイヤーのパネル" loading="lazy"><figcaption>フォルダ・マスク・調整レイヤー</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="mask" data-keywords="レイヤーマスク 隠す 消さずに消す 非破壊 部分的に見せる マスクを描く 白黒 マスク反転">
+      <h2>一部を隠す（レイヤーマスク）</h2>
+      <p>マスクは、レイヤーの絵を消さずに隠します。隠した所は、あとからいつでも戻せます。</p>
+      <ol class="mn-steps">
+        <li>隠したいレイヤーを選びます。</li>
+        <li>「マスク」ボタン →「全部見せるマスクを追加」を選びます。行にマスクのサムネイルが付きます。</li>
+        <li>マスクのサムネイルを押します。描く先がマスクになります。</li>
+        <li>黒で描くと隠れ、白で描くと見えます。灰色は半分見えます。</li>
+        <li>画素のサムネイルを押すと、描く先が絵に戻ります。</li>
+      </ol>
+      <h3 id="mask-menu">マスクのメニュー</h3>
+      <p>「マスク」ボタン・レイヤー →「マスク」・右クリックの「マスク」に、同じ項目が並びます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>全部見せるマスクを追加・全部隠すマスクを追加</td><td>白（全部見える）か黒（全部隠れる）のマスクを付けます</td></tr>
+        <tr><td>選択範囲からマスクを作る</td><td>選択範囲の中だけ見えるマスクを付けます。調整レイヤーでは、今のマスクを置き換えます</td></tr>
+        <tr><td>マスクに描く</td><td>描く先をマスクにします</td></tr>
+        <tr><td>マスクを有効にする</td><td>切ると、マスクを効かせずに全部見せます</td></tr>
+        <tr><td>マスクの範囲を表示</td><td>隠れている所に色を付けて見せます</td></tr>
+        <tr><td>マスクを反転</td><td>見える所と隠れる所を入れ替えます</td></tr>
+        <tr><td>マスクを左右にミラーコピー</td><td>マスクの白黒を、3D モデルの反対側へ写します（<a href="#mirrorcopy">左右にミラーコピー</a>）</td></tr>
+        <tr><td>マスクを適用（画素に焼く）</td><td>隠れている所を絵から消して、マスクを外します</td></tr>
+        <tr><td>マスクを削除</td><td>マスクを外します（絵はそのまま）</td></tr>
+        <tr><td>マスクをコピー・マスクを貼り付け</td><td>マスクをほかのレイヤーへ写します。別のテクスチャセットにも貼れます</td></tr>
+        <tr><td>このレイヤーの明るさをマスクとしてコピー</td><td>描いた白黒の絵を、「マスクを貼り付け」でマスクにできます（透明な所は隠す）</td></tr>
+        <tr><td>マスクを白黒で表示</td><td>マスクだけを白黒で、3D・UV に出します</td></tr>
+        <tr><td>マスクに描画色の明るさで描く（白＝見せる・黒＝隠す）</td><td>切ると、色に関係なく描いた所を見せます（隠すのは消しゴム）</td></tr>
+      </tbody></table></div>
+      <h3 id="mask-tips">マスクの操作のこつ</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>＋マスクのサムネイルで、有効・無効を切り替えます（無効の間は赤い斜線）。</li>
+        <li><kbd>Alt</kbd>＋マスクのサムネイルで、マスクを白黒で表示します。</li>
+        <li>マスクのサムネイルをほかのレイヤーの行へドラッグすると移し、<kbd>Alt</kbd>＋ドラッグで写します。調整レイヤーのマスクは写します。</li>
+        <li>貼り付ける先にマスクがあれば、置き換えます。大きさが違えば伸ばして入れます。</li>
+        <li>選択範囲の塗りつぶし・<kbd>Alt</kbd>／<kbd>Ctrl</kbd>＋<kbd>Backspace</kbd> の塗りつぶしも、マスクには色の明るさで入ります。</li>
+        <li>マスクの操作には、環境設定のキー割り当てでキーを付けられます。</li>
+      </ul>
+      <h3 id="mask-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>描いても絵が変わらない</b>：描く先がマスクのままです。画素のサムネイルを押して、絵に戻します。</li>
+        <li><b>マスクが効かない</b>：マスクが無効（赤い斜線）になっています。<kbd>Shift</kbd>＋マスクのサムネイルで有効にします。</li>
+        <li><b>マスクに描いても見え方が変わらない</b>：白で描くと「見せる」です。隠すときは黒で描くか、消しゴムを使います。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tag" data-keywords="色分け ラベル カラーラベル 絞り込み フィルタ表示 サムネ 大きく 小さく 見やすく 一覧を広げる">
+      <h2>一覧を見やすくする（色タグ・サムネイル）</h2>
+      <p>レイヤーが増えたら、色タグで分けたり、サムネイルを大きくしたりして探しやすくします。</p>
+      <ol class="mn-steps">
+        <li>色を付けたいレイヤーを選びます（何枚でも）。</li>
+        <li>クリッピング・ロックのアイコンの行の、いちばん左の色の丸と ▾ の箱を押します（右クリック →「色タグ」でも）。</li>
+        <li>なし・赤・橙・黄・緑・水・青・紫・灰から選びます。行の左に太い色の帯が付きます。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="色タグを付けたレイヤーのパネル" loading="lazy"><figcaption>色タグと「色で表示」</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="色タグを選ぶ小窓" loading="lazy"><figcaption>色タグを選ぶ</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="サムネイルを大きくしたレイヤーのパネル" loading="lazy"><figcaption>サムネイルの大きさ「大」</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>フォルダの色は、中のレイヤーの左へ細い線で続きます。元に戻すは 1 回です。</li>
+        <li>色タグがあると、一覧の上に「色で表示：全」と、使っている色の丸が出ます。丸を押すと、その色のレイヤーだけを一覧に出します（絵は変わりません）。もう一度押すか「全」で戻ります。</li>
+        <li>色タグは作業ファイルに残ります。PSD の書き出し・読み込み <span class="tier std">Standard</span> では、PSD のレイヤーの色になります（水は青になります）。</li>
+      </ul>
+      <h3 id="tag-view">一覧の大きさ・並び</h3>
+      <ul class="mn-list">
+        <li>…（そのほか）か右クリックの「サムネイルの大きさ」で、小（24px）・中（40px。はじめ）・大（64px）・特大（96px）を選べます。</li>
+        <li>…（そのほか）の「ボタンの列を上に置く」で、下のボタンの列を一覧の上に動かせます。</li>
+        <li>…（そのほか）の「ペンのドラッグでレイヤー・サブツールを動かす」を切ると、ペンのドラッグは一覧のスクロールになります。<kbd>Space</kbd>＋ドラッグは、いつでもスクロールです。</li>
+        <li>パネルの境界を下へドラッグすると、一覧を広げられます。</li>
+        <li>どれも、次の起動でも同じです。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="props" data-keywords="プロパティ 設定パネル レイヤー設定 詳細設定">
+      <h2>レイヤープロパティのパネル</h2>
+      <p>選んでいるレイヤーの設定をまとめたパネルです。はじめの配置では、レイヤーのパネルのすぐ上にあります。</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="レイヤープロパティのパネル" loading="lazy"><figcaption>レイヤープロパティ</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">選んでいる物</th><th scope="col">出る設定</th></tr></thead><tbody>
+        <tr><td>どれでも</td><td>見出しに、種類（レイヤー・フォルダ・文字レイヤー・調整レイヤー・塗る先のフォルダ など）と名前</td></tr>
+        <tr><td>調整レイヤー</td><td>値の欄（<a href="#adjust">調整レイヤー</a>）</td></tr>
+        <tr><td>画素のレイヤー・フォルダ・文字レイヤー</td><td>「境界線」の「表示」のチェックと「付ける」「設定」（<a href="#stroke">境界線</a>）</td></tr>
+        <tr><td>文字レイヤー</td><td>「文字を打ち直す」</td></tr>
+        <tr><td>マスクのあるレイヤー</td><td>マスクが有効か・描く先</td></tr>
+        <tr><td>画素のレイヤー（文字レイヤーを除く）</td><td>「繰り返しの柄」（<a href="#tile">繰り返しの柄</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>合成モード・不透明度・クリッピング・透明度保護・ロックは、レイヤーのパネルで変えます。</li>
+        <li>何も選んでいないときは「レイヤーを選ぶと、ここに設定が出ます」と出ます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tile" data-keywords="タイル パターン 柄 布地 生地 チェック 小紋 繰り返し 敷き詰める シームレス 連続模様">
+      <h2>繰り返しの柄を敷く</h2>
+      <p>画像や模様を上下左右に繰り返して、レイヤーいっぱいに敷きます。服地の柄などに使います。</p>
+      <ol class="mn-steps">
+        <li>柄を敷く画素のレイヤーを選びます。今の絵は柄に置き換わります。</li>
+        <li>レイヤープロパティの「繰り返しの柄」で「柄を選んで敷く」を押します。柄の一覧が開きます。</li>
+        <li>「画像ファイル…」「参考画像」か、下に並ぶ模様の絵から選びます。模様は、描画色で塗った柄になります。</li>
+        <li>下の表の項目で、並べ方を合わせます。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="繰り返しの柄を敷いたレイヤーとレイヤープロパティ" loading="lazy"><figcaption>繰り返しの柄</figcaption></figure>
+      <h3 id="tile-options">並べ方と色</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>横に繰り返す・縦に繰り返す</td><td>横・縦に並べる数（「縦横の比を保つ」で同じ比のまま変える）</td></tr>
+        <tr><td>横にずらす・縦にずらす・回す（°）</td><td>柄の位置と向きを変えます</td></tr>
+        <tr><td>つなぎ目をなじませる</td><td>柄のつなぎ目を目立たなくします</td></tr>
+        <tr><td>裏返して繰り返す</td><td>1 枚ごとに左右・上下を裏返して並べます。縁が合わない画像でもつなぎ目が出ません</td></tr>
+        <tr><td>UV の継ぎ目に合わせる</td><td>継ぎ目が柄のつなぎ目に合いやすい大きさ（今の 1/2〜2 倍）とずらしを、自動で探します</td></tr>
+        <tr><td>描画色で塗り直す・画像の色に戻す</td><td>柄の形はそのままで、今の描画色にします。戻すと元の色です</td></tr>
+        <tr><td>普通のレイヤーにする</td><td>並べ方の設定を外して、今の画素のまま普通のレイヤーにします</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>一番上の行に今の柄の絵と名前が出て、押すと柄の一覧が開きます。</li>
+        <li>柄を出す所は、マスクで決められます。</li>
+        <li>並べ方と柄は、作業ファイルに残ります。元に戻すで戻せます。</li>
+      </ul>
+      <h3 id="tile-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>描き足した所が消えた</b>：柄を敷いた後に描き足した分は、並べ方を変えると消えます（変える前に確認が出ます）。<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻せます。</li>
+        <li><b>継ぎ目で柄がつながらない</b>：両側の島の向き・形が違う継ぎ目では、合わせてもつながりません。</li>
+        <li><b>敷けない</b>：ロック中・透明度保護・非表示のレイヤー、文字レイヤー、ノーマルマップ画像のレイヤーには敷けません。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mirrorcopy" data-keywords="ミラーコピー 左右反転コピー 反対側に写す 対称にし忘れた 鏡 シンメトリー 左右対称 片側">
+      <h2>片側の絵を反対側へ写す（左右にミラーコピー）</h2>
+      <p>対称で描くのを付け忘れた塗りを、3D モデルの反対側へ写します。UV が左右で違っても、形で相手の所を探して写します。</p>
+      <ol class="mn-steps">
+        <li>写したいレイヤーを選びます。</li>
+        <li>レイヤー →「左右にミラーコピー」を選びます（レイヤーの行の右クリックにもあります）。</li>
+        <li>「左半身 → 右半身」か「右半身 → 左半身」を押します。写し先の側の色は置き換わります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>左右は、モデルから見た向きです（正面から見ると逆）。中心は「対称で描く」の中心と同じです（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</li>
+        <li>「新しいレイヤーに写す（写した所だけが入る）」を入れると、写した所だけが新しいレイヤーに入ります。</li>
+        <li>選択範囲があるときは、「選択範囲の絵を反対側へ写す」か「選択範囲の中へ写す」（選択範囲の中を反対側の色で置き換え）を選びます。</li>
+        <li>マスクは、マスクのメニューの「マスクを左右にミラーコピー」で写します。</li>
+        <li>左右の相手が見つからない所（片側にしか無い物など）は、そのままです。<kbd>Ctrl</kbd>＋<kbd>Z</kbd> 1 回で戻ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="stroke" data-keywords="縁取り フチ取り 輪郭線 アウトライン ストローク レイヤー効果 レイヤースタイル fx 袋文字">
+      <h2>縁取りを付ける（境界線） <span class="tier std">Standard</span></h2>
+      <p>レイヤーの絵そのものは変えずに、重ねるときに縁取りを付けます。あとから太さや色を変えたり、切ったりできます。</p>
+      <ol class="mn-steps">
+        <li>縁取りを付けるレイヤーを選びます。</li>
+        <li>レイヤープロパティの「付ける」を押します。境界線の窓が出ます。</li>
+        <li>サイズ・位置・色などを決めます。値を動かすと、すぐ見た目が変わります。</li>
+        <li>OK（<kbd>Enter</kbd>）で確定します。キャンセル（<kbd>Esc</kbd>）で元どおりです。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="境界線の窓と、境界線の付いた絵" loading="lazy"><figcaption>境界線</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>サイズ</td><td>太さ（テクスチャの px）</td></tr>
+        <tr><td>位置</td><td>外側・内側・中央</td></tr>
+        <tr><td>合成・不透明度・色</td><td>縁取りの重ね方・濃さ・色</td></tr>
+        <tr><td>初期値に戻す</td><td>全部の値を初期値に。ラベルをダブルクリックすると、その値だけ初期値に戻ります</td></tr>
+      </tbody></table></div>
+      <h3 id="stroke-menu">境界線のメニュー</h3>
+      <p>レイヤー → 境界線、またはレイヤーの右クリック →「境界線」に並びます。境界線の付いたレイヤーの行には「fx」の印が出て、押すと設定の窓が開きます。</p>
+      <ul class="mn-list">
+        <li>「境界線の設定」：窓を開きます。</li>
+        <li>「境界線を表示」：値は残したまま、表示・隠すを切り替えます（レイヤープロパティの「表示」と同じ）。</li>
+        <li>「境界線をコピー」「境界線を貼り付け」：ほかのレイヤーへ写します。何枚か選んでいれば全部に貼ります。</li>
+        <li>「境界線を消去」：境界線を外します。</li>
+        <li>「境界線を画素に焼く」：境界線込みの絵にして、境界線を外します（フォルダは境界線ごと 1 枚に結合）。</li>
+      </ul>
+      <h3 id="stroke-detail">付く形と保存</h3>
+      <ul class="mn-list">
+        <li>マスクを掛けた後の形に付きます。クリッピングしたレイヤーは、土台の塗られている所に収まります。</li>
+        <li>フォルダ（中身を合わせた形）・文字レイヤー（打ち直してもそのまま）にも付けられます。</li>
+        <li>下と結合・フォルダの結合は、境界線を焼いてから結合します。</li>
+        <li>作業ファイルには値ごと入ります。PNG・マテリアルの書き出しは境界線込みの絵、PSD では画素に焼いたレイヤーになります（<a href="/petanuri/manual/export#psd">PSD</a>）。</li>
+        <li>前の版や PSD で付いたほかの効果（ドロップシャドウなど）は、見え方そのままで開きます。変えられませんが、レイヤープロパティの「画素に焼く」「外す」ができます。</li>
+      </ul>
+      <div class="mn-tip warn">境界線を付ける・変える・貼り付けるのは Standard からです。Lite でも、開いた作業ファイルの境界線は見え方そのままで、表示・隠す・コピー・消去・画素に焼くができます。</div>
+      <h3 id="stroke-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>縁取りが島の縁で切れる・隣の島にかかる</b>：境界線は UV の上で計算します。島の縁からはみ出した分は、3D では島の縁で切れて見えることがあります。書き出すと、島の外の分はにじみ（パディング）と同じ扱いになります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="adjust" data-keywords="補正レイヤー 調整 色調補正 非破壊 あとから色を変える 色替え 明るさ 彩度 トーンカーブ カラバリ 色を変えたい 色味 色替え">
+      <h2>色をあとから変える（調整レイヤー） <span class="tier std">Standard</span></h2>
+      <p>下の絵を書き換えずに、明るさや色の補正を重ねます。値はいつでも変え直せます。</p>
+      <ol class="mn-steps">
+        <li>補正したい絵のすぐ上にあたるレイヤーを選びます。</li>
+        <li>パネルの「調整」ボタンを押して、種類を選びます。調整レイヤーができます。</li>
+        <li>レイヤープロパティのパネルで値を動かします。動かしている間は絵だけ変わり、離すと 1 手で元に戻せます。</li>
+      </ol>
+      <p>種類は 15 です：色相・彩度・明度／明るさ・コントラスト／レベル補正／階調の反転／グレースケール／ポスタリゼーション／しきい値／グラデーションマップ／トーンカーブ／カラーバランス／露光量／色温度／自然な彩度／特定色の置き換え／ノイズを加える。値の中身は<a href="#filter-each">フィルター</a>と同じです。</p>
+      <ul class="mn-list">
+        <li>調整レイヤーは、下に見えている絵の全部に効きます。</li>
+        <li>効く範囲はマスクで限れます。調整レイヤーを選ぶと、描く先はマスクです。「選択範囲からマスクを作る」で、今のマスクを置き換えられます。</li>
+        <li>クリッピングを入れると、すぐ下のレイヤーだけに効きます。</li>
+        <li>「下のレイヤーと結合」で、補正を下のレイヤーの画素に焼き込めます。</li>
+        <li>PSD では、トーンカーブ・カラーバランス・自然な彩度・露光量・グラデーションマップを、調整レイヤーのまま書き出し・読み込みします。</li>
+        <li>Lite では、開いた作業ファイルの調整レイヤーの値は見えますが、変えられません（鍵の印）。</li>
+      </ul>
+      <div class="mn-tip">ぼかし・シャープ・モザイクなど、周りの絵を読む物は調整レイヤーにはなりません（重くなるため）。<a href="#filter">フィルター</a>で掛けます。</div>
+    </section>
+
+    <section class="mn-sec" id="filter" data-keywords="フィルター 色調補正 ぼかし ガウスぼかし シャープ ノイズ モザイク 線画抽出 エンボス ハイパス トーンカーブ 色相 彩度 明度 露光 色温度 レベル補正 ポスタリゼーション 二値化 白黒 モノクロ 反転 ネガ">
+      <h2>フィルターを掛ける <span class="tier std">Standard</span></h2>
+      <p>選んでいるレイヤーの絵そのものに、色の補正やぼかしを掛けます。調整レイヤーと違い、絵が書き換わります（<kbd>Ctrl</kbd>＋<kbd>Z</kbd> 1 回で戻せます）。</p>
+      <ol class="mn-steps">
+        <li>フィルターを掛けるレイヤーを選びます。</li>
+        <li>メニュー「フィルター」→ まとまり → フィルターの名前を選びます。小さな窓が出ます。</li>
+        <li>値を動かします。モデルの見た目が、その場で変わります。</li>
+        <li>OK（<kbd>Enter</kbd>）で確定します。やめるときは、キャンセル（<kbd>Esc</kbd>）です。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="フィルター「色相・彩度・明度」でマントの色を変えているところ" loading="lazy"><figcaption>色相・彩度・明度のフィルター</figcaption></figure>
+      <h3 id="filter-list">フィルターの一覧</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">まとまり</th><th scope="col">フィルター</th></tr></thead><tbody>
+        <tr><td>色調補正</td><td>色相・彩度・明度／明るさ・コントラスト／レベル補正／トーンカーブ／カラーバランス／露光量／色温度／自然な彩度／特定色の置き換え</td></tr>
+        <tr><td>階調</td><td>階調の反転／グレースケール／ポスタリゼーション／しきい値／グラデーションマップ（<a href="#gradmap">下</a>）</td></tr>
+        <tr><td>ぼかし・シャープ</td><td>ぼかし（ガウス）／移動ぼかし／放射状ぼかし／シャープ（アンシャープマスク）／ハイパス</td></tr>
+        <tr><td>ノイズ</td><td>ノイズを加える／ノイズを減らす（メディアン）／モザイク</td></tr>
+        <tr><td>効果</td><td>線画抽出／エンボス</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>階調の反転・グレースケールは、窓を出さずにすぐ掛かります。</li>
+        <li>メニューの下の方には、「表示中の全テクスチャセットに掛ける」・<a href="#alpha">輝度を透明度に変換</a>・<a href="#padlayer">パディングを新規レイヤーに作る</a>と、ベイク <span class="tier pro">Pro</span>（<a href="/petanuri/manual/bake">お手軽ベイク</a>・<a href="/petanuri/manual/ao">AO を焼く</a>）があります。</li>
+      </ul>
+      <h3 id="filter-window">フィルターの窓</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>対象</td><td>掛けるテクスチャセットとレイヤー。非表示・ロック中など、掛けない物は「掛けない：」に理由が出ます</td></tr>
+        <tr><td>プレビュー</td><td>値を動かすたびに、見た目に反映します</td></tr>
+        <tr><td>表示中の全テクスチャセットに掛ける</td><td>表示中の全部のセットの、選択中のレイヤーに掛けます（セットが 2 つ以上のとき。メニューの同じ項目と同じです）</td></tr>
+        <tr><td>次も前回の値で開く</td><td>前回 OK した値から始めます（全部のフィルターで共通）</td></tr>
+        <tr><td>初期値に戻す</td><td>全部の値を初期値に。ラベルをダブルクリックすると、その値だけ戻ります</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>窓を開いている間は描けません。視点は、右ドラッグ・<kbd>Space</kbd>＋ドラッグ・ホイール・3D ナビで動かせます。</li>
+        <li>選択範囲があると「選択範囲の中だけに掛けます」と出ます。選択範囲の無いセットは、名前と「選択範囲が無いので変わりません」が出ます。</li>
+      </ul>
+      <h3 id="filter-each">フィルターごとの値</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">フィルター</th><th scope="col">値と使い方</th></tr></thead><tbody>
+        <tr><td>露光量</td><td>露光量（＋1 で光が 2 倍）・オフセット（暗い所を持ち上げる・沈める）・ガンマ</td></tr>
+        <tr><td>トーンカーブ</td><td>チャンネル（RGB・R・G・B）を選び、線を押して点を足し、ドラッグで動かします。外へ出すかダブルクリックで消えます。R・G・B → RGB の順に掛かります</td></tr>
+        <tr><td>カラーバランス</td><td>シャドウ・中間調・ハイライトごとに、シアン⇔レッド・マゼンタ⇔グリーン・イエロー⇔ブルー。「輝度を保つ」で明るさは変わりません</td></tr>
+        <tr><td>色温度</td><td>色温度（＋で暖かく）・色かぶり（＋でマゼンタ）</td></tr>
+        <tr><td>自然な彩度</td><td>自然な彩度（くすんだ色ほど強く効く）・彩度</td></tr>
+        <tr><td>特定色の置き換え</td><td>選ぶ色に近い所（許容量）だけ、色相・彩度・明度を変えます</td></tr>
+        <tr><td>移動ぼかし・放射状ぼかし・モザイク</td><td>角度・距離／ズーム・回転と中心／ます目。向き・位置・格子は UV の上で決まるので、島ごとに向きが違うモデルでは、島によって違います</td></tr>
+        <tr><td>ノイズを加える</td><td>量・モノクロ・模様の番号</td></tr>
+        <tr><td>ノイズを減らす（メディアン）</td><td>半径 1〜2</td></tr>
+        <tr><td>線画抽出</td><td>しきい値・太さ・白い所を透明に</td></tr>
+        <tr><td>エンボス</td><td>光の角度・高さ・量・色を残す</td></tr>
+        <tr><td>ハイパス</td><td>半径。平らな所は 50% の灰になるので、合成モードをオーバーレイ・ソフトライトにして重ねます</td></tr>
+        <tr><td>グラデーションマップ</td><td>色の点・プリセット・「反転（明るい所を左の色に）」・「描画ツールのグラデーションを使う」（<a href="#gradmap">下</a>）</td></tr>
+      </tbody></table></div>
+      <h3 id="filter-alpha">島の縁と透明な所の扱い</h3>
+      <ul class="mn-list">
+        <li>ぼかし・シャープは、UV の島の中だけで計算します。島の縁が暗く・薄くなりません。継ぎ目をまたいでぼかすときは、色混ぜのツールを使います（<a href="/petanuri/manual/draw#blend">ぼかし・指先・色混ぜ</a>）。</li>
+        <li>モザイクは透明度もます目ごとに平均し、シャープは透明度もくっきりさせます。ノイズを減らす（メディアン）は、透明の上の点も消します。</li>
+        <li>線画抽出・エンボス・ハイパスは、透明な所を白い紙として明るさを見ます。線画抽出の線とハイパスの結果は、透明だった所にも出ます。</li>
+        <li>透明度保護のレイヤーでは、透明度は元のままです。</li>
+      </ul>
+      <h3 id="filter-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>フィルターを掛けても変わらない</b>：非表示・ロック中のレイヤーには掛かりません。選択範囲がほかのテクスチャセットにだけあるときも変わりません。窓の「対象」と「掛けない：」を見ます。</li>
+        <li><b>メニューに鍵の印が付いている（Lite）</b>：フィルターは Standard からです。輝度を透明度に変換・パディングを新規レイヤーに作るは、Lite でも使えます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gradmap" data-keywords="グラデーションマップ グラマ 色置き換え 明暗で色を付ける 二色 デュオトーン セピア プリセット">
+      <h2>グラデーションマップで色を置き換える <span class="tier std">Standard</span></h2>
+      <p>暗い所から明るい所までを、グラデーションの左から右の色に置き換えます。フィルター（階調）と調整レイヤーの両方にあります。</p>
+      <ol class="mn-steps">
+        <li>フィルター → 階調 →「グラデーションマップ」を選びます（調整レイヤーなら「調整」ボタンから）。はじめは描画色 → 背景色の 2 色です。</li>
+        <li>プリセットから選ぶか、色の点を足して色を決めます。</li>
+        <li>OK（<kbd>Enter</kbd>）で確定します。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="グラデーションマップの窓。色の点とプリセットの一覧" loading="lazy"><figcaption>グラデーションマップ</figcaption></figure>
+      <h3 id="gradmap-edit">色の点の操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">したいこと</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>点を足す</td><td>帯をクリック（タップ）。32 個まで</td></tr>
+        <tr><td>点を動かす</td><td>ドラッグ</td></tr>
+        <tr><td>点を消す</td><td>下へ引き離す・<kbd>Delete</kbd></td></tr>
+        <tr><td>色を変える</td><td>ダブルクリック（選んだ点をもう一度タップ）・「描画色を入れる」</td></tr>
+        <tr><td>位置・不透明度を決める</td><td>選んだ点の欄（不透明度 0 で、元の色のまま）</td></tr>
+        <tr><td>並べ直す</td><td>「均等に並べる」「左右を入れ替え」</td></tr>
+      </tbody></table></div>
+      <h3 id="gradmap-preset">プリセット</h3>
+      <ul class="mn-list">
+        <li>240 個あります。まとまり（基本・モノクロ／夕焼け・朝焼け／パステル／ネオン／メタル／肌・人物／季節／写真の調色／イラスト・アニメ塗り など）から選ぶか、名前で探します。</li>
+        <li>今のグラデーションは、「今のを保存」でマイプリセットになります（× で消します）。</li>
+        <li>作業ファイル・PSD にも、色の点のまま残ります。</li>
+      </ul>
+      <p>描画ツールのグラデーションとベイクにも、同じ色と透明度の点の編集・プリセットがあります。描画ツールは Lite から、ベイクは Pro です（<a href="/petanuri/manual/draw#gradient">描画ツールのグラデーション</a>／<a href="/petanuri/manual/bake#gradient">ベイクのグラデーション</a>）。</p>
+    </section>
+
+    <section class="mn-sec" id="alpha" data-keywords="白を透明 背景を消す 白抜き 乗算を透明に AO の影 影だけ 透過 アルファ化">
+      <h2>白を透明にする（輝度を透明度に変換）</h2>
+      <p>白い所を透明にし、暗い所を黒い影として残します。AO の影だけを別の色にしたいときなどに使います。Lite から使えます。</p>
+      <ol class="mn-steps">
+        <li>AO などの、下地以外の描くレイヤーを選びます。ロックや透明度保護が入っていたら外します。</li>
+        <li>フィルター →「輝度を透明度に変換」を選びます。白は透明、暗い所ほど不透明な黒になります。</li>
+        <li>影の色を変えるときは、透明度保護を入れて、好きな色で塗ります。影の濃淡は透明度として残ります。</li>
+      </ol>
+      <div class="mn-tip">選んでいるレイヤーの画素を書き換えます（<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻せます）。下地・マスク・調整レイヤーには使えません。元の色を保ったまま透明にする機能ではありません。</div>
+    </section>
+
+    <section class="mn-sec" id="padlayer" data-keywords="パディング にじみ 余白 はみ出し 島の外 継ぎ目 縁の色を広げる ブリード">
+      <h2>島の外へ色を広げたレイヤーを作る（パディングを新規レイヤーに作る）</h2>
+      <p>今の絵の島の縁の色を、島の外へ広げた分だけを新しいレイヤーに入れます。書き出しのにじみ（パディング）を、レイヤーとして見たり描き直したりしたいときに使います。どの版でも使えます。</p>
+      <ol class="mn-steps">
+        <li>フィルター →「パディングを新規レイヤーに作る」を選びます。</li>
+        <li>「幅（px）」を 1〜32 で決めます。</li>
+        <li>「作る」を押します。選んでいるレイヤーのすぐ上に、「パディング（8px）」のような名前のレイヤーができます。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="パディングを新規レイヤーに作る窓" loading="lazy"><figcaption>パディングを新規レイヤーに作る</figcaption></figure>
+      <ul class="mn-list">
+        <li>全部のレイヤーを重ねた色から作ります。島の中は透明です。</li>
+        <li><kbd>Ctrl</kbd>＋<kbd>Z</kbd> 1 回で戻せます。2D キャンバスでは作れません。</li>
+        <li>書き出しのにじみは<a href="/petanuri/manual/export#pad">書き出しのにじみ（パディング）</a>へ。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="autofill" data-keywords="自動彩色 自動着色 塗り分け 下塗り バケツ 色分け ベタ塗り 線画 ヒント">
+      <h2>線画から下塗りを作る（自動塗り）</h2>
+      <p>線画で区切られた所ごとに、置いた色のヒントで塗り分けます。下塗りを手早く作るときに使います。</p>
+      <ol class="mn-steps">
+        <li>レイヤー →「自動塗り（色のヒントから塗り分け）」を選びます。3D ビューの左上に窓が出ます。</li>
+        <li>「線画」で線画のレイヤーを選びます。</li>
+        <li>「ヒントのレイヤーを作る」を押します。ヒント用の新しいレイヤーが選ばれます。</li>
+        <li>ヒントのレイヤーに、塗りたい色を、それぞれの所へざっと置きます。</li>
+        <li>「実行」を押します。線画のすぐ下に「自動塗り」のレイヤーができます（線の下まで塗ります）。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="自動塗りの窓と、ヒントの色で塗り分けたところ" loading="lazy"><figcaption>自動塗り</figcaption></figure>
+      <h3 id="autofill-options">窓の項目</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">中身</th></tr></thead><tbody>
+        <tr><td>線画・ヒント</td><td>線画のレイヤーと、ヒントのレイヤー</td></tr>
+        <tr><td>線の参照</td><td>「線画のレイヤー」か「見えている絵の暗い所」を線とみなします</td></tr>
+        <tr><td>線とみなす濃さ</td><td>どのくらい濃い所を線とみなすか</td></tr>
+        <tr><td>隙間閉じ</td><td>線の切れ目をふさぎます</td></tr>
+        <tr><td>ヒントの無い所も近い色で塗る</td><td>ヒントを置いていない所も塗ります</td></tr>
+        <tr><td>UV の継ぎ目をまたいで塗る</td><td>体の前と後ろが別の島でも、ヒント 1 つで続けて塗ります（はじめは入）</td></tr>
+        <tr><td>塗ったらヒントのレイヤーを隠す</td><td>実行の後、ヒントのレイヤーを隠します（<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻ります）</td></tr>
+      </tbody></table></div>
+      <p>窓は見出しをつまんで動かせます（位置を覚えます）。閉じるのは ×・「閉じる」、または窓を押した後の <kbd>Esc</kbd> です。</p>
+      <h3 id="autofill-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>色が隣へ漏れる</b>：線が途切れています。線は、見えている面の上で閉じるように描きます（体の外にはみ出して途切れると、そこから漏れます）。「隙間閉じ」を上げても防げます。</li>
+        <li><b>塗られない所がある</b>：ヒントの無い所は塗りません。ヒントを置くか、「ヒントの無い所も近い色で塗る」を入れます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="history" data-keywords="アンドゥ リドゥ 取り消し やり直し 戻す 履歴 ヒストリー ctrl+z ctrl+y 戻せない">
+      <h2>元に戻す・作業の履歴</h2>
+      <p>間違えた操作は、元に戻す（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>）で戻せます。作業の履歴のパネルを使うと、何手か前まで一気に戻れます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">したいこと</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>1 手戻す</td><td>元に戻す（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>。押し続けると続けて戻ります）</td></tr>
+        <tr><td>戻した操作をやり直す</td><td>やり直し（<kbd>Ctrl</kbd>＋<kbd>Y</kbd> か <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>）</td></tr>
+        <tr><td>何手か前に戻る・進む</td><td>パネル「作業の履歴」の行を押します。その操作の後の状態まで、一気に戻る・進みます</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="作業の履歴のパネル" loading="lazy"><figcaption>作業の履歴</figcaption></figure>
+      <ul class="mn-list">
+        <li>作業の履歴には、今までの操作が古い順に並びます。▶ が今の位置、薄い行はやり直せる操作です。</li>
+        <li>記録は最大 30 手で、古い物から消えます。</li>
+        <li>パネルは、表示 → ウィンドウ で出し入れします。</li>
+      </ul>
+      <h3 id="undo-limits">元に戻せない操作</h3>
+      <p>絵（レイヤー・マスク・塗る先・マテリアルの設定）を変える操作は元に戻せます。見え方だけを変える操作と、アプリの設定は元に戻すに入りません。</p>
+      <ul class="mn-list">
+        <li>入らない物：テクスチャセットの表示の入り切り・表示範囲（隠す・選んだ所だけ表示・全部表示）・オブジェクトの表示・ブレンドシェイプ・視点・表示の形式・メッシュの線・カラーセットの追加と並べ替え・サブツール・設定・キー割り当て。レイヤーの表示は絵の一部なので戻せます。</li>
+        <li>選んだ所を隠す（<kbd>H</kbd>）は、外れる選択範囲の分だけが 1 手に入ります。隠した所を戻すのは「全部表示」（<kbd>Alt</kbd>＋<kbd>H</kbd>）です（<a href="/petanuri/manual/uv#isolate">表示範囲</a>）。隠した直後の <kbd>Ctrl</kbd>＋<kbd>Z</kbd> は、1 回目は知らせるだけで、もう一度押すと、その前の塗りを戻します。</li>
+        <li>カラーセットの見本の削除は、元に戻せます。</li>
+      </ul>
+      <div class="mn-tip warn">次の操作は元に戻せないので、先に確かめが出ます：サブツールの削除・カラーセットの削除・キー割り当ての初期化・ブラシサイズの一覧の初期化。テクスチャの解像度を変えると、元に戻すの履歴が全部消えます。</div>
+    </section>
+
+    <section class="mn-sec" id="sleep" data-keywords="メモリ不足 重い 4K 4096 VRAM GPU メモリ 軽くする 動作が遅い 準備しています">
+      <h2>レイヤーを休ませる（メモリの節約）</h2>
+      <p>解像度 4096 のレイヤーをたくさん重ねても重くならないように、しばらく触っていないレイヤーを GPU のメモリから外して持ちます。見た目・書き出し・保存はそのままです。</p>
+      <ul class="mn-list">
+        <li>GPU には、選んでいるレイヤーと、その下をまとめた絵・上をまとめた絵だけを置きます。ほかのレイヤーは、描いていない間に 1 枚ずつ縮めて持ちます（塗っていない所は持ちません）。</li>
+        <li>休んでいるレイヤーを選ぶ・描く・元に戻す・結合する・書き出すと、その場で戻ります。たくさんのレイヤーを読み直す選び方では、「準備しています…」と出てから切り替わります（4096 の 80 枚で 0.1〜0.3 秒ほど）。</li>
+        <li>上に、通常以外の合成モードのレイヤーや調整レイヤーがあると、その分は GPU に残ります。</li>
+        <li>作業ファイルを開いたときも、レイヤーは休んだまま開きます。</li>
+        <li>切るのは、ファイル → 環境設定 → 描画 → 性能 の「描いていないレイヤーを休ませる」です（はじめは入）。切ると、全部のレイヤーを GPU に置きます。</li>
+      </ul>
+      <div class="mn-tip">選んでいないテクスチャセットを丸ごと休ませる仕組みもあります（<a href="/petanuri/manual/sets#sleep">テクスチャセットのメモリの節約</a>）。</div>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/edit#select">選択範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/material#channels">塗る先（ノーマルマップ・影色など）</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/edit"><small>← 前へ</small>選択範囲・変形・文字</a><a class="next" href="/petanuri/manual/uv"><small>次へ →</small>UV と表示範囲</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +678,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/edit",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,355 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit" aria-current="page">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit" aria-current="page">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 選択範囲・変形・文字・定規</p>
     <h1 class="mn-h1">選択範囲・変形・文字・定規</h1>
-    <p class="mn-intro">塗る所を限ったり、描いた物を動かしたり、文字や画像を貼ったりする機能です。変形の枠は、3D のモデルの上にも UV の区画にも出ます。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#select">選択範囲</a></li><li><a href="#selbar">選択範囲のバー</a></li><li><a href="#move">移動・変形ツール</a></li><li><a href="#transform">変形（Ctrl＋T）と 3D の上の枠</a></li><li><a href="#warp">自由変形・ワープ</a></li><li><a href="#copy">コピー・切り取り・貼り付け</a></li><li><a href="#image">画像を追加・画像を貼る</a></li><li><a href="#text">文字</a></li><li><a href="#ruler">定規</a></li></ul></div>
-    <section class="mn-sec" id="select"><h2>選択範囲</h2><ol class="mn-steps"><li>ツール「選択範囲」（<kbd>S</kbd>）を選び、サブツールで形を選びます。</li><li>3D ビュー（か UV の区画）でドラッグ・なぞる・クリックして選びます。</li><li>選んでいる間は、描く・塗る・消す・フィルター・グラデーションが<strong>選択範囲の中だけ</strong>に効きます。外は少し暗く、境目に点線が出ます。</li><li><kbd>Ctrl</kbd>＋<kbd>D</kbd> で解除します。</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="選択範囲の中だけに塗ったところと、下の選択範囲のバー" loading="lazy"><figcaption>選択範囲の中だけに塗れます</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="選択範囲のツールプロパティ" loading="lazy"><figcaption>選び方の設定</figcaption></figure></div><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">選び方</th></tr></thead><tbody><tr><td>長方形・楕円</td><td>ドラッグ</td></tr><tr><td>投げ縄</td><td>なぞって囲む</td></tr><tr><td>折れ線</td><td>クリックで点を打ち、最初の点・ダブルクリック・Enter で閉じる</td></tr><tr><td>自動選択</td><td>押した所と色の近い続いた所</td></tr><tr><td>島で選択</td><td>押した UV の島を丸ごと</td></tr><tr><td>面で選択</td><td>なぞった面を丸ごと</td></tr><tr><td>選択ペン・選択消し</td><td>ブラシでなぞって足す・削る</td></tr></tbody></table></div><ul class="mn-list"><li>押し始めに <kbd>Shift</kbd>＝追加・<kbd>Alt</kbd>＝削除・<kbd>Shift</kbd>＋<kbd>Alt</kbd>＝共通。</li><li>「裏側・隠れた面も選ぶ」にすると、画面の形に写る所を裏まで全部選びます。<strong>体をぐるっと一周</strong>選んで、服のしましまを塗るときにべんりです。</li><li>メニュー「選択範囲」：すべてを選択 <kbd>Ctrl</kbd>＋<kbd>A</kbd>・反転 <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd>・広げる／狭める／境界をぼかす・レイヤーの塗られている所を選択・選択範囲からマスクを作る・描画色で塗る・中を消去（<kbd>Delete</kbd>）・点線の表示（<kbd>Ctrl</kbd>＋<kbd>H</kbd>）・選択範囲を戻す（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>）。</li><li>選択中は、選ばれていないテクスチャセットには描けません。</li></ul><div class="mn-tip">レイヤーのサムネイルを <kbd>Ctrl</kbd>＋押すと、塗られている所を選択範囲にできます（<kbd>Shift</kbd> で足す・<kbd>Alt</kbd> で削る）。</div><div class="mn-tip">似た色をすべて選ぶ（全版）：選択範囲 →「似た色をすべて選ぶ（描画色）」で、描画色に近い色の所をテクスチャ全体から選びます（つながっていなくても）。許容量・見る絵（全部のレイヤー／今のレイヤー）・選び方（新しく・足す・引く）を決められます。下塗りの色ごとに影色を変えるときなどに。</div><div class="mn-tip">選択範囲の外を暗くしない（v1.3.0 から）：メニュー「選択範囲 → 選択範囲の外を暗くする」（右クリックの選択範囲にも）を外すと、点線だけを出して、外の色をそのまま見ながら塗れます。選んだ物は次に起動したときも続きます（はじめは暗くする）。</div></section><section class="mn-sec" id="selbar"><h2>選択範囲のバー</h2><p>選択している間は、3D の区画の下に選択範囲のバーが出ます。左の「選択中」の札の後ろに、アイコンのボタンが並びます（名前とキーは、ペン先・カーソルを置くと出ます）。</p><ul class="mn-list"><li>解除（色の付いたボタン）・反転｜広げる・狭める・境界ぼかし｜塗る・消去｜新しいレイヤーへ ▾（コピー／切り取り）・その他 ▾（マスク・選んだ所だけ表示・隠す・点線）。</li><li>狭い画面では、広げる・狭める・境界ぼかしが「範囲 ▾」にまとまります。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="3D の下の選択範囲のバー" loading="lazy"><figcaption>選択範囲のバー</figcaption></figure></section><section class="mn-sec" id="move"><h2>移動・変形ツール</h2><ol class="mn-steps"><li>ツール「移動・変形」（<kbd>V</kbd>）を選びます。</li><li>3D のモデル（か UV の区画）で、動かしたい絵を押します。押した所に描いてあるいちばん上のレイヤーが選ばれ、その絵の枠が出ます（「自動でレイヤーを選ぶ」。切ると選んでいるレイヤー）。</li><li>押したままドラッグすると、すぐ動きます。角で大きさ、上の丸で回転。</li><li><kbd>Enter</kbd> か、ほかのツールに替えると確定、<kbd>Esc</kbd> でやめます。枠の外を押すと確定して、押した所のレイヤーへ移ります。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="3D のモデルの上に変形の枠と、枠の下のバーが出ているところ" loading="lazy"><figcaption>3D のモデルの上で、描いた絵を直接動かせます</figcaption></figure><ul class="mn-list"><li>選択範囲があれば、その中だけを動かします。確定は、元に戻す 1 回分です。</li><li>ツールプロパティで、枠の形（拡大・縮小・回転／自由変形／ワープ）とワープの格子の数を選べます。</li><li>文字レイヤーを押すと文字の枠になります（枠の中をドラッグで移動、ダブルクリックで打ち直す）。</li></ul></section><section class="mn-sec" id="transform"><h2>変形（Ctrl＋T）と 3D の上の枠</h2><ul class="mn-list"><li><strong>変形</strong>（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）：選択範囲があればその中を、無ければレイヤー全体を動かす枠を出します。</li><li>枠は <strong>3D の区画（モデルの上の、動かす絵のあたり）と UV の区画の両方</strong>に出ます。どちらの枠をつかんでも同じように動き、もう一方もついてきます。動かす絵が 3D で見えていれば、UV の区画を開かずに 3D だけで操作できます。</li><li>枠の中をドラッグで移動・角で拡大縮小（<kbd>Shift</kbd> で縦横比を変えられます）・辺で片方だけ・上の丸で回転（<kbd>Shift</kbd> で 15° 刻み）。左右反転・上下反転も。辺や角を反対側より先まで引くと、裏返ります。</li><li>3D の枠の上でも、右・中ドラッグ・ホイール・<kbd>Space</kbd>＋ドラッグで視点を動かせます。視点を変えても枠はついてきます。</li><li>UV の区画にグリッド線を出しているときは、枠がマス目に吸い付きます（<a href="/petanuri/manual/uv#grid">グリッド線と吸着</a>）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="UV の区画での変形の枠" loading="lazy"><figcaption>変形の枠（UV の区画）</figcaption></figure><div class="mn-tip">3D の変形（全版）：3D で見えている細かい所の絵でも 3D の枠が出るようにし、枠の中をドラッグして離しても枠と絵が飛ばないようにしました（自由変形・ワープも）。</div><div class="mn-tip">対称にも（全版）：描画の対称が入っていて選択範囲が片側にあるとき、下のバーに「対称にも」が出ます。入れたまま動かすと、3D の反対側も鏡に写して一緒に動きます（反対側の元の絵は置き換わります）。移動ツールも同じです。</div></section><section class="mn-sec" id="warp"><h2>自由変形・ワープ</h2><p>変形・移動・変形ツール・画像を追加・貼り付け・画像を 3D／UV に貼る の枠の下のバーに、3 つのアイコン（拡大・縮小・回転／自由変形／ワープ）が並びます。</p><ul class="mn-list"><li><strong>自由変形</strong>：4 つの角をそれぞれドラッグして形を変えます（遠近のように絵が付きます）。</li><li><strong>ワープ</strong>：格子の点をドラッグして絵を曲げます。格子は 3×3（バーで 4×4・5×5 も）。</li><li>どちらも、上の丸か角の少し外側をドラッグで回せます（<kbd>Shift</kbd> で 15° 刻み）。中をドラッグで全体を移動。</li><li>切り替えても形はそのままです。確定は元に戻す 1 回分（選択範囲を動かしたときも）。3D に貼るときは、画面の上の形を見えている面に投影します。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="ワープの格子の点を動かして絵を曲げているところ" loading="lazy"><figcaption>ワープ</figcaption></figure></section><section class="mn-sec" id="copy"><h2>コピー・切り取り・貼り付け</h2><ul class="mn-list"><li><strong>コピー</strong>（<kbd>Ctrl</kbd>＋<kbd>C</kbd>）・<strong>切り取り</strong>（<kbd>Ctrl</kbd>＋<kbd>X</kbd>）：選択範囲の中（無ければレイヤー全体）。レイヤーを複数選んでいるときも、対象は選択中の 1 枚だけです。</li><li><strong>貼り付け</strong>（<kbd>Ctrl</kbd>＋<kbd>V</kbd>）：同じ UV の位置に新しいレイヤーで貼って、そのまま変形できます。</li><li>ロック中・非表示・透明度を保護したレイヤーは、切り取り・消去をしません（理由を知らせます）。</li></ul></section><section class="mn-sec" id="image"><h2>画像を追加・画像を貼る</h2><ul class="mn-list"><li><strong>画像を追加</strong>（ファイル → 読み込み → 画像をレイヤーとして読み込む・画像のドロップ・外からコピーした画像の <kbd>Ctrl</kbd>＋<kbd>V</kbd>）：画像を置く枠が出ます。UV の区画が開いていれば UV の上、閉じていれば 3D の真ん中（見えている面に投影）。縦横比はそのまま、透明な所は透明のままです。</li><li>枠を合わせて <kbd>Enter</kbd> で、ファイル名の新しいレイヤーに入ります。<kbd>Esc</kbd> でやめると何も残りません。枠の下のバーの「テクスチャ全体に貼る」で、UV 全体に引き伸ばして入れることもできます（UV の大きさに描いた画像向け）。</li><li><strong>画像を 3D に貼る</strong>（編集 → 画像を 3D に貼る）：3D の上で枠を合わせ、<kbd>Enter</kbd> でモデルの見えている面に投影して貼ります。視点を動かしながら合わせてもかまいません。「斜めの面も濃く」で、斜めの面が薄くならないようにできます。</li><li><strong>画像を UV に貼る</strong>（編集 → 画像を UV に貼る）：UV の区画の上で枠を合わせて、新しいレイヤーに貼ります。</li></ul><div class="mn-tip">左右対称と選択範囲も効きます。</div></section><section class="mn-sec" id="text"><h2>文字</h2><ol class="mn-steps"><li>ツール「文字」（<kbd>T</kbd>）を選び、3D ビュー（か UV の区画）を押します。</li><li>枠と文字の窓が出て、<strong>すぐ枠の上で打てます</strong>。日本語の入力もそのまま使え、変換の候補は字の横に出ます。</li><li><kbd>Ctrl</kbd>＋<kbd>Enter</kbd> で確定します（打っている間の <kbd>Enter</kbd> は改行）。<kbd>Esc</kbd> の 1 回目で打つのをやめ（枠は残ります）、2 回目でやめます。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="3D の枠の上でその場で文字を打っているところ" loading="lazy"><figcaption>文字はその場で打てます</figcaption></figure><ul class="mn-list"><li>文字の窓で、書体・大きさ・色・太字・斜体・縦書き・行間・字間・揃え・縁取りを決めます。色は色のパネルの描画色、縁取りは背景色がそのまま効きます。</li><li><strong>字ごとに変える</strong>：字を選んでから色・大きさ・書体・太字・斜体・字間・縁取りを変えると、その字だけ変わります。選ばずに変えると、これから打つ字に使います。</li><li>打っている間は、キーのショートカット（<kbd>E</kbd> で消しゴムなど）は効きません。枠を動かすのは <kbd>Ctrl</kbd> を押しながらドラッグです。</li><li>書体は、この PC に入っている書体を全部選べます。書体のファイル（.ttf・.otf）も読み込めます（その起動の間だけ）。</li></ul><h3>文字を打ち直す（文字レイヤー）</h3><ul class="mn-list"><li>「新しいレイヤーに」貼った文字（UV に貼った文字はいつも）は<strong>文字レイヤー</strong>になり、レイヤーの一覧に「T」の印が付きます。</li><li>レイヤーの一覧でダブルクリック・右クリック →「文字を打ち直す」・文字ツールで字の上を押す で、貼ったときの状態で開き直せます。字ごとの色・大きさもそのままです。</li><li>文字レイヤーにペンなどで描き足すと、印が「T＋」になります。打ち直すと描き足した所は消えるので、残したいときは別のレイヤーに分けてください。</li><li>右クリック →「画素にする」で、ふつうのレイヤーにします（打ち直せなくなります）。作業ファイルにも入るので、開き直しても打ち直せます。PSD にはふつうのレイヤーとして書きます。</li></ul></section><section class="mn-sec" id="ruler"><h2>定規</h2><ul class="mn-list"><li>描く線を定規に吸い付かせます。直線・曲線は定規の近くで描き始めた線だけ、同心円・放射線・平行線はどこで描いても効きます。</li><li>作り方：直線・平行線はドラッグ、同心円・放射線は押した所が中心、曲線は点を打って <kbd>Enter</kbd> かダブルクリック。定規の丸はドラッグで動かせます。</li><li>3D の区画の定規は、視点を動かしても画面に残ります。UV の区画にも別に置けます。</li><li>表示 → 線と定規 → 定規に吸い付く（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd>）で切り替え、定規を消す。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="放射線の定規で線を引いたところ" loading="lazy"><figcaption>放射線の定規</figcaption></figure><div class="mn-tip"><strong>曲線の制御点を置いている途中</strong>は、<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で最後に置いた点を一つ戻せます。<kbd>Ctrl</kbd>＋<kbd>Y</kbd> または <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd> で点を戻す操作をやり直せます。<kbd>Enter</kbd>・ダブルクリックで定規を確定した後は、通常の履歴操作になります。</div><div class="mn-tip">定規があるときは、その区画の下の真ん中に帯が出ます（定規の種類・吸い付くの入り切り・消す）。消すは、その区画の定規だけを消します。</div></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/deco"><small>← 前へ</small>スタンプ・模様・ステッチ・2D キャンバス</a><a class="next" href="/petanuri/manual/layers"><small>次へ →</small>レイヤー</a></nav>
+    <p class="mn-intro">塗る所を選択範囲で限る、描いた絵を動かして形を変える、画像や文字をモデルに貼る、定規で線をそろえる、のやり方です。変形の枠は、3D ビューのモデルの上にも UV ビューにも出ます。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>ツール「選択範囲」（<kbd>S</kbd>）で囲むと、その中だけに塗れます。<kbd>Ctrl</kbd>＋<kbd>D</kbd> で解除します（<a href="#select">くわしく</a>）。</li>
+      <li>ツール「移動・変形」（<kbd>V</kbd>）でモデルの上の絵を押し、そのままドラッグすると動きます（<a href="#move">くわしく</a>）。</li>
+      <li>大きさや向きを変えるのは <kbd>Ctrl</kbd>＋<kbd>T</kbd> です。角で大きさ、上の丸で回転、<kbd>Enter</kbd> で確定します（<a href="#transform">くわしく</a>）。</li>
+      <li>画像はウィンドウに落とすと、枠を合わせて貼れます（<a href="#image">くわしく</a>）。</li>
+      <li>ツール「文字」（<kbd>T</kbd>）でモデルを押すと、その場で文字を打てます（<a href="#text">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#select">塗る所を選ぶ（選択範囲）</a></li><li><a href="#selbar">選択範囲のバーで操作する</a></li><li><a href="#selmenu">選択範囲を整える・使う（メニュー）</a></li><li><a href="#fillcolor">1 色で塗りつぶす・色をまとめて変える</a></li><li><a href="#move">描いた絵を動かす（移動・変形ツール）</a></li><li><a href="#transform">大きさ・向きを変える（変形）</a></li><li><a href="#warp">遠近を付ける・曲げる（自由変形・ワープ）</a></li><li><a href="#copy">コピー・切り取り・貼り付け</a></li><li><a href="#image">画像を貼る</a></li><li><a href="#text">文字を入れる</a></li><li><a href="#ruler">定規で線をそろえる</a></li></ul></div>
+
+    <section class="mn-sec" id="select" data-keywords="範囲選択 マスキング はみ出さない 囲む なげなわ 矩形 四角 丸 マジックワンド 魔法の杖 選択ツール 一周 しましま ボーダー">
+      <h2>塗る所を選ぶ（選択範囲）</h2>
+      <p>選択範囲を作ると、描く・塗る・消す・フィルター・グラデーションが、その中だけに効きます。はみ出したくない所を塗るときに使います。</p>
+      <ol class="mn-steps">
+        <li>ツール「選択範囲」（<kbd>S</kbd>）を選びます。</li>
+        <li>サブツールで、選び方（長方形・投げ縄など）を選びます。</li>
+        <li>3D ビューか UV ビューで、ドラッグ・なぞる・クリックして選びます。外が少し暗くなり、境目に点線が出ます。</li>
+        <li>ペンなどに持ち替えて塗ります。選択範囲の外には付きません。</li>
+        <li><kbd>Ctrl</kbd>＋<kbd>D</kbd> で解除します。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="選択範囲の中だけに塗ったところと、下の選択範囲のバー" loading="lazy"><figcaption>選択範囲の中だけに塗れます</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="選択範囲のツールプロパティ" loading="lazy"><figcaption>選び方の設定（ツールプロパティ）</figcaption></figure></div>
+      <h3 id="select-subtools">サブツールと選び方</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">選び方</th></tr></thead><tbody>
+        <tr><td>長方形・楕円</td><td>ドラッグします。</td></tr>
+        <tr><td>投げ縄</td><td>なぞって囲みます。</td></tr>
+        <tr><td>折れ線</td><td>クリックで点を打ちます。最初の点・ダブルクリック・<kbd>Enter</kbd> で閉じます。</td></tr>
+        <tr><td>自動選択</td><td>押した所と色の近い、続いた所を選びます。</td></tr>
+        <tr><td>島で選択</td><td>押した UV の島を丸ごと選びます。</td></tr>
+        <tr><td>面で選択</td><td>なぞった面を丸ごと選びます。</td></tr>
+        <tr><td>選択ペン・選択消し</td><td>ブラシでなぞって足す・削ります（<kbd>Alt</kbd> を押している間は逆）。</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>3D ビューでは、見えている面だけを選びます。ツールプロパティの「裏側・隠れた面も選ぶ」を入れると、画面の形に重なる所を裏まで全部選びます。<strong>体をぐるっと一周</strong>選んで、服のしましまを塗るときにべんりです。</li>
+        <li>自動選択は、ツールプロパティで「参照」（すべてのレイヤー／選択中のレイヤー）・「許容差」・「アンチエイリアス（縁を 1px なだらかに）」を決めます。</li>
+        <li>面で選択は、「拾う範囲」と「四角形ごとに選ぶ（三角形 2 つを 1 面に）」を決めます。</li>
+      </ul>
+      <h3 id="select-add">選択範囲に足す・削る</h3>
+      <p>ツールプロパティの「選び方」で、新規・追加・削除・共通を選びます。押し始めにキーを押しておくと、その 1 回だけ変えられます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">押し始めのキー</th><th scope="col">選び方</th></tr></thead><tbody>
+        <tr><td>なし</td><td>新規（今の選択範囲と置き換え）。押しただけで動かさないと解除</td></tr>
+        <tr><td><kbd>Shift</kbd></td><td>追加（今の選択範囲に足す）</td></tr>
+        <tr><td><kbd>Alt</kbd></td><td>削除（今の選択範囲から削る）</td></tr>
+        <tr><td><kbd>Shift</kbd>＋<kbd>Alt</kbd></td><td>共通（重なった所だけ残す）</td></tr>
+      </tbody></table></div>
+      <h3 id="select-other">そのほかの選び方</h3>
+      <ul class="mn-list">
+        <li>レイヤーのサムネイルを <kbd>Ctrl</kbd>＋押すと、そのレイヤーの塗られている所を選びます（<kbd>Shift</kbd> で足す・<kbd>Alt</kbd> で削る）。</li>
+        <li>3D ビューの右クリック →「この島を選ぶ（選択範囲）」で、押した所の島を選びます。UV ビューの右クリックには「この島を選択に足す」もあります。</li>
+        <li>描画色に近い色の所をまとめて選ぶときは、<a href="#select-color">似た色をすべて選ぶ</a>を使います。</li>
+      </ul>
+      <h3 id="select-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>思った所に塗れない</b>：選択範囲が残っていると、外には塗れません。<kbd>Ctrl</kbd>＋<kbd>D</kbd> で解除します。</li>
+        <li><b>ほかのテクスチャセットに描けない</b>：選択中は、選択範囲の無いテクスチャセットには描けません。解除するか、全部のセットが入る「すべてを選択」（<kbd>Ctrl</kbd>＋<kbd>A</kbd>）にします。</li>
+        <li><b>裏側が選ばれない</b>：3D ビューでは見えている面だけを選びます。「裏側・隠れた面も選ぶ」を入れます。</li>
+        <li><b>外が暗くて色が分からない</b>：選択範囲 →「選択範囲の外を暗くする」を外すと、点線だけになります（<a href="#selmenu">メニュー</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="selbar" data-keywords="選択バー 下のバー ポップアップ 解除ボタン 選択中">
+      <h2>選択範囲のバーで操作する</h2>
+      <p>選択している間は、3D ビューの下に選択範囲のバーが出ます（UV だけを出しているときは UV ビューの下）。左の「選択中」の札の後ろに、アイコンのボタンが並びます。ボタンの名前とキーは、ペン先かカーソルを置くと出ます。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="3D ビューの下の選択範囲のバー" loading="lazy"><figcaption>選択範囲のバー</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">ボタン</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>解除（色の付いたボタン）</td><td>選択を解除します。解除した後も「選択範囲を戻す」（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>）で戻せます</td></tr>
+        <tr><td>反転</td><td>選択範囲を反転します</td></tr>
+        <tr><td>広げる・狭める・境界ぼかし</td><td>選択範囲の形を整えます。狭い画面では「範囲 ▾」にまとまります</td></tr>
+        <tr><td>塗る</td><td>選択範囲を描画色で塗ります</td></tr>
+        <tr><td>消去</td><td>選択範囲の中を消去します</td></tr>
+        <tr><td>新しいレイヤーへ ▾</td><td>「コピーして新しいレイヤー」「切り取って新しいレイヤー」</td></tr>
+        <tr><td>その他 ▾</td><td>選択範囲からマスクを作る・選んだ所だけ表示・選んだ所を隠す・選択範囲の点線を表示・選択範囲の外を暗くする</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">隠すペンのバーや定規の帯が出ているときは、選択範囲のバーはその上に並びます。「選んだ所だけ表示」「選んだ所を隠す」は<a href="/petanuri/manual/uv#isolate">表示範囲</a>の機能です。</div>
+    </section>
+
+    <section class="mn-sec" id="selmenu" data-keywords="選択範囲メニュー 拡張 縮小 フェザー ぼかし 反転 再選択 色域選択 マスクにする 点線を消す 暗くしない">
+      <h2>選択範囲を整える・使う（メニュー「選択範囲」）</h2>
+      <p>メニュー「選択範囲」に、選択範囲を整える・使う項目が並びます。3D ビューの右クリックの「選択範囲」にも、ほとんどの項目があります。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">キー</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>すべてを選択</td><td><kbd>Ctrl</kbd>＋<kbd>A</kbd></td><td>全部のテクスチャセットの全体を選びます</td></tr>
+        <tr><td>選択を解除</td><td><kbd>Ctrl</kbd>＋<kbd>D</kbd></td><td>選択範囲を外します</td></tr>
+        <tr><td>選択範囲を戻す（最後に外した選択範囲）</td><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd></td><td>最後に解除した選択範囲に戻します</td></tr>
+        <tr><td>選択範囲を反転</td><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd></td><td>選んでいない所を選びます</td></tr>
+        <tr><td>選択範囲を広げる・選択範囲を狭める</td><td>—</td><td>UV の上で、1〜64px 広げる・狭めます</td></tr>
+        <tr><td>境界をぼかす</td><td>—</td><td>縁を 1〜64px なだらかにします</td></tr>
+        <tr><td>レイヤーの塗られている所を選択</td><td>—</td><td>選んでいるレイヤーの、描いてある所を選びます</td></tr>
+        <tr><td>似た色をすべて選ぶ（描画色）</td><td>—</td><td>描画色に近い色の所を選びます（<a href="#select-color">下</a>）</td></tr>
+        <tr><td>選択範囲からマスクを作る</td><td>—</td><td>選んでいるレイヤーに、選択範囲の形のマスクを付けます（<a href="/petanuri/manual/layers#mask">マスク</a>）</td></tr>
+        <tr><td>選択範囲をコピーして新しいレイヤー</td><td>—</td><td>中の絵を、同じ位置の新しいレイヤーに写します</td></tr>
+        <tr><td>選択範囲を切り取って新しいレイヤー</td><td>—</td><td>中の絵を、新しいレイヤーへ移します</td></tr>
+        <tr><td>選択範囲を描画色で塗る</td><td>—</td><td>中を描画色で塗ります</td></tr>
+        <tr><td>選択範囲の中を消去</td><td><kbd>Delete</kbd></td><td>選んでいるレイヤーの、中の絵を消します</td></tr>
+        <tr><td>選択範囲の点線を表示</td><td><kbd>Ctrl</kbd>＋<kbd>H</kbd></td><td>点線を出す・隠す（選択は残ります。外の暗さも残ります）</td></tr>
+        <tr><td>選択範囲の外を暗くする</td><td>—</td><td>外すと点線だけになり、外の色をそのまま見ながら塗れます。次に起動したときも続きます（はじめは入）</td></tr>
+      </tbody></table></div>
+      <h3 id="select-color">似た色をすべて選ぶ</h3>
+      <p>描画色に近い色の所を、テクスチャ全体から選びます。つながっていない所も選びます。下塗りの色ごとに影色を変えるときなどに使います。</p>
+      <ol class="mn-steps">
+        <li>スポイト（<kbd>I</kbd>）で、選びたい色を描画色にします。</li>
+        <li>選択範囲 →「似た色をすべて選ぶ（描画色）」を選びます。</li>
+        <li>「許容量（%）」で、どこまで近い色を選ぶかを決めます。</li>
+        <li>「見る絵」で「全部のレイヤー」か「今のレイヤー」を選びます。</li>
+        <li>「選び方」で「新しく」「足す」「引く」を選び、「選ぶ」を押します。</li>
+      </ol>
+    </section>
+
+    <section class="mn-sec" id="fillcolor" data-keywords="塗りつぶし 全面 ベタ 色替え 線画の色を変える 色変更 一括 alt+backspace ctrl+backspace 色を変えたい 色替え 色を変える 塗り替え">
+      <h2>1 色で塗りつぶす・色をまとめて変える</h2>
+      <p>メニュー「編集」の 3 つの項目です。選択範囲があればその中、無ければ選んでいるレイヤーの全面に効きます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">項目</th><th scope="col">キー</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>描画色で塗りつぶす</td><td><kbd>Alt</kbd>＋<kbd>Backspace</kbd></td><td>描画色で塗りつぶします</td></tr>
+        <tr><td>背景色で塗りつぶす</td><td><kbd>Ctrl</kbd>＋<kbd>Backspace</kbd></td><td>背景色で塗りつぶします</td></tr>
+        <tr><td>描画色に変える（透明度はそのまま）</td><td>—</td><td>描いてある所の色だけを、今の描画色に変えます。濃さ（透明度）と透明な所はそのままです</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>「描画色に変える」は、線画の色をまとめて変えるときに使います。レイヤーの行の右クリックにもあります。</li>
+        <li>マスクに描いているときは、マスクを色の明るさで塗ります（白＝見せる・黒＝隠す）。</li>
+        <li>ノーマルマップのフォルダの中では、灰色で変えます。ノーマルマップ画像のレイヤーには使えません（<a href="/petanuri/manual/material#channels">塗る先</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="move" data-keywords="移動ツール 動かす ずらす 位置を変える 自動選択 レイヤーを選ぶ v">
+      <h2>描いた絵を動かす（移動・変形ツール）</h2>
+      <p>3D のモデルの上で絵を押して、そのまま動かせます。どのレイヤーに描いたかを探さなくても、押した所のレイヤーが選ばれます。</p>
+      <ol class="mn-steps">
+        <li>ツール「移動・変形」（<kbd>V</kbd>）を選びます。</li>
+        <li>3D ビュー（か UV ビュー）で、動かしたい絵を押します。押した所に描いてある、いちばん上のレイヤーが選ばれ、その絵の枠が出ます。</li>
+        <li>押したままドラッグすると、すぐ動きます。角で大きさ、上の丸で回転です。</li>
+        <li><kbd>Enter</kbd> か、ほかのツールに替えると確定します。<kbd>Esc</kbd> でやめます。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="3D のモデルの上に変形の枠と、枠の下のバーが出ているところ" loading="lazy"><figcaption>3D のモデルの上で、描いた絵を直接動かせます</figcaption></figure>
+      <h3 id="move-detail">細かい設定</h3>
+      <ul class="mn-list">
+        <li>ツールプロパティの「自動でレイヤーを選ぶ」を切ると、押した所ではなく、選んでいるレイヤーを動かします。</li>
+        <li>枠の外を押すと確定して、押した所のレイヤーへ移ります。</li>
+        <li>選択範囲があれば、その中だけを動かします。確定は、元に戻す 1 回分です。</li>
+        <li>ツールプロパティの「形」で、枠の形（拡大・縮小・回転／自由変形／ワープ）を、「ワープの格子」で格子の数を選べます（<a href="#warp">自由変形・ワープ</a>）。</li>
+        <li>文字レイヤーを押すと文字の枠になります。枠の中をドラッグで移動、ダブルクリックで打ち直しです（<a href="#retext">文字を打ち直す</a>）。</li>
+      </ul>
+      <h3 id="move-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「ここに描いてある表示中のレイヤーはありません」と出る</b>：非表示のレイヤー・マスクで隠した所・不透明度 0% の絵は選ばれません。レイヤーのパネルで選んでから、「自動でレイヤーを選ぶ」を切って動かします。</li>
+        <li><b>ほかのレイヤーが動く</b>：重なっていると、いちばん上のレイヤーが選ばれます。動かしたいレイヤーを選び、「自動でレイヤーを選ぶ」を切ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="transform" data-keywords="拡大 縮小 回転 サイズ変更 リサイズ 反転 裏返す ミラー 自由変形 ctrl+t 枠">
+      <h2>大きさ・向きを変える（変形）</h2>
+      <p>選択範囲の中か、レイヤー全体の絵に、大きさ・向きを変える枠を出します。枠は 3D ビューのモデルの上と UV ビューの両方に出ます。</p>
+      <ol class="mn-steps">
+        <li>変えたい所を選択範囲で囲みます（レイヤー全体なら要りません）。</li>
+        <li>編集 →「変形（3D・UV の上で）」（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）を選びます。枠が出ます。</li>
+        <li>枠の中をドラッグで移動、角で拡大縮小、上の丸で回転します。</li>
+        <li><kbd>Enter</kbd> で確定します。やめるときは <kbd>Esc</kbd> です。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="UV ビューでの変形の枠" loading="lazy"><figcaption>変形の枠（UV ビュー）</figcaption></figure>
+      <h3 id="transform-detail">枠の操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">変わること</th></tr></thead><tbody>
+        <tr><td>枠の中をドラッグ</td><td>移動します</td></tr>
+        <tr><td>角をドラッグ</td><td>拡大縮小します（<kbd>Shift</kbd> で縦横比を変えられます）</td></tr>
+        <tr><td>辺をドラッグ</td><td>片方の向きだけ伸び縮みします</td></tr>
+        <tr><td>上の丸をドラッグ</td><td>回転します（<kbd>Shift</kbd> で 15° 刻み）</td></tr>
+        <tr><td>辺・角を反対側より先まで引く</td><td>裏返ります</td></tr>
+        <tr><td>枠の下のバー</td><td>左右反転・上下反転・不透明度・枠の形（<a href="#warp">自由変形・ワープ</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>3D と UV のどちらの枠をつかんでも同じように動き、もう一方もついてきます。動かす絵が 3D で見えていれば、UV ビューを開かずに 3D だけで操作できます。見えていなければ UV ビューが開き、やめると閉じます。</li>
+        <li>3D の枠の上でも、右・中ドラッグ・ホイール・<kbd>Space</kbd>＋ドラッグで視点を動かせます。視点を変えても枠はついてきます。</li>
+        <li>3D の枠は、枠の真ん中の面に合わせて出ます。UV の継ぎ目をまたぐときは、真ん中の島に合わせます。</li>
+        <li>UV ビューにグリッド線を出しているときは、枠がマス目に吸い付きます（<a href="/petanuri/manual/uv#grid">グリッド線と吸着</a>）。</li>
+        <li>選択範囲も一緒に動きます。</li>
+      </ul>
+      <h3 id="transform-mirror">反対側も一緒に動かす（対称にも）</h3>
+      <p>描画の対称が入っていて、選択範囲が片側にあるときは、枠の下のバーに「対称にも」が出ます。入れたまま動かすと、3D の反対側も鏡に写して一緒に動きます。反対側の元の絵は置き換わります。</p>
+      <ul class="mn-list">
+        <li>移動・変形ツールでも同じです。</li>
+        <li>左右とも選んでいるとき・選択範囲が中心をまたぐとき・選択範囲が無いときは出ません。</li>
+        <li>対称の入れ方は<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>へ。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="warp" data-keywords="パース 遠近 歪める ゆがめる メッシュ変形 グリッド変形 格子 曲げる 台形">
+      <h2>遠近を付ける・曲げる（自由変形・ワープ）</h2>
+      <p>枠の下のバーの 3 つのアイコンで、枠の形を切り替えます。変形・移動・変形ツール・画像を追加・貼り付け・画像を 3D／UV に貼る で使えます（文字の枠には出ません）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">枠の形</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>拡大・縮小・回転</td><td>角で大きさ、上の丸で回転、中をドラッグで移動（<a href="#transform-detail">枠の操作</a>）</td></tr>
+        <tr><td>自由変形</td><td>4 つの角を、それぞれドラッグして形を変えます。遠近のように絵が付きます。角は反対側を越えず、へこんだ形にもなりません</td></tr>
+        <tr><td>ワープ</td><td>格子の点をドラッグして、絵を曲げます。格子は 3×3 で、バーで 4×4・5×5 にもできます</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="ワープの格子の点を動かして絵を曲げているところ" loading="lazy"><figcaption>ワープ</figcaption></figure>
+      <ul class="mn-list">
+        <li>自由変形・ワープも、上の丸か角の少し外側をドラッグで回せます（<kbd>Shift</kbd> で 15° 刻み）。中をドラッグで全体を移動します。</li>
+        <li>拡大・縮小・回転 → 自由変形 → ワープと切り替えても、形はそのままです。拡大・縮小・回転に戻すと、今の形を絵に描き込んで、その外側の四角の枠になります。</li>
+        <li>左右反転・上下反転・不透明度も使えます。確定は元に戻す 1 回分です（選択範囲を動かしたときも）。</li>
+        <li>3D に貼るときは、画面の上で曲げた形を、見えている面に投影します。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="copy" data-keywords="コピペ 複製 カット ペースト ctrl+c ctrl+x ctrl+v 別のレイヤーへ 抜き出す">
+      <h2>コピー・切り取り・貼り付け</h2>
+      <p>選択範囲の中（無ければレイヤー全体）の絵を、コピー・切り取りして貼ります。貼った絵は、新しいレイヤーに入ります。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">キー</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>編集 →「コピー（選択範囲の中）」</td><td><kbd>Ctrl</kbd>＋<kbd>C</kbd></td><td>選んでいるレイヤーの絵をコピーします</td></tr>
+        <tr><td>編集 →「切り取り（選択範囲の中）」</td><td><kbd>Ctrl</kbd>＋<kbd>X</kbd></td><td>コピーして、元の絵を消します</td></tr>
+        <tr><td>編集 →「貼り付け」</td><td><kbd>Ctrl</kbd>＋<kbd>V</kbd></td><td>同じ UV の位置に、新しいレイヤーで貼ります。そのまま枠で動かせます</td></tr>
+        <tr><td>選択範囲 →「選択範囲をコピーして新しいレイヤー」「選択範囲を切り取って新しいレイヤー」</td><td>—</td><td>枠を出さずに、すぐ同じ位置の新しいレイヤーに入れます</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>レイヤーを何枚か選んでいるときも、対象は選択中の 1 枚だけです。</li>
+        <li>ほかのアプリでコピーした画像を <kbd>Ctrl</kbd>＋<kbd>V</kbd> すると、枠を合わせて貼れます（<a href="#image">画像を追加</a>）。</li>
+      </ul>
+      <h3 id="copy-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>切り取れない・消去できない</b>：ロック中・非表示・透明度保護のレイヤーは、切り取り・消去をしません（理由が下に出ます）。コピーはできます。</li>
+        <li><b>新しいレイヤーにできない（Lite）</b>：Lite はテクスチャセットごとに、下地を含めてレイヤー 4 枚までです（<a href="/petanuri/manual/start#editions">版</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="image" data-keywords="画像を貼る デカール ステッカー ロゴ ワッペン シール 写真 インポート 読み込む ドラッグアンドドロップ 投影 プロジェクション png jpg">
+      <h2>画像を貼る</h2>
+      <p>ロゴや柄の画像を、枠で大きさと位置を合わせて貼ります。貼り方は 3 通りです。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">貼り方</th><th scope="col">始め方</th><th scope="col">枠の出る所</th></tr></thead><tbody>
+        <tr><td>画像を追加</td><td>ファイル → 読み込み →「画像をレイヤーとして読み込む」・画像をウィンドウに落とす・ほかのアプリでコピーした画像を <kbd>Ctrl</kbd>＋<kbd>V</kbd></td><td>UV ビューが開いていれば UV の上、閉じていれば 3D の真ん中（見えている面に投影）</td></tr>
+        <tr><td>画像を 3D に貼る</td><td>編集 →「画像を 3D に貼る」</td><td>3D ビュー（見えている面に投影）</td></tr>
+        <tr><td>画像を UV に貼る</td><td>編集 →「画像を UV に貼る」</td><td>UV ビュー</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>画像をウィンドウに落とします。画像を置く枠が出ます。</li>
+        <li>枠を動かして、大きさと位置を合わせます。視点を動かしながら合わせてもかまいません。</li>
+        <li><kbd>Enter</kbd> で確定します。ファイル名の新しいレイヤーに入ります。</li>
+      </ol>
+      <h3 id="image-detail">枠の下のバー</h3>
+      <ul class="mn-list">
+        <li>縦横比はそのままで、見えている所に収まる大きさで置きます。透明な所は透明のままです。</li>
+        <li><kbd>Esc</kbd> でやめると、何も残りません。確定した後は、元に戻す 1 回で消えます。</li>
+        <li>「テクスチャ全体に貼る」（画像を追加のとき）：UV 全体に引き伸ばして、新しいレイヤーに入れます。UV の大きさで描いた画像に使います。</li>
+        <li>「新しいレイヤーに」（3D に貼るとき。はじめは入）：貼ったテクスチャセットごとに新しいレイヤーを作ります。外すと、今のレイヤーに貼ります。</li>
+        <li>「斜めの面も濃く」：横を向いた面でも、薄くしないで貼ります。</li>
+        <li>左右反転・上下反転・不透明度と、枠の形（<a href="#warp">自由変形・ワープ</a>）も使えます。</li>
+        <li>左右対称と選択範囲も効きます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="text" data-keywords="テキスト 文字入れ 名前 ロゴ フォント 書体 縦書き 横書き 縁取り フチ 袋文字 アウトライン ime 日本語入力">
+      <h2>文字を入れる</h2>
+      <p>モデルの上で、その場で文字を打って貼ります。書体・大きさ・色は、字ごとにも変えられます。</p>
+      <ol class="mn-steps">
+        <li>ツール「文字」（<kbd>T</kbd>）を選びます。サブツールで「横書き」か「縦書き」を選びます。</li>
+        <li>3D ビュー（か UV ビュー）を押します。枠と文字の窓が出ます（編集 →「文字を入れる」でも始められます）。</li>
+        <li>そのまま打ちます。日本語の入力も使え、変換の候補は字の横に出ます。</li>
+        <li><kbd>Ctrl</kbd>＋<kbd>Enter</kbd> で確定します（打っている間の <kbd>Enter</kbd> は改行です）。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="3D の枠の上でその場で文字を打っているところ" loading="lazy"><figcaption>文字はその場で打てます</figcaption></figure>
+      <h3 id="text-window">文字の窓</h3>
+      <ul class="mn-list">
+        <li>書体・大きさ・色・太字・斜体・縦書き・行間・字間・揃え・縁取りを決めます。</li>
+        <li>文字の窓を開いている間は、色のパネルの描画色が文字の色、背景色が縁取りの色になります。窓の色の四角を押しても選べます。</li>
+        <li>見出しの「スライダーで調整」を入れると、大きさ・縁取り・行間・字間をスライダーでも動かせます。</li>
+        <li>書体の一覧の下の方に、「この PC の書体」として、PC に入っている書体が全部並びます。</li>
+        <li>「書体を読み込む」で、書体のファイル（.ttf・.otf）も使えます（その起動の間だけ）。</li>
+        <li>窓が枠に重なるときは、窓の見出し（「文字」）をつまんで動かせます。位置は次も同じです。</li>
+        <li>UV ビューを押して始めると、UV の上に貼ります。</li>
+      </ul>
+      <h3 id="text-keys">打っている間の操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>枠の中を押す（ダブルクリックでも）</td><td>押した所から打ちます</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd>・<kbd>Home</kbd>・<kbd>End</kbd></td><td>打つ位置を動かします（縦書きは <kbd>↑</kbd> <kbd>↓</kbd> で字の前後、<kbd>←</kbd> で次の行）</td></tr>
+        <tr><td><kbd>Shift</kbd>＋矢印・枠の中のドラッグ</td><td>字を選びます</td></tr>
+        <tr><td><kbd>Backspace</kbd>・<kbd>Delete</kbd></td><td>字を消します</td></tr>
+        <tr><td><kbd>Ctrl</kbd>＋ドラッグ</td><td>枠を動かします（角・辺・上の丸はいつもどおり）</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>1 回目で打つのをやめます（枠は残り、ドラッグで動きます）。2 回目で文字をやめます</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">打っている間は、キーのショートカット（<kbd>E</kbd> で消しゴム など）は効きません。始めたときは全部の字が選ばれているので、打つと置き換わります。</div>
+      <h3 id="text-char">字ごとに色や大きさを変える</h3>
+      <ul class="mn-list">
+        <li>字を選んでから、色（描画色・背景色）・大きさ・書体・太字・斜体・字間・縁取りを変えると、その字だけ変わります。</li>
+        <li>選ばずに変えると、これから打つ字に使います。打っていないとき（<kbd>Esc</kbd> の後など）は、全部の字が変わります。</li>
+        <li>どの字が変わるかは、文字の窓の「色や大きさを変えると：」に出ます。</li>
+        <li>行間・揃え・縦書きは、全部の字に効きます。大きさの違う字は、下の線をそろえて並びます。</li>
+      </ul>
+      <h3 id="retext">文字を打ち直す（文字レイヤー）</h3>
+      <p>「新しいレイヤーに」を入れて貼った文字は<strong>文字レイヤー</strong>になり、レイヤーの一覧に「T」の印が付きます。UV に貼った文字は、いつも文字レイヤーです。あとから字・書体・色などを変えて貼り直せます。</p>
+      <ol class="mn-steps">
+        <li>レイヤーの一覧で、文字レイヤーをダブルクリックします（右クリック →「文字を打ち直す」でも）。</li>
+        <li>文字の窓と枠が、貼ったときの状態で開きます。字ごとの色・大きさも、そのままです。</li>
+        <li>直して <kbd>Ctrl</kbd>＋<kbd>Enter</kbd> で描き直します。元に戻すで戻せます。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>文字ツールで字の上を押す・ツールプロパティの「選んでいる文字レイヤーを打ち直す」でも始められます。</li>
+        <li>3D に貼った文字は、貼ったときの視点に戻してから枠を出します。やめると元の視点に戻ります。</li>
+        <li>名前を変えるのは、右クリック →「名前を変える」です。</li>
+        <li>右クリック →「画素にする（打ち直せなくなる）」で、ふつうのレイヤーにします。</li>
+        <li>作業ファイルに入るので、開き直しても打ち直せます。PSD には、ふつうのレイヤーとして書きます。</li>
+      </ul>
+      <h3 id="text-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>キーを押してもツールが変わらない</b>：文字を打っている間は、ショートカットが効きません。<kbd>Esc</kbd> を押して打つのをやめます。</li>
+        <li><b>打ち直したら、描き足した所が消えた</b>：文字レイヤーに描き足すと、印が「T＋」になります。打ち直すと描き足しは消えるので、<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で戻し、描き足しを別のレイヤーに分けてから打ち直します。</li>
+        <li><b>「書体が見つかりません」と出た</b>：読み込んだ書体は、その起動の間だけ使えます。ほかの書体で打ち直されるので、元の書体にするときは「書体を読み込む」でもう一度読み込みます。</li>
+        <li><b>打ち直せない</b>：「新しいレイヤーに」を外して今のレイヤーに貼った文字と、画素にした文字は、ふつうの絵です。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="ruler" data-keywords="定規ツール まっすぐ 直線を引く 集中線 パース線 平行 同心円 スナップ 吸着 ガイド線">
+      <h2>定規で線をそろえる</h2>
+      <p>描く線を定規に吸い付かせて、まっすぐな線や、中心に向かう線を引きます。3D ビューでも UV ビューでも使えます。</p>
+      <ol class="mn-steps">
+        <li>ツール「定規」を選び、サブツールで定規の種類を選びます。</li>
+        <li>3D ビューか UV ビューで、定規を作ります（作り方は下の表）。</li>
+        <li>ペンなどに持ち替えて描きます。線が定規に沿います。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">サブツール</th><th scope="col">作り方</th><th scope="col">効く線</th></tr></thead><tbody>
+        <tr><td>直線定規</td><td>ドラッグ</td><td>近く（吸い付く距離の中）で描き始めた線が、直線になります</td></tr>
+        <tr><td>曲線定規</td><td>点を打ち、<kbd>Enter</kbd> かダブルクリックで終わり（<kbd>Esc</kbd> でやめる）</td><td>近くで描き始めた線が、曲線に沿います</td></tr>
+        <tr><td>同心円定規</td><td>押した所が中心</td><td>どこで描いても、中心からの距離を保った円になります</td></tr>
+        <tr><td>放射線定規</td><td>押した所が中心</td><td>どこで描いても、中心へ向かう線になります</td></tr>
+        <tr><td>平行線定規</td><td>ドラッグで向きを決める</td><td>どこで描いても、その向きの線になります</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="放射線の定規で線を引いたところ" loading="lazy"><figcaption>放射線定規</figcaption></figure>
+      <h3 id="ruler-detail">定規を動かす・切る・消す</h3>
+      <ul class="mn-list">
+        <li>定規の丸（端・中心・点）は、ドラッグで動かせます。吸い付く距離は、ツールプロパティで決めます。</li>
+        <li>3D ビューの定規は、視点を動かしても画面に残ります。UV ビューにも別に置けます。</li>
+        <li>定規があるときは、その区画の下の真ん中に帯が出ます（定規の種類・「吸い付く」の入り切り・「消す」）。「消す」は、その区画の定規だけを消します。</li>
+        <li>表示 → 線と定規 →「定規に吸い付く」（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd>）で切り替えます。同じ所の「定規を消す」で消します。</li>
+        <li>曲線定規の点を打っている途中は、<kbd>Ctrl</kbd>＋<kbd>Z</kbd> で最後の点を 1 つ戻せます。<kbd>Ctrl</kbd>＋<kbd>Y</kbd> か <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd> でやり直せます。</li>
+      </ul>
+      <h3 id="ruler-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>線が勝手にまっすぐになる・曲がる</b>：定規が残っています。下の帯の「吸い付く」を切るか、「消す」で消します（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd> でも切れます）。</li>
+        <li><b>直線定規・曲線定規に沿わない</b>：定規の近くで描き始めた線だけに効きます。ツールプロパティの吸い付く距離を広げます。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/layers#mask">レイヤーマスク</a></li><li><a href="/petanuri/manual/draw#mirror">左右対称で描く</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/keys">ショートカット</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/deco"><small>← 前へ</small>スタンプ・模様・ステッチ</a><a class="next" href="/petanuri/manual/layers"><small>次へ →</small>レイヤー</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +490,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/screen",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,18 +123,500 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="マニュアルの目次">
-    <p class="mn-side-title">マニュアル</p>
+  <aside class="mn-side has-search" aria-label="マニュアルの目次">
+    <form class="mn-search" role="search" action="/petanuri/manual/search" data-index="/petanuri/assets/data/manual-search.ja.json">
+      <label class="mn-search-label" for="mn-q">マニュアルを検索</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例：左右対称・筆圧・書き出し" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="検索の結果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/manual">マニュアル</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">マニュアルの目次</button>
-    <nav><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw">描く</a></li><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ・2D キャンバス</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字・定規</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV の区画と表示範囲</a></li><li><a href="/petanuri/manual/screen" aria-current="page">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/sets">テクスチャセットとオブジェクト</a></li><li><a href="/petanuri/manual/material">仕上がりと lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク・質感と陰影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ・頂点グループ <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity から塗る・AI 連携</a></li><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li></ol><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
+    <nav><p class="mn-group">はじめに</p><ul class="mn-plain"><li><a href="/petanuri/manual/first">はじめての方へ</a></li><li><a href="/petanuri/manual/howto">やりたいことから探す</a></li><li><a href="/petanuri/manual/trouble">困ったとき</a></li></ul><p class="mn-group">基本</p><ol><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/screen" aria-current="page">画面・パネル・環境設定</a></li><li><a href="/petanuri/manual/draw">描く</a></li></ol><p class="mn-group">道具と範囲</p><ol><li><a href="/petanuri/manual/deco">スタンプ・模様・ステッチ</a></li><li><a href="/petanuri/manual/edit">選択範囲・変形・文字</a></li><li><a href="/petanuri/manual/layers">レイヤー</a></li><li><a href="/petanuri/manual/uv">UV と表示範囲</a></li><li><a href="/petanuri/manual/sets">テクスチャセット</a></li></ol><p class="mn-group">仕上げ</p><ol><li><a href="/petanuri/manual/material">lilToon のマテリアル <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/ao">AO を焼く <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/bake">お手軽ベイク <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/manual/pose">ポーズ・ブレンドシェイプ <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">渡す</p><ol><li><a href="/petanuri/manual/export">書き出し</a></li><li><a href="/petanuri/manual/unity">Unity・AI 連携</a></li></ol><p class="mn-group">調べる</p><ol><li><a href="/petanuri/manual/keys">ショートカット</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/manual/glossary">用語集</a></li></ul><a class="mn-back" href="/petanuri/manual">← マニュアルのトップ</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri">ぺたぬり3D</a> ／ <a href="/petanuri/manual">マニュアル</a> ／ 画面・パネル・環境設定</p>
     <h1 class="mn-h1">画面・パネル・環境設定</h1>
-    <p class="mn-intro">パネルとツールバーは好きな所へ動かせます。配置は次の起動でも戻ります。</p><p class="mn-proof">Lite・Standard・Pro と Pro アップグレードを BOOTH で配布しています。</p>
-    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#layout">はじめの配置</a></li><li><a href="#dock">パネルを動かす</a></li><li><a href="#tabs">タブ・折りたたみ・アイコンの帯</a></li><li><a href="#toolbar">ツールバー・よく使うツール</a></li><li><a href="#hud">3D ビューの四隅</a></li><li><a href="#light">表示の形式と光の向き</a></li><li><a href="#ctx">右クリックのメニュー</a></li><li><a href="#settings">環境設定</a></li></ul></div>
-    <section class="mn-sec" id="layout"><h2>はじめの配置</h2><ul class="mn-list"><li>左にサブツール・ツールプロパティ・ブラシサイズ・参考画像。</li><li>右は 3 列：3D ビューのすぐ右にテクスチャセット・レイヤープロパティ・レイヤー、その右に色・色の値・カラーセット｜最近使った色・作業の履歴、いちばん右にオブジェクトと Pro のパネル（頂点グループ・マテリアル・ブレンドシェイプ・ポーズ）をアイコンの帯にたたんだ列。</li><li>窓の大きさに合わせて列の幅を決めます。幅 1400 未満（1280×720・1366×768 など）では、色の列もいちばん右の帯にまとめて、3D ビューを広く残します。</li><li>はじめの配置のままなら、窓の大きさを変えると組み直します。配置を変えた後は、そのままです。表示 → ウィンドウ →「ウィンドウの配置を初期に戻す」で、はじめの配置に戻ります。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="はじめの配置の画面" loading="lazy"><figcaption>はじめの配置</figcaption></figure></section><section class="mn-sec" id="dock"><h2>パネルを動かす</h2><ul class="mn-list"><li>パネルの見出しをドラッグして、離した所で決まります。</li><li>列・段の中ほど：その列・段に差し込む。列・段の端：隣に新しい列・段を作る。3D ビューの端（「左に列を足す」などの枠）：その側に新しい列・段。それ以外：浮いたウィンドウ。</li><li>境目のドラッグで幅・高さを変えます（ダブルクリックで元に戻す）。左右の列のパネルは、下の端のつまみで高さも変えられます。</li><li>浮いたウィンドウは、見出しで移動・右下のつまみで大きさ。出す・隠すはメニュー「表示」から（見出しの右クリックの「このパネルを隠す」でも）。パネルはアプリの窓の中に置きます。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-dock-v1.webp" width="1400" height="840" alt="パネルを列・段・浮いたウィンドウに並べた画面" loading="lazy"><figcaption>パネルを動かした配置の例</figcaption></figure><div class="mn-tip">浮いたウィンドウは「パネルの配置を固定」中も、見出しのドラッグで動かし大きさを変えられます。右上の鍵で、そのウィンドウだけ固定 ⇄ 解除できます。表示 → ウィンドウ →「ツール一覧」で、ツールのアイコンを格子に並べたパネル（下に描画色・背景色）を出せます。</div></section><section class="mn-sec" id="tabs"><h2>タブ・折りたたみ・アイコンの帯</h2><ul class="mn-list"><li><strong>折りたたむ</strong>：見出しをクリックすると見出しだけになります。使わないパネルを畳むと、ほかが広く使えます。</li><li><strong>タブにする</strong>：見出しを、別のパネルの見出しの上へドラッグします（「ここに重ねるとタブにする」と出たら離す）。タブを外へドラッグすると切り離せます。</li><li><strong>アイコンの帯</strong>：列の上の「&lt;」「&gt;」で、列がアイコンだけの細い帯になります。アイコンを押すと、そのパネルだけが横に出ます（外を押す・<kbd>Esc</kbd> でしまう）。</li></ul></section><section class="mn-sec" id="toolbar"><h2>ツールバー・よく使うツール</h2><ul class="mn-list"><li><strong>置き場所</strong>：ツールバーのつまみをドラッグすると、作業の場所の 4 辺（左・右・上・下）に受け口が出て、離した端に付きます（上・下では横に並びます）。ほかの所で離すと浮きます。ボタンの右クリック →「ツールバーの置き場所」でも選べます。</li><li><strong>アイコンの大きさ</strong>：ボタンの右クリック →「ツールバーのアイコンの大きさ」で 大・小。</li><li><strong>画面の色</strong>：ツールバーのいちばん後ろの太陽と月のスイッチで、ライト⇔ダーク。</li><li><strong>ツールの並べ替え</strong>：ボタンをドラッグ（ペンでも）して好きな順に。少し動かしてから離すと並べ替え、動かさずに離すとそのツールを選びます。右クリックの「並びを初期に戻す」で元の順に。</li><li><strong>よく使うツール</strong>：ツールバーのボタンかサブツールを右クリック →「よく使うに登録」。3D の区画と UV の区画の上の小さな帯に出て、押すとそのツール・サブツールに切り替わります。帯の「＋」で今のサブツールを登録（ペンだけでも使えます）。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-favbar.webp" width="320" height="70" alt="よく使うツールの帯" loading="lazy"><figcaption>よく使うツールの帯</figcaption></figure><div class="mn-tip">メニューバーの「ファイル」がいちばん左になり、すぐ右に「新規作成・開く・保存」と「元に戻す・やり直し」のボタンが並びます（戻せないときは薄くなります）。版はウィンドウの題で分かります。</div><div class="mn-tip">よく使うツールの帯は、3D ビュー用と UV ビュー用で別々に表示・隠せます（表示 → ウィンドウ）。表示 → ウィンドウ の「パネルの配置を固定」を入れている間は、パネルの移動や大きさの変更をしません。</div><div class="mn-tip">画面に入らない長いメニューや右クリックのメニューは、上下の端にマウスやペンを置くとそちらへ送れます（まだ項目があると端に ▲・▼ の印が出ます）。ホイールやキーの上下でも送れます。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-menubar-v112.webp" width="640" height="34" alt="メニューバーと新規作成・開く・保存・元に戻す・やり直しのボタン" loading="lazy"><figcaption>メニューバーのボタン</figcaption></figure><div class="mn-tip">ツールバーの列（v1.3.0 から）：ツールバーの右クリックで「列：自動」「列：いつも 1 列」を選べます。入りきらない道具は、ホイール・端の矢印・ペンのドラッグで送れます。</div></section><section class="mn-sec" id="hud"><h2>3D ビューの四隅</h2><ul class="mn-list"><li><strong>左上</strong>：メッシュの線・表示の形式・片面／両面・対称で描く X Y Z・表示範囲（▼ の付いたアイコンは、下の ▼ で設定が開きます）。</li><li><strong>上の真ん中</strong>：ペイント／ポーズの切り替え（ポーズの間はボーンの操作、塗る先を塗っている間は塗る先の操作）。左のつまみ（⋮）で好きな場所へ動かせます。</li><li><strong>右上</strong>：正面・背面・右・左・上・下・透視／平行・全体表示（テンキーもそのまま使えます）。</li><li><strong>右下</strong>：3D ナビ・別の角度の小窓（もう 1 台のカメラで見た小さな 3D。見るだけ）。</li><li><strong>左下</strong>：触った所へ移る・メインとサブのテクスチャセット・またいで描く（<a href="/petanuri/manual/sets#cross">テクスチャセット</a>）。</li><li><strong>下の真ん中</strong>：選択範囲のバー・隠している間のバー。</li><li>3D ビューが狭いときは、右上から順にアイコンを「⋯」の板へしまいます。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="1154" height="54" alt="3D ビューの上のアイコン" loading="lazy"><figcaption>上の列のアイコン</figcaption></figure><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo.webp" width="160" height="149" alt="3D ナビ" loading="lazy"><figcaption>3D ナビ（軸の丸で視点・球で回転・虫めがねでズーム・手のひらで移動）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="654" height="900" alt="陰影表示と別の角度の小窓" loading="lazy"><figcaption>陰影の表示と、右下の「別の角度の小窓」</figcaption></figure></div><div class="mn-tip">右上の透視／平行のアイコンの ▼ で、透視投影の視野角を 5〜120° で変えられます。小さいほど望遠、大きいほど広角です（初期値は 30°）。値は次の起動にも残ります。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-fov-v112.webp" width="444" height="290" alt="透視／平行の ▼ の視野角のつまみ" loading="lazy"><figcaption>視野角</figcaption></figure><div class="mn-tip">3D ナビ（全版）：3D ナビは、左に球とその下の全体表示・透視／平行、右に虫めがね・手のひら・画面の回転、いちばん下に ⟲・角度・⟳ が並びます（UV のガイドと同じ形）。</div><div class="mn-tip">画面の回転（全版）：3D ビューを紙のように傾けて描けます。Shift＋ホイールで 5° ずつ、⟲・⟳ で 15° ずつ（角度を押すと 0°）、回転のボタンを左右にドラッグ（ダブルクリックで 0°）。キー割り当ての「画面を左に回す」「画面を右に回す」「画面の回転を戻す」でキーも付けられます。</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo-v120.webp" width="163" height="191" alt="3D ナビ" loading="lazy"><figcaption>3D ナビのボタンの並び</figcaption></figure><div class="mn-tip">カメラの向きのロック（v1.3.0 から）：3D ナビのボタンで、回転だけを止め、移動・拡大縮小はできるようにします。</div><div class="mn-tip">ナビの下に回転・拡大縮小のスライダーを出せます（環境設定 → インターフェイス → 表示 の「ナビに回転・拡大縮小のスライダーを出す」。はじめは出ません）。3D ナビと UV のガイドの両方に出て、ナビ・UV のガイドの右クリックからも出す・隠すを切り替えられます（v1.3.0 から）。</div></section><section class="mn-sec" id="light"><h2>表示の形式と光の向き</h2><ul class="mn-list"><li>表示の形式（3D の左上）：塗った色のまま・2 値トゥーン・陰影（凸凹が分かるように照らす）・仕上がり（lilToon の見た目。<span class="tier pro">Pro</span>）。次の起動も同じ表示で開きます。</li><li>表示の形式のアイコンの下の ▼ で<strong>光の向き</strong>：球をドラッグして光の来る向き・左右／高さのつまみ・「カメラについてくる」（視点を回しても当たり方が同じ）。2 値トゥーン・陰影・仕上がりで同じ光です。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-light-pop.webp" width="600" height="520" alt="光の向きの窓" loading="lazy"><figcaption>光の向き</figcaption></figure><div class="mn-tip">表示の形式の右端の「線だけ（ワイヤーフレーム）」で、テクスチャを隠してメッシュの線だけを表示できます（表示 → 表示の形式 にもあります）。ポーズ・ブレンドシェイプ・移動で形が変わっても線が追従します。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-only-v112.webp" width="702" height="940" alt="メッシュの線だけを表示した 3D ビュー" loading="lazy"><figcaption>線だけ（ワイヤーフレーム）</figcaption></figure><div class="mn-tip">ドットのまま表示（全版）：3D でテクスチャを補間せず、1 画素ずつ四角く見せます（表示だけで、塗った絵・書き出しは変わりません）。テクスチャセットごとに、セットの行の ⋯ か右クリックの「ドットのまま表示（補間しない）」で切り替えます。256px 以下のセットは最初から入りです。表示 → 表示の形式 →「全部のセットをドットのまま表示（補間しない）」で、全部のセットをまとめて切り替えられます。</div><div class="mn-tip">透明な所（消しゴム・透明色で塗った所）は、3D では下に市松模様が見えます（表示 → 表示の形式 →「透明な所を市松模様で表示」で切り替え。切ると灰色）。テクスチャセットの右クリック（「…」）→「アルファ抜き（3D で透明を抜く）」で、カットアウト・半透明の見え方にできます（見え方だけで、書き出す画像は変わりません）。</div></section><section class="mn-sec" id="ctx"><h2>右クリックのメニュー</h2><p>押した所に合ったメニューが出ます（3D ビュー・UV の区画・レイヤー・テクスチャセット・サブツール・カラーセット・作業の履歴・パネルの見出し など）。3D ビューでは、ここの色を取る・このセットを選ぶ・ここに描いたレイヤーを選ぶ・この島だけ表示・このオブジェクトを隠す・視点・対称で描く などがすぐ選べます。</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="519" height="710" alt="3D ビューの右クリックメニュー" loading="lazy"><figcaption>3D ビューの右クリックのメニュー</figcaption></figure><div class="mn-tip">メニューの項目の左にアイコン、右に今のキーが出ます。小メニューは ▶ で開き、<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>・<kbd>Enter</kbd>・<kbd>Esc</kbd> でも動かせます。</div></section><section class="mn-sec" id="settings"><h2>環境設定</h2><p>ファイル → 環境設定（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd>）。左に分類、右にたためる節が並びます。項目の説明は、名前の上にカーソルを置くと出ます。</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分類</th><th scope="col">主な項目</th></tr></thead><tbody><tr><td>インターフェイス</td><td>画面の色（ライト／ダーク）・配色（画面の地・パネル・ボタン・文字・主な色・補助の色・3D 背景・ツールバー）・3D ナビの大きさ・言語（日本語・English・한국어・中文（简体・繁體））</td></tr><tr><td>ペン・入力</td><td>書き味（筆圧だけで入り抜き／長さで入り抜き・抜きの出し方）・筆圧の効き方（試し描きで合わせる・下限と上限）・タブレット（筆圧を直接読む（WinTab）・Windows Ink で届くペンにも WinTab の筆圧を使う・WinTab の状態を調べる・WinTab のつなぎ方：探し直す）・遅れを減らす（ペンの線を先に表示・予測の仮の線）・メニュー・ボタン（ペンで押し込んでから離しても決定する・ペンの長押しでメニューを出す・ペンのサイドボタンの中・右クリックを受け取る・ボタンの上の長押し）</td></tr><tr><td>操作</td><td>カメラ（<kbd>Space</kbd>＋ドラッグの割り当て・カメラ操作のテンプレート（右ボタン式／中ボタン式／Alt ボタン式／Unity 式）・軸の視点は平行投影・キーのズームはカーソル中心・最後に塗った所を中心に回す・回し始めたときのカーソルの所を中心に回す）・3D マウス（感度・動かすもの・向きの反対・ボタンの割り当て。3D マウスをつないだことがあるときだけ）・右クリック（メニュー／ポップアップパレット）・ツールのキーの長押しで一時切り替え（長押しとみなす時間 0.15〜2 秒）・決まった倍率（UV・2D）</td></tr><tr><td>キー割り当て</td><td>分類ごとに、＋ を押してからキーを押すと割り当て。× で外す。初期値に戻す・キー割り当てを初期化・キー割り当てを書き出す／読み込む（JSON）</td></tr><tr><td>描画</td><td>ブラシの大きさの単位（画面の px／テクスチャの px）・性能（描いていないレイヤーを休ませる・作業ファイルを速い形で保存する）</td></tr><tr><td>システム</td><td>次の起動でチュートリアルを見る・起動したときに新しいバージョンを確かめる</td></tr><tr><td>AI 連携</td><td>AI 連携（MCP）を使う・つなぎ方・run_js の許可（<span class="tier pro">Pro</span>）（<a href="/petanuri/manual/unity#ai">AI 連携</a>）</td></tr></tbody></table></div><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="900" height="640" alt="環境設定の窓" loading="lazy"><figcaption>環境設定</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="ダークモードの画面" loading="lazy"><figcaption>ダークモード</figcaption></figure></div><div class="mn-tip">ほかの所で変える物は、環境設定にはありません：2 つのセットをまたいで描く（3D の左下）・UV の島の外へ続けて塗る（UV の見出し）・書き出しのにじみと書き出し先（書き出しの窓）・対称の相手を探す範囲（対称の ▼）。</div><div class="mn-tip">カメラ操作：ファイル → 環境設定 → 操作 → カメラの「カメラ操作のテンプレート」で「右ボタン式」「中ボタン式」「Alt ボタン式」「Unity 式」を選びます。選んだ方式は次回起動にも保持します。Spaceの操作やホイールは引き続き使えます。</div><div class="mn-tip">中ボタン式：中ドラッグで回転、Shift＋中ドラッグで平行移動、Ctrl＋中ドラッグで拡大縮小。Altボタン式：3DのAlt＋左で回転、Alt＋中で平行移動、Alt＋右で拡大縮小。</div><div class="mn-tip">長い説明は丸い「？」から確認できます。カーソルを重ねると表示し、クリックやタップで開いたままにできます。もう一度押す・外側を押す・Escで閉じます。キーボードではTabで「？」へ移動し、EnterまたはSpaceで開閉できます。点を置く手順や現在の状態、警告は画面に残ります。</div><div class="mn-tip">Unity 式：右ドラッグで回転、中ドラッグで平行移動。Alt＋左で回転・Alt＋中で平行移動・Alt＋右でズーム（3D ビュー。Unity と同じく、下へドラッグで寄る・上へドラッグで引く）。3D のスポイトは I キーで使います。</div><div class="mn-tip">配色：環境設定 → インターフェイスで、画面の地・パネル・ボタン・文字・主な色・補助の色・3D 背景・ツールバーの色を変えられます。ライトとダークで別々に保存し、初期の配色に戻せます。</div><div class="mn-tip">ペンの押し込み：メニューの項目やボタンを、ペンで押し込んでから離しても決定できます（はじめは入）。ボタンの上の長押しは「押し込んで離すと決定」（はじめ）か「長押しで右クリックのメニュー」を選べます。レイヤーの行などボタン以外の所は、どちらでも長押しで右クリックのメニューが出ます。</div><div class="mn-tip">ペンの長押しのメニュー（全版）：ペン先を動かさずに長く押すと、右クリックのメニューが出ます。線や塗りを描いている途中は出しません（同じ所を塗り続けても出ません）。ファイル → 環境設定 → ペン・入力 → メニュー・ボタンの「ペンの長押しでメニューを出す」を切ると、3D・UV の区画でもパネルの上でも、長く押してもメニューを出しません（細かい所を描くときに）。右クリック・ペンのサイドボタンで出すメニューは変わりません。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="環境設定のペン・入力の「メニュー・ボタン」の欄" loading="lazy"><figcaption>ペン・入力 →「メニュー・ボタン」（ペンの長押しでメニューを出す・ペンのサイドボタンの中・右クリックを受け取る）</figcaption></figure><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="環境設定のカメラ操作で Unity 式を選んだところ" loading="lazy"><figcaption>カメラ操作の Unity 式</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-theme-v112.webp" width="900" height="350" alt="環境設定のインターフェイスの配色の欄" loading="lazy"><figcaption>配色</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-press-v112.webp" width="900" height="640" alt="環境設定のペンの押し込みと長押しの欄" loading="lazy"><figcaption>ペンの押し込み・長押し</figcaption></figure></div><div class="mn-tip">最後に塗った所を中心に回す（全版）：ファイル → 環境設定 → 操作 → カメラで入れると、3D ビューで塗った線の終わりの所を中心に視点が回ります（はじめは切）。寄って細かい所を塗るとき、回すたびに塗りたい所が画面の外へ逃げません。</div><div class="mn-tip">回し始めたときのカーソルの所を中心に回す（全版）：ファイル → 環境設定 → 操作 → カメラで入れると、3D ビューで回し始めたときにカーソルの下にあるモデルの点を中心に視点が回ります（はじめは切。モデルの外で回し始めたときは今までどおり）。下の方や端を塗るとき、回すたびに画面の外へ逃げません。「最後に塗った所を中心に回す」と両方入れているときは、こちらが先です。</div><div class="mn-tip">配色の「UV 背景」（v1.3.0 から）：環境設定 → インターフェイス の配色で、UV ビューの背景の色も変えられます。</div><div class="mn-tip">画面の言語に繁体字中国語（中文（繁體））を足しました（v1.3.0 から）。</div></section>
-    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/uv"><small>← 前へ</small>UV の区画と表示範囲</a><a class="next" href="/petanuri/manual/sets"><small>次へ →</small>テクスチャセットとオブジェクト</a></nav>
+    <p class="mn-intro">画面のどこに何があるか、パネルとツールバーの動かし方、3D ビューの見え方の切り替え、環境設定の全部の項目です。パネルの配置は次の起動でも戻ります。</p>
+    <div class="mn-quick"><b>まずはこれだけ</b><ol>
+      <li>出ていないパネルは、表示 → ウィンドウ で出します（<a href="#panels">くわしく</a>）。</li>
+      <li>パネルは見出しをドラッグして、好きな所へ動かせます（<a href="#dock">くわしく</a>）。</li>
+      <li>3D の見え方は、3D ビューの左上の表示の形式のアイコンで切り替えます（<a href="#light">くわしく</a>）。</li>
+      <li>配置がわからなくなったら、表示 → ウィンドウ →「ウィンドウの配置を初期に戻す」を選びます（<a href="#layout-reset">くわしく</a>）。</li>
+      <li>設定は ファイル → 環境設定（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd>）です（<a href="#settings">くわしく</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>このページの内容</b><ul><li><a href="#layout">画面のどこに何があるか</a></li><li><a href="#panels">パネルを出す・隠す（パネルの一覧）</a></li><li><a href="#dock">パネルを動かす</a></li><li><a href="#tabs">パネルをたたむ・タブにまとめる</a></li><li><a href="#toolbar">ツールバー・よく使うツール</a></li><li><a href="#hud">3D ビューの四隅のアイコン</a></li><li><a href="#nav">3D ナビで視点を動かす</a></li><li><a href="#subview">別の角度の小窓</a></li><li><a href="#miniwin">3D と UV を小窓にする</a></li><li><a href="#light">見え方を変える（表示の形式・光の向き）</a></li><li><a href="#ctx">右クリックのメニュー</a></li><li><a href="#popup">ポップアップパレット</a></li><li><a href="#reference">参考画像を見ながら描く</a></li><li><a href="#common">画面の共通の操作</a></li><li><a href="#theme">ダークモード・配色・言語</a></li><li><a href="#settings">環境設定</a></li></ul></div>
+
+    <section class="mn-sec" id="layout" data-keywords="レイアウト 画面構成 ウィンドウ 初期化 リセット どこ 見当たらない 消えた 全部消えた 戻す 初期配置">
+      <h2>画面のどこに何があるか（はじめの配置）</h2>
+      <p>初めて起動したときの並びです。真ん中が描く所（3D ビュー）で、左右にパネルが並びます。</p>
+      <ul class="mn-list">
+        <li><strong>上</strong>：メニューバー。「ファイル」の右に、新規作成・開く・保存と、元に戻す・やり直しのボタンがあります（戻せないときは薄くなります）。</li>
+        <li><strong>左</strong>：ツールバーと、サブツール・ツールプロパティ・ブラシサイズ・参考画像。</li>
+        <li><strong>右</strong>：3 列です。3D ビューのすぐ右にテクスチャセット・レイヤープロパティ・レイヤー。その右に色・色の値・カラーセット｜最近使った色（タブ）・作業の履歴。</li>
+        <li><strong>いちばん右</strong>：オブジェクトと、Pro のパネル（頂点グループ・マテリアル・ブレンドシェイプ・ポーズ）を、アイコンの帯にたたんだ列。アイコンを押すと、そのパネルが横に出ます。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="はじめの配置の画面。左にツールバーとサブツール、真ん中に 3D ビュー、右にレイヤーや色のパネル" loading="lazy"><figcaption>はじめの配置</figcaption></figure>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-menubar-v112.webp" width="640" height="34" alt="メニューバーと、新規作成・開く・保存・元に戻す・やり直しのボタン" loading="lazy"><figcaption>メニューバーのボタン</figcaption></figure>
+      <h3 id="layout-size">窓の大きさに合わせた並び</h3>
+      <ul class="mn-list">
+        <li>窓が低い（高さ 860 未満）ときは、テクスチャセットのパネルを畳みます。セットは、レイヤーのパネルの見出しで切り替えます。</li>
+        <li>幅 1400 未満（1280×720・1366×768 など）では、色の列もいちばん右の帯にまとめて、3D ビューを広く残します。幅 1100 未満では、列をさらに細くし、レイヤープロパティも帯に入れます。</li>
+        <li>はじめの配置のままなら、窓の大きさを変えると組み直します。パネルを動かす・畳むなど配置を変えた後は、組み直しません。</li>
+        <li>配置は次の起動でも戻ります。</li>
+      </ul>
+      <h3 id="layout-reset">はじめの配置に戻す</h3>
+      <ol class="mn-steps">
+        <li>表示 → ウィンドウ →「ウィンドウの配置を初期に戻す」を選びます。</li>
+        <li>パネルが、今の窓の大きさのはじめの配置に戻ります。ツールバーも左に戻り、ツールの並びも元の順になります。</li>
+      </ol>
+      <h3 id="layout-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>パネルもツールバーも全部消えた</b>：<kbd>Tab</kbd> で隠れています。もう一度 <kbd>Tab</kbd> を押すか、表示 →「パレットを表示・隠す」を選びます。</li>
+        <li><b>使いたいパネルが見当たらない</b>：表示 → ウィンドウ で、そのパネルに ✓ を入れます（<a href="#panels">パネルの一覧</a>）。いちばん右のアイコンの帯にたたまれていることもあります。</li>
+        <li><b>窓を広げても並びが変わらない</b>：配置を変えた後は、組み直しません。「ウィンドウの配置を初期に戻す」で、今の大きさに合わせ直します。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="panels" data-keywords="パネル一覧 ウィンドウ一覧 表示する 出す 隠す 非表示 閉じる パレット ツールボックス">
+      <h2>パネルを出す・隠す（パネルの一覧）</h2>
+      <p>パネルは、メニューの 表示 → ウィンドウ で出し入れします。✓ が付いているのが、出ているパネルです。</p>
+      <ol class="mn-steps">
+        <li>表示 → ウィンドウ を開きます。</li>
+        <li>出したいパネルの名前を選びます。✓ が付いて、パネルが出ます。</li>
+        <li>隠すときは、もう一度選びます。パネルの見出しの右クリック →「このパネルを隠す」でも隠せます。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">パネル</th><th scope="col">何をする所か</th></tr></thead><tbody>
+        <tr><td>サブツール</td><td>ツールの中の種類（G ペン・柔らか筆など）を選ぶ（<a href="/petanuri/manual/draw#tools">ツールとサブツール</a>）</td></tr>
+        <tr><td>ツールプロパティ</td><td>選んでいるサブツールの太さ・硬さなどの設定（<a href="/petanuri/manual/draw#props">ブラシの細かい設定</a>）</td></tr>
+        <tr><td>ブラシサイズ</td><td>よく使う太さの一覧から選ぶ（<a href="/petanuri/manual/draw">描く</a>）</td></tr>
+        <tr><td>参考画像</td><td>見ながら描く画像を出す（<a href="#reference">参考画像</a>）</td></tr>
+        <tr><td>ツール一覧</td><td>ツールのアイコンを格子に並べ、下に描画色・背景色。はじめは隠れています（<a href="#toolbar">ツールバー</a>）</td></tr>
+        <tr><td>テクスチャセット</td><td>描くテクスチャセットを選ぶ・解像度・メモリの見積もり（<a href="/petanuri/manual/sets#choose">テクスチャセット</a>）</td></tr>
+        <tr><td>レイヤープロパティ</td><td>選んでいるレイヤーの合成モード・不透明度など（<a href="/petanuri/manual/layers#props">レイヤープロパティ</a>）</td></tr>
+        <tr><td>レイヤー</td><td>レイヤーを足す・重ねる・選ぶ（<a href="/petanuri/manual/layers#basic">レイヤー</a>）</td></tr>
+        <tr><td>色</td><td>描画色を選ぶ（<a href="/petanuri/manual/draw#color">色を選ぶ</a>）</td></tr>
+        <tr><td>色の値</td><td>描画色・背景色・HEX・数値・不透明度（<a href="/petanuri/manual/draw#color">色を選ぶ</a>）</td></tr>
+        <tr><td>カラーセット</td><td>よく使う色の見本（<a href="/petanuri/manual/draw#color">色を選ぶ</a>）</td></tr>
+        <tr><td>最近使った色</td><td>塗った色・取った色の 12 個（<a href="/petanuri/manual/draw#color">色を選ぶ</a>）</td></tr>
+        <tr><td>作業の履歴</td><td>今までの操作の一覧。行を押すとそこまで戻る（<a href="/petanuri/manual/layers#history">作業の履歴</a>）</td></tr>
+        <tr><td>オブジェクト</td><td>モデルの部品ごとの表示・非表示（<a href="/petanuri/manual/sets#objects">オブジェクト</a>）</td></tr>
+        <tr><td>頂点グループ <span class="tier pro">Pro</span></td><td>頂点グループから範囲を作る（<a href="/petanuri/manual/pose#vgroup">頂点グループ</a>）</td></tr>
+        <tr><td>マテリアル <span class="tier pro">Pro</span></td><td>lilToon の設定・塗る先・書き出し（<a href="/petanuri/manual/material">lilToon のマテリアル</a>）</td></tr>
+        <tr><td>ブレンドシェイプ <span class="tier pro">Pro</span></td><td>表情や体型の形を動かす（<a href="/petanuri/manual/pose#blend">ブレンドシェイプ</a>）</td></tr>
+        <tr><td>ポーズ <span class="tier pro">Pro</span></td><td>ボーンを動かしてポーズを付ける（<a href="/petanuri/manual/pose#pose">ポーズモード</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>表示 → ウィンドウ には、ほかに「ツールバー」「3D ナビ（隠すと右下のアイコンで戻す）」「別の角度の小窓」「よく使うツール（3D ビュー）」「よく使うツール（UV ビュー）」「パネルの配置を固定」「ウィンドウの配置を初期に戻す」があります。</li>
+        <li><kbd>Tab</kbd>（表示 →「パレットを表示・隠す」）で、ツールバーとパネルをまとめて隠す・出すができます。3D ビューを広く見たいときに使います。</li>
+        <li>Pro のパネルは、Lite では鍵の印が付き、中身の代わりに説明が出ます。Standard では一覧に出ません。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="dock" data-keywords="ドッキング ドック 移動 並べ替え 浮かせる フローティング 別ウィンドウ 幅 高さ 大きさ 固定 ロック 鍵">
+      <h2>パネルを動かす</h2>
+      <p>パネルは、3D ビューの左右（縦の列）と上下（横長の段）に、何列・何段でも並べられます。どこにも入れずに浮かせることもできます。</p>
+      <ol class="mn-steps">
+        <li>パネルの見出しをドラッグします。入る所に線や枠が出ます。</li>
+        <li>置きたい所で離します。離した所で決まります。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">離す所</th><th scope="col">どうなるか</th></tr></thead><tbody>
+        <tr><td>列・段の中ほど</td><td>その列・段に差し込む（入る所に線が出ます。段の中ではパネルが横に並びます）</td></tr>
+        <tr><td>列・段の端</td><td>その隣に新しい列・段を作る（端に太い線が出ます）</td></tr>
+        <tr><td>3D ビューの端の枠（「左に列を足す」「右に列を足す」「上に置く」「下に置く」）</td><td>その側に新しい列・段を作る</td></tr>
+        <tr><td>それ以外（3D ビューの真ん中など）</td><td>浮いたウィンドウになる</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dock-v1.webp" width="1400" height="840" alt="パネルを列・段・浮いたウィンドウに並べた画面" loading="lazy"><figcaption>パネルを動かした配置の例</figcaption></figure>
+      <h3 id="dock-size">幅・高さを変える</h3>
+      <ul class="mn-list">
+        <li>列と列・段と段の境目をドラッグすると、幅・高さが変わります。境目のダブルクリックで元に戻ります。</li>
+        <li>左右の列のパネルは、下の端のつまみをドラッグで高さを変えられます（ダブルクリックで自動に戻す）。長い中身はパネルの中でスクロールします。</li>
+        <li>空になった列・段は消えて、3D ビューが広がります。</li>
+        <li>サブツールのタイルやブラシサイズは、パネルの幅と高さに合わせて並びが変わります。ブラシサイズだけの列・浮いたウィンドウは、タイル 1 列の幅（約 64px）まで細くできます。</li>
+      </ul>
+      <h3 id="dock-float">浮いたウィンドウ</h3>
+      <ul class="mn-list">
+        <li>見出しをドラッグで動かし、右下のつまみで大きさを変えます。見出しのクリックで折りたたみます。</li>
+        <li>× はありません。隠すときは、表示 → ウィンドウ か、見出しの右クリック →「このパネルを隠す」です。</li>
+        <li>パネルはアプリの窓の中に置きます。アプリの外の別の窓には出せません。</li>
+      </ul>
+      <h3 id="dock-lock">配置を固定する</h3>
+      <ul class="mn-list">
+        <li>表示 → ウィンドウ →「パネルの配置を固定」に ✓ を入れると、パネルを動かしたり大きさを変えたりしなくなります。うっかり動かすのを防げます。</li>
+        <li>固定中も、浮いたウィンドウは見出しのドラッグで動かせて、大きさも変えられます。</li>
+        <li>浮いたウィンドウは、右上の鍵で、そのウィンドウだけ固定・解除できます。固定すると動かず、大きさも変わりません（次に開いたときも覚えています）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tabs" data-keywords="折りたたみ 最小化 畳む たたむ タブ化 まとめる 切り離す アイコン化 サイドバー 帯">
+      <h2>パネルをたたむ・タブにまとめる</h2>
+      <p>使わないパネルを小さくすると、ほかのパネルや 3D ビューが広く使えます。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">したいこと</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>見出しだけにする（折りたたむ）</td><td>パネルの見出しをクリックします。もう一度クリックで戻ります。段の中で畳んだパネルは、見出しだけの細い縦長になります</td></tr>
+        <tr><td>タブにまとめる</td><td>見出しを、別のパネルの見出しの上へドラッグします。「ここに重ねるとタブにする」と出たら離します。上のタブで切り替えます</td></tr>
+        <tr><td>タブを畳む</td><td>選んでいるタブを、もう一度押します</td></tr>
+        <tr><td>タブを切り離す</td><td>タブを外へドラッグします（タブの右クリック →「このタブを切り離す」でも）</td></tr>
+        <tr><td>タブをまとめて動かす</td><td>タブの並びの空いている所をドラッグします</td></tr>
+        <tr><td>列をアイコンの帯にする</td><td>列の上の「&lt;」「&gt;」を押します。列がアイコンだけの細い帯になります。もう一度押すと元の列に戻ります</td></tr>
+        <tr><td>帯からパネルを出す</td><td>帯のアイコンを押すと、そのパネルだけが横に出ます。外を押す・<kbd>Esc</kbd>・同じアイコンでしまいます</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="mn-sec" id="toolbar" data-keywords="ツールボックス 道具 アイコン 並び順 お気に入り ショートカットバー 縦 横 上 下 1列 2列 ツール一覧">
+      <h2>ツールバー・よく使うツール</h2>
+      <p>ツールバーは、はじめは左にあります。作業の場所の上・下・右に付けたり、浮かせたりできます。</p>
+      <ol class="mn-steps">
+        <li>ツールバーのつまみ（縦のときは上の端、横のときは左の端）をドラッグします。作業の場所の 4 辺に受け口が出ます。</li>
+        <li>受け口で離すと、その端に付きます。上・下では横に並び、入りきらなければ折り返します。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>受け口以外で離すと浮きます。浮いたツールバーは「横」「縦」で並びを切り替え、つまみのダブルクリックで前の端に戻ります。</li>
+        <li>ボタンの右クリック →「ツールバーの置き場所」で、左・右・上・下・浮かせる も選べます。置き場所は次の起動にも残ります。</li>
+        <li>ボタンの右クリック →「ツールバーのアイコンの大きさ」で 大・小、「ツールバーの列」で「列：自動」「列：いつも 1 列」を選べます。入りきらない道具は、ホイール・端の矢印・ペンのドラッグで送れます。</li>
+        <li><strong>並べ替え</strong>：ボタンをドラッグ（ペンでも）して好きな順にします。少し動かしてから離すと並べ替え、動かさずに離すとそのツールを選びます。右クリックの「並びを初期に戻す」で元の順に戻ります。</li>
+        <li><strong>画面の色</strong>：ツールバーのいちばん後ろの太陽と月のスイッチで、ライトとダークを切り替えます（<a href="#theme">ダークモード</a>）。</li>
+        <li><strong>隠す</strong>：表示 → ウィンドウ →「ツールバー」の ✓ を外します。</li>
+        <li><strong>ツール一覧</strong>：表示 → ウィンドウ →「ツール一覧」で、ツールのアイコンを格子に並べたパネルを出せます。ほかのパネルと同じく列やタブに入れられ、幅に合わせて折り返します。下の描画色を押すと「色」のパネル、背景色か ⇄ で入れ替え、小さな白黒か <kbd>D</kbd> で黒・白に戻ります。</li>
+      </ul>
+      <h3 id="toolbar-fav">よく使うツールの帯</h3>
+      <p>よく使うツールやサブツールを、3D ビューと UV ビューの上の小さな帯に並べて、すぐ持ち替えられます。</p>
+      <ol class="mn-steps">
+        <li>ツールバーのボタンか、サブツール（ブラシ集のプリセットも）を右クリックします。</li>
+        <li>「よく使うに登録」を選びます。帯にアイコンが足されます。</li>
+        <li>帯のアイコンを押すと、そのツール・サブツールに切り替わります。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-favbar.webp" width="320" height="70" alt="よく使うツールの帯" loading="lazy"><figcaption>よく使うツールの帯</figcaption></figure>
+      <ul class="mn-list">
+        <li>帯の「＋」で今のサブツールを登録し、入っていれば「－」で外します（ペンだけでも使えます）。アイコンの右クリックでも外せます。</li>
+        <li>左の点々のつまみで帯を動かし、アイコンのドラッグで並べ替えます。</li>
+        <li>帯の右クリックで「縦に並べる」「位置を初期に戻す」「この帯を隠す」。× でも隠せます。</li>
+        <li>隠した帯は、表示 → ウィンドウ →「よく使うツール（3D ビュー）」「よく使うツール（UV ビュー）」で、それぞれまた出せます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="hud" data-keywords="ビューポート 四隅 アイコン オーバーレイ ギズモ 視野角 FOV 画角 望遠 広角 パース 透視 平行 投影">
+      <h2>3D ビューの四隅のアイコン</h2>
+      <p>3D ビューの四隅に、表示の切り替えと視点のアイコンが並びます。▼ の付いたアイコンは、下の ▼ を押すと設定が開きます（<kbd>Esc</kbd> か外を押すと閉じます）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">場所</th><th scope="col">あるもの</th></tr></thead><tbody>
+        <tr><td>左上</td><td>メッシュの線（<a href="/petanuri/manual/uv#wire">メッシュの線</a>）・表示の形式（<a href="#light">見え方</a>）・片面／両面・対称で描く X・Y・Z（<a href="/petanuri/manual/draw#mirror">対称で描く</a>）・表示範囲（<a href="/petanuri/manual/uv#isolate">表示範囲</a>）</td></tr>
+        <tr><td>上の真ん中</td><td>ペイント／ポーズの切り替え。ポーズモードの間はボーンの操作（<a href="/petanuri/manual/pose#pose">ポーズ</a>）、塗る先を塗っている間は塗る先の操作（<a href="/petanuri/manual/material#channels">塗る先</a>）に変わります</td></tr>
+        <tr><td>右上</td><td>正面・背面・右・左・上・下・透視／平行 ▼・全体表示。3D ナビも、はじめは右上にあります（<a href="#nav">3D ナビ</a>）</td></tr>
+        <tr><td>右下</td><td>3D ナビを小さくしたときのアイコン・別の角度の小窓（<a href="#subview">別の角度の小窓</a>）</td></tr>
+        <tr><td>左下</td><td>触った所へ移る・メインとサブのテクスチャセット・またいで描く（<a href="/petanuri/manual/sets#cross">2 つのセットをまたいで描く</a>）</td></tr>
+        <tr><td>下の真ん中</td><td>選択範囲のバー（<a href="/petanuri/manual/edit#selbar">選択範囲のバー</a>）・隠している間のバー（<a href="/petanuri/manual/uv#hidepen">隠すペン</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="1154" height="54" alt="3D ビューの上の列のアイコン" loading="lazy"><figcaption>上の列のアイコン</figcaption></figure>
+      <ul class="mn-list">
+        <li>上の真ん中の段は、左のつまみ（⋮）をドラッグで好きな所へ動かせます。つまみのダブルクリックで元の位置に戻ります。</li>
+        <li>3D ビューが狭いと、右上のアイコンは 2 段になります。それでも入らないと、視点 → 表示範囲 → 対称 → 片面／両面 → 表示の形式 → メッシュの線 の順に、左上の「⋯」の板へしまいます。「⋯」を押すと出ます。</li>
+        <li>もっと狭いと、左下の帯は字を隠してアイコンだけになり、さらに狭いと「⋯」の板へ入ります。狭さは、窓ではなく 3D ビューの幅で決まります。</li>
+      </ul>
+      <h3 id="hud-fov">視野角を変える</h3>
+      <p>右上の透視／平行のアイコンの ▼ で、投影の方式と、透視投影の視野角を 5〜120° で変えられます。小さいほど望遠、大きいほど広角です。「初期値に戻す」で 30° に戻ります。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-fov-v112.webp" width="444" height="290" alt="透視／平行の ▼ で開く視野角のつまみ" loading="lazy"><figcaption>視野角</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="nav" data-keywords="ナビゲーション ギズモ 視点 回す 回転 ロール 傾ける キャンバス回転 ロック 固定 ペンだけ 視点操作">
+      <h2>3D ナビで視点を動かす</h2>
+      <p>3D ナビは、マウスのボタンやキーを使わずに視点を動かす道具です。ペンだけで描くときに便利です。</p>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo-v120.webp" width="163" height="191" alt="3D ナビ。軸の丸・球・虫めがね・手のひら・回転のボタン" loading="lazy"><figcaption>3D ナビ</figcaption></figure></div>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">すること</th></tr></thead><tbody>
+        <tr><td>軸の丸（X・Y・Z）をタップ</td><td>その軸の視点（X＝右、-Y＝正面、Z＝上）。もう一度で反対側</td></tr>
+        <tr><td>球をドラッグ</td><td>回転</td></tr>
+        <tr><td>虫めがねを上下にドラッグ</td><td>ズーム</td></tr>
+        <tr><td>手のひらをドラッグ</td><td>平行移動</td></tr>
+        <tr><td>丸い矢印を左右にドラッグ</td><td>画面の回転（右で時計回り。ダブルクリックで 0° に戻す）</td></tr>
+        <tr><td>球の下の ⟲・角度・⟳</td><td>⟲・⟳ で 15° ずつ画面を回す。角度を押すと 0° に戻る</td></tr>
+        <tr><td>四角のボタン</td><td>全体表示</td></tr>
+        <tr><td>透視／平行のボタン</td><td>透視投影と平行投影を切り替える</td></tr>
+        <tr><td>錠前のボタン</td><td>カメラの向きのロック（下を見てください）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>軸の視点に合わせると平行投影になり、回すと透視投影に戻ります（ファイル → 環境設定 → 操作 →「軸の視点は平行投影」で切れます）。</li>
+        <li>キーボードのテンキーでも視点を変えられます（<a href="/petanuri/manual/keys#view">視点（テンキー）</a>）。</li>
+      </ul>
+      <h3 id="nav-lock">カメラの向きをロックする</h3>
+      <p>錠前のボタンを押すと、視点の回転だけを止めます。平行移動と拡大縮小はできます。もう一度押すと解除します。決めた向きのまま、寄ったり動かしたりして塗るときに使います。</p>
+      <h3 id="nav-roll">画面を傾ける（画面の回転）</h3>
+      <p>3D ビューを紙のように傾けて、描きやすい角度にできます。</p>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>＋ホイールで 5° ずつ、3D ナビの ⟲・⟳ で 15° ずつ回ります。丸い矢印を左右にドラッグしても回せます。</li>
+        <li>カーソルが UV の区画の上なら、UV を回します。</li>
+        <li>回したまま、描く・選ぶ・平行移動・右ドラッグの回転がそのまま使えます。ドラッグは見た目の向きに動きます。</li>
+        <li>キー割り当ての「画面を左に回す（15°）」「画面を右に回す（15°）」「画面の回転を戻す」で、キーも付けられます（はじめはキーなし）。</li>
+      </ul>
+      <h3 id="nav-move">ナビを動かす・小さくする</h3>
+      <ul class="mn-list">
+        <li>上のつまみ（…）をドラッグで好きな所へ動かします。ダブルクリックで右上に戻ります。</li>
+        <li>左の端・下の端・左下の角をドラッグで、大きさを変えます。ファイル → 環境設定 → インターフェイス の「3D ナビの大きさ」でも変えられます。</li>
+        <li>「—」で小さくして、右下のアイコンにします。アイコンを押すと戻ります（表示 → ウィンドウ →「3D ナビ（隠すと右下のアイコンで戻す）」でも）。</li>
+        <li>ナビの下に、回転と拡大縮小のスライダーを出せます。ファイル → 環境設定 → インターフェイス の「ナビに回転・拡大縮小のスライダーを出す」を入れます（はじめは切）。3D ナビと UV のガイドの両方に出ます。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="subview" data-keywords="サブビュー 2画面 二画面 同時に見る 別アングル 反対側 小さい3D プレビュー">
+      <h2>別の角度の小窓で同時に見る</h2>
+      <p>3D ビューの中に、もう 1 台のカメラで見た小さな 3D を出します。描きながら、反対側や横からの見え方を確かめられます。小窓は見るだけで、描くのは大きい方です。</p>
+      <ol class="mn-steps">
+        <li>3D ビューの右下の、別の角度の小窓のアイコンを押します（表示 → ウィンドウ →「別の角度の小窓」でも）。</li>
+        <li>小窓の見出しで、向き（正面・右・背面・左・上・反対）を選びます。「反対」は、大きい方の視点の反対側です。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>小窓の中をドラッグで回し、中ボタンか <kbd>Shift</kbd>＋ドラッグで平行移動します。</li>
+        <li>ホイールか <kbd>Ctrl</kbd>＋ドラッグ（上へで寄る。ペン向け）で寄る・引く、ダブルクリックで全体表示です。</li>
+        <li>見出しで動かし、左・上の端と左上の角で大きさを変えます。✕ で閉じます。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="654" height="900" alt="陰影の表示の 3D ビューと、右下の別の角度の小窓" loading="lazy"><figcaption>右下の「別の角度の小窓」</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="miniwin" data-keywords="ピクチャーインピクチャー 小窓 入れ替え UVを小さく 3Dを小さく 浮かせる 2画面">
+      <h2>3D と UV を小窓にする</h2>
+      <p>3D と UV を並べているとき、片方を小窓にして、もう片方を広く使えます。</p>
+      <ol class="mn-steps">
+        <li><kbd>U</kbd> で UV を出して、3D と並べます（<a href="/petanuri/manual/uv#uv">UV の区画を出す</a>）。</li>
+        <li>小窓にしたい方の右上の ✕ の下のボタンを押します。その方が小窓になり、もう一方が全体に広がります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>表示 → UV →「UV を小窓に（3D を全体に）」「3D を小窓に（UV を全体に）」や、UV の見出しの ⋯ からも同じことができます。</li>
+        <li>小窓は見出しのドラッグで動かし、四辺・四隅で大きさを変えます。アプリの窓の中なら、パネルの上にも置けます。</li>
+        <li>⇄ で小窓と全体を入れ替え、▣ で並べた表示に戻し、✕ で小窓の方を閉じます。</li>
+        <li>右上の鍵で固定します（動かず、大きさも変わりません）。<kbd>Tab</kbd> でパレットを隠しても、小窓は残ります。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="3D を全体にして UV を小窓にした画面" loading="lazy"><figcaption>3D を全体にして、UV を小窓に</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="light" data-keywords="シェーディング 表示モード ライティング ライト 照明 影 アンリット unlit トゥーン ワイヤーフレーム 片面 両面 裏面 透明 市松 チェッカー アルファ カットアウト 半透明 ドット ピクセル 補間 ニアレスト ぼやける">
+      <h2>見え方を変える（表示の形式・光の向き）</h2>
+      <p>3D ビューの見え方を切り替えます。変わるのは見え方だけで、塗った絵と書き出す画像は変わりません。</p>
+      <ol class="mn-steps">
+        <li>3D ビューの左上の、表示の形式のアイコンを押します（表示 → 表示の形式 でも選べます）。</li>
+        <li>使いたい形式を選びます。次の起動も同じ形式で開きます。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">表示の形式</th><th scope="col">見え方</th></tr></thead><tbody>
+        <tr><td>塗った色のまま（unlit）</td><td>光を当てず、塗った色をそのまま見せます。色を確かめるとき</td></tr>
+        <tr><td>2 値トゥーン</td><td>光の当たる所と影の 2 色で見せます</td></tr>
+        <tr><td>陰影（凸凹が分かる）</td><td>凸凹が分かるように照らします。初めて使うときは、この形式で開きます</td></tr>
+        <tr><td>線だけ（ワイヤーフレーム）</td><td>テクスチャを隠して、メッシュの線だけを見せます。ポーズ・ブレンドシェイプ・移動で形が変わっても、線がついてきます</td></tr>
+        <tr><td>仕上がり（lilToon・MToon の見た目・β版） <span class="tier pro">Pro</span></td><td>マテリアルの設定を通した見た目です（<a href="/petanuri/manual/material#look">「仕上がり」で見る</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-only-v112.webp" width="702" height="940" alt="メッシュの線だけを表示した 3D ビュー" loading="lazy"><figcaption>線だけ（ワイヤーフレーム）</figcaption></figure>
+      <h3 id="light-side">片面表示・両面表示</h3>
+      <p>同じアイコンの並びか、表示 → 表示の形式 で選びます。「片面表示（裏向きの面は描かない）」と「両面表示（見えている裏面にも塗る）」があります。服の内側など、裏側に塗るときは両面にします（<a href="/petanuri/manual/draw#through">裏側・隠れた面にも塗る</a>）。</p>
+      <h3 id="light-dir">光の向きを変える</h3>
+      <ol class="mn-steps">
+        <li>表示の形式のアイコンの下の ▼ を押します。</li>
+        <li>球をドラッグして、光の来る向きを決めます。左右・高さのつまみでも変えられます。</li>
+        <li>「カメラについてくる」を入れると、視点を回しても光の当たり方が同じになります。「初期に戻す」で元に戻ります。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-light-pop.webp" width="600" height="520" alt="光の向きの窓。球と左右・高さのつまみ" loading="lazy"><figcaption>光の向き</figcaption></figure>
+      <ul class="mn-list">
+        <li>2 値トゥーン・陰影・仕上がりで、同じ光を使います。「塗った色のまま」では光は見えません。</li>
+        <li><span class="tier pro">Pro</span> マテリアルのパネルの「表示と光」と同じ値です。</li>
+        <li>カメラ操作が「Alt ボタン式」のときは、<kbd>Shift</kbd>＋右ドラッグで光の左右を回せます。</li>
+      </ul>
+      <h3 id="light-alpha">透明な所の見え方</h3>
+      <ul class="mn-list">
+        <li>消しゴムや透明色で塗った所は、3D では下に市松模様が見えます。表示 → 表示の形式 →「透明な所を市松模様で表示」を切ると、灰色になります。</li>
+        <li>テクスチャセットの行の右クリック（か「…」）→「アルファ抜き（3D で透明を抜く）」で、透明の見せ方を選べます。「なし」・「カットアウト」（不透明度 50% より薄い所を抜いて向こうを見せる）・「半透明」（不透明度のまま透かす）です。</li>
+        <li>アルファ抜きも見え方だけで、書き出す画像は変わりません。作業ファイルに残り、元に戻せます。抜いた所は 3D では押せないので、UV の区画で塗ります。</li>
+      </ul>
+      <h3 id="light-dot">テクスチャをドットのまま表示する</h3>
+      <p>3D でテクスチャを補間せず、1 画素ずつ四角く見せます。32・64px など、低い解像度のテクスチャやドット絵向けです。</p>
+      <ul class="mn-list">
+        <li>テクスチャセットごとに、セットの行の ⋯ か右クリック →「ドットのまま表示（補間しない）」で切り替えます。入っているセットは、行に四角の印が出ます（押すと切れます）。</li>
+        <li>256px 以下のセットは、最初から入っています（おまかせ）。自分で切り替えたセットは作業ファイルに残り、「ドット表示をおまかせに戻す」で戻せます。</li>
+        <li>表示 → 表示の形式 →「全部のセットをドットのまま表示（補間しない）」で、全部のセットをまとめて切り替えます。</li>
+        <li>UV の区画は、寄るといつもドットのまま見えます。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="ドットのまま表示の印が出たテクスチャセットの行と右クリックのメニュー" loading="lazy"><figcaption>セットごとのドットのまま表示</figcaption></figure></div>
+      <h3 id="light-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>影が付いて、塗った色が分かりにくい</b>：表示の形式を「塗った色のまま」にします。</li>
+        <li><b>光の向きを変えても見た目が変わらない</b>：「塗った色のまま」では光は見えません。2 値トゥーンか陰影にします。</li>
+        <li><b>透明にした所が灰色・市松模様に見える</b>：見え方だけです。向こうを透かして見たいときは、テクスチャセットの「アルファ抜き」をカットアウトか半透明にします。</li>
+        <li><b>アルファ抜きにしたら、その所に塗れない</b>：抜いた所は 3D では押せません。UV の区画で塗るか、アルファ抜きを「なし」に戻します。</li>
+        <li><b>低い解像度のテクスチャが 3D でぼやける</b>：そのセットの「ドットのまま表示（補間しない）」を入れます。</li>
+        <li><b>「仕上がり」が選べない</b>：Pro だけの表示です（<a href="/petanuri/manual/start#editions">版のちがい</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="ctx" data-keywords="コンテキストメニュー 右クリックメニュー 長押し サブメニュー メニューが出ない メニューが出てしまう">
+      <h2>右クリックのメニュー</h2>
+      <p>押した所に合ったメニューが出ます。ペンなら、ペン先を動かさずに長く押しても出ます。右ドラッグ（3D の回転・UV の移動）の後は、メニューは出ません。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">押す所</th><th scope="col">主な項目</th></tr></thead><tbody>
+        <tr><td>3D ビュー</td><td>ポップアップパレットを出す・ここの色を取る・ここに描いたレイヤーを選ぶ・このセットを選ぶ・この島を選ぶ／だけ表示／隠す・このオブジェクトを隠す／だけ表示・表示範囲・選択範囲・視点・表示・対称で描く・元に戻す</td></tr>
+        <tr><td>UV の区画</td><td>ポップアップパレットを出す・ここに描いたレイヤーを選ぶ・UV の全体表示・UV線・島の縁・パディング線・この島を選ぶ・UV の区画を閉じる（<a href="/petanuri/manual/uv">UV と表示範囲</a>）</td></tr>
+        <tr><td>レイヤーの行</td><td>複製・名前を変える・PNG で書き出す・結合・マスク・色タグ など（<a href="/petanuri/manual/layers#basic">レイヤー</a>）</td></tr>
+        <tr><td>テクスチャセットの行</td><td>下地の画像を入れ替える・ドットのまま表示・アルファ抜き・レイヤーを別のセットへ移す・このセットを消す など（<a href="/petanuri/manual/sets">テクスチャセット</a>）</td></tr>
+        <tr><td>ツールバーのボタン・サブツール</td><td>よく使うに登録・キーを割り当てる・並びを初期に戻す・ツールバーのアイコンの大きさ・ツールバーの列・ツールバーの置き場所</td></tr>
+        <tr><td>パネルの見出し・タブ</td><td>たたむ／広げる・このパネルを隠す・このタブを切り離す</td></tr>
+        <tr><td>作業の履歴の行</td><td>ここまで戻す（やり直す）</td></tr>
+        <tr><td>カラーセット</td><td>今の描画色を足す など（<a href="/petanuri/manual/draw#color">色を選ぶ</a>）</td></tr>
+        <tr><td>オブジェクトの行</td><td>これだけ表示・表示する／隠す・3D で光らせる・全部表示（<a href="/petanuri/manual/sets#objects">オブジェクト</a>）</td></tr>
+        <tr><td>別の角度の小窓・3D ナビ</td><td>視点・全体表示・透視投影／平行投影・小さくする</td></tr>
+        <tr><td>文字の入力欄</td><td>元に戻す・切り取り・コピー・貼り付け・すべて選択</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="519" height="710" alt="3D ビューの右クリックのメニュー" loading="lazy"><figcaption>3D ビューの右クリックのメニュー</figcaption></figure>
+      <ul class="mn-list">
+        <li>項目の左にアイコン、右に今のキーが出ます。小メニューは ▶ で開きます。</li>
+        <li><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>・<kbd>Enter</kbd>・<kbd>Esc</kbd> でも動かせます。</li>
+        <li>画面に入らない長いメニューは、上下の端にマウスやペンを置くと、そちらへ送れます（まだ項目があると、端に ▲・▼ が出ます）。ホイールやキーの上下でも送れます。</li>
+        <li>マウスの右クリックでポップアップパレットを出すようにも変えられます（<a href="#popup">ポップアップパレット</a>）。</li>
+      </ul>
+      <h3 id="ctx-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>細かい所を描いていると、メニューが勝手に出る</b>：ペンの長押しで出ています。ファイル → 環境設定 → ペン・入力 → メニュー・ボタン の「ペンの長押しでメニューを出す」を切ります。右クリック・ペンのサイドボタンで出すメニューは変わりません。</li>
+        <li><b>ボタンを長く押すとメニューが出て、押せない</b>：同じ所の「ボタンの上の長押し」を「押し込んで離すと決定（既定）」にします。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="パイメニュー 丸いメニュー ラジアル サイドボタン ペンだけ 片手 色相環 ブラシサイズ">
+      <h2>ポップアップパレット（ペンだけで使う）</h2>
+      <p>ペンを持ったまま、その場で色・サブツール・ブラシサイズを変えられる丸いパレットです。</p>
+      <ol class="mn-steps">
+        <li>3D ビューか UV の区画の上で、ペンのサイドボタンを押します。</li>
+        <li>ペンを動かさずに離します。その場に丸いパレットが出ます（動かすと、今までどおり回転・平行移動です）。</li>
+        <li>使い終わったら、パレットの外を押します（描きません）。<kbd>Esc</kbd> か、もう一度右ボタンのタップでも閉じます。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="丸いポップアップパレット。外周によく使うサブツール、内側に色相の輪" loading="lazy"><figcaption>ポップアップパレット</figcaption></figure>
+      <ul class="mn-list">
+        <li><strong>外周</strong>：よく使うサブツール。押すと持ち替えて閉じます。「＋」で今のサブツールを足し、長押し・右クリックで外します（10 個まで）。</li>
+        <li><strong>内側</strong>：色相の輪と、彩度・明度の四角で描画色を選びます。上の小さな丸は最近使った色です。</li>
+        <li><strong>下の札</strong>：上下にドラッグでブラシサイズを変えます。</li>
+        <li>マウスで出すときは、ファイル → 環境設定 → 操作 → マウス の「右クリック」を「ポップアップパレット」にします（はじめは「メニュー」）。右クリックのメニューの一番上の「ポップアップパレットを出す」でも出せます。</li>
+        <li>ペンタブの設定で Windows Ink を切っているときは、サイドボタンもマウスの右クリックとして届くので、上の「右クリック」の設定に従います。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="reference" data-keywords="資料 参考 下絵 見本 リファレンス 画像を見ながら 貼り付け クリップボード">
+      <h2>参考画像を見ながら描く</h2>
+      <p>資料の画像をパネルに出して、見ながら描けます。画像から色も取れます。</p>
+      <ol class="mn-steps">
+        <li>参考画像のパネルの「開く」を押して、画像を選びます。</li>
+        <li>下のサムネイルで、開いた画像を切り替えます。× で閉じます。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="参考画像のパネル" loading="lazy"><figcaption>参考画像のパネル</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>ファイル → 読み込み →「参考画像を開く」、パネルへの落とし込み、パネルを押してから <kbd>Ctrl</kbd>＋<kbd>V</kbd> でも開けます。</li>
+        <li><strong>色を取る</strong>：スポイトで、画像をクリックかドラッグします。離すと、その色が最近使った色に入ります。</li>
+        <li><strong>動かす</strong>：手のひら・中ボタン・右ボタン・<kbd>Space</kbd>＋ドラッグで移動、ホイールで拡大縮小します。</li>
+        <li><strong>見せ方</strong>：上のボタンで全体表示・左右反転・90° 回転。虫めがねの ＋・－ で拡大縮小し（ペンだけでも使えます）、「100%」で画像の 1 画素を画面の 1 点にします。</li>
+        <li>画像は長辺 1600px にして保存し、次に起動したときも戻ります。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="common" data-keywords="ツールチップ ヒント 説明 ダブルクリック ダブルタップ 消しゴム側 ブラウザ 再読み込み F5 印刷 拡大 文字を選べない">
+      <h2>画面の共通の操作</h2>
+      <p>どのパネル・窓でも同じように使える操作です。</p>
+      <ul class="mn-list">
+        <li>ボタンや項目の説明は、カーソル（ペン先）を名前の上に置くと出ます。</li>
+        <li>環境設定・ショートカット一覧・確認の窓は、見出しのドラッグで動かせます。右上の × か <kbd>Esc</kbd> で閉じます。</li>
+        <li>メニューの項目やボタンは、ペンで押し込んでから離しても決まります（<a href="#settings-pen">ペン・入力</a>で変えられます）。</li>
+        <li>ペンのダブルタップは、2 回目の位置が少しずれても（12px・0.5 秒まで）ダブルクリックとして受けます。</li>
+        <li>ペンの消しゴム側でも、パネル・窓の操作（ボタン・スライダー・並べ替え・ドラッグ）はペン先と同じに効きます。描く区画の中では消しゴムになります。</li>
+        <li>ブラウザの操作のキー（再読み込み・印刷・ページの拡大など）は効きません。画面の文字は選べません（入力欄は選べます）。</li>
+        <li>今の版で使えない機能は、メニューやボタンが薄くなり、鍵の印が付きます（<a href="/petanuri/manual/start#editions">版のちがい</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="theme" data-keywords="ダークテーマ ライトテーマ 黒い画面 白い画面 テーマ カラー 色を変える 背景色 English 英語 韓国語 中国語 繁体字 簡体字 language">
+      <h2>ダークモード・配色・言語を変える</h2>
+      <p>画面の色を明るい「ライト」と暗い「ダーク」で切り替えます。</p>
+      <ol class="mn-steps">
+        <li>ツールバーのいちばん後ろ（縦のときは下、横のときは右の端）の、太陽と月のスイッチを押します。</li>
+        <li>ライトとダークが切り替わります。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>ファイル → 環境設定 → インターフェイス → 表示 の「画面の色」でも同じです（はじめはライト）。</li>
+        <li>キーで切り替えるときは、キー割り当ての分類「表示」の「ダークモード」にキーを付けます（<a href="/petanuri/manual/keys#assign">キーを割り当てる</a>）。</li>
+      </ul>
+      <h3 id="theme-color">配色を変える</h3>
+      <p>ファイル → 環境設定 → インターフェイス → 表示 の「配色」で、画面の地・パネル・ボタン・文字・主な色・補助の色・3D 背景・UV 背景・ツールバーの色を変えられます。</p>
+      <ul class="mn-list">
+        <li>ライトとダークで別々に保存します。</li>
+        <li>「初期の配色に戻す」で元の色に戻ります。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="ダークモードの画面" loading="lazy"><figcaption>ダークモード</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-theme-v112.webp" width="900" height="350" alt="環境設定のインターフェイスの配色の欄" loading="lazy"><figcaption>配色</figcaption></figure></div>
+      <h3 id="theme-lang">画面の言語を変える</h3>
+      <p>ファイル → 環境設定 → インターフェイス → 言語 の「言語 / Language」で選びます。日本語・English・한국어・中文（简体）・中文（繁體）があります。</p>
+    </section>
+
+    <section class="mn-sec" id="settings" data-keywords="設定 オプション 環境 プリファレンス 初期設定 カスタマイズ 開き方 ショートカット 設定画面">
+      <h2>環境設定</h2>
+      <p>アプリ全体の設定です。ファイル → 環境設定（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd>）で開きます。</p>
+      <ul class="mn-list">
+        <li>左に分類、右に節が並びます。節の見出しを押すと、開く・たたむが切り替わります（たたんだ節は次も同じ）。</li>
+        <li>項目の説明は、名前の上にカーソルを置くと出ます。</li>
+        <li>設定は、次の起動にも残ります。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="900" height="640" alt="環境設定の窓。左に分類、右に節" loading="lazy"><figcaption>環境設定</figcaption></figure>
+      <h3 id="settings-ui">インターフェイス</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">節</th><th scope="col">項目</th></tr></thead><tbody>
+        <tr><td>表示</td><td>画面の色（ライト（既定）／ダーク）・配色・3D ナビの大きさ・ナビに回転・拡大縮小のスライダーを出す（はじめは切）（<a href="#theme">ダークモード・配色</a>・<a href="#nav-move">3D ナビ</a>）</td></tr>
+        <tr><td>言語</td><td>言語 / Language（日本語・English・한국어・中文（简体）・中文（繁體））</td></tr>
+      </tbody></table></div>
+      <h3 id="settings-pen">ペン・入力</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">節</th><th scope="col">項目</th></tr></thead><tbody>
+        <tr><td>書き味</td><td>入り抜きの作り方（筆圧だけで入り抜き（既定）／長さで入り抜き）・抜きの出し方（後から細くする（既定）／遅れて出す。長さで入り抜きのときだけ使います）</td></tr>
+        <tr><td>筆圧</td><td>効き方・下限・上限・試し描きで合わせる。板をペンで押すと、今の筆圧と経路が出ます（<a href="/petanuri/manual/keys#pressure">筆圧を合わせる</a>）</td></tr>
+        <tr><td>タブレット</td><td>筆圧を直接読む（WinTab）・Windows Ink で届くペンにも WinTab の筆圧を使う（はじめは入）・WinTab の状態を調べる・WinTab のつなぎ方（探し直す）（<a href="/petanuri/manual/keys#pressure">筆圧が効かないとき</a>）</td></tr>
+        <tr><td>遅れを減らす</td><td>ペンの線を先に表示（遅れを減らす）（はじめは切）・予測の仮の線（はじめは入）・ペン先の線を Windows に先に描かせる（対応する環境だけ出ます。はじめは切）</td></tr>
+        <tr><td>メニュー・ボタン</td><td>ペンで押し込んでから離しても決定する（はじめは入）・ペンの長押しでメニューを出す（はじめは入）・ペンのサイドボタンの中・右クリックを受け取る（はじめは入）・ボタンの上の長押し（押し込んで離すと決定（既定）／長押しで右クリックのメニュー）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>入り抜きの作り方</strong>：「筆圧だけで入り抜き」は、軽い筆圧をぐっと細くして、線の頭と終わりも筆圧で細くします（マウスはいつも長さ）。「長さで入り抜き」は、サブツールの「入り」「抜き」の長さで端を細くします。</li>
+        <li><strong>ペンの線を先に表示</strong>：描いている線を、透明な重ね窓で先に出して、見えるまでを約 1 コマ早くします。ペン（Windows Ink）で、丸い硬めのペン・筆で描くときだけ効きます。入れている間は「予測の仮の線」は出しません。</li>
+        <li><strong>予測の仮の線</strong>：描いている線の先を、次の動きの予測まで仮に描いて遅れを隠します。硬い丸のペンのときだけです。</li>
+        <li><strong>ボタンの上の長押し</strong>：「押し込んで離すと決定」なら、長く押しても離したときに決まります（メニューはペンのサイドボタンで出します）。「長押しで右クリックのメニュー」なら、長押しでメニューが出ます。レイヤーの行などボタンでない所は、どちらでも長押しでメニューが出ます。</li>
+        <li>ペンのサイドボタンは<a href="/petanuri/manual/keys#penbutton">ペンのボタン・Windows Ink</a>にまとめています。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-press-v112.webp" width="900" height="640" alt="環境設定のペンの押し込みと長押しの欄" loading="lazy"><figcaption>ペンの押し込み・長押し</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="環境設定のペン・入力の「メニュー・ボタン」の欄" loading="lazy"><figcaption>ペン・入力 →「メニュー・ボタン」</figcaption></figure></div>
+      <h3 id="settings-controls">操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">節</th><th scope="col">項目</th></tr></thead><tbody>
+        <tr><td>カメラ</td><td>Space＋ドラッグ（回転（既定）／平行移動）・カメラ操作のテンプレート（右ボタン式・中ボタン式・Alt ボタン式・Unity 式）・軸の視点は平行投影（はじめは入）・キーのズームはカーソル中心（はじめは切）・最後に塗った所を中心に回す（はじめは切）・回し始めたときのカーソルの所を中心に回す（はじめは切）（<a href="/petanuri/manual/keys#camera">カメラ操作</a>）</td></tr>
+        <tr><td>3D マウス</td><td>3D マウスをつないだことがあるときだけ出ます（<a href="/petanuri/manual/keys#mouse3d">3D マウス</a>）</td></tr>
+        <tr><td>マウス</td><td>右クリック（メニュー（既定）／ポップアップパレット）（<a href="#popup">ポップアップパレット</a>）</td></tr>
+        <tr><td>キーボード</td><td>ツールのキーの長押しで一時切り替え（はじめは入）・長押しとみなす時間（0.15〜2 秒。はじめは 0.5 秒）・決まった倍率（UV・2D）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>ツールのキーの長押しで一時切り替え</strong>：ツールのキーを押している間だけ、そのツールになります（<a href="/petanuri/manual/keys#pen-hold">一時的に持ち替える</a>）。</li>
+        <li><strong>決まった倍率（UV・2D）</strong>：3 つの倍率（はじめは 100%・200%・50%）を決めておき、<kbd>Ctrl</kbd>＋<kbd>1</kbd>・<kbd>2</kbd>・<kbd>3</kbd> で UV の区画と 2D キャンバスをその倍率にします。100% は、テクスチャの 1 画素が画面の 1 px です。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="環境設定のカメラ操作で Unity 式を選んだところ" loading="lazy"><figcaption>操作 →「カメラ」</figcaption></figure>
+      <h3 id="settings-keys">キー割り当て</h3>
+      <p>分類ごとに、操作とキーが並びます。割り当て直し・書き出し・読み込み・初期化は、<a href="/petanuri/manual/keys#assign">キーを割り当てる</a>にまとめています。</p>
+      <h3 id="settings-paint">描画</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">節</th><th scope="col">項目</th></tr></thead><tbody>
+        <tr><td>ブラシ</td><td>ブラシの大きさの単位（画面の px（既定）／テクスチャの px）</td></tr>
+        <tr><td>性能</td><td>描いていないレイヤーを休ませる（はじめは入。<a href="/petanuri/manual/layers#sleep">レイヤーを休ませる</a>）・作業ファイルを速い形で保存する（v1.2.0 以降で開けます）（はじめは切。<a href="/petanuri/manual/start#save-fast">速い形で保存</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>ブラシの大きさの単位</strong>：「画面の px」は画面で見た太さで決めます（寄るほど細く塗られます）。「テクスチャの px」は塗られる絵の大きさで決めます（寄っても引いても同じ太さ）。ツールプロパティの「大きさの基準」が「設定どおり」のサブツールだけが従います。</li>
+      </ul>
+      <h3 id="settings-system">システム</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">節</th><th scope="col">項目</th></tr></thead><tbody>
+        <tr><td>起動</td><td>次の起動でチュートリアルを見る・起動したときに新しいバージョンを確かめる（はじめは入）・新しいバージョンがあれば、自動でダウンロードして入れ替える（はじめは入）（<a href="/petanuri/manual/start#version">新しいバージョンにする</a>）</td></tr>
+      </tbody></table></div>
+      <h3 id="settings-ai">AI 連携</h3>
+      <p>「AI 連携（MCP）」（使う・今の状態）・「つなぎ方」（AI 側に登録する内容。「コピー」で写せます）・「run_js」（<span class="tier pro">Pro</span>）の 3 つの節です。くわしくは<a href="/petanuri/manual/unity#ai">AI 連携</a>へ。</p>
+      <h3 id="settings-elsewhere">環境設定に無い設定</h3>
+      <p>次の設定は、使う所にだけあります。</p>
+      <ul class="mn-list">
+        <li>2 つのセットをまたいで描く：3D ビューの左下の「またいで描く」（<a href="/petanuri/manual/sets#cross">メインとサブ</a>）</li>
+        <li>UV の島の外へ続けて塗る：UV の区画の見出し・表示 → UV（<a href="/petanuri/manual/uv#seam">島の外にはみ出したとき</a>）</li>
+        <li>ペンのドラッグでレイヤー・サブツールを動かす：レイヤーの「…」</li>
+        <li>書き出しのにじみと書き出し先：書き出しの窓（<a href="/petanuri/manual/export#pad">書き出しのにじみ</a>）</li>
+        <li>対称の相手を探す範囲：3D ビューの左上の対称の ▼（<a href="/petanuri/manual/draw#mirror">対称で描く</a>）</li>
+      </ul>
+      <h3 id="settings-trouble">うまくいかないとき</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>「3D マウス」の節が無い</b>：3D マウスを一度もつないでいないと出ません。つなぐと出ます。</li>
+        <li><b>「ペンの線を先に表示」を入れても変わらない</b>：ペン（Windows Ink）で描くときだけ効きます。マウス・タッチ・「筆圧を直接読む（WinTab）」のペンでは何もしません。起こせなかったときは、右下に理由を出して切れます。</li>
+        <li><b>キーのズームが画面の真ん中に寄る</b>：操作 → カメラ の「キーのズームはカーソル中心」を入れます。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>関連するページ</b><ul><li><a href="/petanuri/manual/keys">ショートカットとペン操作</a></li><li><a href="/petanuri/manual/start">はじめかた</a></li><li><a href="/petanuri/manual/draw#color">色を選ぶ・スポイト</a></li><li><a href="/petanuri/manual/layers#history">作業の履歴と元に戻す</a></li><li><a href="/petanuri/manual/uv#uv">UV の区画を出す</a></li></ul></div>
+    <nav class="mn-pager" aria-label="前後のページ"><a class="prev" href="/petanuri/manual/start"><small>← 前へ</small>はじめかた</a><a class="next" href="/petanuri/manual/draw"><small>次へ →</small>描く</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -153,5 +635,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>
