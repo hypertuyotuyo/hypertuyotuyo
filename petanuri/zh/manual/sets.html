@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>纹理集与对象 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="选择纹理集、主与副（跨两个纹理集绘制）、分辨率、更换底色图片、添加图片或 PSD、按对象显示/隐藏、节省内存、无对应材质纹理集。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="选择纹理集、主与副（跨两个纹理集绘制）、分辨率、替换底色图像、添加图像或 PSD、按对象显示与隐藏、节省内存、无对应材质的纹理集。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/sets">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="纹理集与对象 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="选择纹理集、主与副（跨两个纹理集绘制）、分辨率、更换底色图片、添加图片或 PSD、按对象显示/隐藏、节省内存、无对应材质纹理集。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="选择纹理集、主与副（跨两个纹理集绘制）、分辨率、替换底色图像、添加图像或 PSD、按对象显示与隐藏、节省内存、无对应材质的纹理集。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/sets">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "纹理集与对象 | PetaNuri3D 使用手册",
-   "description": "选择纹理集、主与副（跨两个纹理集绘制）、分辨率、更换底色图片、添加图片或 PSD、按对象显示/隐藏、节省内存、无对应材质纹理集。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "选择纹理集、主与副（跨两个纹理集绘制）、分辨率、替换底色图像、添加图像或 PSD、按对象显示与隐藏、节省内存、无对应材质的纹理集。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/sets",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,254 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets" aria-current="page">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets" aria-current="page">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 纹理集与对象</p>
     <h1 class="mn-h1">纹理集与对象</h1>
-    <p class="mn-intro">每个材质生成一个“纹理集”。每个纹理集拥有自己的图层和分辨率，也可按模型对象（网格）隐藏。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#choose">选择纹理集</a></li><li><a href="#cross">主与副（跨两个纹理集绘制）</a></li><li><a href="#files">更换底色图片、添加图片或 PSD</a></li><li><a href="#objects">显示、隐藏对象</a></li><li><a href="#sleep">节省内存</a></li><li><a href="#orphan">无对应材质纹理集（! 标记）</a></li></ul></div>
-    <section class="mn-sec" id="choose"><h2>选择纹理集</h2><ul class="mn-list"><li>在 3D 视图<strong>从其他纹理集上开始绘制，会先自动切换到该纹理集再绘制</strong>。笔尖旁显示纹理集名称。</li><li>唤醒休眠纹理集时会显示“正在切换纹理集…”。期间的笔移动会被记录，唤醒后继续绘制，因此笔画不会缺失。</li><li>要关闭自动切换，关闭 3D 视图左下“切换到所触及处”（右键菜单也有）。</li><li>也可手动选择：点击面板行、在模型上使用 <kbd>Alt</kbd>＋右键、右键“选择此纹理集”。重新选择时，该纹理集在 3D 中短暂高亮。</li><li>用复选框切换纹理集显示，在右侧选择分辨率（32～4096，Lite 最高 2048）。更改分辨率会清除撤销历史，请先确认。</li><li>切换纹理集后仍可继续撤销、重做。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="纹理集面板" loading="lazy"><figcaption>纹理集面板（附 GPU 内存估算）</figcaption></figure><div class="mn-tip">图章用2D画布是特殊工作纹理集。不混入模型列表，编辑期间面板会提示。与模型主、副纹理集分开编辑，但与工程文件一起保存（<a href="/petanuri/zh/manual/deco#canvas2d">印章专用 2D 画布</a>）。</div><div class="mn-tip">像素画也可选择32/64/128/256px。低分辨率纹理支持普通图层、保存和PNG导出，更改分辨率前请保存项目。</div><div class="mn-tip">VRM透明部分保留原始图像透明度和材质透明设置。同一图像中透明设置不同的材质会分为独立纹理集，绘制或擦除修改的透明度会保存到项目。</div><div class="mn-tip">像素显示标记（所有版本）：开启按像素显示的纹理集行，名称右侧会出现小方块标记，点击标记即可关闭。用 ⋯ 或右键菜单中的“像素显示恢复为自动（256px 及以下时开启）”可撤销自己设定的开关。各纹理集的设置会保存在项目文件中。</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="显示像素显示标记的纹理集行及其右键菜单" loading="lazy"><figcaption>按像素显示（按纹理集）</figcaption></figure></section><section class="mn-sec" id="cross"><h2>主与副（跨两个纹理集绘制）</h2><ul class="mn-list"><li>保持唤醒且可绘制的只有当前纹理集（<strong>主</strong>）和之前选中的纹理集（<strong>副</strong>）这2个。3D 视图左下显示名称（点击副纹理集可与主交换）。面板中主行粉色、副行蓝色。</li><li>这两个纹理集可用一条笔画跨越绘制。绘制颈部等脸与身体交界处时，先分别点击两者一次，再绘制。一次撤销会同时恢复两者。</li><li>若只想绘制起笔纹理集而不跨越，关闭左下的<strong>“跨纹理集绘制”</strong>（右键菜单有相同开关）。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="3D 视图左下。切换到点击位置、主、副、跨纹理集绘制" loading="lazy"><figcaption>3D 视图左下（切换到点击位置、主、副、跨纹理集绘制）</figcaption></figure><div class="mn-tip">UV 区域仅绘制主纹理集。右下显示副纹理集的小 UV（点击可将副变为主）。</div><div class="mn-tip">在纹理集面板中，点击副集行“副”标签右侧的 ×，即可移除一起绘制的纹理集（副集）（也可在该行右键菜单中操作）。</div><div class="mn-tip">跨纹理集绘制时，笔刷圆圈不会溢出到笔尖未落在其上的纹理集（v1.3.0 起，画眼睛时不会涂到皮肤）。模糊、涂抹、混色、扭曲也按同样的规则工作。</div></section><section class="mn-sec" id="files"><h2>更换底色图片、添加图片或 PSD</h2><p>右键纹理集面板行，或点击行右侧“…”：</p><ul class="mn-list"><li><strong>替换底色图像</strong>：用选中图片（PNG、JPEG、WebP、BMP、GIF、TGA）替换底色图层图像。大小不同时会适配分辨率。</li><li><strong>将图像作为图层导入</strong>：显示将所选图片摆放在该纹理集 UV 上的框（<kbd>Enter</kbd> 加入新图层）。</li><li><strong>导入 PSD（替换图层）</strong>：用 PSD 图层替换该纹理集图层（<span class="tier std">Standard</span>）。</li><li><strong>加载 lilToon 材质</strong>：将 .mat、.unitypackage 导入该纹理集（<span class="tier pro">Pro</span>）。</li><li>将图片、PSD、.mat 拖到行上也可导入，也能导入未选中纹理集。均可撤销。</li></ul></section><section class="mn-sec" id="objects"><h2>显示、隐藏对象</h2><p>右侧“对象”面板按原层级缩进显示模型对象（头发、服装、道具等网格）。每行有眼睛按钮、名称、所用纹理集标签。</p><ul class="mn-list"><li>眼睛按钮可隐藏、显示。<kbd>Alt</kbd>＋点击“仅显示此项”，再次点击显示全部。3D 右键也有“隐藏此对象”“仅显示此对象”。</li><li>点击名称，对象在 3D 中短暂高亮。点击标签选择该纹理集。</li><li>隐藏对象不在 3D 中显示、不会命中或被绘制（包括背面/被遮挡面绘制、镜像侧、填充、渐变）。后方内容可直接显示并绘制。</li><li>纹理（图层）保留，PNG、PSD、材质导出不变。隐藏状态保存到工程文件。显示全部使用 <kbd>Alt</kbd>＋<kbd>H</kbd> 。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="在对象面板隐藏部分对象" loading="lazy"><figcaption>对象面板</figcaption></figure><div class="mn-tip">显示预设（所有版本）：在面板下方点“保存当前状态”，将隐藏的对象（Pro 中还包括形态键数值）一起命名保存。“调用”恢复该状态（撤销一次可还原），也可“覆盖”、在名称栏重命名或用 × 删除。最多 10 个，保存在项目文件中。</div></section><section class="mn-sec" id="sleep"><h2>节省内存</h2><ul class="mn-list"><li>未选中纹理集保留显示效果，但释放 GPU 内存进入休眠。</li><li>重新选择后，2048 约0.2秒、4096 约0.5〜1.5秒即可绘制。</li><li>保存、导出、AO、应用所有纹理集的滤镜均可处理休眠纹理集。</li></ul></section><section class="mn-sec" id="orphan"><h2>无对应材质纹理集（! 标记）</h2><p><a href="/petanuri/zh/manual/start#reload">重新加载模型</a>时，新模型中不存在材质的纹理集不会删除，而会保留并标记 <strong>!</strong> 。</p><ol class="mn-steps"><li>点击带 ! 的纹理集。</li><li>选择迁移图层（默认全部）及目标纹理集，点击“移动”。</li><li>按原顺序放入目标纹理集图层顶部。勾选“也保留在原纹理集”时只复制。</li></ol><div class="mn-tip">! 纹理集不在 3D 显示、不能绘制，不参与导出和 AO。可通过“删除此纹理集”删除。</div></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/screen"><small>← 上一页</small>界面、面板、偏好设置</a><a class="next" href="/petanuri/zh/manual/material"><small>下一页 →</small>最终效果与 lilToon 材质</a></nav>
+    <p class="mn-intro">模型的每个材质都会生成一个“纹理集”。一个纹理集对应一张纹理，图层和分辨率按纹理集分别保存。也可以按头发、服装等对象（网格）分别隐藏。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>在模型上开始绘制时，会自动切换到该处的纹理集。手动选择时，按 <kbd>Alt</kbd>+右键（<a href="#choose">详情</a>）。</li>
+      <li>颈部接缝等两个纹理集的交界处，先在两个纹理集上各点一次再绘制，就能用一笔跨过去（<a href="#cross">详情</a>）。</li>
+      <li>分辨率在纹理集面板中行右侧的栏里更改。因为会清除撤销历史，请先保存（<a href="#resolution">详情</a>）。</li>
+      <li>卡顿或无法绘制时，降低分辨率，或关闭其他应用（<a href="#memory">详情</a>）。</li>
+      <li>想把衣服等整件隐藏时，点击对象面板中的眼睛按钮（<a href="#objects">详情</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#choose">选择要绘制的纹理集</a></li><li><a href="#cross">跨两个纹理集绘制（主与副）</a></li><li><a href="#panel">纹理集面板说明</a></li><li><a href="#resolution">更改分辨率</a></li><li><a href="#files">替换底色图像、添加图像或 PSD</a></li><li><a href="#setview">隐藏纹理集、按像素显示</a></li><li><a href="#objects">隐藏对象、仅显示该对象</a></li><li><a href="#memory">节省 GPU 内存（卡顿时）</a></li><li><a href="#orphan">无对应材质的纹理集（! 标记）</a></li></ul></div>
+
+    <section class="mn-sec" id="choose" data-keywords="材质 切换 选择 材质槽 其他部位 脸 身体 头发 自动切换 突然变了 部位">
+      <h2>选择要绘制的纹理集</h2>
+      <p>能绘制的是所选的纹理集。通常不需要重新选择，会自动切换到开始绘制处的纹理集。</p>
+      <ol class="mn-steps">
+        <li>在 3D 视图中，从想要上色的位置开始绘制。</li>
+        <li>如果起点在其他纹理集上，会先自动切换到该纹理集再绘制。笔尖旁边会显示纹理集的名称。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>手动选择时：在纹理集面板中点击该行、在模型上按 <kbd>Alt</kbd>+右键、使用 3D 右键菜单的“选择此纹理集”。也可以从 UV 区域右键菜单的“纹理集”中选择。</li>
+        <li>重新选择后，该纹理集会在 3D 中柔和地着色一下再消失。由此可以知道哪里是该纹理集。</li>
+        <li>休眠中的纹理集，在唤醒期间会显示“正在切换纹理集…”（2048 约 0.2 秒，4096 约 0.5–1.5 秒）。这期间笔的动作会被记住，唤醒后直接接着绘制，所以线条不会缺失。</li>
+        <li>即使重新选择纹理集，撤销、重做也能继续使用。撤销其他纹理集的操作时，会选中那个纹理集。</li>
+        <li>图层面板和 UV 区域显示的是所选纹理集的内容。</li>
+      </ul>
+      <h3 id="choose-auto">禁止自动切换</h3>
+      <p>关闭 3D 视图左下角的“切换到所触及处”（也可以用 3D 右键菜单的“自动切换到开始绘制处的纹理集”）。关闭期间，即使从其他纹理集上开始绘制也不会切换，只能在主和副上绘制。</p>
+      <h3 id="choose-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>绘制后跳到了别的纹理集</b>：开始绘制的位置在其他纹理集上。不想切换时，请关闭“切换到所触及处”。</li>
+        <li><b>无法在 3D 中绘制，光标变成禁止符号</b>：光标所在处是未选中的纹理集，或者图层被锁定、被隐藏。原因会显示在光标下方。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="cross" data-keywords="2nd 第二 副 交界 接缝处 脖子 边界 跨越 两个材质 线断了 线断开">
+      <h2>跨两个纹理集绘制（主与副）</h2>
+      <p>像颈部接缝那样，可以用一笔跨过脸和身体的纹理集交界处进行绘制。</p>
+      <ol class="mn-steps">
+        <li>在想要跨越的两个纹理集上各点一次（绘制或选择都可以）。</li>
+        <li>确认 3D 视图左下角的“跨纹理集绘制”已开启（默认开启）。</li>
+        <li>跨过交界处绘制。两个纹理集都能连续上色。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="3D 视图左下角。切换到所触及处、主、副、跨纹理集绘制" loading="lazy"><figcaption>3D 视图左下角（切换到所触及处、主、副、跨纹理集绘制）</figcaption></figure>
+      <ul class="mn-list">
+        <li>保持唤醒、可以绘制的有两个：所选的纹理集（<strong>主</strong>）和上一个选中的纹理集（<strong>副</strong>）。名称显示在 3D 视图左下角，点击“副”会与“主”互换。</li>
+        <li>在面板中，主所在的行为粉色，副所在的行为蓝色，并带有标签。</li>
+        <li>在各个纹理集上，会绘制到该纹理集所选的图层。撤销一次，两边会一起撤销。</li>
+        <li>笔尖没有落在的纹理集，画笔的圆不会溢出到那里。画眼睛时，也不会涂到皮肤上。模糊、涂抹、混色、液化也是一样。</li>
+        <li>在 UV 区域，只会绘制到主纹理集。右下角会显示小小的副 UV（点击后副变为主）。</li>
+      </ul>
+      <h3 id="cross-off">不跨集绘制、移除副集</h3>
+      <ul class="mn-list">
+        <li>只想绘制到开始绘制的那个纹理集时，关闭左下角的“跨纹理集绘制”（也可以用 3D 右键菜单的“一笔跨越 2 个纹理集绘制”）。关闭后两个纹理集仍保持唤醒，所以可以马上来回切换。</li>
+        <li>移除副集时，点击面板中副所在行的“副”标签右侧的 ×（也可以用副所在行右键菜单的“移除副集（不再一起绘制并休眠）”）。该纹理集会休眠，GPU 内存随之释放。</li>
+        <li>移除后，左下角的副显示为“无”。选择其他纹理集后，当前的主又会成为副。</li>
+      </ul>
+      <div class="mn-tip">“副”与 lilToon 的主颜色 2nd 是两回事。</div>
+    </section>
+
+    <section class="mn-sec" id="panel" data-keywords="列表 一览 行 菜单 三点 … 右键 容量 MB 材质槽">
+      <h2>纹理集面板说明</h2>
+      <p>右侧的“纹理集”面板中，每个纹理集占一行。通过行的右键菜单，或行右侧的“…”，可以调出该纹理集的各种操作。</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="纹理集面板。顶部是 GPU 内存估算，每行有显示勾选、名称、分辨率、内存" loading="lazy"><figcaption>纹理集面板</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">位置</th><th scope="col">说明</th></tr></thead><tbody>
+        <tr><td>最上方</td><td>GPU 内存估算。如果有休眠的图层，还会显示其数量和 CPU 一侧的用量（<a href="#memory">节省内存</a>）</td></tr>
+        <tr><td>行左侧的勾选</td><td>是否在 3D 中显示该纹理集（<a href="#setview">详情</a>）</td></tr>
+        <tr><td>名称和标签</td><td>材质的名称。主、副标签（<a href="#cross">详情</a>）。若按像素显示，则带有小方块标记</td></tr>
+        <tr><td>行右侧的栏</td><td>分辨率（<a href="#resolution">详情</a>）和该纹理集的 GPU 内存估算</td></tr>
+        <tr><td>“…”</td><td>与右键相同的菜单（只用数位笔也能调出）</td></tr>
+        <tr><td>带 ! 的行</td><td>当前模型中不存在的纹理集（<a href="#orphan">无对应材质的纹理集</a>）</td></tr>
+      </tbody></table></div>
+      <h3 id="panel-menu">行的右键（…）菜单</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">说明</th></tr></thead><tbody>
+        <tr><td>选择此纹理集</td><td>设为主</td></tr>
+        <tr><td>移除副集（不再一起绘制并休眠）</td><td>仅副所在的行有（<a href="#cross-off">详情</a>）</td></tr>
+        <tr><td>显示、仅显示此纹理集、显示全部纹理集</td><td>切换在 3D 中显示的纹理集（<a href="#setview">详情</a>）</td></tr>
+        <tr><td>替换底色图像、将图像作为图层导入、导入 PSD（替换图层）、加载 lilToon 材质（.mat）</td><td>把文件放入该纹理集（<a href="#files">详情</a>）</td></tr>
+        <tr><td>按像素显示（不插值）、像素显示恢复为自动</td><td>在 3D 中让纹理按方形像素显示（<a href="#setview-dot">详情</a>）</td></tr>
+        <tr><td>Alpha 镂空（在 3D 中去掉透明处）</td><td>把涂成透明的地方在 3D 中镂空，露出后面。有无、镂空（去掉较淡处）、半透明（按不透明度透过）可选。只影响外观，导出的图像不变</td></tr>
+        <tr><td>分辨率</td><td>32×32–4096×4096（<a href="#resolution">详情</a>）</td></tr>
+        <tr><td>导出为 PNG、将 UV 贴图导出为 PNG、导出为 PSD</td><td>只导出此纹理集（<a href="/petanuri/zh/manual/export">导出</a>）</td></tr>
+      </tbody></table></div>
+      <h3 id="panel-merge">纹理集的生成方式</h3>
+      <ul class="mn-list">
+        <li>每个材质会生成一个纹理集。使用同一图像的材质，会合并成一个纹理集。合并方式在新建界面中决定（<a href="/petanuri/zh/manual/start#new">打开 3D 模型</a>）。</li>
+        <li>选中合并后的纹理集时，面板中会显示“此纹理被 〇〇、〇〇 使用”。绘制后，会反映到所有相关材质。</li>
+        <li>VRM 的透明部分，沿用原图像的透明度和材质的透明设置。即使是同一张图像，透明设置不同的材质也会成为不同的纹理集。</li>
+        <li>印章专用 2D 画布和 2D 绘画，是与模型纹理集分开的工作用纹理集。编辑期间，面板中会这样显示。它们会和工程文件一起保存，但不会包含在模型的导出中（<a href="/petanuri/zh/manual/deco#canvas2d">印章专用 2D 画布</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="resolution" data-keywords="尺寸 贴图大小 纹理大小 2048 4096 1024 512 2K 4K 像素数 像素画 低分辨率 放大 缩小 清晰度">
+      <h2>更改分辨率</h2>
+      <p>纹理的大小（纵横的像素数）可以按纹理集分别更改。</p>
+      <ol class="mn-steps">
+        <li>先保存工程文件（<kbd>Ctrl</kbd>+<kbd>S</kbd>）。</li>
+        <li>在纹理集面板中，从行右侧的栏里选择分辨率（也可以用行右键菜单的“分辨率”）。</li>
+        <li>出现“更改分辨率会清除撤销历史。”时，点击“继续”。已绘制的内容会被放大或缩小到新的大小。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>可选 32、64、128、256、512、1024、2048、4096。Lite 最高 2048，Standard、Pro 最高 4096。</li>
+        <li>32–256 适合像素画。即使是低分辨率，也能使用普通的图层、保存和 PNG 导出。256 及以下的纹理集，一开始就是按像素显示（<a href="#setview-dot">详情</a>）。</li>
+        <li>只想在导出时改变大小，请使用导出窗口的“分辨率”（<a href="/petanuri/zh/manual/export#png">导出为 PNG</a>）。</li>
+      </ul>
+      <div class="mn-tip warn">更改分辨率后，撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）的历史会全部清除。调低后，细节会变模糊。调高也不会增加细节。</div>
+      <h3 id="resolution-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>无法选择 4096</b>：Lite 最高到 2048。Standard 及以上才能选择。</li>
+        <li><b>出现“请在保存完成后再更改分辨率”</b>：正在保存或自动保存。等完成后再重新选择。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="files" data-keywords="替换 更换 底图 基础 导入纹理 原纹理 改造 PSD 导入 拖放 拖拽">
+      <h2>替换底色图像、添加图像或 PSD</h2>
+      <p>打开模型之后，也可以按纹理集替换底色图像，或导入图像、PSD。</p>
+      <ol class="mn-steps">
+        <li>在纹理集面板中，右键点击想放入文件的纹理集所在行（也可以用行右侧的“…”）。</li>
+        <li>从下表中选择项目，再选择文件。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">说明</th></tr></thead><tbody>
+        <tr><td>替换底色图像</td><td>把底色图层的内容替换为所选图像（PNG、JPEG、WebP、BMP、GIF、TGA）。大小不同时，会按分辨率缩放。其他图层保持不变</td></tr>
+        <tr><td>将图像作为图层导入</td><td>显示一个把所选图像放在该纹理集 UV 上的边框。按 <kbd>Enter</kbd> 会成为新图层。选择多张时，会逐张放置（<a href="/petanuri/zh/manual/edit#image">贴图像</a>）</td></tr>
+        <tr><td>导入 PSD（替换图层） <span class="tier std">Standard</span></td><td>用 PSD 的图层替换该纹理集的图层（<a href="/petanuri/zh/manual/export#psd">PSD</a>）</td></tr>
+        <tr><td>加载 lilToon 材质（.mat） <span class="tier pro">Pro</span></td><td>把 .mat、.unitypackage 加载到该纹理集（<a href="/petanuri/zh/manual/material#lil">加载 lilToon 材质</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>把图像、PSD、.mat 拖放到行上也能放入（放下的目标行会出现虚线边框）。只有一张图像时，会询问是“替换底色”还是“添加为图层”。</li>
+        <li>没有选中的纹理集，也不必重新选择就能放入。所有这些操作都可以用撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）撤销。</li>
+        <li>所选纹理集的底色，也可以通过 文件 → 导入 →“替换底色图像（所选纹理集）”来替换。</li>
+      </ul>
+      <h3 id="files-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>出现“宽高比不同，已拉伸”</b>：图像的宽高比与纹理不同。请使用正方形的图像。</li>
+        <li><b>无法替换底色</b>：底色图层被锁定，或者不存在。请解除锁定，或使用“将图像作为图层导入”。</li>
+        <li><b>无法将图像添加为图层（Lite）</b>：Lite 每个纹理集最多 4 个图层。请先合并或删除图层，再添加。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="setview" data-keywords="隐藏 显示 隐藏材质 像素 点阵 插值 模糊 最近邻 透明 镂空 半透明 nearest">
+      <h2>隐藏纹理集、按像素显示</h2>
+      <p>可以按纹理集分别切换是否在 3D 中显示，以及像素的显示方式。</p>
+      <ul class="mn-list">
+        <li>用行左侧的勾选，切换是否在 3D 中显示该纹理集。也可以用行右键菜单的“仅显示此纹理集”“显示全部纹理集”。</li>
+        <li>关闭显示的纹理集，纹理依然保留，会包含在全部纹理集的导出中。</li>
+        <li>要按网格逐个隐藏时，请使用对象面板（<a href="#objects">详情</a>）。</li>
+      </ul>
+      <h3 id="setview-dot">按像素显示纹理</h3>
+      <p>在 3D 显示中，不对纹理插值，而是一个像素一个像素地以方块显示。适用于 32、64px 等低分辨率的纹理。</p>
+      <ol class="mn-steps">
+        <li>点击行的右键菜单（“…”）中的“按像素显示（不插值）”。</li>
+        <li>名称右侧会出现小方块标记。点击标记即可关闭。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>256px 及以下的纹理集，一开始就是开启的（自动）。自己手动开关过的纹理集，设置会保存在工程文件中。</li>
+        <li>用“像素显示恢复为自动（256px 及以下时开启）”，可以把自己设定的开关恢复回去。</li>
+        <li>一次切换所有纹理集时，用 显示 → 显示方式 →“所有纹理集按像素显示（不插值）”。</li>
+        <li>这只是显示，绘制的内容和导出都不会改变。与像素笔一起使用，3D 中的像素也会显示为方块（<a href="/petanuri/zh/manual/draw">绘制</a>）。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="出现按像素显示标记的纹理集行和右键菜单" loading="lazy"><figcaption>按像素显示（按纹理集）</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="objects" data-keywords="网格 部件 隐藏衣服 隐藏头发 独显 眼睛图标 大纲 层级 预设 显示隐藏 solo">
+      <h2>隐藏对象、仅显示该对象</h2>
+      <p>右侧的“对象”面板中，会列出模型的对象（头发、服装、饰物等网格）。可以这样使用：把整件衣服隐藏起来，绘制里面的身体。</p>
+      <ol class="mn-steps">
+        <li>在“对象”面板中，点击想隐藏的对象的眼睛按钮。它会从 3D 中消失。</li>
+        <li>想只显示某个对象时，按住 <kbd>Alt</kbd> 点击眼睛按钮或名称（再按一次 <kbd>Alt</kbd>+点击则全部显示）。</li>
+        <li>要恢复时，点击面板上方的“全部显示”，或按 <kbd>Alt</kbd>+<kbd>H</kbd>。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="在对象面板中隐藏了部分对象" loading="lazy"><figcaption>对象面板</figcaption></figure>
+      <ul class="mn-list">
+        <li>如果有原始层级，会用缩进排列。每行有眼睛按钮、名称和所用纹理集的标签。</li>
+        <li>点击名称，该对象会在 3D 中短暂高亮。点击标签，会选择该纹理集。</li>
+        <li>行的右键菜单：仅显示此项、隐藏/显示、在 3D 中高亮、全部显示。3D 右键菜单中也有“隐藏此对象”“仅显示此对象”。</li>
+        <li>隐藏的对象不会出现在 3D 中，点击也点不到，也不会被涂上。绘制背面和被遮挡的面、对称的另一侧、填充、渐变、图章也是如此。位于里面的东西可以直接看到并上色。</li>
+        <li>纹理（图层）会保留。PNG、PSD、材质的导出也不会改变。</li>
+        <li>隐藏期间，3D 下方的栏会显示“已隐藏 n 个对象”和“全部显示”。全部显示（<kbd>Alt</kbd>+<kbd>H</kbd>）会同时恢复显示范围和对象（<a href="/petanuri/zh/manual/uv#isolate">显示范围</a>）。</li>
+        <li>隐藏状态会保存在工程文件中。隐藏、显示的操作不会进入撤销历史。</li>
+        <li><span class="tier pro">Pro</span> 通过行右键菜单的“仅此对象使用另一个材质”“分配材质”，可以按对象拆分材质（<a href="/petanuri/zh/manual/material#split">拆分材质</a>）。</li>
+      </ul>
+      <h3 id="objects-presets">显示预设</h3>
+      <p>用面板下方的“保存当前状态”，可以把隐藏的对象整体命名并保存。<span class="tier pro">Pro</span> 中还会同时保存形态键的值。</p>
+      <ul class="mn-list">
+        <li>点击“调用”进入该状态（撤销一次即可恢复）。用“覆盖”改写为当前状态，在名称栏中改名，点击 × 删除。</li>
+        <li>最多可保存 10 个，保存在工程文件中。混合形状面板中也会显示同样的列表。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="memory" data-keywords="卡 慢 卡顿 卡死 崩溃 VRAM 显存 显卡 内存不足 无法绘制 白屏 休眠 睡眠 显示处理已停止">
+      <span id="sleep"></span>
+      <h2>节省 GPU 内存（卡顿时）</h2>
+      <p>纹理会占用 GPU 的内存（VRAM）。4096 的纹理集或图层较多时会不够用，导致卡顿或无法绘制。PetaNuri3D 会让不使用的部分休眠，以腾出内存。</p>
+      <h3 id="memory-how">休眠的机制</h3>
+      <ul class="mn-list">
+        <li>未选中的纹理集，外观保持不变，但会释放 GPU 内存而休眠。保持唤醒的只有主和副两个。</li>
+        <li>选中休眠的纹理集后，2048 约 0.2 秒、4096 约 0.5–1.5 秒就能绘制。在面板中点击休眠的 4096 纹理集时，会显示“正在准备…”。</li>
+        <li>保存、PNG/PSD 导出、AO、对所有纹理集应用的滤镜，对休眠的纹理集也照常生效。</li>
+        <li>暂时没动过的图层，在不绘制期间也会被压缩保存（文件 → 偏好设置 → 绘制 → 性能 中的“让未绘制的图层休眠”。默认开启）。外观、导出、保存都不会变（<a href="/petanuri/zh/manual/layers#sleep">图层休眠</a>）。</li>
+        <li>当前的用量，可通过纹理集面板上方的“GPU 内存估算”和每行的数字得知。</li>
+      </ul>
+      <h3 id="memory-trouble">卡顿、无法绘制时</h3>
+      <ol class="mn-steps">
+        <li>在纹理集面板上方查看 GPU 内存估算。GPU 内存的大致要求是：以 2048 绘制需要 4GB 以上，4096 需要 8GB 以上（<a href="/petanuri/zh/manual/start#requirements">运行环境</a>）。</li>
+        <li>关闭游戏、浏览器、视频等使用 GPU 的其他应用。</li>
+        <li>降低不需要那么精细的纹理集的分辨率（<a href="#resolution">更改分辨率</a>）。</li>
+        <li>不跨集绘制时，移除副集让它休眠（<a href="#cross-off">移除副集</a>）。</li>
+        <li>如果关闭了“让未绘制的图层休眠”，请开启。</li>
+      </ol>
+      <ul class="mn-list mn-trouble">
+        <li><b>出现“显示处理已停止”</b>：GPU 的显示处理被重置，已绘制的内容无法显示。从睡眠恢复或内存不足时会发生。此状态下无法绘制，也不会保存。请用窗口中的“从自动保存打开”或“重新打开工程文件”重新打开（之前的工程文件和自动保存不会丢失）。</li>
+        <li><b>出现“显示处理已停止，无法导出”</b>：与上一条相同。重新打开后再导出。</li>
+        <li><b>每次选择纹理集都要等待</b>：这是在唤醒休眠的纹理集。把经常来回切换的两个设为主和副，就不用等了。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="orphan" data-keywords="感叹号 警告 模型中没有 消失的材质 重新加载 名称变了 材质名 迁移 转移 搬家 orphan">
+      <h2>无对应材质的纹理集（! 标记）</h2>
+      <p>当前模型中不存在的材质所对应的纹理集，不会被删除，而是加上 <strong>!</strong> 保留下来。可以把已绘制的图层移到其他纹理集。</p>
+      <p>出现这种情况，一是<a href="/petanuri/zh/manual/start#reload">重新加载模型</a>时，二是用名称不一致的模型，打开未包含模型（FBX）而保存的工程文件时。</p>
+      <ol class="mn-steps">
+        <li>在纹理集面板中，点击带 ! 的纹理集。会弹出“模型中没有的纹理集：〇〇”窗口。</li>
+        <li>在“要移动的图层”中选择图层（默认全选。也有“全选”和“全部取消”）。</li>
+        <li>在“目标”中选择纹理集（名称相近的纹理集会默认选中）。</li>
+        <li>点击“移动”。图层会按相同的顺序放入目标图层的最上方。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>文件夹、蒙版、剪贴、混合模式会原样移动。分辨率不同时，会缩放到目标的大小。UV 位置保持不变。</li>
+        <li>勾选“在原纹理集中也保留（仅复制）”后，只复制，原纹理集中也会保留。</li>
+        <li>没有图层的纹理集会消失。也可以用窗口中的“删除此纹理集”，连同已绘制的图层一起删除。这些操作都可以撤销。</li>
+        <li>行的右键菜单中也有“将图层移到其他纹理集”“删除此纹理集”。</li>
+      </ul>
+      <div class="mn-tip">带 ! 的纹理集不会显示在 3D 中，也无法绘制。也不包含在全部纹理集的导出和 AO 中。需要仅此纹理集的图像时，可以用行右键菜单的“导出 PNG（不向 UV 岛外扩展）”或“导出为 PSD”<span class="tier std">Standard</span> 导出。</div>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/start#new">打开 3D 模型（新建）</a></li><li><a href="/petanuri/zh/manual/start#reload">重新加载模型</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv#isolate">显示范围</a></li><li><a href="/petanuri/zh/manual/export">导出</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/uv"><small>← 上一页</small>UV 与显示范围</a><a class="next" href="/petanuri/zh/manual/material"><small>下一页 →</small>lilToon 材质</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +389,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

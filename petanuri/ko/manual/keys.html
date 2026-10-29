@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>단축키와 펜 조작 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
-  <meta name="description" content="단축키 목록(F1. 열어 둔 채 작업 가능)·펜과 마우스 조작·시점(숫자 키패드)·키 목록·키 할당·필압 이상·필압이 작동하지 않을 때. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta name="description" content="단축키 목록(F1. 열어 둔 채로 작업할 수 있음), 펜과 마우스 조작, 시점(숫자패드), 키 목록, 키 할당, 필압이 이상할 때·작동하지 않을 때. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/keys">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="단축키와 펜 조작 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
-  <meta property="og:description" content="단축키 목록(F1. 열어 둔 채 작업 가능)·펜과 마우스 조작·시점(숫자 키패드)·키 목록·키 할당·필압 이상·필압이 작동하지 않을 때. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:description" content="단축키 목록(F1. 열어 둔 채로 작업할 수 있음), 펜과 마우스 조작, 시점(숫자패드), 키 목록, 키 할당, 필압이 이상할 때·작동하지 않을 때. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/keys">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "단축키와 펜 조작 | PetaNuri3D 매뉴얼",
-   "description": "단축키 목록(F1. 열어 둔 채 작업 가능)·펜과 마우스 조작·시점(숫자 키패드)·키 목록·키 할당·필압 이상·필압이 작동하지 않을 때. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "description": "단축키 목록(F1. 열어 둔 채로 작업할 수 있음), 펜과 마우스 조작, 시점(숫자패드), 키 목록, 키 할당, 필압이 이상할 때·작동하지 않을 때. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/keys",
    "inLanguage": "ko",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,405 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="매뉴얼 목차">
-    <p class="mn-side-title">매뉴얼</p>
+  <aside class="mn-side has-search" aria-label="매뉴얼 목차">
+    <form class="mn-search" role="search" action="/petanuri/ko/manual/search" data-index="/petanuri/assets/data/manual-search.ko.json">
+      <label class="mn-search-label" for="mn-q">매뉴얼 검색</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="예: 좌우 대칭, 필압, 내보내기" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="검색 결과" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/ko/manual">매뉴얼</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
-    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·스티치·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys" aria-current="page">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+    <nav><p class="mn-group">처음에</p><ul class="mn-plain"><li><a href="/petanuri/ko/manual/first">처음 사용하는 분께</a></li><li><a href="/petanuri/ko/manual/howto">하고 싶은 일로 찾기</a></li><li><a href="/petanuri/ko/manual/trouble">문제가 생겼을 때</a></li></ul><p class="mn-group">기본</p><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li></ol><p class="mn-group">도구와 범위</p><ol><li><a href="/petanuri/ko/manual/deco">스탬프·무늬·스티치</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV와 표시 범위</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트</a></li></ol><p class="mn-group">마무리</p><ol><li><a href="/petanuri/ko/manual/material">lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">내보내기와 연동</p><ol><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity·AI 연동</a></li></ol><p class="mn-group">찾아보기</p><ol><li><a href="/petanuri/ko/manual/keys" aria-current="page">단축키</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/ko/manual/glossary">용어집</a></li></ul><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 단축키와 펜 조작</p>
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / <a href="/petanuri/ko/manual">매뉴얼</a> / 단축키와 펜 조작</p>
     <h1 class="mn-h1">단축키와 펜 조작</h1>
-    <p class="mn-intro">파일 → 환경 설정 → &#x27;키 할당&#x27;에서 모든 키를 다시 할당할 수 있습니다(왼손 입력 장치용). 이 페이지의 키는 기본 할당입니다.</p>
-    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p><p class="mn-proof">Lite·Standard·Pro와 Pro 업그레이드를 BOOTH에서 배포하고 있습니다.</p>
-    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#list">단축키 목록(F1)</a></li><li><a href="#pen">펜·마우스</a></li><li><a href="#view">시점(숫자 키패드)</a></li><li><a href="#keys">키</a></li><li><a href="#assign">키 할당</a></li><li><a href="#pressure">필압 이상·필압이 작동하지 않을 때</a></li></ul></div>
-    <section class="mn-sec" id="list"><h2>단축키 목록(F1)</h2><ul class="mn-list"><li><kbd>F1</kbd> 로 단축키 목록이 플로팅 창에 표시됩니다(도움말 메뉴에서도 가능). <strong>열어 둔 채 키를 사용하고 3D·UV에 그릴 수 있습니다 </strong>. 다시  <kbd>F1</kbd> 또는 오른쪽 위 ×로 닫습니다.</li><li>위 &#x27;검색&#x27; 항목에서 키나 이름으로 필터링합니다. 누른 키의 행이 잠시 강조되고 아래 끝에 &#x27;누른 키&#x27;가 표시됩니다.</li><li>제목을 드래그하여 이동하고 오른쪽 아래 모서리로 크기를 바꿉니다(다음에도 유지). ▾로 접기·◐로 반투명 표시.</li><li>키를 다시 할당하면 메뉴·우클릭·버튼 설명·이 목록도 현재 키로 표시됩니다.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="3D 화면 위에 표시한 단축키 목록" loading="lazy"><figcaption>단축키 목록(열어 둔 채 작업 가능)</figcaption></figure></section><section class="mn-sec" id="pen"><h2>펜·마우스</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">조작</th><th scope="col">동작</th></tr></thead><tbody><tr><td>펜 끝·왼쪽 버튼</td><td>그리기(필압으로 크기)</td></tr><tr><td>오른쪽 드래그(펜의 사이드 버튼)</td><td>회전</td></tr><tr><td>가운데 드래그</td><td>이동(가운데 버튼 방식이면 회전. <kbd>Shift</kbd>+ 가운데 버튼으로 이동·<kbd>Ctrl</kbd>+ 가운데 버튼으로 확대/축소)</td></tr><tr><td>휠</td><td>줌</td></tr><tr><td><kbd>Space</kbd>+ 드래그</td><td>회전(설정에서 평행 이동과 바꿀 수 있음)</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>Space</kbd>+ 드래그</td><td>평행 이동</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Space</kbd>+ 드래그</td><td>줌</td></tr><tr><td>오른쪽 버튼을 움직이지 않고 놓기</td><td>마우스는 우클릭 메뉴, 펜 사이드 버튼은 팝업 팔레트</td></tr><tr><td><kbd>Shift</kbd>+ 클릭</td><td>이전에 그린 선의 끝에서 직선</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>+ 좌우 드래그</td><td>브러시 크기</td></tr><tr><td><kbd>Alt</kbd> 를 누르는 동안 </td><td>스포이트</td></tr><tr><td>펜의 지우개 쪽</td><td>지우개(패널·창 조작은 펜촉과 동일)</td></tr><tr><td>모델 위에서  <kbd>Alt</kbd>+ 우클릭</td><td>해당 텍스처 세트 선택</td></tr><tr><td>도구 키를 누른 채 그리기</td><td>그동안만 해당 도구 사용(놓으면 이전 도구로)</td></tr></tbody></table></div><div class="mn-tip">도구 키를 길게 눌러 일시 전환하기까지의 시간은 파일 → 환경 설정 → 조작의 “길게 누름으로 볼 시간”에서 0.15~2초(처음 0.5초)로 정할 수 있습니다.</div><div class="mn-tip">Ctrl＋오른쪽 드래그(펜 사이드 버튼)로 좌우는 브러시 크기·상하는 경도, Ctrl＋왼쪽 드래그(펜 끝)로 좌우는 불투명도·상하는 끝 각도를 바꿉니다(붓으로 그리는 도구일 때. 어느 카메라 조작 방식에서도). 카메라 조작이 “Alt 버튼식”일 때는 Alt＋Shift＋왼쪽 드래그로 90°씩 돌리고, Shift＋오른쪽 드래그로 빛의 좌우를 돌립니다.</div><div class="mn-tip">펜 버튼(모든 버전·exe): Windows Ink·WinTab 어느 쪽이든 펜 버튼에 할당한 가운데 클릭·오른쪽 클릭·뒤로/앞으로가 3D·UV 위에서 작동합니다. “가운데 클릭”으로 한 버튼을 누른 채 펜을 움직이면 3D 시점을 돌릴 수 있습니다(띄워도 대도 돕니다. 그리는 도중에 누르면 거기까지의 선에서 멈추고 돕니다). “오른쪽 클릭”으로 한 버튼은 누른 채 움직이면 오른쪽 드래그(3D 회전 등), 움직이지 않고 떼면 오른쪽 클릭 메뉴가 됩니다.</div><div class="mn-tip">펜 사이드 버튼(모든 버전·exe): 펜이 PetaNuri3D 창 가까이에 있는 동안에는 드라이버에서 사이드 버튼에 할당한 가운데 클릭·오른쪽 클릭·뒤로·앞으로를 받아, 펜이 있는 위치의 클릭으로 사용합니다. 펜 끝과 동시에 들어온 오른쪽 클릭은 사용하지 않고 그리기를 우선합니다. 가운데 클릭은 펜 끝과 동시에 눌러도 시점 조작이 됩니다(UV 영역에서는 평행 이동).</div><div class="mn-tip warn">사이드 버튼을 떼도 계속 돌 때는 Esc를 누르거나 펜 끝으로 한 번 탭하면 멈춥니다. 펜 끝으로 그릴 수 없거나 계속 도는 일이 이어지면 파일 → 환경 설정 → 펜·입력 → 메뉴와 버튼의 &#x27;펜 사이드 버튼의 가운데·오른쪽 클릭 받기&#x27;를 꺼 보세요(끄면 드라이버의 클릭은 그대로 마우스 커서 위치로 갑니다). 사이드 버튼 드래그가 도중에 멈출 때는 드라이버 설정에서 사이드 버튼에 Space 키를 할당하면 Space＋펜 드래그로 돌릴 수 있습니다.</div><div class="mn-tip">3D 마우스(모든 버전·Windows): 6축으로 움직이는 3D 마우스로 커서가 있는 영역의 시점을 움직일 수 있습니다(PetaNuri3D 창이 앞에 있거나 커서가 창 위에 있을 때). 3D 뷰에서는 캡을 좌우로 밀거나 누르거나 들어 올리면 평행 이동, 앞으로 당기거나 뒤로 밀면 확대·축소, 비틀면 세로축, 앞뒤로 기울이면 가로축을 중심으로 돕니다. UV 영역·2D 캔버스에서는 평행 이동·확대·축소와 비틀어 회전입니다. 그리는 동안에는 3D 마우스로 시점이 움직이지 않습니다. 3D 마우스의 드라이버는 설치되어 있어도 없어도 사용할 수 있습니다.</div><div class="mn-tip">3D 마우스를 연결한 적이 있으면 파일 → 환경 설정 → 조작에 &#x27;3D 마우스&#x27; 항목이 나옵니다. &#x27;3D 마우스 사용&#x27; 켜기·끄기, 감도, 움직일 대상(둘 다·회전만·평행 이동만), 평행 이동／확대·축소／회전 방향 반전, 좌우로 기울여 화면 회전(3D), 버튼 1(왼쪽)과 버튼 2(오른쪽)의 할당(처음에는 왼쪽이 움직일 대상 전환·오른쪽이 전체 보기)을 바꿀 수 있습니다. 버튼 할당은 3D 마우스의 드라이버가 실행 중이 아닐 때 작동합니다. 드라이버가 실행 중일 때는 드라이버가 버튼을 사용하므로, 드라이버 설정에서 버튼에 키(예: F로 전체 보기)를 할당해 주세요. 드라이버가 확대·축소와 함께 보내는 휠은 움직이는 동안 사용하지 않습니다(&#x27;움직이는 동안 휠 무시&#x27;).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-mouse3d-v121.webp" width="700" height="300" alt="환경 설정의 조작에 있는 &#x27;3D 마우스&#x27; 항목" loading="lazy"><figcaption>조작 → &#x27;3D 마우스&#x27;(연결한 적이 있을 때만 표시)</figcaption></figure></section><section class="mn-sec" id="view"><h2>시점(숫자 키패드)</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody><tr><td>1 / 3 / 7</td><td>정면/오른쪽/위(<kbd>Ctrl</kbd> 로 반대쪽)</td></tr><tr><td>2 / 4 / 6 / 8</td><td>15°씩 회전(<kbd>Ctrl</kbd> 로 이동)</td></tr><tr><td>5</td><td>원근/평행</td></tr><tr><td>9</td><td>반대쪽</td></tr><tr><td>＋ / －</td><td>줌</td></tr><tr><td>. / F / Home</td><td>전체 보기</td></tr></tbody></table></div></section><section class="mn-sec" id="keys"><h2>키</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody><tr><td><kbd>P</kbd> <kbd>B</kbd> <kbd>E</kbd> <kbd>J</kbd> <kbd>G</kbd> <kbd>I</kbd> <kbd>V</kbd> <kbd>S</kbd> <kbd>T</kbd></td><td>펜·붓·지우개·색 혼합·채우기·스포이트·이동·변형·선택 범위·텍스트</td></tr><tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>브러시 크기</td></tr><tr><td><kbd>X</kbd></td><td>전경색과 배경색 바꾸기</td></tr><tr><td><kbd>M</kbd></td><td>대칭 그리기(X·좌우)</td></tr><tr><td><kbd>U</kbd> / <kbd>Shift</kbd>＋<kbd>U</kbd></td><td>UV 표시/UV만 ⇔ 3D와 나란히</td></tr><tr><td><kbd>Tab</kbd></td><td>팔레트 숨기기</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>I</kbd></td><td>화면에서 색 가져오기</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>H</kbd> / <kbd>H</kbd> / <kbd>Alt</kbd>＋<kbd>H</kbd></td><td>선택한 곳만 표시/선택한 곳 숨기기/전체 표시</td></tr><tr><td><kbd>Alt</kbd>＋<kbd>W</kbd></td><td>이음선(UV 이음매·아일랜드 가장자리)</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>N</kbd> / <kbd>Ctrl</kbd>＋<kbd>O</kbd> / <kbd>Ctrl</kbd>＋<kbd>S</kbd></td><td>새로 만들기/작업 파일 열기/저장</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>S</kbd></td><td>다른 이름으로 저장</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Z</kbd> / <kbd>Ctrl</kbd>＋<kbd>Y</kbd>(<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>)</td><td>실행 취소/다시 실행</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>C</kbd> <kbd>Ctrl</kbd>＋<kbd>X</kbd> <kbd>Ctrl</kbd>＋<kbd>V</kbd> <kbd>Ctrl</kbd>＋<kbd>T</kbd></td><td>복사·잘라내기·붙여넣기·변형</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>N</kbd> / <kbd>Ctrl</kbd>＋<kbd>G</kbd> / <kbd>Ctrl</kbd>＋<kbd>J</kbd> / <kbd>Ctrl</kbd>＋<kbd>E</kbd></td><td>새 레이어/새 폴더/복제/아래와 병합</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd></td><td>선택한 레이어를 폴더에 넣기</td></tr><tr><td><kbd>Alt</kbd>＋<kbd>]</kbd> / <kbd>Alt</kbd>＋<kbd>[</kbd></td><td>위 레이어 선택/아래 레이어 선택</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>G</kbd></td><td>클리핑 전환</td></tr><tr><td><kbd>Delete</kbd></td><td>지우기(선택 범위가 있으면 그 안만)</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>A</kbd> / <kbd>Ctrl</kbd>＋<kbd>D</kbd> / <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd></td><td>모두 선택/선택 해제/반전</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd></td><td>다시 선택 (마지막으로 해제한 선택 범위)</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>H</kbd></td><td>선택 범위 점선 표시</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd></td><td>자에 붙이기</td></tr><tr><td><kbd>F1</kbd></td><td>단축키 목록</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd></td><td>환경 설정</td></tr></tbody></table></div><div class="mn-tip">키가 없는 조작(레이어 삭제·한 단계 위로·한 단계 아래로·잠금 전환·폴더 해제·투명 픽셀 잠금 전환 등)에도 환경 설정에서 키를 할당할 수 있습니다.</div><div class="mn-tip"><kbd>C</kbd>: 투명색 그리기/일반 색 전환. 곡선 자의 점을 놓는 동안 <kbd>Ctrl</kbd>＋<kbd>Z</kbd> 로 마지막 점을 취소하고<kbd>Ctrl</kbd>＋<kbd>Y</kbd>・<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd> 로 다시 실행합니다.</div></section><section class="mn-sec" id="assign"><h2>키 할당</h2><ul class="mn-list"><li>파일 → 환경 설정 → &#x27;키 할당&#x27;: 분류별 항목에서 +를 누른 후 키를 누르면 할당합니다. ×로 해제합니다. &#x27;초기값으로 되돌리기&#x27;는 해당 키를 기본값으로, &#x27;키 할당 초기화&#x27;는 전체를 기본값으로 되돌립니다(확인 후).</li><li>도구 모음 버튼·보조 도구 타일·패널 제목 우클릭 → &#x27;키 할당&#x27;으로도 변경할 수 있습니다(<kbd>Ctrl</kbd>・<kbd>Alt</kbd>・<kbd>Shift</kbd> 와 조합도 가능). 다른 곳에서 사용하는 키라면 재할당할지 묻습니다.</li></ul><div class="mn-tip">“키 할당 내보내기”로 지금의 할당을 JSON으로 저장하고, “키 할당 가져오기”로 내보낸 것으로 통째로 바꿀 수 있습니다(다른 PC로 옮길 때 등).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-keymap-io-v112.webp" width="900" height="300" alt="환경 설정의 키 할당과 내보내기·가져오기 버튼" loading="lazy"><figcaption>키 할당 내보내기·가져오기</figcaption></figure><div class="mn-tip">같은 키를 여러 보조 도구에 붙일 때는 할당 창에서 “함께 사용(누를 때마다 전환)”을 고르면 그 키를 누를 때마다 다음 보조 도구로 바뀝니다(예: G펜과 밀리펜에 Q). “바꿔 달기”면 이전 보조 도구에서 빠집니다.</div></section><section class="mn-sec" id="pressure"><h2>필압 이상·필압이 작동하지 않을 때</h2><ol class="mn-steps"><li>먼저 파일 → 환경 설정 → 펜·입력의 &#x27;필압&#x27;에서 맞춥니다. &#x27;시험 그리기로 맞추기&#x27;로 평소 힘으로 선을 3개 이상 그리고 &#x27;맞추기&#x27;를 누르면 하한·상한·반응을 자동으로 정합니다.</li><li>필압이 작동하지 않으면(굵기가 바뀌지 않음) 같은 곳의 판을 펜으로 눌러 &#x27;경로&#x27;를 확인합니다. &#x27;없음(마우스로 전달되고 있음)&#x27;이면 펜 태블릿 설정에서 &#x27;Windows Ink 사용&#x27;을 켜거나 펜·입력 → &#x27;태블릿&#x27;의 &#x27;필압 직접 읽기(WinTab)&#x27;를 켭니다.</li><li>그래도 이상하면 &#x27;태블릿&#x27;의 &#x27;WinTab 상태 확인&#x27;을 누르고 PetaNuri3D 창 위에서 펜을 움직입니다. 표시된 문구를 &#x27;복사&#x27;하여 펜 태블릿 모델·드라이버 버전과 함께 지원에 보내 주세요.</li></ol><div class="mn-tip">WinTab 필압(모든 버전·exe): &#x27;필압 직접 읽기(WinTab)&#x27;를 켜면 펜 태블릿 드라이버의 WinTab에서 필압(과 기울기)을 읽습니다. 태블릿 설정에서 &#x27;Windows Ink 사용&#x27;을 켜서 펜이 Windows Ink로 들어올 때도, WinTab 값이 들어오고 있으면 그쪽의 필압·기울기를 씁니다(같은 곳의 &#x27;Windows Ink로 들어오는 펜에도 WinTab 필압 사용&#x27;. 처음에는 켜짐. 끄면 Windows Ink 필압 그대로). 절전에서 돌아오면 다시 엽니다.</div><div class="mn-tip warn">WinTab을 켰는데 필압이 안 되거나 펜이 반응하지 않으면 &#x27;태블릿&#x27;의 &#x27;WinTab 연결 방식&#x27;에서 &#x27;다시 찾기&#x27;를 누르고 다시 그려 보세요. 기억한 연결 방식을 지우고 처음부터 다시 찾습니다(v1.2.0까지 있던, Windows 커서를 멈추게 하는 연결 방식은 v1.2.1에서는 쓰지 않습니다). 펜 태블릿 드라이버를 다시 설치하거나 업데이트할 때는 PetaNuri3D를 닫은 뒤에 해 주세요(WinTab을 쓰는 동안은 드라이버 파일을 연 채로 둡니다).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-wintab-v121.webp" width="700" height="165" alt="환경 설정의 펜·입력에 있는 &#x27;태블릿&#x27; 항목" loading="lazy"><figcaption>펜·입력 → &#x27;태블릿&#x27;(필압 직접 읽기·Windows Ink 펜에도·상태·WinTab 연결 방식: 다시 찾기)</figcaption></figure></section>
-    <section class="mn-sec" id="v111-controls"><h2>v1.1.1 조작 변경</h2><p><a href="/petanuri/ko/manual/screen#settings">카메라 조작</a> · <a href="/petanuri/ko/manual/draw#mirror">숨긴 쪽의 대칭 그리기</a></p></section><nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/unity"><small>← 이전</small>Unity에서 칠하기·AI 연동</a></nav>
+    <p class="mn-intro">키 목록과 펜·마우스·3D 마우스 조작을 설명합니다. 키는 모두 다시 할당할 수 있습니다. 이 페이지의 키는 처음 상태의 할당입니다. 필압이 작동하지 않거나 이상할 때의 해결 방법도 여기에 정리했습니다.</p>
+    <p class="mn-proof mn-ui-note">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-quick"><b>먼저 이것만</b><ol>
+      <li><kbd>F1</kbd>을 누르면 현재의 키 목록이 표시됩니다. 열어 둔 채로 그릴 수 있습니다(<a href="#list">자세히</a>).</li>
+      <li>3D는 오른쪽 드래그나 <kbd>Space</kbd>+드래그로 회전하고, 휠로 줌합니다(<a href="#pen">자세히</a>).</li>
+      <li>다른 소프트웨어와 같은 마우스 조작으로 하고 싶을 때는 카메라 조작 템플릿을 고릅니다(<a href="#camera">자세히</a>).</li>
+      <li>키는 파일 → 환경 설정 → "키 할당"에서 바꿉니다(<a href="#assign">자세히</a>).</li>
+      <li>펜으로 그려도 굵기가 바뀌지 않을 때는 <a href="#pressure">필압이 작동하지 않을 때</a>를 보세요.</li>
+    </ol></div>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#list">단축키 목록 표시하기(F1)</a></li><li><a href="#pen">펜·마우스 조작</a></li><li><a href="#camera">카메라 조작 템플릿 선택하기</a></li><li><a href="#view">시점 바꾸기(숫자패드)</a></li><li><a href="#penbutton">펜 버튼·Windows Ink</a></li><li><a href="#mouse3d">3D 마우스로 시점 움직이기</a></li><li><a href="#keys">키 목록</a></li><li><a href="#assign">키 할당하기</a></li><li><a href="#pressure">필압이 이상할 때·작동하지 않을 때</a></li></ul></div>
+
+    <section class="mn-sec" id="list" data-keywords="키목록 단축키목록 치트시트 도움말 검색 키맵 키보드 f1 핫키">
+      <h2>단축키 목록 표시하기(F1)</h2>
+      <p>현재의 키 목록을 떠 있는 창으로 표시합니다. 열어 둔 채로도 키가 작동하며, 3D·UV에 그릴 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li><kbd>F1</kbd>을 누릅니다(도움말 → "단축키 목록"으로도 열 수 있습니다).</li>
+        <li>위쪽의 "검색" 칸에 키나 이름을 입력해서 좁힙니다.</li>
+        <li>닫을 때는 <kbd>F1</kbd>을 다시 누르거나 오른쪽 위의 ×를 누릅니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="3D 화면 위에 표시한 단축키 목록" loading="lazy"><figcaption>단축키 목록(열어 둔 채 작업할 수 있습니다)</figcaption></figure>
+      <ul class="mn-list">
+        <li>키를 누르면 그 행이 살짝 빛나고, 아래쪽 가장자리에 "누른 키:"와 조작 이름이 표시됩니다.</li>
+        <li>제목 줄을 드래그해서 움직이고(더블클릭하면 원래 위치), 오른쪽 아래 모서리로 크기를 바꿉니다. 다음에 열 때도 같은 상태입니다.</li>
+        <li>▾로 접고, ◐로 투명하게 합니다(포인터가 바깥에 있을 때 흐려집니다).</li>
+        <li>아래의 "키 할당 변경"으로 환경 설정의 키 할당을 엽니다.</li>
+        <li>펜·마우스 조작도 목록에 들어 있으며, 선택한 카메라 조작 템플릿에 맞춰 바뀝니다.</li>
+        <li>키를 다시 할당하면 메뉴·우클릭 메뉴·버튼 설명·이 목록에도 현재의 키가 표시됩니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pen" data-keywords="마우스조작 펜조작 태블릿 시점 카메라 직선 브러시크기 스포이트 임시전환 길게누르기">
+      <h2>펜·마우스 조작</h2>
+      <p>3D 뷰와 UV 영역에서의 조작입니다. 표는 처음 상태의 카메라 조작(오른쪽 버튼 방식)일 때의 내용입니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">조작</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td>펜 끝·왼쪽 버튼</td><td>그리기(펜은 필압으로 굵기가 바뀝니다)</td></tr>
+        <tr><td>오른쪽 드래그(펜의 사이드 버튼)</td><td>3D는 회전, UV 영역은 평행 이동</td></tr>
+        <tr><td>가운데 드래그</td><td>평행 이동</td></tr>
+        <tr><td>휠</td><td>줌</td></tr>
+        <tr><td><kbd>Shift</kbd>+휠</td><td>화면 회전(5°씩)</td></tr>
+        <tr><td><kbd>Space</kbd>+드래그</td><td>회전(환경 설정에서 평행 이동으로 바꿀 수 있습니다)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>Space</kbd>+드래그</td><td>평행 이동</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Space</kbd>+드래그</td><td>줌</td></tr>
+        <tr><td>오른쪽 버튼을 움직이지 않고 놓기</td><td>마우스는 우클릭 메뉴, 펜의 사이드 버튼은 팝업 팔레트(<a href="/petanuri/ko/manual/screen#popup">팝업 팔레트</a>)</td></tr>
+        <tr><td><kbd>Shift</kbd>+클릭</td><td>이전에 그린 선의 끝에서 직선</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+좌우로 드래그</td><td>브러시 크기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+오른쪽 드래그(펜의 사이드 버튼)</td><td>좌우로 브러시 크기, 상하로 경도</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+왼쪽 드래그(펜 끝)</td><td>좌우로 불투명도, 상하로 브러시 끝의 각도</td></tr>
+        <tr><td><kbd>Alt</kbd>를 누르고 있는 동안</td><td>스포이트</td></tr>
+        <tr><td>펜의 지우개 쪽</td><td>지우개(지우개 도구의 보조 도구 설정으로)</td></tr>
+        <tr><td>모델 위에서 <kbd>Alt</kbd>+우클릭</td><td>그곳의 텍스처 세트를 선택</td></tr>
+        <tr><td>도구 키를 누른 채 그리기</td><td>누르고 있는 동안만 그 도구(놓으면 이전 도구로)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>을 누르면서 틀을 드래그(UV 영역)</td><td>그리드에 스냅하지 않음</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><kbd>Ctrl</kbd>+오른쪽·왼쪽 드래그로 값을 바꾸는 것은 붓으로 그리는 도구(펜·붓·지우개·흐리기 등)일 때입니다. 어떤 카메라 조작 템플릿에서도 사용할 수 있습니다. 움직이기 시작한 방향(좌우 또는 상하)의 값만 바뀌며, 아래의 띠에 값이 표시됩니다.</li>
+        <li>"손바닥" 도구를 선택하고 있는 동안은 왼쪽 버튼·펜 드래그로 표시를 움직입니다(3D는 평행 이동, <kbd>Ctrl</kbd>을 누르면서 하면 확대·축소).</li>
+        <li>마우스나 펜의 버튼을 사용하지 않고 시점을 움직일 때는 3D 뷰의 3D 내비를 사용합니다(<a href="/petanuri/ko/manual/screen#nav">3D 내비</a>).</li>
+      </ul>
+      <h3 id="pen-hold">도구 키로 잠시 도구 바꾸기</h3>
+      <p>도구 키를 누른 채 그리면 누르고 있는 동안만 그 도구가 되고, 놓으면 이전 도구로 돌아갑니다. 펜으로 그리다가 지우개를 잠깐 쓸 때 등에 편리합니다.</p>
+      <ul class="mn-list">
+        <li>짧게 눌렀다 놓았을 때는 그 도구로 바뀐 채로 남습니다.</li>
+        <li>길게 누른 뒤 놓았을 때는 그리지 않아도 이전 도구로 돌아갑니다.</li>
+        <li>길게 누름으로 보는 시간은 파일 → 환경 설정 → 조작 → 키보드의 "길게 누름으로 볼 시간"에서 0.15~2초로 정할 수 있습니다(처음에는 0.5초).</li>
+        <li>이 전환 자체를 하지 않으려면 같은 곳의 "도구 키를 길게 눌러 잠시 전환"을 끕니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="camera" data-keywords="블렌더 유니티 Blender Maya 가운데버튼 휠클릭 Alt 시점조작 피벗 회전중심">
+      <span id="v111-controls"></span>
+      <h2>카메라 조작 템플릿 선택하기</h2>
+      <p>시점을 움직이는 마우스 할당을, 익숙한 소프트웨어에 맞춰 4가지 중에서 고를 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>파일 → 환경 설정 → "조작" → "카메라"를 엽니다.</li>
+        <li>"카메라 조작 템플릿"에서 고릅니다. 고른 방식은 다음 실행에도 유지됩니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">템플릿</th><th scope="col">회전</th><th scope="col">평행 이동</th><th scope="col">줌</th></tr></thead><tbody>
+        <tr><td>오른쪽 버튼 방식(기본값)</td><td>오른쪽 드래그</td><td>가운데 드래그</td><td>휠</td></tr>
+        <tr><td>가운데 버튼 방식</td><td>가운데 드래그</td><td><kbd>Shift</kbd>+가운데 드래그</td><td><kbd>Ctrl</kbd>+가운데 드래그</td></tr>
+        <tr><td>Alt + 마우스 버튼</td><td><kbd>Alt</kbd>+왼쪽 드래그</td><td><kbd>Alt</kbd>+가운데 드래그</td><td><kbd>Alt</kbd>+오른쪽 드래그</td></tr>
+        <tr><td>Unity 방식</td><td>오른쪽 드래그·<kbd>Alt</kbd>+왼쪽 드래그</td><td>가운데 드래그·<kbd>Alt</kbd>+가운데 드래그</td><td><kbd>Alt</kbd>+오른쪽 드래그(아래로 끌면 가까이, 위로 끌면 멀리)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="환경 설정의 카메라 조작에서 Unity 방식을 고른 모습" loading="lazy"><figcaption>카메라 조작 템플릿</figcaption></figure>
+      <ul class="mn-list">
+        <li><kbd>Space</kbd>+드래그와 휠은 어떤 템플릿에서도 사용할 수 있습니다.</li>
+        <li>Alt + 마우스 버튼·Unity 방식은 3D 뷰에 적용됩니다. <kbd>Alt</kbd>가 카메라 조작이 되므로, 3D의 스포이트는 <kbd>I</kbd> 키로 사용합니다.</li>
+        <li>Alt + 마우스 버튼 방식에서는 <kbd>Alt</kbd>+<kbd>Shift</kbd>+왼쪽 드래그로 90°씩 회전하고(누른 곳에서 방향을 90°의 배수로 맞춤), <kbd>Shift</kbd>+오른쪽 드래그로 빛의 좌우를 돌립니다.</li>
+        <li>펜의 사이드 버튼을 가운데 클릭으로 설정했을 때도 가운데 버튼과 같은 조작입니다. 펜 끝이 닿아 있는 동안 가운데 버튼을 누르면 그리기를 멈추고 시점 조작이 됩니다. 가운데 버튼을 놓은 뒤에는 펜 끝을 한 번 뗀 다음 새 선을 그립니다.</li>
+      </ul>
+      <h3 id="camera-pivot">회전 중심·확대/축소 중심 바꾸기</h3>
+      <p>모두 파일 → 환경 설정 → 조작 → "카메라"에 있습니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">켜면</th></tr></thead><tbody>
+        <tr><td>Space+드래그</td><td>회전(기본값)이나 평행 이동을 고릅니다. <kbd>Shift</kbd>를 더하면 회전과 평행 이동이 바뀌고, <kbd>Ctrl</kbd>을 더하면 줌이 됩니다</td></tr>
+        <tr><td>마지막으로 칠한 곳을 중심으로 회전(처음에는 꺼짐)</td><td>3D 뷰에서 칠한 선의 끝을 중심으로 회전합니다. 확대해서 세밀한 곳을 칠할 때, 칠하려는 곳이 화면 밖으로 달아나지 않습니다</td></tr>
+        <tr><td>회전을 시작할 때의 커서 위치를 중심으로 회전(처음에는 꺼짐)</td><td>회전을 시작했을 때 커서 아래에 있는 모델의 점을 중심으로 회전합니다. 모델 밖에서 회전을 시작했을 때는 지금까지와 같습니다. 위의 항목과 둘 다 켜져 있을 때는 이쪽이 우선합니다</td></tr>
+        <tr><td>축 시점은 평행 투영(처음에는 켜짐)</td><td>숫자 키패드 1·3·7이나 3D 내비의 축으로 볼 때는 평행 투영으로 합니다. 회전하면 원근 투영으로 돌아갑니다</td></tr>
+        <tr><td>키 확대/축소는 커서 중심(처음에는 꺼짐)</td><td>키·3D 내비로 확대/축소할 때 커서 아래의 점을 중심으로 합니다</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="mn-sec" id="view" data-keywords="텐키 넘패드 정면 측면 상단뷰 후면 원근 평행투영 전체보기 배율">
+      <h2>시점 바꾸기(숫자패드)</h2>
+      <p>키보드의 숫자 키패드로 정해진 방향에서 볼 수 있습니다. 숫자 키패드가 없는 키보드에서는 3D 뷰 오른쪽 위의 아이콘이나 3D 내비를 사용합니다(<a href="/petanuri/ko/manual/screen#hud">3D 뷰 네 모서리</a>).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td>숫자 키패드 <kbd>1</kbd> / <kbd>3</kbd> / <kbd>7</kbd></td><td>정면 / 오른쪽 / 위에서 보기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+숫자 키패드 <kbd>1</kbd> / <kbd>3</kbd> / <kbd>7</kbd></td><td>후면 / 왼쪽 / 아래에서 보기</td></tr>
+        <tr><td>숫자 키패드 <kbd>4</kbd> / <kbd>6</kbd> / <kbd>8</kbd> / <kbd>2</kbd></td><td>시점을 왼쪽 / 오른쪽 / 위 / 아래로 15° 회전(누르고 있으면 계속 회전합니다)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+숫자 키패드 <kbd>4</kbd> / <kbd>6</kbd> / <kbd>8</kbd> / <kbd>2</kbd></td><td>시점을 왼쪽 / 오른쪽 / 위 / 아래로 이동</td></tr>
+        <tr><td>숫자 키패드 <kbd>5</kbd></td><td>원근 투영과 평행 투영 전환</td></tr>
+        <tr><td>숫자 키패드 <kbd>9</kbd></td><td>반대쪽에서 보기</td></tr>
+        <tr><td>숫자 키패드 <kbd>+</kbd> / <kbd>-</kbd>(<kbd>Ctrl</kbd>+<kbd>+</kbd> / <kbd>Ctrl</kbd>+<kbd>-</kbd>)</td><td>확대 / 축소</td></tr>
+        <tr><td><kbd>F</kbd> / <kbd>Home</kbd> / 숫자 키패드 <kbd>.</kbd></td><td>전체 보기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td><td>UV 영역·2D 캔버스를 정해진 배율(처음에는 100% / 200% / 50%)로 표시</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>확대·축소는 커서가 UV 영역 위에 있으면 UV를 움직입니다. <kbd>Ctrl</kbd>+<kbd>+</kbd>는 <kbd>Ctrl</kbd>+<kbd>=</kbd>·<kbd>Ctrl</kbd>+<kbd>;</kbd>로도 작동합니다(키보드 배열이 다르기 때문입니다).</li>
+        <li>숫자 키패드의 숫자는 윗줄의 숫자와는 다른 키입니다. 할당 화면에서는 "숫자패드 1"처럼 표시됩니다.</li>
+        <li>정해진 배율은 파일 → 환경 설정 → 조작 → 키보드의 "정해진 배율(UV·2D)"에서 바꿉니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="penbutton" data-keywords="사이드버튼 펜버튼 가운데클릭 와콤 Wacom XP-Pen HUION 펜타블렛 액정타블렛 계속회전">
+      <h2>펜 버튼·Windows Ink</h2>
+      <p>펜 태블릿 드라이버에서 펜 버튼에 할당한 클릭을, 펜이 있는 위치의 클릭으로 받습니다. Windows Ink에서도 WinTab에서도 작동합니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">버튼 할당</th><th scope="col">PetaNuri3D에서의 동작</th></tr></thead><tbody>
+        <tr><td>가운데 클릭</td><td>누르고 있는 동안 펜을 움직이면 3D 시점이 회전합니다(펜을 띄워도 대고 있어도 회전합니다). 그리는 도중에 누르면 거기까지의 선에서 멈추고 회전합니다. UV 영역에서는 평행 이동입니다</td></tr>
+        <tr><td>오른쪽 클릭</td><td>누른 채 움직이면 오른쪽 드래그(3D 회전 등), 움직이지 않고 놓으면 우클릭(메뉴)입니다</td></tr>
+        <tr><td>뒤로·앞으로</td><td>마우스의 뒤로·앞으로 버튼으로 받습니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>펜 끝과 동시(앞뒤 0.05초)에 들어온 오른쪽 클릭은 사용하지 않고 그리기를 우선합니다(펜 끝과 함께 오른쪽 클릭을 보내는 드라이버용). 가운데 클릭은 펜 끝과 동시에 들어와도 시점 조작이 됩니다.</li>
+        <li>받는 것은 펜이 PetaNuri3D 창 근처에 있는 동안뿐입니다. 마우스의 실제 버튼에는 영향을 주지 않습니다.</li>
+        <li>받고 싶지 않을 때는 파일 → 환경 설정 → 펜·입력 → 메뉴와 버튼의 "펜 사이드 버튼의 가운데·오른쪽 클릭 받기"를 끕니다(처음에는 켜짐). 끄면 드라이버의 클릭이 그대로 마우스 커서가 있는 곳으로 갑니다.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="환경 설정 펜·입력의 '메뉴와 버튼' 항목" loading="lazy"><figcaption>펜·입력 → "메뉴와 버튼"</figcaption></figure>
+      <h3 id="penbutton-ink">Windows Ink를 켜고 끌 때 달라지는 점</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">펜 태블릿 설정</th><th scope="col">PetaNuri3D에서는</th></tr></thead><tbody>
+        <tr><td>"Windows Ink 사용"을 켬(권장)</td><td>필압과 기울기가 전달됩니다. 사이드 버튼을 누르고 움직이지 않은 채 놓으면 팝업 팔레트가 나타납니다</td></tr>
+        <tr><td>"Windows Ink 사용"을 끔</td><td>펜이 마우스로 전달되어 필압이 오지 않습니다(<a href="#pressure-fix">필압이 작동하지 않을 때</a>). 사이드 버튼도 마우스의 오른쪽 클릭으로 전달되므로, 환경 설정 → 조작 → 마우스의 "오른쪽 클릭" 설정을 따릅니다</td></tr>
+      </tbody></table></div>
+      <h3 id="penbutton-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>사이드 버튼을 놓아도 3D가 계속 회전합니다</b>: <kbd>Esc</kbd>를 누르거나 펜 끝으로 한 번 탭하면 멈춥니다.</li>
+        <li><b>펜 끝으로 그릴 수 없거나, 계속 회전하는 일이 이어집니다</b>: "펜 사이드 버튼의 가운데·오른쪽 클릭 받기"를 꺼 보세요.</li>
+        <li><b>사이드 버튼으로 한 드래그가 도중에 멈춥니다</b>: 펜 태블릿 드라이버 설정에서 사이드 버튼에 <kbd>Space</kbd> 키를 할당합니다. <kbd>Space</kbd>+펜 드래그로 회전할 수 있습니다.</li>
+        <li><b>세밀한 곳을 그리고 있으면 메뉴가 제멋대로 나타납니다</b>: 펜을 길게 눌러서 나타나는 것입니다. 펜·입력 → 메뉴와 버튼의 "펜으로 길게 누르면 메뉴 열기"를 끕니다(<a href="/petanuri/ko/manual/screen#ctx">우클릭 메뉴</a>).</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="mouse3d" data-keywords="스페이스마우스 SpaceMouse 3Dconnexion 3DxWare 6축 왼손장치 시점조작">
+      <h2>3D 마우스로 시점 움직이기</h2>
+      <p>SpaceMouse 등 6축으로 움직이는 3D 마우스로, 커서가 있는 영역(3D 뷰·UV 영역·2D 캔버스)의 시점을 움직일 수 있습니다. 연결하면 오른쪽 아래에 알림이 나타납니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">캡의 움직임</th><th scope="col">3D 뷰</th><th scope="col">UV 영역·2D 캔버스</th></tr></thead><tbody>
+        <tr><td>좌우로 밀기·누르기·들어 올리기</td><td>평행 이동</td><td>평행 이동</td></tr>
+        <tr><td>앞으로 당기기·안쪽으로 밀기</td><td>확대/축소</td><td>확대/축소</td></tr>
+        <tr><td>비틀기</td><td>세로축을 중심으로 회전</td><td>회전</td></tr>
+        <tr><td>앞뒤로 기울이기</td><td>가로축을 중심으로 회전</td><td>—</td></tr>
+        <tr><td>좌우로 기울이기</td><td>화면 회전("좌우로 기울여 화면 회전(3D)"을 켰을 때)</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>움직이는 것은 PetaNuri3D 창이 앞에 있거나, 커서가 창 위에 있을 때입니다. 그리는 동안에는 움직이지 않습니다.</li>
+        <li>드라이버(3DxWare)는 설치되어 있어도 설치되어 있지 않아도 사용할 수 있습니다.</li>
+      </ul>
+      <h3 id="mouse3d-settings">3D 마우스 설정</h3>
+      <p>파일 → 환경 설정 → 조작 → "3D 마우스"에서 바꿉니다. 3D 마우스를 연결한 적이 있을 때만 표시됩니다.</p>
+      <ul class="mn-list">
+        <li>3D 마우스 사용, 감도, 움직일 대상(회전과 평행 이동 / 회전만 / 평행 이동만)</li>
+        <li>평행 이동 방향 반전, 확대/축소 방향 반전, 회전 방향 반전, 좌우로 기울여 화면 회전(3D)</li>
+        <li>버튼 1(왼쪽)(처음에는 움직일 대상 전환)과 버튼 2(오른쪽)(처음에는 전체 보기). 그 밖에 정면에서 보기, 반대쪽에서 보기, 원근 / 평행 투영 전환, 화면 회전을 초기값으로 되돌리기, 3D 마우스 설정 열기, 아무것도 안 함을 고를 수 있습니다</li>
+        <li>움직이는 동안 휠 무시: 드라이버가 캡의 움직임과 함께 보내는 휠을, 움직이는 동안은 사용하지 않습니다(확대/축소가 끊기지 않도록)</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-mouse3d-v121.webp" width="700" height="300" alt="환경 설정 조작의 '3D 마우스' 항목" loading="lazy"><figcaption>조작 → "3D 마우스"(연결한 적이 있을 때만 표시됩니다)</figcaption></figure>
+      <h3 id="mouse3d-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>3D 마우스의 버튼이 작동하지 않습니다</b>: 버튼 할당이 작동하는 것은 드라이버(3DxWare)가 동작하고 있지 않을 때입니다. 동작하고 있을 때는 버튼을 드라이버가 사용하므로, 드라이버 설정에서 버튼에 키(예: <kbd>F</kbd>로 전체 보기)를 할당합니다.</li>
+        <li><b>환경 설정에 "3D 마우스"가 없습니다</b>: 한 번도 연결하지 않았으면 표시되지 않습니다. 연결하면 표시됩니다.</li>
+        <li><b>확대/축소가 끊깁니다</b>: "움직이는 동안 휠 무시"를 켭니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="keys" data-keywords="단축키 키보드 키맵 핫키 키바인딩 치트시트 Ctrl Alt Shift 목록표">
+      <h2>키 목록</h2>
+      <p>처음 상태의 할당입니다. 분류는 환경 설정의 "키 할당" 분류와 같습니다. "키 없음"인 조작에도 키를 지정할 수 있습니다(<a href="#assign">키 할당하기</a>).</p>
+      <h3 id="keys-tool">도구</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">도구</th></tr></thead><tbody>
+        <tr><td><kbd>P</kbd></td><td>펜</td></tr>
+        <tr><td><kbd>B</kbd></td><td>붓</td></tr>
+        <tr><td><kbd>E</kbd></td><td>지우개</td></tr>
+        <tr><td><kbd>J</kbd></td><td>색 혼합(흐리기·손가락·색 혼합)</td></tr>
+        <tr><td><kbd>G</kbd></td><td>채우기</td></tr>
+        <tr><td><kbd>I</kbd></td><td>스포이트</td></tr>
+        <tr><td><kbd>V</kbd></td><td>이동·변형</td></tr>
+        <tr><td><kbd>S</kbd></td><td>선택 범위</td></tr>
+        <tr><td><kbd>T</kbd></td><td>텍스트</td></tr>
+      </tbody></table></div>
+      <p>브러시 모음, 데코레이션, 스탬프, 무늬, 스티치, 픽셀 유동화, 그라데이션, 도형, 손바닥, 숨기기 펜, 자와 "다음 보조 도구", "이전 보조 도구"는 키가 없습니다. 보조 도구에도 키를 지정할 수 있습니다.</p>
+      <h3 id="keys-brush">브러시·색</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td><kbd>[</kbd> / <kbd>]</kbd></td><td>브러시 크기 줄이기 / 키우기(누르고 있으면 계속 바뀝니다)</td></tr>
+        <tr><td><kbd>X</kbd>(<kbd>~</kbd>)</td><td>전경색과 배경색 바꾸기</td></tr>
+        <tr><td><kbd>D</kbd></td><td>그리기 색과 배경색을 기본(검정·흰색)으로</td></tr>
+        <tr><td><kbd>C</kbd></td><td>투명색으로 그리기 전환</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>I</kbd></td><td>화면에서 색 가져오기 (창 밖도 가능)</td></tr>
+      </tbody></table></div>
+      <p>키 없음: 브러시 크기 목록에서 한 단계 크게·한 단계 작게, 컬러 세트에 현재 전경색 추가.</p>
+      <h3 id="keys-view">표시</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td><kbd>Tab</kbd></td><td>팔레트(도구 모음과 패널) 표시/숨기기</td></tr>
+        <tr><td><kbd>U</kbd></td><td>UV 표시/숨기기 (3D 옆에 나란히)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>U</kbd></td><td>UV만(3D 숨기기)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>H</kbd></td><td>선택한 부분만 표시</td></tr>
+        <tr><td><kbd>H</kbd></td><td>선택한 부분 숨기기</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>H</kbd></td><td>모두 표시</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>W</kbd></td><td>이음선(UV 이음매·아일랜드 가장자리) 표시/숨기기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd></td><td>자에 달라붙기 (전환)</td></tr>
+        <tr><td><kbd>F</kbd> / <kbd>Home</kbd> / 숫자 키패드 <kbd>.</kbd></td><td>전체 보기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td><td>정해진 배율 1~3으로 표시(UV·2D)</td></tr>
+      </tbody></table></div>
+      <p>숫자 키패드의 시점은 <a href="#view">시점 바꾸기(숫자패드)</a>를 보세요. 키 없음: 다크 모드, 메시 선 표시/숨기기, 선만 표시(와이어프레임), 모든 세트를 도트 그대로 표시, 선택한 부분도 표시, 표시 범위 반전, 자 지우기, 화면을 왼쪽으로 회전 (15°), 화면을 오른쪽으로 회전 (15°), 화면 회전을 초기값으로 되돌리기, 카메라 방향 잠금/해제, UV를 작은 창으로, 3D를 작은 창으로, 작은 창과 전체 화면 바꾸기, UV 전체 보기, UV 가이드, UV 그리드 표시/숨기기, 즐겨찾기 도구 표시/숨기기, 팝업 팔레트 표시/숨기기 등.</p>
+      <h3 id="keys-edit">편집</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td>실행 취소(누르고 있으면 계속 되돌아갑니다)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Y</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td>다시 실행</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>Ctrl</kbd>+<kbd>X</kbd></td><td>복사 / 잘라내기 (선택 범위 안)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td>붙여넣기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td>변형 (3D·UV 위에서)</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>Backspace</kbd></td><td>전경색으로 채우기(선택 범위가 있으면 그 안)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Backspace</kbd></td><td>배경색으로 채우기(선택 범위가 있으면 그 안)</td></tr>
+        <tr><td><kbd>M</kbd></td><td>대칭으로 그리기: X(좌우) 전환</td></tr>
+      </tbody></table></div>
+      <p>키 없음: 대칭으로 그리기 Y(앞뒤)·Z(상하), 레이어 색을 전경색으로 변경, 이미지를 3D에 붙이기, 텍스트 넣기, 텍스트 다시 입력, 그리기 시작한 곳의 세트로 자동 전환, 2개 세트에 걸쳐 그리기, UV 칠하는 범위(UV 안·패딩 안·전체), UV 그리드에 스냅, 아일랜드 밖은 3D에서 이어진 옆으로 이어서 칠하기 등.</p>
+      <h3 id="keys-layer">레이어</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td><td>새 레이어</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>새 폴더</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></td><td>선택한 레이어를 폴더에 넣기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td><td>레이어 복제</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>아래 레이어와 병합(폴더는 1장으로)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd></td><td>클리핑 전환</td></tr>
+        <tr><td><kbd>Delete</kbd></td><td>레이어 지우기(선택 범위가 있으면 그 안만. 여러 장 선택했으면 전부. 실행 취소 1회로 되돌아갑니다)</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>]</kbd> / <kbd>Alt</kbd>+<kbd>[</kbd></td><td>위 레이어 선택 / 아래 레이어 선택</td></tr>
+      </tbody></table></div>
+      <p>키 없음: 레이어 삭제, 한 단계 위로, 한 단계 아래로, 잠금 전환, 투명 픽셀 잠금 전환, 폴더 해제, 여기에 그린 레이어 선택, 마스크 조작, 테두리 조작, 좌우 미러 복사, 자동 채색 등.</p>
+      <h3 id="keys-select">선택 범위</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td>모두 선택</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>선택 해제</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td>다시 선택 (마지막으로 해제한 선택 범위)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td>선택 범위 반전</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>H</kbd></td><td>선택 범위 점선 표시/숨기기</td></tr>
+      </tbody></table></div>
+      <p>키 없음: 선택 범위 확장, 선택 범위 축소, 경계 흐리기, 레이어의 칠해진 곳 선택, 비슷한 색 모두 선택, 선택 범위로 마스크 만들기, 복사하여 새 레이어로, 잘라내어 새 레이어로, 전경색으로 칠하기, 선택 범위 밖을 어둡게 등(<a href="/petanuri/ko/manual/edit#select">선택 범위</a>).</p>
+      <h3 id="keys-file">파일·도움말</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">키</th><th scope="col">동작</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>새로 만들기(3D 모델 선택)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td>작업 파일 열기</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>작업 파일 저장</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td>다른 이름으로 저장</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td><td>환경 설정</td></tr>
+        <tr><td><kbd>F1</kbd></td><td>단축키 목록(열기·닫기)</td></tr>
+      </tbody></table></div>
+      <p>키 없음: 모델 다시 불러오기, 튜토리얼, 매뉴얼 (Web), 문의, 새 버전 확인, PetaNuri3D 정보, 참고 이미지 열기, 2D 캔버스 등.</p>
+      <h3 id="keys-other">그 밖의 키</h3>
+      <ul class="mn-list">
+        <li>메뉴·우클릭 메뉴 안에서는 <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>, <kbd>Enter</kbd>, <kbd>Esc</kbd>로 움직일 수 있습니다. 메뉴를 열고 있는 동안은 앱의 단축키가 작동하지 않습니다.</li>
+        <li>곡선 자의 점을 놓고 있는 동안은 <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 마지막 점을 되돌리고, <kbd>Ctrl</kbd>+<kbd>Y</kbd>, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>로 다시 실행합니다(<a href="/petanuri/ko/manual/edit#ruler">자</a>).</li>
+        <li>튜토리얼 중에는 <kbd>←</kbd> <kbd>→</kbd>로 앞뒤로 이동하고, <kbd>Esc</kbd>로 종료합니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="assign" data-keywords="키바인딩 단축키변경 커스터마이징 왼손장치 키설정 초기화 내보내기 가져오기 백업 json">
+      <h2>키 할당하기</h2>
+      <p>어떤 조작의 키든 바꿀 수 있습니다. 왼손 디바이스에 맞출 때 등에 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>파일 → 환경 설정 → "키 할당"을 엽니다. 분류별 섹션에 조작과 키가 나열됩니다.</li>
+        <li>바꾸려는 조작의 "+"를 누릅니다. "키를 누르세요(Esc로 취소)"라고 표시됩니다.</li>
+        <li>사용할 키를 누릅니다. <kbd>Ctrl</kbd>·<kbd>Alt</kbd>·<kbd>Shift</kbd>와의 조합도 가능합니다.</li>
+        <li>다른 조작에서 사용 중인 키라면 "바꿔 달기"를 할지 묻습니다. 바꿔 달면 이전 조작에서는 해제됩니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>키 옆의 ×로 그 키를 해제합니다. "+"로 키를 추가하면 하나의 조작에 여러 키를 지정할 수 있습니다.</li>
+        <li>"초기값으로 되돌리기"로 그 조작만 기본 키로 되돌립니다.</li>
+        <li>"키 할당 초기화"로 전부 기본값으로 되돌립니다(확인한 뒤에. 실행 취소로는 되돌릴 수 없습니다).</li>
+      </ul>
+      <h3 id="assign-tool">우클릭으로 도구·보조 도구에 지정하기</h3>
+      <ol class="mn-steps">
+        <li>도구 모음의 버튼이나 보조 도구의 타일을 우클릭합니다.</li>
+        <li>"키 할당"을 선택합니다. 현재 키가 있으면 "키 할당 (현재: P)"처럼 표시됩니다.</li>
+        <li>사용할 키를 누릅니다. 이전 키는 해제되고 누른 키로 바뀝니다(<kbd>Esc</kbd>로 취소).</li>
+      </ol>
+      <ul class="mn-list">
+        <li>보조 도구·도구 속성 패널의 제목이나 탭의 우클릭으로도 지정할 수 있습니다.</li>
+        <li>보조 도구에 지정한 키를 누르면 그 도구의 그 보조 도구로 전환됩니다. 보조 도구를 삭제하면 그 키도 해제됩니다.</li>
+        <li>지정한 키는 버튼·타일 이름 옆(말풍선)과 키 할당의 분류 "도구", "보조 도구"에 표시됩니다.</li>
+        <li>같은 키를 여러 보조 도구에 지정할 때는 할당 창에서 "함께 사용(누를 때마다 전환)"을 선택합니다. 그 키를 누를 때마다 다음 보조 도구로 바뀝니다(예: G펜과 밀리펜에 <kbd>Q</kbd>).</li>
+      </ul>
+      <h3 id="assign-io">할당 내보내기·가져오기</h3>
+      <p>다른 PC로 가져갈 때나 백업을 만들어 둘 때 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>키 할당 위의 "키 할당 내보내기"를 누릅니다. 현재 할당이 JSON 파일(PetaNuri3D-keymap.json)로 저장됩니다.</li>
+        <li>가져오는 쪽에서 "키 할당 가져오기"를 누르고 그 파일을 선택합니다.</li>
+        <li>"바꿀까요?"라고 물으면 "불러오기"를 누릅니다. 현재 할당이 통째로 바뀝니다.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-keymap-io-v112.webp" width="900" height="300" alt="환경 설정의 키 할당과 내보내기·가져오기 버튼" loading="lazy"><figcaption>키 할당 내보내기·가져오기</figcaption></figure>
+      <ul class="mn-list">
+        <li>파일에 없는 조작은 기본 키가 됩니다. 이 버전에 없는 조작의 할당은 사용하지 않습니다.</li>
+      </ul>
+      <h3 id="assign-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>키를 눌러도 작동하지 않습니다</b>: 메뉴를 열고 있는 동안은 앱의 단축키가 작동하지 않습니다. 메뉴를 닫은 뒤에 누릅니다.</li>
+        <li><b>누른 키로 의도하지 않은 조작이 일어납니다</b>: <kbd>F1</kbd> 목록을 열고 키를 누르면 아래쪽에 그 키의 조작이 표시됩니다.</li>
+        <li><b>숫자 키패드에 지정했는데 작동하지 않거나, 윗줄 숫자로는 작동하지 않습니다</b>: 숫자 키패드의 숫자와 윗줄의 숫자는 다른 키입니다. 사용하는 쪽으로 다시 할당합니다.</li>
+        <li><b>새로 고침·인쇄·페이지 확대 키가 작동하지 않습니다</b>: 브라우저 조작 키는 PetaNuri3D에서는 작동하지 않습니다.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="pressure" data-keywords="필압감지 필압안됨 굵기안변함 기울기 드라이버 와콤 Wacom WinTab 지연 렉">
+      <h2>필압이 이상할 때·작동하지 않을 때</h2>
+      <p>필압은 파일 → 환경 설정 → 펜·입력의 "필압"에서 자신의 힘에 맞출 수 있습니다. 굵기가 전혀 변하지 않을 때는 먼저 필압이 전달되고 있는지(경로)를 확인합니다.</p>
+      <h3 id="pressure-fit">내 힘에 맞추기(시험 삼아 그려 보며 맞추기)</h3>
+      <ol class="mn-steps">
+        <li>파일 → 환경 설정 → "펜·입력" → "필압"을 엽니다.</li>
+        <li>"시험 그리기로 맞추기"를 누릅니다.</li>
+        <li>오른쪽 판에 평소 힘으로 선을 3개 이상 그립니다.</li>
+        <li>"맞추기"를 누릅니다. 하한·상한·반응이 그 힘에 맞춰 정해집니다.</li>
+        <li>마음에 들지 않으면 "실행 취소"를 누릅니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">의미</th></tr></thead><tbody>
+        <tr><td>반응</td><td>부드러움=가벼운 힘으로도 굵고 진하게 나옴 / 단단함=세게 눌렀을 때만 굵게 나옴</td></tr>
+        <tr><td>하한</td><td>이보다 약한 힘은 필압 0으로 취급</td></tr>
+        <tr><td>상한</td><td>이보다 강한 힘은 필압 100%로 취급(펜의 힘의 폭이 좁을 때)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>오른쪽 판을 펜으로 누르면 현재 필압과 반응을 거친 값이 표시됩니다.</li>
+        <li>보조 도구마다 필압으로 굵기·진하기를 바꿀지("필압으로 크기", "필압으로 불투명도")와 필압 곡선을 도구 속성에서 바꿉니다. 여기의 반응 뒤에 적용됩니다(<a href="/petanuri/ko/manual/draw#props">브러시 세부 설정</a>).</li>
+      </ul>
+      <h3 id="pressure-check">필압이 전달되는지 확인하기</h3>
+      <ol class="mn-steps">
+        <li>파일 → 환경 설정 → 펜·입력의 "필압" 판을 펜으로 누릅니다.</li>
+        <li>판 아래의 "현재 필압"과 경로를 봅니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">경로 표시</th><th scope="col">의미</th></tr></thead><tbody>
+        <tr><td>Windows Ink</td><td>필압이 전달되고 있습니다</td></tr>
+        <tr><td>WinTab</td><td>"필압 직접 읽기(WinTab)"로 필압이 전달되고 있습니다</td></tr>
+        <tr><td>없음(마우스로 전달되고 있음)</td><td>필압이 전달되지 않습니다. 아래의 "필압이 작동하지 않을 때"를 보세요</td></tr>
+      </tbody></table></div>
+      <h3 id="pressure-fix">필압이 작동하지 않을 때(굵기가 변하지 않을 때)</h3>
+      <p>펜 태블릿 설정에서 "Windows Ink 사용"을 꺼 두면 펜이 마우스로 전달되어 필압이 오지 않습니다. 해결 방법은 2가지이며, 둘 중 하나만 하면 됩니다.</p>
+      <ul class="mn-list">
+        <li><strong>권장</strong>: 펜 태블릿 드라이버 설정 화면에서 "Windows Ink 사용"을 켭니다. 기울기도 전달됩니다.</li>
+        <li><strong>Windows Ink를 끈 채로 사용할 때</strong>: 파일 → 환경 설정 → 펜·입력 → "태블릿"의 "필압 직접 읽기(WinTab)"를 켭니다(처음에는 꺼짐). 경로가 "WinTab"이 됩니다.</li>
+      </ul>
+      <div class="mn-tip">펜으로 그리고 있는데 필압이 오지 않는 것 같을 때는, 오른쪽 아래에 "필압이 전달되지 않습니다"라고 한 번만 알립니다. 마우스로 그리고 있을 때는 표시되지 않습니다. "다시 표시하지 않음"을 누르면 더 이상 표시되지 않고, "환경 설정 열기"를 누르면 펜·입력이 열립니다.</div>
+      <h3 id="pressure-wintab">WinTab으로 필압 읽기</h3>
+      <ul class="mn-list">
+        <li>"필압 직접 읽기(WinTab)"를 켜면 펜 태블릿 드라이버의 WinTab에서 필압(과 기울기)을 읽습니다.</li>
+        <li>펜을 가까이 대고 그렸을 때만 필압을 대체합니다. 마우스로 그릴 때는 그대로입니다. 펜의 지우개 쪽도 지우개가 됩니다.</li>
+        <li>"Windows Ink로 들어오는 펜에도 WinTab 필압 사용"(처음에는 켜짐): 펜이 Windows Ink로 전달될 때도 WinTab 값이 전달되고 있으면 그쪽의 필압·기울기를 사용합니다. 끄면 Windows Ink의 필압 그대로입니다.</li>
+        <li>WinTab을 사용하는 다른 그림 소프트웨어와 동시에 사용하면 필압이 전달되지 않을 수 있습니다.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-wintab-v121.webp" width="700" height="165" alt="환경 설정 펜·입력의 '태블릿' 항목" loading="lazy"><figcaption>펜·입력 → "태블릿"</figcaption></figure>
+      <h3 id="pressure-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>세게 누르지 않으면 굵어지지 않거나, 살짝 대기만 해도 굵습니다</b>: "시험 그리기로 맞추기"로 자신의 힘에 다시 맞춥니다. 직접 고친다면, 세게 눌러야 굵어질 때는 상한을 낮추고, 살짝 대기만 해도 굵을 때는 반응을 "단단함" 쪽으로 움직입니다.</li>
+        <li><b>가볍게 그리면 선이 거의 보이지 않거나, 입·출이 너무 가늡니다</b>: 펜·입력 → 필기감의 "입·출 만드는 방식"을 "길이로 입·출"로 합니다. 필압이 약한 곳도 1px보다 가늘어지지 않습니다.</li>
+        <li><b>다른 브러시에서는 되는데 특정 브러시만 굵기가 바뀌지 않습니다</b>: 그 보조 도구의 도구 속성에서 "필압으로 크기"가 꺼져 있지 않은지 확인합니다(<a href="/petanuri/ko/manual/draw#props">브러시 세부 설정</a>).</li>
+        <li><b>마우스로 그리면 굵기가 바뀌지 않습니다</b>: 마우스에는 필압이 없습니다. 마우스의 입·출은 항상 보조 도구의 "시작"·"끝" 길이로 만듭니다.</li>
+        <li><b>"WinTab에 빈자리가 없습니다"라고 표시되고 "필압 직접 읽기(WinTab)"가 꺼집니다</b>: WinTab을 사용하는 다른 그림 소프트웨어를 닫거나, 펜 태블릿 드라이버(또는 PC)를 다시 시작한 뒤에 다시 켭니다. 드라이버에 따라서는, 닫지 않고 종료된 소프트웨어의 몫이 다시 시작할 때까지 돌아오지 않습니다.</li>
+        <li><b>"WinTab을 찾을 수 없습니다", "펜 태블릿을 찾을 수 없습니다"라고 표시됩니다</b>: 펜 태블릿 드라이버가 설치되어 있는지, 펜 태블릿이 연결되어 있는지 확인합니다.</li>
+        <li><b>WinTab을 켰는데도 판을 눌러도 "현재 필압"이 "—(필압 없음)"인 채입니다</b>: PetaNuri3D 창을 앞에 둔 채 판을 펜으로 몇 번 눌러 그립니다(전달되지 않으면 2번 누를 때마다 연결 방식을 바꿔 시험합니다). 그래도 안 되면 "WinTab 연결 방식"의 "다시 찾기"를 누르고 다시 그립니다.</li>
+        <li><b>WinTab을 켰더니 펜이 반응하지 않습니다</b>: "태블릿"의 "WinTab 연결 방식"의 "다시 찾기"를 누르고 다시 그립니다. 기억해 둔 연결 방식을 지우고 처음부터 다시 찾습니다.</li>
+        <li><b>펜 태블릿 드라이버에서 앱별 설정을 하고 있습니다</b>: 앱별 설정에 PetaNuri3D(PetaNuri3D-win_x64.exe)를 추가했다면, 그쪽에서 필압이 꺼져 있지 않은지 확인합니다.</li>
+        <li><b>"WinTab은 동작하지만 펜 정보가 오지 않습니다"라고 표시됩니다</b>: 아래의 "WinTab 상태 확인"으로 어디에서 멈춰 있는지 확인합니다.</li>
+        <li><b>펜 태블릿 드라이버를 다시 설치하거나 업데이트하려고 합니다</b>: PetaNuri3D를 닫은 뒤에 진행합니다. WinTab을 사용하고 있으면 드라이버 파일이 열린 채로 남습니다.</li>
+        <li><b>선이 펜 끝보다 늦게 나옵니다</b>: 펜·입력 → 지연 줄이기의 "펜 선 먼저 표시(지연 줄이기)"를 켜 봅니다(펜(Windows Ink)으로 그릴 때). "예측 임시 선"도 켜 둡니다(<a href="/petanuri/ko/manual/screen#settings-pen">펜·입력 설정</a>).</li>
+      </ul>
+      <h3 id="pressure-support">그래도 해결되지 않을 때(지원팀에 보내기)</h3>
+      <ol class="mn-steps">
+        <li>파일 → 환경 설정 → 펜·입력 → "태블릿"의 "WinTab 상태 확인"을 누릅니다.</li>
+        <li>PetaNuri3D 창 위에서 펜으로 선을 1개(2~3초) 긋습니다. wintab32.dll, 펜 태블릿 이름, 필압 단계, 수신 창구, 최근 5초 동안 받은 패킷 수, 마지막 필압 값, 그리고 어디에서 멈춰 있는지에 대한 판단이 표시됩니다(숫자는 1초마다 바뀝니다).</li>
+        <li>"복사"를 누릅니다.</li>
+        <li>도움말 → "문의 (지원, 기능 요청, 버그 신고)"에서, 펜 태블릿 기종·드라이버 버전과 함께 붙여넣어 보냅니다(<a href="/petanuri/ko/manual/trouble#contact">문의 방법</a>).</li>
+      </ol>
+      <div class="mn-tip">'"필압 직접 읽기(WinTab)"를 켠 뒤 다시 확인하세요'라고 표시되면, 같은 곳의 "필압 직접 읽기(WinTab)"를 켠 뒤 다시 누릅니다.</div>
+    </section>
+
+    <div class="mn-related"><b>관련 페이지</b><ul><li><a href="/petanuri/ko/manual/screen#settings">환경 설정</a></li><li><a href="/petanuri/ko/manual/screen#nav">3D 내비로 시점 움직이기</a></li><li><a href="/petanuri/ko/manual/screen#popup">팝업 팔레트</a></li><li><a href="/petanuri/ko/manual/draw#props">브러시 세부 설정</a></li><li><a href="/petanuri/ko/manual/edit#select">선택 범위</a></li></ul></div>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/unity"><small>← 이전</small>Unity·AI 연동</a><a class="next" href="/petanuri/ko/manual/glossary"><small>다음 →</small>용어집</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +540,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

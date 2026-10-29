@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>轻松烘焙、质感与阴影 - PetaNuri3D 使用手册</title>
-  <meta name="description" content="介绍轻松烘焙的12种润色效果、添加红润的位置、柔和阴影、渐变、凹陷与凸起、边缘光、光泽、织纹、投影和透光色。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <title>轻松烘焙、质感与明暗 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
+  <meta name="description" content="轻松烘焙的 12 种效果、添加红润的位置、柔和明暗、渐变、凹陷与凸起、边缘光、光泽、织纹、投射阴影与透光色的用法。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/bake">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -24,8 +24,8 @@
   <meta property="og:site_name" content="はいぱーつよつよ">
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
-  <meta property="og:title" content="轻松烘焙、质感与阴影 - PetaNuri3D 使用手册">
-  <meta property="og:description" content="介绍轻松烘焙的12种润色效果、添加红润的位置、柔和阴影、渐变、凹陷与凸起、边缘光、光泽、织纹、投影和透光色。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:title" content="轻松烘焙、质感与明暗 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
+  <meta property="og:description" content="轻松烘焙的 12 种效果、添加红润的位置、柔和明暗、渐变、凹陷与凸起、边缘光、光泽、织纹、投射阴影与透光色的用法。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/bake">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -58,19 +58,19 @@
     {
      "@type": "ListItem",
      "position": 4,
-     "name": "轻松烘焙、质感与阴影 Pro",
+     "name": "轻松烘焙、质感与明暗 Pro",
      "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual/bake"
     }
    ]
   },
   {
    "@type": "TechArticle",
-   "headline": "轻松烘焙、质感与阴影 Pro | PetaNuri3D 使用手册",
-   "description": "介绍轻松烘焙的12种润色效果、添加红润的位置、柔和阴影、渐变、凹陷与凸起、边缘光、光泽、织纹、投影和透光色。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "headline": "轻松烘焙、质感与明暗 Pro | PetaNuri3D 使用手册",
+   "description": "轻松烘焙的 12 种效果、添加红润的位置、柔和明暗、渐变、凹陷与凸起、边缘光、光泽、织纹、投射阴影与透光色的用法。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/bake",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,65 +123,242 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake" aria-current="page">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake" aria-current="page">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 轻松烘焙、质感与阴影</p>
-    <h1 class="mn-h1">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">根据模型形状计算阴影、光泽、织纹等并写入图层。可使用“轻松烘焙”一次完成初步润色，或用“烘焙”逐项添加效果。这些功能从 v1.1.0 起提供。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#easy">用轻松烘焙制作底层效果</a></li><li><a href="#presets">12 种润色效果</a></li><li><a href="#blush">添加红润的位置</a></li><li><a href="#common">单项烘焙与预览</a></li><li><a href="#shade">柔和阴影、凹陷与凸起</a></li><li><a href="#gradient">上下或点渐变</a></li><li><a href="#material">边缘光、光泽、织纹与色差</a></li><li><a href="#rays">光照投影、薄处透光色</a></li><li><a href="#finish">烘焙后的调整与保存</a></li></ul></div>
-    <section class="mn-sec" id="easy"><h2>用轻松烘焙制作底层效果</h2>
-      <ol class="mn-steps"><li>打开模型，选择要处理的纹理集。底色和原纹理会保留，继续作为基础。</li><li><strong>滤镜 → 轻松烘焙</strong>，在“效果”中选择肌肤、服装或道具等预设。</li><li>通过“预览”查看效果，调整“整体强度”“光的左右”“光照仰角”“高光量”。带织纹或色差的润色效果还会显示“材质细节”。</li><li>肌肤润色时，可按需指定<a href="#blush">添加红润的位置</a>。</li><li><strong>“烘焙到图层组”</strong>来确认。每种效果的图层与透明的“细节绘制”图层会放入一个文件夹，可直接继续绘画。</li></ol>
-      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-easy-bake-v110.webp" width="410" height="415" alt="轻松烘焙的服装・缎面风格。调整整体强度、光照和光泽的界面" loading="lazy"><figcaption>轻松烘焙设置（服装｜缎面风格）</figcaption></figure>
-      <div class="mn-tip">在新建界面也可勾选<strong>“创建后打开轻松烘焙”</strong>并选择目标纹理集。默认不勾选。创建后会打开设置界面，预览使用临时图层显示，确认后才成为正式图层。</div>
+    <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 轻松烘焙、质感与明暗</p>
+    <h1 class="mn-h1">轻松烘焙、质感与明暗 <span class="tier pro">Pro</span></h1>
+    <p class="mn-intro">根据模型的形状计算明暗、光泽、织纹等，并绘入图层。有“轻松烘焙”和“烘焙”两种方式：“轻松烘焙”一次性做好肌肤和服装的底涂，“烘焙”则逐个添加效果。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <p class="mn-proof">这是 Pro 的功能。在 Lite 中，菜单上会带锁形图标；在 Standard 中，菜单里不会显示（<a href="/petanuri/zh/manual/start#editions">版本对比</a>）。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>选择想要绘制的纹理集，打开 滤镜 →“轻松烘焙”（<a href="#easy">详情</a>）。</li>
+      <li>在“效果”中选择肌肤、服装、饰物等，并在 3D 视图中确认外观（<a href="#presets">详情</a>）。</li>
+      <li>点击“烘焙到图层组”确定，然后在文件夹内的“细节绘制”图层上补绘（<a href="#finish">详情</a>）。</li>
+      <li>只想添加阴影或只想添加光泽时，用 滤镜 → 烘焙 逐个烘焙（<a href="#common">详情</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#easy">用轻松烘焙制作底涂</a></li><li><a href="#presets">12 种效果</a></li><li><a href="#blush">为脸颊和膝盖添加红润</a></li><li><a href="#common">逐个烘焙效果（烘焙）</a></li><li><a href="#shade">烘焙明暗（柔和明暗、凹陷与凸起、卡通阴影）</a></li><li><a href="#gradient">烘焙上下或点渐变</a></li><li><a href="#material">烘焙边缘光、光泽、织纹、天使光环</a></li><li><a href="#rays">烘焙投射阴影、薄处透光色</a></li><li><a href="#finish">烘焙后调整并保存</a></li></ul></div>
+
+    <section class="mn-sec" id="easy" data-keywords="一键 自动 一次性 批量 预设 打底 快速 省时 简单">
+      <h2>用轻松烘焙制作底涂</h2>
+      <p>把适合肌肤、服装、饰物的明暗和光泽，一次性烘焙到图层中。底色和原有纹理保持原样作为基础，在上面叠加效果。</p>
+      <ol class="mn-steps">
+        <li>在纹理集面板中，选择要烘焙的纹理集。</li>
+        <li>打开 滤镜 →“轻松烘焙”。</li>
+        <li>在“效果”中选择肌肤、服装、饰物等。3D 视图会显示烘焙后的外观。</li>
+        <li>调整“整体强度”“光的左右”“光照仰角”“高光量”。</li>
+        <li>如果是肌肤，可根据需要放置<a href="#blush">添加红润的位置</a>。</li>
+        <li>点击“烘焙到图层组”。会生成以效果命名的文件夹，里面有按效果分开的图层和一个透明的“细节绘制”图层。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-easy-bake-v110.webp" width="410" height="415" alt="轻松烘焙的“服装｜缎面风”。调整整体强度、光照和光泽的界面" loading="lazy"><figcaption>轻松烘焙的设置（服装｜缎面风）</figcaption></figure>
+      <h3 id="easy-items">窗口选项</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">说明</th></tr></thead><tbody>
+        <tr><td>效果</td><td>从 12 种中选择（<a href="#presets">12 种效果</a>）</td></tr>
+        <tr><td>整体强度</td><td>所有效果的强度（0–150%）</td></tr>
+        <tr><td>光的左右、光照仰角</td><td>光的方向（以模型正面为基准）</td></tr>
+        <tr><td>高光量</td><td>仅光泽的强度（0–150%）</td></tr>
+        <tr><td>材质细节</td><td>织纹和色彩变化的强度。仅在含有织纹或色彩变化的效果下显示</td></tr>
+        <tr><td>红润强度、红润范围</td><td>仅在肌肤效果下显示（<a href="#blush">添加红润</a>）</td></tr>
+        <tr><td>预览</td><td>每次调整数值，都会反映到 3D 视图的外观中</td></tr>
+        <tr><td>应用于所有显示中的纹理集</td><td>对所有可见的纹理集烘焙相同的效果</td></tr>
+      </tbody></table></div>
+      <h3 id="easy-new">新建后直接开始</h3>
+      <p>在新建界面勾选“创建后打开轻松烘焙”并选择目标纹理集，打开模型后会弹出轻松烘焙窗口。默认不勾选。可以先确定底色，再试用各种效果（<a href="/petanuri/zh/manual/start#new">新建</a>）。</p>
+      <div class="mn-tip">预览显示在临时图层上。点击“取消”或窗口的 × 即可不做任何更改地关闭。确定之后，撤销一次就能把整个文件夹一起撤销。</div>
     </section>
-    <section class="mn-sec" id="presets"><h2>12 种润色效果</h2>
-      <ul class="mn-list"><li><strong>皮肤</strong>：白皙・健康红润／温暖红润／淡雅插画风／有深度的阴影。组合柔和阴影、凹陷阴影和光泽；部分效果还会添加整体色调。</li><li><strong>服装</strong>：柔软布料／缎面风格／牛仔风格／皮革风格／淡雅色差。根据材质组合织纹、色差、光泽和边缘光。</li><li><strong>道具</strong>：硬质材料。添加凹陷阴影、清晰光泽与边缘光。</li><li><strong>通用</strong>：温暖光照／蓝色边缘光。为肌肤、服装或道具添加光照颜色。</li></ul>
-      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-bake-before-v110.webp" width="702" height="940" alt="示例模型应用轻松烘焙前" loading="lazy"><figcaption>烘焙前</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-bake-after-v110.webp" width="702" height="940" alt="同一视角下烘焙服装・缎面风格后的示例模型" loading="lazy"><figcaption>烘焙服装｜缎面风格后。使用相同视角和“保持绘制颜色”进行对比</figcaption></figure></div>
-      <p>预设会在保留原色的基础上叠加效果。若想让肤色与脸部一致，先匹配底色，再从较低烘焙强度开始，便于调整。</p>
+
+    <section class="mn-sec" id="presets" data-keywords="配方 类型 皮肤 衣服 布料 丝绸 牛仔布 皮革 金属 白皙 气色">
+      <h2>12 种效果</h2>
+      <p>每种效果各自包含的图层是固定的。所有效果都会保留原有的颜色，并在其上叠加。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">效果</th><th scope="col">包含的图层</th></tr></thead><tbody>
+        <tr><td>肌肤｜白皙红润</td><td>柔和阴影、凹处深度、整体色调、柔和高光</td></tr>
+        <tr><td>肌肤｜温暖红润</td><td>柔和阴影、凹处深度、整体色调、柔和高光</td></tr>
+        <tr><td>肌肤｜柔和插画风</td><td>柔和阴影、凹处深度、柔和高光（均偏淡）</td></tr>
+        <tr><td>肌肤｜深层明暗</td><td>柔和阴影、凹处深度、柔和高光（阴影偏浓）</td></tr>
+        <tr><td>服装｜柔软布料</td><td>柔和阴影、凹处深度、材质细节（织纹）</td></tr>
+        <tr><td>服装｜缎面风</td><td>柔和阴影、凹处深度、柔和高光、边缘光</td></tr>
+        <tr><td>服装｜牛仔风</td><td>柔和阴影、凹处深度、材质细节（织纹）</td></tr>
+        <tr><td>服装｜皮革风</td><td>柔和阴影、凹处深度、材质细节（色彩变化）、柔和高光</td></tr>
+        <tr><td>服装｜柔和色彩变化</td><td>柔和阴影、材质细节（色彩变化）、柔和高光</td></tr>
+        <tr><td>饰物｜硬质表面</td><td>柔和阴影、凹处深度、柔和高光（清晰）、边缘光</td></tr>
+        <tr><td>通用｜温暖光线</td><td>柔和阴影、柔和高光、边缘光（暖色）</td></tr>
+        <tr><td>通用｜蓝色边缘光</td><td>柔和阴影、边缘光（蓝色）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>无论哪种效果，最上面都有一个透明的“细节绘制”图层。在肌肤效果中放置了红润位置时，还会加入“指定位置的红润”。</li>
+        <li>“整体色调”使用正片叠底，其他图层使用正常混合。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-bake-before-v110.webp" width="702" height="940" alt="应用轻松烘焙之前的示例模型" loading="lazy"><figcaption>烘焙前</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-bake-after-v110.webp" width="702" height="940" alt="同一方向下烘焙了“服装｜缎面风”的示例模型" loading="lazy"><figcaption>烘焙“服装｜缎面风”之后（同一视角，以“保持绘制颜色”显示）</figcaption></figure></div>
+      <div class="mn-tip">想让肌肤颜色与脸部一致时，先统一底色。烘焙从较淡的程度开始，会更容易调整。</div>
     </section>
-    <section class="mn-sec" id="blush"><h2>添加红润的位置</h2>
-      <p>自行指定脸颊、手肘、膝盖等需要红润的位置。点周围会添加柔和红润，可通过“红润强度”“红润范围”调整，同时保留白皙感。</p>
-      <ol class="mn-steps"><li>选择肌肤润色效果，点击<strong>“添加位置”</strong>，在 3D 视图指定位置。</li><li>要移动选中的点，可拖动 3D 视图移动手柄，或输入 X、Y、Z 坐标。</li><li>重复点击“添加位置”可添加多个位置，最多 16 个。在列表选中不需要的点，点击“删除所选位置”即可删除。</li><li>检查范围和强度后烘焙。红润会成为单独的“指定位置的红润”图层，之后可调整不透明度。</li></ol>
-      <div class="mn-tip">本功能不会自动识别脸颊或膝盖。未放置点时，不会添加局部红润。“红润范围”为相对于模型高度的比例。</div>
-    <div class="mn-tip">启用“左右对称添加红润色”后，另一侧也会烘焙相同强度的血色，中心与绘制的X对称设置共用。移动原始点时另一侧同步移动，不重复中心或已有对称点。最多使用16处位置及其镜像，默认关闭。</div></section>
-    <section class="mn-sec" id="common"><h2>单项烘焙与预览</h2>
-      <p>如需逐项使用效果，请从<strong>滤镜 → 烘焙 → 各项功能</strong>打开。<a href="/petanuri/zh/manual/ao">烘焙 AO</a>也在此子菜单中。</p>
-      <ul class="mn-list"><li>阴影、渐变、凹陷、边缘光、光泽、织纹在修改设置后会即时预览。目标为当前选中且可见的纹理集。勾选“应用于所有显示中的纹理集”可处理多个纹理集。</li><li>预览中可转动视角查看。点击“烘焙到新图层”确认，点击“取消”或窗口 × 恢复原状。</li><li>预览使用较低分辨率以保持流畅，确认时会按纹理集分辨率重新生成。细密织纹和阴影也请检查确认后的效果。</li><li>“投射阴影”“薄处透光色”“AO”需要先选目标和质量，再进行计算。会显示进度，可中途取消。</li></ul>
-      <div class="mn-tip">烘焙的是纹理颜色。烘焙后转动视角或移动其他软件中的灯光，已绘制的光影位置也不会改变。要检查底色，可使用“保持绘制颜色”。</div>
+
+    <section class="mn-sec" id="blush" data-keywords="腮红 脸颊 红晕 手肘 膝盖 气色 红脸蛋 对称">
+      <h2>为脸颊和膝盖添加红润</h2>
+      <p>在肌肤效果中，可以自己放置想要加红的位置。点的周围会柔和地晕开红色。</p>
+      <ol class="mn-steps">
+        <li>选择肌肤效果，在“添加红润的位置”中点击“添加位置”。</li>
+        <li>在 3D 视图中，点击脸颊、手肘、膝盖等想要加红的位置。</li>
+        <li>移动点时，拖动 3D 视图中的移动控制柄，或输入 X、Y、Z 坐标。</li>
+        <li>用“红润强度”“红润范围”调整，同时保留白皙的肤色。</li>
+        <li>烘焙后，红润会成为名为“指定位置的红润”的独立图层。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>位置可以添加任意多个（最多 16 处）。不需要的点在列表中选中，再用“删除所选位置”删除。</li>
+        <li>勾选“左右对称添加红润色”后，另一侧也会加上同样浓度的红润。中心与绘制时的对称（X）中心相同。移动原来的点，另一侧也会跟着移动。默认关闭。</li>
+        <li>“红润范围”是相对于模型高度的比例。</li>
+      </ul>
+      <div class="mn-tip warn">这不是自动找出脸颊和膝盖的功能。如果一个点都不放，就不会加入按位置添加的红润。</div>
     </section>
-    <section class="mn-sec" id="shade"><h2>柔和阴影、凹陷与凸起</h2>
-      <h3>烘焙柔和明暗</h3><p>根据面方向与指定光照生成柔和阴影。通过“光的左右”“光照仰角”调整方向，通过“阴影范围”“边界柔和度”“阴影浓度”“阴影颜色”调整效果。可从斜上方、正上方、侧方或清晰阴影预设开始。</p>
-      <p>此功能本身不会生成头发或服装重叠所投射的阴影。处理重叠阴影时，可组合使用<a href="#rays">“烘焙投射阴影”</a>。</p>
-      <h3>增强凹陷与凸起</h3><p>检测形状的弯曲，为凹陷添加阴影、凸起添加亮色。“细节宽度”为模型高度的比例。凹陷和凸起可分别设置强度与颜色。</p>
-      <ul class="mn-list"><li><strong>边界柔和度</strong>：让检测到的凹陷、凸起转换为颜色时的边界更平缓。</li><li><strong>阴影模糊</strong>：沿表面平滑阴影本身。细小锯齿明显时可提高此值。0 表示不模糊。</li><li>提供柔和立体感／仅凹陷阴影／仅凸起亮部预设。</li></ul>
-      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-curvature-v110.webp" width="410" height="501" alt="强调凹陷与凸起的设置。可分别调整阴影模糊与边界柔和度" loading="lazy"><figcaption>增强凹陷与凸起</figcaption></figure>
-    <div class="mn-tip">卡通阴影与天使光环（Pro）：滤镜 → 烘焙 中的“烘焙卡通阴影（第一层阴影/第二层阴影）”按光线方向将阴影清晰分成两层并生成新图层（可调两层的位置、浓度、颜色和边界模糊）。“烘焙天使光环（头发高光）”在所选纹理集（头发）的指定高度添加环状高光带（带宽、锯齿、边缘柔和度、观察方向）。</div><div class="mn-tip">“强调凹陷与凸起”新增预设“主线（凹陷处的细线）”“主线（较粗、较柔和）”“棱线高光（凸起处的细线）”。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-toon-shade-v120.webp" width="434" height="609" alt="烘焙卡通阴影窗口" loading="lazy"><figcaption>烘焙卡通阴影（第一层阴影/第二层阴影）</figcaption></figure></section>
-    <section class="mn-sec" id="gradient"><h2>上下或点渐变</h2>
-      <p><strong>“烘焙上下或点渐变”</strong>可编辑颜色和透明度色标，通过“颜色分布”的按钮选择划分依据。</p>
-      <ul class="mn-list"><li><strong>表面方向</strong>：从朝下的面到朝上的面逐渐变色。适合表现下方反光或为朝上的面提亮。</li><li><strong>高度</strong>：从模型下方到上方逐渐变色。适合裙摆或发梢的颜色变化。</li><li><strong>距点距离</strong>：从指定中心向外逐渐变色。使用“在3D视图中指定中心”，可在模型表面或空白空间放置点。通过移动手柄或 X、Y、Z 坐标改变位置。</li></ul>
-      <p>点距离的“扩散距离”为模型高度的比例。通过“边界位置”“混合宽度”“颜色浓度”调整分布。指定点之前无法确认点距离烘焙。</p>
-      <p>点击色带添加色标，为各色标设置颜色、位置和不透明度。240 种预设可按分类或名称查找。自定义渐变可通过“保存当前”注册。编辑方法与<a href="/petanuri/zh/manual/draw#gradient">绘制工具渐变</a>相同。</p>
-      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-gradient-bake-v110.webp" width="410" height="757" alt="烘焙上下/点渐变。颜色和透明度色带、预设、颜色分布按钮" loading="lazy"><figcaption>渐变设置</figcaption></figure>
+
+    <section class="mn-sec" id="common" data-keywords="单独烘焙 逐项 菜单 实时预览 确定 新图层 单项效果">
+      <h2>逐个烘焙效果（烘焙）</h2>
+      <p>滤镜 → 烘焙 中，按效果列出了各个烘焙功能。可以只把轻松烘焙之后想追加的效果烘焙到新图层。</p>
+      <ol class="mn-steps">
+        <li>选择要烘焙的纹理集。</li>
+        <li>在 滤镜 → 烘焙 中，选择想烘焙的效果。</li>
+        <li>从“预设”中选择接近的外观，再调整数值。3D 视图会立即显示效果。</li>
+        <li>点击“烘焙到新图层”。所选纹理集中会添加一个新图层。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">烘焙菜单</th><th scope="col">烘焙内容</th></tr></thead><tbody>
+        <tr><td>烘焙 AO（被周围遮挡而变暗的区域）</td><td>缝隙中的暗部（<a href="/petanuri/zh/manual/ao">烘焙 AO</a>）</td></tr>
+        <tr><td>将 AO 导出为 PNG（最后一次烘焙的结果）</td><td>（<a href="/petanuri/zh/manual/ao#output">将 AO 做成 PNG</a>）</td></tr>
+        <tr><td>烘焙投射阴影</td><td>头发和衣服投下的阴影（<a href="#rays">投射阴影</a>）</td></tr>
+        <tr><td>烘焙薄处透光色</td><td>耳朵、手指等薄处的透光色（<a href="#rays">透光色</a>）</td></tr>
+        <tr><td>烘焙柔和明暗</td><td>由表面方向产生的柔和阴影（<a href="#shade">明暗</a>）</td></tr>
+        <tr><td>烘焙上下或点渐变</td><td>随表面方向、高度、距点的距离而变化的颜色（<a href="#gradient">渐变</a>）</td></tr>
+        <tr><td>烘焙边缘光、烘焙光泽高光、烘焙织纹与色彩变化</td><td>边缘光、光泽、织纹与色彩变化（<a href="#material">质感</a>）</td></tr>
+        <tr><td>烘焙卡通阴影（第一层阴影/第二层阴影）</td><td>清晰的两层阴影（<a href="#shade-toon">卡通阴影</a>）</td></tr>
+        <tr><td>烘焙天使光环（头发高光）</td><td>头发上的环形高光（<a href="#material-hairring">天使光环</a>）</td></tr>
+        <tr><td>增强凹陷与凸起</td><td>凹陷处的阴影、凸起处的亮度（<a href="#shade-curvature">凹陷与凸起</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>勾选“应用于所有显示中的纹理集”后，会对所有可见的纹理集烘焙。</li>
+        <li>存在选区时，只在选区内烘焙（只对含有选区的纹理集生效）。</li>
+        <li>预览期间也可以旋转视角来确认。点击“取消”或窗口的 × 即可不做任何更改地关闭。</li>
+        <li>预览以较低的分辨率显示，确定时会按纹理集的分辨率重新生成。细密的织纹和明暗，请在确定之后再确认外观。</li>
+        <li>投射阴影、薄处透光色和 AO，要在设定好对象和质量之后才开始计算。会显示进度，可在中途取消。</li>
+      </ul>
+      <div class="mn-tip">烘焙出来的是纹理的颜色。烘焙之后，即使移动视角，或移动 Unity 等中的灯光，已绘入的光和阴影的位置也不会改变。只想确认底色时，把显示方式设为“保持绘制颜色”。</div>
     </section>
-    <section class="mn-sec" id="material"><h2>边缘光、光泽、织纹与色差</h2>
-      <ul class="mn-list"><li><strong>烘焙边缘光</strong>：根据指定光照和观看方向，为轮廓附近的面添加光色。用“扩散”调整宽度，也可使用蓝色边缘或暖色逆光等预设。</li><li><strong>烘焙光泽高光</strong>：根据指定光照和观看方向添加光泽亮部。提高“扩散”可获得柔和光泽，降低则得到硬质材料的窄高光。提供肌肤、缎面、硬质材料预设。</li><li><strong>烘焙织纹与色彩变化</strong>：在“纹理”按钮中选择织纹或色差，调整大小、编号、颜色和强度。更改编号可改变图案分布。大小为模型高度的比例。</li></ul>
-      <div class="mn-tip">织纹按照 3D 空间的轴和面方向生成，而非沿 UV 线生成。要为袖子、裙摆等手动指定织纹方向，也可使用<a href="/petanuri/zh/manual/deco#pattern">图案笔</a>。这些烘焙用于颜色表现，不会生成法线贴图或实际反射参数。</div>
+<section class="mn-sec" id="shade" data-keywords="阴影 着色 立体感 曲率 cavity 勾线 棱线 赛璐璐 动漫上色 一影 二影">
+      <h2>烘焙明暗（柔和明暗、凹陷与凸起、卡通阴影）</h2>
+      <p>根据光的方向和形状的弯曲程度，烘焙阴影和亮部。这些都不会生成物体之间遮挡产生的阴影，需要时请搭配<a href="#rays">投射阴影</a>。</p>
+      <h3 id="shade-soft">烘焙柔和明暗</h3>
+      <p>根据表面方向和设定的光，生成柔和的阴影。光的方向以从正面看模型时的左右、上下来设定。</p>
+      <ul class="mn-list">
+        <li>项目：光的左右、光照仰角、阴影范围、边界柔和度、阴影浓度、阴影颜色。</li>
+        <li>预设：从斜上方柔和照射、顶光阴影、侧光阴影、清晰阴影。</li>
+      </ul>
+      <h3 id="shade-curvature">增强凹陷与凸起</h3>
+      <p>拾取形状的弯曲，在凹陷处加阴影，在凸起处加亮色。绘制出的凹凸（法线贴图）不会被拾取。</p>
+      <ul class="mn-list">
+        <li>项目：细节宽度（相对于模型高度的比例）、凹陷浓度、凸起浓度、阴影模糊、边界柔和度、凹陷颜色、凸起颜色。</li>
+        <li><b>边界柔和度</b>：让拾取到的凹陷、凸起变为颜色的交界变得平缓。</li>
+        <li><b>阴影模糊</b>：沿着表面把明暗本身抹平。在意细小的锯齿时调高。为 0 则不模糊。</li>
+        <li>预设：柔和立体感、仅凹陷阴影、仅凸起亮色、主线（凹陷处的细线）、主线（较粗、较柔和）、棱线高光（凸起处的细线）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-curvature-v110.webp" width="410" height="501" alt="“增强凹陷与凸起”的设置。分别调整阴影模糊和边界柔和度" loading="lazy"><figcaption>增强凹陷与凸起</figcaption></figure>
+      <h3 id="shade-toon">烘焙卡通阴影（第一层阴影/第二层阴影）</h3>
+      <p>按光的方向，把阴影清晰地分成两层（第一层阴影、第二层阴影）。可用作动漫上色中阴影的底涂。</p>
+      <ul class="mn-list">
+        <li>项目：光的左右、光照仰角、第一层阴影位置、第二层阴影位置、边界模糊、第一层阴影浓度、第二层阴影浓度、第一层阴影颜色、第二层阴影颜色。</li>
+        <li>预设：偏紫的第一层/第二层阴影／仅第一层阴影（清晰）／肤色暖阴影／从正上方。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-toon-shade-v120.webp" width="434" height="609" alt="烘焙卡通阴影的窗口" loading="lazy"><figcaption>烘焙卡通阴影（第一层阴影/第二层阴影）</figcaption></figure>
     </section>
-    <section class="mn-sec" id="rays"><h2>光照投影、薄处透光色</h2>
-      <h3>烘焙投射阴影</h3><ol class="mn-steps"><li>打开 滤镜 → 烘焙 →“烘焙投射阴影”。</li><li>设置光照左右、上下方向，阴影柔和度、强度、颜色、阴影距离和质量。</li><li>逐纹理集选择“接收阴影”“投射阴影”。例如将阴影烘焙到 body，而让头发和服装仅投射阴影。</li><li>点击“烘焙到新图层”计算。按当前姿势的重叠关系生成阴影。</li></ol>
-      <h3>烘焙薄处透光色</h3><p>向面内侧检测，为附近有另一侧面的薄处着色。适合有厚度的封闭耳朵、手指和道具等，添加柔和的透光色表现。</p>
-      <ol class="mn-steps"><li>打开 滤镜 → 烘焙 →“烘焙薄处透光色”。</li><li>设置“薄度检测距离（cm）”“透光色强度”“透光色”“质量”，并勾选目标纹理集的“烘焙”。</li><li>点击“烘焙到新图层”计算。</li></ol>
-      <div class="mn-tip warn">开放的单层布片不适用于薄处透光色。若内侧有其他面，也会检测到与该面的距离，请检查结果并调整强度。这不是让光实际穿透材质的设置。</div>
+
+    <section class="mn-sec" id="gradient" data-keywords="渐变 反射光 发梢 下摆 颜色过渡 渐变色 中心点 半球">
+      <h2>烘焙上下或点渐变</h2>
+      <p>根据表面方向、高度、距点的距离改变颜色并烘焙。可用于来自下方的反射光，以及发梢、下摆的颜色变化。</p>
+      <ol class="mn-steps">
+        <li>打开 滤镜 → 烘焙 →“烘焙上下或点渐变”。</li>
+        <li>在“颜色分布”中，点击表面方向、高度、距点距离中的一个。</li>
+        <li>点击色带添加色标，并为每个色标设定颜色、位置和不透明度。</li>
+        <li>用“边界位置”“混合宽度”“颜色浓度”调整扩散方式，然后点击“烘焙到新图层”。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">颜色分布</th><th scope="col">颜色的变化方式</th></tr></thead><tbody>
+        <tr><td>表面方向</td><td>从朝下的面到朝上的面。用于来自下方的反射光，或提亮朝上的面</td></tr>
+        <tr><td>高度</td><td>从模型下方到上方。用于下摆、发梢开始的颜色变化</td></tr>
+        <tr><td>距点距离</td><td>从设定的中心向外。用“在3D视图中指定中心”，可以把点放在模型表面，也可以放在空无一物的空间中。可用移动控制柄或坐标来移动</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>“距点距离”的“扩散距离”是相对于模型高度的比例。在放置点之前，无法确定。</li>
+        <li>预设共有 240 种，可按分组或名称查找。自己做的渐变用“保存当前”存入“我的预设”。</li>
+        <li>用“使用绘图工具的渐变”，可以复制渐变工具的颜色。色带的用法与<a href="/petanuri/zh/manual/draw#gradient">绘制工具的渐变</a>相同。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-gradient-bake-v110.webp" width="410" height="757" alt="烘焙上下或点渐变。颜色和透明度色带、预设、颜色分布按钮" loading="lazy"><figcaption>渐变设置</figcaption></figure>
     </section>
-    <section class="mn-sec" id="finish"><h2>烘焙后的调整与保存</h2>
-      <ul class="mn-list"><li>烘焙效果为普通绘制图层。可降低图层不透明度、隐藏不需要的效果、用蒙版限定范围，或用橡皮擦局部擦除。</li><li>轻松烘焙将效果分为独立图层，因此也可减弱阴影、保留红润。在“细节绘制”图层添加颜色，可继续绘画而不破坏烘焙结果。</li><li>烘焙确认后可用 <kbd>Ctrl</kbd>＋<kbd>Z</kbd> 撤销。再次烘焙会新增图层。叠加过多时，可隐藏或删除旧效果进行对比。</li><li><strong>.petanuri</strong> 格式保存可保留生成的所有图层。PNG 会合成可见效果，PSD 则可按图层导出（<a href="/petanuri/zh/manual/export">导出</a>）。</li></ul>
+
+    <section class="mn-sec" id="material" data-keywords="轮廓光 逆光 光泽 高光 镜面 反光 布纹 噪点 不均匀 头发 天使环">
+      <h2>烘焙边缘光、光泽、织纹、天使光环</h2>
+      <p>这是用颜色补画质感的烘焙。都是根据指定的光和观察方向计算，并烘焙到新图层。</p>
+      <h3 id="material-rim">烘焙边缘光</h3>
+      <p>向靠近轮廓的面添加光的颜色。项目有：光的左右、光照仰角、观察方向左右、观察方向上下、扩散、颜色浓度、颜色。预设：柔和边缘光、细蓝色边缘光、温暖逆光。</p>
+      <h3 id="material-gloss">烘焙光泽高光</h3>
+      <p>添加光泽的亮度。调高“扩散”会成为柔和的光泽，调低则成为硬质材料那种细窄的光泽。预设：柔和肌肤高光、缎面高光、硬质表面高光。</p>
+      <h3 id="material-surface">烘焙织纹与色彩变化</h3>
+      <p>在“图案”中选择织纹或色彩变化，再设定纹理大小、图案编号、颜色浓度、颜色。改变编号，图案的出现方式也会改变。大小是相对于模型高度的比例。预设：大范围色彩变化、细密织纹、细微皮革色彩变化。</p>
+      <div class="mn-tip">织纹不是沿 UV，而是沿 3D 空间的坐标轴和表面方向生成的。想按袖子、下摆分别决定织纹方向时，请使用<a href="/petanuri/zh/manual/deco#pattern">图案笔</a>。这些只是颜色上的表现，不会生成法线贴图或反射的设置。</div>
+      <h3 id="material-hairring">烘焙天使光环（头发高光）</h3>
+      <p>在所选纹理集（头发）的指定高度加入环形色带状的高光。只会出现在朝向观察方向的面上。</p>
+      <ul class="mn-list">
+        <li>项目：高度（从上）、观察方向左右/上下、带宽、锯齿感、锯齿数量、边缘柔和度、形状编号、颜色浓度、颜色。</li>
+        <li>预设：白色锯齿环、平滑的环、细而锐利的环、浅蓝光泽。</li>
+      </ul>
     </section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/ao"><small>← 上一页</small>烘焙 AO</a><a class="next" href="/petanuri/zh/manual/pose"><small>下一页 →</small>姿势、混合形状、顶点组</a></nav>
+
+    <section class="mn-sec" id="rays" data-keywords="投影 头发阴影 刘海阴影 次表面 SSS 透光 耳朵 手指 半透明">
+      <h2>烘焙投射阴影、薄处透光色</h2>
+      <h3 id="rays-cast">烘焙投射阴影</h3>
+      <p>根据当前姿势下的遮挡关系，生成头发和衣服投下的阴影。可以与明暗图层叠加使用。</p>
+      <ol class="mn-steps">
+        <li>打开 滤镜 → 烘焙 →“烘焙投射阴影”。</li>
+        <li>设定光的左右、光照仰角，阴影柔和度、阴影浓度、阴影颜色，阴影距离（cm）和质量。</li>
+        <li>为每个纹理集选择“接收阴影”或“投射阴影”。例如，可以给身体烘焙阴影，而头发和衣服只投射阴影。</li>
+        <li>点击“烘焙到新图层”。</li>
+      </ol>
+      <h3 id="rays-thin">烘焙薄处透光色</h3>
+      <p>向面的内侧探测，给附近存在对侧面的薄处上色。可以为闭合形状的耳朵、手指以及较薄的饰物，添加柔和的透光色。</p>
+      <ol class="mn-steps">
+        <li>打开 滤镜 → 烘焙 →“烘焙薄处透光色”。</li>
+        <li>设定“薄度检测距离（cm）”“透光色强度”“透光色”“质量”。</li>
+        <li>在要烘焙的纹理集的“烘焙”上打勾，然后点击“烘焙到新图层”。</li>
+      </ol>
+      <div class="mn-tip warn">展开的单层布料不会成为透光色的对象。内侧有其他面时，也会拾取到与该面的距离，请看结果调整浓度。这不是让光线真正透过的材质设置。</div>
+    </section>
+
+    <section class="mn-sec" id="finish" data-keywords="修改 减弱 撤销 重新烘焙 保存 过重 叠加过多">
+      <h2>烘焙后调整并保存</h2>
+      <p>烘焙出的效果就是普通的绘制图层。之后还可以更改浓度和作用范围。</p>
+      <ul class="mn-list">
+        <li>可以降低图层的不透明度、隐藏不需要的效果、用蒙版限定作用范围，或用橡皮擦擦掉一部分。</li>
+        <li>轻松烘焙会按效果分成多个图层。因此可以做出“减弱阴影，只保留红润”之类的调整。</li>
+        <li>在“细节绘制”图层上继续绘制，就能不破坏烘焙出的效果，接着往下画。</li>
+        <li>烘焙的结果可以用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销。</li>
+        <li>保存为工程文件（.petanuri）时，烘焙出的图层会一并保留。导出为 PNG 时，会把可见的效果合并成一张；导出为 PSD 时，则保持图层分开（<a href="/petanuri/zh/manual/export">导出</a>）。</li>
+      </ul>
+      <h3 id="finish-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>阴影重叠、过浓</b>：再次烘焙会添加新的图层。请隐藏或删除旧效果的图层后对比。</li>
+        <li><b>旋转视角后阴影不动</b>：烘焙出的阴影是纹理的颜色，所以不会移动。想看随光线移动的阴影时，请使用<a href="/petanuri/zh/manual/material#look">最终效果</a>显示。</li>
+        <li><b>无法确定“距点距离”的渐变</b>：先用“在3D视图中指定中心”放置点，再烘焙。</li>
+        <li><b>没有加入红润</b>：在肌肤效果中点击“添加位置”并放置点。没有点，就不会加入按位置添加的红润。</li>
+        <li><b>预览和确定后的图案细密程度不同</b>：预览的分辨率较低。请以确定之后的外观为准来调整。</li>
+        <li><b>只烘焙了部分纹理集</b>：存在选区时，只会烘焙到含有选区的纹理集。已隐藏的纹理集也不在对象之内。</li>
+        <li><b>菜单中没有，或带有锁标</b>：这是 Pro 的功能。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/ao">烘焙 AO</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状</a></li><li><a href="/petanuri/zh/manual/export">导出</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/ao"><small>← 上一页</small>烘焙 AO</a><a class="next" href="/petanuri/zh/manual/pose"><small>下一页 →</small>姿势、混合形状</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -200,5 +377,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stamps, patterns, stitches and 2D canvas | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Decoration, stamps, pattern pens, stitches (seams drawn in the foreground color), a layer-based 2D canvas for stamps, and 2D painting without a model. How to use PetaNuri3D, a paint tool for drawing textures directly on 3D avatars, outfits and accessories used in VRChat and elsewhere.">
+  <meta name="description" content="Decoration, stamps, the pattern pen, stitches (draw seams in the foreground color), the 2D canvas for stamps drawn with layers, and 2D painting without a model. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/deco">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Stamps, patterns, stitches and 2D canvas | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Decoration, stamps, pattern pens, stitches (seams drawn in the foreground color), a layer-based 2D canvas for stamps, and 2D painting without a model. How to use PetaNuri3D, a paint tool for drawing textures directly on 3D avatars, outfits and accessories used in VRChat and elsewhere.">
+  <meta property="og:description" content="Decoration, stamps, the pattern pen, stitches (draw seams in the foreground color), the 2D canvas for stamps drawn with layers, and 2D painting without a model. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/deco">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Stamps, patterns, stitches and 2D canvas | PetaNuri3D Manual",
-   "description": "Decoration, stamps, pattern pens, stitches (seams drawn in the foreground color), a layer-based 2D canvas for stamps, and 2D painting without a model. How to use PetaNuri3D, a paint tool for drawing textures directly on 3D avatars, outfits and accessories used in VRChat and elsewhere.",
+   "description": "Decoration, stamps, the pattern pen, stitches (draw seams in the foreground color), the 2D canvas for stamps drawn with layers, and 2D painting without a model. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/deco",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,198 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco" aria-current="page">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco" aria-current="page">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Stamps, patterns, stitches and 2D canvas</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Stamps, patterns, stitches and 2D canvas</p>
     <h1 class="mn-h1">Stamps, patterns, stitches and 2D canvas</h1>
-    <p class="mn-intro">Tools for repetitive details such as decorations, patterns and seams. Preview placement in 3D before painting with any of them.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#deco">Decoration</a></li><li><a href="#stamp">Stamp</a></li><li><a href="#pattern">Pattern pens (clothing patterns)</a></li><li><a href="#bump">Stitches (seams and wrinkles)</a></li><li><a href="#canvas2d">2D canvas for stamps</a></li><li><a href="#paint2d">2D painting without a model</a></li></ul></div>
-    <section class="mn-sec" id="deco"><h2>Decoration</h2><ul class="mn-list"><li>Scatter sparkles, stars, hearts, flowers, cherry blossoms, musical notes, snowflakes, dots, bubbles, crescents, diamonds, clovers and drops along your stroke. Size and direction vary slightly.</li><li>Paints in the foreground color. Hover over 3D or UV to preview the tip shape.</li></ul><div class="mn-tip">Lace (all editions, v1.3.0 and later): Decoration includes Lace (scallop), Lace (picot), Lace (small flowers), and Lace (mesh). The holes are transparent and the lace is painted in the foreground color. The pattern runs as a band along the stroke, so it stays connected around curves, sharp corners, and in 3D. The brush size sets the pattern size. It can also be used for Shape tool outlines.</div></section><section class="mn-sec" id="stamp"><h2>Stamp</h2><ul class="mn-list"><li>Use “Import image” in Tool properties to add PNGs or other images. Select one from the list and click the model to stamp it. Drag to place repeated stamps at the set spacing.</li><li>A large current-image preview, image list, size and angle appear at the top of Tool properties.</li><li>Hover over 3D or UV to see a translucent preview at the actual size, angle, color and opacity (preview only; not written to the texture). A faint preview of the next stamp appears ahead in your movement direction (turn off “Show the next placement faintly” in Tool properties to show only the current placement; on by default).</li><li>Uses the image&#x27;s colors; transparent areas are skipped. Enable “Use foreground color” to use only its shape and paint in the foreground color.</li><li>Size, opacity, spacing, angle, random rotation, size variation, scatter, stroke-direction rotation and pressure-controlled size. Imported images persist across restarts (up to 60).</li><li>Symmetry works in both 3D and UV; the mirrored image is flipped too.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-stamp.webp" width="900" height="896" alt="Stamp Tool properties and a translucent preview over the model" loading="lazy"><figcaption>Stamp (hover to preview placement)</figcaption></figure></section><section class="mn-sec" id="pattern"><h2>Pattern pens (clothing patterns)</h2><ul class="mn-list"><li>15 types: stripes, horizontal stripes, diagonal stripes, dots, small dots, checkerboard, gingham, tartan, argyle, herringbone, denim/twill, knit, hearts, stars and crosshatch.</li><li>A pen that paints only the pattern in the foreground color. Patterns repeat on the texture and stay fixed as the view moves (distorted UVs also distort the pattern).</li><li>Pattern previews, “Pattern size,” “Pattern strength,” invert light/dark and application mode appear at the top of Tool properties.</li><li>Hover over 3D or UV to preview the pattern translucently inside the brush circle at its actual size. While adjusting Pattern size, a larger preview circle appears at the last hovered position.</li><li>The same patterns are available under Paper texture → Pattern for other pens and brushes.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-pattern.webp" width="900" height="896" alt="Clothing painted with a pattern pen, and the pattern list" loading="lazy"><figcaption>pattern pens</figcaption></figure><div class="mn-tip">Pattern angle (all editions): rotate the pattern of pattern pens and paper texture with “Pattern angle” in Tool properties (useful for upside-down or sideways islands).</div></section><section class="mn-sec" id="bump"><h2>Stitches (seams and wrinkles)</h2><ul class="mn-list"><li>Nine sub tools: Stitches (dotted), Stitches (puffy), Seam, Piping, Cross stitch, Zigzag stitch, Rivet, Wrinkle, and Bulge.</li><li>The seven stitch tools draw stitches in the foreground color on the current layer, just like the pen (all editions; also on the 2D canvas). The stitches turn to follow the direction of the stroke.</li><li>To make them bumps instead, turn on “Draw in the normal map folder” in Tool properties (Pro). The tool then switches into the “Normal map” folder in the Layers panel (created if missing) and draws at a fixed height (the height slider appears only while this is on). Wrinkle and Bulge always draw by height in the normal map folder.</li><li>When you finish drawing by height, click “◀ Back to original layer” at the top center of the 3D view to return to the layer, view and tool you had before.</li><li>Bumps drawn by height are visible in the Finished view (if hard to see, raise Normal map strength in the Material panel). They are exported as a normal map image (<a href="/petanuri/en/manual/material#channels">Paint target</a>).</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-stitch-v121.webp" width="560" height="400" alt="Stitches (dotted) drawn in the foreground color" loading="lazy"><figcaption>Stitches (dotted) go on the current layer in the foreground color</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-stitch-props-v121.webp" width="246" height="317" alt="Tool properties for Stitch: symmetry, tip, and “Draw in the normal map folder”" loading="lazy"><figcaption>“Draw in the normal map folder” in Tool properties (off = draw in the foreground color)</figcaption></figure></div><div class="mn-tip">Among sub tools saved by an earlier version, stitch tools you have not changed switch once to the new behavior (drawing in the foreground color). Ones whose size or name you changed keep drawing by height as before.</div></section><section class="mn-sec" id="canvas2d"><h2>2D canvas for stamps</h2><p>In Stamp Tool properties, click <strong>“Draw in 2D canvas”</strong> to open a dedicated stamp texture set. The 3D view is hidden; edit a square canvas in the UV view.</p><ol class="mn-steps"><li>Draw with pens, erasers, fill, gradients and more. Use regular layers, folders, selections, Undo and Redo.</li><li>Choose square resolution at the bottom (256–4096; Lite up to 2048).</li><li><strong>“Register as stamp”</strong> lets you name it. The composited visible layers become the stamp. Return to model editing and draw with it.</li><li>To return without registering, click “Return to model editing.” Painted layers are saved with your .petanuri project.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-canvas2d-v110.webp" width="1600" height="1000" alt="Stamp 2D canvas: square UV view, regular Layers panel and Register as stamp button at the bottom" loading="lazy"><figcaption>Stamp 2D canvas: edited in UV view and layers, rather than a floating window</figcaption></figure><ul class="mn-list"><li>The Texture sets panel indicates stamp-canvas editing. It is handled separately from the model&#x27;s main/sub assignments.</li><li>This working set is separate from the model&#x27;s texture-set list and is <strong>excluded from model texture exports</strong>.</li><li>Edit registered stamps using “Redraw this image” or right-click a list entry → “Redraw in 2D canvas.” When registering again, choose overwrite or a different name.</li></ul></section><section class="mn-sec" id="paint2d"><h2>2D painting without a model</h2><p>On the startup screen below “Try a sample,” click <strong>“Start a 2D painting”</strong> and choose a resolution. This bonus painting mode provides a square transparent canvas without a 3D model. It is not selected through the New project&#x27;s model settings.</p><ul class="mn-list"><li>Paint on layers, then save and resume as .petanuri.</li><li>“Export PNG” below the canvas saves a composite of visible layers.</li><li>“Register as stamp” is available too; you can continue 2D painting after registering.</li><li>Lite supports up to 2048 resolution and 4 layers including the base. Standard and Pro support up to 4096 resolution.</li></ul><div class="mn-tip">Bakes that use 3D geometry, poses and materials are not used in 2D painting.</div><div class="mn-tip">2D paintings can be exported to PSD with layers and folders intact via File → Export → Export PSD (selected set) (Standard and up, v1.3.0 and later).</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/draw"><small>← Previous</small>Draw</a><a class="next" href="/petanuri/en/manual/edit"><small>Next →</small>Selections, transforms, text and rulers</a></nav>
+    <p class="mn-intro">These are tools for details you repeat a lot: decorations, images, clothing patterns and seams. This page also covers the 2D canvas, where you draw a picture to turn into a stamp, and 2D painting without a model.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>To scatter decorations, click "Decoration" on the toolbar, choose Sparkle or another decoration, and drag over the 3D view (<a href="#deco">Details</a>).</li>
+      <li>To place an image, add a PNG with "Import image" under "Stamp", then click in the 3D view (<a href="#stamp">Details</a>).</li>
+      <li>For a clothing pattern, choose "Pattern". For seams, choose "Stitch". Then drag with the foreground color (<a href="#pattern">Pattern</a>, <a href="#bump">Stitch</a>).</li>
+      <li>To turn your own drawing into a stamp, click "Draw in 2D canvas" under Stamp, draw, and click "Register as stamp" (<a href="#canvas2d">Details</a>).</li>
+      <li>To draw without a model, start from "Start a 2D painting" on the start screen (<a href="#paint2d">Details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#deco">Scatter decorations (Decoration)</a></li><li><a href="#stamp">Place an image (Stamp)</a></li><li><a href="#pattern">Paint a clothing pattern (Pattern)</a></li><li><a href="#bump">Draw seams (Stitch)</a></li><li><a href="#canvas2d">Turn your drawing into a stamp (2D canvas)</a></li><li><a href="#paint2d">Draw in 2D without a model (2D painting)</a></li></ul></div>
+
+    <section class="mn-sec" id="deco" data-keywords="sparkles glitter bling ornament embellishment confetti sprinkle decorate trim doily">
+      <h2>Scatter decorations (Decoration)</h2>
+      <p>Scatters small decorations in the foreground color wherever you drag. Size and direction vary slightly from one to the next.</p>
+      <ol class="mn-steps">
+        <li>Click "Decoration" on the toolbar.</li>
+        <li>Choose a decoration from the sub tools.</li>
+        <li>Choose a foreground color and drag over the 3D view.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>The decorations are Sparkle, Star, Heart, Flower, Cherry blossom, Music note, Snowflake, Polka dots, Bubble, Crescent moon, Diamond, Four-leaf clover and Drop, plus four kinds of Lace.</li>
+        <li>Hover over the 3D or UV view to see the shape of the tip.</li>
+        <li>Change Size, Scatter, Random rotation and other settings in Tool properties, as with the Pen (<a href="/petanuri/en/manual/draw#props">Set how it feels</a>).</li>
+        <li>"Also paint back and hidden faces" is off by default. Symmetry also works.</li>
+      </ul>
+      <h3 id="lace">Draw lace</h3>
+      <p>"Lace (scallop)", "Lace (picot)", "Lace (small flowers)" and "Lace (mesh)" line up a pattern like a band along your stroke. The pattern stays connected around curves and sharp corners, and also on the 3D model.</p>
+      <ul class="mn-list">
+        <li>The holes are transparent, and the lace is painted in the foreground color. The thickness sets the size of the pattern.</li>
+        <li>If you choose one as the tip of the Shape tool, you can draw lace along the outline of a rectangle or an ellipse (<a href="/petanuri/en/manual/draw#shape">Shape</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="stamp" data-keywords="decal sticker logo emblem badge patch seal imprint insert clone">
+      <h2>Place an image (Stamp)</h2>
+      <p>Places an imported image on the 3D model. Use it for logos, patches, pattern materials and so on.</p>
+      <ol class="mn-steps">
+        <li>Click "Stamp" on the toolbar.</li>
+        <li>In Tool properties, click "Import image" to add PNG, JPEG or other images (as many as you like).</li>
+        <li>Choose an image from the list.</li>
+        <li>Click in the 3D view to place one copy of the image. Drag to keep placing copies at the set spacing.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-stamp.webp" width="900" height="896" alt="Stamp Tool properties, and a translucent preview hovering over the 3D model" loading="lazy"><figcaption>Stamp (hover to see a preview where it will land)</figcaption></figure>
+      <ul class="mn-list">
+        <li>Hover over the 3D or UV view to see the image you are about to place as a translucent preview, with its current size, angle, color and opacity. The preview is only a guide before you paint. It is not added to the texture.</li>
+        <li>A faint preview of the next placement also appears ahead, in the direction you are moving. Turn off "Show the next placement faintly" to see only the current preview.</li>
+        <li>The image is placed in its own colors (transparent areas are not placed). Turn on "Paint with foreground color" to use only the image's shape and paint it in the foreground color.</li>
+        <li>The "Stamp (scatter)" sub tool scatters images with varied directions and positions.</li>
+        <li>It applies only to visible faces, and one stroke counts as one Undo step. You can also place stamps in the UV view.</li>
+        <li>Symmetry works in both the 3D and UV views. On the opposite side, the image is mirrored too.</li>
+      </ul>
+      <h3 id="stamp-props">Stamp settings</h3>
+      <p>At the top of Tool properties, you will find a large preview of the current image, the image list, the size and the angle.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Setting</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Size</td><td>Length of the image's longer side</td></tr>
+        <tr><td>Opacity</td><td>How strongly the image is placed</td></tr>
+        <tr><td>Spacing</td><td>Distance between copies when you drag to place them continuously</td></tr>
+        <tr><td>Angle, Random rotation</td><td>The direction of the image, and how much it varies</td></tr>
+        <tr><td>Size variation, Scatter</td><td>Variation in size and position</td></tr>
+        <tr><td>Rotate along stroke</td><td>Rotates the image to follow the direction you drag</td></tr>
+        <tr><td>Size by pen pressure</td><td>Changes the size with pen pressure</td></tr>
+        <tr><td>Paint with foreground color (use only the image's shape)</td><td>Paints the shape of the image in the foreground color</td></tr>
+        <tr><td>Show the next placement faintly</td><td>Shows a preview of where the next copy will go (on by default)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Imported images are kept the next time you start the app (up to 60). Use "Remove this image" to take one off the list.</li>
+        <li>You can also turn your own drawings into stamps (<a href="#canvas2d">2D canvas</a>).</li>
+      </ul>
+      <h3 id="stamp-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Nothing is placed when I click</b>: No image is selected. Add one with "Import image" and choose it from the list. Click on a visible face of the model.</li>
+        <li><b>The white box around the image is placed too</b>: The image has no transparent area. Use a PNG with a transparent background.</li>
+        <li><b>The result differs slightly from the preview</b>: Random rotation, Scatter and the variation settings are not shown in the preview.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pattern" data-keywords="plaid checkered checks stripes fabric textile cloth print tiling repeat seamless">
+      <h2>Paint a clothing pattern (Pattern)</h2>
+      <p>A pen that paints only the pattern areas in the foreground color. The pattern repeats on the texture, so it does not shift when you move the view.</p>
+      <ol class="mn-steps">
+        <li>Click "Pattern" on the toolbar.</li>
+        <li>Choose a pattern from the sub tools or from the swatch list at the top of Tool properties.</li>
+        <li>Choose a foreground color and drag over the clothing.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>There are 15 patterns: Vertical stripes, Horizontal stripes, Diagonal stripes, Polka dots, Small polka dots, Checkerboard, Gingham, Tartan, Argyle, Herringbone, Denim (twill), Knit, Heart, Star and Crosshatch.</li>
+        <li>Hover over the 3D or UV view to see the pattern to be painted, shown in the foreground color and translucent inside the brush circle.</li>
+        <li>With "Load pattern image", you can use any image as a pattern (brighter areas take more paint).</li>
+        <li>The same patterns are also available from "Paper texture" on other pens and brushes (<a href="/petanuri/en/manual/draw#paper">Paper texture</a>).</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-pattern.webp" width="900" height="896" alt="Clothing painted with the Pattern pen, and the pattern list" loading="lazy"><figcaption>Pattern</figcaption></figure>
+      <h3 id="pattern-props">Pattern size, direction and strength</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Setting</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Pattern size</td><td>Size of one repeat of the pattern (%). While you adjust it, a preview appears as a larger circle where you last hovered</td></tr>
+        <tr><td>Pattern angle</td><td>Angle at which the pattern is rotated (°)</td></tr>
+        <tr><td>Pattern strength</td><td>How strong the pattern is</td></tr>
+        <tr><td>Invert light and dark</td><td>Swaps the painted and unpainted areas</td></tr>
+        <tr><td>Apply mode</td><td>"Multiply (brighter areas take more paint)" or "Subtract (dark areas drop out first)"</td></tr>
+      </tbody></table></div>
+      <h3 id="pattern-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The pattern is upside down or sideways</b>: The UV island is upside down or sideways. Match the direction with "Pattern angle" before you paint.</li>
+        <li><b>The pattern is distorted</b>: Where the UVs are distorted, the pattern is distorted too.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="bump" data-keywords="sewing thread embroidery topstitch stitching rivet wrinkle crease bump embossing">
+      <h2>Draw seams (Stitch)</h2>
+      <p>Draws decorations that repeat along a line, such as stitches. The stitches rotate to follow the direction of the line.</p>
+      <ol class="mn-steps">
+        <li>Click "Stitch" on the toolbar.</li>
+        <li>Choose a type of stitch from the sub tools.</li>
+        <li>Choose a foreground color and drag where you want stitches.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">What it draws</th></tr></thead><tbody>
+        <tr><td>Stitches (dotted), Stitch (puffy), Seam, Piping, Cross stitch, Zigzag stitch, Studs (rivets)</td><td>Draw stitches on the current layer in the foreground color. They also work in the 2D canvas</td></tr>
+        <tr><td>Wrinkles (soft groove), Bulge (soft raise) <span class="tier pro">Pro</span></td><td>Draw relief by height in the normal map folder</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-stitch-v121.webp" width="560" height="400" alt="Dotted stitches drawn with the Stitch tool in the foreground color" loading="lazy"><figcaption>Stitches (dotted). Drawn on the current layer in the foreground color</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-stitch-props-v121.webp" width="246" height="317" alt="Tool properties for Stitch: symmetry, tip and 'Draw in the normal map folder'" loading="lazy"><figcaption>"Draw in the normal map folder" in Tool properties (when off, it draws in the foreground color)</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>The size basis is fixed to "Variable on screen".</li>
+        <li>If you choose Stitch as the tip of the Shape tool, you can line up stitches along the outline of a rectangle or a curve (<a href="/petanuri/en/manual/draw#shape">Shape</a>).</li>
+      </ul>
+      <h3 id="bump-normal">Turn seams into relief (normal map) <span class="tier pro">Pro</span></h3>
+      <ol class="mn-steps">
+        <li>Turn on "Draw in the normal map folder" in Tool properties.</li>
+        <li>Set the height with "Height (0 carve, 50 flat, 100 raise)" (shown only when the option is on).</li>
+        <li>Drag over the model. The stroke goes into the "Normal map" folder in the Layers panel (the folder is created if it does not exist) and is drawn by height.</li>
+        <li>When you are done, click "◀ Back to previous layer" at the top center of the 3D view. You return to the layer, display and tool you had before.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Wrinkles and Bulge always draw by height in the normal map folder.</li>
+        <li>The relief shows in the final look. If it is hard to see, raise "Normal map strength" in the Material panel.</li>
+        <li>When you export, it becomes a normal map image (<a href="/petanuri/en/manual/material#channels">Paint target</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="canvas2d" data-keywords="custom-stamp original-stamp make-stamp flat-canvas square redraw edit-stamp asset sticker-maker">
+      <h2>Turn your drawing into a stamp (2D canvas)</h2>
+      <p>On a square canvas for stamps, you draw with the usual tools and layers and can register the result as a stamp as is.</p>
+      <ol class="mn-steps">
+        <li>Click "Stamp" on the toolbar.</li>
+        <li>Click "Draw in 2D canvas" in Tool properties. The 3D view is hidden, and a square canvas appears in the UV view.</li>
+        <li>Draw with the Pen, Eraser, Fill, Gradient and so on.</li>
+        <li>Click "Register as stamp" at the bottom and enter a name. The combined look of the visible layers becomes the stamp as is.</li>
+        <li>Go back to editing the model and paint with that stamp.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-canvas2d-v110.webp" width="1600" height="1000" alt="2D canvas for stamps: a square UV view and the Layers panel, with the Register as stamp button at the bottom" loading="lazy"><figcaption>2D canvas for stamps. Draw with the UV view and layers</figcaption></figure>
+      <ul class="mn-list">
+        <li>Layers, folders, masks, selections and Undo work as usual. The limits for each edition are the same too (Lite allows up to 4 layers).</li>
+        <li>Choose the canvas resolution in the field at the bottom (32 to 4096; Lite goes up to 2048).</li>
+        <li>To go back without registering, click "Return to model editing". What you drew is kept.</li>
+        <li>To edit a registered stamp, click "Redraw this image" in the Stamp tool properties, or right-click an image in the list → Redraw in 2D canvas. When you register again, choose "Overwrite" or "Register under another name".</li>
+        <li>You can also open it with a right-click in the list → Draw new in 2D canvas.</li>
+        <li>The canvas layers are saved with the project file (.petanuri) and with Autosave.</li>
+      </ul>
+      <div class="mn-tip">The Texture sets panel shows that you are editing a 2D canvas. This canvas is not included in the model's list of texture sets, nor in PNG or PSD exports.</div>
+    </section>
+
+    <section class="mn-sec" id="paint2d" data-keywords="2d-paint illustration drawing flat standalone no-model transparent-png new-canvas sketch">
+      <h2>Draw in 2D without a model (2D painting)</h2>
+      <p>A mode for drawing on a square canvas without opening a 3D model. You start from a transparent base and draw with the usual tools and layers.</p>
+      <ol class="mn-steps">
+        <li>Click "Start a 2D painting" on the start screen (it is below "Try the sample").</li>
+        <li>In the "Create a new 2D painting" window, choose the canvas size (32 × 32 to 4096 × 4096).</li>
+        <li>Draw with the Pen, Brush, Gradient and so on.</li>
+        <li>Click "Export PNG" at the bottom to save the combined visible layers as a PNG with transparency.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>If you save to a project file (.petanuri), you can keep painting later as a 2D painting, with the layers intact.</li>
+        <li>"Register as stamp" also works. You can keep painting in 2D painting after you register.</li>
+        <li><span class="tier std">Standard</span> File → Export → Export PSD (selected set) saves a PSD with the layers and folders intact.</li>
+        <li>Lite is limited to a resolution of 2048 and 4 layers, including the base. Standard and Pro go up to 4096, with no limit on the number of layers.</li>
+      </ul>
+      <div class="mn-tip">The 3D view and features that use the model's shape (baking, poses, materials and so on) are not available.</div>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/edit#image">Paste an image (Edit)</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/material#channels">Paint targets and normal maps</a></li><li><a href="/petanuri/en/manual/export">Export</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/draw"><small>← Previous</small>Draw</a><a class="next" href="/petanuri/en/manual/edit"><small>Next →</small>Selections, transforms and text</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +333,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

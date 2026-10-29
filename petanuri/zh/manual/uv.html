@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UV 区域与显示范围 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="并排显示 UV 直接绘制、网格线与吸附、UV 导航、跨接缝绘制、显示范围（仅显示选中部分、隐藏）、隐藏笔、半透明显示周围、保存隐藏预设、网格线与接缝线。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="并排显示 UV 并直接绘制、UV 网格线与吸附、UV 导航、跨接缝连续绘制、显示范围（仅显示所选部分、隐藏）、隐藏笔、淡化显示周围、保存隐藏预设、网格线与接缝线。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/uv">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="UV 区域与显示范围 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="并排显示 UV 直接绘制、网格线与吸附、UV 导航、跨接缝绘制、显示范围（仅显示选中部分、隐藏）、隐藏笔、半透明显示周围、保存隐藏预设、网格线与接缝线。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="并排显示 UV 并直接绘制、UV 网格线与吸附、UV 导航、跨接缝连续绘制、显示范围（仅显示所选部分、隐藏）、隐藏笔、淡化显示周围、保存隐藏预设、网格线与接缝线。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/uv">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "UV 区域与显示范围 | PetaNuri3D 使用手册",
-   "description": "并排显示 UV 直接绘制、网格线与吸附、UV 导航、跨接缝绘制、显示范围（仅显示选中部分、隐藏）、隐藏笔、半透明显示周围、保存隐藏预设、网格线与接缝线。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "并排显示 UV 并直接绘制、UV 网格线与吸附、UV 导航、跨接缝连续绘制、显示范围（仅显示所选部分、隐藏）、隐藏笔、淡化显示周围、保存隐藏预设、网格线与接缝线。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/uv",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,317 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv" aria-current="page">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv" aria-current="page">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ UV 区域与显示范围</p>
     <h1 class="mn-h1">UV 区域与显示范围</h1>
-    <p class="mn-intro">在 3D 视图旁显示 UV（纹理展开图），两侧均可绘制。绘制服装下方身体或头发内侧时，通过显示范围隐藏前方部分。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#uv">显示 UV 区域</a></li><li><a href="#grid">网格线与吸附</a></li><li><a href="#uvnav">UV 导航（缩放、移动）</a></li><li><a href="#seam">超出 UV 岛时（跨接缝绘制）</a></li><li><a href="#isolate">显示范围（仅显示选中部分、隐藏）</a></li><li><a href="#hidepen">隐藏笔、3D 下方工具条</a></li><li><a href="#ghost">淡化显示周围</a></li><li><a href="#presets">保存隐藏预设</a></li><li><a href="#wire">网格线、接缝线</a></li></ul></div>
-    <section class="mn-sec" id="uv"><h2>显示 UV 区域</h2><ul class="mn-list"><li>UV 有3种显示方式：仅3D、3D与UV并排、仅UV。仅3D时，点击视图右侧“UV”（<kbd>U</kbd>或 显示 → UV）可并排。拖边界可调整宽度。</li><li>并排时，点击 UV 右上 × 隐藏 UV（仅3D），点击 3D 右上 × 隐藏3D（仅UV）。<kbd>Shift</kbd>＋<kbd>U</kbd> 可切换仅UV⇔并排。下次保留最后显示方式。</li><li>显示当前纹理集 UV（左上名称），切换纹理集后同步更换。</li><li>UV 区域可使用钢笔、毛笔、橡皮擦、面填充、填充、封闭区域填充、渐变、图形、图章、吸管、模糊、涂抹。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D 视图旁显示 UV 区域的界面" loading="lazy"><figcaption>3D 与 UV 并排</figcaption></figure><ul class="mn-list"><li>在 UV 区域操作时，3D 视图中画笔圆影响的面会<strong>显示红色高亮</strong>。在 3D 操作时，UV 区域显示红点指示绘制位置。</li><li>滚轮缩放，中键拖动或<kbd>Space</kbd>＋拖动平移，UV 指引中的方块显示全部。“线”显示 UV 线，“UV 岛边缘”显示岛轮廓（▼ 设置颜色和浓度）。</li><li>UV 指引下排的 ⟲、⟳ 每次旋转15°（旋转后也可绘制）。</li><li>标题“对称 X、Y、Z”与 3D 左上同步（<a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a>）。</li><li>UV 区域较窄时，标题放不下的按钮会收进“⋯”面板。</li></ul><div class="mn-tip">绘制范围（所有版本）：在 UV 区域左下选择“UV 内”“边距内”“全部”。UV 内与以前相同只涂岛内，边距内包括岛及其外侧的边距带，全部则可涂到纹理任意位置。除画笔、毛笔和橡皮外，图形、填充、渐变、图章、模糊和涂抹也遵循此范围（在 3D 视图中绘制时保持不变）。</div><div class="mn-tip">左下的边距（0～128px 或全部）与导出时的边距相同。标题栏的“边距线”可显示距离岛边缘该宽度的外侧线。滤镜 → 在新图层上生成边距，可将岛边缘颜色向外扩展的部分单独生成到新图层（所有版本）。</div><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv-area-v112.webp" width="452" height="940" alt="UV 区域左下的绘制范围、边距与边距线" loading="lazy"><figcaption>绘制范围与边距线</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="在新图层上生成边距窗口" loading="lazy"><figcaption>在新图层上生成边距</figcaption></figure></div><div class="mn-tip">3D／UV 小窗口（所有版本）：3D 与 UV 并排时，用右上 × 下方的按钮将该视图放入小窗口（另一方铺满）。UV 标题 ⋯ 中的“UV 放入小窗口（3D 全屏）”“3D 放入小窗口（UV 全屏）”效果相同。</div><div class="mn-tip">小窗口可放在应用窗口内的任意位置，也可放在面板上方。拖动标题移动，拖动四边或四角调整大小。⇄ 交换，▣ 恢复并排显示，✕ 关闭小窗口一方。右上的锁可固定（再按一次解除）。缩小时，UV 会折叠绘制范围栏并缩小指引，3D 会缩小导航。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="3D 全屏、UV 放入小窗口的画面" loading="lazy"><figcaption>UV 放入小窗口</figcaption></figure><div class="mn-tip">3D 中也绘制到岛外的填充区（所有版本）：在笔、毛笔、橡皮的工具属性中开启后，在 3D 中画完时会将线条按边距宽度扩展到 UV 岛外（不会进入相邻岛；撤销一次连同线条一起还原）。宽度“填充宽度（px）”与 UV 区域左下及导出边距共用。</div><div class="mn-tip">从 UV 边缘绘制（Pro）：滤镜 →“从 UV 边缘绘制（新图层）”可根据到 UV 岛边缘的距离，在新图层上生成线条或渐变。可设置形状（线条、渐变）、方向（岛内侧、岛外侧、两者）、宽度、距边缘的起点、模糊（纹理 px）和不透明度。颜色可选“前景色”或“选择颜色”（色板样本、颜色栏）（透明色时，会直接显示当前图层中将被擦除的部分）。窗口打开期间，UV 和 3D 中会显示临时的线条、渐变，更改数值后立即更新（取消、Esc 可清除）。选择“岛内侧”时，岛外的边缘（内边距宽度）也会以最近岛像素相同的浓度绘制（可通过“岛外边缘（内边距）也绘制”关闭）。若有选区则只作用于选区内。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uv-border-v121.webp" width="384" height="547" alt="从 UV 边缘绘制的窗口：形状、方向、宽度、起点、模糊、不透明度、岛外边缘也绘制、颜色、预览" loading="lazy"><figcaption>从 UV 边缘绘制（窗口打开期间 UV 和 3D 中显示临时线条）</figcaption></figure></section><section class="mn-sec" id="grid"><h2>网格线与吸附</h2><ul class="mn-list"><li>UV 标题“网格”可显示、隐藏格线。旁边 ▼ 设置格数（将纹理边长分为2、4、8、16、32、64、128）和吸附，也显示每格 px 数。</li><li>线条仅用于显示，不写入绘制内容、保存或导出。</li><li><strong>“移动/变换时吸附到网格”</strong>（默认开启，仅显示网格时生效）：在 UV 区域移动移动/变换工具、变换（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）或贴 UV 图片的框时，四角或中心接近网格线会吸附。角边手柄、自由变换角点、扭曲网格点也吸附。</li><li><kbd>Ctrl</kbd> 按住期间不吸附。3D 区域操作框不吸附。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV 区域显示网格并打开网格 ▼" loading="lazy"><figcaption>网格线与 ▼（格数、吸附）</figcaption></figure></section><section class="mn-sec" id="uvnav"><h2>UV 导航（缩放、移动）</h2><p>UV 区域右上有与 3D 导航相似的导航控件，仅用数位笔即可操作。</p><ul class="mn-list"><li><strong>放大镜</strong>上下拖动缩放（向上放大）。<strong>抓手</strong>拖动平移。<strong>方形</strong>显示全部。</li><li>拖上方手柄可自由移动，左侧、底边和左下角可调整大小。</li><li>“—”可收成小圆形图标，点击恢复（也可 显示 → UV → UV 导航）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV 区域。右上有缩放、移动、显示全部导航" loading="lazy"><figcaption>UV 区域右上导航</figcaption></figure><div class="mn-tip">旋转（所有版本）：用指引下排的 ⟲、角度、⟳ 旋转（⟲、⟳ 每次 15°，点击角度恢复 0°，Shift＋滚轮每次 5°）。任意角度可左右拖动指引的旋转按钮（双击恢复 0°），或按住 Space＋Shift 拖动区域。</div><div class="mn-tip">预设倍率（所有版本）：按 Ctrl＋1·2·3 将 UV 区域（打开 2D 画布时为画布）设为预设倍率（默认 100%、200%、50%；100% 即纹理 1 像素对应屏幕 1 px）。可在文件 → 偏好设置 → 操作的“预设倍率（UV·2D）”中更改。</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-guide-v120.webp" width="168" height="101" alt="UV 区域右上的指引与旋转行" loading="lazy"><figcaption>UV 指引的旋转</figcaption></figure></section><section class="mn-sec" id="seam"><h2>超出 UV 岛时（跨接缝绘制）</h2><ul class="mn-list"><li>在 UV 区域绘制时，即使画笔圆超出 UV 岛，也<strong>不会绘制仅在 UV 上相邻的其他岛（3D 中相距较远）</strong>。</li><li>标题中的<strong>“跨接缝绘制”</strong>（默认开启）：超出 UV 岛边缘的部分会沿 3D 接缝延续到对面连接的面，接缝处不断开。关闭则仅绘制当前 UV 岛（右键菜单、显示 → UV 也有相同开关）。</li><li>绘制范围为“UV 内”时，UV 岛外（未被任何面使用的区域），画笔圆显示为淡虚线和 ×。从岛外开始的笔画在进入岛后生效。文字、图形、图章、渐变也可从岛外放置。</li></ul></section><section class="mn-sec" id="isolate"><h2>显示范围（仅显示选中部分、隐藏）</h2><ol class="mn-steps"><li>在 UV 或 3D 选择 UV 岛、面（按岛选择、按面选择、套索、顶点组等）。</li><li>使用 3D 左上显示范围图标、<kbd>Shift</kbd>＋<kbd>H</kbd>或 UV 标题“仅显示所选部分”，仅在 3D 显示选中区域。</li><li><kbd>H</kbd>（UV 标题“隐藏所选部分”）则隐藏选区。可多次叠加隐藏。</li><li><kbd>Alt</kbd>＋<kbd>H</kbd> 恢复显示全部。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="仅在 3D 显示 UV 中选中的部分" loading="lazy"><figcaption>仅在 3D 显示 UV 所选部分</figcaption></figure><ul class="mn-list"><li>“仅显示所选部分”后，改变选区会自动更新显示，无需再次点击（再次点击恢复显示全部）。</li><li><strong>隐藏后会取消选区</strong>，可直接绘制可见部分。原选区可通过 3D 下方［恢复选区］或 <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd> 可撤销。</li><li>3D 右键“隐藏此 UV 岛”“仅显示此 UV 岛”可直接隐藏或显示点击的岛（不改变选区和撤销历史）。</li><li><strong>显示范围图标 ▼</strong>：左侧“从选区”（仅显示选中部分、隐藏选中部分、也显示选中部分、隐藏笔）与“隐藏部分”（反转、显示全部、扩展／收缩、半透明显示），右侧“隐藏预设”（已保存列表）。未隐藏任何内容时从此操作。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="显示范围 ▼ 窗口。左侧从选区和已隐藏部分，右侧隐藏预设列表" loading="lazy"><figcaption>显示范围 ▼ 窗口</figcaption></figure><div class="mn-tip">隐藏部分不阻挡深度，可以绘制服装下面或头发内部的表面。无法直接在隐藏部分绘制，也无法用吸管或填充选取。启用隐藏面对称绘制后，3D绘制也可作用于隐藏的对称侧，还可隐藏整个对象（网格）（<a href="/petanuri/zh/manual/sets#objects">显示、隐藏对象</a>）。</div><div class="mn-tip warn">隐藏、显示操作不计入撤销（<kbd>Ctrl</kbd>＋<kbd>Z</kbd>）历史。恢复时显示全部或调用已保存隐藏预设。</div></section><section class="mn-sec" id="hidepen"><h2>隐藏笔、3D 下方工具条</h2><p>绘制重叠布料后方等位置时，可直接隐藏划过部分。</p><ol class="mn-steps"><li>选择左侧工具栏“隐藏笔”（也可用 3D 下方［隐藏笔］切换）。</li><li>辅助工具选择“按面隐藏”（四边面的2个三角形一起处理）或“按 UV 岛隐藏”（按整个 UV 岛）。</li><li>在 3D 划过的位置会隐藏，也可在 UV 区域点击隐藏。</li><li>再次点击［隐藏笔］恢复之前工具。</li></ol><div class="mn-tip">一次划过不会继续隐藏前方消失后新露出的后方面。要隐藏后方，请再划一次。</div><p><strong>3D 下方中央工具条</strong>仅在存在隐藏部分或使用隐藏笔时显示。含［隐藏笔］［面｜岛］［隐藏预设 ▼］、当前状态（“隐藏预设：〇〇”“部分已隐藏（未保存的隐藏状态）”“仅显示所选部分”）及［显示全部］。</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="隐藏披风后，3D 下方出现工具条" loading="lazy"><figcaption>隐藏披风及 3D 下方工具条</figcaption></figure></section><section class="mn-sec" id="ghost"><h2>淡化显示周围</h2><ul class="mn-list"><li>存在隐藏部分时，用 3D 下方［半透明显示周围］显示已隐藏内容，方便参照周围绘制。</li><li>旁边滑块调整浓度（5〜80%）。▼ 窗口“隐藏部分”中的“半透明显示”效果相同。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="半透明显示隐藏披风" loading="lazy"><figcaption>淡化显示隐藏披风</figcaption></figure><div class="mn-tip">半透明显示的隐藏部分不能直接绘制。启用隐藏面对称绘制后，在3D绘制另一侧时也会作用于隐藏侧。</div></section><section class="mn-sec" id="presets"><h2>保存隐藏预设</h2><p>为常用隐藏方式命名保存，可随时恢复相同显示。</p><ol class="mn-steps"><li>隐藏需要隐藏的部分。</li><li>3D 下方［隐藏预设 ▼］（或显示范围 ▼ 窗口）→“保存当前隐藏预设”，输入名称（同名覆盖）。</li><li>在同一列表点击名称即可恢复该隐藏方式。</li></ol><ul class="mn-list"><li>“管理隐藏预设（名称、删除）”可更名和删除。</li><li>已保存隐藏预设与当前隐藏状态会存入工程文件（.petanuri），重新打开也可使用。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="隐藏预设列表与保存当前隐藏预设菜单" loading="lazy"><figcaption>保存隐藏预设</figcaption></figure></section><section class="mn-sec" id="wire"><h2>网格线、接缝线</h2><ul class="mn-list"><li>3D 左上图标（显示 → 线与尺子 → 网格线／接缝线）可显示多边形线和 UV 接缝、岛边缘。接缝线也可用 <kbd>Alt</kbd>＋<kbd>W</kbd> 切换。</li><li>图标下 ▼ 可选择浓度、颜色（蓝、黑、白）、是否显示背面或后方线。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="网格线设置" loading="lazy"><figcaption>网格线 ▼ 设置</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="仅可见面线条" loading="lazy"><figcaption>仅可见面</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="也显示背面线条" loading="lazy"><figcaption>也显示背面、后方线条</figcaption></figure></div></section>
-    <section class="mn-sec" id="v111-controls"><h2>v1.1.1操作变更</h2><p><a href="/petanuri/zh/manual/screen#settings">相机操作</a> · <a href="/petanuri/zh/manual/draw#mirror">隐藏面的对称绘制</a></p></section><nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/layers"><small>← 上一页</small>图层</a><a class="next" href="/petanuri/zh/manual/screen"><small>下一页 →</small>界面、面板、偏好设置</a></nav>
+    <p class="mn-intro">在 3D 视图旁并排显示 UV（纹理展开图），从哪一边都能绘制。衣服下的身体、头发内侧这类位于里面的面，用显示范围把前面的部分隐藏起来再绘制。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>按 <kbd>U</kbd> 在 3D 旁并排显示 UV。直接在 UV 上也能绘制（<a href="#uv">详情</a>）。</li>
+      <li>用 UV 区域左下角的“绘制范围”，选择只在 UV 岛内绘制，还是绘制到外侧的边距（<a href="#area">详情</a>）。</li>
+      <li>绘制里面的部分时，选中 UV 岛或面，按 <kbd>Shift</kbd>+<kbd>H</kbd>（仅显示所选部分）或 <kbd>H</kbd>（隐藏所选部分）。按 <kbd>Alt</kbd>+<kbd>H</kbd> 恢复全部显示（<a href="#isolate">详情</a>）。</li>
+      <li>重叠的布料可以用“隐藏笔”划过来隐藏（<a href="#hidepen">详情</a>）。</li>
+      <li>UV 接缝的位置，可以用 <kbd>Alt</kbd>+<kbd>W</kbd>（接缝线）显示在 3D 上（<a href="#wire">详情</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#uv">显示 UV 并直接绘制</a></li><li><a href="#uvnav">操作 UV 的显示（缩放、移动、旋转）</a></li><li><a href="#grid">UV 网格线与吸附</a></li><li><a href="#area">绘制范围与边距（绘制到 UV 岛外）</a></li><li><a href="#seam">超出 UV 岛时（跨接缝绘制）</a></li><li><a href="#isolate">显示范围（仅显示所选部分、隐藏）</a></li><li><a href="#hidepen">划过即隐藏（隐藏笔）与 3D 下方的栏</a></li><li><a href="#ghost">半透明显示已隐藏的部分</a></li><li><a href="#presets">保存隐藏预设</a></li><li><a href="#wire">显示网格线与接缝线</a></li><li><a href="#uvborder">沿 UV 边缘绘制（从 UV 边缘绘制）</a></li><li><a href="#gltf">glTF、glb、VRM 的 UV 方向</a></li></ul></div>
+
+    <section class="mn-sec" id="uv" data-keywords="UV视图 UV编辑器 展开图 平面 2D 分屏 并排显示 UV显示 直接画在纹理上 小窗口 画中画">
+      <h2>显示 UV 并直接绘制</h2>
+      <p>在 UV 区域，可以直接在纹理的展开图上绘制。适用于 3D 中难以触及的位置，或想画直线的地方。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>U</kbd>（也可以用 3D 视图右端的“UV”，或 显示 → UV → UV（与 3D 并排））。3D 旁边会出现 UV 区域。</li>
+        <li>拖动交界处，调整宽度。</li>
+        <li>在 UV 区域中，像在 3D 里一样绘制。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D 视图旁并排显示 UV 区域的界面" loading="lazy"><figcaption>3D 与 UV 并排</figcaption></figure>
+      <ul class="mn-list">
+        <li>显示的是所选纹理集的 UV（左上角有名称）。重新选择纹理集后会切换（<a href="/petanuri/zh/manual/sets#choose">选择纹理集</a>）。</li>
+        <li>可用的工具：钢笔、毛笔、橡皮擦、多边形填充、填充、填充封闭区域、渐变、图形、图章、吸管、模糊、涂抹。</li>
+        <li>操作 UV 区域期间，3D 视图中进入画笔圆圈的面会发红光。操作 3D 期间，UV 区域会用红点显示绘制位置。</li>
+        <li>标题栏的“对称 X、Y、Z”与 3D 左上角的是同一个开关。在 UV 上绘制时，也会绘制到 3D 中沿相同轴对称折返的位置（<a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a>）。</li>
+        <li>右下角会小小地显示副纹理集的 UV。点击后副变为主。用 ✕ 隐藏，用“显示副纹理集”恢复（<a href="/petanuri/zh/manual/sets#cross">主与副</a>）。</li>
+      </ul>
+      <h3 id="uv-layout">切换显示方式（仅 3D、并排、仅 UV、小窗口）</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">显示方式</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>3D 与 UV 并排</td><td><kbd>U</kbd>、3D 视图右端的“UV”；仅显示 UV 时，用 UV 区域左端的“3D”</td></tr>
+        <tr><td>仅 3D</td><td>UV 区域右上角的 ✕（再按一次 <kbd>U</kbd> 也可以）</td></tr>
+        <tr><td>仅 UV</td><td>3D 视图右上角的 ✕、<kbd>Shift</kbd>+<kbd>U</kbd>（显示 → UV → 仅 UV（隐藏 3D））</td></tr>
+        <tr><td>把其中一边设为小窗口</td><td>并排显示时，点击右上角 ✕ 下方的按钮。也可以用 显示 → UV →“UV 放入小窗口（3D 全屏）”“3D 放入小窗口（UV 全屏）”</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>最后一次的显示方式，下次打开时仍然保持。</li>
+        <li>小窗口只要在应用窗口内，也可以放在面板上方。拖动标题栏移动，拖动四边、四角改变大小。</li>
+        <li>用小窗口的 ⇄ 与全屏互换，用 ▣ 恢复为并排显示，用 ✕ 关闭小窗口一侧。右上角的锁可以固定不动（再按一次解除）。</li>
+        <li>即使按 <kbd>Tab</kbd> 隐藏面板，小窗口也会保留。2D 画布不能设为小窗口。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="3D 全屏、UV 为小窗口的界面" loading="lazy"><figcaption>UV 设为小窗口时</figcaption></figure>
+      <h3 id="uv-lines">显示 UV 线、UV 岛边缘、边距线</h3>
+      <ul class="mn-list">
+        <li>用标题栏的“UV 线”显示 UV 的线，“岛边缘”显示 UV 岛的轮廓，“边距线”显示从 UV 岛边缘向外一个边距宽度的线，可分别切换显示和隐藏（<a href="#area">边距</a>）。</li>
+        <li>用旁边的 ▼ 可以更改 3 种线的颜色和浓度（5–100%）。点击“恢复默认颜色”即可恢复。</li>
+        <li>UV 区域的右键菜单中也有同样的开关。</li>
+        <li>想把 UV 的线做成图像，在其他软件中用作底稿时，用“将 UV 贴图导出为 PNG”（<a href="/petanuri/zh/manual/export#uvmap">详情</a>）。</li>
+      </ul>
+      <h3 id="uv-normal">按高度查看法线贴图文件夹</h3>
+      <p><span class="tier pro">Pro</span> 绘制目标为法线贴图时，UV 区域平时以法线贴图的颜色显示。开启 3D 右键 → 显示 →“以高度（灰色）显示法线贴图文件夹（UV）”后，会以灰色按绘制的高度显示。白色是凸起，黑色是凹陷处（<a href="/petanuri/zh/manual/material#channels">绘制目标</a>）。</p>
+      <h3 id="uv-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>找不到标题栏的按钮</b>：UV 区域较窄时，放不下的按钮会收进“⋯”。点击“⋯”即可显示。</li>
+        <li><b>不显示 UV</b>：打开 3D 模型后才能显示。请先打开模型。</li>
+        <li><b>有画不上的地方</b>：UV 被贴在一个点上的面、超出 0–1 范围的面、重叠超过 4 层的地方，无法绘制。打开时会在右下角提示。</li>
+        <li><b>UV 岛放在 0–1 范围之外</b>：会映射到纹理重复后颜色相同的 0–1 范围内的位置来绘制。不会更改模型文件。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvnav" data-keywords="放大 缩小 缩放 平移 滚动 旋转 倾斜 100% 原始大小 导航 引导 显示全部 适应窗口">
+      <h2>操作 UV 的显示（缩放、移动、旋转）</h2>
+      <p>UV 区域用鼠标或只用数位笔都能操作。右上角的导航与 3D 导航形状相同。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想做的事</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>放大、缩小</td><td>滚轮、上下拖动导航的放大镜（向上为拉近）</td></tr>
+        <tr><td>移动</td><td>中键拖动、<kbd>Space</kbd>+拖动、拖动导航的手掌</td></tr>
+        <tr><td>显示全部</td><td>导航的方框、右键的“显示全部 UV”</td></tr>
+        <tr><td>旋转</td><td>导航下一行的 ⟲、⟳ 每次 15°、<kbd>Shift</kbd>+滚轮每次 5°</td></tr>
+        <tr><td>旋转到任意角度</td><td>左右拖动导航的旋转按钮、按住 <kbd>Space</kbd>+<kbd>Shift</kbd> 拖动区域</td></tr>
+        <tr><td>恢复旋转</td><td>点击导航的角度（双击旋转按钮也能回到 0°）</td></tr>
+        <tr><td>设为预设倍率</td><td><kbd>Ctrl</kbd>+<kbd>1</kbd>、<kbd>2</kbd>、<kbd>3</kbd>（默认为 100%、200%、50%）</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV 区域。右上角有缩放、移动、显示全部的导航" loading="lazy"><figcaption>UV 区域右上角的导航</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-guide-v120.webp" width="168" height="101" alt="UV 导航，以及下一行的旋转" loading="lazy"><figcaption>导航的旋转行</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>旋转状态下也可以绘制。</li>
+        <li>100% 表示纹理的 1 个像素对应屏幕的 1 px。倍率在 文件 → 偏好设置 → 操作 的“预设倍率（UV·2D）”中更改。打开 2D 画布时，对 2D 画布生效。在 3D 视图中不可用。</li>
+        <li>导航可以用上方的控制柄移到任意位置，拖动左、下边缘和左下角改变大小。点击“—”收成小圆形图标，再点击即可恢复（也可以用 显示 → UV → UV 导航（缩放、移动））。</li>
+        <li>在 文件 → 偏好设置 → 界面 → 显示 中开启“在导航中显示旋转、缩放滑块”，导航下方会出现滑块（3D 导航也一样）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="grid" data-keywords="格子 方格 网格 对齐 吸附 贴齐 位置对齐 snap">
+      <h2>UV 网格线与吸附</h2>
+      <p>显示网格，用来对齐图案或贴章的位置。移动边框时，会吸附到网格线上。</p>
+      <ol class="mn-steps">
+        <li>点击 UV 区域标题栏的“网格”。网格会显示出来。</li>
+        <li>在旁边的 ▼ 中选择“格数”。把纹理的一边分成 2、4、8、16、32、64、128 份。</li>
+        <li>移动、变换的边框时，边框的 4 个角或中心，会吸附到附近的网格线上。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV 区域显示网格线并打开网格的 ▼" loading="lazy"><figcaption>网格线与 ▼（格数、吸附）</figcaption></figure>
+      <ul class="mn-list">
+        <li>每格多少 px 会显示在 ▼ 中（2048px 分成 16 份是 128px）。</li>
+        <li>线只是显示，不会进入所绘图像、保存和导出。拉近时线也不会变粗。</li>
+        <li>“移动/变换时吸附到网格”默认就是开启的。只在显示网格时生效。</li>
+        <li>吸附的对象是移动·变形工具、变换（<kbd>Ctrl</kbd>+<kbd>T</kbd>）、将图像贴到 UV 时的边框。角、边的控制柄，自由变换的角，变形的点也会吸附（<a href="/petanuri/zh/manual/edit#transform">变换</a>）。</li>
+        <li>按住 <kbd>Ctrl</kbd> 期间不会吸附。3D 区域上的边框也不吸附。</li>
+        <li>也可以通过 显示 → UV →“UV 网格”来显示。还可以为吸附的开关分配按键（<a href="/petanuri/zh/manual/keys">快捷键</a>）。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="area" data-keywords="出血 bleed 扩边 溢出 UV岛外 接缝线 白线 缝隙 margin padding 溢色">
+      <h2>绘制范围与边距（绘制到 UV 岛外）</h2>
+      <p>在 UV 岛的外侧稍微扩展一点边缘的颜色，游戏中接缝处就不容易出现线条。这条扩展出来的带状区域称为边距。在 UV 区域的左下角，可以选择绘制到哪里为止。</p>
+      <ol class="mn-steps">
+        <li>在 UV 区域左下角的“绘制范围”中，点击“UV 内”“边距内”“全图”之一。</li>
+        <li>选“边距内”时，用下方的控制柄设定边距的宽度（0–128px）。</li>
+        <li>在 UV 区域中绘制。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">绘制范围</th><th scope="col">可绘制的位置</th></tr></thead><tbody>
+        <tr><td>UV 内（默认）</td><td>仅 UV 岛内。可使用“跨接缝绘制”（<a href="#seam">详情</a>）</td></tr>
+        <tr><td>边距内</td><td>UV 岛及其外侧的边距带之内。钢笔、图形等会溢出到相邻的 UV 岛</td></tr>
+        <tr><td>全图</td><td>纹理的任何位置。会溢出到 UV 岛外和相邻的 UV 岛</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-area-v112.webp" width="452" height="940" alt="UV 区域左下角的绘制范围与边距、边距线" loading="lazy"><figcaption>绘制范围与边距线</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>除了钢笔、毛笔、橡皮擦、多边形填充，图形、填充、渐变、图章、模糊、涂抹也遵循这个范围。在 3D 视图中绘制时不受影响。</li>
+        <li>“边距内”“全图”下的填充，会把涂的部分扩展到 UV 岛外。</li>
+        <li>边距的值与<strong>导出扩边相同</strong>（“与导出共用”）。在任一处更改，两边都会改变。“全部”就是导出窗口中的“填满 UV 岛外的全部区域”（<a href="/petanuri/zh/manual/export#pad">导出扩边</a>）。</li>
+        <li>左下角的栏可以用 ▼ 折小。即使折小，绘制范围和跨接缝绘制仍可使用。</li>
+      </ul>
+      <h3 id="area-3d">在 3D 中画的线也扩展到边距</h3>
+      <p>在钢笔、毛笔、橡皮擦的工具属性中开启“3D 中也绘制到岛外的填充区”。在 3D 中画完后，会把线向 UV 岛外扩展一个边距的宽度。</p>
+      <ul class="mn-list">
+        <li>不会进入相邻的 UV 岛。撤销一次，连线一起撤销。</li>
+        <li>宽度是工具属性中的“填充宽度（px）”。与 UV 区域左下角、导出扩边的值相同。</li>
+        <li>关闭时，只会从 UV 岛边缘稍微扩展一点。</li>
+      </ul>
+      <h3 id="area-layer">创建仅含边距的图层</h3>
+      <p>用 滤镜 →“在新图层上生成边距”，可以把当前图像（所有图层叠加后的颜色）的边缘颜色向 UV 岛外扩展出的部分，单独做成一个新图层。UV 岛内是透明的，图层会放在所选图层的正上方。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="在新图层上生成边距的窗口" loading="lazy"><figcaption>在新图层上生成边距（设定宽度后点击“创建”）</figcaption></figure>
+      <div class="mn-tip">笔刷边缘的淡薄处不视为已绘制的地方，而是把不透明处的颜色扩展到 UV 岛外。UV 岛外的像素，取直线距离最近的 UV 岛像素的颜色，所以从斜边也能平滑地扩展。</div>
+    </section>
+
+    <section class="mn-sec" id="seam" data-keywords="接缝 断开 中断 溢出 相邻岛 跨越 连续 相连">
+      <h2>超出 UV 岛时（跨接缝绘制）</h2>
+      <p>有些地方在 UV 上是分开的，但在 3D 中是相连的。可以把从接缝溢出的部分，接着绘制到 3D 中相连的面上。</p>
+      <ul class="mn-list">
+        <li>在 UV 区域绘制时，即使圆圈溢出到 UV 岛外，也不会涂到只是在 UV 上相邻、而在 3D 中分开的其他 UV 岛。</li>
+        <li>左下角的“跨接缝绘制”（默认开启）：从 UV 岛边缘接缝溢出的部分，会接着绘制到 3D 中与该接缝另一侧相连的面上。线条在接缝处不会断开。</li>
+        <li>关闭后，只在正在绘制的 UV 岛内绘制。右键的“UV 岛外继续绘制到 3D 上相连的相邻部分”、显示 → UV 中也有同样的开关。</li>
+        <li>跨接缝绘制仅在绘制范围为“UV 内”时可用。</li>
+      </ul>
+      <h3 id="seam-outside">从 UV 岛外开始绘制时</h3>
+      <ul class="mn-list">
+        <li>绘制范围为“UV 内”时，在没有被任何面使用的地方，画笔的圆圈会变成淡淡的虚线并带有 ×。钢笔、毛笔、橡皮擦、多边形填充无法绘制。</li>
+        <li>从 UV 岛外开始绘制的线，从进入 UV 岛的地方开始上色。</li>
+        <li>文字、图形、图章、渐变，即使从 UV 岛外也能放置（上色的只有 UV 岛内）。</li>
+      </ul>
+      <h3 id="seam-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>出现“此图层无法跨接缝绘制”</b>：剪贴图层（及其蒙版）是配合下方图层的形状来绘制的，所以不会延伸到接缝的另一侧。</li>
+        <li><b>“跨接缝绘制”无法点击</b>：请把绘制范围设为“UV 内”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="isolate" data-keywords="隐藏 solo 隔离 isolate 衣服下面 内侧 里面 看不到 画不了 重叠 画不上 头发内侧">
+      <h2>显示范围（仅显示所选部分、隐藏）</h2>
+      <p>衣服下的身体和头发内侧，会被前面的面挡住而画不了。用显示范围隐藏前面的部分，里面的面就能直接看到并绘制。</p>
+      <ol class="mn-steps">
+        <li>在 UV 区域或 3D 中，选择 UV 岛或面（用选区的“按 UV 岛选择”“按面选择”、套索、顶点组等）。</li>
+        <li>按 <kbd>Shift</kbd>+<kbd>H</kbd>（也可以用 3D 视图左上角的显示范围图标，或 UV 标题栏的“仅显示所选部分”）。3D 中只会显示所选部分。</li>
+        <li>只想隐藏前面的部分时，按 <kbd>H</kbd>（“隐藏所选部分”）。可以反复追加隐藏。</li>
+        <li>绘制完后，按 <kbd>Alt</kbd>+<kbd>H</kbd> 恢复全部显示。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="只在 3D 中显示 UV 所选部分" loading="lazy"><figcaption>仅在 3D 显示 UV 所选部分</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">说明</th></tr></thead><tbody>
+        <tr><td>仅显示所选部分（<kbd>Shift</kbd>+<kbd>H</kbd>）</td><td>只显示所选的 UV 岛、面。开着的状态下重新选择，不必再按一次，显示就会改变。再按一次则全部显示</td></tr>
+        <tr><td>隐藏所选部分（<kbd>H</kbd>）</td><td>隐藏所选的 UV 岛、面。隐藏后选区会被取消，所以可以直接在可见处绘制</td></tr>
+        <tr><td>同时显示所选部分</td><td>把已隐藏的部分中所选的部分恢复为可见</td></tr>
+        <tr><td>反转显示范围</td><td>互换可见的部分和隐藏的部分</td></tr>
+        <tr><td>扩大、缩小</td><td>把可见的部分，在 UV 上按设定的 px（1–64）扩大、缩小</td></tr>
+        <tr><td>全部显示（<kbd>Alt</kbd>+<kbd>H</kbd>）</td><td>把隐藏的部分和隐藏的对象全部恢复显示</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>这些都在 显示 → 显示范围，以及 3D、UV 右键菜单的“显示范围”中。</li>
+        <li>被取消的选区，可用 3D 下方栏的［重新选择］或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> 恢复。</li>
+        <li>隐藏的部分在 UV 区域会出现斜线。隐藏期间，“全部显示”会变成醒目的颜色。</li>
+        <li>也可以按对象（网格）隐藏（<a href="/petanuri/zh/manual/sets#objects">显示、隐藏对象</a>）。</li>
+      </ul>
+      <h3 id="isolate-island">仅隐藏、显示点击的 UV 岛（右键）</h3>
+      <ul class="mn-list">
+        <li>3D 右键的“隐藏此 UV 岛”“仅显示此 UV 岛”，会直接隐藏、显示点击处的 UV 岛。选区和撤销历史不会改变。</li>
+        <li>3D 右键的“选择此 UV 岛（选区）”，会把点击的 UV 岛设为选区。</li>
+        <li>UV 区域的右键菜单中有“选择此 UV 岛（选区）”“将此 UV 岛添加到选区”“仅在 3D 中显示此 UV 岛”“在 3D 中隐藏此 UV 岛”。这些是先选中该 UV 岛再显示或隐藏，所以选区会改变。</li>
+      </ul>
+      <h3 id="isolate-pop">显示范围 ▼ 的窗口</h3>
+      <p>点击 3D 视图左上角显示范围图标下方的 ▼，会弹出汇总显示范围操作的窗口。没有隐藏任何内容时，从这里操作。</p>
+      <ul class="mn-list">
+        <li>左上“从选区”：仅显示所选部分、隐藏所选部分、同时显示所选部分。“直接”下方是隐藏笔。</li>
+        <li>左下“隐藏部分”：反转、全部显示、范围（px）与扩大、缩小、淡化显示周围。</li>
+        <li>右侧“隐藏预设”：当前隐藏预设的名称，以及已保存的隐藏预设列表（<a href="#presets">保存隐藏预设</a>）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="显示范围 ▼ 的窗口。左侧是从选区和隐藏部分，右侧是隐藏预设列表" loading="lazy"><figcaption>显示范围 ▼ 的窗口</figcaption></figure>
+      <div class="mn-tip">隐藏的部分不会遮挡后面，所以里面的面可以直接看到并绘制。隐藏的部分无法直接绘制，吸管和填充也不会拾取。<span id="v111-controls"></span>在对称的 ▼ 中开启“在隐藏侧对称绘制（3D 画笔）”后，用 3D 的钢笔、画笔、橡皮擦、图章，也能对称地绘制到被隐藏部分的另一侧（<a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a>）。</div>
+      <div class="mn-tip warn">隐藏、显示的操作不会进入撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）的历史。要恢复时，请全部显示，或调用已保存的隐藏预设。</div>
+      <h3 id="isolate-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>出现“请先选择 UV 岛或面”</b>：什么都没有选中。用选区工具的“按 UV 岛选择”“按面选择”点击 3D 或 UV 区域，或用右键的“选择此 UV 岛（选区）”选中后再操作。UV 标题栏的按钮在选中之前会显示为淡色。</li>
+        <li><b>按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 显示没有恢复</b>：隐藏操作不会进入历史。用 <kbd>Alt</kbd>+<kbd>H</kbd>，或 3D 下方栏的“全部显示”恢复。</li>
+        <li><b>隐藏后选区消失了</b>：隐藏时选区会被取消。用 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>（重新选择）即可恢复。</li>
+        <li><b>模型的一部分不显示</b>：仍通过显示范围或对象处于隐藏状态。用 <kbd>Alt</kbd>+<kbd>H</kbd> 恢复全部显示。隐藏的状态会保存在工程文件中，所以重新打开后仍是隐藏的。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="hidepen" data-keywords="隐藏工具 隐藏笔 蒙版 布料内侧 裙子 荷叶边 叠穿 划过 画不了 里面 项圈内侧 衣服下面">
+      <h2>划过即隐藏（隐藏笔）与 3D 下方的栏</h2>
+      <p>绘制重叠布料的里面时，可以把划过的地方直接隐藏。不必事先创建选区。</p>
+      <ol class="mn-steps">
+        <li>选择左侧工具栏的“隐藏笔”（也可以用 3D 下方栏的［隐藏笔］开关）。</li>
+        <li>在辅助工具中选择“按面隐藏”（四边形的面会连同 2 个三角形一起）或“按 UV 岛隐藏”（按 UV 岛整体。一块布、一个部件等）。</li>
+        <li>在 3D 中划过，划过的地方就被隐藏。在 UV 区域点击也能隐藏。</li>
+        <li>再次点击［隐藏笔］，会回到之前的工具。</li>
+      </ol>
+      <div class="mn-tip">一次划过，不会隐藏前面被隐藏后露出的里面的面。想把里面也隐藏时，再划一次。</div>
+      <h3 id="hidepen-bar">3D 下方的栏</h3>
+      <p>3D 视图下方中间的栏，只在隐藏期间和使用隐藏笔期间出现。</p>
+      <ul class="mn-list">
+        <li>依次排列着［隐藏笔］［面｜岛］［隐藏预设 ▼］［重新选择］［淡化显示周围］，以及当前状态和［全部显示］。</li>
+        <li>当前状态是“隐藏预设：〇〇”（保持已保存的隐藏预设）、“部分已隐藏（未保存的隐藏状态）”、“仅显示所选部分”之一。隐藏了对象时，还会显示“已隐藏 n 个对象”。</li>
+        <li>点击［全部显示］，一次就恢复全部显示。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="隐藏披风后，3D 下方出现栏" loading="lazy"><figcaption>隐藏披风的状态，以及 3D 下方的栏</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="ghost" data-keywords="半透明 透视 ghost 淡淡 周围 确认 淡化 透明显示">
+      <h2>半透明显示已隐藏的部分</h2>
+      <p>把隐藏的部分半透明地显示出来，就能一边确认周围一边绘制。</p>
+      <ol class="mn-steps">
+        <li>隐藏期间，点击 3D 下方栏的［淡化显示周围］。隐藏的部分会半透明显示。</li>
+        <li>用旁边的控制柄更改浓度（5–80%）。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在显示范围 ▼ 窗口“隐藏部分”中的“淡化显示周围”也一样（0% 为不显示）。</li>
+        <li>即使淡淡地显示，也不能直接在隐藏的部分上绘制。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="半透明显示被隐藏的披风" loading="lazy"><figcaption>淡化显示被隐藏的披风</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="presets" data-keywords="预设 登记 保存 调用 切换 命名 记住">
+      <h2>保存隐藏预设</h2>
+      <p>给常用的隐藏方式命名并保存，随时可以恢复到同样的隐藏方式。</p>
+      <ol class="mn-steps">
+        <li>隐藏想隐藏的部分。</li>
+        <li>点击 3D 下方栏的［隐藏预设 ▼］→“保存当前隐藏预设”，起个名字（同名则覆盖）。也可以从显示范围 ▼ 窗口保存。</li>
+        <li>在同一列表中点击名称，就会恢复到该隐藏方式。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>用“管理隐藏预设（名称、删除）”可以重命名和删除。</li>
+        <li>保存的隐藏预设和当前的隐藏预设，会保存到工程文件（.petanuri）中。重新打开后仍可使用。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="隐藏预设列表和保存当前隐藏预设的菜单" loading="lazy"><figcaption>保存隐藏预设</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="wire" data-keywords="线框 多边形 边 拓扑 接缝 UV断开处 边界 确认 wireframe">
+      <h2>显示网格线与接缝线</h2>
+      <p>把多边形的线、UV 的接缝（UV 岛边缘）叠加显示在 3D 上。绘制接缝附近时，可作为参考。</p>
+      <ol class="mn-steps">
+        <li>点击 3D 视图左上角的线形图标（也可以用 显示 → 线与尺子 → 网格线）。会显示多边形的线。</li>
+        <li>接缝线用旁边的按钮或 <kbd>Alt</kbd>+<kbd>W</kbd> 显示（显示 → 线与尺子 → 接缝线（UV 接缝、UV 岛边缘））。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>通过图标下方的 ▼，可以选择是否显示线、浓度（5–100%）、颜色（蓝、黑、白）、也显示背面和内侧的线（透视）、接缝线。</li>
+        <li>平时只显示可见面的线。单面显示时，背向的面的线也不显示。</li>
+        <li>3D 右键 → 显示 中也有同样的开关。</li>
+        <li>想隐藏纹理、只用线条查看时，用 显示 → 显示方式 →“仅显示线框”。</li>
+        <li>接缝线与图层的“描边”（给边缘加上线条）是两回事。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="网格线设置" loading="lazy"><figcaption>网格线 ▼ 的设置</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="仅可见面的线" loading="lazy"><figcaption>仅可见的面</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="同时显示背面的线" loading="lazy"><figcaption>也显示背面、内侧的线</figcaption></figure></div>
+    </section>
+
+    <section class="mn-sec" id="uvborder" data-keywords="镶边 包边 边缘线 内侧 外侧 衣边 渐变边 outline">
+      <h2>沿 UV 边缘绘制（从 UV 边缘绘制） <span class="tier pro">Pro</span></h2>
+      <p>按距 UV 岛边缘的距离，在新图层上生成线条或渐变。用于衣服边缘的描边，或只把边缘涂浓。</p>
+      <ol class="mn-steps">
+        <li>选择 滤镜 →“从 UV 边缘绘制（新图层）”。窗口打开期间，UV 和 3D 上会显示临时的线。</li>
+        <li>选择“图形”（线、渐变）和“方向”（岛内侧、岛外侧、两者）。</li>
+        <li>调整“宽度”“距边缘起点”“模糊”“不透明度”。数值一变，临时的线马上变化。</li>
+        <li>在“色彩”中选择前景色或“选择颜色”，再点击“创建”。会生成新图层。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uv-border-v121.webp" width="384" height="547" alt="从 UV 边缘绘制的窗口。图形、方向、宽度、距边缘起点、模糊、不透明度、也绘制岛外侧边缘、色彩" loading="lazy"><figcaption>从 UV 边缘绘制的窗口</figcaption></figure>
+      <ul class="mn-list">
+        <li>距离的单位是纹理的 px。渐变在边缘处浓，到宽度处变透明。</li>
+        <li>UV 岛相互相接的地方，不算边缘。如果有选区，则只在选区内生成。</li>
+        <li>选“岛内侧”时，UV 岛外侧边缘（边距的宽度）也会以与最近的 UV 岛像素相同的浓度绘制。关闭“也绘制岛外侧边缘（边距）”则不绘制。</li>
+        <li>选择“选择颜色”时，可从颜色集的色板或颜色栏中选取。透明色时，不会新建图层，而是从当前图层中擦除这条边缘。</li>
+        <li>点击取消或按 <kbd>Esc</kbd>，临时的线就会消失。创建之后，撤销一次即可恢复。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gltf" data-keywords="vrm glb gltf 上下 颠倒 翻转 反了 方向 flip">
+      <h2>glTF、glb、VRM 的 UV 方向</h2>
+      <p>glTF 对图像上下的计数方式，与 FBX 等相反。PetaNuri3D 在打开 glTF、glb、VRM 时，会把 UV 上下翻转，使其与 FBX 方向一致。这与在 Blender、UniVRM 中加载时的方向相同。</p>
+      <ul class="mn-list">
+        <li>模型中包含的图像，会按原方向放入底色。</li>
+        <li>UV 区域的图像、导出的 PNG、PSD、UV 贴图，与原图像方向相同。在其他 3D 软件中可以直接对上。</li>
+        <li>导入图像、PSD 时，也不翻转上下，原样导入。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/sets">纹理集</a></li><li><a href="/petanuri/zh/manual/export#pad">导出扩边（填充）</a></li><li><a href="/petanuri/zh/manual/export#uvmap">将 UV 贴图导出为 PNG</a></li><li><a href="/petanuri/zh/manual/edit#select">选区</a></li><li><a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/layers"><small>← 上一页</small>图层</a><a class="next" href="/petanuri/zh/manual/sets"><small>下一页 →</small>纹理集</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +452,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

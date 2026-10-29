@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selections, transforms, text and rulers | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Selections/selection bar, move-transform tool, 3D transforms (scale, rotate, free transform, warp), copy/paste, adding images, pasting on 3D/UV, editable text and rulers. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Selections and the selection bar, the move and transform tools, transforming on 3D (scale, rotate, free transform, warp), copy and paste, adding images, pasting images onto 3D or UV, text (type in place, retype) and rulers. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/edit">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Selections, transforms, text and rulers | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Selections/selection bar, move-transform tool, 3D transforms (scale, rotate, free transform, warp), copy/paste, adding images, pasting on 3D/UV, editable text and rulers. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Selections and the selection bar, the move and transform tools, transforming on 3D (scale, rotate, free transform, warp), copy and paste, adding images, pasting images onto 3D or UV, text (type in place, retype) and rulers. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/edit">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Selections, transforms, text and rulers | PetaNuri3D Manual",
-   "description": "Selections/selection bar, move-transform tool, 3D transforms (scale, rotate, free transform, warp), copy/paste, adding images, pasting on 3D/UV, editable text and rulers. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Selections and the selection bar, the move and transform tools, transforming on 3D (scale, rotate, free transform, warp), copy and paste, adding images, pasting images onto 3D or UV, text (type in place, retype) and rulers. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/edit",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,354 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit" aria-current="page">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit" aria-current="page">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Selections, transforms, text and rulers</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Selections, transforms, text and rulers</p>
     <h1 class="mn-h1">Selections, transforms, text and rulers</h1>
-    <p class="mn-intro">Restrict painting areas, move artwork and paste text/images. Transform frames appear on both the 3D model and UV view.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#select">Selection</a></li><li><a href="#selbar">Selection bar</a></li><li><a href="#move">Move/transform tool</a></li><li><a href="#transform">Transform (Ctrl+T) and the 3D frame</a></li><li><a href="#warp">Free transform and warp</a></li><li><a href="#copy">Copy, cut and paste</a></li><li><a href="#image">Add and paste images</a></li><li><a href="#text">Text</a></li><li><a href="#ruler">Ruler</a></li></ul></div>
-    <section class="mn-sec" id="select"><h2>Selection</h2><ol class="mn-steps"><li>Select the Selection tool (<kbd>S</kbd>), then choose a shape in Sub tool.</li><li>Drag, trace or click in 3D or UV to select.</li><li>While selected, drawing, filling, erasing, filters and gradients affect <strong>only inside the selection</strong>. Outside is dimmed and a dotted outline marks the boundary.</li><li><kbd>Ctrl</kbd>＋<kbd>D</kbd>  deselects.</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="Painting only inside a selection, with the selection bar below" loading="lazy"><figcaption>Paint only inside the selection</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="Selection Tool properties" loading="lazy"><figcaption>Selection settings</figcaption></figure></div><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">Selection mode</th></tr></thead><tbody><tr><td>Rectangle / Ellipse</td><td>Drag</td></tr><tr><td>Lasso</td><td>Trace an enclosure</td></tr><tr><td>Polyline</td><td>Click to place points; close at the first point, with a double-click or Enter</td></tr><tr><td>Auto select</td><td>Connected areas with colors similar to the clicked point</td></tr><tr><td>Select by island</td><td>The entire clicked UV island</td></tr><tr><td>Select by face</td><td>Entire traced faces</td></tr><tr><td>Selection pen / Selection eraser</td><td>Add/remove by brushing</td></tr></tbody></table></div><ul class="mn-list"><li>At the start, hold  <kbd>Shift</kbd> to add, <kbd>Alt</kbd> to subtract, or <kbd>Shift</kbd>＋<kbd>Alt</kbd> to intersect.</li><li>“Select back and hidden faces too” selects everything matching the screen shape, including the back. <strong>Select all around the body</strong> to paint clothing stripes more easily.</li><li>Selection menu: Select all  <kbd>Ctrl</kbd>＋<kbd>A</kbd>, Invert  <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd>, Expand / Shrink / Feather, Select painted areas, Create mask from selection, Fill with foreground color, Clear inside (<kbd>Delete</kbd>), Show selection outline (<kbd>Ctrl</kbd>＋<kbd>H</kbd>), Restore selection (<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>).</li><li>While a selection is active, you cannot draw on unselected texture sets.</li></ul><div class="mn-tip">Click a layer thumbnail while holding  <kbd>Ctrl</kbd> to select its painted areas (<kbd>Shift</kbd>  to add, <kbd>Alt</kbd>  to subtract).</div><div class="mn-tip">Select all similar colors (all editions): Select → Select all similar colors (foreground color) selects areas close to the foreground color across the whole texture, even if they are not connected. Set the tolerance, the source (all layers / current layer), and the mode (new, add, subtract). Handy for changing shadow colors per base color.</div><div class="mn-tip">Not darkening outside the selection (v1.3.0 and later): turn off menu Selection → Darken outside the selection (also in the right-click Selection menu) to show only the dotted outline, so you can paint while seeing the colors outside as they are. Your choice carries over to the next launch (darkening is on by default).</div></section><section class="mn-sec" id="selbar"><h2>Selection bar</h2><p>During selection, a bar appears below the 3D view. Icon buttons follow the Selected label (hover with a pen/cursor for names and keys).</p><ul class="mn-list"><li>Deselect (colored button), Invert | Expand, Shrink, Feather | Fill, Clear | To new layer ▾ (Copy/Cut), More ▾ (Mask, Show selected only, Hide, Outline).</li><li>On narrow screens, Expand, Shrink and Feather are grouped under Area ▾.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="Selection bar below 3D" loading="lazy"><figcaption>Selection bar</figcaption></figure></section><section class="mn-sec" id="move"><h2>Move/transform tool</h2><ol class="mn-steps"><li>Select Move/transform (<kbd>V</kbd>).</li><li>Click the artwork to move on the model or UV. The topmost painted layer there is selected and framed (Automatically select layer; when off, uses the selected layer).</li><li>Drag immediately to move it. Corners scale; the top circle rotates.</li><li><kbd>Enter</kbd>  or switching tools applies; <kbd>Esc</kbd>  cancels. Clicking outside the frame applies and selects the layer at that location.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="Transform frame on the model, with the bar below" loading="lazy"><figcaption>Move artwork directly on the 3D model</figcaption></figure><ul class="mn-list"><li>If a selection exists, only that area moves. Applying uses one Undo step.</li><li>Choose the frame mode (scale/rotate, free transform or warp) and warp grid size in Tool properties.</li><li>Clicking a text layer opens its text frame (drag inside to move; double-click to edit text).</li></ul></section><section class="mn-sec" id="transform"><h2>Transform (Ctrl+T) and the 3D frame</h2><ul class="mn-list"><li><strong>Transform</strong> (<kbd>Ctrl</kbd>＋<kbd>T</kbd>): opens a frame for the selection, or the entire layer if nothing is selected.</li><li>The frame appears in  <strong>both 3D (near the artwork on the model) and UV</strong>. Either frame moves the artwork identically and the other follows. If the artwork is visible in 3D, work entirely in 3D without opening UV.</li><li>Drag inside to move, corners to scale (<kbd>Shift</kbd>  allows changing aspect ratio), edges to scale one axis, or the top circle to rotate (<kbd>Shift</kbd>  for 15° steps). Flip horizontally/vertically too. Drag an edge/corner past the opposite side to flip.</li><li>Even over the 3D frame, move the view with right/middle drag, wheel or <kbd>Space</kbd> + drag. The frame follows view changes.</li><li>With the UV grid shown, the frame snaps to grid lines (<a href="/petanuri/en/manual/uv#grid">Grid and snapping</a>).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="Transform frame in UV" loading="lazy"><figcaption>Transform frame (UV view)</figcaption></figure><div class="mn-tip">3D transform (all editions): the 3D frame now appears even for small visible details, and the frame and image no longer jump when you release a drag inside the frame (also for free transform and warp).</div><div class="mn-tip">Mirror too (all editions): with painting symmetry on and a selection on one side, “Mirror too” appears in the bottom bar. Moving with it on also moves the mirrored opposite side in 3D (the original painting there is replaced). The Move tool works the same way.</div></section><section class="mn-sec" id="warp"><h2>Free transform and warp</h2><p>Three icons (scale/rotate, free transform, warp) appear below frames for Transform, Move/transform, Add image, Paste and Paste on 3D/UV.</p><ul class="mn-list"><li><strong>Free transform</strong>: Drag the four corners independently to reshape artwork with a perspective-like effect.</li><li><strong>Warp</strong>: Drag grid points to bend the artwork. Default 3×3 grid (4×4 and 5×5 available in the bar).</li><li>Both rotate by dragging the top circle or just outside a corner (<kbd>Shift</kbd>  for 15° steps). Drag inside to move the whole frame.</li><li>Switching modes preserves the shape. Applying uses one Undo step, including transformed selections. When pasting in 3D, the screen-space shape is projected onto visible faces.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="Bending artwork by moving warp grid points" loading="lazy"><figcaption>Warp</figcaption></figure></section><section class="mn-sec" id="copy"><h2>Copy, cut and paste</h2><ul class="mn-list"><li><strong>Copy</strong> (<kbd>Ctrl</kbd>＋<kbd>C</kbd>) · <strong>Cut</strong> (<kbd>Ctrl</kbd>＋<kbd>X</kbd>): the selection, or the whole layer if none. Even with multiple layers selected, only the active layer is affected.</li><li><strong>Paste</strong> (<kbd>Ctrl</kbd>＋<kbd>V</kbd>): pastes to a new layer at the same UV position, ready to transform.</li><li>Locked, hidden or transparency-locked layers cannot be cut or cleared (a reason is shown).</li></ul></section><section class="mn-sec" id="image"><h2>Add and paste images</h2><ul class="mn-list"><li><strong>Add image</strong> (File → Import → Import image as layer, drop an image or paste an externally copied image with  <kbd>Ctrl</kbd>＋<kbd>V</kbd>): opens a placement frame. If UV is open, it appears there; otherwise at the 3D center (projected onto visible faces). Aspect ratio and transparency are preserved.</li><li>Position the frame and press  <kbd>Enter</kbd>  to add a new layer named after the file. <kbd>Esc</kbd>  cancels without leaving anything. “Paste across entire texture” below the frame stretches it across all UVs (for images drawn at UV size).</li><li><strong>Paste image onto 3D</strong> (Edit → Paste image on 3D): position the frame in 3D, then press <kbd>Enter</kbd>  to project onto visible faces. Move the view while positioning if needed. “Keep angled faces opaque” prevents fading on angled faces.</li><li><strong>Paste image onto UV</strong> (Edit → Paste image on UV): position the UV frame and paste to a new layer.</li></ul><div class="mn-tip">Symmetry and selections apply too.</div></section><section class="mn-sec" id="text"><h2>Text</h2><ol class="mn-steps"><li>Select Text (<kbd>T</kbd>), then click in 3D or UV.</li><li>A frame and text dialog appear; <strong>type directly in the frame</strong>. Japanese input works normally, with conversion candidates beside the text.</li><li><kbd>Ctrl</kbd>＋<kbd>Enter</kbd>  applies (while typing,  <kbd>Enter</kbd>  inserts a line break). <kbd>Esc</kbd>  first ends typing but keeps the frame; press again to cancel.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="Typing directly in the 3D text frame" loading="lazy"><figcaption>Type text right where it appears</figcaption></figure><ul class="mn-list"><li>Set font, size, color, bold, italic, vertical writing, line/character spacing, alignment and stroke in the dialog. Foreground color controls text; background color controls the stroke.</li><li><strong>Per-character formatting</strong>: Select characters before changing color, size, font, bold, italic, spacing or stroke to affect only those characters. Without a selection, changes affect future typing.</li><li>While typing, tool shortcuts (<kbd>E</kbd>  for Eraser, for example) are disabled. To move the frame, hold  <kbd>Ctrl</kbd>  while dragging.</li><li>Choose any font installed on this PC. Import .ttf/.otf font files too (for the current session only).</li></ul><h3>Edit text (text layers)</h3><ul class="mn-list"><li>Text pasted “To new layer” (always for UV text) becomes a <strong>Text layer</strong> marked T in the layer list.</li><li>Double-click in the layer list, right-click → Edit text, or click text with the Text tool to reopen its original settings. Per-character colors/sizes are preserved.</li><li>Drawing onto a text layer changes its badge to T+. Editing text removes added artwork, so put details on another layer to preserve them.</li><li>Right-click → Rasterize converts it to a regular layer (text is no longer editable). Text data is saved in project files, remaining editable after reopening. PSD exports use regular raster layers.</li></ul></section><section class="mn-sec" id="ruler"><h2>Ruler</h2><ul class="mn-list"><li>Snap strokes to rulers. Straight/curve rulers affect only strokes begun near them; concentric/radial/parallel rulers work anywhere.</li><li>Create straight/parallel rulers by dragging; concentric/radial rulers center on the clicked point. For curves, place points, then press  <kbd>Enter</kbd>  or double-click. Drag ruler circles to move them.</li><li>3D rulers stay on screen when the view moves. Place separate rulers in UV too.</li><li>View → Lines and rulers → Snap to ruler (<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd>) toggles snapping; Delete ruler removes it.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="Lines drawn using a radial ruler" loading="lazy"><figcaption>Radial ruler</figcaption></figure><div class="mn-tip"><strong>While placing curve control points</strong>, press <kbd>Ctrl</kbd>＋<kbd>Z</kbd>  to remove the last point. <kbd>Ctrl</kbd>＋<kbd>Y</kbd>  or  <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>  redoes that point removal. <kbd>Enter</kbd> or double-click applies the ruler; afterwards normal history controls resume.</div><div class="mn-tip">When a ruler exists, a bar appears at the bottom center of that pane (ruler type, snapping on/off, delete). Delete removes only that pane’s ruler.</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/deco"><small>← Previous</small>Stamps, patterns, stitches and 2D canvas</a><a class="next" href="/petanuri/en/manual/layers"><small>Next →</small>Layer</a></nav>
+    <p class="mn-intro">This page shows how to limit painting to a selection, move and reshape what you drew, place images and text on the model, and align lines with a ruler. The transform frame appears on the model in the 3D view and in the UV view.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Draw around an area with the "Selection" tool (<kbd>S</kbd>) and you can paint only inside it. Press <kbd>Ctrl</kbd>+<kbd>D</kbd> to deselect (<a href="#select">details</a>).</li>
+      <li>With the "Move/transform" tool (<kbd>V</kbd>), click a drawing on the model and drag to move it (<a href="#move">details</a>).</li>
+      <li>To resize or rotate, press <kbd>Ctrl</kbd>+<kbd>T</kbd>. Drag a corner to resize, drag the circle on top to rotate, and press <kbd>Enter</kbd> to apply (<a href="#transform">details</a>).</li>
+      <li>Drop an image onto the window, line up its frame, and paste it (<a href="#image">details</a>).</li>
+      <li>Click the model with the "Text" tool (<kbd>T</kbd>) to type text right there (<a href="#text">details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#select">Select the area to paint (Selection)</a></li><li><a href="#selbar">Work with the selection bar</a></li><li><a href="#selmenu">Refine and use selections ("Selection" menu)</a></li><li><a href="#fillcolor">Fill with one color and change colors in bulk</a></li><li><a href="#move">Move what you drew (Move/transform tool)</a></li><li><a href="#transform">Resize and rotate (Transform)</a></li><li><a href="#warp">Add perspective and bend (Free transform and Warp)</a></li><li><a href="#copy">Copy, cut and paste</a></li><li><a href="#image">Paste an image</a></li><li><a href="#text">Add text</a></li><li><a href="#ruler">Align lines with a ruler</a></li></ul></div>
+
+    <section class="mn-sec" id="select" data-keywords="marquee lasso magic wand rectangle ellipse region constrain mask stay inside stripes wrap around">
+      <h2>Select the area to paint (Selection)</h2>
+      <p>Once you make a selection, drawing, painting, erasing, filters and gradients affect only the inside of it. Use it when you want to paint without going over the edge.</p>
+      <ol class="mn-steps">
+        <li>Select the "Selection" tool (<kbd>S</kbd>).</li>
+        <li>In the sub tools, choose a selection method (Rectangle / Ellipse, Lasso, and so on).</li>
+        <li>In the 3D view or UV view, drag, trace or click to select. The outside dims slightly and a selection outline appears along the boundary.</li>
+        <li>Switch to a pen or another tool and paint. Nothing is applied outside the selection.</li>
+        <li>Press <kbd>Ctrl</kbd>+<kbd>D</kbd> to deselect.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="Painting only inside a selection, with the selection bar below" loading="lazy"><figcaption>Paint only inside the selection</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="Tool properties of the Selection tool" loading="lazy"><figcaption>Selection mode settings (tool properties)</figcaption></figure></div>
+      <h3 id="select-subtools">Sub tools and selection methods</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">How to select</th></tr></thead><tbody>
+        <tr><td>Rectangle / Ellipse</td><td>Drag.</td></tr>
+        <tr><td>Lasso</td><td>Trace around the area.</td></tr>
+        <tr><td>Polyline</td><td>Click to place points. Close the shape by clicking the first point, double-clicking, or pressing <kbd>Enter</kbd>.</td></tr>
+        <tr><td>Auto select</td><td>Selects the connected area of colors close to the point you click.</td></tr>
+        <tr><td>Select by island</td><td>Selects the whole UV island you click.</td></tr>
+        <tr><td>Select by face</td><td>Selects the whole faces you trace over.</td></tr>
+        <tr><td>Selection pen / Selection eraser</td><td>Trace with a brush to add or subtract (reversed while you hold <kbd>Alt</kbd>).</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>In the 3D view, only visible faces are selected. Turn on "Also select back and hidden faces" in tool properties to select everything that overlaps the shape on screen, including the back. This is handy when you select <strong>all the way around the body</strong> to paint clothing stripes.</li>
+        <li>For Auto select, set "Reference" (All layers / Selected layer), "Tolerance" and "Anti-aliasing (smooth edges by 1px)" in tool properties.</li>
+        <li>For Select by face, set "Pick radius" and "Select by quads (treat 2 triangles as 1 face)".</li>
+      </ul>
+      <h3 id="select-add">Add to or subtract from a selection</h3>
+      <p>In tool properties, choose New, Add, Subtract or Intersect under "Selection mode". If you hold a key before you start dragging, the mode changes for that one stroke only.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key held at the start</th><th scope="col">Selection mode</th></tr></thead><tbody>
+        <tr><td>None</td><td>New (replaces the current selection). Click without moving to deselect</td></tr>
+        <tr><td><kbd>Shift</kbd></td><td>Add (adds to the current selection)</td></tr>
+        <tr><td><kbd>Alt</kbd></td><td>Subtract (removes from the current selection)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>Alt</kbd></td><td>Intersect (keeps only the overlap)</td></tr>
+      </tbody></table></div>
+      <h3 id="select-other">Other ways to select</h3>
+      <ul class="mn-list">
+        <li><kbd>Ctrl</kbd>+click a layer thumbnail to select the painted area of that layer (<kbd>Shift</kbd> to add, <kbd>Alt</kbd> to subtract).</li>
+        <li>Right-click in the 3D view → "Select this island (selection)" to select the island you clicked. The right-click menu in the UV view also has "Add this island to selection".</li>
+        <li>To select all areas close to the foreground color at once, use <a href="#select-color">Select all similar colors</a>.</li>
+      </ul>
+      <h3 id="select-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>You can't paint where you want</b>: A leftover selection blocks painting outside it. Press <kbd>Ctrl</kbd>+<kbd>D</kbd> to deselect.</li>
+        <li><b>You can't draw on other texture sets</b>: While a selection exists, you can't draw on a texture set that has no selection. Either deselect, or use "Select all" (<kbd>Ctrl</kbd>+<kbd>A</kbd>), which covers every set.</li>
+        <li><b>The back isn't selected</b>: In the 3D view, only visible faces are selected. Turn on "Also select back and hidden faces".</li>
+        <li><b>The outside is too dark to judge colors</b>: Turn off Selection → "Darken outside the selection" and only the selection outline remains (<a href="#selmenu">menu</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="selbar" data-keywords="selection toolbar bar below popup deselect button feather expand contract selection active">
+      <h2>Work with the selection bar</h2>
+      <p>While a selection exists, the selection bar appears under the 3D view (under the UV view if only the UV is shown). Icon buttons follow the "Selection active" label on the left. Hold the pen tip or cursor over a button to see its name and key.</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="The selection bar under the 3D view" loading="lazy"><figcaption>Selection bar</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Button</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Deselect (the colored button)</td><td>Removes the selection. Even after that, "Reselect" (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>) brings it back</td></tr>
+        <tr><td>Invert</td><td>Inverts the selection</td></tr>
+        <tr><td>Expand, Contract, Feather</td><td>Adjust the shape of the selection. On a narrow screen they are grouped under "Modify ▾"</td></tr>
+        <tr><td>Fill</td><td>Fills the selection with the foreground color</td></tr>
+        <tr><td>Clear</td><td>Clears the inside of the selection</td></tr>
+        <tr><td>To new layer ▾</td><td>"Copy to new layer" and "Cut to new layer"</td></tr>
+        <tr><td>More ▾</td><td>Create mask from selection, Show selected only, Hide selected, Show selection outline, Darken outside the selection</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">When the Hide pen bar or a ruler strip is showing, the selection bar sits above it. "Show selected only" and "Hide selected" are <a href="/petanuri/en/manual/uv#isolate">Visible area</a> features.</div>
+    </section>
+
+    <section class="mn-sec" id="selmenu" data-keywords="selection menu grow shrink expand contract feather invert reselect select all color range selection to mask hide marching ants">
+      <h2>Refine and use selections ("Selection" menu)</h2>
+      <p>The "Selection" menu lists the items for refining and using selections. Most of them are also in the "Selection" submenu of the right-click menu in the 3D view.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Select all</td><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td>Selects the entire area of every texture set</td></tr>
+        <tr><td>Deselect</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>Removes the selection</td></tr>
+        <tr><td>Restore selection (last deselected)</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td>Brings back the last selection you deselected</td></tr>
+        <tr><td>Invert selection</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td>Selects what isn't selected</td></tr>
+        <tr><td>Expand selection / Contract selection</td><td>—</td><td>Grows or shrinks the selection by 1 to 64 px on the UV</td></tr>
+        <tr><td>Feather edge</td><td>—</td><td>Softens the edge by 1 to 64 px</td></tr>
+        <tr><td>Select painted area of layer</td><td>—</td><td>Selects where the selected layer has paint</td></tr>
+        <tr><td>Select all similar colors (foreground color)</td><td>—</td><td>Selects areas close to the foreground color (<a href="#select-color">below</a>)</td></tr>
+        <tr><td>Create mask from selection</td><td>—</td><td>Adds a mask in the shape of the selection to the selected layer (<a href="/petanuri/en/manual/layers#mask">Mask</a>)</td></tr>
+        <tr><td>Copy selection to new layer</td><td>—</td><td>Copies the artwork inside to a new layer at the same position</td></tr>
+        <tr><td>Cut selection to new layer</td><td>—</td><td>Moves the artwork inside to a new layer</td></tr>
+        <tr><td>Fill selection with foreground color</td><td>—</td><td>Fills the inside with the foreground color</td></tr>
+        <tr><td>Clear inside selection</td><td><kbd>Delete</kbd></td><td>Erases the artwork inside the selection on the selected layer</td></tr>
+        <tr><td>Show selection outline</td><td><kbd>Ctrl</kbd>+<kbd>H</kbd></td><td>Shows or hides the outline (the selection stays, and so does the darkening outside)</td></tr>
+        <tr><td>Darken outside the selection</td><td>—</td><td>Turn it off to leave only the outline, so you can paint while seeing the outside colors as they are. The setting is kept the next time you start the app (on by default)</td></tr>
+      </tbody></table></div>
+      <h3 id="select-color">Select all similar colors</h3>
+      <p>Selects areas close to the foreground color across the whole texture, including areas that aren't connected. Use it, for example, when you change the shadow color for each base color.</p>
+      <ol class="mn-steps">
+        <li>With the Eyedropper (<kbd>I</kbd>), set the color you want to select as the foreground color.</li>
+        <li>Choose Selection → "Select all similar colors (foreground color)".</li>
+        <li>Use "Fuzziness (%)" to set how close a color must be to be selected.</li>
+        <li>In "Sample from", choose "All layers" or "Current layer".</li>
+        <li>In "Selection mode", choose "New", "Add" or "Subtract", then click "Choose".</li>
+      </ol>
+    </section>
+
+    <section class="mn-sec" id="fillcolor" data-keywords="fill with color solid flat recolor replace color change color line art paint bucket whole layer alt+backspace ctrl+backspace">
+      <h2>Fill with one color and change colors in bulk</h2>
+      <p>These are three items in the "Edit" menu. They affect the inside of the selection if there is one, or the whole selected layer if not.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Fill with foreground color</td><td><kbd>Alt</kbd>+<kbd>Backspace</kbd></td><td>Fills with the foreground color</td></tr>
+        <tr><td>Fill with background color</td><td><kbd>Ctrl</kbd>+<kbd>Backspace</kbd></td><td>Fills with the background color</td></tr>
+        <tr><td>Change to foreground color (keep transparency)</td><td>—</td><td>Changes only the color of painted areas to the current foreground color. The density (transparency) and transparent areas stay as they are</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>"Change to foreground color" is for changing the color of line art in bulk. It is also in the right-click menu of a layer row.</li>
+        <li>When you are painting on a mask, the mask is filled according to the brightness of the color (white = show, black = hide).</li>
+        <li>Inside a normal map folder, it changes colors using gray. It can't be used on normal map image layers (<a href="/petanuri/en/manual/material#channels">Paint target</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="move" data-keywords="move tool drag reposition nudge shift offset layer auto select v">
+      <h2>Move what you drew (Move/transform tool)</h2>
+      <p>Click a drawing on the 3D model and drag to move it. You don't have to look for the layer you drew on: the layer at the point you click is selected.</p>
+      <ol class="mn-steps">
+        <li>Select the "Move/transform" tool (<kbd>V</kbd>).</li>
+        <li>In the 3D view (or UV view), click the drawing you want to move. The topmost layer painted at that point is selected, and a frame appears around its artwork.</li>
+        <li>Keep holding and drag, and it moves right away. Drag a corner to resize and the circle on top to rotate.</li>
+        <li>Press <kbd>Enter</kbd>, or switch to another tool, to apply. Press <kbd>Esc</kbd> to cancel.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="Transform frame on the 3D model, with the bar below it" loading="lazy"><figcaption>Move drawings directly on the 3D model</figcaption></figure>
+      <h3 id="move-detail">Detailed settings</h3>
+      <ul class="mn-list">
+        <li>Turn off "Auto-select layer" in tool properties to move the selected layer instead of the layer at the point you click.</li>
+        <li>Clicking outside the frame applies the move and switches to the layer at the point you clicked.</li>
+        <li>If a selection exists, only the inside of it moves. Applying counts as one Undo step.</li>
+        <li>In tool properties, use "Shape" to choose the frame type (Scale/rotate, Free transform or Warp) and "Warp grid" to choose the number of grid points (<a href="#warp">Free transform and Warp</a>).</li>
+        <li>Clicking a text layer gives you the text frame. Drag inside the frame to move it, and double-click to retype (<a href="#retext">Retype text</a>).</li>
+      </ul>
+      <h3 id="move-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"No visible layers are painted here" appears</b>: Hidden layers, areas hidden by a mask, and drawings at 0% opacity are not picked. Select the layer in the Layers panel, then turn off "Auto-select layer" and move it.</li>
+        <li><b>A different layer moves</b>: When layers overlap, the topmost layer is picked. Select the layer you want to move and turn off "Auto-select layer".</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="transform" data-keywords="scale rotate resize flip mirror free transform ctrl+t bounding box handles size change">
+      <h2>Resize and rotate (Transform)</h2>
+      <p>Shows a frame for resizing and rotating the artwork inside the selection, or the artwork of the whole layer. The frame appears both on the model in the 3D view and in the UV view.</p>
+      <ol class="mn-steps">
+        <li>Select the area you want to change (not needed for the whole layer).</li>
+        <li>Choose Edit → "Transform (on 3D/UV)" (<kbd>Ctrl</kbd>+<kbd>T</kbd>). A frame appears.</li>
+        <li>Drag inside the frame to move, drag a corner to scale, and drag the circle on top to rotate.</li>
+        <li>Press <kbd>Enter</kbd> to apply, or <kbd>Esc</kbd> to cancel.</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="Transform frame in the UV view" loading="lazy"><figcaption>Transform frame (UV view)</figcaption></figure>
+      <h3 id="transform-detail">Frame controls</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Action</th><th scope="col">Result</th></tr></thead><tbody>
+        <tr><td>Drag inside the frame</td><td>Moves it</td></tr>
+        <tr><td>Drag a corner</td><td>Scales it (hold <kbd>Shift</kbd> to change the aspect ratio)</td></tr>
+        <tr><td>Drag an edge</td><td>Stretches or shrinks it in one direction only</td></tr>
+        <tr><td>Drag the circle on top</td><td>Rotates it (<kbd>Shift</kbd> for 15° steps)</td></tr>
+        <tr><td>Drag an edge or corner past the opposite side</td><td>Flips it</td></tr>
+        <tr><td>The bar below the frame</td><td>Flip horizontal, flip vertical, opacity and the frame shape (<a href="#warp">Free transform and Warp</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>You can grab either the 3D frame or the UV frame and it works the same way, with the other one following. If the artwork you're moving is visible in 3D, you can work in 3D alone without opening the UV view. If it isn't visible, the UV view opens, and closes when you finish.</li>
+        <li>Even over the 3D frame, you can move the view with right-drag, middle-drag, the wheel, or <kbd>Space</kbd>+drag. The frame follows when you change the view.</li>
+        <li>The 3D frame is placed to match the face at the center of the frame. When it crosses a UV seam, it matches the island in the middle.</li>
+        <li>When grid lines are shown in the UV view, the frame snaps to the grid squares (<a href="/petanuri/en/manual/uv#grid">Grid and snapping</a>).</li>
+        <li>The selection moves along with it.</li>
+      </ul>
+      <h3 id="transform-mirror">Move the opposite side too (Mirror too)</h3>
+      <p>When symmetry is on for drawing and the selection is on one side, "Mirror too" appears in the bar below the frame. If you leave it on while moving, the opposite side in 3D moves as a mirror image at the same time. The original artwork on the opposite side is replaced.</p>
+      <ul class="mn-list">
+        <li>It works the same way in the Move/transform tool.</li>
+        <li>It doesn't appear when both sides are selected, when the selection crosses the center, or when there is no selection.</li>
+        <li>To turn symmetry on, see <a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="warp" data-keywords="perspective distort skew mesh warp grid warp bend keystone trapezoid curve shape">
+      <h2>Add perspective and bend (Free transform and Warp)</h2>
+      <p>The three icons in the bar below the frame switch the frame type. It works with Transform, the Move/transform tool, Add image, Paste, and Paste image onto 3D/UV (it doesn't appear on text frames).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Frame type</th><th scope="col">How to use it</th></tr></thead><tbody>
+        <tr><td>Scale/rotate</td><td>Drag a corner to scale, the circle on top to rotate, and inside the frame to move (<a href="#transform-detail">Frame controls</a>)</td></tr>
+        <tr><td>Free transform</td><td>Drag each of the four corners to reshape the frame. The artwork follows as if in perspective. A corner can't cross the opposite side, and the shape can't become concave</td></tr>
+        <tr><td>Warp</td><td>Drag the grid points to bend the artwork. The grid is 3×3, and you can change it to 4×4 or 5×5 in the bar</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="Bending artwork by moving warp grid points" loading="lazy"><figcaption>Warp</figcaption></figure>
+      <ul class="mn-list">
+        <li>In Free transform and Warp, you can also rotate by dragging the circle on top or just outside a corner (<kbd>Shift</kbd> for 15° steps). Drag inside the frame to move the whole thing.</li>
+        <li>Switching between Scale/rotate, Free transform and Warp keeps the current shape. When you go back to Scale/rotate, the current shape is painted into the artwork and you get a rectangular frame around it.</li>
+        <li>Flip horizontal, flip vertical and opacity also work. Applying counts as one Undo step (also when you moved a selection).</li>
+        <li>When pasting to 3D, the shape you bent on screen is projected onto the visible faces.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="copy" data-keywords="copy paste duplicate cut paste in place ctrl+c ctrl+x ctrl+v extract to another layer clipboard">
+      <h2>Copy, cut and paste</h2>
+      <p>Copy or cut the artwork inside the selection (or the whole layer if there is no selection) and paste it. Pasted artwork goes into a new layer.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Action</th><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Edit → "Copy (inside selection)"</td><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td>Copies the artwork on the selected layer</td></tr>
+        <tr><td>Edit → "Cut (inside selection)"</td><td><kbd>Ctrl</kbd>+<kbd>X</kbd></td><td>Copies it and erases the original</td></tr>
+        <tr><td>Edit → "Paste"</td><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td>Pastes it as a new layer at the same UV position. You can move it right away with the frame</td></tr>
+        <tr><td>Selection → "Copy selection to new layer" / "Cut selection to new layer"</td><td>—</td><td>Puts the artwork into a new layer at the same position immediately, without showing a frame</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Even when several layers are selected, only one selected layer is affected.</li>
+        <li>If you press <kbd>Ctrl</kbd>+<kbd>V</kbd> on an image copied in another app, you can paste it and line up its frame (<a href="#image">Add image</a>).</li>
+      </ul>
+      <h3 id="copy-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>You can't cut or clear</b>: Layers that are locked, hidden, or have Lock transparency on are not cut or cleared (the reason appears below). Copying still works.</li>
+        <li><b>You can't make a new layer (Lite)</b>: Lite allows up to 4 layers per texture set, including the base (<a href="/petanuri/en/manual/start#editions">Editions</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="image" data-keywords="place image decal sticker logo patch import drag and drop projection photo png jpg paste picture">
+      <h2>Paste an image</h2>
+      <p>Paste an image such as a logo or pattern, adjusting its size and position with a frame. There are three ways to paste.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">How to paste</th><th scope="col">How to start</th><th scope="col">Where the frame appears</th></tr></thead><tbody>
+        <tr><td>Add image</td><td>File → Import → "Import image as layer", drop an image onto the window, or press <kbd>Ctrl</kbd>+<kbd>V</kbd> on an image copied in another app</td><td>On the UV if the UV view is open; if it's closed, in the middle of the 3D view (projected onto the visible faces)</td></tr>
+        <tr><td>Paste image onto 3D</td><td>Edit → "Paste image onto 3D"</td><td>3D view (projected onto the visible faces)</td></tr>
+        <tr><td>Paste image onto UV</td><td>Edit → "Paste image onto UV"</td><td>UV view</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>Drop an image onto the window. A frame for placing the image appears.</li>
+        <li>Move the frame to adjust the size and position. You can also move the view while you adjust.</li>
+        <li>Press <kbd>Enter</kbd> to apply. The image goes into a new layer named after the file.</li>
+      </ol>
+      <h3 id="image-detail">The bar below the frame</h3>
+      <ul class="mn-list">
+        <li>The image is placed at its original aspect ratio, sized to fit the visible area. Transparent areas stay transparent.</li>
+        <li>Press <kbd>Esc</kbd> to cancel, and nothing is left behind. After you apply, one Undo removes it.</li>
+        <li>"Fill whole texture" (for Add image): stretches the image over the whole UV and puts it in a new layer. Use it for images drawn at the size of the UV.</li>
+        <li>"To new layer" (for pasting onto 3D; on by default): creates a new layer for each texture set you paste onto. Turn it off to paste into the current layer.</li>
+        <li>"Full strength on angled faces": pastes at full strength even on faces that turn sideways, instead of thinning out.</li>
+        <li>Flip horizontal, flip vertical, opacity and the frame shape (<a href="#warp">Free transform and Warp</a>) are also available.</li>
+        <li>Symmetry and selections also apply.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="text" data-keywords="type tool lettering label font typeface vertical horizontal outline stroke ime nameplate">
+      <h2>Add text</h2>
+      <p>Type text directly on the model and paste it. You can change the font, size and color for each character too.</p>
+      <ol class="mn-steps">
+        <li>Select the "Text" tool (<kbd>T</kbd>). In the sub tools, choose "Horizontal text" or "Vertical".</li>
+        <li>Click the 3D view (or UV view). A frame and the text window appear (you can also start from Edit → "Add text").</li>
+        <li>Just start typing. Japanese input works too, and conversion candidates appear next to the characters.</li>
+        <li>Press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to apply (<kbd>Enter</kbd> while typing adds a line break).</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="Typing directly in the 3D text frame" loading="lazy"><figcaption>Type text right where it appears</figcaption></figure>
+      <h3 id="text-window">The text window</h3>
+      <ul class="mn-list">
+        <li>Set the font, size, color, bold, italic, vertical writing, line spacing, letter spacing, alignment and border.</li>
+        <li>While the text window is open, the foreground color in the Color panel becomes the text color and the background color becomes the border color. You can also pick colors by clicking the color squares in the window.</li>
+        <li>Turn on "Adjust with sliders" in the header to move size, border, line spacing and letter spacing with sliders too.</li>
+        <li>At the bottom of the font list, all the fonts installed on your PC are listed under "This PC's fonts".</li>
+        <li>With "Load font", you can also use a font file (.ttf or .otf), but only until you quit the app.</li>
+        <li>When the window overlaps the frame, you can move it by dragging its header ("Text"). It opens at the same position next time.</li>
+        <li>If you start by clicking the UV view, the text is pasted on the UV.</li>
+      </ul>
+      <h3 id="text-keys">Controls while typing</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Action</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Click inside the frame (or double-click)</td><td>Starts typing at that point</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd>, <kbd>Home</kbd>, <kbd>End</kbd></td><td>Move the typing position (in vertical text, <kbd>↑</kbd> <kbd>↓</kbd> move between characters and <kbd>←</kbd> moves to the next line)</td></tr>
+        <tr><td><kbd>Shift</kbd>+arrow keys, drag inside the frame</td><td>Select characters</td></tr>
+        <tr><td><kbd>Backspace</kbd>, <kbd>Delete</kbd></td><td>Delete characters</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+drag</td><td>Moves the frame (corners, edges and the circle on top work as usual)</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>The first press stops typing (the frame stays and can be moved by dragging). The second press cancels the text</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">While you're typing, key shortcuts (such as <kbd>E</kbd> for the Eraser) don't work. When you start, all the characters are selected, so whatever you type replaces them.</div>
+      <h3 id="text-char">Change color or size per character</h3>
+      <ul class="mn-list">
+        <li>Select characters, then change the color (foreground or background), size, font, bold, italic, letter spacing or border, and only those characters change.</li>
+        <li>If you change something without selecting, it applies to the characters you type next. When you aren't typing (for example, after <kbd>Esc</kbd>), all the characters change.</li>
+        <li>The line "Color and size changes apply to:" in the text window shows which characters will change.</li>
+        <li>Line spacing, alignment and vertical writing affect all the characters. Characters of different sizes line up on a common bottom line.</li>
+      </ul>
+      <h3 id="retext">Retype text (text layers)</h3>
+      <p>Text you paste with "To new layer" turned on becomes a <strong>text layer</strong>, marked with a "T" in the layer list. Text pasted on the UV is always a text layer. You can change the characters, font, color and so on later and paste it again.</p>
+      <ol class="mn-steps">
+        <li>In the layer list, double-click the text layer (or right-click → "Retype text").</li>
+        <li>The text window and frame open in the state they were in when you pasted. The color and size of each character are kept too.</li>
+        <li>Edit the text and press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to redraw it. Undo brings back the previous version.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can also start by clicking the text with the Text tool, or with "Retype the selected text layer" in tool properties.</li>
+        <li>For text pasted on 3D, the view first returns to the one you had when you pasted, and then the frame appears. When you finish, the view goes back to what it was.</li>
+        <li>To rename it, right-click → "Rename".</li>
+        <li>Right-click → "Rasterize (text can no longer be edited)" turns it into an ordinary layer.</li>
+        <li>It is saved in the project file, so you can still retype it after reopening. In a PSD, it is written as an ordinary layer.</li>
+      </ul>
+      <h3 id="text-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Pressing a key doesn't change the tool</b>: Shortcuts don't work while you're typing text. Press <kbd>Esc</kbd> to stop typing.</li>
+        <li><b>The painting you added disappeared when you retyped</b>: Once you paint over a text layer, its mark changes to "T+". Retyping discards what you added, so press <kbd>Ctrl</kbd>+<kbd>Z</kbd> to undo, move your added painting to a separate layer, and then retype.</li>
+        <li><b>"Font not found" appears</b>: A loaded font can be used only until you quit the app. The text is retyped in another font. To get the original font back, load it again with "Load font".</li>
+        <li><b>You can't retype it</b>: Text pasted into the current layer with "To new layer" turned off, and text that has been rasterized, are ordinary artwork.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="ruler" data-keywords="ruler tool straight line guide speed lines vanishing point perspective parallel concentric radial snap">
+      <h2>Align lines with a ruler</h2>
+      <p>Make your strokes snap to a ruler to draw straight lines or lines that converge on a center. It works in both the 3D view and the UV view.</p>
+      <ol class="mn-steps">
+        <li>Select the "Ruler" tool and choose a ruler type in the sub tools.</li>
+        <li>Create a ruler in the 3D view or UV view (see the table below for how).</li>
+        <li>Switch to a pen or another tool and draw. Your lines follow the ruler.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">How to create it</th><th scope="col">Lines it affects</th></tr></thead><tbody>
+        <tr><td>Straight ruler</td><td>Drag</td><td>A line you start near it (within the snap distance) becomes straight</td></tr>
+        <tr><td>Curve ruler</td><td>Click to place points, then press <kbd>Enter</kbd> or double-click to finish (<kbd>Esc</kbd> to cancel)</td><td>A line you start near it follows the curve</td></tr>
+        <tr><td>Concentric circle ruler</td><td>The point you click is the center</td><td>Wherever you draw, the line becomes a circle at a constant distance from the center</td></tr>
+        <tr><td>Radial line ruler</td><td>The point you click is the center</td><td>Wherever you draw, the line heads toward the center</td></tr>
+        <tr><td>Parallel line ruler</td><td>Drag to set the direction</td><td>Wherever you draw, the line runs in that direction</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="Lines drawn with a radial ruler" loading="lazy"><figcaption>Radial line ruler</figcaption></figure>
+      <h3 id="ruler-detail">Move, cut and remove rulers</h3>
+      <ul class="mn-list">
+        <li>Drag the circles on a ruler (ends, center, points) to move it. Set the snap distance in tool properties.</li>
+        <li>A ruler in the 3D view stays on screen when you move the view. You can also place a separate ruler in the UV view.</li>
+        <li>While a ruler exists, a strip appears at the bottom center of that pane (ruler type, "Snap" on/off, and "Delete"). "Delete" removes only the ruler in that pane.</li>
+        <li>Toggle snapping with Display → Lines &amp; rulers → "Snap to ruler" (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd>). Remove the ruler with "Remove ruler" in the same place.</li>
+        <li>While you're placing the points of a curve ruler, <kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes the last point. Redo it with <kbd>Ctrl</kbd>+<kbd>Y</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>.</li>
+      </ul>
+      <h3 id="ruler-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Lines go straight or curve by themselves</b>: A ruler is still there. Turn off "Snap" in the strip at the bottom, or remove it with "Delete" (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd> also turns it off).</li>
+        <li><b>Lines don't follow the straight or curve ruler</b>: It only affects lines you start drawing near the ruler. Increase the snap distance in tool properties.</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/layers#mask">Layer mask</a></li><li><a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/deco"><small>← Previous</small>Stamps, patterns and stitches</a><a class="next" href="/petanuri/en/manual/layers"><small>Next →</small>Layers</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +489,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

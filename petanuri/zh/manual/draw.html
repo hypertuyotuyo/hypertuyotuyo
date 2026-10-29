@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>绘制 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="工具与辅助工具、沿表面3D绘制、画笔设置、透明色绘制、颜色与透明度渐变、填充、图形、颜色、左右对称。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="工具与辅助工具、沿面绘制的 3D 绘画方式、画笔设置、使用透明色绘画、颜色与透明度渐变、填充、图形、颜色、左右对称。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/draw">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="绘制 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="工具与辅助工具、沿表面3D绘制、画笔设置、透明色绘制、颜色与透明度渐变、填充、图形、颜色、左右对称。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="工具与辅助工具、沿面绘制的 3D 绘画方式、画笔设置、使用透明色绘画、颜色与透明度渐变、填充、图形、颜色、左右对称。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/draw">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "绘制 | PetaNuri3D 使用手册",
-   "description": "工具与辅助工具、沿表面3D绘制、画笔设置、透明色绘制、颜色与透明度渐变、填充、图形、颜色、左右对称。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "工具与辅助工具、沿面绘制的 3D 绘画方式、画笔设置、使用透明色绘画、颜色与透明度渐变、填充、图形、颜色、左右对称。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/draw",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,530 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw" aria-current="page">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw" aria-current="page">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 绘制</p>
     <h1 class="mn-h1">绘制</h1>
-    <p class="mn-intro">在 3D 视图直接用钢笔绘画。通过左侧工具栏选择工具，用辅助工具和工具属性调整手感。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#basic">先试着绘制</a></li><li><a href="#tools">工具与辅助工具</a></li><li><a href="#through">也绘制背面和被遮挡的面</a></li><li><a href="#props">画笔详细设置</a></li><li><a href="#blend">模糊、涂抹、混色</a></li><li><a href="#fill">填充、渐变、图形</a></li><li><a href="#gradient">颜色与透明度渐变</a></li><li><a href="#color">选择颜色、吸管</a></li><li><a href="#transparent">使用透明色绘画</a></li><li><a href="#mirror">左右对称绘制</a></li><li><a href="#popup">弹出调色板（仅用数位笔操作）</a></li><li><a href="#works">服装和道具也能绘制</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>先试着绘制</h2><ol class="mn-steps"><li>从 3D 视图模型上开始绘制时，会先<strong>自动切换</strong>到该位置的纹理集（如 body）再绘制（也可从右侧纹理集面板选择）。</li><li>在左侧工具栏选择钢笔（<kbd>P</kbd>），再从辅助工具选择“G 笔”等。</li><li>在颜色面板选色，在 3D 视图模型上绘制。</li><li>转动视角用右键拖动（数位笔侧键）或 <kbd>Space</kbd>＋拖动；缩放用滚轮。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="左侧工具栏、辅助工具与工具属性" loading="lazy"><figcaption>工具栏、辅助工具、工具属性</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="PetaNuri3D 完整界面" loading="lazy"><figcaption>完整界面</figcaption></figure></div><div class="mn-tip">在模型上使用 <kbd>Alt</kbd>＋右键也可选择该纹理集。详细信息请参阅<a href="/petanuri/zh/manual/sets">纹理集</a>页面。</div></section><section class="mn-sec" id="tools"><h2>工具与辅助工具</h2><p>以下为工具栏默认排列。按工具快捷键后松开可切换工具；按住并绘制则临时使用该工具，松开后恢复之前的工具。</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">工具</th><th scope="col">按键</th><th scope="col">辅助工具</th></tr></thead><tbody><tr><td>钢笔</td><td>P</td><td>G 笔、圆笔、针管笔、入笔/出笔笔、实心笔</td></tr><tr><td>毛笔</td><td>B</td><td>柔软笔、喷枪、平涂、铅笔、粉笔、喷雾、水彩晕染、平笔、减淡、加深、阴影（正片叠底）、毛笔</td></tr><tr><td>画笔集</td><td></td><td>铅笔、自动铅笔、细笔、毛笔、平笔、叠涂、厚涂、水边、飞溅、树叶、海绵等33种</td></tr><tr><td>橡皮擦</td><td>E</td><td>硬、软、粗擦、可塑橡皮、跨图层擦除（及附带的2种）</td></tr><tr><td>装饰</td><td></td><td>闪光、星星、心形、花、樱花、音符、雪花、圆点、泡泡、新月、菱形、四叶草、水滴（<a href="/petanuri/zh/manual/deco#deco">装饰</a>）</td></tr><tr><td>图章</td><td></td><td>图章、图章（散布）（<a href="/petanuri/zh/manual/deco#stamp">图章</a>）</td></tr><tr><td>纹理</td><td></td><td>条纹、圆点、方格等15种（<a href="/petanuri/zh/manual/deco#pattern">图案笔</a>）</td></tr><tr><td>缝线</td><td></td><td>针脚、滚边、十字绣、褶皱等 9 种。针脚用前景色绘制，褶皱、鼓包以高度绘制（<a href="/petanuri/zh/manual/deco#bump">缝线</a>）</td></tr><tr><td>混色</td><td>J</td><td>模糊、涂抹、混色（各3种及附带的3种）</td></tr><tr><td>填充</td><td>G</td><td>填充 UV 岛、整个材质、填充封闭区域、面填充</td></tr><tr><td>渐变</td><td></td><td>前景色→背景色、前景色→透明、圆形（前景色→透明）</td></tr><tr><td>图形</td><td></td><td>直线、矩形、椭圆、多边形（填充／边框）、曲线、曲线（连接点）</td></tr><tr><td>吸管</td><td>I</td><td>拾取显示颜色、从图层拾取</td></tr><tr><td>移动·变形</td><td>V</td><td><a href="/petanuri/zh/manual/edit#move">移动/变换工具</a></td></tr><tr><td>选区</td><td>S</td><td><a href="/petanuri/zh/manual/edit#select">选区</a></td></tr><tr><td>隐藏笔</td><td></td><td>按面隐藏、按 UV 岛隐藏（<a href="/petanuri/zh/manual/uv#hidepen">隐藏笔</a>）</td></tr><tr><td>文字</td><td>T</td><td>横排、竖排（<a href="/petanuri/zh/manual/edit#text">文字</a>）</td></tr><tr><td>尺子</td><td></td><td>直线、曲线、同心圆、放射线、平行线（<a href="/petanuri/zh/manual/edit#ruler">尺子</a>）</td></tr></tbody></table></div><ul class="mn-list"><li>辅助工具列表下方图标可复制、改名、删除、初始化、导出、全部导出、导入（也可右键，双击可改名）。拖动可排序，数位笔也可直接拖动。</li><li>导出、导入画笔设置（.petabrush）从 <span class="tier std">Standard</span> 起可用。导入的笔尖图片也会一同保存。</li><li>列表上方“小 中 大”可调整缩略图大小。缩小时，下方工具属性可显示更多内容。</li><li>工具属性值会按辅助工具保存。</li><li>右键工具栏按钮或辅助工具缩略图 →“分配按键”，可设置自选按键（辅助工具也可）。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="画笔集辅助工具" loading="lazy"><figcaption>画笔集</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="画笔笔画示例" loading="lazy"><figcaption>各种画笔笔画</figcaption></figure></div><div class="mn-tip">新工具与子工具（所有版本）：笔新增“像素笔”，填充新增“套索填充”，工具栏新增“液化”（推动、膨胀、收缩、漩涡（右）、漩涡（左）、还原）和“抓手”。在视图 → 窗口 →“工具箱”中可显示按网格排列工具的面板。</div><div class="mn-tip">像素笔：对齐纹理像素格子，清晰地绘制笔刷大小数量的像素（1 为 1 像素，3 为 3×3；颜色不混合）。粗细不随笔压和入笔收笔变化，3D、UV 及对称均可使用。其他笔在工具属性中选“像素（对齐像素格子，清晰）”也会以同样方式绘制。</div><div class="mn-tip">液化：沿涂抹处扭曲已画的图。每涂抹一次可用 Ctrl+Z 撤销一次。在 3D 视图中可跨越 UV 接缝连续变形，在 UV 视图中只作用于岛内。遵守选区和透明度保护，也可对称绘制。抓手：选中时用左键或笔拖动可移动视图（在 3D 中按住 Ctrl 可缩放）。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="用像素笔绘制并按像素显示纹理的 3D 视图" loading="lazy"><figcaption>像素笔与按像素显示纹理</figcaption></figure></section><section class="mn-sec" id="through"><h2>也绘制背面和被遮挡的面</h2><p>工具属性不透明度正下方的<strong>“也绘制背面和被遮挡的面”</strong>（橡皮擦为“也擦除背面和被遮挡的面”），以笔尖下可见表面为中心，在与画笔圆视觉大小相同的球体内，也绘制摄像机看不到的背面和内侧面。可一次绘制头发内侧、衣服重叠处、指缝等难以转到可见角度的位置。</p><ul class="mn-list"><li>钢笔、毛笔、画笔集、橡皮擦、渐变<strong>默认开启</strong>。关闭时仅绘制可见面。</li><li>装饰、图案、缝线也有此项（默认关闭）。模糊、涂抹、混色、图章使用画面上显示的颜色和图片，因此只作用于可见的面。</li><li>硬度控制边缘模糊。图片笔尖（铅笔、粉笔、喷雾及多数画笔集等）也可使用。“沿表面绘画”按面方向定向，“匹配屏幕”则将屏幕所见笔尖形状投影到后方。</li><li>选区、隐藏面、对称、锁定透明像素均正常生效。在 UV 区域绘制时无关（本来就能影响所有面）。</li></ul><div class="mn-tip warn">在有厚度的位置绘制时，可能触及另一侧。请注意画笔大小。</div></section><section class="mn-sec" id="props"><h2>画笔详细设置</h2><ul class="mn-list"><li>上方“～”笔画为当前设置的示例，修改设置后会即时变化。</li><li><strong>大小基准</strong>：按辅助工具选择“遵循设置／固定纹理大小／随屏幕变化”。固定纹理大小时，无论视角远近，纹理上的笔画粗细相同。遵循设置时使用 文件 → 偏好设置 → 绘制 中的“画笔大小单位”（屏幕 px／纹理 px）。</li><li><strong>笔尖</strong>：圆形、方形、平笔、铅笔、粉笔、喷雾、水彩、毛笔、闪光、星星、心形及附带31个笔尖。“加载”可使用图片（白底黑色形状），或其他绘画软件的画笔文件（.abr、.gbr、.gih 及打包的 .zip）。</li><li><strong>累积绘制</strong>：同一位置叠加越多，颜色越浓（适合喷枪）。</li><li><strong>渲染模式</strong>：可使用正片叠底、滤色、叠加、相加（发光）等28种模式绘制。还提供“绘制在后方（仅未绘制部分）”“变亮”“变暗”。</li><li><strong>防抖类型</strong>：平滑（延迟跟随）／1€（慢画时更强地抑制抖动，快画时减少延迟）／牵引（与笔尖保持少许距离跟随，抑制手部抖动）。</li><li><strong>入笔/出笔</strong>：让笔画起点和终点变细。出笔会在抬笔时将末端重绘为细线，绘制期间不会增加延迟。</li><li><strong>动态</strong>：速度控制粗细、粗细和浓度变化、倾倒控制粗细与浓度、倾斜和扭转旋转笔尖（倾倒和扭转仅支持发送相应数据的数位笔）。</li><li><strong>笔压曲线</strong>：分别移动粗细、浓度曲线上的点来调整响应。</li><li><strong>纸张纹理</strong>：纸张或画布纹理影响绘制浓度（附带6张、15种图案、自选图片）。贴合表面，不随视角移动。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="工具属性。也绘制背面和被遮挡的面、笔尖、纸张纹理等设置" loading="lazy"><figcaption>工具属性</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="笔尖列表" loading="lazy"><figcaption>笔尖列表</figcaption></figure></div><div class="mn-tip">左侧“画笔大小”面板可一键选择常用大小。以圆形和数字的小缩略图显示，缩窄面板时可收成一列。点击最后的铅笔图标或右键，可添加、移除当前大小。<kbd>[</kbd> <kbd>]</kbd> 也可改变大小（1〜1000）。</div><div class="mn-tip"><strong>3D 绘画方式</strong>：“沿表面绘画”可减少斜面上的笔画拉伸，v1.1.0 中为未设置画笔的默认值。“匹配屏幕”从摄像机投影，斜面上的笔画会拉伸。可按辅助工具选择。保留已保存设置，不改变 UV 视图绘制方式。</div><div class="mn-tip">导入外部笔刷笔尖：在子工具的导入中选择ABR、GBR、GIH、PNG等图像、SUT或ZIP。支持多选和拖放到面板，注册后即可绘制，所有版本均可使用。</div><div class="mn-tip">导入笔尖图像以及可获取的初始大小、间距等值，不会完整复现原始笔刷引擎、压感、混色或颜色。SUT使用可识别的内嵌PNG，可能是缩略图或其他素材，请在导入后调整工具属性。</div><div class="mn-tip">ABR支持版本1、2、6的图像笔尖，GBR支持版本1、2。GIH的多个笔尖分别注册。图像使用透明度或去除白色生成笔尖。.petabrush设置的导入与导出需 Standard 或更高版本。</div><div class="mn-tip">笔触手感（所有版本）：在文件 → 偏好设置 → 笔与输入 →“笔触手感”中，可选择“仅靠压感入笔收笔”（默认）或“按长度入笔收笔”（以前的默认）。仅靠压感时，笔压变轻处即成为入笔收笔，起笔不易出现墨团、收笔不易拖出细丝般的尾巴（仅限笔；鼠标与触控始终按长度）。</div><div class="mn-tip">从旧版本升级的用户，启动时会出现一次笔触手感改进的提示。点“恢复以前的手感”即可改回按长度入笔收笔（之后也可在偏好设置中更改）。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="偏好设置“笔与输入”中的笔触手感" loading="lazy"><figcaption>笔触手感</figcaption></figure></section><section class="mn-sec" id="blend"><h2>模糊、涂抹、混色</h2><ul class="mn-list"><li><strong>模糊</strong>：让涂抹处变得平滑。涂抹次数越多、来回越多，颜色越融合。“模糊范围”决定作用范围。</li><li><strong>涂抹</strong>：拖拽并延伸颜色。</li><li><strong>混色</strong>：拾取划过位置的颜色并带走，与前景色混合绘制。“颜料量”为0时，仅融合已有颜色。提高“颜色延伸”可延伸更远。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="通过混色融合两种颜色" loading="lazy"><figcaption>通过混色融合两种颜色</figcaption></figure><div class="mn-tip">均在 3D 上计算，因此不会在 UV 接缝断开。模糊和涂抹也可用于 UV 区域（混色仅用于 3D 区域）。</div><div class="mn-tip">模糊也新增了“3D 绘制方式”（贴合表面／匹配屏幕）。默认为贴合表面，模糊作用范围与笔的形状相同。</div><div class="mn-tip">模糊会随叠加而融合（所有版本）：一边重新模糊当前画面，一边按移动距离逐渐拉近颜色，因此即使是强度较低的模糊（如扁平模糊），叠加越多效果越明显。为避免一笔之内反复摩擦同一处把清晰边界或线稿完全溶掉，作用次数设有上限。UV 区域、2D 画布的模糊也是同样的效果。关闭工具属性中的“越叠越融合”可恢复以前的效果（一笔之内叠加不会变强；默认开启）。</div><div class="mn-tip">混色会先在笔刷内调和拾取的颜色再搬运，因此边界处的颜色融合得更宽更柔和（所有版本）。已保存的子工具设置不变，只有效果不同。</div><div class="mn-tip">模糊、涂抹、混色也可在工具属性中选择笔刷笔尖（所有版本，v1.3.0 起）。</div></section><section class="mn-sec" id="fill"><h2>填充、渐变、图形</h2><ul class="mn-list"><li><strong>填充 UV 岛</strong>：填满点击的整个 UV 岛。<strong>整个材质</strong>：填满整个材质。</li><li><strong>填充封闭区域</strong>：点击线条围成的区域，在该 UV 岛内填充颜色相近的连通部分。可设置参考（所有图层／选中图层）、容差、“封闭间隙”（在线条断口停止）、“扩展”（延伸到线条下方）。</li><li><strong>多边形填充</strong>：用前景色填满划过的面。</li><li><strong>渐变</strong>：在 3D 视图从起点拖到终点。“也绘制背面和被遮挡的面”（默认开启）时，沿点击与松开位置连接的 3D 线，也影响背面和内侧面（如从发根到发梢）。<kbd>Shift</kbd> 以45°为步进。</li><li><strong>图形</strong>：绘制直线、矩形、椭圆、多边形（3〜12边），可填充或仅画边框。<kbd>Shift</kbd> 可画正方形、正圆；开启“从中心绘制”时起点为中心。曲线在拖动松开后移动来弯曲，再点击确认。曲线（连接点）每次点击添加点，双击或按 <kbd>Enter</kbd> 确认（“关闭”可连接成环并填充）。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="填充线条围成的区域" loading="lazy"><figcaption>填充封闭区域</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="给腿部添加渐变" loading="lazy"><figcaption>渐变</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="通过面填充上色" loading="lazy"><figcaption>面填充（显示网格线）</figcaption></figure></div><div class="mn-tip">在描线图层下方建立上色图层，可保留清晰线条。</div><p>使用多种颜色与透明度的方法见<a href="#gradient">颜色与透明度渐变</a>。</p><div class="mn-tip">图形线宽与笔刷大小联动。通过笔刷大小列表、[ ] 键或弹出调色板更改大小时，图形线宽也会改变（按图形子工具分别保存，不影响画笔大小）。</div><div class="mn-tip">套索填充（所有版本）：填充的子工具。在 3D、UV 区域或 2D 画布上拖动圈住区域，即用前景色填充（当前选区保持不变，撤销一次即可还原）。在 3D 中圈住其他纹理集时，会与笔的“切换到点击位置”相同，先切换到圈内占比最多的纹理集再填充（开启“跨纹理集绘制”时，副纹理集也会填充）。</div><div class="mn-tip">Alt＋Backspace 用前景色、Ctrl＋Backspace 用背景色填充（有选区时填充选区内，否则填充所选图层全部；绘制蒙版时按颜色亮度）。按 D 键（或两个颜色方块左下的小按钮）可将前景色恢复为黑色、背景色恢复为白色。</div><div class="mn-tip">图形笔尖图像（所有版本，v1.3.0 起）：在图形工具的工具属性中选择笔尖图像后，会沿图形轮廓排列绘制缝线等。铅笔、粉笔等笔尖使用与笔相同的间距和随机旋转，形成连贯的线条。可调整粗细、间距、角度、顺线条方向旋转和随机旋转。选择“圆”即可恢复以往的图形绘制。</div></section><section class="mn-sec" id="gradient"><h2>颜色与透明度渐变</h2><p>渐变绘制工具从 Lite 起可用。在工具属性的“色彩”中选择<strong>“颜色和不透明度色标”</strong>，不再限于两色，可使用颜色与透明度组合的渐变。仍可选择“前景色→背景色”“前景色→透明”。</p><ol class="mn-steps"><li>选择预设，或点击色带空白处添加色标。支持2〜32个点。</li><li>选中色标，修改颜色、位置和不透明度。也可拖动改变位置。再次点击选中点或双击可选色。</li><li>不需要的点可通过“删除色标”、<kbd>Delete</kbd>或拖离色带删除。还可使用“使用前景色”“均匀分布”“左右互换”。</li><li>240种预设可按分类和名称查找，包含透明渐变。列表可滚动。输入名称并点击“保存当前”即可保存自定义预设。</li><li>选择线性或圆形，在 3D 视图或 UV 上从起点拖到终点绘制。</li></ol><div class="mn-tip">渐变不透明度为0的区域会保留下方颜色。要擦除已绘制内容，请使用<a href="#transparent">使用透明色绘画</a>。要按高度或表面方向在新图层上烘焙阴影，请使用 Pro 的<a href="/petanuri/zh/manual/bake#gradient">渐变烘焙</a>很方便。</div><div id="spatial-gradient"><h3>从3D空间点绘制渐变</h3><p>普通渐变工具也可从3D空间中的点扩散颜色，点可放在模型外。与滤镜烘焙不同，此操作应用于当前选中的绘画图层。</p><ol class="mn-steps"><li>选中要绘制的图层，在渐变工具属性中点击“从3D空间点绘制”，打开“3D空间渐变”窗口。</li><li>在3D视图中点击模型表面或空白空间放置中心点，拖动移动手柄或输入X、Y、Z坐标调整位置。</li><li>用半径调整颜色扩散距离，通过颜色和不透明度节点或预设调整色彩。透明区域保留下方颜色。</li><li>预览确认后应用，结果绘制在所选图层上。一次撤销即可回到应用前，取消会恢复图层原有内容。</li></ol><div id="gradient-range-guide"><h3>距离与颜色范围引导</h3><p>拖动外侧白色手柄可调整颜色扩散距离，颜色手柄可移动各颜色节点。中心移动手柄和XYZ坐标仍可使用；手柄、数值控件以及颜色/不透明度编辑会同步更新。</p><p>环表示到中心的距离，色带表示颜色和不透明度。各节点的标签显示位置、颜色和不透明度。带∅的颜色不会出现在当前范围内。拖动时按Esc可取消本次拖动。</p><p>用“显示范围引导”切换距离环、色带和颜色手柄的显示。中心移动手柄仍可使用。Pro 的点距离渐变烘焙也使用相同引导，调整边界位置或混合宽度会同步改变环和颜色的位置。</p></div><div class="mn-tip">原有线性、径向拖动操作和UV渐变仍可使用。若需按高度或表面方向在新图层上烘焙阴影，请使用 Pro 渐变烘焙。</div></div></section><section class="mn-sec" id="color"><h2>选择颜色、吸管</h2><ul class="mn-list"><li><strong>色彩</strong>面板：用上方按钮切换5种选色方式（色环＋方块、色环＋三角、方块＋色相条、色盘＋明度条、滑块）。</li><li><strong>颜色值</strong>面板：前景色／背景色、HEX、屏幕取色、RGB／HSV 数值、不透明度。</li><li><strong>最近使用的颜色</strong>：最近实际绘制或拾取的12种颜色。点击设为前景色。</li><li><kbd>X</kbd> 可交换前景色与背景色。</li><li><strong>吸管</strong>：<kbd>Alt</kbd> 按住时可从任意工具临时切换为吸管。</li><li><strong>从屏幕取色</strong>（<kbd>Shift</kbd>＋<kbd>I</kbd>）：可拾取屏幕任意位置的颜色，包括窗口外。</li><li><strong>颜色集</strong>：点击色样设为前景色。“＋当前前景色”可添加，拖动可排序。删除色样可撤销，也可读写 .gpl 调色板。</li><li><strong>参考图</strong>：打开、拖入、粘贴（<kbd>Ctrl</kbd>＋<kbd>V</kbd>）后显示，可用吸管取色。上方放大镜可缩放，“100%”恢复原大小，四角图标适应全部（仅用数位笔也可操作）。</li></ul><div class="mn-tip">从屏幕取色（exe 版，v1.3.0 起）：开始时截取屏幕并显示放大镜（放大画面和颜色值）。单击或按 Enter／Space 取色，方向键每次移动 1 像素（按住 Shift 为 10 像素）。按 Esc 或右键单击取消。由于从截取的画面中取色，视频等会显示为静止。在 v1.2.1 的 exe 中，此功能打开后会立即被取消，无法使用。</div><div class="mn-tip">吸管放大镜（所有版本，v1.3.0 起）：使用吸管（按 I 或按住 Alt 时）时，光标处会出现圆形放大镜。中间的框是取色位置，外圈显示取到的颜色。3D 视图和 UV 视图中都会显示。可在吸管的工具属性中用“显示放大镜”关闭（默认开启）。</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="颜色与颜色值面板" loading="lazy"><figcaption>颜色、颜色值</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="颜色集与最近使用的颜色" loading="lazy"><figcaption>颜色集｜最近使用的颜色</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="参考图面板" loading="lazy"><figcaption>参考图</figcaption></figure></div><div class="mn-tip">用RGB/HSV按钮切换辅助滑块，上方颜色区域和色相条保持不变。HSV可调整色相、饱和度和亮度，重启后保留选择。</div><div class="mn-tip">使用Alt键式相机时，3D中的Alt用于相机操作。3D吸管使用I键，UV吸管仍可使用Alt。</div><div class="mn-tip">在参考图像上使用吸管时，光标变为吸管形状，并带有白色描边，在明暗图像上都清晰可见。笔尖即取色位置。</div></section><section class="mn-sec" id="transparent"><h2>使用透明色绘画（用相同画笔擦除）</h2><p>颜色值面板的<strong>棋盘格按钮</strong>或 <kbd>C</kbd> 可切换透明色。用钢笔、毛笔、画笔集等画笔擦除选中绘制图层的颜色，保留笔尖形状、硬度、笔压和流量。</p><p>再次按 <kbd>C</kbd> 或选择普通前景色可恢复。锁定透明像素的图层不能擦除，需要先解除锁定。</p><div class="mn-tip">透明色用于让画笔擦除，并非将所有工具变为擦除工具。</div><div class="mn-tip">透明色（所有版本）：填充（岛、整个材质、封闭区域）、多边形填充和图形在透明色时也会擦除。渐变越靠近前景色一侧擦除越强。开启透明度保护的图层会拒绝操作。</div></section><section class="mn-sec" id="mirror"><h2>左右对称绘制</h2><ol class="mn-steps"><li>点击 3D 视图左上角的 <strong>X</strong>（左右）（也可按<kbd>M</kbd> 键）。</li><li>继续绘制时，另一侧也会出现相同内容。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右对称绘制，一侧手臂的星形也出现在另一侧" loading="lazy"><figcaption>在一侧手臂绘制，另一侧也会出现</figcaption></figure><ul class="mn-list"><li>Y（前后）、Z（上下）也可同时使用（X 与 Z 同时开启时影响4个位置）。</li><li>通过 ▼ 将镜像中心设为“模型中心”“原点”“指定”。“指定”可输入数值（cm）或“在模型上点击以设定”。开启“吸附到顶点”时使用点击处最近的顶点位置。也可通过 3D 右键 →“对称绘制”→“将此处设为对称中心”指定。</li><li>“模型中心”的左右位置为形状最对称的位置（即使单侧有装饰或道具，也会定位到身体中央）。</li><li>▼ 中的<strong>“对称对应点的搜索范围”</strong>（0〜3%，默认1%）：对于两侧形状略有差异的衣服，镜像位置无对应面时，会在此范围内找到最近的面作为另一侧绘制。</li><li><strong>工具属性顶部</strong>和<strong>UV 区域标题</strong>也有“对称 X、Y、Z”（与 3D 左上角同步）。不支持对称的工具不会显示此栏，3D 左上角 X、Y、Z 显示斜线。对于混色等仅在 UV 区域不支持的工具，会说明原因。</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="对称 ▼ 窗口。中心与对称匹配搜索范围" loading="lazy"><figcaption>对称 ▼（中心、匹配搜索范围）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="工具属性上方对称 X、Y、Z。X 已开启" loading="lazy"><figcaption>工具属性上方“对称”</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="混色的对称区域。显示在 UV 区域不生效的原因" loading="lazy"><figcaption>工具在 UV 区域不支持时会说明原因</figcaption></figure></div><p>各工具支持情况（○ 支持、△ 有条件、× 不支持、― 无关）。在点击位置或绘制形状的镜像位置执行相同操作，只需撤销一次。</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">工具</th><th scope="col">3D 区域</th><th scope="col">UV 区域</th></tr></thead><tbody><tr><td>笔、画笔、笔刷集、装饰、图案、缝线</td><td>○</td><td>○</td></tr><tr><td>橡皮擦（包括穿透图层）</td><td>○</td><td>○</td></tr><tr><td>图章</td><td>○</td><td>○（镜像侧图片方向也镜像）</td></tr><tr><td>模糊、涂抹</td><td>○</td><td>○</td></tr><tr><td>混色</td><td>○</td><td>―（UV 区域不可用的工具）</td></tr><tr><td>填充（UV 岛、整个材质）、填充封闭区域</td><td>○</td><td>○</td></tr><tr><td>多边形填充</td><td>○</td><td>○</td></tr><tr><td>图形</td><td>○</td><td>○</td></tr><tr><td>渐变</td><td>△</td><td>△</td></tr><tr><td>贴文字、图片</td><td>○</td><td>○（确认时也会写入镜像侧）</td></tr><tr><td>选择笔、选择擦除、按面选择</td><td>○</td><td>○</td></tr><tr><td>选区（矩形、椭圆、套索、折线、自动选择、按 UV 岛选择）</td><td>×</td><td>×（通过围出范围来选择的工具）</td></tr><tr><td>变换、移动/变换工具</td><td>―</td><td>×（移动已有图像的操作）</td></tr><tr><td>吸管、放置尺子</td><td>―</td><td>―（沿尺子绘制的线支持对称）</td></tr><tr><td>隐藏笔</td><td>×</td><td>×（隐藏显示的工具）</td></tr></tbody></table></div><div class="mn-tip">△ 渐变：在 3D 区域，可见面保留直接绘制的颜色，镜像侧仅影响不可见面。在 UV 区域，包含透明的渐变会采用更浓的一侧。开启“也绘制背面和被遮挡的面”时，所有面直接按 3D 线绘制，不使用对称。</div><div class="mn-tip"><strong>即使已设置姿势</strong>，也会按原姿势（静止姿势）的对称位置绘制。即使手臂弯曲，也会写入另一侧手臂对应位置（<a href="/petanuri/zh/manual/pose#posemirror">姿势</a>）。</div><div class="mn-tip">在隐藏面上对称绘制：在对称▼中勾选，隐藏一侧后在3D绘制可见侧，隐藏的对称侧也会同时绘制。默认关闭，支持画笔、笔刷、橡皮和印章，不适用于UV绘制及填充，仍遵守选区、图层锁定和目标纹理集限制。</div><div class="mn-tip">在对称 ▼ 中，“显示对称参考线”和“线条浓度”（10～100%）可在 3D 中显示对称中心线。勾选“在对称侧也显示光标”后，绘制位置的对称处也会显示虚线圆（对侧位于表面后方或内部时显示较淡）。两者默认开启。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="显示对称参考线与对侧光标的 3D 视图" loading="lazy"><figcaption>对称参考线与对侧光标</figcaption></figure></section><section class="mn-sec" id="popup"><h2>弹出调色板（仅用数位笔操作）</h2><ul class="mn-list"><li>在 3D 或 UV 上按数位笔侧键，<strong>不移动就松开</strong>，可在当前位置弹出圆形调色板（拖动仍用于旋转）。</li><li>外圈：常用辅助工具（“＋”添加当前辅助工具，长按或右键移除，最多10个）。内圈：用色相环和方块选前景色，上方小圆为最近颜色，下方标签可上下拖动调整画笔大小。</li><li>点击调色板外侧或按<kbd>Esc</kbd> 关闭。鼠标使用时，在 文件 → 偏好设置 → 操作，将“右键”设为弹出调色板（也可从右键菜单顶部“显示弹出调色板”打开）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="弹出调色板" loading="lazy"><figcaption>弹出调色板</figcaption></figure></section><section class="mn-sec" id="works"><h2>服装和道具也能绘制</h2><p>不仅是虚拟形象的身体，服装和道具也可用同样工具绘制。以下为在 PetaNuri3D 中打开ののつよ系列服装、道具的效果。</p><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开狛犬セーラー的示例" loading="lazy"><figcaption>狛犬セーラー</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开风铃的示例" loading="lazy"><figcaption>风铃（獄門しのぶ的道具）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开魔法帽的示例" loading="lazy"><figcaption>魔法帽（星羽の魔導衣的道具）</figcaption></figure></div><div class="mn-tip">若只想在局部（UV 岛）画线，请用选区“按 UV 岛选择”选中，再用“交叉”与条带形状相交后绘制（<a href="/petanuri/zh/manual/edit#select">选区</a>）。</div></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/start"><small>← 上一页</small>入门</a><a class="next" href="/petanuri/zh/manual/deco"><small>下一页 →</small>图章、图案、缝线与 2D 画布</a></nav>
+    <p class="mn-intro">直接在 3D 模型上用笔绘制。内容包括：如何选择工具、如何设定手感、如何选择颜色，以及填充、渐变、图形和左右对称绘制。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>在左侧工具栏点击钢笔（<kbd>P</kbd>），在辅助工具中选择“G 笔”（<a href="#basic">详细说明</a>）。</li>
+      <li>在色彩面板中选择颜色，然后在 3D 视图的模型上描画。会自动切换到开始绘制处的纹理集（<a href="#basic">详细说明</a>）。</li>
+      <li>粗细用 <kbd>[</kbd> <kbd>]</kbd> 或左侧的画笔大小面板调整（<a href="#props-size">详细说明</a>）。</li>
+      <li>擦除时用橡皮擦（<kbd>E</kbd>），或按 <kbd>C</kbd> 切换为透明色，用同一支画笔擦除（<a href="#transparent">详细说明</a>）。</li>
+      <li>想左右绘制同样的内容时，点击 3D 视图左上角的“X”（<kbd>M</kbd>）（<a href="#mirror">详细说明</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#basic">画出第一笔</a></li><li><a href="#tools">选择工具与辅助工具</a></li><li><a href="#props">设定绘制手感（工具属性）</a></li><li><a href="#through">也绘制背面和被遮挡的面</a></li><li><a href="#color">选择颜色、吸管</a></li><li><a href="#transparent">使用透明色绘画（用相同画笔擦除）</a></li><li><a href="#mirror">左右对称绘制</a></li><li><a href="#blend">模糊、涂抹、混色</a></li><li><a href="#distort">扭曲已绘制的内容（液化）</a></li><li><a href="#fill">批量填色（填充）</a></li><li><a href="#gradient">用渐变上色</a></li><li><a href="#shape">绘制图形</a></li><li><a href="#popup">仅用数位笔更改颜色和大小（弹出调色板）</a></li><li><a href="#works">也能给服装和道具上色</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="新手 绘制方法 上色 画线 无法绘制 画不上颜色 旋转视角 缩放 直线 shift">
+      <h2>画出第一笔</h2>
+      <p>模型打开后即可立即绘制。绘制前无需选择纹理集，会自动切换到开始绘制处的纹理集（例如 body）。</p>
+      <ol class="mn-steps">
+        <li>在左侧工具栏点击“钢笔”（<kbd>P</kbd>）。</li>
+        <li>在辅助工具面板中选择“G 笔”。</li>
+        <li>在色彩面板中选择前景色。</li>
+        <li>在 3D 视图的模型上描画。描过的位置会出现线条。</li>
+        <li>旋转视角用右键拖动（数位笔侧键）或 <kbd>Space</kbd>+拖动，缩放用滚轮。</li>
+        <li>画错了，按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 一笔一笔撤销。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="左侧工具栏、辅助工具与工具属性" loading="lazy"><figcaption>工具栏、辅助工具、工具属性</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="PetaNuri3D 的完整界面" loading="lazy"><figcaption>完整界面</figcaption></figure></div>
+      <h3 id="basic-more">绘制时可用的操作</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+点击：从上一条线的终点画一条直线。</li>
+        <li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+左右拖动：更改画笔大小。</li>
+        <li><kbd>Ctrl</kbd>+右键拖动（数位笔侧键）：左右拖动更改画笔大小，上下拖动更改硬度。<kbd>Ctrl</kbd>+笔尖拖动：左右更改不透明度，上下更改笔尖角度。</li>
+        <li>用笔的橡皮擦端描画，可以当橡皮擦使用。</li>
+        <li>在模型上按 <kbd>Alt</kbd>+右键，可以选择该处的纹理集（<a href="/petanuri/zh/manual/sets#choose">选择纹理集</a>）。</li>
+        <li>在 UV 视图上，也可以用同样的工具绘制（<a href="/petanuri/zh/manual/uv">UV 与显示范围</a>）。</li>
+      </ul>
+      <p>相机操作方式和其他按键，请看<a href="/petanuri/zh/manual/keys#pen">数位笔、鼠标操作</a>。</p>
+      <h3 id="basic-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>描了也不上色</b>：屏幕下方的栏中会显示原因。隐藏的图层、已锁定的图层和文件夹无法绘制。请在图层面板中选择可绘制的图层（<a href="/petanuri/zh/manual/layers#basic">图层</a>）。</li>
+        <li><b>只有一部分不上色</b>：选区外和已隐藏的部分无法绘制。启用了锁定透明像素的图层，无法在透明处绘制。</li>
+        <li><b>无法在其他纹理集上绘制</b>：“自动切换到开始绘制处的纹理集”被关闭了。请在 3D 视图中右键 →“自动切换到开始绘制处的纹理集”，将其开启。有选区时，无法在未被选中的纹理集上绘制。</li>
+        <li><b>笔压不改变粗细</b>：请检查工具属性中的“笔压控制大小”是否已开启。开启后仍不变时，请看<a href="/petanuri/zh/manual/keys#pressure">笔压不生效时</a>。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tools" data-keywords="工具栏 画笔 笔刷 铅笔 喷枪 水彩 快捷键 临时切换 工具箱 抓手">
+      <h2>选择工具与辅助工具</h2>
+      <p>在工具栏中选择工具，再用辅助工具选择该工具内的手感。下面是初始排列（工具栏也可以移到上、下、右侧。<a href="/petanuri/zh/manual/screen#toolbar">工具栏</a>）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">工具</th><th scope="col">按键</th><th scope="col">作用</th><th scope="col">辅助工具</th></tr></thead><tbody>
+        <tr><td>钢笔</td><td>P</td><td>绘制清晰的线条</td><td>G 笔、圆笔、针管笔、入抜笔、平涂钢笔、像素笔（<a href="#dotpen">像素笔</a>）</td></tr>
+        <tr><td>毛笔</td><td>B</td><td>用柔和的、有质感的毛笔上色</td><td>柔和毛笔、喷枪、平涂、铅笔、粉笔、喷枪、水彩晕染、平头笔（沿方向）、减淡（变亮）、加深（变暗）、阴影（正片叠底）、书法笔</td></tr>
+        <tr><td>画笔集</td><td>—</td><td>用内置的有质感的画笔绘制</td><td>铅笔 2B、木炭（柔软）、毛笔线稿、厚涂（画布）、飞溅（大）等 33 种（<a href="#brushset">画笔集</a>）</td></tr>
+        <tr><td>橡皮擦</td><td>E</td><td>擦除</td><td>偏硬、偏软、粗略、可塑橡皮、穿透图层，以及内置的 2 种</td></tr>
+        <tr><td>装饰</td><td>—</td><td>散布闪光等装饰</td><td>闪光、星形、心形、花、樱花、蕾丝等 17 种（<a href="/petanuri/zh/manual/deco#deco">装饰</a>）</td></tr>
+        <tr><td>图章</td><td>—</td><td>贴图像</td><td>图章、图章（散布）（<a href="/petanuri/zh/manual/deco#stamp">图章</a>）</td></tr>
+        <tr><td>图案</td><td>—</td><td>绘制服装图案</td><td>竖条纹、波点、维希格等 15 种（<a href="/petanuri/zh/manual/deco#pattern">图案</a>）</td></tr>
+        <tr><td>缝线</td><td>—</td><td>绘制针脚、褶皱</td><td>缝线（虚线）、滚边、铆钉等 9 种（<a href="/petanuri/zh/manual/deco#bump">缝线</a>）</td></tr>
+        <tr><td>混色</td><td>J</td><td>模糊、涂抹、混合</td><td>模糊、涂抹、混色（各 3 种，以及内置的 3 种）（<a href="#blend">混色</a>）</td></tr>
+        <tr><td>液化</td><td>—</td><td>扭曲已绘制的内容</td><td>推动、膨胀、收缩、漩涡（右）、漩涡（左）、撤销（<a href="#distort">液化</a>）</td></tr>
+        <tr><td>填充</td><td>G</td><td>整块填充 UV 岛、封闭区域等</td><td>填充 UV 岛、整个材质、填充封闭区域、套索填充、多边形填充（<a href="#fill">填充</a>）</td></tr>
+        <tr><td>渐变</td><td>—</td><td>让颜色渐变过渡地上色</td><td>颜色和不透明度、前景色→背景色、前景色→透明、圆形（前景色→透明）（<a href="#gradient">渐变</a>）</td></tr>
+        <tr><td>图形</td><td>—</td><td>绘制直线、矩形、圆、曲线</td><td>直线、矩形、矩形（描边）、椭圆、椭圆（描边）、多边形、多边形（描边）、曲线、曲线（连接点）（<a href="#shape">图形</a>）</td></tr>
+        <tr><td>吸管</td><td>I</td><td>取色</td><td>获取显示颜色、从图层获取（<a href="#eyedropper">吸管</a>）</td></tr>
+        <tr><td>移动·变形</td><td>V</td><td>移动、变换已绘制的内容</td><td>移动·变形（<a href="/petanuri/zh/manual/edit#move">移动·变形工具</a>）</td></tr>
+        <tr><td>抓手</td><td>—</td><td>移动显示（不绘制）</td><td>抓手</td></tr>
+        <tr><td>选区</td><td>S</td><td>圈出可绘制的范围</td><td>矩形、椭圆、套索、折线、自动选择、按 UV 岛选择、按面选择、选区笔、选区橡皮擦（<a href="/petanuri/zh/manual/edit#select">选区</a>）</td></tr>
+        <tr><td>隐藏笔</td><td>—</td><td>隐藏划过的部分</td><td>按面隐藏、按 UV 岛隐藏（<a href="/petanuri/zh/manual/uv#hidepen">隐藏笔</a>）</td></tr>
+        <tr><td>文字</td><td>T</td><td>添加文字</td><td>横排文字、竖排（<a href="/petanuri/zh/manual/edit#text">文字</a>）</td></tr>
+        <tr><td>尺子</td><td>—</td><td>沿尺子绘制</td><td>直线尺、曲线尺、同心圆尺、放射线尺、平行线尺（<a href="/petanuri/zh/manual/edit#ruler">尺子</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>按下工具键再松开，会切换到该工具。按住不放进行绘制时，仅在按住期间临时使用该工具，松开后回到之前的工具。</li>
+        <li>视为长按的时间（0.15～2 秒，默认 0.5 秒）可以在 文件 → 偏好设置 → 操作 → 键盘 中更改。这个临时切换也可以在同一处关闭。</li>
+        <li>抓手：选中时，用左键或数位笔拖动来移动显示。在 3D 视图中按住 <kbd>Ctrl</kbd> 为缩放。</li>
+        <li>橡皮擦的“穿透图层”会一次擦除所有可见的图层。用“不擦除底色图层”可以保留底色。</li>
+        <li>通过 显示 → 窗口 →“工具箱”，也可以显示把工具排成网格的面板。下方还排列有前景色和背景色的方块。</li>
+      </ul>
+      <h3 id="tools-subtool">增加、排序辅助工具并分配按键</h3>
+      <p>工具属性的值按辅助工具分别记忆。想用不同粗细的同一支笔时，请复制后另起名称。</p>
+      <ul class="mn-list">
+        <li>辅助工具列表下方的图标，从左起依次可以进行“复制”“名称”“删除”“初始化”“导出”“全部导出”“导入”。右键菜单中也有同样的操作。</li>
+        <li>双击也可以更改名称。排序用拖动（数位笔也可以直接拖动）。</li>
+        <li>列表上方的“小 中 大”可以更改图块大小。调小后，下方的工具属性会显示得更宽。</li>
+        <li>右键点击工具栏的按钮或辅助工具图块 →“分配按键”，可以分配喜欢的按键。想把同一个键分配给多个辅助工具时，选择“共用（每按一次切换）”，每按一次就会切换到下一个辅助工具。</li>
+        <li><span class="tier std">Standard</span> 通过“导出”“全部导出”“导入”，可以用 .petabrush 文件交换画笔设置。导入的笔尖图像也会一并带入。.petabrush 拖到窗口中也能导入。</li>
+      </ul>
+      <div class="mn-tip warn">删除辅助工具后无法撤销。Standard 及以上版本可以先用“导出”保存下来。</div>
+      <h3 id="tools-import">导入其他绘画软件的画笔</h3>
+      <ol class="mn-steps">
+        <li>点击辅助工具列表下方的“导入”。</li>
+        <li>选择 .abr、.gbr、.gih、.sut、图像（PNG 等），或把它们打包的 .zip。可以选择多个。</li>
+        <li>会添加使用该笔尖的辅助工具并自动选中。可以直接绘制。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>拖到辅助工具面板中也可以导入。把图像拖到 3D 或 UV 视图时，会作为图像处理，而不是画笔。</li>
+        <li>导入的内容有笔尖形状和名称、初始大小，以及能读取到时的间距和抗锯齿。原软件的手感、混色、颜色不会沿用，请在工具属性中调整。</li>
+        <li>.abr 支持版本 1、2、6 的图像笔尖，.gbr 支持版本 1、2。.gih 最多随机使用 128 帧。.sut 会根据其中的图像制作笔尖（其中可能含有缩略图等）。</li>
+        <li>单个文件最大 64MB，.zip 最多 512 个文件、解压后最大 64MB。无法读取的格式会显示原因。</li>
+        <li>任何版本都可以导入。导入的笔尖和辅助工具，在下次启动后也会保留。</li>
+      </ul>
+      <h3 id="brushset">画笔集（内置画笔）</h3>
+      <p>工具栏的“画笔集”中包含 33 种有质感的画笔。它们是把以 CC0（公共领域）发布的画笔集，转换成本应用设置后的版本。绘制的作品和商业用途都可以自由使用。</p>
+      <ul class="mn-list">
+        <li>喷枪（大）、基本铺色、椭圆毛笔、笔压粗细毛笔、细节毛笔、铅笔 H（草稿）、自动铅笔、铅笔 2B、细笔（粗糙）、毛笔线稿、细笔（硬边、岩石质感）、方块笔（叠涂）、平头笔（叠涂）、木炭（柔软）、圆头笔（叠涂）、叠涂（质感）、塑形（质感）、厚毛笔（质感）、毛笔（倾斜塑造体积）、毛笔（晕染涂抹）、耙形笔（粗糙）、厚涂（画布）、水痕边缘、散落质感、画布擦涂、飞白刮擦、飞溅（大）、飞溅（轻）、弯弯曲曲、质感底色、大海绵、粗糙噪点、树叶</li>
+        <li>同一画笔集中的模糊和涂抹（耙形模糊（涂抹）、质感模糊、扁平模糊）在“混色”中，橡皮擦（橡皮擦（粉笔笔尖）、可塑橡皮（柔软））在“橡皮擦”中。</li>
+        <li>笔尖的“内置画笔”（31 个）和纸张纹理的“内置”（6 张），也可用于其他辅助工具。</li>
+        <li>与原画笔的手感并不完全相同。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="画笔集辅助工具" loading="lazy"><figcaption>画笔集</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="画笔笔画示例" loading="lazy"><figcaption>各种画笔的笔画</figcaption></figure></div>
+      <h3 id="dotpen">绘制像素画（像素笔）</h3>
+      <p>钢笔中的“像素笔”会对齐纹理的像素格子，按画笔大小的像素数清晰上色。设为 1 就是 1 个像素，设为 3 就是 3×3，颜色不会混合。适合像素画，以及 32、64px 这类低分辨率的纹理。</p>
+      <ul class="mn-list">
+        <li>大小以纹理的 px 为单位。粗细不受笔压和入笔收笔影响。</li>
+        <li>在 3D 视图中，只会涂在笔尖正中所见面所在 UV 岛的范围内。对称绘制同样有效（对侧的相同像素也会被涂上）。</li>
+        <li>其他钢笔，开启工具属性中的“像素（对齐像素格子，清晰）”，也会是同样的上色方式。</li>
+        <li>将纹理按像素显示后，在 3D 中像素也会显示为方块（纹理集所在行的 ⋯ →“按像素显示（不插值）”。<a href="/petanuri/zh/manual/sets">纹理集</a>）。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="用像素笔绘制并按像素显示纹理的 3D 视图" loading="lazy"><figcaption>像素笔与按像素显示纹理</figcaption></figure>
+    </section>
+<section class="mn-sec" id="props" data-keywords="笔刷设置 笔压 硬度 浓度 间距 防抖 入笔 出笔 笔压曲线 纸张纹理">
+      <h2>设定绘制手感（工具属性）</h2>
+      <p>在工具属性面板中，设定所选辅助工具的手感。最上方的“～”线是按当前设置绘制的示例。更改设置后会即时变化。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>画笔大小、大小基准</td><td>粗细（1～1000），以及粗细按屏幕还是按纹理来确定（<a href="#props-size">设定粗细</a>）</td></tr>
+        <tr><td>不透明度</td><td>单次的浓度</td></tr>
+        <tr><td>也绘制背面和被遮挡的面</td><td>也绘制看不到的背面、内侧的面（<a href="#through">也绘制背面和被遮挡的面</a>）</td></tr>
+        <tr><td>3D 绘画方式</td><td>“沿表面绘画”或“匹配屏幕”（<a href="#props-3d">3D 绘画方式</a>）</td></tr>
+        <tr><td>3D 中也绘制到岛外的填充区</td><td>画完时，把线条向 UV 岛外扩展“填充宽度（px）”。可以防止接缝处出现细线。宽度与导出扩边的值相同（<a href="/petanuri/zh/manual/export#pad">扩边</a>）</td></tr>
+        <tr><td>笔尖</td><td>圆形、方形、铅笔等笔尖的形状（<a href="#props-tip">选择笔尖</a>）</td></tr>
+        <tr><td>硬度</td><td>边缘的清晰程度。调低后边缘会变模糊</td></tr>
+        <tr><td>间距</td><td>笔尖之间的间隔。加宽后会变成点状排列</td></tr>
+        <tr><td>防抖</td><td>抑制线条抖动的强度（<a href="#props-stroke">防抖类型</a>）</td></tr>
+        <tr><td>笔压控制大小、最小大小</td><td>是否用笔压改变粗细，以及压力最小时的粗细</td></tr>
+        <tr><td>笔压控制不透明度</td><td>是否用笔压改变浓度</td></tr>
+        <tr><td>抗锯齿</td><td>让边缘变平滑</td></tr>
+        <tr><td>叠加（越叠越浓）、流量</td><td>同一位置叠得越多越浓（适合喷枪）。流量是单次的浓度</td></tr>
+        <tr><td>像素（对齐像素格子，清晰）</td><td>对齐像素格子上色（<a href="#dotpen">像素笔</a>）</td></tr>
+        <tr><td>角度、随机旋转、沿线条方向旋转</td><td>图像笔尖的方向</td></tr>
+        <tr><td>散布</td><td>把笔尖散布在线条周围</td></tr>
+        <tr><td>渲染模式</td><td>与图层的混合模式相同的正片叠底、滤色、叠加、相加（发光）等，以及“背后绘制（仅未绘制处）”“变亮（减淡）”“变暗（加深）”</td></tr>
+        <tr><td>纸张纹理</td><td>在上色浓度中加入纸张的纹理（<a href="#paper">纸张纹理</a>）</td></tr>
+        <tr><td>防抖类型、动作、笔压曲线</td><td>线条的跟随方式、入笔收笔、笔压响应（<a href="#props-stroke">线条防抖、入笔收笔、笔压</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="工具属性。也绘制背面和被遮挡的面、笔尖、纸张纹理等设置" loading="lazy"><figcaption>工具属性</figcaption></figure>
+      <h3 id="props-size">设定粗细（画笔大小、大小基准）</h3>
+      <ul class="mn-list">
+        <li>在左侧的“画笔大小”面板中，点击常用的大小即可选择。点击后改变的只有大小（不透明度、硬度在工具属性中设置）。</li>
+        <li>大小图块末尾的铅笔图标或右键菜单中，可以进行“添加当前大小”“移除所选项”“初始化”。右键菜单的“移除此尺寸”可以立即移除点击的那个图块。</li>
+        <li>面板会按宽度换行，缩窄后最窄可缩成 1 列。</li>
+        <li>也可以用 <kbd>[</kbd> <kbd>]</kbd> 改变粗细。在按键设置中，还可以给“在画笔大小列表中增大一级”和“减小一级”分配按键。</li>
+        <li>选中图形时，改变的是图形的线宽（上限 500）；选中多边形填充、按面选择时，改变的是“拾取范围”（上限 200）。</li>
+      </ul>
+      <p>“大小基准”是拉近、拉远时确定粗细的方式。可按辅助工具分别选择。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">大小基准</th><th scope="col">粗细</th></tr></thead><tbody>
+        <tr><td>按设置（初始）</td><td>遵循 文件 → 偏好设置 → 绘制 中的“画笔大小单位”。初始为“屏幕 px”</td></tr>
+        <tr><td>按纹理固定</td><td>无论拉近还是拉远，都以相同的粗细绘制到纹理上（在屏幕上拉近时看起来会变粗）</td></tr>
+        <tr><td>按屏幕可变</td><td>在屏幕上粗细相同。拉近时在纹理上画得细，拉远时画得粗</td></tr>
+      </tbody></table></div>
+      <h3 id="props-3d">斜面上线条不被拉长（3D 绘画方式）</h3>
+      <p>在钢笔、毛笔、画笔集、橡皮擦、模糊的“3D 绘画方式”中选择。“沿表面绘画”（初始值）在斜面和边缘上线条也不容易被拉长，图像笔尖也会与面的朝向一致。“匹配屏幕”是从相机方向投影，因此在斜面上会被拉长。</p>
+      <p>在 UV 视图中绘制时，两者没有区别。</p>
+      <h3 id="props-tip">选择笔尖</h3>
+      <ul class="mn-list">
+        <li>点击“笔尖”进行选择。有圆形、方形、平头笔、铅笔、粉笔、喷枪、水彩、书法笔、闪光、星形、心形，以及 31 个内置画笔的笔尖。</li>
+        <li>在笔尖列表的“加载”中，图像（白底黑色图形的 PNG、JPEG）、其他绘画软件的画笔（.abr、.gbr、.gih、.sut），以及将它们打包的 .zip，也可以用作笔尖。</li>
+        <li>图像笔尖会显示“角度”“随机旋转”“沿线条方向旋转”。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="笔尖列表" loading="lazy"><figcaption>笔尖列表</figcaption></figure>
+      <h3 id="paper">添加纸张纹理</h3>
+      <p>在钢笔、毛笔、橡皮擦等的“纸张纹理”中选择后，上色浓度中会加入纸张或画布的纹理。纹理会在贴图上重复，所以贴合在面上，移动视角也不会错位。</p>
+      <ul class="mn-list">
+        <li>可选项有内置的 6 张，以及图案的 15 种（与<a href="/petanuri/zh/manual/deco#pattern">图案</a>相同的花纹）。用“导入纹理”还可以使用喜欢的图像（越亮的地方越容易上色）。</li>
+        <li>用“纹理缩放”“纹理角度”“纹理强度”“反转纹理明暗”进行调整。UV 岛倒置或横向的位置，用“纹理角度”来对齐花纹的方向。</li>
+        <li>“应用方式”有“相乘（越亮处越容易上色）”和“相减（从暗处开始留空）”。</li>
+      </ul>
+      <h3 id="props-stroke">线条防抖、入笔收笔、笔压</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">防抖类型</th><th scope="col">效果</th></tr></thead><tbody>
+        <tr><td>平滑（延迟跟随）</td><td>稍微延迟地跟随笔尖，使线条平滑</td></tr>
+        <tr><td>1€（效果随速度变化）</td><td>慢速绘制时强力抑制抖动，快速绘制时减少延迟。通过“慢速时的防抖”“快速时减弱”调整</td></tr>
+        <tr><td>拉绳（以固定距离跟随）</td><td>与笔尖保持“拉绳长度”的距离并跟随。手抖会消失</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>入笔/出笔</strong>：让起笔和收笔处变细的长度。出笔是在抬笔时把线条末端重新画细，所以绘制过程中不会有延迟。</li>
+        <li><strong>动作</strong>：“速度控制粗细”“粗细抖动”“浓度抖动”“倾斜控制粗细”“倾斜控制浓度”“按笔的倾斜方向旋转笔尖”“按笔的旋转角度旋转笔尖”。倾斜和旋转角度只对会发送这些信息的笔有效。</li>
+        <li><strong>笔压曲线（粗细/浓度）</strong>：拖动点来设定笔压的响应（横轴为笔压，纵轴为粗细/浓度）。双击可恢复为直线。</li>
+        <li><strong>笔触手感</strong>：在 文件 → 偏好设置 → 笔与输入 →“笔触手感”的“入笔收笔的方式”中，可以选择“仅靠压感入笔收笔（默认）”和“按长度入笔收笔”。仅靠压感入笔收笔时，起笔处的圆点和收笔处的丝状尾巴不容易出现（仅限数位笔。鼠标始终是按长度入笔收笔）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="偏好设置“笔与输入”中的笔触手感" loading="lazy"><figcaption>笔触手感</figcaption></figure>
+      <h3 id="props-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>拉近时线变细，拉远时线变粗</b>：把“大小基准”设为“按纹理固定”。</li>
+        <li><b>斜面上线条被拉长</b>：把“3D 绘画方式”设为“沿表面绘画”。</li>
+        <li><b>线条比笔尖出得晚</b>：调低“防抖”，或把“防抖类型”设为“1€（效果随速度变化）”。也可以试试 文件 → 偏好设置 → 笔与输入 →“减少延迟”中的“提前显示笔画（减少延迟）”。</li>
+        <li><b>起笔处出现圆点，收笔处出现尾巴</b>：把笔触手感设为“仅靠压感入笔收笔（默认）”。</li>
+        <li><b>UV 接缝处残留细线</b>：开启“3D 中也绘制到岛外的填充区”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="through" data-keywords="背面 里面 内侧 深处 穿透 绕到后面 看不到的地方 头发内侧 双面显示 单面">
+      <h2>也绘制背面和被遮挡的面</h2>
+      <p>一次涂到头发内侧、衣服重叠处、指缝等绕到后面才看得到的位置。用工具属性中不透明度正下方的“也绘制背面和被遮挡的面”（橡皮擦为“也擦除背面和被遮挡的面”）来开关。</p>
+      <ul class="mn-list">
+        <li>以笔尖下看到的面为中心，在与画笔圆圈视觉大小相同的球体范围内，连相机看不到的背面、内侧的面也会涂上。</li>
+        <li>钢笔、毛笔、画笔集、橡皮擦、渐变初始为开启。装饰、图案、缝线初始为关闭。关闭后，只涂看得到的面。</li>
+        <li>模糊、涂抹、混色、图章没有此项（因为它们使用的是屏幕上显示的颜色、图像）。在 UV 视图中与此无关（本来就会涂到所有面）。</li>
+        <li>边缘会因硬度而变模糊。图像笔尖会保持屏幕上看到的形状向内侧延伸。</li>
+        <li>选区、隐藏部分、对称、锁定透明像素照常有效。</li>
+      </ul>
+      <div class="mn-tip warn">在有厚度的地方绘制，会涂到另一侧。请调小画笔，或关闭该选项，只涂看得到的面。</div>
+      <h3 id="through-doubleside">与显示“单面”“双面”的区别</h3>
+      <p>3D 视图左上角的“单面”“双面”是显示方式的切换。设为“双面”后，背向的面也会显示，可以涂到能看见的背面。而连相机看不到的面也涂上的，是“也绘制背面和被遮挡的面”（<a href="/petanuri/zh/manual/screen#hud">3D 视图四角</a>）。</p>
+    </section>
+
+    <section class="mn-sec" id="color" data-keywords="取色器 调色板 HEX RGB HSV 色相 饱和度 明度 取色 放大镜">
+      <h2>选择颜色、吸管</h2>
+      <p>绘制的颜色（前景色）可以通过色彩面板、颜色值面板、最近使用的颜色、颜色集来选择。无论用哪一种选择，得到的都是同一个前景色。</p>
+      <ul class="mn-list">
+        <li><strong>色彩</strong>：用上方的按钮切换选色方式。共有“色环＋方块”“色环＋三角形”“方块＋色相条”“圆盘＋明度条”“滑块（RGB/HSV）”5 种。</li>
+        <li><strong>颜色值</strong>：前景色和背景色、HEX、从屏幕取色、RGB/HSV 数值、不透明度。点击右侧的 ▾ 展开数值，点击 ▴ 收起。</li>
+        <li><strong>最近使用的颜色</strong>：实际涂过、取过的 12 种颜色（新的在前）。点击后成为前景色。</li>
+        <li>在选色方式下方显示 RGB/HSV 滑块时，用“RGB”“HSV”按钮切换。选中的格式在下次启动时也会保留。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="颜色与颜色值面板" loading="lazy"><figcaption>色彩、颜色值</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="颜色集与最近使用的颜色" loading="lazy"><figcaption>颜色集｜最近使用的颜色</figcaption></figure></div>
+      <h3 id="color-swap">前景色与背景色</h3>
+      <ul class="mn-list">
+        <li>按 <kbd>X</kbd>（或点击 ⇄），交换前景色和背景色。</li>
+        <li>按 <kbd>D</kbd>（或点击两个方块左下角的小按钮），把前景色恢复为黑色、背景色恢复为白色。</li>
+        <li><kbd>Alt</kbd>+<kbd>Backspace</kbd> 用前景色填充，<kbd>Ctrl</kbd>+<kbd>Backspace</kbd> 用背景色填充。有选区时填充选区内，没有选区时填充所选图层的整个画面。</li>
+      </ul>
+      <h3 id="eyedropper">用吸管取色</h3>
+      <ul class="mn-list">
+        <li>用吸管（<kbd>I</kbd>）取点击处的颜色。辅助工具有“获取显示颜色”（看到的颜色）和“从图层获取”（所选图层的颜色）。</li>
+        <li>按住 <kbd>Alt</kbd> 期间，任何工具都会变成吸管。相机操作为“Alt＋鼠标按钮”方式时，在 3D 视图中请使用 <kbd>I</kbd>。</li>
+        <li>在 3D 视图中右键 →“吸取此处颜色”也可以取色。</li>
+        <li>调大“取样范围”，会取周围颜色的平均值。</li>
+        <li>使用吸管时，光标处会出现圆形放大镜。中间的框是取色的位置，外圈是取到的颜色。可以用工具属性的“显示放大镜”关闭。</li>
+      </ul>
+      <h3 id="screen-pick">从屏幕任意位置取色</h3>
+      <ol class="mn-steps">
+        <li>点击颜色值面板中的吸管图标（<kbd>Shift</kbd>+<kbd>I</kbd>）。会出现显示放大图像和颜色值的放大镜。</li>
+        <li>点击想取色的位置。窗口外的位置也可以取色。按 <kbd>Enter</kbd>、<kbd>Space</kbd> 也可以取色。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>用方向键可以一个像素一个像素地移动（按住 <kbd>Shift</kbd> 则一次 10 个像素）。按 <kbd>Esc</kbd> 或右键取消。</li>
+        <li>取的是开始时截取的画面，所以视频等会呈静止状态。</li>
+      </ul>
+      <h3 id="colorset">颜色集</h3>
+      <ul class="mn-list">
+        <li>点击色块即成为前景色。点击“＋当前前景色”添加，拖动排序，双击为色块命名。</li>
+        <li>“替换”“删除”对所选色块有效。删除的色块可以用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 恢复。用“小”“中”“大”更改色块的大小。</li>
+        <li>通过“…”，可以新建、复制、命名、删除颜色集，导出（JSON／.gpl 调色板）和导入。.gpl 拖到窗口任意位置都可以导入。</li>
+        <li>按住 <kbd>Space</kbd> 拖动，可以滚动列表（面向数位笔）。</li>
+      </ul>
+      <h3 id="color-reference">从参考图取色</h3>
+      <ul class="mn-list">
+        <li>在参考图面板中，通过“打开”、拖入面板、点击面板后按 <kbd>Ctrl</kbd>+<kbd>V</kbd> 中的任意一种方式显示图像。</li>
+        <li>点击或拖动图像，就会取该处的颜色。松开后会加入最近使用的颜色。</li>
+        <li>用上方的放大镜图标放大、缩小，“100%”为原始大小，四角的图标为适合整体。仅用数位笔也可以操作。</li>
+        <li>显示出来的图像，下次启动时也会恢复。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="参考图面板" loading="lazy"><figcaption>参考图</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="transparent" data-keywords="擦除 清除 代替橡皮擦 alpha 透明 抠掉 削掉 透明色">
+      <h2>使用透明色绘画（用相同画笔擦除）</h2>
+      <p>点击颜色值面板中的棋盘格按钮，或按 <kbd>C</kbd>，把前景色设为透明色。保持钢笔、毛笔、画笔集等的笔尖、硬度、笔压不变，就能擦除当前图层的颜色。</p>
+      <ul class="mn-list">
+        <li>要恢复时，再按一次 <kbd>C</kbd> 或点击棋盘格按钮。点击前景色方块、选择颜色也会恢复。</li>
+        <li>填充（填充 UV 岛、整个材质、填充封闭区域）、多边形填充、图形，在透明色下也会擦除要涂的部分。</li>
+        <li>渐变会在前景色一侧擦除得更强。</li>
+        <li>图章即使设为透明色，也不会擦除。</li>
+      </ul>
+      <div class="mn-tip warn">启用了锁定透明像素的图层无法擦除。要擦除时，请先取消锁定透明像素。</div>
+    </section>
+<section class="mn-sec" id="mirror" data-keywords="镜像 对称 对称轴 另一侧 两侧 左右翻转 对称绘制 x轴 symmetry mirror">
+      <h2>左右对称绘制</h2>
+      <p>在一侧绘制，另一侧也会出现同样的内容。绘制脸或衣服的左右等需要在两侧画同样形状时使用。</p>
+      <ol class="mn-steps">
+        <li>点击 3D 视图左上角的“X”（左右）（<kbd>M</kbd>）。</li>
+        <li>在模型的一侧绘制。另一侧也会出现同样的内容。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右对称绘制，一侧手臂的星形也出现在另一侧" loading="lazy"><figcaption>在一侧手臂绘制，另一侧也会出现</figcaption></figure>
+      <ul class="mn-list">
+        <li>“Y”（前后）、“Z”（上下）也可以同时开启任意多个（X 和 Z 同时开启，会画在 4 个位置）。</li>
+        <li>通过编辑菜单，或 3D 视图中右键 →“对称绘制”也可以切换。</li>
+        <li>工具属性的最上方和 UV 视图的标题处也有“对称 X、Y、Z”（与 3D 视图左上角是同一个开关）。</li>
+        <li>撤销时，包括对侧的内容在内，一次即可撤销。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="工具属性上方对称 X、Y、Z。X 已开启" loading="lazy"><figcaption>工具属性上方“对称”</figcaption></figure>
+      <h3 id="mirror-center">确定对称中心</h3>
+      <p>通过 X、Y、Z 旁边的 ▼，可以从“模型中心”“原点”“指定”中选择对称中心。仅含衣服的 FBX 等，中心偏离身体正中时使用。</p>
+      <ul class="mn-list">
+        <li><strong>模型中心</strong>：左右方向取形状最左右对称的位置。即使有仅在一侧的装饰或小物，也会取身体的正中。</li>
+        <li><strong>原点</strong>：以坐标原点为中心对称。</li>
+        <li><strong>指定</strong>：以 cm 为单位输入 X、Y、Z 的中心，或用“在模型上点击以设定”取点击处。“吸附到顶点”（初始为开启）时，取距离点击处最近的顶点位置。</li>
+        <li>在 3D 视图中右键 →“对称绘制”→“将此处设为对称中心”也可以设定。</li>
+        <li>设定后，对称面会在 3D 中以半透明显示约 2 秒。指定的位置会保存在工程文件中。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="对称 ▼ 窗口。中心与对称对应点的搜索范围" loading="lazy"><figcaption>对称 ▼（中心、对应点的搜索范围）</figcaption></figure>
+      <h3 id="mirror-options">▼ 中的其他设置</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">初始</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>对称对应点的搜索范围</td><td>1%</td><td>0～3%。镜像位置没有面时（例如左右形状略有不同的衣服），在此范围内把最近的面作为另一侧来绘制。0% 只绘制在镜像位置</td></tr>
+        <tr><td>在隐藏侧对称绘制（3D 画笔）</td><td>关</td><td>用显示范围或隐藏笔隐藏一侧后，仍可从可见的一侧同时绘制到另一侧。对 3D 的钢笔、画笔、橡皮擦、图章有效（对 UV 视图、填充、模糊、涂抹、混色无效）</td></tr>
+        <tr><td>显示对称参考线、线条浓度</td><td>开</td><td>在 3D 中显示对称中心的线。浓度为 10～100%</td></tr>
+        <tr><td>在对称侧也显示光标</td><td>开</td><td>在绘制位置翻转后的位置，也显示虚线圆。对侧位于面的后面或内部时会淡淡显示</td></tr>
+      </tbody></table></div>
+      <p>所有设置在下次启动时都会保留。</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="显示对称参考线与对侧光标的 3D 视图" loading="lazy"><figcaption>对称参考线与对侧光标</figcaption></figure>
+      <h3 id="mirror-tools">对哪些工具有效</h3>
+      <p>○ 有效，△ 有条件，× 无效，― 无关。选择了对称无效的工具时，工具属性上方的对称栏会变淡并显示原因。3D 视图左上角的 X、Y、Z 上会出现斜线。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">工具</th><th scope="col">3D 视图</th><th scope="col">UV 视图</th></tr></thead><tbody>
+        <tr><td>钢笔、毛笔、画笔集、装饰、图案、缝线</td><td>○</td><td>○</td></tr>
+        <tr><td>橡皮擦（包括穿透图层）</td><td>○</td><td>○</td></tr>
+        <tr><td>图章</td><td>○</td><td>○（镜像侧图像的方向也会镜像）</td></tr>
+        <tr><td>模糊、涂抹</td><td>○</td><td>○</td></tr>
+        <tr><td>混色</td><td>○</td><td>―（UV 视图中无法使用的工具）</td></tr>
+        <tr><td>液化</td><td>○</td><td>○</td></tr>
+        <tr><td>填充（填充 UV 岛、整个材质）、填充封闭区域</td><td>○</td><td>○</td></tr>
+        <tr><td>多边形填充</td><td>○</td><td>○</td></tr>
+        <tr><td>图形</td><td>○</td><td>○</td></tr>
+        <tr><td>渐变</td><td>△</td><td>△</td></tr>
+        <tr><td>文字、贴图像</td><td>○</td><td>○（确认时也会写入镜像侧）</td></tr>
+        <tr><td>选区笔、选区橡皮擦、按面选择</td><td>○</td><td>○</td></tr>
+        <tr><td>选区（矩形、椭圆、套索、折线、自动选择、按 UV 岛选择）</td><td>×</td><td>×（通过圈出范围来选择的工具）</td></tr>
+        <tr><td>移动·变形</td><td>―</td><td>×（移动已有图像的操作）</td></tr>
+        <tr><td>吸管、放置尺子</td><td>―</td><td>―（沿尺子绘制的线支持对称）</td></tr>
+        <tr><td>隐藏笔</td><td>×</td><td>×（隐藏显示的工具）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="混色的对称栏。显示了在 UV 视图中无效的原因" loading="lazy"><figcaption>在 UV 视图中无效的工具会显示原因</figcaption></figure>
+      <div class="mn-tip">△ 渐变：在 3D 视图中，可见的面保持直接指定的颜色，写入镜像侧的是看不到的面。在 UV 视图中，含透明的渐变会写入较浓的一方。“也绘制背面和被遮挡的面”开启时，所有面都是通过 3D 中的线直接上色，所以不使用对称。</div>
+      <div class="mn-tip"><span class="tier pro">Pro</span> 设置了姿势时，也是在原始姿势（静止姿势）下对称的位置上色。即使手臂弯曲，也会画到另一条手臂的同一位置（<a href="/petanuri/zh/manual/pose#posemirror">姿势</a>）。</div>
+      <h3 id="mirror-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>画到了另一侧错位的位置</b>：对称中心偏了。在 ▼ 中把中心设为“原点”或“指定”（<a href="#mirror-center">确定中心</a>）。</li>
+        <li><b>另一侧的一部分没有画上</b>：这是左右形状略有不同的位置。调大 ▼ 中的“对称对应点的搜索范围”。</li>
+        <li><b>隐藏一侧后，另一侧画不上</b>：开启 ▼ 中的“在隐藏侧对称绘制（3D 画笔）”。</li>
+        <li><b>在 UV 视图中绘制，另一侧没有画上</b>：另一侧位于其他纹理集（材质）中时，在 UV 视图中不会画上。请在 3D 视图中绘制。</li>
+        <li><b>X、Y、Z 上带有斜线</b>：当前工具的对称无效（<a href="#mirror-tools">对哪些工具有效</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="模糊 涂抹 手指 融合 衔接 晕开 交界处 溶解 smudge blur">
+      <h2>模糊、涂抹、混色</h2>
+      <p>用混色工具（<kbd>J</kbd>）让涂好的颜色融合。所有操作都是在 3D 上计算的，所以不会在 UV 接缝处断开。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">作用</th><th scope="col">主要设置</th></tr></thead><tbody>
+        <tr><td>模糊、模糊（强、大范围）、模糊（弱、仅边界）</td><td>让描过的位置变平滑。描得越多、往复得越多，融合得越深</td><td>“模糊范围”“越叠越融合”“3D 绘画方式”</td></tr>
+        <tr><td>涂抹、涂抹（强力延展）、涂抹（柔和）</td><td>拖拽颜色并延展</td><td>“强度”</td></tr>
+        <tr><td>混色、混色（融合）、混色（浓厚）</td><td>拾取描过之处的颜色并带着走，与前景色混合着上色</td><td>“颜料量”“颜色延伸”“从所有图层取色”</td></tr>
+        <tr><td>耙形模糊（涂抹）、质感模糊、扁平模糊</td><td>内置画笔集中的模糊和涂抹</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>作用的强弱由“强度”决定（相当于其他画笔的不透明度）。</li>
+        <li>颜料量是前景色的比例。为 0 时，只会融合已涂好的颜色。调高颜色延伸，会把拾取的颜色带得更远。</li>
+        <li>“越叠越融合”（初始为开启）：同一位置描的次数越多，融合得越深。即使在一条线里不停地涂擦，也设有上限，不会把线稿也融没。关闭后，在一条线内叠加也不会变强。</li>
+        <li>模糊的“3D 绘画方式”为“沿表面绘画”时，模糊作用的范围与钢笔的形状相同。</li>
+        <li>模糊、涂抹、混色也可以在工具属性中选择笔尖。</li>
+        <li>模糊、涂抹也可用于 UV 视图。混色仅限 3D 视图。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="通过混色融合两种颜色" loading="lazy"><figcaption>通过混色融合两种颜色</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="distort" data-keywords="扭曲 变形 液化 推动 膨胀 收缩 漩涡 旋转 修正线条形状 liquify">
+      <h2>扭曲已绘制的内容（液化）</h2>
+      <p>让已画好的内容在描过的位置发生扭曲。想稍微修正线条形状时使用。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>推动</td><td>沿移动方向拖拽图像</td></tr>
+        <tr><td>膨胀、收缩</td><td>把描过的位置向外扩展、向内收拢</td></tr>
+        <tr><td>漩涡（右）、漩涡（左）</td><td>向右（顺时针）、向左卷起</td></tr>
+        <tr><td>撤销</td><td>把描过的位置逐渐恢复到开始液化之前的图像</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>“强度”（也会随笔压变化）、“硬度”（边缘的作用方式）、画笔大小与其他画笔相同。膨胀、收缩、漩涡、撤销的作用量取决于描过的长度。</li>
+        <li>每描一次，按一次 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 即可撤销。无论描多少次，都不会变模糊。</li>
+        <li>在 3D 视图中，会跨越 UV 的断开处连续作用。拉得越近，作用越精细。</li>
+        <li>在 UV 视图中，只会扭曲 UV 岛内部。</li>
+        <li>遵守选区和锁定透明像素。对称绘制也有效。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="fill" data-keywords="油漆桶 填充 平涂 底涂 批量 封闭区域 套索 UV岛 缝隙 bucket">
+      <h2>批量填色（填充）</h2>
+      <p>用填充（<kbd>G</kbd>）一次涂满 UV 岛或线条围住的区域等。把用于上色的图层建在线稿图层下方，线条就能干净地保留下来。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">涂的位置</th></tr></thead><tbody>
+        <tr><td>填充 UV 岛</td><td>点击处的整个 UV 岛</td></tr>
+        <tr><td>整个材质</td><td>点击处的整个材质</td></tr>
+        <tr><td>填充封闭区域</td><td>线条围住的区域。该 UV 岛内颜色相近且相连的部分（<a href="#fill-region">详细说明</a>）</td></tr>
+        <tr><td>套索填充</td><td>拖动圈出的区域（<a href="#fill-lasso">详细说明</a>）</td></tr>
+        <tr><td>多边形填充</td><td>描过的整个面（<a href="#fill-poly">详细说明</a>）</td></tr>
+      </tbody></table></div>
+      <p>填充 UV 岛、整个材质可以更改“抗锯齿（UV 岛边缘）”和不透明度。</p>
+      <h3 id="fill-region">填充线条围住的区域</h3>
+      <ol class="mn-steps">
+        <li>在线稿图层下方新建用于上色的图层并选中。</li>
+        <li>选择填充的辅助工具“填充封闭区域”。</li>
+        <li>把工具属性的“参考”设为“所有图层”（线条画在另一个图层时）。</li>
+        <li>点击想涂的位置。会在线条处停住，并用前景色上色。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">设置</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>参考</td><td>根据“所有图层”或“所选图层”的图像，判断停止的线条</td></tr>
+        <tr><td>容差</td><td>把多大的颜色差异视为相同</td></tr>
+        <tr><td>封闭间隙</td><td>0～5。把线条加粗，在小缺口处停住（n 对应约 2n px 以内的缺口）</td></tr>
+        <tr><td>扩展/收缩</td><td>−3～3。＋ 会潜入线条下方，消除与线条之间的白色缝隙</td></tr>
+        <tr><td>抗锯齿（边缘平滑 1px）</td><td>让填充的边缘变平滑</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="填充线条围住的区域后的效果" loading="lazy"><figcaption>填充封闭区域</figcaption></figure>
+      <h3 id="fill-lasso">用套索圈住后填色</h3>
+      <p>在 3D 视图、UV 视图、2D 画布上拖动圈出范围，圈出的位置会用前景色填充。当前选区保持不变，撤销一次即可撤销。</p>
+      <p>在 3D 视图中圈住其他纹理集时，会先切换到圈出范围内出现最多的纹理集，再上色。</p>
+      <h3 id="fill-poly">按面填色（多边形填充）</h3>
+      <p>把描过的整个面用前景色填充。拾取范围是笔尖圆圈的大小。关闭“按四边形填充（2 个三角形视为 1 个面）”后，按三角形分别填充。</p>
+      <p>显示 3D 视图左上角的“网格线”后，就能看到面的划分（<a href="/petanuri/zh/manual/uv#wire">网格线</a>）。</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="用多边形填充给面上色后的效果" loading="lazy"><figcaption>多边形填充（显示网格线）</figcaption></figure>
+      <h3 id="fill-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>涂到了线条外面</b>：线条有缺口。调高“封闭间隙”。</li>
+        <li><b>线条边缘残留白色缝隙</b>：把“扩展/收缩”设为＋。</li>
+        <li><b>在另一个图层的线条处停不住</b>：把“参考”设为“所有图层”。</li>
+        <li><b>线条变细、缺损</b>：如果涂在与线条相同的图层上，会按“扩展/收缩”的量涂到线条上面。请用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销，在线条下方新建用于上色的图层后再涂。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="gradient" data-keywords="渐变 渐变色 淡出 透明渐变 发梢 预设 色标 线性 径向 放射">
+      <h2>用渐变上色</h2>
+      <p>让颜色渐变过渡地上色。在 3D 视图上，从起点拖动到终点。</p>
+      <ol class="mn-steps">
+        <li>点击工具栏的“渐变”。</li>
+        <li>选择辅助工具（“颜色和不透明度”“前景色→背景色”“前景色→透明”“圆形（前景色→透明）”）。</li>
+        <li>在工具属性的“图形”中，选择“线性”或“径向”。</li>
+        <li>在 3D 视图中从起点拖动到终点。松开后即完成上色。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>线性按起点到终点的方向渐变，径向以起点为中心、拖动的长度为半径。按住 <kbd>Shift</kbd> 以 45° 步进。</li>
+        <li>“也绘制背面和被遮挡的面”（初始为开启）时，会沿着连接按下处与松开处的 3D 线，连背面、内侧的面也一起上色（例如从发根到发梢）。关闭后，只涂看得到的面。</li>
+        <li>涂的是所选纹理集中所选的图层。选区外和隐藏部分不会改变。</li>
+        <li>在 UV 视图上，也可以通过拖动来绘制。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="给腿部添加渐变" loading="lazy"><figcaption>渐变</figcaption></figure>
+      <h3 id="gradient-stops">用颜色和透明度色标制作</h3>
+      <p>把工具属性的“色彩”设为“颜色和不透明度色标”后，可以用多个颜色和不透明度排列出的渐变上色。</p>
+      <ol class="mn-steps">
+        <li>点击色带的空白处，添加色标（2～32 个）。</li>
+        <li>选中色标，更改位置和不透明度。位置也可以拖动色标来改变。</li>
+        <li>再次点击选中的色标，或双击它来选择颜色。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>色标可以通过“删除色标”、<kbd>Delete</kbd>、向下拖出色带来删除。也可以使用“使用前景色”“均匀分布”“左右互换”。</li>
+        <li>在“预设 ▾”中，可从 240 种预设中选择（也有含透明的）。可按分组和名称查找。</li>
+        <li>用“保存当前”，可以存入自己的预设（我的预设）。</li>
+        <li>不透明度设为 0 的位置，会保留下方的颜色。要擦除已画的颜色时，请使用<a href="#transparent">透明色</a>。</li>
+      </ul>
+      <div class="mn-tip">想把沿高度或面朝向的明暗烘焙到新图层时，Pro 的<a href="/petanuri/zh/manual/bake#gradient">渐变烘焙</a>很方便。</div>
+      <h3 id="spatial-gradient">从 3D 空间中的点向外扩散</h3>
+      <p>把中心放在模型的面上，或模型外的空间中，从那里按 3D 距离扩散颜色。移动视角，颜色也不会改变。</p>
+      <ol class="mn-steps">
+        <li>选择要绘制的图层。</li>
+        <li>点击渐变工具属性中的“从3D空间点绘制”。会打开“3D空间渐变”窗口。</li>
+        <li>在 3D 视图中，点击模型的面或空白处来放置中心。</li>
+        <li>用“扩散距离”，以及颜色和不透明度色标、预设来决定颜色的扩散。会立即反映到所选图层上。</li>
+        <li>点击“绘制到图层”确定。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>确定后，撤销一次即可撤销。取消的话，图层会恢复为原来的图像。</li>
+        <li>这是针对 3D 模型的操作。在 2D 画布上，用普通的拖动来绘制。</li>
+      </ul>
+      <h3 id="gradient-range-guide">移动中心、设定扩散距离</h3>
+      <ul class="mn-list">
+        <li>中心可以拖动箭头、平面、中央的手柄来移动，也可以输入 X、Y、Z 坐标来移动。</li>
+        <li>用“在3D视图中指定中心”重新放置，用“清除中心”清除。放置点的过程中按 <kbd>Esc</kbd> 取消。</li>
+        <li>放置到空间中时，会放在与当前中心（还没有时为模型中心）相同的进深位置。</li>
+        <li>“扩散距离”是相对于模型高度的比例（%）。</li>
+        <li>遵守选区、隐藏部分、锁定透明像素、蒙版。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="shape" data-keywords="直线 矩形 方形 圆 正圆 椭圆 多边形 曲线 贝塞尔 形状工具">
+      <h2>绘制图形</h2>
+      <p>用图形工具，以前景色绘制直线、矩形、椭圆、多边形、曲线。在 3D 视图和 UV 视图中都可以绘制。</p>
+      <ol class="mn-steps">
+        <li>点击工具栏的“图形”，在辅助工具中选择形状。</li>
+        <li>在 3D 视图中，从起点拖动到终点。</li>
+        <li>松开后，会用前景色绘制。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">绘制方法</th></tr></thead><tbody>
+        <tr><td>直线</td><td>连接拖动的两点。按住 <kbd>Shift</kbd> 以 45° 步进</td></tr>
+        <tr><td>矩形、椭圆、多边形</td><td>填充内部。按住 <kbd>Shift</kbd> 为正方形、正圆、不变形的正多边形</td></tr>
+        <tr><td>矩形（描边）、椭圆（描边）、多边形（描边）</td><td>只绘制轮廓</td></tr>
+        <tr><td>曲线</td><td>拖动并松开后，移动鼠标即可弯曲。再次点击或按 <kbd>Enter</kbd> 确定</td></tr>
+        <tr><td>曲线（连接点）</td><td>每次点击放置一个点（最多 24 个），生成穿过各点的平滑线条。双击或按 <kbd>Enter</kbd> 确定，按 <kbd>Backspace</kbd> 退回一个点</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>开启“从中心绘制”后，起点就是中心。</li>
+        <li>多边形的“边数”为 3～12。顶部是角，偶数时上下为平边。</li>
+        <li>在曲线（连接点）中开启“闭合（连成环）”后会成环，把“上色风格”设为“填充”后可以填充内部。可用于自由形状的填充。</li>
+        <li>“线宽”与画笔大小联动（上限 500）。通过画笔大小列表、<kbd>[</kbd> <kbd>]</kbd>、弹出调色板更改，效果相同。它按图形的辅助工具分别保存，不会改变钢笔的大小。</li>
+        <li>在工具属性中选择笔尖图像后，会沿着图形轮廓排列绘制（缝线、蕾丝等）。选择“圆形”则恢复为普通的线。</li>
+        <li>只会涂到看得见的面，撤销一次即可撤销。绘制过程中按 <kbd>Esc</kbd> 取消。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="调色板 圆形菜单 侧键 左手键 单手 数位板 仅用笔 快捷菜单 轮盘">
+      <h2>仅用数位笔更改颜色和大小（弹出调色板）</h2>
+      <p>不移动笔，按下笔的侧键再松开，原地会出现圆形调色板。无需放下笔，就能选择常用的辅助工具、前景色、画笔大小。</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="弹出调色板" loading="lazy"><figcaption>弹出调色板</figcaption></figure>
+      <p>调出方法、各部分的用法、用鼠标调出的设置，汇总在<a href="/petanuri/zh/manual/screen#popup">弹出调色板</a>中。</p>
+    </section>
+
+    <section class="mn-sec" id="works" data-keywords="服装 道具 饰品 帽子 示例 作品 展示">
+      <h2>也能给服装和道具上色</h2>
+      <p>不只是虚拟形象的身体，服装和道具也能用同样的工具上色。下面是在 PetaNuri3D 中打开 <span lang="ja">ののつよ</span>系列服装和道具的示例。</p>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开狛犬水手服的示例" loading="lazy"><figcaption>狛犬水手服（<span lang="ja">狛犬セーラー</span>）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开风铃的示例" loading="lazy"><figcaption>风铃（<span lang="ja">獄門しのぶ</span>的道具）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="在 PetaNuri3D 中打开魔法帽的示例" loading="lazy"><figcaption>魔法帽（<span lang="ja">星羽の魔導衣</span>的道具）</figcaption></figure></div>
+      <div class="mn-tip">想只在一个部分（UV 岛）内画线时，先用选区的“按 UV 岛选择”选中该部分再绘制。选区外不会被画到（<a href="/petanuri/zh/manual/edit#select">选区</a>）。</div>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/screen"><small>← 上一页</small>界面、面板、偏好设置</a><a class="next" href="/petanuri/zh/manual/deco"><small>下一页 →</small>图章、图案、缝线</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +665,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

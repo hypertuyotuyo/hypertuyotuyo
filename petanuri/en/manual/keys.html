@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shortcuts and pen controls | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Shortcut list (F1; work while it stays open), pen/mouse controls, numpad views, key list, rebinding and pen-pressure troubleshooting. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="The shortcut list (F1; you can keep it open while you work), pen and mouse controls, view (numpad), the key list, assigning keys, and what to do when pen pressure is wrong or doesn&#x27;t work. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/keys">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Shortcuts and pen controls | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Shortcut list (F1; work while it stays open), pen/mouse controls, numpad views, key list, rebinding and pen-pressure troubleshooting. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="The shortcut list (F1; you can keep it open while you work), pen and mouse controls, view (numpad), the key list, assigning keys, and what to do when pen pressure is wrong or doesn&#x27;t work. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/keys">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Shortcuts and pen controls | PetaNuri3D Manual",
-   "description": "Shortcut list (F1; work while it stays open), pen/mouse controls, numpad views, key list, rebinding and pen-pressure troubleshooting. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "The shortcut list (F1; you can keep it open while you work), pen and mouse controls, view (numpad), the key list, assigning keys, and what to do when pen pressure is wrong or doesn't work. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/keys",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,404 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys" aria-current="page">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys" aria-current="page">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Shortcuts and pen controls</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Shortcuts and pen controls</p>
     <h1 class="mn-h1">Shortcuts and pen controls</h1>
-    <p class="mn-intro">Rebind every key through File → Preferences → Key bindings (useful for shortcut devices). This page shows default bindings.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#list">Shortcut list (F1)</a></li><li><a href="#pen">Pen / mouse</a></li><li><a href="#view">Views (numpad)</a></li><li><a href="#keys">Key</a></li><li><a href="#assign">Assign keys</a></li><li><a href="#pressure">Incorrect or missing pen pressure</a></li></ul></div>
-    <section class="mn-sec" id="list"><h2>Shortcut list (F1)</h2><ul class="mn-list"><li><kbd>F1</kbd>  opens a floating shortcut list (also available in Help). <strong>Keys remain active and you can draw in 3D/UV while it is open</strong>. Press  <kbd>F1</kbd>  again or the top-right × to close.</li><li>Filter by key or name in Search at the top. Pressed keys briefly highlight their rows and appear under Pressed key at the bottom.</li><li>Drag the header to move; drag the bottom-right corner to resize (remembered next time). ▾ collapses; ◐ makes it translucent.</li><li>Rebinding updates menus, right-click menus, button tips and this list to your current keys.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="Shortcut list over the 3D view" loading="lazy"><figcaption>Shortcut list (work while it stays open)</figcaption></figure></section><section class="mn-sec" id="pen"><h2>Pen / mouse</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Controls</th><th scope="col">Action</th></tr></thead><tbody><tr><td>Pen tip / left button</td><td>Draw (pressure controls size)</td></tr><tr><td>Right-drag (pen side button)</td><td>Rotate</td></tr><tr><td>Middle-drag</td><td>Pan (rotate with middle-button controls; <kbd>Shift</kbd> + middle to pan, <kbd>Ctrl</kbd> + middle to zoom)</td></tr><tr><td>Wheel</td><td>Zoom</td></tr><tr><td><kbd>Space</kbd> + drag</td><td>Rotate (can be swapped with pan in Settings)</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>Space</kbd> + drag</td><td>Pan</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Space</kbd> + drag</td><td>Zoom</td></tr><tr><td>Release right button without moving</td><td>Mouse: context menu; pen side button: popup palette</td></tr><tr><td><kbd>Shift</kbd> + click</td><td>Straight line from the end of the previous stroke</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd> + horizontal drag</td><td>Brush size</td></tr><tr><td><kbd>Alt</kbd>  while held</td><td>Eyedropper</td></tr><tr><td>Pen eraser end</td><td>Eraser (panels/dialogs work as with the tip)</td></tr><tr><td>On the model,  <kbd>Alt</kbd> + right-click</td><td>Select texture set at that point</td></tr><tr><td>Draw while holding a tool key</td><td>Use that tool temporarily (release to return)</td></tr></tbody></table></div><div class="mn-tip">The hold time before a tool key switches temporarily can be set from 0.15 to 2 seconds (default 0.5) under Hold time in File → Preferences → Controls.</div><div class="mn-tip">Ctrl+right-drag (pen side button) changes brush size left/right and hardness up/down; Ctrl+left-drag (pen tip) changes opacity left/right and tip angle up/down (with brush tools, in any camera preset). With the Alt-button camera, Alt+Shift+left-drag rotates in 90° steps and Shift+right-drag turns the light left or right.</div><div class="mn-tip">Pen buttons (all editions, exe): with both Windows Ink and WinTab, middle click, right-click, and back/forward assigned to pen buttons work over the 3D and UV views. Hold a button set to middle click and move the pen to rotate the 3D view (hovering or touching; pressing it mid-stroke ends the stroke there and rotates). A button set to right-click works as a right-drag when you move the pen while holding it (for example, to rotate 3D) and opens the right-click menu when released without moving.</div><div class="mn-tip">Pen side button (all editions, exe): while the pen is near the PetaNuri3D window, middle click, right-click, back, and forward assigned to the side button in the tablet driver are received and used as clicks at the pen position. A right-click that arrives together with the pen tip is ignored so that drawing takes priority. Middle click controls the view even when pressed together with the pen tip (in the UV view it pans).</div><div class="mn-tip warn">If the view keeps rotating after you release the side button, press Esc or tap once with the pen tip to stop it. If you still cannot draw with the pen tip or the view keeps rotating, try turning off “Receive middle/right clicks from the pen side button” in File → Preferences → Pen &amp; input → Menus and buttons (when it is off, the driver’s clicks go straight to the mouse cursor position). If dragging with the side button stops partway, assign the Space key to the side button in the tablet driver settings; you can then rotate with Space + pen drag.</div><div class="mn-tip">3D mouse (all editions, Windows): use a six-axis 3D mouse to move the view of the area under the cursor (when the PetaNuri3D window is in front or the cursor is over it). In the 3D view, sliding the cap sideways, pushing it down, or lifting it pans; pulling it toward you or pushing it away zooms; twisting it rotates around the vertical axis; and tilting it forward or back rotates around the horizontal axis. In the UV view and the 2D canvas, you can pan, zoom, and twist to rotate. The 3D mouse does not move the view while you are drawing. It works with or without the 3D mouse driver installed.</div><div class="mn-tip">Once a 3D mouse has been connected, a 3D mouse section appears in File → Preferences → Controls. There you can change Use 3D mouse, Sensitivity, What to move (Both / Rotate only / Pan only), the inverted pan/zoom/rotation directions, Tilt left/right to rotate the screen (3D), and the assignments for Button 1 (left) and Button 2 (right) (by default, left switches what to move and right frames all). Button assignments work only while the 3D mouse driver is not running. While the driver is running, it uses the buttons itself, so assign keys to the buttons in the driver settings (for example, F to frame all). Wheel input that the driver sends along with zooming is ignored while you move the 3D mouse (Ignore the wheel while moving).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-mouse3d-v121.webp" width="700" height="300" alt="The 3D mouse section in Preferences → Controls" loading="lazy"><figcaption>Controls → 3D mouse (shown only after a 3D mouse has been connected)</figcaption></figure></section><section class="mn-sec" id="view"><h2>Views (numpad)</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">Action</th></tr></thead><tbody><tr><td>1 / 3 / 7</td><td>Front / Right / Top (<kbd>Ctrl</kbd>  for the opposite side)</td></tr><tr><td>2 / 4 / 6 / 8</td><td>Rotate in 15° steps (<kbd>Ctrl</kbd>  to pan)</td></tr><tr><td>5</td><td>Perspective / Orthographic</td></tr><tr><td>9</td><td>Opposite side</td></tr><tr><td>＋ / －</td><td>Zoom</td></tr><tr><td>. / F / Home</td><td>Frame all</td></tr></tbody></table></div></section><section class="mn-sec" id="keys"><h2>Key</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">Action</th></tr></thead><tbody><tr><td><kbd>P</kbd> <kbd>B</kbd> <kbd>E</kbd> <kbd>J</kbd> <kbd>G</kbd> <kbd>I</kbd> <kbd>V</kbd> <kbd>S</kbd> <kbd>T</kbd></td><td>Pen, brush, eraser, blend, fill, eyedropper, move/transform, selection, text</td></tr><tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>Brush size</td></tr><tr><td><kbd>X</kbd></td><td>Swap foreground and background colors</td></tr><tr><td><kbd>M</kbd></td><td>Paint symmetrically (X, left-right)</td></tr><tr><td><kbd>U</kbd> / <kbd>Shift</kbd>＋<kbd>U</kbd></td><td>Show UV / UV only ⇔ beside 3D</td></tr><tr><td><kbd>Tab</kbd></td><td>Hide palettes</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>I</kbd></td><td>Pick color from screen</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>H</kbd> / <kbd>H</kbd> / <kbd>Alt</kbd>＋<kbd>H</kbd></td><td>Show selected only / Hide selected / Show all</td></tr><tr><td><kbd>Alt</kbd>＋<kbd>W</kbd></td><td>Seam lines (UV seams and island edges)</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>N</kbd> / <kbd>Ctrl</kbd>＋<kbd>O</kbd> / <kbd>Ctrl</kbd>＋<kbd>S</kbd></td><td>New / Open project / Save</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>S</kbd></td><td>Save as</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Z</kbd> / <kbd>Ctrl</kbd>＋<kbd>Y</kbd> (<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>)</td><td>Undo / Redo</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>C</kbd> <kbd>Ctrl</kbd>＋<kbd>X</kbd> <kbd>Ctrl</kbd>＋<kbd>V</kbd> <kbd>Ctrl</kbd>＋<kbd>T</kbd></td><td>Copy / Cut / Paste / Transform</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>N</kbd> / <kbd>Ctrl</kbd>＋<kbd>G</kbd> / <kbd>Ctrl</kbd>＋<kbd>J</kbd> / <kbd>Ctrl</kbd>＋<kbd>E</kbd></td><td>New layer / New folder / Duplicate / Merge down</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd></td><td>Group selected layers into a folder</td></tr><tr><td><kbd>Alt</kbd>＋<kbd>]</kbd> / <kbd>Alt</kbd>＋<kbd>[</kbd></td><td>Select layer above / Select layer below</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>G</kbd></td><td>Toggle clipping</td></tr><tr><td><kbd>Delete</kbd></td><td>Clear (inside selection if present)</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>A</kbd> / <kbd>Ctrl</kbd>＋<kbd>D</kbd> / <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd></td><td>Select all / Deselect / Invert</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd></td><td>Restore selection (last deselected)</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>H</kbd></td><td>Show selection outline</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd></td><td>Snap to ruler</td></tr><tr><td><kbd>F1</kbd></td><td>Shortcut list</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd></td><td>Preferences</td></tr></tbody></table></div><div class="mn-tip">Assign keys in Preferences to unbound actions too, such as Delete layer, Move up/down, Toggle lock, Ungroup folder and Toggle transparency lock.</div><div class="mn-tip"><kbd>C</kbd>: Toggle transparent/regular color. While placing curve-ruler points,  <kbd>Ctrl</kbd>＋<kbd>Z</kbd>  removes the last point and <kbd>Ctrl</kbd>＋<kbd>Y</kbd>・<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>  redoes it.</div></section><section class="mn-sec" id="assign"><h2>Assign keys</h2><ul class="mn-list"><li>File → Preferences → Key bindings: in each category, click + then press a key to assign; × removes. Reset to defaults restores that key; Reset key bindings restores all after confirmation.</li><li>Also right-click a toolbar button, sub-tool tile or panel header → Assign key (<kbd>Ctrl</kbd>・<kbd>Alt</kbd>・<kbd>Shift</kbd>  combinations supported). If a key is already used, you are asked whether to reassign it.</li></ul><div class="mn-tip">Export key bindings saves the current bindings as JSON, and Import key bindings replaces them with an exported file (for example, when moving to another PC).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-keymap-io-v112.webp" width="900" height="300" alt="Key binding preferences with export and import buttons" loading="lazy"><figcaption>Exporting and importing key bindings</figcaption></figure><div class="mn-tip">To give one key to several sub tools, choose “Share (cycle on each press)” in the assignment dialog; each press then switches to the next sub tool (for example, Q for both G-pen and Milli pen). Reassign removes it from the previous sub tool.</div></section><section class="mn-sec" id="pressure"><h2>Incorrect or missing pen pressure</h2><ol class="mn-steps"><li>First adjust Pressure under File → Preferences → Pen &amp; input. In Calibrate with test strokes, draw at least 3 lines using your normal pressure, then click Calibrate to automatically set minimum, maximum and response.</li><li>If pressure is missing (size stays constant), press the test pad with the pen and inspect Input path. If it says None (received as mouse), enable Windows Ink in your tablet settings, or Pen &amp; input → Tablet → Read pressure directly (WinTab).</li><li>If still incorrect, click Check WinTab status under Tablet and move the pen over PetaNuri3D. Copy the report and send it to support with your tablet model and driver version.</li></ol><div class="mn-tip">WinTab pressure (all editions, exe): with “Read pressure directly (WinTab)” on, pressure (and tilt) is read from the tablet driver’s WinTab. Even when “Use Windows Ink” is on in the tablet settings and the pen arrives via Windows Ink, WinTab pressure and tilt are used if WinTab values are arriving (“Use WinTab pressure for Windows Ink pens too” in the same place; on by default; turn it off to keep Windows Ink pressure). It reconnects after waking from sleep.</div><div class="mn-tip warn">If pressure stops working or the pen does not respond with WinTab on, press “Search again” under “WinTab connection” in the Tablet section and draw again. It forgets the remembered connection method and searches from scratch (the method used up to v1.2.0 that could freeze the Windows cursor is no longer used in v1.2.1). Close PetaNuri3D before reinstalling or updating the tablet driver (with WinTab in use, the driver’s files stay open).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-wintab-v121.webp" width="700" height="165" alt="The Tablet section in Preferences → Pen &amp; input" loading="lazy"><figcaption>Pen &amp; input → Tablet (read pressure directly, for Windows Ink pens too, status, WinTab connection: Search again)</figcaption></figure></section>
-    <section class="mn-sec" id="v111-controls"><h2>Control changes in v1.1.1</h2><p><a href="/petanuri/en/manual/screen#settings">Camera controls</a> · <a href="/petanuri/en/manual/draw#mirror">Mirror painting on hidden faces</a></p></section><nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/unity"><small>← Previous</small>Paint from Unity and AI integration</a></nav>
+    <p class="mn-intro">A list of keys, plus how to work with a pen, mouse and 3D mouse. Every key can be reassigned. The keys on this page are the initial assignments. It also gathers the fixes for pen pressure that doesn't work or feels wrong.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Press <kbd>F1</kbd> to show the current list of keys. You can keep drawing while it is open (<a href="#list">details</a>).</li>
+      <li>In 3D, rotate with right-drag or <kbd>Space</kbd>+drag, and zoom with the wheel (<a href="#pen">details</a>).</li>
+      <li>If you want mouse controls like those of other software, choose a camera control template (<a href="#camera">details</a>).</li>
+      <li>Change keys in File → Preferences → "Key bindings" (<a href="#assign">details</a>).</li>
+      <li>If the line thickness doesn't change when you draw with a pen, go to <a href="#pressure">When pen pressure doesn't work</a>.</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#list">Show the shortcut list (F1)</a></li><li><a href="#pen">Pen and mouse controls</a></li><li><a href="#camera">Choose a camera control template</a></li><li><a href="#view">Change the view (numpad)</a></li><li><a href="#penbutton">Pen buttons and Windows Ink</a></li><li><a href="#mouse3d">Move the view with a 3D mouse</a></li><li><a href="#keys">List of keys</a></li><li><a href="#assign">Assign keys</a></li><li><a href="#pressure">Pen pressure is wrong or doesn't work</a></li></ul></div>
+
+    <section class="mn-sec" id="list" data-keywords="key list cheat sheet hotkeys keyboard shortcuts reference help search keymap">
+      <h2>Show the shortcut list (F1)</h2>
+      <p>Shows the current list of keys in a floating window. Keys keep working while it is open, so you can still draw in 3D and UV.</p>
+      <ol class="mn-steps">
+        <li>Press <kbd>F1</kbd> (or choose Help → "Shortcut list").</li>
+        <li>Type a key or a name in the "Search" box at the top to narrow the list.</li>
+        <li>To close it, press <kbd>F1</kbd> again or click the × at the top right.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="Shortcut list shown over the 3D view" loading="lazy"><figcaption>Shortcut list (you can keep working with it open)</figcaption></figure>
+      <ul class="mn-list">
+        <li>When you press a key, its row lights up briefly, and "Key pressed:" and the name of the action appear at the bottom edge.</li>
+        <li>Drag the header to move the window (double-click it to return it to its original position) and drag the bottom-right corner to resize it. It opens the same way next time.</li>
+        <li>Click ▾ to collapse it and ◐ to make it see-through (it fades when the pointer is outside).</li>
+        <li>Click "Change key bindings" at the bottom to open the key bindings in Preferences.</li>
+        <li>Pen and mouse controls are in the list too, and they change to match the camera control template you have chosen.</li>
+        <li>When you reassign keys, the menus, right-click menus, button descriptions and this list all show the current keys.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pen" data-keywords="mouse controls pen controls tablet rotate pan zoom orbit view camera straight line brush size eyedropper eraser end temporary tool switch hold spring loaded">
+      <h2>Pen and mouse controls</h2>
+      <p>Controls in the 3D view and in UV panes. The table is for the initial camera control (right-button style).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Action</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Pen tip / left button</td><td>Draw (with a pen, the thickness changes with pressure)</td></tr>
+        <tr><td>Right-drag (pen side button)</td><td>Rotate in 3D; pan in a UV pane</td></tr>
+        <tr><td>Middle-drag</td><td>Pan</td></tr>
+        <tr><td>Wheel</td><td>Zoom</td></tr>
+        <tr><td><kbd>Shift</kbd>+wheel</td><td>Rotate the screen (5° at a time)</td></tr>
+        <tr><td><kbd>Space</kbd>+drag</td><td>Rotate (you can swap this with pan in Preferences)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>Space</kbd>+drag</td><td>Pan</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Space</kbd>+drag</td><td>Zoom</td></tr>
+        <tr><td>Release the right button without moving</td><td>Mouse: the right-click menu. Pen side button: the popup palette (<a href="/petanuri/en/manual/screen#popup">Popup palette</a>)</td></tr>
+        <tr><td><kbd>Shift</kbd>+click</td><td>Straight line from the end of the previous stroke</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+drag left/right</td><td>Brush size</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+right-drag (pen side button)</td><td>Left/right for brush size, up/down for hardness</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+left-drag (pen tip)</td><td>Left/right for opacity, up/down for the angle of the tip</td></tr>
+        <tr><td>While holding <kbd>Alt</kbd></td><td>Eyedropper</td></tr>
+        <tr><td>Pen eraser end</td><td>Eraser (uses the eraser tool's sub tool settings)</td></tr>
+        <tr><td>On the model, <kbd>Alt</kbd>+right-click</td><td>Select the texture set at that spot</td></tr>
+        <tr><td>Draw while holding a tool key</td><td>That tool, only while the key is held (releasing it returns to the previous tool)</td></tr>
+        <tr><td>Drag a frame while holding <kbd>Ctrl</kbd> (UV pane)</td><td>Doesn't snap to the grid</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Changing values with <kbd>Ctrl</kbd>+right/left-drag works when you are using a brush-type tool (Pen, Brush, Eraser, Blur and so on). It works with any camera control template. Only the value for the direction you start moving in (left/right or up/down) changes, and the value appears in the strip below.</li>
+        <li>While the "Hand" tool is selected, dragging with the left button or the pen moves the view (pan in 3D; hold <kbd>Ctrl</kbd> to zoom).</li>
+        <li>To move the view without mouse or pen buttons, use the 3D navigator in the 3D view (<a href="/petanuri/en/manual/screen#nav">3D navigator</a>).</li>
+      </ul>
+      <h3 id="pen-hold">Switch tools temporarily with a tool key</h3>
+      <p>If you draw while holding a tool key, you get that tool only while the key is held, and the previous tool returns when you release it. This is handy when you want to use the eraser for a moment while drawing with a pen.</p>
+      <ul class="mn-list">
+        <li>If you press and release the key quickly, the tool stays switched.</li>
+        <li>If you hold the key for a while and then release it, the previous tool returns even if you haven't drawn.</li>
+        <li>You can set the time that counts as a hold from 0.15 to 2 seconds with "Hold time" in File → Preferences → Controls → Keyboard (0.5 seconds by default).</li>
+        <li>To turn off this temporary switching altogether, turn off "Hold a tool key to switch temporarily" in the same place.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="camera" data-keywords="blender unity maya navigation style mouse setup middle button middle click wheel click alt orbit method view controls pivot orbit center">
+      <span id="v111-controls"></span>
+      <h2>Choose a camera control template</h2>
+      <p>You can choose from four mouse assignments for moving the view, to match the software you are used to.</p>
+      <ol class="mn-steps">
+        <li>Open File → Preferences → "Controls" → "Camera".</li>
+        <li>Choose one under "Camera control template". Your choice is kept the next time you start the app.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Template</th><th scope="col">Rotate</th><th scope="col">Pan</th><th scope="col">Zoom</th></tr></thead><tbody>
+        <tr><td>Right-button style (default)</td><td>Right-drag</td><td>Middle-drag</td><td>Wheel</td></tr>
+        <tr><td>Middle-button style</td><td>Middle-drag</td><td><kbd>Shift</kbd>+middle-drag</td><td><kbd>Ctrl</kbd>+middle-drag</td></tr>
+        <tr><td>Alt + mouse buttons</td><td><kbd>Alt</kbd>+left-drag</td><td><kbd>Alt</kbd>+middle-drag</td><td><kbd>Alt</kbd>+right-drag</td></tr>
+        <tr><td>Unity style</td><td>Right-drag, <kbd>Alt</kbd>+left-drag</td><td>Middle-drag, <kbd>Alt</kbd>+middle-drag</td><td><kbd>Alt</kbd>+right-drag (down to move in, up to move out)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="Unity style selected in the camera controls in Preferences" loading="lazy"><figcaption>Camera control template</figcaption></figure>
+      <ul class="mn-list">
+        <li><kbd>Space</kbd>+drag and the wheel work with every template.</li>
+        <li>Alt + mouse buttons and Unity style apply to the 3D view. Because <kbd>Alt</kbd> operates the camera, use the <kbd>I</kbd> key for the eyedropper in 3D.</li>
+        <li>With Alt + mouse buttons, <kbd>Alt</kbd>+<kbd>Shift</kbd>+left-drag rotates in 90° steps (snapping the direction to a multiple of 90° at the point you click), and <kbd>Shift</kbd>+right-drag rotates the light left/right.</li>
+        <li>If you set the pen's side button to middle click, it works the same as the middle button. If you press the middle button while the pen tip is down, drawing stops and it becomes a view control. After you release the middle button, lift the pen tip once before you start a new stroke.</li>
+      </ul>
+      <h3 id="camera-pivot">Change the orbit and zoom center</h3>
+      <p>All of these are under File → Preferences → Controls → "Camera".</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">When it's on</th></tr></thead><tbody>
+        <tr><td>Space+drag</td><td>Choose Rotate (default) or Pan. Adding <kbd>Shift</kbd> swaps rotate and pan, and adding <kbd>Ctrl</kbd> zooms</td></tr>
+        <tr><td>Orbit around the last painted spot (off by default)</td><td>Rotates around the end of the last stroke you painted in the 3D view. When you zoom in to paint fine details, the spot you want to paint doesn't drift off screen</td></tr>
+        <tr><td>Orbit around the point under the cursor when orbiting starts (off by default)</td><td>When you start rotating, it rotates around the point of the model under the cursor. If you start rotating outside the model, it works as before. If both this and the item above are on, this one takes priority</td></tr>
+        <tr><td>Orthographic for axis views (on by default)</td><td>Uses orthographic projection when you look along an axis with Numpad 1, 3 or 7 or with the axes of the 3D navigator. Rotating returns to perspective</td></tr>
+        <tr><td>Key zoom centers on cursor (off by default)</td><td>Zooming with keys or the 3D navigator moves in and out around the point under the cursor</td></tr>
+      </tbody></table></div>
+    </section>
+<section class="mn-sec" id="view" data-keywords="numpad number pad front view side view top view back perspective orthographic projection frame all zoom in zoom out reset view standard views">
+      <h2>Change the view (numpad)</h2>
+      <p>The numpad on your keyboard lets you look from fixed directions. On a keyboard without a numpad, use the icons at the top right of the 3D view or the 3D navigator (<a href="/petanuri/en/manual/screen#hud">The four corners of the 3D view</a>).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Numpad <kbd>1</kbd> / <kbd>3</kbd> / <kbd>7</kbd></td><td>Front / right / top view</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+Numpad <kbd>1</kbd> / <kbd>3</kbd> / <kbd>7</kbd></td><td>Back / left / bottom view</td></tr>
+        <tr><td>Numpad <kbd>4</kbd> / <kbd>6</kbd> / <kbd>8</kbd> / <kbd>2</kbd></td><td>Rotate the view 15° left / right / up / down (hold the key to keep rotating)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+Numpad <kbd>4</kbd> / <kbd>6</kbd> / <kbd>8</kbd> / <kbd>2</kbd></td><td>Move the view left / right / up / down</td></tr>
+        <tr><td>Numpad <kbd>5</kbd></td><td>Toggle perspective and orthographic projection</td></tr>
+        <tr><td>Numpad <kbd>9</kbd></td><td>View from the opposite side</td></tr>
+        <tr><td>Numpad <kbd>+</kbd> / <kbd>-</kbd> (<kbd>Ctrl</kbd>+<kbd>+</kbd> / <kbd>Ctrl</kbd>+<kbd>-</kbd>)</td><td>Zoom in / out</td></tr>
+        <tr><td><kbd>F</kbd> / <kbd>Home</kbd> / Numpad <kbd>.</kbd></td><td>Frame all</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td><td>Show a UV pane or 2D canvas at a preset zoom (100% / 200% / 50% by default)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Zooming in and out moves the UV if the cursor is over a UV pane. <kbd>Ctrl</kbd>+<kbd>+</kbd> also works as <kbd>Ctrl</kbd>+<kbd>=</kbd> and <kbd>Ctrl</kbd>+<kbd>;</kbd> (because keyboard layouts differ).</li>
+        <li>The numpad digits are separate keys from the digits in the top row. In the key bindings they appear as "Numpad 1" and so on.</li>
+        <li>Change the preset zoom with "Zoom presets (UV / 2D)" in File → Preferences → Controls → Keyboard.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="penbutton" data-keywords="side button barrel button pen button middle click right click back forward wacom xp-pen huion pen tablet display tablet keeps rotating won't stop">
+      <h2>Pen buttons and Windows Ink</h2>
+      <p>Clicks that you assign to pen buttons in the pen tablet driver are received as clicks at the pen's position. This works with both Windows Ink and WinTab.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Button assignment</th><th scope="col">What PetaNuri3D does</th></tr></thead><tbody>
+        <tr><td>Middle click</td><td>While it is held, moving the pen rotates the 3D view (it rotates whether the pen is hovering or touching). If you press it in the middle of a stroke, the stroke stops there and the view rotates. In a UV pane, it pans</td></tr>
+        <tr><td>Right click</td><td>Hold and move for a right-drag (to rotate 3D and so on); release without moving for a right click (the menu)</td></tr>
+        <tr><td>Back, Forward</td><td>Received as the mouse's Back and Forward buttons</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>A right click that arrives at the same time as the pen tip (within 0.05 seconds before or after) is ignored, and drawing takes priority (for drivers that send a right click together with the pen tip). A middle click works as a view control even when it arrives at the same time as the pen tip.</li>
+        <li>Clicks are received only while the pen is near the PetaNuri3D window. Real mouse buttons are left alone.</li>
+        <li>If you don't want them received, turn off "Receive middle/right clicks from the pen side button" in File → Preferences → Pen &amp; input → Menus and buttons (on by default). When it is off, the driver's click goes to the mouse cursor's position as it is.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="The Menus and buttons section of Pen and input in Preferences" loading="lazy"><figcaption>Pen &amp; input → "Menus and buttons"</figcaption></figure>
+      <h3 id="penbutton-ink">What changes when Windows Ink is on or off</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Pen tablet setting</th><th scope="col">In PetaNuri3D</th></tr></thead><tbody>
+        <tr><td>Turn on "Use Windows Ink" (recommended)</td><td>Pen pressure and tilt arrive. If you press the side button and release it without moving, the popup palette appears</td></tr>
+        <tr><td>Turn off "Use Windows Ink"</td><td>The pen arrives as a mouse and no pressure comes through (<a href="#pressure-fix">When pen pressure doesn't work</a>). The side button also arrives as a mouse right click, so it follows the "Right-click" setting under File → Preferences → Controls → Mouse</td></tr>
+      </tbody></table></div>
+      <h3 id="penbutton-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>3D keeps rotating after you release the side button</b>: Press <kbd>Esc</kbd> or tap once with the pen tip to stop it.</li>
+        <li><b>You can't draw with the pen tip, or it keeps rotating</b>: Try turning off "Receive middle/right clicks from the pen side button".</li>
+        <li><b>Dragging with the side button stops partway</b>: In your pen tablet driver's settings, assign the <kbd>Space</kbd> key to the side button. You can then rotate with <kbd>Space</kbd>+pen drag.</li>
+        <li><b>A menu appears on its own while you draw fine details</b>: It is being opened by a long press of the pen. Turn off "Long press with the pen opens the menu" in Pen &amp; input → Menus and buttons (<a href="/petanuri/en/manual/screen#ctx">Right-click menu</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mouse3d" data-keywords="spacemouse 3dconnexion 3dxware 6dof six axis space navigator left hand device navigation">
+      <h2>Move the view with a 3D mouse</h2>
+      <p>A 6-axis 3D mouse such as a SpaceMouse can move the view of the pane under the cursor (the 3D view, a UV pane or the 2D canvas). A notice appears at the bottom right when you connect one.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Cap movement</th><th scope="col">3D view</th><th scope="col">UV pane / 2D canvas</th></tr></thead><tbody>
+        <tr><td>Slide left/right, push down, lift up</td><td>Pan</td><td>Pan</td></tr>
+        <tr><td>Pull toward you, push away</td><td>Zoom</td><td>Zoom</td></tr>
+        <tr><td>Twist</td><td>Orbits around the vertical axis</td><td>Rotate</td></tr>
+        <tr><td>Tilt forward/back</td><td>Orbits around the horizontal axis</td><td>—</td></tr>
+        <tr><td>Tilt left/right</td><td>Rotates the screen (when "Tilt left/right to rotate the screen (3D)" is on)</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>It moves when the PetaNuri3D window is in front or the cursor is over the window. It doesn't move while you draw.</li>
+        <li>It works whether or not the driver (3DxWare) is installed.</li>
+      </ul>
+      <h3 id="mouse3d-settings">3D mouse settings</h3>
+      <p>Change them in File → Preferences → Controls → "3D mouse". The section appears only if you have connected a 3D mouse before.</p>
+      <ul class="mn-list">
+        <li>Use 3D mouse, Sensitivity, What to move (Rotate and pan / Rotate only / Pan only)</li>
+        <li>Invert pan direction, Invert zoom direction, Invert rotation direction, Tilt left/right to rotate the screen (3D)</li>
+        <li>Button 1 (left) (switches what to move by default) and Button 2 (right) (Frame all by default). You can also choose Front view, View from opposite side, Toggle perspective / orthographic, Reset view rotation, Open 3D mouse settings, or Do nothing.</li>
+        <li>Ignore the wheel while moving: ignores the wheel events that the driver sends together with cap movement while you are moving it (so zooming doesn't stutter).</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-mouse3d-v121.webp" width="700" height="300" alt="The 3D mouse section of Controls in Preferences" loading="lazy"><figcaption>Controls → "3D mouse" (shown only after a 3D mouse has been connected)</figcaption></figure>
+      <h3 id="mouse3d-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The 3D mouse buttons don't work</b>: The button assignments work only when the driver (3DxWare) isn't running. When it is running, the driver uses the buttons, so in the driver's settings assign a key to a button (for example, <kbd>F</kbd> for Frame all).</li>
+        <li><b>"3D mouse" isn't in Preferences</b>: It doesn't appear until you have connected a 3D mouse at least once. It appears after you connect one.</li>
+        <li><b>Zooming stutters</b>: Turn on "Ignore the wheel while moving".</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="keys" data-keywords="shortcuts keyboard key list reference cheat sheet hotkeys keybindings default keys Ctrl Alt Shift">
+      <h2>List of keys</h2>
+      <p>These are the initial assignments. They are grouped the same way as the categories under "Key bindings" in Preferences. You can also assign keys to actions that have "(no key)" (<a href="#assign">Assign keys</a>).</p>
+      <h3 id="keys-tool">Tools</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">Tool</th></tr></thead><tbody>
+        <tr><td><kbd>P</kbd></td><td>Pen</td></tr>
+        <tr><td><kbd>B</kbd></td><td>Brush</td></tr>
+        <tr><td><kbd>E</kbd></td><td>Eraser</td></tr>
+        <tr><td><kbd>J</kbd></td><td>Blend (Blur, Smudge, Blend)</td></tr>
+        <tr><td><kbd>G</kbd></td><td>Fill</td></tr>
+        <tr><td><kbd>I</kbd></td><td>Eyedropper</td></tr>
+        <tr><td><kbd>V</kbd></td><td>Move/transform</td></tr>
+        <tr><td><kbd>S</kbd></td><td>Selection</td></tr>
+        <tr><td><kbd>T</kbd></td><td>Text</td></tr>
+      </tbody></table></div>
+      <p>Brush collection, Decoration, Stamp, Pattern, Stitch, Liquify, Gradient, Shape, Hand, Hide pen and Ruler, as well as "Next sub tool" and "Previous sub tool", have no key. You can also assign keys to sub tools.</p>
+      <h3 id="keys-brush">Brush and color</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td><kbd>[</kbd> / <kbd>]</kbd></td><td>Decrease / increase brush size (hold the key to keep changing it)</td></tr>
+        <tr><td><kbd>X</kbd> (<kbd>~</kbd>)</td><td>Swap foreground and background colors</td></tr>
+        <tr><td><kbd>D</kbd></td><td>Reset drawing / background colors to black / white</td></tr>
+        <tr><td><kbd>C</kbd></td><td>Toggle transparent drawing</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>I</kbd></td><td>Pick color from screen (outside the window too)</td></tr>
+      </tbody></table></div>
+      <p>No key: Next larger size and next smaller size in the brush size list, and Add current foreground color to color set.</p>
+      <h3 id="keys-view">View</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td><kbd>Tab</kbd></td><td>Show/hide palettes (toolbar and panels)</td></tr>
+        <tr><td><kbd>U</kbd></td><td>Show/hide UV (side by side with 3D)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>U</kbd></td><td>UV only (hide 3D)</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>H</kbd></td><td>Show selected only</td></tr>
+        <tr><td><kbd>H</kbd></td><td>Hide selected</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>H</kbd></td><td>Show all</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>W</kbd></td><td>Show/hide seam lines (UV seams and island edges)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd></td><td>Snap to ruler (toggle)</td></tr>
+        <tr><td><kbd>F</kbd> / <kbd>Home</kbd> / Numpad <kbd>.</kbd></td><td>Frame all</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td><td>Show at preset zoom 1 to 3 (UV / 2D)</td></tr>
+      </tbody></table></div>
+      <p>For the numpad views, see <a href="#view">Change the view (numpad)</a>. No key: Dark mode, Show/hide mesh lines, Wireframe only, Show all sets' textures as pixels, Also show selected, Invert visible area, Remove ruler, Rotate view left (15°), Rotate view right (15°), Reset view rotation, Lock/unlock camera orientation, UV in a small window, 3D in a small window, Swap the small window and the full view, Frame all UV, Show UV guide, Show/hide UV grid, Show/hide favorite tools, Show/hide popup palette, and more.</p>
+      <h3 id="keys-edit">Edit</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td>Undo (hold the keys to keep undoing)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Y</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td>Redo</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>Ctrl</kbd>+<kbd>X</kbd></td><td>Copy / Cut (inside selection)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td>Paste</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td>Transform (on 3D/UV)</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>Backspace</kbd></td><td>Fill with foreground color (inside the selection if any)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Backspace</kbd></td><td>Fill with background color (inside the selection if any)</td></tr>
+        <tr><td><kbd>M</kbd></td><td>Symmetry: toggle X (left/right)</td></tr>
+      </tbody></table></div>
+      <p>No key: Symmetry for Y (front/back) and Z (up/down), Change layer color to the foreground color, Paste image onto 3D, Add text, Retype text, Switch to the set where you start drawing, Draw across 2 sets in one stroke, UV paint area (In UV, In padding, Everywhere), Snap to UV grid, Continue painting outside islands onto 3D-connected neighbors, and more.</p>
+      <h3 id="keys-layer">Layers</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td><td>New layer</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>New folder</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></td><td>Put selected layers in a folder</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td><td>Duplicate layer</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>Merge with layer below (a folder becomes one layer)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd></td><td>Toggle clipping</td></tr>
+        <tr><td><kbd>Delete</kbd></td><td>Clear layer (only inside the selection if there is one; all of them if you have several layers selected. One Undo brings it back)</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>]</kbd> / <kbd>Alt</kbd>+<kbd>[</kbd></td><td>Select layer above / Select layer below</td></tr>
+      </tbody></table></div>
+      <p>No key: Delete layer, Move up one, Move down one, Toggle lock, Toggle lock transparency, Ungroup folder, Select layer painted here, mask actions, stroke actions, Mirror copy left/right, Auto fill, and more.</p>
+      <h3 id="keys-select">Selection</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td>Select all</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>Deselect</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td>Restore selection (last deselected)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td>Invert selection</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>H</kbd></td><td>Show/hide selection outline</td></tr>
+      </tbody></table></div>
+      <p>No key: Expand selection, Contract selection, Feather edge, Select painted area of layer, Select all similar colors, Create mask from selection, Copy to new layer, Cut to new layer, Paint with foreground color, Darken outside the selection, and more (<a href="/petanuri/en/manual/edit#select">Selection</a>).</p>
+      <h3 id="keys-file">File and help</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>New (choose a 3D model)</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td>Open project file</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save project file</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td>Save as</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td><td>Preferences</td></tr>
+        <tr><td><kbd>F1</kbd></td><td>Shortcut list (open/close)</td></tr>
+      </tbody></table></div>
+      <p>No key: Reload model, Tutorial, Manual (Web), Contact, Check for updates, About PetaNuri3D, Open reference image, 2D canvas, and more.</p>
+      <h3 id="keys-other">Other keys</h3>
+      <ul class="mn-list">
+        <li>In menus and right-click menus, you can move with <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>, <kbd>Enter</kbd> and <kbd>Esc</kbd>. While a menu is open, the app's shortcuts don't work.</li>
+        <li>While you are placing the points of a curve ruler, <kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes the last point, and <kbd>Ctrl</kbd>+<kbd>Y</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> redoes it (<a href="/petanuri/en/manual/edit#ruler">Ruler</a>).</li>
+        <li>During the tutorial, <kbd>←</kbd> <kbd>→</kbd> go back and forward, and <kbd>Esc</kbd> quits it.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="assign" data-keywords="keybinding keymap customize rebind change shortcut left hand device reset defaults export import backup another pc json remap">
+      <h2>Assign keys</h2>
+      <p>You can change the key for any action. Use this when you adapt the keys to a left-hand device, for example.</p>
+      <ol class="mn-steps">
+        <li>Open File → Preferences → "Key bindings". The actions and their keys are listed in a section for each category.</li>
+        <li>Click "+" next to the action you want to change. "Press a key (Esc to cancel)" appears.</li>
+        <li>Press the key you want to use. Combinations with <kbd>Ctrl</kbd>, <kbd>Alt</kbd> and <kbd>Shift</kbd> work too.</li>
+        <li>If the key is used for another action, you are asked whether to "Reassign". When you do, the key is removed from the previous action.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Click the × next to a key to remove it. If you add keys with "+", you can give one action several keys.</li>
+        <li>"Reset to defaults" returns just that action to its default key.</li>
+        <li>"Reset key bindings" returns everything to the defaults (it asks you to confirm first, and Undo can't bring the old assignments back).</li>
+      </ul>
+      <h3 id="assign-tool">Assign from the right-click menu on tools and sub tools</h3>
+      <ol class="mn-steps">
+        <li>Right-click a toolbar button or a sub tool tile.</li>
+        <li>Choose "Assign key". If it already has a key, it appears like "Assign key (current: P)".</li>
+        <li>Press the key you want to use. The previous key is removed and replaced with the one you pressed (<kbd>Esc</kbd> cancels).</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can also assign keys by right-clicking the header or tab of the Sub tool and Tool properties panels.</li>
+        <li>When you press a key assigned to a sub tool, it switches to that sub tool of that tool. If you delete the sub tool, its key is removed too.</li>
+        <li>Assigned keys appear next to the name of the button or tile (in the tooltip) and under the "Tools" and "Sub tool" categories of the key bindings.</li>
+        <li>To give the same key to several sub tools, choose "Share (cycle on each press)" in the assign window. Each time you press that key, it cycles to the next sub tool (for example, <kbd>Q</kbd> for G-pen and Fineliner).</li>
+      </ul>
+      <h3 id="assign-io">Export and import assignments</h3>
+      <p>Use this when you move to another PC, or want to keep a backup.</p>
+      <ol class="mn-steps">
+        <li>Click "Export key bindings" above the key bindings. Your current assignments are saved to a JSON file (PetaNuri3D-keymap.json).</li>
+        <li>On the receiving side, click "Import key bindings" and choose that file.</li>
+        <li>When asked "Replace the current key bindings with the ones in this file?", click "Load". Your current assignments are replaced entirely.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-keymap-io-v112.webp" width="900" height="300" alt="Key bindings in Preferences, with the export and import buttons" loading="lazy"><figcaption>Exporting and importing key bindings</figcaption></figure>
+      <ul class="mn-list">
+        <li>Actions that aren't in the file get their default keys. Entries for actions that don't exist in this version are not used.</li>
+      </ul>
+      <h3 id="assign-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>A key does nothing when you press it</b>: While a menu is open, the app's shortcuts don't work. Close the menu, then press the key.</li>
+        <li><b>A key triggers an action you didn't expect</b>: Open the <kbd>F1</kbd> list and press the key. The action for that key appears at the bottom edge.</li>
+        <li><b>You assigned a numpad key and it doesn't work, or it doesn't work from the top row</b>: Numpad digits and top-row digits are different keys. Reassign the one you use.</li>
+        <li><b>The keys for reload, print and page zoom don't work</b>: Browser shortcuts don't work in PetaNuri3D.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pressure" data-keywords="pressure sensitivity not working no pressure line width doesn't change thickness tilt taper pen tablet display tablet driver wacom xp-pen huion wintab windows ink lag delay latency">
+      <h2>Pen pressure is wrong or doesn't work</h2>
+      <p>You can adjust pen pressure to your own touch under "Pen pressure" in File → Preferences → Pen &amp; input. If the thickness doesn't change at all, first check whether pressure is arriving (the path).</p>
+      <h3 id="pressure-fit">Adjust to your touch (calibrate with test strokes)</h3>
+      <ol class="mn-steps">
+        <li>Open File → Preferences → "Pen &amp; input" → "Pen pressure".</li>
+        <li>Click "Calibrate with test strokes".</li>
+        <li>On the pad on the right, draw 3 or more lines with your usual pressure.</li>
+        <li>Click "Calibrate". The minimum, maximum and response are set to fit your touch.</li>
+        <li>If you don't like the result, click "Undo".</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Meaning</th></tr></thead><tbody>
+        <tr><td>Response</td><td>Soft = thick and dark even with light pressure / Firm = thick only when you press hard</td></tr>
+        <tr><td>Min</td><td>Pressure weaker than this is treated as pressure 0</td></tr>
+        <tr><td>Max</td><td>Pressure stronger than this is treated as 100% pressure (for pens with a narrow pressure range)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>When you press the pad on the right with the pen, it shows the current pressure and the value after the response is applied.</li>
+        <li>For each sub tool, you change in tool properties whether pressure changes the thickness and density ("Pen pressure to size", "Pen pressure to opacity") and the pressure curve. These are applied after the response set here (<a href="/petanuri/en/manual/draw#props">Detailed brush settings</a>).</li>
+      </ul>
+      <h3 id="pressure-check">Check that pressure is arriving</h3>
+      <ol class="mn-steps">
+        <li>Press the "Pen pressure" pad in File → Preferences → Pen &amp; input with the pen.</li>
+        <li>Look at "Current pressure" under the pad, and at the path.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Path shown</th><th scope="col">Meaning</th></tr></thead><tbody>
+        <tr><td>Windows Ink</td><td>Pressure is arriving</td></tr>
+        <tr><td>WinTab</td><td>Pressure is arriving via "Read pen pressure directly (WinTab)"</td></tr>
+        <tr><td>None (arriving as a mouse)</td><td>Pressure isn't arriving. See "When pressure has no effect (size doesn't change)" below</td></tr>
+      </tbody></table></div>
+      <h3 id="pressure-fix">When pressure has no effect (size doesn't change)</h3>
+      <p>If "Use Windows Ink" is turned off in your pen tablet settings, the pen arrives as a mouse and no pressure comes through. There are two fixes, and either one is enough.</p>
+      <ul class="mn-list">
+        <li><strong>Recommended</strong>: In your pen tablet driver's settings screen, turn on "Use Windows Ink". Tilt arrives too.</li>
+        <li><strong>If you keep Windows Ink off</strong>: Turn on "Read pen pressure directly (WinTab)" in File → Preferences → Pen &amp; input → "Tablet" (off by default). The path becomes "WinTab".</li>
+      </ul>
+      <div class="mn-tip">If it looks like you are drawing with a pen but pressure isn't arriving, a notice "Pen pressure is not arriving" appears once at the bottom right. It doesn't appear if you are just drawing with a mouse. "Don't show again" stops it from appearing, and "Open preferences" opens Pen &amp; input.</div>
+      <h3 id="pressure-wintab">Read pressure with WinTab</h3>
+      <ul class="mn-list">
+        <li>When you turn on "Read pen pressure directly (WinTab)", pressure (and tilt) is read through the WinTab of your pen tablet driver.</li>
+        <li>It replaces pressure only when you draw with the pen close to the screen. Drawing with a mouse is unchanged. The eraser end of the pen works as the eraser too.</li>
+        <li>"Use WinTab pressure for Windows Ink pens too" (on by default): even when the pen arrives via Windows Ink, if WinTab values are arriving, it uses those pressure and tilt values. When it is off, it keeps the Windows Ink pressure.</li>
+        <li>If you use it at the same time as another drawing app that uses WinTab, pressure may not arrive.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-wintab-v121.webp" width="700" height="165" alt="The Tablet section of Pen and input in Preferences" loading="lazy"><figcaption>Pen &amp; input → "Tablet"</figcaption></figure>
+      <h3 id="pressure-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>You have to press hard to get thickness, or even a light touch is thick</b>: Calibrate again to your touch with "Calibrate with test strokes". To adjust by hand, if you have to press hard to get thickness, lower the max; if even a light touch is thick, move the response toward "Firm".</li>
+        <li><b>Light strokes are almost invisible, or the taper is too thin</b>: Under Pen &amp; input → Stroke feel, set "How tapering is made" to "Taper by length". Parts with weak pressure then never get thinner than 1px.</li>
+        <li><b>It works with other brushes, but the thickness doesn't change for one brush</b>: In that sub tool's tool properties, check that "Pen pressure to size" isn't turned off (<a href="/petanuri/en/manual/draw#props">Detailed brush settings</a>).</li>
+        <li><b>The thickness doesn't change when you draw with a mouse</b>: A mouse has no pressure. For a mouse, the taper is always made from the "Taper start" and "Taper end" lengths of the sub tool.</li>
+        <li><b>"The pen tablet driver has no free WinTab slots" appears and "Read pen pressure directly (WinTab)" turns off</b>: Close other drawing apps that use WinTab, or restart your pen tablet driver (or the PC), and then turn it on again. With some drivers, the slot used by an app that quit without closing properly doesn't come back until you restart.</li>
+        <li><b>"WinTab not found" or "Pen tablet not found" appears</b>: Check that the pen tablet driver is installed and that the tablet is connected.</li>
+        <li><b>You turned on WinTab, but "Current pressure" stays at "— (no pressure)" when you press the pad</b>: With the PetaNuri3D window in front, press and draw on the pad with the pen a few times (if nothing arrives, it tries switching the connection method every two presses). If it still doesn't work, click "Search again" under "WinTab connection", and draw again.</li>
+        <li><b>The pen doesn't respond after you turn WinTab on</b>: Click "Search again" under "WinTab connection" in "Tablet", and draw again. It forgets the connection method it remembered and searches from scratch.</li>
+        <li><b>You have per-app settings in your pen tablet driver</b>: If you have added PetaNuri3D (PetaNuri3D-win_x64.exe) to the per-app settings, check there that pressure isn't turned off.</li>
+        <li><b>"WinTab is running, but no pen data is arriving" appears</b>: Use "Check WinTab status" below to find out where it is stopping.</li>
+        <li><b>You want to reinstall or update the pen tablet driver</b>: Close PetaNuri3D first. While WinTab is in use, the driver's files stay open.</li>
+        <li><b>Lines appear late behind the pen tip</b>: Try turning on "Show pen strokes early (reduce lag)" under Pen &amp; input → Reduce lag (when drawing with the pen via Windows Ink). Also turn on "Predicted preview line" (<a href="/petanuri/en/manual/screen#settings-pen">Pen &amp; input settings</a>).</li>
+      </ul>
+      <h3 id="pressure-support">If it still isn't fixed (send to support)</h3>
+      <ol class="mn-steps">
+        <li>Click "Check WinTab status" under File → Preferences → Pen &amp; input → "Tablet".</li>
+        <li>Draw one line (2 to 3 seconds) with the pen over the PetaNuri3D window. It shows wintab32.dll, the pen tablet name, the pen pressure levels, the receiver (WinTab context), the number of packets that arrived in the last 5 seconds, the last pen pressure (raw value), and an assessment of where it is stopping (the numbers change every second).</li>
+        <li>Click "Copy".</li>
+        <li>Choose Help → "Contact (support, feature requests, bug reports)", paste it together with your pen tablet model and driver version, and send it (<a href="/petanuri/en/manual/trouble#contact">How to contact us</a>).</li>
+      </ol>
+      <div class="mn-tip">When the message "Turn on 'Read pen pressure directly (WinTab)', then check again" appears, turn on "Read pen pressure directly (WinTab)" in the same place, and then click the button again.</div>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/screen#settings">Preferences</a></li><li><a href="/petanuri/en/manual/screen#nav">Move the view with the 3D navigator</a></li><li><a href="/petanuri/en/manual/screen#popup">Popup palette</a></li><li><a href="/petanuri/en/manual/draw#props">Detailed brush settings</a></li><li><a href="/petanuri/en/manual/edit#select">Selection</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/unity"><small>← Previous</small>Unity and AI integration</a><a class="next" href="/petanuri/en/manual/glossary"><small>Next →</small>Glossary</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +539,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

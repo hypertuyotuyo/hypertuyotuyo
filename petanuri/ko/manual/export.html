@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>내보내기 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
-  <meta name="description" content="내보내기 창(번짐과 저장 위치)·PNG·PSD 내보내기와 가져오기·내보내기 번짐(패딩)·내보내기 폴더·머티리얼(.unitypackage). VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta name="description" content="내보내기 창(번짐과 내보낼 위치), PNG, PSD 내보내기와 가져오기, 내보내기 번짐(패딩), 내보낼 폴더, 머티리얼(.unitypackage). VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/export">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="내보내기 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
-  <meta property="og:description" content="내보내기 창(번짐과 저장 위치)·PNG·PSD 내보내기와 가져오기·내보내기 번짐(패딩)·내보내기 폴더·머티리얼(.unitypackage). VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:description" content="내보내기 창(번짐과 내보낼 위치), PNG, PSD 내보내기와 가져오기, 내보내기 번짐(패딩), 내보낼 폴더, 머티리얼(.unitypackage). VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/export">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "내보내기 | PetaNuri3D 매뉴얼",
-   "description": "내보내기 창(번짐과 저장 위치)·PNG·PSD 내보내기와 가져오기·내보내기 번짐(패딩)·내보내기 폴더·머티리얼(.unitypackage). VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "description": "내보내기 창(번짐과 내보낼 위치), PNG, PSD 내보내기와 가져오기, 내보내기 번짐(패딩), 내보낼 폴더, 머티리얼(.unitypackage). VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/export",
    "inLanguage": "ko",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,230 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="매뉴얼 목차">
-    <p class="mn-side-title">매뉴얼</p>
+  <aside class="mn-side has-search" aria-label="매뉴얼 목차">
+    <form class="mn-search" role="search" action="/petanuri/ko/manual/search" data-index="/petanuri/assets/data/manual-search.ko.json">
+      <label class="mn-search-label" for="mn-q">매뉴얼 검색</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="예: 좌우 대칭, 필압, 내보내기" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="검색 결과" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/ko/manual">매뉴얼</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
-    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·스티치·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export" aria-current="page">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+    <nav><p class="mn-group">처음에</p><ul class="mn-plain"><li><a href="/petanuri/ko/manual/first">처음 사용하는 분께</a></li><li><a href="/petanuri/ko/manual/howto">하고 싶은 일로 찾기</a></li><li><a href="/petanuri/ko/manual/trouble">문제가 생겼을 때</a></li></ul><p class="mn-group">기본</p><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li></ol><p class="mn-group">도구와 범위</p><ol><li><a href="/petanuri/ko/manual/deco">스탬프·무늬·스티치</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV와 표시 범위</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트</a></li></ol><p class="mn-group">마무리</p><ol><li><a href="/petanuri/ko/manual/material">lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">내보내기와 연동</p><ol><li><a href="/petanuri/ko/manual/export" aria-current="page">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity·AI 연동</a></li></ol><p class="mn-group">찾아보기</p><ol><li><a href="/petanuri/ko/manual/keys">단축키</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/ko/manual/glossary">용어집</a></li></ul><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 내보내기</p>
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / <a href="/petanuri/ko/manual">매뉴얼</a> / 내보내기</p>
     <h1 class="mn-h1">내보내기</h1>
-    <p class="mn-intro">완성한 텍스처를 이미지나 머티리얼로 내보냅니다. 메뉴는 파일 → 내보내기입니다.</p>
-    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
-    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#png">PNG로 내보내기</a></li><li><a href="#psd">PSD 내보내기·가져오기</a></li><li><a href="#pad">내보내기 번짐(패딩)</a></li><li><a href="#dir">내보낼 폴더</a></li><li><a href="#mat">머티리얼 내보내기</a></li></ul></div>
-    <section class="mn-sec" id="png"><h2>PNG로 내보내기</h2><ol class="mn-steps"><li>파일 → 내보내기 → PNG로 내보내기를 선택합니다.</li><li>작은 창에서 내보내기 번짐과 저장 위치를 선택하고 &#x27;내보내기&#x27;를 누릅니다.</li><li>선택한 세트 또는 모든 세트를 내보낼 수 있습니다. 파일 이름은  &lt;머티리얼 이름&gt;.png입니다.</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="파일 → 내보내기 메뉴" loading="lazy"><figcaption>파일 → 내보내기</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="내보내기 창. 번짐과 저장 위치" loading="lazy"><figcaption>내보내기 창</figcaption></figure></div><div class="mn-tip">메인 컬러 2nd/3rd 폴더가 있는 세트는 각각 별도 PNG로 내보냅니다. 테두리 등의 효과는 효과가 포함된 그림이 됩니다.</div><div class="mn-tip">베이크한 빛·그림자·질감은 보이는 레이어 색으로 PNG에 포함됩니다. 스탬프용 2D 캔버스의 작업용 세트는 모델 텍스처 출력에서 제외됩니다. 모델 없는 2D 페인트의 PNG는 캔버스 아래 &#x27;PNG 내보내기&#x27;로 저장할 수 있습니다.</div><div class="mn-tip">선택한 레이어를 PNG로(모든 버전): 레이어 오른쪽 클릭의 “이 레이어를 PNG로 내보내기”, 여러 장 선택해 “선택한 레이어를 PNG로 내보내기”, 또는 파일 → 내보내기 → PNG로 내보내기(선택한 레이어). 배경은 투명합니다. 2장 이상이면 “한 장씩”(&lt;머티리얼 이름&gt;_&lt;레이어 이름&gt;.png)이나 “겹쳐서 한 장으로”(&lt;머티리얼 이름&gt;_layers.png)를 고릅니다.</div><div class="mn-tip">내보내기 창의 “해상도”로 텍스처 세트 해상도와 다른 크기(512~8192)로 축소·확대해 내보낼 수 있습니다(PNG·선택한 레이어·머티리얼. 번짐은 세트 해상도에서 넣은 뒤 줄입니다).</div><div class="mn-tip">UV 맵(모든 버전): 파일 → 내보내기 → “UV 맵을 PNG로 내보내기(선택 중인 세트)”(텍스처 세트 오른쪽 클릭에도)로 UV 선을 &lt;머티리얼 이름&gt;_uv.png로 만듭니다. 해상도·선 색(흰색·검정·전경색)·바탕(투명·검정·흰색)·선 굵기와 “섬 가장자리를 2배 굵기로 그리기” 여부를 고를 수 있습니다.</div><div class="mn-figs"><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="내보내기 창의 해상도 항목" loading="lazy"><figcaption>내보내기 해상도</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="UV 맵을 PNG로 내보내기 창" loading="lazy"><figcaption>UV 맵을 PNG로 내보내기</figcaption></figure></div></section><section class="mn-sec" id="psd"><h2>PSD 내보내기·가져오기 <span class="tier std">Standard</span></h2><ul class="mn-list"><li>파일 → 내보내기 → PSD로 내보내기로 레이어·표시·불투명도·합성 모드·클리핑·투명 픽셀 잠금·폴더·레이어 마스크·조정 레이어(그라데이션 맵은 색 점 유지)를 유지하여 내보냅니다.</li><li>테두리은 픽셀로 베이크한 레이어로 씁니다. 텍스트 레이어는 일반 레이어가 됩니다. 칠할 대상·노멀 맵·메인 컬러 2nd/3rd 폴더는 숨긴 그룹으로 씁니다(가져오면 복원).</li><li>PSD를 창에 드롭하면 파일 이름과 같은 머티리얼에 적용됩니다. 텍스처 세트 패널의 행에서도 가져올 수 있습니다.</li><li>아바타에 포함된 편집용 PSD를 가져와 이어서 그릴 수도 있습니다.</li></ul><div class="mn-tip warn">조정 레이어의 수식은 다른 앱에서 열 때 모습이 조금 달라질 수 있습니다.</div><div class="mn-tip">PSD(Standard·Pro): 테두리·드롭 섀도·외부 광선만 있는 바탕과 클리핑 레이어는 한 장으로 합치지 않고 따로 쓰며, 효과만 구운 “(레이어 이름)(효과)” 레이어를 위에 추가합니다(칠 불투명도·오버레이·내부 효과 등이 있으면 지금처럼 한 장으로).</div></section><section class="mn-sec" id="pad"><h2>내보내기 번짐(패딩)</h2><p>UV 아일랜드 밖으로 가장자리 색을 확장하여 내보냅니다. 확장하지 않으면 축소나 밉맵에서 UV 이음매(심)에 선이 보일 수 있습니다.</p><ul class="mn-list"><li>없음·4·8(기본값)·16·32·64·128 px·아일랜드 밖 전체 채우기 중 선택합니다(내보내기 창·머티리얼 내보내기 창).</li><li>PNG·PSD 합성 이미지·머티리얼 이미지에 적용됩니다. PSD 레이어 자체는 그린 상태를 유지합니다.</li></ul><p>v1.1.0에서는 4096px 이미지에서 &#x27;전부&#x27;를 선택해도 여백 끝까지 채워 내보낼 수 있습니다.</p><div class="mn-tip">패딩 값은 UV 영역 왼쪽 아래와 공통입니다. 붓 가장자리의 옅은 곳은 그린 곳으로 보지 않고, 불투명한 곳의 색을 아일랜드 밖으로 넓힌 다음 옅은 곳을 위에 겹칩니다(이음매에 바탕색 선이 덜 생깁니다). 패딩을 새 레이어에 만들기도 같은 규칙입니다.</div><div class="mn-tip">패딩이 퍼지는 방식: 아일랜드 밖의 화소는 직선거리로 가장 가까운 아일랜드 화소의 색이 됩니다(비스듬한 가장자리도 계단이 되지 않고 매끄럽게 퍼집니다). Unity 연동으로 보내는 그림도 내보내기 PNG와 같습니다.</div></section><section class="mn-sec" id="dir"><h2>내보낼 폴더</h2><ul class="mn-list"><li>내보내기 저장 위치 대화상자는 이전에 내보낸 폴더에서 열립니다.</li><li>내보내기 창의 &#x27;폴더 선택&#x27;으로 정하고 <strong>&#x27;매번 묻지 않고 이 폴더로 내보내기&#x27;</strong>를 켜면 PNG·PSD·AO·.unitypackage 내보내기에서 저장 위치를 묻지 않고 해당 폴더에 씁니다. &#x27;제거&#x27;하면 매번 묻기로 돌아갑니다.</li><li>머티리얼을 폴더로 내보내기(Assets 선택)는 이전에 선택한 Assets에서 열립니다.</li></ul><div class="mn-tip warn">&#x27;매번 묻지 않기&#x27;에서는 같은 이름의 파일을 덮어씁니다.</div><p>&#x27;내보낸 후 폴더 열기&#x27;는 기본으로 켜져 있습니다. 완성 이미지를 탐색기에서 확인할 수 있으며 불필요하면 체크를 해제합니다. 저장 위치를 정한 후 &#x27;내보내는 중…&#x27;과 진행 상황을 표시합니다.</p></section><section class="mn-sec" id="mat"><h2>머티리얼 내보내기 <span class="tier pro">Pro</span></h2><p>lilToon용 머티리얼을 .unitypackage로 내보낼 수 있습니다. 자세한 내용은  <a href="/petanuri/ko/manual/material#export">마무리 모습과 lilToon 머티리얼</a> 을 참고하세요.</p></section>
-    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/pose"><small>← 이전</small>포즈·블렌드 셰이프·정점 그룹</a><a class="next" href="/petanuri/ko/manual/unity"><small>다음 →</small>Unity에서 칠하기·AI 연동</a></nav>
+    <p class="mn-intro">칠한 텍스처를 Unity 등에서 사용하는 이미지(PNG·PSD)로 만듭니다. 작업 파일(.petanuri) 저장은 이어서 그리기 위한 것이며, 모델에 붙이는 이미지는 되지 않습니다. 이미지로 만드는 것이 "내보내기"입니다.</p>
+    <p class="mn-proof mn-ui-note">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-quick"><b>먼저 이것만</b><ol>
+      <li>파일 → 내보내기 → PNG로 내보내기(모든 세트)로 모든 텍스처를 한 번에 PNG로 만듭니다(<a href="#png">자세히</a>).</li>
+      <li>창의 "번짐(패딩)"은 처음 값인 8 px 그대로 두어도 됩니다. 게임 안에서 이음매에 선이 보이면 넓힙니다(<a href="#pad">자세히</a>).</li>
+      <li>같은 폴더로 여러 번 내보낼 때는 "매번 묻지 않고 이 폴더로 내보내기"를 켭니다(<a href="#dir">자세히</a>).</li>
+      <li>레이어를 나눈 채 전달할 때는 PSD로 내보냅니다 <span class="tier std">Standard</span>(<a href="#psd">자세히</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#kinds">내보낼 수 있는 것과 작업 파일과의 차이</a></li><li><a href="#png">PNG로 내보내기</a></li><li><a href="#layers-png">선택한 레이어만 PNG로 만들기</a></li><li><a href="#uvmap">UV 맵을 PNG로 내보내기</a></li><li><a href="#psd">PSD로 내보내기·가져오기</a></li><li><a href="#pad">내보내기 번짐(패딩)</a></li><li><a href="#dir">내보낼 폴더</a></li><li><a href="#canvas2d">2D 페인트 그림 내보내기</a></li><li><a href="#mat">lilToon 머티리얼·AO 내보내기</a></li></ul></div>
+
+    <section class="mn-sec" id="kinds" data-keywords="엑스포트 출력 저장 텍스처 완성 프로젝트 차이 petanuri">
+      <h2>내보낼 수 있는 것과 작업 파일과의 차이</h2>
+      <p>내보내기는 모두 파일 → 내보내기에서 선택합니다. 텍스처 세트 행을 우클릭해도 그 세트만 내보낼 수 있습니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">필요한 것</th><th scope="col">메뉴</th></tr></thead><tbody>
+        <tr><td>선택 중인 세트의 텍스처</td><td>PNG로 내보내기(선택 중인 세트) (<a href="#png">자세히</a>)</td></tr>
+        <tr><td>모든 세트의 텍스처</td><td>PNG로 내보내기(모든 세트) (<a href="#png">자세히</a>)</td></tr>
+        <tr><td>일부 레이어만의 그림</td><td>PNG로 내보내기(선택한 레이어) (<a href="#layers-png">자세히</a>)</td></tr>
+        <tr><td>UV 선의 밑그림</td><td>UV 맵을 PNG로 내보내기(선택 중인 세트) (<a href="#uvmap">자세히</a>)</td></tr>
+        <tr><td>레이어를 나눈 채의 그림 <span class="tier std">Standard</span></td><td>PSD로 내보내기(선택 중인 세트)/(모든 세트) (<a href="#psd">자세히</a>)</td></tr>
+        <tr><td>lilToon 머티리얼 <span class="tier pro">Pro</span></td><td>머티리얼 내보내기(.unitypackage/폴더) (<a href="#mat">자세히</a>)</td></tr>
+        <tr><td>AO 이미지 <span class="tier pro">Pro</span></td><td>필터 → 베이크 → "AO를 PNG로 내보내기(마지막으로 구운 결과)" (<a href="#mat">자세히</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="파일 → 내보내기 메뉴" loading="lazy"><figcaption>파일 → 내보내기</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col"></th><th scope="col">작업 파일(.petanuri)</th><th scope="col">내보낸 PNG</th></tr></thead><tbody>
+        <tr><td>내용</td><td>모델·모든 레이어·설정</td><td>보이는 레이어를 겹친 한 장의 그림</td></tr>
+        <tr><td>열 수 있는 앱</td><td>PetaNuri3D뿐</td><td>Unity·다른 페인트 소프트 등</td></tr>
+        <tr><td>조작</td><td>파일 → 작업 파일 저장(<kbd>Ctrl</kbd>+<kbd>S</kbd>)</td><td>파일 → 내보내기</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">내보낸 PNG에서 레이어로 되돌릴 수는 없습니다. 나중에 수정할 때를 위해 작업 파일도 저장해 둡니다(<a href="/petanuri/ko/manual/start#save">저장·이어 열기</a>).</div>
+    </section>
+
+    <section class="mn-sec" id="png" data-keywords="png 텍스처 출력 엑스포트 전체 일괄 파일이름 축소 확대 해상도">
+      <h2>PNG로 내보내기</h2>
+      <p>텍스처 세트의 그림을 세트당 PNG 한 장으로 만듭니다. Unity 등에서 모델에 붙이는 것이 이 이미지입니다.</p>
+      <ol class="mn-steps">
+        <li>파일 → 내보내기 → "PNG로 내보내기(모든 세트)"를 선택합니다. 하나만 내보낼 때는 "PNG로 내보내기(선택 중인 세트)"입니다.</li>
+        <li>내보내기 창에서 "해상도", "번짐(패딩)", "내보내기 위치"를 확인하고 "내보내기"를 누릅니다.</li>
+        <li>저장 위치를 물으면 폴더를 선택합니다. 모든 세트일 때는 폴더를 한 번만 선택하면 됩니다.</li>
+        <li>"○○을(를) 내보냈습니다"라고 표시되고, 내보낸 폴더가 탐색기에서 열립니다.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="내보내기 창. 번짐과 내보내기 위치" loading="lazy"><figcaption>내보내기 창</figcaption></figure>
+      <h3 id="png-files">내보내지는 파일</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">파일 이름</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>&lt;세트 이름&gt;.png</td><td>보이는 레이어를 겹친 그림. 세트 이름은 머티리얼의 이름입니다</td></tr>
+        <tr><td>&lt;세트 이름&gt;_main2nd.png·&lt;세트 이름&gt;_main3rd.png <span class="tier pro">Pro</span></td><td>메인 컬러 2nd/3rd 폴더가 있는 세트. 그 마스크를 칠했다면 _mask가 붙은 파일도 만들어집니다(<a href="/petanuri/ko/manual/material#main2">메인 컬러 2nd·3rd</a>)</td></tr>
+        <tr><td>&lt;세트 이름&gt;_normal.png <span class="tier pro">Pro</span></td><td>칠할 대상의 노멀 맵 폴더가 있는 세트(<a href="/petanuri/ko/manual/material#channels">칠할 대상</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>같은 이름이 되는 세트는 _2, _3을 붙여 구분합니다.</li>
+        <li>표시를 끈 세트도 모든 세트에 포함됩니다. 대상이 없는 세트(!)는 포함되지 않습니다. 필요할 때는 그 행을 우클릭하여 "PNG로 내보내기(아일랜드 밖으로 넓히지 않음)"로 내보냅니다(<a href="/petanuri/ko/manual/sets#orphan">대상이 없는 세트</a>).</li>
+        <li>테두리 등의 효과는 효과가 포함된 그림이 됩니다. 간편 베이크 등으로 구운 빛·그림자·질감도 보이는 레이어의 색으로 들어갑니다.</li>
+        <li>표시 범위나 오브젝트로 숨겨 놓았더라도 텍스처는 그대로 내보냅니다.</li>
+        <li>텍스처 세트 행을 우클릭하여 "PNG로 내보내기"를 선택해도 그 세트를 내보낼 수 있습니다.</li>
+      </ul>
+      <h3 id="png-size">크기를 바꿔 내보내기</h3>
+      <p>내보내기 창의 "해상도"에서 텍스처 세트의 해상도와 다른 크기로 만들 수 있습니다. "그대로(세트의 해상도)"·512×512·1024×1024·2048×2048·4096×4096·8192×8192 중에서 선택합니다.</p>
+      <ul class="mn-list">
+        <li>번짐은 세트의 해상도로 붙인 다음 축소·확대합니다.</li>
+        <li>PNG(선택 중인 세트·모든 세트)·선택한 레이어·UV 맵·머티리얼 내보내기에 적용됩니다. PSD에는 적용되지 않습니다(항상 세트의 해상도).</li>
+        <li>그릴 때의 해상도를 바꾸는 것은 텍스처 세트 패널입니다(<a href="/petanuri/ko/manual/sets#resolution">해상도 바꾸기</a>).</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="내보내기 창의 해상도 항목" loading="lazy"><figcaption>내보내기 해상도</figcaption></figure>
+      <h3 id="png-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>게임 안에서 UV 이음매에 선이 보입니다</b>: 번짐이 부족합니다. 8 px보다 넓혀서 다시 내보냅니다(<a href="#pad">번짐</a>).</li>
+        <li><b>"○○이(가) 표시된 동안에는 내보낼 수 없습니다"라고 표시됩니다</b>: 변형 틀·필터 미리보기 등이 표시되어 있습니다. 확정(<kbd>Enter</kbd>)하거나 취소(<kbd>Esc</kbd>)한 뒤에 내보냅니다.</li>
+        <li><b>"다른 읽기/쓰기 작업이 진행 중입니다"라고 표시됩니다</b>: 저장·자동 저장·불러오기가 진행 중입니다. 끝난 뒤 다시 누릅니다.</li>
+        <li><b>"표시 처리가 멈춰서 내보낼 수 없습니다"라고 표시됩니다</b>: 작업 파일이나 자동 저장에서 다시 연 다음 내보냅니다(<a href="/petanuri/ko/manual/sets#memory">메모리 절약</a>).</li>
+        <li><b>"PNG로 내보낼 수 있는 텍스처 세트가 없습니다"라고 표시됩니다</b>: 선택한 것이 대상이 없는 세트(!)입니다. 다른 세트를 선택하거나 레이어를 옮긴 뒤 내보냅니다.</li>
+        <li><b>눌러도 "내보내기를 취소했습니다"가 됩니다</b>: 내보내기 창이나 저장 위치 창에서 취소를 눌렀습니다. 창에서 바꾼 값도 원래대로 돌아갑니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="layers-png" data-keywords="개별 레이어별 파트별 투명 png 배경 선화 소재 단독">
+      <h2>선택한 레이어만 PNG로 만들기</h2>
+      <p>선화만, 무늬만처럼 일부 레이어를 배경이 투명한 PNG로 만듭니다.</p>
+      <ol class="mn-steps">
+        <li>레이어 패널에서 내보낼 레이어를 선택합니다(<kbd>Ctrl</kbd>/<kbd>Shift</kbd>+클릭으로 몇 장이든 선택할 수 있습니다).</li>
+        <li>파일 → 내보내기 → "PNG로 내보내기(선택한 레이어)"를 선택합니다(레이어를 우클릭한 메뉴의 "선택한 레이어를 PNG로 내보내기", "이 레이어를 PNG로 내보내기"로도 가능합니다).</li>
+        <li>2장 이상일 때는 창의 "선택한 레이어"에서 "한 장씩(레이어마다 파일)" 또는 "겹쳐서 한 장으로"를 선택하고 "내보내기"를 누릅니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">선택 방식</th><th scope="col">파일 이름</th></tr></thead><tbody>
+        <tr><td>한 장씩</td><td>&lt;세트 이름&gt;_&lt;레이어 이름&gt;.png</td></tr>
+        <tr><td>겹쳐서 한 장으로</td><td>&lt;세트 이름&gt;_layers.png(패널의 순서대로 합성 모드째 겹칩니다)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>배경은 투명합니다. 그린 부분만의 그림이므로 번짐은 붙이지 않습니다.</li>
+        <li>이전 선택 방식을 기억합니다.</li>
+        <li>2D 페인트에서는 사용할 수 없습니다. "PNG로 내보내기(선택 중인 세트)"로 내보냅니다(<a href="#canvas2d">자세히</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvmap" data-keywords="uv 전개도 레이아웃 와이어 밑그림 가이드 템플릿">
+      <h2>UV 맵을 PNG로 내보내기</h2>
+      <p>UV의 선을 PNG로 만듭니다. 다른 페인트 소프트에서 밑그림으로 겹쳐 그릴 때 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>내보낼 텍스처 세트를 선택합니다.</li>
+        <li>파일 → 내보내기 → "UV 맵을 PNG로 내보내기(선택 중인 세트)"를 선택합니다(텍스처 세트 행의 우클릭 메뉴에도 있습니다).</li>
+        <li>창에서 아래 항목을 선택하고 "내보내기"를 누릅니다. &lt;세트 이름&gt;_uv.png가 만들어집니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">선택할 수 있는 것</th></tr></thead><tbody>
+        <tr><td>해상도</td><td>그대로(세트의 해상도)·512~8192</td></tr>
+        <tr><td>선 색</td><td>흰색·검정·전경색</td></tr>
+        <tr><td>바탕</td><td>투명·검정·흰색(투명이면 다른 소프트에서 그림 위에 겹칠 수 있습니다)</td></tr>
+        <tr><td>선 굵기</td><td>1·2·3·4·6·8px</td></tr>
+        <tr><td>섬 가장자리</td><td>"섬 가장자리를 2배 굵기로 그리기"(처음에는 켜져 있습니다)</td></tr>
+        <tr><td>내보내기 위치</td><td>다른 내보내기와 같습니다(<a href="#dir">자세히</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="UV 맵을 PNG로 내보내기 창" loading="lazy"><figcaption>UV 맵을 PNG로 내보내기</figcaption></figure>
+      <ul class="mn-list">
+        <li>2D 캔버스에는 UV가 없으므로 내보낼 수 없습니다. 3D 모델의 텍스처 세트를 선택하세요.</li>
+        <li>PetaNuri3D 안에서 UV 선을 보기만 하려면 UV 영역의 "UV 선"을 사용합니다(<a href="/petanuri/ko/manual/uv#uv">UV를 표시해 직접 칠하기</a>).</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="psd" data-keywords="psd 포토샵 photoshop 개변용 임포트 클립스튜디오 레이어 이어서">
+      <h2>PSD로 내보내기·가져오기 <span class="tier std">Standard</span></h2>
+      <p>레이어를 나눈 채 PSD로 만듭니다. 다른 페인트 소프트에서 이어서 그릴 때나, 개변용 PSD로 배포할 때 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>파일 → 내보내기 → "PSD로 내보내기(선택 중인 세트)" 또는 "PSD로 내보내기(모든 세트)"를 선택합니다.</li>
+        <li>내보내기 창에서 번짐과 내보내기 위치를 확인하고 "내보내기"를 누릅니다.</li>
+        <li>&lt;세트 이름&gt;.psd가 만들어집니다. 끝나면 크기와 레이어 수가 표시됩니다.</li>
+      </ol>
+      <h3 id="psd-keep">PSD에 들어가는 것</h3>
+      <ul class="mn-list">
+        <li>레이어·표시·불투명도·합성 모드·클리핑·투명 픽셀 잠금·폴더·레이어 마스크·색 태그(레이어의 색)를 유지합니다.</li>
+        <li>조정 레이어도 조정 레이어 그대로 들어갑니다(그라데이션 맵은 색 지점 그대로). 색조·채도·명도의 "색상화"는 들어가지 않습니다.</li>
+        <li>테두리는 픽셀로 구운 레이어로 씁니다. 텍스트 레이어는 일반 레이어가 됩니다.</li>
+        <li>테두리·드롭 섀도·외부 광선만 있는 바탕 레이어와 클리핑한 레이어는 별개의 레이어로 씁니다. 효과만 구운 "(레이어 이름)(효과)" 레이어를 위에 추가합니다. 칠 불투명도·내부 효과 등이 있을 때는 한 장으로 합칩니다.</li>
+        <li><span class="tier pro">Pro</span> 칠할 대상·노멀 맵·메인 컬러 2nd/3rd 폴더는 숨겨진 그룹으로 씁니다. PetaNuri3D에서 가져오면 원래대로 돌아옵니다.</li>
+        <li>합성 이미지(PSD를 열지 않고 읽는 평평한 그림)에는 번짐이 붙습니다. 레이어 자체는 그린 그대로입니다.</li>
+      </ul>
+      <div class="mn-tip warn">조정 레이어의 수식은 다른 앱에서 열면 모습이 조금 달라질 수 있습니다.</div>
+      <h3 id="psd-import">PSD 가져오기</h3>
+      <p>아바타에 딸려 오는 개변용 PSD를 가져와서 이어서 그릴 수 있습니다. 가져오면 그 세트의 레이어가 PSD의 내용으로 교체됩니다.</p>
+      <ol class="mn-steps">
+        <li>파일 → 가져오기 → "PSD 가져오기(레이어 교체)"를 선택합니다.</li>
+        <li>PSD를 선택합니다. 파일 이름이 세트 이름과 같은 세트(body.psd → body)에 들어갑니다. 맞는 세트가 없으면 선택 중인 세트에 들어갑니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>PSD를 창에 드롭해도 같은 방식으로 들어갑니다. 텍스처 세트 행에 드롭하면 그 세트에 들어갑니다(<a href="/petanuri/ko/manual/sets#files">이미지나 PSD 추가하기</a>).</li>
+        <li>크기가 다르면 세트의 해상도에 맞춰 확대·축소합니다. 폴더·마스크·대응하는 조정 레이어는 그대로입니다.</li>
+        <li>맞지 않는 합성 모드는 "표준"으로, 지원하지 않는 조정 레이어는 건너뛰고 오른쪽 아래에 주의 메시지를 표시합니다.</li>
+        <li>실행 취소(<kbd>Ctrl</kbd>+<kbd>Z</kbd>) 1번으로 되돌릴 수 있습니다.</li>
+        <li>새로 만들 때 시작을 "PSD"로 하여 가져올 수도 있습니다(<a href="/petanuri/ko/manual/start#new">3D 모델 열기</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pad" data-keywords="패딩 번짐 여백 블리드 심 이음매 밉맵 틈 하얀선 검은선">
+      <h2>내보내기 번짐(패딩)</h2>
+      <p>UV 아일랜드 바깥으로 가장자리의 색을 넓혀서 내보냅니다. 넓히지 않으면 게임 안에서 축소나 밉맵이 적용될 때 UV 이음매(심)에 선이 보일 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>내보내기 창의 "번짐(패딩)"에서 넓힐 폭을 선택합니다.</li>
+        <li>"내보내기"를 누릅니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">선택할 수 있는 값</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>없음(아일랜드 바깥으로 넓히지 않음)</td><td>아일랜드 바깥은 넓히지 않습니다(바탕이 보이고 있으면 바탕의 색)</td></tr>
+        <tr><td>4·8(처음 값)·16·32·64·128 px</td><td>아일랜드 가장자리에서 그 폭만큼 색을 넓힙니다</td></tr>
+        <tr><td>아일랜드 바깥을 모두 채우기</td><td>아일랜드 바깥을 모두 가장 가까운 아일랜드의 색으로 채웁니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>PNG·PSD의 합성 이미지·머티리얼 내보내기 이미지(메인 컬러·그림자 색·마스크·노멀 맵 등 전부)에 적용됩니다. PSD의 레이어 자체는 넓히지 않습니다.</li>
+        <li>선택한 레이어의 PNG와 UV 맵에는 붙이지 않습니다.</li>
+        <li>값은 UV 영역 왼쪽 아래의 "패딩"과 같은 값입니다. 어느 쪽에서 바꿔도 양쪽이 바뀝니다. UV 영역에서 1px 단위로 정한 값도 창에 나열됩니다(<a href="/petanuri/ko/manual/uv#area">칠하는 범위와 패딩</a>).</li>
+        <li>아일랜드 바깥의 픽셀은 직선 거리로 가장 가까운 아일랜드 픽셀의 색이 됩니다. 비스듬한 가장자리도 계단 모양이 되지 않고 매끄럽게 넓어집니다.</li>
+        <li>브러시 가장자리의 옅은 부분은 그린 곳으로 보지 않고, 불투명한 부분의 색을 넓힌 다음 옅은 부분을 위에 겹칩니다. 이음매에 바탕 색의 선이 나타나기 어려워집니다.</li>
+        <li>Unity 연동으로 보내는 그림도 내보내기 PNG와 같은 방식으로 넓힙니다(<a href="/petanuri/ko/manual/unity">Unity에서 칠하기</a>).</li>
+      </ul>
+      <div class="mn-tip">내보내기 전에 UV 영역의 "패딩 선"을 표시하면 어디까지 넓어지는지 눈으로 확인할 수 있습니다. 아일랜드 바깥도 직접 그리고 싶을 때는 칠하는 범위를 "패딩 안"으로 합니다(<a href="/petanuri/ko/manual/uv#area">자세히</a>).</div>
+    </section>
+
+    <section class="mn-sec" id="dir" data-keywords="저장 출력 폴더 지정 덮어쓰기 탐색기 매번">
+      <h2>내보낼 폴더</h2>
+      <p>내보내기 창의 "내보내기 위치"에서 정해 둔 폴더로 매번 내보낼 수 있게 합니다. Unity 프로젝트의 Textures 폴더 등을 선택해 두면 편리합니다.</p>
+      <ol class="mn-steps">
+        <li>내보내기 창의 "폴더 선택"에서 폴더를 선택합니다.</li>
+        <li>"매번 묻지 않고 이 폴더로 내보내기(같은 이름의 파일은 덮어쓰기)"를 켭니다.</li>
+        <li>다음부터 PNG·PSD·AO·.unitypackage 내보내기에서 저장 위치를 묻지 않고 그 폴더에 씁니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>"제거"를 누르면 내보낼 때마다 저장 위치를 묻는 상태로 돌아갑니다.</li>
+        <li>폴더를 정하지 않았을 때도 저장 위치 창은 이전에 내보낸 폴더에서 열립니다.</li>
+        <li>"내보낸 후 폴더 열기"는 처음부터 켜져 있습니다. 쓰기가 끝나면 그 폴더를 탐색기에서 엽니다. 열 필요가 없을 때는 끕니다.</li>
+        <li>내보내는 동안에는 "내보내는 중…"이 표시되며, 끝날 때까지 조작이 멈춥니다.</li>
+        <li>머티리얼의 폴더로 내보내기(Assets를 선택)는 이전에 선택한 Assets에서 열립니다.</li>
+        <li>창에서 취소하면 창 안에서 바꾼 값(번짐·내보내기 위치 등)은 원래대로 돌아갑니다.</li>
+      </ul>
+      <div class="mn-tip warn">"매번 묻지 않고"일 때는 같은 이름의 파일이 확인 없이 덮어쓰기됩니다.</div>
+    </section>
+
+    <section class="mn-sec" id="canvas2d" data-keywords="2d 일러스트 평면 캔버스 스탬프 그림판">
+      <h2>2D 페인트 그림 내보내기</h2>
+      <p>모델을 사용하지 않는 2D 페인트의 그림도 PNG나 PSD로 만들 수 있습니다.</p>
+      <ul class="mn-list">
+        <li>캔버스 아래 바의 "PNG 내보내기"로 2D-paint.png를 만듭니다. 파일 → 내보내기 → "PNG로 내보내기(선택 중인 세트)"로도 같습니다.</li>
+        <li><span class="tier std">Standard</span> 레이어째 전달할 때는 파일 → 내보내기 → "PSD로 내보내기(선택 중인 세트)"로 2D-paint.psd를 만듭니다.</li>
+        <li>모든 세트·선택한 레이어의 내보내기는 3D 모델의 텍스처 세트를 위한 것입니다. 2D 페인트에서는 사용할 수 없습니다.</li>
+        <li>작업 파일 저장도 가능합니다(<a href="/petanuri/ko/manual/deco#paint2d">모델 없는 2D 페인트</a>).</li>
+      </ul>
+      <div class="mn-tip">스탬프용 2D 캔버스의 그림은 모델 내보내기에 포함되지 않습니다. "스탬프로 등록"으로 스탬프를 만들어 사용합니다(<a href="/petanuri/ko/manual/deco#canvas2d">스탬프용 2D 캔버스</a>).</div>
+    </section>
+
+    <section class="mn-sec" id="mat" data-keywords="unitypackage 머티리얼 lilToon mat 마스크 AO 오클루전">
+      <h2>lilToon 머티리얼·AO 내보내기 <span class="tier pro">Pro</span></h2>
+      <ul class="mn-list">
+        <li>lilToon 머티리얼은 파일 → 내보내기 → "머티리얼 내보내기(.unitypackage/폴더)"로 텍스처와 함께 내보냅니다. 창에는 번짐과 내보내기 위치 칸도 있습니다(<a href="/petanuri/ko/manual/material#export">머티리얼 내보내기</a>).</li>
+        <li>구운 AO는 필터 → 베이크 → "AO를 PNG로 내보내기(마지막으로 구운 결과)"로 &lt;세트 이름&gt;_AO.png를 만듭니다(<a href="/petanuri/ko/manual/ao">AO 굽기</a>).</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>관련 페이지</b><ul><li><a href="/petanuri/ko/manual/start#save">저장·이어 열기</a></li><li><a href="/petanuri/ko/manual/uv#area">칠하는 범위와 패딩</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트</a></li><li><a href="/petanuri/ko/manual/material#export">머티리얼 내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity·AI 연동</a></li></ul></div>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/pose"><small>← 이전</small>포즈·블렌드 셰이프</a><a class="next" href="/petanuri/ko/manual/unity"><small>다음 →</small>Unity·AI 연동</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +365,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

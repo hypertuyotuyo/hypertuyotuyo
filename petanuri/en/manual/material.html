@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Final look and lilToon materials | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Preview lilToon Final look (beta), paint shadow colors/masks in paint-target folders, Main color 2nd/3rd, separate materials, import lilToon materials and export .unitypackage. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Check with the lilToon look (final look, beta), paint shadow color and masks (paint target folders), Main color 2nd/3rd, split materials, load lilToon materials and export as .unitypackage. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/material">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Final look and lilToon materials | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Preview lilToon Final look (beta), paint shadow colors/masks in paint-target folders, Main color 2nd/3rd, separate materials, import lilToon materials and export .unitypackage. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Check with the lilToon look (final look, beta), paint shadow color and masks (paint target folders), Main color 2nd/3rd, split materials, load lilToon materials and export as .unitypackage. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/material">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Final look and lilToon materials Pro | PetaNuri3D Manual",
-   "description": "Preview lilToon Final look (beta), paint shadow colors/masks in paint-target folders, Main color 2nd/3rd, separate materials, import lilToon materials and export .unitypackage. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Check with the lilToon look (final look, beta), paint shadow color and masks (paint target folders), Main color 2nd/3rd, split materials, load lilToon materials and export as .unitypackage. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/material",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,20 +123,260 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material" aria-current="page">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material" aria-current="page">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Final look and lilToon materials</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Final look and lilToon materials</p>
     <h1 class="mn-h1">Final look and lilToon materials <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">Paint while previewing lilToon-equivalent shadows, matcaps, rim light, outlines and more; export materials with their settings. Features on this page require Pro.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <p class="mn-proof">Final look (lilToon appearance) is beta. Uses lilToon 2.3-series calculations but may look slightly different in Unity.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#look">View Final look</a></li><li><a href="#channels">Paint shadow colors and masks (paint targets)</a></li><li><a href="#main2">Main color 2nd / Main color 3rd</a></li><li><a href="#split">Separate materials</a></li><li><a href="#lil">Load lilToon material</a></li><li><a href="#export">Export materials</a></li></ul></div>
-    <section class="mn-sec" id="look"><h2>View Final look</h2><ul class="mn-list"><li>Choose Final look with the rightmost of the four display-mode icons at the 3D top left (also right-click → Display).</li><li>Shows shadows (shadow colors 1/2 and border color), normal maps, matcap, matcap 2nd, rim light, backlight, rim shade, emission and outlines using lilToon 2.3-series calculations.</li><li>Set light direction through the display-mode ▼ or Material → Display and light. Light follows camera keeps illumination consistent as you rotate the view for easier painting.</li><li>Material panel names match lilToon&#x27;s Inspector terminology. Copy to other materials applies the same settings to all.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="Final look with shadows, rim light and outlines" loading="lazy"><figcaption>Final look</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="Material panel" loading="lazy"><figcaption>Material panel (material list at top)</figcaption></figure></div><figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="Full interface in Final look mode" loading="lazy"><figcaption>Final look interface</figcaption></figure><div class="mn-tip">MToon appearance preview (Pro, beta): select MToon in Material → Display and lighting. Paint using shadows, rim lighting, emission, and outlines imported from VRM0/VRM1 as a guide. Changes support Undo/Redo and are saved in the project.</div><div class="mn-tip">This feature previews appearance while painting. Full MToon material round-trip export is not supported; PNG/PSD and existing lilToon material exports remain unchanged. UV animation is static, and unsupported UV settings show an explanation before returning to the normal display.</div><div class="mn-tip">More lilToon settings (Pro): rim light direction influence (direct and indirect light), outline highlights and light brightness, reflection settings (smoothness, metallic, reflectance, real/toon specular, environment reflection, cubemap), glitter shapes, matcap custom normal maps and normal map strength, gradation maps in color adjustment, emission gradients, anisotropic reflection, dither, dissolve, parallax, and AudioLink are shown with the same calculations as lilToon.</div><div class="mn-tip">Effects driven by sound or time are shown frozen at “Sound level (this preview only)” and “Preview time” (not exported). Settings not shown in the view, such as outline vectors and dissolve for Main Color 2nd/3rd, still read and write their values and images in .mat files.</div></section><section class="mn-sec" id="channels"><h2>Paint shadow colors and masks (paint targets)</h2><ol class="mn-steps"><li>Choose a paint target with the panel&#x27;s Paint: buttons (also right-click → Paint target).</li><li>A target folder (such as Shadow color 1) appears above Main color in Layers, selecting a layer inside. Add, delete, stack, mask and clip layers as usual.</li><li>Paint using your regular pens, brushes, fill, gradients, blur and filters.</li><li>Return to color at the top center (or select a layer outside the folder) returns to regular color painting.</li></ol><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="Paint-target folder in Layers" loading="lazy"><figcaption>Paint target folder</figcaption></figure><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Paint target</th><th scope="col">What it does</th></tr></thead><tbody><tr><td>Shadow color 1 / Shadow color 2</td><td>Shadows in painted areas take that color (redness in skin, blue hair shadows etc.)</td></tr><tr><td>Shadow mask</td><td>White = shadows on; black = shadows off</td></tr><tr><td>Shadow AO</td><td>Darker makes shadows more likely (neck, inside hair, overlapping clothes)</td></tr><tr><td>Normal map</td><td>Paint height: white raises, black carves (wrinkles, seams and hair strands; the <a href="/petanuri/en/manual/deco#bump">Bump</a> tool works too)</td></tr><tr><td>Matcap mask / Outline width</td><td>White = enabled; black = disabled</td></tr><tr><td>Rim light color / Emission texture</td><td>Multiplies by painted color / Only painted areas glow in the painted color</td></tr></tbody></table></div><ul class="mn-list"><li>Also paint shadow color 3, shadow blur mask, color-correction mask, alpha mask, emission mask, emission 2nd, backlight color, rim-shade mask, outline color, normal-map 2nd mask and glitter color (right-click → Paint target → Other masks).</li><li>For targets that read only brightness, use White/Gray/Black at the top center. View this only shows just that target. Delete resets it to unpainted.</li><li>Final look supports up to 16 textures at once per material (“Cannot add any more” appears at the limit).</li></ul><div class="mn-tip">More paint targets (Pro): Other masks now includes smoothness, metallic, reflection color, anisotropy mask and noise, dissolve mask and noise, parallax height, and AudioLink mask (when the related setting is in use).</div><div class="mn-tip">Normal map image layers (Pro): normal map images made in other software can go into the normal map folder as layers (Add normal map image in the Material panel, or drop an image on the window while a layer in the folder is selected). For DirectX-style images, turn on DirectX orientation (green flipped) in Layer properties. Normal maps from imported .mat files also become these layers.</div><div class="mn-tip">Add texture from a pattern (Pro): in the normal map section of the material, Add texture from a pattern lays knit, denim, canvas, herringbone, and other patterns into the folder as repeating bumps (size, rotation, and seams under Repeating pattern in Layer properties; strength with Normal map strength). While a layer in the folder is selected, the UV pane shows normal map colors instead of gray height (View → Show the normal map folder as height (gray) (UV) switches back).</div></section><section class="mn-sec" id="main2"><h2>Main color 2nd / Main color 3rd</h2><ul class="mn-list"><li>Enable Main color 2nd/3rd in Material to create matching folders at the top of Layers.</li><li>Only layers inside each folder form that Main color 2nd/3rd texture (not mixed into the main artwork). Set color, opacity, blend mode and mask in the panel.</li><li>Exports separate images (&lt;Name&gt;_main2nd.png etc.), assigned to lilToon&#x27;s Main color 2nd/3rd material slots.</li></ul></section><section class="mn-sec" id="split"><h2>Separate materials</h2><ul class="mn-list"><li>Initially each texture set has one material with the same name. Nothing changes unless you separate them.</li><li>Keep shared textures/artwork while changing shadow colors, matcaps, rim light, outlines and other settings per object (such as red shadows only on animal ears sharing a hair texture).</li><li>Right-click an object row or the object in 3D → Give this object a separate material. Assign material chooses which material to use.</li><li>The top Material list supports add, rename, delete and reorder (order determines overlap priority). Touching the model switches to its material; the bottom status bar shows Material: name (texture set name).</li><li>Exports one .mat per material, referring to shared textures.</li></ul></section><section class="mn-sec" id="lil"><h2>Load lilToon material</h2><ul class="mn-list"><li>File → Import → Import lilToon material: choose .mat or a .unitypackage containing it (also drag/drop). Also selectable as the starting source for a new project.</li><li>Imports render mode, shadows, normal maps, matcaps, rim light, emission, outlines, Main color 2nd/3rd and textures (main color → Base; shadow colors/masks → paint targets).</li><li>Searches for textures in the project around the .mat. Missing textures are listed so you can select images.</li><li>Settings PetaNuri3D does not preview (specular, fur, stencil etc.) retain their values and are restored unchanged on export.</li><li>Export keeps the original .mat&#x27;s location and ID, updating only changed settings and repainted textures.</li></ul><div class="mn-tip">.mat import and export also cover the new settings. The main texture is also read from the URP/HDRP names (_BaseMap, _BaseColorMap) and written to them on export.</div></section><section class="mn-sec" id="export"><h2>Export materials</h2><ol class="mn-steps"><li>Choose File → Export → Export materials (also Export in the panel).</li><li>Choose materials, folder name and padding.</li><li>Export .unitypackage or write directly to a folder (the project&#x27;s Assets). Double-click or drag the .unitypackage to import into your project.</li></ol><ul class="mn-list"><li>Includes .mat files plus main-color, shadow-color, mask, normal-map and matcap images, already assigned.</li><li>Exporting the same project again with the same folder name overwrites previously imported assets, preserving model assignments.</li></ul><div class="mn-tip warn">These materials require lilToon. Install lilToon in the receiving project first (otherwise materials appear pink).</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/sets"><small>← Previous</small>Texture sets and objects</a><a class="next" href="/petanuri/en/manual/ao"><small>Next →</small>Bake AO</a></nav>
+    <p class="mn-intro">Paint while you see the same calculated look as lilToon (shadows, MatCap, rim light, outlines and more). You can also paint shadow color and masks, and hand everything to Unity as a lilToon material together with its settings.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <p class="mn-proof">This is a Pro feature. In Lite, menus and icons show a lock icon, and the "Material" panel shows only a description. In Standard, the entry points don't appear (<a href="/petanuri/en/manual/start#editions">Edition comparison</a>). "Final look" is a beta, so it can look slightly different from how it appears in Unity.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Set Shading to "Final look" with the icons at the top left of the 3D view, and you can paint with the lilToon look (<a href="#look">details</a>).</li>
+      <li>Change settings such as shadows, rim light and outlines in the "Material" panel on the right (<a href="#look-panel">details</a>).</li>
+      <li>To paint shadow color or masks, choose the paint target with the "Paint:" buttons in the panel. When you are done, click "Back to color" (<a href="#channels">details</a>).</li>
+      <li>To bring in an existing lilToon material along with its settings, use File → Import → Load lilToon material (<a href="#lil">details</a>).</li>
+      <li>To hand it to Unity, use File → Export → Export materials to make a .unitypackage (<a href="#export">details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#look">Check with the lilToon look while painting</a></li><li><a href="#channels">Paint shadow color, masks and bump (paint targets)</a></li><li><a href="#main2">Layer Main color 2nd and 3rd</a></li><li><a href="#split">Change settings for only some objects (split materials)</a></li><li><a href="#lil">Load a lilToon material</a></li><li><a href="#export">Export materials and hand them to Unity</a></li></ul></div>
+
+    <section class="mn-sec" id="look" data-keywords="preview toon shader appearance lighting light shadow rim outline matcap gloss beta lilToon-look realtime WYSIWYG">
+      <h2>Check with the lilToon look while painting</h2>
+      <p>When you set Shading to "Final look", the colors you paint appear with the same shadow and light calculations as lilToon. You can paint while seeing the final look before you take it to Unity.</p>
+      <ol class="mn-steps">
+        <li>Of the five Shading icons at the top left of the 3D view, click the second from the right (Final look).</li>
+        <li>Paint as usual. Shadows, rim light, outlines and so on appear on top of the colors you paint.</li>
+        <li>To check only the painted colors, switch back to the leftmost one, "Unlit (painted colors)".</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Other entry points: Display → Shading → "Final look (lilToon/MToon, beta)", the 3D view's right-click → Display, and "Show final look (lilToon, beta)" in the "Material" panel.</li>
+        <li>What it shows: shadows (Shadow color 1, Shadow color 2, Shadow color 3, border color), normal map, MatCap, MatCap 2nd, rim light, backlight, rim shade, emission, outline, reflection settings, glitter, anisotropic reflection, dither, dissolve, parallax, AudioLink and color adjustment.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="Final look display with shadows, rim light and outlines" loading="lazy"><figcaption>Final look display</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="Material panel" loading="lazy"><figcaption>"Material" panel (material list at the top)</figcaption></figure></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="The whole screen with the Final look display on" loading="lazy"><figcaption>Screen with the Final look display</figcaption></figure>
+
+      <h3 id="look-panel">Change settings in the "Material" panel</h3>
+      <p>Settings are per material. Item names follow the names on lilToon's settings screen. Every change can be undone.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">What it contains</th></tr></thead><tbody>
+        <tr><td>(List at the very top)</td><td>The material list. Add, rename, delete and reorder (<a href="#split">split materials</a>)</td></tr>
+        <tr><td>Display and lighting</td><td>Whether to use the lilToon or MToon look, the Final look display on/off, and the light direction and intensity</td></tr>
+        <tr><td>lilToon: (name).mat</td><td>Shown only after you load a .mat. The list of unreproduced settings, and unlinking from the source (<a href="#lil">Load</a>)</td></tr>
+        <tr><td>Basic</td><td>Rendering mode (Opaque, Cutout, Transparent), dither (see-through grid), render face, Main color, color adjustment (including the gradation map), alpha mask</td></tr>
+        <tr><td>Dissolve</td><td>Fades the model out by location (when the rendering mode is Cutout or Transparent)</td></tr>
+        <tr><td>Main color 2nd, Main color 3rd</td><td>Colors to layer on top (<a href="#main2">Main color 2nd and 3rd</a>)</td></tr>
+        <tr><td>Shadow</td><td>Shadow color 1 to 3, range, blur, border color and so on</td></tr>
+        <tr><td>Normal map</td><td>Bump from the height you paint, normal map strength, Normal map 2nd (an image of repeating bump)</td></tr>
+        <tr><td>Anisotropic reflection, Parallax, Reflection</td><td>Hair-strand-like highlights, bump that shifts with the viewing angle, smoothness, metallic, reflectance, apply reflection, cubemap</td></tr>
+        <tr><td>MatCap, MatCap 2nd</td><td>A preset (Soft gloss, Sharp gloss, Angel ring (hair), Edge light, Metal (multiply), Blend-in (multiply)) or an imported image (a picture of a sphere seen from the front). A custom normal map can also be used</td></tr>
+        <tr><td>Rim light, Backlight, Rim shade</td><td>Light at the edge, the edge on the side opposite the light, and shadow at the edge</td></tr>
+        <tr><td>Glitter</td><td>Fineness, particle size, visible angle, random colors, shape (Sparkle, Star, Heart, Diamond, Round, Cross, or an imported image)</td></tr>
+        <tr><td>Emission, Emission 2nd</td><td>Emission color, blend mode, gradation (color changes over time)</td></tr>
+        <tr><td>AudioLink</td><td>Moves emission and more in time with sound in the world (works in VRChat)</td></tr>
+        <tr><td>Outline</td><td>Color, width, highlight, apply light brightness, direction image</td></tr>
+        <tr><td>Export</td><td>"Export materials", "Copy to other materials" (gives all of them the same settings; the images painted on paint targets are not copied) and "Reset"</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Things that change with sound or time are shown frozen at the values of "Sound level (this preview only)" and "Preview time". These two values are not included in the export.</li>
+        <li>Settings that don't show in the display (outline direction, the dissolve of Main color 2nd/3rd, moving vertices with AudioLink and so on) still have their values and images read from and written to the .mat.</li>
+        <li>The settings, the images for the paint targets and the imported MatCap images are saved in the project file (.petanuri).</li>
+      </ul>
+
+      <h3 id="look-light">Change the light direction</h3>
+      <ul class="mn-list">
+        <li>Change it with "Light horizontal angle", "Light height" and "Light intensity" under "Display and lighting" in the "Material" panel. You can also change it from the ▼ next to the Shading icons (<a href="/petanuri/en/manual/screen#light">Light direction</a>).</li>
+        <li>If you turn on "Light follows camera", the light hits the model the same way when you rotate the view, which makes painting easier. If you turn it off, the light is fixed to the model.</li>
+        <li>This light is for checking the look. The light of an exported material is decided by the lights you place in Unity.</li>
+      </ul>
+
+      <h3 id="mtoon">Check with the MToon look</h3>
+      <p>You can paint a VRM model while checking its MToon look (a display preview, beta).</p>
+      <ol class="mn-steps">
+        <li>In the "Material" panel under "Display and lighting", click "MToon".</li>
+        <li>Click "Show final look (MToon, beta)".</li>
+        <li>Paint while adjusting the MToon color, shadow position, sharpness, ambient light, rim, emission and outline.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>If a VRM0 or VRM1 model has MToon settings, you start from its color, shadow, rim, emission and outline and its supporting images. A model without them starts from the standard look.</li>
+        <li>"Reset to original MToon settings" resets only the look adjustments. The layers you painted are not deleted. Click "lilToon" to return to the lilToon look.</li>
+        <li>Adjustments can be undone and redone, and they are saved in the project file.</li>
+      </ul>
+      <div class="mn-tip warn">MToon is a display for checking only. PNG and PSD are exported with the colors as painted, and the material export stays for lilToon. MToon materials and VRM are not exported.</div>
+
+      <h3 id="look-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The "Final look" icon has a lock, or there is no icon</b>: This is a Pro feature. Lite shows a lock, and Standard doesn't show it.</li>
+        <li><b>It looks a little different from Unity</b>: It is a beta, so differences in light or background can cause differences. The light is for checking only, and in Unity the lights you place decide the look.</li>
+        <li><b>It went back to the normal display when I chose MToon</b>: UV settings that change the position, scale or rotation of the main image, and images that use a UV other than UV0, are not supported. The reason is shown when it switches back. UV animation is shown stopped.</li>
+        <li><b>The area I want transparent isn't cut out</b>: Set the rendering mode under "Basic" to "Cutout" or "Transparent". "Opaque" ignores transparency.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="channels" data-keywords="channel mask shadow-mask shadow-color AO normal bump height emission glow rim outline width matcap gloss metallic smoothness glitter texture-slot paint-channel">
+      <h2>Paint shadow color, masks and bump (paint targets)</h2>
+      <p>You can paint not only the main color but also images for shadow color, shadow mask, normal map (bump), emission and more, with your usual pens. Each paint target gets its own folder in the Layers panel.</p>
+      <ol class="mn-steps">
+        <li>In the "Material" panel, click a "Paint:" button in a section and choose the paint target (you can also choose it from right-click → Paint target).</li>
+        <li>A folder for that paint target (for example "Shadow color 1") is created above Main color in the Layers panel, and a layer inside it is selected.</li>
+        <li>Paint with your usual pen, brush, fill, gradient, blur and filters.</li>
+        <li>Click "Back to color" at the top center of the 3D view to return to normal color painting. Clicking a layer outside the folder also takes you back.</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="Paint target folder created in the Layers panel" loading="lazy"><figcaption>Paint target folder</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Paint target</th><th scope="col">How it works</th></tr></thead><tbody>
+        <tr><td>Shadow color 1, Shadow color 2</td><td>Shadows in the painted area take that color (reddish skin, bluish hair shadows and so on). Where you haven't painted, the shadow is the original color multiplied by the shadow color in the settings</td></tr>
+        <tr><td>Shadow mask</td><td>White = shadows applied; black = no shadows</td></tr>
+        <tr><td>Shadow AO</td><td>The darker it is, the more readily shadows appear (around the neck, inside the hair, where clothing overlaps). With <a href="/petanuri/en/manual/ao#output">Bake AO</a>, you can also put the result here</td></tr>
+        <tr><td>Normal map</td><td>You paint it by height. White raises, black carves, and gray is flat (for clothing wrinkles, seams and hair strands. <a href="#normal">Paint a normal map</a>)</td></tr>
+        <tr><td>MatCap mask, MatCap 2nd mask, Outline width</td><td>White = applied; black = not applied</td></tr>
+        <tr><td>Rim light color</td><td>Multiplies by the painted color (black removes it)</td></tr>
+        <tr><td>Emission texture</td><td>Only the painted area glows, in the painted color (multiplied by the "Emission color" in the settings)</td></tr>
+      </tbody></table></div>
+
+      <h3 id="channels-more">Other paint targets</h3>
+      <p>Right-click → Paint target → Other masks (shadow color 3, glitter, etc.) lists more. You can paint them while that feature is in use.</p>
+      <ul class="mn-list">
+        <li>Shadow: Shadow color 3, Shadow blur mask (the more you paint, the softer the edge of the shadow)</li>
+        <li>Color and transparency: Color adjustment mask (adjusts only the painted area), Alpha mask (paint how transparent it is)</li>
+        <li>Emission: Emission mask, Emission 2nd texture, Emission 2nd mask</li>
+        <li>Edge and outline: Backlight color, Rim shade mask, Outline color</li>
+        <li>Material look: Normal map 2nd mask, Glitter color (black hides the glitter), Smoothness, Metallic (white = as set, black = 0), Reflection color, Anisotropy mask, Anisotropy noise</li>
+        <li>More: Dissolve mask, Dissolve noise, Parallax height (white = near, black = far), AudioLink mask</li>
+      </ul>
+
+      <h3 id="channels-bar">The top center bar while painting</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Button</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>White, Gray, Black</td><td>Switches the foreground color. For paint targets that read only brightness (masks, Shadow AO, normal map, outline width), you paint by brightness even if you pick a color. When you go back to color, the previous foreground color returns</td></tr>
+        <tr><td>Fill all</td><td>Fills the whole layer you are drawing on inside the folder with the foreground color</td></tr>
+        <tr><td>Show only this</td><td>Shows only the image of that paint target</td></tr>
+        <tr><td>Clear</td><td>Deletes the folder with its contents and returns to the unpainted state (undo with <kbd>Ctrl</kbd>+<kbd>Z</kbd>)</td></tr>
+        <tr><td>Back to color</td><td>Returns to normal color painting (you can also use Edit → "Set paint target back to color")</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Inside the folder it works like ordinary layers: you can add, delete and reorder layers, and use opacity, blend mode, mask, clipping, Stroke and Merge down. The image made by stacking the layers inside is the image for that paint target.</li>
+        <li>Only the paint targets in use get folders. You can't move or delete the folder itself (to remove it, use "Clear").</li>
+        <li>Layers inside the folder don't count toward Lite's layer limit. Areas you erase with the eraser return to the unpainted state.</li>
+        <li>The UV pane also shows the image of the paint target you are painting.</li>
+      </ul>
+
+      <h3 id="normal">Paint a normal map (bump)</h3>
+      <ol class="mn-steps">
+        <li>In the "Material" panel under "Normal map", turn on "Use normal map".</li>
+        <li>Click "Normal map" under "Paint:". A "Normal map" folder is created at the top of the layers.</li>
+        <li>Raise with white and carve with black. Blur softens it. You can change the strength later with "Normal map strength".</li>
+      </ol>
+      <ul class="mn-list">
+        <li><b>Normal map images made in other software</b>: Use "Add normal map image", or select a layer inside the folder and drop the image onto the window. It goes in as normals, not as height (the layer gets a "Normal" badge). For an image with DirectX orientation, turn on "DirectX orientation (green flipped)" in Layer properties.</li>
+        <li><b>Add texture from a pattern</b>: Lay down patterns such as knit, denim, canvas and herringbone as repeating bump. Change the size, rotation and seams with "Repeating pattern" in Layer properties. You can decide where it applies with a mask.</li>
+        <li>While a layer inside the folder is selected, the UV pane shows the normal map's color (blue-violet) instead of the height (gray). To switch back to gray, use right-click → Display → "Show the normal map folder as height (gray) (UV)".</li>
+        <li>There is also a tool for drawing bump (<a href="/petanuri/en/manual/deco#bump">Bump</a>).</li>
+        <li>When you export, PNG gives a single &lt;name&gt;_normal.png, and PSD keeps the layers separate inside a "Normal map" group.</li>
+      </ul>
+
+      <h3 id="channels-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"Can't add any more" appears</b>: A single material can use at most 16 textures at once in the Final look display. Turn off other features, or "Clear" paint targets you don't use, and then you can use it.</li>
+        <li><b>I pick a color but can only paint gray</b>: You are painting a paint target that reads only brightness. To go back to normal colors, click "Back to color".</li>
+        <li><b>I can't delete or move a paint target folder</b>: Folders can't be deleted. To remove a whole paint target, click "Clear" at the top center.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="main2" data-keywords="main-color-2 main-color-3 2nd 3rd second third overlay layer-on-top decal separate-texture pattern-overlay">
+      <h2>Layer Main color 2nd and 3rd</h2>
+      <p>You can paint the images for lilToon's "Main color 2nd" and "Main color 3rd" separately from the main image. Use it when you want to layer a design or pattern from another image.</p>
+      <ol class="mn-steps">
+        <li>In the "Material" panel under "Main color 2nd", turn on "Use Main color 2nd".</li>
+        <li>A "Main color 2nd" folder is created at the top of the Layers panel.</li>
+        <li>Select the folder, then add layers and paint. You can also drag ordinary layers into it.</li>
+        <li>Set how it overlaps (color, opacity, blend mode, apply light brightness) in the panel.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Only the layers inside the folder become the 2nd (3rd) texture, and they don't mix into the main image. The blend modes are Normal, Add, Screen and Multiply.</li>
+        <li>With the paint target "Main color 2nd mask", you can paint where it overlaps (white) and where it doesn't (black).</li>
+        <li>The folder can't be moved, deleted or duplicated. While it contains layers, you can't turn off "On" (if you empty it, you can turn it off, and the folder goes away too).</li>
+        <li>On export, they become separate images (&lt;name&gt;_main2nd.png, &lt;name&gt;_main3rd.png, and the masks you painted). In PSD they stay as a folder, and when you import it again it returns to this folder. In the material, they go into lilToon's "Main color 2nd/3rd".</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="split" data-keywords="add-materials multiple-materials assign per-object individual animal-ears separate-settings priority duplicate-material">
+      <h2>Change settings for only some objects (split materials)</h2>
+      <p>You can change settings such as shadow color, MatCap, rim light and outline for each object while keeping the same texture (the image you paint). For example, with the hair texture unchanged, you can make only the animal ears' shadows red.</p>
+      <ol class="mn-steps">
+        <li>In the 3D view, right-click the object, or right-click its row in the Objects panel.</li>
+        <li>Choose "Give only this object a separate material". A copy of the current material is added under the object's name and assigned to it.</li>
+        <li>In the "Material" panel, change the settings of that material.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>At first, each texture set has one material with the same name. If you don't split, nothing changes.</li>
+        <li>With "Assign material" in the right-click menu, or "Assign to object" in the panel, you can choose which material to use. You can choose only materials that use the same texture set.</li>
+        <li>In the list at the top of the panel, you can add (a copy of the current material), rename, delete, and move up or down. The texture set's original material can't be deleted.</li>
+        <li>The order of the list is the priority. When objects overlap at the same spot, the upper material is chosen.</li>
+        <li>The panel switches to the material of the spot you touch in 3D, and the status bar below shows "Material: name (texture set name)".</li>
+        <li>On export, there is one .mat per material. The textures are one set per texture set, and the materials point to the same ones.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="lil" data-keywords="mat unitypackage import bring-in existing original-material modify overwrite avatar-material load-material edit-existing">
+      <h2>Load a lilToon material</h2>
+      <p>You can load a lilToon material that comes with an avatar and keep painting from its settings and images. When you export, only the parts you repainted are written back into the original material.</p>
+      <ol class="mn-steps">
+        <li>Choose File → Import → "Load lilToon material (.mat, .unitypackage)".</li>
+        <li>Choose a .mat, or a .unitypackage that contains one. You can also drop it onto the window.</li>
+        <li>If you chose several, check the texture sets they will go into in the window that appears (they go into the set with the matching name).</li>
+        <li>If any textures can't be found, they are listed so you can choose the images (if you don't, they are loaded without them).</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can also choose it under "Start with" on the New screen (<a href="/petanuri/en/manual/start#new-start">Types of starting point</a>).</li>
+        <li>Settings that come in: rendering mode, render face, Main color, shadow, normal map, MatCap/2nd, rim light, backlight, rim shade, emission, outline, Main color 2nd/3rd and more.</li>
+        <li>Images that come in: Main color goes to the base layer (every layer, if it is a PSD); 2nd/3rd go to their folders; shadow colors, masks, rim light color, emission, outline width and AO go to paint targets; MatCap goes to MatCap; and the normal map goes to the Normal map folder (as normals).</li>
+        <li>Textures are searched for in the project (Assets, Packages) that contains the .mat. The first time takes several seconds to over ten seconds. For a .unitypackage, it searches inside the package.</li>
+        <li>If you choose several .mat files that use the same texture, they go into the same texture set, and from the second one on they become separate materials.</li>
+        <li>Loading can be undone (one step). That set's material settings, paint targets, base image and Main color 2nd/3rd are replaced.</li>
+      </ul>
+      <h3 id="lil-unsupported">Unreproduced settings</h3>
+      <p>Settings that PetaNuri3D doesn't imitate (stencil, distance fade, UV animation, texture tiling and so on) are listed in "Unreproduced settings" after you load. The values stay as they are and go back unchanged when you export. You can also see the list from the "lilToon: (name).mat" section of the panel.</p>
+      <h3 id="lil-write">Write back to the original material</h3>
+      <ul class="mn-list">
+        <li>When you export a loaded material, only the lines for the settings you changed and the textures you repainted are rewritten, in the same place and with the same ID as the original .mat. Textures you didn't change are not exported.</li>
+        <li>If you import the .unitypackage into the project, the original materials and textures are overwritten in place (assignments to the model stay).</li>
+        <li>If you repaint a texture that was not a PNG or was not found, a new PNG is created next to the .mat and swapped in.</li>
+        <li>To export as a new material, click "Unlink from source" in the panel.</li>
+      </ul>
+      <div class="mn-tip warn">This overwrites files in the original project. If you don't want to rewrite the materials of an avatar you bought directly, copy the project first, or click "Unlink from source" before you export.</div>
+    </section>
+
+    <section class="mn-sec" id="export" data-keywords="unitypackage export output mat hand-off take-to-Unity bring-into-Unity pink-material send-to-Unity deliver">
+      <h2>Export materials and hand them to Unity</h2>
+      <p>Exports the lilToon materials (.mat) together with the images you painted. When you import it into Unity, you get materials with the textures already assigned.</p>
+      <ol class="mn-steps">
+        <li>Choose File → Export → "Export materials (.unitypackage / folder)" (or "Export materials" in the "Material" panel).</li>
+        <li>Check "Materials to export".</li>
+        <li>Set "Destination folder name (under Assets)", the resolution and "Padding".</li>
+        <li>Click "Export to .unitypackage" and choose where to save.</li>
+        <li>In Unity, double-click the resulting .unitypackage, or drag it into the Project window, to import it.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>What goes in: materials (.mat) and images such as Main color, shadow color, masks, normal map and MatCap. Paint targets are included only while that feature is in use.</li>
+        <li>"Export to folder": If you choose the Assets folder of a Unity project, it writes directly with .meta files (app (exe) only).</li>
+        <li>Images have their color spread outside the islands by the width of "Padding" (<a href="/petanuri/en/manual/export#pad">export bleed</a>).</li>
+        <li>If you export the same work again with the same folder name, what you imported before is overwritten in place (assignments to the model stay).</li>
+        <li>Sets with a ! (sets that aren't in the model) are not exported.</li>
+      </ul>
+      <div class="mn-tip warn">What is exported is a material for lilToon (2.3 series). Make sure lilToon is installed in the project you import into.</div>
+      <h3 id="export-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The material turns pink in Unity</b>: lilToon isn't installed in that project. Installing lilToon fixes it.</li>
+        <li><b>"Export to folder" isn't available</b>: It works only in the app (exe). Export to .unitypackage instead.</li>
+        <li><b>It doesn't show on the avatar</b>: Assign the exported material in the model's material slots. If you loaded an original .mat and exported it, the original material is overwritten in place.</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/ao">Bake AO</a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, material look and shading</a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/layers#folder">Folders and masks</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/sets"><small>← Previous</small>Texture sets</a><a class="next" href="/petanuri/en/manual/ao"><small>Next →</small>Bake AO</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -155,5 +395,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

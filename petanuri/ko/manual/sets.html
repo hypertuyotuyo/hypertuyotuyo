@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>텍스처 세트와 오브젝트 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
-  <meta name="description" content="텍스처 세트 선택·메인과 서브(두 세트에 걸쳐 그리기)·해상도·바탕 이미지 교체·이미지나 PSD 추가·오브젝트별 표시와 숨김·메모리 절약·대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta name="description" content="텍스처 세트 선택, 메인과 서브(두 세트에 걸쳐 그리기), 해상도, 바탕 이미지 교체, 이미지나 PSD 추가, 오브젝트별 표시와 숨김, 메모리 절약, 대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/sets">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="텍스처 세트와 오브젝트 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
-  <meta property="og:description" content="텍스처 세트 선택·메인과 서브(두 세트에 걸쳐 그리기)·해상도·바탕 이미지 교체·이미지나 PSD 추가·오브젝트별 표시와 숨김·메모리 절약·대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:description" content="텍스처 세트 선택, 메인과 서브(두 세트에 걸쳐 그리기), 해상도, 바탕 이미지 교체, 이미지나 PSD 추가, 오브젝트별 표시와 숨김, 메모리 절약, 대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/sets">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "텍스처 세트와 오브젝트 | PetaNuri3D 매뉴얼",
-   "description": "텍스처 세트 선택·메인과 서브(두 세트에 걸쳐 그리기)·해상도·바탕 이미지 교체·이미지나 PSD 추가·오브젝트별 표시와 숨김·메모리 절약·대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "description": "텍스처 세트 선택, 메인과 서브(두 세트에 걸쳐 그리기), 해상도, 바탕 이미지 교체, 이미지나 PSD 추가, 오브젝트별 표시와 숨김, 메모리 절약, 대상이 없는 세트. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/sets",
    "inLanguage": "ko",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,254 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="매뉴얼 목차">
-    <p class="mn-side-title">매뉴얼</p>
+  <aside class="mn-side has-search" aria-label="매뉴얼 목차">
+    <form class="mn-search" role="search" action="/petanuri/ko/manual/search" data-index="/petanuri/assets/data/manual-search.ko.json">
+      <label class="mn-search-label" for="mn-q">매뉴얼 검색</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="예: 좌우 대칭, 필압, 내보내기" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="검색 결과" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/ko/manual">매뉴얼</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
-    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·스티치·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets" aria-current="page">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+    <nav><p class="mn-group">처음에</p><ul class="mn-plain"><li><a href="/petanuri/ko/manual/first">처음 사용하는 분께</a></li><li><a href="/petanuri/ko/manual/howto">하고 싶은 일로 찾기</a></li><li><a href="/petanuri/ko/manual/trouble">문제가 생겼을 때</a></li></ul><p class="mn-group">기본</p><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li></ol><p class="mn-group">도구와 범위</p><ol><li><a href="/petanuri/ko/manual/deco">스탬프·무늬·스티치</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV와 표시 범위</a></li><li><a href="/petanuri/ko/manual/sets" aria-current="page">텍스처 세트</a></li></ol><p class="mn-group">마무리</p><ol><li><a href="/petanuri/ko/manual/material">lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">내보내기와 연동</p><ol><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity·AI 연동</a></li></ol><p class="mn-group">찾아보기</p><ol><li><a href="/petanuri/ko/manual/keys">단축키</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/ko/manual/glossary">용어집</a></li></ul><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 텍스처 세트와 오브젝트</p>
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / <a href="/petanuri/ko/manual">매뉴얼</a> / 텍스처 세트와 오브젝트</p>
     <h1 class="mn-h1">텍스처 세트와 오브젝트</h1>
-    <p class="mn-intro">머티리얼별로 &#x27;텍스처 세트&#x27;가 생성됩니다. 각 세트에 레이어와 해상도가 있습니다. 모델 오브젝트(메시)별로 숨길 수도 있습니다.</p>
-    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p><p class="mn-proof">Lite·Standard·Pro와 Pro 업그레이드를 BOOTH에서 배포하고 있습니다.</p>
-    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#choose">텍스처 세트 선택</a></li><li><a href="#cross">메인과 서브(두 세트에 걸쳐 그리기)</a></li><li><a href="#files">바탕 이미지 교체·이미지나 PSD 추가</a></li><li><a href="#objects">오브젝트 표시·숨김</a></li><li><a href="#sleep">메모리 절약</a></li><li><a href="#orphan">대상이 없는 세트(! 표시)</a></li></ul></div>
-    <section class="mn-sec" id="choose"><h2>텍스처 세트 선택</h2><ul class="mn-list"><li>3D 뷰에서 <strong>다른 세트 위에서 그리기 시작하면 해당 세트로 자동 전환한 후 그립니다 </strong>. 펜 옆에 세트 이름이 표시됩니다.</li><li>쉬는 세트는 깨우는 동안 &#x27;텍스처 세트 변경 중…&#x27;이 표시됩니다. 그동안의 펜 움직임을 기억하고 깨어나면 그대로 그리므로 선이 빠지지 않습니다.</li><li>자동 전환을 중지하려면 3D 뷰 왼쪽 아래 &#x27;터치한 곳으로 전환&#x27;을 끕니다(우클릭 메뉴에도 있음).</li><li>수동 선택도 가능합니다: 패널 행 누르기·모델 위에서  <kbd>Alt</kbd>+ 우클릭·우클릭 &#x27;이 세트 선택&#x27;. 다시 선택하면 해당 세트가 3D에서 잠시 색으로 강조됩니다.</li><li>체크로 세트 표시 여부를 바꾸고 오른쪽에서 해상도(32~4096, Lite는 최대 2048)를 선택합니다. 해상도를 변경하면 실행 취소 기록이 사라지므로 변경 전에 확인합니다.</li><li>세트를 다시 선택해도 실행 취소·다시 실행을 이어서 사용할 수 있습니다.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="텍스처 세트 패널" loading="lazy"><figcaption>텍스처 세트 패널(GPU 메모리 예상 사용량 포함)</figcaption></figure><div class="mn-tip">스탬프용 2D 캔버스는 작업용 특수 세트입니다. 모델 목록에 섞지 않으며 편집 중에는 패널에 표시합니다. 모델 메인·서브와 별도로 편집하고 작업 파일에는 함께 저장합니다(<a href="/petanuri/ko/manual/deco#canvas2d">스탬프용 2D 캔버스</a>).</div><div class="mn-tip">픽셀 아트용으로 32/64/128/256px도 선택할 수 있습니다. 낮은 해상도에서도 일반 레이어·저장·PNG 출력을 사용할 수 있습니다. 해상도 변경 전에 작업 파일을 저장하세요.</div><div class="mn-tip">VRM의 투명 부분은 원본 이미지의 투명도와 재질의 투명 설정을 유지합니다. 같은 이미지라도 투명 설정이 다른 재질은 별도 세트가 됩니다. 그리기와 지우기로 수정한 투명도는 작업 파일에 저장됩니다.</div><div class="mn-tip">도트 표시 아이콘(모든 버전): 도트 그대로 표시가 켜진 세트 행에는 이름 오른쪽에 작은 네모 아이콘이 나옵니다. 아이콘을 누르면 끕니다. ⋯·오른쪽 클릭의 “도트 표시를 자동으로 되돌리기(256px 이하면 켜짐)”로 직접 정한 켜고 끄기를 되돌릴 수 있습니다. 세트마다의 설정은 작업 파일에 남습니다.</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="도트 표시 아이콘이 나온 텍스처 세트 행과 오른쪽 클릭 메뉴" loading="lazy"><figcaption>도트 그대로 표시(세트마다)</figcaption></figure></section><section class="mn-sec" id="cross"><h2>메인과 서브(두 세트에 걸쳐 그리기)</h2><ul class="mn-list"><li>깨어 있어 그릴 수 있는 세트는 선택한 세트(<strong>메인</strong>)와 바로 전에 선택한 세트(<strong>서브</strong>) 두 개입니다. 3D 뷰 왼쪽 아래에 이름이 표시됩니다(서브를 누르면 메인과 교체). 패널에서 메인 행은 분홍색, 서브 행은 파란색입니다.</li><li>이 두 세트에 한 번의 선으로 걸쳐 그릴 수 있습니다. 목 이음매처럼 얼굴과 몸 경계를 넘어 칠하려면 두 세트를 각각 한 번 누른 후 그립니다. 실행 취소 한 번으로 둘 다 되돌립니다.</li><li>걸쳐 그리지 않고 시작한 세트에만 그리려면 왼쪽 아래 <strong>&#x27;걸쳐 그리기&#x27;</strong>를 끕니다(우클릭 메뉴에도 같은 전환 있음).</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="3D 뷰 왼쪽 아래. 누른 곳으로 전환·메인·서브·걸쳐 그리기" loading="lazy"><figcaption>3D 뷰 왼쪽 아래(누른 곳으로 전환·메인·서브·걸쳐 그리기)</figcaption></figure><div class="mn-tip">UV 영역에서는 메인 세트에만 그립니다. 오른쪽 아래 서브 UV가 작게 표시됩니다(누르면 서브가 메인이 됨).</div><div class="mn-tip">텍스처 세트 패널에서 서브 행의 “서브” 표시 오른쪽 ×를 누르면 함께 그리는 세트(서브)를 뺄 수 있습니다(서브 행의 오른쪽 클릭으로도).</div><div class="mn-tip">걸쳐 그릴 때 펜 끝이 올라가 있지 않은 텍스처 세트에는 브러시 원이 삐져나가지 않습니다(v1.3.0부터. 눈을 그려도 피부까지 칠해지지 않습니다). 흐리기·손가락·색 혼합·왜곡도 같은 규칙으로 동작합니다.</div></section><section class="mn-sec" id="files"><h2>바탕 이미지 교체·이미지나 PSD 추가</h2><p>텍스처 세트 패널 행의 우클릭 또는 행 오른쪽 &#x27;…&#x27;에서:</p><ul class="mn-list"><li><strong>바탕 이미지 교체</strong>: 해당 세트 바탕 레이어 그림을 선택한 이미지(PNG·JPEG·WebP·BMP·GIF·TGA)로 교체합니다. 크기가 다르면 해상도에 맞춥니다.</li><li><strong>이미지를 레이어로 가져오기</strong>: 선택한 이미지를 해당 세트 UV 위에 놓는 틀을 표시합니다(<kbd>Enter</kbd> 로 새 레이어에).</li><li><strong>PSD 가져오기(레이어 교체)</strong>: 해당 세트 레이어를 PSD 레이어로 교체합니다(<span class="tier std">Standard</span>).</li><li><strong>lilToon 머티리얼 불러오기</strong>: .mat·.unitypackage를 해당 세트에 가져옵니다(<span class="tier pro">Pro</span>).</li><li>이미지·PSD·.mat를 행 위에 드롭해도 가져옵니다. 선택하지 않은 세트에도 가져올 수 있습니다. 모두 실행 취소할 수 있습니다.</li></ul></section><section class="mn-sec" id="objects"><h2>오브젝트 표시·숨김</h2><p>오른쪽 &#x27;오브젝트&#x27; 패널에 모델 오브젝트(머리카락·옷·소품 등의 메시)가 원래 계층의 들여쓰기로 표시됩니다. 각 행에 눈 버튼·이름·사용하는 텍스처 세트 표시가 있습니다.</p><ul class="mn-list"><li>눈 버튼으로 숨기기·표시. <kbd>Alt</kbd>+ 누르면 &#x27;이것만 표시&#x27;, 다시 누르면 전체 표시. 3D 우클릭에도 &#x27;이 오브젝트 숨기기&#x27;·&#x27;이 오브젝트만 표시&#x27;가 있습니다.</li><li>이름을 누르면 오브젝트가 3D에서 잠시 강조됩니다. 세트 표시를 누르면 해당 텍스처 세트를 선택합니다.</li><li>숨긴 오브젝트는 3D에 표시되지 않고 히트 판정·채색도 되지 않습니다(뒷면·가려진 면에도 칠하기·대칭 쪽·채우기·그라데이션도 동일). 안쪽 물체가 그대로 보여 칠할 수 있습니다.</li><li>텍스처(레이어)는 유지되며 PNG·PSD·머티리얼 내보내기도 바뀌지 않습니다. 숨김 상태는 작업 파일에 저장됩니다. 전체 표시는 <kbd>Alt</kbd>＋<kbd>H</kbd> 입니다.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="오브젝트 패널에서 일부 오브젝트를 숨긴 모습" loading="lazy"><figcaption>오브젝트 패널</figcaption></figure><div class="mn-tip">표시 프리셋(모든 버전): 패널 아래의 “현재 상태 저장”으로 숨긴 오브젝트(Pro에서는 셰이프 키 값도)를 묶어 이름을 붙여 기억합니다. “불러오기”로 그 상태로(실행 취소 한 번으로 되돌립니다)·“덮어쓰기”·이름 칸에서 이름 바꾸기·×로 지우기. 10개까지. 작업 파일에 들어갑니다.</div></section><section class="mn-sec" id="sleep"><h2>메모리 절약</h2><ul class="mn-list"><li>선택하지 않은 세트는 모습이 유지된 채 GPU 메모리를 비워 쉬게 합니다.</li><li>다시 선택하면 2048은 약 0.2초, 4096은 약 0.5~1.5초 후 그릴 수 있습니다.</li><li>저장·내보내기·AO·모든 세트에 적용하는 필터는 쉬는 세트에도 그대로 적용됩니다.</li></ul></section><section class="mn-sec" id="orphan"><h2>대상이 없는 세트(! 표시)</h2><p><a href="/petanuri/ko/manual/start#reload">모델을 다시 불러올</a> 때 새 모델에 없는 머티리얼의 세트는 삭제하지 않고  <strong>!</strong> 표시를 붙여 유지합니다.</p><ol class="mn-steps"><li>!가 있는 세트를 누릅니다.</li><li>이동할 레이어(기본은 전체)와 대상 세트를 선택하고 &#x27;옮기기&#x27;를 누릅니다.</li><li>대상 세트 레이어 맨 위에 같은 순서로 들어갑니다. &#x27;원래 세트에도 유지&#x27;는 복사만 합니다.</li></ol><div class="mn-tip">! 세트는 3D에 표시되지 않으며 그릴 수 없습니다. 내보내기와 AO에도 포함되지 않습니다. &#x27;이 세트 삭제&#x27;로 삭제할 수 있습니다.</div></section>
-    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/screen"><small>← 이전</small>화면·패널·환경 설정</a><a class="next" href="/petanuri/ko/manual/material"><small>다음 →</small>마무리 모습과 lilToon 머티리얼</a></nav>
+    <p class="mn-intro">모델의 머티리얼마다 "텍스처 세트"가 만들어집니다. 세트 하나가 텍스처 한 장이며, 레이어와 해상도를 세트별로 가집니다. 머리카락·옷 등의 오브젝트(메시)별로 숨길 수도 있습니다.</p>
+    <p class="mn-proof mn-ui-note">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-quick"><b>먼저 이것만</b><ol>
+      <li>모델 위에서 그리기 시작하면 그 위치의 세트로 자동 전환됩니다. 직접 선택하려면 <kbd>Alt</kbd>+우클릭입니다(<a href="#choose">자세히</a>).</li>
+      <li>목 이음매처럼 두 세트의 경계는 양쪽을 한 번씩 건드린 뒤에 그리면, 선 하나로 걸쳐 그릴 수 있습니다(<a href="#cross">자세히</a>).</li>
+      <li>해상도는 텍스처 세트 패널의 행 오른쪽 칸에서 바꿉니다. 실행 취소 기록이 사라지므로 먼저 저장합니다(<a href="#resolution">자세히</a>).</li>
+      <li>느려지거나 그릴 수 없게 될 때는 해상도를 낮추거나 다른 앱을 닫습니다(<a href="#memory">자세히</a>).</li>
+      <li>옷 등을 통째로 숨길 때는 오브젝트 패널의 눈 버튼을 누릅니다(<a href="#objects">자세히</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#choose">그릴 세트 선택하기</a></li><li><a href="#cross">두 세트에 걸쳐 그리기(메인과 서브)</a></li><li><a href="#panel">텍스처 세트 패널 보는 법</a></li><li><a href="#resolution">해상도 바꾸기</a></li><li><a href="#files">바탕 이미지 교체하기·이미지나 PSD 추가하기</a></li><li><a href="#setview">세트 숨기기·도트 그대로 표시</a></li><li><a href="#objects">오브젝트 숨기기·그것만 표시하기</a></li><li><a href="#memory">GPU 메모리 절약하기(느릴 때)</a></li><li><a href="#orphan">대상이 없는 세트(! 표시)</a></li></ul></div>
+
+    <section class="mn-sec" id="choose" data-keywords="머티리얼 슬롯 전환 부위 파트 얼굴 몸 머리카락 마음대로 바뀜 자동 이동 다른 세트">
+      <h2>그릴 세트 선택하기</h2>
+      <p>그릴 수 있는 것은 선택한 텍스처 세트입니다. 보통은 다시 선택하지 않아도 그리기 시작한 곳의 세트로 자동 전환됩니다.</p>
+      <ol class="mn-steps">
+        <li>3D 뷰에서 칠하려는 곳 위에서 그리기 시작합니다.</li>
+        <li>다른 세트 위라면 그 세트로 자동 전환된 뒤에 그려집니다. 펜 끝 근처에 세트의 이름이 표시됩니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>직접 선택할 때: 텍스처 세트 패널에서 행을 누르기, 모델 위에서 <kbd>Alt</kbd>+우클릭, 3D 우클릭의 "이 세트 선택". UV 영역의 우클릭 "텍스처 세트"에서도 선택할 수 있습니다.</li>
+        <li>다시 선택하면 그 세트가 3D에서 은은하게 색이 들어왔다가 사라집니다. 어디가 그 세트인지 알 수 있습니다.</li>
+        <li>쉬고 있던 세트는 깨우는 동안 "텍스처 세트 변경 중…"이라고 표시됩니다(2048에서 0.2초 정도, 4096에서 0.5~1.5초 정도). 그동안의 펜 움직임은 기억해 두었다가 깨어나면 그대로 그리므로 선이 끊기지 않습니다.</li>
+        <li>실행 취소·다시 실행은 세트를 다시 선택해도 계속 쓸 수 있습니다. 다른 세트의 조작을 되돌리면 그 세트가 선택됩니다.</li>
+        <li>레이어 패널과 UV 영역에는 선택한 세트의 내용이 표시됩니다.</li>
+      </ul>
+      <h3 id="choose-auto">자동으로 이동하지 않게 하기</h3>
+      <p>3D 뷰 왼쪽 아래의 "터치한 곳으로 전환"을 끕니다(3D 우클릭의 "그리기 시작한 곳의 세트로 자동 전환"으로도 됩니다). 꺼 두면 다른 세트 위에서 그리기 시작해도 전환되지 않고, 메인과 서브에만 그릴 수 있습니다.</p>
+      <h3 id="choose-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>그렸더니 다른 세트로 바뀌어 버림</b>: 그리기 시작한 곳이 다른 세트 위였습니다. 전환되지 않게 하려면 "터치한 곳으로 전환"을 끕니다.</li>
+        <li><b>3D에서 그려지지 않고 커서가 금지 모양이 됨</b>: 선택되지 않은 텍스처 세트 위이거나, 잠금·숨김 레이어입니다. 이유가 커서 아래에 표시됩니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="cross" data-keywords="2nd 세컨드 서브 경계 이음매 목 걸치기 두 개 머티리얼 선이 끊김 얼굴 몸 연결">
+      <h2>두 세트에 걸쳐 그리기(메인과 서브)</h2>
+      <p>목 이음매처럼 얼굴과 몸 세트의 경계에 걸쳐 선 하나로 칠할 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>걸치고 싶은 두 세트를 한 번씩 건드립니다(그리거나 선택합니다).</li>
+        <li>3D 뷰 왼쪽 아래의 "걸쳐 그리기"가 켜져 있는지 확인합니다(처음에는 켜짐).</li>
+        <li>경계에 걸쳐 그립니다. 양쪽 세트에 이어서 칠해집니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="3D 뷰의 왼쪽 아래. 터치한 곳으로 전환·메인·서브·걸쳐 그리기" loading="lazy"><figcaption>3D 뷰의 왼쪽 아래(터치한 곳으로 전환·메인·서브·걸쳐 그리기)</figcaption></figure>
+      <ul class="mn-list">
+        <li>깨어 있어서 그릴 수 있는 것은 선택한 세트(<strong>메인</strong>)와 그 직전에 선택했던 세트(<strong>서브</strong>) 두 개입니다. 3D 뷰 왼쪽 아래에 이름이 표시되며, 서브를 누르면 메인과 바뀝니다.</li>
+        <li>패널에서는 메인 행이 분홍색, 서브 행이 파란색이며 라벨이 붙습니다.</li>
+        <li>각 세트에서는 그 세트에서 선택한 레이어에 그립니다. 실행 취소는 한 번에 양쪽이 되돌아갑니다.</li>
+        <li>펜 끝이 올라가 있지 않은 세트에는 브러시의 원이 삐져나가지 않습니다. 눈을 그려도 피부까지 칠해지지 않습니다. 흐리기·손가락·색 혼합·픽셀 유동화도 마찬가지입니다.</li>
+        <li>UV 영역에서는 메인 세트에만 그립니다. 오른쪽 아래에 서브의 UV가 작게 표시됩니다(누르면 서브가 메인이 됩니다).</li>
+      </ul>
+      <h3 id="cross-off">걸치지 않고 그리기·서브 해제하기</h3>
+      <ul class="mn-list">
+        <li>그리기 시작한 세트에만 그리고 싶을 때는 왼쪽 아래의 "걸쳐 그리기"를 끕니다(3D 우클릭의 "한 번의 선으로 2개 세트에 걸쳐 그리기"로도 됩니다). 꺼도 두 세트는 깨어 있는 상태이므로 오가기가 빠릅니다.</li>
+        <li>서브를 해제할 때는 패널의 서브 행에서 "서브" 라벨 오른쪽의 ×를 누릅니다(서브 행의 우클릭 "서브 해제(함께 그리지 않고 쉬게 함)"로도 됩니다). 그 세트는 쉬게 되어 GPU 메모리가 비워집니다.</li>
+        <li>해제하면 왼쪽 아래의 서브는 "없음"이 됩니다. 다른 세트를 선택하면 현재의 메인이 다시 서브가 됩니다.</li>
+      </ul>
+      <div class="mn-tip">"서브"는 lilToon의 메인 컬러 2nd와는 별개입니다.</div>
+    </section>
+
+    <section class="mn-sec" id="panel" data-keywords="목록 리스트 머티리얼 목록 행 메뉴 점 세 개 우클릭 용량 MB 슬롯 정보">
+      <h2>텍스처 세트 패널 보는 법</h2>
+      <p>오른쪽의 "텍스처 세트" 패널에 세트가 한 행씩 나열됩니다. 행을 우클릭하거나 행 오른쪽의 "…"에서 그 세트의 조작을 한꺼번에 불러올 수 있습니다.</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="텍스처 세트 패널. 위쪽에 GPU 메모리 추정, 행마다 표시 체크·이름·해상도·메모리" loading="lazy"><figcaption>텍스처 세트 패널</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">위치</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>맨 위</td><td>GPU 메모리 추정. 쉬고 있는 레이어가 있으면 그 장수와 CPU 쪽의 양도 표시됩니다(<a href="#memory">메모리 절약</a>)</td></tr>
+        <tr><td>행 왼쪽의 체크</td><td>그 세트를 3D에 표시하거나 표시하지 않습니다(<a href="#setview">자세히</a>)</td></tr>
+        <tr><td>이름과 라벨</td><td>머티리얼의 이름. 메인·서브 라벨(<a href="#cross">자세히</a>). 도트 그대로 표시라면 작은 사각형 표시</td></tr>
+        <tr><td>행 오른쪽 칸</td><td>해상도(<a href="#resolution">자세히</a>)와 그 세트의 GPU 메모리 추정</td></tr>
+        <tr><td>"…"</td><td>우클릭과 같은 메뉴(펜만으로도 표시할 수 있습니다)</td></tr>
+        <tr><td>!가 붙은 행</td><td>현재 모델에 없는 세트(<a href="#orphan">대상이 없는 세트</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="panel-menu">행의 우클릭(…) 메뉴</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>이 세트 선택</td><td>메인으로 만듭니다</td></tr>
+        <tr><td>서브 해제(함께 그리지 않고 쉬게 함)</td><td>서브 행에서만 표시됩니다(<a href="#cross-off">자세히</a>)</td></tr>
+        <tr><td>표시·이 세트만 표시·모든 세트 표시</td><td>3D에 표시할 세트를 전환합니다(<a href="#setview">자세히</a>)</td></tr>
+        <tr><td>바탕 이미지 교체·이미지를 레이어로 가져오기·PSD 가져오기(레이어 교체)·lilToon 머티리얼 불러오기(.mat)</td><td>그 세트에 파일을 넣습니다(<a href="#files">자세히</a>)</td></tr>
+        <tr><td>도트 그대로 표시(보간 안 함)·도트 표시를 자동으로 되돌리기</td><td>3D에서 텍스처를 사각형 픽셀 그대로 보여 줍니다(<a href="#setview-dot">자세히</a>)</td></tr>
+        <tr><td>알파 빼기(3D에서 투명을 뺌)</td><td>투명하게 칠한 곳을 3D에서 빼서 건너편이 보이게 합니다. 없음·컷아웃(옅은 곳을 뺌)·반투명(불투명도대로 비침). 보이는 방식만 바뀌며 내보내는 이미지는 변하지 않습니다</td></tr>
+        <tr><td>해상도</td><td>32×32~4096×4096(<a href="#resolution">자세히</a>)</td></tr>
+        <tr><td>PNG로 내보내기·UV 맵을 PNG로 내보내기·PSD로 내보내기</td><td>이 세트만 내보냅니다(<a href="/petanuri/ko/manual/export">내보내기</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="panel-merge">세트가 만들어지는 방식</h3>
+      <ul class="mn-list">
+        <li>머티리얼마다 세트가 하나씩 만들어집니다. 같은 이미지를 쓰는 머티리얼은 하나의 세트로 합쳐집니다. 합치는 방식은 새로 만들기 화면에서 정합니다(<a href="/petanuri/ko/manual/start#new">3D 모델 열기</a>).</li>
+        <li>합쳐진 세트를 선택하면 패널에 "이 텍스처는 ○○·○○에서 사용되고 있습니다"라고 표시됩니다. 그리면 모든 머티리얼에 반영됩니다.</li>
+        <li>VRM의 투명한 부분은 원래 이미지의 투명도와 머티리얼의 투명 설정을 이어받습니다. 같은 이미지라도 투명 설정이 다른 머티리얼은 별도의 세트가 됩니다.</li>
+        <li>스탬프용 2D 캔버스와 2D 페인트는 모델의 세트와는 별개인 작업용 세트입니다. 편집 중에는 패널에 그렇게 표시됩니다. 작업 파일에는 함께 저장되고, 모델 내보내기에는 들어가지 않습니다(<a href="/petanuri/ko/manual/deco#canvas2d">스탬프용 2D 캔버스</a>).</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="resolution" data-keywords="텍스처 크기 사이즈 2K 4K 픽셀 수 도트 그림 저해상도 다운스케일 업스케일 리사이즈">
+      <h2>해상도 바꾸기</h2>
+      <p>텍스처의 크기(가로세로 픽셀 수)는 세트별로 바꿀 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>먼저 작업 파일을 저장합니다(<kbd>Ctrl</kbd>+<kbd>S</kbd>).</li>
+        <li>텍스처 세트 패널에서 행 오른쪽 칸의 해상도를 선택합니다(행 우클릭의 "해상도"로도 됩니다).</li>
+        <li>"해상도를 바꾸면 실행 취소 기록이 사라집니다."라고 표시되면 "계속"을 누릅니다. 그린 그림이 새 크기로 확대·축소됩니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>선택할 수 있는 값은 32·64·128·256·512·1024·2048·4096입니다. Lite는 2048까지, Standard·Pro는 4096까지입니다.</li>
+        <li>32~256은 도트 그림용입니다. 낮은 해상도에서도 일반 레이어·저장·PNG 내보내기를 쓸 수 있습니다. 256 이하의 세트는 처음부터 도트 그대로 표시됩니다(<a href="#setview-dot">자세히</a>).</li>
+        <li>내보낼 때만 크기를 바꾸고 싶다면 내보내기 창의 "해상도"를 사용합니다(<a href="/petanuri/ko/manual/export#png">PNG로 내보내기</a>).</li>
+      </ul>
+      <div class="mn-tip warn">해상도를 바꾸면 실행 취소(<kbd>Ctrl</kbd>+<kbd>Z</kbd>) 기록이 모두 사라집니다. 낮추면 세부가 흐려집니다. 높여도 선명도는 늘지 않습니다.</div>
+      <h3 id="resolution-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>4096을 선택할 수 없음</b>: Lite는 2048까지입니다. Standard 이상에서 선택할 수 있습니다.</li>
+        <li><b>"저장이 끝난 뒤에 해상도를 바꿔 주세요"라고 표시됨</b>: 저장이나 자동 저장 도중입니다. 끝난 뒤에 다시 선택합니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="files" data-keywords="교체 바꾸기 바탕 베이스 텍스처 불러오기 원본 텍스처 개조용 PSD 임포트 드래그 앤 드롭 드롭">
+      <h2>바탕 이미지 교체하기·이미지나 PSD 추가하기</h2>
+      <p>모델을 연 뒤에도 세트별로 바탕 이미지를 교체하거나 이미지·PSD를 가져올 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>텍스처 세트 패널에서 넣을 세트의 행을 우클릭합니다(행 오른쪽의 "…"로도 됩니다).</li>
+        <li>아래 표에서 항목을 선택하고 파일을 고릅니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>바탕 이미지 교체</td><td>바탕 레이어의 그림을 선택한 이미지(PNG·JPEG·WebP·BMP·GIF·TGA)로 바꿉니다. 크기가 다르면 해상도에 맞게 확대·축소합니다. 다른 레이어는 그대로입니다</td></tr>
+        <tr><td>이미지를 레이어로 가져오기</td><td>선택한 이미지를 그 세트의 UV 위에 놓을 틀을 표시합니다. <kbd>Enter</kbd>로 새 레이어가 됩니다. 여러 장을 선택하면 한 장씩 놓습니다(<a href="/petanuri/ko/manual/edit#image">이미지 붙이기</a>)</td></tr>
+        <tr><td>PSD 가져오기(레이어 교체) <span class="tier std">Standard</span></td><td>그 세트의 레이어를 PSD의 레이어로 바꿉니다(<a href="/petanuri/ko/manual/export#psd">PSD</a>)</td></tr>
+        <tr><td>lilToon 머티리얼 불러오기(.mat) <span class="tier pro">Pro</span></td><td>.mat·.unitypackage를 그 세트에 불러옵니다(<a href="/petanuri/ko/manual/material#lil">lilToon 머티리얼 불러오기</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>이미지·PSD·.mat를 행 위에 드롭해도 들어갑니다(드롭할 행에 점선 틀이 표시됩니다). 이미지가 한 장이면 "바탕 교체"인지 "레이어로 추가"인지 묻습니다.</li>
+        <li>선택하지 않은 세트에도 다시 선택하지 않고 넣을 수 있습니다. 어느 것이든 실행 취소(<kbd>Ctrl</kbd>+<kbd>Z</kbd>)로 되돌릴 수 있습니다.</li>
+        <li>선택한 세트의 바탕은 파일 → 가져오기 → "바탕 이미지 교체(선택 중인 세트)"로도 교체할 수 있습니다.</li>
+      </ul>
+      <h3 id="files-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"가로세로 비율이 달라 늘렸습니다"라고 표시됨</b>: 이미지의 가로세로 비율이 텍스처와 다릅니다. 정사각형 이미지를 사용하세요.</li>
+        <li><b>바탕을 교체할 수 없음</b>: 바탕 레이어가 잠겨 있거나 없습니다. 잠금을 풀거나 "이미지를 레이어로 가져오기"를 사용합니다.</li>
+        <li><b>이미지를 레이어로 추가할 수 없음(Lite)</b>: Lite는 세트마다 4장까지입니다. 레이어를 병합하거나 지운 뒤에 추가합니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="setview" data-keywords="숨김 비표시 머티리얼 숨기기 픽셀 보간 흐릿함 니어레스트 투과 컷아웃 반투명 도트 표시 샤프">
+      <h2>세트 숨기기·도트 그대로 표시</h2>
+      <p>텍스처 세트마다 3D에 표시할지 여부와 픽셀을 보여 주는 방식을 전환할 수 있습니다.</p>
+      <ul class="mn-list">
+        <li>행 왼쪽의 체크로 그 세트를 3D에 표시하거나 표시하지 않습니다. 행 우클릭의 "이 세트만 표시", "모든 세트 표시"로도 됩니다.</li>
+        <li>표시를 끈 세트도 텍스처는 그대로이며, 모든 세트 내보내기에 포함됩니다.</li>
+        <li>메시별로 숨길 때는 오브젝트 패널을 사용합니다(<a href="#objects">자세히</a>).</li>
+      </ul>
+      <h3 id="setview-dot">텍스처를 도트 그대로 표시</h3>
+      <p>3D 표시에서 텍스처를 보간하지 않고 한 픽셀씩 사각형으로 보여 줍니다. 32·64px 등 낮은 해상도의 텍스처용입니다.</p>
+      <ol class="mn-steps">
+        <li>행 우클릭("…")의 "도트 그대로 표시(보간 안 함)"를 누릅니다.</li>
+        <li>이름 오른쪽에 작은 사각형 표시가 나타납니다. 표시를 누르면 꺼집니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>256px 이하의 세트는 처음부터 켜져 있습니다(자동). 직접 켜고 끈 세트는 작업 파일에 남습니다.</li>
+        <li>"도트 표시를 자동으로 되돌리기(256px 이하면 켜짐)"로 직접 정한 켜기·끄기를 되돌릴 수 있습니다.</li>
+        <li>모든 세트를 한꺼번에 전환할 때는 표시 → 표시 형식 → "모든 세트의 텍스처를 도트 그대로 표시(보간 안 함)"입니다.</li>
+        <li>표시만 바뀌며, 칠한 그림과 내보내기는 변하지 않습니다. 도트 펜과 함께 쓰면 3D에서도 픽셀이 사각형으로 보입니다(<a href="/petanuri/ko/manual/draw">그리기</a>).</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="도트 그대로 표시 표시가 나타난 텍스처 세트 행과 우클릭 메뉴" loading="lazy"><figcaption>도트 그대로 표시(세트별)</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="objects" data-keywords="메시 파트 옷 숨기기 머리카락 숨기기 비표시 솔로 눈 아이콘 아웃라이너 계층 프리셋 가시성">
+      <h2>오브젝트 숨기기·그것만 표시하기</h2>
+      <p>오른쪽의 "오브젝트" 패널에 모델의 오브젝트(머리카락·옷·소품 등의 메시)가 나열됩니다. 옷을 통째로 숨기고 아래의 몸을 칠하는 식으로 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>"오브젝트" 패널에서 숨기려는 오브젝트의 눈 버튼을 누릅니다. 3D에서 사라집니다.</li>
+        <li>그것만 표시하고 싶을 때는 <kbd>Alt</kbd>를 누른 채 눈 버튼이나 이름을 누릅니다(다시 <kbd>Alt</kbd>+클릭하면 모두 표시).</li>
+        <li>되돌릴 때는 패널 위쪽의 "모두 표시"나 <kbd>Alt</kbd>+<kbd>H</kbd>를 누릅니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="오브젝트 패널에서 일부 오브젝트를 숨긴 모습" loading="lazy"><figcaption>오브젝트 패널</figcaption></figure>
+      <ul class="mn-list">
+        <li>원래 계층이 있으면 들여쓰기로 나열됩니다. 행마다 눈 버튼·이름·사용 중인 텍스처 세트의 라벨이 표시됩니다.</li>
+        <li>이름을 누르면 그 오브젝트가 3D에서 잠시 강조됩니다. 라벨을 누르면 그 텍스처 세트를 선택합니다.</li>
+        <li>행 우클릭: 이것만 표시·숨기기/표시·3D에서 강조·모두 표시. 3D 우클릭에도 "이 오브젝트 숨기기", "이 오브젝트만 표시"가 있습니다.</li>
+        <li>숨긴 오브젝트는 3D에 표시되지 않고, 눌러도 닿지 않으며, 칠해지지도 않습니다. 뒷면·가려진 면에도 칠하기, 대칭의 반대쪽, 채우기, 그라데이션, 스탬프도 마찬가지입니다. 안쪽에 있는 것이 그대로 보이고 칠할 수 있습니다.</li>
+        <li>텍스처(레이어)는 남습니다. PNG·PSD·머티리얼 내보내기도 변하지 않습니다.</li>
+        <li>숨기고 있는 동안에는 3D 아래의 바에 "오브젝트를 n개 숨기고 있습니다"와 "모두 표시"가 표시됩니다. 모두 표시(<kbd>Alt</kbd>+<kbd>H</kbd>)는 표시 범위와 오브젝트를 모두 되돌립니다(<a href="/petanuri/ko/manual/uv#isolate">표시 범위</a>).</li>
+        <li>숨긴 상태는 작업 파일에 저장됩니다. 숨기기·표시 조작은 실행 취소 기록에 들어가지 않습니다.</li>
+        <li><span class="tier pro">Pro</span> 행 우클릭의 "이 오브젝트만 별도 머티리얼로", "머티리얼 할당"으로 오브젝트별로 머티리얼을 나눌 수 있습니다(<a href="/petanuri/ko/manual/material#split">머티리얼 나누기</a>).</li>
+      </ul>
+      <h3 id="objects-presets">표시 프리셋</h3>
+      <p>패널 아래의 "현재 상태 저장"으로, 숨긴 오브젝트를 한꺼번에 이름을 붙여 기억합니다. <span class="tier pro">Pro</span>에서는 셰이프 키 값도 함께 기억합니다.</p>
+      <ul class="mn-list">
+        <li>"불러오기"로 그 상태로 만듭니다(실행 취소 한 번으로 되돌아갑니다). "덮어쓰기"로 현재 상태로 갱신하고, 이름 칸에서 이름을 바꾸고, ×로 지웁니다.</li>
+        <li>10개까지 기억할 수 있으며 작업 파일에 저장됩니다. 블렌드 셰이프 패널에도 같은 목록이 표시됩니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="memory" data-keywords="느림 렉 버벅임 멈춤 튕김 VRAM 비디오 메모리 그래픽카드 메모리 부족 그릴 수 없음 하얗게 슬립 절전">
+      <span id="sleep"></span>
+      <h2>GPU 메모리 절약하기(느릴 때)</h2>
+      <p>텍스처는 GPU의 메모리(VRAM)를 사용합니다. 4096 세트나 레이어가 많으면 부족해져서 느려지거나 그릴 수 없게 됩니다. PetaNuri3D는 사용하지 않는 것을 쉬게 해서 메모리를 비워 둡니다.</p>
+      <h3 id="memory-how">쉬게 하는 원리</h3>
+      <ul class="mn-list">
+        <li>선택하지 않은 세트는 겉모습은 그대로 두고 GPU 메모리를 비운 채 쉬게 합니다. 깨어 있는 것은 메인과 서브 두 개뿐입니다.</li>
+        <li>쉬고 있는 세트를 선택하면 2048에서 0.2초 정도, 4096에서 0.5~1.5초 정도 만에 그릴 수 있게 됩니다. 패널에서 쉬고 있는 4096 세트를 누르면 "준비하는 중…"이라고 표시됩니다.</li>
+        <li>저장·PNG/PSD 내보내기·AO·모든 세트에 적용하는 필터는 쉬고 있는 세트에도 그대로 적용됩니다.</li>
+        <li>한동안 건드리지 않은 레이어도 그리지 않는 동안 줄여서 보관합니다(파일 → 환경 설정 → 그리기 → 성능의 "그리지 않는 레이어 쉬게 하기". 처음에는 켜짐). 겉모습·내보내기·저장은 변하지 않습니다(<a href="/petanuri/ko/manual/layers#sleep">레이어 쉬게 하기</a>).</li>
+        <li>현재 사용량은 텍스처 세트 패널 위쪽의 "GPU 메모리 추정"과 행별 숫자로 알 수 있습니다.</li>
+      </ul>
+      <h3 id="memory-trouble">느려지거나 그릴 수 없게 될 때</h3>
+      <ol class="mn-steps">
+        <li>텍스처 세트 패널 위쪽에서 GPU 메모리 추정을 확인합니다. GPU 메모리의 기준은 2048로 칠한다면 4GB 이상, 4096이라면 8GB 이상입니다(<a href="/petanuri/ko/manual/start#requirements">실행 환경</a>).</li>
+        <li>게임·브라우저·동영상 등 GPU를 사용하는 다른 앱을 닫습니다.</li>
+        <li>그렇게까지 세밀하지 않아도 되는 세트의 해상도를 낮춥니다(<a href="#resolution">해상도 바꾸기</a>).</li>
+        <li>걸쳐 그리지 않을 때는 서브를 해제해서 쉬게 합니다(<a href="#cross-off">서브 해제</a>).</li>
+        <li>"그리지 않는 레이어 쉬게 하기"를 꺼 두었다면 켭니다.</li>
+      </ol>
+      <ul class="mn-list mn-trouble">
+        <li><b>"표시 처리가 멈췄습니다"라고 표시됨</b>: GPU의 표시 처리가 다시 시작되어 그린 그림을 표시할 수 없게 되었습니다. 절전에서 복귀할 때나 메모리가 부족할 때 발생합니다. 이 상태에서는 그릴 수 없고 저장도 하지 않습니다. 창의 "자동 저장에서 열기"나 "작업 파일 다시 열기"로 다시 엽니다(이전 작업 파일과 자동 저장은 지워지지 않고 남아 있습니다).</li>
+        <li><b>"표시 처리가 멈춰서 내보낼 수 없습니다"라고 표시됨</b>: 위와 같습니다. 다시 연 뒤에 내보냅니다.</li>
+        <li><b>세트를 선택할 때마다 기다리게 됨</b>: 쉬고 있던 세트를 깨우고 있습니다. 자주 오가는 두 세트는 메인과 서브로 해 두면 기다리지 않습니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="orphan" data-keywords="느낌표 경고 모델에 없음 사라진 머티리얼 다시 불러오기 이름 변경 머티리얼 이름 이전 이사 레이어 옮기기 고아">
+      <h2>대상이 없는 세트(! 표시)</h2>
+      <p>현재 모델에 없는 머티리얼의 세트는 지우지 않고 <strong>!</strong>를 붙여 남겨 둡니다. 그린 레이어를 다른 세트로 옮길 수 있습니다.</p>
+      <p>이렇게 되는 경우는 <a href="/petanuri/ko/manual/start#reload">모델을 다시 불러왔을</a> 때와, 모델(FBX)을 포함하지 않고 저장한 작업 파일을 이름이 맞지 않는 모델에서 열었을 때입니다.</p>
+      <ol class="mn-steps">
+        <li>텍스처 세트 패널에서 !가 붙은 세트를 누릅니다. "모델에 없는 세트: ○○" 창이 표시됩니다.</li>
+        <li>"옮길 레이어"에서 레이어를 선택합니다(처음에는 전부. "모두 선택", "모두 해제"도 있습니다).</li>
+        <li>"옮길 곳"에서 세트를 선택합니다(이름이 비슷한 세트가 처음에 선택되어 있습니다).</li>
+        <li>"옮기기"를 누릅니다. 옮길 곳의 레이어 맨 위에 같은 순서로 들어갑니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>폴더·마스크·클리핑·합성 모드는 그대로 옮겨집니다. 해상도가 다르면 옮길 곳의 크기로 확대·축소됩니다. UV 위치는 그대로입니다.</li>
+        <li>"원래 세트에도 남기기(복사만)"를 켜면 복사만 하고 원래 세트에도 남깁니다.</li>
+        <li>레이어가 없어진 세트는 사라집니다. 창의 "이 세트 삭제"로도 그린 레이어째 지울 수 있습니다. 모두 실행 취소할 수 있습니다.</li>
+        <li>행 우클릭에도 "레이어를 다른 세트로 이동", "이 세트 삭제"가 있습니다.</li>
+      </ul>
+      <div class="mn-tip">!가 붙은 세트는 3D에 표시되지 않고 그릴 수 없습니다. 모든 세트 내보내기와 AO에도 포함되지 않습니다. 그 세트만의 그림이 필요할 때는 행 우클릭의 "PNG로 내보내기(아일랜드 밖으로 넓히지 않음)"나 "PSD로 내보내기" <span class="tier std">Standard</span>로 내보낼 수 있습니다.</div>
+    </section>
+
+    <div class="mn-related"><b>관련 페이지</b><ul><li><a href="/petanuri/ko/manual/start#new">3D 모델 열기(새로 만들기)</a></li><li><a href="/petanuri/ko/manual/start#reload">모델 다시 불러오기</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv#isolate">표시 범위</a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li></ul></div>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/uv"><small>← 이전</small>UV와 표시 범위</a><a class="next" href="/petanuri/ko/manual/material"><small>다음 →</small>lilToon 머티리얼</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +389,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

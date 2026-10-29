@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Texture sets and objects | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Select texture sets, main/sub sets (paint across two sets), resolution, replace base images, add images/PSDs, per-object visibility, memory savings and orphan sets. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Choosing a texture set, main and sub (painting across two sets), resolution, replacing base images, adding images and PSDs, showing and hiding per object, saving memory and orphaned sets. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/sets">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Texture sets and objects | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Select texture sets, main/sub sets (paint across two sets), resolution, replace base images, add images/PSDs, per-object visibility, memory savings and orphan sets. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Choosing a texture set, main and sub (painting across two sets), resolution, replacing base images, adding images and PSDs, showing and hiding per object, saving memory and orphaned sets. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/sets">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Texture sets and objects | PetaNuri3D Manual",
-   "description": "Select texture sets, main/sub sets (paint across two sets), resolution, replace base images, add images/PSDs, per-object visibility, memory savings and orphan sets. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Choosing a texture set, main and sub (painting across two sets), resolution, replacing base images, adding images and PSDs, showing and hiding per object, saving memory and orphaned sets. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/sets",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,254 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets" aria-current="page">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets" aria-current="page">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Texture sets and objects</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Texture sets and objects</p>
     <h1 class="mn-h1">Texture sets and objects</h1>
-    <p class="mn-intro">A texture set is created per material, each with its own layers and resolution. Also hide individual model objects (meshes).</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#choose">Select a texture set</a></li><li><a href="#cross">Main and sub (paint across two sets)</a></li><li><a href="#files">Replace base images and add images/PSDs</a></li><li><a href="#objects">Show/hide objects</a></li><li><a href="#sleep">Memory savings</a></li><li><a href="#orphan">Orphan sets (! marker)</a></li></ul></div>
-    <section class="mn-sec" id="choose"><h2>Select a texture set</h2><ul class="mn-list"><li>In the 3D view, <strong>starting a stroke on another set automatically switches to it before painting</strong>. Its name appears beside the pen tip.</li><li>Unloaded sets show Switching texture set… while loading. Pen movement is remembered and painted once ready, so strokes are not lost.</li><li>Disable automatic switching with Switch to touched set at the 3D bottom left (also in right-click menu).</li><li>Select manually too: click a panel row, use  <kbd>Alt</kbd> + right-click on the model, or choose Select this set from the context menu. Selecting briefly highlights the set in 3D.</li><li>Toggle set visibility with the checkbox and choose a resolution on the right (32–4096; up to 2048 in Lite). Changing resolution clears Undo history, so confirm before resizing.</li><li>Undo/Redo remain available across set changes.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="Texture sets panel" loading="lazy"><figcaption>Texture sets panel (with GPU memory estimate)</figcaption></figure><div class="mn-tip">The stamp 2D canvas is a special working set. It stays out of the model list; the panel indicates when it is being edited. Edited separately from main/sub, but saved in the same project (<a href="/petanuri/en/manual/deco#canvas2d">2D canvas for stamps</a>).</div><div class="mn-tip">For pixel art, you can also choose 32/64/128/256px. Low-resolution textures support normal layers, saving, and PNG export. Save your project before changing resolution.</div><div class="mn-tip">VRM transparency keeps the original image alpha and material transparency settings. Materials with different transparency settings use separate sets even if the image is shared. Alpha edits made by painting or erasing are saved in the project.</div><div class="mn-tip">Pixel display badge (all editions): while Show as pixels is on, a set row shows a small square badge to the right of its name; click the badge to turn it off. “Reset pixel display to automatic (on for 256px or less)” in ⋯ or the right-click menu undoes your own choice. Each set’s setting is saved in the project.</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="Texture set row with the pixel display badge and its right-click menu" loading="lazy"><figcaption>Show as pixels (per set)</figcaption></figure></section><section class="mn-sec" id="cross"><h2>Main and sub (paint across two sets)</h2><ul class="mn-list"><li>Two sets remain loaded and paintable: the selected set (<strong>Main</strong>) and the previously selected set (<strong>Sub</strong>). Names appear at the 3D bottom left (click sub to swap with main). Panel rows show main in pink and sub in blue.</li><li>One stroke can span both. For seams between face and body, touch both once before painting. One Undo restores both.</li><li>To paint only the starting set without crossing, disable <strong>“Paint across sets”</strong> at the bottom left (same toggle in the context menu).</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="3D bottom left: Switch to touched set, main, sub, Paint across sets" loading="lazy"><figcaption>3D bottom left (Switch to touched set, main, sub, Paint across sets)</figcaption></figure><div class="mn-tip">UV painting affects only main. A small sub UV preview appears at bottom right (click to make sub main).</div><div class="mn-tip">In the Texture sets panel, click the × to the right of the Sub label on the sub row to stop painting that set together with the main set (also available from the row’s right-click menu).</div><div class="mn-tip">When painting across sets, the brush circle no longer spills onto texture sets the pen tip is not on (v1.3.0 and later; painting eyes no longer paints the skin). Blur, Smudge, Blend, and Warp follow the same rule.</div></section><section class="mn-sec" id="files"><h2>Replace base images and add images/PSDs</h2><p>Right-click a Texture sets row or click its right-side …:</p><ul class="mn-list"><li><strong>Replace base image</strong>: Replaces that set&#x27;s Base artwork with the selected image (PNG, JPEG, WebP, BMP, GIF, TGA). Different sizes are resized to the set resolution.</li><li><strong>Import image as layer</strong>: Opens a frame to position the image on that set&#x27;s UV (<kbd>Enter</kbd>  adds it to a new layer).</li><li><strong>Import PSD (replace layers)</strong>: Replaces that set&#x27;s layers with PSD layers (<span class="tier std">Standard</span>).</li><li><strong>Load lilToon material</strong>: Imports .mat/.unitypackage into that set (<span class="tier pro">Pro</span>).</li><li>Also drop images, PSDs and .mat files onto rows. Import into unselected sets too. All can be undone.</li></ul></section><section class="mn-sec" id="objects"><h2>Show/hide objects</h2><p>Objects on the right lists meshes such as hair, clothes and accessories, indented by original hierarchy. Each row has an eye button, name and texture-set labels.</p><ul class="mn-list"><li>Eye toggles hide/show. <kbd>Alt</kbd> + click shows only that object; again shows all. The 3D context menu also offers Hide this object and Show only this object.</li><li>Click a name to briefly highlight the object in 3D; click a label to select its texture set.</li><li>Hidden objects are absent from 3D, hit testing and painting (including back/hidden-face painting, mirrored symmetry, fill and gradients). Objects behind become visible and paintable.</li><li>Textures/layers remain, and PNG/PSD/material exports are unchanged. Hidden state is saved in projects. Show all with  <kbd>Alt</kbd>＋<kbd>H</kbd> .</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="Some objects hidden using Objects" loading="lazy"><figcaption>Objects panel</figcaption></figure><div class="mn-tip">Display presets (all editions): Save current state at the bottom of the panel stores the hidden objects (and shape key values in Pro) under a name. Load restores that state (one undo reverts); you can also overwrite, rename in the name field, or delete with ×. Up to 10, saved in the project.</div></section><section class="mn-sec" id="sleep"><h2>Memory savings</h2><ul class="mn-list"><li>Unselected sets are unloaded to free GPU memory while retaining their displayed appearance.</li><li>Reselecting restores painting in about 0.2 seconds at 2048 or 0.5–1.5 seconds at 4096.</li><li>Saving, export, AO and all-set filters still work on unloaded sets.</li></ul></section><section class="mn-sec" id="orphan"><h2>Orphan sets (! marker)</h2><p><a href="/petanuri/en/manual/start#reload">Reloading the model</a> preserves sets for materials missing from the new model, marking them with  <strong>!</strong> .</p><ol class="mn-steps"><li>Click a set marked !.</li><li>Choose layers to move (all initially) and a destination set, then click Move.</li><li>Layers appear at the destination&#x27;s top in the same order. Keep in original set copies instead of moving.</li></ol><div class="mn-tip">! sets do not appear in 3D, cannot be painted and are excluded from export/AO. Delete this set removes them.</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/screen"><small>← Previous</small>Interface, panels and preferences</a><a class="next" href="/petanuri/en/manual/material"><small>Next →</small>Final look and lilToon materials</a></nav>
+    <p class="mn-intro">A "texture set" is created for each material of the model. One set is one texture, and each set has its own layers and resolution. You can also hide objects (meshes) such as hair and clothing one by one.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>When you start drawing on the model, PetaNuri3D switches automatically to the set at that spot. To choose one by hand, use <kbd>Alt</kbd>+right-click (<a href="#choose">details</a>).</li>
+      <li>To cross the border between two sets, such as the neck seam, touch each set once and then draw. A single stroke can then cross the border (<a href="#cross">details</a>).</li>
+      <li>Change the resolution in the field at the right of a row in the Texture sets panel. This clears the undo history, so save first (<a href="#resolution">details</a>).</li>
+      <li>If it gets slow or you can't paint, lower the resolution or close other apps (<a href="#memory">details</a>).</li>
+      <li>To hide a whole piece such as clothing, click the eye button in the Objects panel (<a href="#objects">details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#choose">Choose the set to draw on</a></li><li><a href="#cross">Paint across two sets (main and sub)</a></li><li><a href="#panel">Reading the Texture sets panel</a></li><li><a href="#resolution">Change the resolution</a></li><li><a href="#files">Replace base images and add images or PSDs</a></li><li><a href="#setview">Hide a set and show it as pixels</a></li><li><a href="#objects">Hide objects or show only one</a></li><li><a href="#memory">Save GPU memory (when it is slow)</a></li><li><a href="#orphan">Orphaned sets (! mark)</a></li></ul></div>
+
+    <section class="mn-sec" id="choose" data-keywords="material slot switch select change parts face body hair jumps automatically unexpectedly active-material">
+      <h2>Choose the set to draw on</h2>
+      <p>You can paint on the selected texture set. Normally you don't need to select it again, because PetaNuri3D switches automatically to the set where you start drawing.</p>
+      <ol class="mn-steps">
+        <li>In the 3D view, start drawing on the area you want to paint.</li>
+        <li>If you start on a different set, PetaNuri3D switches to that set and then draws. The set name appears near the pen tip.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>To choose one by hand: click a row in the Texture sets panel, <kbd>Alt</kbd>+right-click on the model, or use "Select this set" in the 3D right-click menu. You can also choose from "Texture set" in the right-click menu of the UV pane.</li>
+        <li>When you select a set again, that set glows softly in 3D and then fades, so you can see which area belongs to it.</li>
+        <li>While a set that was resting wakes up, "Switching texture set…" appears (about 0.2 seconds at 2048, about 0.5 to 1.5 seconds at 4096). Pen movement during that time is remembered and painted once the set is awake, so lines are not cut off.</li>
+        <li>Undo and redo keep working after you change sets. If you undo an operation on another set, that set becomes selected.</li>
+        <li>The Layers panel and the UV pane show the layers and UV of the selected set.</li>
+      </ul>
+      <h3 id="choose-auto">Stop it switching automatically</h3>
+      <p>Turn off "Switch on touch" at the bottom left of the 3D view (or "Switch to the set where you start drawing" in the 3D right-click menu). While it is off, starting to draw on another set does not switch to it, and you can paint only on the main and the sub.</p>
+      <h3 id="choose-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Painting switched me to another set</b>: You started drawing on another set. If you don't want it to switch, turn off "Switch on touch".</li>
+        <li><b>I can't paint in 3D and the cursor shows a no-entry shape</b>: The pointer is over a texture set that isn't selected, or the layer is locked or hidden. The reason appears under the cursor.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="cross" data-keywords="2nd second sub border boundary seam neck cross straddle two-materials stroke-cuts-off line-breaks">
+      <h2>Paint across two sets (main and sub)</h2>
+      <p>You can paint across the border between the face and body sets, such as at the neck seam, with a single stroke.</p>
+      <ol class="mn-steps">
+        <li>Touch each of the two sets you want to paint across, once (paint on it or select it).</li>
+        <li>Check that "Paint across" at the bottom left of the 3D view is on (it is on by default).</li>
+        <li>Draw across the border. You can paint both sets in one continuous stroke.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-cross-sets.webp" width="422" height="40" alt="Bottom left of the 3D view: Switch on touch, Main, Sub and Paint across" loading="lazy"><figcaption>Bottom left of the 3D view (Switch on touch, Main, Sub, Paint across)</figcaption></figure>
+      <ul class="mn-list">
+        <li>Two sets stay awake and paintable: the selected set (<strong>Main</strong>) and the set you selected before it (<strong>Sub</strong>). Their names appear at the bottom left of the 3D view, and clicking Sub swaps it with Main.</li>
+        <li>In the panel, the Main row is pink and the Sub row is blue, each with a badge.</li>
+        <li>Each set is painted on the layer selected in that set. A single undo reverts both.</li>
+        <li>The brush circle does not spill onto a set that the pen tip is not on. If you draw the eyes, the skin is not painted too. The same goes for Blur, Smudge, Blend and Liquify.</li>
+        <li>In the UV pane, you paint only on the Main set. A small Sub UV appears at the bottom right (click it to make the Sub the Main).</li>
+      </ul>
+      <h3 id="cross-off">Paint without crossing and remove the sub</h3>
+      <ul class="mn-list">
+        <li>To paint only on the set where you started, turn off "Paint across" at the bottom left (or "Draw across 2 sets in one stroke" in the 3D right-click menu). Both sets stay awake even when it is off, so switching back and forth is quick.</li>
+        <li>To remove the Sub, click the × to the right of the "Sub" badge on the Sub row in the panel (or "Remove sub (stop painting together and let it sleep)" in the right-click menu of the Sub row). That set goes to sleep and frees GPU memory.</li>
+        <li>After you remove it, the Sub at the bottom left shows "None". If you select another set, the current Main becomes the Sub again.</li>
+      </ul>
+      <div class="mn-tip">"Sub" is different from lilToon's Main color 2nd.</div>
+    </section>
+
+    <section class="mn-sec" id="panel" data-keywords="list rows menu three-dots ellipsis right-click memory MB material-slots capacity context-menu">
+      <h2>Reading the Texture sets panel</h2>
+      <p>The "Texture sets" panel on the right lists the sets, one per row. Right-click a row, or click the "…" at the right of the row, to bring up the operations for that set in one place.</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-memory.webp" width="289" height="330" alt="Texture sets panel, with the GPU memory estimate at the top and, on each row, a visibility check, the name, the resolution and the memory" loading="lazy"><figcaption>Texture sets panel</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Where</th><th scope="col">What it shows</th></tr></thead><tbody>
+        <tr><td>Very top</td><td>The GPU memory estimate. If any layers are resting, it also shows how many and how much is held on the CPU side (<a href="#memory">saving memory</a>)</td></tr>
+        <tr><td>Check at the left of a row</td><td>Show or hide that set in 3D (<a href="#setview">details</a>)</td></tr>
+        <tr><td>Name and badge</td><td>The material name. The Main and Sub badges (<a href="#cross">details</a>). A small square icon if it is shown as pixels</td></tr>
+        <tr><td>Field at the right of a row</td><td>The resolution (<a href="#resolution">details</a>) and the GPU memory estimate for that set</td></tr>
+        <tr><td>"…"</td><td>The same menu as right-click (you can open it with only a pen)</td></tr>
+        <tr><td>A row with !</td><td>A set that isn't in the current model (<a href="#orphan">Orphaned sets</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="panel-menu">Row right-click (…) menu</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Select this set</td><td>Makes it the Main</td></tr>
+        <tr><td>Remove sub (stop painting together and let it sleep)</td><td>Sub row only (<a href="#cross-off">details</a>)</td></tr>
+        <tr><td>Display, Show only this set, Show all sets</td><td>Switches which sets appear in 3D (<a href="#setview">details</a>)</td></tr>
+        <tr><td>Replace base image, Import image as layer, Import PSD (replace layers), Load lilToon material (.mat)</td><td>Puts a file into that set (<a href="#files">details</a>)</td></tr>
+        <tr><td>Show as pixels (no interpolation), Reset pixel display to automatic</td><td>Shows the texture in 3D as square pixels (<a href="#setview-dot">details</a>)</td></tr>
+        <tr><td>Alpha cutout (hide transparency in 3D)</td><td>Cuts out the areas you painted transparent in 3D so you can see through them. None, Cutout (hide faint areas), or Translucent (see through by opacity). This only changes how it looks, and the exported images don't change</td></tr>
+        <tr><td>Resolution</td><td>32×32 to 4096×4096 (<a href="#resolution">details</a>)</td></tr>
+        <tr><td>Export as PNG, Export UV map as PNG, Export as PSD</td><td>Exports only this set (<a href="/petanuri/en/manual/export">Export</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="panel-merge">How sets are formed</h3>
+      <ul class="mn-list">
+        <li>One set is created for each material. Materials that use the same image are combined into one set. You decide how to combine them on the New screen (<a href="/petanuri/en/manual/start#new">Open a 3D model</a>).</li>
+        <li>When you select a combined set, the panel shows "This texture is used by" followed by the material names. What you paint shows up on all those materials.</li>
+        <li>For transparent areas of a VRM, the transparency of the original image and the material's transparency settings are carried over. Even with the same image, materials with different transparency settings become separate sets.</li>
+        <li>The 2D canvas for stamps and 2D painting use working sets that are separate from the model's sets. While you are editing one, the panel says so. They are saved in the project file along with everything else and are not included when you export the model (<a href="/petanuri/en/manual/deco#canvas2d">2D canvas for stamps</a>).</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="resolution" data-keywords="size dimensions 2048 4096 1024 512 2K 4K pixel-count pixel-art low-res upscale downscale resize texture-size">
+      <h2>Change the resolution</h2>
+      <p>You can change the size of the texture (the number of pixels across and down) for each set.</p>
+      <ol class="mn-steps">
+        <li>Save the project file first (<kbd>Ctrl</kbd>+<kbd>S</kbd>).</li>
+        <li>In the Texture sets panel, choose a resolution from the field at the right of the row (or "Resolution" in the row's right-click menu).</li>
+        <li>If "Changing the resolution clears the undo history." appears, click "Continue". Your painting is scaled to the new size.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can choose 32, 64, 128, 256, 512, 1024, 2048 or 4096. Lite goes up to 2048, and Standard and Pro go up to 4096.</li>
+        <li>32 to 256 are meant for pixel art. Even at a low resolution, ordinary layers, saving and PNG export work. Sets of 256 or less are shown as pixels from the start (<a href="#setview-dot">details</a>).</li>
+        <li>If you only want to change the size when exporting, use "Resolution" in the export window (<a href="/petanuri/en/manual/export#png">Export as PNG</a>).</li>
+      </ul>
+      <div class="mn-tip warn">Changing the resolution clears the whole undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>) history. Lowering it blurs fine detail. Raising it doesn't add detail.</div>
+      <h3 id="resolution-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>I can't choose 4096</b>: Lite goes up to 2048. You can choose it in Standard and above.</li>
+        <li><b>"Change the resolution after saving finishes" appears</b>: Saving or autosave is in progress. Choose again when it has finished.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="files" data-keywords="swap replace base texture import original-texture PSD drag-and-drop drop load-image reference modify existing-texture">
+      <h2>Replace base images and add images or PSDs</h2>
+      <p>Even after you have opened the model, you can replace the base image of each set and import images or PSDs.</p>
+      <ol class="mn-steps">
+        <li>In the Texture sets panel, right-click the row of the set you want to import into (or use the "…" at the right of the row).</li>
+        <li>Choose an item from the table below, then choose a file.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Replace base image</td><td>Replaces the picture on the base layer with the image you choose (PNG, JPEG, WebP, BMP, GIF or TGA). If the size differs, it is scaled to match the resolution. Other layers are left as they are</td></tr>
+        <tr><td>Import image as layer</td><td>Shows a frame for placing the chosen image on that set's UV. Press <kbd>Enter</kbd> to make it a new layer. If you choose several, they are placed one at a time (<a href="/petanuri/en/manual/edit#image">Paste an image</a>)</td></tr>
+        <tr><td>Import PSD (replace layers) <span class="tier std">Standard</span></td><td>Replaces that set's layers with the layers of the PSD (<a href="/petanuri/en/manual/export#psd">PSD</a>)</td></tr>
+        <tr><td>Load lilToon material (.mat) <span class="tier pro">Pro</span></td><td>Loads a .mat or .unitypackage into that set (<a href="/petanuri/en/manual/material#lil">Load a lilToon material</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>You can also drop an image, PSD or .mat onto a row (a dotted frame appears on the row you are dropping onto). With a single image, you are asked whether to "Replace base" or "Add as layer".</li>
+        <li>You can import into a set you haven't selected, without selecting it. All of these can be undone with Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>).</li>
+        <li>For the selected set, you can also replace the base image with File → Import → "Replace base image (selected set)".</li>
+      </ul>
+      <h3 id="files-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"Stretched because the aspect ratio differs" appears</b>: The aspect ratio of the image differs from the texture. Use a square image.</li>
+        <li><b>I can't replace the base</b>: The base layer is locked or doesn't exist. Unlock it, or use "Import image as layer".</li>
+        <li><b>I can't add an image as a layer (Lite)</b>: Lite allows up to 4 layers per set. Merge or delete layers, then add it.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="setview" data-keywords="hide show visibility toggle hide-material pixelated nearest-neighbor blurry no-smoothing point-filter transparency cutout translucent">
+      <h2>Hide a set and show it as pixels</h2>
+      <p>For each texture set, you can switch whether it appears in 3D and how its pixels look.</p>
+      <ul class="mn-list">
+        <li>Use the check at the left of a row to show or hide that set in 3D. You can also use "Show only this set" and "Show all sets" in the row's right-click menu.</li>
+        <li>A set you hide keeps its texture as it is, and it is still included when you export all sets.</li>
+        <li>To hide by mesh, use the Objects panel (<a href="#objects">details</a>).</li>
+      </ul>
+      <h3 id="setview-dot">Show textures as pixels</h3>
+      <p>In the 3D display, this shows the texture as square pixels, one at a time, without interpolation. It is meant for low-resolution textures such as 32 px or 64 px.</p>
+      <ol class="mn-steps">
+        <li>In the row's right-click menu ("…"), click "Show as pixels (no interpolation)".</li>
+        <li>A small square icon appears to the right of the name. Click the icon to turn it off.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Sets of 256 px or less have it on from the start (automatic). A set you have turned on or off yourself keeps that choice in the project file.</li>
+        <li>"Reset pixel display to automatic (on for 256px or less)" undoes the choices you made yourself.</li>
+        <li>To switch all sets at once, use Display → Shading → "Show all sets' textures as pixels (no interpolation)".</li>
+        <li>This only changes the display. Your painting and exports don't change. Used together with the Pixel pen, the pixels look square in 3D too (<a href="/petanuri/en/manual/draw">Draw</a>).</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="Texture set row showing the pixel display icon, and its right-click menu" loading="lazy"><figcaption>Show as pixels (per set)</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="objects" data-keywords="mesh parts hide-clothes hide-hair visibility solo eye-icon outliner hierarchy preset isolate objects-panel">
+      <h2>Hide objects or show only one</h2>
+      <p>The "Objects" panel on the right lists the model's objects (meshes such as hair, clothing and props). You can use it, for example, to hide a whole piece of clothing and paint the body underneath.</p>
+      <ol class="mn-steps">
+        <li>In the Objects panel, click the eye button of the object you want to hide. It disappears from 3D.</li>
+        <li>To show only that object, hold <kbd>Alt</kbd> while you click its eye button or name (hold <kbd>Alt</kbd> and click again to show everything).</li>
+        <li>To bring them back, click "Show all" at the top of the panel or press <kbd>Alt</kbd>+<kbd>H</kbd>.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-objects.webp" width="900" height="823" alt="Objects panel with some objects hidden" loading="lazy"><figcaption>Objects panel</figcaption></figure>
+      <ul class="mn-list">
+        <li>If the original has a hierarchy, it is shown indented. Each row has an eye button, the name and a badge for the texture set it uses.</li>
+        <li>Click a name to make that object glow briefly in 3D. Click a badge to select that texture set.</li>
+        <li>Row right-click: Show only this, Hide / Show, Highlight in 3D, Show all. The 3D right-click menu also has "Hide this object" and "Show only this object".</li>
+        <li>Hidden objects don't appear in 3D, can't be hit by a click, and aren't painted. The same goes for Also paint back and hidden faces, the opposite side of Symmetry, Fill, Gradient and Stamp. Whatever lies behind a hidden object is visible and paintable as it is.</li>
+        <li>The textures (layers) remain. Exports of PNG, PSD and materials don't change either.</li>
+        <li>While objects are hidden, the bar under the 3D view shows "n object(s) hidden" and "Show all". Show all (<kbd>Alt</kbd>+<kbd>H</kbd>) restores both the visible area and the objects (<a href="/petanuri/en/manual/uv#isolate">Visible area</a>).</li>
+        <li>The hidden state is saved in the project file. Hiding and showing are not recorded in the undo history.</li>
+        <li><span class="tier pro">Pro</span> With "Give only this object a separate material" and "Assign material" in the row's right-click menu, you can split materials by object (<a href="/petanuri/en/manual/material#split">split materials</a>).</li>
+      </ul>
+      <h3 id="objects-presets">Display presets</h3>
+      <p>Use "Save current state" at the bottom of the panel to remember the set of hidden objects under a name. In <span class="tier pro">Pro</span>, the shape key values are remembered too.</p>
+      <ul class="mn-list">
+        <li>Click "Load" to apply that state (a single undo reverts it). "Overwrite" replaces it with the current state, you can rename it in the name field, and × deletes it.</li>
+        <li>You can store up to 10, and they are saved in the project file. The same list also appears in the Blend shapes panel.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="memory" data-keywords="slow lag laggy freeze crash VRAM video-memory graphics-card GPU out-of-memory can't-paint white-screen sleep resting low-memory performance">
+      <span id="sleep"></span>
+      <h2>Save GPU memory (when it is slow)</h2>
+      <p>Textures use GPU memory (VRAM). With 4096 sets or many layers it can run out, which makes things slow or stops you from painting. PetaNuri3D frees memory by letting items you aren't using go to sleep.</p>
+      <h3 id="memory-how">How resting works</h3>
+      <ul class="mn-list">
+        <li>Sets you haven't selected are put to sleep, which frees GPU memory without changing how they look. Only two are awake: the Main and the Sub.</li>
+        <li>When you select a sleeping set, you can paint after about 0.2 seconds at 2048 or about 0.5 to 1.5 seconds at 4096. If you click a sleeping 4096 set in the panel, "Preparing…" appears.</li>
+        <li>Saving, PNG/PSD export, AO and filters that apply to all sets work on sleeping sets as they are.</li>
+        <li>Layers you haven't touched for a while are also kept in a shrunken form while you aren't drawing (File → Preferences → Painting → Performance, "Rest layers you aren't drawing on", on by default). Appearance, export and saving don't change (<a href="/petanuri/en/manual/layers#sleep">Rest layers</a>).</li>
+        <li>You can see the current amount in the "GPU memory estimate" at the top of the Texture sets panel and in the numbers on each row.</li>
+      </ul>
+      <h3 id="memory-trouble">When it is slow or you can't paint</h3>
+      <ol class="mn-steps">
+        <li>Check the GPU memory estimate at the top of the Texture sets panel. As a guide, you need at least 4 GB of GPU memory to paint at 2048 and at least 8 GB for 4096 (<a href="/petanuri/en/manual/start#requirements">System requirements</a>).</li>
+        <li>Close other apps that use the GPU, such as games, browsers and video.</li>
+        <li>Lower the resolution of sets that don't need that much detail (<a href="#resolution">Change the resolution</a>).</li>
+        <li>If you aren't painting across sets, remove the Sub to let it sleep (<a href="#cross-off">Remove sub</a>).</li>
+        <li>If you had turned "Rest layers you aren't drawing on" off, turn it on.</li>
+      </ol>
+      <ul class="mn-list mn-trouble">
+        <li><b>"Display processing stopped" appears</b>: The GPU's display processing was restarted, and your painting can no longer be shown. It happens when resuming from sleep or when memory runs out. You can't paint in this state, and nothing is saved. Reopen with "Open from autosave" or "Reopen project file" in the window (your previous project file and autosave are left intact).</li>
+        <li><b>"Display processing has stopped, so it can't export" appears</b>: Same as above. Reopen, then export.</li>
+        <li><b>I wait every time I select a set</b>: A sleeping set is being woken up. If you set the two sets you switch between as the Main and the Sub, you won't have to wait.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="orphan" data-keywords="exclamation-mark warning missing-material not-in-model deleted-material reimport rename moved-material renamed missing-set transfer-layers">
+      <h2>Orphaned sets (! mark)</h2>
+      <p>Sets for materials that aren't in the current model are kept, marked with <strong>!</strong>, rather than deleted. You can move the layers you painted to another set.</p>
+      <p>This happens when you <a href="/petanuri/en/manual/start#reload">reload the model</a>, and when you open a project file that was saved without the model (FBX) together with a model whose names don't match.</p>
+      <ol class="mn-steps">
+        <li>In the Texture sets panel, click the set that has a !. The "Set not in the model: (set name)" window opens.</li>
+        <li>Choose layers with "Layers to move" (all of them are selected at first; there are also "Select all" and "Deselect all").</li>
+        <li>Choose a set with "Destination" (a set with a similar name is selected at first).</li>
+        <li>Click "Move". The layers go to the top of the destination's layers, in the same order.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Folders, masks, clipping and blend modes are carried over as they are. If the resolution differs, the layers are scaled to the destination size. UV position stays the same.</li>
+        <li>If you check "Also keep in the original set (copy only)", the layers are only copied and also remain in the original set.</li>
+        <li>A set with no layers left disappears. You can also use "Delete this set" in the window to delete it together with the layers you painted. All of these can be undone.</li>
+        <li>The row's right-click menu also has "Move layers to another set" and "Delete this set".</li>
+      </ul>
+      <div class="mn-tip">A set with a ! doesn't appear in 3D and can't be painted on. It is also left out of exporting all sets and of AO. If you need the picture of only that set, use "Export PNG (no bleed outside islands)" or "Export as PSD" <span class="tier std">Standard</span> in the row's right-click menu.</div>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/start#new">Open a 3D model (New)</a></li><li><a href="/petanuri/en/manual/start#reload">Reload the model</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv#isolate">Visible area</a></li><li><a href="/petanuri/en/manual/export">Export</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/uv"><small>← Previous</small>UV and visible area</a><a class="next" href="/petanuri/en/manual/material"><small>Next →</small>lilToon materials</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +389,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

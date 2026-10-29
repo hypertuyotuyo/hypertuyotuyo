@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>选区、变换、文字、尺子 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="选区与选区工具条、移动/变换工具、3D 上的变换（缩放、旋转、自由变换、扭曲）、复制与粘贴、添加图片、向 3D／UV 贴图、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="选区与选区栏、移动·变形工具、在 3D 上变换（缩放、旋转、自由变换、变形）、复制与粘贴、添加图像、将图像贴到 3D／UV、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/edit">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="选区、变换、文字、尺子 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="选区与选区工具条、移动/变换工具、3D 上的变换（缩放、旋转、自由变换、扭曲）、复制与粘贴、添加图片、向 3D／UV 贴图、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="选区与选区栏、移动·变形工具、在 3D 上变换（缩放、旋转、自由变换、变形）、复制与粘贴、添加图像、将图像贴到 3D／UV、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/edit">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "选区、变换、文字、尺子 | PetaNuri3D 使用手册",
-   "description": "选区与选区工具条、移动/变换工具、3D 上的变换（缩放、旋转、自由变换、扭曲）、复制与粘贴、添加图片、向 3D／UV 贴图、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "选区与选区栏、移动·变形工具、在 3D 上变换（缩放、旋转、自由变换、变形）、复制与粘贴、添加图像、将图像贴到 3D／UV、文字（就地输入、重新输入）、尺子。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/edit",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,354 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit" aria-current="page">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit" aria-current="page">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 选区、变换、文字、尺子</p>
     <h1 class="mn-h1">选区、变换、文字、尺子</h1>
-    <p class="mn-intro">用于限定绘制区域、移动已绘制内容、贴文字或图片。变换框可出现在 3D 模型和 UV 区域中。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#select">选区</a></li><li><a href="#selbar">选区工具条</a></li><li><a href="#move">移动/变换工具</a></li><li><a href="#transform">变换（Ctrl＋T）与 3D 操作框</a></li><li><a href="#warp">自由变换、扭曲</a></li><li><a href="#copy">复制、剪切、粘贴</a></li><li><a href="#image">添加图片、贴图</a></li><li><a href="#text">文字</a></li><li><a href="#ruler">尺子</a></li></ul></div>
-    <section class="mn-sec" id="select"><h2>选区</h2><ol class="mn-steps"><li>选择“选区”工具（<kbd>S</kbd>），从辅助工具选择形状。</li><li>在 3D 视图（或 UV 区域）拖动、描画或点击选择。</li><li>选择期间，绘制、填充、擦除、滤镜、渐变<strong>仅在选区内</strong>生效。外侧略微变暗，边界显示虚线。</li><li><kbd>Ctrl</kbd>＋<kbd>D</kbd> 可取消选择。</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="仅在选区内绘制的效果与下方选区工具条" loading="lazy"><figcaption>可仅在选区内绘制</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="选区工具属性" loading="lazy"><figcaption>选择方式设置</figcaption></figure></div><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">选择方式</th></tr></thead><tbody><tr><td>矩形、椭圆</td><td>拖动</td></tr><tr><td>套索</td><td>画线围出区域</td></tr><tr><td>折线</td><td>点击放置点，点击起点、双击或按 Enter 闭合</td></tr><tr><td>自动选择</td><td>与点击位置颜色相近的连通区域</td></tr><tr><td>按 UV 岛选择</td><td>整个点击的 UV 岛</td></tr><tr><td>按面选择</td><td>划过的整个面</td></tr><tr><td>选择笔、选择擦除</td><td>用画笔描画来添加、减去</td></tr></tbody></table></div><ul class="mn-list"><li>开始点击时按 <kbd>Shift</kbd>＝添加、<kbd>Alt</kbd>＝减去、<kbd>Shift</kbd>＋<kbd>Alt</kbd>＝交集。</li><li>开启“也选择背面和被遮挡的面”时，会选中屏幕形状对应区域直至背面的所有部分。<strong>环绕身体一周</strong>选择，适合绘制服装条纹。</li><li>“选区”菜单：全选 <kbd>Ctrl</kbd>＋<kbd>A</kbd>、反选 <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd>、扩展／收缩／羽化边缘、选择图层已绘制区域、从选区创建蒙版、用前景色填充、清除内部（<kbd>Delete</kbd>）、显示虚线（<kbd>Ctrl</kbd>＋<kbd>H</kbd>）、恢复选区（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>）。</li><li>有选区时，不能绘制未选中的纹理集。</li></ul><div class="mn-tip">对图层缩略图使用 <kbd>Ctrl</kbd>＋点击，可将已绘制区域设为选区（<kbd>Shift</kbd> 添加、<kbd>Alt</kbd> 减去）。</div><div class="mn-tip">选择所有相似颜色（所有版本）：选区 →“选择所有相似颜色（前景色）”可在整张纹理中选出接近前景色的区域（不相连也可）。可设置容差、参考图像（所有图层／当前图层）和方式（新建、添加、减去）。适合按底色分别更换阴影色等。</div><div class="mn-tip">不使选区外变暗（v1.3.0 起）：关闭菜单“选区 → 使选区外变暗”（右键的选区菜单中也有）后，只显示虚线，可以一边看着外面的原色一边绘制。所选设置在下次启动时也会保留（默认变暗）。</div></section><section class="mn-sec" id="selbar"><h2>选区工具条</h2><p>有选区时，3D 区域下方会出现选区工具条。在左侧“选择中”标签之后排列图标按钮（悬停笔尖或光标可显示名称和快捷键）。</p><ul class="mn-list"><li>取消（有颜色的按钮）、反选｜扩展、收缩、羽化边缘｜填充、清除｜转到新图层 ▾（复制／剪切）、其他 ▾（蒙版、仅显示选中部分、隐藏、虚线）。</li><li>窄屏下，扩展、收缩、羽化边缘会合并到“范围 ▾”。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="3D 下方选区工具条" loading="lazy"><figcaption>选区工具条</figcaption></figure></section><section class="mn-sec" id="move"><h2>移动/变换工具</h2><ol class="mn-steps"><li>选择“移动·变形”工具（<kbd>V</kbd>）。</li><li>在 3D 模型（或 UV 区域）点击要移动的图像。会选择点击处有绘制内容的最上层图层，并显示该图像的框（“自动选择图层”；关闭则使用当前选中图层）。</li><li>按住并拖动可立即移动。拖角点缩放，拖上方圆点旋转。</li><li><kbd>Enter</kbd> 或切换其他工具来确认，按<kbd>Esc</kbd> 取消。点击框外会确认，并切换到点击位置的图层。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="3D 模型上的变换框及框下工具条" loading="lazy"><figcaption>可直接在 3D 模型上移动绘制内容</figcaption></figure><ul class="mn-list"><li>若有选区，仅移动选区内部。确认后作为一次撤销步骤。</li><li>在工具属性选择框形（缩放、旋转／自由变换／扭曲）及扭曲网格数量。</li><li>点击文字图层会显示文字框（框内拖动可移动，双击可重新输入）。</li></ul></section><section class="mn-sec" id="transform"><h2>变换（Ctrl＋T）与 3D 操作框</h2><ul class="mn-list"><li><strong>变换</strong>（<kbd>Ctrl</kbd>＋<kbd>T</kbd>）：有选区时显示移动选区的框，否则移动整个图层。</li><li>框会在 <strong>3D 区域（模型上待移动图像附近）和 UV 区域两侧</strong>显示。操作任一框，另一框也同步跟随。若图像在 3D 中可见，无需打开 UV 区域即可操作。</li><li>拖动框内移动、拖角点缩放（<kbd>Shift</kbd> 可改变宽高比）、拖边单轴缩放、拖上方圆点旋转（<kbd>Shift</kbd> 以15°为步进）。还可左右、上下翻转。将边或角拖过对侧即可翻转。</li><li>在 3D 操作框上也可使用右键、中键拖动、滚轮或<kbd>Space</kbd>＋拖动调整视角。视角变化时，框会跟随。</li><li>UV 区域显示网格线时，操作框会吸附网格（<a href="/petanuri/zh/manual/uv#grid">网格线与吸附</a>）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="UV 区域变换框" loading="lazy"><figcaption>变换框（UV 区域）</figcaption></figure><div class="mn-tip">3D 变形（所有版本）：即使是 3D 中可见的细小部分，也会显示 3D 变形框；在框内拖动后松开，框和图像不再跳动（自由变形、变形网格也一样）。</div><div class="mn-tip">也对称（所有版本）：开启绘制对称且选区在一侧时，下方栏会出现“也对称”。开启后移动，3D 另一侧也会镜像一起移动（另一侧原有的图会被替换）。移动工具同样适用。</div></section><section class="mn-sec" id="warp"><h2>自由变换、扭曲</h2><p>变换、移动/变换工具、添加图片、粘贴、向 3D／UV 贴图的框下工具条有3个图标（缩放、旋转／自由变换／扭曲）。</p><ul class="mn-list"><li><strong>自由变换</strong>：分别拖动4个角点改变形状（如透视效果般贴图）。</li><li><strong>变形</strong>：拖动网格点弯曲图像。网格为3×3（工具条也可选4×4、5×5）。</li><li>两种方式均可拖动上方圆点或角外侧少许位置旋转（<kbd>Shift</kbd> 以15°为步进）。拖动内部移动整体。</li><li>切换模式时保留形状。确认后作为一次撤销步骤（移动选区时也一样）。向 3D 贴图时，会将屏幕上的形状投影到可见面。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="移动扭曲网格点来弯曲图像" loading="lazy"><figcaption>变形</figcaption></figure></section><section class="mn-sec" id="copy"><h2>复制、剪切、粘贴</h2><ul class="mn-list"><li><strong>复制</strong>（<kbd>Ctrl</kbd>＋<kbd>C</kbd>）・<strong>剪切</strong>（<kbd>Ctrl</kbd>＋<kbd>X</kbd>）：复制或剪切选区内部（无选区则为整个图层）。多选图层时也只处理当前选中的一个图层。</li><li><strong>粘贴</strong>（<kbd>Ctrl</kbd>＋<kbd>V</kbd>）：在同一 UV 位置粘贴到新图层，可立即变换。</li><li>锁定、隐藏或锁定透明像素的图层不能剪切或清除（会提示原因）。</li></ul></section><section class="mn-sec" id="image"><h2>添加图片、贴图</h2><ul class="mn-list"><li><strong>添加图像</strong>（文件 → 导入 → 将图片导入为图层、拖入图片、对外部复制的图片使用 <kbd>Ctrl</kbd>＋<kbd>V</kbd>）：显示图片摆放框。UV 区域打开时放在 UV 上，否则放在 3D 中央（投影到可见面）。保留宽高比和透明区域。</li><li>调整框后按 <kbd>Enter</kbd> ，会加入以文件名命名的新图层。<kbd>Esc</kbd> 取消则不保留任何内容。框下工具条“铺满整个纹理”也可将图片拉伸至整个 UV（适合按 UV 尺寸绘制的图片）。</li><li><strong>将图像贴到 3D</strong>（编辑 → 将图片贴到 3D）：在 3D 上调整框，按<kbd>Enter</kbd> 投影到模型可见面。调整期间可以移动视角。“斜面也保持浓度”可避免斜面颜色变淡。</li><li><strong>将图像贴到 UV</strong>（编辑 → 将图片贴到 UV）：在 UV 区域调整框，贴入新图层。</li></ul><div class="mn-tip">左右对称和选区也有效。</div></section><section class="mn-sec" id="text"><h2>文字</h2><ol class="mn-steps"><li>选择“文字”工具（<kbd>T</kbd>），点击 3D 视图（或 UV 区域）。</li><li>显示框和文字窗口，<strong>可立即在框上输入</strong>。也支持日语输入，转换候选显示在文字旁边。</li><li><kbd>Ctrl</kbd>＋<kbd>Enter</kbd> 确认（输入时的 <kbd>Enter</kbd> 用于换行）。<kbd>Esc</kbd> 第一次停止输入（框保留），第二次取消。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="在 3D 框上就地输入文字" loading="lazy"><figcaption>文字可就地输入</figcaption></figure><ul class="mn-list"><li>在文字窗口设置字体、大小、颜色、粗体、斜体、竖排、行距、字距、对齐和描边。颜色直接使用颜色面板前景色，描边使用背景色。</li><li><strong>按字符修改</strong>：选中文字后修改颜色、大小、字体、粗体、斜体、字距、描边，只影响选中文字。不选择时修改会用于之后输入的文字。</li><li>输入时，工具快捷键（如<kbd>E</kbd> 切换橡皮擦）不生效。移动框需按住 <kbd>Ctrl</kbd> 拖动。</li><li>可选择本机安装的所有字体。也可导入字体文件（.ttf、.otf），仅本次运行有效。</li></ul><h3>重新输入文字（文字图层）</h3><ul class="mn-list"><li>选择“到新图层”贴入的文字（贴入 UV 时始终如此）会成为<strong>文字图层</strong>，图层列表中显示“T”标记。</li><li>双击图层列表、右键 →“重新输入文字”、或用文字工具点击文字，可按贴入时的状态重新打开。各字符的颜色和大小也保留。</li><li>在文字图层用钢笔等添加绘制内容后，标记会变为“T＋”。重新输入时会丢失后来绘制的内容，要保留请画在其他图层。</li><li>右键 →“栅格化”可转为普通图层（不能重新输入）。文字数据也存入工程文件，重新打开后仍可重输。PSD 中保存为普通图层。</li></ul></section><section class="mn-sec" id="ruler"><h2>尺子</h2><ul class="mn-list"><li>让笔画吸附尺子。直线、曲线仅影响在尺子附近开始的笔画；同心圆、放射线、平行线则在任意位置有效。</li><li>创建：直线、平行线用拖动，同心圆、放射线以点击位置为中心，曲线通过放置点后按 <kbd>Enter</kbd> 或双击完成。尺子圆点可拖动移动。</li><li>3D 区域尺子固定在屏幕上，不随视角移动。UV 区域也可单独放置。</li><li>显示 → 线与尺子 → 吸附尺子（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd>）可切换，也可删除尺子。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="沿放射线尺子绘制" loading="lazy"><figcaption>放射线尺子</figcaption></figure><div class="mn-tip"><strong>放置曲线控制点期间</strong>，按<kbd>Ctrl</kbd>＋<kbd>Z</kbd> 可撤销最后放置的一个点。<kbd>Ctrl</kbd>＋<kbd>Y</kbd> 或 <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd> 可重做控制点撤销。<kbd>Enter</kbd>或双击确认尺子后，快捷键恢复普通历史记录操作。</div><div class="mn-tip">有标尺时，该区域下方中央会出现标尺栏（标尺类型、吸附开关、删除）。删除只删除该区域的标尺。</div></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/deco"><small>← 上一页</small>图章、图案、缝线与 2D 画布</a><a class="next" href="/petanuri/zh/manual/layers"><small>下一页 →</small>图层</a></nav>
+    <p class="mn-intro">本页介绍如何用选区限定绘制范围、移动并改变已绘制内容的形状、把图像和文字贴到模型上，以及用尺子对齐线条。变换边框会同时出现在 3D 视图的模型上和 UV 视图中。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>用“选区”工具（<kbd>S</kbd>）圈选后，就只能在圈选范围内绘制。按 <kbd>Ctrl</kbd>+<kbd>D</kbd> 取消选择（<a href="#select">详细说明</a>）。</li>
+      <li>用“移动·变形”工具（<kbd>V</kbd>）按住模型上的内容，直接拖动即可移动（<a href="#move">详细说明</a>）。</li>
+      <li>更改大小和方向用 <kbd>Ctrl</kbd>+<kbd>T</kbd>。拖动角调整大小，拖动上方的圆点旋转，按 <kbd>Enter</kbd> 确定（<a href="#transform">详细说明</a>）。</li>
+      <li>把图像拖放到窗口里，就能对齐边框后贴上（<a href="#image">详细说明</a>）。</li>
+      <li>用“文字”工具（<kbd>T</kbd>）点击模型，就能就地输入文字（<a href="#text">详细说明</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#select">选择要绘制的区域（选区）</a></li><li><a href="#selbar">用选区栏操作</a></li><li><a href="#selmenu">调整和使用选区（菜单“选区”）</a></li><li><a href="#fillcolor">用单色填充、批量更改颜色</a></li><li><a href="#move">移动已绘制的内容（移动·变形工具）</a></li><li><a href="#transform">更改大小和方向（变换）</a></li><li><a href="#warp">添加透视、弯曲（自由变换、变形）</a></li><li><a href="#copy">复制、剪切、粘贴</a></li><li><a href="#image">贴图像</a></li><li><a href="#text">添加文字</a></li><li><a href="#ruler">用尺子对齐线条</a></li></ul></div>
+
+    <section class="mn-sec" id="select" data-keywords="框选 选取 魔棒 矩形选框 套索 不超出 限定范围 条纹 一圈 marquee">
+      <h2>选择要绘制的区域（选区）</h2>
+      <p>创建选区后，绘制、填充、擦除、滤镜和渐变都只在其中生效。想避免画出界时，就用选区。</p>
+      <ol class="mn-steps">
+        <li>选择“选区”工具（<kbd>S</kbd>）。</li>
+        <li>在辅助工具中选择选择方式（矩形、套索等）。</li>
+        <li>在 3D 视图或 UV 视图中，通过拖动、划过或点击来选择。选区外会稍微变暗，边界上会出现虚线。</li>
+        <li>换成钢笔等工具来绘制。选区之外不会被画上。</li>
+        <li>按 <kbd>Ctrl</kbd>+<kbd>D</kbd> 取消选择。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-select.webp" width="1400" height="840" alt="仅在选区内绘制的效果与下方的选区栏" loading="lazy"><figcaption>可仅在选区内绘制</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-select-tool.webp" width="249" height="270" alt="选区工具属性" loading="lazy"><figcaption>选择方式的设置（工具属性）</figcaption></figure></div>
+      <h3 id="select-subtools">辅助工具与选择方式</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">选择方式</th></tr></thead><tbody>
+        <tr><td>矩形·椭圆</td><td>拖动。</td></tr>
+        <tr><td>套索</td><td>划过并圈住。</td></tr>
+        <tr><td>折线</td><td>点击打点。点击起点、双击或按 <kbd>Enter</kbd> 封闭。</td></tr>
+        <tr><td>自动选择</td><td>选择与点击处颜色相近、且相连的部分。</td></tr>
+        <tr><td>按 UV 岛选择</td><td>整体选中点击处的 UV 岛。</td></tr>
+        <tr><td>按面选择</td><td>整体选中划过的面。</td></tr>
+        <tr><td>选区笔、选区橡皮擦</td><td>用笔刷划过来添加、削减（按住 <kbd>Alt</kbd> 期间则相反）。</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>在 3D 视图中，只选择可见的面。勾选工具属性中的“也选择背面和被遮挡的面”，就会把与画面形状重叠的部分连背面一起全部选中。需要<strong>绕身体选一整圈</strong>、绘制服装条纹时，这样很方便。</li>
+        <li>自动选择要在工具属性中设定“参考”（所有图层／所选图层）、“容差”和“抗锯齿（边缘平滑 1px）”。</li>
+        <li>按面选择要设定“拾取范围”和“按四边形选择（将 2 个三角形视为 1 个面）”。</li>
+      </ul>
+      <h3 id="select-add">添加到选区、从选区减去</h3>
+      <p>在工具属性的“选择方式”中，选择新建、添加、删除或交叉。开始按下时先按住按键，则只对这一次生效。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">开始按下时的按键</th><th scope="col">选择方式</th></tr></thead><tbody>
+        <tr><td>无</td><td>新建（替换当前选区）。只按下而不移动则取消选择</td></tr>
+        <tr><td><kbd>Shift</kbd></td><td>添加（添加到当前选区）</td></tr>
+        <tr><td><kbd>Alt</kbd></td><td>删除（从当前选区中削减）</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>Alt</kbd></td><td>交叉（只保留重叠的部分）</td></tr>
+      </tbody></table></div>
+      <h3 id="select-other">其他选择方式</h3>
+      <ul class="mn-list">
+        <li>按住 <kbd>Ctrl</kbd> 点击图层缩略图，会选中该图层已绘制的部分（按 <kbd>Shift</kbd> 添加，按 <kbd>Alt</kbd> 削减）。</li>
+        <li>在 3D 视图中右键 →“选择此 UV 岛（选区）”，会选中点击处的 UV 岛。UV 视图的右键菜单中还有“将此 UV 岛添加到选区”。</li>
+        <li>想一次选中与前景色相近的颜色，请使用<a href="#select-color">选择所有相似颜色</a>。</li>
+      </ul>
+      <h3 id="select-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>画不到想画的位置</b>：有选区时，选区之外无法绘制。按 <kbd>Ctrl</kbd>+<kbd>D</kbd> 取消选择。</li>
+        <li><b>无法在其他纹理集上绘制</b>：有选区时，无法在没有选区的纹理集上绘制。请取消选择，或使用能包含所有纹理集的“全选”（<kbd>Ctrl</kbd>+<kbd>A</kbd>）。</li>
+        <li><b>背面没有被选中</b>：在 3D 视图中只会选择可见的面。请勾选“也选择背面和被遮挡的面”。</li>
+        <li><b>选区外太暗，看不清颜色</b>：取消勾选 选区 →“使选区外变暗”，就只剩虚线（<a href="#selmenu">菜单</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="selbar" data-keywords="选区工具栏 下方栏 取消选择按钮 选择中 工具条 悬浮栏 选区按钮">
+      <h2>用选区栏操作</h2>
+      <p>选择期间，3D 视图下方会出现选区栏（只显示 UV 时，则出现在 UV 视图下方）。左侧“选择中”标签的后面，排列着图标按钮。把笔尖或光标放到按钮上，就会显示按钮名称和按键。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-selbar.webp" width="500" height="56" alt="3D 视图下方的选区栏" loading="lazy"><figcaption>选区栏</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按钮</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>取消选择（带颜色的按钮）</td><td>取消选择。取消之后，也可以用“重新选择”（<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>）恢复</td></tr>
+        <tr><td>反转</td><td>反转选区</td></tr>
+        <tr><td>扩展、收缩、羽化</td><td>调整选区的形状。屏幕较窄时会合并到“范围 ▾”中</td></tr>
+        <tr><td>填充</td><td>用前景色填充选区</td></tr>
+        <tr><td>清除</td><td>清除选区内的内容</td></tr>
+        <tr><td>到新图层 ▾</td><td>“复制到新图层”“剪切到新图层”</td></tr>
+        <tr><td>更多 ▾</td><td>从选区创建蒙版、仅显示所选部分、隐藏所选部分、显示选区虚线、使选区外变暗</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">显示隐藏笔栏或尺子条时，选区栏会排在它们的上方。“仅显示所选部分”和“隐藏所选部分”属于<a href="/petanuri/zh/manual/uv#isolate">显示范围</a>的功能。</div>
+    </section>
+
+    <section class="mn-sec" id="selmenu" data-keywords="选区菜单 扩展 收缩 羽化 反选 重新选择 颜色范围 创建蒙版 隐藏虚线 不变暗">
+      <h2>调整和使用选区（菜单“选区”）</h2>
+      <p>菜单“选区”中，列有调整和使用选区的项目。3D 视图右键菜单的“选区”里，也有其中的大部分项目。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>全选</td><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td>选中全部纹理集的整个范围</td></tr>
+        <tr><td>取消选择</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>取消选区</td></tr>
+        <tr><td>恢复选区（上次取消的选区）</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td>恢复到上次取消的选区</td></tr>
+        <tr><td>反选</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td>选中未被选中的部分</td></tr>
+        <tr><td>扩展选区、收缩选区</td><td>—</td><td>在 UV 上扩展或收缩 1～64px</td></tr>
+        <tr><td>羽化边缘</td><td>—</td><td>让边缘柔和 1～64px</td></tr>
+        <tr><td>选择图层的已绘制区域</td><td>—</td><td>选中所选图层中已绘制的部分</td></tr>
+        <tr><td>选择所有相似颜色（前景色）</td><td>—</td><td>选中与前景色相近的部分（<a href="#select-color">见下文</a>）</td></tr>
+        <tr><td>从选区创建蒙版</td><td>—</td><td>给所选图层添加选区形状的蒙版（<a href="/petanuri/zh/manual/layers#mask">蒙版</a>）</td></tr>
+        <tr><td>将选区复制为新图层</td><td>—</td><td>把其中的内容复制到相同位置的新图层</td></tr>
+        <tr><td>将选区剪切为新图层</td><td>—</td><td>把其中的内容移到新图层</td></tr>
+        <tr><td>用前景色填充选区</td><td>—</td><td>用前景色填充其中</td></tr>
+        <tr><td>清除选区内容</td><td><kbd>Delete</kbd></td><td>清除所选图层中选区内的内容</td></tr>
+        <tr><td>显示选区虚线</td><td><kbd>Ctrl</kbd>+<kbd>H</kbd></td><td>显示或隐藏虚线（选区会保留，外部的变暗效果也会保留）</td></tr>
+        <tr><td>使选区外变暗</td><td>—</td><td>关闭后只剩虚线，可以在看着外部原本颜色的同时绘制。下次启动时仍保持该设置（初始为开启）</td></tr>
+      </tbody></table></div>
+      <h3 id="select-color">选择所有相似颜色</h3>
+      <p>从整个纹理中，选出与前景色相近的部分。不相连的部分也会被选中。用于按底涂的颜色分别更改阴影色等情况。</p>
+      <ol class="mn-steps">
+        <li>用吸管（<kbd>I</kbd>）把想选的颜色设为前景色。</li>
+        <li>选择 选区 →“选择所有相似颜色（前景色）”。</li>
+        <li>用“容差（%）”决定选到多接近的颜色。</li>
+        <li>在“取色来源”中选择“全部图层”或“当前图层”。</li>
+        <li>在“选择方式”中选择“新选区”“添加”或“减去”，然后点击“选择”。</li>
+      </ol>
+    </section>
+
+    <section class="mn-sec" id="fillcolor" data-keywords="填满 满涂 纯色 换色 批量换色 线稿颜色 重新上色 一键换色 alt+backspace ctrl+backspace">
+      <h2>用单色填充、批量更改颜色</h2>
+      <p>这是菜单“编辑”中的 3 个项目。有选区时作用于选区内，没有选区时作用于所选图层的整个范围。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>用前景色填充</td><td><kbd>Alt</kbd>+<kbd>Backspace</kbd></td><td>用前景色填满</td></tr>
+        <tr><td>用背景色填充</td><td><kbd>Ctrl</kbd>+<kbd>Backspace</kbd></td><td>用背景色填满</td></tr>
+        <tr><td>改为前景色（保留透明度）</td><td>—</td><td>只把已绘制部分的颜色改成当前的前景色。浓度（透明度）和透明的部分保持不变</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>“改为前景色”用于批量更改线稿的颜色。图层行的右键菜单中也有。</li>
+        <li>在蒙版上绘制时，会按颜色的明暗来涂蒙版（白＝显示，黑＝隐藏）。</li>
+        <li>在法线贴图文件夹内，会用灰色来更改。无法用于法线贴图图像图层（<a href="/petanuri/zh/manual/material#channels">绘制目标</a>）。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="move" data-keywords="移动工具 拖动 平移 挪位置 自动选择图层 挪动 偏移 位置调整 v键 move">
+      <h2>移动已绘制的内容（移动·变形工具）</h2>
+      <p>在 3D 模型上按住内容，就能直接拖动。不用去找画在哪个图层上，点击处的图层会被自动选中。</p>
+      <ol class="mn-steps">
+        <li>选择“移动·变形”工具（<kbd>V</kbd>）。</li>
+        <li>在 3D 视图（或 UV 视图）中，点击想移动的内容。点击处最上面的已绘制图层会被选中，并显示该内容的边框。</li>
+        <li>按住拖动，就会立即移动。拖动角调整大小，拖动上方的圆点旋转。</li>
+        <li>按 <kbd>Enter</kbd> 或切换到其他工具即可确定。按 <kbd>Esc</kbd> 取消。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-move-3d.webp" width="654" height="900" alt="3D 模型上显示着变换边框和边框下方的栏" loading="lazy"><figcaption>可直接在 3D 模型上移动已绘制的内容</figcaption></figure>
+      <h3 id="move-detail">细节设置</h3>
+      <ul class="mn-list">
+        <li>关闭工具属性中的“自动选择图层”后，移动的是当前选中的图层，而不是点击处的图层。</li>
+        <li>点击边框外会确定，并切换到点击处的图层。</li>
+        <li>有选区时，只移动其中的部分。确定算作 1 次撤销。</li>
+        <li>在工具属性的“图形”中可以选择边框的形状（缩放·旋转／自由变换／变形），在“变形网格”中可以选择网格数（<a href="#warp">自由变换、变形</a>）。</li>
+        <li>点击文字图层会变成文字边框。拖动边框内可移动，双击可重新输入（<a href="#retext">重新输入文字</a>）。</li>
+      </ul>
+      <h3 id="move-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>显示“此处没有已绘制的可见图层”</b>：隐藏的图层、被蒙版遮住的部分、不透明度为 0% 的内容，都不会被选中。请先在图层面板中选择图层，再关闭“自动选择图层”后移动。</li>
+        <li><b>移动的是其他图层</b>：有重叠时，最上面的图层会被选中。请选择想移动的图层，并关闭“自动选择图层”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="transform" data-keywords="放大 缩小 旋转 调整大小 缩放 翻转 镜像 自由变换 ctrl+t 边框">
+      <h2>更改大小和方向（变换）</h2>
+      <p>对选区内或整个图层的内容，显示用来更改大小和方向的边框。边框会同时出现在 3D 视图的模型上和 UV 视图中。</p>
+      <ol class="mn-steps">
+        <li>用选区圈住想变换的部分（对整个图层操作则不需要）。</li>
+        <li>选择 编辑 →“变换（在 3D/UV 上）”（<kbd>Ctrl</kbd>+<kbd>T</kbd>）。边框会出现。</li>
+        <li>拖动边框内移动，拖动角缩放，拖动上方的圆点旋转。</li>
+        <li>按 <kbd>Enter</kbd> 确定。要取消时按 <kbd>Esc</kbd>。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-transform-uv.webp" width="324" height="900" alt="UV 视图中的变换边框" loading="lazy"><figcaption>变换边框（UV 视图）</figcaption></figure>
+      <h3 id="transform-detail">边框操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">效果</th></tr></thead><tbody>
+        <tr><td>拖动边框内</td><td>移动</td></tr>
+        <tr><td>拖动角</td><td>缩放（按 <kbd>Shift</kbd> 可改变纵横比）</td></tr>
+        <tr><td>拖动边</td><td>只向一个方向拉伸或压缩</td></tr>
+        <tr><td>拖动上方的圆点</td><td>旋转（按 <kbd>Shift</kbd> 以 15° 为单位）</td></tr>
+        <tr><td>把边或角拖过对侧</td><td>翻转</td></tr>
+        <tr><td>边框下方的栏</td><td>水平翻转、垂直翻转、不透明度、边框的形状（<a href="#warp">自由变换、变形</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>无论抓住 3D 还是 UV 的边框，动作都相同，另一边也会跟着变化。如果要移动的内容在 3D 中可见，不打开 UV 视图，仅在 3D 中也能操作。内容不可见时会打开 UV 视图，结束后自动关闭。</li>
+        <li>在 3D 边框上，也可以用右键拖动、中键拖动、滚轮、<kbd>Space</kbd>+拖动来移动视角。改变视角后，边框也会跟随。</li>
+        <li>3D 边框会按边框正中的面来显示。跨过 UV 接缝时，会对齐到正中的 UV 岛。</li>
+        <li>UV 视图中显示网格线时，边框会吸附到格子上（<a href="/petanuri/zh/manual/uv#grid">UV 网格线与吸附</a>）。</li>
+        <li>选区也会一起移动。</li>
+      </ul>
+      <h3 id="transform-mirror">同时移动另一侧（也对称）</h3>
+      <p>已开启绘制对称、且选区位于单侧时，边框下方的栏中会出现“也对称”。开启后再移动，3D 的另一侧也会像镜子一样一起移动。另一侧原有的内容会被替换。</p>
+      <ul class="mn-list">
+        <li>移动·变形工具也是一样。</li>
+        <li>左右两侧都被选中时、选区跨过中心时、没有选区时，不会出现。</li>
+        <li>对称的开启方法请看<a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a>。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="warp" data-keywords="透视 扭曲 歪曲 网格变形 弯曲 梯形 透视变形 自由扭曲 拉伸 曲面">
+      <h2>添加透视、弯曲（自由变换、变形）</h2>
+      <p>用边框下方栏中的 3 个图标，切换边框的形状。可用于变换、移动·变形工具、添加图像、粘贴、将图像贴到 3D／UV（文字的边框中不显示）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">边框的形状</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>缩放·旋转</td><td>拖动角调整大小，拖动上方的圆点旋转，拖动中间移动（<a href="#transform-detail">边框操作</a>）</td></tr>
+        <tr><td>自由变换</td><td>分别拖动 4 个角来改变形状。内容会像透视一样贴合。角不会越过对侧，也不会形成凹陷的形状</td></tr>
+        <tr><td>变形</td><td>拖动网格的点来弯曲内容。网格为 3×3，也可以在栏中改为 4×4 或 5×5</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-warp.webp" width="459" height="900" alt="移动变形网格的点来弯曲内容" loading="lazy"><figcaption>变形</figcaption></figure>
+      <ul class="mn-list">
+        <li>自由变换和变形，也可以拖动上方的圆点或角的稍外侧来旋转（按 <kbd>Shift</kbd> 以 15° 为单位）。拖动中间可整体移动。</li>
+        <li>按 缩放·旋转 → 自由变换 → 变形 的顺序切换，形状都会保留。切回缩放·旋转时，会把当前的形状画进内容，变成其外侧的矩形边框。</li>
+        <li>也可以使用水平翻转、垂直翻转和不透明度。确定算作 1 次撤销（移动选区时也一样）。</li>
+        <li>贴到 3D 时，会把在屏幕上弯曲出的形状投影到可见的面上。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="copy" data-keywords="复制粘贴 拷贝 剪切 粘贴 ctrl+c ctrl+x ctrl+v 复制图层 移到其他图层 抠出">
+      <h2>复制、剪切、粘贴</h2>
+      <p>复制或剪切选区内（没有选区则为整个图层）的内容，再粘贴。粘贴的内容会放进新图层。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>编辑 →“复制（选区内）”</td><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td>复制所选图层的内容</td></tr>
+        <tr><td>编辑 →“剪切（选区内）”</td><td><kbd>Ctrl</kbd>+<kbd>X</kbd></td><td>复制后，删除原来的内容</td></tr>
+        <tr><td>编辑 →“粘贴”</td><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td>在相同的 UV 位置，以新图层粘贴。可直接用边框移动</td></tr>
+        <tr><td>选区 →“将选区复制为新图层”“将选区剪切为新图层”</td><td>—</td><td>不显示边框，立即放入相同位置的新图层</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>即使选中了多个图层，对象也只是所选的那 1 个图层。</li>
+        <li>把在其他应用中复制的图像按 <kbd>Ctrl</kbd>+<kbd>V</kbd>，可对齐边框后贴上（<a href="#image">添加图像</a>）。</li>
+      </ul>
+      <h3 id="copy-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>无法剪切、无法清除</b>：已锁定、隐藏、锁定透明像素的图层，不会执行剪切和清除（原因会显示在下方）。复制仍然可以进行。</li>
+        <li><b>无法创建新图层（Lite）</b>：Lite 版每个纹理集包含底色在内，最多 4 个图层（<a href="/petanuri/zh/manual/start#editions">版本</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="image" data-keywords="贴花 贴纸 标志 徽章 照片 导入图片 拖放 投影 png logo">
+      <h2>贴图像</h2>
+      <p>用边框对齐大小和位置，贴上标志或花纹图像。贴法有 3 种。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">贴法</th><th scope="col">开始方式</th><th scope="col">边框出现的位置</th></tr></thead><tbody>
+        <tr><td>添加图像</td><td>文件 → 导入 →“将图像作为图层导入”、把图像拖放到窗口、在其他应用中复制图像后按 <kbd>Ctrl</kbd>+<kbd>V</kbd></td><td>UV 视图已打开时出现在 UV 上，关闭时出现在 3D 的正中（投影到可见的面）</td></tr>
+        <tr><td>将图像贴到 3D</td><td>编辑 →“将图像贴到 3D”</td><td>3D 视图（投影到可见的面）</td></tr>
+        <tr><td>将图像贴到 UV</td><td>编辑 →“将图像贴到 UV”</td><td>UV 视图</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>把图像拖放到窗口。会出现用来放置图像的边框。</li>
+        <li>移动边框，对齐大小和位置。也可以一边移动视角一边对齐。</li>
+        <li>按 <kbd>Enter</kbd> 确定。图像会放进以文件名命名的新图层。</li>
+      </ol>
+      <h3 id="image-detail">边框下方的栏</h3>
+      <ul class="mn-list">
+        <li>保持纵横比，以能放进可见范围的大小放置。透明的部分保持透明。</li>
+        <li>按 <kbd>Esc</kbd> 取消的话，什么都不会留下。确定之后，撤销 1 次即可删除。</li>
+        <li>“铺满整个纹理”（添加图像时）：拉伸到整个 UV，放入新图层。用于按 UV 大小画好的图像。</li>
+        <li>“到新图层”（贴到 3D 时。初始为开启）：为每个被贴上的纹理集创建新图层。关闭后，则贴到当前图层。</li>
+        <li>“斜面也保持浓度”：即使是朝向侧面的面，也不会变淡地贴上。</li>
+        <li>也可以使用水平翻转、垂直翻转、不透明度，以及边框的形状（<a href="#warp">自由变换、变形</a>）。</li>
+        <li>左右对称和选区也有效。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="text" data-keywords="文本 名字 logo 字体 竖排 横排 描边 轮廓字 输入法">
+      <h2>添加文字</h2>
+      <p>在模型上就地输入文字并贴上。字体、大小、颜色也可以逐字更改。</p>
+      <ol class="mn-steps">
+        <li>选择“文字”工具（<kbd>T</kbd>）。在辅助工具中选择“横排文字”或“竖排”。</li>
+        <li>点击 3D 视图（或 UV 视图）。会出现边框和文字窗口（也可以从 编辑 →“添加文字”开始）。</li>
+        <li>直接输入即可。也可以输入日语，转换候选会显示在文字旁边。</li>
+        <li>按 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 确定（输入过程中的 <kbd>Enter</kbd> 是换行）。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-text.webp" width="654" height="900" alt="在 3D 边框上就地输入文字" loading="lazy"><figcaption>文字可就地输入</figcaption></figure>
+      <h3 id="text-window">文字窗口</h3>
+      <ul class="mn-list">
+        <li>在这里设定字体、大小、颜色、粗体、斜体、竖排、行距、字距、对齐、描边。</li>
+        <li>打开文字窗口期间，颜色面板的前景色就是文字颜色，背景色就是描边颜色。点击窗口中的颜色方块也可以选择。</li>
+        <li>勾选标题处的“用滑块调整”后，大小、描边、行距、字距也可以用滑块调节。</li>
+        <li>字体列表的下方，会以“此电脑的字体”为名，列出电脑中已安装的全部字体。</li>
+        <li>用“加载字体”也可以使用字体文件（.ttf、.otf），仅在本次启动期间有效。</li>
+        <li>窗口与边框重叠时，可以抓住窗口标题（“文字”）来移动。下次也会保持该位置。</li>
+        <li>点击 UV 视图开始的话，文字会贴在 UV 上。</li>
+      </ul>
+      <h3 id="text-keys">输入时的操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>点击边框内（双击也可以）</td><td>从点击处开始输入</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd>、<kbd>Home</kbd>、<kbd>End</kbd></td><td>移动输入位置（竖排时，<kbd>↑</kbd> <kbd>↓</kbd> 在字之间前后移动，<kbd>←</kbd> 移到下一行）</td></tr>
+        <tr><td><kbd>Shift</kbd>+方向键、在边框内拖动</td><td>选择文字</td></tr>
+        <tr><td><kbd>Backspace</kbd>、<kbd>Delete</kbd></td><td>删除文字</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+拖动</td><td>移动边框（角、边、上方的圆点照常使用）</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>第 1 次停止输入（边框会保留，可拖动移动）。第 2 次放弃文字</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">输入期间，按键快捷键（如 <kbd>E</kbd> 切换橡皮擦）无效。刚开始时全部文字处于选中状态，所以一输入就会被替换。</div>
+      <h3 id="text-char">逐字更改颜色和大小</h3>
+      <ul class="mn-list">
+        <li>选中文字后，再更改颜色（前景色、背景色）、大小、字体、粗体、斜体、字距、描边，就只有选中的文字会改变。</li>
+        <li>不选择就更改的话，会用于接下来输入的文字。未处于输入状态时（按 <kbd>Esc</kbd> 之后等），全部文字都会改变。</li>
+        <li>会改变哪些文字，显示在文字窗口的“更改颜色和大小时：”中。</li>
+        <li>行距、对齐、竖排对全部文字生效。大小不同的文字会对齐下边线排列。</li>
+      </ul>
+      <h3 id="retext">重新输入文字（文字图层）</h3>
+      <p>勾选“到新图层”后贴上的文字会成为<strong>文字图层</strong>，图层列表中会带有“T”标记。贴到 UV 上的文字，始终是文字图层。之后可以更改文字、字体、颜色等，再重新贴上。</p>
+      <ol class="mn-steps">
+        <li>在图层列表中双击文字图层（右键 →“重新输入文字”也可以）。</li>
+        <li>文字窗口和边框会以贴上时的状态打开。逐字设置的颜色和大小也保持原样。</li>
+        <li>修改后按 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 重新绘制。可以用撤销恢复。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在文字工具下点击文字，或使用工具属性中的“重新输入所选文字图层”，也可以开始。</li>
+        <li>贴在 3D 上的文字，会先回到贴上时的视角，再显示边框。结束后会回到原来的视角。</li>
+        <li>要重命名，请右键 →“重命名”。</li>
+        <li>右键 →“栅格化（之后无法重新输入文字）”，会变成普通图层。</li>
+        <li>它会包含在工程文件中，重新打开后也能重新输入。写入 PSD 时作为普通图层。</li>
+      </ul>
+      <h3 id="text-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>按键后工具没有切换</b>：输入文字期间，快捷键无效。请按 <kbd>Esc</kbd> 结束输入。</li>
+        <li><b>重新输入后，补画的部分消失了</b>：在文字图层上补画后，标记会变成“T+”。重新输入时补画的部分会消失，所以请先用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销，把补画的部分分到另一个图层后，再重新输入。</li>
+        <li><b>显示“找不到字体”</b>：加载的字体只在本次启动期间有效。系统会改用其他字体重新输入，要恢复成原来的字体时，请用“加载字体”再加载一次。</li>
+        <li><b>无法重新输入</b>：关闭“到新图层”而贴到当前图层的文字，以及已栅格化的文字，都是普通的图像内容。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="ruler" data-keywords="尺子工具 直线 画直线 集中线 透视线 平行线 同心圆 吸附 辅助线 参考线">
+      <h2>用尺子对齐线条</h2>
+      <p>让绘制的线条吸附到尺子上，画出笔直的线，或指向中心的线。在 3D 视图和 UV 视图中都能使用。</p>
+      <ol class="mn-steps">
+        <li>选择“尺子”工具，在辅助工具中选择尺子的种类。</li>
+        <li>在 3D 视图或 UV 视图中创建尺子（创建方法见下表）。</li>
+        <li>换成钢笔等工具开始绘制。线条会沿着尺子。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">创建方法</th><th scope="col">生效的线</th></tr></thead><tbody>
+        <tr><td>直线尺</td><td>拖动</td><td>在附近（吸附距离内）开始绘制的线，会变成直线</td></tr>
+        <tr><td>曲线尺</td><td>点击打点，按 <kbd>Enter</kbd> 或双击结束（按 <kbd>Esc</kbd> 取消）</td><td>在附近开始绘制的线，会沿着曲线</td></tr>
+        <tr><td>同心圆尺</td><td>点击处为中心</td><td>无论在哪里绘制，都会与中心保持距离，成为圆</td></tr>
+        <tr><td>放射线尺</td><td>点击处为中心</td><td>无论在哪里绘制，都会成为指向中心的线</td></tr>
+        <tr><td>平行线尺</td><td>拖动决定方向</td><td>无论在哪里绘制，都会成为该方向的线</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-ruler.webp" width="654" height="620" alt="沿放射线尺子绘制的线条" loading="lazy"><figcaption>放射线尺</figcaption></figure>
+      <h3 id="ruler-detail">移动、关闭、删除尺子</h3>
+      <ul class="mn-list">
+        <li>尺子上的圆点（端点、中心、点）可以拖动移动。吸附距离在工具属性中设定。</li>
+        <li>3D 视图的尺子，即使移动视角也会保留在屏幕上。UV 视图中也可以另外放置。</li>
+        <li>有尺子时，该区域下方的正中会出现一条栏（尺子的种类、“吸附”的开关、“删除”）。“删除”只会删除该区域的尺子。</li>
+        <li>用 显示 → 线与尺子 →“吸附到尺子”（<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd>）来切换。同一处的“删除尺子”可以删除尺子。</li>
+        <li>在为曲线尺打点的过程中，可以用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤回最后一个点。用 <kbd>Ctrl</kbd>+<kbd>Y</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> 可以重做。</li>
+      </ul>
+      <h3 id="ruler-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>线条自动变直或变弯</b>：尺子还留着。请关闭下方栏中的“吸附”，或用“删除”清除（也可以用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd> 关闭）。</li>
+        <li><b>线条不沿直线尺、曲线尺</b>：尺子只对在其附近开始绘制的线生效。请在工具属性中加大吸附距离。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/layers#mask">图层蒙版</a></li><li><a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/deco"><small>← 上一页</small>图章、图案、缝线</a><a class="next" href="/petanuri/zh/manual/layers"><small>下一页 →</small>图层</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +489,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

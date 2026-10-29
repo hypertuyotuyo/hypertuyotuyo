@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bake AO | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Calculate darkness where light is blocked and create layers. Bake per texture set/object, adjust shadow distance, and export lilToon shadow AO or PNG. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Calculate the darkness of areas light can&#x27;t reach from the shape and put it on a layer. Bake per texture set and per object, shadow reach distance, lilToon Shadow AO and export to PNG. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/ao">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Bake AO | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Calculate darkness where light is blocked and create layers. Bake per texture set/object, adjust shadow distance, and export lilToon shadow AO or PNG. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Calculate the darkness of areas light can&#x27;t reach from the shape and put it on a layer. Bake per texture set and per object, shadow reach distance, lilToon Shadow AO and export to PNG. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/ao">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Bake AO Pro | PetaNuri3D Manual",
-   "description": "Calculate darkness where light is blocked and create layers. Bake per texture set/object, adjust shadow distance, and export lilToon shadow AO or PNG. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Calculate the darkness of areas light can't reach from the shape and put it on a layer. Bake per texture set and per object, shadow reach distance, lilToon Shadow AO and export to PNG. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/ao",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,131 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao" aria-current="page">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao" aria-current="page">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Bake AO</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Bake AO</p>
     <h1 class="mn-h1">Bake AO <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">Calculate darkness caused by nearby objects under arms, the chin or bangs, between fingers and in overlapping clothes, per texture set. Available in Pro.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#bake">How to bake</a></li><li><a href="#objects">Bake selected objects</a></li><li><a href="#options">Useful settings</a></li></ul></div>
-    <section class="mn-sec" id="bake"><h2>How to bake</h2><ol class="mn-steps"><li>Open Filter → Bake → Bake AO.</li><li>In the table, choose sets to bake and sets that cast shadows (visible sets are selected initially).</li><li>Choose objects to bake in the “Objects” column (All/None; click a name to briefly highlight it in 3D).</li><li>Choose quality (ray count and samples within each texel) and shadow distance (Close 3cm, Normal 8cm, Wide 20cm or a custom value).</li><li>Click “Bake.” An “AO” layer in Multiply mode is added at the top of each set.</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="Bake AO dialog" loading="lazy"><figcaption>Bake AO dialog</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="After baking AO" loading="lazy"><figcaption>After baking</figcaption></figure></div><div class="mn-tip">Bakes the current pose and blend shapes. You can move the 3D view while baking. Canceling leaves everything unchanged.</div><div class="mn-tip">To make the AO&#x27;s white background transparent and recolor its shadows, use <a href="/petanuri/en/manual/layers#alpha">Convert luminance to opacity</a>. To add soft shading from face direction or cast shadows from light, see <a href="/petanuri/en/manual/bake">Easy Bake, materials and shading</a>.</div></section><section class="mn-sec" id="objects"><h2>Bake selected objects</h2><ul class="mn-list"><li>Only the chosen objects&#x27; UV areas (plus a little padding outside the islands) are written. Other objects in the same set remain unchanged.</li><li>Choose “Calculate shadows from selected objects only” (default) or “Calculate shadows from the whole model” (unselected objects also cast shadows).</li><li>Selections are remembered per model.</li></ul></section><section class="mn-sec" id="options"><h2>Useful settings</h2><ul class="mn-list"><li>“Don&#x27;t receive other shadows”: useful when covered areas such as the body under clothes become completely black.</li><li>“Match model height”: scale distances in proportion to model size.</li><li>Adjust result strength and contrast to control darkness.</li><li>Cutout and translucent materials let light pass through transparent image areas, such as hair tips.</li><li>Export: write to lilToon&#x27;s “Shadow AO” (included with material exports), or save PNG (&lt;set name&gt;_AO.png). If shadows are too strong, try rebaking with strength 0.6–0.8.</li></ul><div class="mn-tip">One Undo restores all sets.</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/material"><small>← Previous</small>Final look and lilToon materials</a><a class="next" href="/petanuri/en/manual/bake"><small>Next →</small>Easy Bake, materials and shading</a></nav>
+    <p class="mn-intro">Calculates the areas that get dark because surrounding objects block the light (AO), such as under the arms, under the chin, under the bangs, between fingers and where clothing overlaps, and bakes them into a layer. It bakes with the current pose and blend shape as they are.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <p class="mn-proof">This is a Pro feature. In Lite the menu item has a lock icon, and in Standard it doesn't appear in the menu (<a href="/petanuri/en/manual/start#editions">Edition comparison</a>).</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Open Filters → Bake → "Bake AO (areas darkened by surroundings)" (<a href="#bake">Details</a>).</li>
+      <li>Check the texture sets to bake in the table, then click "Bake". An "AO" layer in Multiply mode is added at the top of each set (<a href="#bake">Details</a>).</li>
+      <li>If it's too dark, lower the opacity of the "AO" layer, or lower "Strength" and bake again (<a href="#options">Details</a>).</li>
+      <li>To bake only part of the model, such as an accessory, choose it under "Objects" (<a href="#objects">Details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#bake">Bake AO</a></li><li><a href="#objects">Bake only some objects</a></li><li><a href="#options">Adjust darkness and quality</a></li><li><a href="#output">Output as lilToon Shadow AO or PNG</a></li></ul></div>
+
+    <section class="mn-sec" id="bake" data-keywords="ambient occlusion crevices contact shadows darken gaps occlusion map baking shading">
+      <h2>Bake AO</h2>
+      <p>This creates a picture in which the areas light can hardly reach are darkened, based on the shape of the model. Use it as a base for shading or when you want to add depth.</p>
+      <ol class="mn-steps">
+        <li>Open Filters → Bake → "Bake AO (areas darkened by surroundings)".</li>
+        <li>In the "Texture sets to bake" table, check the sets you want to bake. At first, the visible sets are checked.</li>
+        <li>Choose "Quality" and "Shadow distance". If you're unsure, leave the defaults.</li>
+        <li>Click "Bake". An "AO" layer in Multiply mode is added at the top of each set.</li>
+        <li>Close the window with "Close" or ×.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="The Bake AO dialog" loading="lazy"><figcaption>The Bake AO dialog</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-before.webp" width="550" height="810" alt="The model before baking AO" loading="lazy"><figcaption>Before baking</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="After baking AO: the armpits and under the chin are darker" loading="lazy"><figcaption>After baking</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>You can still move the 3D view while baking. If you stop with "Cancel", nothing changes.</li>
+        <li>One Undo restores all sets.</li>
+        <li>Estimated time: about 30 seconds for an avatar with 6 texture sets at 2048 resolution, with the default settings (when calculated on the GPU).</li>
+        <li>For sets whose rendering mode is "Cutout" or "Transparent", light passes through the transparent parts of the picture (such as hair tips). "Opaque" ignores transparency (see <a href="/petanuri/en/manual/material#look-panel">Rendering mode</a>).</li>
+      </ul>
+
+      <h3 id="bake-sets">Table of texture sets to bake</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Column</th><th scope="col">Meaning</th></tr></thead><tbody>
+        <tr><td>Bake</td><td>Bakes AO into this set's texture (it receives shadows from other objects)</td></tr>
+        <tr><td>Cast shadows</td><td>This set also casts shadows onto other sets. If you uncheck it, it casts shadows only onto itself</td></tr>
+        <tr><td>Ignore other shadows</td><td>Does not receive shadows from other sets. Check this when something that is covered, such as the body under clothing, turns pitch black</td></tr>
+      </tbody></table></div>
+      <p>For example, if you bake the body and set the hair and clothing to "Cast shadows" only, the shadows of the hair and clothing fall on the body.</p>
+
+      <h3 id="bake-quality">Quality and shadow reach distance</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Options</th></tr></thead><tbody>
+        <tr><td>Rays</td><td>64 to 4096 per texel (512 by default). More rays remove graininess but take longer</td></tr>
+        <tr><td>Within texel</td><td>1×1 (center only, fast), 2×2, 4×4 (checks 16 spots, so edges are smooth; default)</td></tr>
+        <tr><td>Distance</td><td>Near (3 cm; only where surfaces touch, such as between fingers, collars and hairlines), Normal (8 cm; also under bangs, armpits, under the chin and skirt hems; default), Wide (20 cm; more realistic, so an arm also darkens the side of the body), Custom (the value in cm below)</td></tr>
+        <tr><td>Scale to the model's height (distance for a 1.5 m tall model)</td><td>Makes the distance proportional to the model's height. The distance that actually applies is shown in the window</td></tr>
+      </tbody></table></div>
+
+      <h3 id="bake-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The body under the clothing turns pitch black</b>: Check "Ignore other shadows" on the body's set and bake again.</li>
+        <li><b>Grain (noise) is noticeable</b>: Increase "Rays", or set "Within texel" to 4×4. "Dither" in the detailed settings also makes the steps in the gradation less visible.</li>
+        <li><b>No light passes through the hair tips</b>: Set the hair material's rendering mode to "Cutout" or "Transparent", then bake.</li>
+        <li><b>It isn't in the menu, or it has a lock icon</b>: This is a Pro feature.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="objects" data-keywords="partial only some mesh accessory bell selected objects single object exclude">
+      <h2>Bake only some objects</h2>
+      <p>In the "Objects" section of the dialog, you can choose what to bake per object (mesh). For example, with the sample "Shinobu", choosing only furin bakes only the bell.</p>
+      <ol class="mn-steps">
+        <li>In the "Objects" section, click "None" to uncheck everything.</li>
+        <li>Check the objects you want to bake. Click a name to make it glow slightly in 3D.</li>
+        <li>Choose how shadows are calculated, then click "Bake".</li>
+      </ol>
+      <ul class="mn-list">
+        <li>It writes only to the UV area of the selected objects (and a little beyond the islands). The areas of other objects in the same texture set stay as they are.</li>
+        <li>"Shadows from selected only" (default): calculates with only the shape of the selected objects. Shadows from other things, such as the body, are not included.</li>
+        <li>"Shadows from whole model": objects you didn't select also cast shadows. Areas close to the body get darker.</li>
+        <li>Sets that contain none of the selected objects are not baked. If all objects are selected, the whole model is baked.</li>
+        <li>Your selection is remembered per model.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="options" data-keywords="too dark too light intensity weaken fade contrast advanced falloff GPU CPU CUDA bleed dither">
+      <h2>Adjust darkness and quality</h2>
+      <p>If the baked AO is too dark or too light, you can adjust it either after or before baking.</p>
+      <ul class="mn-list">
+        <li><b>After baking</b>: Lower the opacity of the "AO" layer. You can also use a mask or the Eraser to remove only the areas you don't need.</li>
+        <li><b>Before baking</b>: Change the darkness with "Strength" (0 gives white) and "Contrast" under "Final look".</li>
+        <li>Use "Reset to defaults" to return the settings to their initial values (your choice of sets stays as it is).</li>
+      </ul>
+      <h3 id="options-detail">Detailed settings</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Details</th></tr></thead><tbody>
+        <tr><td>Falloff</td><td>Smooth (farther hits count less; default), Linear, None (same strength within the distance)</td></tr>
+        <tr><td>Normal</td><td>Smooth (around the interpolated normal; default), Surface orientation</td></tr>
+        <tr><td>Compute</td><td>Auto (GPU, or CPU if unavailable), CUDA (NVIDIA GPU; app (exe) only, experimental), CPU (very slow)</td></tr>
+        <tr><td>Verify GPU results on the CPU</td><td>Checks a small sample of the calculation results for each set</td></tr>
+        <tr><td>Meshes not in any set also cast shadows</td><td>Meshes that can't be painted (such as those with no UV) are also counted as objects that cast shadows</td></tr>
+        <tr><td>Outside islands</td><td>The width (px) to extend outside the islands. If you choose "Auto", it is decided for you</td></tr>
+        <tr><td>Fill everything outside islands</td><td>Keeps the background from mixing into the edges even when the texture is shrunk</td></tr>
+        <tr><td>Dither</td><td>Makes the steps in smooth gradations less visible</td></tr>
+        <tr><td>Offset from surface</td><td>The distance the starting point of each check is raised off the surface (mm, for a 1.5 m tall model)</td></tr>
+        <tr><td>Nearby translucency</td><td>Translucent surfaces within this many mm are ignored (thin meshes such as cheek blush)</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">To make the white areas of the AO transparent and change the shadow color, you can use <a href="/petanuri/en/manual/layers#alpha">Convert luminance to opacity</a>. To add soft shading based on surface orientation, or cast shadows from light, go to <a href="/petanuri/en/manual/bake">Easy Bake, material look and shading</a>.</div>
+    </section>
+
+    <section class="mn-sec" id="output" data-keywords="AO map shadow border mask export png save lilToon shadow ao texture output">
+      <h2>Output as lilToon Shadow AO or PNG</h2>
+      <p>In the "Export" section of the dialog, you can choose where the baked AO goes. You can choose any number of them.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Where it goes</th></tr></thead><tbody>
+        <tr><td>Add an "AO" layer (Multiply, top of the set)</td><td>Bakes into the texture color (default)</td></tr>
+        <tr><td>Also write to lilToon's "Shadow AO" (AO Map)</td><td>Adds the AO layer to the top of the material's "Shadow AO" paint target folder. The darker an area is, the more easily shadow appears there. It is output together with the <a href="/petanuri/en/manual/material#export">Material export</a></td></tr>
+        <tr><td>Also save as PNG after baking (&lt;set name&gt;_AO.png)</td><td>Saves an image of the AO alone</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>You can also save it later from Filters → Bake → "Export AO as PNG (last bake result)". Areas outside the islands are filled using the extension width in the AO settings (or the export bleed, if that is wider).</li>
+        <li>When writing to Shadow AO, if that set isn't using shadows, it is switched to "Use shadow" (Undo reverts this).</li>
+      </ul>
+      <div class="mn-tip">lilToon's AO map shifts the shadow boundary. If the shadow feels too strong, bake again with "Strength" at 0.6 to 0.8.</div>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/bake">Easy Bake, material look and shading</a></li><li><a href="/petanuri/en/manual/material#channels">Paint shadow color and masks (paint targets)</a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes</a></li><li><a href="/petanuri/en/manual/layers#props">Layer properties</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/material"><small>← Previous</small>lilToon materials</a><a class="next" href="/petanuri/en/manual/bake"><small>Next →</small>Easy Bake</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +266,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

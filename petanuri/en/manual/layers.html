@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layers | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Layers, folders, masks, blend modes, adjustment layers, filters, luminance-to-opacity, gradation maps and history. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Layers, folders, masks, blend modes, adjustment layers, filters, convert luminance to opacity, gradation maps and history. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/layers">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Layers | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Layers, folders, masks, blend modes, adjustment layers, filters, luminance-to-opacity, gradation maps and history. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Layers, folders, masks, blend modes, adjustment layers, filters, convert luminance to opacity, gradation maps and history. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/layers">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -58,19 +58,19 @@
     {
      "@type": "ListItem",
      "position": 4,
-     "name": "Layer",
+     "name": "Layers",
      "item": "https://hyper-tuyotuyo.com/petanuri/en/manual/layers"
     }
    ]
   },
   {
    "@type": "TechArticle",
-   "headline": "Layer | PetaNuri3D Manual",
-   "description": "Layers, folders, masks, blend modes, adjustment layers, filters, luminance-to-opacity, gradation maps and history. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "headline": "Layers | PetaNuri3D Manual",
+   "description": "Layers, folders, masks, blend modes, adjustment layers, filters, convert luminance to opacity, gradation maps and history. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/layers",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,541 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers" aria-current="page">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers" aria-current="page">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Layers</p>
-    <h1 class="mn-h1">Layer</h1>
-    <p class="mn-intro">Layers stack separately for each texture set. Paint in layers just like a 2D illustration.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#basic">Layer basics</a></li><li><a href="#folder">Folders and layer masks</a></li><li><a href="#props">Layer properties</a></li><li><a href="#stroke">Stroke (layer outline)</a></li><li><a href="#adjust">Adjustment layers and filters</a></li><li><a href="#alpha">Convert luminance to opacity</a></li><li><a href="#gradmap">Gradation map</a></li><li><a href="#autofill">Auto fill (base colors from line art)</a></li><li><a href="#history">History and Undo</a></li><li><a href="#sleep">Unload layers (save memory)</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>Layer basics</h2><ul class="mn-list"><li>Switch texture sets in the top panel header (when there are 2 or more; resolution appears at right).</li><li>Below are blend mode, opacity, clipping, transparency lock and lock icons (click to toggle; colored means enabled).</li><li>Bottom icon buttons: Add, Folder, Adjustment, Duplicate, Delete, Merge, Mask, Move up, Move down, More (hover for names and current keys).</li><li>The bottom Base layer contains the color/image chosen at creation. Paint directly on it too.</li><li>28 blend modes (Normal, Multiply, Screen, Overlay, Add, Add (glow), Color dodge (glow), Soft light, Hard light, Hue, Color, Luminosity and more).</li><li><strong>Multiple selection</strong>: Click names with  <kbd>Ctrl</kbd> to select individual layers, or <kbd>Shift</kbd> to select a range. Visibility, blend mode, opacity, clipping, protection, lock, delete, duplicate, grouping and merge apply together (one Undo).</li><li>Select with keys only: <kbd>Alt</kbd>＋<kbd>]</kbd> (layer above), <kbd>Alt</kbd>＋<kbd>[</kbd> (layer below). In 3D, right-click → Select layer painted here selects a visible layer with artwork at the clicked point (anything not visible, such as masked-out areas or 0% opacity, is skipped).</li><li>Drag layer rows directly with a pen to reorder. Scroll the list with  <kbd>Space</kbd> + drag.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="Layers panel: cheeks, arm stars and base" loading="lazy"><figcaption>Cheeks and arm stars on separate layers</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="Layer context menu" loading="lazy"><figcaption>Right-click menu</figcaption></figure></div><div class="mn-tip warn">Lite allows <strong>up to 4 layers including the base, per texture set</strong> (paint/adjustment layers count; folders/masks do not). At 4 layers, the panel shows Layers 4 / 4 (including base, Lite), and Add/Duplicate show locks. Standard and above allow unlimited layers.</div><div class="mn-tip">For many layers, drag the panel boundary downward to expand the list. The list follows the height in docked, tabbed, and separate windows while keeping the top settings and bottom action buttons.</div><div class="mn-tip">Color tags (all editions): use the color box at the left of a layer row, or right-click → Color tag, to choose none, red, orange, yellow, green, cyan, blue, purple, or gray. Tags apply to all selected layers and undo in one step. Tagged rows show a stripe and row color, and a folder color continues as a line to its layers.</div><div class="mn-tip">When any layer has a tag, “Show by color” and the colors in use appear above the list. Click a color to list only those layers. Tags are saved in projects and map to Photoshop layer colors in PSD export and import (Standard and Pro; cyan becomes blue).</div><div class="mn-tip">Under … (More), Thumbnail size offers small (24px), medium (40px), large (64px), and extra large (96px). Put the button row on top moves the bottom buttons above the list. Both settings persist after restart.</div><div class="mn-tip">Dragging any of several selected layers moves them all in order (drop on the middle of a folder row to put them inside). While renaming, you can drag with the mouse to select text.</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="Layers panel with color tags" loading="lazy"><figcaption>Color tags and Show by color</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="Color tag picker" loading="lazy"><figcaption>Choosing a color tag</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="Layers panel with large thumbnails" loading="lazy"><figcaption>Thumbnail size: large</figcaption></figure></div><div class="mn-tip">Mirror copy (all editions): Layer → Mirror copy left/right (also in the layer row’s right-click menu) copies paint from one side of the 3D model to the other: Left → Right or Right → Left (from the model’s view). It works even when the UVs differ left and right, and a selection limits the destination. “Copy to a new layer” puts only the copied part on a new layer. One Ctrl+Z reverts it.</div><div class="mn-tip">You can also copy the artwork inside the selection to the opposite side (using the selection as the source) and mirror copy masks left/right (v1.3.0 and later).</div><div class="mn-tip">Change to foreground color (all editions, v1.3.0 and later): Edit → Change to foreground color (keep transparency) (also in the layer right-click menu) changes only the painted areas of the selected layer to the current foreground color in one go. Density (transparency) and transparent areas stay as they are, so it is handy for recoloring line art. If there is a selection, only the inside is changed. It cannot be used on normal map image layers.</div><div class="mn-tip">Merging normal map images (Pro, v1.3.0 and later): you can merge the visible layers that continue up from the bottom of a normal map folder. Keep the folder opacity at 100% and disable the folder mask. Combinations that cannot be merged are explained before anything changes.</div><div class="mn-tip">Add (glow) and Color dodge (glow) (all editions): these are in the Lighten group of blend modes. You can choose them as the blend mode of layers, folders, and adjustment layers, for border blending, and as a brush drawing mode. Unlike the regular Add and Color dodge, they stay strong where opacity is lowered or at the edges of soft brushes: Add (glow) adds light until it saturates, and Color dodge (glow) glows more strongly in brighter areas (dark areas are brightened only a little). Even over transparent areas, the layer’s color glows as if lighting itself.</div><div class="mn-tip">In PSD files (Standard and Pro), these are saved as the closest blend modes (Linear dodge and Color dodge) with “[glow]” added to the end of the layer name. PetaNuri3D turns them back into the glow versions when importing (other software shows semi-transparent areas and areas over transparency differently).</div><div class="mn-tip">Scroll the list until the selected layer is visible (all editions): when you select a layer outside the list, for example with keys (Alt+] / Alt+[), with Select layer painted here in the 3D right-click menu, or with Auto-select layer in the Move tool, the list scrolls to show its row if it is hidden (folders that are closed are opened). Turn this off with “Scroll the list until the layer selected with keys, etc. is visible” in the Layers panel’s … (More) menu or the list’s right-click menu (on by default).</div></section><section class="mn-sec" id="folder"><h2>Folders and layer masks</h2><ul class="mn-list"><li><strong>Folder</strong>: Create with the Folder button (<kbd>Ctrl</kbd>＋<kbd>G</kbd>). <kbd>Shift</kbd> + button (<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd>) groups selected layers into a folder. Drag a row to a folder&#x27;s center to place it inside. Modes other than the default Pass through first composite contents into one image.</li><li><strong>Layer mask</strong>: Mask button → Add show-all/hide-all mask (also from a selection). Click the mask thumbnail to paint it (paint reveals; eraser hides).</li><li><kbd>Shift</kbd> + mask thumbnail toggles enabled/disabled. Also show mask area, invert, apply (rasterize) or delete.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="Layers panel with folders, masks and adjustment layers" loading="lazy"><figcaption>Folders, masks and adjustment layers</figcaption></figure><div class="mn-tip">Masks (all editions): Mask button or right-click → Mask → Copy mask, then Paste mask on another layer (even in another texture set). Dragging a mask thumbnail onto another layer row moves it; Alt+drag copies it.</div><div class="mn-tip">Painting on a mask now uses the brightness of the color (white = show, black = hide, gray = half). For the old behavior, turn off Mask → Paint masks with the brightness of the color. “Show mask in black &amp; white” (or Alt+click the mask thumbnail) shows only the mask, and “Copy this layer’s brightness as a mask” turns a black-and-white painting into a mask.</div></section><section class="mn-sec" id="props"><h2>Layer properties</h2><p>A panel gathering settings for the selected layer (just above Layers in the default layout).</p><ul class="mn-list"><li>The header shows type (paint layer, folder, text layer, adjustment layer, paint-target folder etc.) and name.</li><li>Adjustment layer: value controls. While dragging a slider only the image changes; releasing creates one Undo step.</li><li>Raster layers, folders and text layers: Stroke visibility, Add and Settings.</li><li>Text layers show Edit text; masked layers show mask status.</li><li>Change blend mode, opacity, clipping, transparency lock and lock in the Layers panel.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="Layer properties panel" loading="lazy"><figcaption>Layer properties</figcaption></figure><div class="mn-tip">Repeating pattern (all editions): in Layer properties for a pixel layer, use Repeating pattern → Choose a pattern to fill… and pick an image file, reference image, or texture (in the drawing color). It fills the layer, repeating in all directions (current pixels are replaced; undo is available). Patterns can also be fitted to UV seams.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="Layer with a repeating pattern and its properties" loading="lazy"><figcaption>Repeating pattern</figcaption></figure><div class="mn-tip">Repeating pattern: the top row shows the current pattern’s image and name; click it to open the pattern list. “Recolor with foreground color” just below keeps the shape but uses the current foreground color, and “Back to image colors” restores the original colors.</div></section><section class="mn-sec" id="stroke"><h2>Stroke (layer outline) <span class="tier std">Standard</span></h2><p>Adds an outline during compositing without changing the layer artwork. Adjust width/color or turn it off later.</p><ul class="mn-list"><li>Open via layer right-click → Stroke, Layer menu → Stroke, or Add/Settings in Layer properties. Layers with strokes show fx; clicking it opens the same dialog.</li><li>Settings: Size (width in texture px), Position (outside/inside/center), Blend, Opacity, Color. Changes preview immediately; OK (<kbd>Enter</kbd>) applies, Cancel (<kbd>Esc</kbd>) restores.</li><li>Follows the shape after masking. Clipped layers stay within their base&#x27;s painted area. Available on folders/text layers too.</li><li>Right-click → Stroke: toggle visibility, copy, paste (to all selected layers), clear, rasterize.</li><li>Saving: project files preserve settings. PNG/material exports include the stroke; PSD writes it into rasterized layers.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="Stroke dialog and outlined artwork" loading="lazy"><figcaption>Stroke</figcaption></figure><div class="mn-tip">Strokes are calculated in UV, so those extending past island edges may appear cut off at those edges in 3D.</div><div class="mn-tip warn">Adding/editing strokes requires Standard or above. Lite preserves strokes in opened projects and can show/hide, copy, clear or rasterize them.</div></section><section class="mn-sec" id="adjust"><h2>Adjustment layers and filters <span class="tier std">Standard</span></h2><ul class="mn-list"><li><strong>Adjustment layers</strong>: Adjustment button → Hue/saturation/lightness, Brightness/contrast, Levels, Invert, Grayscale, Posterize, Threshold, Gradation map. Corrects without rewriting artwork below. Edit in Layer properties; restrict with masks or clip to the layer directly beneath.</li><li><strong>Filters</strong> (Filter menu): Hue/saturation/lightness, Brightness/contrast, Levels, Posterize, Threshold, Gradation map, Gaussian blur, Sharpen (unsharp mask), Invert, Grayscale. Applies to the selected layer (Apply to all visible texture sets also available).</li><li>Filter values preview immediately on the model; OK (<kbd>Enter</kbd>) applies, Cancel (<kbd>Esc</kbd>) restores. You can move the view while the dialog stays open.</li><li>Blur/sharpen calculate within each UV island, keeping island edges from darkening.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="Changing cape color with Hue/saturation/lightness" loading="lazy"><figcaption>Hue/saturation/lightness filter</figcaption></figure><div class="mn-tip">Filters (Standard and Pro): the Filters menu is organized into Color adjustment, Tone, Blur, Sharpen, Noise, and Effects submenus, and adds Curves, Color Balance, Color Temperature, Vibrance, Replace Color, Exposure, Motion Blur, Radial Blur, High Pass, Add noise, Reduce noise (median), Mosaic, Extract Lines, and Emboss.</div><div class="mn-tip">Adjustment layers also gain Curves, Color Balance, Color Temperature, Vibrance, Replace Color, Exposure, and Add noise. In PSD, Curves, Color Balance, Vibrance, and Exposure stay adjustment layers on export and import. Adjustment layer masks can be made from a selection (replacing the current mask).</div><div class="mn-tip">Filters on lines drawn over transparency (Standard and Pro): Mosaic also averages alpha (transparency) per cell, and Sharpen (unsharp mask) sharpens alpha as well. Reduce Noise (Median) also removes specks over transparency, and Extract Lines, Emboss, and High Pass treat transparent areas as white paper when measuring brightness (lines from Extract Lines and the High Pass result also appear where it was transparent). After High Pass, flat areas and large transparent areas become 50% gray, so you can layer the result with the Overlay or Soft light blend mode. On layers with Lock transparency, alpha stays unchanged.</div><div class="mn-tip">When there is a selection, the filter window shows “Applies only inside the selection.” Texture sets without a selection are listed as unchanged because they have no selection.</div></section><section class="mn-sec" id="alpha"><h2>Convert luminance to opacity</h2><p><strong>Filter → Convert luminance to opacity</strong> is available in Lite and above. Turns white backgrounds transparent and retains dark areas as black shadows. Useful for recoloring only AO shadows.</p><ol class="mn-steps"><li>Select a paint layer other than Base, such as AO. Disable lock and transparency lock if enabled.</li><li>Run Convert luminance to opacity. White becomes transparent; darker areas become more opaque black.</li><li>To recolor shadows, enable transparency lock after converting, then paint any color. Shadow intensity remains as opacity.</li></ol><div class="mn-tip">This filter converts the selected layer&#x27;s pixels; it is not an adjustment layer. Unavailable for Base, masks and adjustment layers. It does not retain original colors while making them transparent. <kbd>Ctrl</kbd>＋<kbd>Z</kbd>  undoes it.</div></section><section class="mn-sec" id="gradmap"><h2>Gradation map <span class="tier std">Standard</span></h2><ul class="mn-list"><li>Maps dark → light areas to colors from the gradient&#x27;s left → right. Available as both a filter and adjustment layer.</li><li>Up to 32 color stops: click the bar to add, drag to move, pull downward to delete, double-click for color. Per-stop opacity, distribute evenly and reverse are available.</li><li>240 presets (blue, red, sunset, rainbow, pastel, neon, metal, skin, seasons, photo grading, anime coloring and more). Search by name. Save current adds your gradient to My presets.</li><li>Project files and PSDs preserve color stops.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="Gradation map dialog: stops and preset list" loading="lazy"><figcaption>Gradation map</figcaption></figure><p>Drawing tools and bakes use the same color/opacity editor and presets. Drawing is available in Lite and above; baking requires Pro (<a href="/petanuri/en/manual/draw#gradient">drawing tool&#x27;s gradient</a>／<a href="/petanuri/en/manual/bake#gradient">Baked gradients</a>).</p></section><section class="mn-sec" id="autofill"><h2>Auto fill (base colors from line art)</h2><ol class="mn-steps"><li>Open Layer → Auto fill and click Create hint layer.</li><li>Roughly place each desired color on the hint layer where it belongs.</li><li>Click Run to create a layer just below the line art, filling each enclosed area with its hint color (including beneath lines).</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="Auto fill dialog and areas colored from hints" loading="lazy"><figcaption>Auto fill</figcaption></figure><div class="mn-tip">Close your lines on visible faces. Gaps let color leak. Paint across UV seams fills continuously even when front/back body areas are separate islands.</div></section><section class="mn-sec" id="history"><h2>History and Undo</h2><ul class="mn-list"><li>History on the right lists past operations. Click a row to jump backward/forward to the state after that operation.</li><li>Undo <kbd>Ctrl</kbd>＋<kbd>Z</kbd> / Redo <kbd>Ctrl</kbd>＋<kbd>Y</kbd> (<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>). Up to 30 steps are recorded.</li><li>Operations changing artwork (layers, masks, paint targets, material settings) can be undone. Display-only changes (visible area, object visibility, blend shapes, view, display mode etc.) and app settings are excluded.</li><li>Changing resolution clears all Undo history (confirmation is shown first).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="History panel" loading="lazy"><figcaption>History</figcaption></figure></section><section class="mn-sec" id="sleep"><h2>Unload layers (save memory)</h2><ul class="mn-list"><li>To support many 4096 layers, inactive layers are stored compactly between strokes to save GPU memory. Appearance, exports and saving remain unchanged.</li><li>Selecting/drawing on an unloaded layer restores it immediately. Loading many layers shows Preparing… before switching.</li><li>Disable under File → Preferences → Drawing → Performance (on by default).</li></ul></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/edit"><small>← Previous</small>Selections, transforms, text and rulers</a><a class="next" href="/petanuri/en/manual/uv"><small>Next →</small>UV view and visible area</a></nav>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Layers</p>
+    <h1 class="mn-h1">Layers</h1>
+    <p class="mn-intro">Layers are stacked for each texture set. If you keep the base coat, shadows and patterns on separate layers, you can adjust their colors and strength later. This page also covers the features you apply to layers, such as blending, masks and filters.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Click "Add" (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>) in the Layers panel to add a new layer (<a href="#basic">details</a>).</li>
+      <li>Click a row to select a layer and draw on it. The eye icon shows or hides it, and Opacity changes its strength (<a href="#basic">details</a>).</li>
+      <li>For shadows, turn on "Clipping" for a layer above the base coat and set its blend mode to "Multiply". Your paint then stays inside the base coat (<a href="#clip">details</a>).</li>
+      <li>To hide part of a layer without erasing it, use a layer mask (<a href="#mask">details</a>).</li>
+      <li>If you make a mistake, press <kbd>Ctrl</kbd>+<kbd>Z</kbd>. The History panel lets you go back several steps at once (<a href="#history">details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#basic">Add layers to separate your painting</a></li><li><a href="#blend">Overlay shadows and light (blend mode and opacity)</a></li><li><a href="#clip">Paint without spilling over (clipping, lock transparency, lock)</a></li><li><a href="#folder">Group into folders</a></li><li><a href="#mask">Hide part of a layer (layer mask)</a></li><li><a href="#tag">Make the list easier to read (color tags and thumbnails)</a></li><li><a href="#props">Layer properties panel</a></li><li><a href="#tile">Tile a repeating pattern</a></li><li><a href="#mirrorcopy">Copy one side to the other (Mirror copy left/right)</a></li><li><a href="#stroke">Add a border (Stroke)</a></li><li><a href="#adjust">Change colors later (adjustment layers)</a></li><li><a href="#filter">Apply a filter</a></li><li><a href="#gradmap">Replace colors with a gradation map</a></li><li><a href="#alpha">Make white transparent (Convert luminance to opacity)</a></li><li><a href="#padlayer">Make a layer that extends color outside islands (Create padding on a new layer)</a></li><li><a href="#autofill">Make base colors from line art (Auto fill)</a></li><li><a href="#history">Undo and history</a></li><li><a href="#sleep">Rest layers (save memory)</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="add layer new layer duplicate delete rename reorder stacking order merge flatten base eye icon hide show can't add layer layer limit 4 layers">
+      <h2>Add layers to separate your painting</h2>
+      <p>What you draw goes into the selected layer. If you split layers by part, it's easier to delete them or change their colors later.</p>
+      <ol class="mn-steps">
+        <li>Click "Add" at the bottom of the Layers panel. A new layer is created above the selected layer.</li>
+        <li>Click the row of the layer you want to draw on to select it.</li>
+        <li>Draw.</li>
+        <li>Click the eye icon to show or hide the layer.</li>
+        <li>Double-click the name to rename the layer (press <kbd>Enter</kbd> to confirm).</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="The Layers panel with layers for cheeks, an arm star and the base" loading="lazy"><figcaption>The cheeks and the arm star on separate layers</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="The right-click menu on a layer row" loading="lazy"><figcaption>The layer right-click menu</figcaption></figure></div>
+      <div class="mn-tip warn">In Lite, each texture set can have <strong>up to 4 layers, including the base</strong> (drawing layers and adjustment layers count; folders and masks don't). At 4 layers, "Layers 4 / 4 (incl. base, Lite)" appears below the panel, and "Add" and "Duplicate" get a lock icon.</div>
+      <h3 id="basic-panel">Reading the panel</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Where</th><th scope="col">What's there</th></tr></thead><tbody>
+        <tr><td>The heading row at the very top</td><td>Switching texture sets (when there are two or more; the resolution is on the right). It isn't shown when the Texture sets panel is docked next to this one</td></tr>
+        <tr><td>The row below it</td><td>Blend mode and opacity. Icons for clipping (↳), lock transparency and lock (colored means on). If the layer has a mask, the draw-on target (pixels/mask) and whether the mask is enabled</td></tr>
+        <tr><td>The list</td><td>Rows nearer the top are stacked in front. Folders open and close with ▶/▼</td></tr>
+        <tr><td>"Base" at the very bottom</td><td>The layer that holds the color or image you chose in New. You can draw on the base directly</td></tr>
+        <tr><td>The buttons at the bottom</td><td>Add, Folder, Adjust, Duplicate, Delete, Merge, Mask, Move up one, Move down one, … (More). Hover the pen over a button to see its name and current key</td></tr>
+      </tbody></table></div>
+      <h3 id="basic-ops">Layer operations</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">To do this</th><th scope="col">How</th><th scope="col">Key</th></tr></thead><tbody>
+        <tr><td>Add a layer</td><td>"Add"; Layer → "New layer"</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td></tr>
+        <tr><td>Duplicate a layer</td><td>"Duplicate"; Layer → "Duplicate layer"</td><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td></tr>
+        <tr><td>Delete a layer entirely</td><td>"Delete"; Layer → "Delete layer"</td><td>—</td></tr>
+        <tr><td>Erase only the drawing inside</td><td>Layer → "Clear layer" (inside the selection, if there is one)</td><td><kbd>Delete</kbd></td></tr>
+        <tr><td>Change the stacking order</td><td>Drag a row; "Move up one", "Move down one" (Layer → Stacking order)</td><td>—</td></tr>
+        <tr><td>Rename</td><td>Double-click the name; right-click → "Rename"</td><td>—</td></tr>
+        <tr><td>Turn the painted area into a selection</td><td><kbd>Ctrl</kbd>+click the thumbnail (<kbd>Shift</kbd> adds, <kbd>Alt</kbd> subtracts); right-click → "Select painted area"</td><td>—</td></tr>
+        <tr><td>Make a PNG</td><td>Right-click → "Export this layer as PNG". With several layers selected, "Export selected layers as PNG" (<a href="/petanuri/en/manual/export#png">Export</a>)</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>For a text layer, double-click it to retype the text. Rename it from the right-click menu (<a href="/petanuri/en/manual/edit#retext">Retype text</a>).</li>
+        <li>Locked and hidden layers can't be cleared (the reason appears in the hint below).</li>
+        <li>You can also drag rows with the pen to reorder them. Scroll the list with <kbd>Space</kbd> + drag.</li>
+      </ul>
+      <h3 id="merge">Merge</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item (Layer → Merge)</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Merge with layer below (<kbd>Ctrl</kbd>+<kbd>E</kbd>)</td><td>Merges the selected layer into the layer just below it, making one layer</td></tr>
+        <tr><td>Merge selected layers</td><td>Makes one layer from the two or more layers you selected</td></tr>
+        <tr><td>Merge folder</td><td>Turns a folder into one layer (in the right-click menu it's "Merge folder into one layer")</td></tr>
+        <tr><td>Merge visible layers</td><td>Merges all the visible layers into one</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>The panel's "Merge" button merges down in the usual case, turns a folder into one layer for a folder, and merges the selected layers if you've selected several.</li>
+        <li>A layer with a stroke gets the stroke baked into pixels before it's merged.</li>
+        <li>If you merge an adjustment layer down, its correction is baked into the pixels of the layer below.</li>
+        <li><span class="tier pro">Pro</span> In a normal map folder, you can merge the visible layers running up from the bottom. Set the folder's opacity to 100% and disable the folder's mask first (<a href="/petanuri/en/manual/material#channels">Paint target</a>).</li>
+      </ul>
+      <h3 id="multi">Select several at once</h3>
+      <ul class="mn-list">
+        <li><kbd>Ctrl</kbd>+click names to add or remove layers one at a time, and <kbd>Shift</kbd>+click to select everything in between (<kbd>Ctrl</kbd>+click on a thumbnail makes a selection, which is a different thing).</li>
+        <li>While several are selected, visibility, blend mode, opacity, clipping, lock transparency, lock, color tag, delete, duplicate, put in folder (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>) and merge apply to all of them at once. Undo is a single step.</li>
+        <li>Drag any one of the selected layers and all of them move together, keeping their order. Release in the middle of a folder row and they all go into the folder.</li>
+        <li>"Move up one" and "Move down one" work on one layer at a time. Copy and cut also work on only the one active layer.</li>
+      </ul>
+      <h3 id="pick">Select with keys or from 3D</h3>
+      <ul class="mn-list">
+        <li>Press <kbd>Alt</kbd>+<kbd>]</kbd> to select the layer above and <kbd>Alt</kbd>+<kbd>[</kbd> to select the layer below.</li>
+        <li>Right-click in the 3D view or UV view → "Select layer painted here" lists the visible layers painted at that spot. The top one is marked. Layers you can't see, such as areas hidden by a mask or layers at 0% opacity, aren't listed.</li>
+        <li>You can also select with "Auto-select layer" of the Move/transform tool (<a href="/petanuri/en/manual/edit#move">Move/transform tool</a>).</li>
+        <li>If a row selected this way isn't visible, the list scrolls until you can see it (a closed folder opens). To turn this off, uncheck "Scroll the list until the layer selected with keys, etc. is visible" in the … (More) menu or in the list's right-click menu.</li>
+      </ul>
+      <h3 id="basic-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>You can't add a layer (Lite)</b>: Lite allows up to 4 layers per texture set, including the base. Delete or merge a layer and you can add one again (<a href="/petanuri/en/manual/start#editions">Editions</a>).</li>
+        <li><b>Painting leaves no color</b>: Check whether the selected layer is hidden or locked, and whether the draw-on target is set to the mask. The paint may also be hidden behind a layer above.</li>
+        <li><b>You drew on the wrong layer</b>: Undo with <kbd>Ctrl</kbd>+<kbd>Z</kbd>, then choose the layer you want again with right-click in 3D → "Select layer painted here".</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="blend modes multiply screen overlay add glow shadow opacity transparency strength lighten darken soft light">
+      <h2>Overlay shadows and light (blend mode and opacity)</h2>
+      <p>The blend mode is how a layer mixes with the picture below it. "Multiply" is commonly used for shadows, and "Screen" or "Add (glow)" for light.</p>
+      <ol class="mn-steps">
+        <li>Select the layer you'll draw shadows or light on.</li>
+        <li>Choose a blend mode in the blend mode field at the top of the panel.</li>
+        <li>Adjust the strength with Opacity.</li>
+      </ol>
+      <h3 id="blend-list">List of blend modes</h3>
+      <p>There are 28 in all. In the field, they're arranged in the following groups.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Group</th><th scope="col">Blend modes</th></tr></thead><tbody>
+        <tr><td>—</td><td>Normal</td></tr>
+        <tr><td>Darken</td><td>Darken, Multiply, Color burn, Linear burn, Darker color</td></tr>
+        <tr><td>Lighten</td><td>Lighten, Screen, Color dodge, Add (linear dodge), Add (glow), Color dodge (glow), Lighter color</td></tr>
+        <tr><td>Contrast</td><td>Overlay, Soft light, Hard light, Vivid light, Linear light, Pin light, Hard mix</td></tr>
+        <tr><td>Comparative</td><td>Difference, Exclusion, Subtract, Divide</td></tr>
+        <tr><td>Color</td><td>Hue, Saturation, Color, Luminosity</td></tr>
+      </tbody></table></div>
+      <p>Folders have one more, "Pass through" (the default) (<a href="#folder">Folders</a>).</p>
+      <h3 id="glow">Add (glow) and Color dodge (glow)</h3>
+      <ul class="mn-list">
+        <li>Unlike the normal Add and Color dodge, they glow strongly even where you've lowered the opacity or at the soft edges of a soft brush.</li>
+        <li>Add (glow) keeps adding until the light saturates, and Color dodge (glow) glows more strongly the brighter the area is. Even over transparent areas, they glow in the layer's color.</li>
+        <li>You can choose them as the blend mode of layers, folders and adjustment layers, for stroke blending, and for a brush's drawing mode.</li>
+        <li>In a PSD, they're written as a close blend mode (Linear dodge or Color dodge) with "[glow]" added after the layer name. When PetaNuri3D imports the PSD, they become glow again. In other apps, semi-transparent areas look different.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="clip" data-keywords="clipping mask clip to layer below alpha lock lock transparency preserve transparency lock layer stay inside can't paint padlock">
+      <h2>Paint without spilling over (clipping, lock transparency, lock)</h2>
+      <p>When you paint shadows or patterns over a base coat, this keeps them from going outside the painted area. Each one is turned on or off with the icons at the top of the panel.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Feature</th><th scope="col">What it does</th><th scope="col">Other ways to switch it</th></tr></thead><tbody>
+        <tr><td>Clipping (↳)</td><td>Shows this layer only where the layer just below it is painted (the layer below is the foundation)</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd>; right-click → "Clip to layer below"</td></tr>
+        <tr><td>Lock transparency</td><td>Transparent areas stay transparent when you draw (only the color changes)</td><td>Layer → Clipping &amp; locks → "Toggle lock transparency"</td></tr>
+        <tr><td>Lock</td><td>Prevents drawing on the layer</td><td>Layer → Clipping &amp; locks → "Toggle lock"</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>Select the base coat layer and click "Add" to add a layer above it.</li>
+        <li>Click the clipping (↳) icon at the top of the panel.</li>
+        <li>Set the blend mode to "Multiply" and paint the shadow. It doesn't go outside the base coat.</li>
+      </ol>
+      <div class="mn-tip">The clipped drawing is still there, so if you enlarge the base coat, it shows up in the new area too. Lock transparency protects the shape of the layer's own drawing.</div>
+    </section>
+<section class="mn-sec" id="folder" data-keywords="group folder organize group layers pass through ctrl+g">
+      <h2>Group into folders</h2>
+      <p>Putting related layers in a folder shortens the list and lets you show or hide them, or change their opacity, all at once.</p>
+      <ol class="mn-steps">
+        <li>Select the layers you want to group (any number).</li>
+        <li>Hold <kbd>Shift</kbd> and click the "Folder" button (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>). The selected layers go into the folder.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Clicking just the "Folder" button (<kbd>Ctrl</kbd>+<kbd>G</kbd>) makes an empty folder.</li>
+        <li>Drag a layer row onto the middle of a folder row to put it inside. The upper half or lower half puts it above or below the folder.</li>
+        <li>The blend mode "Pass through" (the default) layers the contents directly onto the picture outside the folder. With other modes, the contents are combined into one layer first and then layered.</li>
+        <li>To dissolve a folder, use … (More) or right-click → "Ungroup folder". The contents move out of it.</li>
+        <li>Folders can have masks and strokes too.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="The Layers panel with a folder, a mask and an adjustment layer" loading="lazy"><figcaption>Folders, masks and adjustment layers</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="mask" data-keywords="layer mask hide non-destructive erase without erasing reveal black and white invert mask paint mask">
+      <h2>Hide part of a layer (layer mask)</h2>
+      <p>A mask hides part of a layer's picture without erasing it. You can bring the hidden part back at any time.</p>
+      <ol class="mn-steps">
+        <li>Select the layer you want to hide part of.</li>
+        <li>Click the "Mask" button → "Add reveal-all mask". A mask thumbnail appears on the row.</li>
+        <li>Click the mask thumbnail. The draw-on target becomes the mask.</li>
+        <li>Draw in black to hide and in white to show. Gray is half visible.</li>
+        <li>Click the pixel thumbnail to return the draw-on target to the picture.</li>
+      </ol>
+      <h3 id="mask-menu">Mask menu</h3>
+      <p>The same items are in the "Mask" button, Layer → "Mask" and "Mask" in the right-click menu.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Add reveal-all mask / Add hide-all mask</td><td>Adds a white mask (everything visible) or a black one (everything hidden)</td></tr>
+        <tr><td>Create mask from selection</td><td>Adds a mask that shows only the inside of the selection. On an adjustment layer, it replaces the current mask</td></tr>
+        <tr><td>Paint on mask</td><td>Sets the draw-on target to the mask</td></tr>
+        <tr><td>Enable mask</td><td>Turn it off to show everything without applying the mask</td></tr>
+        <tr><td>Show mask area</td><td>Shows the hidden areas in color</td></tr>
+        <tr><td>Invert mask</td><td>Swaps the visible and hidden areas</td></tr>
+        <tr><td>Mirror copy mask left/right</td><td>Copies the mask's black and white to the opposite side of the 3D model (<a href="#mirrorcopy">Mirror copy left/right</a>)</td></tr>
+        <tr><td>Apply mask (bake into pixels)</td><td>Erases the hidden areas from the picture and removes the mask</td></tr>
+        <tr><td>Delete mask</td><td>Removes the mask (the picture stays as it is)</td></tr>
+        <tr><td>Copy mask / Paste mask</td><td>Copies the mask to other layers. You can paste it into another texture set too</td></tr>
+        <tr><td>Copy this layer's brightness as a mask</td><td>Lets you turn the black-and-white picture you drew into a mask with "Paste mask" (transparent areas are hidden)</td></tr>
+        <tr><td>Show mask in black &amp; white</td><td>Shows only the mask, in black and white, in 3D and UV</td></tr>
+        <tr><td>Paint masks with the brightness of the color (white = show, black = hide)</td><td>If you turn it off, whatever you draw becomes visible, regardless of color (use the Eraser to hide)</td></tr>
+      </tbody></table></div>
+      <h3 id="mask-tips">Tips for working with masks</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+click the mask thumbnail to switch the mask on or off (a red diagonal line shows while it's off).</li>
+        <li><kbd>Alt</kbd>+click the mask thumbnail to show the mask in black and white.</li>
+        <li>Drag the mask thumbnail onto another layer's row to move it, or <kbd>Alt</kbd>+drag to copy it. An adjustment layer's mask is always copied.</li>
+        <li>If the destination already has a mask, it's replaced. If the sizes differ, the mask is stretched to fit.</li>
+        <li>Fills of a selection, and fills with <kbd>Alt</kbd>/<kbd>Ctrl</kbd>+<kbd>Backspace</kbd>, also go into a mask according to the brightness of the color.</li>
+        <li>You can assign keys to mask operations in the key bindings in Preferences.</li>
+      </ul>
+      <h3 id="mask-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Painting doesn't change the picture</b>: The draw-on target is still the mask. Click the pixel thumbnail to return to the picture.</li>
+        <li><b>The mask has no effect</b>: The mask is disabled (a red diagonal line). <kbd>Shift</kbd>+click the mask thumbnail to enable it.</li>
+        <li><b>Painting on the mask doesn't change how it looks</b>: Drawing in white means "show". To hide, draw in black or use the Eraser.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tag" data-keywords="color label tag filter by color thumbnail size larger thumbnails organize layers">
+      <h2>Make the list easier to read (color tags and thumbnails)</h2>
+      <p>When you have many layers, make them easier to find by sorting them with color tags or enlarging the thumbnails.</p>
+      <ol class="mn-steps">
+        <li>Select the layers you want to color (any number).</li>
+        <li>In the row with the clipping and lock icons, click the colored circle and ▾ box at the far left (or right-click → "Color tag").</li>
+        <li>Choose from none, red, orange, yellow, green, cyan, blue, purple and gray. A thick colored band appears at the left of the row.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="The Layers panel with color tags" loading="lazy"><figcaption>Color tags and "Show by color"</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="The color tag picker" loading="lazy"><figcaption>Choosing a color tag</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="The Layers panel with large thumbnails" loading="lazy"><figcaption>Thumbnail size: Large</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>A folder's color continues as a thin line at the left of the layers inside it. Undo is a single step.</li>
+        <li>When there are color tags, "Show by color: All" and circles for the colors in use appear above the list. Click a circle to list only the layers of that color (the picture doesn't change). Click it again, or click "All", to go back.</li>
+        <li>Color tags stay in the project file. With PSD export and import <span class="tier std">Standard</span>, they become the layer colors in the PSD (cyan becomes blue).</li>
+      </ul>
+      <h3 id="tag-view">List size and order</h3>
+      <ul class="mn-list">
+        <li>In … (More) or the right-click "Thumbnail size", you can choose Small (24px), Medium (40px, the default), Large (64px) or Extra large (96px).</li>
+        <li>With "Put the button row on top" in … (More), you can move the row of buttons from the bottom to above the list.</li>
+        <li>If you turn off "Move layers and sub tools by dragging with the pen" in … (More), dragging with the pen scrolls the list. <kbd>Space</kbd> + drag always scrolls.</li>
+        <li>Drag the panel's border downward to make the list taller.</li>
+        <li>All of these stay the same the next time you launch.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="props" data-keywords="properties settings panel layer settings inspector details">
+      <h2>Layer properties panel</h2>
+      <p>This panel gathers the settings of the selected layer. In the default layout, it's right above the Layers panel.</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="The Layer properties panel" loading="lazy"><figcaption>Layer properties</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">What's selected</th><th scope="col">Settings shown</th></tr></thead><tbody>
+        <tr><td>Anything</td><td>The type (layer, folder, text layer, adjustment layer, paint target folder and so on) and the name in the heading</td></tr>
+        <tr><td>Adjustment layer</td><td>The value fields (<a href="#adjust">Adjustment layers</a>)</td></tr>
+        <tr><td>Pixel layer, folder, text layer</td><td>The "Display" checkbox under "Stroke", plus "Add" and "Settings" (<a href="#stroke">Stroke</a>)</td></tr>
+        <tr><td>Text layer</td><td>"Retype text"</td></tr>
+        <tr><td>Layer with a mask</td><td>Whether the mask is enabled, and the draw-on target</td></tr>
+        <tr><td>Pixel layer (except text layers)</td><td>"Repeating pattern" (<a href="#tile">Repeating pattern</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Blend mode, opacity, clipping, lock transparency and lock are changed in the Layers panel.</li>
+        <li>When nothing is selected, it shows "Select a layer to see its settings here".</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tile" data-keywords="tile pattern fabric repeat seamless checker texture fill cloth">
+      <h2>Tile a repeating pattern</h2>
+      <p>Repeats an image or pattern up, down, left and right to fill a layer. Use it for clothing fabric patterns, for example.</p>
+      <ol class="mn-steps">
+        <li>Select the pixel layer you want to tile. The current drawing is replaced by the pattern.</li>
+        <li>Under "Repeating pattern" in the layer properties, click "Choose a pattern to fill". The pattern list opens.</li>
+        <li>Choose from "Image file…", "Reference image" or the pattern pictures listed below them. A pattern becomes a design painted in the foreground color.</li>
+        <li>Adjust the arrangement with the items in the table below.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="A layer with a repeating pattern, and its layer properties" loading="lazy"><figcaption>Repeating pattern</figcaption></figure>
+      <h3 id="tile-options">Arrangement and color</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Repeat across / Repeat down</td><td>How many tiles go across and down ("Keep aspect ratio" changes them while keeping the same ratio)</td></tr>
+        <tr><td>Offset X / Offset Y / Rotate (°)</td><td>Change the position and angle of the pattern</td></tr>
+        <tr><td>Blend seams</td><td>Makes the seams of the pattern less noticeable</td></tr>
+        <tr><td>Mirror repeat</td><td>Flips every other tile horizontally and vertically, so even images whose edges don't match tile without visible seams</td></tr>
+        <tr><td>Fit to UV seams</td><td>Automatically finds a size (1/2 to 2 times the current one) and offset where the UV seams are likely to line up with the pattern's seams</td></tr>
+        <tr><td>Recolor with foreground color / Back to image colors</td><td>Keeps the pattern's shape and uses the current foreground color. "Back to image colors" returns to the original colors</td></tr>
+        <tr><td>Make a normal layer</td><td>Removes the pattern settings and keeps the current pixels as a normal layer</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>The top row shows the current pattern picture and name. Click it to open the pattern list.</li>
+        <li>You can decide where the pattern shows with a mask.</li>
+        <li>The arrangement and pattern stay in the project file. You can undo changes.</li>
+      </ul>
+      <h3 id="tile-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>What you added later disappeared</b>: What you painted after tiling is lost when you change the arrangement (a confirmation appears first). Press <kbd>Ctrl</kbd>+<kbd>Z</kbd> to undo.</li>
+        <li><b>The pattern doesn't connect at a seam</b>: At seams where the islands on the two sides differ in direction or shape, fitting won't make the pattern connect.</li>
+        <li><b>You can't tile</b>: You can't tile a locked layer, a layer with lock transparency, a hidden layer, a text layer or a normal map image layer.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mirrorcopy" data-keywords="mirror copy flip copy other side symmetry forgot symmetry left right half">
+      <h2>Copy one side to the other (Mirror copy left/right)</h2>
+      <p>Copies paint you forgot to symmetrize to the opposite side of the 3D model. Even if the UVs differ between left and right, it finds the matching spot by shape and copies it there.</p>
+      <ol class="mn-steps">
+        <li>Select the layer you want to copy.</li>
+        <li>Choose Layer → "Mirror copy left/right" (it's also in the right-click menu of a layer row).</li>
+        <li>Click "Left side → Right side" or "Right side → Left side". The colors on the destination side are replaced.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Left and right are as seen from the model (the reverse of what you see from the front). The center is the same as the center of "Paint symmetrically" (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</li>
+        <li>Turn on "Copy to a new layer (only the copied area)" and only the copied area goes into a new layer.</li>
+        <li>When there's a selection, choose "Copy selection to opposite side" or "Copy into selection" (replaces the inside of the selection with the colors from the opposite side).</li>
+        <li>For masks, use "Mirror copy mask left/right" in the Mask menu.</li>
+        <li>Areas with no left/right counterpart (things that exist on one side only) stay as they are. One <kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes it.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="stroke" data-keywords="outline border stroke layer style layer effect fx outer glow sticker">
+      <h2>Add a border (Stroke) <span class="tier std">Standard</span></h2>
+      <p>Adds a border when layers are stacked, without changing the layer's drawing itself. You can change the thickness and color later, or turn it off.</p>
+      <ol class="mn-steps">
+        <li>Select the layer you want to add a border to.</li>
+        <li>Click "Add" in the layer properties. The Stroke window appears.</li>
+        <li>Set the size, position, color and so on. The look changes right away as you move the values.</li>
+        <li>Confirm with OK (<kbd>Enter</kbd>). Cancel (<kbd>Esc</kbd>) puts everything back as it was.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="The Stroke window and artwork with a stroke" loading="lazy"><figcaption>Stroke</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it is</th></tr></thead><tbody>
+        <tr><td>Size</td><td>Thickness (in texture px)</td></tr>
+        <tr><td>Position</td><td>Outside, inside or center</td></tr>
+        <tr><td>Blend mode, Opacity, Color</td><td>How the border is layered, its strength and its color</td></tr>
+        <tr><td>Reset to defaults</td><td>Resets all the values. Double-click a label to reset just that value</td></tr>
+      </tbody></table></div>
+      <h3 id="stroke-menu">Stroke menu</h3>
+      <p>It's under Layer → Stroke, or right-click a layer → "Stroke". A layer with a stroke shows an "fx" mark on its row. Click it to open the settings window.</p>
+      <ul class="mn-list">
+        <li>"Stroke settings": Opens the window.</li>
+        <li>"Show stroke": Shows or hides the stroke while keeping its values (the same as "Display" in the layer properties).</li>
+        <li>"Copy stroke" and "Paste stroke": Copy the stroke to other layers. If you've selected several layers, it's pasted onto all of them.</li>
+        <li>"Clear stroke": Removes the stroke.</li>
+        <li>"Bake stroke into pixels": Makes the picture include the stroke and removes the stroke itself (for a folder, the folder is merged into one layer together with its stroke).</li>
+      </ul>
+      <h3 id="stroke-detail">Resulting shape and saving</h3>
+      <ul class="mn-list">
+        <li>The border follows the shape after the mask is applied. A clipped layer stays within the painted area of its base.</li>
+        <li>You can add it to folders (the combined shape of the contents) and text layers (it stays even if you retype the text).</li>
+        <li>Merge down and Merge folder bake the stroke before merging.</li>
+        <li>It's stored in the project file along with its values. PNG and material exports use the picture with the stroke, and in a PSD it becomes a layer with the stroke baked into pixels (<a href="/petanuri/en/manual/export#psd">PSD</a>).</li>
+        <li>Other effects added in an earlier version or in a PSD (such as drop shadow) open looking exactly as before. You can't change them, but you can use "Bake into pixels" or "Remove" in the layer properties.</li>
+      </ul>
+      <div class="mn-tip warn">Adding, changing and pasting strokes requires Standard. Even in Lite, the strokes in project files you open look as they did, and you can show, hide, copy, clear and bake them into pixels.</div>
+      <h3 id="stroke-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The border is cut off at an island edge or spills onto the next island</b>: Strokes are calculated on the UV. Parts that go past the island edge may look cut off at the island edge in 3D. On export, the parts outside the island are handled the same way as padding.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="adjust" data-keywords="adjustment layer non-destructive correction color correction change color later recolor brightness saturation curves color variation hue">
+      <h2>Change colors later (adjustment layers) <span class="tier std">Standard</span></h2>
+      <p>Stacks a brightness or color correction over the picture below without rewriting it. You can change the values any time.</p>
+      <ol class="mn-steps">
+        <li>Select the layer just above the picture you want to correct.</li>
+        <li>Click the "Adjust" button in the panel and choose a type. An adjustment layer is created.</li>
+        <li>Move the values in the Layer properties panel. While you drag, only the picture changes, and when you release, it counts as one step you can undo.</li>
+      </ol>
+      <p>There are 15 types: Hue/Saturation/Lightness, Brightness/Contrast, Levels, Invert, Grayscale, Posterize, Threshold, Gradation map, Curves, Color Balance, Exposure, Color Temperature, Vibrance, Replace Color and Add noise. The values are the same as for <a href="#filter-each">Filters</a>.</p>
+      <ul class="mn-list">
+        <li>An adjustment layer applies to everything visible below it.</li>
+        <li>You can limit where it applies with a mask. When you select an adjustment layer, the draw-on target is the mask. "Create mask from selection" can replace the current mask.</li>
+        <li>With clipping on, it applies only to the layer just below it.</li>
+        <li>"Merge with layer below" bakes the correction into the pixels of the layer below.</li>
+        <li>In a PSD, Curves, Color Balance, Vibrance, Exposure and Gradation map are exported and imported as adjustment layers.</li>
+        <li>In Lite, you can see the values of adjustment layers in project files you open, but you can't change them (a lock icon appears).</li>
+      </ul>
+      <div class="mn-tip">Features that read the surrounding picture, such as Blur, Sharpen and Mosaic, don't become adjustment layers (they would be too heavy). Apply them as <a href="#filter">filters</a>.</div>
+    </section>
+
+    <section class="mn-sec" id="filter" data-keywords="filter color correction blur gaussian blur sharpen noise mosaic line extraction emboss high pass curves hue saturation lightness exposure color temperature levels posterize threshold invert negative black and white grayscale">
+      <h2>Apply a filter <span class="tier std">Standard</span></h2>
+      <p>Applies a color correction or blur to the picture of the selected layer itself. Unlike an adjustment layer, the picture is rewritten (one <kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes it).</p>
+      <ol class="mn-steps">
+        <li>Select the layer you want to filter.</li>
+        <li>From the "Filters" menu, choose a group and then a filter name. A small window appears.</li>
+        <li>Move the values. The model's look changes on the spot.</li>
+        <li>Confirm with OK (<kbd>Enter</kbd>). To cancel, use Cancel (<kbd>Esc</kbd>).</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="Changing the color of a cape with the Hue/Saturation/Lightness filter" loading="lazy"><figcaption>The Hue/Saturation/Lightness filter</figcaption></figure>
+      <h3 id="filter-list">List of filters</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Group</th><th scope="col">Filters</th></tr></thead><tbody>
+        <tr><td>Color adjustment</td><td>Hue/Saturation/Lightness / Brightness/Contrast / Levels / Curves / Color Balance / Exposure / Color Temperature / Vibrance / Replace Color</td></tr>
+        <tr><td>Tone</td><td>Invert / Grayscale / Posterize / Threshold / Gradation map (<a href="#gradmap">below</a>)</td></tr>
+        <tr><td>Blur &amp; Sharpen</td><td>Gaussian blur / Motion Blur / Radial Blur / Sharpen (unsharp mask) / High Pass</td></tr>
+        <tr><td>Noise</td><td>Add noise / Reduce Noise (Median) / Mosaic</td></tr>
+        <tr><td>Stylize</td><td>Extract Lines / Emboss</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Invert and Grayscale apply right away, without opening a window.</li>
+        <li>Near the bottom of the menu are "Apply to all visible texture sets", <a href="#alpha">Convert luminance to opacity</a>, <a href="#padlayer">Create padding on a new layer</a> and the bakes <span class="tier pro">Pro</span> (<a href="/petanuri/en/manual/bake">Easy Bake</a>, <a href="/petanuri/en/manual/ao">Bake AO</a>).</li>
+      </ul>
+      <h3 id="filter-window">The filter window</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it is</th></tr></thead><tbody>
+        <tr><td>Target</td><td>The texture sets and layers it will be applied to. For those it won't be applied to, such as hidden or locked layers, the reason appears after "Not applied:"</td></tr>
+        <tr><td>Preview</td><td>Reflects each change in the look as you move the values</td></tr>
+        <tr><td>Apply to all visible texture sets</td><td>Applies it to the selected layer in every visible set (when there are two or more sets; same as the menu item of the same name)</td></tr>
+        <tr><td>Open with last values next time</td><td>Starts from the values you last confirmed with OK (shared by all filters)</td></tr>
+        <tr><td>Reset to defaults</td><td>Resets all the values. Double-click a label to reset just that value</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>You can't draw while the window is open. You can move the view with right-drag, <kbd>Space</kbd> + drag, the wheel and the 3D navigator.</li>
+        <li>When there's a selection, "Applies only inside the selection" appears. For sets with no selection, the set name and "No change (no selection)" appear.</li>
+      </ul>
+      <h3 id="filter-each">Values for each filter</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Filter</th><th scope="col">Values and how to use them</th></tr></thead><tbody>
+        <tr><td>Exposure</td><td>Exposure (+1 doubles the light), Offset (raises or lowers dark areas), Gamma</td></tr>
+        <tr><td>Curves</td><td>Choose a channel (RGB, R, G, B), click the line to add a point, and drag to move it. Drag a point outside the graph, or double-click it, to delete it. It is applied in the order R, G, B → RGB</td></tr>
+        <tr><td>Color Balance</td><td>For each of Shadows, Midtones and Highlights: Cyan⇔Red, Magenta⇔Green, Yellow⇔Blue. "Preserve luminosity" keeps the brightness unchanged</td></tr>
+        <tr><td>Color Temperature</td><td>Color Temperature (+ is warmer), Tint (+ is more magenta)</td></tr>
+        <tr><td>Vibrance</td><td>Vibrance (works more strongly on dull colors), Saturation</td></tr>
+        <tr><td>Replace Color</td><td>Changes hue, saturation and lightness only for areas close to the color you pick (Fuzziness)</td></tr>
+        <tr><td>Motion Blur / Radial Blur / Mosaic</td><td>Angle and distance / zoom, rotation and center / cell size. The direction, position and grid are set on the UV, so on a model whose islands face different directions, the result differs from island to island</td></tr>
+        <tr><td>Add noise</td><td>Amount, Monochrome, Pattern number</td></tr>
+        <tr><td>Reduce Noise (Median)</td><td>Radius 1 to 2</td></tr>
+        <tr><td>Extract Lines</td><td>Threshold, thickness, make white transparent</td></tr>
+        <tr><td>Emboss</td><td>Light angle, height, amount, keep color</td></tr>
+        <tr><td>High Pass</td><td>Radius. Flat areas become 50% gray, so stack it with the blend mode set to Overlay or Soft light</td></tr>
+        <tr><td>Gradation map</td><td>Color stops, presets, "Reverse (bright areas get the left color)", "Use the drawing tool gradient" (<a href="#gradmap">below</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="filter-alpha">Island edges and transparent areas</h3>
+      <ul class="mn-list">
+        <li>Blur and sharpen are calculated only inside UV islands, so island edges don't get darker or fainter. To blur across seams, use the Blend tool (<a href="/petanuri/en/manual/draw#blend">Blur, Smudge and Blend</a>).</li>
+        <li>Mosaic also averages opacity for each cell, and Sharpen also sharpens opacity. Reduce Noise (Median) also removes dots on top of transparent areas.</li>
+        <li>Extract Lines, Emboss and High Pass read brightness by treating transparent areas as white paper. The lines from Extract Lines and the result of High Pass also appear on areas that were transparent.</li>
+        <li>On a layer with lock transparency, opacity stays as it was.</li>
+      </ul>
+      <h3 id="filter-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>A filter changes nothing</b>: It isn't applied to hidden or locked layers. It also changes nothing if the selection exists only in other texture sets. Check "Target" and "Not applied:" in the window.</li>
+        <li><b>The menu items have a lock icon (Lite)</b>: Filters need Standard. Convert luminance to opacity and Create padding on a new layer work in Lite too.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gradmap" data-keywords="gradient map gradation map recolor duotone tritone sepia presets map colors by brightness">
+      <h2>Replace colors with a gradation map <span class="tier std">Standard</span></h2>
+      <p>Replaces dark to bright areas with the colors from the left to the right of a gradient. It's available both as a filter (Tone) and as an adjustment layer.</p>
+      <ol class="mn-steps">
+        <li>Choose Filters → Tone → "Gradation map" (for an adjustment layer, use the "Adjust" button). At first it has two colors, foreground color → background color.</li>
+        <li>Choose a preset, or add color stops and set their colors.</li>
+        <li>Confirm with OK (<kbd>Enter</kbd>).</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="The Gradation map window, with color stops and the preset list" loading="lazy"><figcaption>Gradation map</figcaption></figure>
+      <h3 id="gradmap-edit">Working with color stops</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">To do this</th><th scope="col">How</th></tr></thead><tbody>
+        <tr><td>Add a stop</td><td>Click (tap) the bar. Up to 32</td></tr>
+        <tr><td>Move a stop</td><td>Drag it</td></tr>
+        <tr><td>Remove a stop</td><td>Drag it down and away, or press <kbd>Delete</kbd></td></tr>
+        <tr><td>Change a color</td><td>Double-click it (or tap the selected stop again), or use "Use foreground color"</td></tr>
+        <tr><td>Set position and opacity</td><td>The fields for the selected stop (at opacity 0, the original color is kept)</td></tr>
+        <tr><td>Rearrange</td><td>"Distribute evenly", "Swap left/right"</td></tr>
+      </tbody></table></div>
+      <h3 id="gradmap-preset">Presets</h3>
+      <ul class="mn-list">
+        <li>There are 240. Choose from the groups (Basics / mono, Sunset / sunrise, Pastel, Neon, Metal, Skin / people, Seasons, Photographic toning, Illustration / anime coloring and more), or search by name.</li>
+        <li>"Save current" makes the current gradient one of your "My presets" (delete it with ×).</li>
+        <li>Project files and PSDs keep it as color stops, too.</li>
+      </ul>
+      <p>The drawing tool's Gradient and Bake have the same editing of color and opacity stops, and the same presets. The drawing tool is available from Lite, and Bake is Pro (<a href="/petanuri/en/manual/draw#gradient">Drawing tool gradient</a> / <a href="/petanuri/en/manual/bake#gradient">Baked gradients</a>).</p>
+    </section>
+<section class="mn-sec" id="alpha" data-keywords="white to transparent remove white background knockout multiply to transparent ao shadow only transparency alpha convert">
+      <h2>Make white transparent (Convert luminance to opacity)</h2>
+      <p>Makes white areas transparent and keeps dark areas as black shadow. Use this when you want to recolor only the AO shadow, for example. It's available from Lite.</p>
+      <ol class="mn-steps">
+        <li>Select a drawing layer other than the base, such as the AO layer. If lock or lock transparency is on, turn it off.</li>
+        <li>Choose Filters → "Convert luminance to opacity". White becomes transparent, and darker areas become more opaque black.</li>
+        <li>To change the shadow color, turn on lock transparency and paint with the color you like. The light and dark of the shadow stays as transparency.</li>
+      </ol>
+      <div class="mn-tip">This rewrites the pixels of the selected layer (undo with <kbd>Ctrl</kbd>+<kbd>Z</kbd>). It can't be used on the base, masks or adjustment layers. It isn't a way to make areas transparent while keeping their original colors.</div>
+    </section>
+
+    <section class="mn-sec" id="padlayer" data-keywords="padding bleed margin outside islands seam edge color extend dilate edge padding">
+      <h2>Make a layer that extends color outside islands (Create padding on a new layer)</h2>
+      <p>Puts only the part where the colors at the edges of the islands in the current picture are extended outside the islands into a new layer. Use it when you want to see the export padding as a layer or repaint it. It's available in every edition.</p>
+      <ol class="mn-steps">
+        <li>Choose Filters → "Create padding on a new layer".</li>
+        <li>Set "Width (px)" from 1 to 32.</li>
+        <li>Click "Create". A layer with a name like "Padding (8px)" is created right above the selected layer.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="The Create padding on a new layer window" loading="lazy"><figcaption>Create padding on a new layer</figcaption></figure>
+      <ul class="mn-list">
+        <li>It's made from the color of all the layers stacked together. The inside of the islands is transparent.</li>
+        <li>One <kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes it. It can't be made in the 2D canvas.</li>
+        <li>For the padding used on export, see <a href="/petanuri/en/manual/export#pad">Export bleed (padding)</a>.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="autofill" data-keywords="auto color auto coloring flat colors base coat bucket fill color hints line art flats">
+      <h2>Make base colors from line art (Auto fill)</h2>
+      <p>Fills each area enclosed by line art according to the color hints you place. Use it to make a base coat quickly.</p>
+      <ol class="mn-steps">
+        <li>Choose Layer → "Auto fill (fill regions from color hints)". A window appears at the upper left of the 3D view.</li>
+        <li>Choose the line art layer in "Line art".</li>
+        <li>Click "Create hint layer". A new layer for hints is selected.</li>
+        <li>On the hint layer, roughly place the colors you want in each area.</li>
+        <li>Click "Run". An "Auto fill" layer is created right below the line art (it paints under the lines too).</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="The Auto fill window and areas colored from the hints" loading="lazy"><figcaption>Auto fill</figcaption></figure>
+      <h3 id="autofill-options">Window options</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">What it is</th></tr></thead><tbody>
+        <tr><td>Line art / Hints</td><td>The line art layer and the hint layer</td></tr>
+        <tr><td>Line reference</td><td>Treats the "Line art layer" or the "Dark areas of the visible image" as lines</td></tr>
+        <tr><td>Line darkness threshold</td><td>How dark an area has to be to count as a line</td></tr>
+        <tr><td>Close gaps</td><td>Plugs breaks in the lines</td></tr>
+        <tr><td>Also fill areas without hints with the nearest color</td><td>Fills areas where you haven't placed a hint too</td></tr>
+        <tr><td>Fill across UV seams</td><td>Even if the front and back of the body are separate islands, one hint fills them continuously (on by default)</td></tr>
+        <tr><td>Hide the hint layer after filling</td><td>Hides the hint layer after Run (<kbd>Ctrl</kbd>+<kbd>Z</kbd> brings it back)</td></tr>
+      </tbody></table></div>
+      <p>You can move the window by dragging its heading (it remembers the position). Close it with ×, "Close", or <kbd>Esc</kbd> after clicking the window.</p>
+      <h3 id="autofill-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Color leaks into the next area</b>: A line has a break. Draw the lines so that they close on the visible faces (if a line runs off the body and breaks, color leaks from there). Raising "Close gaps" also helps prevent it.</li>
+        <li><b>Some areas aren't painted</b>: Areas without a hint aren't painted. Place a hint, or turn on "Also fill areas without hints with the nearest color".</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="history" data-keywords="undo redo history step back ctrl+z ctrl+y revert can't undo">
+      <h2>Undo and history</h2>
+      <p>You can undo mistakes with Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>). With the History panel, you can go back several steps at once.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">To do this</th><th scope="col">How</th></tr></thead><tbody>
+        <tr><td>Undo one step</td><td>Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>; hold it down to keep undoing)</td></tr>
+        <tr><td>Redo what you undid</td><td>Redo (<kbd>Ctrl</kbd>+<kbd>Y</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>)</td></tr>
+        <tr><td>Go back or forward several steps</td><td>Click a row in the "History" panel. You go back or forward at once to the state after that operation</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="The History panel" loading="lazy"><figcaption>History</figcaption></figure>
+      <ul class="mn-list">
+        <li>History lists the operations so far, oldest first. ▶ marks the current position, and dimmed rows are operations you can redo.</li>
+        <li>Up to 30 steps are recorded, and the oldest are dropped first.</li>
+        <li>Show or hide the panel from Display → Windows.</li>
+      </ul>
+      <h3 id="undo-limits">Operations that can't be undone</h3>
+      <p>Operations that change the picture (layers, masks, paint targets, material settings) can be undone. Operations that change only how things look, and app settings, are not recorded in Undo.</p>
+      <ul class="mn-list">
+        <li>Not recorded: turning a texture set's visibility on or off, Visible area (hide, show selected only, show all), object visibility, blend shapes, the view, shading, the mesh wireframe, adding and reordering color sets, sub tools, settings and key bindings. A layer's visibility is part of the picture, so it can be undone.</li>
+        <li>"Hide selected" (<kbd>H</kbd>) records only the part of the selection that gets deselected, as one step. To bring back hidden areas, use "Show all" (<kbd>Alt</kbd>+<kbd>H</kbd>) (<a href="/petanuri/en/manual/uv#isolate">Visible area</a>). Right after hiding, the first <kbd>Ctrl</kbd>+<kbd>Z</kbd> only gives you a notice, and pressing it again undoes the painting before that.</li>
+        <li>Deleting a color set swatch can be undone.</li>
+      </ul>
+      <div class="mn-tip warn">These operations can't be undone, so a confirmation appears first: deleting a sub tool, deleting a color set, resetting key bindings, and resetting the brush size list. Changing the texture resolution clears the whole Undo history.</div>
+    </section>
+
+    <section class="mn-sec" id="sleep" data-keywords="out of memory slow 4k 4096 vram gpu memory lighten lag preparing performance">
+      <h2>Rest layers (save memory)</h2>
+      <p>So that stacking lots of 4096-resolution layers doesn't make things slow, layers you haven't touched for a while are taken out of GPU memory and kept elsewhere. The look, export and saving are unchanged.</p>
+      <ul class="mn-list">
+        <li>The GPU holds only the selected layer, the combined picture of everything below it, and the combined picture of everything above it. Other layers are shrunk and kept one at a time while you're not drawing on them (areas you haven't painted aren't kept).</li>
+        <li>Selecting, drawing on, undoing, merging or exporting a resting layer brings it back on the spot. With selections that reload many layers, "Preparing…" appears and then it switches (about 0.1 to 0.3 seconds for 80 layers at 4096).</li>
+        <li>If there are layers above with a blend mode other than Normal, or adjustment layers, those stay in the GPU.</li>
+        <li>Layers also stay resting when you open a project file.</li>
+        <li>To turn it off, use File → Preferences → Painting → Performance, "Rest layers you aren't drawing on" (on by default). When it's off, all layers are kept in the GPU.</li>
+      </ul>
+      <div class="mn-tip">There's also a mechanism that rests whole texture sets you haven't selected (<a href="/petanuri/en/manual/sets#sleep">Texture set memory savings</a>).</div>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/edit#select">Selection</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/material#channels">Paint target (normal map, shadow color and so on)</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/edit"><small>← Previous</small>Selections, transforms and text</a><a class="next" href="/petanuri/en/manual/uv"><small>Next →</small>UV and visible area</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +676,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -5,23 +5,35 @@
 //  - 言い換え（ミラー → 対称 など）は索引の syn で広げる
 //  - 空白で区切った言葉は全部を含む節だけ（AND）。0 件なら「〜で」「〜を」の所で区切り直し、それでも 0 件なら 2 字ずつの近さで探す
 //  - 0 件でも行き止まりにしない（近い言葉・やりたいこと・用語集・困ったとき・問い合わせへ）
+//  - 英語・韓国語・中国語（2026-10-30）：画面の言葉は索引の ui、言葉の分け方と語幹は索引の lang で RULES から選ぶ
 (function () {
   'use strict';
   var forms = document.querySelectorAll('.mn-search');
   var page = document.querySelector('.mn-results-page');
   if (!forms.length && !page) return;
 
+  // 画面の言葉。索引の ui で上書きする（{q} は打った言葉、{n} は件数）。ここは索引を読む前に出す分と、日本語の既定
   var ui = {
-    empty: '見つかりませんでした',
-    near: '同じ言葉は見つからなかったので、近い所を出しています',
-    all: '件の結果をすべて見る',
-    count: '件',
-    hint: '例：左右対称・筆圧・書き出し・UV の継ぎ目',
-    tryWords: 'ほかの言い方で探す',
+    none: '「{q}」は見つかりませんでした。',
     noneHelp: '言葉を短くするか、下の一覧から探してください。',
+    tryWords: 'ほかの言い方で探す：',
+    near: '同じ言葉は見つからなかったので、近い所を出しています',
+    all: '「{q}」の {n} 件の結果をすべて見る',
+    count: '{n} 件',
+    nearParen: '（{near}）',
+    title: '「{q}」の検索結果 | ぺたぬり3D マニュアル',
+    sub: ' ／ ',
     wait: '検索の索引を読み込んでいます…',
     fail: '検索の索引を読み込めませんでした。ページを開き直してください。'
   };
+  var WAIT = {
+    en: ['Loading the search index…', 'Could not load the search index. Please reload the page.'],
+    ko: ['검색 색인을 불러오는 중…', '검색 색인을 불러오지 못했습니다. 페이지를 새로 고쳐 주세요.'],
+    zh: ['正在加载搜索索引…', '无法加载搜索索引。请重新打开页面。']
+  }[(document.documentElement.lang || 'ja').slice(0, 2)];
+  if (WAIT) { ui.wait = WAIT[0]; ui.fail = WAIT[1]; }
+  function fill(t, v) { return t.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }); }
+  function plural(key, n) { return ui[key + '1'] && n === 1 ? ui[key + '1'] : ui[key]; }
 
   // ---- 文字をそろえる（長さは変えない） ----
   function fold(s) {
@@ -66,7 +78,7 @@
 
   // ---- 言葉を広げる ----
   var ENDINGS = ['できない', 'られない', 'れない', 'したい', 'します', 'したら', 'すると', 'させる', 'ない', 'たい', 'する', 'たら', 'ます'];
-  function stems(t) {
+  function stemsJa(t) {
     var out = [];
     if (t.length < 2) return out;
     if (HAS_KANJI_KANA.test(t)) {
@@ -82,6 +94,32 @@
     }
     return out;
   }
+  // 英語：複数形・-ing・-ed を落とす（layers → layer、painting → paint、clipped → clip）。本文は部分一致で引くので、語幹で足りる
+  function stemsEn(t) {
+    var out = [];
+    if (t.length < 4 || !/^[a-z][a-z'-]*$/.test(t)) return out;
+    [[/'s$/, ''], [/ies$/, 'y'], [/(ss|sh|ch|x)es$/, '$1'], [/([^s])s$/, '$1'], [/([b-df-hj-np-tv-z])\1(ing|ed)$/, '$1'], [/ing$/, ''], [/ed$/, ''], [/(e)d$/, '$1']].forEach(function (r) {
+      if (!r[0].test(t)) return;
+      var s = t.replace(r[0], r[1]);
+      if (s.length >= 3 && s !== t && out.indexOf(s) < 0) out.push(s);
+    });
+    return out;
+  }
+  // 韓国語：語の後ろの助詞・語尾を落とす（레이어를 → 레이어、내보내려면 → 내보내）
+  var KO_END = ['에서는', '으로는', '하려면', '하는데', '해야', '에서', '으로', '려면', '하기', '하는', '하고', '해요', '합니다', '하세요', '돼요', '되요', '안돼', '이', '가', '은', '는', '을', '를', '에', '로', '의', '와', '과', '도', '만', '랑'];
+  function stemsKo(t) {
+    var out = [];
+    if (t.length < 2 || !/[가-힣]$/.test(t)) return out;
+    for (var i = 0; i < KO_END.length; i++) {
+      var e = KO_END[i];
+      if (t.length > e.length && t.slice(-e.length) === e) { out.push(t.slice(0, -e.length)); break; }
+    }
+    return out;
+  }
+  function stems(t) {
+    var lang = idx && idx.lang;
+    return lang === 'en' ? stemsEn(t) : lang === 'ko' ? stemsKo(t) : lang === 'zh' ? [] : stemsJa(t);
+  }
   function expand(t) {
     var alts = [t];
     stems(t).forEach(function (s) { if (alts.indexOf(s) < 0) alts.push(s); });
@@ -93,12 +131,22 @@
   }
   // 「左右対称で描くには」→「左右対称」「描く」
   var PARTICLE = /(?:について|には|では|とは|から|まで|より|って|ので|のに|けど|が|を|に|で|は|の|と|へ|や|も)(?=[^ぁ-ゟ]|$)/g;
+  // 英語の「how do I …」、韓国語の「어떻게 …」のような、探す手がかりにならない語
+  var STOP_EN = /^(?:how|do|does|did|i|to|the|a|an|can|can't|cant|cannot|my|in|on|of|for|with|is|are|it|its|not|why|what|when|where|which|doesn't|doesnt|don't|dont|won't|wont|isn't|isnt|want|be|and|or|this|that|way|me|you|from|into|at|by|get|make)$/;
+  var STOP_KO = /^(?:어떻게|왜|방법|하는|법|안|돼요|안돼요|안됨|안돼|하고|싶어요|싶다|싶은데|수|있나요|없어요|없나요|되나요|하나요|좀|그리고|또는)$/;
+  var ZH_FN = /(?:怎么样|怎么|怎样|如何|为什么|为何|什么|哪里|可以|能否|不能|无法|不了|没有|一下|方法|请问|我想|想要|的|了|吗|呢|吧|啊|在|把|用|和|与|跟|我|要|是)/g;
   function resplit(terms) {
-    var out = [];
+    var lang = idx && idx.lang, out = [];
     terms.forEach(function (t) {
-      t.replace(/[?？!！、。,.・]/g, ' ').replace(PARTICLE, ' ').split(/\s+/).forEach(function (w) {
-        w = w.replace(/^(?:どうやって|どうすれば|やり方|方法)$/, '');
-        if (w && !(w.length === 1 && HIRA.test(w))) out.push(w);
+      var s = t.replace(/[?？!！、。,.・，；;:：“”"]/g, ' ');
+      // 中国語は漢字と英数字の間も切る（导出PSD → 导出 PSD）
+      if (lang === 'zh') s = s.replace(ZH_FN, ' ').replace(/([一-鿿])(?=[0-9a-z])|([0-9a-z])(?=[一-鿿])/g, '$1$2 ');
+      else if (lang !== 'en' && lang !== 'ko') s = s.replace(PARTICLE, ' ');
+      s.split(/\s+/).forEach(function (w) {
+        if (lang === 'en') { if (STOP_EN.test(w)) w = ''; }
+        else if (lang === 'ko') { if (STOP_KO.test(w)) w = ''; }
+        else if (lang !== 'zh') w = w.replace(/^(?:どうやって|どうすれば|やり方|方法)$/, '');
+        if (w && !(w.length === 1 && (HIRA.test(w) || /[a-z]/.test(w)))) out.push(w);
       });
     });
     return out;
@@ -185,7 +233,8 @@
         if (few) { r.s *= 0.9; list.push(r); }
       });
     }
-    if (!list.length) { list = fuzzy(terms.join('')); near = list.length > 0; }
+    // 近さで探す：英語は語の間をつながない（語をまたぐ 2 字を手がかりにしない）
+    if (!list.length) { list = fuzzy(terms.join(idx.lang === 'en' ? ' ' : '')); near = list.length > 0; }
     list.sort(function (a, b) { return b.s - a.s || a.d.o - b.d.o; });
     return { list: list, near: near };
   }
@@ -225,7 +274,7 @@
     var d = r.d, href = d.page.u + (d.id ? '#' + d.id : '');
     return '<a class="mn-hit" role="option" id="mn-opt-' + i + '" href="' + href + '" data-words="' + esc(r.words.join(' ')) + '">' +
       '<span class="mn-hit-path">' + esc(d.page.t) + (d.page.tier ? tierBadge(d.page.tier) : '') + '</span>' +
-      '<span class="mn-hit-title">' + esc(d.h) + (d.s ? '<small> ／ ' + esc(d.s) + '</small>' : '') + (d.tier && !d.page.tier ? tierBadge(d.tier) : '') + '</span>' +
+      '<span class="mn-hit-title">' + esc(d.h) + (d.s ? '<small>' + esc(ui.sub) + esc(d.s) + '</small>' : '') + (d.tier && !d.page.tier ? tierBadge(d.tier) : '') + '</span>' +
       '<span class="mn-hit-text">' + snippet(d, r.words, len) + '</span></a>';
   }
   function emptyHTML(q) {
@@ -240,8 +289,8 @@
       });
     }
     var links = (idx && idx.help) || [];
-    return '<div class="mn-none"><p><b>「' + esc(q) + '」は' + ui.empty + '。</b>' + ui.noneHelp + '</p>' +
-      (sug.length ? '<p class="mn-none-words">' + ui.tryWords + '：' + sug.map(function (w) { return '<button type="button" data-q="' + esc(w) + '">' + esc(w) + '</button>'; }).join('') + '</p>' : '') +
+    return '<div class="mn-none"><p><b>' + esc(fill(ui.none, { q: q })) + '</b>' + esc(ui.noneHelp) + '</p>' +
+      (sug.length ? '<p class="mn-none-words">' + esc(ui.tryWords) + sug.map(function (w) { return '<button type="button" data-q="' + esc(w) + '">' + esc(w) + '</button>'; }).join('') + '</p>' : '') +
       '<ul>' + links.map(function (l) { return '<li><a href="' + l.u + '">' + esc(l.t) + '</a></li>'; }).join('') + '</ul></div>';
   }
 
@@ -318,7 +367,7 @@
         else {
           if (r.near) html += '<p class="mn-near">' + ui.near + '</p>';
           html += r.list.slice(0, MAX).map(function (x, i) { return itemHTML(x, i, 70); }).join('');
-          html += '<a class="mn-all" href="' + form.getAttribute('action') + '?q=' + encodeURIComponent(q) + '">「' + esc(q) + '」の ' + r.list.length + ' ' + ui.all + '</a>';
+          html += '<a class="mn-all" href="' + form.getAttribute('action') + '?q=' + encodeURIComponent(q) + '">' + esc(fill(plural('all', r.list.length), { q: q, n: r.list.length })) + '</a>';
         }
         box.innerHTML = html;
         box.hidden = false;
@@ -364,9 +413,9 @@
       if (!idx) status.textContent = ui.wait;
       load(page.getAttribute('data-index')).then(function () {
         var r = search(q);
-        document.title = '「' + q + '」の検索結果 | ぺたぬり3D マニュアル';
+        document.title = fill(ui.title, { q: q });
         if (!r.list.length) { status.textContent = ''; out.innerHTML = emptyHTML(q); return; }
-        status.textContent = r.list.length + ' ' + ui.count + (r.near ? '（' + ui.near + '）' : '');
+        status.textContent = fill(plural('count', r.list.length), { n: r.list.length }) + (r.near ? fill(ui.nearParen, { near: ui.near }) : '');
         out.innerHTML = r.list.map(function (x, i) { return itemHTML(x, i, 150); }).join('');
       }).catch(function () { status.textContent = ui.fail; });
     };

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>그리기 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
-  <meta name="description" content="도구와 보조 도구·면을 따르는 3D 채색·브러시 설정·투명색 그리기·색과 투명도 그라데이션·채우기·도형·색·좌우 대칭. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta name="description" content="도구와 보조 도구, 면을 따라가는 3D 칠하기 방식, 브러시 설정, 투명색으로 그리기, 색과 투명도의 그라데이션, 채우기, 도형, 색, 좌우 대칭. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/draw">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="그리기 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
-  <meta property="og:description" content="도구와 보조 도구·면을 따르는 3D 채색·브러시 설정·투명색 그리기·색과 투명도 그라데이션·채우기·도형·색·좌우 대칭. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:description" content="도구와 보조 도구, 면을 따라가는 3D 칠하기 방식, 브러시 설정, 투명색으로 그리기, 색과 투명도의 그라데이션, 채우기, 도형, 색, 좌우 대칭. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/draw">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "그리기 | PetaNuri3D 매뉴얼",
-   "description": "도구와 보조 도구·면을 따르는 3D 채색·브러시 설정·투명색 그리기·색과 투명도 그라데이션·채우기·도형·색·좌우 대칭. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "description": "도구와 보조 도구, 면을 따라가는 3D 칠하기 방식, 브러시 설정, 투명색으로 그리기, 색과 투명도의 그라데이션, 채우기, 도형, 색, 좌우 대칭. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/draw",
    "inLanguage": "ko",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,530 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="매뉴얼 목차">
-    <p class="mn-side-title">매뉴얼</p>
+  <aside class="mn-side has-search" aria-label="매뉴얼 목차">
+    <form class="mn-search" role="search" action="/petanuri/ko/manual/search" data-index="/petanuri/assets/data/manual-search.ko.json">
+      <label class="mn-search-label" for="mn-q">매뉴얼 검색</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="예: 좌우 대칭, 필압, 내보내기" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="검색 결과" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/ko/manual">매뉴얼</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
-    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw" aria-current="page">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·스티치·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+    <nav><p class="mn-group">처음에</p><ul class="mn-plain"><li><a href="/petanuri/ko/manual/first">처음 사용하는 분께</a></li><li><a href="/petanuri/ko/manual/howto">하고 싶은 일로 찾기</a></li><li><a href="/petanuri/ko/manual/trouble">문제가 생겼을 때</a></li></ul><p class="mn-group">기본</p><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/draw" aria-current="page">그리기</a></li></ol><p class="mn-group">도구와 범위</p><ol><li><a href="/petanuri/ko/manual/deco">스탬프·무늬·스티치</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV와 표시 범위</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트</a></li></ol><p class="mn-group">마무리</p><ol><li><a href="/petanuri/ko/manual/material">lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">내보내기와 연동</p><ol><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity·AI 연동</a></li></ol><p class="mn-group">찾아보기</p><ol><li><a href="/petanuri/ko/manual/keys">단축키</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/ko/manual/glossary">용어집</a></li></ul><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 그리기</p>
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / <a href="/petanuri/ko/manual">매뉴얼</a> / 그리기</p>
     <h1 class="mn-h1">그리기</h1>
-    <p class="mn-intro">3D 뷰 위에 펜으로 직접 그립니다. 왼쪽 도구 모음에서 도구를 선택하고 보조 도구와 도구 속성에서 그리기 느낌을 정합니다.</p>
-    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p><p class="mn-proof">Lite·Standard·Pro와 Pro 업그레이드를 BOOTH에서 배포하고 있습니다.</p>
-    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#basic">먼저 그려 보기</a></li><li><a href="#tools">도구와 보조 도구</a></li><li><a href="#through">뒷면·가려진 면에도 칠하기</a></li><li><a href="#props">브러시 세부 설정</a></li><li><a href="#blend">흐리기·손가락·색 혼합</a></li><li><a href="#fill">채우기·그라데이션·도형</a></li><li><a href="#gradient">색과 투명도의 그라데이션</a></li><li><a href="#color">색 선택·스포이트</a></li><li><a href="#transparent">투명색으로 그리기</a></li><li><a href="#mirror">좌우 대칭 그리기</a></li><li><a href="#popup">팝업 팔레트(펜만으로 사용)</a></li><li><a href="#works">의상과 소품에도</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>먼저 그려 보기</h2><ol class="mn-steps"><li>3D 뷰의 모델 위에서 그리기 시작하면 해당 텍스처 세트(예: body)로 <strong>자동 전환한 </strong>후 그립니다(오른쪽 텍스처 세트 패널에서 선택해도 됩니다).</li><li>왼쪽 도구 모음에서 펜(<kbd>P</kbd>)을 선택하고 보조 도구에서 &#x27;G펜&#x27; 등을 선택합니다.</li><li>색 패널에서 색을 선택하고 3D 뷰의 모델 위를 그립니다.</li><li>회전은 오른쪽 드래그(펜 사이드 버튼) 또는  <kbd>Space</kbd>+ 드래그, 확대는 휠입니다.</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="왼쪽 도구 모음과 보조 도구·도구 속성" loading="lazy"><figcaption>도구 모음·보조 도구·도구 속성</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="PetaNuri3D 전체 화면" loading="lazy"><figcaption>전체 화면</figcaption></figure></div><div class="mn-tip">모델 위에서  <kbd>Alt</kbd>+ 우클릭으로도 해당 세트를 선택할 수 있습니다. 자세한 내용은 <a href="/petanuri/ko/manual/sets">텍스처 세트</a>페이지를 참고하세요.</div></section><section class="mn-sec" id="tools"><h2>도구와 보조 도구</h2><p>도구 모음의 순서(기본 순서)입니다. 도구 키를 눌렀다 놓으면 해당 도구로 바뀌고, 누른 채 그리면 그동안만 해당 도구를 사용하며 놓으면 이전 도구로 돌아갑니다.</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">도구</th><th scope="col">키</th><th scope="col">보조 도구</th></tr></thead><tbody><tr><td>펜</td><td>P</td><td>G펜·둥근 펜·밀리펜·입출 펜·단색 칠 펜</td></tr><tr><td>붓</td><td>B</td><td>부드러운 붓·에어브러시·평칠·연필·분필·스프레이·수채화 번짐·평붓·닷지·번·그림자(곱하기)·모필</td></tr><tr><td>브러시 모음</td><td></td><td>연필·샤프·가는 붓·모필·평붓·덧칠·두꺼운 채색·물 테두리·물보라·나뭇잎·스펀지 등 33종</td></tr><tr><td>지우개</td><td>E</td><td>단단하게·부드럽게·거칠게·찰지우개·레이어 관통(및 포함된 2종)</td></tr><tr><td>데코레이션</td><td></td><td>반짝임·별·하트·꽃·벚꽃·음표·눈 결정·물방울무늬·거품·초승달·마름모·네잎클로버·물방울(<a href="/petanuri/ko/manual/deco#deco">데코레이션</a>)</td></tr><tr><td>스탬프</td><td></td><td>스탬프·스탬프(흩뿌리기)(<a href="/petanuri/ko/manual/deco#stamp">스탬프</a>)</td></tr><tr><td>무늬</td><td></td><td>스트라이프·물방울·깅엄 체크 등 15종(<a href="/petanuri/ko/manual/deco#pattern">패턴 펜</a>)</td></tr><tr><td>스티치</td><td></td><td>바늘땀·파이핑·크로스 스티치·주름 등 9종. 바늘땀은 전경색으로, 주름·부풀림은 높이로 그림(<a href="/petanuri/ko/manual/deco#bump">스티치</a>)</td></tr><tr><td>색 혼합</td><td>J</td><td>흐리기·손가락·색 혼합(각 3종과 포함된 3종)</td></tr><tr><td>채우기</td><td>G</td><td>아일랜드 칠하기·머티리얼 전체·둘러싸인 곳 칠하기·폴리곤 칠하기</td></tr><tr><td>그라데이션</td><td></td><td>전경색 → 배경색·전경색 → 투명·원형(전경색 → 투명)</td></tr><tr><td>도형</td><td></td><td>직선·사각형·타원·다각형(채우기/윤곽선)·곡선·곡선(점 연결)</td></tr><tr><td>스포이트</td><td>I</td><td>표시색 가져오기·레이어에서 가져오기</td></tr><tr><td>이동·변형</td><td>V</td><td><a href="/petanuri/ko/manual/edit#move">이동·변형 도구</a></td></tr><tr><td>선택 범위</td><td>S</td><td><a href="/petanuri/ko/manual/edit#select">선택 범위</a></td></tr><tr><td>숨기기 펜</td><td></td><td>면으로 숨기기·아일랜드로 숨기기(<a href="/petanuri/ko/manual/uv#hidepen">숨기기 펜</a>)</td></tr><tr><td>텍스트</td><td>T</td><td>가로쓰기·세로쓰기(<a href="/petanuri/ko/manual/edit#text">텍스트</a>)</td></tr><tr><td>자</td><td></td><td>직선·곡선·동심원·방사선·평행선(<a href="/petanuri/ko/manual/edit#ruler">자</a>)</td></tr></tbody></table></div><ul class="mn-list"><li>보조 도구 목록 아래 아이콘으로 복제·이름·삭제·초기화·내보내기·전체 내보내기·가져오기를 할 수 있습니다(우클릭도 가능. 이름 변경은 더블클릭도 가능). 재정렬은 드래그합니다(펜도 그대로 사용).</li><li>브러시 설정 내보내기·가져오기(.petabrush)는  <span class="tier std">Standard</span> 부터 사용할 수 있습니다. 가져온 팁 이미지도 함께 포함됩니다.</li><li>목록 위 &#x27;소 중 대&#x27;로 타일 크기를 바꿀 수 있습니다. 줄이면 아래 도구 속성이 넓게 보입니다.</li><li>도구 속성 값은 보조 도구별로 기억합니다.</li><li>도구 모음 버튼·보조 도구 타일 우클릭 → &#x27;키 할당&#x27;으로 원하는 키를 지정할 수 있습니다(보조 도구도 가능).</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="브러시 모음의 보조 도구" loading="lazy"><figcaption>브러시 모음</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="브러시로 그린 선 예시" loading="lazy"><figcaption>여러 브러시의 선</figcaption></figure></div><div class="mn-tip">새 도구와 보조 도구(모든 버전): 펜에 “도트 펜”, 채우기에 “올가미로 칠하기”, 도구 막대에 “픽셀 유동화”(밀어내기·부풀리기·오므리기·소용돌이(오른쪽)·소용돌이(왼쪽)·복원)와 “손바닥”을 추가했습니다. 보기 → 창 → “도구 목록”으로 도구를 격자로 늘어놓은 패널도 표시할 수 있습니다.</div><div class="mn-tip">도트 펜: 텍스처의 화소 격자에 맞춰 브러시 크기만큼의 화소를 선명하게 칠합니다(1이면 1화소, 3이면 3×3. 색은 섞이지 않습니다). 필압·입·출로 굵기가 바뀌지 않으며 3D·UV·대칭에서도 쓸 수 있습니다. 다른 펜도 도구 속성의 “도트(화소 격자에 맞춰 선명하게)”로 같은 방식이 됩니다.</div><div class="mn-tip">픽셀 유동화: 그려 둔 그림을 문지른 곳에서 일그러뜨립니다. 한 번 문지를 때마다 Ctrl+Z 한 번으로 되돌릴 수 있습니다. 3D 뷰에서는 UV 이음매를 넘어 이어지고, UV 뷰에서는 아일랜드 안에서만. 선택 범위·투명도 보호를 지키고 대칭으로도 그릴 수 있습니다. 손바닥: 선택 중에는 왼쪽 버튼·펜 드래그로 보기를 움직입니다(3D에서 Ctrl을 누르면 확대·축소).</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="도트 펜으로 그리고 텍스처를 도트 그대로 표시한 3D 뷰" loading="lazy"><figcaption>도트 펜과 텍스처를 도트 그대로 표시</figcaption></figure></section><section class="mn-sec" id="through"><h2>뒷면·가려진 면에도 칠하기</h2><p>도구 속성에서 불투명도 바로 아래의 <strong>&#x27;뒷면·가려진 면에도 칠하기&#x27;</strong>(지우개는 &#x27;뒷면·가려진 면도 지우기&#x27;)는 펜 아래에 보이는 면을 중심으로 브러시 원과 같은 겉보기 크기의 구 안에 있는, 카메라에서 보이지 않는 뒷면·안쪽 면에도 칠합니다. 머리카락 안쪽·겹친 옷·손가락 사이 등 돌아가서 보기 어려운 곳을 한 번에 칠할 수 있습니다.</p><ul class="mn-list"><li>펜·붓·브러시 모음·지우개·그라데이션은 <strong>기본적으로 켜져 </strong>있습니다. 끄면 보이는 면에만 칠합니다.</li><li>데코레이션·패턴·스티치에도 있습니다(처음에는 꺼짐). 흐리기·손끝·색 섞기·스탬프는 화면에 보이는 색·이미지를 쓰므로 보이는 면만 해당합니다.</li><li>경도에 따라 가장자리가 흐려집니다. 이미지 팁(연필·분필·스프레이·브러시 모음 다수 등)도 사용할 수 있습니다. &#x27;표면을 따라 칠하기&#x27;는 면 방향에 맞추고 &#x27;화면에 맞추기&#x27;는 화면에 보이는 팁 모양을 안쪽으로 투영합니다.</li><li>선택 범위·숨긴 면·대칭·투명 픽셀 잠금은 평소대로 적용됩니다. UV 영역에서 칠할 때는 관계없습니다(원래 모든 면에 적용).</li></ul><div class="mn-tip warn">두께가 있는 곳을 칠하면 반대쪽까지 닿을 수 있습니다. 브러시 크기에 주의하세요.</div></section><section class="mn-sec" id="props"><h2>브러시 세부 설정</h2><ul class="mn-list"><li>위의 &#x27;~&#x27; 선은 현재 설정으로 그린 예시입니다. 설정을 바꾸면 즉시 바뀝니다.</li><li><strong>크기 기준</strong>: 보조 도구별 &#x27;설정대로/텍스처로 고정/화면에 따라 가변&#x27;. 텍스처로 고정하면 확대·축소해도 텍스처에 같은 굵기로 칠합니다. 설정대로는 파일 → 환경 설정 → 그리기의 &#x27;브러시 크기 단위&#x27;(화면 px/텍스처 px)를 따릅니다.</li><li><strong>브러시 끝</strong>: 원·사각형·평붓·연필·분필·스프레이·수채화·모필·반짝임·별·하트와 포함된 팁 31개. &#x27;불러오기&#x27;로 이미지(흰 바탕에 검게 그린 모양)나 다른 페인트 소프트웨어의 브러시 파일(.abr·.gbr·.gih, 묶은 .zip)도 사용할 수 있습니다.</li><li><strong>덧칠</strong>: 같은 곳에 겹칠수록 진해집니다(에어브러시용).</li><li><strong>렌더링 모드</strong>: 곱하기·스크린·오버레이·더하기(발광) 등 28종으로 칠할 수 있습니다. &#x27;뒤에 그리기(아직 칠하지 않은 곳만)&#x27;·&#x27;밝게&#x27;·&#x27;어둡게&#x27;도 있습니다.</li><li><strong>보정 종류</strong>: 매끄럽게(늦게 따라옴)/1€(느리게 그릴 때 흔들림을 강하게 억제하고 빠르게 그릴 때 지연 감소)/끈 당기기(펜에서 조금 떨어져 따라옴. 손떨림 제거).</li><li><strong>시작·끝</strong>: 선의 시작과 끝을 가늘게 합니다. 끝은 펜을 놓을 때 선 마지막을 가늘게 다시 그리므로 그리는 동안 지연이 생기지 않습니다.</li><li><strong>움직임</strong>: 속도에 따른 굵기·굵기와 농도 변화·눕힘에 따른 굵기와 농도·펜 기울기나 회전에 따른 팁 회전(눕힘·회전은 해당 정보를 보내는 펜만 지원).</li><li><strong>필압 곡선</strong>: 굵기·농도 각각 점을 움직여 반응을 정합니다.</li><li><strong>종이 질감</strong>: 칠하는 농도에 종이나 캔버스 결이 더해집니다(포함 6장·패턴 15종·원하는 이미지). 면에 붙으므로 시점을 움직여도 어긋나지 않습니다.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="도구 속성. 뒷면·가려진 면에도 칠하기·팁·종이 질감 등의 설정" loading="lazy"><figcaption>도구 속성</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="팁 목록" loading="lazy"><figcaption>팁 목록</figcaption></figure></div><div class="mn-tip">왼쪽 &#x27;브러시 크기&#x27; 패널에서 자주 쓰는 크기를 한 번에 선택할 수 있습니다. 크기는 원과 숫자의 작은 타일이며 패널을 좁히면 1열까지 줄일 수 있습니다. 마지막 연필 아이콘 또는 우클릭으로 현재 크기를 추가·제거합니다. <kbd>[</kbd> <kbd>]</kbd> 로도 크기를 바꿀 수 있습니다(1~1000).</div><div class="mn-tip"><strong>3D 칠하기 방식</strong>: &#x27;표면을 따라 칠하기&#x27;는 기울어진 면에서도 붓 자국이 덜 늘어나며 v1.1.0에서 미설정 브러시의 기본값입니다. &#x27;화면에 맞추기&#x27;는 카메라에서 투영하므로 기울어진 면에서 붓 자국이 늘어납니다. 보조 도구별로 선택할 수 있습니다. 저장된 설정은 유지되며 UV 뷰의 그리기 방식은 바뀌지 않습니다.</div><div class="mn-tip">외부 브러시 끝 이미지 가져오기: 보조 도구의 가져오기에서 ABR·GBR·GIH·PNG 등의 이미지·SUT·ZIP을 선택합니다. 여러 파일 선택이나 패널에 드롭도 가능하며 등록 후 바로 그릴 수 있습니다. 모든 버전에서 사용 가능합니다.</div><div class="mn-tip">끝 이미지와 가져올 수 있는 초기 크기·간격 등의 값을 사용합니다. 원래 브러시 엔진·필압·혼색·색을 완전히 재현하지는 않습니다. SUT는 내부의 읽을 수 있는 PNG를 사용하므로 축소 이미지나 다른 소재가 될 수 있습니다. 가져온 뒤 도구 속성에서 조정하세요.</div><div class="mn-tip">ABR은 버전 1·2·6의 이미지 끝, GBR은 버전 1·2를 지원합니다. GIH의 여러 끝은 개별 등록합니다. 이미지는 투명도를 사용하거나 흰색을 빼서 끝 이미지로 만듭니다. .petabrush 설정 가져오기·내보내기는 Standard 이상입니다.</div><div class="mn-tip">필기감(모든 버전): 파일 → 환경 설정 → 펜·입력 → “필기감”에서 “필압만으로 입·출”(기본)과 “길이로 입·출”(이전 기본)을 고를 수 있습니다. 필압만으로 입·출은 필압이 약해지는 곳이 그대로 입·출이 되어, 시작의 뭉침·끝의 실 같은 꼬리가 잘 생기지 않습니다(펜일 때만. 마우스·터치는 항상 길이로 입·출).</div><div class="mn-tip">이전 버전부터 사용하던 분에게는 실행할 때 한 번만 필기감 개선 안내가 나옵니다. “이전 필기감으로 되돌리기”로 길이로 입·출로 되돌릴 수 있습니다(나중에도 환경 설정에서 바꿀 수 있습니다).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="환경 설정 펜·입력의 필기감 항목" loading="lazy"><figcaption>필기감</figcaption></figure></section><section class="mn-sec" id="blend"><h2>흐리기·손가락·색 혼합</h2><ul class="mn-list"><li><strong>흐리기</strong>: 문지른 곳을 매끄럽게. 문지를수록·왕복할수록 색이 섞입니다. &#x27;흐리기 범위&#x27;로 효과 범위가 바뀝니다.</li><li><strong>손가락</strong>: 색을 끌어 늘입니다.</li><li><strong>색 혼합</strong>: 그은 곳의 색을 가져와 전경색과 혼합하며 칠합니다. &#x27;물감 양&#x27;이 0이면 칠해진 색만 섞습니다. &#x27;색 늘이기&#x27;를 높이면 길게 늘어납니다.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="색 혼합으로 두 색을 섞은 모습" loading="lazy"><figcaption>색 혼합으로 두 색을 섞은 모습</figcaption></figure><div class="mn-tip">모두 3D 위에서 계산하므로 UV 이음매에서 끊기지 않습니다. 흐리기·손가락은 UV 영역에서도 사용할 수 있습니다(색 혼합은 3D 영역만).</div><div class="mn-tip">흐리기에도 “3D 칠하는 방식”(면을 따름/화면에 맞춤)이 생겼습니다. 기본값은 면을 따름이며, 흐리기가 적용되는 범위가 펜과 같은 모양이 됩니다.</div><div class="mn-tip">흐리기는 겹칠수록 섞입니다(모든 버전): 지금의 그림을 다시 흐리면서 움직인 거리만큼 조금씩 끌어오므로, 세기가 낮은 흐리기(평평한 흐리기 등)도 겹친 만큼 효과가 납니다. 한 획으로 같은 곳을 여러 번 문질러도 뚜렷한 경계나 선화까지 다 녹지 않도록 효과 횟수에 상한이 있습니다. UV 영역·2D 캔버스의 흐리기도 같은 방식입니다. 도구 속성의 &#x27;겹칠수록 섞이게&#x27;를 끄면 이전 방식(한 획 안에서는 겹쳐도 강해지지 않음)으로 돌아갑니다(처음에는 켜짐).</div><div class="mn-tip">색 섞기는 붓이 집은 색을 붓 안에서 고르게 한 뒤 옮기므로 경계의 색이 넓고 부드럽게 섞입니다(모든 버전). 저장한 보조 도구 설정은 그대로이고 효과만 달라집니다.</div><div class="mn-tip">흐리기·손가락·색 혼합에서도 도구 속성에서 브러시 끝을 고를 수 있습니다(모든 버전. v1.3.0부터).</div></section><section class="mn-sec" id="fill"><h2>채우기·그라데이션·도형</h2><ul class="mn-list"><li><strong>아일랜드 칠하기</strong>: 누른 UV 아일랜드 전체를 칠합니다. <strong>머티리얼 전체</strong>: 해당 머티리얼 전체를 칠합니다.</li><li><strong>둘러싸인 곳 칠하기</strong>: 선으로 둘러싸인 곳을 누르면 해당 아일랜드 안에서 색이 가까운 연결 영역을 칠합니다. 참조(모든 레이어/선택한 레이어)·허용치·&#x27;틈 메우기&#x27;(끊어진 선에서 멈춤)·&#x27;확장&#x27;(선 아래까지 확장).</li><li><strong>폴리곤 칠하기</strong>: 그은 면 전체를 전경색으로 칠합니다.</li><li><strong>그라데이션</strong>: 3D 뷰에서 시작점부터 끝점까지 드래그합니다. &#x27;뒷면·가려진 면에도 칠하기&#x27;(기본 켜짐)를 켜면 누른 곳과 놓은 곳을 잇는 3D 선을 따라 뒷면·안쪽 면에도 적용됩니다(머리카락 뿌리부터 끝까지 등). <kbd>Shift</kbd> 로 45° 간격.</li><li><strong>도형</strong>: 직선·사각형·타원·다각형(3~12각)을 채우기 또는 윤곽선으로 그립니다. <kbd>Shift</kbd> 로 정사각형·정원, &#x27;중심에서 그리기&#x27;는 시작점이 중심입니다. 곡선은 드래그 후 놓고 움직여 구부린 다음 다시 눌러 확정합니다. 곡선(점 연결)은 누를 때마다 점을 놓고 더블클릭 또는 <kbd>Enter</kbd> 로 확정합니다(&#x27;닫기&#x27;로 고리를 만들어 채울 수 있음).</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="선으로 둘러싸인 곳을 채운 모습" loading="lazy"><figcaption>둘러싸인 곳 칠하기</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="다리에 그라데이션을 적용한 모습" loading="lazy"><figcaption>그라데이션</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="폴리곤 칠하기로 면을 칠한 모습" loading="lazy"><figcaption>폴리곤 칠하기(메시 선 표시)</figcaption></figure></div><div class="mn-tip">채색 레이어를 선 레이어 아래에 만들면 선이 깔끔하게 남습니다.</div><p>여러 색·투명도를 사용하는 과정은 <a href="#gradient">색과 투명도의 그라데이션</a>을 참고하세요.</p><div class="mn-tip">도형 선 굵기는 브러시 크기와 연동됩니다. 브러시 크기 목록·[ ] 키·팝업 팔레트로 바꾸면 도형 선 굵기도 바뀝니다(도형 보조 도구마다 남고 펜 크기는 바뀌지 않습니다).</div><div class="mn-tip">올가미로 칠하기(모든 버전): 채우기의 보조 도구. 3D·UV 영역·2D 캔버스 위를 드래그로 둘러싸면 둘러싼 곳을 전경색으로 칠합니다(지금의 선택 범위는 그대로. 실행 취소 한 번으로 되돌립니다). 3D에서 다른 텍스처 세트 위를 둘러쌌을 때는 펜의 &#x27;누른 곳으로 전환&#x27;과 같이, 둘러싼 곳에 가장 많이 보이는 세트로 전환한 뒤 칠합니다(&#x27;걸쳐 그리기&#x27;가 켜져 있으면 서브 세트에도 칠합니다).</div><div class="mn-tip">Alt＋Backspace로 전경색, Ctrl＋Backspace로 배경색으로 채웁니다(선택 범위가 있으면 그 안, 없으면 선택한 레이어 전체. 마스크에 그릴 때는 색의 밝기로). D 키(두 색 사각형 왼쪽 아래의 작은 버튼도)로 전경색을 검정·배경색을 흰색으로 되돌립니다.</div><div class="mn-tip">도형의 끝 이미지(모든 버전. v1.3.0부터): 도형 도구의 도구 속성에서 끝 이미지를 고르면 스티치 등을 도형 윤곽을 따라 늘어놓아 그립니다. 연필·초크 등의 끝은 펜과 같은 간격·랜덤 회전으로 이어진 선이 됩니다. 굵기·간격·각도·선 방향에 맞춘 회전·랜덤 회전을 조정할 수 있습니다. &#x27;원&#x27;을 고르면 지금까지의 도형 그리기로 돌아갑니다.</div></section><section class="mn-sec" id="gradient"><h2>색과 투명도의 그라데이션</h2><p>그라데이션 그리기 도구는 Lite부터 사용할 수 있습니다. 도구 속성의 &#x27;색&#x27;에서 <strong>&#x27;색과 불투명도 지점&#x27;</strong>을 선택하면 두 색뿐 아니라 색과 투명도를 조합한 그라데이션으로 그릴 수 있습니다. &#x27;전경색→배경색&#x27;·&#x27;전경색→투명&#x27;도 선택할 수 있습니다.</p><ol class="mn-steps"><li>프리셋을 선택하거나 바의 빈 곳을 클릭하여 색 점을 추가합니다. 점은 2~32개입니다.</li><li>점을 선택하여 색·위치·불투명도를 바꿉니다. 위치는 드래그로도 바꿀 수 있습니다. 선택한 점을 다시 탭하거나 더블클릭하면 색을 선택할 수 있습니다.</li><li>불필요한 점은 &#x27;정지점 삭제&#x27;· <kbd>Delete</kbd>·바 밖으로 끌어내기로 지웁니다. &#x27;전경색 넣기&#x27;·&#x27;균등하게 배치&#x27;·&#x27;좌우 바꾸기&#x27;도 사용할 수 있습니다.</li><li>프리셋 240종을 그룹과 이름으로 찾을 수 있습니다. 투명색을 포함한 프리셋도 있습니다. 목록은 스크롤할 수 있습니다. 이름을 정하고 &#x27;현재 것 저장&#x27;으로 나만의 프리셋을 남길 수 있습니다.</li><li>선형 또는 원형을 선택하고 3D 뷰나 UV 위에서 시작점부터 끝점까지 드래그하여 그립니다.</li></ol><div class="mn-tip">그라데이션 불투명도가 0인 부분은 아래 색이 유지됩니다. 이미 그린 색을 지우려면 <a href="#transparent">투명색으로 그리기</a>을 사용합니다. 높이나 면 방향에 따른 명암을 새 레이어에 구우려면 Pro의 <a href="/petanuri/ko/manual/bake#gradient">그라데이션 베이크</a>가 편리합니다.</div><div id="spatial-gradient"><h3>3D 공간의 점에서 그라데이션 칠하기</h3><p>일반 그라데이션 도구에서도 3D 공간에 놓은 점에서 색을 퍼뜨릴 수 있습니다. 모델 밖에도 점을 놓을 수 있습니다. 필터의 베이크와 달리 선택한 그리기 레이어에 적용합니다.</p><ol class="mn-steps"><li>칠할 레이어를 선택하고 그라데이션의 도구 속성에서 “3D 공간의 점에서 칠하기”를 누릅니다. “3D 공간 그라데이션” 창이 열립니다.</li><li>3D 뷰에서 모델 표면이나 빈 공간을 클릭해 중심점을 놓습니다. 이동 핸들을 드래그하거나 X·Y·Z 좌표를 입력해 움직입니다.</li><li>반경으로 색이 퍼지는 거리를 바꾸고 색과 불투명도 점 또는 프리셋으로 색감을 조정합니다. 투명한 부분은 아래 색을 유지합니다.</li><li>미리 보기로 확인한 뒤 적용하면 선택한 레이어에 그려집니다. 한 번의 실행 취소로 적용 전으로 되돌릴 수 있습니다. 취소하면 레이어의 원래 그림으로 돌아갑니다.</li></ol><div id="gradient-range-guide"><h3>거리와 색의 범위 가이드</h3><p>바깥쪽 흰색 핸들을 드래그하면 색이 퍼지는 거리를 바꿀 수 있습니다. 색 핸들은 각 색의 위치를 움직입니다. 중심의 이동 핸들과 XYZ 좌표도 그대로 쓸 수 있으며 핸들·숫자 설정·색과 불투명도 편집이 연동됩니다.</p><p>링은 중심에서의 거리, 띠는 색과 불투명도를 나타냅니다. 각 색의 위치·색·불투명도 표시로 확인할 수 있습니다. ∅가 붙은 색은 현재 범위에 나타나지 않습니다. 드래그 중 Esc를 누르면 해당 드래그를 취소할 수 있습니다.</p><p>“범위 가이드 표시”로 링·띠·색 핸들을 표시하거나 숨길 수 있습니다. 중심의 이동 핸들은 계속 사용할 수 있습니다. Pro의 점 거리 그라데이션 베이크에도 같은 가이드가 있으며 경계 위치와 혼합 폭을 바꾸면 링과 색의 위치에 반영됩니다.</p></div><div class="mn-tip">기존 선형·원형 드래그 조작과 UV 위의 그라데이션도 계속 사용할 수 있습니다. 높이나 면 방향에 따른 명암을 새 레이어에 구우려면 Pro의 그라데이션 베이크를 사용합니다.</div></div></section><section class="mn-sec" id="color"><h2>색 선택·스포이트</h2><ul class="mn-list"><li><strong>색</strong> 패널: 위 버튼으로 색 선택 방식 5종을 전환합니다(링 + 사각형·링 + 삼각형·사각형 + 색상 바·원판 + 명도 바·슬라이더).</li><li><strong>색 값</strong> 패널: 전경색/배경색·HEX·화면에서 색 가져오기·RGB/HSV 값·불투명도.</li><li><strong>최근 사용한 색</strong>: 실제 칠한 색·가져온 색 12개입니다. 누르면 전경색이 됩니다.</li><li><kbd>X</kbd> 로 전경색과 배경색을 바꿉니다.</li><li><strong>스포이트</strong>：<kbd>Alt</kbd> 를 누르는 동안 어느 도구에서든 스포이트가 됩니다.</li><li><strong>화면에서 색 가져오기</strong>(<kbd>Shift</kbd>＋<kbd>I</kbd>): 창 밖을 포함하여 화면 어디에서든 색을 가져올 수 있습니다.</li><li><strong>컬러 세트</strong>: 견본을 탭하면 전경색이 됩니다. &#x27;+현재 전경색&#x27;으로 추가하고 드래그로 재정렬합니다. 견본 삭제는 실행 취소할 수 있습니다. .gpl 팔레트도 읽고 쓸 수 있습니다.</li><li><strong>참고 이미지</strong>: 열기·드롭·붙여넣기(<kbd>Ctrl</kbd>＋<kbd>V</kbd>)로 표시하고 스포이트로 색을 가져올 수 있습니다. 위 돋보기로 확대·축소, &#x27;100%&#x27;로 실제 크기, 모서리 표시로 전체 보기를 합니다(펜만으로도 사용 가능).</li></ul><div class="mn-tip">화면에서 색 가져오기(exe 버전. v1.3.0부터): 시작할 때의 화면을 캡처해서 루페(확대와 색 값)를 표시합니다. 클릭·Enter·Space로 가져오고, 방향키로 1픽셀씩(Shift로 10픽셀) 움직일 수 있습니다. Esc·오른쪽 클릭으로 취소합니다. 캡처한 화면에서 가져오므로 동영상 등은 멈춘 것처럼 보입니다. v1.2.1의 exe에서는 열자마자 취소되어 사용할 수 없었습니다.</div><div class="mn-tip">스포이트 확대경(모든 버전. v1.3.0부터): 스포이트(I, Alt를 누르고 있는 동안)를 쓰면 커서 위치에 둥근 확대경이 나타납니다. 가운데 틀이 가져올 곳, 바깥 고리가 가져올 색입니다. 3D 뷰와 UV 뷰 모두에서 나타납니다. 스포이트 도구 속성의 &#x27;확대경 표시&#x27;로 끌 수 있습니다(처음에는 켜짐).</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="색과 색 값 패널" loading="lazy"><figcaption>색·색 값</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="컬러 세트와 최근 사용한 색" loading="lazy"><figcaption>컬러 세트 | 최근 사용한 색</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="참고 이미지 패널" loading="lazy"><figcaption>참고 이미지</figcaption></figure></div><div class="mn-tip">RGB/HSV 버튼으로 보조 슬라이더를 전환합니다. 위의 색상 필드와 색상 막대는 유지됩니다. HSV에서는 색상·채도·밝기를 조정하며 선택은 다시 실행해도 유지됩니다.</div><div class="mn-tip">Alt 버튼식 카메라에서는 3D의 Alt를 카메라에 사용합니다. 3D 스포이트는 I 키로, UV 스포이트는 기존처럼 Alt로도 사용할 수 있습니다.</div><div class="mn-tip">참고 이미지 스포이트에서는 커서가 스포이트 모양이 되고, 밝은 이미지에서도 어두운 이미지에서도 보이도록 흰 테두리가 붙습니다. 끝이 색을 집는 위치입니다.</div></section><section class="mn-sec" id="transparent"><h2>투명색으로 그리기 (같은 브러시로 지우기)</h2><p>색 값 패널의 <strong>체크무늬 버튼 </strong>또는 <kbd>C</kbd> 로 투명색으로 전환합니다. 펜·붓·브러시 모음 등의 브러시로 팁 모양·경도·필압·흐름을 살리면서 선택한 그리기 레이어의 색을 지울 수 있습니다.</p><p>다시  <kbd>C</kbd> 를 누르거나 일반 전경색을 선택하면 돌아갑니다. 투명 픽셀을 잠근 레이어는 지울 수 없으므로 지우려면 투명 픽셀 잠금을 해제합니다.</p><div class="mn-tip">투명색은 브러시로 지우기 위한 전환입니다. 모든 도구를 지우기로 바꾸는 기능은 아닙니다.</div><div class="mn-tip">투명색(모든 버전): 채우기(아일랜드·머티리얼 전체·둘러싸인 곳)·폴리곤 칠하기·도형도 투명색이면 칠하는 곳을 지웁니다. 그라데이션은 전경색 쪽일수록 강하게 지웁니다. 투명도 보호 레이어에서는 거절합니다.</div></section><section class="mn-sec" id="mirror"><h2>좌우 대칭 그리기</h2><ol class="mn-steps"><li>3D 뷰 왼쪽 위의  <strong>X</strong>(좌우)를 누릅니다(<kbd>M</kbd> 키도 가능).</li><li>그대로 그리면 반대쪽에도 같은 내용이 적용됩니다.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="좌우 대칭으로 한쪽 팔에 그린 별이 반대쪽 팔에도 적용된 모습" loading="lazy"><figcaption>한쪽 팔에 그리면 반대쪽에도 적용됩니다</figcaption></figure><ul class="mn-list"><li>Y(앞뒤)·Z(위아래)도 여러 축을 동시에 사용할 수 있습니다(X와 Z는 4곳에 적용).</li><li>▼에서 대칭 중심을 &#x27;모델 중심&#x27;·&#x27;원점&#x27;·&#x27;지정&#x27; 중 선택합니다. &#x27;지정&#x27;은 수치(cm) 입력 또는 &#x27;모델 위를 눌러서 정하기&#x27;으로 정합니다. &#x27;정점에 맞추기&#x27;는 누른 곳에 가장 가까운 버텍스 위치가 됩니다. 3D 우클릭 → &#x27;대칭으로 그리기&#x27; → &#x27;여기를 대칭 중심으로&#x27;로도 정할 수 있습니다.</li><li>&#x27;모델 중심&#x27;의 좌우는 형태가 가장 좌우 대칭인 위치입니다(한쪽에만 장식이나 소품이 있어도 몸 중앙).</li><li>▼의 <strong>&#x27;대칭 상대를 찾는 범위&#x27;</strong>(0~3%, 기본 1%): 좌우 모양이 조금 다른 옷 등에서 반사된 위치에 면이 없으면 이 범위의 가장 가까운 면을 반대쪽으로 칠합니다.</li><li><strong>도구 속성 맨 위 </strong>와 <strong>UV 영역 제목 </strong>에도 &#x27;대칭 X·Y·Z&#x27;가 있습니다(3D 왼쪽 위와 같은 전환). 대칭이 적용되지 않는 도구는 대칭 항목이 없으며 3D 왼쪽 위 X·Y·Z에 사선이 표시됩니다. 색 혼합처럼 UV 영역에서만 적용되지 않는 도구는 이유가 표시됩니다.</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="대칭 ▼ 창. 중심과 대칭 상대 검색 범위" loading="lazy"><figcaption>대칭 ▼(중심·상대 검색 범위)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="도구 속성 위의 대칭 X·Y·Z. X 켜짐" loading="lazy"><figcaption>도구 속성 위 &#x27;대칭&#x27;</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="색 혼합 대칭 항목. UV 영역에서 적용되지 않는 이유 표시" loading="lazy"><figcaption>UV 영역에서 적용되지 않는 도구는 이유가 표시됩니다</figcaption></figure></div><p>도구별 적용 여부(○ 적용·△ 조건부·× 미적용·― 해당 없음). 누른 위치·그린 모양의 거울 위치에도 같은 조작을 적용하며 실행 취소는 한 번입니다.</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">도구</th><th scope="col">3D 영역</th><th scope="col">UV 영역</th></tr></thead><tbody><tr><td>펜·붓·브러시 모음·데코레이션·패턴·스티치</td><td>○</td><td>○</td></tr><tr><td>지우개(레이어 관통 포함)</td><td>○</td><td>○</td></tr><tr><td>스탬프</td><td>○</td><td>○(대칭 쪽 이미지도 거울 방향)</td></tr><tr><td>흐리기·손가락</td><td>○</td><td>○</td></tr><tr><td>색 혼합</td><td>○</td><td>―(UV 영역에서 사용할 수 없는 도구)</td></tr><tr><td>채우기(아일랜드·머티리얼 전체)·둘러싸인 곳 칠하기</td><td>○</td><td>○</td></tr><tr><td>폴리곤 칠하기</td><td>○</td><td>○</td></tr><tr><td>도형</td><td>○</td><td>○</td></tr><tr><td>그라데이션</td><td>△</td><td>△</td></tr><tr><td>텍스트·이미지 붙이기</td><td>○</td><td>○(확정할 때 대칭 쪽에도 적용)</td></tr><tr><td>선택 펜·선택 지우개·면 선택</td><td>○</td><td>○</td></tr><tr><td>선택 범위(사각형·타원·올가미·꺾은선·자동 선택·아일랜드 선택)</td><td>×</td><td>×(둘러싸서 범위를 정하는 도구)</td></tr><tr><td>변형·이동·변형 도구</td><td>―</td><td>×(기존 그림을 움직이는 조작)</td></tr><tr><td>스포이트·자 배치</td><td>―</td><td>―(자를 따라 그리는 선은 대칭 적용)</td></tr><tr><td>숨기기 펜</td><td>×</td><td>×(표시를 숨기는 도구)</td></tr></tbody></table></div><div class="mn-tip">△ 그라데이션: 3D 영역에서 보이는 면은 직접 칠한 색이 유지되며 대칭 쪽에 적용되는 것은 보이지 않는 면입니다. UV 영역에서 투명색을 포함한 그라데이션은 진한 쪽이 적용됩니다. &#x27;뒷면·가려진 면에도 칠하기&#x27;가 켜져 있으면 모든 면에 3D 선으로 직접 적용되므로 대칭을 사용하지 않습니다.</div><div class="mn-tip"><strong>포즈를 취한 상태에서도 </strong>원래 포즈(휴식 자세)의 대칭 위치에 칠합니다. 팔을 굽혀도 반대쪽 팔의 같은 곳에 적용됩니다(<a href="/petanuri/ko/manual/pose#posemirror">포즈</a>).</div><div class="mn-tip">숨긴 쪽에도 대칭 그리기: 대칭 ▼에서 체크하고 한쪽을 숨긴 뒤 보이는 쪽을 3D에서 칠하면 숨긴 반대쪽에도 함께 그립니다. 기본은 꺼짐입니다. 펜·브러시·지우개·스탬프에 적용되며 UV 그리기와 채우기는 제외됩니다. 선택 범위·레이어 잠금·대상 세트 제한은 유지됩니다.</div><div class="mn-tip">대칭 ▼의 “대칭선 표시”와 “선 진하기”(10~100%)로 대칭 중심선을 3D에 표시합니다. “반대쪽에도 커서 표시”를 켜면 칠하는 위치를 뒤집은 곳에도 점선 원이 나옵니다(반대쪽이 면 뒤나 안쪽이면 옅게 나옵니다). 둘 다 처음에는 켜져 있습니다.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="대칭선과 반대쪽 커서가 나온 3D 뷰" loading="lazy"><figcaption>대칭선과 반대쪽 커서</figcaption></figure></section><section class="mn-sec" id="popup"><h2>팝업 팔레트(펜만으로 사용)</h2><ul class="mn-list"><li>3D·UV 위에서 펜 사이드 버튼을 누르고 <strong>움직이지 않고 놓으면 </strong>그 자리에 원형 팔레트가 표시됩니다(드래그하면 기존처럼 회전).</li><li>바깥쪽: 자주 쓰는 보조 도구(&#x27;+&#x27;로 현재 보조 도구 추가, 길게 누르기·우클릭으로 제거. 최대 10개). 안쪽: 색상 링과 사각형으로 전경색, 위 작은 원은 최근 사용한 색, 아래 표시를 위아래로 드래그하여 브러시 크기 조정.</li><li>팔레트 밖 누르기· <kbd>Esc</kbd> 로 닫습니다. 마우스로 사용할 때는 파일 → 환경 설정 → 조작의 &#x27;오른쪽 클릭&#x27;을 팝업 팔레트로 설정합니다(우클릭 메뉴 맨 위 &#x27;팝업 팔레트 표시&#x27;로도 표시 가능).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="팝업 팔레트" loading="lazy"><figcaption>팝업 팔레트</figcaption></figure></section><section class="mn-sec" id="works"><h2>의상과 소품에도</h2><p>아바타 몸뿐 아니라 의상과 소품도 같은 도구로 칠할 수 있습니다. 아래는 ののつよ 시리즈 의상과 소품을 PetaNuri3D로 연 표시 예시입니다.</p><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="狛犬セーラー를 PetaNuri3D로 연 표시 예시" loading="lazy"><figcaption>狛犬セーラー</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="풍경을 PetaNuri3D로 연 표시 예시" loading="lazy"><figcaption>풍경(獄門しのぶ의 소품)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="마법 모자를 PetaNuri3D로 연 표시 예시" loading="lazy"><figcaption>마법 모자(星羽の魔導衣의 소품)</figcaption></figure></div><div class="mn-tip">특정 부분(UV 아일랜드)에만 선을 그으려면 선택 범위의 &#x27;아일랜드로 선택&#x27;으로 부분을 선택하고 &#x27;교차&#x27;으로 띠 모양과 겹친 후 칠합니다(<a href="/petanuri/ko/manual/edit#select">선택 범위</a>).</div></section>
-    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/start"><small>← 이전</small>시작 방법</a><a class="next" href="/petanuri/ko/manual/deco"><small>다음 →</small>스탬프·패턴·스티치·2D 캔버스</a></nav>
+    <p class="mn-intro">3D 모델 위에 펜으로 직접 그립니다. 도구 선택 방법, 그리는 느낌 정하기, 색 고르는 법, 채우기·그라데이션·도형, 좌우 대칭으로 그리기까지 정리했습니다.</p>
+    <p class="mn-proof mn-ui-note">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-quick"><b>먼저 이것만</b><ol>
+      <li>왼쪽 도구 모음에서 펜(<kbd>P</kbd>)을 누르고, 보조 도구에서 "G펜"을 선택합니다(<a href="#basic">자세히</a>).</li>
+      <li>색 패널에서 색을 고르고 3D 뷰의 모델 위를 따라 그립니다. 그리기 시작한 곳의 텍스처 세트로 자동 전환됩니다(<a href="#basic">자세히</a>).</li>
+      <li>굵기는 <kbd>[</kbd> <kbd>]</kbd>나 왼쪽의 브러시 크기 패널에서 바꿉니다(<a href="#props-size">자세히</a>).</li>
+      <li>지울 때는 지우개(<kbd>E</kbd>)를 쓰거나, <kbd>C</kbd>로 투명색으로 바꿔 같은 브러시로 지웁니다(<a href="#transparent">자세히</a>).</li>
+      <li>좌우에 똑같이 그릴 때는 3D 뷰 왼쪽 위의 "X"를 누릅니다(<kbd>M</kbd>) (<a href="#mirror">자세히</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#basic">첫 번째 선 그리기</a></li><li><a href="#tools">도구와 보조 도구 선택하기</a></li><li><a href="#props">그리는 느낌 정하기(도구 속성)</a></li><li><a href="#through">뒷면·가려진 면에도 칠하기</a></li><li><a href="#color">색 선택·스포이트</a></li><li><a href="#transparent">투명색으로 그리기(같은 브러시로 지우기)</a></li><li><a href="#mirror">좌우 대칭으로 그리기</a></li><li><a href="#blend">흐리게 하기·늘이기·색 섞기</a></li><li><a href="#distort">그린 그림 일그러뜨리기(픽셀 유동화)</a></li><li><a href="#fill">한꺼번에 칠하기(채우기)</a></li><li><a href="#gradient">그라데이션으로 칠하기</a></li><li><a href="#shape">도형 그리기</a></li><li><a href="#popup">펜만으로 색과 크기 바꾸기(팝업 팔레트)</a></li><li><a href="#works">옷이나 소품에도 칠할 수 있습니다</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="그리는 법 선 긋기 드로잉 안 그려짐 시점 줌 직선">
+      <h2>첫 번째 선 그리기</h2>
+      <p>모델을 열면 바로 그릴 수 있습니다. 그리기 전에 텍스처 세트를 선택하지 않아도, 그리기 시작한 곳의 텍스처 세트(예: body)로 자동 전환됩니다.</p>
+      <ol class="mn-steps">
+        <li>왼쪽 도구 모음에서 "펜"을 누릅니다(<kbd>P</kbd>).</li>
+        <li>보조 도구 패널에서 "G펜"을 선택합니다.</li>
+        <li>색 패널에서 전경색을 선택합니다.</li>
+        <li>3D 뷰의 모델 위를 따라 그립니다. 그은 곳에 선이 들어갑니다.</li>
+        <li>돌릴 때는 오른쪽 드래그(펜의 사이드 버튼) 또는 <kbd>Space</kbd>+드래그, 가까이 갈 때는 휠을 사용합니다.</li>
+        <li>잘못 그렸다면 <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 한 획씩 되돌립니다.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="왼쪽 도구 모음과 보조 도구·도구 속성" loading="lazy"><figcaption>도구 모음·보조 도구·도구 속성</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="PetaNuri3D 화면 전체" loading="lazy"><figcaption>화면 전체</figcaption></figure></div>
+      <h3 id="basic-more">그릴 때 쓸 수 있는 조작</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+클릭: 앞에 그린 선이 끝난 곳에서 곧은 선을 긋습니다.</li>
+        <li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+좌우로 드래그: 브러시 크기를 바꿉니다.</li>
+        <li><kbd>Ctrl</kbd>+오른쪽 드래그(펜의 사이드 버튼): 좌우로 브러시 크기, 상하로 경도를 바꿉니다. <kbd>Ctrl</kbd>+펜 끝 드래그는 좌우로 불투명도, 상하로 브러시 끝의 각도입니다.</li>
+        <li>펜의 지우개 쪽으로 그으면 지우개로 지울 수 있습니다.</li>
+        <li>모델 위에서 <kbd>Alt</kbd>+오른쪽 클릭하면 그곳의 텍스처 세트를 선택할 수 있습니다(<a href="/petanuri/ko/manual/sets#choose">텍스처 세트 선택하기</a>).</li>
+        <li>UV 뷰 위에서도 같은 도구로 그릴 수 있습니다(<a href="/petanuri/ko/manual/uv">UV와 표시 범위</a>).</li>
+      </ul>
+      <p>카메라 조작 방식과 다른 키는 <a href="/petanuri/ko/manual/keys#pen">펜·마우스 조작</a>을 보세요.</p>
+      <h3 id="basic-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>그어도 색이 칠해지지 않음</b>: 화면 아래쪽 띠에 이유가 표시됩니다. 숨긴 레이어·잠긴 레이어·폴더에는 그릴 수 없습니다. 레이어 패널에서 그릴 수 있는 레이어를 선택하세요(<a href="/petanuri/ko/manual/layers#basic">레이어</a>).</li>
+        <li><b>일부에만 색이 칠해지지 않음</b>: 선택 범위 바깥과 숨긴 부분에는 그릴 수 없습니다. 투명 픽셀 잠금을 켠 레이어에서는 투명한 곳에 그릴 수 없습니다.</li>
+        <li><b>다른 텍스처 세트 위에서 그려지지 않음</b>: "그리기 시작한 곳의 세트로 자동 전환"이 꺼져 있습니다. 3D 뷰에서 오른쪽 클릭 → "그리기 시작한 곳의 세트로 자동 전환"을 켭니다. 선택 범위가 있을 때는 선택되지 않은 세트에는 그릴 수 없습니다.</li>
+        <li><b>필압으로 굵기가 변하지 않음</b>: 도구 속성의 "필압으로 크기"가 켜져 있는지 확인하세요. 켜져 있는데도 변하지 않으면 <a href="/petanuri/ko/manual/keys#pressure">필압이 작동하지 않을 때</a>를 보세요.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tools" data-keywords="툴바 브러시 연필 에어브러시 수채 지우기 단축키 임시 전환 서브툴">
+      <h2>도구와 보조 도구 선택하기</h2>
+      <p>도구 모음에서 도구를 선택하고, 보조 도구에서 그 안의 그리는 느낌을 선택합니다. 아래는 처음 배열입니다(도구 모음은 위·아래·오른쪽으로도 옮길 수 있습니다. <a href="/petanuri/ko/manual/screen#toolbar">도구 모음</a>).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">도구</th><th scope="col">키</th><th scope="col">하는 일</th><th scope="col">보조 도구</th></tr></thead><tbody>
+        <tr><td>펜</td><td>P</td><td>선명한 선을 그립니다</td><td>G펜·둥근 펜·밀리펜·입출 펜·단색 칠 펜·도트 펜(<a href="#dotpen">도트 펜</a>)</td></tr>
+        <tr><td>붓</td><td>B</td><td>부드러운 붓·질감이 있는 붓으로 칠합니다</td><td>부드러운 붓·에어브러시·평면 칠·연필·초크·스프레이·수채 번짐·평붓(방향을 따라감)·닷지(밝게)·번(어둡게)·그림자(곱하기)·모필</td></tr>
+        <tr><td>브러시 모음</td><td>—</td><td>기본 제공 질감 브러시로 그립니다</td><td>연필 2B·목탄(부드러움)·모필 선화·두껍게 칠하기(캔버스)·물보라(큼) 등 33종(<a href="#brushset">브러시 모음</a>)</td></tr>
+        <tr><td>지우개</td><td>E</td><td>지웁니다</td><td>단단하게·부드럽게·거칠게·떡지우개·레이어 관통, 그리고 기본 제공 2개</td></tr>
+        <tr><td>데코레이션</td><td>—</td><td>반짝이 같은 장식을 흩뿌립니다</td><td>반짝이·별·하트·꽃·벚꽃·레이스 등 17종(<a href="/petanuri/ko/manual/deco#deco">데코레이션</a>)</td></tr>
+        <tr><td>스탬프</td><td>—</td><td>이미지를 붙입니다</td><td>스탬프·스탬프(흩뿌리기) (<a href="/petanuri/ko/manual/deco#stamp">스탬프</a>)</td></tr>
+        <tr><td>무늬</td><td>—</td><td>옷의 무늬를 칠합니다</td><td>세로 줄무늬·물방울무늬·깅엄 체크 등 15종(<a href="/petanuri/ko/manual/deco#pattern">무늬</a>)</td></tr>
+        <tr><td>스티치</td><td>—</td><td>바느질 선·주름을 그립니다</td><td>스티치(점선)·파이핑·징(리벳) 등 9종(<a href="/petanuri/ko/manual/deco#bump">스티치</a>)</td></tr>
+        <tr><td>색 혼합</td><td>J</td><td>흐리게 하고 늘이고 섞습니다</td><td>흐리기·손가락·색 혼합(각 3종과 기본 제공 3개) (<a href="#blend">색 혼합</a>)</td></tr>
+        <tr><td>픽셀 유동화</td><td>—</td><td>그린 그림을 일그러뜨립니다</td><td>밀어내기·부풀리기·오므리기·소용돌이(오른쪽)·소용돌이(왼쪽)·실행 취소(<a href="#distort">픽셀 유동화</a>)</td></tr>
+        <tr><td>채우기</td><td>G</td><td>아일랜드·둘러싸인 곳 등을 한꺼번에 칠합니다</td><td>아일랜드 칠하기·머티리얼 전체·둘러싸인 곳 칠하기·올가미로 칠하기·폴리곤 칠하기(<a href="#fill">채우기</a>)</td></tr>
+        <tr><td>그라데이션</td><td>—</td><td>색이 변해 가도록 칠합니다</td><td>색과 불투명도·전경색→배경색·전경색→투명·원형(전경색→투명) (<a href="#gradient">그라데이션</a>)</td></tr>
+        <tr><td>도형</td><td>—</td><td>직선·사각형·원·곡선을 그립니다</td><td>직선·사각형·직사각형(테두리)·타원·타원(테두리)·다각형·다각형(테두리)·곡선·곡선(점 잇기) (<a href="#shape">도형</a>)</td></tr>
+        <tr><td>스포이트</td><td>I</td><td>색을 가져옵니다</td><td>표시 색 가져오기·레이어에서 가져오기(<a href="#eyedropper">스포이트</a>)</td></tr>
+        <tr><td>이동·변형</td><td>V</td><td>그린 그림을 움직이고 변형합니다</td><td>이동·변형(<a href="/petanuri/ko/manual/edit#move">이동·변형 도구</a>)</td></tr>
+        <tr><td>손바닥</td><td>—</td><td>화면 표시를 움직입니다(그리지 않음)</td><td>손바닥</td></tr>
+        <tr><td>선택 범위</td><td>S</td><td>그릴 수 있는 곳을 둘러싸서 정합니다</td><td>사각형·타원·올가미·꺾은선·자동 선택·아일랜드로 선택·면으로 선택·선택 펜·선택 지우개(<a href="/petanuri/ko/manual/edit#select">선택 범위</a>)</td></tr>
+        <tr><td>숨기기 펜</td><td>—</td><td>그은 곳을 숨깁니다</td><td>면으로 숨기기·아일랜드로 숨기기(<a href="/petanuri/ko/manual/uv#hidepen">숨기기 펜</a>)</td></tr>
+        <tr><td>텍스트</td><td>T</td><td>텍스트를 넣습니다</td><td>가로쓰기·세로쓰기(<a href="/petanuri/ko/manual/edit#text">텍스트</a>)</td></tr>
+        <tr><td>자</td><td>—</td><td>자를 따라 그립니다</td><td>직선 자·곡선 자·동심원 자·방사선 자·평행선 자(<a href="/petanuri/ko/manual/edit#ruler">자</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>도구의 키를 눌렀다 떼면 그 도구로 전환됩니다. 누른 채 그리면 그동안만 그 도구가 되고, 떼면 이전 도구로 돌아갑니다.</li>
+        <li>길게 누름으로 볼 시간(0.15~2초, 기본값 0.5초)은 파일 → 환경 설정 → 조작 → 키보드에서 바꿀 수 있습니다. 이 임시 전환도 같은 곳에서 끌 수 있습니다.</li>
+        <li>손바닥: 선택하고 있는 동안은 왼쪽 버튼·펜 드래그로 화면 표시를 움직입니다. 3D 뷰에서는 <kbd>Ctrl</kbd>을 누르면서 확대/축소합니다.</li>
+        <li>지우개의 "레이어 관통"은 표시 중인 모든 레이어를 한 번에 지웁니다. "바탕 레이어는 지우지 않음"으로 바탕을 남길 수 있습니다.</li>
+        <li>표시 → 창 → "도구 목록"으로 도구를 격자로 늘어놓은 패널도 표시할 수 있습니다. 아래에 전경색·배경색 사각형도 나란히 표시됩니다.</li>
+      </ul>
+      <h3 id="tools-subtool">보조 도구 늘리기·순서 바꾸기·키 지정하기</h3>
+      <p>도구 속성의 값은 보조 도구별로 기억합니다. 같은 펜을 굵기만 다르게 쓰려면 복제해서 다른 이름을 붙이세요.</p>
+      <ul class="mn-list">
+        <li>보조 도구 목록 아래의 아이콘으로 왼쪽부터 "복제" "이름" "삭제" "초기화" "내보내기" "모두 내보내기" "가져오기"를 할 수 있습니다. 오른쪽 클릭으로도 같습니다.</li>
+        <li>이름은 더블클릭으로도 바꿀 수 있습니다. 순서는 드래그로 바꿉니다(펜으로도 그대로 움직일 수 있습니다).</li>
+        <li>목록 위쪽의 "소 중 대"로 타일 크기를 바꿉니다. 작게 하면 아래의 도구 속성이 넓게 보입니다.</li>
+        <li>도구 모음의 버튼이나 보조 도구 타일을 오른쪽 클릭 → "키 할당"으로 원하는 키를 지정할 수 있습니다. 같은 키를 여러 보조 도구에 지정할 때는 "함께 사용(누를 때마다 전환)"을 선택하면, 누를 때마다 다음 보조 도구로 넘어갑니다.</li>
+        <li><span class="tier std">Standard</span> "내보내기" "모두 내보내기" "가져오기"로 브러시 설정을 .petabrush 파일로 주고받을 수 있습니다. 가져온 브러시 끝 이미지도 함께 들어갑니다. .petabrush는 창에 끌어다 놓아도 가져올 수 있습니다.</li>
+      </ul>
+      <div class="mn-tip warn">보조 도구 삭제는 실행 취소할 수 없습니다. Standard 이상이라면 먼저 "내보내기"로 남겨 둘 수 있습니다.</div>
+      <h3 id="tools-import">다른 페인트 소프트웨어의 브러시 불러오기</h3>
+      <ol class="mn-steps">
+        <li>보조 도구 목록 아래의 "가져오기"를 누릅니다.</li>
+        <li>.abr·.gbr·.gih·.sut·이미지(PNG 등)·이를 묶은 .zip을 선택합니다. 몇 개든 선택할 수 있습니다.</li>
+        <li>브러시 끝을 사용하는 보조 도구가 추가되고 선택됩니다. 그대로 그릴 수 있습니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>보조 도구 패널에 끌어다 놓아도 가져올 수 있습니다. 이미지를 3D·UV 뷰에 끌어다 놓았을 때는 브러시가 아니라 이미지로 처리합니다.</li>
+        <li>가져오는 것은 브러시 끝의 모양과 이름·초기 크기, 가져올 수 있을 때는 간격과 안티에일리어싱입니다. 원래 소프트웨어의 그리는 느낌·혼색·색은 이어받지 않으므로 도구 속성에서 다듬으세요.</li>
+        <li>.abr은 버전 1·2·6의 이미지 브러시 끝, .gbr은 버전 1·2를 지원합니다. .gih는 128프레임까지 무작위로 사용합니다. .sut는 안에 든 이미지로 브러시 끝을 만듭니다(축소 이미지 등이 들어 있는 경우가 있습니다).</li>
+        <li>파일 하나당 64MB까지, .zip은 512개 파일·압축 해제 후 64MB까지입니다. 읽을 수 없는 형식은 이유가 표시됩니다.</li>
+        <li>어느 에디션에서든 가져올 수 있습니다. 가져온 브러시 끝과 보조 도구는 다음 실행 때도 남아 있습니다.</li>
+      </ul>
+      <h3 id="brushset">브러시 모음(기본 제공 브러시)</h3>
+      <p>도구 모음의 "브러시 모음"에 질감이 있는 브러시 33개가 들어 있습니다. CC0(퍼블릭 도메인)로 공개된 브러시 모음을 이 앱의 설정으로 바꾼 것입니다. 그린 작품에도 상업적 이용에도 자유롭게 쓸 수 있습니다.</p>
+      <ul class="mn-list">
+        <li>에어브러시(큼)·기본 펴 바르기·타원 붓·필압으로 굵기가 변하는 붓·세부 붓·연필 H(밑그림)·샤프펜슬·연필 2B·가는 붓(거친 질감)·모필 선화·가는 붓(단단한 가장자리, 바위 질감)·블록 붓(덧칠)·평붓(덧칠)·목탄(부드러움)·둥근 붓(덧칠)·덧칠(질감)·형태 잡기(질감)·두꺼운 모필(질감)·모필(기울기로 볼륨감)·모필(스며들게 칠하기)·갈퀴 붓(거친 질감)·두껍게 칠하기(캔버스)·물 가장자리·흩어진 질감·캔버스 문지르기·갈라진 긁기·물보라(큼)·물보라(가벼움)·구불구불·질감 바탕·큰 스펀지·거친 노이즈·나뭇잎</li>
+        <li>같은 브러시 모음의 흐리기·손가락(갈퀴 흐리기(손가락)·질감 흐리기·납작한 흐리기)은 "색 혼합"에, 지우개(지우개(분필 끝)·떡지우개(부드러움))는 "지우개"에 있습니다.</li>
+        <li>브러시 끝의 "기본 제공 브러시"(31개)와 종이 질감의 "기본 제공"(6장)은 다른 보조 도구에서도 쓸 수 있습니다.</li>
+        <li>원래 브러시와 완전히 같은 느낌으로 그려지지는 않습니다.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="브러시 모음의 보조 도구" loading="lazy"><figcaption>브러시 모음</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="브러시로 그은 선의 견본" loading="lazy"><figcaption>여러 가지 브러시로 그은 선</figcaption></figure></div>
+      <h3 id="dotpen">도트 그림 그리기(도트 펜)</h3>
+      <p>펜의 "도트 펜"은 텍스처 화소의 격자에 맞춰 브러시 크기만큼의 화소를 선명하게 칠합니다. 1이면 1화소, 3이면 3×3으로 칠하며 색이 섞이지 않습니다. 도트 그림이나 32·64px 같은 낮은 해상도의 텍스처에 적합합니다.</p>
+      <ul class="mn-list">
+        <li>크기는 텍스처의 px입니다. 필압이나 시작/끝 가늘게 설정으로 굵기가 변하지 않습니다.</li>
+        <li>3D 뷰에서는 펜 끝 한가운데에 보이는 면의 아일랜드 안에만 칠합니다. 대칭으로 그리기도 적용됩니다(반대쪽의 같은 화소에도).</li>
+        <li>다른 펜에서도 도구 속성의 "도트(화소 격자에 맞춰 선명하게)"를 켜면 같은 방식으로 칠해집니다.</li>
+        <li>텍스처를 도트 그대로 표시하면 3D에서도 화소가 네모나게 보입니다(텍스처 세트 행의 ⋯ → "도트 그대로 표시(보간 안 함)". <a href="/petanuri/ko/manual/sets">텍스처 세트</a>).</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="도트 펜으로 그리고 텍스처를 도트 그대로 표시한 3D 뷰" loading="lazy"><figcaption>도트 펜과 텍스처 도트 그대로 표시</figcaption></figure>
+    </section>
+<section class="mn-sec" id="props" data-keywords="브러시 옵션 농도 간격 블렌드 필압 커브 스무딩 스태빌라이저">
+      <h2>그리는 느낌 정하기(도구 속성)</h2>
+      <p>도구 속성 패널에서 선택한 보조 도구의 그리는 느낌을 정합니다. 맨 위의 "~" 선은 현재 설정으로 그은 견본입니다. 설정을 바꾸면 바로 바뀝니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>브러시 크기·크기 기준</td><td>굵기(1~1000)와, 굵기를 화면과 텍스처 중 어느 쪽 기준으로 정할지(<a href="#props-size">굵기 정하기</a>)</td></tr>
+        <tr><td>불투명도</td><td>한 번에 칠하는 진하기</td></tr>
+        <tr><td>뒷면·가려진 면에도 칠하기</td><td>보이지 않는 뒷면·안쪽 면에도 칠합니다(<a href="#through">뒷면·가려진 면에도 칠하기</a>)</td></tr>
+        <tr><td>3D 칠하기 방식</td><td>"표면을 따라 칠하기" 또는 "화면에 맞추기"(<a href="#props-3d">3D 칠하기 방식</a>)</td></tr>
+        <tr><td>3D에서도 섬 바깥 패딩까지 칠하기</td><td>그리기를 마치면 선을 UV 아일랜드 바깥으로 "패딩 폭(px)"만큼 넓힙니다. 이음매에 가는 선이 생기는 것을 막습니다. 폭은 내보내기 번짐과 같은 값입니다(<a href="/petanuri/ko/manual/export#pad">번짐</a>)</td></tr>
+        <tr><td>브러시 끝</td><td>원형·사각형·연필 등 펜 끝의 모양(<a href="#props-tip">브러시 끝 선택하기</a>)</td></tr>
+        <tr><td>경도</td><td>가장자리의 선명함. 낮추면 가장자리가 흐려집니다</td></tr>
+        <tr><td>간격</td><td>브러시 끝을 늘어놓는 간격. 넓히면 점이 늘어선 모양이 됩니다</td></tr>
+        <tr><td>손떨림 보정</td><td>선의 흔들림을 억제하는 강도(<a href="#props-stroke">보정 종류</a>)</td></tr>
+        <tr><td>필압으로 크기·최소 크기</td><td>필압으로 굵기를 바꿀지 여부와, 가장 약할 때의 굵기</td></tr>
+        <tr><td>필압으로 불투명도</td><td>필압으로 진하기를 바꿀지 여부</td></tr>
+        <tr><td>안티에일리어싱</td><td>가장자리를 매끄럽게 합니다</td></tr>
+        <tr><td>덧칠 (겹칠수록 진하게)·흐름</td><td>같은 곳을 겹칠수록 진해집니다(에어브러시용). 흐름은 한 번의 진하기입니다</td></tr>
+        <tr><td>도트(화소 격자에 맞춰 선명하게)</td><td>화소 격자에 맞춰 칠합니다(<a href="#dotpen">도트 펜</a>)</td></tr>
+        <tr><td>각도·무작위 회전·선 방향으로 회전</td><td>이미지 브러시 끝의 방향</td></tr>
+        <tr><td>흩뿌리기</td><td>브러시 끝을 선 주위에 흩뿌립니다</td></tr>
+        <tr><td>렌더링 모드</td><td>곱하기·스크린·오버레이·더하기(발광) 등 레이어의 합성 모드와 같은 것과, "뒤에 그리기 (칠하지 않은 곳만)" "밝게 (닷지)" "어둡게 (번)"</td></tr>
+        <tr><td>종이 질감</td><td>칠하는 진하기에 종이의 결을 넣습니다(<a href="#paper">종이 질감</a>)</td></tr>
+        <tr><td>보정 종류·동작·필압 곡선</td><td>선을 따라가는 방식·시작/끝·필압 반응(<a href="#props-stroke">선 보정·시작/끝 가늘게·필압</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="도구 속성. 뒷면·가려진 면에도 칠하기, 브러시 끝, 종이 질감 등의 설정" loading="lazy"><figcaption>도구 속성</figcaption></figure>
+      <h3 id="props-size">굵기 정하기(브러시 크기·크기의 기준)</h3>
+      <ul class="mn-list">
+        <li>왼쪽의 "브러시 크기" 패널에서 자주 쓰는 크기를 눌러 선택할 수 있습니다. 눌러서 바뀌는 것은 크기뿐입니다(불투명도·경도는 도구 속성에서).</li>
+        <li>크기 타일 맨 끝의 연필이나 오른쪽 클릭으로 "현재 크기 추가" "선택한 항목 제거" "초기화"를 할 수 있습니다. 오른쪽 클릭의 "이 크기 제거"로 누른 타일을 바로 제거할 수 있습니다.</li>
+        <li>패널은 너비에 맞춰 줄이 바뀌므로, 좁히면 1열까지 줄일 수 있습니다.</li>
+        <li><kbd>[</kbd> <kbd>]</kbd>로도 굵기를 바꿀 수 있습니다. 키 할당에서 "브러시 크기 목록에서 한 단계 크게"와 "한 단계 작게"에도 키를 지정할 수 있습니다.</li>
+        <li>도형을 선택하고 있을 때는 도형의 선 굵기(상한 500)가, 폴리곤 칠하기·면으로 선택에서는 "인식 범위"(상한 200)가 바뀝니다.</li>
+      </ul>
+      <p>"크기 기준"은 가까이 가거나 멀어졌을 때 굵기를 정하는 방식입니다. 보조 도구별로 선택합니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">크기 기준</th><th scope="col">굵기</th></tr></thead><tbody>
+        <tr><td>설정대로(기본값)</td><td>파일 → 환경 설정 → 그리기의 "브러시 크기 단위"를 따릅니다. 처음에는 "화면 px"입니다</td></tr>
+        <tr><td>텍스처 기준 고정</td><td>가까이 가도 멀어져도 텍스처에는 같은 굵기로 칠합니다(화면에서는 가까이 가면 굵게 보입니다)</td></tr>
+        <tr><td>화면 기준 가변</td><td>화면 위에서 같은 굵기입니다. 가까이 가면 텍스처에는 가늘게, 멀어지면 굵게 칠합니다</td></tr>
+      </tbody></table></div>
+      <h3 id="props-3d">비스듬한 면에서 선이 늘어나지 않게 하기(3D 칠하기 방식)</h3>
+      <p>펜·붓·브러시 모음·지우개·흐리기의 "3D 칠하기 방식"에서 선택합니다. "표면을 따라 칠하기"(처음 값)는 비스듬한 면이나 가장자리에서도 선이 잘 늘어나지 않고, 이미지 브러시 끝도 면의 방향에 맞춰집니다. "화면에 맞추기"는 카메라에서 투영하므로 비스듬한 면에서는 늘어납니다.</p>
+      <p>UV 뷰에서 그릴 때는 어느 쪽이든 같습니다.</p>
+      <h3 id="props-tip">브러시 끝 선택하기</h3>
+      <ul class="mn-list">
+        <li>"브러시 끝"을 눌러 선택합니다. 원형·사각형·평붓·연필·초크·스프레이·수채·모필·반짝이·별·하트와, 기본 제공 브러시의 브러시 끝 31개가 있습니다.</li>
+        <li>브러시 끝 목록의 "불러오기"로 이미지(흰 바탕에 검게 그린 모양의 PNG·JPEG)나 다른 페인트 소프트웨어의 브러시(.abr·.gbr·.gih·.sut), 이를 묶은 .zip도 브러시 끝으로 만들 수 있습니다.</li>
+        <li>이미지 브러시 끝에서는 "각도" "무작위 회전" "선 방향으로 회전"이 표시됩니다.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="브러시 끝 목록" loading="lazy"><figcaption>브러시 끝 목록</figcaption></figure>
+      <h3 id="paper">종이 질감 넣기</h3>
+      <p>펜·붓·지우개 등의 "종이 질감"에서 선택하면, 칠하는 진하기에 종이나 캔버스의 결이 들어갑니다. 텍스처 위에서 반복되므로 면에 붙어 있고, 시점을 움직여도 어긋나지 않습니다.</p>
+      <ul class="mn-list">
+        <li>선택할 수 있는 것은 기본 제공 6장과 무늬 15종(<a href="/petanuri/ko/manual/deco#pattern">무늬</a>와 같은 무늬)입니다. "질감 가져오기"로 원하는 이미지도 사용할 수 있습니다(밝은 곳일수록 칠해집니다).</li>
+        <li>"질감 배율" "질감 각도" "질감 강도" "질감 명암 반전"으로 다듬습니다. UV 아일랜드가 거꾸로이거나 옆으로 누운 곳은 "질감 각도"로 무늬의 방향을 맞춥니다.</li>
+        <li>"적용 방식"은 "곱하기 (밝은 곳일수록 칠해짐)" 또는 "빼기 (어두운 곳부터 빠짐)"입니다.</li>
+      </ul>
+      <h3 id="props-stroke">선 보정·시작/끝 가늘게·필압</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">보정 종류</th><th scope="col">효과</th></tr></thead><tbody>
+        <tr><td>부드럽게 (늦게 따라옴)</td><td>펜 끝을 조금 늦게 따라가서 선을 매끄럽게 합니다</td></tr>
+        <tr><td>1€ (속도에 따라 효과가 달라짐)</td><td>천천히 그릴 때는 흔들림을 강하게 억제하고, 빠르게 그릴 때는 지연을 줄입니다. "느릴 때의 보정"과 "빠를 때 완화"로 조정합니다</td></tr>
+        <tr><td>끈 당기기 (일정 거리로 따라옴)</td><td>펜 끝에서 "끈 길이"만큼 떨어져서 따라옵니다. 손 떨림이 사라집니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>시작·끝</strong>: 그리기 시작과 끝을 가늘게 하는 길이입니다. 끝은 펜을 뗐을 때 선의 마지막을 가늘게 다시 그리므로, 그리는 동안은 지연되지 않습니다.</li>
+        <li><strong>동작</strong>: "속도로 굵기" "굵기 흔들림" "농도 흔들림" "기울기로 굵기" "기울기로 농도" "펜 기울기 방향으로 브러시 끝 회전" "펜 비틀기로 브러시 끝 회전". 기울기·비틀기는 그 정보를 보내 주는 펜에서만 작동합니다.</li>
+        <li><strong>필압 곡선 (굵기/농도)</strong>: 점을 움직여 필압 반응을 정합니다(가로가 필압, 세로가 굵기·농도). 더블클릭하면 직선으로 돌아갑니다.</li>
+        <li><strong>필기감</strong>: 파일 → 환경 설정 → 펜·입력 → "필기감"의 "입·출 만드는 방식"에서 "필압만으로 입·출(기본)"과 "길이로 입·출"을 선택할 수 있습니다. 필압만으로 입·출은 쓰기 시작 부분의 방울 모양이나 쓰기 끝 부분의 실 같은 꼬리가 잘 생기지 않게 됩니다(펜일 때만. 마우스는 항상 길이로 입·출).</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="환경 설정의 펜·입력 중 필기감 항목" loading="lazy"><figcaption>필기감</figcaption></figure>
+      <h3 id="props-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>가까이 가면 선이 가늘어지고 멀어지면 굵어짐</b>: "크기 기준"을 "텍스처 기준 고정"으로 합니다.</li>
+        <li><b>비스듬한 면에서 선이 늘어남</b>: "3D 칠하기 방식"을 "표면을 따라 칠하기"로 합니다.</li>
+        <li><b>선이 펜 끝보다 늦게 나옴</b>: "손떨림 보정"을 낮추거나 "보정 종류"를 "1€ (속도에 따라 효과가 달라짐)"으로 합니다. 파일 → 환경 설정 → 펜·입력 → "지연 줄이기"의 "펜 선 먼저 표시(지연 줄이기)"도 시험해 보세요.</li>
+        <li><b>쓰기 시작에 방울이 생기고 끝에 꼬리가 나옴</b>: 필기감을 "필압만으로 입·출(기본)"으로 합니다.</li>
+        <li><b>UV 이음매에 가는 선이 남음</b>: "3D에서도 섬 바깥 패딩까지 칠하기"를 켭니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="through" data-keywords="뒷면 안쪽 내부 관통 숨은 면 머리카락 통과 뒤쪽">
+      <h2>뒷면·가려진 면에도 칠하기</h2>
+      <p>머리카락 안쪽·옷이 겹친 곳·손가락 사이 등 돌아가서 보기 어려운 곳을 한 번에 칠합니다. 도구 속성의 불투명도 바로 아래에 있는 "뒷면·가려진 면에도 칠하기"(지우개는 "뒷면·가려진 면도 지우기")로 켜고 끕니다.</p>
+      <ul class="mn-list">
+        <li>펜 끝 아래에 보이는 면을 중심으로, 브러시 원과 겉보기 크기가 같은 구 안에서, 카메라에서 보이지 않는 뒷면·안쪽 면에도 칠합니다.</li>
+        <li>펜·붓·브러시 모음·지우개·그라데이션은 처음부터 켜져 있습니다. 데코레이션·무늬·스티치는 처음에는 꺼져 있습니다. 끄면 보이는 면에만 칠합니다.</li>
+        <li>흐리기·손가락·색 혼합·스탬프에는 없습니다(화면에 비친 색·이미지를 사용하기 때문). UV 뷰에서는 관계없습니다(원래 모든 면에 칠해집니다).</li>
+        <li>경도로 가장자리가 흐려집니다. 이미지 브러시 끝은 화면에 보이는 모양 그대로 안쪽으로 붙습니다.</li>
+        <li>선택 범위·숨긴 부분·대칭·투명 픽셀 잠금은 평소처럼 적용됩니다.</li>
+      </ul>
+      <div class="mn-tip warn">두께가 있는 곳을 칠하면 반대쪽까지 닿습니다. 브러시를 작게 하거나, 기능을 꺼서 보이는 면에만 칠하세요.</div>
+      <h3 id="through-doubleside">표시의 "단면"·"양면"과의 차이</h3>
+      <p>3D 뷰 왼쪽 위의 "단면" "양면"은 표시 전환입니다. "양면"으로 하면 뒤집힌 면도 표시되고, 보이는 뒷면에도 칠할 수 있습니다. 카메라에서 보이지 않는 면까지 칠하는 것은 "뒷면·가려진 면에도 칠하기"입니다(<a href="/petanuri/ko/manual/screen#hud">3D 뷰의 네 모서리</a>).</p>
+    </section>
+
+    <section class="mn-sec" id="color" data-keywords="컬러 피커 팔레트 HEX 색상 채도 명도 돋보기 gpl 스와치">
+      <h2>색 선택·스포이트</h2>
+      <p>그리는 색(전경색)은 색 패널·색 값 패널·최근 사용한 색·컬러 세트에서 선택합니다. 어느 것으로 선택해도 같은 전경색이 됩니다.</p>
+      <ul class="mn-list">
+        <li><strong>색</strong>: 위쪽 버튼으로 선택 방식을 전환합니다. "링＋사각형" "링＋삼각형" "사각형＋색상 막대" "원판＋명도 막대" "슬라이더(RGB, HSV)"의 5가지입니다.</li>
+        <li><strong>색 값</strong>: 전경색과 배경색·HEX·화면에서 색 가져오기·RGB/HSV 숫자·불투명도. 오른쪽의 ▾로 숫자를 펼치고 ▴로 작게 접습니다.</li>
+        <li><strong>최근 사용한 색</strong>: 실제로 칠한 색·가져온 색 12개(최신순). 누르면 전경색이 됩니다.</li>
+        <li>색 선택 방식 아래에 RGB/HSV 슬라이더를 표시했을 때는 "RGB" "HSV" 버튼으로 전환합니다. 선택한 형식은 다음 실행 때도 남습니다.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="색과 색 값 패널" loading="lazy"><figcaption>색·색 값</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="컬러 세트와 최근 사용한 색" loading="lazy"><figcaption>컬러 세트 | 최근 사용한 색</figcaption></figure></div>
+      <h3 id="color-swap">전경색과 배경색</h3>
+      <ul class="mn-list">
+        <li><kbd>X</kbd>(또는 ⇄)로 전경색과 배경색을 서로 바꿉니다.</li>
+        <li><kbd>D</kbd>(두 사각형의 왼쪽 아래 작은 버튼으로도)로 전경색을 검정, 배경색을 흰색으로 되돌립니다.</li>
+        <li><kbd>Alt</kbd>+<kbd>Backspace</kbd>로 전경색, <kbd>Ctrl</kbd>+<kbd>Backspace</kbd>로 배경색으로 채웁니다. 선택 범위가 있으면 그 안을, 없으면 선택한 레이어의 전체를 채웁니다.</li>
+      </ul>
+      <h3 id="eyedropper">스포이트로 색 가져오기</h3>
+      <ul class="mn-list">
+        <li>스포이트(<kbd>I</kbd>)로 누른 곳의 색을 가져옵니다. 보조 도구는 "표시 색 가져오기"(보이는 색)와 "레이어에서 가져오기"(선택한 레이어의 색)입니다.</li>
+        <li><kbd>Alt</kbd>를 누르고 있는 동안은 어느 도구에서든 스포이트가 됩니다. 카메라 조작이 Alt + 마우스 버튼 방식일 때는 3D 뷰에서 <kbd>I</kbd>를 사용합니다.</li>
+        <li>3D 뷰에서 오른쪽 클릭 → "여기 색 가져오기"로도 가져올 수 있습니다.</li>
+        <li>"평균 범위"를 올리면 주변 색의 평균을 가져옵니다.</li>
+        <li>스포이트를 쓰는 동안은 커서 위치에 둥근 확대경이 표시됩니다. 가운데 틀이 가져올 위치이고, 바깥쪽 링이 가져올 색입니다. 도구 속성의 "확대경 표시"로 끌 수 있습니다.</li>
+      </ul>
+      <h3 id="screen-pick">화면 어디에서든 색 가져오기</h3>
+      <ol class="mn-steps">
+        <li>색 값 패널의 스포이트 아이콘을 누릅니다(<kbd>Shift</kbd>+<kbd>I</kbd>). 확대 화면과 색 값 돋보기가 표시됩니다.</li>
+        <li>가져올 곳을 클릭합니다. 창 바깥에서도 가져올 수 있습니다. <kbd>Enter</kbd>·<kbd>Space</kbd>로도 가져올 수 있습니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>화살표 키로 1화소씩(<kbd>Shift</kbd>를 누르면 10화소씩) 움직일 수 있습니다. <kbd>Esc</kbd>·오른쪽 클릭으로 취소합니다.</li>
+        <li>시작했을 때의 화면을 캡처해서 색을 가져오므로, 동영상 등은 멈춰 보입니다.</li>
+      </ul>
+      <h3 id="colorset">컬러 세트</h3>
+      <ul class="mn-list">
+        <li>견본을 누르면 전경색이 됩니다. "+현재 전경색"으로 추가하고, 드래그로 순서를 바꾸고, 더블클릭으로 견본에 이름을 붙입니다.</li>
+        <li>"바꾸기" "삭제"는 선택한 견본에 적용됩니다. 견본 삭제는 <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 되돌릴 수 있습니다. "소" "중" "대"로 견본 크기를 바꿉니다.</li>
+        <li>"…"로 세트의 새로 만들기·복제·이름·삭제, 내보내기(JSON/.gpl 팔레트), 가져오기를 할 수 있습니다. .gpl은 창의 어디에 끌어다 놓아도 가져옵니다.</li>
+        <li><kbd>Space</kbd>를 누른 채 드래그하면 목록을 스크롤할 수 있습니다(펜용).</li>
+      </ul>
+      <h3 id="color-reference">참고 이미지에서 색 가져오기</h3>
+      <ul class="mn-list">
+        <li>참고 이미지 패널에서 "열기", 패널에 끌어다 놓기, 패널을 누른 뒤 <kbd>Ctrl</kbd>+<kbd>V</kbd> 중 하나로 이미지를 표시합니다.</li>
+        <li>이미지를 클릭하거나 드래그하면 그 색을 가져옵니다. 떼면 최근 사용한 색에 들어갑니다.</li>
+        <li>위쪽 돋보기로 확대·축소하고, "100%"로 실제 크기, 네 모서리 아이콘으로 전체에 맞춥니다. 펜만으로도 조작할 수 있습니다.</li>
+        <li>표시한 이미지는 다음 실행 때도 복원됩니다.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="참고 이미지 패널" loading="lazy"><figcaption>참고 이미지</figcaption></figure>
+    </section>
+<section class="mn-sec" id="transparent" data-keywords="지우기 지우개 대신 알파 투명 투명색 지우는 법 깎기">
+      <h2>투명색으로 그리기(같은 브러시로 지우기)</h2>
+      <p>색 값 패널의 체크무늬 버튼이나 <kbd>C</kbd>로 전경색을 투명색으로 바꿉니다. 펜·붓·브러시 모음 등의 브러시 끝·경도·필압 그대로, 현재 레이어의 색을 지울 수 있습니다.</p>
+      <ul class="mn-list">
+        <li>되돌릴 때는 <kbd>C</kbd>나 체크무늬 버튼을 한 번 더 누릅니다. 전경색 사각형을 누르거나 색을 선택해도 돌아옵니다.</li>
+        <li>채우기(아일랜드 칠하기·머티리얼 전체·둘러싸인 곳 칠하기)·폴리곤 칠하기·도형도 투명색이면 칠하는 곳을 지웁니다.</li>
+        <li>그라데이션은 전경색 쪽일수록 강하게 지웁니다.</li>
+        <li>스탬프는 투명색으로 해도 지우지 않습니다.</li>
+      </ul>
+      <div class="mn-tip warn">투명 픽셀 잠금을 켠 레이어에서는 지울 수 없습니다. 지울 때는 먼저 투명 픽셀 잠금을 해제하세요.</div>
+    </section>
+
+    <section class="mn-sec" id="mirror" data-keywords="미러 미러링 시메트리 반대쪽 거울 양쪽 동시 반전 선대칭 x축">
+      <h2>좌우 대칭으로 그리기</h2>
+      <p>한쪽에 그리면 반대쪽에도 똑같이 들어갑니다. 얼굴이나 옷의 좌우처럼 같은 모양을 양쪽에 그릴 때 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>3D 뷰 왼쪽 위의 "X"(좌우)를 누릅니다(<kbd>M</kbd>).</li>
+        <li>모델의 한쪽에 그립니다. 반대쪽에도 똑같이 들어갑니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="좌우 대칭으로 한쪽 팔에 그린 별이 반대쪽 팔에도 적용된 모습" loading="lazy"><figcaption>한쪽 팔에 그리면 반대쪽에도 들어갑니다</figcaption></figure>
+      <ul class="mn-list">
+        <li>"Y"(앞뒤)·"Z"(위아래)도 몇 개든 동시에 쓸 수 있습니다(X와 Z라면 4곳에 들어갑니다).</li>
+        <li>편집 메뉴나 3D 뷰의 오른쪽 클릭 → "대칭으로 그리기"로도 전환할 수 있습니다.</li>
+        <li>도구 속성 맨 위와 UV 뷰의 제목 줄에도 "대칭 X·Y·Z"가 있습니다(3D 뷰 왼쪽 위와 같은 전환입니다).</li>
+        <li>실행 취소는 반대쪽 몫까지 합쳐서 한 번입니다.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="도구 속성 위의 대칭 X·Y·Z. X가 켜져 있음" loading="lazy"><figcaption>도구 속성 위의 "대칭"</figcaption></figure>
+      <h3 id="mirror-center">접는 중심 정하기</h3>
+      <p>X·Y·Z 옆의 ▼에서 접는 중심을 "모델 중심" "원점" "지정" 중에서 선택합니다. 의상만 있는 FBX 등에서 중심이 몸의 한가운데에서 어긋날 때 사용합니다.</p>
+      <ul class="mn-list">
+        <li><strong>모델 중심</strong>: 좌우는 형태가 가장 좌우 대칭이 되는 곳입니다. 한쪽에만 장식이나 소품이 있어도 몸의 한가운데가 됩니다.</li>
+        <li><strong>원점</strong>: 좌표의 원점에서 접습니다.</li>
+        <li><strong>지정</strong>: 중심을 X·Y·Z의 cm로 입력하거나, "모델 위를 눌러서 정하기"로 누른 곳으로 합니다. "정점에 맞추기"(처음에는 켜짐)를 켜면, 누른 곳에서 가장 가까운 정점의 위치가 됩니다.</li>
+        <li>3D 뷰의 오른쪽 클릭 → "대칭으로 그리기" → "여기를 대칭 중심으로"로도 정할 수 있습니다.</li>
+        <li>정하면 대칭 면이 3D에 2초 정도 반투명으로 표시됩니다. 지정한 위치는 작업 파일에 남습니다.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="대칭 ▼ 창. 중심과 대칭 상대를 찾는 범위" loading="lazy"><figcaption>대칭 ▼(중심·상대를 찾는 범위)</figcaption></figure>
+      <h3 id="mirror-options">▼의 그 밖의 설정</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">기본값</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>대칭 상대를 찾는 범위</td><td>1%</td><td>0~3%. 접은 위치에 면이 없을 때(좌우 모양이 조금 다른 옷 등), 이 범위 안에서 가장 가까운 면을 반대쪽으로 보고 칠합니다. 0%는 접은 위치만 칠합니다</td></tr>
+        <tr><td>숨긴 쪽에도 대칭 그리기(3D 브러시)</td><td>꺼짐</td><td>표시 범위나 숨기기 펜으로 한쪽을 숨긴 채, 보이는 쪽에서 반대쪽에도 그립니다. 3D의 펜·브러시·지우개·스탬프에서 적용됩니다(UV 뷰·채우기·흐리기·손가락·색 혼합에는 적용되지 않습니다)</td></tr>
+        <tr><td>대칭선 표시·선 진하기</td><td>켜짐</td><td>대칭 중심의 선을 3D에 표시합니다. 진하기는 10~100%입니다</td></tr>
+        <tr><td>반대쪽에도 커서 표시</td><td>켜짐</td><td>칠하는 위치를 접은 곳에도 점선 원으로 표시합니다. 반대쪽이 면의 뒤나 안쪽일 때는 흐리게 표시됩니다</td></tr>
+      </tbody></table></div>
+      <p>어느 설정이든 다음 실행 때도 남습니다.</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="대칭선과 반대쪽 커서가 표시된 3D 뷰" loading="lazy"><figcaption>대칭선과 반대쪽 커서</figcaption></figure>
+      <h3 id="mirror-tools">어떤 도구에서 적용되는지</h3>
+      <p>○ 적용됨·△ 조건부·× 적용 안 됨·― 관계없음입니다. 대칭이 적용되지 않는 도구를 선택하면 도구 속성 위의 대칭 칸이 흐려지고 이유가 표시됩니다. 3D 뷰 왼쪽 위의 X·Y·Z에는 빗금이 붙습니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">도구</th><th scope="col">3D 뷰</th><th scope="col">UV 뷰</th></tr></thead><tbody>
+        <tr><td>펜·붓·브러시 모음·데코레이션·무늬·스티치</td><td>○</td><td>○</td></tr>
+        <tr><td>지우개(레이어 관통 포함)</td><td>○</td><td>○</td></tr>
+        <tr><td>스탬프</td><td>○</td><td>○(거울 쪽은 이미지도 거울 방향)</td></tr>
+        <tr><td>흐리기·손가락</td><td>○</td><td>○</td></tr>
+        <tr><td>색 혼합</td><td>○</td><td>―(UV 뷰에서는 쓸 수 없는 도구)</td></tr>
+        <tr><td>픽셀 유동화</td><td>○</td><td>○</td></tr>
+        <tr><td>채우기(아일랜드·머티리얼 전체)·둘러싸인 곳 칠하기</td><td>○</td><td>○</td></tr>
+        <tr><td>폴리곤 칠하기</td><td>○</td><td>○</td></tr>
+        <tr><td>도형</td><td>○</td><td>○</td></tr>
+        <tr><td>그라데이션</td><td>△</td><td>△</td></tr>
+        <tr><td>텍스트·이미지 붙이기</td><td>○</td><td>○(확정했을 때 거울 쪽에도 들어감)</td></tr>
+        <tr><td>선택 펜·선택 지우개·면으로 선택</td><td>○</td><td>○</td></tr>
+        <tr><td>선택 범위(사각형·타원·올가미·꺾은선·자동 선택·아일랜드로 선택)</td><td>×</td><td>×(범위를 둘러싸서 정하는 도구)</td></tr>
+        <tr><td>이동·변형</td><td>―</td><td>×(이미 있는 그림을 움직이는 조작)</td></tr>
+        <tr><td>스포이트·자 놓기</td><td>―</td><td>―(자를 따라 그리는 선은 대칭이 됩니다)</td></tr>
+        <tr><td>숨기기 펜</td><td>×</td><td>×(표시를 숨기는 도구)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="색 혼합의 대칭 칸. UV 뷰에서는 적용되지 않는 이유가 표시되어 있음" loading="lazy"><figcaption>UV 뷰에서 적용되지 않는 도구는 이유가 표시됩니다</figcaption></figure>
+      <div class="mn-tip">△ 그라데이션: 3D 뷰에서는 보이는 면은 직접 칠한 색 그대로이고, 거울 쪽에 들어가는 것은 보이지 않는 면입니다. UV 뷰에서는 투명을 포함한 그라데이션에서 진한 쪽이 들어갑니다. "뒷면·가려진 면에도 칠하기"가 켜져 있을 때는 어느 면이든 3D의 선으로 직접 칠해지므로 대칭을 사용하지 않습니다.</div>
+      <div class="mn-tip"><span class="tier pro">Pro</span> 포즈를 잡고 있을 때도 원래 포즈(기본 자세)에서 대칭인 곳에 칠합니다. 팔을 구부리고 있어도 반대쪽 팔의 같은 곳에 들어갑니다(<a href="/petanuri/ko/manual/pose#posemirror">포즈</a>).</div>
+      <h3 id="mirror-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>반대쪽의 어긋난 곳에 들어감</b>: 접는 중심이 어긋나 있습니다. ▼에서 중심을 "원점"이나 "지정"으로 합니다(<a href="#mirror-center">중심 정하기</a>).</li>
+        <li><b>반대쪽 일부에 들어가지 않음</b>: 좌우 모양이 조금 다른 곳입니다. ▼의 "대칭 상대를 찾는 범위"를 올립니다.</li>
+        <li><b>한쪽을 숨기면 반대쪽에 들어가지 않음</b>: ▼의 "숨긴 쪽에도 대칭 그리기(3D 브러시)"를 켭니다.</li>
+        <li><b>UV 뷰에서 그리면 반대쪽에 들어가지 않음</b>: 반대쪽이 다른 텍스처 세트(머티리얼)에 있으면 UV 뷰에서는 들어가지 않습니다. 3D 뷰에서 그리세요.</li>
+        <li><b>X·Y·Z에 빗금이 붙어 있음</b>: 현재 도구에서는 대칭이 적용되지 않습니다(<a href="#mirror-tools">어떤 도구에서 적용되는지</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="블러 스머지 스머징 혼색 번지기 섞기 경계 녹이기 문지르기">
+      <h2>흐리게 하기·늘이기·색 섞기</h2>
+      <p>색 혼합 도구(<kbd>J</kbd>)로 칠한 색을 자연스럽게 섞습니다. 모두 3D 위에서 계산하므로 UV 이음매에서 갈라지지 않습니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">보조 도구</th><th scope="col">하는 일</th><th scope="col">주요 설정</th></tr></thead><tbody>
+        <tr><td>흐리기·흐리기(강하게·넓게)·흐리기(약하게·경계만)</td><td>문지른 곳을 매끄럽게 합니다. 문지를수록·왕복할수록 섞입니다</td><td>"흐리기 범위" "겹칠수록 섞이게" "3D 칠하기 방식"</td></tr>
+        <tr><td>손가락·손가락(강하게 늘이기)·손가락(부드럽게)</td><td>색을 끌어서 늘입니다</td><td>"강도"</td></tr>
+        <tr><td>색 혼합·색 혼합(부드럽게)·색 혼합(진하게)</td><td>문지른 곳의 색을 집어서 옮기며, 전경색과 섞으면서 칠합니다</td><td>"물감 양" "색 늘이기" "모든 레이어에서 색 가져오기"</td></tr>
+        <tr><td>갈퀴 흐리기(손가락)·질감 흐리기·납작한 흐리기</td><td>기본 제공 브러시 모음의 흐리기·손가락입니다</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>효과의 정도는 "강도"로 정합니다(다른 붓의 불투명도에 해당합니다).</li>
+        <li>물감 양은 전경색의 비율입니다. 0이면 칠해져 있는 색만 섞습니다. 색 늘이기를 올리면 집은 색을 길게 옮깁니다.</li>
+        <li>"겹칠수록 섞이게"(처음에는 켜짐): 같은 곳을 여러 번 문지를수록 섞입니다. 한 획으로 계속 문질러도 선화까지 완전히 녹아 버리지 않도록 상한이 있습니다. 끄면 한 획 안에서는 겹쳐도 강해지지 않습니다.</li>
+        <li>흐리기의 "3D 칠하기 방식"이 "표면을 따라 칠하기"라면, 흐리기가 적용되는 범위가 펜과 같은 모양이 됩니다.</li>
+        <li>흐리기·손가락·색 혼합에서도 도구 속성에서 브러시 끝을 선택할 수 있습니다.</li>
+        <li>흐리기·손가락은 UV 뷰에서도 쓸 수 있습니다. 색 혼합은 3D 뷰에서만 쓸 수 있습니다.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="색 혼합으로 2색을 섞은 모습" loading="lazy"><figcaption>색 혼합으로 2색을 섞은 모습</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="distort" data-keywords="일그러짐 왜곡 리퀴파이 변형 밀기 비틀기 선 모양 고치기 수정">
+      <h2>그린 그림 일그러뜨리기(픽셀 유동화)</h2>
+      <p>그려 둔 그림을 문지른 곳에서 일그러뜨립니다. 선의 모양을 조금 고치고 싶을 때 등에 사용합니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">보조 도구</th><th scope="col">하는 일</th></tr></thead><tbody>
+        <tr><td>밀어내기</td><td>움직인 방향으로 그림을 끌고 갑니다</td></tr>
+        <tr><td>부풀리기·오므리기</td><td>문지른 곳을 바깥으로 넓힙니다·안으로 모읍니다</td></tr>
+        <tr><td>소용돌이(오른쪽)·소용돌이(왼쪽)</td><td>오른쪽 회전(시계 방향)·왼쪽 회전으로 말아 넣습니다</td></tr>
+        <tr><td>실행 취소</td><td>일그러뜨리기 전의 그림으로, 문지른 곳을 조금씩 되돌립니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>"강도"(필압으로도 변함)·"경도"(가장자리 적용 방식)·브러시 크기는 다른 붓과 같습니다. 부풀리기·오므리기·소용돌이·실행 취소는 문지른 길이만큼 적용됩니다.</li>
+        <li>한 번 문지를 때마다 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 한 번으로 되돌릴 수 있습니다. 몇 번을 문질러도 흐려지지 않습니다.</li>
+        <li>3D 뷰에서는 UV의 끊어진 곳을 넘어서 이어집니다. 가까이 가서 그릴수록 세밀하게 적용됩니다.</li>
+        <li>UV 뷰에서는 UV 아일랜드 안쪽만 일그러뜨립니다.</li>
+        <li>선택 범위·투명 픽셀 잠금을 지킵니다. 대칭으로 그리기도 적용됩니다.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="fill" data-keywords="페인트통 버킷 단색 밑칠 일괄 닫힌 곳 올가미 폴리곤 틈">
+      <h2>한꺼번에 칠하기(채우기)</h2>
+      <p>채우기(<kbd>G</kbd>)로 UV 아일랜드나 선으로 둘러싸인 곳 등을 한 번에 칠합니다. 칠하는 용도의 레이어를 선화 레이어 아래에 만들면 선이 깔끔하게 남습니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">보조 도구</th><th scope="col">칠하는 곳</th></tr></thead><tbody>
+        <tr><td>아일랜드 칠하기</td><td>누른 UV 아일랜드를 통째로</td></tr>
+        <tr><td>머티리얼 전체</td><td>누른 머티리얼을 전부</td></tr>
+        <tr><td>둘러싸인 곳 칠하기</td><td>선으로 둘러싸인 곳. 그 아일랜드 안에서 색이 가깝고 이어진 곳(<a href="#fill-region">자세히</a>)</td></tr>
+        <tr><td>올가미로 칠하기</td><td>드래그로 둘러싼 곳(<a href="#fill-lasso">자세히</a>)</td></tr>
+        <tr><td>폴리곤 칠하기</td><td>문지른 면을 통째로(<a href="#fill-poly">자세히</a>)</td></tr>
+      </tbody></table></div>
+      <p>아일랜드 칠하기·머티리얼 전체에서는 "안티에일리어싱 (아일랜드 가장자리)"과 불투명도를 바꿀 수 있습니다.</p>
+      <h3 id="fill-region">선으로 둘러싸인 곳 칠하기</h3>
+      <ol class="mn-steps">
+        <li>선화 레이어 아래에 칠하는 용도의 레이어를 만들어 선택합니다.</li>
+        <li>채우기의 보조 도구 "둘러싸인 곳 칠하기"를 선택합니다.</li>
+        <li>도구 속성의 "참조"를 "모든 레이어"로 합니다(선을 다른 레이어에 그렸을 때).</li>
+        <li>칠하고 싶은 곳을 누릅니다. 선에서 멈추어 전경색으로 칠해집니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">설정</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>참조</td><td>"모든 레이어"나 "선택한 레이어"의 그림에서 멈출 선을 찾습니다</td></tr>
+        <tr><td>허용 오차</td><td>어디까지의 색 차이를 같은 색으로 볼지</td></tr>
+        <tr><td>틈 메우기</td><td>0~5. 선을 굵게 만들어 작게 끊어진 곳에서 멈추게 합니다(n이면 2n px 정도까지의 틈)</td></tr>
+        <tr><td>확장/축소</td><td>−3~3. +로 하면 선 아래까지 파고들어 선과의 사이에 생기는 흰 틈을 없앱니다</td></tr>
+        <tr><td>안티에일리어싱 (가장자리를 1px 부드럽게)</td><td>칠한 가장자리를 매끄럽게 합니다</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="선으로 둘러싸인 곳을 채운 모습" loading="lazy"><figcaption>둘러싸인 곳 칠하기</figcaption></figure>
+      <h3 id="fill-lasso">올가미로 둘러싸 칠하기</h3>
+      <p>3D·UV 뷰·2D 캔버스 위를 드래그로 둘러싸면, 둘러싼 곳을 전경색으로 칠합니다. 현재 선택 범위는 그대로 남고, 실행 취소 한 번으로 되돌립니다.</p>
+      <p>3D 뷰에서 다른 텍스처 세트 위를 둘러쌌을 때는, 둘러싼 곳에 가장 많이 비친 세트로 이동한 뒤에 칠합니다.</p>
+      <h3 id="fill-poly">면별로 칠하기(폴리곤 칠하기)</h3>
+      <p>문지른 면을 통째로 전경색으로 칠합니다. 인식 범위는 펜 끝 원의 크기입니다. "사각형 단위로 칠하기 (삼각형 2개를 1면으로)"를 끄면 삼각형별로 칠합니다.</p>
+      <p>3D 뷰 왼쪽 위의 "메시 선"을 표시하면 면의 구분이 보입니다(<a href="/petanuri/ko/manual/uv#wire">메시 선</a>).</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="폴리곤 칠하기로 면을 칠한 모습" loading="lazy"><figcaption>폴리곤 칠하기(메시 선을 표시한 모습)</figcaption></figure>
+      <h3 id="fill-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>선 바깥까지 칠해짐</b>: 선에 끊어진 곳이 있습니다. "틈 메우기"를 올립니다.</li>
+        <li><b>선 가장자리에 흰 틈이 남음</b>: "확장/축소"를 +로 합니다.</li>
+        <li><b>다른 레이어의 선에서 멈추지 않음</b>: "참조"를 "모든 레이어"로 합니다.</li>
+        <li><b>선이 가늘어지거나 끊김</b>: 선과 같은 레이어에 칠하면 "확장/축소"만큼 선 위까지 칠해집니다. <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 되돌리고, 선 아래에 칠하는 용도의 레이어를 만든 뒤에 칠하세요.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gradient" data-keywords="그라디언트 계조 페이드 투명 머리끝 프리셋 정지점 방사">
+      <h2>그라데이션으로 칠하기</h2>
+      <p>색이 변해 가도록 칠합니다. 3D 뷰 위에서 시작점에서 끝점까지 드래그합니다.</p>
+      <ol class="mn-steps">
+        <li>도구 모음의 "그라데이션"을 누릅니다.</li>
+        <li>보조 도구를 선택합니다("색과 불투명도" "전경색→배경색" "전경색→투명" "원형(전경색→투명)").</li>
+        <li>도구 속성의 "도형"에서 "선형" 또는 "원형"을 선택합니다.</li>
+        <li>3D 뷰에서 시작점에서 끝점까지 드래그합니다. 떼면 칠해집니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>선형은 시작점에서 끝점 방향, 원형은 시작점이 중심이고 드래그한 길이가 반지름입니다. <kbd>Shift</kbd>를 누르면서 하면 45° 단위가 됩니다.</li>
+        <li>"뒷면·가려진 면에도 칠하기"(처음에는 켜짐)이면, 누른 곳과 뗀 곳을 잇는 3D 선을 따라 뒷면·안쪽 면에도 붙습니다(머리카락 뿌리에서 끝으로 등). 끄면 보이는 면에만 칠합니다.</li>
+        <li>칠하는 대상은 선택한 텍스처 세트의 선택한 레이어입니다. 선택 범위 바깥과 숨긴 부분은 바뀌지 않습니다.</li>
+        <li>UV 뷰 위에서도 드래그로 그릴 수 있습니다.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="다리에 그라데이션을 넣은 모습" loading="lazy"><figcaption>그라데이션</figcaption></figure>
+      <h3 id="gradient-stops">색과 불투명도 지점으로 만들기</h3>
+      <p>도구 속성의 "색"을 "색과 불투명도 지점"으로 하면, 여러 개의 색과 불투명도를 나열한 그라데이션으로 칠할 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>막대의 빈 곳을 눌러 색 지점을 추가합니다(2~32개).</li>
+        <li>지점을 선택하고 위치와 불투명도를 바꿉니다. 위치는 지점을 드래그해서도 바꿀 수 있습니다.</li>
+        <li>선택한 지점을 한 번 더 누르거나 더블클릭해서 색을 선택합니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>지점은 "정지점 삭제"·<kbd>Delete</kbd>·막대에서 아래로 끌어내기로 삭제합니다. "전경색 넣기" "균등하게 배치" "좌우 바꾸기"도 사용할 수 있습니다.</li>
+        <li>"프리셋 ▾"에서 240종류의 프리셋 중에서 선택할 수 있습니다(투명이 들어간 것도 있습니다). 그룹과 이름으로 찾을 수 있습니다.</li>
+        <li>"현재 것 저장"으로 나만의 프리셋("내 프리셋")에 남길 수 있습니다.</li>
+        <li>불투명도를 0으로 한 곳은 아래의 색이 남습니다. 그린 색을 지울 때는 <a href="#transparent">투명색</a>을 사용합니다.</li>
+      </ul>
+      <div class="mn-tip">높이나 면의 방향을 따르는 음영을 새 레이어에 굽고 싶을 때는 Pro의 <a href="/petanuri/ko/manual/bake#gradient">그라데이션 베이크</a>가 편리합니다.</div>
+      <h3 id="spatial-gradient">3D 공간의 한 점에서 퍼뜨리기</h3>
+      <p>모델의 면이나 모델 바깥의 공간에 중심을 두고, 거기서부터의 3D 거리로 색을 퍼뜨립니다. 시점을 움직여도 색은 변하지 않습니다.</p>
+      <ol class="mn-steps">
+        <li>칠할 레이어를 선택합니다.</li>
+        <li>그라데이션의 도구 속성에서 "3D 공간의 점에서 칠하기"를 누릅니다. "3D 공간 그라데이션" 창이 열립니다.</li>
+        <li>3D 뷰에서 모델의 면이나 빈 곳을 눌러 중심을 둡니다.</li>
+        <li>"퍼지는 거리"와, 색과 불투명도 지점·프리셋으로 색이 퍼지는 모습을 정합니다. 선택한 레이어에 바로 반영됩니다.</li>
+        <li>"레이어에 칠하기"를 눌러 확정합니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>확정한 뒤에는 실행 취소 한 번으로 되돌릴 수 있습니다. 취소하면 레이어는 원래 그림으로 돌아갑니다.</li>
+        <li>3D 모델용 조작입니다. 2D 캔버스에서는 보통의 드래그로 그립니다.</li>
+      </ul>
+      <h3 id="gradient-range-guide">중심 옮기기·퍼지는 거리 정하기</h3>
+      <ul class="mn-list">
+        <li>중심은 화살표·평면·가운데 손잡이를 드래그하거나, X·Y·Z 좌표를 입력해서 움직입니다.</li>
+        <li>"3D 뷰에서 중심 지정"으로 다시 두고, "중심 지우기"로 지웁니다. 점을 두는 도중에는 <kbd>Esc</kbd>로 취소합니다.</li>
+        <li>공간에 둘 때는 현재 중심(아직 없으면 모델의 중심)과 같은 깊이에 둡니다.</li>
+        <li>"퍼지는 거리"는 모델 높이에 대한 비율(%)입니다.</li>
+        <li>선택 범위·숨긴 부분·투명 픽셀 잠금·마스크를 지킵니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="shape" data-keywords="네모 정원 정사각형 삼각형 스플라인 베지어 윤곽 테두리 라인">
+      <h2>도형 그리기</h2>
+      <p>도형 도구로 직선·사각형·타원·다각형·곡선을 전경색으로 그립니다. 3D 뷰에서도 UV 뷰에서도 그릴 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>도구 모음의 "도형"을 누르고, 보조 도구에서 모양을 선택합니다.</li>
+        <li>3D 뷰에서 시작점에서 끝점까지 드래그합니다.</li>
+        <li>떼면 전경색으로 그려집니다.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">보조 도구</th><th scope="col">그리는 방법</th></tr></thead><tbody>
+        <tr><td>직선</td><td>드래그한 2점을 잇습니다. <kbd>Shift</kbd>로 45° 단위</td></tr>
+        <tr><td>사각형·타원·다각형</td><td>안을 칠합니다. <kbd>Shift</kbd>로 정사각형·정원·찌그러지지 않는 정다각형</td></tr>
+        <tr><td>직사각형(테두리)·타원(테두리)·다각형(테두리)</td><td>윤곽만 그립니다</td></tr>
+        <tr><td>곡선</td><td>드래그해서 뗀 뒤 마우스를 움직이면 휘어집니다. 한 번 더 누르거나 <kbd>Enter</kbd>로 확정합니다</td></tr>
+        <tr><td>곡선(점 잇기)</td><td>누를 때마다 점을 찍고(24개까지), 점을 지나는 매끄러운 선으로 만듭니다. 더블클릭이나 <kbd>Enter</kbd>로 확정하고, <kbd>Backspace</kbd>로 하나 되돌립니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>"중심에서 그리기"를 켜면 시작점이 중심이 됩니다.</li>
+        <li>다각형의 "꼭짓점 수"는 3~12입니다. 위쪽이 꼭짓점이고, 짝수면 위아래가 평평합니다.</li>
+        <li>곡선(점 잇기)에서 "닫기(고리로 만들기)"를 켜면 고리가 되고, "채색 방식"을 "칠"로 하면 안쪽을 칠할 수 있습니다. 자유로운 모양의 채우기에 쓸 수 있습니다.</li>
+        <li>"선 굵기"는 브러시 크기와 연동됩니다(상한 500). 브러시 크기 목록·<kbd>[</kbd> <kbd>]</kbd>·팝업 팔레트로 바꿔도 같습니다. 도형 보조 도구별로 남으며, 펜의 크기는 바뀌지 않습니다.</li>
+        <li>도구 속성에서 브러시 끝 이미지를 선택하면, 도형의 윤곽을 따라 늘어놓아 그립니다(스티치·레이스 등). "원형"을 선택하면 보통의 선으로 돌아갑니다.</li>
+        <li>보이는 면에만 붙고, 실행 취소 한 번 분량입니다. 그리는 도중에는 <kbd>Esc</kbd>로 취소합니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="원형 메뉴 사이드 버튼 펜만 퀵 파이 라디얼">
+      <h2>펜만으로 색과 크기 바꾸기(팝업 팔레트)</h2>
+      <p>펜의 사이드 버튼을 펜을 움직이지 않고 눌렀다 떼면, 그 자리에 둥근 팔레트가 나타납니다. 자주 쓰는 보조 도구·전경색·브러시 크기를 펜을 든 채로 선택할 수 있습니다.</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="팝업 팔레트" loading="lazy"><figcaption>팝업 팔레트</figcaption></figure>
+      <p>표시하는 법·각 부분의 사용법·마우스로 표시하는 설정은 <a href="/petanuri/ko/manual/screen#popup">팝업 팔레트</a>에 정리했습니다.</p>
+    </section>
+
+    <section class="mn-sec" id="works" data-keywords="의상 소품 액세서리 모자 표시 예 작례 갤러리 샘플">
+      <h2>옷이나 소품에도 칠할 수 있습니다</h2>
+      <p>아바타의 몸뿐 아니라 의상이나 소품도 같은 도구로 칠할 수 있습니다. 아래는 <span lang="ja">ののつよ</span> 시리즈의 의상과 소품을 PetaNuri3D에서 열어 본 표시 예시입니다.</p>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="코마이누 세일러 의상을 PetaNuri3D에서 연 표시 예시" loading="lazy"><figcaption>코마이누 세일러(<span lang="ja">狛犬セーラー</span>)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="풍경을 PetaNuri3D에서 연 표시 예시" loading="lazy"><figcaption>풍경(<span lang="ja">獄門しのぶ</span>의 소품)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="마법 모자를 PetaNuri3D에서 연 표시 예시" loading="lazy"><figcaption>마법 모자(<span lang="ja">星羽の魔導衣</span>의 소품)</figcaption></figure></div>
+      <div class="mn-tip">하나의 부분(UV 아일랜드) 안에만 선을 긋고 싶을 때는, 선택 범위의 "아일랜드로 선택"으로 그 부분을 선택한 뒤에 그립니다. 선택 범위 바깥에는 그려지지 않습니다(<a href="/petanuri/ko/manual/edit#select">선택 범위</a>).</div>
+    </section>
+
+    <div class="mn-related"><b>관련 페이지</b><ul><li><a href="/petanuri/ko/manual/deco">스탬프·무늬·스티치·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV와 표시 범위</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ul></div>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/screen"><small>← 이전</small>화면·패널·환경 설정</a><a class="next" href="/petanuri/ko/manual/deco"><small>다음 →</small>스탬프·무늬·스티치</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +665,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

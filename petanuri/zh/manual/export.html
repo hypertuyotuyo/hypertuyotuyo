@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>导出 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="导出窗口（扩边与导出位置）、PNG、PSD 导出与导入、导出扩边（Padding）、导出文件夹、材质（.unitypackage）。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="导出窗口（扩边与导出位置）、PNG、PSD 的导出与导入、导出扩边（填充）、导出位置的文件夹、材质（.unitypackage）。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/export">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="导出 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="导出窗口（扩边与导出位置）、PNG、PSD 导出与导入、导出扩边（Padding）、导出文件夹、材质（.unitypackage）。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="导出窗口（扩边与导出位置）、PNG、PSD 的导出与导入、导出扩边（填充）、导出位置的文件夹、材质（.unitypackage）。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/export">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "导出 | PetaNuri3D 使用手册",
-   "description": "导出窗口（扩边与导出位置）、PNG、PSD 导出与导入、导出扩边（Padding）、导出文件夹、材质（.unitypackage）。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "导出窗口（扩边与导出位置）、PNG、PSD 的导出与导入、导出扩边（填充）、导出位置的文件夹、材质（.unitypackage）。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/export",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,230 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export" aria-current="page">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export" aria-current="page">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 导出</p>
     <h1 class="mn-h1">导出</h1>
-    <p class="mn-intro">将完成的纹理导出为图片或材质。菜单为 文件 → 导出。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#png">导出为 PNG</a></li><li><a href="#psd">导出、导入 PSD</a></li><li><a href="#pad">导出扩边（填充）</a></li><li><a href="#dir">导出文件夹</a></li><li><a href="#mat">导出材质</a></li></ul></div>
-    <section class="mn-sec" id="png"><h2>导出为 PNG</h2><ol class="mn-steps"><li>选择 文件 → 导出 → 导出 PNG。</li><li>在小窗口选择导出扩边和导出位置，点击“导出”。</li><li>可导出当前纹理集或全部纹理集。文件名为 &lt;材质名&gt;.png。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="文件 → 导出 菜单" loading="lazy"><figcaption>文件 → 导出</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="导出窗口。扩边与导出位置" loading="lazy"><figcaption>导出窗口</figcaption></figure></div><div class="mn-tip">含主颜色2nd／3rd 文件夹的纹理集会分别导出 PNG。描边等效果会包含在合成图片中。</div><div class="mn-tip">烘焙的光、影和质感作为可见图层颜色写入 PNG。图章用2D画布工作纹理集不会导出到模型纹理。无模型的2D绘画可从画布下方“导出 PNG”保存。</div><div class="mn-tip">将所选图层导出为 PNG（所有版本）：图层右键“将此图层导出为 PNG”，选多张后“将所选图层导出为 PNG”，或文件 → 导出 → 导出 PNG（所选图层）。背景为透明。两张以上时选择“逐个”（&lt;材质名&gt;_&lt;图层名&gt;.png）或“叠加为一张”（&lt;材质名&gt;_layers.png）。</div><div class="mn-tip">导出窗口中的“分辨率”可按不同于纹理集的大小（512～8192）缩放导出（PNG、所选图层、材质；边距先按纹理集分辨率添加再缩放）。</div><div class="mn-tip">UV 贴图（所有版本）：文件 → 导出 →“将 UV 贴图导出为 PNG（所选集合）”（纹理集右键菜单中也有）可将 UV 线保存为 &lt;材质名&gt;_uv.png。可选择分辨率、线条颜色（白、黑、前景色）、背景（透明、黑、白）、线宽，以及是否“岛边缘以 2 倍粗细绘制”。</div><div class="mn-figs"><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="导出窗口中的分辨率" loading="lazy"><figcaption>导出分辨率</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="将 UV 贴图导出为 PNG 窗口" loading="lazy"><figcaption>将 UV 贴图导出为 PNG</figcaption></figure></div></section><section class="mn-sec" id="psd"><h2>导出、导入 PSD <span class="tier std">Standard</span></h2><ul class="mn-list"><li>文件 → 导出 → 导出 PSD，可保留图层、可见性、不透明度、混合模式、剪贴、锁定透明像素、文件夹、图层蒙版和调整图层（渐变映射保留色标）。</li><li>描边保存为已烘焙像素的图层。文字图层变为普通图层。绘制目标、法线贴图、主颜色2nd／3rd 文件夹保存为隐藏组（导入后恢复）。</li><li>将 PSD 拖入窗口，会导入到名称与文件名相同的材质。也可从纹理集面板对应行导入。</li><li>也可导入虚拟形象附带的修改用 PSD，接着绘制。</li></ul><div class="mn-tip warn">调整图层的计算方式在其他应用中可能略有不同。</div><div class="mn-tip">PSD（Standard、Pro）：仅带描边、投影、外发光效果的底层与其剪贴图层不再合并，而是分别写出，并在上方添加只烘焙了效果的“（图层名）（效果）”图层（若有填充不透明度、叠加、内部效果等，则仍像以前一样合为一张）。</div></section><section class="mn-sec" id="pad"><h2>导出扩边（填充）</h2><p>导出时将边缘颜色扩展到 UV 岛外。不扩展时，缩小或使用 Mipmap 可能使 UV 接缝出现细线。</p><ul class="mn-list"><li>可选择无、4、8（默认）、16、32、64、128 px、填满 UV 岛外区域（导出窗口、材质导出窗口）。</li><li>适用于 PNG、PSD 合成图和材质图片。PSD 图层本身保留绘制原状。</li></ul><p>v1.1.0 中，4096px 图片选择“全部”时，也可填满空白区域直至边缘。</p><div class="mn-tip">边距值与 UV 区域左下共用。笔刷边缘的淡色部分不再视为已绘制：先将不透明部分的颜色扩展到岛外，再把淡色部分叠加在上面（接缝处不易出现底色线条）。“在新图层上生成边距”也采用相同规则。</div><div class="mn-tip">边距的扩展方式：岛外的像素取直线距离最近的岛内像素颜色（斜边也不会呈阶梯状，而是平滑扩展）。通过 Unity 联动发送的图像与导出的 PNG 相同。</div></section><section class="mn-sec" id="dir"><h2>导出文件夹</h2><ul class="mn-list"><li>导出保存位置对话框会从上次导出文件夹打开。</li><li>可先通过导出窗口“选择文件夹”设置，勾选<strong>“不再询问，导出到此文件夹”</strong>后，PNG、PSD、AO、.unitypackage 导出时不再询问位置，直接写入该文件夹。点击“移除”恢复每次询问。</li><li>导出材质到文件夹（选择 Assets）时，从上次选中的 Assets 开始。</li></ul><div class="mn-tip warn">开启“不再询问”时，同名文件会被覆盖。</div><p>“导出后打开文件夹”默认开启。完成后可在资源管理器查看图片，不需要时可取消勾选。确定保存位置后会显示“正在导出…”和进度。</p></section><section class="mn-sec" id="mat"><h2>导出材质 <span class="tier pro">Pro</span></h2><p>可将 lilToon 材质导出为 .unitypackage。详细信息请参阅 <a href="/petanuri/zh/manual/material#export">最终效果与 lilToon 材质</a> 。</p></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/pose"><small>← 上一页</small>姿势、混合形状、顶点组</a><a class="next" href="/petanuri/zh/manual/unity"><small>下一页 →</small>从 Unity 绘制、AI 联动</a></nav>
+    <p class="mn-intro">把绘制好的纹理做成可在 Unity 等中使用的图像（PNG、PSD）。保存工程文件（.petanuri）是为了继续绘制，不能直接贴到模型上。生成图像的操作就是“导出”。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>通过 文件 → 导出 → 导出 PNG（全部纹理集），一次把所有纹理导出为 PNG（<a href="#png">详细说明</a>）。</li>
+      <li>窗口中的“外扩（填充）”保持默认的 8 px 即可。如果在游戏中看到接缝处有线条，再调大（<a href="#pad">详细说明</a>）。</li>
+      <li>如果要反复导出到同一个文件夹，请勾选“每次都不询问，直接导出到此文件夹”（<a href="#dir">详细说明</a>）。</li>
+      <li>要保留图层分开传递，请导出为 PSD <span class="tier std">Standard</span>（<a href="#psd">详细说明</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#kinds">可导出的内容，以及与工程文件的区别</a></li><li><a href="#png">导出为 PNG</a></li><li><a href="#layers-png">仅将所选图层导出为 PNG</a></li><li><a href="#uvmap">将 UV 贴图导出为 PNG</a></li><li><a href="#psd">导出、导入 PSD</a></li><li><a href="#pad">导出扩边（填充）</a></li><li><a href="#dir">导出位置的文件夹</a></li><li><a href="#canvas2d">导出 2D 绘画的图像</a></li><li><a href="#mat">导出 lilToon 材质与 AO</a></li></ul></div>
+
+    <section class="mn-sec" id="kinds" data-keywords="输出 导出图片 保存图片 另存为 贴图 成品 完成 工程文件 区别 导入 Unity 纹理转图片 保存为图片">
+      <h2>可导出的内容，以及与工程文件的区别</h2>
+      <p>各种导出都通过 文件 → 导出 选择。在纹理集所在行的右键菜单中，也可以只导出该纹理集。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想要的内容</th><th scope="col">菜单</th></tr></thead><tbody>
+        <tr><td>当前所选纹理集的纹理</td><td>导出 PNG（所选纹理集）（<a href="#png">详细说明</a>）</td></tr>
+        <tr><td>全部纹理集的纹理</td><td>导出 PNG（全部纹理集）（<a href="#png">详细说明</a>）</td></tr>
+        <tr><td>仅部分图层的图像</td><td>导出为 PNG（所选图层）（<a href="#layers-png">详细说明</a>）</td></tr>
+        <tr><td>UV 线条的底图</td><td>将 UV 贴图导出为 PNG（所选集合）（<a href="#uvmap">详细说明</a>）</td></tr>
+        <tr><td>保留图层分开的图像 <span class="tier std">Standard</span></td><td>导出 PSD（所选纹理集）／（全部纹理集）（<a href="#psd">详细说明</a>）</td></tr>
+        <tr><td>lilToon 材质 <span class="tier pro">Pro</span></td><td>导出材质（.unitypackage／文件夹）（<a href="#mat">详细说明</a>）</td></tr>
+        <tr><td>AO 图像 <span class="tier pro">Pro</span></td><td>滤镜 → 烘焙 →“将 AO 导出为 PNG（最后一次烘焙的结果）”（<a href="#mat">详细说明</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="文件 → 导出 菜单" loading="lazy"><figcaption>文件 → 导出</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col"></th><th scope="col">工程文件（.petanuri）</th><th scope="col">导出的 PNG</th></tr></thead><tbody>
+        <tr><td>内容</td><td>模型、全部图层、设置</td><td>将可见图层叠加后的 1 张图像</td></tr>
+        <tr><td>可打开的应用</td><td>只有 PetaNuri3D</td><td>Unity、其他绘画软件等</td></tr>
+        <tr><td>操作</td><td>文件 → 保存工程文件（<kbd>Ctrl</kbd>+<kbd>S</kbd>）</td><td>文件 → 导出</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">导出的 PNG 无法还原成图层。为了以后修改，请同时保存工程文件（<a href="/petanuri/zh/manual/start#save">保存</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="png" data-keywords="输出图片 导出贴图 批量导出 全部导出 文件名 缩小 放大 512 1024 8192 纹理转 PNG 保存为图片">
+      <h2>导出为 PNG</h2>
+      <p>把纹理集的图像导出为 PNG，每个纹理集 1 张。在 Unity 等中贴到模型上的就是这张图像。</p>
+      <ol class="mn-steps">
+        <li>选择 文件 → 导出 →“导出 PNG（全部纹理集）”。只导出一个时，选择“导出 PNG（所选纹理集）”。</li>
+        <li>在导出窗口中确认“分辨率”“外扩（填充）”和“导出位置”，然后点击“导出”。</li>
+        <li>被询问保存位置时，选择文件夹。导出全部纹理集时，只需选择一次文件夹。</li>
+        <li>显示“已导出 XX”，并用资源管理器打开导出的文件夹。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="导出窗口。扩边与导出位置" loading="lazy"><figcaption>导出窗口</figcaption></figure>
+      <h3 id="png-files">导出的文件</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">文件名</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>＜纹理集名＞.png</td><td>将可见图层叠加后的图像。纹理集名就是材质的名称</td></tr>
+        <tr><td>＜纹理集名＞_main2nd.png、＜纹理集名＞_main3rd.png <span class="tier pro">Pro</span></td><td>含有主颜色 2nd／3rd 文件夹的纹理集。如果绘制了它们的蒙版，还会有带 _mask 的文件（<a href="/petanuri/zh/manual/material#main2">主颜色 2nd、3rd</a>）</td></tr>
+        <tr><td>＜纹理集名＞_normal.png <span class="tier pro">Pro</span></td><td>含有绘制目标中法线贴图文件夹的纹理集（<a href="/petanuri/zh/manual/material#channels">绘制目标</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>名称相同的纹理集，会加上 _2、_3 加以区分。</li>
+        <li>已关闭显示的纹理集也包含在“全部纹理集”中。无对应材质的纹理集（!）不包含在内。需要时，请在该行的右键菜单中选择“导出 PNG（不向 UV 岛外扩展）”来导出（<a href="/petanuri/zh/manual/sets#orphan">无对应材质的纹理集</a>）。</li>
+        <li>描边等效果会连同效果一起导出。用轻松烘焙等烘焙出的光、影、质感，也会作为可见图层的颜色包含在内。</li>
+        <li>即使用显示范围或对象隐藏了，纹理也会原样导出。</li>
+        <li>在纹理集所在行的右键菜单中选择“导出为 PNG”，也可以导出该纹理集。</li>
+      </ul>
+      <h3 id="png-size">改变大小后导出</h3>
+      <p>在导出窗口的“分辨率”中，可以选择与纹理集不同的大小。可选“保持不变（纹理集分辨率）”、512×512、1024×1024、2048×2048、4096×4096、8192×8192。</p>
+      <ul class="mn-list">
+        <li>先按纹理集的分辨率做外扩，再进行缩小或放大。</li>
+        <li>对 PNG（所选纹理集、全部纹理集）、所选图层、UV 贴图和材质的导出有效。对 PSD 无效（始终是纹理集的分辨率）。</li>
+        <li>更改绘制时的分辨率，要在纹理集面板中操作（<a href="/petanuri/zh/manual/sets#resolution">更改分辨率</a>）。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="导出窗口中的分辨率" loading="lazy"><figcaption>导出分辨率</figcaption></figure>
+      <h3 id="png-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>在游戏中，UV 接缝处能看到线条</b>：外扩不够。请调到大于 8 px 后重新导出（<a href="#pad">外扩</a>）。</li>
+        <li><b>提示“XX 显示期间无法导出”</b>：变形框、滤镜预览等仍处于显示状态。请先确定（<kbd>Enter</kbd>）或取消（<kbd>Esc</kbd>），再导出。</li>
+        <li><b>提示“正在执行其他文件读写操作”</b>：保存、自动保存或加载正在进行中。请等完成后再点一次。</li>
+        <li><b>提示“显示处理已停止，无法导出”</b>：请从工程文件或自动保存重新打开后再导出（<a href="/petanuri/zh/manual/sets#memory">节省内存</a>）。</li>
+        <li><b>提示“没有可导出为 PNG 的纹理集”</b>：当前所选的是无对应材质的纹理集（!）。请选择其他纹理集，或先移动图层再导出。</li>
+        <li><b>点击后显示“已取消导出”</b>：在导出窗口或保存位置窗口中点了取消。在窗口中更改过的值也会恢复原样。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="layers-png" data-keywords="单个图层 分部件 单独导出 透明 PNG 透明背景 线稿 素材 分层导出 每层一张">
+      <h2>仅将所选图层导出为 PNG</h2>
+      <p>把线稿、图案等部分图层导出为背景透明的 PNG。</p>
+      <ol class="mn-steps">
+        <li>在图层面板中选择要导出的图层（按住 <kbd>Ctrl</kbd> 或 <kbd>Shift</kbd> 点击，可选任意多个）。</li>
+        <li>选择 文件 → 导出 →“导出为 PNG（所选图层）”（也可以用图层右键菜单中的“将所选图层导出为 PNG”或“将此图层导出为 PNG”）。</li>
+        <li>选择了 2 个以上时，在窗口的“所选图层”中选择“逐个（每个图层一个文件）”或“叠加为一张”，再点击“导出”。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">选择方式</th><th scope="col">文件名</th></tr></thead><tbody>
+        <tr><td>逐个</td><td>＜纹理集名＞_＜图层名＞.png</td></tr>
+        <tr><td>叠加为一张</td><td>＜纹理集名＞_layers.png（按面板中的顺序，连同混合模式一起叠加）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>背景是透明的。因为只包含画过的部分，所以不做外扩。</li>
+        <li>会记住上次的选择。</li>
+        <li>2D 绘画中无法使用。请用“导出 PNG（所选纹理集）”导出（<a href="#canvas2d">详细说明</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvmap" data-keywords="UV 布局 UV 展开图 线框 底图 参考 模板 在其他软件中绘制 UV 图">
+      <h2>将 UV 贴图导出为 PNG</h2>
+      <p>把 UV 线条导出为 PNG。用于在其他绘画软件中叠加为底图进行绘制。</p>
+      <ol class="mn-steps">
+        <li>选择要导出的纹理集。</li>
+        <li>选择 文件 → 导出 →“将 UV 贴图导出为 PNG（所选集合）”（纹理集所在行的右键菜单中也有）。</li>
+        <li>在窗口中选择下列项目，点击“导出”。会生成 ＜纹理集名＞_uv.png。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">可选内容</th></tr></thead><tbody>
+        <tr><td>分辨率</td><td>保持不变（纹理集分辨率）、512–8192</td></tr>
+        <tr><td>线的颜色</td><td>白色、黑色、前景色</td></tr>
+        <tr><td>背景</td><td>透明、黑色、白色（选透明时，可在其他软件中叠加到图像上）</td></tr>
+        <tr><td>线宽</td><td>1、2、3、4、6、8px</td></tr>
+        <tr><td>UV 岛边缘</td><td>“岛边缘以 2 倍粗细绘制”（默认开启）</td></tr>
+        <tr><td>导出位置</td><td>与其他导出相同（<a href="#dir">详细说明</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="将 UV 贴图导出为 PNG 窗口" loading="lazy"><figcaption>将 UV 贴图导出为 PNG</figcaption></figure>
+      <ul class="mn-list">
+        <li>2D 画布没有 UV，因此无法导出。请选择 3D 模型的纹理集。</li>
+        <li>只想在 PetaNuri3D 内查看 UV 线条时，用 UV 区域的“UV 线”即可（<a href="/petanuri/zh/manual/uv#uv">显示 UV 并直接绘制</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="psd" data-keywords="photoshop PS 分层 带图层 PSD 改造用 修改用 导入 继续绘制 CSP 保留图层 分层文件">
+      <h2>导出、导入 PSD <span class="tier std">Standard</span></h2>
+      <p>保留图层分开，导出为 PSD。用于在其他绘画软件中继续绘制，或作为改造用 PSD 分发。</p>
+      <ol class="mn-steps">
+        <li>选择 文件 → 导出 →“导出 PSD（所选纹理集）”或“导出 PSD（全部纹理集）”。</li>
+        <li>在导出窗口中确认外扩和导出位置，点击“导出”。</li>
+        <li>会生成 ＜纹理集名＞.psd。完成后会显示大小和图层数量。</li>
+      </ol>
+      <h3 id="psd-keep">PSD 中包含的内容</h3>
+      <ul class="mn-list">
+        <li>图层、显示状态、不透明度、混合模式、剪贴、锁定透明像素、文件夹、图层蒙版和颜色标签（图层的颜色）都会保留。</li>
+        <li>调整图层也会以调整图层的形式保留（渐变映射保持为色点形式）。色相/饱和度/明度中的“着色”不会保留。</li>
+        <li>描边会作为已栅格化到像素上的图层写入。文字图层会变成普通图层。</li>
+        <li>仅有描边、投影、外发光的基底图层，以及被剪贴的图层，会分别写入。另外会在上方添加只烘焙了效果的“（图层名称）（效果）”图层。存在填充不透明度、内侧效果等时，会合并为 1 个图层。</li>
+        <li><span class="tier pro">Pro</span> 绘制目标、法线贴图、主颜色 2nd／3rd 的文件夹，会作为隐藏的组写入。用 PetaNuri3D 导入时会恢复原样。</li>
+        <li>合成图像（不打开 PSD 就能读取的扁平图像）会带有外扩。图层本身保持绘制时的样子。</li>
+      </ul>
+      <div class="mn-tip warn">调整图层的计算方式在其他应用中打开时，外观可能略有不同。</div>
+      <h3 id="psd-import">导入 PSD</h3>
+      <p>可以导入虚拟形象附带的改造用 PSD，接着绘制。导入后，该纹理集的图层会被替换为 PSD 的内容。</p>
+      <ol class="mn-steps">
+        <li>选择 文件 → 导入 →“导入 PSD（替换图层）”。</li>
+        <li>选择 PSD。会导入到与文件名同名的纹理集（body.psd → body）。没有匹配的纹理集时，导入到当前所选的纹理集。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>把 PSD 拖放到窗口中，也会同样导入。拖放到纹理集所在行，则导入到该纹理集（<a href="/petanuri/zh/manual/sets#files">添加图像或 PSD</a>）。</li>
+        <li>大小不同时，会按纹理集的分辨率缩放。文件夹、蒙版和支持的调整图层保持不变。</li>
+        <li>不支持的混合模式会改为“正常”，不支持的调整图层会被跳过，并在右下角显示提示。</li>
+        <li>撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）一次即可还原。</li>
+        <li>新建时，也可以把起始内容设为“PSD”来导入（<a href="/petanuri/zh/manual/start#new">打开 3D 模型</a>）。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="pad" data-keywords="外扩 出血 边距 缝隙 接缝 接缝线 出现线条 白线 黑线 mipmap 多级渐远纹理 填充 膨胀 dilation">
+      <h2>导出扩边（填充）</h2>
+      <p>向 UV 岛外扩展边缘的颜色后导出。不扩展的话，游戏中应用缩小或 mipmap 时，UV 接缝处可能会出现线条。</p>
+      <ol class="mn-steps">
+        <li>在导出窗口的“外扩（填充）”中选择扩展的宽度。</li>
+        <li>点击“导出”。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">可选值</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>无（不向 UV 岛外扩展）</td><td>UV 岛外不扩展（如果能看到底色，则是底色的颜色）</td></tr>
+        <tr><td>4、8（默认）、16、32、64、128 px</td><td>从 UV 岛边缘向外扩展相应宽度的颜色</td></tr>
+        <tr><td>填满 UV 岛外的全部区域</td><td>用最近的 UV 岛的颜色，填满 UV 岛外的全部区域</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>对 PNG、PSD 的合成图像、材质导出的图像（主颜色、阴影色、蒙版、法线贴图等全部）有效。PSD 的图层本身不扩展。</li>
+        <li>所选图层的 PNG 和 UV 贴图不做外扩。</li>
+        <li>该值与 UV 区域左下角的“边距”相同。无论在哪边更改，两边都会同步变化。在 UV 区域中按 1px 为单位设定的值，也会列在窗口中（<a href="/petanuri/zh/manual/uv#area">绘制范围与边距</a>）。</li>
+        <li>UV 岛外的像素，会取直线距离最近的 UV 岛像素的颜色。斜边也不会出现阶梯状，而是平滑地扩展。</li>
+        <li>笔触边缘的淡薄部分不视为已绘制，而是先扩展不透明部分的颜色，再把淡薄部分叠加在上面。这样接缝处就不容易出现底色的线条。</li>
+        <li>通过 Unity 联动发送的图像，扩展方式与导出的 PNG 相同（<a href="/petanuri/zh/manual/unity">从 Unity 绘制</a>）。</li>
+      </ul>
+      <div class="mn-tip">导出前，在 UV 区域显示“边距线”，就能直观确认会扩展到哪里。如果想连 UV 岛外也手绘，请把绘制范围设为“边距内”（<a href="/petanuri/zh/manual/uv#area">详细说明</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="dir" data-keywords="保存位置 输出位置 指定文件夹 不再询问 覆盖 资源管理器 不打开 默认文件夹">
+      <h2>导出位置的文件夹</h2>
+      <p>在导出窗口的“导出位置”中，可以每次都导出到固定的文件夹。预先选好 Unity 项目的 Textures 文件夹等会很方便。</p>
+      <ol class="mn-steps">
+        <li>在导出窗口中点击“选择文件夹”，选择文件夹。</li>
+        <li>勾选“每次都不询问，直接导出到此文件夹（覆盖同名文件）”。</li>
+        <li>之后导出 PNG、PSD、AO、.unitypackage 时，不再询问保存位置，直接写入该文件夹。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>点击“移除”，会恢复为每次导出都询问保存位置。</li>
+        <li>没有指定文件夹时，保存位置窗口也会从上次导出的文件夹打开。</li>
+        <li>“导出后打开文件夹”默认就是勾选的。写完后会用资源管理器打开该文件夹。不需要时请取消勾选。</li>
+        <li>导出期间会显示“正在导出…”，直到完成前无法操作。</li>
+        <li>导出材质到文件夹（选择 Assets）时，从上次选中的 Assets 开始。</li>
+        <li>在窗口中取消的话，在窗口中更改过的值（外扩、导出位置等）会恢复原样。</li>
+      </ul>
+      <div class="mn-tip warn">选择“每次都不询问”时，同名文件会不经确认直接被覆盖。</div>
+    </section>
+
+    <section class="mn-sec" id="canvas2d" data-keywords="2D 插画 无模型 平面 画布 图章 2D-paint 纯 2D 绘画">
+      <h2>导出 2D 绘画的图像</h2>
+      <p>不使用模型的 2D 绘画的图像，也可以导出为 PNG 或 PSD。</p>
+      <ul class="mn-list">
+        <li>点击画布下方栏中的“导出 PNG”，会生成 2D-paint.png。用 文件 → 导出 →“导出 PNG（所选纹理集）”效果相同。</li>
+        <li><span class="tier std">Standard</span> 要保留图层传递，请用 文件 → 导出 →“导出 PSD（所选纹理集）”，生成 2D-paint.psd。</li>
+        <li>导出全部纹理集和所选图层，是为 3D 模型的纹理集准备的。2D 绘画中无法使用。</li>
+        <li>也可以保存工程文件（<a href="/petanuri/zh/manual/deco#paint2d">无需模型的 2D 绘画</a>）。</li>
+      </ul>
+      <div class="mn-tip">图章专用 2D 画布的图像不会包含在模型的导出中。请通过“注册为图章”做成图章使用（<a href="/petanuri/zh/manual/deco#canvas2d">图章专用 2D 画布</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="mat" data-keywords="unitypackage 材质导出 lilToon mat 阴影色 蒙版 AO 环境光遮蔽 材质包 导出材质">
+      <h2>导出 lilToon 材质与 AO <span class="tier pro">Pro</span></h2>
+      <ul class="mn-list">
+        <li>lilToon 材质通过 文件 → 导出 →“导出材质（.unitypackage／文件夹）”，连同纹理一起导出。窗口中也有外扩和导出位置的栏（<a href="/petanuri/zh/manual/material#export">导出材质</a>）。</li>
+        <li>烘焙好的 AO，通过 滤镜 → 烘焙 →“将 AO 导出为 PNG（最后一次烘焙的结果）”，生成 ＜纹理集名＞_AO.png（<a href="/petanuri/zh/manual/ao">烘焙 AO</a>）。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/start#save">保存、打开并继续</a></li><li><a href="/petanuri/zh/manual/uv#area">绘制范围与边距</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li><li><a href="/petanuri/zh/manual/material#export">导出材质</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/pose"><small>← 上一页</small>姿势、混合形状</a><a class="next" href="/petanuri/zh/manual/unity"><small>下一页 →</small>Unity、AI 联动</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +365,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

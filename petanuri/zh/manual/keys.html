@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>快捷键与数位笔操作 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="快捷键列表（F1，可保持打开继续工作）、数位笔与鼠标操作、视角（数字小键盘）、按键列表、按键设置、笔压异常或不生效时。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="快捷键列表（F1，可保持打开并继续操作）、数位笔与鼠标操作、视角（小键盘）、按键一览、按键分配、笔压异常、不生效时。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/keys">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="快捷键与数位笔操作 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="快捷键列表（F1，可保持打开继续工作）、数位笔与鼠标操作、视角（数字小键盘）、按键列表、按键设置、笔压异常或不生效时。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="快捷键列表（F1，可保持打开并继续操作）、数位笔与鼠标操作、视角（小键盘）、按键一览、按键分配、笔压异常、不生效时。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/keys">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "快捷键与数位笔操作 | PetaNuri3D 使用手册",
-   "description": "快捷键列表（F1，可保持打开继续工作）、数位笔与鼠标操作、视角（数字小键盘）、按键列表、按键设置、笔压异常或不生效时。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "快捷键列表（F1，可保持打开并继续操作）、数位笔与鼠标操作、视角（小键盘）、按键一览、按键分配、笔压异常、不生效时。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/keys",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,405 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys" aria-current="page">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys" aria-current="page">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 快捷键与数位笔操作</p>
     <h1 class="mn-h1">快捷键与数位笔操作</h1>
-    <p class="mn-intro">所有按键均可在 文件 → 偏好设置 →“按键设置”重新分配（适合左手控制器）。本页使用默认按键。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#list">快捷键列表（F1）</a></li><li><a href="#pen">笔/鼠标</a></li><li><a href="#view">视角（数字小键盘）</a></li><li><a href="#keys">按键</a></li><li><a href="#assign">分配按键</a></li><li><a href="#pressure">笔压异常或不生效时</a></li></ul></div>
-    <section class="mn-sec" id="list"><h2>快捷键列表（F1）</h2><ul class="mn-list"><li><kbd>F1</kbd> 可在浮动窗口显示快捷键列表（也可从帮助菜单打开）。<strong>保持打开时按键仍有效，也可在 3D 和 UV 绘制</strong>。再次按 <kbd>F1</kbd> 或点击右上角 × 关闭。</li><li>上方“搜索”可按键或名称筛选。按下的按键行会短暂高亮，下方显示“按下的按键”。</li><li>拖动标题移动，拖右下角调整大小（下次打开保留）。▾ 折叠、◐ 半透明。</li><li>重新分配按键后，菜单、右键、按钮说明和此列表均显示当前按键。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="显示在 3D 界面上方的快捷键列表" loading="lazy"><figcaption>快捷键列表（保持打开也能工作）</figcaption></figure></section><section class="mn-sec" id="pen"><h2>笔/鼠标</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">功能</th></tr></thead><tbody><tr><td>笔尖/左键</td><td>绘制（笔压控制大小）</td></tr><tr><td>右键拖动（笔的侧键）</td><td>旋转</td></tr><tr><td>中键拖动</td><td>平移（中键模式则为旋转，<kbd>Shift</kbd>＋中键平移、<kbd>Ctrl</kbd>＋中键缩放）</td></tr><tr><td>滚轮</td><td>缩放</td></tr><tr><td><kbd>Space</kbd>＋拖动</td><td>旋转（可在设置中与平移互换）</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>Space</kbd>＋拖动</td><td>平移</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Space</kbd>＋拖动</td><td>缩放</td></tr><tr><td>不移动就松开右键</td><td>鼠标显示右键菜单，数位笔侧键显示弹出调色板</td></tr><tr><td><kbd>Shift</kbd>＋点击</td><td>从上一笔的终点画直线</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋左右拖动</td><td>画笔大小</td></tr><tr><td><kbd>Alt</kbd> 按住期间</td><td>吸管</td></tr><tr><td>笔的橡皮擦端</td><td>橡皮擦（面板、窗口操作与笔尖相同）</td></tr><tr><td>在模型上使用 <kbd>Alt</kbd>＋右键</td><td>选择该位置纹理集</td></tr><tr><td>按住工具快捷键绘制</td><td>临时使用该工具（松开恢复之前工具）</td></tr></tbody></table></div><div class="mn-tip">长按工具键临时切换前的时间，可在文件 → 偏好设置 → 操作的“视为长按的时间”中设为 0.15～2 秒（默认 0.5 秒）。</div><div class="mn-tip">Ctrl＋右键拖动（笔侧键）左右调笔刷大小、上下调硬度；Ctrl＋左键拖动（笔尖）左右调不透明度、上下调笔尖角度（使用笔刷类工具时，任何相机操作方式均可）。相机操作为“Alt 键式”时，Alt＋Shift＋左键拖动每次旋转 90°，Shift＋右键拖动左右旋转光线。</div><div class="mn-tip">笔按钮（所有版本・exe）：无论使用 Windows Ink 还是 WinTab，笔按钮上设置的中键、右键、后退／前进都能在 3D・UV 上使用。按住设为“中键”的按钮并移动笔即可旋转 3D 视角（悬空或接触均可；绘制中按下会在当前位置结束线条并旋转）。设为“右键”的按钮，按住移动为右键拖动（旋转 3D 等），不移动直接松开则打开右键菜单。</div><div class="mn-tip">笔侧键（所有版本・exe）：当笔靠近 PetaNuri3D 窗口时，会接收在驱动中为侧键设置的中键、右键、后退、前进点击，并作为笔所在位置的点击使用。与笔尖同时到达的右键点击不会使用，优先绘制。中键即使与笔尖同时按下也会用于视角操作（在 UV 区域中为平移）。</div><div class="mn-tip warn">松开侧键后视角仍在旋转时，按 Esc 或用笔尖点击一次即可停止。若仍无法用笔尖绘制或持续旋转，请尝试在文件 → 偏好设置 → 笔与输入 → 菜单和按钮中关闭“接收笔侧键的中键／右键点击”（关闭后，驱动发送的点击会直接送到鼠标光标所在位置）。若用侧键拖动时中途停止，可在驱动设置中为侧键分配 Space 键，然后用 Space＋笔拖动来旋转。</div><div class="mn-tip">3D 鼠标（所有版本・Windows）：可用六轴 3D 鼠标移动光标所在区域的视角（PetaNuri3D 窗口在最前面或光标位于窗口上时）。在 3D 视图中，左右推移、按下或提起手柄可平移，向自己拉或向前推可缩放，扭转绕纵轴旋转，前后倾斜绕横轴旋转。在 UV 区域和 2D 画布中，可平移、缩放，扭转可旋转。绘制时，3D 鼠标不会移动视角。无论是否安装 3D 鼠标驱动均可使用。</div><div class="mn-tip">连接过 3D 鼠标后，文件 → 偏好设置 → 操作中会出现“3D 鼠标”一节。可更改“使用 3D 鼠标”的开关、灵敏度、移动对象（两者・仅旋转・仅平移）、反转平移／缩放／旋转方向、左右倾斜以旋转画面（3D），以及按钮 1（左）和按钮 2（右）的分配（默认左键切换移动对象、右键显示全部）。按钮分配仅在 3D 鼠标驱动未运行时有效。驱动运行时按钮由驱动使用，请在驱动设置中为按钮分配按键（例如用 F 显示全部）。移动 3D 鼠标期间，不使用驱动随缩放一起发送的滚轮输入（“移动时忽略滚轮”）。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-mouse3d-v121.webp" width="700" height="300" alt="偏好设置 → 操作 中的“3D 鼠标”栏" loading="lazy"><figcaption>操作 →“3D 鼠标”（仅在连接过时显示）</figcaption></figure></section><section class="mn-sec" id="view"><h2>视角（数字小键盘）</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">功能</th></tr></thead><tbody><tr><td>1 / 3 / 7</td><td>正面 / 右 / 上（<kbd>Ctrl</kbd> 切换到对侧）</td></tr><tr><td>2 / 4 / 6 / 8</td><td>每次旋转15°（<kbd>Ctrl</kbd> 平移）</td></tr><tr><td>5</td><td>透视／正交</td></tr><tr><td>9</td><td>对侧</td></tr><tr><td>＋ / －</td><td>缩放</td></tr><tr><td>. / F / Home</td><td>显示全部</td></tr></tbody></table></div></section><section class="mn-sec" id="keys"><h2>按键</h2><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">功能</th></tr></thead><tbody><tr><td><kbd>P</kbd> <kbd>B</kbd> <kbd>E</kbd> <kbd>J</kbd> <kbd>G</kbd> <kbd>I</kbd> <kbd>V</kbd> <kbd>S</kbd> <kbd>T</kbd></td><td>钢笔、毛笔、橡皮擦、混色、填充、吸管、移动/变换、选区、文字</td></tr><tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>画笔大小</td></tr><tr><td><kbd>X</kbd></td><td>交换前景色和背景色</td></tr><tr><td><kbd>M</kbd></td><td>对称绘制（X、左右）</td></tr><tr><td><kbd>U</kbd> / <kbd>Shift</kbd>＋<kbd>U</kbd></td><td>显示 UV / 仅 UV ⇔ 与 3D 并排</td></tr><tr><td><kbd>Tab</kbd></td><td>隐藏调色板</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>I</kbd></td><td>从屏幕取色</td></tr><tr><td><kbd>Shift</kbd>＋<kbd>H</kbd> / <kbd>H</kbd> / <kbd>Alt</kbd>＋<kbd>H</kbd></td><td>仅显示选中部分 / 隐藏选中部分 / 显示全部</td></tr><tr><td><kbd>Alt</kbd>＋<kbd>W</kbd></td><td>接缝线（UV 接缝、UV 岛边缘）</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>N</kbd> / <kbd>Ctrl</kbd>＋<kbd>O</kbd> / <kbd>Ctrl</kbd>＋<kbd>S</kbd></td><td>新建 / 打开工程文件 / 保存</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>S</kbd></td><td>另存为</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Z</kbd> / <kbd>Ctrl</kbd>＋<kbd>Y</kbd>（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>）</td><td>撤销 / 重做</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>C</kbd> <kbd>Ctrl</kbd>＋<kbd>X</kbd> <kbd>Ctrl</kbd>＋<kbd>V</kbd> <kbd>Ctrl</kbd>＋<kbd>T</kbd></td><td>复制、剪切、粘贴、变换</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>N</kbd> / <kbd>Ctrl</kbd>＋<kbd>G</kbd> / <kbd>Ctrl</kbd>＋<kbd>J</kbd> / <kbd>Ctrl</kbd>＋<kbd>E</kbd></td><td>新建图层 / 新建文件夹 / 复制 / 向下合并</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd></td><td>将所选图层放入文件夹</td></tr><tr><td><kbd>Alt</kbd>＋<kbd>]</kbd> / <kbd>Alt</kbd>＋<kbd>[</kbd></td><td>选择上方图层 / 选择下方图层</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>G</kbd></td><td>切换剪贴</td></tr><tr><td><kbd>Delete</kbd></td><td>清除（有选区时仅清除内部）</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>A</kbd> / <kbd>Ctrl</kbd>＋<kbd>D</kbd> / <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>I</kbd></td><td>全选 / 取消选择 / 反选</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd></td><td>恢复选区（上次取消的选区）</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>H</kbd></td><td>显示选区虚线</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>R</kbd></td><td>吸附到尺子</td></tr><tr><td><kbd>F1</kbd></td><td>快捷键列表</td></tr><tr><td><kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd></td><td>偏好设置</td></tr></tbody></table></div><div class="mn-tip">没有默认按键的操作（删除图层、上移一层、下移一层、切换锁定、解除文件夹、切换锁定透明像素等），也可在偏好设置分配按键。</div><div class="mn-tip"><kbd>C</kbd>：透明色／普通色切换。放置曲线尺控制点时按 <kbd>Ctrl</kbd>＋<kbd>Z</kbd> 撤销最后一个点，按<kbd>Ctrl</kbd>＋<kbd>Y</kbd>・<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd> 重做。</div></section><section class="mn-sec" id="assign"><h2>分配按键</h2><ul class="mn-list"><li>文件 → 偏好设置 →“按键设置”：在各分类点击＋后按键即可分配。× 移除。“恢复默认值”恢复该按键，“初始化按键设置”恢复所有按键（需确认）。</li><li>也可右键工具栏按钮、辅助工具缩略图或面板标题 →“分配按键”修改（可与<kbd>Ctrl</kbd>・<kbd>Alt</kbd>・<kbd>Shift</kbd> 组合）。若该按键已被占用，会询问是否重新分配。</li></ul><div class="mn-tip">“导出快捷键设置”可将当前设置保存为 JSON，“导入快捷键设置”可用导出的文件整体替换（例如迁移到另一台电脑时）。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-keymap-io-v112.webp" width="900" height="300" alt="偏好设置中的快捷键设置及导出、导入按钮" loading="lazy"><figcaption>导出与导入快捷键设置</figcaption></figure><div class="mn-tip">为多个子工具分配同一按键时，在分配窗口中选“共用（每按一次切换）”，每按一次即切换到下一个子工具（例如 G 笔和针管笔都用 Q）。选择“改为分配”则会从原子工具上移除。</div></section><section class="mn-sec" id="pressure"><h2>笔压异常或不生效时</h2><ol class="mn-steps"><li>先在 文件 → 偏好设置 → 数位笔与输入 的“笔压”调整。“通过试画校准”中以常用力度画至少3条线后点击“校准”，会自动确定下限、上限和响应。</li><li>若笔压不生效（粗细不变化），用数位笔点击同一区域的测试板，查看“输入路径”。若为“无（以鼠标形式传入）”，请在数位板设置开启“使用 Windows Ink”，或在 数位笔与输入 →“数位板”开启“直接读取笔压（WinTab）”。</li><li>仍有异常时，点击“数位板”中的“检查 WinTab 状态”，在 PetaNuri3D 窗口上移动数位笔。“复制”输出文字，与数位板型号、驱动版本一并发送给支持人员。</li></ol><div class="mn-tip">WinTab 压感（所有版本・exe）：开启“直接读取笔压（WinTab）”后，会从数位板驱动的 WinTab 读取压感（和倾斜）。即使在数位板设置中开启了“使用 Windows Ink”、笔通过 Windows Ink 传入，只要 WinTab 的值在传入，就使用 WinTab 的压感和倾斜（同一位置的“通过 Windows Ink 传入的笔也使用 WinTab 压感”；默认开启；关闭后保持 Windows Ink 的压感）。从睡眠恢复时会重新连接。</div><div class="mn-tip warn">开启 WinTab 后压感不起作用或笔没有反应时，请按“数位板”中“WinTab 连接方式”的“重新查找”，再画一次。它会清除记住的连接方式并从头重新查找（v1.2.0 之前存在的会使 Windows 光标停住的连接方式，在 v1.2.1 中不再使用）。重新安装或更新数位板驱动时，请先关闭 PetaNuri3D（使用 WinTab 时会一直打开驱动的文件）。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-wintab-v121.webp" width="700" height="165" alt="偏好设置 → 笔与输入 中的“数位板”栏" loading="lazy"><figcaption>笔与输入 →“数位板”（直接读取笔压、Windows Ink 的笔也使用、状态、WinTab 连接方式：重新查找）</figcaption></figure></section>
-    <section class="mn-sec" id="v111-controls"><h2>v1.1.1操作变更</h2><p><a href="/petanuri/zh/manual/screen#settings">相机操作</a> · <a href="/petanuri/zh/manual/draw#mirror">隐藏面的对称绘制</a></p></section><nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/unity"><small>← 上一页</small>从 Unity 绘制、AI 联动</a></nav>
+    <p class="mn-intro">这里是按键一览，以及用数位笔、鼠标、3D 鼠标的操作方法。所有按键都可以重新分配。本页列出的按键是初始的分配。笔压不生效或异常时的解决办法，也汇总在这里。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>按 <kbd>F1</kbd> 会显示当前的按键列表。列表开着也能继续绘制（<a href="#list">详细说明</a>）。</li>
+      <li>3D 视图用右键拖动或 <kbd>Space</kbd>+拖动来旋转，用滚轮缩放（<a href="#pen">详细说明</a>）。</li>
+      <li>想使用与其他软件相同的鼠标操作时，请选择相机操作模板（<a href="#camera">详细说明</a>）。</li>
+      <li>按键在 文件 → 偏好设置 →“键位设置”中更改（<a href="#assign">详细说明</a>）。</li>
+      <li>用数位笔绘制但粗细不变时，请看<a href="#pressure">笔压不生效时</a>。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#list">显示快捷键列表（F1）</a></li><li><a href="#pen">数位笔、鼠标操作</a></li><li><a href="#camera">选择相机操作模板</a></li><li><a href="#view">切换视角（小键盘）</a></li><li><a href="#penbutton">数位笔按键、Windows Ink</a></li><li><a href="#mouse3d">用 3D 鼠标移动视角</a></li><li><a href="#keys">按键一览</a></li><li><a href="#assign">分配按键</a></li><li><a href="#pressure">笔压异常或不生效时</a></li></ul></div>
+
+    <section class="mn-sec" id="list" data-keywords="按键一览 快捷键 速查表 备忘单 帮助 搜索 键位表 键盘映射">
+      <h2>显示快捷键列表（F1）</h2>
+      <p>用浮动窗口显示当前的按键列表。窗口开着时，按键依然有效，也可以在 3D、UV 上绘制。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>F1</kbd>（也可以通过 帮助 →“快捷键列表”）。</li>
+        <li>在上方的“搜索”栏中输入按键或名称，筛选列表。</li>
+        <li>关闭时，再按一次 <kbd>F1</kbd>，或点击右上角的 ×。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-shortcuts.webp" width="1400" height="840" alt="显示在 3D 界面上方的快捷键列表" loading="lazy"><figcaption>快捷键列表（保持打开也能工作）</figcaption></figure>
+      <ul class="mn-list">
+        <li>按下按键时，对应的行会稍微发光，下方边缘会显示“按下的键：”和操作名称。</li>
+        <li>拖动标题可以移动窗口（双击恢复原来的位置），拖动右下角可以调整大小。下次打开时保持不变。</li>
+        <li>点击 ▾ 折叠，点击 ◐ 变透明（指针在窗口外时会变淡）。</li>
+        <li>下方的“更改按键设置”，会打开偏好设置中的键位设置。</li>
+        <li>数位笔、鼠标的操作也包含在列表中，并会随所选的相机操作模板而变化。</li>
+        <li>重新分配按键后，菜单、右键菜单、按钮提示以及这个列表，都会显示当前的按键。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pen" data-keywords="数位笔操作 数位板 旋转视角 画直线 笔刷大小 吸管 橡皮擦端 临时切换 长按">
+      <h2>数位笔、鼠标操作</h2>
+      <p>这是在 3D 视图和 UV 区域中的操作。表格对应的是初始的相机操作（右键方式）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>笔尖/左键</td><td>绘制（数位笔的粗细随笔压变化）</td></tr>
+        <tr><td>右键拖动（笔的侧键）</td><td>3D 中为旋转，UV 区域中为平移</td></tr>
+        <tr><td>中键拖动</td><td>平移</td></tr>
+        <tr><td>滚轮</td><td>缩放</td></tr>
+        <tr><td><kbd>Shift</kbd>+滚轮</td><td>旋转画面（每次 5°）</td></tr>
+        <tr><td><kbd>Space</kbd>+拖动</td><td>旋转（可在偏好设置中与平移互换）</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>Space</kbd>+拖动</td><td>平移</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Space</kbd>+拖动</td><td>缩放</td></tr>
+        <tr><td>不移动就松开右键</td><td>鼠标为右键菜单，笔的侧键为弹出调色板（<a href="/petanuri/zh/manual/screen#popup">弹出调色板</a>）</td></tr>
+        <tr><td><kbd>Shift</kbd>+点击</td><td>从上一笔的终点画直线</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+左右拖动</td><td>画笔大小</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+右键拖动（笔的侧键）</td><td>左右调整画笔大小，上下调整硬度</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+左键拖动（笔尖）</td><td>左右调整不透明度，上下调整笔尖的角度</td></tr>
+        <tr><td>按住 <kbd>Alt</kbd> 期间</td><td>吸管</td></tr>
+        <tr><td>笔的橡皮擦端</td><td>橡皮擦（使用橡皮擦工具的辅助工具设置）</td></tr>
+        <tr><td>在模型上按 <kbd>Alt</kbd>+右键</td><td>选择该处的纹理集</td></tr>
+        <tr><td>按住工具键绘制</td><td>仅在按住期间切换为该工具（松开后回到之前的工具）</td></tr>
+        <tr><td>按住 <kbd>Ctrl</kbd> 拖动边框（UV 区域）</td><td>不吸附到网格</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>用 <kbd>Ctrl</kbd>+右键、左键拖动来改变数值，适用于用笔刷绘制的工具（钢笔、毛笔、橡皮擦、模糊等）。在任何相机操作模板下都可以使用。只有开始移动时的方向（左右或上下）所对应的数值会改变，数值会显示在下方的栏中。</li>
+        <li>选中“抓手”工具期间，用左键或数位笔拖动即可移动画面（3D 为平移，按住 <kbd>Ctrl</kbd> 则为缩放）。</li>
+        <li>不使用鼠标或数位笔的按键来移动视角时，请使用 3D 视图的 3D 导航（<a href="/petanuri/zh/manual/screen#nav">3D 导航</a>）。</li>
+      </ul>
+      <h3 id="pen-hold">用工具键临时切换工具</h3>
+      <p>按住工具键绘制时，仅在按住期间切换为该工具，松开后回到之前的工具。适合在用钢笔绘制的过程中，瞬间用一下橡皮擦等情况。</p>
+      <ul class="mn-list">
+        <li>短按后松开，则保持切换到该工具。</li>
+        <li>长按后松开，即使没有绘制，也会回到之前的工具。</li>
+        <li>视为长按的时间，可在 文件 → 偏好设置 → 操作 → 键盘 的“视为长按的时间”中设为 0.15～2 秒（初始为 0.5 秒）。</li>
+        <li>要关闭这种临时切换本身，请关闭同一处的“长按工具键临时切换”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="camera" data-keywords="blender unity maya 操作习惯 鼠标设置 中键 滚轮按下 alt旋转 旋转中心 枢轴">
+      <span id="v111-controls"></span>
+      <h2>选择相机操作模板</h2>
+      <p>可以按自己习惯使用的软件，从 4 种模板中选择移动视角的鼠标分配。</p>
+      <ol class="mn-steps">
+        <li>打开 文件 → 偏好设置 →“操作”→“相机”。</li>
+        <li>在“相机操作模板”中选择。所选的方式下次启动时也会保留。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">模板</th><th scope="col">旋转</th><th scope="col">平移</th><th scope="col">缩放</th></tr></thead><tbody>
+        <tr><td>右键方式（初始）</td><td>右键拖动</td><td>中键拖动</td><td>滚轮</td></tr>
+        <tr><td>中键方式</td><td>中键拖动</td><td><kbd>Shift</kbd>+中键拖动</td><td><kbd>Ctrl</kbd>+中键拖动</td></tr>
+        <tr><td>Alt＋鼠标按钮</td><td><kbd>Alt</kbd>+左键拖动</td><td><kbd>Alt</kbd>+中键拖动</td><td><kbd>Alt</kbd>+右键拖动</td></tr>
+        <tr><td>Unity 方式</td><td>右键拖动、<kbd>Alt</kbd>+左键拖动</td><td>中键拖动、<kbd>Alt</kbd>+中键拖动</td><td><kbd>Alt</kbd>+右键拖动（向下拖为拉近，向上拖为推远）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="在偏好设置的相机操作中选择 Unity 方式" loading="lazy"><figcaption>相机操作模板</figcaption></figure>
+      <ul class="mn-list">
+        <li><kbd>Space</kbd>+拖动和滚轮，在任何模板下都可以使用。</li>
+        <li>Alt＋鼠标按钮和 Unity 方式作用于 3D 视图。因为 <kbd>Alt</kbd> 用于相机操作，所以 3D 中的吸管要用 <kbd>I</kbd> 键。</li>
+        <li>在 Alt＋鼠标按钮方式下，按 <kbd>Alt</kbd>+<kbd>Shift</kbd>+左键拖动，会以 90° 为单位旋转（在点击处把方向对齐到 90° 的倍数），按 <kbd>Shift</kbd>+右键拖动，则旋转光的左右方向。</li>
+        <li>把数位笔侧键设为中键点击时，操作与中键相同。笔尖接触期间按下中键，会停止绘制，变为视角操作。松开中键后，请先抬起笔尖，再画新的线。</li>
+      </ul>
+      <h3 id="camera-pivot">更改旋转中心与缩放中心</h3>
+      <p>这些都在 文件 → 偏好设置 → 操作 →“相机”中。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">开启后</th></tr></thead><tbody>
+        <tr><td>Space＋拖动</td><td>选择旋转（默认）或平移。加上 <kbd>Shift</kbd> 后旋转与平移互换，加上 <kbd>Ctrl</kbd> 则为缩放</td></tr>
+        <tr><td>以最后绘制的位置为中心旋转（初始为关）</td><td>以在 3D 视图中画的线的终点为中心旋转。拉近绘制细节时，想画的位置不会跑到画面外</td></tr>
+        <tr><td>以开始旋转时光标所在处为中心旋转（初始为关）</td><td>开始旋转时，以光标下方的模型上的点为中心旋转。在模型外开始旋转时，与以往相同。与上一项同时开启时，以这一项优先</td></tr>
+        <tr><td>轴视角使用平行投影（初始为开）</td><td>用小键盘 1、3、7 或 3D 导航的轴观察时，使用平行投影。旋转后会恢复为透视</td></tr>
+        <tr><td>按键缩放以光标为中心（初始为关）</td><td>用按键或 3D 导航缩放时，以光标下方的点为中心拉近、推远</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="mn-sec" id="view" data-keywords="小键盘 数字键 正视图 侧视图 俯视图 背视图 透视 平行投影 显示全部 倍率">
+      <h2>切换视角（小键盘）</h2>
+      <p>用键盘的小键盘，可以从固定的方向观察。没有小键盘的键盘，请使用 3D 视图右上角的图标或 3D 导航（<a href="/petanuri/zh/manual/screen#hud">3D 视图四角</a>）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>小键盘 <kbd>1</kbd> ／ <kbd>3</kbd> ／ <kbd>7</kbd></td><td>前视图 ／ 右视图 ／ 顶视图</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+小键盘 <kbd>1</kbd> ／ <kbd>3</kbd> ／ <kbd>7</kbd></td><td>后视图 ／ 左视图 ／ 底视图</td></tr>
+        <tr><td>小键盘 <kbd>4</kbd> ／ <kbd>6</kbd> ／ <kbd>8</kbd> ／ <kbd>2</kbd></td><td>视角向左 ／ 右 ／ 上 ／ 下旋转 15°（按住会连续旋转）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+小键盘 <kbd>4</kbd> ／ <kbd>6</kbd> ／ <kbd>8</kbd> ／ <kbd>2</kbd></td><td>视角向左 ／ 右 ／ 上 ／ 下移动</td></tr>
+        <tr><td>小键盘 <kbd>5</kbd></td><td>切换透视投影与平行投影</td></tr>
+        <tr><td>小键盘 <kbd>9</kbd></td><td>从反方向观察</td></tr>
+        <tr><td>小键盘 <kbd>+</kbd> ／ <kbd>-</kbd>（<kbd>Ctrl</kbd>+<kbd>+</kbd> ／ <kbd>Ctrl</kbd>+<kbd>-</kbd>）</td><td>拉近 ／ 推远</td></tr>
+        <tr><td><kbd>F</kbd> ／ <kbd>Home</kbd> ／ 小键盘 <kbd>.</kbd></td><td>显示全部</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd> ／ <kbd>2</kbd> ／ <kbd>3</kbd></td><td>以预设倍率显示 UV 区域、2D 画布（初始为 100% ／ 200% ／ 50%）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>拉近、推远时，如果光标在 UV 区域上，则作用于 UV。<kbd>Ctrl</kbd>+<kbd>+</kbd> 用 <kbd>Ctrl</kbd>+<kbd>=</kbd>、<kbd>Ctrl</kbd>+<kbd>;</kbd> 也有效（因为键盘的排列不同）。</li>
+        <li>小键盘的数字与上排的数字是不同的键。在分配按键时会显示为“小键盘 1”这样。</li>
+        <li>预设倍率可在 文件 → 偏好设置 → 操作 → 键盘 的“预设倍率（UV·2D）”中更改。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="penbutton" data-keywords="笔侧键 笔按键 手绘板 数位屏 和冠 绘王 xp-pen 一直旋转 停不下来 wacom">
+      <h2>数位笔按键、Windows Ink</h2>
+      <p>数位板驱动中分配给笔按键的点击，会作为笔所在位置的点击接收。无论是 Windows Ink 还是 WinTab 都有效。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键分配</th><th scope="col">在 PetaNuri3D 中的动作</th></tr></thead><tbody>
+        <tr><td>中键点击</td><td>按住期间移动笔，会旋转 3D 视角（笔悬空或接触都会旋转）。绘制过程中按下，会在当前画到的线处停下并开始旋转。在 UV 区域中为平移</td></tr>
+        <tr><td>右键点击</td><td>按住并移动为右键拖动（旋转 3D 等），不移动就松开为右键点击（菜单）</td></tr>
+        <tr><td>后退、前进</td><td>作为鼠标的后退、前进按钮接收</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>与笔尖同时（前后 0.05 秒内）到达的右键点击不予使用，以绘制为优先（针对会和笔尖一起发送右键点击的驱动）。中键点击即使与笔尖同时到达，也会作为视角操作。</li>
+        <li>只有笔靠近 PetaNuri3D 窗口期间才会接收。不会碰鼠标的真实按键。</li>
+        <li>不想接收时，请关闭 文件 → 偏好设置 → 笔与输入 → 菜单和按钮 中的“接收笔侧键的中键／右键点击”（初始为开启）。关闭后，驱动的点击会直接作用于鼠标光标所在的位置。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="偏好设置 → 笔与输入 中的“菜单和按钮”栏" loading="lazy"><figcaption>笔与输入 →“菜单和按钮”</figcaption></figure>
+      <h3 id="penbutton-ink">开关 Windows Ink 会带来的变化</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">数位板的设置</th><th scope="col">在 PetaNuri3D 中</th></tr></thead><tbody>
+        <tr><td>开启“使用 Windows Ink”（推荐）</td><td>能收到笔压和倾斜度。按下侧键后不移动就松开，会弹出调色板</td></tr>
+        <tr><td>关闭“使用 Windows Ink”</td><td>笔会以鼠标形式传入，没有笔压（<a href="#pressure-fix">笔压不生效时</a>）。侧键也会作为鼠标右键传入，因此遵循 偏好设置 → 操作 → 鼠标 中“右键”的设置</td></tr>
+      </tbody></table></div>
+      <h3 id="penbutton-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>松开侧键后 3D 仍一直旋转</b>：按 <kbd>Esc</kbd>，或用笔尖点一下，就会停止。</li>
+        <li><b>笔尖画不出来，或经常一直旋转</b>：请试着关闭“接收笔侧键的中键／右键点击”。</li>
+        <li><b>用侧键拖动时中途停止</b>：在数位板驱动的设置中，给侧键分配 <kbd>Space</kbd> 键。用 <kbd>Space</kbd>+笔拖动即可旋转。</li>
+        <li><b>画细节时菜单自己弹出来</b>：这是笔长按触发的。请关闭 笔与输入 → 菜单和按钮 中的“用笔长按弹出菜单”（<a href="/petanuri/zh/manual/screen#ctx">右键菜单</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mouse3d" data-keywords="spacemouse 空间鼠标 3dconnexion 3dxware 六轴 左手设备 视角操作 3D鼠标">
+      <h2>用 3D 鼠标移动视角</h2>
+      <p>用 SpaceMouse 等可向 6 个轴移动的 3D 鼠标，可以移动光标所在区域（3D 视图、UV 区域、2D 画布）的视角。连接后，右下角会显示提示。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">控制帽的动作</th><th scope="col">3D 视图</th><th scope="col">UV 区域、2D 画布</th></tr></thead><tbody>
+        <tr><td>左右平推、下压、上提</td><td>平移</td><td>平移</td></tr>
+        <tr><td>向手前拉、向里推</td><td>缩放</td><td>缩放</td></tr>
+        <tr><td>扭转</td><td>绕竖直轴旋转</td><td>旋转</td></tr>
+        <tr><td>前后倾斜</td><td>绕水平轴旋转</td><td>—</td></tr>
+        <tr><td>左右倾斜</td><td>旋转画面（开启“左右倾斜以旋转画面（3D）”时）</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>只有 PetaNuri3D 窗口位于前台，或光标位于窗口上时才会动作。绘制期间视角不会移动。</li>
+        <li>驱动（3DxWare）无论是否安装都可以使用。</li>
+      </ul>
+      <h3 id="mouse3d-settings">3D 鼠标设置</h3>
+      <p>在 文件 → 偏好设置 → 操作 →“3D 鼠标”中更改。只有连接过 3D 鼠标时才会出现。</p>
+      <ul class="mn-list">
+        <li>使用 3D 鼠标、灵敏度、移动对象（旋转和平移／仅旋转／仅平移）</li>
+        <li>反转平移方向、反转缩放方向、反转旋转方向、左右倾斜以旋转画面（3D）</li>
+        <li>按钮 1（左）（初始为切换移动对象）、按钮 2（右）（初始为显示全部）。此外还可以选择：前视图、从反方向看、切换透视 / 平行、恢复画面旋转默认值、打开 3D 鼠标设置、不执行任何操作</li>
+        <li>移动时忽略滚轮：驱动会随控制帽的动作一起发送滚轮信号，开启后在移动期间不使用它（避免缩放时一卡一卡）</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-mouse3d-v121.webp" width="700" height="300" alt="偏好设置 → 操作 中的“3D 鼠标”栏" loading="lazy"><figcaption>操作 →“3D 鼠标”（仅在连接过时显示）</figcaption></figure>
+      <h3 id="mouse3d-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>3D 鼠标的按钮不生效</b>：按钮的分配只在驱动（3DxWare）未运行时生效。驱动运行时，按钮由驱动使用，所以请在驱动的设置中给按钮分配按键（例：<kbd>F</kbd> 为显示全部）。</li>
+        <li><b>偏好设置中没有“3D 鼠标”</b>：从未连接过就不会出现。连接后就会出现。</li>
+        <li><b>缩放时一卡一卡</b>：开启“移动时忽略滚轮”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="keys" data-keywords="快捷键 键盘 一览表 速查表 热键 键位绑定 快捷键大全 ctrl alt shift">
+      <h2>按键一览</h2>
+      <p>这是初始的按键分配。分类与偏好设置中“键位设置”的分类相同。“无按键”的操作也可以分配按键（<a href="#assign">分配按键</a>）。</p>
+      <h3 id="keys-tool">工具</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">工具</th></tr></thead><tbody>
+        <tr><td><kbd>P</kbd></td><td>钢笔</td></tr>
+        <tr><td><kbd>B</kbd></td><td>毛笔</td></tr>
+        <tr><td><kbd>E</kbd></td><td>橡皮擦</td></tr>
+        <tr><td><kbd>J</kbd></td><td>混色（模糊、涂抹、混色）</td></tr>
+        <tr><td><kbd>G</kbd></td><td>填充</td></tr>
+        <tr><td><kbd>I</kbd></td><td>吸管</td></tr>
+        <tr><td><kbd>V</kbd></td><td>移动·变形</td></tr>
+        <tr><td><kbd>S</kbd></td><td>选区</td></tr>
+        <tr><td><kbd>T</kbd></td><td>文字</td></tr>
+      </tbody></table></div>
+      <p>画笔集、装饰、图章、图案、缝线、液化、渐变、图形、抓手、隐藏笔、尺子，以及“下一个辅助工具”“上一个辅助工具”没有按键。辅助工具也可以分配按键。</p>
+      <h3 id="keys-brush">画笔、颜色</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td><kbd>[</kbd> ／ <kbd>]</kbd></td><td>减小 ／ 增大画笔大小（按住会连续变化）</td></tr>
+        <tr><td><kbd>X</kbd>（<kbd>~</kbd>）</td><td>交换前景色和背景色</td></tr>
+        <tr><td><kbd>D</kbd></td><td>将前景色和背景色恢复为默认（黑、白）</td></tr>
+        <tr><td><kbd>C</kbd></td><td>切换透明色绘画</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>I</kbd></td><td>从屏幕取色（包括窗口外）</td></tr>
+      </tbody></table></div>
+      <p>无按键：在画笔大小列表中增大一级、减小一级，将当前前景色添加到颜色集。</p>
+      <h3 id="keys-view">显示</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td><kbd>Tab</kbd></td><td>显示/隐藏面板（工具栏和面板）</td></tr>
+        <tr><td><kbd>U</kbd></td><td>显示/隐藏 UV（与 3D 并排）</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>U</kbd></td><td>仅 UV（隐藏 3D）</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>H</kbd></td><td>仅显示所选部分</td></tr>
+        <tr><td><kbd>H</kbd></td><td>隐藏所选部分</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>H</kbd></td><td>全部显示</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>W</kbd></td><td>显示/隐藏接缝线（UV 接缝、UV 岛边缘）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd></td><td>吸附到尺子（切换）</td></tr>
+        <tr><td><kbd>F</kbd> ／ <kbd>Home</kbd> ／ 小键盘 <kbd>.</kbd></td><td>显示全部</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd> ／ <kbd>2</kbd> ／ <kbd>3</kbd></td><td>以预设倍率 1～3 显示（UV·2D）</td></tr>
+      </tbody></table></div>
+      <p>小键盘的视角请看<a href="#view">切换视角（小键盘）</a>。无按键：深色模式、显示/隐藏网格线、仅显示线框、所有纹理集按像素显示、同时显示所选部分、反转显示范围、删除尺子、向左旋转画面（15°）、向右旋转画面（15°）、恢复画面旋转默认值、锁定/解锁相机方向、将 UV 放入小窗口、将 3D 放入小窗口、互换小窗口与全屏、显示全部 UV、UV 导航、显示/隐藏 UV 网格、显示/隐藏常用工具、显示/隐藏弹出调色板等。</p>
+      <h3 id="keys-edit">编辑</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td>撤销（按住会连续撤销）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Y</kbd> ／ <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td>重做</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd> ／ <kbd>Ctrl</kbd>+<kbd>X</kbd></td><td>复制 ／ 剪切（选区内）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td>粘贴</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td>变换（在 3D/UV 上）</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>Backspace</kbd></td><td>用前景色填充（有选区时只填选区内）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Backspace</kbd></td><td>用背景色填充（有选区时只填选区内）</td></tr>
+        <tr><td><kbd>M</kbd></td><td>对称绘制：切换 X（左右）</td></tr>
+      </tbody></table></div>
+      <p>无按键：对称绘制 Y（前后）、Z（上下）、将图层颜色改为前景色、将图像贴到 3D、添加文字、重新输入文字、自动切换到开始绘制处的纹理集、跨两个纹理集绘制、UV 绘制范围（UV 内、边距内、全部）、吸附到 UV 网格、UV 岛外继续绘制到 3D 上相连的相邻部分等。</p>
+      <h3 id="keys-layer">图层</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td><td>新建图层</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>新建文件夹</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></td><td>将所选图层放入文件夹</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td><td>复制图层</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>与下方图层合并（文件夹合并为 1 个图层）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd></td><td>切换剪贴</td></tr>
+        <tr><td><kbd>Delete</kbd></td><td>清除图层（有选区时只清除选区内。选了多个图层时全部清除。撤销 1 次即可恢复）</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>]</kbd> ／ <kbd>Alt</kbd>+<kbd>[</kbd></td><td>选择上方图层 ／ 选择下方图层</td></tr>
+      </tbody></table></div>
+      <p>无按键：删除图层、上移一层、下移一层、切换锁定、切换锁定透明像素、解散文件夹、选择在此处绘制的图层、蒙版操作、描边操作、左右镜像复制、自动上色等。</p>
+      <h3 id="keys-select">选区</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td>全选</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>取消选择</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td>恢复选区（上次取消的选区）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td>反选</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>H</kbd></td><td>显示/隐藏选区虚线</td></tr>
+      </tbody></table></div>
+      <p>无按键：扩展选区、收缩选区、羽化边缘、选择图层的已绘制区域、选择所有相似颜色、从选区创建蒙版、复制到新图层、剪切到新图层、用前景色绘制、使选区外变暗等（<a href="/petanuri/zh/manual/edit#select">选区</a>）。</p>
+      <h3 id="keys-file">文件、帮助</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按键</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>新建（选择 3D 模型）</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td>打开工程文件</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>保存工程文件</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td>另存为</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td><td>偏好设置</td></tr>
+        <tr><td><kbd>F1</kbd></td><td>快捷键列表（打开、关闭）</td></tr>
+      </tbody></table></div>
+      <p>无按键：重新加载模型、教程、手册（Web）、联系我们、检查新版本、关于 PetaNuri3D、打开参考图、2D 画布等。</p>
+      <h3 id="keys-other">其他按键</h3>
+      <ul class="mn-list">
+        <li>在菜单和右键菜单中，可以用 <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>、<kbd>Enter</kbd>、<kbd>Esc</kbd> 操作。打开菜单期间，应用的快捷键无效。</li>
+        <li>在为曲线尺打点期间，用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤回最后一个点，用 <kbd>Ctrl</kbd>+<kbd>Y</kbd>、<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> 重做（<a href="/petanuri/zh/manual/edit#ruler">尺子</a>）。</li>
+        <li>教程期间，用 <kbd>←</kbd> <kbd>→</kbd> 前后切换，用 <kbd>Esc</kbd> 退出。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="assign" data-keywords="自定义快捷键 修改快捷键 键位 左手设备 重置 恢复默认 导出 导入 备份 json">
+      <h2>分配按键</h2>
+      <p>任何操作的按键都可以更改。适用于配合左手设备等情况。</p>
+      <ol class="mn-steps">
+        <li>打开 文件 → 偏好设置 →“键位设置”。每个分类一节，列出各个操作及其按键。</li>
+        <li>点击想更改的操作的“+”。会显示“请按一个键（Esc 取消）”。</li>
+        <li>按下想使用的键。也可以与 <kbd>Ctrl</kbd>、<kbd>Alt</kbd>、<kbd>Shift</kbd> 组合。</li>
+        <li>如果该键已用于其他操作，会询问是否“改为分配”。改为分配后，该键会从原来的操作上移除。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>点击按键旁边的 ×，可移除该键。用“+”添加按键，一个操作可以设置多个按键。</li>
+        <li>点击“恢复默认值”，仅把该操作恢复为默认的按键。</li>
+        <li>“初始化按键设置”会把全部恢复为默认（先确认；无法用撤销恢复）。</li>
+      </ul>
+      <h3 id="assign-tool">通过右键为工具、辅助工具分配按键</h3>
+      <ol class="mn-steps">
+        <li>右键点击工具栏的按钮，或辅助工具的图块。</li>
+        <li>选择“分配按键”。如果已有按键，会显示成“分配按键（当前：P）”这样。</li>
+        <li>按下想使用的键。原来的键会被取消，替换成所按的键（按 <kbd>Esc</kbd> 取消）。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在辅助工具、工具属性面板的标题或标签上右键，也可以分配。</li>
+        <li>按下分配给辅助工具的键，就会切换到该工具的该辅助工具。删除辅助工具时，对应的键也会被移除。</li>
+        <li>分配的键，会显示在按钮、图块名称旁边（气泡提示）以及键位设置的分类“工具”“辅助工具”中。</li>
+        <li>把同一个键分配给多个辅助工具时，请在分配窗口中选择“共用（每按一次切换）”。每按一次该键，就会切换到下一个辅助工具（例：给 G 笔和针管笔分配 <kbd>Q</kbd>）。</li>
+      </ul>
+      <h3 id="assign-io">导出、导入按键分配</h3>
+      <p>换到另一台电脑，或留一份备份时使用。</p>
+      <ol class="mn-steps">
+        <li>点击键位设置上方的“导出快捷键设置”。当前的分配会保存为 JSON 文件（PetaNuri3D-keymap.json）。</li>
+        <li>在导入的一侧，点击“导入快捷键设置”，选择该文件。</li>
+        <li>被问到“要替换吗？”时，点击“加载”。当前的分配会被整体替换。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-keymap-io-v112.webp" width="900" height="300" alt="偏好设置中的键位设置，以及导出、导入按钮" loading="lazy"><figcaption>导出与导入快捷键设置</figcaption></figure>
+      <ul class="mn-list">
+        <li>文件中没有的操作，会使用默认的按键。当前版本中不存在的操作，其设置不会被使用。</li>
+      </ul>
+      <h3 id="assign-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>按键没有反应</b>：打开菜单期间，应用的快捷键无效。请关闭菜单后再按。</li>
+        <li><b>按下的键触发了意想不到的操作</b>：打开 <kbd>F1</kbd> 列表并按键，下方边缘会显示该键对应的操作。</li>
+        <li><b>分配给小键盘的键无效，或用上排数字无效</b>：小键盘的数字与上排的数字是不同的键。请为实际使用的那个重新分配。</li>
+        <li><b>刷新、打印、页面缩放的键无效</b>：浏览器的操作键在 PetaNuri3D 中无效。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pressure" data-keywords="压感 笔压不灵 笔压没反应 粗细不变 轻重 倾斜 驱动 延迟 wacom 手绘板">
+      <h2>笔压异常或不生效时</h2>
+      <p>笔压可以在 文件 → 偏好设置 → 笔与输入 的“笔压”中，调整为适合自己的力度。粗细完全不变时，请先确认笔压是否传到（传输路径）。</p>
+      <h3 id="pressure-fit">按自己的力度校准（通过试画校准）</h3>
+      <ol class="mn-steps">
+        <li>打开 文件 → 偏好设置 →“笔与输入”→“笔压”。</li>
+        <li>点击“通过试画校准”。</li>
+        <li>在右侧的板上，用平时的力度画 3 条以上的线。</li>
+        <li>点击“校准”。下限、上限、响应会根据该力度自动确定。</li>
+        <li>不满意的话，点击“撤销”。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">含义</th></tr></thead><tbody>
+        <tr><td>响应</td><td>柔软＝力度轻也能画出较粗、较浓的线 ／ 坚硬＝只有用力按时才会变粗</td></tr>
+        <tr><td>下限</td><td>比这更弱的力度，视为笔压 0</td></tr>
+        <tr><td>上限</td><td>比这更强的力度，视为笔压 100%（数位笔的力度范围较窄时）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>用笔按右侧的板，会显示当前的笔压，以及经过响应处理后的值。</li>
+        <li>每个辅助工具是否用笔压改变粗细、浓度（“笔压控制大小”“笔压控制不透明度”），以及笔压曲线，都在工具属性中更改。它们作用于这里的响应之后（<a href="/petanuri/zh/manual/draw#props">画笔详细设置</a>）。</li>
+      </ul>
+      <h3 id="pressure-check">确认笔压是否传到</h3>
+      <ol class="mn-steps">
+        <li>用笔按 文件 → 偏好设置 → 笔与输入 中“笔压”的板。</li>
+        <li>查看板下方的“当前笔压”和传输路径。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">路径显示</th><th scope="col">含义</th></tr></thead><tbody>
+        <tr><td>Windows Ink</td><td>已收到笔压</td></tr>
+        <tr><td>WinTab</td><td>通过“直接读取笔压（WinTab）”已收到笔压</td></tr>
+        <tr><td>无（以鼠标形式传入）</td><td>没有收到笔压。请看下面的“笔压不生效（粗细不变）时”</td></tr>
+      </tbody></table></div>
+      <h3 id="pressure-fix">笔压不生效（粗细不变）时</h3>
+      <p>如果在数位板的设置中关闭了“使用 Windows Ink”，笔会以鼠标形式传入，没有笔压。解决办法有 2 种，任选其一即可。</p>
+      <ul class="mn-list">
+        <li><strong>推荐</strong>：在数位板驱动的设置界面中，开启“使用 Windows Ink”。倾斜度也会传入。</li>
+        <li><strong>在保持关闭 Windows Ink 的状态下使用时</strong>：开启 文件 → 偏好设置 → 笔与输入 →“数位板”中的“直接读取笔压（WinTab）”（初始为关闭）。路径会变为“WinTab”。</li>
+      </ul>
+      <div class="mn-tip">用笔绘制却似乎没有收到笔压时，右下角会提示一次“未收到笔压”。只用鼠标绘制时不会出现。点击“不再显示”后不再出现，点击“打开偏好设置”会打开笔与输入。</div>
+      <h3 id="pressure-wintab">用 WinTab 读取笔压</h3>
+      <ul class="mn-list">
+        <li>开启“直接读取笔压（WinTab）”后，会从数位板驱动的 WinTab 读取笔压（和倾斜度）。</li>
+        <li>只有笔靠近并绘制时，才会替换笔压。用鼠标绘制时保持不变。笔的橡皮擦端也会变成橡皮擦。</li>
+        <li>“通过 Windows Ink 传入的笔也使用 WinTab 压感”（初始为开启）：笔通过 Windows Ink 传入时，只要收到了 WinTab 的值，也会使用它的笔压和倾斜度。关闭后，仍使用 Windows Ink 的笔压。</li>
+        <li>与其他使用 WinTab 的绘画软件同时使用时，可能收不到笔压。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-wintab-v121.webp" width="700" height="165" alt="偏好设置 → 笔与输入 中的“数位板”栏" loading="lazy"><figcaption>笔与输入 →“数位板”</figcaption></figure>
+      <h3 id="pressure-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>不用力按就不变粗，或轻轻一碰就很粗</b>：用“通过试画校准”，重新按自己的力度校准。手动调整的话，不用力按就不变粗时降低上限，轻碰就很粗时把响应往“坚硬”一侧调。</li>
+        <li><b>轻轻画时线几乎看不见，或入笔收笔太细</b>：把 笔与输入 → 笔触手感 中的“入笔收笔的方式”设为“按长度入笔收笔”。这样即使笔压很弱的位置，也不会细于 1px。</li>
+        <li><b>其他画笔有效，只有某个画笔粗细不变</b>：在该辅助工具的工具属性中，确认“笔压控制大小”有没有被关闭（<a href="/petanuri/zh/manual/draw#props">画笔详细设置</a>）。</li>
+        <li><b>用鼠标绘制时粗细不变</b>：鼠标没有笔压。鼠标的入笔收笔，始终由辅助工具的“入笔”“出笔”长度来产生。</li>
+        <li><b>显示“WinTab 没有空位”，“直接读取笔压（WinTab）”被关闭</b>：请关闭其他使用 WinTab 的绘画软件，或重启数位板驱动（或电脑），再重新开启。有些驱动中，未正常关闭的软件所占用的名额，在重启之前不会恢复。</li>
+        <li><b>显示“找不到 WinTab”“找不到数位板”</b>：请确认数位板驱动已安装、数位板已连接。</li>
+        <li><b>已开启 WinTab，但按板时“当前笔压”仍是“—（无笔压）”</b>：让 PetaNuri3D 窗口保持在最前，用笔在板上按几次来绘制（如果没有传到，每按 2 次会切换连接方式尝试）。仍然不行的话，点击“WinTab 连接方式”的“重新查找”，再绘制一次。</li>
+        <li><b>开启 WinTab 后，笔没有反应</b>：点击“数位板”中“WinTab 连接方式”的“重新查找”，再绘制一次。会清除记住的连接方式，从头重新查找。</li>
+        <li><b>在数位板驱动中做了按应用的设置</b>：如果在按应用的设置中添加了 PetaNuri3D（PetaNuri3D-win_x64.exe），请确认那里没有关闭笔压。</li>
+        <li><b>显示“WinTab 正在运行，但没有收到笔的信息”</b>：用下面的“检查 WinTab 状态”，确认卡在了哪里。</li>
+        <li><b>想重装、更新数位板驱动</b>：请先关闭 PetaNuri3D 再操作。使用 WinTab 时，驱动的文件会一直处于打开状态。</li>
+        <li><b>线条比笔尖慢出现</b>：试着开启 笔与输入 → 减少延迟 中的“提前显示笔画（减少延迟）”（用数位笔（Windows Ink）绘制时）。同时也开启“预测的临时线”（<a href="/petanuri/zh/manual/screen#settings-pen">笔与输入的设置</a>）。</li>
+      </ul>
+      <h3 id="pressure-support">仍无法解决时（发送给技术支持）</h3>
+      <ol class="mn-steps">
+        <li>点击 文件 → 偏好设置 → 笔与输入 →“数位板”中的“检查 WinTab 状态”。</li>
+        <li>在 PetaNuri3D 的窗口上，用笔画一条线（2～3 秒）。会显示 wintab32.dll、数位板名称、笔压级别、接收端、最近 5 秒收到的数据包数、最后的笔压值，以及对卡在何处的判断（数值每秒更新）。</li>
+        <li>点击“复制”。</li>
+        <li>通过 帮助 →“联系我们（支持、功能需求、错误报告）”，连同数位板的型号、驱动的版本一起粘贴并发送（<a href="/petanuri/zh/manual/trouble#contact">联系我们的方法</a>）。</li>
+      </ol>
+      <div class="mn-tip">出现“请先开启“直接读取笔压（WinTab）”，再检查一次”时，请先开启同一处的“直接读取笔压（WinTab）”，再按一次。</div>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/screen#settings">偏好设置</a></li><li><a href="/petanuri/zh/manual/screen#nav">用 3D 导航移动视角</a></li><li><a href="/petanuri/zh/manual/screen#popup">弹出调色板</a></li><li><a href="/petanuri/zh/manual/draw#props">画笔详细设置</a></li><li><a href="/petanuri/zh/manual/edit#select">选区</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/unity"><small>← 上一页</small>Unity、AI 联动</a><a class="next" href="/petanuri/zh/manual/glossary"><small>下一页 →</small>术语表</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +540,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

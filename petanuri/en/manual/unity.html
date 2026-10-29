@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paint from Unity and AI integration | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Select a Unity prefab and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D), save to update Unity, install the add-on, output paths, original files preserved and AI/MCP controls. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Select a prefab in Unity and choose &quot;Paint with PetaNuri3D&quot;, saving shows your painting in Unity, installing the add-on, where files are saved, original files are never overwritten, and control from AI (MCP clients). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/unity">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Paint from Unity and AI integration | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Select a Unity prefab and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D), save to update Unity, install the add-on, output paths, original files preserved and AI/MCP controls. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Select a prefab in Unity and choose &quot;Paint with PetaNuri3D&quot;, saving shows your painting in Unity, installing the add-on, where files are saved, original files are never overwritten, and control from AI (MCP clients). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/unity">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Paint from Unity and AI integration | PetaNuri3D Manual",
-   "description": "Select a Unity prefab and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D), save to update Unity, install the add-on, output paths, original files preserved and AI/MCP controls. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Select a prefab in Unity and choose \"Paint with PetaNuri3D\", saving shows your painting in Unity, installing the add-on, where files are saved, original files are never overwritten, and control from AI (MCP clients). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/unity",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,185 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity" aria-current="page">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity" aria-current="page">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Paint from Unity and AI integration</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Paint from Unity and AI integration</p>
     <h1 class="mn-h1">Paint from Unity and AI integration</h1>
-    <p class="mn-intro">Select an avatar in Unity, launch PetaNuri3D and paint directly. Available in all editions (Lite/Standard/Pro).</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#unity">Launch from Unity and paint</a></li><li><a href="#ai">AI integration (MCP)</a></li></ul></div>
-    <section class="mn-sec" id="unity"><h2>Launch from Unity and paint</h2><ul class="mn-list"><li>Select a prefab (such as an avatar) in Unity and choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D) to launch the app with that model.</li><li>Your painting updates in the Unity scene <strong>when you save in PetaNuri3D or Unity</strong> . Painted textures enter the Unity project (Unity’s appearance does not change while painting).</li><li>Supports Unity 2022.3 (used for VRChat avatars). Connects only to Unity on the same computer.</li></ul><h3>One-time setup: install the Unity add-on</h3><ol class="mn-steps"><li>PetaNuri3D-Unity.unitypackage is in the unity folder inside PetaNuri3D.</li><li>With the Unity project open, drag PetaNuri3D-Unity.unitypackage into Project (or Assets → Import Package → Custom Package).</li><li>Click Import. Setup is complete when “ぺたぬり3D” (PetaNuri3D) appears in the top menu bar (editor-only; not included in uploaded avatars).</li></ol><h3>Paint</h3><ol class="mn-steps"><li>Select an avatar in Hierarchy (scene object) or a prefab in Project.</li><li>Choose “ぺたぬり3D” → “ぺたぬり3D で塗る” (PetaNuri3D → Paint with PetaNuri3D) from the menu bar (also right-click). First time only, select PetaNuri3D-win_x64.exe in the app folder.</li><li>PetaNuri3D launches with the Unity model. Texture sets follow material main textures; original textures become Base (original resolution, capped at 2048 in Lite).</li><li>Save in PetaNuri3D or Unity (<kbd>Ctrl</kbd>＋<kbd>S</kbd>) to save both and update the painting in Unity.</li></ol><ul class="mn-list"><li>Projects: Assets/PetaNuri/(name)/(name).petanuri. Painted textures: PNGs in Assets/PetaNuri/(name)/Textures/ (import settings match originals). Copied materials go in Materials/ alongside them.</li><li><strong>Original FBX, materials, textures and prefabs remain unchanged</strong>. Starting from a Project prefab creates a Prefab Variant to paint instead.</li><li>Launched from Unity, PetaNuri3D shows a dedicated painting interface (New, Open project, Reload model and Save as are hidden).</li><li>Closing PetaNuri3D ends integration. For scene avatars, Unity asks Keep using this / Restore original appearance.</li><li>Choose “ぺたぬり3D で塗る” (Paint with PetaNuri3D) again to reopen the project and continue.</li></ul><div class="mn-tip">For detailed instructions or connection trouble, see Unity連携の使い方.txt in the app&#x27;s unity folder.</div><div class="mn-tip">The Unity link add-on version (the same number as PetaNuri3D) appears at the bottom of the PetaNuri3D window in Unity and in the notice when connected. Textures sent through the Unity link are pixel-identical to exported PNGs.</div><div class="mn-tip">Main color 2nd/3rd (Pro, v1.3.0 and later): if a lilToon material uses Main color 2nd or Main color 3rd, their images (including PSDs), masks, blend modes, and other settings are loaded when you open it through the integration, and written back to Unity when you paint and save (the original PSDs and materials are not overwritten). This requires the v1.3.0 add-on (the previous add-on still connects, but 2nd/3rd are not transferred).</div></section><section class="mn-sec" id="ai"><h2>AI integration (MCP)</h2><ul class="mn-list"><li>AI/MCP clients can control PetaNuri3D (drawing, colors/brushes, views, layers, screenshots, PNG export etc.).</li><li>Off by default. Enable File → Preferences → AI integration → Enable AI integration (MCP) to use it.</li><li>Register a stdio server in your MCP client: command node, argument  &lt;PetaNuri3D folder&gt;\mcp\server.mjs (Node v20 or later). Connection instructions there include example settings with a Copy button.</li><li>The AI client starts the server. PetaNuri3D automatically connects to a fixed port on the same computer and reports connection in the bottom hint. Other websites cannot connect.</li><li><strong>run_js</strong> (runs arbitrary programs inside the app) requires  <span class="tier pro">Pro</span> . Enabling MCP alone is insufficient; enable Allow run_js (arbitrary program execution) too. Register only trusted AI clients.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="AI integration section in Preferences" loading="lazy"><figcaption>File → Preferences → AI integration</figcaption></figure></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/export"><small>← Previous</small>Export</a><a class="next" href="/petanuri/en/manual/keys"><small>Next →</small>Shortcuts and pen controls</a></nav>
+    <p class="mn-intro">Select an avatar in Unity, start PetaNuri3D, and paint it right away. When you save, your painting shows up in Unity. You can also control PetaNuri3D from an AI (an MCP client).</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <p class="mn-proof">The Unity link and AI integration are available in every edition (Lite, Standard and Pro). Only run_js in AI integration is available in Pro (<a href="/petanuri/en/manual/start#editions">Edition comparison</a>).</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Only the first time, import unity\PetaNuri3D-Unity.unitypackage from the PetaNuri3D folder into Unity (<a href="#unity-install">Details</a>).</li>
+      <li>In Unity, select your avatar, then choose <span lang="ja">ぺたぬり3D</span> → <span lang="ja">ぺたぬり3D で塗る</span> (PetaNuri3D → Paint with PetaNuri3D) from the menu bar (<a href="#unity">Details</a>).</li>
+      <li>After you paint, press <kbd>Ctrl</kbd>+<kbd>S</kbd> in PetaNuri3D or Unity. Your painting shows up in Unity (<a href="#unity-save">Details</a>).</li>
+      <li>If you move PetaNuri3D to a different place, choose its location again in Unity (<a href="#exe">Details</a>).</li>
+      <li>To control it from an AI, turn on File → Preferences → AI integration (<a href="#ai">Details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#unity">Launch from Unity and paint</a></li><li><a href="#unity-save">Show your painting in Unity and finish</a></li><li><a href="#exe">Choose the PetaNuri3D location again</a></li><li><a href="#ai">Control it from AI (MCP)</a></li></ul></div>
+
+    <section class="mn-sec" id="unity" data-keywords="unity-editor addon plugin integration avatar-painting prefab-variant open-in-unity send-to-unity">
+      <h2>Launch from Unity and paint</h2>
+      <p>You can paint a Unity avatar as it is, without exporting an FBX. The original FBX, materials, textures and prefabs are never changed.</p>
+      <ul class="mn-list">
+        <li>Supports Unity 2022.3 (the version used for VRChat avatars). It connects only to Unity on the same computer.</li>
+        <li>Only FBX meshes can be painted. Shapes that are not from an FBX do not appear in PetaNuri3D.</li>
+      </ul>
+      <h3 id="unity-install">One-time setup: install the add-on in Unity</h3>
+      <ol class="mn-steps">
+        <li>Open the "unity" folder inside the PetaNuri3D folder. It contains PetaNuri3D-Unity.unitypackage.</li>
+        <li>With your project open in Unity, drag PetaNuri3D-Unity.unitypackage into the Project window (or use Assets → Import Package → Custom Package).</li>
+        <li>Click "Import" in the window that appears.</li>
+        <li>If <span lang="ja">ぺたぬり3D</span> (PetaNuri3D) appears in the menu bar at the top, the add-on is installed.</li>
+      </ol>
+      <p>The add-on is installed in Assets/PetaNuri3D. It works only inside the editor and is not included in the avatar you upload.</p>
+      <h3 id="unity-paint">Paint</h3>
+      <ol class="mn-steps">
+        <li>In Unity, select the avatar in Hierarchy (the object in the scene) or a prefab in Project.</li>
+        <li>In the menu bar, choose <span lang="ja">ぺたぬり3D</span> → <span lang="ja">ぺたぬり3D で塗る</span> (PetaNuri3D → Paint with PetaNuri3D). It is also in the right-click menus of Hierarchy and Project. The Unity menu names are in Japanese only.</li>
+        <li>Only the first time, a message "Choose the PetaNuri3D program" appears. Choose PetaNuri3D-win_x64.exe in the PetaNuri3D folder.</li>
+        <li>PetaNuri3D starts and shows the model from Unity. Paint as usual.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>A texture set is made for each material's main texture. Materials that use the same texture share one set, and what you paint shows on all of those materials.</li>
+        <li>The original texture becomes the base as is, and the resolution is the same as the original texture (Lite is limited to 2048). For a material with no texture, you start painting from the material color.</li>
+        <li>Objects hidden in Unity are also hidden in PetaNuri3D (you can show them in the Objects panel).</li>
+        <li>PetaNuri3D launched from Unity is a screen just for painting. The title is "PetaNuri3D — Unity link (avatar name)", and New, Open project file, Recent files, Reload model and Save as are not shown.</li>
+        <li>If you choose "Paint with PetaNuri3D" again, the open PetaNuri3D comes to the front (a second copy is not started).</li>
+        <li><span class="tier pro">Pro</span> If a lilToon material uses "Main color 2nd" or "Main color 3rd", their images (including PSD), masks, blend modes and colors come in too, and go into those folders in the Layers panel (<a href="/petanuri/en/manual/material#main2">Main color 2nd and 3rd</a>). They do not come in with Lite or Standard (in Unity, the original 2nd and 3rd still show as they were).</li>
+      </ul>
+      <h3 id="unity-window">The PetaNuri3D window (recommended for first-timers)</h3>
+      <p>In the Unity menu bar, choose <span lang="ja">ぺたぬり3D</span> → <span lang="ja">ぺたぬり3D の窓を開く</span> (PetaNuri3D → Open the PetaNuri3D window) to open a window that lets you check each step from the top as you paint.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>1. PetaNuri3D program (exe)</td><td>Shows the current location and whether it can be used. Has "Choose", "Search" and "Show in Explorer" (<a href="#exe">Choose the location again</a>)</td></tr>
+        <tr><td>2. What to paint (prefab or scene avatar)</td><td>Drag a prefab or avatar into the field, or select it and click "Use selection". The number of paintable meshes and the texture sets are shown. If it cannot be painted, the reason is shown too</td></tr>
+        <tr><td>3. Paint</td><td>"Paint with PetaNuri3D" and the current status (Not connected, Starting, Connected, Disconnected, Saved, Finished). While you are painting, you also get "Bring PetaNuri3D to front", "Save and show in Unity", "Finish", "Revert and finish" and "Show painted files"</td></tr>
+        <tr><td>4. Where files go / Settings</td><td>Where your painting goes (Assets/PetaNuri/), "Open Preferences" and the language switch</td></tr>
+      </tbody></table></div>
+      <p>The add-on version (the same number as PetaNuri3D) appears at the bottom of the window.</p>
+    </section>
+
+    <section class="mn-sec" id="unity-save" data-keywords="apply sync refresh not-updating save revert undo assets-folder close finish end variant material-copy">
+      <h2>Show your painting in Unity and finish</h2>
+      <p>While you paint, Unity's look does not change. When you save in PetaNuri3D or Unity, what you painted at that moment shows up in Unity.</p>
+      <ol class="mn-steps">
+        <li>Press <kbd>Ctrl</kbd>+<kbd>S</kbd> in PetaNuri3D or Unity. Both save.</li>
+        <li>Check in Unity's Scene view that your painting appears.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">What is created</th><th scope="col">Location (inside the Unity project)</th></tr></thead><tbody>
+        <tr><td>Project file</td><td>Assets/PetaNuri/(name)/(name).petanuri</td></tr>
+        <tr><td>Painted textures</td><td>PNGs in Assets/PetaNuri/(name)/Textures/ (painted textures only; the import settings match the original textures)</td></tr>
+        <tr><td>Materials</td><td>Assets/PetaNuri/(name)/Materials/ (copies of the original materials that use the painted textures)</td></tr>
+        <tr><td>Main color 2nd/3rd <span class="tier pro">Pro</span></td><td>_main2nd.png and _main3rd.png in Textures/ (only when you changed what came in from Unity; masks are not written back)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>If you started from a prefab in Project, a prefab variant (Prefab Variant) is created in Assets/PetaNuri/(name)/ and that is what you paint. When you upload, place the resulting "(name) (PetaNuri)" prefab in the scene and use it.</li>
+        <li>Next time you choose "Paint with PetaNuri3D", the project file opens and you can continue painting with the layers intact.</li>
+        <li>The textures sent to the Unity link are identical, pixel for pixel, to the exported PNG.</li>
+      </ul>
+      <h3 id="unity-end">Finish</h3>
+      <ul class="mn-list">
+        <li>Closing PetaNuri3D ends the link. If you choose "Save and quit" when you close, your painting is sent to Unity before PetaNuri3D closes.</li>
+        <li>If you painted an avatar in the scene, Unity asks "Keep" or "Revert to original". Even if you choose "Revert to original", the files in Assets/PetaNuri/ remain, so you can pick up where you left off by painting again. You can also go back with Unity's Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>).</li>
+        <li>If you close without ever saving, it reverts to the original look without asking and deletes what it created.</li>
+        <li>If you close Unity first, you are asked "Save and Close", "Keep Open" or "Close Without Saving".</li>
+      </ul>
+      <h3 id="unity-note">Things to watch for</h3>
+      <ul class="mn-list">
+        <li>Animations that switch materials, such as outfit color changes, point to the original materials. When you use your painting, replace the materials in those animations too.</li>
+        <li>Do not paint the same avatar in two Unity editors at the same time.</li>
+        <li>While Unity reloads scripts (compiling, or the start of Play mode), the link drops for a moment, but it reconnects right away.</li>
+      </ul>
+      <h3 id="unity-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>I painted, but Unity's look does not change</b>: It shows up when you save. Press <kbd>Ctrl</kbd>+<kbd>S</kbd> in PetaNuri3D or Unity.</li>
+        <li><b>Nothing starts when I choose "Paint with PetaNuri3D", or an English page opens</b>: The exe you chose is wrong. Use <a href="#exe">Choose the PetaNuri3D location again</a> and choose PetaNuri3D-win_x64.exe in the folder where you extracted the ZIP.</li>
+        <li><b>"The PetaNuri3D program files (resources.neu) are not next to the selected file" appears</b>: There is no resources.neu next to the exe you chose. Choose the exe in the folder where you extracted the whole ZIP.</li>
+        <li><b>"The Unity add-on and PetaNuri3D versions don't match" appears</b>: Import the PetaNuri3D-Unity.unitypackage that comes with PetaNuri3D again. To carry Main color 2nd/3rd, you need the add-on of the same version.</li>
+        <li><b>"All link ports (47360-47369) are in use" appears</b>: Close the other Unity editors and try again.</li>
+        <li><b>"The selection has no paintable meshes (FBX meshes)" appears</b>: Select a prefab or avatar that has FBX meshes.</li>
+        <li><b>It still does not connect</b>: Restart both Unity and PetaNuri3D. For details, see <span lang="ja">Unity連携の使い方.txt</span> (in Japanese) in PetaNuri3D's unity folder.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="exe" data-keywords="path location moved folder not-launching wont-start exe-path reselect setup new-version relink">
+      <h2>Choose the PetaNuri3D location again</h2>
+      <p>The Unity add-on remembers the location of the PetaNuri3D-win_x64.exe you chose first. If you moved the PetaNuri3D folder, or extracted a new version into a different folder, choose the location again.</p>
+      <ol class="mn-steps">
+        <li>In the Unity menu bar, choose <span lang="ja">ぺたぬり3D</span> → <span lang="ja">ぺたぬり3D の窓を開く</span> (PetaNuri3D → Open the PetaNuri3D window).</li>
+        <li>Click "Choose" under "1. PetaNuri3D program (exe)".</li>
+        <li>Choose PetaNuri3D-win_x64.exe inside the "PetaNuri3D" folder in the new location.</li>
+        <li>If "Found." appears below the field, you are done. If "No file at this location" appears, choose again.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Click "Search" to look for "PetaNuri3D" folders on the Desktop, in Downloads, in Documents, in Program Files and at the root of each drive. Click "Use this" on the one you want, and that becomes the location.</li>
+        <li>You can also change it in Unity under Edit → Preferences → PetaNuri3D, in "PetaNuri3D program".</li>
+        <li>If the exe is missing from the remembered location, a message "Choose the PetaNuri3D program" appears when you choose "Paint with PetaNuri3D".</li>
+        <li>If you installed with setup.exe, the location is %LOCALAPPDATA%\Programs\PetaNuri3D (<a href="/petanuri/en/manual/start#launch">Install and launch</a>).</li>
+      </ul>
+      <div class="mn-tip warn">You cannot choose an exe inside a ZIP, or a different exe. Right-click the downloaded ZIP → Extract All, then choose the exe inside the extracted folder.</div>
+    </section>
+
+    <section class="mn-sec" id="ai" data-keywords="ai-agent claude chatgpt llm automation scripting remote-control api server model-context-protocol">
+      <h2>Control it from AI (MCP)</h2>
+      <p>You can control PetaNuri3D from an AI (an MCP client). You can ask the AI to draw, change colors and brushes, move the view, work with layers, take screenshots, export a PNG and more.</p>
+      <ol class="mn-steps">
+        <li>Open File → Preferences and click "AI integration" on the left.</li>
+        <li>Turn on "Use AI integration (MCP)". It stays ON the next time you start.</li>
+        <li>Under "How to connect", click "Copy" in "Example settings".</li>
+        <li>Paste what you copied into the MCP settings on the AI side (the MCP client) and register it.</li>
+        <li>Start using the AI. When it connects, "AI integration: connected to the MCP server" appears at the bottom of the screen.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="The AI integration section of Preferences" loading="lazy"><figcaption>File → Preferences → AI integration</figcaption></figure>
+      <h3 id="ai-setup">How the connection works</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Value</th></tr></thead><tbody>
+        <tr><td>Name</td><td>petanuri3d</td></tr>
+        <tr><td>Command</td><td>node (version 20 or later is required)</td></tr>
+        <tr><td>Arguments</td><td>&lt;PetaNuri3D folder&gt;\mcp\server.mjs (the window shows the actual location)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Register it as a stdio server. The AI side starts the server, and PetaNuri3D connects to it automatically on the same computer (127.0.0.1, ports 47321 to 47330).</li>
+        <li>"Status" shows ON or OFF, and whether it is connected. "Search now" tries to connect right away.</li>
+        <li>It connects to every AI session, however many there are. If you have two PetaNuri3D windows open, you can choose the target with list_instances on the AI side.</li>
+        <li>Websites cannot connect to it. When you are not using it, turn off "Use AI integration (MCP)" to set it to OFF.</li>
+      </ul>
+      <h3 id="ai-tools">What you can ask the AI to do</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Category</th><th scope="col">Commands</th></tr></thead><tbody>
+        <tr><td>Check the state</td><td>get_state (current state), list_layers, screenshot (capture the 3D view), pick (what is at a point on the screen), uv_to_screen, read_pixel (one pixel of a texture)</td></tr>
+        <tr><td>Open and export</td><td>open_fbx (open a 3D model), export_png</td></tr>
+        <tr><td>Draw</td><td>select_tool, set_color, set_brush, stroke (draw one stroke), fill_at (fill an island), pick_color (eyedropper)</td></tr>
+        <tr><td>Layers and sets</td><td>add_layer, select_layer, set_layer, select_set</td></tr>
+        <tr><td>View and mode</td><td>view (the viewpoint), set_mode (toggle between paint and pose)</td></tr>
+        <tr><td>Undo</td><td>undo, redo</td></tr>
+        <tr><td><span class="tier pro">Pro</span></td><td>list_materials, material_edit (material operations), bake_ao (bake AO), run_js (see below)</td></tr>
+      </tbody></table></div>
+      <h3 id="ai-runjs">Allow run_js <span class="tier pro">Pro</span></h3>
+      <p>run_js is a command that runs arbitrary code (JavaScript) inside the app. It does not work just because AI integration is ON.</p>
+      <ol class="mn-steps">
+        <li>Open File → Preferences → AI integration.</li>
+        <li>In the "run_js" section, turn on "Allow run_js (run arbitrary code)".</li>
+      </ol>
+      <div class="mn-tip warn">In the app (exe), it can even delete files and run commands. Register only AI clients you trust. The run_js section is not shown in Standard.</div>
+      <h3 id="ai-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The AI says it cannot connect</b>: "Use AI integration (MCP)" is often OFF. Turn it ON and it connects within a few seconds.</li>
+        <li><b>"This file was not found" appears</b>: Put the mcp folder from the download in the same folder as the app (exe).</li>
+        <li><b>The server does not start on the AI side</b>: Check that node (version 20 or later) is installed.</li>
+        <li><b>run_js is refused</b>: It works only in the Pro edition, and only when "Allow run_js (run arbitrary code)" is turned on.</li>
+        <li><b>The AI says it cannot draw</b>: stroke and fill_at cannot be used in Pose mode. Go back to Paint mode.</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/start#launch">Install and launch</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials</a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/screen#settings">Preferences</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/export"><small>← Previous</small>Export</a><a class="next" href="/petanuri/en/manual/keys"><small>Next →</small>Shortcuts</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +320,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

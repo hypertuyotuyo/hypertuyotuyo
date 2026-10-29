@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>레이어 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요</title>
-  <meta name="description" content="레이어·폴더·마스크·합성 모드·조정 레이어·필터·휘도를 투명도로 변환·그라데이션 맵·작업 내역. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta name="description" content="레이어, 폴더, 마스크, 합성 모드, 조정 레이어, 필터, 휘도를 투명도로 변환, 그라데이션 맵, 작업 내역. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/layers">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="레이어 | PetaNuri3D 매뉴얼 | 하이퍼 츠요츠요">
-  <meta property="og:description" content="레이어·폴더·마스크·합성 모드·조정 레이어·필터·휘도를 투명도로 변환·그라데이션 맵·작업 내역. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
+  <meta property="og:description" content="레이어, 폴더, 마스크, 합성 모드, 조정 레이어, 필터, 휘도를 투명도로 변환, 그라데이션 맵, 작업 내역. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 &#x27;PetaNuri3D&#x27; 사용법입니다.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/ko/manual/layers">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "레이어 | PetaNuri3D 매뉴얼",
-   "description": "레이어·폴더·마스크·합성 모드·조정 레이어·필터·휘도를 투명도로 변환·그라데이션 맵·작업 내역. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
+   "description": "레이어, 폴더, 마스크, 합성 모드, 조정 레이어, 필터, 휘도를 투명도로 변환, 그라데이션 맵, 작업 내역. VRChat 등의 3D 아바타·의상·소품에 텍스처를 직접 그리는 페인트 도구 'PetaNuri3D' 사용법입니다.",
    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/layers",
    "inLanguage": "ko",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,541 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="매뉴얼 목차">
-    <p class="mn-side-title">매뉴얼</p>
+  <aside class="mn-side has-search" aria-label="매뉴얼 목차">
+    <form class="mn-search" role="search" action="/petanuri/ko/manual/search" data-index="/petanuri/assets/data/manual-search.ko.json">
+      <label class="mn-search-label" for="mn-q">매뉴얼 검색</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="예: 좌우 대칭, 필압, 내보내기" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="검색 결과" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/ko/manual">매뉴얼</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">매뉴얼 목차</button>
-    <nav><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/deco">스탬프·패턴·스티치·2D 캔버스</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트·자</a></li><li><a href="/petanuri/ko/manual/layers" aria-current="page">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV 영역과 표시 범위</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트와 오브젝트</a></li><li><a href="/petanuri/ko/manual/material">마무리 모습과 lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크·질감과 명암 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프·정점 그룹 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity에서 칠하기·AI 연동</a></li><li><a href="/petanuri/ko/manual/keys">단축키와 펜 조작</a></li></ol><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
+    <nav><p class="mn-group">처음에</p><ul class="mn-plain"><li><a href="/petanuri/ko/manual/first">처음 사용하는 분께</a></li><li><a href="/petanuri/ko/manual/howto">하고 싶은 일로 찾기</a></li><li><a href="/petanuri/ko/manual/trouble">문제가 생겼을 때</a></li></ul><p class="mn-group">기본</p><ol><li><a href="/petanuri/ko/manual/start">시작 방법</a></li><li><a href="/petanuri/ko/manual/screen">화면·패널·환경 설정</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li></ol><p class="mn-group">도구와 범위</p><ol><li><a href="/petanuri/ko/manual/deco">스탬프·무늬·스티치</a></li><li><a href="/petanuri/ko/manual/edit">선택 범위·변형·텍스트</a></li><li><a href="/petanuri/ko/manual/layers" aria-current="page">레이어</a></li><li><a href="/petanuri/ko/manual/uv">UV와 표시 범위</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트</a></li></ol><p class="mn-group">마무리</p><ol><li><a href="/petanuri/ko/manual/material">lilToon 머티리얼 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/ao">AO 굽기 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/bake">간편 베이크 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/ko/manual/pose">포즈·블렌드 셰이프 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">내보내기와 연동</p><ol><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/unity">Unity·AI 연동</a></li></ol><p class="mn-group">찾아보기</p><ol><li><a href="/petanuri/ko/manual/keys">단축키</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/ko/manual/glossary">용어집</a></li></ul><a class="mn-back" href="/petanuri/ko/manual">← 매뉴얼 홈</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> ／ <a href="/petanuri/ko/manual">매뉴얼</a> / 레이어</p>
+    <p class="mn-crumb"><a href="/petanuri/ko">PetaNuri3D</a> / <a href="/petanuri/ko/manual">매뉴얼</a> / 레이어</p>
     <h1 class="mn-h1">레이어</h1>
-    <p class="mn-intro">레이어는 텍스처 세트별로 겹쳐 있습니다. 2D 일러스트와 같은 감각으로 겹쳐 칠할 수 있습니다.</p>
-    <p class="mn-proof">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p><p class="mn-proof">Lite·Standard·Pro와 Pro 업그레이드를 BOOTH에서 배포하고 있습니다.</p>
-    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#basic">레이어 기본</a></li><li><a href="#folder">폴더·레이어 마스크</a></li><li><a href="#props">레이어 속성</a></li><li><a href="#stroke">테두리 (레이어 외곽선)</a></li><li><a href="#adjust">조정 레이어·필터</a></li><li><a href="#alpha">휘도를 투명도로 변환</a></li><li><a href="#gradmap">그라데이션 맵</a></li><li><a href="#autofill">자동 채색(선화에서 밑칠)</a></li><li><a href="#history">작업 내역과 실행 취소</a></li><li><a href="#sleep">레이어 쉬게 하기(메모리 절약)</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>레이어 기본</h2><ul class="mn-list"><li>패널 맨 위 제목 행에서 텍스처 세트를 전환할 수 있습니다(2개 이상일 때. 오른쪽에 해상도).</li><li>그 아래에 합성 모드·불투명도, 클리핑·투명 픽셀 잠금·잠금 아이콘이 있습니다(누르면 전환. 색 있으면 켜짐).</li><li>아래 아이콘 버튼: 추가·폴더·조정·복제·삭제·병합·마스크·한 단계 위로·한 단계 아래로·기타(펜을 대면 이름과 현재 키 표시).</li><li>맨 아래 &#x27;바탕&#x27;은 새로 만들기에서 정한 색·이미지를 포함한 레이어입니다. 바탕에도 직접 그릴 수 있습니다.</li><li>합성 모드는 28종입니다(일반·곱하기·스크린·오버레이·더하기·더하기(발광)·색상 닷지(발광)·소프트 라이트·하드 라이트·색상·컬러·휘도 등).</li><li><strong>다중 선택</strong>: 이름을  <kbd>Ctrl</kbd>+ 클릭으로 한 장씩, <kbd>Shift</kbd>+ 클릭으로 사이 전체를 선택합니다. 표시·합성 모드·불투명도·클리핑·보호·잠금·삭제·복제·폴더에 넣기·병합을 한꺼번에 적용합니다(실행 취소 한 번).</li><li>키만으로 선택: <kbd>Alt</kbd>＋<kbd>]</kbd>(위 레이어)·<kbd>Alt</kbd>＋<kbd>[</kbd>(아래 레이어). 3D 우클릭 → &#x27;여기에 그린 레이어 선택&#x27;으로 누른 위치에 그려져 있고 보이는 레이어를 선택합니다(마스크로 가린 곳·불투명도 0% 등 보이지 않는 것은 선택하지 않습니다).</li><li>펜으로 레이어 행을 직접 드래그하여 재정렬합니다. 목록 스크롤은  <kbd>Space</kbd>+ 드래그입니다.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="레이어 패널. 볼·팔의 별·바탕" loading="lazy"><figcaption>볼과 팔의 별을 각각 레이어에</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="레이어 우클릭 메뉴" loading="lazy"><figcaption>우클릭 메뉴</figcaption></figure></div><div class="mn-tip warn">Lite는 텍스처 세트별로 <strong>바탕 포함 최대 레이어 4장 </strong>입니다(그리기 레이어와 조정 레이어를 셉니다. 폴더·마스크는 제외). 4장이 되면 패널 아래에 &#x27;레이어 4 / 4장(바탕 포함·Lite)&#x27;이 표시되고 &#x27;추가&#x27;·&#x27;복제&#x27;에 자물쇠가 표시됩니다. Standard부터 무제한 사용할 수 있습니다.</div><div class="mn-tip">레이어가 많을 때는 패널 경계를 아래로 드래그해 목록을 넓힐 수 있습니다. 도킹·탭·독립 창에서도 높이에 맞춰 목록이 늘어나며 위 설정과 아래 조작 버튼은 유지됩니다.</div><div class="mn-tip">색 태그(모든 버전): 레이어 행 왼쪽의 색 상자나 오른쪽 클릭 → 색 태그에서 없음·빨강·주황·노랑·초록·하늘·파랑·보라·회색을 고릅니다. 여러 개를 선택하면 함께 붙고 실행 취소는 한 번입니다. 색이 붙은 행은 왼쪽 띠와 행 색으로 알 수 있고, 폴더의 색은 안의 레이어까지 선으로 이어집니다.</div><div class="mn-tip">색 태그가 있는 레이어가 있으면 목록 위에 “색으로 표시”와 사용 중인 색 동그라미가 나옵니다. 동그라미를 누르면 그 색의 레이어만 목록에 표시합니다. 색 태그는 작업 파일에 저장되며 PSD 내보내기·가져오기(Standard·Pro)에서는 Photoshop 레이어 색상과 연동합니다(하늘은 파랑이 됩니다).</div><div class="mn-tip">…(기타)의 썸네일 크기에서 작게(24px)·보통(40px)·크게(64px)·아주 크게(96px)를 고를 수 있습니다. 같은 곳의 “버튼 줄을 위에 두기”로 아래 버튼 줄을 목록 위로 옮깁니다. 둘 다 다음 실행에도 유지됩니다.</div><div class="mn-tip">여러 개 선택한 레이어 중 하나를 드래그하면 선택한 전부가 순서대로 움직입니다(폴더 행 가운데에 놓으면 폴더 안으로). 이름을 바꾸는 동안에는 마우스 드래그로 글자를 선택할 수 있습니다.</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="색 태그를 붙인 레이어 패널" loading="lazy"><figcaption>색 태그와 색으로 표시</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="색 태그 선택 창" loading="lazy"><figcaption>색 태그 고르기</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="썸네일을 크게 한 레이어 패널" loading="lazy"><figcaption>썸네일 크기 “크게”</figcaption></figure></div><div class="mn-tip">좌우 미러 복사(모든 버전): 레이어 → “좌우 미러 복사”(레이어 행의 오른쪽 클릭에도)로 한쪽에 그린 색을 3D 모델의 반대쪽에 복사합니다. “왼쪽 → 오른쪽”“오른쪽 → 왼쪽”(모델 기준 좌우). UV가 좌우로 달라도 상대 위치에 들어가며, 선택 범위가 있으면 그 안을 복사 대상으로 합니다. “새 레이어에 복사하기”를 켜면 복사한 부분만 새 레이어에 들어갑니다. Ctrl+Z 한 번으로 되돌립니다.</div><div class="mn-tip">선택 범위의 그림을 반대쪽으로 옮기기(선택 범위를 복사 원본으로)·마스크 좌우 미러 복사도 할 수 있습니다(v1.3.0부터).</div><div class="mn-tip">전경색으로 바꾸기(모든 버전. v1.3.0부터): 편집 → &#x27;전경색으로 바꾸기(투명도는 그대로)&#x27;(레이어 우클릭에도)로 선택한 레이어의 그려진 부분의 색만 현재 전경색으로 한꺼번에 바꿉니다. 농도(투명도)와 투명한 곳은 그대로이므로 선화 색 바꾸기에 쓸 수 있습니다. 선택 범위가 있으면 그 안만 바꿉니다. 노멀 맵 이미지 레이어에는 사용할 수 없습니다.</div><div class="mn-tip">노멀 맵 이미지 병합(Pro. v1.3.0부터): 노멀 맵 폴더의 맨 아래부터 이어지는 표시 레이어를 병합할 수 있습니다. 폴더의 불투명도는 100%, 폴더 마스크는 비활성화해 주세요. 병합할 수 없는 조합은 바꾸기 전에 안내합니다.</div><div class="mn-tip">더하기(발광)·색상 닷지(발광)(모든 버전): 합성 모드의 &#x27;밝게 하기&#x27; 안에 있습니다. 레이어·폴더·조정 레이어의 합성 모드, 테두리의 합성, 브러시의 그리기 모드에서 고를 수 있습니다. 일반 더하기·색상 닷지와 달리, 불투명도를 낮춘 곳이나 부드러운 붓의 가장자리에서도 더하기(발광)는 빛이 포화될 때까지 강하게 얹히고, 색상 닷지(발광)는 밝은 곳일수록 강하게 빛납니다(어두운 곳은 별로 밝게 하지 않습니다). 아래가 투명한 곳에서도 레이어의 색이 스스로를 비추듯이 밝게 빛납니다.</div><div class="mn-tip">PSD(Standard·Pro)에는 가까운 합성 모드(선형 닷지·색상 닷지)로 쓰고, 레이어 이름 뒤에 &#x27;[glow]&#x27;를 붙입니다. PetaNuri3D에서 불러오면 발광 버전으로 돌아갑니다(다른 소프트웨어에서는 반투명한 곳·아래가 투명한 곳의 모습이 달라집니다).</div><div class="mn-tip">선택한 레이어가 보일 때까지 목록 이동(모든 버전): 키(Alt+]·Alt+[), 3D 우클릭의 &#x27;여기에 그린 레이어 선택&#x27;, 이동 도구의 &#x27;레이어 자동 선택&#x27; 등 목록 밖에서 레이어를 선택했을 때, 그 행이 보이지 않으면 보이는 곳까지 목록을 스크롤합니다(닫힌 폴더 안이면 폴더를 엽니다). 레이어 패널의 …(기타)나 목록 우클릭의 &#x27;키 등으로 선택한 레이어가 보일 때까지 목록 이동&#x27;로 끌 수 있습니다(처음에는 켜짐).</div></section><section class="mn-sec" id="folder"><h2>폴더·레이어 마스크</h2><ul class="mn-list"><li><strong>폴더</strong>: &#x27;폴더&#x27; 버튼(<kbd>Ctrl</kbd>＋<kbd>G</kbd>)으로 만듭니다. <kbd>Shift</kbd>+ 버튼(<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd>)으로 선택한 레이어를 폴더에 넣습니다. 행을 폴더 중앙으로 드래그하면 안에 들어갑니다. 합성 모드 &#x27;통과&#x27;(기본값) 이외의 모드는 내용물을 한 장으로 만든 후 겹칩니다.</li><li><strong>레이어 마스크</strong>: &#x27;마스크&#x27; 버튼 → 모두 표시/모두 숨김 마스크 추가(선택 범위에서도 가능). 마스크 썸네일을 누르면 마스크에 그릴 수 있습니다(그리기 = 표시·지우개 = 숨김).</li><li><kbd>Shift</kbd>+ 마스크 썸네일로 활성/비활성 전환. &#x27;마스크 범위 표시&#x27;·반전·적용(픽셀에 베이크)·삭제도 가능합니다.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="폴더·마스크·조정 레이어가 있는 레이어 패널" loading="lazy"><figcaption>폴더·마스크·조정 레이어</figcaption></figure><div class="mn-tip">마스크(모든 버전): “마스크” 버튼·오른쪽 클릭의 “마스크” → “마스크 복사”, 다른 레이어에서 “마스크 붙여넣기”(다른 텍스처 세트에도). 마스크 썸네일을 다른 레이어 행으로 드래그하면 옮기고, Alt＋드래그로 복사합니다.</div><div class="mn-tip">마스크에 그리면 그리기 색의 밝기가 그대로 보이는 양이 됩니다(흰색＝보이기·검정＝숨기기·회색＝절반). 이전 방식은 “마스크” → “마스크에 그리기 색의 밝기로 그리기”를 끕니다. “마스크를 흑백으로 표시”(Alt＋마스크 썸네일도)로 마스크만 흑백으로 볼 수 있고, “이 레이어의 밝기를 마스크로 복사”로 그린 흑백 그림을 마스크로 만들 수 있습니다.</div></section><section class="mn-sec" id="props"><h2>레이어 속성</h2><p>선택한 레이어 설정을 모은 패널입니다(기본 배치에서는 레이어 패널 바로 위).</p><ul class="mn-list"><li>제목에 레이어 종류(레이어·폴더·텍스트 레이어·조정 레이어·칠할 대상 폴더 등)와 이름이 표시됩니다.</li><li>조정 레이어: 값 항목. 슬라이더를 움직이는 동안 그림만 바뀌며 놓으면 한 번에 실행 취소할 수 있습니다.</li><li>픽셀 레이어·폴더·텍스트 레이어: &#x27;테두리&#x27; 표시·&#x27;넣기&#x27;·&#x27;설정&#x27;.</li><li>텍스트 레이어는 &#x27;텍스트 다시 입력&#x27;, 마스크가 있는 레이어는 마스크 상태가 표시됩니다.</li><li>합성 모드·불투명도·클리핑·투명 픽셀 잠금·잠금은 레이어 패널에서 변경합니다.</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="레이어 속성 패널" loading="lazy"><figcaption>레이어 속성</figcaption></figure><div class="mn-tip">반복 무늬(모든 버전): 픽셀 레이어의 레이어 속성 “반복 무늬”에서 “무늬를 골라 깔기…”로 이미지 파일·참고 이미지·무늬(그리기 색)를 고르면 상하좌우로 반복하는 무늬로 레이어 전체에 깝니다(지금의 픽셀은 바뀌며 실행 취소할 수 있습니다). UV 이음매에 맞출 수도 있습니다.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="반복 무늬를 깐 레이어와 레이어 속성" loading="lazy"><figcaption>반복 무늬</figcaption></figure><div class="mn-tip">반복 무늬: 맨 위 행에 지금 무늬의 그림과 이름이 나오고, 누르면 무늬 목록이 열립니다. 바로 아래의 “전경색으로 다시 칠하기”로 무늬 모양은 그대로 두고 지금의 전경색으로 바꾸며, “이미지 색으로 되돌리기”로 원래 색으로 돌립니다.</div></section><section class="mn-sec" id="stroke"><h2>테두리 (레이어 외곽선) <span class="tier std">Standard</span></h2><p>레이어 그림 자체를 바꾸지 않고 합성할 때 테두리를 더합니다. 나중에 굵기·색을 변경하거나 끌 수 있습니다.</p><ul class="mn-list"><li>열기: 레이어 우클릭 → &#x27;테두리&#x27;·&#x27;레이어&#x27; 메뉴 → &#x27;테두리&#x27;·레이어 속성의 &#x27;넣기&#x27;·&#x27;설정&#x27;. 테두리가 있는 레이어 행에 &#x27;fx&#x27;가 표시되며 누르면 같은 창이 열립니다.</li><li>설정: 크기(굵기. 텍스처 px)·위치(바깥·안쪽·중앙)·합성·불투명도·색. 값을 바꾸면 모습이 즉시 변경되며 OK(<kbd>Enter</kbd>)로 확정, 취소(<kbd>Esc</kbd>)로 원래 상태로 돌아갑니다.</li><li>마스크 적용 후 형태에 적용됩니다. 클리핑 레이어는 기반의 칠해진 곳 안에 제한됩니다. 폴더·텍스트 레이어에도 적용할 수 있습니다.</li><li>우클릭 → &#x27;테두리&#x27;: 표시 전환·복사·붙여넣기(다중 선택이면 전체)·지우기·픽셀에 베이크.</li><li>저장: 작업 파일에 값과 함께 포함됩니다. PNG·머티리얼 내보내기는 테두리 포함 그림, PSD는 테두리를 픽셀에 베이크한 레이어입니다.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="테두리 창과 테두리가 있는 그림" loading="lazy"><figcaption>테두리</figcaption></figure><div class="mn-tip">테두리은 UV 위에서 계산하므로 아일랜드 가장자리 밖으로 나간 테두리가 3D에서 아일랜드 가장자리에 잘려 보일 수 있습니다.</div><div class="mn-tip warn">테두리 추가·변경은 Standard부터 가능합니다. Lite에서도 작업 파일의 테두리 모습이 유지되며 표시·숨기기·복사·지우기·픽셀에 베이크가 가능합니다.</div></section><section class="mn-sec" id="adjust"><h2>조정 레이어·필터 <span class="tier std">Standard</span></h2><ul class="mn-list"><li><strong>조정 레이어</strong>: &#x27;조정&#x27; 버튼 → 색상·채도·명도/밝기·대비/레벨 보정/계조 반전/그레이스케일/포스터화/임계값/그라데이션 맵. 아래 그림을 변경하지 않고 보정합니다. 값은 레이어 속성 패널에서 바꿉니다. 마스크로 적용 범위를 제한하거나 클리핑으로 바로 아래 레이어에만 적용할 수 있습니다.</li><li><strong>필터</strong>(&#x27;필터&#x27; 메뉴): 색상·채도·명도/밝기·대비/레벨 보정/포스터화/임계값/그라데이션 맵/흐리기(가우시안)/선명하게(언샵 마스크)/계조 반전/그레이스케일. 선택한 레이어에 적용됩니다(&#x27;표시 중인 모든 텍스처 세트에 적용&#x27;도 가능).</li><li>필터 창에서 값을 바꾸면 모델 모습이 즉시 변경되며 OK(<kbd>Enter</kbd>)로 확정, 취소(<kbd>Esc</kbd>)로 원래 상태로 돌아갑니다. 창이 열린 상태에서도 시점을 움직일 수 있습니다.</li><li>흐리기·선명하게는 UV 아일랜드 안에서만 계산하므로 아일랜드 가장자리가 어두워지지 않습니다.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="&#x27;색조/채도/명도&#x27; 필터로 망토 색을 바꾸는 모습" loading="lazy"><figcaption>색상·채도·명도 필터</figcaption></figure><div class="mn-tip">필터(Standard·Pro): 메뉴 “필터”를 색조 보정·계조·흐림·선명·노이즈·효과의 하위 메뉴로 정리하고, 톤 커브·색상 균형·색온도·활기·특정 색 바꾸기·노출·동작 흐림·방사형 흐림·하이 패스·노이즈 추가·노이즈 감소(미디언)·모자이크·선화 추출·엠보스를 추가했습니다.</div><div class="mn-tip">조정 레이어에도 톤 커브·색상 균형·색온도·활기·특정 색 바꾸기·노출·노이즈 추가를 추가했습니다. PSD에서는 톤 커브·색상 균형·활기·노출을 조정 레이어 그대로 내보내고 불러옵니다. 조정 레이어의 마스크는 선택 범위로 만들 수 있습니다(지금 마스크를 교체).</div><div class="mn-tip">투명 위에 그린 선과 필터(Standard·Pro): 모자이크는 알파(투명도)도 칸마다 평균하고, 선명하게(언샤프 마스크)는 알파도 또렷하게 합니다. 노이즈 감소(미디언)는 투명 위의 점도 지우고, 선화 추출·엠보스·하이 패스는 투명한 곳을 흰 종이로 보고 밝기를 봅니다(선화 추출의 선과 하이 패스 결과는 투명했던 곳에도 나옵니다). 하이 패스를 적용한 곳은 평평한 곳이나 넓은 투명 부분이 50% 회색이 되므로, 합성 모드를 오버레이·소프트 라이트로 해서 겹쳐 쓸 수 있습니다. 투명 픽셀 잠금 레이어에서는 알파가 그대로입니다.</div><div class="mn-tip">선택 범위가 있을 때는 필터 창에 &#x27;선택 범위 안에만 적용합니다&#x27;라고 표시됩니다. 선택 범위가 없는 텍스처 세트가 있으면 선택 범위가 없어 바뀌지 않는다는 문구와 세트 이름을 표시합니다.</div></section><section class="mn-sec" id="alpha"><h2>휘도를 투명도로 변환</h2><p><strong>필터 → 휘도를 투명도로 변환</strong>은 Lite부터 사용할 수 있습니다. 흰 배경을 투명하게 하고 어두운 부분을 검은 그림자로 남깁니다. AO 그림자만 다른 색으로 바꿀 때 사용할 수 있습니다.</p><ol class="mn-steps"><li>AO 등 바탕 이외의 그리기 레이어를 선택합니다. 잠금이나 투명 픽셀 잠금이 켜져 있으면 해제합니다.</li><li>&#x27;휘도를 투명도로 변환&#x27;을 실행합니다. 흰색은 투명하게, 어두운 곳일수록 불투명한 검은색이 됩니다.</li><li>그림자 색을 바꾸려면 변환 후 투명 픽셀 잠금을 켜고 원하는 색으로 칠합니다. 그림자 농담은 투명도로 남습니다.</li></ol><div class="mn-tip">조정 레이어가 아닌 선택한 레이어 픽셀을 변환하는 필터입니다. 바탕·마스크·조정 레이어에는 사용할 수 없습니다. 원래 색을 유지하며 투명하게 하는 기능은 아닙니다. <kbd>Ctrl</kbd>＋<kbd>Z</kbd> 로 되돌릴 수 있습니다.</div></section><section class="mn-sec" id="gradmap"><h2>그라데이션 맵 <span class="tier std">Standard</span></h2><ul class="mn-list"><li>어두운 곳 → 밝은 곳을 그라데이션 왼쪽 → 오른쪽 색으로 바꿉니다. 필터와 조정 레이어 모두에 있습니다.</li><li>색 점 최대 32개: 바 클릭으로 추가·드래그로 이동·아래로 끌어내어 삭제·더블클릭으로 색 선택. 점별 불투명도·균등 배치·좌우 바꾸기.</li><li>프리셋 240개(파랑·빨강·노을·무지개·파스텔·네온·메탈·피부·계절·사진 색보정·애니메이션 채색 등). 이름으로 찾을 수 있습니다. 현재 그라데이션은 &#x27;현재 것 저장&#x27;으로 내 프리셋에 저장합니다.</li><li>작업 파일·PSD에도 색 점 그대로 유지됩니다.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="그라데이션 맵 창. 색 점과 프리셋 목록" loading="lazy"><figcaption>그라데이션 맵</figcaption></figure><p>그리기 도구와 베이크에도 같은 색·투명도 점 편집과 프리셋이 있습니다. 그리기 도구는 Lite부터, 베이크는 Pro입니다(<a href="/petanuri/ko/manual/draw#gradient">그리기 도구의 그라데이션</a>／<a href="/petanuri/ko/manual/bake#gradient">베이크 그라데이션</a>).</p></section><section class="mn-sec" id="autofill"><h2>자동 채색(선화에서 밑칠)</h2><ol class="mn-steps"><li>레이어 → 자동 채색을 열고 &#x27;힌트 레이어 만들기&#x27;를 누릅니다.</li><li>힌트 레이어에 칠할 색을 각 위치에 대략 놓습니다.</li><li>&#x27;실행&#x27;을 누르면 선으로 나뉜 영역별로 힌트 색으로 칠한 레이어가 선화 바로 아래에 생성됩니다(선 아래까지).</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="자동 채색 창과 힌트 색으로 나누어 칠한 모습" loading="lazy"><figcaption>자동 채색</figcaption></figure><div class="mn-tip">선은 보이는 면 위에서 닫히도록 그려 주세요. 끊기면 그곳으로 색이 새어 나옵니다. &#x27;UV 이음매를 넘어 칠하기&#x27;로 몸 앞뒤가 별도 아일랜드여도 이어 칠할 수 있습니다.</div></section><section class="mn-sec" id="history"><h2>작업 내역과 실행 취소</h2><ul class="mn-list"><li>오른쪽 &#x27;작업 내역&#x27; 패널에 지금까지의 조작이 표시됩니다. 행을 누르면 해당 조작 직후까지 한 번에 뒤로/앞으로 이동합니다.</li><li>실행 취소 <kbd>Ctrl</kbd>＋<kbd>Z</kbd>·다시 실행 <kbd>Ctrl</kbd>＋<kbd>Y</kbd>(<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>). 최대 30단계를 기록합니다.</li><li>그림(레이어·마스크·칠할 대상·머티리얼 설정)을 바꾸는 조작은 실행 취소할 수 있습니다. 보기만 바꾸는 조작(표시 범위·오브젝트 표시·블렌드 셰이프·시점·표시 방식 등)과 앱 설정은 포함되지 않습니다.</li><li>해상도를 변경하면 실행 취소 내역이 모두 지워집니다(변경 전 확인).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="작업 내역 패널" loading="lazy"><figcaption>작업 내역</figcaption></figure></section><section class="mn-sec" id="sleep"><h2>레이어 쉬게 하기(메모리 절약)</h2><ul class="mn-list"><li>4096 레이어를 여러 장 겹칠 때를 위해 한동안 사용하지 않은 레이어는 그리지 않는 동안 작게 보관합니다(GPU 메모리 절약). 모습·내보내기·저장은 유지됩니다.</li><li>쉬는 레이어를 선택하거나 그리면 즉시 복원됩니다. 여러 레이어를 다시 불러올 때는 &#x27;준비하는 중…&#x27; 표시 후 전환됩니다.</li><li>파일 → 환경 설정 → 그리기 → &#x27;성능&#x27;에서 끌 수 있습니다(기본 켜짐).</li></ul></section>
-    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/edit"><small>← 이전</small>선택 범위·변형·텍스트·자</a><a class="next" href="/petanuri/ko/manual/uv"><small>다음 →</small>UV 영역과 표시 범위</a></nav>
+    <p class="mn-intro">레이어는 텍스처 세트마다 겹쳐져 있습니다. 밑칠·그림자·무늬를 레이어로 나눠 두면 나중에 색이나 농도를 고칠 수 있습니다. 겹치는 방식·마스크·필터 등 레이어에 적용하는 기능도 여기에 정리했습니다.</p>
+    <p class="mn-proof mn-ui-note">스크린샷은 일본어 인터페이스입니다. 본문의 메뉴 이름은 선택한 앱 언어에 맞춰 안내합니다.</p>
+    <div class="mn-quick"><b>먼저 이것만</b><ol>
+      <li>레이어 패널의 "추가"(<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>)로 새 레이어를 추가합니다(<a href="#basic">자세히</a>).</li>
+      <li>행을 눌러 선택한 레이어에 그립니다. 눈 아이콘으로 표시·숨김을, 불투명도로 농도를 바꿉니다(<a href="#basic">자세히</a>).</li>
+      <li>그림자는 밑칠 위의 레이어에 "클리핑"을 켜고 합성 모드를 "곱하기"로 하면 삐져나오지 않게 칠할 수 있습니다(<a href="#clip">자세히</a>).</li>
+      <li>일부를 지우지 않고 가릴 때는 레이어 마스크를 사용합니다(<a href="#mask">자세히</a>).</li>
+      <li>실수했을 때는 <kbd>Ctrl</kbd>+<kbd>Z</kbd>를 누릅니다. 작업 내역 패널에서는 여러 단계 전까지 한 번에 되돌릴 수 있습니다(<a href="#history">자세히</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>이 페이지의 내용</b><ul><li><a href="#basic">레이어를 추가해 나누어 그리기</a></li><li><a href="#blend">그림자와 빛 겹치기(합성 모드·불투명도)</a></li><li><a href="#clip">삐져나오지 않게 칠하기(클리핑·투명 픽셀 잠금·잠금)</a></li><li><a href="#folder">폴더로 묶기</a></li><li><a href="#mask">일부 가리기(레이어 마스크)</a></li><li><a href="#tag">목록을 보기 쉽게 하기(색 태그·썸네일)</a></li><li><a href="#props">레이어 속성 패널</a></li><li><a href="#tile">반복 무늬 깔기</a></li><li><a href="#mirrorcopy">한쪽 그림을 반대쪽에 옮기기(좌우 미러 복사)</a></li><li><a href="#stroke">가장자리 선 넣기(테두리)</a></li><li><a href="#adjust">나중에 색 바꾸기(조정 레이어)</a></li><li><a href="#filter">필터 적용하기</a></li><li><a href="#gradmap">그라데이션 맵으로 색 바꾸기</a></li><li><a href="#alpha">흰색을 투명하게 만들기(휘도를 투명도로 변환)</a></li><li><a href="#padlayer">아일랜드 밖으로 색을 넓힌 레이어 만들기(패딩을 새 레이어에 만들기)</a></li><li><a href="#autofill">선화로 밑칠 만들기(자동 채색)</a></li><li><a href="#history">실행 취소·작업 내역</a></li><li><a href="#sleep">레이어 쉬게 하기(메모리 절약)</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="레이어추가 레이어복제 순서변경 이름변경 합치기 통합 눈아이콘 숨기기 레이어못추가 4장">
+      <h2>레이어를 추가해 나누어 그리기</h2>
+      <p>그린 내용은 선택한 레이어에 들어갑니다. 부분별로 레이어를 나누면 나중에 지우거나 색을 바꾸기 쉬워집니다.</p>
+      <ol class="mn-steps">
+        <li>레이어 패널 아래의 "추가"를 누릅니다. 선택한 레이어 위에 새 레이어가 만들어집니다.</li>
+        <li>그리려는 레이어의 행을 눌러 선택합니다.</li>
+        <li>그립니다.</li>
+        <li>눈 아이콘을 누르면 표시·숨김이 전환됩니다.</li>
+        <li>이름을 더블클릭하면 이름을 바꿀 수 있습니다(<kbd>Enter</kbd>로 확정).</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="레이어 패널. 볼·팔의 별·바탕" loading="lazy"><figcaption>볼과 팔의 별을 각각의 레이어에</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="레이어 행의 우클릭 메뉴" loading="lazy"><figcaption>레이어의 우클릭 메뉴</figcaption></figure></div>
+      <div class="mn-tip warn">Lite는 텍스처 세트마다 <strong>바탕을 포함해 레이어 4장까지</strong>입니다(그리는 레이어와 조정 레이어를 셉니다. 폴더·마스크는 세지 않습니다). 4장이 되면 패널 아래에 "레이어 4 / 4장(바탕 포함, Lite)"이라고 표시되고, "추가"와 "복제"에 자물쇠 표시가 붙습니다.</div>
+      <h3 id="basic-panel">패널 보는 법</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">위치</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>맨 위 제목 줄</td><td>텍스처 세트 전환(2개 이상일 때. 오른쪽에 해상도). 텍스처 세트 패널과 나란히 있을 때는 표시되지 않습니다</td></tr>
+        <tr><td>그 아래 줄</td><td>합성 모드와 불투명도. 클리핑(↳)·투명 픽셀 잠금·잠금 아이콘(색이 붙어 있으면 켜짐). 마스크가 있으면 그릴 대상(픽셀/마스크)과 마스크 사용</td></tr>
+        <tr><td>목록</td><td>위쪽 행일수록 앞쪽에 겹칩니다. 폴더는 ▶/▼로 열고 닫습니다</td></tr>
+        <tr><td>맨 아래의 "바탕"</td><td>새로 만들기에서 정한 색·이미지가 들어가는 레이어입니다. 바탕에도 그대로 그릴 수 있습니다</td></tr>
+        <tr><td>아래 버튼</td><td>추가·폴더·조정·복제·삭제·병합·마스크·한 단계 위로·한 단계 아래로·…(기타). 이름과 현재 키는 펜 끝을 올리면 표시됩니다</td></tr>
+      </tbody></table></div>
+      <h3 id="basic-ops">레이어 조작</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">하고 싶은 일</th><th scope="col">조작</th><th scope="col">키</th></tr></thead><tbody>
+        <tr><td>추가하기</td><td>"추가"·레이어 → "새 레이어"</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td></tr>
+        <tr><td>복제하기</td><td>"복제"·레이어 → "레이어 복제"</td><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td></tr>
+        <tr><td>레이어째로 삭제하기</td><td>"삭제"·레이어 → "레이어 삭제"</td><td>—</td></tr>
+        <tr><td>안의 그림만 지우기</td><td>레이어 → "레이어 지우기"(선택 범위가 있으면 그 안)</td><td><kbd>Delete</kbd></td></tr>
+        <tr><td>겹치는 순서 바꾸기</td><td>행을 드래그·"한 단계 위로" "한 단계 아래로"(레이어 → 쌓는 순서)</td><td>—</td></tr>
+        <tr><td>이름 바꾸기</td><td>이름을 더블클릭·우클릭 → "이름 바꾸기"</td><td>—</td></tr>
+        <tr><td>칠해진 부분을 선택 범위로 만들기</td><td>썸네일을 <kbd>Ctrl</kbd>+클릭(<kbd>Shift</kbd>로 더하기, <kbd>Alt</kbd>로 빼기)·우클릭 → "칠해진 부분 선택"</td><td>—</td></tr>
+        <tr><td>PNG로 만들기</td><td>우클릭 → "이 레이어를 PNG로 내보내기". 여러 장을 선택했다면 "선택한 레이어를 PNG로 내보내기"(<a href="/petanuri/ko/manual/export#png">내보내기</a>)</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>텍스트 레이어는 더블클릭하면 텍스트를 다시 입력합니다. 이름은 우클릭에서 바꿉니다(<a href="/petanuri/ko/manual/edit#retext">텍스트 다시 입력하기</a>).</li>
+        <li>잠겨 있거나 숨겨진 레이어는 지울 수 없습니다(이유는 아래 힌트에 표시됩니다).</li>
+        <li>행은 펜으로도 드래그해서 순서를 바꿀 수 있습니다. 목록 스크롤은 <kbd>Space</kbd>+드래그입니다.</li>
+      </ul>
+      <h3 id="merge">병합하기</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목(레이어 → 병합)</th><th scope="col">하는 일</th></tr></thead><tbody>
+        <tr><td>아래 레이어와 병합(<kbd>Ctrl</kbd>+<kbd>E</kbd>)</td><td>선택한 레이어를 바로 아래 레이어에 겹쳐 한 장으로 만듭니다</td></tr>
+        <tr><td>선택한 레이어 병합</td><td>2장 이상 선택한 레이어를 한 장으로 만듭니다</td></tr>
+        <tr><td>폴더 병합</td><td>폴더를 한 장의 레이어로 만듭니다(우클릭에서는 "폴더를 한 장으로 병합")</td></tr>
+        <tr><td>표시 레이어 병합</td><td>보이는 레이어를 모두 한 장으로 만듭니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>패널의 "병합" 버튼은 보통 아래 레이어와 병합하고, 폴더라면 폴더를 한 장으로, 여러 장을 선택했다면 선택한 레이어를 병합합니다.</li>
+        <li>테두리가 붙은 레이어는 테두리를 픽셀로 굽고 나서 병합합니다.</li>
+        <li>조정 레이어를 아래 레이어와 병합하면 보정을 아래 레이어의 픽셀로 구울 수 있습니다.</li>
+        <li><span class="tier pro">Pro</span> 노멀 맵 폴더에서는 맨 아래부터 이어지는 표시 레이어를 병합할 수 있습니다. 폴더의 불투명도는 100%로, 폴더의 마스크는 꺼 둡니다(<a href="/petanuri/ko/manual/material#channels">칠할 대상</a>).</li>
+      </ul>
+      <h3 id="multi">여러 장 한꺼번에 선택하기</h3>
+      <ul class="mn-list">
+        <li>이름을 <kbd>Ctrl</kbd>+클릭하면 한 장씩 추가·해제하고, <kbd>Shift</kbd>+클릭하면 그 사이를 한꺼번에 선택합니다(썸네일의 <kbd>Ctrl</kbd>+클릭은 선택 범위이므로 다릅니다).</li>
+        <li>선택한 동안에는 표시·합성 모드·불투명도·클리핑·투명 픽셀 잠금·잠금·색 태그·삭제·복제·폴더에 넣기(<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>)·병합이 한꺼번에 적용됩니다. 실행 취소는 한 번에 됩니다.</li>
+        <li>선택한 것 중 하나를 드래그하면 전부가 순서를 유지한 채 움직입니다. 폴더 행의 가운데에서 놓으면 전부가 폴더 안으로 들어갑니다.</li>
+        <li>"한 단계 위로"·"한 단계 아래로"는 한 장씩 적용됩니다. 복사·잘라내기도 선택 중인 한 장에만 적용됩니다.</li>
+      </ul>
+      <h3 id="pick">키나 3D에서 선택하기</h3>
+      <ul class="mn-list">
+        <li><kbd>Alt</kbd>+<kbd>]</kbd>로 위 레이어를, <kbd>Alt</kbd>+<kbd>[</kbd>로 아래 레이어를 선택합니다.</li>
+        <li>3D 뷰나 UV 뷰의 우클릭 → "여기에 그린 레이어 선택"을 고르면, 누른 곳에 그려져 있는 표시 중인 레이어가 나열됩니다. 맨 위에는 표시가 붙습니다. 마스크로 가린 곳이나 불투명도 0% 등 보이지 않는 것은 나오지 않습니다.</li>
+        <li>이동·변형 도구의 "레이어 자동 선택"으로도 선택할 수 있습니다(<a href="/petanuri/ko/manual/edit#move">이동·변형 도구</a>).</li>
+        <li>이렇게 선택한 행이 보이지 않으면 목록이 보이는 곳까지 이동합니다(닫힌 폴더는 열립니다). 끄려면 …(기타) 또는 목록 우클릭의 "키 등으로 선택한 레이어가 보일 때까지 목록 이동"을 해제합니다.</li>
+      </ul>
+      <h3 id="basic-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>레이어를 추가할 수 없음(Lite)</b>: Lite는 텍스처 세트마다 바탕을 포함해 4장까지입니다. 레이어를 삭제하거나 병합하면 다시 추가할 수 있습니다(<a href="/petanuri/ko/manual/start#editions">에디션</a>).</li>
+        <li><b>그려도 색이 나오지 않음</b>: 선택한 레이어가 숨겨져 있거나 잠겨 있는지, 그릴 대상이 마스크로 되어 있지 않은지 확인합니다. 위쪽 레이어에 가려져 있을 수도 있습니다.</li>
+        <li><b>다른 레이어에 그리고 있었음</b>: <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 되돌리고, 3D의 우클릭 → "여기에 그린 레이어 선택"에서 그리려는 레이어를 다시 선택합니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="블렌드모드 혼합모드 멀티플라이 글로우 투명도 농도 연하게 레이어혼합 그림자겹치기">
+      <h2>그림자와 빛 겹치기(합성 모드·불투명도)</h2>
+      <p>합성 모드는 아래 그림과 섞는 방식입니다. 그림자에는 "곱하기", 빛에는 "스크린"이나 "더하기(발광)"가 자주 쓰입니다.</p>
+      <ol class="mn-steps">
+        <li>그림자나 빛을 그릴 레이어를 선택합니다.</li>
+        <li>패널 위쪽의 합성 모드 칸에서 합성 모드를 선택합니다.</li>
+        <li>불투명도로 농도를 맞춥니다.</li>
+      </ol>
+      <h3 id="blend-list">합성 모드 목록</h3>
+      <p>모두 28종류입니다. 칸 안에서는 다음 그룹으로 나뉘어 나열됩니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">그룹</th><th scope="col">합성 모드</th></tr></thead><tbody>
+        <tr><td>—</td><td>표준</td></tr>
+        <tr><td>어둡게</td><td>어둡게 하기·곱하기·색상 번·선형 번·어두운 색상</td></tr>
+        <tr><td>밝게</td><td>밝게 하기·스크린·색상 닷지·더하기(선형 닷지)·더하기(발광)·색상 닷지(발광)·밝은 색상</td></tr>
+        <tr><td>대비</td><td>오버레이·소프트 라이트·하드 라이트·선명한 라이트·선형 라이트·핀 라이트·하드 혼합</td></tr>
+        <tr><td>비교</td><td>차이·제외·빼기·나누기</td></tr>
+        <tr><td>색</td><td>색조·채도·색상·광도</td></tr>
+      </tbody></table></div>
+      <p>폴더에는 "통과"(처음 값)가 하나 더 있습니다(<a href="#folder">폴더</a>).</p>
+      <h3 id="glow">더하기(발광)·색상 닷지(발광)</h3>
+      <ul class="mn-list">
+        <li>일반 더하기·색상 닷지와 달리 불투명도를 낮춘 곳이나 부드러운 붓의 가장자리에서도 강하게 빛납니다.</li>
+        <li>더하기(발광)는 빛이 포화될 때까지 쌓이고, 색상 닷지(발광)는 밝은 곳일수록 강하게 빛납니다. 아래가 투명한 곳에서도 레이어의 색으로 빛납니다.</li>
+        <li>레이어·폴더·조정 레이어의 합성 모드, 테두리의 합성, 브러시의 렌더링 모드에서 선택할 수 있습니다.</li>
+        <li>PSD에는 비슷한 합성 모드(선형 닷지·색상 닷지)로 저장하고, 레이어 이름 뒤에 "[glow]"를 붙입니다. PetaNuri3D에서 불러오면 발광으로 돌아옵니다. 다른 소프트웨어에서는 반투명한 부분이 보이는 방식이 달라집니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="clip" data-keywords="클리핑마스크 삐져나옴방지 알파잠금 투명픽셀잠금 투명도보호 잠금 자물쇠 안그려짐">
+      <h2>삐져나오지 않게 칠하기(클리핑·투명 픽셀 잠금·잠금)</h2>
+      <p>밑칠 위에 그림자나 무늬를 칠할 때, 칠한 곳 밖으로 삐져나오지 않게 합니다. 모두 패널 위쪽의 아이콘으로 켜고 끕니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">기능</th><th scope="col">하는 일</th><th scope="col">다른 전환 방법</th></tr></thead><tbody>
+        <tr><td>클리핑(↳)</td><td>이 레이어를 바로 아래 레이어의 칠해진 곳에만 표시합니다(아래 레이어가 기준이 됩니다)</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd>·우클릭 → "아래 레이어에 클리핑"</td></tr>
+        <tr><td>투명 픽셀 잠금</td><td>그려도 투명한 곳은 투명한 채로 남습니다(색만 바뀝니다)</td><td>레이어 → 클리핑·보호 → "투명 픽셀 잠금 전환"</td></tr>
+        <tr><td>잠금</td><td>그릴 수 없게 합니다</td><td>레이어 → 클리핑·보호 → "잠금 전환"</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>밑칠 레이어를 선택하고 "추가"로 위에 레이어를 추가합니다.</li>
+        <li>패널 위쪽의 클리핑(↳) 아이콘을 누릅니다.</li>
+        <li>합성 모드를 "곱하기"로 하고 그림자를 칠합니다. 밑칠 밖으로는 나가지 않습니다.</li>
+      </ol>
+      <div class="mn-tip">클리핑한 그림은 남아 있으므로 밑칠을 넓히면 그곳에도 나타납니다. 투명 픽셀 잠금은 그 레이어의 그림 자체의 모양을 지킵니다.</div>
+    </section>
+
+    <section class="mn-sec" id="folder" data-keywords="그룹 묶기 정리 폴더분류 통과 패스스루 ctrl+g">
+      <h2>폴더로 묶기</h2>
+      <p>관련된 레이어를 폴더로 묶으면 목록이 짧아지고, 한꺼번에 표시·숨김이나 불투명도를 바꿀 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>묶을 레이어를 선택합니다(몇 장이든 가능).</li>
+        <li><kbd>Shift</kbd>를 누른 채 "폴더" 버튼을 누릅니다(<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>). 선택한 레이어가 폴더에 들어갑니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>"폴더" 버튼만 누르면(<kbd>Ctrl</kbd>+<kbd>G</kbd>) 빈 폴더를 만듭니다.</li>
+        <li>레이어 행을 폴더 행의 가운데로 드래그하면 안으로 들어가고, 위쪽 절반이나 아래쪽 절반으로 드래그하면 폴더의 위나 아래에 놓입니다.</li>
+        <li>합성 모드 "통과"(처음 값)는 내용을 폴더 밖의 그림에 직접 겹칩니다. 다른 모드에서는 내용을 한 장으로 만든 다음 겹칩니다.</li>
+        <li>폴더를 해제하려면 …(기타) 또는 우클릭의 "폴더 해제"를 사용합니다. 내용은 밖으로 나옵니다.</li>
+        <li>폴더에도 마스크·테두리를 붙일 수 있습니다.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="폴더·마스크·조정 레이어가 들어 있는 레이어 패널" loading="lazy"><figcaption>폴더·마스크·조정 레이어</figcaption></figure>
+    </section>
+<section class="mn-sec" id="mask" data-keywords="레이어마스크 가리기 비파괴 부분숨김 흑백 마스크반전 마스크그리기 지우지않고">
+      <h2>일부 가리기(레이어 마스크)</h2>
+      <p>마스크는 레이어의 그림을 지우지 않고 가립니다. 가린 곳은 나중에 언제든 되돌릴 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>가리려는 레이어를 선택합니다.</li>
+        <li>"마스크" 버튼 → "모두 표시 마스크 추가"를 선택합니다. 행에 마스크 썸네일이 붙습니다.</li>
+        <li>마스크 썸네일을 누릅니다. 그릴 대상이 마스크가 됩니다.</li>
+        <li>검정으로 그리면 가려지고, 흰색으로 그리면 보입니다. 회색은 반쯤 보입니다.</li>
+        <li>픽셀 썸네일을 누르면 그릴 대상이 그림으로 돌아옵니다.</li>
+      </ol>
+      <h3 id="mask-menu">마스크 메뉴</h3>
+      <p>"마스크" 버튼, 레이어 → "마스크", 우클릭의 "마스크"에 같은 항목이 나열됩니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">하는 일</th></tr></thead><tbody>
+        <tr><td>모두 표시 마스크 추가·모두 숨김 마스크 추가</td><td>흰색(모두 보임) 또는 검정(모두 가려짐) 마스크를 붙입니다</td></tr>
+        <tr><td>선택 범위로 마스크 만들기</td><td>선택 범위 안만 보이는 마스크를 붙입니다. 조정 레이어에서는 현재 마스크를 바꿔 넣습니다</td></tr>
+        <tr><td>마스크에 그리기</td><td>그릴 대상을 마스크로 합니다</td></tr>
+        <tr><td>마스크 사용</td><td>끄면 마스크를 적용하지 않고 모두 보여 줍니다</td></tr>
+        <tr><td>마스크 범위 표시</td><td>가려진 곳에 색을 입혀 보여 줍니다</td></tr>
+        <tr><td>마스크 반전</td><td>보이는 곳과 가려지는 곳을 서로 바꿉니다</td></tr>
+        <tr><td>마스크 좌우 미러 복사</td><td>마스크의 흑백을 3D 모델의 반대쪽으로 복사합니다(<a href="#mirrorcopy">좌우 미러 복사</a>)</td></tr>
+        <tr><td>마스크 적용(픽셀에 굽기)</td><td>가려진 곳을 그림에서 지우고 마스크를 제거합니다</td></tr>
+        <tr><td>마스크 삭제</td><td>마스크를 제거합니다(그림은 그대로)</td></tr>
+        <tr><td>마스크 복사·마스크 붙여넣기</td><td>마스크를 다른 레이어로 복사합니다. 다른 텍스처 세트에도 붙일 수 있습니다</td></tr>
+        <tr><td>이 레이어의 밝기를 마스크로 복사</td><td>그린 흑백 그림을 "마스크 붙여넣기"로 마스크로 만들 수 있습니다(투명한 곳은 가립니다)</td></tr>
+        <tr><td>마스크를 흑백으로 표시</td><td>마스크만 흑백으로 3D·UV에 표시합니다</td></tr>
+        <tr><td>마스크에 그리기 색의 밝기로 그리기(흰색 = 보이기, 검정 = 숨기기)</td><td>끄면 색에 관계없이 그린 곳을 보여 줍니다(가리는 것은 지우개)</td></tr>
+      </tbody></table></div>
+      <h3 id="mask-tips">마스크 조작 요령</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+마스크 썸네일로 사용·사용 안 함을 전환합니다(사용하지 않는 동안에는 빨간 사선이 표시됩니다).</li>
+        <li><kbd>Alt</kbd>+마스크 썸네일로 마스크를 흑백으로 표시합니다.</li>
+        <li>마스크 썸네일을 다른 레이어의 행으로 드래그하면 옮겨지고, <kbd>Alt</kbd>+드래그하면 복사됩니다. 조정 레이어의 마스크는 복사됩니다.</li>
+        <li>붙여넣을 레이어에 마스크가 있으면 바꿔 넣습니다. 크기가 다르면 늘려서 넣습니다.</li>
+        <li>선택 범위 채우기와 <kbd>Alt</kbd>/<kbd>Ctrl</kbd>+<kbd>Backspace</kbd>의 채우기도 마스크에는 색의 밝기로 들어갑니다.</li>
+        <li>마스크 조작에는 환경 설정의 키 할당에서 키를 지정할 수 있습니다.</li>
+      </ul>
+      <h3 id="mask-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>그려도 그림이 바뀌지 않음</b>: 그릴 대상이 마스크 그대로입니다. 픽셀 썸네일을 눌러 그림으로 되돌립니다.</li>
+        <li><b>마스크가 적용되지 않음</b>: 마스크가 꺼져(빨간 사선) 있습니다. <kbd>Shift</kbd>+마스크 썸네일로 켭니다.</li>
+        <li><b>마스크에 그려도 보이는 모습이 바뀌지 않음</b>: 흰색으로 그리면 "보이기"입니다. 가릴 때는 검정으로 그리거나 지우개를 사용합니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tag" data-keywords="색분류 라벨 컬러라벨 필터링 썸네일 크게 작게 목록넓히기 정리 하이라이트">
+      <h2>목록을 보기 쉽게 하기(색 태그·썸네일)</h2>
+      <p>레이어가 늘어나면 색 태그로 나누거나 썸네일을 크게 해서 찾기 쉽게 합니다.</p>
+      <ol class="mn-steps">
+        <li>색을 붙일 레이어를 선택합니다(몇 장이든 가능).</li>
+        <li>클리핑·잠금 아이콘 줄의 맨 왼쪽에 있는 색 동그라미와 ▾ 상자를 누릅니다(우클릭 → "색 태그"로도 가능).</li>
+        <li>없음·빨강·주황·노랑·초록·하늘·파랑·보라·회색 중에서 고릅니다. 행의 왼쪽에 굵은 색 띠가 붙습니다.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="색 태그를 붙인 레이어 패널" loading="lazy"><figcaption>색 태그와 "색으로 표시"</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="색 태그를 고르는 작은 창" loading="lazy"><figcaption>색 태그 고르기</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="썸네일을 크게 한 레이어 패널" loading="lazy"><figcaption>썸네일 크기 "크게"</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>폴더의 색은 안쪽 레이어의 왼쪽에 가는 선으로 이어집니다. 실행 취소는 한 번에 됩니다.</li>
+        <li>색 태그가 있으면 목록 위에 "색으로 표시: 전체"와 사용 중인 색 동그라미가 나타납니다. 동그라미를 누르면 그 색의 레이어만 목록에 표시됩니다(그림은 바뀌지 않습니다). 다시 누르거나 "전체"를 누르면 돌아옵니다.</li>
+        <li>색 태그는 작업 파일에 남습니다. PSD 내보내기·가져오기 <span class="tier std">Standard</span>에서는 PSD 레이어의 색이 됩니다(하늘은 파랑이 됩니다).</li>
+      </ul>
+      <h3 id="tag-view">목록의 크기·순서</h3>
+      <ul class="mn-list">
+        <li>…(기타) 또는 우클릭의 "썸네일 크기"에서 작게(24px)·보통(40px. 처음 값)·크게(64px)·아주 크게(96px)를 고를 수 있습니다.</li>
+        <li>…(기타)의 "버튼 줄을 위에 두기"로 아래의 버튼 줄을 목록 위로 옮길 수 있습니다.</li>
+        <li>…(기타)의 "펜 드래그로 레이어와 보조 도구 이동"을 끄면 펜 드래그가 목록 스크롤이 됩니다. <kbd>Space</kbd>+드래그는 언제나 스크롤입니다.</li>
+        <li>패널의 경계를 아래로 드래그하면 목록을 넓힐 수 있습니다.</li>
+        <li>어느 것이나 다음 실행 때도 그대로입니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="props" data-keywords="속성 프로퍼티 설정패널 레이어설정 상세설정">
+      <h2>레이어 속성 패널</h2>
+      <p>선택한 레이어의 설정을 모은 패널입니다. 처음 배치에서는 레이어 패널 바로 위에 있습니다.</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="레이어 속성 패널" loading="lazy"><figcaption>레이어 속성</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">선택한 것</th><th scope="col">표시되는 설정</th></tr></thead><tbody>
+        <tr><td>무엇이든</td><td>제목에 종류(레이어·폴더·텍스트 레이어·조정 레이어·칠할 대상 폴더 등)와 이름</td></tr>
+        <tr><td>조정 레이어</td><td>값 칸(<a href="#adjust">조정 레이어</a>)</td></tr>
+        <tr><td>픽셀 레이어·폴더·텍스트 레이어</td><td>"테두리"의 "표시" 체크와 "넣기"·"설정"(<a href="#stroke">테두리</a>)</td></tr>
+        <tr><td>텍스트 레이어</td><td>"텍스트 다시 입력"</td></tr>
+        <tr><td>마스크가 있는 레이어</td><td>마스크 사용 여부와 그릴 대상</td></tr>
+        <tr><td>픽셀 레이어(텍스트 레이어 제외)</td><td>"반복 무늬"(<a href="#tile">반복 무늬</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>합성 모드·불투명도·클리핑·투명 픽셀 잠금·잠금은 레이어 패널에서 바꿉니다.</li>
+        <li>아무것도 선택하지 않았을 때는 "레이어를 선택하면 여기에 설정이 표시됩니다"라고 표시됩니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tile" data-keywords="타일 패턴 천무늬 원단 체크 반복 깔기 심리스 연속무늬 이음매없는">
+      <h2>반복 무늬 깔기</h2>
+      <p>이미지나 무늬를 상하좌우로 반복해서 레이어 가득 깝니다. 옷감의 무늬 등에 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>무늬를 깔 픽셀 레이어를 선택합니다. 현재 그림은 무늬로 바뀝니다.</li>
+        <li>레이어 속성의 "반복 무늬"에서 "무늬를 골라 깔기"를 누릅니다. 무늬 목록이 열립니다.</li>
+        <li>"이미지 파일…"·"참고 이미지" 또는 아래에 나열된 무늬 그림에서 고릅니다. 무늬 그림은 전경색으로 칠한 무늬가 됩니다.</li>
+        <li>아래 표의 항목으로 배열 방식을 맞춥니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="반복 무늬를 깐 레이어와 레이어 속성" loading="lazy"><figcaption>반복 무늬</figcaption></figure>
+      <h3 id="tile-options">배열 방식과 색</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">하는 일</th></tr></thead><tbody>
+        <tr><td>가로 반복·세로 반복</td><td>가로·세로로 늘어놓는 수("가로세로 비율 유지"로 같은 비율인 채로 바꿉니다)</td></tr>
+        <tr><td>가로로 밀기·세로로 밀기·회전(°)</td><td>무늬의 위치와 방향을 바꿉니다</td></tr>
+        <tr><td>이음매 자연스럽게</td><td>무늬의 이음매를 눈에 띄지 않게 합니다</td></tr>
+        <tr><td>뒤집어 반복</td><td>한 장마다 좌우·상하를 뒤집어 늘어놓습니다. 가장자리가 맞지 않는 이미지도 이음매가 보이지 않습니다</td></tr>
+        <tr><td>UV 이음매에 맞추기</td><td>이음매가 무늬의 이음매에 맞기 쉬운 크기(현재의 1/2~2배)와 밀기를 자동으로 찾습니다</td></tr>
+        <tr><td>전경색으로 다시 칠하기·이미지 색으로 되돌리기</td><td>무늬의 모양은 그대로 두고 현재 전경색으로 만듭니다. 되돌리면 원래 색입니다</td></tr>
+        <tr><td>일반 레이어로 만들기</td><td>배열 설정을 빼고 현재 픽셀 그대로 일반 레이어로 만듭니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>맨 위 행에 현재 무늬의 그림과 이름이 표시되며, 누르면 무늬 목록이 열립니다.</li>
+        <li>무늬가 나타나는 곳은 마스크로 정할 수 있습니다.</li>
+        <li>배열 방식과 무늬는 작업 파일에 남습니다. 실행 취소로 되돌릴 수 있습니다.</li>
+      </ul>
+      <h3 id="tile-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>덧그린 부분이 사라짐</b>: 무늬를 깐 뒤에 덧그린 부분은 배열 방식을 바꾸면 사라집니다(바꾸기 전에 확인이 표시됩니다). <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 되돌릴 수 있습니다.</li>
+        <li><b>이음매에서 무늬가 이어지지 않음</b>: 양쪽 아일랜드의 방향·모양이 다른 이음매에서는 맞춰도 이어지지 않습니다.</li>
+        <li><b>깔 수 없음</b>: 잠긴 레이어, 투명 픽셀 잠금을 켠 레이어, 숨긴 레이어, 텍스트 레이어, 노멀 맵 이미지 레이어에는 깔 수 없습니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mirrorcopy" data-keywords="미러복사 좌우반전복사 반대쪽복사 대칭깜빡 거울 시메트리 좌우대칭 한쪽">
+      <h2>한쪽 그림을 반대쪽에 옮기기(좌우 미러 복사)</h2>
+      <p>대칭으로 그리는 것을 켜지 않고 칠한 부분을 3D 모델의 반대쪽으로 옮깁니다. UV가 좌우에서 달라도 모양으로 상대 위치를 찾아 옮깁니다.</p>
+      <ol class="mn-steps">
+        <li>옮길 레이어를 선택합니다.</li>
+        <li>레이어 → "좌우 미러 복사"를 선택합니다(레이어 행의 우클릭에도 있습니다).</li>
+        <li>"왼쪽 → 오른쪽" 또는 "오른쪽 → 왼쪽"을 누릅니다. 옮겨 받는 쪽의 색은 바뀝니다.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>좌우는 모델 기준입니다(정면에서 보면 반대입니다). 중심은 "대칭으로 그리기"의 중심과 같습니다(<a href="/petanuri/ko/manual/draw#mirror">좌우 대칭으로 그리기</a>).</li>
+        <li>"새 레이어에 복사하기(복사한 부분만 들어감)"를 켜면 복사한 부분만 새 레이어에 들어갑니다.</li>
+        <li>선택 범위가 있을 때는 "선택 범위의 그림을 반대쪽으로 복사하기" 또는 "선택 범위 안으로 복사하기"(선택 범위 안을 반대쪽 색으로 바꿈)를 선택합니다.</li>
+        <li>마스크는 마스크 메뉴의 "마스크 좌우 미러 복사"로 옮깁니다.</li>
+        <li>좌우의 상대를 찾을 수 없는 곳(한쪽에만 있는 것 등)은 그대로입니다. <kbd>Ctrl</kbd>+<kbd>Z</kbd> 한 번으로 되돌아갑니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="stroke" data-keywords="테두리 외곽선 아웃라인 스트로크 레이어효과 레이어스타일 fx 윤곽선 가장자리선">
+      <h2>가장자리 선 넣기(테두리) <span class="tier std">Standard</span></h2>
+      <p>레이어의 그림 자체는 바꾸지 않고, 겹칠 때 가장자리 선을 넣습니다. 나중에 굵기나 색을 바꾸거나 끌 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>가장자리 선을 넣을 레이어를 선택합니다.</li>
+        <li>레이어 속성의 "넣기"를 누릅니다. 테두리 창이 표시됩니다.</li>
+        <li>크기·위치·색 등을 정합니다. 값을 움직이면 바로 보이는 모습이 바뀝니다.</li>
+        <li>OK(<kbd>Enter</kbd>)로 확정합니다. 취소(<kbd>Esc</kbd>)하면 원래대로 돌아갑니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="테두리 창과 테두리가 붙은 그림" loading="lazy"><figcaption>테두리</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>크기</td><td>굵기(텍스처의 px)</td></tr>
+        <tr><td>위치</td><td>바깥쪽·안쪽·가운데</td></tr>
+        <tr><td>합성·불투명도·색</td><td>가장자리 선이 겹치는 방식·농도·색</td></tr>
+        <tr><td>초기값으로 되돌리기</td><td>모든 값을 초기값으로. 라벨을 더블클릭하면 그 값만 초기값으로 돌아갑니다</td></tr>
+      </tbody></table></div>
+      <h3 id="stroke-menu">테두리 메뉴</h3>
+      <p>레이어 → 테두리, 또는 레이어의 우클릭 → "테두리"에 나열됩니다. 테두리가 붙은 레이어의 행에는 "fx" 표시가 나타나고, 누르면 설정 창이 열립니다.</p>
+      <ul class="mn-list">
+        <li>"테두리 설정": 창을 엽니다.</li>
+        <li>"테두리 표시": 값은 남겨 둔 채 표시·숨김을 전환합니다(레이어 속성의 "표시"와 같습니다).</li>
+        <li>"테두리 복사" "테두리 붙여넣기": 다른 레이어로 복사합니다. 여러 장을 선택했다면 모두에 붙여넣습니다.</li>
+        <li>"테두리 지우기": 테두리를 제거합니다.</li>
+        <li>"테두리를 픽셀로 굽기": 테두리가 포함된 그림으로 만들고 테두리를 제거합니다(폴더는 테두리째 한 장으로 병합).</li>
+      </ul>
+      <h3 id="stroke-detail">적용되는 모양과 저장</h3>
+      <ul class="mn-list">
+        <li>마스크를 적용한 뒤의 모양에 붙습니다. 클리핑한 레이어는 기준 레이어의 칠해진 곳 안에 들어갑니다.</li>
+        <li>폴더(내용을 합친 모양)와 텍스트 레이어(다시 입력해도 그대로)에도 넣을 수 있습니다.</li>
+        <li>아래 레이어와 병합·폴더 병합은 테두리를 굽고 나서 병합합니다.</li>
+        <li>작업 파일에는 값째로 들어갑니다. PNG·머티리얼 내보내기는 테두리가 포함된 그림, PSD에서는 픽셀로 구운 레이어가 됩니다(<a href="/petanuri/ko/manual/export#psd">PSD</a>).</li>
+        <li>이전 버전이나 PSD에서 붙은 다른 효과(드롭 섀도 등)는 보이는 모습 그대로 열립니다. 바꿀 수는 없지만, 레이어 속성의 "픽셀로 굽기"·"제거"는 할 수 있습니다.</li>
+      </ul>
+      <div class="mn-tip warn">테두리를 넣거나 바꾸거나 붙여넣는 것은 Standard부터입니다. Lite에서도 열어 둔 작업 파일의 테두리는 보이는 모습 그대로이며, 표시·숨김·복사·지우기·픽셀로 굽기는 할 수 있습니다.</div>
+      <h3 id="stroke-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>가장자리 선이 아일랜드 가장자리에서 잘림·옆 아일랜드에 걸침</b>: 테두리는 UV 위에서 계산합니다. 아일랜드 가장자리 밖으로 삐져나온 부분은 3D에서는 아일랜드 가장자리에서 잘려 보일 수 있습니다. 내보내면 아일랜드 밖의 부분은 번짐(패딩)과 같은 취급이 됩니다.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="adjust" data-keywords="보정레이어 색보정 비파괴 나중에색변경 색변경 밝기 채도 톤커브 컬러베리에이션 색감">
+      <h2>나중에 색 바꾸기(조정 레이어) <span class="tier std">Standard</span></h2>
+      <p>아래 그림을 고쳐 쓰지 않고 밝기나 색의 보정을 겹칩니다. 값은 언제든 다시 바꿀 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>보정할 그림 바로 위에 해당하는 레이어를 선택합니다.</li>
+        <li>패널의 "조정" 버튼을 눌러 종류를 선택합니다. 조정 레이어가 만들어집니다.</li>
+        <li>레이어 속성 패널에서 값을 움직입니다. 움직이는 동안에는 그림만 바뀌고, 놓으면 한 번에 실행 취소할 수 있습니다.</li>
+      </ol>
+      <p>종류는 15가지입니다: 색조/채도/명도, 밝기/대비, 레벨 보정, 계조 반전, 회색 음영, 포스터화, 임계값, 그라데이션 맵, 톤 커브, 색상 균형, 노출, 색온도, 활기, 특정 색 바꾸기, 노이즈 추가. 값의 내용은 <a href="#filter-each">필터</a>와 같습니다.</p>
+      <ul class="mn-list">
+        <li>조정 레이어는 아래에 보이는 그림 전체에 적용됩니다.</li>
+        <li>적용 범위는 마스크로 제한할 수 있습니다. 조정 레이어를 선택하면 그릴 대상은 마스크입니다. "선택 범위로 마스크 만들기"로 현재 마스크를 바꿔 넣을 수 있습니다.</li>
+        <li>클리핑을 켜면 바로 아래 레이어에만 적용됩니다.</li>
+        <li>"아래 레이어와 병합"으로 보정을 아래 레이어의 픽셀로 구울 수 있습니다.</li>
+        <li>PSD에서는 톤 커브·색상 균형·활기·노출·그라데이션 맵을 조정 레이어인 채로 내보내고 가져옵니다.</li>
+        <li>Lite에서는 열어 둔 작업 파일의 조정 레이어 값은 볼 수 있지만 바꿀 수 없습니다(자물쇠 표시).</li>
+      </ul>
+      <div class="mn-tip">흐림·선명·모자이크처럼 주변 그림을 읽는 것은 조정 레이어가 되지 않습니다(무거워지기 때문). <a href="#filter">필터</a>로 적용합니다.</div>
+    </section>
+
+    <section class="mn-sec" id="filter" data-keywords="효과 블러 가우시안블러 샤픈 이진화 흑백 반전 네거티브 보정 이펙트">
+      <h2>필터 적용하기 <span class="tier std">Standard</span></h2>
+      <p>선택한 레이어의 그림 자체에 색 보정이나 흐림을 적용합니다. 조정 레이어와 달리 그림이 고쳐 쓰입니다(<kbd>Ctrl</kbd>+<kbd>Z</kbd> 한 번으로 되돌릴 수 있습니다).</p>
+      <ol class="mn-steps">
+        <li>필터를 적용할 레이어를 선택합니다.</li>
+        <li>메뉴 "필터" → 그룹 → 필터 이름을 선택합니다. 작은 창이 표시됩니다.</li>
+        <li>값을 움직입니다. 모델의 보이는 모습이 그 자리에서 바뀝니다.</li>
+        <li>OK(<kbd>Enter</kbd>)로 확정합니다. 그만두려면 취소(<kbd>Esc</kbd>)입니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="필터 &quot;색조/채도/명도&quot;로 망토의 색을 바꾸고 있는 모습" loading="lazy"><figcaption>색조/채도/명도 필터</figcaption></figure>
+      <h3 id="filter-list">필터 목록</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">그룹</th><th scope="col">필터</th></tr></thead><tbody>
+        <tr><td>색조 보정</td><td>색조/채도/명도, 밝기/대비, 레벨 보정, 톤 커브, 색상 균형, 노출, 색온도, 활기, 특정 색 바꾸기</td></tr>
+        <tr><td>계조</td><td>계조 반전, 회색 음영, 포스터화, 임계값, 그라데이션 맵(<a href="#gradmap">아래</a>)</td></tr>
+        <tr><td>흐림·선명</td><td>가우시안 흐리기, 동작 흐림, 방사형 흐림, 선명하게 (언샤프 마스크), 하이 패스</td></tr>
+        <tr><td>노이즈</td><td>노이즈 추가, 노이즈 줄이기(중간값), 모자이크</td></tr>
+        <tr><td>효과</td><td>선화 추출, 엠보스</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>계조 반전·회색 음영은 창을 표시하지 않고 바로 적용됩니다.</li>
+        <li>메뉴 아래쪽에는 "표시 중인 모든 텍스처 세트에 적용", <a href="#alpha">휘도를 투명도로 변환</a>, <a href="#padlayer">패딩을 새 레이어에 만들기</a>, 그리고 베이크 <span class="tier pro">Pro</span>(<a href="/petanuri/ko/manual/bake">간편 베이크</a>·<a href="/petanuri/ko/manual/ao">AO 굽기</a>)가 있습니다.</li>
+      </ul>
+      <h3 id="filter-window">필터 창</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>대상</td><td>적용할 텍스처 세트와 레이어. 숨김·잠금 등으로 적용하지 않는 것은 "적용 안 함:"에 이유가 표시됩니다</td></tr>
+        <tr><td>미리 보기</td><td>값을 움직일 때마다 보이는 모습에 반영합니다</td></tr>
+        <tr><td>표시 중인 모든 텍스처 세트에 적용</td><td>표시 중인 모든 세트의, 선택 중인 레이어에 적용합니다(세트가 2개 이상일 때. 메뉴의 같은 항목과 같습니다)</td></tr>
+        <tr><td>다음에도 지난번 값으로 열기</td><td>지난번에 OK한 값에서 시작합니다(모든 필터 공통)</td></tr>
+        <tr><td>초기값으로 되돌리기</td><td>모든 값을 초기값으로. 라벨을 더블클릭하면 그 값만 돌아갑니다</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>창을 열어 둔 동안에는 그릴 수 없습니다. 시점은 우클릭 드래그·<kbd>Space</kbd>+드래그·휠·3D 내비로 움직일 수 있습니다.</li>
+        <li>선택 범위가 있으면 "선택 범위 안에만 적용합니다"라고 표시됩니다. 선택 범위가 없는 세트는 이름과 "선택 범위가 없어 바뀌지 않습니다"가 표시됩니다.</li>
+      </ul>
+      <h3 id="filter-each">필터별 값</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">필터</th><th scope="col">값과 사용법</th></tr></thead><tbody>
+        <tr><td>노출</td><td>노출(+1이면 빛이 2배)·오프셋(어두운 곳을 올리거나 내림)·감마</td></tr>
+        <tr><td>톤 커브</td><td>채널(RGB·R·G·B)을 선택하고 선을 눌러 지점을 추가한 다음 드래그해서 움직입니다. 지점을 밖으로 끌어내거나 더블클릭하면 삭제됩니다. R·G·B → RGB 순으로 적용됩니다</td></tr>
+        <tr><td>색상 균형</td><td>어두운 영역·중간 영역·하이라이트마다 시안 ⇔ 빨강, 마젠타 ⇔ 초록, 노랑 ⇔ 파랑. "광도 유지"를 켜면 밝기는 변하지 않습니다</td></tr>
+        <tr><td>색온도</td><td>색온도(+는 따뜻하게)·색조(+는 마젠타)</td></tr>
+        <tr><td>활기</td><td>활기(칙칙한 색일수록 강하게 적용됩니다)·채도</td></tr>
+        <tr><td>특정 색 바꾸기</td><td>선택한 색에 가까운 곳(허용량)만 색조·채도·명도를 바꿉니다</td></tr>
+        <tr><td>동작 흐림·방사형 흐림·모자이크</td><td>각도·거리 / 줌·회전과 중심 / 칸. 방향·위치·격자는 UV 위에서 정해지므로, 아일랜드마다 방향이 다른 모델에서는 아일랜드에 따라 달라집니다</td></tr>
+        <tr><td>노이즈 추가</td><td>양·모노크롬·무늬 번호</td></tr>
+        <tr><td>노이즈 줄이기(중간값)</td><td>반경 1~2</td></tr>
+        <tr><td>선화 추출</td><td>임계값·굵기·흰 곳을 투명하게</td></tr>
+        <tr><td>엠보스</td><td>빛의 각도·높이·양·색 유지</td></tr>
+        <tr><td>하이 패스</td><td>반경. 평평한 곳은 50% 회색이 되므로, 합성 모드를 오버레이·소프트 라이트로 해서 겹칩니다</td></tr>
+        <tr><td>그라데이션 맵</td><td>색 지점·프리셋·"반전 (밝은 곳을 왼쪽 색으로)"·"그리기 도구의 그라데이션 사용"(<a href="#gradmap">아래</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="filter-alpha">아일랜드 가장자리와 투명한 부분의 처리</h3>
+      <ul class="mn-list">
+        <li>흐림·선명 필터는 UV 아일랜드 안에서만 계산합니다. 아일랜드 가장자리가 어두워지거나 옅어지지 않습니다. 이음매를 넘어 흐리게 할 때는 색 혼합 도구를 사용합니다(<a href="/petanuri/ko/manual/draw#blend">흐리기·손가락·색 혼합</a>).</li>
+        <li>모자이크는 투명도도 칸마다 평균을 내고, 선명하게는 투명도도 또렷하게 합니다. 노이즈 줄이기(중간값)는 투명한 곳 위의 점도 지웁니다.</li>
+        <li>선화 추출·엠보스·하이 패스는 투명한 곳을 흰 종이로 보고 밝기를 읽습니다. 선화 추출의 선과 하이 패스의 결과는 투명했던 곳에도 나타납니다.</li>
+        <li>투명 픽셀 잠금 레이어에서는 투명도가 원래대로 유지됩니다.</li>
+      </ul>
+      <h3 id="filter-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>필터를 적용해도 변하지 않음</b>: 숨김·잠금 레이어에는 적용되지 않습니다. 선택 범위가 다른 텍스처 세트에만 있을 때도 변하지 않습니다. 창의 "대상"과 "적용 안 함:"을 확인합니다.</li>
+        <li><b>메뉴에 자물쇠 표시가 붙어 있음(Lite)</b>: 필터는 Standard부터입니다. 휘도를 투명도로 변환·패딩을 새 레이어에 만들기는 Lite에서도 사용할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gradmap" data-keywords="그라데이션맵 그라맵 색치환 명암색칠 투톤 듀오톤 세피아 프리셋 색변환">
+      <h2>그라데이션 맵으로 색 바꾸기 <span class="tier std">Standard</span></h2>
+      <p>어두운 곳부터 밝은 곳까지를 그라데이션의 왼쪽에서 오른쪽 색으로 바꿉니다. 필터(계조)와 조정 레이어 양쪽에 있습니다.</p>
+      <ol class="mn-steps">
+        <li>필터 → 계조 → "그라데이션 맵"을 선택합니다(조정 레이어라면 "조정" 버튼에서). 처음에는 전경색 → 배경색의 2색입니다.</li>
+        <li>프리셋에서 고르거나 색 지점을 추가해 색을 정합니다.</li>
+        <li>OK(<kbd>Enter</kbd>)로 확정합니다.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="그라데이션 맵 창. 색 지점과 프리셋 목록" loading="lazy"><figcaption>그라데이션 맵</figcaption></figure>
+      <h3 id="gradmap-edit">색 지점 조작</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">하고 싶은 일</th><th scope="col">조작</th></tr></thead><tbody>
+        <tr><td>지점 추가하기</td><td>띠를 클릭(탭)합니다. 32개까지</td></tr>
+        <tr><td>지점 움직이기</td><td>드래그</td></tr>
+        <tr><td>지점 삭제하기</td><td>아래로 끌어내리기·<kbd>Delete</kbd></td></tr>
+        <tr><td>색 바꾸기</td><td>더블클릭(선택한 지점을 한 번 더 탭)·"전경색 넣기"</td></tr>
+        <tr><td>위치·불투명도 정하기</td><td>선택한 지점의 칸(불투명도 0이면 원래 색 그대로)</td></tr>
+        <tr><td>다시 배치하기</td><td>"균등하게 배치" "좌우 바꾸기"</td></tr>
+      </tbody></table></div>
+      <h3 id="gradmap-preset">프리셋</h3>
+      <ul class="mn-list">
+        <li>240개가 있습니다. 그룹(기본 / 모노크롬, 노을 / 아침놀, 파스텔, 네온, 메탈, 피부 / 인물, 계절, 사진 조색, 일러스트 / 애니메 채색 등)에서 고르거나 이름으로 찾습니다.</li>
+        <li>현재 그라데이션은 "현재 것 저장"으로 내 프리셋이 됩니다(×로 삭제합니다).</li>
+        <li>작업 파일·PSD에도 색 지점인 채로 남습니다.</li>
+      </ul>
+      <p>그리기 도구의 그라데이션과 베이크에도 같은 색과 투명도 지점의 편집·프리셋이 있습니다. 그리기 도구는 Lite부터, 베이크는 Pro입니다(<a href="/petanuri/ko/manual/draw#gradient">그리기 도구의 그라데이션</a> / <a href="/petanuri/ko/manual/bake#gradient">베이크의 그라데이션</a>).</p>
+    </section>
+
+    <section class="mn-sec" id="alpha" data-keywords="흰색투명 배경지우기 흰배경제거 곱하기투명 AO그림자 그림자만 투과 알파변환 알파화">
+      <h2>흰색을 투명하게 만들기(휘도를 투명도로 변환)</h2>
+      <p>흰 곳을 투명하게 하고, 어두운 곳을 검은 그림자로 남깁니다. AO의 그림자만 다른 색으로 하고 싶을 때 등에 사용합니다. Lite부터 사용할 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>AO 등 바탕 이외의 그리는 레이어를 선택합니다. 잠금이나 투명 픽셀 잠금이 켜져 있으면 끕니다.</li>
+        <li>필터 → "휘도를 투명도로 변환"을 선택합니다. 흰색은 투명하게, 어두운 곳일수록 불투명한 검정이 됩니다.</li>
+        <li>그림자의 색을 바꿀 때는 투명 픽셀 잠금을 켜고 원하는 색으로 칠합니다. 그림자의 농담은 투명도로 남습니다.</li>
+      </ol>
+      <div class="mn-tip">선택한 레이어의 픽셀을 고쳐 씁니다(<kbd>Ctrl</kbd>+<kbd>Z</kbd>로 되돌릴 수 있습니다). 바탕·마스크·조정 레이어에는 사용할 수 없습니다. 원래 색을 유지한 채 투명하게 만드는 기능은 아닙니다.</div>
+    </section>
+<section class="mn-sec" id="padlayer" data-keywords="패딩 번짐 여백 삐져나옴 아일랜드밖 이음매 가장자리색확장 블리드 UV확장">
+      <h2>아일랜드 밖으로 색을 넓힌 레이어 만들기(패딩을 새 레이어에 만들기)</h2>
+      <p>현재 그림의 아일랜드 가장자리 색을 아일랜드 밖으로 넓힌 부분만 새 레이어에 넣습니다. 내보내기 번짐(패딩)을 레이어로 보거나 다시 그리고 싶을 때 사용합니다. 어느 에디션에서나 사용할 수 있습니다.</p>
+      <ol class="mn-steps">
+        <li>필터 → "패딩을 새 레이어에 만들기"를 선택합니다.</li>
+        <li>"폭(px)"을 1~32로 정합니다.</li>
+        <li>"만들기"를 누릅니다. 선택한 레이어 바로 위에 "패딩(8px)" 같은 이름의 레이어가 만들어집니다.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="패딩을 새 레이어에 만드는 창" loading="lazy"><figcaption>패딩을 새 레이어에 만들기</figcaption></figure>
+      <ul class="mn-list">
+        <li>모든 레이어를 겹친 색으로 만듭니다. 아일랜드 안쪽은 투명합니다.</li>
+        <li><kbd>Ctrl</kbd>+<kbd>Z</kbd> 한 번으로 되돌릴 수 있습니다. 2D 캔버스에서는 만들 수 없습니다.</li>
+        <li>내보내기 번짐은 <a href="/petanuri/ko/manual/export#pad">내보내기 번짐(패딩)</a>을 참고하세요.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="autofill" data-keywords="자동채색 자동착색 나눠칠하기 밑칠 페인트통 색분리 평칠 선화 힌트">
+      <h2>선화로 밑칠 만들기(자동 채색)</h2>
+      <p>선화로 구분된 곳마다, 놓아 둔 색 힌트로 나눠 칠합니다. 밑칠을 빠르게 만들 때 사용합니다.</p>
+      <ol class="mn-steps">
+        <li>레이어 → "자동 채색(색 힌트로 나눠 칠하기)"을 선택합니다. 3D 뷰의 왼쪽 위에 창이 표시됩니다.</li>
+        <li>"선화"에서 선화 레이어를 선택합니다.</li>
+        <li>"힌트 레이어 만들기"를 누릅니다. 힌트용 새 레이어가 선택됩니다.</li>
+        <li>힌트 레이어에 칠하고 싶은 색을 각각의 곳에 대충 놓습니다.</li>
+        <li>"실행"을 누릅니다. 선화 바로 아래에 "자동 채색" 레이어가 만들어집니다(선 아래까지 칠합니다).</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="자동 채색 창과 힌트 색으로 나눠 칠한 모습" loading="lazy"><figcaption>자동 채색</figcaption></figure>
+      <h3 id="autofill-options">창의 항목</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody>
+        <tr><td>선화·힌트</td><td>선화 레이어와 힌트 레이어</td></tr>
+        <tr><td>선 참조</td><td>"선화 레이어" 또는 "보이는 그림의 어두운 부분"을 선으로 간주합니다</td></tr>
+        <tr><td>선으로 간주할 농도</td><td>어느 정도 진한 곳을 선으로 간주할지</td></tr>
+        <tr><td>틈 메우기</td><td>선의 끊긴 곳을 막습니다</td></tr>
+        <tr><td>힌트가 없는 부분도 가까운 색으로 칠하기</td><td>힌트를 놓지 않은 곳도 칠합니다</td></tr>
+        <tr><td>UV 이음매를 넘어 칠하기</td><td>몸의 앞과 뒤가 다른 아일랜드여도 힌트 하나로 이어서 칠합니다(처음에는 켜짐)</td></tr>
+        <tr><td>칠한 후 힌트 레이어 숨기기</td><td>실행 후 힌트 레이어를 숨깁니다(<kbd>Ctrl</kbd>+<kbd>Z</kbd>로 돌아옵니다)</td></tr>
+      </tbody></table></div>
+      <p>창은 제목을 잡아서 움직일 수 있습니다(위치를 기억합니다). 닫으려면 ×·"닫기", 또는 창을 누른 뒤 <kbd>Esc</kbd>입니다.</p>
+      <h3 id="autofill-trouble">잘 안 될 때</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>색이 옆으로 번짐</b>: 선이 끊겨 있습니다. 선은 보이는 면 위에서 닫히도록 그립니다(몸 밖으로 삐져나가 끊기면 거기서 번집니다). "틈 메우기"를 올려도 막을 수 있습니다.</li>
+        <li><b>칠해지지 않는 곳이 있음</b>: 힌트가 없는 곳은 칠하지 않습니다. 힌트를 놓거나 "힌트가 없는 부분도 가까운 색으로 칠하기"를 켭니다.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="history" data-keywords="언두 리두 취소 다시실행 되돌리기 히스토리 작업이력 ctrl+z ctrl+y 되돌릴수없음">
+      <h2>실행 취소·작업 내역</h2>
+      <p>잘못한 조작은 실행 취소(<kbd>Ctrl</kbd>+<kbd>Z</kbd>)로 되돌릴 수 있습니다. 작업 내역 패널을 사용하면 여러 단계 전까지 한 번에 되돌릴 수 있습니다.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">하고 싶은 일</th><th scope="col">조작</th></tr></thead><tbody>
+        <tr><td>한 단계 되돌리기</td><td>실행 취소(<kbd>Ctrl</kbd>+<kbd>Z</kbd>. 계속 누르면 연속으로 되돌아갑니다)</td></tr>
+        <tr><td>되돌린 조작을 다시 실행하기</td><td>다시 실행(<kbd>Ctrl</kbd>+<kbd>Y</kbd> 또는 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>)</td></tr>
+        <tr><td>여러 단계 전으로 돌아가기·앞으로 가기</td><td>"작업 내역" 패널의 행을 누릅니다. 그 조작 직후의 상태까지 한 번에 되돌아가거나 앞으로 갑니다</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="작업 내역 패널" loading="lazy"><figcaption>작업 내역</figcaption></figure>
+      <ul class="mn-list">
+        <li>작업 내역에는 지금까지의 조작이 오래된 순으로 나열됩니다. ▶가 현재 위치이고, 흐린 행은 다시 실행할 수 있는 조작입니다.</li>
+        <li>기록은 최대 30단계이며, 오래된 것부터 사라집니다.</li>
+        <li>패널은 표시 → 창에서 표시하거나 숨깁니다.</li>
+      </ul>
+      <h3 id="undo-limits">실행 취소할 수 없는 조작</h3>
+      <p>그림(레이어·마스크·칠할 대상·머티리얼 설정)을 바꾸는 조작은 실행 취소할 수 있습니다. 보이는 모습만 바꾸는 조작과 앱의 설정은 실행 취소에 포함되지 않습니다.</p>
+      <ul class="mn-list">
+        <li>포함되지 않는 것: 텍스처 세트의 표시 켜기/끄기·표시 범위(숨기기·선택한 부분만 표시·모두 표시)·오브젝트 표시·블렌드 셰이프·시점·표시 형식·메시 선·컬러 세트의 추가와 정렬·보조 도구·설정·키 할당. 레이어의 표시는 그림의 일부이므로 되돌릴 수 있습니다.</li>
+        <li>선택한 부분 숨기기(<kbd>H</kbd>)는 해제되는 선택 범위만큼이 한 단계에 들어갑니다. 숨긴 부분을 되돌리는 것은 "모두 표시"(<kbd>Alt</kbd>+<kbd>H</kbd>)입니다(<a href="/petanuri/ko/manual/uv#isolate">표시 범위</a>). 숨긴 직후의 <kbd>Ctrl</kbd>+<kbd>Z</kbd>는 첫 번째에는 알리기만 하고, 한 번 더 누르면 그 전의 칠을 되돌립니다.</li>
+        <li>컬러 세트의 견본 삭제는 실행 취소할 수 있습니다.</li>
+      </ul>
+      <div class="mn-tip warn">다음 조작은 실행 취소할 수 없으므로 먼저 확인이 표시됩니다: 보조 도구 삭제·컬러 세트 삭제·키 할당 초기화·브러시 크기 목록 초기화. 텍스처의 해상도를 바꾸면 실행 취소 내역이 모두 사라집니다.</div>
+    </section>
+
+    <section class="mn-sec" id="sleep" data-keywords="메모리부족 느림 4K VRAM GPU메모리 경량화 동작느림 최적화 절약">
+      <h2>레이어 쉬게 하기(메모리 절약)</h2>
+      <p>해상도 4096의 레이어를 많이 겹쳐도 무거워지지 않도록, 한동안 만지지 않은 레이어를 GPU 메모리에서 내려 보관합니다. 보이는 모습·내보내기·저장은 그대로입니다.</p>
+      <ul class="mn-list">
+        <li>GPU에는 선택한 레이어와 그 아래를 합친 그림, 위를 합친 그림만 둡니다. 다른 레이어는 그리지 않는 동안 한 장씩 줄여서 보관합니다(칠하지 않은 곳은 보관하지 않습니다).</li>
+        <li>쉬고 있는 레이어를 선택하거나 그리거나 실행 취소하거나 병합하거나 내보내면 그 자리에서 돌아옵니다. 많은 레이어를 다시 불러와야 하는 선택 방식에서는 "준비하는 중…"이 표시된 뒤에 전환됩니다(4096의 80장에서 0.1~0.3초 정도).</li>
+        <li>위에 표준 이외의 합성 모드 레이어나 조정 레이어가 있으면 그만큼은 GPU에 남습니다.</li>
+        <li>작업 파일을 열 때도 레이어는 쉬는 상태로 열립니다.</li>
+        <li>끄려면 파일 → 환경 설정 → 그리기 → 성능의 "그리지 않는 레이어 쉬게 하기"를 해제합니다(처음에는 켜져 있음). 끄면 모든 레이어를 GPU에 둡니다.</li>
+      </ul>
+      <div class="mn-tip">선택하지 않은 텍스처 세트를 통째로 쉬게 하는 구조도 있습니다(<a href="/petanuri/ko/manual/sets#sleep">텍스처 세트의 메모리 절약</a>).</div>
+    </section>
+
+    <div class="mn-related"><b>관련 페이지</b><ul><li><a href="/petanuri/ko/manual/edit#select">선택 범위</a></li><li><a href="/petanuri/ko/manual/sets">텍스처 세트</a></li><li><a href="/petanuri/ko/manual/export">내보내기</a></li><li><a href="/petanuri/ko/manual/draw">그리기</a></li><li><a href="/petanuri/ko/manual/material#channels">칠할 대상(노멀 맵·그림자 색 등)</a></li></ul></div>
+    <nav class="mn-pager" aria-label="이전·다음 페이지"><a class="prev" href="/petanuri/ko/manual/edit"><small>← 이전</small>선택 범위·변형·텍스트</a><a class="next" href="/petanuri/ko/manual/uv"><small>다음 →</small>UV와 표시 범위</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +676,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

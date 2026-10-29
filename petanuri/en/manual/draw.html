@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drawing | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Tools/sub tools, surface-aligned 3D painting, brush settings, transparent color, color/opacity gradients, fill, shapes, colors and symmetry. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <title>Draw | PetaNuri3D manual | HYPERtuyotuyo</title>
+  <meta name="description" content="Tools and sub tools, 3D painting that follows the surface, brush settings, drawing with transparency, gradients of color and opacity, fill, shapes, colors and symmetry. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/draw">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -24,8 +24,8 @@
   <meta property="og:site_name" content="はいぱーつよつよ">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
-  <meta property="og:title" content="Drawing | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Tools/sub tools, surface-aligned 3D painting, brush settings, transparent color, color/opacity gradients, fill, shapes, colors and symmetry. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:title" content="Draw | PetaNuri3D manual | HYPERtuyotuyo">
+  <meta property="og:description" content="Tools and sub tools, 3D painting that follows the surface, brush settings, drawing with transparency, gradients of color and opacity, fill, shapes, colors and symmetry. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/draw">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Draw | PetaNuri3D Manual",
-   "description": "Tools/sub tools, surface-aligned 3D painting, brush settings, transparent color, color/opacity gradients, fill, shapes, colors and symmetry. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Tools and sub tools, 3D painting that follows the surface, brush settings, drawing with transparency, gradients of color and opacity, fill, shapes, colors and symmetry. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/draw",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,530 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw" aria-current="page">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw" aria-current="page">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Drawing</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Draw</p>
     <h1 class="mn-h1">Draw</h1>
-    <p class="mn-intro">Draw directly on the 3D view with a pen. Select a tool in the left toolbar, then adjust its feel with Sub tool and Tool properties.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#basic">Try drawing first</a></li><li><a href="#tools">Tools and sub tools</a></li><li><a href="#through">Also paint back and hidden faces</a></li><li><a href="#props">Detailed brush settings</a></li><li><a href="#blend">Blur, smudge and blend</a></li><li><a href="#fill">Fill, gradients and shapes</a></li><li><a href="#gradient">Color and opacity gradients</a></li><li><a href="#color">Choose colors and use the eyedropper</a></li><li><a href="#transparent">Draw with transparency</a></li><li><a href="#mirror">Paint symmetrically</a></li><li><a href="#popup">Popup palette (pen-only controls)</a></li><li><a href="#works">Outfits and accessories too</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>Try drawing first</h2><ol class="mn-steps"><li>Starting a stroke on the model <strong>automatically switches</strong> to that texture set (such as body) before painting. You can also choose it in the Texture sets panel on the right.</li><li>Select Pen (<kbd>P</kbd>) in the left toolbar, then choose a sub tool such as G-pen.</li><li>Pick a color in the color panel and draw on the model in 3D.</li><li>Rotate by right-dragging (pen side button) or  <kbd>Space</kbd> + dragging; zoom with the wheel.</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="Left toolbar, Sub tool and Tool properties" loading="lazy"><figcaption>Toolbar, Sub tool and Tool properties</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="Full PetaNuri3D interface" loading="lazy"><figcaption>Full interface</figcaption></figure></div><div class="mn-tip">On the model,  <kbd>Alt</kbd> + right-click also selects that set. See <a href="/petanuri/en/manual/sets">Texture set</a>.</div></section><section class="mn-sec" id="tools"><h2>Tools and sub tools</h2><p>Default toolbar order. Tap a tool key to switch; hold it while drawing to use it temporarily, then release to return to the previous tool.</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Tools</th><th scope="col">Key</th><th scope="col">Sub tool</th></tr></thead><tbody><tr><td>Pen</td><td>P</td><td>G-pen, mapping pen, fineliner, tapered pen, solid pen</td></tr><tr><td>Brush</td><td>B</td><td>Soft brush, airbrush, flat color, pencil, chalk, spray, watercolor bleed, flat brush, dodge, burn, shadow (Multiply), ink brush</td></tr><tr><td>Brush collection</td><td></td><td>33 types including pencil, mechanical pencil, fine brush, ink brush, flat brush, glazing, painterly, water edge, splatter, leaves and sponge</td></tr><tr><td>Eraser</td><td>E</td><td>Hard, soft, rough, kneaded, through layers (plus 2 bundled presets)</td></tr><tr><td>Decoration</td><td></td><td>Sparkles, stars, hearts, flowers, cherry blossoms, musical notes, snowflakes, dots, bubbles, crescents, diamonds, clovers, drops (<a href="/petanuri/en/manual/deco#deco">Decoration</a>)</td></tr><tr><td>Stamp</td><td></td><td>Stamp, scattered stamp (<a href="/petanuri/en/manual/deco#stamp">Stamp</a>)</td></tr><tr><td>Pattern</td><td></td><td>15 types including stripes, dots and gingham (<a href="/petanuri/en/manual/deco#pattern">pattern pens</a>)</td></tr><tr><td>Stitch</td><td></td><td>Nine sub tools including stitches, piping, cross stitch and wrinkles. Stitches draw in the foreground color; wrinkles and bulges draw by height (<a href="/petanuri/en/manual/deco#bump">Stitch</a>)</td></tr><tr><td>Blend</td><td>J</td><td>Blur, smudge and blend (3 of each plus 3 bundled presets)</td></tr><tr><td>Fill</td><td>G</td><td>Fill island, entire material, enclosed area, polygon fill</td></tr><tr><td>Gradient</td><td></td><td>Foreground → background, foreground → transparent, radial (foreground → transparent)</td></tr><tr><td>Shape</td><td></td><td>Line, rectangle, ellipse, polygon (fill/outline), curve, point-to-point curve</td></tr><tr><td>Eyedropper</td><td>I</td><td>Pick displayed color, pick from layer</td></tr><tr><td>Move/transform</td><td>V</td><td><a href="/petanuri/en/manual/edit#move">Move/transform tool</a></td></tr><tr><td>Selection</td><td>S</td><td><a href="/petanuri/en/manual/edit#select">Selection</a></td></tr><tr><td>Hide pen</td><td></td><td>Hide faces, hide islands (<a href="/petanuri/en/manual/uv#hidepen">Hide pen</a>)</td></tr><tr><td>Text</td><td>T</td><td>Horizontal, vertical (<a href="/petanuri/en/manual/edit#text">Text</a>)</td></tr><tr><td>Ruler</td><td></td><td>Straight, curve, concentric circles, radial, parallel (<a href="/petanuri/en/manual/edit#ruler">Ruler</a>)</td></tr></tbody></table></div><ul class="mn-list"><li>Icons below the sub-tool list duplicate, rename, delete, reset, export, export all and import (also via right-click; double-click to rename). Drag to reorder, including with a pen.</li><li>Brush settings export/import (.petabrush) is available in  <span class="tier std">Standard</span>  and above. Imported tip images are included.</li><li>Use S/M/L above the list to change tile size. Smaller tiles leave more space for Tool properties below.</li><li>Tool property values are remembered per sub tool.</li><li>Right-click a toolbar button or sub-tool tile → “Assign key” to set any shortcut, including for sub tools.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="Brush collection sub tools" loading="lazy"><figcaption>Brush collection</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="Brush stroke examples" loading="lazy"><figcaption>Strokes from different brushes</figcaption></figure></div><div class="mn-tip">New tools and sub tools (all editions): Pixel pen under Pen, Lasso fill under Fill, and Liquify (push, bloat, pinch, twirl (right), twirl (left), restore) and Hand on the toolbar. View → Windows → Toolbox shows a panel with the tools in a grid.</div><div class="mn-tip">Pixel pen: paints a crisp square of brush-size texels aligned to the texture grid (1 = one texel, 3 = 3×3; colors do not blend). Pressure and tapering do not change the size, and it works in 3D, in the UV view, and with symmetry. Other pens can paint the same way with “Pixel (crisp, snapped to the texel grid)” in Tool properties.</div><div class="mn-tip">Liquify: warps the painting where you trace. Each trace undoes with one Ctrl+Z. In the 3D view it continues across UV seams; in the UV view it stays inside islands. It respects selections and Lock transparency and works with symmetry. Hand: while selected, left-drag or pen-drag moves the view (hold Ctrl in 3D to zoom).</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="3D view painted with the Pixel pen and textures shown as pixels" loading="lazy"><figcaption>Pixel pen and textures shown as pixels</figcaption></figure></section><section class="mn-sec" id="through"><h2>Also paint back and hidden faces</h2><p>Just below opacity in Tool properties, <strong>“Also paint back and hidden faces”</strong> (eraser: “Erase back and hidden faces”) paints inside a sphere centered on the visible face under the tip, matching the brush circle&#x27;s apparent size. It reaches back/inner faces hidden from the camera, painting inside hair, layered clothes and between fingers at once.</p><ul class="mn-list"><li>For pens, brushes, brush collections, erasers and gradients, this is <strong>enabled by default</strong>. Turn it off to paint only visible faces.</li><li>Also available for Decoration, Pattern and Stitch (off by default). Blur, Smudge, Color mix and Stamp use the colors and images shown on screen, so they affect only visible faces.</li><li>Hardness softens the edge. Image tips (pencil, chalk, spray and many brush-collection presets) work too. “Surface-aligned” follows face direction; “Screen-aligned” projects the visible tip shape deeper into the model.</li><li>Selections, hidden faces, symmetry and transparency lock work as usual. This option does not affect UV painting, which already reaches all faces.</li></ul><div class="mn-tip warn">On thick parts, the brush may reach the opposite side. Watch its size.</div></section><section class="mn-sec" id="props"><h2>Detailed brush settings</h2><ul class="mn-list"><li>The wavy stroke at the top previews current settings and updates immediately when they change.</li><li><strong>Size basis</strong>: Per sub tool, choose Follow settings / Fixed on texture / Variable on screen. Fixed on texture keeps texture stroke width constant when zooming. Follow settings uses File → Preferences → Drawing → Brush size unit (screen px/texture px).</li><li><strong>Tip</strong>: Round, square, flat brush, pencil, chalk, spray, watercolor, ink brush, sparkle, star, heart and 31 bundled tips. Import images (black shapes on white) or other painting apps&#x27; brush files (.abr, .gbr, .gih or bundled .zip).</li><li><strong>Build-up</strong>: Repeated passes become darker (useful for airbrushes).</li><li><strong>Rendering mode</strong>: 28 modes including Multiply, Screen, Overlay and Add (glow). Also includes Behind (unpainted areas only), Lighten and Darken.</li><li><strong>Stabilization type</strong>: Smooth (follows with a delay), 1€ (stronger stabilization at low speed, less lag at high speed), or Tether (follows a little behind the tip to remove hand tremor).</li><li><strong>Start/end taper</strong>: Narrows stroke starts and ends. End taper redraws the last segment when you lift the pen, avoiding lag while drawing.</li><li><strong>Dynamics</strong>: Size by speed; size/opacity variation; size/opacity by tilt; tip rotation by pen direction or barrel rotation (tilt/rotation require a pen that reports them).</li><li><strong>Pressure curve</strong>: Move points to set the response separately for size and opacity.</li><li><strong>Paper texture</strong>: Paper or canvas grain modulates paint opacity (6 bundled images, 15 patterns or your own image). Stays attached to the surface as the view moves.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="Tool properties: back/hidden-face painting, tips, paper texture and other settings" loading="lazy"><figcaption>Tool properties</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="Tip list" loading="lazy"><figcaption>Tip list</figcaption></figure></div><div class="mn-tip">The Brush size panel on the left gives quick access to favorite sizes. Small tiles show circles and numbers; a narrow panel can become one column. Use the final pencil icon or right-click to add the current size or remove one. <kbd>[</kbd> <kbd>]</kbd>  also changes size (1–1000).</div><div class="mn-tip"><strong>3D brush projection</strong>: Surface-aligned reduces stretching on angled faces and is the v1.1.0 default for brushes without saved settings. Screen-aligned projects from the camera and stretches strokes on angled faces. Set per sub tool; saved settings remain intact. UV painting is unchanged.</div><div class="mn-tip">Import external brush tips: use Import in Sub tool for ABR, GBR, GIH, images such as PNG, SUT, or ZIP. You can select multiple files or drop them onto the panel, then paint with the registered tools. Available in all editions.</div><div class="mn-tip">Imports use tip images and available starting size, spacing, and similar values. They do not fully reproduce the original brush engine, pressure behavior, mixing, or colors. SUT imports use readable embedded PNG images, which may be previews or other materials. Adjust Tool properties after import.</div><div class="mn-tip">ABR supports sampled tips in versions 1, 2, and 6; GBR supports versions 1 and 2. GIH tips are registered separately. Image tips use alpha or remove white. Importing and exporting .petabrush settings requires Standard or higher.</div><div class="mn-tip">Stroke feel (all editions): in File → Preferences → Pen &amp; input → Stroke feel, choose “Taper by pressure only” (default) or “Taper by length” (the previous default). With pressure only, light pressure itself forms the taper, so strokes no longer start with a blob or end with a thread-like tail (pen only; mouse and touch always taper by length).</div><div class="mn-tip">If you used an earlier version, a one-time “stroke feel improved” notice appears at startup. “Restore previous feel” switches back to taper by length (you can also change it later in Preferences).</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="Stroke feel in Pen &amp; input preferences" loading="lazy"><figcaption>Stroke feel</figcaption></figure></section><section class="mn-sec" id="blend"><h2>Blur, smudge and blend</h2><ul class="mn-list"><li><strong>Blur</strong>: smooths where you stroke. The more you stroke back and forth, the more the colors blend. “Blur spread” sets how far it reaches.</li><li><strong>Smudge</strong>: Drags and stretches color.</li><li><strong>Blend</strong>: Picks up and carries painted colors while blending them with the foreground color. At Paint amount 0, only existing colors are mixed. Increase Color stretch for longer extension.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="Two colors blended together" loading="lazy"><figcaption>Two colors blended together</figcaption></figure><div class="mn-tip">All are calculated in 3D, remaining continuous across UV seams. Blur and smudge also work in UV (Blend is 3D only).</div><div class="mn-tip">Blur now also has “3D painting method” (follow surface / match screen). The default, follow surface, makes the blurred area match the pen shape.</div><div class="mn-tip">Blur builds up with each pass (all editions): it re-blurs the current image and nudges it a little for each distance moved, so even a weak blur (such as a flat blur) gets stronger the more you go over an area. There is a limit on how many times it takes effect, so rubbing the same spot in one stroke does not dissolve sharp edges or line art completely. Blur in the UV view and on the 2D canvas works the same way. Turn off “Blend more with each pass” in Tool properties to return to the old behavior (no build-up within a single stroke; on by default).</div><div class="mn-tip">Color mix blends the colors the brush picks up inside the brush before carrying them, so colors at boundaries mix more widely and softly (all editions). Saved sub tool settings are unchanged; only the effect differs.</div><div class="mn-tip">Blur, Smudge, and Blend can also use a brush tip chosen in tool properties (all editions, v1.3.0 and later).</div></section><section class="mn-sec" id="fill"><h2>Fill, gradients and shapes</h2><ul class="mn-list"><li><strong>Fill island</strong>: Fills the entire clicked UV island. <strong>Whole material</strong>: Fills the whole material.</li><li><strong>Fill enclosed area</strong>: Click inside line art to fill connected similar-colored areas within that island. Set reference (all layers/selected layer), tolerance, Close gaps (stop at gaps in lines) and Expand (extend beneath lines).</li><li><strong>Polygon fill</strong>: Fills traced faces entirely in the foreground color.</li><li><strong>Gradient</strong>: Drag from start to end in 3D. With back/hidden-face painting enabled (default), follows the 3D line between pressed/released points onto back and inner faces too, for example from hair roots to tips. <kbd>Shift</kbd>  constrains to 45° steps.</li><li><strong>Shape</strong>: Draw lines, rectangles, ellipses and polygons (3–12 sides), filled or outlined. <kbd>Shift</kbd>  constrains to squares/circles; Draw from center makes the starting point the center. For curves, drag and release, move to bend, then click again to finish. Point-to-point curves place a point per click; double-click or  <kbd>Enter</kbd>  to finish (Close makes a loop that can be filled).</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="An enclosed area filled inside line art" loading="lazy"><figcaption>Fill enclosed area</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="A gradient on the legs" loading="lazy"><figcaption>Gradient</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="Faces painted with polygon fill" loading="lazy"><figcaption>Polygon fill (mesh lines shown)</figcaption></figure></div><div class="mn-tip">Create the fill layer below the line-art layer to keep clean lines.</div><p>For multiple colors and opacity, see <a href="#gradient">Color and opacity gradients</a>.</p><div class="mn-tip">Shape line width now follows brush size. Changing size from the brush size list, the [ ] keys, or the popup palette also changes shape line width (kept per shape sub tool, without changing the pen size).</div><div class="mn-tip">Lasso fill (all editions): a Fill sub tool. Drag around an area in 3D, the UV view, or the 2D canvas to fill it with the foreground color (the current selection is kept; one undo reverts it). When you circle another texture set in 3D, it first switches to the set that covers most of the circled area, just as Switch to touched set does for the pen (with Paint across sets on, the sub set is filled as well).</div><div class="mn-tip">Alt+Backspace fills with the foreground color and Ctrl+Backspace with the background color (inside the selection if any, otherwise the whole layer; masks use brightness). D (or the small button at the lower left of the two color squares) resets the colors to black and white.</div><div class="mn-tip">Shape tip images (all editions, v1.3.0 and later): choose a tip image in the Shape tool’s properties to draw stitches and more lined up along the shape outline. Tips such as pencil and chalk use the same spacing and random rotation as the pen, giving a connected line. You can adjust thickness, spacing, angle, rotation along the line, and random rotation. Choose Round to return to the usual shape drawing.</div></section><section class="mn-sec" id="gradient"><h2>Color and opacity gradients</h2><p>The Gradient drawing tool is available in Lite and above. Under Color in Tool properties, select <strong>“Color and opacity stops”</strong> to draw with a gradient combining colors and transparency, beyond two colors. Foreground → background and foreground → transparent are also available.</p><ol class="mn-steps"><li>Choose a preset or click an empty part of the bar to add stops (2–32).</li><li>Select a stop and change its color, position and opacity. Drag to reposition. Tap the selected stop again or double-click to choose its color.</li><li>Remove unwanted stops with “Delete stop,” <kbd>Delete</kbd> or by dragging them away from the bar. Also use Insert foreground color, Distribute evenly and Reverse.</li><li>Browse 240 presets by group/name, including transparent presets. The list scrolls. Name your gradient and use Save current to keep your own preset.</li><li>Choose linear or radial, then drag from start to end in 3D or UV.</li></ol><div class="mn-tip">Gradient areas at opacity 0 preserve the colors underneath. To erase existing colors, use <a href="#transparent">Draw with transparency</a>. To bake height- or surface-direction shading onto new layers, use Pro&#x27;s <a href="/petanuri/en/manual/bake#gradient">gradient bake</a> is useful.</div><div id="spatial-gradient"><h3>Paint a gradient from a point in 3D space</h3><p>The regular gradient tool can spread color from a point placed in 3D space, including outside the model. Unlike the filter bake, it applies to the selected paint layer.</p><ol class="mn-steps"><li>Select the layer to paint, then click “Paint from a 3D point” in the gradient Tool properties. The “3D spatial gradient” dialog opens.</li><li>Click a model surface or empty space in the 3D view to place the center point. Drag the movement handles or enter X, Y, and Z coordinates to move it.</li><li>Use Radius to change how far the colors spread, and adjust colors with color/opacity stops or presets. Transparent areas retain the color underneath.</li><li>Preview the result, then Apply to paint it on the selected layer. A single Undo returns to the state before applying. Cancel restores the layer’s original painting.</li></ol><div id="gradient-range-guide"><h3>Distance and color range guides</h3><p>Drag the outer white handle to change how far the colors spread. Colored handles move each color stop. The center movement handles and XYZ coordinates remain available, and handles, numeric controls, and color/opacity editing stay synchronized.</p><p>Rings show distance from the center; the rail shows color and opacity. Labels show each stop’s position, color, and opacity. A color marked ∅ does not appear within the current range. Press Esc during a drag to cancel that drag.</p><p>Use “Show range guide” to show or hide the rings, rail, and colored handles. The center movement handles remain available. Pro’s point-distance gradient bake uses the same guide, with ring and color positions reflecting changes to Boundary position and Blend width.</p></div><div class="mn-tip">Existing linear and radial drag controls and UV gradients remain available. Use the Pro gradient bake for height- or surface-direction shading on new layers.</div></div></section><section class="mn-sec" id="color"><h2>Choose colors and use the eyedropper</h2><ul class="mn-list"><li><strong>Color</strong> panel: switch among 5 pickers with the top buttons (ring + square, ring + triangle, square + hue bar, disc + lightness bar, sliders).</li><li><strong>Color values</strong> panel: foreground/background color, HEX, screen eyedropper, RGB/HSV values and opacity.</li><li><strong>Recent colors</strong>: 12 colors actually painted or picked. Click to set the foreground color.</li><li><kbd>X</kbd>  swaps foreground and background colors.</li><li><strong>Eyedropper</strong>：<kbd>Alt</kbd>  temporarily activates the eyedropper from any tool while held.</li><li><strong>Pick color from screen</strong> (<kbd>Shift</kbd>＋<kbd>I</kbd>): pick anywhere on screen, including outside the window.</li><li><strong>Color set</strong>: Tap a swatch to set the foreground color. Add with “+ Current foreground color”; drag to reorder. Swatch deletion can be undone. Import/export .gpl palettes too.</li><li><strong>Reference image</strong>: Open, drop or paste (<kbd>Ctrl</kbd>＋<kbd>V</kbd>) an image, then pick colors with the eyedropper. Use the top magnifier to zoom, 100% for actual size and the corner marks to fit the whole image (pen-only operation supported).</li></ul><div class="mn-tip">Pick color from screen (exe version, v1.3.0 and later): the app captures the screen when you start and shows a loupe (magnified view and color values). Click or press Enter/Space to pick; the arrow keys move one pixel at a time (10 with Shift). Esc or right-click cancels. Because it picks from the captured screen, videos and the like appear frozen. In the v1.2.1 exe, it was canceled right after opening and could not be used.</div><div class="mn-tip">Eyedropper magnifier (all editions, v1.3.0 and later): with the eyedropper (I, or while holding Alt), a round magnifier appears at the cursor. The center frame is the spot to pick and the outer ring shows the color. It appears in both the 3D view and the UV view. Turn it off with Show magnifier in the eyedropper’s tool properties (on by default).</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="Color and Color values panels" loading="lazy"><figcaption>Color / Color values</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="Color sets and recent colors" loading="lazy"><figcaption>Color set | Recent colors</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="Reference image panel" loading="lazy"><figcaption>Reference image</figcaption></figure></div><div class="mn-tip">Switch the auxiliary sliders with the RGB/HSV buttons. The upper color field and hue bar stay as they are. HSV adjusts hue, saturation, and brightness; your choice is retained after restart.</div><div class="mn-tip">With Alt-button camera controls, Alt operates the camera in 3D. Use I for the 3D eyedropper; Alt still works as an eyedropper in UV.</div><div class="mn-tip">When picking from a reference image, the cursor becomes an eyedropper with a white outline that stays visible on light and dark images. The tip marks the sampled position.</div></section><section class="mn-sec" id="transparent"><h2>Draw with transparency (erase with the same brush)</h2><p>In the Color values panel, use the <strong>checkerboard button</strong> or <kbd>C</kbd>  to switch to transparent color. Pens, brushes and brush collections erase colors on the selected paint layer while retaining tip shape, hardness, pressure and flow.</p><p>Press  <kbd>C</kbd>  again or choose a regular foreground color to return. Transparency-locked layers cannot be erased; disable transparency lock first.</p><div class="mn-tip">Transparent color switches brushes to erasing; it does not turn every tool into an eraser.</div><div class="mn-tip">Transparent color (all editions): fills (island, whole material, enclosed area), polygon fill, and shapes now erase when the color is transparent. Gradients erase more strongly toward the foreground side. Layers with Lock transparency are refused.</div></section><section class="mn-sec" id="mirror"><h2>Paint symmetrically</h2><ol class="mn-steps"><li>At the top left of the 3D view, click  <strong>X</strong> (left-right), or press <kbd>M</kbd> .</li><li>Draw as usual to paint the opposite side too.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="Symmetry copies a star from one arm to the other" loading="lazy"><figcaption>Paint one arm to paint the other too</figcaption></figure><ul class="mn-list"><li>Combine Y (front-back) and Z (top-bottom) too; X + Z paints in 4 places.</li><li>Use ▼ to choose Model center, Origin or Custom. For Custom, enter a value (cm) or click Set by clicking the model. Snap to vertex uses the vertex nearest the clicked point. Also available via 3D right-click → Paint symmetrically → Set symmetry center here.</li><li>For Model center, the left-right center is where the shape is most symmetrical (the body center even with one-sided decorations/accessories).</li><li>Under ▼, <strong>“Symmetry search range”</strong> (0–3%, default 1%) finds the closest opposite face within this range when the mirrored position has no face, such as slightly asymmetrical clothing.</li><li><strong>The top of Tool properties</strong> and the <strong>UV view header</strong> also have Symmetry X/Y/Z (the same toggles as the 3D top left). Unsupported tools hide this section and cross out the 3D X/Y/Z buttons. Tools unsupported only in UV, such as Blend, show a reason.</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="Symmetry ▼ settings: center and matching search range" loading="lazy"><figcaption>Symmetry ▼ (center and search range)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="Symmetry X/Y/Z at the top of Tool properties, with X enabled" loading="lazy"><figcaption>Symmetry at the top of Tool properties</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="Blend symmetry settings explain why it is unavailable in UV" loading="lazy"><figcaption>Tools unavailable in UV show a reason</figcaption></figure></div><p>Supported tools (○ yes, △ conditional, × no, ― not applicable). Mirrors the clicked position or drawn shape; one Undo restores both.</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Tool</th><th scope="col">3D view</th><th scope="col">UV view</th></tr></thead><tbody><tr><td>Pen, Brush, Brush sets, Decoration, Pattern, Stitch</td><td>○</td><td>○</td></tr><tr><td>Eraser (including through layers)</td><td>○</td><td>○</td></tr><tr><td>Stamp</td><td>○</td><td>○ (image also flipped on the mirrored side)</td></tr><tr><td>Blur / Smudge</td><td>○</td><td>○</td></tr><tr><td>Blend</td><td>○</td><td>― (tool unavailable in UV)</td></tr><tr><td>Fill island, entire material, enclosed area</td><td>○</td><td>○</td></tr><tr><td>Polygon fill</td><td>○</td><td>○</td></tr><tr><td>Shape</td><td>○</td><td>○</td></tr><tr><td>Gradient</td><td>△</td><td>△</td></tr><tr><td>Text / Paste image</td><td>○</td><td>○ (mirrored when applied)</td></tr><tr><td>Selection pen, selection eraser, face selection</td><td>○</td><td>○</td></tr><tr><td>Selection (rectangle, ellipse, lasso, polyline, auto select, island)</td><td>×</td><td>× (tools defined by enclosing an area)</td></tr><tr><td>Transform / Move-transform tool</td><td>―</td><td>× (moves existing artwork)</td></tr><tr><td>Eyedropper / Place ruler</td><td>―</td><td>― (strokes along rulers are mirrored)</td></tr><tr><td>Hide pen</td><td>×</td><td>× (hides parts of the display)</td></tr></tbody></table></div><div class="mn-tip">△ Gradient: in 3D, visible faces keep directly applied colors; mirroring affects unseen faces. In UV, gradients including transparency use the stronger result. When back/hidden-face painting is enabled, all faces are painted directly along a 3D line and symmetry is not used.</div><div class="mn-tip"><strong>Even while posed</strong>, symmetry follows the original rest pose. Bent arms still paint the same area on the opposite arm (<a href="/petanuri/en/manual/pose#posemirror">Pose</a>).</div><div class="mn-tip">Paint symmetrically on hidden faces: enable the option in the symmetry ▼ menu, hide one side, and paint the visible side in 3D to paint its hidden mirror too. Off by default. Works with pens, brushes, erasers, and stamps, not UV painting or fills. Selections, layer locks, and target sets are respected.</div><div class="mn-tip">In the symmetry ▼ menu, Show symmetry guides and Line strength (10–100%) display the symmetry center in 3D. Show cursor on the mirrored side adds a dotted circle at the mirrored painting position (fainter when it is behind or inside a surface). Both are on by default.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="3D view showing a symmetry guide and mirrored cursor" loading="lazy"><figcaption>Symmetry guide and mirrored cursor</figcaption></figure></section><section class="mn-sec" id="popup"><h2>Popup palette (pen-only controls)</h2><ul class="mn-list"><li>Over 3D or UV, press the pen side button and <strong>release without moving</strong> to open a circular palette at the cursor (dragging still rotates).</li><li>Outer ring: favorite sub tools (+ adds the current sub tool; long-press/right-click removes; up to 10). Inside: hue ring/square for foreground color, small top circles for recent colors, and a bottom label dragged vertically for brush size.</li><li>Click outside the palette or press <kbd>Esc</kbd>  to close. For mouse use, set File → Preferences → Controls → Right-click to Popup palette (also available as “Show popup palette” at the top of the right-click menu).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="Popup palette" loading="lazy"><figcaption>Popup palette</figcaption></figure></section><section class="mn-sec" id="works"><h2>Outfits and accessories too</h2><p>Paint outfits and accessories with the same tools as avatar bodies. These examples show ののつよ-series outfits and accessories opened in PetaNuri3D.</p><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="狛犬セーラー displayed in PetaNuri3D" loading="lazy"><figcaption>狛犬セーラー</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="Wind chime displayed in PetaNuri3D" loading="lazy"><figcaption>Wind chime (獄門しのぶ accessory)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="Magic hat displayed in PetaNuri3D" loading="lazy"><figcaption>Magic hat (星羽の魔導衣 accessory)</figcaption></figure></div><div class="mn-tip">To draw lines only on a part (UV island), use Island selection, then Intersect with a strip-shaped selection before painting (<a href="/petanuri/en/manual/edit#select">Selection</a>).</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/start"><small>← Previous</small>Getting started</a><a class="next" href="/petanuri/en/manual/deco"><small>Next →</small>Stamps, patterns, stitches and 2D canvas</a></nav>
+    <p class="mn-intro">Draw directly on the 3D model with the pen. This page covers choosing tools, setting how a brush feels, choosing colors, fill, gradients, shapes and drawing symmetrically.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>On the toolbar at the left, select Pen (<kbd>P</kbd>), then choose "G-pen" in the Sub tool panel (<a href="#basic">Details</a>).</li>
+      <li>Choose a color in the Color panel and trace over the model in the 3D view. The app automatically switches to the texture set where you start drawing (<a href="#basic">Details</a>).</li>
+      <li>Change the thickness with <kbd>[</kbd> <kbd>]</kbd> or with the Brush size panel on the left (<a href="#props-size">Details</a>).</li>
+      <li>To erase, use the Eraser (<kbd>E</kbd>), or press <kbd>C</kbd> to switch to the transparent color and erase with the same brush (<a href="#transparent">Details</a>).</li>
+      <li>To draw the same thing on both sides, click the "X" at the top left of the 3D view (<kbd>M</kbd>) (<a href="#mirror">Details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#basic">Draw your first stroke</a></li><li><a href="#tools">Choose tools and sub tools</a></li><li><a href="#props">Set how it feels (tool properties)</a></li><li><a href="#through">Also paint back and hidden faces</a></li><li><a href="#color">Choose colors and use the eyedropper</a></li><li><a href="#transparent">Draw with transparency (erase with the same brush)</a></li><li><a href="#mirror">Paint symmetrically</a></li><li><a href="#blend">Blur, smear and mix colors</a></li><li><a href="#distort">Distort what you drew (Liquify)</a></li><li><a href="#fill">Fill large areas (Fill)</a></li><li><a href="#gradient">Paint with gradients</a></li><li><a href="#shape">Draw shapes</a></li><li><a href="#popup">Change color and size with the pen only (popup palette)</a></li><li><a href="#works">You can paint clothes and accessories too</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="how to draw how to paint beginner brush stroke can't paint no color straight line rotate view zoom">
+      <h2>Draw your first stroke</h2>
+      <p>Once you open a model, you can draw right away. You don't have to select a texture set first: the app automatically switches to the texture set where you start drawing (for example, body).</p>
+      <ol class="mn-steps">
+        <li>Click "Pen" on the toolbar at the left (<kbd>P</kbd>).</li>
+        <li>Choose "G-pen" in the Sub tool panel.</li>
+        <li>Choose a foreground color in the Color panel.</li>
+        <li>Trace over the model in the 3D view. A line appears where you traced.</li>
+        <li>To rotate, right-drag (the pen's side button) or <kbd>Space</kbd>+drag. To zoom in, use the wheel.</li>
+        <li>If you make a mistake, press <kbd>Ctrl</kbd>+<kbd>Z</kbd> to undo one stroke at a time.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tools.webp" width="302" height="1303" alt="The toolbar at the left, with the Sub tool and Tool properties panels" loading="lazy"><figcaption>Toolbar, Sub tool and Tool properties</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="The whole PetaNuri3D window" loading="lazy"><figcaption>Full interface</figcaption></figure></div>
+      <h3 id="basic-more">Controls while drawing</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+click: Draws a straight line from the end of the previous line.</li>
+        <li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+drag left or right: Changes the brush size.</li>
+        <li><kbd>Ctrl</kbd>+right-drag (pen side button): Dragging left or right changes the brush size, and up or down changes the hardness. <kbd>Ctrl</kbd>+dragging with the pen tip changes the opacity left or right and the tip angle up or down.</li>
+        <li>If you draw with the eraser end of the pen, it erases.</li>
+        <li><kbd>Alt</kbd>+right-click on the model to select the texture set at that spot (<a href="/petanuri/en/manual/sets#choose">Select a texture set</a>).</li>
+        <li>You can draw on the UV view with the same tools (<a href="/petanuri/en/manual/uv">UV and visible area</a>).</li>
+      </ul>
+      <p>For camera control schemes and other keys, see <a href="/petanuri/en/manual/keys#pen">Pen and mouse controls</a>.</p>
+      <h3 id="basic-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Nothing is painted when you trace</b>: The reason appears in the bar at the bottom of the screen. You can't draw on hidden layers, locked layers or folders. Select a layer you can draw on in the Layers panel (<a href="/petanuri/en/manual/layers#basic">Layers</a>).</li>
+        <li><b>Color doesn't appear in only some areas</b>: You can't draw outside the selection or on hidden areas. On a layer with Lock transparency on, you can't draw on transparent areas.</li>
+        <li><b>You can't draw on other texture sets</b>: "Switch to the set where you start drawing" is off. Turn it on from the right-click menu in the 3D view. When there is a selection, you can't draw on sets that are not selected.</li>
+        <li><b>Pen pressure doesn't change the thickness</b>: Check whether "Pen pressure to size" in Tool properties is on. If it's on and nothing changes, see <a href="/petanuri/en/manual/keys#pressure">When pen pressure doesn't work</a>.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tools" data-keywords="toolbox pencil airbrush watercolor temporary tool switch hold key tool list pan keyboard shortcut">
+      <h2>Choose tools and sub tools</h2>
+      <p>Choose a tool on the toolbar, then choose how it feels with a sub tool. The list below is the default order (the toolbar can also be moved to the top, bottom or right; see <a href="/petanuri/en/manual/screen#toolbar">Toolbar</a>).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Tool</th><th scope="col">Key</th><th scope="col">What it does</th><th scope="col">Sub tools</th></tr></thead><tbody>
+        <tr><td>Pen</td><td>P</td><td>Draws crisp lines</td><td>G-pen, Round pen, Fineliner, Taper pen, Solid fill pen, Pixel pen (<a href="#dotpen">Pixel pen</a>)</td></tr>
+        <tr><td>Brush</td><td>B</td><td>Paints with soft or textured brushes</td><td>Soft brush, Airbrush, Flat fill, Pencil, Chalk, Spray, Watercolor bleed, Flat brush (follows direction), Dodge (lighten), Burn (darken), Shadow (multiply), Ink brush</td></tr>
+        <tr><td>Brush collection</td><td>—</td><td>Draws with the bundled textured brushes</td><td>33 in all, including Pencil 2B, Charcoal (soft), Ink brush line art, Impasto (canvas) and Splatter (large) (<a href="#brushset">Brush collection</a>)</td></tr>
+        <tr><td>Eraser</td><td>E</td><td>Erases</td><td>Hard, Soft, Rough, Kneaded eraser, Through all layers, and 2 bundled ones</td></tr>
+        <tr><td>Decoration</td><td>—</td><td>Scatters decorations such as sparkles</td><td>17 in all, including Sparkle, Star, Heart, Flower, Cherry blossom and Lace (<a href="/petanuri/en/manual/deco#deco">Decoration</a>)</td></tr>
+        <tr><td>Stamp</td><td>—</td><td>Pastes an image</td><td>Stamp, Stamp (scatter) (<a href="/petanuri/en/manual/deco#stamp">Stamp</a>)</td></tr>
+        <tr><td>Pattern</td><td>—</td><td>Paints clothing patterns</td><td>15 in all, including Vertical stripes, Polka dots and Gingham (<a href="/petanuri/en/manual/deco#pattern">Pattern</a>)</td></tr>
+        <tr><td>Stitch</td><td>—</td><td>Draws seams and wrinkles</td><td>9 in all, including Stitches (dotted), Piping and Studs (rivets) (<a href="/petanuri/en/manual/deco#bump">Stitch</a>)</td></tr>
+        <tr><td>Blend</td><td>J</td><td>Blurs, smears and mixes</td><td>Blur, Smudge and Blend (3 of each, plus 3 bundled ones) (<a href="#blend">Blend</a>)</td></tr>
+        <tr><td>Liquify</td><td>—</td><td>Distorts what you drew</td><td>Push, Bloat, Pinch, Twirl (right), Twirl (left), Undo (<a href="#distort">Liquify</a>)</td></tr>
+        <tr><td>Fill</td><td>G</td><td>Fills islands, enclosed areas and so on in one go</td><td>Fill island, Whole material, Fill enclosed area, Lasso fill, Polygon fill (<a href="#fill">Fill</a>)</td></tr>
+        <tr><td>Gradient</td><td>—</td><td>Paints so that colors fade into each other</td><td>Color and opacity, Foreground → background, Foreground → transparent, Radial (foreground color to transparent) (<a href="#gradient">Gradient</a>)</td></tr>
+        <tr><td>Shape</td><td>—</td><td>Draws lines, rectangles, circles and curves</td><td>Linear, Rectangle, Rectangle (outline), Ellipse, Ellipse (outline), Polygon, Polygon (outline), Curve, Curve (connect points) (<a href="#shape">Shape</a>)</td></tr>
+        <tr><td>Eyedropper</td><td>I</td><td>Picks up a color</td><td>Sample displayed color, Sample from layer (<a href="#eyedropper">Eyedropper</a>)</td></tr>
+        <tr><td>Move/transform</td><td>V</td><td>Moves and transforms what you drew</td><td>Move/transform (<a href="/petanuri/en/manual/edit#move">Move/transform tool</a>)</td></tr>
+        <tr><td>Hand</td><td>—</td><td>Moves the view (doesn't draw)</td><td>Hand</td></tr>
+        <tr><td>Selection</td><td>S</td><td>Outlines the area you can draw on</td><td>Rectangle, Ellipse, Lasso, Polyline, Auto select, Select by island, Select by face, Selection pen, Selection eraser (<a href="/petanuri/en/manual/edit#select">Selection</a>)</td></tr>
+        <tr><td>Hide pen</td><td>—</td><td>Hides what you trace over</td><td>Hide by face, Hide by island (<a href="/petanuri/en/manual/uv#hidepen">Hide pen</a>)</td></tr>
+        <tr><td>Text</td><td>T</td><td>Adds text</td><td>Horizontal text, Vertical (<a href="/petanuri/en/manual/edit#text">Text</a>)</td></tr>
+        <tr><td>Ruler</td><td>—</td><td>Draws along a ruler</td><td>Straight ruler, Curve ruler, Concentric circle ruler, Radial line ruler, Parallel line ruler (<a href="/petanuri/en/manual/edit#ruler">Ruler</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Press and release a tool's key to switch to that tool. If you hold the key while drawing, it is that tool only while held, and when you release it you return to the previous tool.</li>
+        <li>The "Hold time" (0.15 to 2 seconds, 0.5 seconds by default) can be changed in File → Preferences → Action → Keyboard. You can turn off this temporary switching in the same place.</li>
+        <li>Hand: while it is selected, dragging with the left button or pen moves the view. In the 3D view, hold <kbd>Ctrl</kbd> to zoom.</li>
+        <li>The Eraser's "Through all layers" erases all visible layers at once. Turn on "Don't erase base layers" to keep the base.</li>
+        <li>Display → Windows → "Toolbox" also shows a panel with the tools arranged in a grid. The foreground and background color squares are lined up below it.</li>
+      </ul>
+      <h3 id="tools-subtool">Add, reorder and assign keys to sub tools</h3>
+      <p>The values in Tool properties are remembered for each sub tool. To keep the same pen at different thicknesses, duplicate it and give the copy another name.</p>
+      <ul class="mn-list">
+        <li>The icons under the sub tool list let you, from the left, "Duplicate", "Name", "Delete", "Reset", "Export", "Export all" and "Import". Right-clicking gives the same options.</li>
+        <li>You can also rename by double-clicking. Drag to reorder (this works with the pen as is).</li>
+        <li>"Small", "Medium" and "Large" above the list change the tile size. Making the tiles smaller gives more room to the Tool properties below.</li>
+        <li>Right-click a toolbar button or a sub tool tile → "Assign key" to give it any key you like. To give the same key to several sub tools, choose "Share (cycle on each press)", and each press moves to the next sub tool.</li>
+        <li><span class="tier std">Standard</span> With "Export", "Export all" and "Import", you can exchange brush settings as .petabrush files. Imported tip images are included. You can also import a .petabrush by dropping it onto the window.</li>
+      </ul>
+      <div class="mn-tip warn">Deleting a sub tool can't be undone. In Standard and above, you can keep a copy first with "Export".</div>
+      <h3 id="tools-import">Import brushes from other paint apps</h3>
+      <ol class="mn-steps">
+        <li>Click "Import" under the sub tool list.</li>
+        <li>Choose .abr, .gbr, .gih, .sut, images (such as PNG), or a .zip that bundles them. You can choose any number of files.</li>
+        <li>A sub tool that uses the tip is added and selected. You can draw with it right away.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can also import by dropping files onto the Sub tool panel. If you drop an image onto the 3D or UV view, it is treated as an image, not a brush.</li>
+        <li>What is imported is the tip shape and name, the initial size and, when it can be read, the spacing and anti-aliasing. The original app's stroke feel, color mixing and color are not carried over, so adjust them in Tool properties.</li>
+        <li>.abr supports image tips in versions 1, 2 and 6, and .gbr supports versions 1 and 2. .gih uses up to 128 frames at random. .sut makes a tip from the image inside (it may contain things such as a reduced preview image).</li>
+        <li>The limit is 64 MB per file. For a .zip, it is 512 files and 64 MB after extraction. If a format can't be read, the reason is shown.</li>
+        <li>You can import in any edition. Imported tips and sub tools are kept after the next launch.</li>
+      </ul>
+      <h3 id="brushset">Brush collection (bundled brushes)</h3>
+      <p>The "Brush collection" on the toolbar contains 33 textured brushes. They are a brush set published under CC0 (public domain), converted to this app's settings. You can use them freely, both for your artwork and commercially.</p>
+      <ul class="mn-list">
+        <li>Airbrush (large) / Basic spread / Oval brush / Pressure-width brush / Detail brush / Pencil H (sketch) / Mechanical pencil / Pencil 2B / Fine brush (grainy) / Ink brush line art / Fine brush (hard edge, rock texture) / Block brush (layering) / Flat brush (layering) / Charcoal (soft) / Round brush (layering) / Layering (textured) / Shaping (textured) / Thick ink brush (textured) / Ink brush (tilt for volume) / Ink brush (blending in) / Rake brush (grainy) / Impasto (canvas) / Watercolor edge / Scattered texture / Canvas rub / Dry scratch / Splatter (large) / Splatter (light) / Squiggle / Textured base / Large sponge / Grainy noise / Leaves</li>
+        <li>The blurs and smudges from the same collection (Rake blur (smudge), Textured blur, Flat blur) are under "Blend", and the erasers (Eraser (chalk tip), Kneaded eraser (soft)) are under "Eraser".</li>
+        <li>The "Bundled brushes" tips (31) and the "Built-in" paper textures (6) can also be used with other sub tools.</li>
+        <li>The feel is not exactly the same as the original brushes.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-subtools-set.webp" width="302" height="549" alt="The sub tools of the Brush collection" loading="lazy"><figcaption>Brush collection</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-brush-samples.webp" width="900" height="900" alt="Samples of lines drawn with different brushes" loading="lazy"><figcaption>Lines from various brushes</figcaption></figure></div>
+      <h3 id="dotpen">Draw pixel art (Pixel pen)</h3>
+      <p>The Pen's "Pixel pen" paints crisply as many pixels as the brush size, snapped to the pixel grid of the texture. A size of 1 paints 1 pixel and 3 paints 3×3, and colors do not mix. It suits pixel art and low-resolution textures such as 32 or 64 px.</p>
+      <ul class="mn-list">
+        <li>The size is in texture px. Pen pressure and taper do not change the thickness.</li>
+        <li>In the 3D view, it paints only inside the island of the face visible at the center of the pen tip. Symmetry also works (it paints the same pixel on the other side too).</li>
+        <li>Other pens paint the same way if you turn on "Pixel (crisp, snapped to the texel grid)" in Tool properties.</li>
+        <li>If you show the texture as pixels, the pixels also look square in 3D (⋯ on the texture set row → "Show as pixels (no interpolation)"; see <a href="/petanuri/en/manual/sets">Texture sets</a>).</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dot-pen-v120.webp" width="660" height="520" alt="The 3D view painted with the Pixel pen, with the texture shown as pixels" loading="lazy"><figcaption>Pixel pen and the texture shown as pixels</figcaption></figure>
+    </section>
+<section class="mn-sec" id="props" data-keywords="brush settings pen pressure hardness spacing smoothing taper blend mode paper grain jaggy pressure curve">
+      <h2>Set how it feels (tool properties)</h2>
+      <p>In the Tool properties panel, you set how the selected sub tool feels. The "~" line at the very top is a sample drawn with the current settings. When you change a setting, it updates immediately.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Details</th></tr></thead><tbody>
+        <tr><td>Brush size, Size basis</td><td>The thickness (1 to 1000) and whether it is set on the screen or on the texture (<a href="#props-size">Set the thickness</a>)</td></tr>
+        <tr><td>Opacity</td><td>How dark each stroke is</td></tr>
+        <tr><td>Also paint back and hidden faces</td><td>Also paints faces on the back or inside that you can't see (<a href="#through">Also paint back and hidden faces</a>)</td></tr>
+        <tr><td>3D brush projection</td><td>"Follow the surface" or "Match the screen" (<a href="#props-3d">3D brush projection</a>)</td></tr>
+        <tr><td>Paint into padding outside islands in 3D too</td><td>When you finish drawing, the line is extended outside the UV island by the "Padding width (px)". This prevents thin lines from appearing at seams. The width is the same value as the export bleed (<a href="/petanuri/en/manual/export#pad">Bleed</a>)</td></tr>
+        <tr><td>Tip</td><td>The shape of the pen tip, such as round, square or pencil (<a href="#props-tip">Choose the tip</a>)</td></tr>
+        <tr><td>Hardness</td><td>How crisp the edge is. Lowering it blurs the edge</td></tr>
+        <tr><td>Spacing</td><td>The gap between tips. Widening it gives a row of dots</td></tr>
+        <tr><td>Stabilization</td><td>How strongly line wobble is suppressed (<a href="#props-stroke">Stabilization type</a>)</td></tr>
+        <tr><td>Pen pressure to size, Minimum size</td><td>Whether pen pressure changes the thickness, and the thickness at the lightest pressure</td></tr>
+        <tr><td>Pen pressure to opacity</td><td>Whether pen pressure changes how dark the stroke is</td></tr>
+        <tr><td>Anti-aliasing</td><td>Smooths the edges</td></tr>
+        <tr><td>Build-up (darker with each pass), Flow</td><td>The more you go over the same spot, the darker it gets (suited to airbrushes). Flow is how dark each pass is</td></tr>
+        <tr><td>Pixel (crisp, snapped to the texel grid)</td><td>Paints snapped to the pixel grid (<a href="#dotpen">Pixel pen</a>)</td></tr>
+        <tr><td>Angle, Random rotation, Rotate along stroke</td><td>The direction of an image tip</td></tr>
+        <tr><td>Scatter</td><td>Scatters the tips around the line</td></tr>
+        <tr><td>Rendering mode</td><td>The same modes as the layer blend modes, such as Multiply, Screen, Overlay and Add (glow), plus "Behind (unpainted areas only)", "Lighten (dodge)" and "Darken (burn)"</td></tr>
+        <tr><td>Paper texture</td><td>Adds paper grain to the darkness of the paint (<a href="#paper">Paper texture</a>)</td></tr>
+        <tr><td>Stabilization type, Motion, Pressure curve</td><td>How the line follows the pen, taper, and how pen pressure responds (<a href="#props-stroke">Stabilization, taper and pen pressure</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-texture.webp" width="249" height="1053" alt="Tool properties: settings such as back/hidden-face painting, tip and paper texture" loading="lazy"><figcaption>Tool properties</figcaption></figure>
+      <h3 id="props-size">Set the thickness (brush size, size basis)</h3>
+      <ul class="mn-list">
+        <li>In the "Brush size" panel on the left, click a frequently used size to select it. Clicking changes only the size (set opacity and hardness in Tool properties).</li>
+        <li>The pencil at the end of the size tiles, or a right-click, gives "Add current size", "Remove selected" and "Reset". "Remove this size" in the right-click menu removes the tile you clicked right away.</li>
+        <li>The panel wraps by width, so if you make it narrow it shrinks down to one column.</li>
+        <li><kbd>[</kbd> <kbd>]</kbd> also change the thickness. In the key bindings you can also assign keys to "Next larger size in the brush size list" and "Next smaller size in the brush size list".</li>
+        <li>When a shape tool is selected, this changes the shape's line width (up to 500). With Polygon fill and Select by face, it changes the "Pick radius" (up to 200).</li>
+      </ul>
+      <p>The "Size basis" decides how thickness behaves when you zoom in or out. You choose it for each sub tool.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Size basis</th><th scope="col">Thickness</th></tr></thead><tbody>
+        <tr><td>Follow settings (default)</td><td>Follows the "Brush size unit" in File → Preferences → Painting. The default is "screen px"</td></tr>
+        <tr><td>Fixed on texture</td><td>Paints the same thickness on the texture whether you zoom in or out (on screen it looks thicker when you zoom in)</td></tr>
+        <tr><td>Variable on screen</td><td>The thickness stays the same on the screen. When you zoom in it paints thinner on the texture, and when you zoom out it paints thicker</td></tr>
+      </tbody></table></div>
+      <h3 id="props-3d">Keep lines from stretching on slanted faces (3D brush projection)</h3>
+      <p>Choose it with "3D brush projection" for Pen, Brush, Brush collection, Eraser and Blur. "Follow the surface" (the default) makes lines less likely to stretch on slanted faces and edges, and image tips also line up with the direction of the face. "Match the screen" projects from the camera, so lines stretch on slanted faces.</p>
+      <p>When you draw in the UV view, both work the same way.</p>
+      <h3 id="props-tip">Choose the tip</h3>
+      <ul class="mn-list">
+        <li>Click "Tip" to choose. There are round, square, flat brush, pencil, chalk, spray, watercolor, ink brush, sparkle, star and heart tips, plus 31 bundled brush tips.</li>
+        <li>With "Load" in the tip list, you can also make a tip from an image (a PNG or JPEG with a black shape on a white background), from brushes of other paint apps (.abr, .gbr, .gih, .sut), or from a .zip that bundles them.</li>
+        <li>For image tips, "Angle", "Random rotation" and "Rotate along stroke" appear.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-tips.webp" width="460" height="560" alt="The tip list" loading="lazy"><figcaption>The tip list</figcaption></figure>
+      <h3 id="paper">Add a paper texture</h3>
+      <p>If you choose a "Paper texture" for Pen, Brush, Eraser and so on, paper or canvas grain is added to the darkness of the paint. It repeats over the texture, so it sticks to the surface and doesn't slide when you move the view.</p>
+      <ul class="mn-list">
+        <li>You can choose from the 6 built-in textures and the 15 patterns (the same designs as <a href="/petanuri/en/manual/deco#pattern">Pattern</a>). With "Import texture" you can also use any image (lighter areas take more paint).</li>
+        <li>Adjust it with "Texture scale", "Texture angle", "Texture strength" and "Invert texture brightness". Where a UV island is upside down or sideways, use "Texture angle" to match the direction of the pattern.</li>
+        <li>"Apply mode" is either "Multiply (brighter areas take more paint)" or "Subtract (dark areas drop out first)".</li>
+      </ul>
+      <h3 id="props-stroke">Stabilization, taper and pen pressure</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Stabilization type</th><th scope="col">How it works</th></tr></thead><tbody>
+        <tr><td>Smooth (follows with delay)</td><td>Follows the pen tip with a slight delay and smooths the line</td></tr>
+        <tr><td>1€ (strength varies with speed)</td><td>When you draw slowly it strongly suppresses wobble, and when you draw fast it reduces lag. Adjust it with "Stabilization when slow" and "Relax when fast"</td></tr>
+        <tr><td>String (follows at a fixed distance)</td><td>It follows at a distance of "String length" from the pen tip. Hand tremor disappears</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>Start/end taper</strong>: The length over which the start and end of a stroke are thinned. The end taper redraws the end of the line thinner when you lift the pen, so there is no lag while you draw.</li>
+        <li><strong>Motion</strong>: "Speed to size", "Size jitter", "Opacity jitter", "Tilt to size", "Tilt to opacity", "Rotate tip by pen tilt direction" and "Rotate tip by pen twist". Tilt and twist work only with pens that send them.</li>
+        <li><strong>Pressure curve (size/opacity)</strong>: Move the points to decide how pen pressure responds (horizontal is pressure, vertical is size or opacity). Double-click to return to a straight line.</li>
+        <li><strong>Stroke feel</strong>: In File → Preferences → Pen &amp; input → "Stroke feel", "How tapering is made" lets you choose "Taper by pressure only (default)" or "Taper by length". Taper by pressure only makes a blob at the start or a thread-like tail at the end less likely (for pens only. A mouse always tapers by length).</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-feel-v120.webp" width="900" height="520" alt="The Stroke feel section of Pen &amp; input in Preferences" loading="lazy"><figcaption>Stroke feel</figcaption></figure>
+      <h3 id="props-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Lines get thinner when you zoom in and thicker when you zoom out</b>: Set "Size basis" to "Fixed on texture".</li>
+        <li><b>Lines stretch on slanted faces</b>: Set "3D brush projection" to "Follow the surface".</li>
+        <li><b>Lines appear after a delay behind the pen tip</b>: Lower "Stabilization", or set "Stabilization type" to "1€ (strength varies with speed)". Also try "Show pen strokes early (reduce lag)" under "Reduce lag" in File → Preferences → Pen &amp; input.</li>
+        <li><b>A blob forms at the start of a stroke, or a tail appears at the end</b>: Set the stroke feel to "Taper by pressure only (default)".</li>
+        <li><b>Thin lines remain at UV seams</b>: Turn on "Paint into padding outside islands in 3D too".</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="through" data-keywords="back side inside behind occluded hidden faces paint through inside hair double-sided single-sided cannot see">
+      <h2>Also paint back and hidden faces</h2>
+      <p>This paints areas that are hard to see because they wrap around, such as the inside of hair, overlapping clothing and the gaps between fingers, all at once. Turn it on and off with "Also paint back and hidden faces" just below Opacity in Tool properties (for the Eraser, "Also erase back and hidden faces").</p>
+      <ul class="mn-list">
+        <li>Centered on the face visible under the pen tip, it also paints the back and inside faces that the camera can't see, within a sphere that looks the same size as the brush circle.</li>
+        <li>Pen, Brush, Brush collection, Eraser and Gradient are on from the start. Decoration, Pattern and Stitch are off at first. When it is off, only the visible faces are painted.</li>
+        <li>It isn't available for Blur, Smudge, Blend and Stamp (because they use the colors or image shown on the screen). It doesn't matter in the UV view (it already applies to all faces).</li>
+        <li>Hardness blurs the edge. Image tips attach to the inner faces in the same shape you see on the screen.</li>
+        <li>Selection, hidden areas, symmetry and Lock transparency work as usual.</li>
+      </ul>
+      <div class="mn-tip warn">If you paint a thick part, the paint reaches the other side. Make the brush smaller, or turn it off to paint only the visible faces.</div>
+      <h3 id="through-doubleside">How it differs from "Single-sided" and "Double-sided" display</h3>
+      <p>"Single-sided" and "Double-sided" at the top left of the 3D view switch the display. With "Double-sided", back-facing faces are also displayed, and you can paint the back faces you can see. "Also paint back and hidden faces" is what paints faces the camera can't see (<a href="/petanuri/en/manual/screen#hud">The four corners of the 3D view</a>).</p>
+    </section>
+
+    <section class="mn-sec" id="color" data-keywords="color picker palette HEX hue saturation lightness magnifier loupe gpl swatches pick color">
+      <h2>Choose colors and use the eyedropper</h2>
+      <p>The color you draw with (the foreground color) is chosen with the Color panel, the Color values panel, Recent colors or Color sets. Whichever you use, it becomes the same foreground color.</p>
+      <ul class="mn-list">
+        <li><strong>Color</strong>: Buttons at the top switch the picker type. There are 5: "Ring + square", "Ring + triangle", "Square + hue bar", "Disc + value bar" and "Sliders (RGB/HSV)".</li>
+        <li><strong>Color values</strong>: The foreground and background colors, HEX, picking a color from the screen, RGB/HSV numbers and opacity. The ▾ on the right expands the numbers and ▴ collapses them.</li>
+        <li><strong>Recent colors</strong>: The last 12 colors you actually painted with or picked (newest first). Click one to make it the foreground color.</li>
+        <li>When the RGB/HSV sliders appear below the color picker, switch between them with the "RGB" and "HSV" buttons. The format you choose is kept after the next launch.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="The Color and Color values panels" loading="lazy"><figcaption>Color / Color values</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colorsets.webp" width="259" height="267" alt="Color sets and Recent colors" loading="lazy"><figcaption>Color set | Recent colors</figcaption></figure></div>
+      <h3 id="color-swap">Foreground and background colors</h3>
+      <ul class="mn-list">
+        <li><kbd>X</kbd> (or ⇄) swaps the foreground and background colors.</li>
+        <li><kbd>D</kbd> (or the small button at the bottom left of the two squares) resets the foreground color to black and the background color to white.</li>
+        <li><kbd>Alt</kbd>+<kbd>Backspace</kbd> fills with the foreground color, and <kbd>Ctrl</kbd>+<kbd>Backspace</kbd> fills with the background color. If there is a selection, it fills inside it. If not, it fills the whole of the selected layer.</li>
+      </ul>
+      <h3 id="eyedropper">Pick a color with the eyedropper</h3>
+      <ul class="mn-list">
+        <li>The eyedropper (<kbd>I</kbd>) picks the color where you click. The sub tools are "Sample displayed color" (the color you see) and "Sample from layer" (the color of the selected layer).</li>
+        <li>While you hold <kbd>Alt</kbd>, any tool acts as the eyedropper. If the camera controls are set to Alt + mouse buttons, use <kbd>I</kbd> in the 3D view.</li>
+        <li>You can also pick a color with right-click in the 3D view → "Pick color here".</li>
+        <li>Raising "Sample area" takes the average of the surrounding colors.</li>
+        <li>While the eyedropper is in use, a round magnifier appears at the cursor. The frame in the middle is where the color is taken from, and the outer ring is the color you get. You can turn it off with "Show magnifier" in Tool properties.</li>
+      </ul>
+      <h3 id="screen-pick">Pick a color from anywhere on the screen</h3>
+      <ol class="mn-steps">
+        <li>Click the eyedropper icon in the Color values panel (<kbd>Shift</kbd>+<kbd>I</kbd>). A magnifier and a loupe showing the color values appear.</li>
+        <li>Click the spot you want. You can pick from outside the window too. <kbd>Enter</kbd> and <kbd>Space</kbd> also pick.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>The arrow keys move 1 pixel at a time (10 pixels with <kbd>Shift</kbd>). <kbd>Esc</kbd> or right-click cancels.</li>
+        <li>It picks from a snapshot of the screen taken when you started, so videos and the like look frozen.</li>
+      </ul>
+      <h3 id="colorset">Color set</h3>
+      <ul class="mn-list">
+        <li>Click a swatch to make it the foreground color. "+ Current color" adds one, drag to reorder, and double-click to name a swatch.</li>
+        <li>"Replace" and "Delete" act on the selected swatch. You can undo deleting a swatch with <kbd>Ctrl</kbd>+<kbd>Z</kbd>. "Small", "Medium" and "Large" change the swatch size.</li>
+        <li>The "…" menu lets you create, duplicate, rename and delete sets, export (JSON / .gpl palette) and import. A .gpl can be imported by dropping it anywhere on the window.</li>
+        <li>Drag while holding <kbd>Space</kbd> to scroll the list (for pens).</li>
+      </ul>
+      <h3 id="color-reference">Pick a color from a reference image</h3>
+      <ul class="mn-list">
+        <li>In the Reference image panel, bring up an image by clicking "Open", dropping a file onto the panel, or clicking the panel and pressing <kbd>Ctrl</kbd>+<kbd>V</kbd>.</li>
+        <li>Click or drag on the image to pick that color. When you release, it goes into Recent colors.</li>
+        <li>The magnifier icon at the top zooms in and out, "100%" sets actual size, and the corner icon fits the whole image. It can also be operated with the pen alone.</li>
+        <li>The image you bring up comes back the next time you launch.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="The Reference image panel" loading="lazy"><figcaption>Reference image</figcaption></figure>
+    </section>
+<section class="mn-sec" id="transparent" data-keywords="erase delete alpha transparent color eraser replacement knock out remove paint">
+      <h2>Draw with transparency (erase with the same brush)</h2>
+      <p>Use the checkerboard button in the Color values panel, or <kbd>C</kbd>, to make the foreground color transparent. You can then erase color from the current layer while keeping the tip, hardness and pen pressure of Pen, Brush, Brush collection and so on.</p>
+      <ul class="mn-list">
+        <li>To switch back, press <kbd>C</kbd> or the checkerboard button again. Clicking the foreground color square or choosing a color also switches back.</li>
+        <li>With the transparent color, Fill (Fill island, Whole material, Fill enclosed area), Polygon fill and Shape also erase the area they would paint.</li>
+        <li>Gradient erases more strongly toward the foreground-color side.</li>
+        <li>Stamp does not erase, even with the transparent color.</li>
+      </ul>
+      <div class="mn-tip warn">You can't erase on a layer with Lock transparency on. To erase, turn off Lock transparency first.</div>
+    </section>
+
+    <section class="mn-sec" id="mirror" data-keywords="mirror symmetry other side both sides flip simultaneous reflect x axis symmetrical">
+      <h2>Paint symmetrically</h2>
+      <p>When you draw on one side, the same thing appears on the other. Use it when you draw the same shape on both sides, such as the left and right of a face or clothing.</p>
+      <ol class="mn-steps">
+        <li>Click "X" (left/right) at the top left of the 3D view (<kbd>M</kbd>).</li>
+        <li>Draw on one side of the model. The same thing appears on the other side.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="A star drawn on one arm with symmetry also appears on the other arm" loading="lazy"><figcaption>Draw on one arm and it appears on the other too</figcaption></figure>
+      <ul class="mn-list">
+        <li>"Y" (front/back) and "Z" (up/down) can also be used in any combination at the same time (X and Z together paint in 4 places).</li>
+        <li>You can also toggle it from the Edit menu, or with right-click in the 3D view → "Paint symmetrically".</li>
+        <li>"Symmetry X/Y/Z" also appears at the very top of Tool properties and in the heading of the UV view (it is the same switch as the one at the top left of the 3D view).</li>
+        <li>One Undo reverses both sides together.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar.webp" width="249" height="89" alt="Symmetry X/Y/Z at the top of Tool properties, with X turned on" loading="lazy"><figcaption>Symmetry at the top of Tool properties</figcaption></figure>
+      <h3 id="mirror-center">Set the mirror center</h3>
+      <p>The ▼ next to X, Y and Z lets you choose the mirror center from "Model center", "Origin" and "Custom". Use it when the center is off from the middle of the body, for example with an outfit-only FBX.</p>
+      <ul class="mn-list">
+        <li><strong>Model center</strong>: For left/right, this is the place where the shape is most symmetric. Even if there are decorations or accessories on one side only, it stays at the middle of the body.</li>
+        <li><strong>Origin</strong>: Mirrors at the origin of the coordinates.</li>
+        <li><strong>Custom</strong>: Enter the center as X, Y and Z in cm, or use "Click on the model to set" to use the point you click. If "Snap to vertex" is on (the default), the position of the vertex nearest to the point you clicked is used.</li>
+        <li>You can also set it with right-click in the 3D view → "Paint symmetrically" → "Set symmetry center here".</li>
+        <li>When you set it, the mirror plane appears semi-transparent in 3D for about 2 seconds. The custom position is saved in the project file.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-pop.webp" width="270" height="369" alt="The Symmetry ▼ window, with the center and the partner search range" loading="lazy"><figcaption>Symmetry ▼ (center and search range)</figcaption></figure>
+      <h3 id="mirror-options">Other settings in the ▼ menu</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Item</th><th scope="col">Default</th><th scope="col">Details</th></tr></thead><tbody>
+        <tr><td>Mirror partner search range</td><td>1%</td><td>0 to 3%. When there is no surface at the mirrored point (for example clothes that differ slightly on the left and right), the nearest surface within this range is painted as the other side. 0% paints only at the exact mirrored point</td></tr>
+        <tr><td>Mirror painting on hidden parts (3D brushes)</td><td>Off</td><td>With one side hidden by the visible area or Hide pen, it also paints the other side from the visible side. It works with the 3D Pen, Brush, Eraser and Stamp (not with the UV view, Fill, Blur, Smudge or Blend)</td></tr>
+        <tr><td>Show symmetry guides, Symmetry guide strength</td><td>On</td><td>Shows the line of the symmetry center in 3D. The strength is 10 to 100%</td></tr>
+        <tr><td>Show cursor on the mirrored side</td><td>On</td><td>Also shows a dotted circle at the mirrored position of where you paint. If the other side is behind or inside a surface, it appears faint</td></tr>
+      </tbody></table></div>
+      <p>All of these settings are kept after the next launch.</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-guide-v112.webp" width="702" height="940" alt="The 3D view showing a symmetry guide and the mirrored cursor" loading="lazy"><figcaption>Symmetry guide and mirrored cursor</figcaption></figure>
+      <h3 id="mirror-tools">Which tools it works with</h3>
+      <p>○ means it works, △ means conditions apply, × means it doesn't work and ― means not relevant. If you choose a tool that symmetry doesn't work with, the symmetry field at the top of Tool properties is dimmed and shows the reason. X, Y and Z at the top left of the 3D view get a slash through them.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Tool</th><th scope="col">3D view</th><th scope="col">UV view</th></tr></thead><tbody>
+        <tr><td>Pen, Brush, Brush collection, Decoration, Pattern, Stitch</td><td>○</td><td>○</td></tr>
+        <tr><td>Eraser (including Through all layers)</td><td>○</td><td>○</td></tr>
+        <tr><td>Stamp</td><td>○</td><td>○ (the image is also flipped on the mirrored side)</td></tr>
+        <tr><td>Blur, Smudge</td><td>○</td><td>○</td></tr>
+        <tr><td>Blend</td><td>○</td><td>― (a tool you can't use in the UV view)</td></tr>
+        <tr><td>Liquify</td><td>○</td><td>○</td></tr>
+        <tr><td>Fill (island, whole material), Fill enclosed area</td><td>○</td><td>○</td></tr>
+        <tr><td>Polygon fill</td><td>○</td><td>○</td></tr>
+        <tr><td>Shape</td><td>○</td><td>○</td></tr>
+        <tr><td>Gradient</td><td>△</td><td>△</td></tr>
+        <tr><td>Text, Paste image</td><td>○</td><td>○ (also applied to the mirrored side when you confirm)</td></tr>
+        <tr><td>Selection pen, Selection eraser, Select by face</td><td>○</td><td>○</td></tr>
+        <tr><td>Selection (Rectangle, Ellipse, Lasso, Polyline, Auto select, Select by island)</td><td>×</td><td>× (tools that define an area by enclosing it)</td></tr>
+        <tr><td>Move/transform</td><td>―</td><td>× (an operation that moves existing artwork)</td></tr>
+        <tr><td>Eyedropper, placing a ruler</td><td>―</td><td>― (lines drawn along a ruler are symmetric)</td></tr>
+        <tr><td>Hide pen</td><td>×</td><td>× (a tool that hides parts of the display)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-mirror-bar-na.webp" width="249" height="125" alt="The symmetry field for Blend, showing why it doesn't work in the UV view" loading="lazy"><figcaption>Tools that don't work in the UV view show the reason</figcaption></figure>
+      <div class="mn-tip">△ Gradient: In the 3D view, visible faces keep their direct color, and what goes onto the mirrored side is the faces that are not visible. In the UV view, with a gradient that includes transparency, the darker side goes in. When "Also paint back and hidden faces" is on, every face is painted directly by the 3D line, so symmetry is not used.</div>
+      <div class="mn-tip"><span class="tier pro">Pro</span> Even when the model is posed, it paints the symmetric spot in the original pose (the rest pose). Even if one arm is bent, it goes to the same place on the other arm (<a href="/petanuri/en/manual/pose#posemirror">Poses</a>).</div>
+      <h3 id="mirror-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>It appears at a shifted spot on the other side</b>: The mirror center is off. Set the center to "Origin" or "Custom" with ▼ (<a href="#mirror-center">Set the mirror center</a>).</li>
+        <li><b>It doesn't appear on part of the other side</b>: The shape differs slightly between left and right there. Raise "Mirror partner search range" in ▼.</li>
+        <li><b>It doesn't appear on the other side after you hide one side</b>: Turn on "Mirror painting on hidden parts (3D brushes)" in ▼.</li>
+        <li><b>Drawing in the UV view doesn't appear on the other side</b>: If the other side is in a different texture set (material), it doesn't appear in the UV view. Draw in the 3D view.</li>
+        <li><b>X, Y and Z have a slash through them</b>: Symmetry doesn't work with the current tool (<a href="#mirror-tools">Which tools it works with</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="blur smudge soften smooth finger tool color mixing edge feather mix paint">
+      <h2>Blur, smear and mix colors</h2>
+      <p>The Blend tool (<kbd>J</kbd>) blends the colors you painted. All of its sub tools calculate on the 3D surface, so they don't break at UV seams.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">What it does</th><th scope="col">Main settings</th></tr></thead><tbody>
+        <tr><td>Blur, Blur (strong, wide), Blur (weak, edges only)</td><td>Smooths where you trace. The more you trace and the more you go back and forth, the more the colors melt together</td><td>"Blur spread", "Blend more with each pass", "3D brush projection"</td></tr>
+        <tr><td>Smudge, Smudge (strong stretch), Smudge (soft)</td><td>Drags the color and stretches it</td><td>"Strength"</td></tr>
+        <tr><td>Blend, Blend (smooth), Blend (thick)</td><td>Picks up the color where you trace and carries it, painting while mixing with the foreground color</td><td>"Paint amount", "Color stretch", "Sample color from all layers"</td></tr>
+        <tr><td>Rake blur (smudge), Textured blur, Flat blur</td><td>These are the blur and smudge sub tools from the bundled Brush collection</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>How strongly it acts is set with "Strength" (it corresponds to opacity for other brushes).</li>
+        <li>"Paint amount" is the proportion of foreground color. At 0, it only blends the colors that are already painted. Raising "Color stretch" carries the picked-up color further.</li>
+        <li>"Blend more with each pass" (on by default): The more times you trace the same spot, the more it melts together. There is a limit so that continuing to rub in one stroke doesn't melt even the line art. When it is off, going over the same spot within one stroke does not make it stronger.</li>
+        <li>When "3D brush projection" for Blur is "Follow the surface", the area that gets blurred has the same shape as the pen.</li>
+        <li>You can also choose a tip in Tool properties for Blur, Smudge and Blend.</li>
+        <li>Blur and Smudge can also be used in the UV view. Blend is available only in the 3D view.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-colormix.webp" width="400" height="250" alt="Two colors blended together with Blend" loading="lazy"><figcaption>Two colors blended together with Blend</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="distort" data-keywords="liquify warp distort push bloat pinch twirl swirl reshape fix line shape">
+      <h2>Distort what you drew (Liquify)</h2>
+      <p>This distorts the existing drawing where you trace. Use it when you want to adjust the shape of a line a little.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Push</td><td>Drags the drawing in the direction you move</td></tr>
+        <tr><td>Bloat, Pinch</td><td>Spreads the traced area outward, or pulls it inward</td></tr>
+        <tr><td>Twirl (right), Twirl (left)</td><td>Twists clockwise or counterclockwise</td></tr>
+        <tr><td>Undo</td><td>Gradually returns the traced area to the drawing as it was before liquify began</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>"Strength" (it also changes with pen pressure), "Hardness" (how the edge acts) and the brush size are the same as for other brushes. Bloat, Pinch, Twirl and Undo act in proportion to the length you trace.</li>
+        <li>Each stroke can be undone with one press of <kbd>Ctrl</kbd>+<kbd>Z</kbd>. The drawing doesn't get blurry however many times you trace.</li>
+        <li>In the 3D view, it connects across UV breaks. The closer you zoom in, the finer it acts.</li>
+        <li>In the UV view, it distorts only inside UV islands.</li>
+        <li>It respects Selection and Lock transparency. Symmetry also works.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="fill" data-keywords="paint bucket flood fill solid color base coat bulk closed area lasso polygon island gap">
+      <h2>Fill large areas (Fill)</h2>
+      <p>Fill (<kbd>G</kbd>) fills a UV island, an area enclosed by lines and so on in one go. If you create the layer to fill below the line layer, the lines stay clean.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">What it fills</th></tr></thead><tbody>
+        <tr><td>Fill island</td><td>The whole UV island you click</td></tr>
+        <tr><td>Whole material</td><td>The whole material you click</td></tr>
+        <tr><td>Fill enclosed area</td><td>An area enclosed by lines: the connected area of similar color within that island (<a href="#fill-region">Details</a>)</td></tr>
+        <tr><td>Lasso fill</td><td>The area you enclose by dragging (<a href="#fill-lasso">Details</a>)</td></tr>
+        <tr><td>Polygon fill</td><td>The whole face you trace (<a href="#fill-poly">Details</a>)</td></tr>
+      </tbody></table></div>
+      <p>With Fill island and Whole material, you can change "Anti-aliasing (island edges)" and the opacity.</p>
+      <h3 id="fill-region">Fill an area enclosed by lines</h3>
+      <ol class="mn-steps">
+        <li>Create a layer to fill below the line art layer and select it.</li>
+        <li>Choose the Fill sub tool "Fill enclosed area".</li>
+        <li>Set "Reference" in Tool properties to "All layers" (when you drew the lines on another layer).</li>
+        <li>Click the area you want to fill. It stops at the lines and is filled with the foreground color.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Setting</th><th scope="col">Details</th></tr></thead><tbody>
+        <tr><td>Reference</td><td>Looks for the lines to stop at in the artwork of "All layers" or "Selected layer"</td></tr>
+        <tr><td>Tolerance</td><td>How much color difference is treated as the same</td></tr>
+        <tr><td>Close gaps</td><td>0 to 5. Thickens the lines so that small breaks stop the fill (n closes breaks up to about 2n px)</td></tr>
+        <tr><td>Expand/contract</td><td>-3 to 3. + makes the fill go under the lines and removes the white gap between the fill and the lines</td></tr>
+        <tr><td>Anti-aliasing (smooth edges by 1px)</td><td>Smooths the edge of the fill</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-region.webp" width="299" height="224" alt="An area enclosed by lines being filled" loading="lazy"><figcaption>Fill enclosed area</figcaption></figure>
+      <h3 id="fill-lasso">Fill an area with the lasso</h3>
+      <p>Drag to enclose an area in the 3D view, UV view or 2D canvas, and the enclosed area is filled with the foreground color. The current selection is kept as it is, and one Undo reverts the fill.</p>
+      <p>If you enclose an area on a different texture set in the 3D view, it switches to the set that appears most in the enclosed area and then fills.</p>
+      <h3 id="fill-poly">Fill face by face (Polygon fill)</h3>
+      <p>This fills the whole face you trace with the foreground color. The pick radius is the size of the circle at the pen tip. If you turn off "Fill per quad (2 triangles as 1 face)", it fills triangle by triangle.</p>
+      <p>If you turn on "Mesh wireframe" at the top left of the 3D view, you can see the face boundaries (<a href="/petanuri/en/manual/uv#wire">Mesh wireframe</a>).</p>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-poly.webp" width="262" height="450" alt="Faces painted with Polygon fill" loading="lazy"><figcaption>Polygon fill (with the mesh wireframe shown)</figcaption></figure>
+      <h3 id="fill-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>The fill goes beyond the lines</b>: There is a break in the line. Raise "Close gaps".</li>
+        <li><b>A white gap remains next to the line</b>: Set "Expand/contract" to +.</li>
+        <li><b>It doesn't stop at the lines on another layer</b>: Set "Reference" to "All layers".</li>
+        <li><b>The lines get thinner or chipped</b>: If you fill on the same layer as the lines, the fill covers the lines by the "Expand/contract" amount. Press <kbd>Ctrl</kbd>+<kbd>Z</kbd>, create a layer to fill below the lines, and fill again.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="gradient" data-keywords="gradation fade gradient map ramp color stops linear radial presets transparent hair tips">
+      <h2>Paint with gradients</h2>
+      <p>This paints so that colors change gradually. In the 3D view, drag from the start point to the end point.</p>
+      <ol class="mn-steps">
+        <li>Click "Gradient" on the toolbar.</li>
+        <li>Choose a sub tool ("Color and opacity", "Foreground → background", "Foreground → transparent" or "Radial (foreground color to transparent)").</li>
+        <li>In Tool properties, choose "Linear" or "Radial" for "Shape".</li>
+        <li>In the 3D view, drag from the start point to the end point. Release to paint.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Linear goes in the direction from the start point to the end point. For Radial, the start point is the center and the length of the drag is the radius. Hold <kbd>Shift</kbd> for 45° steps.</li>
+        <li>When "Also paint back and hidden faces" is on (the default), the gradient also applies to the back and inside faces along the 3D line connecting the point you pressed and the point you released (for example, from the roots of hair to its tips). When it is off, only visible faces are painted.</li>
+        <li>It paints the selected layer of the selected texture set. Areas outside the selection and hidden areas are unchanged.</li>
+        <li>You can also draw by dragging in the UV view.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradient.webp" width="327" height="675" alt="A gradient applied to the legs" loading="lazy"><figcaption>Gradient</figcaption></figure>
+      <h3 id="gradient-stops">Build it with color and opacity stops</h3>
+      <p>If you set "Color" in Tool properties to "Color and opacity stops", you can paint with a gradient made of several colors and opacities.</p>
+      <ol class="mn-steps">
+        <li>Click an empty spot on the bar to add a color stop (2 to 32).</li>
+        <li>Select a stop and change its position and opacity. You can also change the position by dragging the stop.</li>
+        <li>Click the selected stop again, or double-click it, and choose a color.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Remove a stop with "Remove stop", <kbd>Delete</kbd>, or by dragging it down away from the bar. "Use foreground color", "Distribute evenly" and "Swap left/right" are also available.</li>
+        <li>With "Presets ▾", you can choose from 240 presets (some include transparency). You can search by group and name.</li>
+        <li>With "Save current", you can keep your own preset (My presets).</li>
+        <li>Where the opacity is 0, the color below remains. To erase painted color, use the <a href="#transparent">transparent color</a>.</li>
+      </ul>
+      <div class="mn-tip">To bake shading that follows height or surface orientation into a new layer, the Pro <a href="/petanuri/en/manual/bake#gradient">gradient bake</a> is handy.</div>
+      <h3 id="spatial-gradient">Spread from a point in 3D space</h3>
+      <p>Place a center on a face of the model or in the space outside it, and spread color by 3D distance from there. The color does not change when you move the view.</p>
+      <ol class="mn-steps">
+        <li>Select the layer to paint.</li>
+        <li>Click "Paint from a 3D point" in the Gradient Tool properties. The "3D spatial gradient" window opens.</li>
+        <li>In the 3D view, click a face of the model or an empty spot to place the center.</li>
+        <li>Set how the color spreads with "Spread distance" and the color and opacity stops or presets. It appears on the selected layer right away.</li>
+        <li>Click "Paint on layer" to confirm.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>After you confirm, one Undo reverts it. If you cancel, the layer goes back to the original drawing.</li>
+        <li>This is an operation for 3D models. On the 2D canvas, draw with an ordinary drag.</li>
+      </ul>
+      <h3 id="gradient-range-guide">Move the center and set the spread distance</h3>
+      <ul class="mn-list">
+        <li>Move the center by dragging the arrows, the plane or the handle at the center, or by entering X, Y and Z coordinates.</li>
+        <li>Use "Pick center in 3D view" to place it again, and "Clear center" to remove it. While you are placing a point, press <kbd>Esc</kbd> to cancel.</li>
+        <li>When you place it in space, it goes at the same depth as the current center (or the model's center if there is none yet).</li>
+        <li>"Spread distance" is a percentage (%) of the model's height.</li>
+        <li>Selection, hidden areas, Lock transparency and masks are respected.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="shape" data-keywords="line rectangle square circle ellipse polygon triangle curve spline bezier outline shape tool">
+      <h2>Draw shapes</h2>
+      <p>With the Shape tool, you draw lines, rectangles, ellipses, polygons and curves in the foreground color. You can draw in both the 3D view and the UV view.</p>
+      <ol class="mn-steps">
+        <li>Click "Shape" on the toolbar and choose a form with the sub tool.</li>
+        <li>In the 3D view, drag from the start point to the end point.</li>
+        <li>When you release, it is drawn in the foreground color.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">How to draw</th></tr></thead><tbody>
+        <tr><td>Linear</td><td>Connects the two points you drag. <kbd>Shift</kbd> gives 45° steps</td></tr>
+        <tr><td>Rectangle, Ellipse, Polygon</td><td>Fills the inside. <kbd>Shift</kbd> gives a square, a circle or an undistorted regular polygon</td></tr>
+        <tr><td>Rectangle (outline), Ellipse (outline), Polygon (outline)</td><td>Draws only the outline</td></tr>
+        <tr><td>Curve</td><td>After you drag and release, moving the mouse bends the line. Press again or press <kbd>Enter</kbd> to confirm</td></tr>
+        <tr><td>Curve (connect points)</td><td>Each click places a point (up to 24) and makes a smooth line through the points. Double-click or press <kbd>Enter</kbd> to confirm, and press <kbd>Backspace</kbd> to remove the last point</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>With "Draw from center" on, the start point becomes the center.</li>
+        <li>The number of "Corners" of a polygon is 3 to 12. A corner points up, and with an even number of corners the top and bottom are flat.</li>
+        <li>With Curve (connect points), turning on "Close (make a loop)" makes a loop, and setting "Painting style" to "Fill" fills the inside. You can use it to fill a free-form shape.</li>
+        <li>"Line width" is linked to the brush size (up to 500). Changing it from the brush size list, <kbd>[</kbd> <kbd>]</kbd> or the popup palette has the same effect. It is kept for each Shape sub tool and does not change the pen's size.</li>
+        <li>If you choose an image tip in Tool properties, it is placed along the outline of the shape (stitches, lace and so on). Choose "Round" to go back to an ordinary line.</li>
+        <li>It applies only to visible faces and counts as one Undo step. While drawing, press <kbd>Esc</kbd> to cancel.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="radial menu quick menu pen side button one hand tablet pen only palette pie">
+      <h2>Change color and size with the pen only (popup palette)</h2>
+      <p>If you press and release the pen's side button without moving the pen, a round palette appears on the spot. You can choose frequently used sub tools, the foreground color and the brush size while holding the pen.</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="The popup palette" loading="lazy"><figcaption>Popup palette</figcaption></figure>
+      <p>How to bring it up, how to use each part and the setting for bringing it up with a mouse are covered in <a href="/petanuri/en/manual/screen#popup">Popup palette</a>.</p>
+    </section>
+
+    <section class="mn-sec" id="works" data-keywords="outfit clothing accessory prop hat examples gallery samples">
+      <h2>You can paint clothes and accessories too</h2>
+      <p>You can paint outfits and accessories with the same tools, not only the avatar's body. Below are examples of outfits and accessories from the <span lang="ja">ののつよ</span> series, opened in PetaNuri3D.</p>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/outfit-komainu-flat.webp" width="698" height="698" alt="The Komainu Sailor outfit opened in PetaNuri3D" loading="lazy"><figcaption>Komainu Sailor (<span lang="ja">狛犬セーラー</span>)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-furin-flat.webp" width="698" height="698" alt="The wind chime (furin) opened in PetaNuri3D" loading="lazy"><figcaption>Wind chime (accessory for <span lang="ja">獄門しのぶ</span>)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/prop-magichat-flat.webp" width="698" height="698" alt="The magic hat opened in PetaNuri3D" loading="lazy"><figcaption>Magic hat (accessory for <span lang="ja">星羽の魔導衣</span>)</figcaption></figure></div>
+      <div class="mn-tip">To draw a line only inside one part (a UV island), first select that part with "Select by island" in Selection, then draw. Nothing is drawn outside the selection (<a href="/petanuri/en/manual/edit#select">Selection</a>).</div>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/screen"><small>← Previous</small>Interface, panels and preferences</a><a class="next" href="/petanuri/en/manual/deco"><small>Next →</small>Stamps, patterns and stitches</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +665,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>最终效果与 lilToon 材质 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="检查 lilToon 风格效果（最终效果、β 版）、绘制阴影色与蒙版（绘制目标文件夹）、主颜色2nd／3rd、拆分材质、导入 lilToon 材质、导出 .unitypackage。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="用 lilToon 的外观（最终效果、β 版）确认、绘制阴影色和蒙版（绘制目标文件夹）、主颜色 2nd／3rd、拆分材质、加载 lilToon 材质、导出为 .unitypackage。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/material">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="最终效果与 lilToon 材质 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="检查 lilToon 风格效果（最终效果、β 版）、绘制阴影色与蒙版（绘制目标文件夹）、主颜色2nd／3rd、拆分材质、导入 lilToon 材质、导出 .unitypackage。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="用 lilToon 的外观（最终效果、β 版）确认、绘制阴影色和蒙版（绘制目标文件夹）、主颜色 2nd／3rd、拆分材质、加载 lilToon 材质、导出为 .unitypackage。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/material">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "最终效果与 lilToon 材质 Pro | PetaNuri3D 使用手册",
-   "description": "检查 lilToon 风格效果（最终效果、β 版）、绘制阴影色与蒙版（绘制目标文件夹）、主颜色2nd／3rd、拆分材质、导入 lilToon 材质、导出 .unitypackage。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "用 lilToon 的外观（最终效果、β 版）确认、绘制阴影色和蒙版（绘制目标文件夹）、主颜色 2nd／3rd、拆分材质、加载 lilToon 材质、导出为 .unitypackage。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/material",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,20 +123,260 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material" aria-current="page">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material" aria-current="page">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 最终效果与 lilToon 材质</p>
     <h1 class="mn-h1">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">可在与 lilToon 相同计算方式的效果中检查、绘制（阴影、MatCap、边缘光、轮廓线等），并将设置一同导出为材质。本页功能仅 Pro 可用。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <p class="mn-proof">“最终效果（lilToon 外观）”为 β 版。计算方式与 lilToon（2.3 系列）相同，但与 Unity 中的显示可能略有差异。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#look">查看“最终效果”</a></li><li><a href="#channels">绘制阴影色、蒙版等（绘制目标）</a></li><li><a href="#main2">主颜色2nd、主颜色3rd</a></li><li><a href="#split">拆分材质</a></li><li><a href="#lil">加载 lilToon 材质</a></li><li><a href="#export">导出材质</a></li></ul></div>
-    <section class="mn-sec" id="look"><h2>查看“最终效果”</h2><ul class="mn-list"><li>用 3D 视图左上4个显示方式图标最右侧（也可右键 → 显示）切换为“最终效果”。</li><li>阴影（阴影色1、阴影色2、边界色）、法线贴图、MatCap、MatCap 2nd、边缘光、逆光、边缘阴影、自发光、轮廓线采用与 lilToon（2.3 系列）相同方式计算。</li><li>光照方向在显示方式 ▼ 或“材质”面板“显示与光照”调整。“光跟随相机”会保持相同受光角度，便于转动视角绘制。</li><li>“材质”面板参数名称与 lilToon 设置界面一致。“复制到其他材质”可让所有材质采用相同设置。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="最终效果显示。包含阴影、边缘光、轮廓线" loading="lazy"><figcaption>最终效果显示</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="材质面板" loading="lazy"><figcaption>“材质”面板（上方为材质列表）</figcaption></figure></div><figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="使用最终效果显示的完整界面" loading="lazy"><figcaption>最终效果显示界面</figcaption></figure><div class="mn-tip">MToon效果预览（Pro，测试版）：在材质 → 显示与光照中选择MToon，可参考从VRM0/VRM1读取的阴影、边缘光、发光和轮廓绘制。调整支持撤销/重做并保存在项目中。</div><div class="mn-tip">此功能用于绘制中的效果预览，不支持MToon材质完整往返导出，PNG/PSD和现有lilToon材质导出保持不变。UV动画静态显示，不支持的UV设置会提示原因并返回普通显示。</div><div class="mn-tip">lilToon 设置新增（Pro）：边缘光的“光照方向影响”（直接光、间接光）、轮廓线的“高光”“反映光照亮度”、反射设置（光滑度、金属度、反射率、真实／卡通高光、环境光反射、立方体贴图）、闪粉形状、MatCap 的“自定义法线贴图”“法线贴图强度”、色调调整中的渐变映射、发光渐变、各向异性反射、抖动、溶解、视差和 AudioLink，均以与 lilToon 相同的计算显示。</div><div class="mn-tip">随声音或时间变化的效果，会按“声音强度（仅此预览）”“显示时刻”的值静止显示（不会导出）。轮廓线方向、主颜色 2nd／3rd 的溶解等不在显示中体现的设置，也会在 .mat 中读写数值和图像。</div></section><section class="mn-sec" id="channels"><h2>绘制阴影色、蒙版等（绘制目标）</h2><ol class="mn-steps"><li>用面板“绘制：”按钮（也可右键 → 绘制目标）选择目标。</li><li>图层面板主颜色上方会创建目标文件夹（如“阴影色 1”），并选中内部图层。与普通图层一样，可添加、删除、叠加、蒙版、剪贴。</li><li>用熟悉的钢笔、毛笔、填充、渐变、模糊、滤镜直接绘制。</li><li>点击上方中央“返回颜色”（或点击文件夹外图层），恢复普通颜色绘制。</li></ol><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="图层面板中的绘制目标文件夹" loading="lazy"><figcaption>绘制目标文件夹</figcaption></figure><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">绘制目标</th><th scope="col">如何生效？</th></tr></thead><tbody><tr><td>阴影色1、阴影色2</td><td>绘制位置的阴影会变为该颜色（如肌肤红润、头发阴影的蓝色）</td></tr><tr><td>阴影蒙版</td><td>白＝添加阴影、黑＝不添加阴影</td></tr><tr><td>阴影 AO</td><td>越黑越容易出现阴影（领口、头发内侧、服装重叠处）</td></tr><tr><td>法线贴图</td><td>按高度绘制。白色凸起、黑色凹陷（适合服装褶皱、缝线、发丝，<a href="/petanuri/zh/manual/deco#bump">凹凸</a>工具也可）</td></tr><tr><td>MatCap 蒙版、轮廓线宽度</td><td>白＝生效、黑＝不生效</td></tr><tr><td>边缘光颜色、自发光纹理</td><td>乘以绘制颜色／仅绘制区域以所绘颜色发光</td></tr></tbody></table></div><ul class="mn-list"><li>还可绘制阴影色3、阴影模糊蒙版、色调调整蒙版、Alpha 蒙版、自发光蒙版、自发光2nd、逆光颜色、边缘阴影蒙版、轮廓线颜色、法线贴图2nd 蒙版和闪粉颜色（右键 → 绘制目标 → 其他蒙版）。</li><li>仅读取亮度的绘制目标可通过上方中央的白、灰、黑切换。“仅查看此项”只显示该目标图像。“删除”恢复未绘制状态。</li><li>一个材质的最终效果显示最多同时使用16张纹理（超出时会提示“无法再添加”）。</li></ul><div class="mn-tip">绘制目标新增（Pro）：“其他蒙版”中新增光滑度、金属度、反射颜色、各向异性反射蒙版与噪波、溶解蒙版与噪波、视差高度、AudioLink 蒙版（使用相应设置时）。</div><div class="mn-tip">法线贴图图像图层（Pro）：其他软件制作的法线贴图图像也可作为图层放入法线贴图文件夹（在“材质”面板中点“添加法线贴图图像”，或选中文件夹内图层后将图像拖到窗口）。DirectX 方向的图像请在图层属性中开启“DirectX 方向（绿色反转）”。导入的 .mat 中的法线贴图也会成为此类图层。</div><div class="mn-tip">用图案添加质感（Pro）：在材质的法线贴图部分点“用图案添加质感”，可将针织、牛仔布、帆布、人字纹等图案作为重复凹凸铺入文件夹（大小、旋转、接缝在图层属性的“重复图案”中设置，强度用“法线贴图强度”）。选中文件夹内图层时，UV 区域以法线贴图颜色而非高度（灰色）显示（视图 →“以高度（灰色）显示法线贴图文件夹（UV）”可切回）。</div></section><section class="mn-sec" id="main2"><h2>主颜色2nd、主颜色3rd</h2><ul class="mn-list"><li>在“材质”面板“主颜色 2nd”“主颜色 3rd”开启“启用”，图层面板顶部会创建同名文件夹。</li><li>仅文件夹内图层成为主颜色2nd（3rd）纹理（不会混入主图像）。叠加方式（颜色、不透明度、混合模式、蒙版）在面板设置。</li><li>导出时成为独立图片（&lt;名称&gt;_main2nd.png 等），材质中会分配到 lilToon“主颜色 2nd/3rd”。</li></ul></section><section class="mn-sec" id="split"><h2>拆分材质</h2><ul class="mn-list"><li>默认每个纹理集有一个同名材质。不拆分时没有变化。</li><li>使用同一纹理（绘制图像），也可按对象修改阴影色、MatCap、边缘光、轮廓线等设置（例如保留头发纹理，仅让兽耳阴影变红）。</li><li>拆分方式：右键对象面板行或 3D 中该对象 →“仅此对象使用另一个材质”。通过“分配材质”选择所用材质。</li><li>“材质”面板上方列表可添加、改名、删除、排序（顺序＝重叠处优先级）。在 3D 点击的位置会切换材质面板，下方状态栏显示“材质：名称（纹理集名）”。</li><li>导出时每个材质生成一个 .mat（指向同一纹理）。</li></ul></section><section class="mn-sec" id="lil"><h2>加载 lilToon 材质</h2><ul class="mn-list"><li>文件 → 导入 → 导入 lilToon 材质，选择 .mat 或包含它的 .unitypackage（也可拖入窗口）。也可在新建“起始内容”选择。</li><li>会导入绘制模式、阴影、法线贴图、MatCap、边缘光、自发光、轮廓线、主颜色2nd／3rd 等设置及纹理（主颜色→底色，阴影色、蒙版等→绘制目标）。</li><li>从 .mat 附近的项目寻找纹理。未找到的纹理会列出，需手动选择图片。</li><li>PetaNuri3D 未模拟的设置（光泽、毛发、模板等）会保留原值，导出时原样恢复。</li><li>导出时保留原 .mat 的位置和 ID，仅更新修改后的设置和重绘纹理。</li></ul><div class="mn-tip">.mat 的导入与导出也支持新增的设置。主纹理也会从 URP、HDRP 用的别名（_BaseMap、_BaseColorMap）读取，导出时也会写入。</div></section><section class="mn-sec" id="export"><h2>导出材质</h2><ol class="mn-steps"><li>选择 文件 → 导出 → 导出材质（也可用面板“导出”）。</li><li>选择导出材质、文件夹名、导出扩边。</li><li>导出为 .unitypackage，或直接写入文件夹（项目 Assets）。.unitypackage 可双击或拖入项目导入。</li></ol><ul class="mn-list"><li>包含材质（.mat）、主颜色图片、阴影色、蒙版、法线贴图、MatCap 图片，且已完成分配。</li><li>同一工程使用相同文件夹名重新导出，会覆盖之前导入的内容（模型材质分配不变）。</li></ul><div class="mn-tip warn">导出的是 lilToon 材质。请先在目标项目安装 lilToon（否则材质会显示粉色）。</div></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/sets"><small>← 上一页</small>纹理集与对象</a><a class="next" href="/petanuri/zh/manual/ao"><small>下一页 →</small>烘焙 AO</a></nav>
+    <p class="mn-intro">可以一边看着与 lilToon 相同计算的外观（阴影、MatCap、边缘光、轮廓线等）一边绘制。还可以绘制阴影色和蒙版，连同设置一起作为 lilToon 材质交给 Unity。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <p class="mn-proof">这是 Pro 的功能。在 Lite 中，菜单和图标上会带锁形图标，“材质”面板里只显示说明。在 Standard 中不显示入口（<a href="/petanuri/zh/manual/start#editions">版本对比</a>）。“最终效果”是测试版，与 Unity 中的外观可能略有差别。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>用 3D 视图左上角的显示方式图标切换为“最终效果”，就能以 lilToon 的外观绘制（<a href="#look">详情</a>）。</li>
+      <li>阴影、边缘光、轮廓线等设置，在右侧的“材质”面板中更改（<a href="#look-panel">详情</a>）。</li>
+      <li>绘制阴影色或蒙版时，用面板中“绘制：”的按钮选择绘制目标。完成后点击“返回颜色”（<a href="#channels">详情</a>）。</li>
+      <li>已有的 lilToon 材质，通过 文件 → 导入 → 加载 lilToon 材质，可连同设置一起载入（<a href="#lil">详情</a>）。</li>
+      <li>交给 Unity 时，通过 文件 → 导出 → 导出材质 做成 .unitypackage（<a href="#export">详情</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#look">边确认 lilToon 外观边绘制</a></li><li><a href="#channels">绘制阴影色、蒙版、凹凸（绘制目标）</a></li><li><a href="#main2">叠加主颜色 2nd、3rd</a></li><li><a href="#split">只更改部分对象的设置</a></li><li><a href="#lil">加载 lilToon 材质</a></li><li><a href="#export">导出材质并交给 Unity</a></li></ul></div>
+
+    <section class="mn-sec" id="look" data-keywords="预览 卡通渲染 着色器 shader 效果预览 灯光 描边 光泽 beta">
+      <h2>边确认 lilToon 外观边绘制</h2>
+      <p>把显示方式设为“最终效果”后，绘制的颜色上会叠加与 lilToon 相同计算的阴影和光。带去 Unity 之前，就可以看着最终效果来绘制。</p>
+      <ol class="mn-steps">
+        <li>在 3D 视图左上角的 5 个显示方式图标中，点击从右数第 2 个（最终效果）。</li>
+        <li>像平常一样绘制。绘制的颜色上会叠加阴影、边缘光、轮廓线等。</li>
+        <li>只想确认绘制的颜色时，切回最左边的“保持绘制颜色”。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>其他入口：显示 → 显示方式 →“最终效果（lilToon、MToon，测试版）”，3D 视图右键 → 显示，“材质”面板中的“显示最终效果（lilToon，测试版）”。</li>
+        <li>显示的内容：阴影（阴影色 1、阴影色 2、阴影色 3、边界颜色）、法线贴图、MatCap、MatCap 2nd、边缘光、逆光、边缘阴影、自发光、轮廓线、反射、闪粉、各向异性反射、抖动、溶解、视差、AudioLink、色调调整。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/toon.webp" width="524" height="702" alt="最终效果显示。带有阴影、边缘光、轮廓线" loading="lazy"><figcaption>最终效果显示</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/material-panel.webp" width="299" height="589" alt="材质面板" loading="lazy"><figcaption>“材质”面板（上方为材质列表）</figcaption></figure></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/app-toon-full.webp" width="1400" height="840" alt="切换为最终效果显示后的整个界面" loading="lazy"><figcaption>最终效果显示的界面</figcaption></figure>
+
+      <h3 id="look-panel">在“材质”面板中更改设置</h3>
+      <p>设置按材质分别保存。项目名称与 lilToon 设置界面的叫法一致。每次更改都可以撤销。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分区</th><th scope="col">说明</th></tr></thead><tbody>
+        <tr><td>（最上方的列表）</td><td>材质列表。添加、重命名、删除、排序（<a href="#split">拆分材质</a>）</td></tr>
+        <tr><td>显示与光照</td><td>lilToon 还是 MToon 的外观、最终效果显示的开/关、光的方向与强度</td></tr>
+        <tr><td>lilToon：○○.mat</td><td>仅在加载了 .mat 时显示。未还原设置的列表、解除与加载来源的关联（<a href="#lil">加载</a>）</td></tr>
+        <tr><td>基本</td><td>渲染模式（不透明、镂空、半透明）、抖动（以网格透出）、渲染面、主颜色、色调调整（含渐变映射）、Alpha 蒙版</td></tr>
+        <tr><td>溶解</td><td>按位置逐渐消失（渲染模式为镂空、半透明时）</td></tr>
+        <tr><td>主颜色 2nd、主颜色 3rd</td><td>叠加的颜色（<a href="#main2">主颜色 2nd、3rd</a>）</td></tr>
+        <tr><td>阴影</td><td>阴影色 1–3、范围、模糊、边界颜色等</td></tr>
+        <tr><td>法线贴图</td><td>绘制出的高度凹凸、法线贴图强度、法线贴图 2nd（重复凹凸的图像）</td></tr>
+        <tr><td>各向异性反射、视差、反射</td><td>发丝般的高光、随观察方向错位的凹凸、光滑度、金属度、反射率、应用反射、立方体贴图</td></tr>
+        <tr><td>MatCap、MatCap 2nd</td><td>预设（柔和光泽、清晰光泽、天使环（头发）、边缘高光、金属（正片叠底）、融合（正片叠底））或加载的图像（从正面看球体的图片）。也可使用自定义法线贴图</td></tr>
+        <tr><td>边缘光、逆光、边缘阴影</td><td>边缘的光、光源另一侧的边缘、边缘的阴影</td></tr>
+        <tr><td>闪粉</td><td>细密度、颗粒大小、可见角度、随机颜色、形状（闪光、星形、心形、菱形、圆形、十字，或加载的图像）</td></tr>
+        <tr><td>自发光、自发光 2nd</td><td>自发光颜色、混合模式、渐变（颜色随时间变化）</td></tr>
+        <tr><td>AudioLink</td><td>随世界中的声音驱动自发光等（在 VRChat 中生效）</td></tr>
+        <tr><td>轮廓线</td><td>颜色、粗细、高光、反映光照亮度、方向图像</td></tr>
+        <tr><td>导出</td><td>“导出材质”“复制到其他材质”（全部设为相同设置。不复制绘制目标的内容）“初始化”</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>随声音或时间变化的内容，会固定在“声音强度（仅此预览）”“显示时刻”的值上来显示。这两个值不会包含在导出中。</li>
+        <li>未体现在显示中的设置（轮廓线的方向、主颜色 2nd/3rd 的溶解、用 AudioLink 移动顶点等），其数值和图像也会读写到 .mat 中。</li>
+        <li>设置、绘制目标的内容、加载的 MatCap 图像，会保存到工程文件（.petanuri）中。</li>
+      </ul>
+
+      <h3 id="look-light">更改光照方向</h3>
+      <ul class="mn-list">
+        <li>在“材质”面板“显示与光照”中的“光的左右”“光的高度”“光的强度”更改。也可以通过显示方式图标旁的 ▼ 更改（<a href="/petanuri/zh/manual/screen#light">光照方向</a>）。</li>
+        <li>开启“光跟随相机”后，即使旋转视角，光照方式也保持不变，更便于绘制。关闭后，光固定在模型上。</li>
+        <li>这个光仅用于确认外观。导出的材质的光，由在 Unity 中放置的光决定。</li>
+      </ul>
+
+      <h3 id="mtoon">用 MToon 外观确认</h3>
+      <p>可以一边用 MToon 外观确认 VRM 模型一边绘制（显示用预览，测试版）。</p>
+      <ol class="mn-steps">
+        <li>在“材质”面板的“显示与光照”中点击“MToon”。</li>
+        <li>点击“显示最终效果（MToon，测试版）”。</li>
+        <li>一边调整 MToon 用的颜色、阴影位置、清晰度、环境光、边缘、自发光、轮廓，一边绘制。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>如果 VRM0、VRM1 中有 MToon 设置，会以其颜色、阴影、边缘、自发光、轮廓和辅助图像为起点。没有的模型，则以标准外观开始。</li>
+        <li>“恢复原始 MToon 设置”只恢复外观的调整。绘制的图层不会消失。点击“lilToon”会回到 lilToon 的外观。</li>
+        <li>调整可以撤销、重做，也会保存到工程文件。</li>
+      </ul>
+      <div class="mn-tip warn">MToon 只是用来确认的显示。PNG、PSD 按绘制的颜色导出，材质导出仍是 lilToon 用的。不会导出 MToon 材质或 VRM。</div>
+
+      <h3 id="look-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>“最终效果”图标带锁，或没有该图标</b>：这是 Pro 的功能。Lite 中带锁，Standard 中不显示。</li>
+        <li><b>与在 Unity 中看到的略有不同</b>：因为是测试版，光线或背景的差异可能造成区别。光仅用于确认，在 Unity 中由放置的光决定。</li>
+        <li><b>切换为 MToon 后，又回到了普通显示</b>：不支持更改了主图像的位置、倍率、旋转的 UV 设置，以及使用 UV0 以外 UV 的图像。返回时会告知原因。UV 动画会停止后再显示。</li>
+        <li><b>想变透明的地方没有镂空</b>：把“基本”中的渲染模式设为“镂空”或“半透明”。“不透明”下不会读取透明度。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="channels" data-keywords="通道 蒙版 阴影蒙版 AO 阴影色 法线 凹凸 高度图 bump 自发光 emission 边缘光 描边 粗细 金属度 光滑度 闪粉 glitter">
+      <h2>绘制阴影色、蒙版、凹凸（绘制目标）</h2>
+      <p>不只是主颜色，阴影色、阴影蒙版、法线贴图（凹凸）、自发光等图像，也能用平常的笔来绘制。每个绘制目标，会在图层面板中生成一个文件夹。</p>
+      <ol class="mn-steps">
+        <li>点击“材质”面板各分区的“绘制：”按钮，选择绘制目标（也可以通过右键 → 绘制目标 选择）。</li>
+        <li>在图层面板的主颜色上方，会生成该绘制目标的文件夹（例如“阴影色 1”），并选中其中的图层。</li>
+        <li>用平常的钢笔、毛笔、填充、渐变、模糊、滤镜来绘制。</li>
+        <li>点击 3D 视图上方中间的“返回颜色”，会回到普通的颜色绘制。点击文件夹外的图层也会返回。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-channel-folder.webp" width="289" height="445" alt="图层面板中生成的绘制目标文件夹" loading="lazy"><figcaption>绘制目标的文件夹</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">绘制目标</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>阴影色 1、阴影色 2</td><td>绘制处的阴影会变成该颜色（肌肤的红润、头发阴影的蓝调等）。未绘制处，是原色乘以设置中的阴影色</td></tr>
+        <tr><td>阴影蒙版</td><td>白＝添加阴影，黑＝不添加阴影</td></tr>
+        <tr><td>阴影 AO</td><td>越黑越容易出现阴影（脖颈、头发内侧、衣服重叠处）。<a href="/petanuri/zh/manual/ao#output">烘焙 AO</a> 后，也能写入这里</td></tr>
+        <tr><td>法线贴图</td><td>按高度绘制。白色凸起、黑色凹陷、灰色平坦（用于衣服褶皱、缝线、发丝。<a href="#normal">绘制法线贴图</a>）</td></tr>
+        <tr><td>MatCap 蒙版、MatCap 2nd 蒙版、轮廓线宽度</td><td>白＝生效，黑＝不生效</td></tr>
+        <tr><td>边缘光颜色</td><td>乘上绘制的颜色（黑色则消失）</td></tr>
+        <tr><td>自发光纹理</td><td>只有绘制处会以绘制的颜色发光（乘上设置中的“自发光颜色”）</td></tr>
+      </tbody></table></div>
+
+      <h3 id="channels-more">其他绘制目标</h3>
+      <p>右键 → 绘制目标 → 其他蒙版（阴影色 3、色调调整、闪粉等）中也有列出。使用对应功能时可以绘制。</p>
+      <ul class="mn-list">
+        <li>阴影：阴影色 3、阴影模糊蒙版（绘制处的阴影交界更柔和）</li>
+        <li>颜色与透明：色调调整蒙版（只修正绘制处）、Alpha 蒙版（绘制透过的方式）</li>
+        <li>自发光：自发光蒙版、自发光 2nd 纹理、自发光 2nd 蒙版</li>
+        <li>边缘与轮廓：逆光颜色、边缘阴影蒙版、轮廓线颜色</li>
+        <li>质感：法线贴图 2nd 蒙版、闪粉颜色（黑色则不出现闪粉）、光滑度、金属度（白＝按设置，黑＝0）、反射颜色、各向异性反射遮罩、各向异性反射噪声</li>
+        <li>其他：消融遮罩、消融噪声、视差高度（白＝近处，黑＝深处）、AudioLink 遮罩</li>
+      </ul>
+
+      <h3 id="channels-bar">绘制时顶部中间的一栏</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">按钮</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>白、灰、黑</td><td>切换前景色。对只读取明亮度的绘制目标（蒙版、阴影 AO、法线贴图、轮廓线宽度），即使选了颜色，也按明亮度绘制。返回颜色后，会恢复之前的前景色</td></tr>
+        <tr><td>全部填充</td><td>用前景色把文件夹中正在绘制的图层全部涂满</td></tr>
+        <tr><td>仅查看此项</td><td>只显示该绘制目标的内容</td></tr>
+        <tr><td>清除</td><td>连同内容删除文件夹，回到未绘制的状态（可用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 恢复）</td></tr>
+        <tr><td>返回颜色</td><td>回到普通的颜色绘制（也可以用 编辑 →“将绘制目标切回颜色”）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>文件夹中的图层与普通图层一样，可以添加、删除、排序，也可以使用不透明度、混合模式、蒙版、剪贴、描边、向下合并。把其中的图层叠加后的图像，就是该绘制目标的图像。</li>
+        <li>文件夹只会显示正在使用的绘制目标。文件夹本身不能移动，也不能删除（要删除时用“清除”）。</li>
+        <li>文件夹中的图层不计入 Lite 的图层数量。用橡皮擦擦掉的地方，会回到未绘制的状态。</li>
+        <li>UV 区域也会显示正在绘制的绘制目标的内容。</li>
+      </ul>
+
+      <h3 id="normal">绘制法线贴图（凹凸）</h3>
+      <ol class="mn-steps">
+        <li>在“材质”面板的“法线贴图”中，勾选“使用法线贴图”。</li>
+        <li>点击“绘制：”中的“法线贴图”。图层最上方会生成“法线贴图”文件夹。</li>
+        <li>白色凸起，黑色凹陷。用模糊可以变柔和。强度之后可以用“法线贴图强度”调整。</li>
+      </ol>
+      <ul class="mn-list">
+        <li><b>用其他软件制作的法线贴图图像</b>：用“添加法线贴图图像”，或选中文件夹中的图层后把图像拖放到窗口中。会以法线的形式放入，而不是高度（图层带有“法线”标签）。DirectX 方向的图像，请勾选图层属性中的“DirectX 方向（绿色反转）”。</li>
+        <li><b>用图案添加质感</b>：把针织、牛仔布、帆布、人字纹等图案，铺成重复的凹凸。大小、旋转、接缝用图层属性中的“重复图案”更改。可以用蒙版决定添加的位置。</li>
+        <li>选中文件夹中的图层期间，UV 区域不显示高度（灰色），而是显示法线贴图的颜色（蓝紫色）。可通过 右键 → 显示 →“以高度（灰色）显示法线贴图文件夹（UV）”切回灰色。</li>
+        <li>也有绘制凹凸的工具（<a href="/petanuri/zh/manual/deco#bump">凹凸</a>）。</li>
+        <li>导出时，PNG 是一张 &lt;名称&gt;_normal.png，PSD 则在“法线贴图”组中保持图层分开。</li>
+      </ul>
+
+      <h3 id="channels-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>出现“无法再添加”</b>：一个材质的最终效果显示中，可同时使用的纹理最多 16 个。关闭其他功能，或“清除”不用的绘制目标即可使用。</li>
+        <li><b>选了颜色也只能用灰色绘制</b>：正在绘制的是只读取明亮度的绘制目标。要回到普通的颜色，请点击“返回颜色”。</li>
+        <li><b>无法删除、移动绘制目标的文件夹</b>：文件夹无法删除。要连同绘制目标一起删除时，点击顶部中间的“清除”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="main2" data-keywords="主色2 主色3 第二层 第三层 叠加 贴花 decal 另一张纹理 图案叠加">
+      <h2>叠加主颜色 2nd、3rd</h2>
+      <p>可以把 lilToon 的“主颜色 2nd”“主颜色 3rd”用的图，与主颜色的图分开绘制。想用另一张图像叠加图案或花纹时使用。</p>
+      <ol class="mn-steps">
+        <li>在“材质”面板的“主颜色 2nd”中，勾选“使用主颜色 2nd”。</li>
+        <li>图层面板最上方会生成“主颜色 2nd”文件夹。</li>
+        <li>选中文件夹，添加图层并绘制。把普通图层拖入文件夹中也可以。</li>
+        <li>在面板中决定叠加方式（颜色、不透明度、混合模式、反映光照亮度）。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>只有文件夹中的图层会成为 2nd（3rd）的纹理，不会混入主颜色的图。混合模式有 正常、相加、滤色、正片叠底。</li>
+        <li>用绘制目标“主颜色 2nd 蒙版”，可以绘制叠加处（白）和不叠加处（黑）。</li>
+        <li>文件夹不能移动、删除、复制。文件夹中有图层时，无法取消“启用”（清空文件夹后即可取消，文件夹也会消失）。</li>
+        <li>导出时会成为单独的图像（&lt;名称&gt;_main2nd.png、&lt;名称&gt;_main3rd.png，以及绘制的蒙版）。PSD 中保持为文件夹，重新导入时会回到这个文件夹。在材质中，会进入 lilToon 的“主颜色 2nd/3rd”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="split" data-keywords="增加材质 多个材质 分配 单独 兽耳 优先级 独立材质 复制材质">
+      <h2>只更改部分对象的设置（拆分材质）</h2>
+      <p>在同一纹理（绘制的图）不变的情况下，可以按对象更改阴影色、MatCap、边缘光、轮廓线等设置。例如，头发纹理不变，只让兽耳的阴影变红。</p>
+      <ol class="mn-steps">
+        <li>在 3D 视图中右键点击该对象，或右键点击对象面板中的行。</li>
+        <li>选择“仅此对象使用另一个材质”。会以对象的名称添加一个当前材质的副本并分配给它。</li>
+        <li>在“材质”面板中，更改该材质的设置。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>起初，每个纹理集有一个同名的材质。不拆分的话，什么都不会变。</li>
+        <li>通过右键的“分配材质”或面板的“分配给对象”，可以选择使用哪个材质。可选的只有使用同一纹理集的材质。</li>
+        <li>在面板上方的列表中，可以添加（当前材质的副本）、重命名、删除、上移、下移。纹理集的原始材质不能删除。</li>
+        <li>列表的顺序就是优先级。同一位置有多个对象重叠时，会选中靠上的材质。</li>
+        <li>点击 3D 中的位置，面板会切换到该位置的材质，下方状态栏会显示“材质：名称（纹理集名称）”。</li>
+        <li>导出时，每个材质一个 .mat。纹理按纹理集各一组，指向同一份。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="lil" data-keywords="mat unitypackage 导入 载入 现有 原材质 修改 覆盖 已有材质 改造">
+      <h2>加载 lilToon 材质</h2>
+      <p>加载虚拟形象上已有的 lilToon 材质，可以接着其设置和图像继续绘制。导出时，只有重新绘制的部分会写入原材质。</p>
+      <ol class="mn-steps">
+        <li>选择 文件 → 导入 →“加载 lilToon 材质（.mat、.unitypackage）”。</li>
+        <li>选择 .mat，或包含它的 .unitypackage。拖放到窗口中也可以。</li>
+        <li>选了多个时，在弹出的窗口中确认要放入的纹理集（会放入名称匹配的纹理集）。</li>
+        <li>如果有找不到的纹理，会列在列表中，请选择图像（不选则不放入就加载）。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在新建的“起始内容”中也可以选择（<a href="/petanuri/zh/manual/start#new-start">起始内容的种类</a>）。</li>
+        <li>载入的设置：渲染模式、渲染面、主颜色、阴影、法线贴图、MatCap/2nd、边缘光、逆光、边缘阴影、自发光、轮廓线、主颜色 2nd/3rd 等。</li>
+        <li>载入的图像：主颜色 → 底色图层（PSD 则连同图层），2nd/3rd → 对应的文件夹，阴影色、蒙版、边缘光颜色、自发光、轮廓线宽度、AO → 绘制目标，MatCap → MatCap，法线贴图 → 法线贴图文件夹（保持为法线）。</li>
+        <li>纹理会从 .mat 附近的项目（Assets、Packages）中查找。首次需要几秒到十几秒。.unitypackage 则从其中查找。</li>
+        <li>选择多个使用同一纹理的 .mat 时，它们会进入同一个纹理集，从第 2 个起成为独立的材质。</li>
+        <li>加载可以撤销（1 步）。该纹理集的材质设置、绘制目标、底色图、主颜色 2nd/3rd 会被替换。</li>
+      </ul>
+      <h3 id="lil-unsupported">未还原的设置</h3>
+      <p>PetaNuri3D 没有模拟的设置（模板、距离淡出、UV 动画、纹理平铺等），会在加载后通过“未还原的设置”列表告知。数值会原样保留，导出时也会原样写回。该列表也可以从面板的“lilToon：○○.mat”分区中查看。</p>
+      <h3 id="lil-write">写回原材质</h3>
+      <ul class="mn-list">
+        <li>导出加载的材质时，会保持与原 .mat 相同的位置、相同的 ID，只改写更改过的设置行和重新绘制的纹理。没有更改的纹理不会导出。</li>
+        <li>把 .unitypackage 导入项目后，原材质和纹理会当场被覆盖（对模型的分配保持不变）。</li>
+        <li>重新绘制了原本不是 PNG 或没找到的纹理时，会在 .mat 旁边新建 PNG 并替换。</li>
+        <li>想作为新材质导出时，点击面板中的“解除与加载来源的关联”。</li>
+      </ul>
+      <div class="mn-tip warn">这会覆盖原项目的文件。不想直接改写所购买虚拟形象的材质时，请先复制项目，或点击“解除与加载来源的关联”后再导出。</div>
+    </section>
+
+    <section class="mn-sec" id="export" data-keywords="unitypackage 导出 输出 mat 带到Unity 粉色 粉红 紫色 丢失着色器 导入Unity">
+      <h2>导出材质并交给 Unity</h2>
+      <p>把 lilToon 用的材质（.mat）和绘制的图像一起导出。导入 Unity 后，就是已分配好纹理的材质。</p>
+      <ol class="mn-steps">
+        <li>选择 文件 → 导出 →“导出材质（.unitypackage／文件夹）”（也可以用“材质”面板中的“导出材质”）。</li>
+        <li>在“要导出的材质”中打勾。</li>
+        <li>设定“导出目标文件夹名（Assets 下）”、分辨率和“外扩（填充）”。</li>
+        <li>点击“导出为 .unitypackage”，选择保存位置。</li>
+        <li>在 Unity 中，双击生成的 .unitypackage，或拖入 Project 栏进行导入。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>包含的内容：材质（.mat），以及主颜色、阴影色、蒙版、法线贴图、MatCap 等图像。绘制目标只有在使用对应功能时才会包含。</li>
+        <li>“导出到文件夹”：选择 Unity 项目的 Assets，会连同 .meta 直接写入（仅应用（exe））。</li>
+        <li>图像会向 UV 岛外，按“外扩（填充）”的宽度扩展颜色（<a href="/petanuri/zh/manual/export#pad">导出扩边</a>）。</li>
+        <li>用相同的文件夹名重新导出同一工程时，之前导入的内容会被原样覆盖（对模型的分配保持不变）。</li>
+        <li>带 ! 的纹理集（模型中不存在的纹理集）不会导出。</li>
+      </ul>
+      <div class="mn-tip warn">导出的是 lilToon（2.3 系列）用的材质。请在要导入的项目中事先装好 lilToon。</div>
+      <h3 id="export-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Unity 中材质变成粉红色</b>：该项目中没有 lilToon。装上 lilToon 就能解决。</li>
+        <li><b>无法使用“导出到文件夹”</b>：只能在应用（exe）中使用。请导出为 .unitypackage。</li>
+        <li><b>虚拟形象上没有反映</b>：请把导出的材质分配到模型的材质栏。加载原 .mat 后导出时，原材质会被原样覆盖。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/ao">烘焙 AO</a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与明暗</a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/layers#folder">文件夹、蒙版</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/sets"><small>← 上一页</small>纹理集</a><a class="next" href="/petanuri/zh/manual/ao"><small>下一页 →</small>烘焙 AO</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -155,5 +395,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

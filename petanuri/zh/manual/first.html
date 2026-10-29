@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>初次使用：花约 10 分钟试着给示例模型上色 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
+  <meta name="description" content="用示例模型把打开、旋转、绘制、左右对称、保存、导出完整试做一遍。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/first">
+  <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/petanuri/assets/css/petanuri.css">
+  <!-- languages:start -->
+  <link rel="alternate" hreflang="ja" href="https://hyper-tuyotuyo.com/petanuri/manual/first">
+  <link rel="alternate" hreflang="en" href="https://hyper-tuyotuyo.com/petanuri/en/manual/first">
+  <link rel="alternate" hreflang="ko" href="https://hyper-tuyotuyo.com/petanuri/ko/manual/first">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/first">
+  <link rel="alternate" hreflang="x-default" href="https://hyper-tuyotuyo.com/petanuri/manual/first">
+  <!-- languages:end -->
+  <!-- seo:start（tools/hypertuyotuyo-site/seo.py が書く。手で直さない） -->
+  <meta property="og:site_name" content="はいぱーつよつよ">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:site" content="@Yak_HyperTYTY">
+  <meta property="og:title" content="初次使用：花约 10 分钟试着给示例模型上色 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
+  <meta property="og:description" content="用示例模型把打开、旋转、绘制、左右对称、保存、导出完整试做一遍。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/first">
+  <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hyper TuyoTuyo",
+     "item": "https://hyper-tuyotuyo.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "PetaNuri3D",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "使用手册",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "初次使用：花约 10 分钟试着给示例模型上色",
+     "item": "https://hyper-tuyotuyo.com/petanuri/zh/manual/first"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "初次使用：花约 10 分钟试着给示例模型上色 | PetaNuri3D 使用手册",
+   "description": "用示例模型把打开、旋转、绘制、左右对称、保存、导出完整试做一遍。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/first",
+   "inLanguage": "zh-Hans",
+   "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
+   "dateModified": "2026-10-30",
+   "about": {
+    "@id": "https://hyper-tuyotuyo.com/petanuri#app",
+    "@type": "SoftwareApplication",
+    "name": "PetaNuri3D"
+   },
+   "isPartOf": {
+    "@type": "WebPage",
+    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual",
+    "name": "PetaNuri3D 使用手册"
+   },
+   "author": {
+    "@id": "https://hyper-tuyotuyo.com/#org"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://hyper-tuyotuyo.com/#org",
+    "name": "はいぱーつよつよ",
+    "alternateName": "Hyper TuyoTuyo",
+    "url": "https://hyper-tuyotuyo.com/",
+    "logo": "https://hyper-tuyotuyo.com/data/hypertuyotuyo.png",
+    "description": "VRChat 向けのアバター・衣装・アバターギミックと、3D ペイントツール「ぺたぬり3D」を作る創作サークル",
+    "sameAs": [
+     "https://hyper-tuyotuyo.booth.pm/",
+     "https://x.com/Yak_HyperTYTY",
+     "https://vrchat.com/home/user/usr_c74f77c0-51f9-4c02-8f21-991cef07ba9d"
+    ]
+   }
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+</head>
+<body class="pn-body">
+<nav class="pn-nav" aria-label="菜单">
+  <div class="pn-nav-inner">
+    <a href="/" class="pn-nav-logo" aria-label="返回 HYPERtuyotuyo 首页"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="40" height="28"></a>
+    <a href="/petanuri/zh" class="pn-nav-title"><img src="/petanuri/assets/img/brand/logo.svg" alt="PetaNuri3D" width="90" height="36"></a>
+    <select class="pn-language" aria-label="选择语言"><option value="ja" data-url="/petanuri/manual/first">日本語</option><option value="en" data-url="/petanuri/en/manual/first">English</option><option value="ko" data-url="/petanuri/ko/manual/first">한국어</option><option value="zh" data-url="/petanuri/zh/manual/first" selected>简体中文</option></select>
+    <button class="pn-burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="pn-links"><span></span><span></span><span></span></button>
+    <ul class="pn-nav-links" id="pn-links">
+      <li><a href="/petanuri/zh">产品介绍</a></li>
+      <li><a href="/petanuri/zh#gallery">效果示例</a></li>
+      <li><a href="/petanuri/zh#features">功能列表</a></li>
+      <li><a href="/petanuri/zh#price">价格</a></li>
+      <li><a href="/petanuri/zh/manual">使用手册</a></li>
+      <li><a href="/petanuri/zh/changelog">更新记录</a></li>
+      <li><a href="/petanuri/zh/requests">需求</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mn-wrap">
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
+    <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first" aria-current="page">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+  </aside>
+  <main class="mn-main">
+    <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 初次使用：花约 10 分钟试着给示例模型上色</p>
+    <h1 class="mn-h1">初次使用：花约 10 分钟试着给示例模型上色</h1>
+    <p class="mn-intro">用练习用的模型“Shinobu”，完整试做一遍：打开、旋转、绘制、左右对称、填充、保存与导出。任何版本（包括免费的 Lite）都能做。先跳过细节设置，完整做完一遍，就是本页的目标。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>需要准备的东西</b><ol>
+      <li>装有 PetaNuri3D 的 Windows 电脑（安装方法见<a href="/petanuri/zh/manual/start#launch">安装与启动</a>）。</li>
+      <li>鼠标（带滚轮和右键的）或数位板。</li>
+      <li>不需要自己的模型。示例模型已内置在应用中。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#open">1. 打开“Shinobu”</a></li><li><a href="#look">2. 旋转查看</a></li><li><a href="#layer">3. 添加用于绘制的图层</a></li><li><a href="#draw">4. 选择颜色并绘制</a></li><li><a href="#mirror">5. 左右对称绘制</a></li><li><a href="#fill">6. 用填充一次涂满</a></li><li><a href="#uv">7. 在 UV 中确认</a></li><li><a href="#save">8. 保存并导出纹理</a></li><li><a href="#next">接下来阅读的页面</a></li></ul></div>
+
+    <section class="mn-sec" id="open" data-keywords="教程 新手教程 示例 样例模型 练习 启动画面 入门 第一次">
+      <h2>1. 打开“Shinobu”</h2>
+      <p>在启动画面中，打开练习用的模型。</p>
+      <ol class="mn-steps">
+        <li>启动 PetaNuri3D。</li>
+        <li>点击中间的“<strong>用示例试试</strong>”。</li>
+        <li>中间出现“Shinobu”后，准备完成。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/after-painted.webp" width="524" height="702" alt="示例模型“Shinobu”" loading="lazy"><figcaption>示例模型“Shinobu”</figcaption></figure>
+      <ul class="mn-list">
+        <li>初次启动时会出现操作引导（教程）。可以按引导一步步进行，也可以点击“跳过”或按 <kbd>Esc</kbd> 关闭，继续按本页操作。</li>
+        <li>Shinobu 按部位划分成了多个<strong>纹理集</strong>（以一张纹理为单位的一组内容）。会自动切换到开始绘制处所在的纹理集，现在不必在意。</li>
+      </ul>
+      <div class="mn-tip warn">示例模型仅限用于试用 PetaNuri3D。请勿取出后分发，也不要用于其他用途。</div>
+    </section>
+
+    <section class="mn-sec" id="look" data-keywords="视角 相机 摄像机 旋转 缩放 放大 缩小 平移 正视图 导航">
+      <h2>2. 旋转查看</h2>
+      <p>移动视角，让想上色的位置可见。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想做的事</th><th scope="col">鼠标</th><th scope="col">数位笔</th></tr></thead><tbody>
+        <tr><td>旋转</td><td>按住右键拖动</td><td>按住侧键移动，或 <kbd>Space</kbd>+拖动</td></tr>
+        <tr><td>平移</td><td>按住中键（滚轮）拖动</td><td><kbd>Shift</kbd>+<kbd>Space</kbd>+拖动</td></tr>
+        <tr><td>拉近、拉远</td><td>转动滚轮</td><td><kbd>Ctrl</kbd>+<kbd>Space</kbd>+拖动</td></tr>
+        <tr><td>从正面查看</td><td colspan="2">小键盘的 <kbd>1</kbd></td></tr>
+        <tr><td>查看整体</td><td colspan="2"><kbd>F</kbd></td></tr>
+      </tbody></table></div>
+      <p>左键（笔尖）用于绘制。不知所措时，按 <kbd>F</kbd> 回到整体视图。</p>
+      <div class="mn-tip">想改成其他软件的习惯操作时，之后可以在“相机操作模板”中更改（<a href="/petanuri/zh/manual/keys#camera">相机操作模板</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="layer" data-keywords="图层 新建图层 添加图层 新增图层 叠加 分层 另起一层">
+      <h2>3. 添加用于绘制的图层</h2>
+      <p>与原图（底色）分开绘制，即使画坏了，也只需删除该图层。</p>
+      <ol class="mn-steps">
+        <li>在想绘制的位置（例如头发）上按 <kbd>Alt</kbd>+右键。会选中该处的纹理集，并短暂地泛起一层颜色。</li>
+        <li>按 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>。点击图层面板底部最左边的按钮也一样。</li>
+        <li>图层面板中会添加新图层，并处于选中状态。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="图层面板。多个图层叠在一起" loading="lazy"><figcaption>图层面板</figcaption></figure>
+      <div class="mn-tip">Lite 版中，每个纹理集最多 4 个图层（含底色）。这个练习足够用。</div>
+    </section>
+
+    <section class="mn-sec" id="draw" data-keywords="钢笔 画笔 画线 选色 取色 粗细 笔刷大小 撤销 重做">
+      <h2>4. 选择颜色并绘制</h2>
+      <p>用钢笔在 Shinobu 的头发和耳朵上描画。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>P</kbd>，切换为钢笔。</li>
+        <li>在右侧的“色彩”面板中，点击喜欢的颜色。</li>
+        <li>用左键（笔尖）在 Shinobu 的头发上描画。</li>
+        <li>画坏了就按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销一步。重做按 <kbd>Ctrl</kbd>+<kbd>Y</kbd>。</li>
+      </ol>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-color.webp" width="259" height="352" alt="色彩面板与颜色值面板" loading="lazy"><figcaption>色彩面板</figcaption></figure>
+      <ul class="mn-list">
+        <li>线条粗细：按 <kbd>[</kbd> 变细，按 <kbd>]</kbd> 变粗。</li>
+        <li>在 Shinobu 上按住 <kbd>Alt</kbd> 并点击，可以取该处的颜色（吸管）。</li>
+        <li>想擦除时，按 <kbd>E</kbd> 切换为橡皮擦。</li>
+      </ul>
+      <h3 id="draw-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>用数位笔绘制，粗细却不变</b>：未收到笔压（<a href="/petanuri/zh/manual/keys#pressure">笔压不生效时</a>）。</li>
+        <li><b>画不出来、没有线条</b>：请在图层面板中检查所选图层是否被隐藏或锁定。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mirror" data-keywords="对称 镜像 左右镜像 对称绘制 另一侧 两侧 对称笔刷 symmetry">
+      <h2>5. 左右对称绘制</h2>
+      <p>在脸的一侧绘制，另一侧也会出现同样的线条。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>M</kbd>。3D 视图左上角的 <strong>X</strong> 会亮起颜色。</li>
+        <li>在 Shinobu 脸的一侧（脸颊等）绘制。</li>
+        <li>另一侧也会出现同样的线条。</li>
+        <li>画完后，再按一次 <kbd>M</kbd> 关闭。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/mirror.webp" width="654" height="675" alt="左右对称绘制，一侧手臂的星形也出现在另一侧" loading="lazy"><figcaption>在一侧绘制，另一侧也会出现</figcaption></figure>
+      <p>详细设置（前后、上下对称，对称中心的确定方法）见<a href="/petanuri/zh/manual/draw#mirror">对称绘制</a>。</p>
+    </section>
+
+    <section class="mn-sec" id="fill" data-keywords="油漆桶 填充 填色 平涂 一次涂满 大面积上色 部位 UV岛 bucket">
+      <h2>6. 用填充一次涂满</h2>
+      <p>把衣服的某一个部分一次涂成同一种颜色。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>G</kbd>，切换为填充。</li>
+        <li>在辅助工具面板中选择“填充 UV 岛”。</li>
+        <li>点击想涂的衣服。点击处相连的一整块（UV <strong>岛</strong>）会用前景色填满。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>涂得比预想的大时，按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销。只想填充线条围住的范围时，使用“填充封闭区域”（<a href="/petanuri/zh/manual/draw#fill">填充</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uv" data-keywords="UV展开图 UV展开 UV贴图 纹理位置 画到哪里 并排显示 UV编辑器">
+      <h2>7. 在 UV 中确认</h2>
+      <p>查看画的线落在纹理图像的什么位置。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>U</kbd>。3D 视图旁会显示 UV（纹理的展开图）。</li>
+        <li>查看刚才画的线在 UV 上的位置。也可以直接在 UV 上绘制。</li>
+        <li>再按一次 <kbd>U</kbd> 关闭。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="3D 视图旁显示 UV 区域的界面" loading="lazy"><figcaption>3D 视图与 UV 并排显示</figcaption></figure>
+      <div class="mn-tip">像项圈内侧这样因重叠而无法绘制的位置，用工具栏中的“隐藏笔”（眼睛加斜线的图标）划过，前面的面就会被隐藏，从而可以绘制。按 <kbd>Alt</kbd>+<kbd>H</kbd> 恢复全部显示（<a href="/petanuri/zh/manual/uv#hidepen">隐藏笔</a>）。</div>
+    </section>
+
+    <section class="mn-sec" id="save" data-keywords="保存 存档 导出 输出 PNG 图片 贴图 完成 用于Unity export">
+      <h2>8. 保存并导出纹理</h2>
+      <p>PetaNuri3D 有两种操作：保留工作进度的“保存”，和生成纹理图像的“导出”。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>Ctrl</kbd>+<kbd>S</kbd>，保存为工程文件（.petanuri）。图层会保持分开，以后可以继续修改。</li>
+        <li>选择 文件 → 导出 → 导出 PNG（全部纹理集）。</li>
+        <li>在弹出的窗口中直接点击“导出”，选择保存位置。</li>
+        <li>每个纹理集会生成一张 PNG 图像（文件名为材质名称）。导出的文件夹会自动打开。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="导出窗口。选择扩边和导出位置" loading="lazy"><figcaption>导出窗口</figcaption></figure>
+      <p>用于虚拟形象或游戏引擎（Unity 等）的是这些 PNG。工程文件是用来在 PetaNuri3D 中继续绘制的。</p>
+    </section>
+
+    <section class="mn-sec" id="next" data-keywords="下一步 后续 自己的模型 继续学习 阅读顺序 接下来">
+      <h2>接下来阅读的页面</h2>
+      <p>辛苦了。这样就完整走了一遍 PetaNuri3D 的基本流程。</p>
+      <ul class="mn-list">
+        <li><b>给自己的模型上色</b>：<a href="/petanuri/zh/manual/start#new">打开 3D 模型（新建）</a></li>
+        <li><b>已经知道想做什么</b>：<a href="/petanuri/zh/manual/howto">按目的查找</a>，或使用上方的搜索</li>
+        <li><b>想把功能学一遍</b>：从<a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a>开始依次阅读</li>
+        <li><b>操作不顺利</b>：<a href="/petanuri/zh/manual/trouble">遇到问题时</a></li>
+      </ul>
+    </section>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual"><small>← 上一页</small>手册首页</a><a class="next" href="/petanuri/zh/manual/howto"><small>下一页 →</small>按目的查找</a></nav>
+  </main>
+</div>
+<footer class="pn-footer">
+  <div class="pn-footer-inner">
+    <a href="/"><img src="/data/hypertuyotuyo.png" alt="HYPERtuyotuyo" width="49" height="34"></a>
+    <nav aria-label="页脚">
+      <a href="/">HYPERtuyotuyo 首页</a>
+      <a href="/petanuri/zh">PetaNuri3D</a>
+      <a href="/petanuri/zh/manual">使用手册</a>
+      <a href="https://x.com/Yak_HyperTYTY" target="_blank" rel="noopener">X（@Yak_HyperTYTY）</a>
+      <a href="/petanuri/zh/changelog">更新记录</a>
+      <a href="/petanuri/zh/requests">需求与处理状况</a>
+      <a href="/petanuri/terms">使用条款（日语）</a>
+    </nav>
+    <p>© HYPERtuyotuyo All rights reserved.</p>
+  </div>
+</footer>
+<script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
+</body>
+</html>

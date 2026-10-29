@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>界面、面板、偏好设置 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="默认布局、移动面板、标签、折叠、图标栏、工具栏位置、工具排序、常用工具、3D 视图四角、显示方式与光照方向、3D 导航、右键、偏好设置。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="初始布局、移动面板、标签页、折叠、图标栏、工具栏位置、工具排序、常用工具、3D 视图四角、显示方式与光照方向、3D 导航、右键菜单、偏好设置。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/screen">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="界面、面板、偏好设置 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="默认布局、移动面板、标签、折叠、图标栏、工具栏位置、工具排序、常用工具、3D 视图四角、显示方式与光照方向、3D 导航、右键、偏好设置。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="初始布局、移动面板、标签页、折叠、图标栏、工具栏位置、工具排序、常用工具、3D 视图四角、显示方式与光照方向、3D 导航、右键菜单、偏好设置。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/screen">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "界面、面板、偏好设置 | PetaNuri3D 使用手册",
-   "description": "默认布局、移动面板、标签、折叠、图标栏、工具栏位置、工具排序、常用工具、3D 视图四角、显示方式与光照方向、3D 导航、右键、偏好设置。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "初始布局、移动面板、标签页、折叠、图标栏、工具栏位置、工具排序、常用工具、3D 视图四角、显示方式与光照方向、3D 导航、右键菜单、偏好设置。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/screen",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,498 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen" aria-current="page">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen" aria-current="page">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 界面、面板、偏好设置</p>
     <h1 class="mn-h1">界面、面板、偏好设置</h1>
-    <p class="mn-intro">面板和工具栏可自由移动，下次启动保留布局。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#layout">默认布局</a></li><li><a href="#dock">移动面板</a></li><li><a href="#tabs">标签、折叠、图标栏</a></li><li><a href="#toolbar">工具栏、常用工具</a></li><li><a href="#hud">3D 视图四角</a></li><li><a href="#light">显示方式与光照方向</a></li><li><a href="#ctx">右键菜单</a></li><li><a href="#settings">偏好设置</a></li></ul></div>
-    <section class="mn-sec" id="layout"><h2>默认布局</h2><ul class="mn-list"><li>左侧为辅助工具、工具属性、画笔大小、参考图。</li><li>右侧3列：紧邻 3D 视图的是纹理集、图层属性、图层；再右为颜色、颜色值、颜色集｜最近颜色、历史记录；最右为折叠成图标栏的对象和 Pro 面板（顶点组、材质、混合形状、姿势）。</li><li>列宽按窗口大小决定。宽度小于1400（如1280×720、1366×768）时，颜色列也合并到最右图标栏，为 3D 视图保留空间。</li><li>仍使用默认布局时，改变窗口大小会重新排列。自行修改布局后则保留。显示 → 窗口 →“恢复默认窗口布局”可恢复。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="默认布局界面" loading="lazy"><figcaption>默认布局</figcaption></figure></section><section class="mn-sec" id="dock"><h2>移动面板</h2><ul class="mn-list"><li>拖动面板标题，在松开的位置放置。</li><li>列、行中部：插入该列、行。列、行边缘：旁边创建新列、行。3D 视图边缘（“在左侧添加列”等框）：在该侧添加。其他位置：浮动窗口。</li><li>拖边界改变宽高（双击恢复）。左右列的面板也可通过底部手柄调整高度。</li><li>浮动窗口拖标题移动、拖右下手柄缩放。通过“显示”菜单显示或隐藏（也可标题右键“隐藏此面板”）。面板放在应用窗口内部。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-dock-v1.webp" width="1400" height="840" alt="面板按列、行、浮动窗口排列的界面" loading="lazy"><figcaption>移动面板后的布局示例</figcaption></figure><div class="mn-tip">浮动窗口在“锁定面板布局”期间也可拖动标题移动和调整大小。右上的锁可单独固定 ⇄ 解除该窗口。在视图 → 窗口 →“工具箱”中可显示按网格排列工具图标的面板（下方有前景色与背景色）。</div></section><section class="mn-sec" id="tabs"><h2>标签、折叠、图标栏</h2><ul class="mn-list"><li><strong>折叠</strong>：点击标题可仅显示标题。折叠不用的面板，可给其他面板更多空间。</li><li><strong>合并为标签</strong>：将标题拖到另一面板标题上（显示“放到此处以合并为标签页”后松开）。将标签拖到外面可拆开。</li><li><strong>图标栏</strong>：点击列顶部的“&lt;」「&gt;”，将该列收成仅显示图标的窄栏。点击图标从侧边展开对应面板（点击外部或按<kbd>Esc</kbd> 收起）。</li></ul></section><section class="mn-sec" id="toolbar"><h2>工具栏、常用工具</h2><ul class="mn-list"><li><strong>位置</strong>：拖动工具栏手柄，工作区域四边（左、右、上、下）出现放置区，松开后停靠该边（上、下横向排列）。其他位置松开则浮动。也可右键按钮 →“工具栏位置”选择。</li><li><strong>图标大小</strong>：右键按钮 →“工具栏图标大小”，选择大、小。</li><li><strong>界面颜色</strong>：工具栏最后的太阳和月亮开关可切换浅色⇔深色。</li><li><strong>工具排序</strong>：拖按钮（数位笔也可）自由排序。移动少许后松开为排序，不移动松开则选择工具。右键“恢复默认顺序”可恢复。</li><li><strong>常用工具</strong>：右键工具栏按钮或辅助工具 →“添加到常用”。出现在 3D、UV 区域上方小工具条，点击可切换该工具或辅助工具。工具条“＋”可添加当前辅助工具（仅用数位笔也可）。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-favbar.webp" width="320" height="70" alt="常用工具条" loading="lazy"><figcaption>常用工具条</figcaption></figure><div class="mn-tip">“文件”位于菜单栏最左，其右侧依次为新建、打开、保存与撤销、重做按钮（不可用时变淡）。版本可从窗口标题得知。</div><div class="mn-tip">3D 视图与 UV 视图的常用工具栏可分别显示或隐藏（视图 → 窗口）。开启视图 → 窗口中的“锁定面板布局”期间，面板不会被移动或调整大小。</div><div class="mn-tip">屏幕放不下的长菜单或右键菜单，将鼠标或笔停在上下边缘即可向该方向滚动（还有项目时边缘显示 ▲・▼）。也可用滚轮或上下键滚动。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-menubar-v112.webp" width="640" height="34" alt="菜单栏及新建、打开、保存、撤销、重做按钮" loading="lazy"><figcaption>菜单栏按钮</figcaption></figure><div class="mn-tip">工具栏列数（v1.3.0 起）：在工具栏上右键可选择“列数：自动”“列数：始终 1 列”。放不下的工具可用滚轮、两端的箭头或用笔拖动来翻动。</div></section><section class="mn-sec" id="hud"><h2>3D 视图四角</h2><ul class="mn-list"><li><strong>左上</strong>：网格线、显示方式、单面／双面、对称绘制 X Y Z、显示范围（带 ▼ 的图标可点击下方 ▼ 打开设置）。</li><li><strong>上方中央</strong>：绘制／姿势切换（姿势时操作骨骼，绘制目标期间操作该目标）。左侧手柄（⋮）可自由移动。</li><li><strong>右上</strong>：正面、背面、右、左、上、下、透视／正交、显示全部（数字小键盘也可用）。</li><li><strong>右下</strong>：3D 导航、另一角度小视窗（由另一摄像机查看的小 3D，仅用于查看）。</li><li><strong>左下</strong>：切换到点击位置、主副纹理集、跨纹理集绘制（<a href="/petanuri/zh/manual/sets#cross">纹理集</a>）。</li><li><strong>下方中央</strong>：选区工具条、隐藏期间工具条。</li><li>3D 视图较窄时，从右上角开始依次将图标收进“⋯”面板。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="1154" height="54" alt="3D 视图上方图标" loading="lazy"><figcaption>上方工具条图标</figcaption></figure><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo.webp" width="160" height="149" alt="3D 导航" loading="lazy"><figcaption>3D 导航（轴圆点切换视角、球体旋转、放大镜缩放、手掌平移）</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="654" height="900" alt="光影显示与另一角度小视窗" loading="lazy"><figcaption>光影显示与右下“其他角度小窗口”</figcaption></figure></div><div class="mn-tip">右上透视／平行图标的 ▼ 可将透视投影的视角设为 5～120°。数值越小越接近长焦，越大越广角（默认 30°）。该值在重启后保留。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-fov-v112.webp" width="444" height="290" alt="投影 ▼ 中的视角滑块" loading="lazy"><figcaption>视角</figcaption></figure><div class="mn-tip">3D 导航（所有版本）：左侧为球体及其下方的全部显示、透视／平行，右侧为放大镜、抓手和画面旋转，最下方为 ⟲、角度、⟳（与 UV 指引布局相同）。</div><div class="mn-tip">画面旋转（所有版本）：可像转动纸张一样倾斜 3D 视图绘制。Shift＋滚轮每次 5°，⟲、⟳ 每次 15°（点击角度恢复 0°），或左右拖动旋转按钮（双击恢复 0°）。还可在键位设置中为“向左旋转画面”“向右旋转画面”“恢复画面旋转默认值”分配按键。</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo-v120.webp" width="163" height="191" alt="3D 导航" loading="lazy"><figcaption>3D 导航按钮布局</figcaption></figure><div class="mn-tip">相机方向锁定（v1.3.0 起）：用 3D 导航上的按钮只停止旋转，仍可平移和缩放。</div><div class="mn-tip">可以在导航下方显示旋转、缩放滑块（偏好设置 → 界面 → 显示中的“在导航中显示旋转、缩放滑块”，默认不显示）。3D 导航和 UV 参考线都会显示，也可在导航、UV 参考线上右键切换显示或隐藏（v1.3.0 起）。</div></section><section class="mn-sec" id="light"><h2>显示方式与光照方向</h2><ul class="mn-list"><li>显示方式（3D 左上）：绘制颜色原样、二值卡通、光影（照亮以看清凹凸）、最终效果（lilToon 风格，<span class="tier pro">Pro</span>）。下次启动保留相同显示。</li><li>点击显示方式图标下方 ▼ 调整<strong>光照方向</strong>：拖球体改变光照方向、左右／高度滑块、“跟随相机”（转视角时保持相同受光角度）。二值卡通、光影、最终效果共用同一光照。</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-light-pop.webp" width="600" height="520" alt="光照方向窗口" loading="lazy"><figcaption>光照方向</figcaption></figure><div class="mn-tip">显示方式最右侧的“仅显示线框”可隐藏纹理、只显示网格线（也位于视图 → 显示方式）。姿势、混合形状或移动改变形状时，线条也会跟随。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-only-v112.webp" width="702" height="940" alt="仅显示网格线的 3D 视图" loading="lazy"><figcaption>仅显示线框</figcaption></figure><div class="mn-tip">按像素显示（所有版本）：在 3D 中不插值，逐像素以方块显示纹理（仅影响显示，绘制内容和导出不变）。可按纹理集在该集行的 ⋯ 或右键菜单中用“按像素显示（不插值）”切换。256px 及以下的纹理集默认开启。视图 → 显示方式 →“所有纹理集按像素显示（不插值）”可一次切换全部纹理集。</div><div class="mn-tip">透明处（橡皮擦除或用透明色绘制的地方）在 3D 中会显示棋盘格（在视图 → 显示方式 →“以棋盘格显示透明处”中切换，关闭后为灰色）。纹理集右键（“…”）→“Alpha 镂空（在 3D 中去掉透明处）”可显示为镂空或半透明（仅影响显示，导出图像不变）。</div></section><section class="mn-sec" id="ctx"><h2>右键菜单</h2><p>根据点击位置显示对应菜单（3D 视图、UV 区域、图层、纹理集、辅助工具、颜色集、历史记录、面板标题等）。3D 视图可快捷选择拾取此处颜色、选择此纹理集、选择此处绘制的图层、仅显示此 UV 岛、隐藏此对象、视角、对称绘制等。</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="519" height="710" alt="3D 视图右键菜单" loading="lazy"><figcaption>3D 视图的右键菜单</figcaption></figure><div class="mn-tip">菜单项左侧显示图标，右侧显示当前按键。子菜单通过 ▶ 打开，也可使用<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>・<kbd>Enter</kbd>・<kbd>Esc</kbd> 操作。</div></section><section class="mn-sec" id="settings"><h2>偏好设置</h2><p>文件 → 偏好设置（<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd>）。左侧分类，右侧可折叠小节。将光标放在名称上可查看说明。</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分类</th><th scope="col">主要设置</th></tr></thead><tbody><tr><td>界面</td><td>界面颜色（浅色／深色）、配色（窗口底色、面板、按钮、文字、主色、辅助色、3D 背景、工具栏）、3D 导航大小、语言（日语、English、한국어、中文（简体、繁體））</td></tr><tr><td>笔与输入</td><td>笔触手感（仅靠压感入笔收笔／按长度入笔收笔、出笔方式）、笔压响应（试画校准、下限与上限）、数位板（直接读取笔压（WinTab）、通过 Windows Ink 传入的笔也使用 WinTab 压感、检查 WinTab 状态、WinTab 连接方式：重新查找）、减少延迟（提前显示笔画、预测临时笔画）、菜单和按钮（用笔按下后松开也确定、用笔长按弹出菜单、接收笔侧键的中键／右键点击、按钮上的长按）</td></tr><tr><td>操作</td><td>相机（<kbd>Space</kbd>＋拖动分配·相机操作模板（右键式／中键式／Alt 键式／Unity 方式）·轴向视图使用正交投影·按键缩放以光标为中心·以最后绘制的位置为中心旋转·以开始旋转时光标所在处为中心旋转）·3D 鼠标（灵敏度、移动对象、反转方向、按钮分配；仅在连接过 3D 鼠标时显示）·右键（菜单／弹出调色板）·长按工具快捷键临时切换（视为长按的时间 0.15～2 秒）·预设倍率（UV·2D）</td></tr><tr><td>按键设置</td><td>在分类中点击＋后按键分配，× 移除。恢复默认值、初始化按键设置、导出／导入快捷键设置（JSON）</td></tr><tr><td>绘制</td><td>画笔大小单位（屏幕 px／纹理 px）、性能（让未绘制的图层休眠、以快速格式保存项目文件）</td></tr><tr><td>系统</td><td>下次启动显示教程、启动时检查新版本</td></tr><tr><td>AI 联动</td><td>启用 AI 联动（MCP）、连接方式、允许 run_js（<span class="tier pro">Pro</span>）（<a href="/petanuri/zh/manual/unity#ai">AI 联动</a>）</td></tr></tbody></table></div><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="900" height="640" alt="偏好设置窗口" loading="lazy"><figcaption>偏好设置</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="深色模式界面" loading="lazy"><figcaption>深色模式</figcaption></figure></div><div class="mn-tip">在其他位置修改的设置不放在偏好设置：跨两个纹理集绘制（3D 左下）、跨 UV 岛外绘制（UV 标题）、导出扩边和位置（导出窗口）、对称匹配搜索范围（对称 ▼）。</div><div class="mn-tip">相机操作：在文件 → 偏好设置 → 操作 → 相机的「相机操作模板」中选择右键式、中键式、Alt 键式或 Unity 方式。选择会保留到下次启动，Space 操作和滚轮仍可使用。</div><div class="mn-tip">中键式：中键拖动旋转，Shift+中键拖动平移，Ctrl+中键拖动缩放。Alt键式：3D中Alt+左键旋转，Alt+中键平移，Alt+右键缩放。</div><div class="mn-tip">较长的说明可通过圆形「?」查看。悬停可显示说明，点击或轻触可保持打开；再次点击、点击外部或按 Esc 可关闭。使用键盘时，按 Tab 聚焦「?」，再按 Enter 或 Space 开关说明。放置点的步骤、当前状态和警告仍会显示在界面中。</div><div class="mn-tip">Unity 方式：右键拖动旋转，中键拖动平移。Alt+左键旋转、Alt+中键平移、Alt+右键缩放（3D 视图；与 Unity 相同，向下拖动放大、向上拖动缩小）。3D 吸管使用 I 键。</div><div class="mn-tip">配色：在偏好设置 → 界面中可更改窗口底色、面板、按钮、文字、主色、辅助色、3D 背景和工具栏的颜色。浅色与深色分别保存，可恢复为初始配色。</div><div class="mn-tip">笔按压：菜单项和按钮可用笔按下后松开来确定（默认开启）。按钮上的长按可选择“按下松开即确定”（默认）或“长按弹出右键菜单”。图层行等非按钮位置，无论哪种设置，长按都会弹出右键菜单。</div><div class="mn-tip">笔长按菜单（所有版本）：笔尖不动长按会弹出右键菜单。正在绘制线条或填色时不会弹出（在同一处持续涂抹也不会）。在文件 → 偏好设置 → 笔与输入 → 菜单和按钮中关闭“用笔长按弹出菜单”后，无论在 3D、UV 区域还是面板上，长按都不会弹出菜单（适合绘制细节时）。通过右键、笔侧键打开的菜单不受影响。</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="偏好设置 → 笔与输入 中的“菜单和按钮”栏" loading="lazy"><figcaption>笔与输入 →“菜单和按钮”（用笔长按弹出菜单、接收笔侧键的中键／右键点击）</figcaption></figure><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="在相机偏好设置中选择 Unity 方式" loading="lazy"><figcaption>相机操作的 Unity 方式</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-theme-v112.webp" width="900" height="350" alt="偏好设置界面中的配色项" loading="lazy"><figcaption>配色</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-press-v112.webp" width="900" height="640" alt="偏好设置中的笔按压与长按项" loading="lazy"><figcaption>笔按压与长按</figcaption></figure></div><div class="mn-tip">以最后绘制的位置为中心旋转（所有版本）：在文件 → 偏好设置 → 操作 → 相机中开启后（默认关闭），视角会以 3D 视图中最后一笔的终点为中心旋转。放大绘制细节时，旋转也不会让目标跑出画面。</div><div class="mn-tip">以开始旋转时光标所在处为中心旋转（所有版本）：在文件 → 偏好设置 → 操作 → 相机中开启后（默认关闭），在 3D 视图中开始旋转时，视角会以光标下模型上的点为中心旋转（在模型外开始旋转时与以前相同）。绘制下方或边缘时，旋转也不会让目标跑出画面。若同时开启“以最后绘制的位置为中心旋转”，则优先使用本设置。</div><div class="mn-tip">配色中的“UV 背景”（v1.3.0 起）：在偏好设置 → 界面的配色中，也可更改 UV 视图的背景颜色。</div><div class="mn-tip">界面语言新增繁体中文（中文（繁體））（v1.3.0 起）。</div></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/uv"><small>← 上一页</small>UV 区域与显示范围</a><a class="next" href="/petanuri/zh/manual/sets"><small>下一页 →</small>纹理集与对象</a></nav>
+    <p class="mn-intro">介绍界面各处有什么、面板和工具栏的移动方式、3D 视图外观的切换，以及偏好设置的全部项目。面板的布局在下次启动时也会恢复。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>没有显示的面板，用 显示 → 窗口 调出（<a href="#panels">详细说明</a>）。</li>
+      <li>拖动面板的标题栏，可以把它移到喜欢的位置（<a href="#dock">详细说明</a>）。</li>
+      <li>3D 的外观，用 3D 视图左上角的显示方式图标切换（<a href="#light">详细说明</a>）。</li>
+      <li>搞不清布局时，选择 显示 → 窗口 →“恢复默认窗口布局”（<a href="#layout-reset">详细说明</a>）。</li>
+      <li>设置在 文件 → 偏好设置（<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>）中（<a href="#settings">详细说明</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#layout">界面各处有什么（初始布局）</a></li><li><a href="#panels">显示与隐藏面板（面板一览）</a></li><li><a href="#dock">移动面板</a></li><li><a href="#tabs">折叠面板、合并为标签页</a></li><li><a href="#toolbar">工具栏、常用工具</a></li><li><a href="#hud">3D 视图四角的图标</a></li><li><a href="#nav">用 3D 导航移动视角</a></li><li><a href="#subview">用其他角度的小窗口同时查看</a></li><li><a href="#miniwin">将 3D 与 UV 设为小窗口</a></li><li><a href="#light">更改外观（显示方式、光照方向）</a></li><li><a href="#ctx">右键菜单</a></li><li><a href="#popup">弹出调色板（仅用数位笔操作）</a></li><li><a href="#reference">边看参考图边绘制</a></li><li><a href="#common">界面的通用操作</a></li><li><a href="#theme">更改深色模式、配色、语言</a></li><li><a href="#settings">偏好设置</a></li></ul></div>
+
+    <section class="mn-sec" id="layout" data-keywords="布局 界面构成 窗口 初始化 重置 在哪 找不到 消失 全不见了 恢复 初始布局 面板不见了">
+      <h2>界面各处有什么（初始布局）</h2>
+      <p>这是首次启动时的排列。中间是绘制区域（3D 视图），左右排列着面板。</p>
+      <ul class="mn-list">
+        <li><strong>上方</strong>：菜单栏。“文件”的右侧有新建、打开、保存，以及撤销、重做按钮（无法操作时会变淡）。</li>
+        <li><strong>左侧</strong>：工具栏，以及辅助工具、工具属性、画笔大小、参考图。</li>
+        <li><strong>右侧</strong>：共 3 列。紧邻 3D 视图右侧的是纹理集、图层属性、图层。再往右是色彩、颜色值、颜色集｜最近使用的颜色（标签页）、历史记录。</li>
+        <li><strong>最右侧</strong>：把对象，以及 Pro 的面板（顶点组、材质、混合形状、姿势）收起为图标栏的一列。点击图标，该面板会向侧边弹出。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="初始布局的界面：左侧是工具栏和辅助工具，中间是 3D 视图，右侧是图层和颜色等面板" loading="lazy"><figcaption>初始布局</figcaption></figure>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-menubar-v112.webp" width="640" height="34" alt="菜单栏，以及新建、打开、保存、撤销、重做按钮" loading="lazy"><figcaption>菜单栏按钮</figcaption></figure>
+      <h3 id="layout-size">随窗口大小调整的排列</h3>
+      <ul class="mn-list">
+        <li>窗口较矮（高度不足 860）时，纹理集面板会折叠。纹理集通过图层面板的标题切换。</li>
+        <li>宽度不足 1400（1280×720、1366×768 等）时，颜色一列也会并入最右侧的图标栏，以保留更宽的 3D 视图。宽度不足 1100 时，各列会进一步变窄，图层属性也会收入图标栏。</li>
+        <li>保持初始布局时，更改窗口大小会重新排布。移动、折叠面板等改过布局之后，就不会再重新排布。</li>
+        <li>布局在下次启动时也会恢复。</li>
+      </ul>
+      <h3 id="layout-reset">恢复初始布局</h3>
+      <ol class="mn-steps">
+        <li>选择 显示 → 窗口 →“恢复默认窗口布局”。</li>
+        <li>面板会恢复为适合当前窗口大小的初始布局。工具栏也回到左侧，工具的顺序也恢复默认。</li>
+      </ol>
+      <h3 id="layout-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>面板和工具栏全都不见了</b>：被 <kbd>Tab</kbd> 隐藏了。再按一次 <kbd>Tab</kbd>，或选择 显示 →“显示/隐藏面板”。</li>
+        <li><b>找不到想用的面板</b>：在 显示 → 窗口 中，给该面板打上 ✓（<a href="#panels">面板一览</a>）。它也可能被收在最右侧的图标栏里。</li>
+        <li><b>放大窗口后排列没有变化</b>：改过布局后不会重新排布。用“恢复默认窗口布局”，可以按当前大小重新调整。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="panels" data-keywords="面板列表 窗口列表 显示 调出 隐藏 关闭 调色板 工具箱 面板不见了 浮动面板">
+      <h2>显示与隐藏面板（面板一览）</h2>
+      <p>面板通过菜单 显示 → 窗口 显示或隐藏。带 ✓ 的是已显示的面板。</p>
+      <ol class="mn-steps">
+        <li>打开 显示 → 窗口。</li>
+        <li>选择想显示的面板名称。会打上 ✓，面板随即显示。</li>
+        <li>要隐藏时，再选一次。在面板标题上右键 →“隐藏此面板”也可以隐藏。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">面板</th><th scope="col">用途</th></tr></thead><tbody>
+        <tr><td>辅助工具</td><td>选择工具中的种类（G 笔、柔和毛笔等）（<a href="/petanuri/zh/manual/draw#tools">工具与辅助工具</a>）</td></tr>
+        <tr><td>工具属性</td><td>所选辅助工具的粗细、硬度等设置（<a href="/petanuri/zh/manual/draw#props">画笔详细设置</a>）</td></tr>
+        <tr><td>画笔大小</td><td>从常用粗细的列表中选择（<a href="/petanuri/zh/manual/draw">绘制</a>）</td></tr>
+        <tr><td>参考图</td><td>显示边看边画的图像（<a href="#reference">参考图</a>）</td></tr>
+        <tr><td>工具箱</td><td>把工具图标排成网格，下方是前景色、背景色。默认是隐藏的（<a href="#toolbar">工具栏</a>）</td></tr>
+        <tr><td>纹理集</td><td>选择要绘制的纹理集、分辨率、内存估算（<a href="/petanuri/zh/manual/sets#choose">纹理集</a>）</td></tr>
+        <tr><td>图层属性</td><td>所选图层的混合模式、不透明度等（<a href="/petanuri/zh/manual/layers#props">图层属性</a>）</td></tr>
+        <tr><td>图层</td><td>添加、叠放、选择图层（<a href="/petanuri/zh/manual/layers#basic">图层</a>）</td></tr>
+        <tr><td>色彩</td><td>选择前景色（<a href="/petanuri/zh/manual/draw#color">选择颜色</a>）</td></tr>
+        <tr><td>颜色值</td><td>前景色、背景色、HEX、数值、不透明度（<a href="/petanuri/zh/manual/draw#color">选择颜色</a>）</td></tr>
+        <tr><td>颜色集</td><td>常用颜色的色板（<a href="/petanuri/zh/manual/draw#color">选择颜色</a>）</td></tr>
+        <tr><td>最近使用的颜色</td><td>最近绘制过、吸取过的 12 种颜色（<a href="/petanuri/zh/manual/draw#color">选择颜色</a>）</td></tr>
+        <tr><td>历史记录</td><td>到目前为止的操作列表。点击某一行即可回到那一步（<a href="/petanuri/zh/manual/layers#history">历史记录</a>）</td></tr>
+        <tr><td>对象</td><td>按模型的部件显示或隐藏（<a href="/petanuri/zh/manual/sets#objects">对象</a>）</td></tr>
+        <tr><td>顶点组 <span class="tier pro">Pro</span></td><td>用顶点组创建范围（<a href="/petanuri/zh/manual/pose#vgroup">顶点组</a>）</td></tr>
+        <tr><td>材质 <span class="tier pro">Pro</span></td><td>lilToon 的设置、绘制目标、导出（<a href="/petanuri/zh/manual/material">lilToon 材质</a>）</td></tr>
+        <tr><td>混合形状 <span class="tier pro">Pro</span></td><td>改变表情和体型的形状（<a href="/petanuri/zh/manual/pose#blend">混合形状</a>）</td></tr>
+        <tr><td>姿势 <span class="tier pro">Pro</span></td><td>移动骨骼来摆姿势（<a href="/petanuri/zh/manual/pose#pose">姿势模式</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>显示 → 窗口 中还有“工具栏”“3D 导航（隐藏后用右下角的图标恢复）”“其他角度小窗口”“常用工具（3D 视图）”“常用工具（UV 视图）”“锁定面板布局”“恢复默认窗口布局”。</li>
+        <li>按 <kbd>Tab</kbd>（显示 →“显示/隐藏面板”）可以同时隐藏或显示工具栏和面板。想更宽地看 3D 视图时使用。</li>
+        <li>Pro 的面板在 Lite 中带有锁的标记，并显示说明代替内容。在 Standard 中不会出现在列表里。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="dock" data-keywords="停靠 吸附 移动 排序 浮动 悬浮 独立窗口 宽度 高度 大小 固定 锁定 拖动面板">
+      <h2>移动面板</h2>
+      <p>面板可以排在 3D 视图的左右（竖列）和上下（横条），列数、条数不限。也可以不放进任何位置，让它浮动。</p>
+      <ol class="mn-steps">
+        <li>拖动面板的标题栏。会在可放入的位置出现线条或边框。</li>
+        <li>在想放的位置松开。松开的位置就是最终位置。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">松开的位置</th><th scope="col">结果</th></tr></thead><tbody>
+        <tr><td>列、条的中段</td><td>插入该列或该条（在可放入的位置出现线条。在条中，面板会横向并排）</td></tr>
+        <tr><td>列、条的边缘</td><td>在其旁边新建一列或一条（边缘会出现粗线）</td></tr>
+        <tr><td>3D 视图边缘的边框（“在左侧添加列”“在右侧添加列”“放在上方”“放在下方”）</td><td>在那一侧新建一列或一条</td></tr>
+        <tr><td>其他位置（3D 视图中央等）</td><td>变成浮动窗口</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dock-v1.webp" width="1400" height="840" alt="面板按列、行、浮动窗口排列的界面" loading="lazy"><figcaption>移动面板后的布局示例</figcaption></figure>
+      <h3 id="dock-size">更改宽度、高度</h3>
+      <ul class="mn-list">
+        <li>拖动列与列、条与条之间的分界线，可以改变宽度和高度。双击分界线可恢复原状。</li>
+        <li>左右列中的面板，拖动下边缘的把手可以改变高度（双击恢复为自动）。内容较长时会在面板内滚动。</li>
+        <li>变空的列或条会消失，3D 视图随之变宽。</li>
+        <li>辅助工具的图块和画笔大小，会随面板的宽度和高度改变排列。只有画笔大小的列或浮动窗口，最窄可以缩到图块 1 列的宽度（约 64px）。</li>
+      </ul>
+      <h3 id="dock-float">浮动窗口</h3>
+      <ul class="mn-list">
+        <li>拖动标题栏移动，拖动右下角的把手改变大小。点击标题栏可折叠。</li>
+        <li>没有 ×。要隐藏时，用 显示 → 窗口，或在标题栏上右键 →“隐藏此面板”。</li>
+        <li>面板只能放在应用窗口内，不能拿到应用之外的其他窗口里。</li>
+      </ul>
+      <h3 id="dock-lock">固定布局</h3>
+      <ul class="mn-list">
+        <li>给 显示 → 窗口 →“锁定面板布局”打上 ✓ 后，面板将无法移动，也无法改变大小。可以防止误动。</li>
+        <li>锁定期间，浮动窗口仍可拖动标题栏移动，也可以改变大小。</li>
+        <li>浮动窗口可以用右上角的锁，单独固定或解除该窗口。固定后既不能移动，也不能改变大小（下次打开时也会记住）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tabs" data-keywords="折叠 最小化 收起 合并标签 标签页 分离 图标化 侧边栏 图标栏 面板收纳">
+      <h2>折叠面板、合并为标签页</h2>
+      <p>把不用的面板缩小，可以更宽地使用其他面板和 3D 视图。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想做的事</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>只留标题栏（折叠）</td><td>点击面板的标题栏。再点一次即可恢复。在条中折叠的面板，会变成只有标题栏的细长竖条</td></tr>
+        <tr><td>合并为标签页</td><td>把标题栏拖到另一个面板的标题栏上。出现“放到此处以合并为标签页”时松开。用上方的标签页切换</td></tr>
+        <tr><td>折叠标签页</td><td>再点一次当前选中的标签页</td></tr>
+        <tr><td>分离标签页</td><td>把标签页拖到外面（也可以在标签页上右键 →“分离此标签页”）</td></tr>
+        <tr><td>整体移动标签页</td><td>拖动标签页排列中的空白处</td></tr>
+        <tr><td>把列变成图标栏</td><td>点击列上方的“&lt;”或“&gt;”。该列会变成只有图标的细条。再点一次即可恢复为原来的列</td></tr>
+        <tr><td>从图标栏中调出面板</td><td>点击图标栏中的图标，只有该面板会向侧边弹出。点击外部、按 <kbd>Esc</kbd> 或再点同一个图标即可收回</td></tr>
+      </tbody></table></div>
+    </section>
+<section class="mn-sec" id="toolbar" data-keywords="工具箱 工具 图标 排序 收藏 快捷栏 竖排 横排 上 下 1 列 2 列 工具列表 工具栏位置">
+      <h2>工具栏、常用工具</h2>
+      <p>工具栏默认在左侧。也可以放到工作区的上、下、右侧，或让它浮动。</p>
+      <ol class="mn-steps">
+        <li>拖动工具栏的把手（竖排时在上端，横排时在左端）。工作区的 4 条边会出现吸附位置。</li>
+        <li>在吸附位置松开，工具栏就会固定在那一边。放在上、下时横向排列，放不下时会换行。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在吸附位置以外松开，工具栏会浮动。浮动的工具栏可用“横向”“纵向”切换排列，双击把手可回到之前的边。</li>
+        <li>在按钮上右键 →“工具栏位置”，也可以选择 左、右、上、下、浮动。位置在下次启动时也会保留。</li>
+        <li>在按钮上右键 →“工具栏图标大小”可选 大、小；“工具栏列数”可选“列数：自动”“列数：始终 1 列”。放不下的工具，可用滚轮、两端的箭头或用笔拖动来滚动查看。</li>
+        <li><strong>排序</strong>：拖动按钮（用笔也可以），按喜欢的顺序排列。稍微拖动后松开是排序，不拖动直接松开则是选中该工具。右键“恢复默认顺序”可恢复原来的顺序。</li>
+        <li><strong>界面颜色</strong>：用工具栏最末尾的太阳和月亮开关，切换浅色和深色（<a href="#theme">深色模式</a>）。</li>
+        <li><strong>隐藏</strong>：取消 显示 → 窗口 →“工具栏”的 ✓。</li>
+        <li><strong>工具箱</strong>：通过 显示 → 窗口 →“工具箱”，可以显示把工具图标排成网格的面板。与其他面板一样，可以放进列或标签页，并随宽度换行。点击下方的前景色会打开“色彩”面板，点击背景色或 ⇄ 可互换，点击小的黑白图标或按 <kbd>D</kbd> 可恢复为黑、白。</li>
+      </ul>
+      <h3 id="toolbar-fav">常用工具栏</h3>
+      <p>把常用的工具和辅助工具排在 3D 视图和 UV 视图上方的小条中，可以快速切换。</p>
+      <ol class="mn-steps">
+        <li>右键点击工具栏的按钮，或辅助工具（也包括画笔集的预设）。</li>
+        <li>选择“添加到常用”。图标会添加到条中。</li>
+        <li>点击条中的图标，就会切换到该工具或辅助工具。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-favbar.webp" width="320" height="70" alt="常用工具栏" loading="lazy"><figcaption>常用工具栏</figcaption></figure>
+      <ul class="mn-list">
+        <li>点击条中的“＋”可添加当前的辅助工具；已添加时显示“－”，可以移除（只用笔也能操作）。在图标上右键也可以移除。</li>
+        <li>拖动左侧的点状把手可移动条，拖动图标可排序。</li>
+        <li>在条上右键，有“纵向排列”“恢复默认位置”“隐藏此工具条”。点击 × 也可以隐藏。</li>
+        <li>隐藏的条，可以通过 显示 → 窗口 →“常用工具（3D 视图）”“常用工具（UV 视图）”分别再次显示。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="hud" data-keywords="视口 四角 图标 叠加层 小控件 视野角 FOV 视角 长焦 广角 透视 平行 投影 正交">
+      <h2>3D 视图四角的图标</h2>
+      <p>3D 视图的四角排列着显示切换和视角的图标。带 ▼ 的图标，点击下方的 ▼ 会打开设置（按 <kbd>Esc</kbd> 或点击外部即可关闭）。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">位置</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>左上</td><td>网格线（<a href="/petanuri/zh/manual/uv#wire">网格线</a>）、显示方式（<a href="#light">外观</a>）、单面/双面、对称绘制 X、Y、Z（<a href="/petanuri/zh/manual/draw#mirror">对称绘制</a>）、显示范围（<a href="/petanuri/zh/manual/uv#isolate">显示范围</a>）</td></tr>
+        <tr><td>上方中央</td><td>切换绘制/姿势。处于姿势模式时变为骨骼操作（<a href="/petanuri/zh/manual/pose#pose">姿势</a>）；正在绘制某个绘制目标时，变为该绘制目标的操作（<a href="/petanuri/zh/manual/material#channels">绘制目标</a>）</td></tr>
+        <tr><td>右上</td><td>正面、背面、右、左、上、下、透视/正交 ▼、显示全部。3D 导航默认也在右上（<a href="#nav">3D 导航</a>）</td></tr>
+        <tr><td>右下</td><td>缩小 3D 导航时的图标、其他角度小窗口（<a href="#subview">其他角度小窗口</a>）</td></tr>
+        <tr><td>左下</td><td>切换到所触及处、主与副纹理集、跨纹理集绘制（<a href="/petanuri/zh/manual/sets#cross">跨两个纹理集绘制</a>）</td></tr>
+        <tr><td>下方中央</td><td>选区工具条（<a href="/petanuri/zh/manual/edit#selbar">选区工具条</a>）、隐藏期间的栏（<a href="/petanuri/zh/manual/uv#hidepen">隐藏笔</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="1154" height="54" alt="3D 视图上方一排的图标" loading="lazy"><figcaption>上方一排的图标</figcaption></figure>
+      <ul class="mn-list">
+        <li>上方中央的条，拖动左侧的把手（⋮）可以移到任意位置。双击把手可回到原位。</li>
+        <li>3D 视图较窄时，右上的图标会变成 2 排。仍然放不下时，会按 视角 → 显示范围 → 对称 → 单面/双面 → 显示方式 → 网格线 的顺序，收进左上的“⋯”面板。点击“⋯”即可展开。</li>
+        <li>更窄时，左下的条会隐藏文字，只留图标；再窄就会收进“⋯”面板。宽窄取决于 3D 视图的宽度，而不是窗口的宽度。</li>
+      </ul>
+      <h3 id="hud-fov">更改视角（视野角度）</h3>
+      <p>通过右上角透视/正交图标的 ▼，可以更改投影方式，以及透视投影的视野角度（5–120°）。数值越小越接近长焦，越大越接近广角。点击“恢复默认值”会恢复为 30°。</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-fov-v112.webp" width="444" height="290" alt="用透视/正交的 ▼ 打开的视野角度滑块" loading="lazy"><figcaption>视野角度</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="nav" data-keywords="导航 小控件 视角 旋转 滚动 倾斜 画布旋转 锁定 固定 只用笔 视角操作 gizmo">
+      <h2>用 3D 导航移动视角</h2>
+      <p>3D 导航是不用鼠标按钮和键盘就能移动视角的工具。只用笔绘制时很方便。</p>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo-v120.webp" width="163" height="191" alt="3D 导航：轴的圆点、球、放大镜、抓手、旋转按钮" loading="lazy"><figcaption>3D 导航</figcaption></figure></div>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">操作</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>点击轴的圆点（X、Y、Z）</td><td>切换到该轴的视角（X＝右，-Y＝正面，Z＝上）。再点一次切换到反方向</td></tr>
+        <tr><td>拖动球</td><td>旋转</td></tr>
+        <tr><td>上下拖动放大镜</td><td>缩放</td></tr>
+        <tr><td>拖动抓手</td><td>平移</td></tr>
+        <tr><td>左右拖动圆形箭头</td><td>画面旋转（向右为顺时针。双击恢复为 0°）</td></tr>
+        <tr><td>球下方的 ⟲、角度、⟳</td><td>点击 ⟲、⟳ 每次将画面旋转 15°。点击角度恢复为 0°</td></tr>
+        <tr><td>方形按钮</td><td>显示全部</td></tr>
+        <tr><td>透视/平行按钮</td><td>切换透视投影和正交投影</td></tr>
+        <tr><td>锁形按钮</td><td>锁定相机方向（见下文）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>对齐到轴的视角时会变为正交投影，旋转后恢复为透视投影（可在 文件 → 偏好设置 → 操作 →“轴视角使用平行投影”中关闭）。</li>
+        <li>也可以用键盘的小键盘切换视角（<a href="/petanuri/zh/manual/keys#view">视角（小键盘）</a>）。</li>
+      </ul>
+      <h3 id="nav-lock">锁定相机方向</h3>
+      <p>点击锁形按钮，只会停止视角的旋转。仍可平移和缩放。再点一次即可解除。用于保持确定好的方向，靠近或移动着绘制。</p>
+      <h3 id="nav-roll">倾斜画面（画面旋转）</h3>
+      <p>可以像倾斜一张纸那样倾斜 3D 视图，调到顺手的角度。</p>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+滚轮每次旋转 5°，3D 导航的 ⟲、⟳ 每次旋转 15°。左右拖动圆形箭头也可以旋转。</li>
+        <li>光标位于 UV 区域上时，旋转的是 UV。</li>
+        <li>旋转后，绘制、选择、平移、右键拖动旋转都照常可用。拖动会沿着看到的方向移动。</li>
+        <li>在键位设置中的“向左旋转画面（15°）”“向右旋转画面（15°）”“恢复画面旋转默认值”也可以设置按键（默认没有按键）。</li>
+      </ul>
+      <h3 id="nav-move">移动、缩小导航</h3>
+      <ul class="mn-list">
+        <li>拖动上方的把手（…）可移到任意位置。双击回到右上。</li>
+        <li>拖动左边缘、下边缘、左下角可以改变大小。也可以在 文件 → 偏好设置 → 界面 的“3D 导航大小”中更改。</li>
+        <li>点击“—”缩小为右下角的图标。点击图标即可恢复（也可通过 显示 → 窗口 →“3D 导航（隐藏后用右下角的图标恢复）”）。</li>
+        <li>可以在导航下方显示旋转和缩放滑块。请在 文件 → 偏好设置 → 界面 中开启“在导航中显示旋转、缩放滑块”（默认关闭）。3D 导航和 UV 的导引上都会显示。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="subview" data-keywords="子视图 双画面 同时查看 其他角度 反面 小 3D 预览 画中画">
+      <h2>用其他角度的小窗口同时查看</h2>
+      <p>在 3D 视图中显示由另一台相机拍摄的小型 3D。可以边画边确认反面或侧面的样子。小窗口只用于查看，绘制仍在大的视图中进行。</p>
+      <ol class="mn-steps">
+        <li>点击 3D 视图右下角的“其他角度小窗口”图标（也可通过 显示 → 窗口 →“其他角度小窗口”）。</li>
+        <li>在小窗口的标题栏中选择方向（正面、右、背面、左、上、反向）。“反向”是大视图视角的反方向。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在小窗口中拖动旋转，用中键或 <kbd>Shift</kbd>+拖动平移。</li>
+        <li>用滚轮或 <kbd>Ctrl</kbd>+拖动（向上拖为靠近，适合用笔）拉近、拉远，双击显示全部。</li>
+        <li>用标题栏移动，拖动左、上边缘和左上角改变大小。点击 ✕ 关闭。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="654" height="900" alt="明暗显示的 3D 视图，以及右下角的其他角度小窗口" loading="lazy"><figcaption>右下角的“其他角度小窗口”</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="miniwin" data-keywords="画中画 小窗口 互换 缩小 UV 缩小 3D 浮动 双画面">
+      <h2>将 3D 与 UV 设为小窗口</h2>
+      <p>并排显示 3D 和 UV 时，可以把其中一个设为小窗口，更宽地使用另一个。</p>
+      <ol class="mn-steps">
+        <li>按 <kbd>U</kbd> 显示 UV，与 3D 并排（<a href="/petanuri/zh/manual/uv#uv">显示 UV 区域</a>）。</li>
+        <li>点击想设为小窗口的一侧右上 ✕ 下方的按钮。该侧变为小窗口，另一侧占满整个区域。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>也可以用 显示 → UV →“UV 放入小窗口（3D 全屏）”“3D 放入小窗口（UV 全屏）”，或 UV 标题栏上的 ⋯ 做到同样的事。</li>
+        <li>拖动标题栏移动小窗口，拖动四边和四角改变大小。只要在应用窗口内，也可以放在面板上方。</li>
+        <li>点击 ⇄ 互换小窗口和全屏，点击 ▣ 恢复为并排显示，点击 ✕ 关闭小窗口一侧。</li>
+        <li>用右上角的锁固定（既不能移动，也不能改变大小）。即使按 <kbd>Tab</kbd> 隐藏了面板，小窗口也会保留。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="3D 全屏、UV 放入小窗口的画面" loading="lazy"><figcaption>3D 全屏，UV 作为小窗口</figcaption></figure>
+    </section>
+<section class="mn-sec" id="light" data-keywords="着色 显示模式 光照 灯光 照明 阴影 unlit 无光照 卡通 线框 单面 双面 背面 透明 棋盘格 Alpha 镂空 半透明 像素 插值 最近邻 模糊">
+      <h2>更改外观（显示方式、光照方向）</h2>
+      <p>切换 3D 视图的外观。变化的只有外观，绘制的内容和导出的图像不会改变。</p>
+      <ol class="mn-steps">
+        <li>点击 3D 视图左上角的显示方式图标（也可以通过 显示 → 显示方式 选择）。</li>
+        <li>选择想用的方式。下次启动时也会以同样的方式打开。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">显示方式</th><th scope="col">外观</th></tr></thead><tbody>
+        <tr><td>保持绘制的颜色（unlit）</td><td>不打光，直接显示绘制的颜色。用于确认颜色时</td></tr>
+        <tr><td>二值卡通</td><td>用受光处和阴影两种颜色显示</td></tr>
+        <tr><td>明暗（可看出凹凸）</td><td>打光使凹凸清晰可见。初次使用时以此方式打开</td></tr>
+        <tr><td>仅显示线框</td><td>隐藏纹理，只显示网格线。即使因姿势、混合形状、移动而改变了形状，线条也会跟随</td></tr>
+        <tr><td>最终效果（lilToon、MToon，测试版） <span class="tier pro">Pro</span></td><td>经过材质设置后的外观（<a href="/petanuri/zh/manual/material#look">查看“最终效果”</a>）</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-only-v112.webp" width="702" height="940" alt="仅显示网格线的 3D 视图" loading="lazy"><figcaption>仅显示线框</figcaption></figure>
+      <h3 id="light-side">单面显示、双面显示</h3>
+      <p>与同一排图标一起，或通过 显示 → 显示方式 选择。有“单面显示（不绘制背面）”和“双面显示（可见的背面也绘制）”。要在衣服内侧等背面绘制时，请设为双面（<a href="/petanuri/zh/manual/draw#through">也绘制背面和被遮挡的面</a>）。</p>
+      <h3 id="light-dir">更改光照方向</h3>
+      <ol class="mn-steps">
+        <li>点击显示方式图标下方的 ▼。</li>
+        <li>拖动球来决定光线的来向。也可以用左右、高度的滑块更改。</li>
+        <li>开启“跟随相机”后，即使旋转视角，光照效果也保持不变。点击“恢复默认”可恢复原状。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-light-pop.webp" width="600" height="520" alt="光照方向窗口：球以及左右、高度的滑块" loading="lazy"><figcaption>光照方向</figcaption></figure>
+      <ul class="mn-list">
+        <li>二值卡通、明暗、最终效果使用同一种光。在“保持绘制颜色”下看不到光。</li>
+        <li><span class="tier pro">Pro</span> 与材质面板中的“显示与光照”是同一个值。</li>
+        <li>相机操作为“Alt＋鼠标按钮”时，可以用 <kbd>Shift</kbd>+右键拖动来旋转光的左右方向。</li>
+      </ul>
+      <h3 id="light-alpha">透明部分的显示方式</h3>
+      <ul class="mn-list">
+        <li>用橡皮擦或透明色绘制的地方，在 3D 中下面会显示棋盘格。关闭 显示 → 显示方式 →“以棋盘格显示透明处”后，会变成灰色。</li>
+        <li>在纹理集所在行右键（或点“…”）→“Alpha 镂空（在 3D 中去掉透明处）”，可以选择透明的显示方式。有“无”、“镂空”（去掉不透明度低于 50% 的部分，露出后面）和“半透明”（按不透明度透出）。</li>
+        <li>Alpha 镂空也只影响外观，导出的图像不会改变。它会保存在工程文件中，也可以撤销。被镂空的地方在 3D 中无法点击，请在 UV 区域中绘制。</li>
+      </ul>
+      <h3 id="light-dot">按像素显示纹理</h3>
+      <p>在 3D 中不对纹理插值，而是按 1 个像素一个方块显示。适用于 32、64px 等低分辨率纹理和像素画。</p>
+      <ul class="mn-list">
+        <li>按纹理集分别切换：在纹理集行的 ⋯ 或右键 →“按像素显示（不插值）”。已开启的纹理集，该行会出现方块标记（点击可关闭）。</li>
+        <li>256px 以下的纹理集一开始就是开启的（自动）。自己切换过的纹理集会保存在工程文件中，可以用“像素显示恢复为自动”恢复。</li>
+        <li>通过 显示 → 显示方式 →“所有纹理集按像素显示（不插值）”，可以一次切换所有纹理集。</li>
+        <li>UV 区域在放大时始终按像素显示。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="出现像素显示标记的纹理集行及其右键菜单" loading="lazy"><figcaption>按纹理集分别设置像素显示</figcaption></figure></div>
+      <h3 id="light-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>带有阴影，看不清绘制的颜色</b>：把显示方式设为“保持绘制颜色”。</li>
+        <li><b>更改光照方向，外观却没有变化</b>：在“保持绘制颜色”下看不到光。请改为二值卡通或明暗。</li>
+        <li><b>变成透明的地方显示为灰色或棋盘格</b>：这只是外观。想透过它看到后面时，请把纹理集的“Alpha 镂空”设为镂空或半透明。</li>
+        <li><b>设为 Alpha 镂空后，那里无法绘制</b>：被镂空的地方在 3D 中无法点击。请在 UV 区域中绘制，或把 Alpha 镂空恢复为“无”。</li>
+        <li><b>低分辨率纹理在 3D 中显得模糊</b>：开启该纹理集的“按像素显示（不插值）”。</li>
+        <li><b>无法选择“最终效果”</b>：这是 Pro 专用的显示方式（<a href="/petanuri/zh/manual/start#editions">版本对比</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="ctx" data-keywords="上下文菜单 右键菜单 长按 子菜单 菜单不出现 菜单自动弹出 弹出菜单">
+      <h2>右键菜单</h2>
+      <p>会弹出与点击位置相应的菜单。用笔时，笔尖不动长按也会弹出。右键拖动（3D 旋转、UV 移动）之后不会弹出菜单。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">点击位置</th><th scope="col">主要项目</th></tr></thead><tbody>
+        <tr><td>3D 视图</td><td>显示弹出调色板、吸取此处颜色、选择在此处绘制的图层、选择此纹理集、选择此 UV 岛／仅显示／隐藏、隐藏此对象／仅显示、显示范围、选区、视角、显示、对称绘制、撤销</td></tr>
+        <tr><td>UV 区域</td><td>显示弹出调色板、选择在此处绘制的图层、显示全部 UV、UV 线、岛边缘、边距线、选择此 UV 岛、关闭 UV 区域（<a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a>）</td></tr>
+        <tr><td>图层行</td><td>复制、重命名、导出为 PNG、合并、蒙版、颜色标签 等（<a href="/petanuri/zh/manual/layers#basic">图层</a>）</td></tr>
+        <tr><td>纹理集行</td><td>替换底色图像、按像素显示、Alpha 镂空、将图层移到其他纹理集、删除此纹理集 等（<a href="/petanuri/zh/manual/sets">纹理集</a>）</td></tr>
+        <tr><td>工具栏按钮、辅助工具</td><td>添加到常用、分配按键、恢复默认顺序、工具栏图标大小、工具栏列数、工具栏位置</td></tr>
+        <tr><td>面板标题、标签页</td><td>折叠/展开、隐藏此面板、分离此标签页</td></tr>
+        <tr><td>历史记录行</td><td>跳到此步骤（撤销/重做）</td></tr>
+        <tr><td>颜色集</td><td>添加当前前景色 等（<a href="/petanuri/zh/manual/draw#color">选择颜色</a>）</td></tr>
+        <tr><td>对象行</td><td>仅显示此项、显示/隐藏、在 3D 中高亮、全部显示（<a href="/petanuri/zh/manual/sets#objects">对象</a>）</td></tr>
+        <tr><td>其他角度小窗口、3D 导航</td><td>视角、显示全部、透视投影/正交投影、缩小</td></tr>
+        <tr><td>文字输入框</td><td>撤销、剪切、复制、粘贴、全选</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="519" height="710" alt="3D 视图的右键菜单" loading="lazy"><figcaption>3D 视图的右键菜单</figcaption></figure>
+      <ul class="mn-list">
+        <li>项目左侧是图标，右侧是当前的按键。子菜单用 ▶ 展开。</li>
+        <li>也可以用 <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>、<kbd>Enter</kbd>、<kbd>Esc</kbd> 操作。</li>
+        <li>菜单太长、屏幕放不下时，把鼠标或笔放在上下边缘，就能向那一侧滚动（还有项目时，边缘会出现 ▲、▼）。也可以用滚轮或键盘的上下键滚动。</li>
+        <li>也可以改为用鼠标右键弹出调色板（<a href="#popup">弹出调色板</a>）。</li>
+      </ul>
+      <h3 id="ctx-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>绘制细节时，菜单自己弹出来</b>：这是笔的长按触发的。请关闭 文件 → 偏好设置 → 笔与输入 → 菜单和按钮 中的“用笔长按弹出菜单”。右键和笔侧键弹出的菜单不受影响。</li>
+        <li><b>长按按钮会弹出菜单，导致无法点按</b>：把同一处的“按钮上的长按”设为“按下松开即确定（默认）”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="饼状菜单 圆形菜单 径向菜单 侧键 只用笔 单手 色环 画笔大小">
+      <h2>弹出调色板（仅用数位笔操作）</h2>
+      <p>这是一个圆形调色板，握着笔就能当场更改颜色、辅助工具和画笔大小。</p>
+      <ol class="mn-steps">
+        <li>在 3D 视图或 UV 区域上，按下笔的侧键。</li>
+        <li>笔不动，松开侧键。圆形调色板会在原地弹出（如果移动笔，则和以前一样是旋转、平移）。</li>
+        <li>用完后点击调色板外部（不会绘制）。按 <kbd>Esc</kbd> 或再轻点一次右键也可以关闭。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="圆形弹出调色板：外圈是常用辅助工具，内侧是色相环" loading="lazy"><figcaption>弹出调色板</figcaption></figure>
+      <ul class="mn-list">
+        <li><strong>外圈</strong>：常用的辅助工具。点击后切换并关闭。点击“＋”添加当前的辅助工具，长按或右键可移除（最多 10 个）。</li>
+        <li><strong>内侧</strong>：用色相环以及饱和度、明度的方块选择前景色。上方的小圆点是最近使用的颜色。</li>
+        <li><strong>下方的标签</strong>：上下拖动可更改画笔大小。</li>
+        <li>用鼠标弹出时，请把 文件 → 偏好设置 → 操作 → 鼠标 中的“右键”设为“弹出调色板”（默认为“菜单”）。也可以用右键菜单最上方的“显示弹出调色板”弹出。</li>
+        <li>在数位板设置中关闭了 Windows Ink 时，侧键也会作为鼠标右键传来，因此遵循上面“右键”的设置。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="reference" data-keywords="资料 参考 底稿 样本 参考图 边看边画 粘贴 剪贴板 参考图片">
+      <h2>边看参考图边绘制</h2>
+      <p>把资料图像显示在面板中，可以边看边画。也可以从图像中吸取颜色。</p>
+      <ol class="mn-steps">
+        <li>点击参考图面板的“打开”，选择图像。</li>
+        <li>用下方的缩略图切换已打开的图像。点击 × 关闭。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="参考图面板" loading="lazy"><figcaption>参考图面板</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>通过 文件 → 导入 →“打开参考图”、拖放到面板中，或点击面板后按 <kbd>Ctrl</kbd>+<kbd>V</kbd>，也可以打开。</li>
+        <li><strong>吸取颜色</strong>：用吸管在图像上点击或拖动。松开后，该颜色会加入最近使用的颜色。</li>
+        <li><strong>移动</strong>：用抓手、中键、右键或 <kbd>Space</kbd>+拖动来移动，用滚轮缩放。</li>
+        <li><strong>显示方式</strong>：用上方的按钮可显示全部、左右翻转、旋转 90°。用放大镜的 ＋、－ 缩放（只用笔也可以），“100%”则让图像的 1 个像素对应屏幕的 1 个点。</li>
+        <li>图像会以长边 1600px 保存，下次启动时也会恢复。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="common" data-keywords="工具提示 提示 说明 双击 双击笔 橡皮擦端 浏览器 刷新 F5 打印 放大 无法选择文字">
+      <h2>界面的通用操作</h2>
+      <p>在任何面板、窗口中都通用的操作。</p>
+      <ul class="mn-list">
+        <li>按钮和项目的说明，把光标（笔尖）放在名称上就会显示。</li>
+        <li>偏好设置、快捷键列表和确认窗口，可以拖动标题栏移动。用右上角的 × 或 <kbd>Esc</kbd> 关闭。</li>
+        <li>菜单项和按钮，用笔按下后松开也能确定（可在<a href="#settings-pen">笔与输入</a>中更改）。</li>
+        <li>笔的双击，即使第二次点击的位置略有偏移（12px、0.5 秒以内），也会当作双击。</li>
+        <li>笔的橡皮擦端，在面板、窗口的操作（按钮、滑块、排序、拖动）中与笔尖效果相同。在绘制区域内则作为橡皮擦。</li>
+        <li>浏览器的操作键（刷新、打印、页面缩放等）无效。界面上的文字无法选中（输入框除外）。</li>
+        <li>当前版本无法使用的功能，菜单和按钮会变淡并带有锁的标记（<a href="/petanuri/zh/manual/start#editions">版本对比</a>）。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="theme" data-keywords="深色主题 浅色主题 黑色界面 白色界面 主题 颜色 更改颜色 背景色 English 英语 韩语 中文 繁体 简体 language 切换语言">
+      <h2>更改深色模式、配色、语言</h2>
+      <p>在明亮的“浅色”和暗色的“深色”之间切换界面颜色。</p>
+      <ol class="mn-steps">
+        <li>点击工具栏最末尾（竖排时在下端，横排时在右端）的太阳和月亮开关。</li>
+        <li>在浅色和深色之间切换。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>在 文件 → 偏好设置 → 界面 → 显示 的“界面颜色”中也一样（默认为浅色）。</li>
+        <li>要用按键切换时，请给键位设置中“显示”分类里的“深色模式”分配按键（<a href="/petanuri/zh/manual/keys#assign">分配按键</a>）。</li>
+      </ul>
+      <h3 id="theme-color">更改配色</h3>
+      <p>在 文件 → 偏好设置 → 界面 → 显示 的“配色”中，可以更改界面底色、面板、按钮、文字、主要颜色、辅助色、3D 背景、UV 背景和工具栏颜色。</p>
+      <ul class="mn-list">
+        <li>浅色和深色分别保存。</li>
+        <li>点击“恢复默认配色”可恢复为原来的颜色。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="深色模式的界面" loading="lazy"><figcaption>深色模式</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-theme-v112.webp" width="900" height="350" alt="偏好设置界面中的配色项" loading="lazy"><figcaption>配色</figcaption></figure></div>
+      <h3 id="theme-lang">更改界面语言</h3>
+      <p>在 文件 → 偏好设置 → 界面 → 语言 的“语言 / Language”中选择。有 日本語、English、한국어、中文（简体）、中文（繁體）。</p>
+    </section>
+<section class="mn-sec" id="settings" data-keywords="设置 选项 环境 首选项 初始设置 自定义 打开方式 快捷键 设置界面 偏好">
+      <h2>偏好设置</h2>
+      <p>这是整个应用的设置。通过 文件 → 偏好设置（<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>）打开。</p>
+      <ul class="mn-list">
+        <li>左侧是分类，右侧是各小节。点击小节的标题可展开或折叠（折叠状态下次也会保持）。</li>
+        <li>项目的说明，把光标放在名称上就会显示。</li>
+        <li>设置在下次启动时也会保留。</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="900" height="640" alt="偏好设置窗口：左侧是分类，右侧是小节" loading="lazy"><figcaption>偏好设置</figcaption></figure>
+      <h3 id="settings-ui">界面</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">小节</th><th scope="col">项目</th></tr></thead><tbody>
+        <tr><td>显示</td><td>界面颜色（浅色（默认）／深色）、配色、3D 导航大小、在导航中显示旋转、缩放滑块（默认关闭）（<a href="#theme">深色模式、配色</a>、<a href="#nav-move">3D 导航</a>）</td></tr>
+        <tr><td>语言</td><td>语言 / Language（日本語、English、한국어、中文（简体）、中文（繁體））</td></tr>
+      </tbody></table></div>
+      <h3 id="settings-pen">笔与输入</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">小节</th><th scope="col">项目</th></tr></thead><tbody>
+        <tr><td>笔触手感</td><td>入笔收笔的方式（仅靠压感入笔收笔（默认）／按长度入笔收笔）、出笔方式（事后变细（默认）／延迟显示。仅在按长度入笔收笔时使用）</td></tr>
+        <tr><td>笔压</td><td>响应方式、下限、上限、通过试画校准。用笔按压面板，会显示当前笔压和轨迹（<a href="/petanuri/zh/manual/keys#pressure">校准笔压</a>）</td></tr>
+        <tr><td>数位板</td><td>直接读取笔压（WinTab）、通过 Windows Ink 传入的笔也使用 WinTab 压感（默认开启）、检查 WinTab 状态、WinTab 连接方式（重新查找）（<a href="/petanuri/zh/manual/keys#pressure">笔压不生效时</a>）</td></tr>
+        <tr><td>减少延迟</td><td>提前显示笔画（减少延迟）（默认关闭）、预测的临时线（默认开启）、让 Windows 先绘制笔尖处的线（仅在支持的环境中显示。默认关闭）</td></tr>
+        <tr><td>菜单和按钮</td><td>用笔按下后松开也确定（默认开启）、用笔长按弹出菜单（默认开启）、接收笔侧键的中键／右键点击（默认开启）、按钮上的长按（按下松开即确定（默认）／长按弹出右键菜单）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>入笔收笔的方式</strong>：“仅靠压感入笔收笔”会让轻微的笔压变得很细，线条的起笔和收笔也由笔压决定变细（鼠标始终按长度）。“按长度入笔收笔”则按辅助工具中“入笔”“出笔”的长度，使两端变细。</li>
+        <li><strong>提前显示笔画</strong>：用透明的叠加窗口先显示正在绘制的线，让显示提早约 1 帧。仅在用笔（Windows Ink）绘制圆形较硬的钢笔、毛笔时有效。开启期间不显示“预测的临时线”。</li>
+        <li><strong>预测的临时线</strong>：把正在画的线延伸到对下一步动作的预测处，临时绘制出来以掩盖延迟。仅限较硬的圆形笔。</li>
+        <li><strong>按钮上的长按</strong>：选“按下松开即确定”时，即使长按，也在松开时才确定（菜单用笔的侧键弹出）。选“长按弹出右键菜单”时，长按会弹出菜单。图层行等不是按钮的地方，无论哪种设置，长按都会弹出菜单。</li>
+        <li>笔的侧键汇总在<a href="/petanuri/zh/manual/keys#penbutton">数位笔按键、Windows Ink</a>中。</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-press-v112.webp" width="900" height="640" alt="偏好设置中的笔按压与长按项" loading="lazy"><figcaption>笔按压与长按</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="偏好设置 → 笔与输入 中的“菜单和按钮”栏" loading="lazy"><figcaption>笔与输入 →“菜单和按钮”</figcaption></figure></div>
+      <h3 id="settings-controls">操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">小节</th><th scope="col">项目</th></tr></thead><tbody>
+        <tr><td>相机</td><td>Space＋拖动（旋转（默认）／平移）、相机操作模板（右键方式、中键方式、Alt＋鼠标按钮、Unity 方式）、轴视角使用平行投影（默认开启）、按键缩放以光标为中心（默认关闭）、以最后绘制的位置为中心旋转（默认关闭）、以开始旋转时光标所在处为中心旋转（默认关闭）（<a href="/petanuri/zh/manual/keys#camera">相机操作</a>）</td></tr>
+        <tr><td>3D 鼠标</td><td>仅在连接过 3D 鼠标时才会显示（<a href="/petanuri/zh/manual/keys#mouse3d">3D 鼠标</a>）</td></tr>
+        <tr><td>鼠标</td><td>右键（菜单（默认）／弹出调色板）（<a href="#popup">弹出调色板</a>）</td></tr>
+        <tr><td>键盘</td><td>长按工具键临时切换（默认开启）、视为长按的时间（0.15–2 秒。默认 0.5 秒）、预设倍率（UV·2D）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>长按工具键临时切换</strong>：只在按住工具键期间，切换为该工具（<a href="/petanuri/zh/manual/keys#pen-hold">临时切换</a>）。</li>
+        <li><strong>预设倍率（UV·2D）</strong>：预先设定 3 个倍率（默认 100%、200%、50%），用 <kbd>Ctrl</kbd>+<kbd>1</kbd>、<kbd>2</kbd>、<kbd>3</kbd> 把 UV 区域和 2D 画布切换到该倍率。100% 时，纹理的 1 个像素对应屏幕上的 1 px。</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="在相机偏好设置中选择 Unity 方式" loading="lazy"><figcaption>操作 →“相机”</figcaption></figure>
+      <h3 id="settings-keys">键位设置</h3>
+      <p>按分类排列着操作和按键。重新分配、导出、导入、重置，汇总在<a href="/petanuri/zh/manual/keys#assign">分配按键</a>中。</p>
+      <h3 id="settings-paint">绘制</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">小节</th><th scope="col">项目</th></tr></thead><tbody>
+        <tr><td>画笔</td><td>画笔大小单位（屏幕 px（默认）／纹理 px）</td></tr>
+        <tr><td>性能</td><td>让未绘制的图层休眠（默认开启。<a href="/petanuri/zh/manual/layers#sleep">图层休眠</a>）、以快速格式保存工程文件（可在 v1.2.0 及以后版本中打开）（默认关闭。<a href="/petanuri/zh/manual/start#save-fast">以快速格式保存</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>画笔大小单位</strong>：“屏幕 px”按屏幕上看到的粗细决定（放大得越近，绘制出来的线越细）。“纹理 px”按所绘制图像的大小决定（无论拉近还是拉远，粗细都相同）。只有工具属性中“大小基准”为“按设置”的辅助工具才遵循它。</li>
+      </ul>
+      <h3 id="settings-system">系统</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">小节</th><th scope="col">项目</th></tr></thead><tbody>
+        <tr><td>启动</td><td>下次启动时显示教程、启动时检查更新（默认开启）、有新版本时自动下载并替换（默认开启）（<a href="/petanuri/zh/manual/start#version">更新到新版本</a>）</td></tr>
+      </tbody></table></div>
+      <h3 id="settings-ai">AI 联动</h3>
+      <p>共有 3 个小节：“AI 联动（MCP）”（使用与当前状态）、“连接方法”（要登记到 AI 一侧的内容，可用“复制”复制）、“run_js”（<span class="tier pro">Pro</span>）。详情请见 <a href="/petanuri/zh/manual/unity#ai">AI 联动</a>。</p>
+      <h3 id="settings-elsewhere">偏好设置中没有的设置</h3>
+      <p>以下设置只在使用的地方才有。</p>
+      <ul class="mn-list">
+        <li>跨两个纹理集绘制：3D 视图左下角的“跨纹理集绘制”（<a href="/petanuri/zh/manual/sets#cross">主与副</a>）</li>
+        <li>继续绘制到 UV 岛之外：UV 区域的标题栏、显示 → UV（<a href="/petanuri/zh/manual/uv#seam">超出 UV 岛时</a>）</li>
+        <li>用笔拖动来移动图层、辅助工具：图层的“…”</li>
+        <li>导出扩边和导出位置：导出窗口（<a href="/petanuri/zh/manual/export#pad">导出扩边</a>）</li>
+        <li>对称对应点的搜索范围：3D 视图左上角对称的 ▼（<a href="/petanuri/zh/manual/draw#mirror">对称绘制</a>）</li>
+      </ul>
+      <h3 id="settings-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>没有“3D 鼠标”小节</b>：从未连接过 3D 鼠标时不会显示。连接后就会出现。</li>
+        <li><b>开启“提前显示笔画”也没有变化</b>：只在用笔（Windows Ink）绘制时有效。对鼠标、触摸、使用“直接读取笔压（WinTab）”的笔不起作用。未能启用时，会在右下角显示原因并自动关闭。</li>
+        <li><b>按键缩放会向屏幕中央靠拢</b>：开启 操作 → 相机 中的“按键缩放以光标为中心”。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw#color">选择颜色、吸管</a></li><li><a href="/petanuri/zh/manual/layers#history">历史记录与撤销</a></li><li><a href="/petanuri/zh/manual/uv#uv">显示 UV 区域</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/start"><small>← 上一页</small>入门</a><a class="next" href="/petanuri/zh/manual/draw"><small>下一页 →</small>绘制</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +633,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

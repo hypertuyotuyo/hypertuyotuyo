@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Export | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Export dialog (padding/destination), PNG, PSD export/import, padding, output folders and materials (.unitypackage). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="The export window (bleed and destination), PNG, exporting and importing PSD, export bleed (padding), the export folder and materials (.unitypackage). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/export">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Export | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Export dialog (padding/destination), PNG, PSD export/import, padding, output folders and materials (.unitypackage). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="The export window (bleed and destination), PNG, exporting and importing PSD, export bleed (padding), the export folder and materials (.unitypackage). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/export">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Export | PetaNuri3D Manual",
-   "description": "Export dialog (padding/destination), PNG, PSD export/import, padding, output folders and materials (.unitypackage). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "The export window (bleed and destination), PNG, exporting and importing PSD, export bleed (padding), the export folder and materials (.unitypackage). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/export",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,230 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export" aria-current="page">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export" aria-current="page">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Export</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Export</p>
     <h1 class="mn-h1">Export</h1>
-    <p class="mn-intro">Export finished textures as images or materials through File → Export.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#png">Export as PNG</a></li><li><a href="#psd">Export/import PSD</a></li><li><a href="#pad">Export bleed (padding)</a></li><li><a href="#dir">Export folder</a></li><li><a href="#mat">Export materials</a></li></ul></div>
-    <section class="mn-sec" id="png"><h2>Export as PNG</h2><ol class="mn-steps"><li>Choose File → Export → Export PNG.</li><li>Choose padding and destination in the small dialog, then click Export.</li><li>Export the selected set or all sets. Filenames are  &lt;material name&gt;.png.</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="File → Export menu" loading="lazy"><figcaption>File → Export</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="Export dialog: padding and destination" loading="lazy"><figcaption>Export dialog</figcaption></figure></div><div class="mn-tip">Sets with Main color 2nd/3rd folders export separate PNGs. Strokes and other effects are included in the image.</div><div class="mn-tip">Baked light, shadows and surface appearance become visible layer colors in PNG. Stamp working sets are excluded from model texture exports. In model-free 2D painting, save PNG using Export PNG below the canvas.</div><div class="mn-tip">Selected layers as PNG (all editions): right-click a layer → Export this layer as PNG, select several → Export selected layers as PNG, or File → Export → Export PNG (selected layers). The background is transparent. With two or more, choose One by one (&lt;material&gt;_&lt;layer&gt;.png) or Combine into one image (&lt;material&gt;_layers.png).</div><div class="mn-tip">The Resolution option in the export dialog scales the output to a size different from the texture set (512–8192) for PNG, selected layers, and materials (padding is applied at the set’s resolution first).</div><div class="mn-tip">UV map (all editions): File → Export → Export UV map as PNG (selected set), also in the texture set’s right-click menu, saves the UV lines as &lt;material&gt;_uv.png. Choose the resolution, line color (white, black, foreground), background (transparent, black, white), and line width, and turn on “Draw island edges twice as thick” if needed.</div><div class="mn-figs"><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="Resolution in the export dialog" loading="lazy"><figcaption>Export resolution</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="Export UV map as PNG dialog" loading="lazy"><figcaption>Export UV map as PNG</figcaption></figure></div></section><section class="mn-sec" id="psd"><h2>Export/import PSD <span class="tier std">Standard</span></h2><ul class="mn-list"><li>File → Export → Export PSD preserves layers, visibility, opacity, blend modes, clipping, transparency lock, folders, layer masks and adjustment layers (gradation maps retain color stops).</li><li>Strokes are written as layers with the effect rasterized. Text layers become regular layers. Paint-target, normal-map and Main color 2nd/3rd folders are written as hidden groups (restored on import).</li><li>Drop a PSD onto the window to import into the material matching its filename. Also import from a Texture sets panel row.</li><li>Import an avatar&#x27;s customization PSD to continue painting.</li></ul><div class="mn-tip warn">Adjustment-layer calculations may look slightly different in other apps.</div><div class="mn-tip">PSD (Standard and Pro): a base layer with only stroke, drop shadow, or outer glow effects and its clipped layers are now written separately, with a “(layer name) (effects)” layer holding just the baked effects added on top (with fill opacity, overlays, inner effects, and so on, they are merged into one as before).</div></section><section class="mn-sec" id="pad"><h2>Export bleed (padding)</h2><p>Expands edge colors outside UV islands during export. Without padding, downscaling/mipmaps may reveal lines at UV seams.</p><ul class="mn-list"><li>Choose None, 4, 8 (default), 16, 32, 64, 128 px or Fill all space outside islands (in export/material-export dialogs).</li><li>Affects PNG, PSD composite images and material textures. Individual PSD layers remain as painted.</li></ul><p>In v1.1.0, All fills the entire margin even for 4096px images.</p><div class="mn-tip">The padding value is shared with the lower left of the UV pane. Faint brush edges no longer count as painted: opaque colors are spread outside islands first, then faint edges are layered on top, so seams are less likely to show base-color lines. Create padding on a new layer uses the same rule.</div><div class="mn-tip">How padding spreads: each texel outside an island takes the color of the nearest island texel by straight-line distance, so diagonal edges spread smoothly instead of in steps. Images sent through the Unity link match the exported PNG.</div></section><section class="mn-sec" id="dir"><h2>Export folder</h2><ul class="mn-list"><li>The save-location dialog opens in the last export folder.</li><li>Set a folder with Choose folder in the export dialog, then enable <strong>“Always export to this folder without asking”</strong> to send PNG, PSD, AO and .unitypackage exports there without prompting. Clear removes the fixed destination and restores prompting.</li><li>Material folder exports (choose Assets) open at the last selected Assets folder.</li></ul><div class="mn-tip warn">When exporting without asking, files with the same names are overwritten.</div><p>Open folder after export is enabled by default. Inspect completed images in Explorer; uncheck if unwanted. After choosing a destination, Exporting… and progress are shown.</p></section><section class="mn-sec" id="mat"><h2>Export materials <span class="tier pro">Pro</span></h2><p>Export lilToon materials as .unitypackage. For details, see  <a href="/petanuri/en/manual/material#export">Final look and lilToon materials</a> .</p></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/pose"><small>← Previous</small>Poses, blend shapes and vertex groups</a><a class="next" href="/petanuri/en/manual/unity"><small>Next →</small>Paint from Unity and AI integration</a></nav>
+    <p class="mn-intro">Turns the textures you painted into images (PNG, PSD) to use in Unity and elsewhere. Saving a project file (.petanuri) is for continuing to paint later. It does not produce an image to apply to the model. "Export" is what makes images.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Choose File → Export → Export PNG (all sets) to export every texture as a PNG at once (<a href="#png">Details</a>).</li>
+      <li>You can leave "Padding" in the window at the default 8 px. Increase it if you see lines at seams in the game (<a href="#pad">Details</a>).</li>
+      <li>If you export to the same folder over and over, turn on "Export to this folder without asking each time" (<a href="#dir">Details</a>).</li>
+      <li>To hand it over with the layers kept separate, export a PSD <span class="tier std">Standard</span> (<a href="#psd">Details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#kinds">What you can export, and how it differs from a project file</a></li><li><a href="#png">Export as PNG</a></li><li><a href="#layers-png">Export only the selected layers as PNG</a></li><li><a href="#uvmap">Export the UV map as PNG</a></li><li><a href="#psd">Export/import PSD</a></li><li><a href="#pad">Export bleed (padding)</a></li><li><a href="#dir">Export folder</a></li><li><a href="#canvas2d">Export a 2D painting</a></li><li><a href="#mat">Export lilToon materials and AO</a></li></ul></div>
+
+    <section class="mn-sec" id="kinds" data-keywords="output save-as flatten finished-texture texture-to-image import-into-unity project-file-vs-export difference">
+      <h2>What you can export, and how it differs from a project file</h2>
+      <p>Choose every export from File → Export. You can also export just one set from the right-click menu on its row in the Texture sets panel.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">What you want</th><th scope="col">Menu item</th></tr></thead><tbody>
+        <tr><td>The texture of the selected set</td><td>Export PNG (selected set) (<a href="#png">Details</a>)</td></tr>
+        <tr><td>The textures of all sets</td><td>Export PNG (all sets) (<a href="#png">Details</a>)</td></tr>
+        <tr><td>A picture of only some layers</td><td>Export as PNG (selected layers) (<a href="#layers-png">Details</a>)</td></tr>
+        <tr><td>A base sketch of the UV lines</td><td>Export UV map as PNG (selected set) (<a href="#uvmap">Details</a>)</td></tr>
+        <tr><td>A picture with the layers kept separate <span class="tier std">Standard</span></td><td>Export PSD (selected set) / Export PSD (all sets) (<a href="#psd">Details</a>)</td></tr>
+        <tr><td>lilToon material <span class="tier pro">Pro</span></td><td>Export materials (.unitypackage / folder) (<a href="#mat">Details</a>)</td></tr>
+        <tr><td>AO image <span class="tier pro">Pro</span></td><td>Filters → Bake → Export AO as PNG (last bake result) (<a href="#mat">Details</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-filemenu.webp" width="595" height="478" alt="File → Export menu" loading="lazy"><figcaption>File → Export</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col"></th><th scope="col">Project file (.petanuri)</th><th scope="col">Exported PNG</th></tr></thead><tbody>
+        <tr><td>Contents</td><td>The model, all layers and settings</td><td>One picture made by stacking the visible layers</td></tr>
+        <tr><td>Opens in</td><td>PetaNuri3D only</td><td>Unity, other paint apps and so on</td></tr>
+        <tr><td>How</td><td>File → Save project file (<kbd>Ctrl</kbd>+<kbd>S</kbd>)</td><td>File → Export</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">You cannot get layers back from an exported PNG. Save a project file too, in case you need to make changes later (<a href="/petanuri/en/manual/start#save">Save and resume</a>).</div>
+    </section>
+
+    <section class="mn-sec" id="png" data-keywords="export-all batch bulk filename file-name resize scale downscale 4k 2k 1024 save-texture save-as-png">
+      <h2>Export as PNG</h2>
+      <p>Turns the picture of each texture set into one PNG per set. This is the image you apply to the model in Unity and so on.</p>
+      <ol class="mn-steps">
+        <li>Choose File → Export → Export PNG (all sets). To export just one set, choose "Export PNG (selected set)" instead.</li>
+        <li>In the export window, check "Resolution", "Padding" and "Destination", then click "Export".</li>
+        <li>If you are asked where to save, choose a folder. For all sets, you choose the folder only once.</li>
+        <li>A message "Exported (name)" appears, and the folder you exported to opens in Explorer.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-dialog.webp" width="544" height="265" alt="Export window: padding and destination" loading="lazy"><figcaption>Export window</figcaption></figure>
+      <h3 id="png-files">Files that are exported</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">File name</th><th scope="col">What it is</th></tr></thead><tbody>
+        <tr><td>&lt;set name&gt;.png</td><td>The picture made by stacking the visible layers. The set name is the material name</td></tr>
+        <tr><td>&lt;set name&gt;_main2nd.png, &lt;set name&gt;_main3rd.png <span class="tier pro">Pro</span></td><td>For sets that have a Main color 2nd/3rd folder. If you painted their masks, files ending in _mask are exported too (<a href="/petanuri/en/manual/material#main2">Main color 2nd and 3rd</a>)</td></tr>
+        <tr><td>&lt;set name&gt;_normal.png <span class="tier pro">Pro</span></td><td>For sets that have a normal map folder as a paint target (<a href="/petanuri/en/manual/material#channels">Paint targets</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Sets that would get the same name are told apart with _2, _3 and so on.</li>
+        <li>Sets whose display is turned off are included in "all sets". Orphaned sets (!) are not. When you need one, export it with "Export PNG (no bleed outside islands)" in the right-click menu on its row (<a href="/petanuri/en/manual/sets#orphan">Orphaned sets</a>).</li>
+        <li>Effects such as Stroke are exported with the effects applied. Light, shadow and material look baked with Easy Bake and so on are also included, as colors of the visible layers.</li>
+        <li>Textures are exported as they are, even if you have hidden things with the visible area or objects.</li>
+        <li>You can also export a set with "Export as PNG" in the right-click menu on its row in the Texture sets panel.</li>
+      </ul>
+      <h3 id="png-size">Export at a different size</h3>
+      <p>With "Resolution" in the export window, you can export at a size different from the texture set's resolution. Choose from "Unchanged (texture set resolution)", 512×512, 1024×1024, 2048×2048, 4096×4096 and 8192×8192.</p>
+      <ul class="mn-list">
+        <li>Bleed is added at the set's resolution first, and then the image is scaled down or up.</li>
+        <li>This applies to PNG (selected set and all sets), selected layers, UV map and material exports. It does not apply to PSD (always the set's resolution).</li>
+        <li>To change the resolution you paint at, use the Texture sets panel (<a href="/petanuri/en/manual/sets#resolution">Change the resolution</a>).</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-export-size-v120.webp" width="564" height="261" alt="The Resolution field in the export window" loading="lazy"><figcaption>Export resolution</figcaption></figure>
+      <h3 id="png-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Lines appear at UV seams in the game</b>: The bleed is not wide enough. Increase it beyond 8 px and export again (<a href="#pad">Bleed</a>).</li>
+        <li><b>"Can't export while (name) is shown" appears</b>: A transform frame, a filter preview or similar is open. Confirm (<kbd>Enter</kbd>) or cancel (<kbd>Esc</kbd>) first, then export.</li>
+        <li><b>"Another read/write operation is in progress" appears</b>: Saving, Autosave or loading is in progress. Wait until it finishes, then try again.</li>
+        <li><b>"Display processing has stopped, so it can't export" appears</b>: Reopen your project file or an autosave, then export (<a href="/petanuri/en/manual/sets#memory">Memory savings</a>).</li>
+        <li><b>"No texture set can be exported as PNG" appears</b>: The set you have selected is an orphaned set (!). Select another set, or move its layers, and then export.</li>
+        <li><b>It says "Export canceled" when I click</b>: You clicked Cancel in the export window or the save window. Values you changed in the window go back as they were.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="layers-png" data-keywords="single-layer individual-layer per-layer transparent-background lineart-only separate-parts export-layer cutout">
+      <h2>Export only the selected layers as PNG</h2>
+      <p>Exports only some layers, such as just the line art or just a pattern, as a PNG with a transparent background.</p>
+      <ol class="mn-steps">
+        <li>In the Layers panel, select the layers to export (<kbd>Ctrl</kbd>/<kbd>Shift</kbd>+click to select as many as you like).</li>
+        <li>Choose File → Export → Export as PNG (selected layers). You can also use "Export selected layers as PNG" or "Export this layer as PNG" in a layer's right-click menu.</li>
+        <li>For two or more layers, choose "One by one (a file per layer)" or "Combine into one image" under "Selected layers" in the window, then click "Export".</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Choice</th><th scope="col">File name</th></tr></thead><tbody>
+        <tr><td>One by one</td><td>&lt;set name&gt;_&lt;layer name&gt;.png</td></tr>
+        <tr><td>Combine into one image</td><td>&lt;set name&gt;_layers.png (stacked in the panel's order, using each blend mode)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>The background is transparent. Because the picture contains only what you painted, no bleed is added.</li>
+        <li>It remembers your previous choice.</li>
+        <li>It is not available in 2D painting. Export with "Export PNG (selected set)" instead (<a href="#canvas2d">Details</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvmap" data-keywords="uv-layout uv-template wireframe guide template overlay uv-snapshot paint-in-other-app">
+      <h2>Export the UV map as PNG</h2>
+      <p>Exports the UV lines as a PNG. Use it as a base sketch to overlay when you paint in another paint app.</p>
+      <ol class="mn-steps">
+        <li>Select the texture set you want to export.</li>
+        <li>Choose File → Export → Export UV map as PNG (selected set). It is also in the right-click menu on the texture set row.</li>
+        <li>Choose the options below in the window and click "Export". &lt;set name&gt;_uv.png is created.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Setting</th><th scope="col">Choices</th></tr></thead><tbody>
+        <tr><td>Resolution</td><td>Unchanged (texture set resolution), 512 to 8192</td></tr>
+        <tr><td>Line color</td><td>White, black, foreground color</td></tr>
+        <tr><td>Background</td><td>Transparent, black, white (if transparent, you can overlay it on a picture in other software)</td></tr>
+        <tr><td>Line width</td><td>1, 2, 3, 4, 6, 8 px</td></tr>
+        <tr><td>Island edges</td><td>"Draw island edges twice as thick" (on by default)</td></tr>
+        <tr><td>Destination</td><td>Same as other exports (<a href="#dir">Details</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uvmap-v120.webp" width="564" height="384" alt="Export UV map as PNG window" loading="lazy"><figcaption>Export UV map as PNG</figcaption></figure>
+      <ul class="mn-list">
+        <li>A 2D canvas has no UV, so it cannot be exported. Choose a texture set of a 3D model.</li>
+        <li>To just look at the UV lines inside PetaNuri3D, use "UV lines" in the UV pane (<a href="/petanuri/en/manual/uv#uv">Show UV and paint directly</a>).</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="psd" data-keywords="photoshop clip-studio krita layered-psd editable-psd import-psd open-in-photoshop resume-editing layered-file">
+      <h2>Export/import PSD <span class="tier std">Standard</span></h2>
+      <p>Exports a PSD with the layers kept separate. Use it to keep painting in another paint app, or to hand out as an editable PSD.</p>
+      <ol class="mn-steps">
+        <li>Choose File → Export → Export PSD (selected set) or Export PSD (all sets).</li>
+        <li>In the export window, check the padding and destination, then click "Export".</li>
+        <li>&lt;set name&gt;.psd is created. When it finishes, the size and the number of layers are shown.</li>
+      </ol>
+      <h3 id="psd-keep">What goes into the PSD</h3>
+      <ul class="mn-list">
+        <li>Layers, visibility, opacity, blend modes, clipping, Lock transparency, folders, layer masks and color tags (layer colors) are kept.</li>
+        <li>Adjustment layers go in as adjustment layers (a Gradation map keeps its color stops). The "Colorize" option of Hue/Saturation/Lightness is not included.</li>
+        <li>Stroke is written as a layer baked into pixels. Text layers become ordinary layers.</li>
+        <li>A base layer that has only Stroke, Drop shadow or Outer glow, and clipped layers, are written separately as they are. A layer named "(layer name)<span lang="ja">（効果）</span>" (the Japanese word for "effects") is added above, with only the effects baked in. When there is a fill opacity, an inner effect or the like, everything is merged into one layer.</li>
+        <li><span class="tier pro">Pro</span> The folders for paint targets, Normal map and Main color 2nd/3rd are written as hidden groups. They are restored when you import into PetaNuri3D.</li>
+        <li>The composite image (the flat picture you get without opening the PSD) gets bleed. The layers themselves stay as you painted them.</li>
+      </ul>
+      <div class="mn-tip warn">Adjustment-layer calculations may look slightly different in other apps.</div>
+      <h3 id="psd-import">Import a PSD</h3>
+      <p>You can import the editable PSD that comes with an avatar and keep painting from it. When you import it, the layers of that set are replaced with the contents of the PSD.</p>
+      <ol class="mn-steps">
+        <li>Choose File → Import → Import PSD (replace layers).</li>
+        <li>Choose the PSD. It goes into the set whose name matches the file name (body.psd → body). If no set matches, it goes into the selected set.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can also drop a PSD onto the window. If you drop it on a texture set row, it goes into that set (<a href="/petanuri/en/manual/sets#files">Add images or PSDs</a>).</li>
+        <li>If the size is different, it is scaled to the set's resolution. Folders, masks and supported adjustment layers stay as they are.</li>
+        <li>Blend modes that do not match become "Normal", unsupported adjustment layers are skipped, and a notice appears at the bottom right.</li>
+        <li>One Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>) brings it back.</li>
+        <li>When you create a new project, you can also set the starting point (Base) to "PSD" and import it (<a href="/petanuri/en/manual/start#new">Open a 3D model</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="pad" data-keywords="dilation edge-bleed margin seam-lines visible-seams mipmaps gaps white-line black-line">
+      <h2>Export bleed (padding)</h2>
+      <p>Spreads the edge colors outward beyond the UV islands when exporting. Without it, lines may show at UV seams in the game when the texture is scaled down or mipmaps are applied.</p>
+      <ol class="mn-steps">
+        <li>In the export window, choose the width to spread under "Padding".</li>
+        <li>Click "Export".</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Value</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>None (don't extend outside islands)</td><td>Does not spread outside the islands (if a base is visible, you get the base color)</td></tr>
+        <tr><td>4, 8 (default), 16, 32, 64, 128 px</td><td>Spreads color outward from the island edges by that width</td></tr>
+        <tr><td>Fill everything outside islands</td><td>Fills everything outside the islands with the color of the nearest island</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>It applies to PNGs, the composite image of a PSD, and the images from a material export (Main color, shadow color, masks, normal map and all the rest). The layers inside a PSD are not spread.</li>
+        <li>It is not added to PNGs of selected layers or to UV maps.</li>
+        <li>The value is the same as "Padding" at the bottom left of the UV pane. Changing either one changes both. Values you set in 1 px steps in the UV pane also appear in the window (<a href="/petanuri/en/manual/uv#area">Paint area and padding</a>).</li>
+        <li>A pixel outside an island takes the color of the nearest island pixel, measured in a straight line. Diagonal edges spread smoothly, without stair-steps.</li>
+        <li>The thin, faint edge of a brush stroke is not counted as painted. The color of the opaque areas is spread first, and then the faint areas are laid on top. This makes lines in the base color less likely to appear at seams.</li>
+        <li>The image sent by the Unity link is spread the same way as an exported PNG (<a href="/petanuri/en/manual/unity">Paint from Unity</a>).</li>
+      </ul>
+      <div class="mn-tip">Before you export, turn on "Padding line" in the UV pane to see how far the color will spread. If you also want to paint by hand outside the islands, set the paint area to "In padding" (<a href="/petanuri/en/manual/uv#area">Details</a>).</div>
+    </section>
+
+    <section class="mn-sec" id="dir" data-keywords="output-folder save-location export-path default-folder dont-ask overwrite explorer auto-open">
+      <h2>Export folder</h2>
+      <p>Use "Destination" in the export window to export to the same folder every time. It is handy to choose something like the Textures folder of your Unity project.</p>
+      <ol class="mn-steps">
+        <li>In the export window, choose a folder with "Select folder".</li>
+        <li>Turn on "Export to this folder without asking each time (overwrites files with the same name)".</li>
+        <li>From then on, PNG, PSD, AO and .unitypackage exports are written to that folder without asking where to save.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>"Remove" goes back to being asked where to save every time you export.</li>
+        <li>Even when you have not chosen a folder, the save window opens at the folder you last exported to.</li>
+        <li>"Open the folder after exporting" is on from the start. When writing finishes, the folder opens in Explorer. Turn it off if you do not need that.</li>
+        <li>While exporting, "Exporting…" is shown and you cannot do anything else until it finishes.</li>
+        <li>For exporting materials to a folder (choose Assets), the window opens at the Assets folder you chose last time.</li>
+        <li>If you cancel in the window, the values you changed in it (padding, destination and so on) go back as they were.</li>
+      </ul>
+      <div class="mn-tip warn">When "Export to this folder without asking each time" is on, files with the same name are overwritten without a check.</div>
+    </section>
+
+    <section class="mn-sec" id="canvas2d" data-keywords="illustration flat-image no-model standalone export-canvas 2d-paint.png">
+      <h2>Export a 2D painting</h2>
+      <p>A 2D painting, which uses no model, can also be exported as a PNG or PSD.</p>
+      <ul class="mn-list">
+        <li>Click "Export PNG" in the bar below the canvas to make 2D-paint.png. File → Export → Export PNG (selected set) does the same.</li>
+        <li><span class="tier std">Standard</span> To hand it over with the layers kept, choose File → Export → Export PSD (selected set) to make 2D-paint.psd.</li>
+        <li>Exporting all sets or selected layers is for the texture sets of 3D models. It is not available in 2D painting.</li>
+        <li>You can also save a project file (<a href="/petanuri/en/manual/deco#paint2d">2D painting without a model</a>).</li>
+      </ul>
+      <div class="mn-tip">A picture drawn on the 2D canvas for stamps is not included in the model's exports. Use "Register as stamp" to turn it into a stamp (<a href="/petanuri/en/manual/deco#canvas2d">2D canvas for stamps</a>).</div>
+    </section>
+
+    <section class="mn-sec" id="mat" data-keywords="unitypackage material-export liltoon-material shadow-color masks ambient-occlusion ao-map ao-png">
+      <h2>Export lilToon materials and AO <span class="tier pro">Pro</span></h2>
+      <ul class="mn-list">
+        <li>Export lilToon materials together with their textures using File → Export → Export materials (.unitypackage / folder). The window also has padding and destination fields (<a href="/petanuri/en/manual/material#export">Export materials</a>).</li>
+        <li>Export a baked AO as &lt;set name&gt;_AO.png with Filters → Bake → Export AO as PNG (last bake result) (<a href="/petanuri/en/manual/ao">Bake AO</a>).</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/start#save">Save and resume</a></li><li><a href="/petanuri/en/manual/uv#area">Paint area and padding</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li><li><a href="/petanuri/en/manual/material#export">Export materials</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/pose"><small>← Previous</small>Poses and blend shapes</a><a class="next" href="/petanuri/en/manual/unity"><small>Next →</small>Unity and AI integration</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +365,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

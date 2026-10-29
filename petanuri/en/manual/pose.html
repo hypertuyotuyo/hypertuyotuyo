@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poses, blend shapes and vertex groups | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Paint in poses, humanoid bone colors, pose symmetry, paint with expressions/blend shapes and select from bone weights (vertex groups). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="Pose the model and paint, color-coded humanoid bones, symmetric posing, painting in a blend shape such as an expression, and making areas from bone weights (vertex groups). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/pose">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Poses, blend shapes and vertex groups | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Paint in poses, humanoid bone colors, pose symmetry, paint with expressions/blend shapes and select from bone weights (vertex groups). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="Pose the model and paint, color-coded humanoid bones, symmetric posing, painting in a blend shape such as an expression, and making areas from bone weights (vertex groups). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/pose">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Poses, blend shapes and vertex groups Pro | PetaNuri3D Manual",
-   "description": "Paint in poses, humanoid bone colors, pose symmetry, paint with expressions/blend shapes and select from bone weights (vertex groups). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "Pose the model and paint, color-coded humanoid bones, symmetric posing, painting in a blend shape such as an expression, and making areas from bone weights (vertex groups). A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/pose",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,166 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose" aria-current="page">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose" aria-current="page">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Poses, blend shapes and vertex groups</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Poses, blend shapes and vertex groups</p>
     <h1 class="mn-h1">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">Use bones, blend shapes and vertex groups to paint places hard to reach in a T-pose. Features on this page require Pro.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#pose">Pose mode</a></li><li><a href="#humanoid">Humanoid bone colors</a></li><li><a href="#posemirror">Pose symmetry</a></li><li><a href="#blend">Blend shapes</a></li><li><a href="#vgroup">Create selections from vertex groups</a></li></ul></div>
-    <section class="mn-sec" id="pose"><h2>Pose mode</h2><ol class="mn-steps"><li>Click Pose at the top center of 3D (painting is disabled in Pose mode).</li><li>Select a bone via joint points, the mesh or the Pose panel list on the right.</li><li>Rotate with the handles (top row switches rotation/move and handle orientation). Also enter numeric angles in the panel.</li><li>Return to Paint to paint in that pose.</li></ol><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="Rotating an arm in Pose mode" loading="lazy"><figcaption>Pose mode</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="Back in Paint mode with arms lowered" loading="lazy"><figcaption>Paint in that pose</figcaption></figure></div><div class="mn-tip">Useful for underarms and inner arms that are hard to paint in a T-pose. Reset/Reset all restores the original pose. Poses are saved in project files.</div><div class="mn-tip">Painting symmetrically while posed follows the rest-pose symmetry. Bent arms still paint matching areas on the opposite arm (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</div><div class="mn-tip">Pose presets (Pro): Save current state at the bottom of the Pose panel stores the current pose under a name (up to 10). Load applies it (one undo reverts), and you can overwrite, rename, or delete presets. They are saved in the project.</div></section><section class="mn-sec" id="humanoid"><h2>Humanoid bone colors</h2><ul class="mn-list"><li>Humanoid <strong>Body</strong> bone joints (hips, spine, chest, neck, head, shoulders, arms, legs and feet) appear as <strong>larger orange points</strong>,<strong> fingers are green</strong>; other bones (hair, skirt, tail and other secondary-motion bones) are small blue points.</li><li>Humanoid bones near the clicked point take priority over other bones.</li><li>The Pose panel list uses matching colored markers. <strong>“Humanoid only”</strong> hides secondary-motion bones, showing only body and hands.</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pose-humanoid.webp" width="458" height="900" alt="Pose mode: body joints orange, fingers green, secondary-motion bones blue" loading="lazy"><figcaption>Body orange / Hands green / Others blue</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-pose-panel.webp" width="298" height="473" alt="Pose panel" loading="lazy"><figcaption>Pose panel</figcaption></figure></div><div class="mn-tip warn">Humanoid detection uses bone names and may miss some naming conventions.</div></section><section class="mn-sec" id="posemirror"><h2>Pose symmetry</h2><ul class="mn-list"><li><strong>“Symmetric pose”</strong> mirrors movement to the opposite bone when enabled.</li><li><strong>“Copy left → right” / “Copy right → left”</strong> copies a pose to the opposite side (left/right refer to the character; one Undo).</li><li>Available in the top-center row, Pose panel and right-click menu.</li><li>Pairs use names (Left/Right, .L/.R, _L/_R, trailing L/R etc.). If names do not identify a pair, bones at symmetrical rest-pose positions are paired.</li></ul></section><section class="mn-sec" id="blend"><h2>Blend shapes</h2><ul class="mn-list"><li>Blend shapes on the right lists model blend shapes (shape keys). With multiple meshes, choose one in the top dropdown.</li><li>Sliders (0–100) change the shape; display, painting and hit testing all use the resulting shape.</li><li>Filter, Non-zero only and Reset all to 0 are available. Values are saved in project files.</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshapes.webp" width="298" height="420" alt="Blend shapes panel" loading="lazy"><figcaption>Blend shapes panel</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/blendshape.webp" width="393" height="810" alt="Face with an expression blend shape applied" loading="lazy"><figcaption>Paint while an expression is applied</figcaption></figure></div><div class="mn-tip">Copy values and Paste copy the current non-zero values to restore later or on another model. Load .anim applies the first frame of a Unity facial animation (.anim), matching meshes by name. Save current state at the bottom stores hidden objects and shape key values together as a display preset.</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshape-v120.webp" width="298" height="439" alt="Blend shape panel with copy, .anim loading, and presets" loading="lazy"><figcaption>Blend shape copy, .anim, and presets</figcaption></figure></section><section class="mn-sec" id="vgroup"><h2>Create selections from vertex groups</h2><ol class="mn-steps"><li>In Vertex groups on the right, check groups (bone weights), as many as needed.</li><li>Click Make selection, Add, Subtract or Show this area only.</li><li>Painting is restricted to that area.</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups.webp" width="298" height="470" alt="Vertex groups panel" loading="lazy"><figcaption>Vertex groups panel</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups-3d.webp" width="393" height="900" alt="Selection from torso vertex groups" loading="lazy"><figcaption>Area from torso weights</figcaption></figure></div><div class="mn-tip">Use weight strength makes weights directly control painting strength for smooth boundaries.</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/bake"><small>← Previous</small>Easy Bake, materials and shading</a><a class="next" href="/petanuri/en/manual/export"><small>Next →</small>Export</a></nav>
+    <p class="mn-intro">Use a 3D model's bones, blend shapes and vertex groups to paint areas that are hard to reach in a T-pose. You can lower the arms, change the expression or pick just part of the body.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <p class="mn-proof">This is a Pro feature. In Lite, the buttons show a lock icon and the panels show only a description. In Standard, the "Paint/Pose" switch and the "Pose", "Blend shapes" and "Vertex groups" panels aren't shown (<a href="/petanuri/en/manual/start#editions">Edition comparison</a>).</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Click "Pose" at the top center of the 3D view, click a joint dot, and rotate with the gizmo that appears (<a href="#pose">details</a>).</li>
+      <li>Switch back to "Paint" and you can paint in that posed shape (<a href="#pose">details</a>).</li>
+      <li>To paint with a changed expression or body shape, move the sliders in the "Blend shapes" panel on the right (<a href="#blend">details</a>).</li>
+      <li>To paint only part of the body, pick it in the "Vertex groups" panel and click "Make selection" (<a href="#vgroup">details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#pose">Pose the model and paint in that shape</a></li><li><a href="#humanoid">Tell body, hand and swaying-part bones apart</a></li><li><a href="#posemirror">Pose symmetrically</a></li><li><a href="#blend">Change expressions or body shape and paint (Blend shapes)</a></li><li><a href="#vgroup">Paint only part of the body (Vertex groups)</a></li></ul></div>
+
+    <section class="mn-sec" id="pose" data-keywords="bone joint lower arms T-pose A-pose armpit inside of arm rotate gizmo rig armature skeleton">
+      <h2>Pose the model and paint in that shape</h2>
+      <p>Use this to paint spots that are hard to draw in a T-pose, such as the armpits and the inside of the arms. If you lower the arms first, the pen reaches more easily.</p>
+      <ol class="mn-steps">
+        <li>Click "Pose" at the top center of the 3D view. You can't draw while in Pose mode.</li>
+        <li>Click the joint dot of the bone you want to move. If you click the mesh, the bone that moves that spot the most is selected.</li>
+        <li>Drag the gizmo that appears to rotate the bone.</li>
+        <li>Click "Paint" to go back. The paint positions are rebuilt in the posed shape, and you can paint right away.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/pose-mode.webp" width="654" height="900" alt="Rotating an arm in Pose mode" loading="lazy"><figcaption>Pose mode</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/pose-paint.webp" width="419" height="801" alt="Back in Paint mode with the arms still lowered" loading="lazy"><figcaption>You can paint as is</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>Other ways in: Display → Mode &amp; pose → "Pose mode (move bones)", or right-click in the 3D view → "Enter pose mode (move bones)".</li>
+        <li>In the key bindings, you can assign a key to "Toggle paint/pose" (<a href="/petanuri/en/manual/keys#assign">Assign keys</a>).</li>
+        <li>The pose is saved in the project file. You can combine it with blend shapes.</li>
+      </ul>
+      <h3 id="pose-bar">The top bar in Pose mode</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Button</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Spin / Move</td><td>Switches between rotating and moving with the gizmo</td></tr>
+        <tr><td>Bone axes / World axes</td><td>Switches the gizmo's orientation between the bone's axes and the world's axes</td></tr>
+        <tr><td>Reset</td><td>Returns the selected bone to its original pose</td></tr>
+        <tr><td>Reset all</td><td>Returns the whole pose to the original</td></tr>
+        <tr><td>Symmetry / L→R / R→L</td><td>Left-right symmetric operations (<a href="#posemirror">Pose symmetrically</a>)</td></tr>
+      </tbody></table></div>
+      <p>The same operations are in the right-click menu in Pose mode too ("Select this bone", "Rotate (gizmo)", "Move (gizmo)", "Reset selected bones", "Back to paint mode" and more).</p>
+      <h3 id="pose-panel">Type numbers in the "Pose" panel</h3>
+      <ul class="mn-list">
+        <li>You can also select a bone from the list in the "Pose" panel on the right. Use "Filter" to search for a name.</li>
+        <li>You can type the angle (X, Y, Z, in degrees) and the position of the selected bone as numbers.</li>
+        <li>Turn off "Weighted bones" and the bones that don't move the mesh are listed too.</li>
+        <li>Each drag of the gizmo and each typed entry can be undone.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-pose-panel.webp" width="298" height="473" alt="The Pose panel" loading="lazy"><figcaption>The "Pose" panel</figcaption></figure>
+      <h3 id="pose-preset">Save and recall poses (Pose presets)</h3>
+      <ol class="mn-steps">
+        <li>In "Pose presets" at the bottom of the "Pose" panel, click "Save current state". The current pose is remembered with a name (up to 10).</li>
+        <li>Change the name in the name field and press <kbd>Enter</kbd>.</li>
+        <li>To use it, click "Load". Bones that weren't saved go back to their original pose.</li>
+      </ol>
+      <p>"Overwrite" replaces a preset with the current pose, and × deletes it. One Undo reverts a load. Presets are stored in the project file.</p>
+      <div class="mn-tip">If you paint with symmetry while posed, strokes land at the symmetric spot in the original pose. Even if you've bent an arm, you can paint the same spot on the other arm (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</div>
+      <h3 id="pose-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>You can't paint</b>: You can't paint while in Pose mode. Click "Paint" at the top center to go back.</li>
+        <li><b>"This model has no bones" appears</b>: A model without bones (an armature) can't be posed.</li>
+        <li><b>There's no "Pose" button</b>: It isn't shown in Standard. It's a Pro feature.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="humanoid" data-keywords="humanoid color-coded orange green blue secondary bones physbones hair skirt tail fingers">
+      <h2>Tell body, hand and swaying-part bones apart</h2>
+      <p>In Pose mode, the joint dots change color and size by bone type. When you want to select an arm or a leg, you're less likely to click a hair or skirt bone by mistake.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Joint dot</th><th scope="col">Bones</th></tr></thead><tbody>
+        <tr><td>Orange, larger</td><td>The humanoid body (hips, spine, chest, neck, head, shoulders, arms, legs, feet). The bone lines between body parts are orange too</td></tr>
+        <tr><td>Green</td><td>Fingers</td></tr>
+        <tr><td>Blue, smaller</td><td>Everything else (swaying parts such as hair, skirt, chest and tail)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>If there's a humanoid bone near where you click, it's selected before other bones.</li>
+        <li>The list in the "Pose" panel gets the same color marks. Turn on "Humanoid only" to hide the swaying parts and show only the body and hands.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pose-humanoid.webp" width="458" height="900" alt="Pose mode: body joints orange, fingers green, swaying parts blue" loading="lazy"><figcaption>Body orange, hands green, others blue</figcaption></figure></div>
+      <div class="mn-tip warn">Whether a bone is humanoid is judged by its name. Depending on how the bones are named, a bone may be misjudged.</div>
+    </section>
+
+    <section class="mn-sec" id="posemirror" data-keywords="mirror symmetry other side left right copy flip symmetrical pose">
+      <h2>Pose symmetrically</h2>
+      <p>Use this when you want to lower both arms the same way, for example.</p>
+      <ul class="mn-list">
+        <li><b>"Symmetric posing"</b>: When it's on, moving a bone on one side moves the other side as its mirror image.</li>
+        <li><b>"Mirror L→R" and "Mirror R→L"</b>: Copy the pose of one side to the other side. Left and right are the character's left and right. One Undo reverts it.</li>
+        <li>You can use them from the top center row (Symmetry, L→R, R→L), the "Pose" panel, the right-click menu and Display → Mode &amp; pose.</li>
+        <li>Left/right pairs are decided by name (Left/Right, .L/.R, _L/_R, a trailing L/R and so on). If the names don't tell, bones at mirrored positions in the original pose are paired.</li>
+      </ul>
+      <h3 id="posemirror-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"No left/right bone pairs found" appears</b>: The model has no left/right clue in either its bone names or positions. Move one side at a time.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="blend" data-keywords="shape keys expression mouth eyes close morph body shape chest morph target anim animation face">
+      <h2>Change expressions or body shape and paint (Blend shapes)</h2>
+      <p>You can paint with the model's blend shapes (shape keys) applied. Use this to paint spots that can't be seen in the original shape, such as closed eyes or the inside of the mouth.</p>
+      <ol class="mn-steps">
+        <li>Open the "Blend shapes" panel on the right.</li>
+        <li>If there are two or more meshes, choose a mesh from the dropdown at the top ("All meshes" is also available).</li>
+        <li>Move a slider (0 to 100). When you stop, the paint positions are rebuilt in that shape.</li>
+        <li>Paint as usual. Display, painting and hit testing all work in that shape.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshapes.webp" width="298" height="420" alt="The Blend shapes panel" loading="lazy"><figcaption>The "Blend shapes" panel</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/blendshape.webp" width="393" height="810" alt="A face with an expression blend shape applied" loading="lazy"><figcaption>You can paint while the expression is applied</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>Use "Filter" to find a name, and "Non-zero only" to show just the shapes you've moved. "All to 0" resets everything.</li>
+        <li>The values are saved in the project file.</li>
+      </ul>
+      <h3 id="blend-copy">Copy values and import .anim</h3>
+      <ul class="mn-list">
+        <li>"Copy values" copies the current (non-zero) values, and "Paste" restores them. You can paste them into another model too (other shape keys become 0).</li>
+        <li>"Load .anim" applies the values from the first frame of a Unity expression animation (.anim). Meshes are matched by name. You can also open the .anim as text, copy its contents and use "Paste" for the same result.</li>
+        <li>If there are shape keys that this model doesn't have, it tells you how many.</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-blendshape-v120.webp" width="298" height="439" alt="The Blend shapes panel with value copying, .anim loading and presets" loading="lazy"><figcaption>Copying blend shape values, .anim and presets</figcaption></figure>
+      <h3 id="blend-preset">Display presets</h3>
+      <p>Click "Save current state" in "Display presets" under the panel to remember the shape key values and which objects are shown or hidden, all together (up to 10). "Load" restores them, and one Undo returns to the previous state. The Objects panel has the same list (<a href="/petanuri/en/manual/sets#objects">Showing and hiding objects</a>).</p>
+      <h3 id="blend-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>No shape keys are listed</b>: You may have another mesh selected in the dropdown at the top. Try "All meshes".</li>
+        <li><b>Pasting changes nothing</b>: This model has no shape key with the same name as the copied ones.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="vgroup" data-keywords="weights bone weights area part of body arms only torso only mask select weight paint">
+      <h2>Paint only part of the body (Vertex groups)</h2>
+      <p>Create the area to paint or show from bone weights (vertex groups). When you want to paint only the arms or only the torso, you don't have to outline the area by hand.</p>
+      <ol class="mn-steps">
+        <li>In the "Vertex groups" panel on the right, check the groups you want. You can pick any number of them (<kbd>Shift</kbd>+click selects several at once).</li>
+        <li>Click "Make selection". The area you can paint becomes just those groups.</li>
+        <li>Paint as usual.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups.webp" width="298" height="470" alt="The Vertex groups panel" loading="lazy"><figcaption>The "Vertex groups" panel</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-vgroups-3d.webp" width="393" height="900" alt="A selection made from the torso vertex group" loading="lazy"><figcaption>Area made from the torso weights</figcaption></figure></div>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Button or item</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Make selection</td><td>Turns the area of the chosen groups into a selection</td></tr>
+        <tr><td>Add / Subtract</td><td>Add to the current selection / subtract from the current selection</td></tr>
+        <tr><td>Show only this area</td><td>Makes a selection and shows only that area in 3D (<a href="/petanuri/en/manual/uv#isolate">Visible area</a>)</td></tr>
+        <tr><td>By weight strength (smooth edges)</td><td>The weight becomes the paint strength as is, which smooths the edges</td></tr>
+        <tr><td>Threshold</td><td>Areas with a weight smaller than this are left out</td></tr>
+        <tr><td>Filter / Deselect all</td><td>Search by name / deselect all the selected groups</td></tr>
+      </tbody></table></div>
+      <p>For how to work with the selection (expand, feather, deselect and so on), see <a href="/petanuri/en/manual/edit#select">Selection</a>.</p>
+      <h3 id="vgroup-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"No faces are weighted to the selected groups" appears</b>: Try lowering the "Threshold".</li>
+        <li><b>No groups are listed</b>: This model has no vertex groups (bone weights).</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a></li><li><a href="/petanuri/en/manual/edit#select">Selection</a></li><li><a href="/petanuri/en/manual/uv#isolate">Visible area</a></li><li><a href="/petanuri/en/manual/ao">Bake AO</a></li><li><a href="/petanuri/en/manual/sets#objects">Showing and hiding objects</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/bake"><small>← Previous</small>Easy Bake</a><a class="next" href="/petanuri/en/manual/export"><small>Next →</small>Export</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +301,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UV view and visible area | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Side-by-side UV painting, grid/snapping, UV guide, seam-continuous painting, visible area (show/hide selected), Hide pen, faint surrounding display, visibility presets, mesh/seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <title>UV pane and visible area | PetaNuri3D manual | HYPERtuyotuyo</title>
+  <meta name="description" content="Arrange UVs and paint on them directly, grid lines and snapping, the UV guide, painting across seams, visible area (show or hide only selected parts), the hide pen, showing hidden areas faintly, saving hide presets, mesh lines and seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/uv">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -24,8 +24,8 @@
   <meta property="og:site_name" content="はいぱーつよつよ">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
-  <meta property="og:title" content="UV view and visible area | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Side-by-side UV painting, grid/snapping, UV guide, seam-continuous painting, visible area (show/hide selected), Hide pen, faint surrounding display, visibility presets, mesh/seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:title" content="UV pane and visible area | PetaNuri3D manual | HYPERtuyotuyo">
+  <meta property="og:description" content="Arrange UVs and paint on them directly, grid lines and snapping, the UV guide, painting across seams, visible area (show or hide only selected parts), the hide pen, showing hidden areas faintly, saving hide presets, mesh lines and seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/uv">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -58,19 +58,19 @@
     {
      "@type": "ListItem",
      "position": 4,
-     "name": "UV view and visible area",
+     "name": "UV pane and visible area",
      "item": "https://hyper-tuyotuyo.com/petanuri/en/manual/uv"
     }
    ]
   },
   {
    "@type": "TechArticle",
-   "headline": "UV view and visible area | PetaNuri3D Manual",
-   "description": "Side-by-side UV painting, grid/snapping, UV guide, seam-continuous painting, visible area (show/hide selected), Hide pen, faint surrounding display, visibility presets, mesh/seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "headline": "UV pane and visible area | PetaNuri3D Manual",
+   "description": "Arrange UVs and paint on them directly, grid lines and snapping, the UV guide, painting across seams, visible area (show or hide only selected parts), the hide pen, showing hidden areas faintly, saving hide presets, mesh lines and seam lines. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/uv",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,317 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv" aria-current="page">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv" aria-current="page">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / UV view and visible area</p>
-    <h1 class="mn-h1">UV view and visible area</h1>
-    <p class="mn-intro">Place UV (the unwrapped texture map) beside 3D and paint in either. Hide front areas with Visible area to paint the body under clothes or inside hair.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#uv">Show UV view</a></li><li><a href="#grid">Grid and snapping</a></li><li><a href="#uvnav">UV guide (zoom/move)</a></li><li><a href="#seam">Beyond island edges (seam-continuous painting)</a></li><li><a href="#isolate">Visible area (show/hide selected)</a></li><li><a href="#hidepen">Hide pen and the bar below 3D</a></li><li><a href="#ghost">Dim surroundings</a></li><li><a href="#presets">Save visibility presets</a></li><li><a href="#wire">Mesh lines and seam lines</a></li></ul></div>
-    <section class="mn-sec" id="uv"><h2>Show UV view</h2><ul class="mn-list"><li>Three layouts: 3D only, 3D beside UV, UV only. From 3D only, use UV at the 3D right edge (<kbd>U</kbd> or View → UV) to show both. Drag the divider to resize.</li><li>When side by side, × at the UV top right closes UV (3D only); × at the 3D top right closes 3D (UV only). <kbd>Shift</kbd>＋<kbd>U</kbd>  toggles UV only ⇔ side by side. Last layout is remembered.</li><li>Shows UVs for the selected texture set (name at top left), updating when the set changes.</li><li>Pens, brushes, erasers, polygon fill, fill, enclosed fill, gradients, shapes, stamps, eyedropper, blur and smudge also work in UV.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="UV beside the 3D view" loading="lazy"><figcaption>3D and UV side by side</figcaption></figure><ul class="mn-list"><li>While using UV, faces under the brush circle in 3D <strong>glow red</strong>. While using 3D, a red dot marks the painting position in UV.</li><li>Wheel zooms; middle drag or <kbd>Space</kbd> + drag pans; the square in the UV guide fits the view. Lines shows UV lines; Island edges shows outlines (▼ sets color/opacity).</li><li>The ⟲/⟳ in the bottom row of the UV guide rotate in 15° steps (paint while rotated).</li><li>Header Symmetry X/Y/Z matches the 3D top-left toggles (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</li><li>When UV is narrow, header buttons that do not fit move into ⋯.</li></ul><div class="mn-tip">Paint area (all editions): at the lower left of the UV pane, choose In UV, In padding, or Whole. In UV paints only inside islands as before, In padding also covers the padding band around them, and Whole paints anywhere on the texture. Pens, brushes, and erasers follow it, as do shapes, fills, gradients, stamps, blur, and smudge (painting in the 3D view is unchanged).</div><div class="mn-tip">The padding at the lower left (0–128px or all) is the same value as export padding. The Padding line button in the header shows a line that far outside each island. Filters → Create padding on a new layer puts only the island edge colors spread outward on a new layer (all editions).</div><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-uv-area-v112.webp" width="452" height="940" alt="Paint area, padding, and padding lines at the lower left of the UV pane" loading="lazy"><figcaption>Paint area and padding lines</figcaption></figure><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="Create padding on a new layer dialog" loading="lazy"><figcaption>Create padding on a new layer</figcaption></figure></div><div class="mn-tip">3D/UV small window (all editions): with 3D and UV side by side, the button below × at the upper right puts that view in a small window (the other fills the area). “UV in a small window (3D full)” and “3D in a small window (UV full)” under ⋯ in the UV header do the same.</div><div class="mn-tip">The small window can sit anywhere in the app window, even over panels. Drag its header to move it and its edges or corners to resize. ⇄ swaps, ▣ returns to side by side, and ✕ closes the small one. The lock at the upper right fixes it (press again to unlock). When it is small, the UV paint area options fold and the guide shrinks; in 3D the navigator shrinks.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="Screen with 3D full and UV in a small window" loading="lazy"><figcaption>UV in a small window</figcaption></figure><div class="mn-tip">Paint into padding outside islands in 3D too (all editions): when turned on in Tool properties for pens, brushes, and erasers, strokes painted in 3D are extended outside the UV islands by the padding width when you finish (never into neighboring islands; one undo reverts the stroke). The width, Padding width (px), is shared with the lower left of the UV pane and export padding.</div><div class="mn-tip">Paint from UV edges (Pro): Filter → “Paint from UV edges (new layer)” creates a line or gradient on a new layer based on the distance from the edges of the UV islands. Set the shape (line / gradient), direction (inside the island / outside the island / both), width, start distance from the edge, blur (in texture px) and opacity. The color can be the foreground color or “Pick a color” (color set swatches or the color field); with the transparent color, it shows what will be erased from the current layer. While the window is open, a temporary line or gradient is shown in the UV and 3D views and updates as you change values (Cancel or Esc removes it). With “Inside the island”, the rim outside the island (the padding width) is also painted at the same density as the nearest island pixel (turn off “Also paint the rim outside the island (padding)” to skip it). If there is a selection, only the inside is affected.</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uv-border-v121.webp" width="384" height="547" alt="The Paint from UV edges window: shape, direction, width, start, blur, opacity, rim painting, color and preview" loading="lazy"><figcaption>Paint from UV edges (a temporary line is shown in UV and 3D while the window is open)</figcaption></figure></section><section class="mn-sec" id="grid"><h2>Grid and snapping</h2><ul class="mn-list"><li>Grid in the UV header toggles grid lines. Adjacent ▼ chooses subdivisions (2, 4, 8, 16, 32, 64, 128 per texture side) and snapping. Pixels per cell also appear there.</li><li>Lines are display-only and excluded from artwork, saves and exports.</li><li><strong>“Snap move/transform to grid”</strong> (enabled by default, only with grid visible): when moving a UV frame for Move/transform, Transform (<kbd>Ctrl</kbd>＋<kbd>T</kbd>) or Paste image on UV, corners/center snap near grid lines. Corner/edge handles, free-transform corners and warp points snap too.</li><li><kbd>Ctrl</kbd>  temporarily disables snapping while held. 3D frames do not snap.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV grid with its ▼ settings open" loading="lazy"><figcaption>Grid lines and ▼ (subdivisions/snapping)</figcaption></figure></section><section class="mn-sec" id="uvnav"><h2>UV guide (zoom/move)</h2><p>A navigator similar to the 3D one appears at UV top right. Operate entirely with a pen.</p><ul class="mn-list"><li><strong>Magnifier</strong>: drag vertically to zoom (up zooms in). <strong>Hand</strong>: drag to pan. <strong>Square</strong>: frame all.</li><li>Move using the top handle; resize at the left/bottom edges or bottom-left corner.</li><li>— collapses to a small circular icon; click to restore (also View → UV → UV guide).</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV view with zoom/pan/frame-all navigator at top right" loading="lazy"><figcaption>UV top-right navigator</figcaption></figure><div class="mn-tip">Rotation (all editions): use ⟲, the angle, and ⟳ in the guide’s bottom row (⟲/⟳ rotate 15°, clicking the angle resets to 0°, Shift+wheel rotates 5°). For any angle, drag the guide’s rotate button left or right (double-click for 0°) or drag the pane while holding Space+Shift.</div><div class="mn-tip">Zoom presets (all editions): Ctrl+1/2/3 set the UV pane (or the 2D canvas if open) to preset zoom levels (100%, 200%, 50% by default; 100% means one texel per screen pixel). Change them under Zoom presets (UV / 2D) in File → Preferences → Controls.</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-guide-v120.webp" width="168" height="101" alt="UV guide with the rotation row" loading="lazy"><figcaption>Rotation in the UV guide</figcaption></figure></section><section class="mn-sec" id="seam"><h2>Beyond island edges (seam-continuous painting)</h2><ul class="mn-list"><li>While painting in UV, a brush circle extending beyond an island will <strong>not paint another island merely adjacent in UV but distant in 3D</strong>.</li><li>In the header, <strong>“Paint across seams”</strong> (on by default) continues excess strokes beyond an island&#x27;s seam onto connected faces in 3D without breaks. Off paints only within the current island (same toggle in context menu and View → UV).</li><li>With the paint area set to In UV, outside islands (unused UV areas) the brush is a faint dotted circle with ×. Strokes started outside begin painting upon entering an island. Text, shapes, stamps and gradients can be placed from outside islands.</li></ul></section><section class="mn-sec" id="isolate"><h2>Visible area (show/hide selected)</h2><ol class="mn-steps"><li>Select islands/faces in UV or 3D (island/face selection, lasso, vertex groups etc.).</li><li>Use the Visible area icon at the 3D top left, <kbd>Shift</kbd>＋<kbd>H</kbd> or Show selected only in the UV header to show only selected areas in 3D.</li><li><kbd>H</kbd> (Hide selected in the UV header) hides selected areas; add more repeatedly.</li><li><kbd>Alt</kbd>＋<kbd>H</kbd>  returns to Show all.</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="Only UV-selected areas shown in 3D" loading="lazy"><figcaption>Show only UV-selected areas in 3D</figcaption></figure><ul class="mn-list"><li>After Show selected only, changing the selection automatically updates visibility (click again to show all).</li><li><strong>Hiding deselects the area</strong>. Paint visible areas directly. Restore the deselected area using Restore selection below 3D or  <kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>D</kbd>  undoes it.</li><li>3D right-click → Hide this island / Show only this island directly hides/shows the clicked island (selection and Undo history remain unchanged).</li><li><strong>Visible area icon ▼</strong>: Left has From selection (Show selected only, Hide selected, Show selected too, Hide pen) and Hidden areas (Invert, Show all, Expand/Shrink, Show faintly). Right has Visibility presets (saved list). Use this when nothing is hidden.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="Visible area ▼: From selection/Hidden areas at left, preset list at right" loading="lazy"><figcaption>Visible area ▼ dialog</figcaption></figure><div class="mn-tip">Hidden parts do not block depth, so you can paint surfaces behind clothing or inside hair. Hidden parts cannot be painted directly or picked by eyedroppers or fills. With the hidden-face symmetry option enabled, 3D painting can also reach the hidden mirrored side. You can hide entire objects (meshes) too (<a href="/petanuri/en/manual/sets#objects">Show/hide objects</a>).</div><div class="mn-tip warn">Hiding/showing is excluded from Undo (<kbd>Ctrl</kbd>＋<kbd>Z</kbd>) history. Restore with Show all or a saved visibility preset.</div></section><section class="mn-sec" id="hidepen"><h2>Hide pen and the bar below 3D</h2><p>Trace areas to hide them directly, useful for painting behind overlapping cloth.</p><ol class="mn-steps"><li>Choose Hide in the left toolbar (or toggle Hide pen in the bar below 3D).</li><li>Choose Hide faces (quads hide both triangles together) or Hide islands (whole UV islands) as the sub tool.</li><li>Traced 3D areas disappear. Clicking in UV hides them too.</li><li>Click Hide pen again to return to the previous tool.</li></ol><div class="mn-tip">One stroke does not hide newly revealed faces behind the front. Trace again to hide them too.</div><p><strong>The bottom-center bar below 3D</strong> appears only while something is hidden or the Hide pen is active. Shows Hide pen, Faces/Islands, Visibility presets ▼, current status (Preset: name / Partially hidden, unsaved preset / Showing selected only) and Show all.</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="Cape hidden, with bar below 3D" loading="lazy"><figcaption>Hidden cape and the bar below 3D</figcaption></figure></section><section class="mn-sec" id="ghost"><h2>Dim surroundings</h2><ul class="mn-list"><li>While hidden, Show surroundings faintly below 3D displays hidden areas translucently so you can paint with context.</li><li>The adjacent slider adjusts opacity (5–80%). Also available under Hidden areas → Show faintly in ▼.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="Hidden cape displayed translucently" loading="lazy"><figcaption>Hidden cape shown faintly</figcaption></figure><div class="mn-tip">Ghosted hidden parts cannot be painted directly. If hidden-face symmetry is enabled, painting the opposite side in 3D also paints the hidden side.</div></section><section class="mn-sec" id="presets"><h2>Save visibility presets</h2><p>Name and save frequently used visibility states to recall them anytime.</p><ol class="mn-steps"><li>Hide the desired areas.</li><li>Below 3D, Visibility presets ▼ (or Visible area ▼) → Save current visibility; enter a name (matching names overwrite).</li><li>Click a name in the same list to restore that visibility.</li></ol><ul class="mn-list"><li>Manage visibility presets (rename/delete) changes names or deletes them.</li><li>Saved and current visibility states are stored in .petanuri projects and remain available after reopening.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="Visibility preset list and Save current visibility menu" loading="lazy"><figcaption>Save visibility presets</figcaption></figure></section><section class="mn-sec" id="wire"><h2>Mesh lines and seam lines</h2><ul class="mn-list"><li>Use top-left 3D icons (View → Lines and rulers → Mesh lines / Seam lines) to show polygon edges and UV seams/island edges. Toggle seam lines with  <kbd>Alt</kbd>＋<kbd>W</kbd>  too.</li><li>▼ below the icon sets opacity, color (blue/black/white) and whether to show back/hidden lines.</li></ul><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="Mesh line settings" loading="lazy"><figcaption>Mesh lines ▼ settings</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="Lines only on visible faces" loading="lazy"><figcaption>Visible faces only</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="Back-face lines also shown" loading="lazy"><figcaption>Back and hidden lines too</figcaption></figure></div></section>
-    <section class="mn-sec" id="v111-controls"><h2>Control changes in v1.1.1</h2><p><a href="/petanuri/en/manual/screen#settings">Camera controls</a> · <a href="/petanuri/en/manual/draw#mirror">Mirror painting on hidden faces</a></p></section><nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/layers"><small>← Previous</small>Layer</a><a class="next" href="/petanuri/en/manual/screen"><small>Next →</small>Interface, panels and preferences</a></nav>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / UV pane and visible area</p>
+    <h1 class="mn-h1">UV pane and visible area</h1>
+    <p class="mn-intro">Place the UV (the unwrapped layout of the texture) next to the 3D view and paint from either one. For hidden surfaces, such as the body under clothing or the inside of hair, hide the front surfaces with the visible area and paint.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>Press <kbd>U</kbd> to place the UV next to the 3D view. You can paint right on the UV too (<a href="#uv">details</a>).</li>
+      <li>Use "Paint area" at the bottom left of the UV pane to choose between painting only inside islands or out into the padding (<a href="#area">details</a>).</li>
+      <li>To paint hidden surfaces, select islands or faces and press <kbd>Shift</kbd>+<kbd>H</kbd> (show selected only) or <kbd>H</kbd> (hide selected). <kbd>Alt</kbd>+<kbd>H</kbd> brings everything back (<a href="#isolate">details</a>).</li>
+      <li>Overlapping cloth can be hidden by tracing it with the "Hide pen" (<a href="#hidepen">details</a>).</li>
+      <li>Press <kbd>Alt</kbd>+<kbd>W</kbd> (Seam lines) to show the positions of UV seams in 3D (<a href="#wire">details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#uv">Show UV and paint directly</a></li><li><a href="#uvnav">Move the UV view (zoom, pan, rotate)</a></li><li><a href="#grid">Grid and snapping</a></li><li><a href="#area">Paint area and padding (paint outside islands)</a></li><li><a href="#seam">When strokes go beyond an island (paint across seams)</a></li><li><a href="#isolate">Visible area (show or hide only selected parts)</a></li><li><a href="#hidepen">Hide by tracing (Hide pen) and the bar under the 3D view</a></li><li><a href="#ghost">Show hidden areas faintly</a></li><li><a href="#presets">Save hide presets</a></li><li><a href="#wire">Show mesh lines and seam lines</a></li><li><a href="#uvborder">Paint along UV edges (Paint from UV edges)</a></li><li><a href="#gltf">UV orientation for glTF, glb and VRM</a></li></ul></div>
+
+    <section class="mn-sec" id="uv" data-keywords="UV-view UV-editor unwrap flat 2D split side-by-side UV-map paint-on-texture picture-in-picture floating-window mini-view">
+      <h2>Show UV and paint directly</h2>
+      <p>In the UV pane you can paint directly on the unwrapped texture. Use it for places that are hard to reach in 3D, or where you want to draw a straight line.</p>
+      <ol class="mn-steps">
+        <li>Press <kbd>U</kbd> (or click "UV" at the right end of the 3D view, or use Display → UV → UV (side by side with 3D)). The UV pane appears next to the 3D view.</li>
+        <li>Drag the divider to adjust the widths.</li>
+        <li>Draw in the UV pane the same way as in 3D.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uv.webp" width="1400" height="840" alt="Screen with the UV pane placed next to the 3D view" loading="lazy"><figcaption>3D and UV side by side</figcaption></figure>
+      <ul class="mn-list">
+        <li>The UV shown is that of the selected texture set (its name is at the top left). It switches when you select a different set (<a href="/petanuri/en/manual/sets#choose">Choose the set to draw on</a>).</li>
+        <li>Tools you can use: Pen, Brush, Eraser, Polygon fill, Fill, Fill enclosed area, Gradient, Shape, Stamp, Eyedropper, Blur and Smudge.</li>
+        <li>While you work in the UV pane, the faces inside the brush circle glow red in the 3D view. While you work in 3D, the painting position appears as a red dot in the UV pane.</li>
+        <li>"Symmetry X, Y, Z" in the header is the same switch as at the top left of the 3D view. Even when you paint in the UV, it also paints the spot mirrored along the same 3D axis (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</li>
+        <li>At the bottom right, a small UV of the Sub texture set appears. Click it to make the Sub the Main. Hide it with ✕ and bring it back with "Show sub" (<a href="/petanuri/en/manual/sets#cross">Main and Sub</a>).</li>
+      </ul>
+      <h3 id="uv-layout">Switch the layout (3D only, side by side, UV only, small window)</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Layout</th><th scope="col">What to do</th></tr></thead><tbody>
+        <tr><td>3D and UV side by side</td><td><kbd>U</kbd>, or "UV" at the right end of the 3D view. When only the UV is shown, "3D" at the left end of the UV pane</td></tr>
+        <tr><td>3D only</td><td>The ✕ at the top right of the UV pane (or press <kbd>U</kbd> again)</td></tr>
+        <tr><td>UV only</td><td>The ✕ at the top right of the 3D view, or <kbd>Shift</kbd>+<kbd>U</kbd> (Display → UV → UV only (hide 3D))</td></tr>
+        <tr><td>Make one of them a small window</td><td>While they are side by side, the button under the ✕ at the top right. You can also use Display → UV → "UV in a small window (3D full)" or "3D in a small window (UV full)"</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>The layout you used last is the same the next time you open it.</li>
+        <li>A small window can also be placed over the panels, as long as it stays within the app window. Drag its header to move it, and drag the four edges or corners to resize it.</li>
+        <li>In the small window, ⇄ swaps it with the full view, ▣ returns to the side-by-side layout, and ✕ closes the small window. The lock at the top right fixes it in place (click again to release).</li>
+        <li>Even if you hide the panels with <kbd>Tab</kbd>, the small window stays. The 2D canvas can't use a small window.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="Screen with 3D full and the UV in a small window" loading="lazy"><figcaption>UV in a small window</figcaption></figure>
+      <h3 id="uv-lines">Show UV lines, island edges and padding lines</h3>
+      <ul class="mn-list">
+        <li>The "UV lines", "Island edges" and "Padding line" buttons in the header show or hide the UV lines, the island outlines, and the line that lies outside the island edge by the padding width (<a href="#area">Padding</a>).</li>
+        <li>The ▼ next to them changes the color and opacity (5 to 100%) of the three lines. "Reset to default color" restores the originals.</li>
+        <li>The right-click menu of the UV pane has the same switches.</li>
+        <li>To turn the UV lines into an image to use as a guide in other software, use "Export UV map as PNG" (<a href="/petanuri/en/manual/export#uvmap">details</a>).</li>
+      </ul>
+      <h3 id="uv-normal">View a normal map folder by height</h3>
+      <p><span class="tier pro">Pro</span> When the paint target is the normal map, the UV pane normally shows the normal map's colors. If you turn on 3D right-click → Display → "Show the normal map folder as height (gray) (UV)", it shows the height you painted, in gray. White is raised and black is carved (<a href="/petanuri/en/manual/material#channels">paint targets</a>).</p>
+      <h3 id="uv-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>I can't find a header button</b>: If the UV pane is narrow, buttons that don't fit are put away under "⋯". Click "⋯" to show them.</li>
+        <li><b>The UV doesn't appear</b>: You can show it once a 3D model is open. Open a model first.</li>
+        <li><b>There are areas I can't paint</b>: Faces whose UV collapses to a single point, faces that extend outside 0 to 1, and spots where more than 4 faces overlap can't be painted. A notice appears at the bottom right when you open the model.</li>
+        <li><b>Islands are placed outside 0 to 1</b>: PetaNuri3D maps them to the position inside 0 to 1 that gives the same color through texture repeat, and paints there. The model file is not changed.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="uvnav" data-keywords="zoom in out pan scroll rotate tilt 100% actual-size 1:1 navigator guide frame-all fit hand magnifier view-rotation">
+      <h2>Move the UV view (zoom, pan, rotate)</h2>
+      <p>You can move the UV pane with a mouse or with only a pen. The guide at the top right has the same form as the 3D navigator.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">What you want to do</th><th scope="col">How</th></tr></thead><tbody>
+        <tr><td>Zoom in or out</td><td>Wheel, or drag the magnifier on the guide up or down (up zooms in)</td></tr>
+        <tr><td>Pan</td><td>Drag with the middle button, <kbd>Space</kbd>+drag, or drag the hand on the guide</td></tr>
+        <tr><td>Show everything</td><td>The square on the guide, or "Frame all UV" in the right-click menu</td></tr>
+        <tr><td>Rotate</td><td>⟲ and ⟳ in the lower row of the guide rotate by 15° each. <kbd>Shift</kbd>+wheel rotates by 5° each</td></tr>
+        <tr><td>Rotate to any angle</td><td>Drag the rotation button on the guide left or right, or hold <kbd>Space</kbd>+<kbd>Shift</kbd> and drag in the pane</td></tr>
+        <tr><td>Reset the rotation</td><td>Click the angle on the guide (double-clicking the rotation button also returns it to 0°)</td></tr>
+        <tr><td>Set a fixed zoom</td><td><kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> (100%, 200% and 50% at first)</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-nav.webp" width="324" height="900" alt="UV pane with the zoom, pan and frame-all guide at the top right" loading="lazy"><figcaption>Guide at the top right of the UV pane</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-guide-v120.webp" width="168" height="101" alt="UV guide with the rotation row below" loading="lazy"><figcaption>The rotation row of the guide</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>You can keep painting while the view is rotated.</li>
+        <li>At 100%, one texture pixel is one screen pixel. Change the zoom levels in File → Preferences → Controls, "Zoom presets (UV / 2D)". While a 2D canvas is open, it applies to the canvas. It doesn't work in the 3D view.</li>
+        <li>Drag the handle at the top of the guide to move it anywhere, and resize it from the left and bottom edges and the bottom left corner. "—" collapses it into a small round icon, and clicking the icon restores it (you can also use Display → UV → UV guide (zoom/move)).</li>
+        <li>If you turn on "Show rotation/zoom sliders on the navigator" in File → Preferences → Interface → Display, sliders appear below the guide (and on the 3D navigator too).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="grid" data-keywords="grid squares graph-paper snap align magnet position guide-lines snapping alignment">
+      <h2>Grid and snapping</h2>
+      <p>Show a grid to line up the positions of patterns and emblems. When you move a frame, it snaps to the grid lines.</p>
+      <ol class="mn-steps">
+        <li>Click "Grid" in the header of the UV pane. The grid appears.</li>
+        <li>Choose "Cells" from the ▼ next to it. It divides each side of the texture into 2, 4, 8, 16, 32, 64 or 128.</li>
+        <li>When you move the frame of a move or transform, its four corners or its center snap to nearby grid lines.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-uvgrid.webp" width="800" height="896" alt="UV pane with grid lines shown and the grid ▼ open" loading="lazy"><figcaption>Grid lines and ▼ (cells, snapping)</figcaption></figure>
+      <ul class="mn-list">
+        <li>The ▼ shows how many px one cell is (dividing 2048 px by 16 gives 128 px).</li>
+        <li>The lines are display only. They are not part of your painting, your saves or your exports. They don't get thicker when you zoom in.</li>
+        <li>"Snap to the grid when moving/transforming" is on from the start. It works only while the grid is shown.</li>
+        <li>Snapping applies to the frames of the Move/transform tool, Transform (<kbd>Ctrl</kbd>+<kbd>T</kbd>) and Paste image onto UV. The corner and edge handles, the corners of Free transform and the points of Warp snap as well (<a href="/petanuri/en/manual/edit#transform">Transform</a>).</li>
+        <li>It doesn't snap while <kbd>Ctrl</kbd> is held. A frame over the 3D pane doesn't snap either.</li>
+        <li>You can also show it from Display → UV → "UV grid". You can assign a key to turning snapping on and off (<a href="/petanuri/en/manual/keys">Shortcuts</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="area" data-keywords="padding bleed overflow outside-island seam-line white-line gap margin dilation edge-padding island-border in-UV everywhere">
+      <h2>Paint area and padding (paint outside islands)</h2>
+      <p>If you spread the edge color slightly outside the UV islands, lines are less likely to appear at seams in the game. This extra band is called padding. Use the bottom left of the UV pane to choose how far you paint.</p>
+      <ol class="mn-steps">
+        <li>Under "Paint area" at the bottom left of the UV pane, click "In UV", "In padding" or "Everywhere".</li>
+        <li>For "In padding", set the padding width (0 to 128 px) with the slider below.</li>
+        <li>Paint in the UV pane.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Paint area</th><th scope="col">Where you can paint</th></tr></thead><tbody>
+        <tr><td>In UV (default)</td><td>Only inside UV islands. "Paint across seams" is available (<a href="#seam">details</a>)</td></tr>
+        <tr><td>In padding</td><td>Inside islands and the padding band outside them. The Pen, shapes and so on spill onto neighboring islands too</td></tr>
+        <tr><td>Everywhere</td><td>Anywhere on the texture. Paint spills outside islands and onto neighboring islands</td></tr>
+      </tbody></table></div>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-uv-area-v112.webp" width="452" height="940" alt="Paint area and padding at the bottom left of the UV pane, and the padding line" loading="lazy"><figcaption>Paint area and padding line</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>Besides the Pen, Brush, Eraser and Polygon fill, Shape, Fill, Gradient, Stamp, Blur and Smudge also follow this area. Painting in the 3D view is unchanged.</li>
+        <li>With "In padding" and "Everywhere", Fill spreads the painted area outside the islands.</li>
+        <li>The padding value is the <strong>same value as the export bleed</strong> ("Shared with export"). Changing either one changes both. "All" is the same as "Fill everything outside islands" in the export window (<a href="/petanuri/en/manual/export#pad">export bleed</a>).</li>
+        <li>You can collapse the box at the bottom left with its ▼. Even when it is small, the paint area and "Paint across seams" still work.</li>
+      </ul>
+      <h3 id="area-3d">Extend lines drawn in 3D into the padding too</h3>
+      <p>Turn on "Paint into padding outside islands in 3D too" in the Tool properties of the Pen, Brush and Eraser. When you finish a stroke in 3D, the line is extended outside the island by the padding width.</p>
+      <ul class="mn-list">
+        <li>It does not go into neighboring islands. A single undo removes the whole line.</li>
+        <li>The width is "Padding width (px)" in the Tool properties. It is the same value as the bottom left of the UV pane and the export bleed.</li>
+        <li>When it is off, the line is extended only slightly from the island edge.</li>
+      </ul>
+      <h3 id="area-layer">Make a padding-only layer</h3>
+      <p>Use Filters → "Create padding on a new layer" to put only the extra area onto a new layer. That extra area is the edge colors of the current image (all layers stacked), spread outside the islands. Inside the islands it is transparent, and the layer is placed right above the selected layer.</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="Create padding on a new layer window" loading="lazy"><figcaption>Create padding on a new layer (set the width and click "Create")</figcaption></figure>
+      <div class="mn-tip">Faint areas at the edge of a brush stroke are not treated as painted, and the color of the opaque areas is spread outside the islands. Pixels outside the islands take the color of the nearest island pixel by straight-line distance, so the color spreads smoothly even from diagonal edges.</div>
+    </section>
+
+    <section class="mn-sec" id="seam" data-keywords="seam join break cut-off spill neighbor-island continue connect cross-seam continuous gap-at-seam">
+      <h2>When strokes go beyond an island (paint across seams)</h2>
+      <p>Some places are far apart in the UV but connected in 3D. Paint that spills over a seam can continue onto the face that is connected in 3D.</p>
+      <ul class="mn-list">
+        <li>When you paint in the UV pane, even if the circle spills outside the island, it does not paint on another island that is merely next to it in the UV (but far away in 3D).</li>
+        <li>"Paint across seams" at the bottom left (on by default): paint that spills over a seam at an island edge continues onto the face connected beyond that seam in 3D. The line doesn't break at the seam.</li>
+        <li>If you turn it off, only the inside of the island you are drawing on is painted. The same switch is in the right-click menu as "Continue painting outside islands onto 3D-connected neighbors" and in Display → UV.</li>
+        <li>"Paint across seams" works only when the paint area is "In UV".</li>
+      </ul>
+      <h3 id="seam-outside">When you start drawing outside an island</h3>
+      <ul class="mn-list">
+        <li>When the paint area is "In UV", the brush circle turns into a faint dotted line with a × over any spot that no face uses. The Pen, Brush, Eraser and Polygon fill can't paint there.</li>
+        <li>If you start a line outside an island, it begins to take effect where it enters the island.</li>
+        <li>Text, shapes, stamps and gradients can be placed even if you start outside an island (color is applied only inside the island).</li>
+      </ul>
+      <h3 id="seam-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"Can't paint across seams on this layer" appears</b>: A clipping layer (and its mask) paints to match the shape of the layer below, so it doesn't continue beyond a seam.</li>
+        <li><b>I can't click "Paint across seams"</b>: Set the paint area to "In UV".</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="isolate" data-keywords="hide show solo isolate separate under-clothes inside behind inner can't-see can't-paint overlapping hair-inside layered-clothes hidden-faces">
+      <h2>Visible area (show or hide only selected parts)</h2>
+      <p>The body under clothing or the inside of hair is blocked by the surfaces in front, so you can't paint it. If you hide the front surfaces with the visible area, the surfaces behind show as they are and you can paint them.</p>
+      <ol class="mn-steps">
+        <li>Select islands or faces in the UV pane or in 3D (with the Selection tool's "Select by island" or "Select by face", the lasso, vertex groups and so on).</li>
+        <li>Press <kbd>Shift</kbd>+<kbd>H</kbd> (or use the Visible area icon at the top left of the 3D view, or "Show selected only" in the UV header). Only what you selected appears in 3D.</li>
+        <li>To hide only the front, press <kbd>H</kbd> ("Hide selected"). You can keep adding more to hide.</li>
+        <li>When you finish painting, press <kbd>Alt</kbd>+<kbd>H</kbd> to show everything again.</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-isolate-uv.webp" width="1400" height="840" alt="Only the areas selected in the UV shown in 3D" loading="lazy"><figcaption>Show only the areas selected in the UV in 3D</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Action</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Show selected only (<kbd>Shift</kbd>+<kbd>H</kbd>)</td><td>Shows only the selected islands or faces. While it is on, selecting something else changes the display without pressing it again. Press it again to show everything</td></tr>
+        <tr><td>Hide selected (<kbd>H</kbd>)</td><td>Hides the selected islands or faces. Hiding releases the selection, so you can paint straight on what is visible</td></tr>
+        <tr><td>Also show selected</td><td>Brings the selected part of what you hid back into view</td></tr>
+        <tr><td>Invert visible area</td><td>Swaps what is visible with what is hidden</td></tr>
+        <tr><td>Expand, Contract</td><td>Expands or contracts the visible area on the UV by the number of px you set (1 to 64)</td></tr>
+        <tr><td>Show all (<kbd>Alt</kbd>+<kbd>H</kbd>)</td><td>Brings back everything you hid, including hidden objects</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>All of these are in Display → Visible area, and in the "Visible area" item of the 3D and UV right-click menus.</li>
+        <li>You can restore a selection that was released with "Reselect" in the bar under the 3D view, or with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>.</li>
+        <li>Hidden areas show diagonal stripes in the UV pane. While something is hidden, "Show all" is highlighted.</li>
+        <li>You can also hide by object (mesh) (<a href="/petanuri/en/manual/sets#objects">Show or hide objects</a>).</li>
+      </ul>
+      <h3 id="isolate-island">Hide or show only the island you click (right-click)</h3>
+      <ul class="mn-list">
+        <li>"Hide this island" and "Show only this island" in the 3D right-click menu hide or show the island you clicked, as it is. The selection and the undo history don't change.</li>
+        <li>"Select this island (selection)" in the 3D right-click menu makes the island you clicked the selection.</li>
+        <li>The right-click menu of the UV pane has "Select this island (selection)", "Add this island to selection", "Show only this island in 3D" and "Hide this island in 3D". These select the island first and then show or hide it, so the selection changes.</li>
+      </ul>
+      <h3 id="isolate-pop">The Visible area ▼ window</h3>
+      <p>The ▼ under the Visible area icon at the top left of the 3D view opens a window that gathers the visible area operations. When nothing is hidden, you work from here.</p>
+      <ul class="mn-list">
+        <li>Upper left, "From selection": Show selected only, Hide selected, Also show selected. Under "Directly" is the Hide pen.</li>
+        <li>Lower left, "Hidden parts": Invert, Show all, the amount (px) with Expand and Contract, and Dim surroundings.</li>
+        <li>Right, "Hide presets": the name of the current hide preset and the list of saved ones (<a href="#presets">Save hide presets</a>).</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-iso-pop.webp" width="482" height="489" alt="Visible area ▼ window, with From selection and Hidden parts on the left and the list of hide presets on the right" loading="lazy"><figcaption>The Visible area ▼ window</figcaption></figure>
+      <div class="mn-tip">Hidden parts don't count for depth either, so the surfaces behind show as they are and you can paint them. You can't paint directly on hidden parts, and the Eyedropper and Fill don't pick them up. <span id="v111-controls"></span>If you turn on "Mirror painting on hidden parts (3D brushes)" in the Symmetry ▼, the 3D Pen, Brush, Eraser and Stamp also paint symmetrically on the hidden opposite side (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</div>
+      <div class="mn-tip warn">Hiding and showing are not recorded in the undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>) history. To go back, show all, or load a saved hide preset.</div>
+      <h3 id="isolate-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>"Select islands or faces first" appears</b>: Nothing is selected. Select in 3D or the UV pane with "Select by island" or "Select by face" of the Selection tool, or with the right-click "Select this island (selection)", and then press the button. The buttons in the UV header look faint until you select something.</li>
+        <li><b><kbd>Ctrl</kbd>+<kbd>Z</kbd> doesn't restore the display</b>: Hiding isn't in the history. Restore with <kbd>Alt</kbd>+<kbd>H</kbd> or with "Show all" in the bar under the 3D view.</li>
+        <li><b>The selection disappeared when I hid</b>: Hiding releases the selection. <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> (Reselect) brings it back.</li>
+        <li><b>Part of the model doesn't appear</b>: It is still hidden by the visible area or by object. Press <kbd>Alt</kbd>+<kbd>H</kbd> to show everything. The hidden state is saved in the project file, so it stays hidden even after you reopen the file.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="hidepen" data-keywords="hide-tool invisible-pen mask cloth-behind skirt frills layered-clothing trace scribble can't-paint-behind collar-inside under-clothes">
+      <h2>Hide by tracing (Hide pen) and the bar under the 3D view</h2>
+      <p>When you paint behind overlapping cloth, you can hide whatever you trace as it is. You don't need to make a selection first.</p>
+      <ol class="mn-steps">
+        <li>Choose "Hide pen" in the toolbar on the left (you can also toggle it with "Hide pen" in the bar under the 3D view).</li>
+        <li>In the Sub tool, choose "Hide by face" (a quad is hidden as its two triangles together) or "Hide by island" (a whole UV island: one piece of cloth, one part and so on).</li>
+        <li>Trace in 3D, and what you traced is hidden. You can also click in the UV pane to hide.</li>
+        <li>Click "Hide pen" again to go back to the previous tool.</li>
+      </ol>
+      <div class="mn-tip">One stroke doesn't hide the faces behind that become visible after you hide the front. If you want to hide those too, trace again.</div>
+      <h3 id="hidepen-bar">The bar under the 3D view</h3>
+      <p>The bar at the bottom center of the 3D view appears only while something is hidden and while the Hide pen is active.</p>
+      <ul class="mn-list">
+        <li>"Hide pen", "Face | Island", "Hide presets ▼", "Reselect" and "Dim surroundings" are lined up with the current status and "Show all".</li>
+        <li>The status is one of "Hide preset: (name)" (unchanged from a saved hide preset), "Some parts hidden (unsaved hide preset)" or "Showing only the selected part". When objects are hidden, "n object(s) hidden" also appears.</li>
+        <li>Click "Show all" to bring everything back in one step.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-bar.webp" width="654" height="714" alt="Cape hidden, with the bar showing under the 3D view" loading="lazy"><figcaption>The cape hidden, and the bar under the 3D view</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="ghost" data-keywords="translucent see-through ghost faint dim surroundings context preview hidden-area-opacity">
+      <h2>Show hidden areas faintly</h2>
+      <p>You can show hidden areas semi-transparent and paint while checking the surroundings.</p>
+      <ol class="mn-steps">
+        <li>While something is hidden, click "Dim surroundings" in the bar under the 3D view. The hidden areas appear semi-transparent.</li>
+        <li>Change the opacity (5 to 80%) with the slider beside it.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>The same applies to "Dim surroundings" under "Hidden parts" in the Visible area ▼ window (0% shows nothing).</li>
+        <li>Even when they look faint, you can't paint directly on hidden areas.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-ghost.webp" width="654" height="714" alt="Hidden cape shown semi-transparent" loading="lazy"><figcaption>Hidden cape shown faintly</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="presets" data-keywords="preset save register recall load switch named store remember hide-state visibility-preset">
+      <h2>Save hide presets</h2>
+      <p>Give a name to a hide state you use often and keep it, so you can return to the same state any time.</p>
+      <ol class="mn-steps">
+        <li>Hide the areas you want to hide.</li>
+        <li>Click "Hide presets ▼" → "Save current hide preset" in the bar under the 3D view, and enter a name (the same name overwrites). You can also save from the Visible area ▼ window.</li>
+        <li>Click a name in the same list to return to that hide state.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Use "Manage hide presets (rename, delete)" to rename or delete a preset.</li>
+        <li>Saved hide presets and the current hide state are saved in the project file (.petanuri). You can use them after you reopen the file.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-hide-presets.webp" width="567" height="210" alt="List of hide presets and the Save current hide preset menu" loading="lazy"><figcaption>Saving hide presets</figcaption></figure>
+    </section>
+<section class="mn-sec" id="wire" data-keywords="wireframe polygon edges topology seams UV-cuts boundary check mesh-lines overlay triangles">
+      <h2>Show mesh lines and seam lines</h2>
+      <p>Shows the polygon lines and the UV seams (island edges) overlaid on the 3D model. They are a guide when you paint near seams.</p>
+      <ol class="mn-steps">
+        <li>Click the line icon at the top left of the 3D view (or use Display → Lines &amp; rulers → Mesh wireframe). The polygon lines appear.</li>
+        <li>Show the seam lines with the button next to it or with <kbd>Alt</kbd>+<kbd>W</kbd> (Display → Lines &amp; rulers → Seam lines (UV seams and island edges)).</li>
+      </ol>
+      <ul class="mn-list">
+        <li>The ▼ under the icon lets you choose whether to show lines, the opacity (5 to 100%), the color (blue, black, white), whether to also show back and hidden lines ("Also show back and hidden lines (see-through)"), and the seam lines.</li>
+        <li>Normally only the lines of visible faces are shown. In Single-sided display, the lines of back-facing faces aren't shown either.</li>
+        <li>The 3D right-click → Display has the same switches.</li>
+        <li>To hide the texture and view only the lines, use Display → Shading → "Wireframe only".</li>
+        <li>Seam lines are not the same as a layer's "Stroke" (border).</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-wire.webp" width="560" height="430" alt="Mesh wireframe settings" loading="lazy"><figcaption>Mesh wireframe ▼ settings</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-front.webp" width="393" height="720" alt="Lines of visible faces only" loading="lazy"><figcaption>Visible faces only</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-back.webp" width="393" height="720" alt="Back-face lines also shown" loading="lazy"><figcaption>Back and hidden lines too</figcaption></figure></div>
+    </section>
+
+    <section class="mn-sec" id="uvborder" data-keywords="border outline edge-line trim hem edge-darkening gradient inner outer frame stroke-along-edge island-outline">
+      <h2>Paint along UV edges (Paint from UV edges) <span class="tier pro">Pro</span></h2>
+      <p>Creates a line or gradient on a new layer based on the distance from the edges of UV islands. Use it for trim along clothing edges, or for painting that is darker toward the edges.</p>
+      <ol class="mn-steps">
+        <li>Choose Filters → "Paint from UV edges (new layer)". While the window is open, a preview line appears in the UV and in 3D.</li>
+        <li>Choose "Shape" (line or gradient) and "Direction" (inside islands, outside islands, or both).</li>
+        <li>Adjust "Width", "Start from edge", "Blur" and "Opacity". The preview line changes as soon as you change a value.</li>
+        <li>Under "Color", choose the foreground color or "Choose a color", and click "Create". A new layer is created.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-uv-border-v121.webp" width="384" height="547" alt="Paint from UV edges window: shape, direction, width, start from edge, blur, opacity, also paint just outside islands, color" loading="lazy"><figcaption>Paint from UV edges window</figcaption></figure>
+      <ul class="mn-list">
+        <li>Distances are in texture px. A gradient is strongest at the edge and becomes transparent at the width.</li>
+        <li>Where islands touch each other, there is no edge. If there is a selection, the layer is created only inside it.</li>
+        <li>With "Inside islands", it also paints the area just outside the islands (the padding width) at the same strength as the nearest island pixel. Turn off "Also paint just outside islands (padding)" to avoid that.</li>
+        <li>With "Choose a color", you can choose from the swatches of the Color set or from the color field. For a transparent color, no new layer is created. It erases this edge from the current layer instead.</li>
+        <li>Cancel or <kbd>Esc</kbd> removes the preview line. After you create the layer, a single undo reverts it.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gltf" data-keywords="vrm glb gltf upside-down flipped inverted reversed orientation flip vertical V-flip y-flip">
+      <h2>UV orientation for glTF, glb and VRM</h2>
+      <p>glTF counts the top and bottom of an image the opposite way from FBX and similar formats. When PetaNuri3D opens a glTF, glb or VRM, it flips the UV vertically so that it matches FBX. This is the same orientation you get when you import into Blender or UniVRM.</p>
+      <ul class="mn-list">
+        <li>Images contained in the model go into the base in their original orientation.</li>
+        <li>The picture in the UV pane, exported PNGs, PSDs and UV maps have the same orientation as the original image. They line up as they are in other 3D software.</li>
+        <li>Importing images and PSDs also brings them in as they are, without flipping.</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/sets">Texture sets</a></li><li><a href="/petanuri/en/manual/export#pad">Export bleed (padding)</a></li><li><a href="/petanuri/en/manual/export#uvmap">Export the UV map as PNG</a></li><li><a href="/petanuri/en/manual/edit#select">Selection</a></li><li><a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/layers"><small>← Previous</small>Layers</a><a class="next" href="/petanuri/en/manual/sets"><small>Next →</small>Texture sets</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +452,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

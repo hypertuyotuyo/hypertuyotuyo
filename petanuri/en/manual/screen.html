@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interface, panels and preferences | PetaNuri3D manual | HYPERtuyotuyo</title>
-  <meta name="description" content="Default layout, moving panels, tabs, collapsing, icon strips, toolbar placement/reordering, favorites, 3D view corners, display/light, navigator, right-click menus and preferences. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta name="description" content="The default layout, moving panels, tabs, collapsing panels, the icon strip, toolbar position, reordering tools, favorite tools, the corners of the 3D view, shading and light direction, the 3D navigator, right-click menus and preferences. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/en/manual/screen">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="Interface, panels and preferences | PetaNuri3D manual | HYPERtuyotuyo">
-  <meta property="og:description" content="Default layout, moving panels, tabs, collapsing, icon strips, toolbar placement/reordering, favorites, 3D view corners, display/light, navigator, right-click menus and preferences. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
+  <meta property="og:description" content="The default layout, moving panels, tabs, collapsing panels, the icon strip, toolbar position, reordering tools, favorite tools, the corners of the 3D view, shading and light direction, the 3D navigator, right-click menus and preferences. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/en/manual/screen">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "Interface, panels and preferences | PetaNuri3D Manual",
-   "description": "Default layout, moving panels, tabs, collapsing, icon strips, toolbar placement/reordering, favorites, 3D view corners, display/light, navigator, right-click menus and preferences. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
+   "description": "The default layout, moving panels, tabs, collapsing panels, the icon strip, toolbar position, reordering tools, favorite tools, the corners of the 3D view, shading and light direction, the 3D navigator, right-click menus and preferences. A guide to PetaNuri3D, which paints textures directly on avatars, outfits and accessories for VRChat and more.",
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/screen",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,499 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="Manual contents">
-    <p class="mn-side-title">Manual</p>
+  <aside class="mn-side has-search" aria-label="Manual contents">
+    <form class="mn-search" role="search" action="/petanuri/en/manual/search" data-index="/petanuri/assets/data/manual-search.en.json">
+      <label class="mn-search-label" for="mn-q">Search the manual</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="e.g. symmetry, pen pressure, export" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="Search results" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/en/manual">Manual</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">Manual contents</button>
-    <nav><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li><li><a href="/petanuri/en/manual/deco">Stamps, patterns, stitches and 2D canvas</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms, text and rulers</a></li><li><a href="/petanuri/en/manual/layers">Layer</a></li><li><a href="/petanuri/en/manual/uv">UV view and visible area</a></li><li><a href="/petanuri/en/manual/screen" aria-current="page">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/sets">Texture sets and objects</a></li><li><a href="/petanuri/en/manual/material">Final look and lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake, materials and shading <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses, blend shapes and vertex groups <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Paint from Unity and AI integration</a></li><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li></ol><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
+    <nav><p class="mn-group">Start here</p><ul class="mn-plain"><li><a href="/petanuri/en/manual/first">First steps</a></li><li><a href="/petanuri/en/manual/howto">Find by task</a></li><li><a href="/petanuri/en/manual/trouble">Troubleshooting</a></li></ul><p class="mn-group">Basics</p><ol><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/screen" aria-current="page">Interface, panels and preferences</a></li><li><a href="/petanuri/en/manual/draw">Draw</a></li></ol><p class="mn-group">Tools and areas</p><ol><li><a href="/petanuri/en/manual/deco">Stamps, patterns and stitches</a></li><li><a href="/petanuri/en/manual/edit">Selections, transforms and text</a></li><li><a href="/petanuri/en/manual/layers">Layers</a></li><li><a href="/petanuri/en/manual/uv">UV and visible area</a></li><li><a href="/petanuri/en/manual/sets">Texture sets</a></li></ol><p class="mn-group">Finishing</p><ol><li><a href="/petanuri/en/manual/material">lilToon materials <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/ao">Bake AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/bake">Easy Bake <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/en/manual/pose">Poses and blend shapes <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">Export and connect</p><ol><li><a href="/petanuri/en/manual/export">Export</a></li><li><a href="/petanuri/en/manual/unity">Unity and AI integration</a></li></ol><p class="mn-group">Reference</p><ol><li><a href="/petanuri/en/manual/keys">Shortcuts</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/en/manual/glossary">Glossary</a></li></ul><a class="mn-back" href="/petanuri/en/manual">← Manual home</a></nav>
   </aside>
   <main class="mn-main">
-    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> ／ <a href="/petanuri/en/manual">Manual</a> / Interface, panels and preferences</p>
+    <p class="mn-crumb"><a href="/petanuri/en">PetaNuri3D</a> / <a href="/petanuri/en/manual">Manual</a> / Interface, panels and preferences</p>
     <h1 class="mn-h1">Interface, panels and preferences</h1>
-    <p class="mn-intro">Move panels and toolbars wherever you like. Layout is restored on the next launch.</p>
-    <p class="mn-proof">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p><p class="mn-proof">Lite, Standard, Pro, and the Pro upgrade are available on BOOTH.</p>
-    <div class="mn-toc"><b>On this page</b><ul><li><a href="#layout">Default layout</a></li><li><a href="#dock">Move panels</a></li><li><a href="#tabs">Tabs, collapsing and icon strips</a></li><li><a href="#toolbar">Toolbar and favorite tools</a></li><li><a href="#hud">The four corners of the 3D view</a></li><li><a href="#light">Display modes and light direction</a></li><li><a href="#ctx">Right-click menu</a></li><li><a href="#settings">Preferences</a></li></ul></div>
-    <section class="mn-sec" id="layout"><h2>Default layout</h2><ul class="mn-list"><li>Left: Sub tool, Tool properties, Brush size, Reference image.</li><li>Right, three columns: Texture sets, Layer properties and Layers beside 3D; Color, Color values, Color set/Recent colors and History next; Objects and Pro panels (Vertex groups, Material, Blend shapes, Pose) collapsed into an icon strip at the far right.</li><li>Column widths adapt to window size. Below 1400px wide (1280×720, 1366×768 etc.), color panels also join the far-right icon strip to leave more 3D space.</li><li>The default layout rearranges on resize. After customizing, it stays as arranged. View → Window → Reset window layout restores the default.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="Default layout screen" loading="lazy"><figcaption>Default layout</figcaption></figure></section><section class="mn-sec" id="dock"><h2>Move panels</h2><ul class="mn-list"><li>Drag a panel header; release to place it.</li><li>Middle of a column/row: insert there. Edge: create a neighboring column/row. Edge of 3D (Add column to left etc.): create one on that side. Elsewhere: float.</li><li>Drag boundaries to change width/height (double-click to reset). Side-column panels also have bottom handles for height.</li><li>Floating panels move by their headers and resize with bottom-right handles. Show/hide through View (or header right-click → Hide this panel). Panels remain inside the app window.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-dock-v1.webp" width="1400" height="840" alt="Panels in columns, rows and floating windows" loading="lazy"><figcaption>Example customized panel layout</figcaption></figure><div class="mn-tip">Floating windows can be moved and resized by their headers even while “Lock panel layout” is on. The lock at the upper right of each one fixes or unfixes just that window. View → Windows → Toolbox shows a panel with the tool icons in a grid (with foreground and background colors below).</div></section><section class="mn-sec" id="tabs"><h2>Tabs, collapsing and icon strips</h2><ul class="mn-list"><li><strong>Collapse</strong>: Click the header to show only the header. Collapsing unused panels gives others more room.</li><li><strong>Group as tabs</strong>: Drag a header onto another panel&#x27;s header (release when Drop here to group as tabs appears). Drag a tab out to separate it.</li><li><strong>Icon strip</strong>: Use “&lt;”“&gt;” at the column top to collapse it into a narrow icon strip. Click an icon to open only that panel beside it (click outside or press <kbd>Esc</kbd>  to close).</li></ul></section><section class="mn-sec" id="toolbar"><h2>Toolbar and favorite tools</h2><ul class="mn-list"><li><strong>Placement</strong>: Drag the toolbar handle to show docking zones along all four workspace edges; release at an edge (horizontal at top/bottom). Release elsewhere to float. Also choose via button right-click → Toolbar placement.</li><li><strong>Icon size</strong>: Right-click a button → Toolbar icon size → Large/Small.</li><li><strong>Theme color</strong>: The sun/moon toggle at the toolbar end switches Light/Dark.</li><li><strong>Reorder tools</strong>: Drag buttons into your preferred order, including with a pen. Move then release to reorder; release without moving to select. Right-click → Reset order restores the default.</li><li><strong>Favorite tools</strong>: Right-click a toolbar button or sub tool → Add to favorites. They appear in small strips above 3D and UV; click to switch. + adds the current sub tool (pen-only supported).</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-favbar.webp" width="320" height="70" alt="Favorite tools strip" loading="lazy"><figcaption>Favorite tools strip</figcaption></figure><div class="mn-tip">File is now the leftmost menu, followed by New, Open, Save, Undo, and Redo buttons (dimmed when unavailable). The edition is shown in the window title.</div><div class="mn-tip">Favorite tool bars for the 3D view and UV view can be shown or hidden separately (View → Windows). While Lock panel layout in View → Windows is on, panels are not moved or resized.</div><div class="mn-tip">Long menus and context menus that do not fit on screen scroll when you hold the mouse or pen at the top or bottom edge (▲/▼ marks show more items). The wheel and arrow keys also scroll them.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-menubar-v112.webp" width="640" height="34" alt="Menu bar with New, Open, Save, Undo, and Redo buttons" loading="lazy"><figcaption>Menu bar buttons</figcaption></figure><div class="mn-tip">Toolbar columns (v1.3.0 and later): right-click the toolbar to choose Columns: Auto or Columns: Always 1. Tools that do not fit can be scrolled with the wheel, the arrows at the ends, or by dragging with the pen.</div></section><section class="mn-sec" id="hud"><h2>The four corners of the 3D view</h2><ul class="mn-list"><li><strong>Top left</strong>: Mesh lines, display mode, single/double-sided, symmetry X/Y/Z, visible area (icons with ▼ open settings below).</li><li><strong>Top center</strong>: Paint/Pose toggle (bone controls in Pose; paint-target controls while painting a target). Drag the left ⋮ handle to reposition.</li><li><strong>Top right</strong>: Front, Back, Right, Left, Top, Bottom, Perspective/Orthographic, Frame all (numpad also works).</li><li><strong>Bottom right</strong>: 3D navigator and alternate-angle mini view (a small 3D view from another camera; view-only).</li><li><strong>Bottom left</strong>: Switch to touched set, main/sub texture sets, paint across sets (<a href="/petanuri/en/manual/sets#cross">Texture set</a>).</li><li><strong>Bottom center</strong>: Selection bar and hidden-area bar.</li><li>When 3D is narrow, icons move into the ⋯ popup starting from the top right.</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="1154" height="54" alt="Icons above the 3D view" loading="lazy"><figcaption>Top-row icons</figcaption></figure><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo.webp" width="160" height="149" alt="3D navigator" loading="lazy"><figcaption>3D navigator (axis circles select views; sphere rotates; magnifier zooms; hand pans)</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="654" height="900" alt="Shaded display and alternate-angle mini view" loading="lazy"><figcaption>Shaded display and bottom-right alternate-angle mini view</figcaption></figure></div><div class="mn-tip">The ▼ under the perspective/orthographic icon at the upper right sets the perspective field of view from 5° to 120°. Smaller values are more telephoto, larger values wider (default 30°). The value persists after restart.</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-fov-v112.webp" width="444" height="290" alt="Field of view slider under the projection ▼" loading="lazy"><figcaption>Field of view</figcaption></figure><div class="mn-tip">3D navigator (all editions): the navigator now has the sphere with Frame all and perspective/orthographic below it on the left, the magnifier, hand, and view rotation on the right, and ⟲, angle, ⟳ along the bottom (the same layout as the UV guide).</div><div class="mn-tip">View rotation (all editions): tilt the 3D view like paper while painting. Shift+wheel rotates 5°, ⟲/⟳ rotate 15° (click the angle for 0°), or drag the rotate button left or right (double-click for 0°). Keys can be assigned to “Rotate view left”, “Rotate view right”, and “Reset view rotation”.</div><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo-v120.webp" width="163" height="191" alt="3D navigator" loading="lazy"><figcaption>3D navigator buttons</figcaption></figure><div class="mn-tip">Camera orientation lock (v1.3.0 and later): a button on the 3D navigator stops only rotation, while panning and zooming still work.</div><div class="mn-tip">You can show rotation/zoom sliders under the navigator (Show rotation/zoom sliders on the navigator in Preferences → Interface → Display; hidden by default). They appear for both the 3D navigator and the UV guide, and can also be shown or hidden by right-clicking the navigator or UV guide (v1.3.0 and later).</div></section><section class="mn-sec" id="light"><h2>Display modes and light direction</h2><ul class="mn-list"><li>Display modes (3D top left): Unlit painted colors, Two-tone toon, Shaded (lit to reveal shape), Final look (lilToon; <span class="tier pro">Pro</span>). Restored on next launch.</li><li>Use ▼ below the display-mode icon for <strong>Light direction</strong>: Drag the sphere to set light direction, use azimuth/elevation sliders, or enable Follows camera (illumination stays consistent while rotating). Two-tone toon, Shaded and Final look share the light.</li></ul><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-light-pop.webp" width="600" height="520" alt="Light direction dialog" loading="lazy"><figcaption>Light direction</figcaption></figure><div class="mn-tip">Wireframe only, at the right end of the display modes, hides textures and shows only mesh lines (also in View → Display mode). The lines follow poses, blend shapes, and moves.</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-only-v112.webp" width="702" height="940" alt="3D view showing only mesh lines" loading="lazy"><figcaption>Wireframe only</figcaption></figure><div class="mn-tip">Show as pixels (all editions): shows textures in 3D without interpolation, each texel as a square (display only; your painting and exports don’t change). Toggle it per texture set with “Show as pixels (no interpolation)” in the set row’s ⋯ or right-click menu. Sets of 256px or less are on by default. View → Display mode → Show all sets’ textures as pixels (no interpolation) toggles all sets at once.</div><div class="mn-tip">Transparent areas (erased or painted with the transparent color) now show a checkerboard in 3D (toggle with View → Display mode → Show transparent areas as a checkerboard; off shows gray). Right-click a texture set (…) → Alpha cutout (hide transparency in 3D) to view it as Cutout or Translucent (display only; exported images are unchanged).</div></section><section class="mn-sec" id="ctx"><h2>Right-click menu</h2><p>Menus suit the clicked area (3D, UV, layers, texture sets, sub tools, color sets, history, panel headers etc.). In 3D, quickly pick color, select set/layer painted here, show only this island, hide object, choose views or symmetry.</p><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="519" height="710" alt="3D context menu" loading="lazy"><figcaption>3D right-click menu</figcaption></figure><div class="mn-tip">Menu items show icons at left and current keys at right. ▶ opens submenus; navigate with <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>・<kbd>Enter</kbd>・<kbd>Esc</kbd>  too.</div></section><section class="mn-sec" id="settings"><h2>Preferences</h2><p>File → Preferences (<kbd>Ctrl</kbd>＋<kbd>Alt</kbd>＋<kbd>Shift</kbd>＋<kbd>K</kbd>). Categories appear left; collapsible sections right. Hover over setting names for descriptions.</p><div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Category</th><th scope="col">Main settings</th></tr></thead><tbody><tr><td>Interface</td><td>Theme (Light/Dark), color scheme (window background, panels, buttons, text, main, secondary, 3D background, toolbar), 3D navigator size, language (Japanese/English/Korean/Chinese (Simplified and Traditional))</td></tr><tr><td>Pen &amp; input</td><td>Stroke feel (taper by pressure only / taper by length, taper-out method), pressure response (test-stroke calibration, minimum/maximum), tablet (read pressure directly with WinTab, use WinTab pressure for Windows Ink pens too, check WinTab status, WinTab connection: search again), reduce lag (show pen stroke first, temporary predicted stroke), menus and buttons (confirm by pressing and releasing the pen, long press with the pen opens the menu, receive middle/right clicks from the pen side button, long press on buttons)</td></tr><tr><td>Controls</td><td>Camera (<kbd>Space</kbd>+ drag bindings, camera control template (right-button / middle-button / Alt-button / Unity style), orthographic axis views, cursor-centered keyboard zoom, orbit around the last painted spot, orbit around the point under the cursor when orbiting starts), 3D mouse (sensitivity, what to move, inverted directions, button assignments; shown only after a 3D mouse has been connected), right-click (menu / popup palette), hold a tool key for temporary switching (hold time 0.15–2 s), zoom presets (UV / 2D)</td></tr><tr><td>Key bindings</td><td>Click + then press a key within a category to assign; × removes. Reset individual/default bindings or reset all; export/import key bindings (JSON)</td></tr><tr><td>Painting</td><td>Brush size unit (screen px/texture px), performance (unload inactive layers, save projects in the fast format)</td></tr><tr><td>System</td><td>Show tutorial next launch, check for updates on startup</td></tr><tr><td>AI integration</td><td>Enable AI integration (MCP), connection method, allow run_js (<span class="tier pro">Pro</span>)(<a href="/petanuri/en/manual/unity#ai">AI integration</a>)</td></tr></tbody></table></div><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="900" height="640" alt="Preferences dialog" loading="lazy"><figcaption>Preferences</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="Dark-mode interface" loading="lazy"><figcaption>Dark mode</figcaption></figure></div><div class="mn-tip">Settings controlled elsewhere are absent from Preferences: Paint across two sets (3D bottom left), continue past UV island edges (UV header), export padding/destination (export dialog), symmetry search range (symmetry ▼).</div><div class="mn-tip">Camera controls: in File → Preferences → Controls → Camera, use Camera control template to choose right-button, middle-button, Alt-button, or Unity-style controls. Your choice is kept on restart. Space controls and the wheel remain available.</div><div class="mn-tip">Middle-button: middle-drag rotates, Shift+middle-drag pans, and Ctrl+middle-drag zooms. Alt-button: Alt+left rotates, Alt+middle pans, and Alt+right zooms in 3D.</div><div class="mn-tip">Read longer explanations using the round “?” icons. Hover to show help, or click or tap to keep it open. Click again, click outside, or press Esc to close it. With the keyboard, use Tab to focus “?” and Enter or Space to toggle help. Point placement steps, current status, and warnings remain on screen.</div><div class="mn-tip">Unity style: right-drag rotates and middle-drag pans. Alt+left rotates, Alt+middle pans, and Alt+right zooms (3D view; as in Unity, drag down to zoom in and up to zoom out). Use I for the 3D eyedropper.</div><div class="mn-tip">Color scheme: Preferences → Interface lets you change the window background, panel, button, text, main, secondary, 3D background, and toolbar colors. Light and dark are saved separately and can be reset to the defaults.</div><div class="mn-tip">Pen press: menu items and buttons can be confirmed by pressing and releasing the pen (on by default). For long presses on buttons, choose confirm on release (default) or open the right-click menu. Elsewhere, such as layer rows, a long press always opens the right-click menu.</div><div class="mn-tip">Long-press menu (all editions): holding the pen tip still opens the right-click menu. It does not open while you are drawing a line or painting (even if you keep painting the same spot). Turn off “Long press with the pen opens the menu” in File → Preferences → Pen &amp; input → Menus and buttons to stop long presses from opening the menu anywhere, in the 3D and UV views or on panels (handy for fine detail work). Menus opened with right-click or the pen side button are unchanged.</div><figure class="mn-fig mid"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="The Menus and buttons section in Preferences → Pen &amp; input" loading="lazy"><figcaption>Pen &amp; input → Menus and buttons (long press with the pen opens the menu; receive middle/right clicks from the pen side button)</figcaption></figure><div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="Unity style selected in camera preferences" loading="lazy"><figcaption>Unity-style camera controls</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-theme-v112.webp" width="900" height="350" alt="Color scheme settings in Interface preferences" loading="lazy"><figcaption>Color scheme</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-press-v112.webp" width="900" height="640" alt="Pen press and long-press settings" loading="lazy"><figcaption>Pen press and long press</figcaption></figure></div><div class="mn-tip">Orbit around the last painted spot (all editions): turn it on in File → Preferences → Controls → Camera (off by default) to orbit around the end of your last stroke in the 3D view. When painting details up close, the spot no longer drifts off screen as you rotate.</div><div class="mn-tip">Orbit around the point under the cursor when orbiting starts (all editions): turn it on in File → Preferences → Controls → Camera (off by default) to orbit around the point on the model under the cursor when you start rotating in the 3D view (starting outside the model works as before). When painting low areas or edges, the spot no longer drifts off screen as you rotate. If Orbit around the last painted spot is also on, this one takes priority.</div><div class="mn-tip">UV background in the color scheme (v1.3.0 and later): in Preferences → Interface, the color scheme can also change the UV view background color.</div><div class="mn-tip">Traditional Chinese (中文（繁體）) was added as a display language (v1.3.0 and later).</div></section>
-    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/uv"><small>← Previous</small>UV view and visible area</a><a class="next" href="/petanuri/en/manual/sets"><small>Next →</small>Texture sets and objects</a></nav>
+    <p class="mn-intro">This page covers where everything is on the screen, how to move panels and the toolbar, how to change the way the 3D view looks, and every item in Preferences. The panel layout comes back the next time you start the app.</p>
+    <p class="mn-proof mn-ui-note">Screenshots show the Japanese interface. Menu names in the text follow the selected app language.</p>
+    <div class="mn-quick"><b>Start with this</b><ol>
+      <li>To show a panel that is not showing, use Display → Windows (<a href="#panels">Details</a>).</li>
+      <li>Drag a panel's heading to move it wherever you like (<a href="#dock">Details</a>).</li>
+      <li>Change how the 3D view looks with the shading icon at the top left of the 3D view (<a href="#light">Details</a>).</li>
+      <li>If you lose track of the layout, choose Display → Windows → "Reset window layout" (<a href="#layout-reset">Details</a>).</li>
+      <li>Settings are in File → Preferences (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>) (<a href="#settings">Details</a>).</li>
+    </ol></div>
+    <div class="mn-toc"><b>On this page</b><ul><li><a href="#layout">What is where on the screen (default layout)</a></li><li><a href="#panels">Show and hide panels (panel list)</a></li><li><a href="#dock">Move panels</a></li><li><a href="#tabs">Collapse panels and group them in tabs</a></li><li><a href="#toolbar">Toolbar and favorite tools</a></li><li><a href="#hud">Icons in the corners of the 3D view</a></li><li><a href="#nav">Move the view with the 3D navigator</a></li><li><a href="#subview">View another angle at the same time in a small window</a></li><li><a href="#miniwin">Put 3D and UV in a small window</a></li><li><a href="#light">Change how it looks (shading and light direction)</a></li><li><a href="#ctx">Right-click menu</a></li><li><a href="#popup">Popup palette (pen-only controls)</a></li><li><a href="#reference">Draw while looking at a reference image</a></li><li><a href="#common">Common controls</a></li><li><a href="#theme">Change dark mode, colors and language</a></li><li><a href="#settings">Preferences</a></li></ul></div>
+
+    <section class="mn-sec" id="layout" data-keywords="workspace interface arrangement panels-missing disappeared restore reset-ui screen-overview">
+      <h2>What is where on the screen (default layout)</h2>
+      <p>This is the arrangement you get the first time you start the app. The middle is where you paint (the 3D view), with panels on the left and right.</p>
+      <ul class="mn-list">
+        <li><strong>Top</strong>: The menu bar. To the right of "File" are buttons for New, Open and Save, and for Undo and Redo (a button is dimmed when it cannot be used).</li>
+        <li><strong>Left</strong>: The toolbar, plus Sub tool, Tool properties, Brush size and Reference image.</li>
+        <li><strong>Right</strong>: Three columns. Right next to the 3D view are Texture set, Layer properties and Layer. Next to those are Color, Color values, Color set | Recent colors (as tabs) and History.</li>
+        <li><strong>Far right</strong>: A column of Objects and the Pro panels (Vertex groups, Material, Blend shapes, Pose), folded into a strip of icons. Click an icon and that panel slides out to the side.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-overview.webp" width="1400" height="840" alt="The default layout. The toolbar and sub tools are on the left, the 3D view is in the middle, and panels such as layers and colors are on the right" loading="lazy"><figcaption>Default layout</figcaption></figure>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-menubar-v112.webp" width="640" height="34" alt="The menu bar, with buttons for New, Open, Save, Undo and Redo" loading="lazy"><figcaption>Menu bar buttons</figcaption></figure>
+      <h3 id="layout-size">Layout that fits the window size</h3>
+      <ul class="mn-list">
+        <li>When the window is short (under 860 px high), the Texture set panel is collapsed. Switch sets from the heading of the Layer panel.</li>
+        <li>Under 1400 px wide (1280×720, 1366×768 and so on), the color column is also folded into the strip at the far right, which leaves more room for the 3D view. Under 1100 px wide, the columns get even narrower and Layer properties goes into the strip too.</li>
+        <li>If you are still on the default layout, it is rebuilt when you resize the window. After you change the layout, for example by moving or collapsing panels, it is not rebuilt.</li>
+        <li>The layout comes back the next time you start the app.</li>
+      </ul>
+      <h3 id="layout-reset">Return to the default layout</h3>
+      <ol class="mn-steps">
+        <li>Choose Display → Windows → "Reset window layout".</li>
+        <li>The panels return to the default layout for the current window size. The toolbar goes back to the left, and the tools return to their original order.</li>
+      </ol>
+      <h3 id="layout-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>All the panels and the toolbar are gone</b>: They are hidden with <kbd>Tab</kbd>. Press <kbd>Tab</kbd> again, or choose Display → "Show/hide palettes".</li>
+        <li><b>I can't find the panel I want</b>: Put a ✓ next to that panel in Display → Windows (<a href="#panels">Panel list</a>). It may also be folded into the strip of icons at the far right.</li>
+        <li><b>The layout doesn't change when I enlarge the window</b>: After you change the layout, it is not rebuilt. Use "Reset window layout" to fit it to the current size.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="panels" data-keywords="window-menu show-panel hide-panel close-panel palette toolbox open-panel missing-panel view-menu">
+      <h2>Show and hide panels (panel list)</h2>
+      <p>Show and hide panels with Display → Windows in the menu. A panel with a ✓ is showing.</p>
+      <ol class="mn-steps">
+        <li>Open Display → Windows.</li>
+        <li>Choose the name of the panel you want. A ✓ appears and the panel shows.</li>
+        <li>To hide it, choose it again. You can also hide it by right-clicking the panel's heading → "Hide this panel".</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Panel</th><th scope="col">What it is for</th></tr></thead><tbody>
+        <tr><td>Sub tool</td><td>Choose the kind within a tool (G pen, Soft brush and so on) (<a href="/petanuri/en/manual/draw#tools">Tools and sub tools</a>)</td></tr>
+        <tr><td>Tool properties</td><td>Settings for the selected sub tool, such as thickness and hardness (<a href="/petanuri/en/manual/draw#props">Detailed brush settings</a>)</td></tr>
+        <tr><td>Brush size</td><td>Pick from a list of frequently used sizes (<a href="/petanuri/en/manual/draw">Draw</a>)</td></tr>
+        <tr><td>Reference image</td><td>Show an image to look at while you draw (<a href="#reference">Reference image</a>)</td></tr>
+        <tr><td>Toolbox</td><td>Arranges the tool icons in a grid, with the foreground and background colors below. Hidden at first (<a href="#toolbar">Toolbar</a>)</td></tr>
+        <tr><td>Texture set</td><td>Choose the texture set to paint on, set the resolution and see the memory estimate (<a href="/petanuri/en/manual/sets#choose">Texture set</a>)</td></tr>
+        <tr><td>Layer properties</td><td>Blend mode, opacity and so on of the selected layer (<a href="/petanuri/en/manual/layers#props">Layer properties</a>)</td></tr>
+        <tr><td>Layer</td><td>Add, stack and select layers (<a href="/petanuri/en/manual/layers#basic">Layers</a>)</td></tr>
+        <tr><td>Color</td><td>Choose the foreground color (<a href="/petanuri/en/manual/draw#color">Choose colors</a>)</td></tr>
+        <tr><td>Color values</td><td>Foreground color, background color, HEX, numbers and opacity (<a href="/petanuri/en/manual/draw#color">Choose colors</a>)</td></tr>
+        <tr><td>Color set</td><td>Swatches of frequently used colors (<a href="/petanuri/en/manual/draw#color">Choose colors</a>)</td></tr>
+        <tr><td>Recent colors</td><td>The last 12 colors you painted or picked (<a href="/petanuri/en/manual/draw#color">Choose colors</a>)</td></tr>
+        <tr><td>History</td><td>A list of your past operations. Click a row to go back to that point (<a href="/petanuri/en/manual/layers#history">History</a>)</td></tr>
+        <tr><td>Objects</td><td>Show or hide each part of the model (<a href="/petanuri/en/manual/sets#objects">Objects</a>)</td></tr>
+        <tr><td>Vertex groups <span class="tier pro">Pro</span></td><td>Make a selection from a vertex group (<a href="/petanuri/en/manual/pose#vgroup">Vertex groups</a>)</td></tr>
+        <tr><td>Material <span class="tier pro">Pro</span></td><td>lilToon settings, paint targets and export (<a href="/petanuri/en/manual/material">lilToon materials</a>)</td></tr>
+        <tr><td>Blend shapes <span class="tier pro">Pro</span></td><td>Move expression and body shapes (<a href="/petanuri/en/manual/pose#blend">Blend shapes</a>)</td></tr>
+        <tr><td>Pose <span class="tier pro">Pro</span></td><td>Move bones to pose the model (<a href="/petanuri/en/manual/pose#pose">Pose mode</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>Display → Windows also has "Toolbar", "3D navigator (bring it back with the icon at bottom right)", "Alternate-angle mini view", "Favorite tools (3D view)", "Favorite tools (UV view)", "Lock panel layout" and "Reset window layout".</li>
+        <li><kbd>Tab</kbd> (Display → "Show/hide palettes") hides or shows the toolbar and all the panels at once. Use it when you want a wide view of the 3D view.</li>
+        <li>In Lite, Pro panels show a lock icon and an explanation instead of their contents. In Standard, they do not appear in the list.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="dock" data-keywords="docking dock drag-panel rearrange float floating-window undock resize-panel lock-layout pin">
+      <h2>Move panels</h2>
+      <p>You can arrange panels in as many columns and rows as you like: on the left and right of the 3D view (vertical columns) and above and below it (horizontal rows). You can also leave a panel floating, without docking it anywhere.</p>
+      <ol class="mn-steps">
+        <li>Drag a panel's heading. A line or frame shows where it will go.</li>
+        <li>Release where you want it. It is placed where you release.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Where you release</th><th scope="col">What happens</th></tr></thead><tbody>
+        <tr><td>The middle of a column or row</td><td>Inserts the panel into that column or row (a line shows where it goes; within a row, panels sit side by side)</td></tr>
+        <tr><td>The edge of a column or row</td><td>Makes a new column or row next to it (a thick line appears at the edge)</td></tr>
+        <tr><td>The frames at the edges of the 3D view ("Add column on the left", "Add column on the right", "Place above", "Place below")</td><td>Makes a new column or row on that side</td></tr>
+        <tr><td>Anywhere else (such as the middle of the 3D view)</td><td>It becomes a floating window</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-dock-v1.webp" width="1400" height="840" alt="Panels arranged in columns, rows and floating windows" loading="lazy"><figcaption>Example customized panel layout</figcaption></figure>
+      <h3 id="dock-size">Change width and height</h3>
+      <ul class="mn-list">
+        <li>Drag the border between columns, or between rows, to change the width or height. Double-click a border to restore it.</li>
+        <li>For panels in the left and right columns, drag the handle at the bottom edge to change the height (double-click to return to automatic). Long contents scroll inside the panel.</li>
+        <li>Empty columns and rows disappear, and the 3D view gets wider.</li>
+        <li>The tiles in Sub tool and Brush size rearrange to fit the width and height of the panel. A column or floating window with only Brush size can be narrowed to the width of one column of tiles (about 64 px).</li>
+      </ul>
+      <h3 id="dock-float">Floating windows</h3>
+      <ul class="mn-list">
+        <li>Drag the heading to move it, and use the handle at the bottom right to resize it. Click the heading to collapse it.</li>
+        <li>There is no ×. To hide it, use Display → Windows, or right-click the heading → "Hide this panel".</li>
+        <li>Panels stay inside the app window. They cannot go into a separate window outside the app.</li>
+      </ul>
+      <h3 id="dock-lock">Lock the layout</h3>
+      <ul class="mn-list">
+        <li>Put a ✓ on Display → Windows → "Lock panel layout" to stop panels from being moved or resized. This prevents accidental moves.</li>
+        <li>Even while the layout is locked, you can still move and resize floating windows by dragging the heading.</li>
+        <li>With the lock at the top right of a floating window, you can lock or unlock just that window. When it is locked, it does not move or change size (this is remembered the next time you open it).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tabs" data-keywords="minimize collapse-panel tabbed-panels group-tabs undock-tab icon-bar sidebar strip shrink">
+      <h2>Collapse panels and group them in tabs</h2>
+      <p>Making unused panels small gives the other panels and the 3D view more room.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">What you want to do</th><th scope="col">How</th></tr></thead><tbody>
+        <tr><td>Show only the heading (collapse)</td><td>Click the panel's heading. Click again to restore it. A panel collapsed within a row becomes a thin vertical strip with only the heading</td></tr>
+        <tr><td>Group panels in tabs</td><td>Drag a heading onto the heading of another panel. When "Drop here to make it a tab" appears, release. Switch between them with the tabs at the top</td></tr>
+        <tr><td>Collapse a tab</td><td>Click the selected tab again</td></tr>
+        <tr><td>Detach a tab</td><td>Drag the tab outside (or right-click the tab → "Detach this tab")</td></tr>
+        <tr><td>Move tabs together</td><td>Drag an empty area in the row of tabs</td></tr>
+        <tr><td>Turn a column into a strip of icons</td><td>Click "&lt;" or "&gt;" at the top of the column. The column becomes a thin strip with only icons. Click again to return to the column</td></tr>
+        <tr><td>Show a panel from the strip</td><td>Click an icon in the strip and only that panel slides out to the side. Click outside, press <kbd>Esc</kbd> or click the same icon to put it away</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="mn-sec" id="toolbar" data-keywords="toolbox tool-icons order reorder favorites quick-access vertical horizontal docking-toolbar one-column two-columns">
+      <h2>Toolbar and favorite tools</h2>
+      <p>The toolbar starts on the left. You can attach it above, below or on the right of the work area, or let it float.</p>
+      <ol class="mn-steps">
+        <li>Drag the toolbar's handle (the top edge when it is vertical, the left edge when it is horizontal). Docking targets appear on the four sides of the work area.</li>
+        <li>Release on a target to attach the toolbar to that edge. At the top or bottom, the tools line up horizontally and wrap if they do not fit.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>If you release anywhere else, it floats. A floating toolbar switches between "Horizontal" and "Vertical", and double-clicking the handle returns it to its previous edge.</li>
+        <li>You can also choose Left, Right, Top, Bottom or Float from a button's right-click menu → "Toolbar position". The position is remembered the next time you start the app.</li>
+        <li>Right-click a button → "Toolbar icon size" to choose large or small, and "Toolbar columns" to choose "Columns: Auto" or "Columns: Always 1". Tools that do not fit can be scrolled with the wheel, the arrows at the edge, or by dragging with the pen.</li>
+        <li><strong>Reorder</strong>: Drag the buttons (a pen works too) into any order. Release after moving a little to reorder, or release without moving to select that tool. Right-click → "Reset order" returns them to the original order.</li>
+        <li><strong>Theme color</strong>: The sun and moon switch at the very end of the toolbar toggles between Light and Dark (<a href="#theme">Dark mode</a>).</li>
+        <li><strong>Hide</strong>: Remove the ✓ from Display → Windows → "Toolbar".</li>
+        <li><strong>Toolbox</strong>: Display → Windows → "Toolbox" shows a panel with the tool icons in a grid. Like other panels, you can put it in a column or tab, and it wraps to fit the width. Click the foreground color below it to open the Color panel, click the background color or ⇄ to swap them, and click the small black-and-white icon or press <kbd>D</kbd> to return to black and white.</li>
+      </ul>
+      <h3 id="toolbar-fav">Favorite tools strip</h3>
+      <p>Line up your favorite tools and sub tools in a small strip above the 3D view and the UV view, so you can switch to them quickly.</p>
+      <ol class="mn-steps">
+        <li>Right-click a toolbar button or a sub tool (brush collection presets too).</li>
+        <li>Choose "Add to favorites". An icon is added to the strip.</li>
+        <li>Click an icon in the strip to switch to that tool or sub tool.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-favbar.webp" width="320" height="70" alt="Favorite tools strip" loading="lazy"><figcaption>Favorite tools strip</figcaption></figure>
+      <ul class="mn-list">
+        <li>Use "+" in the strip to add the current sub tool, and "-" to remove it if it is already there (this works with a pen alone too). You can also remove an icon by right-clicking it.</li>
+        <li>Move the strip with the dotted handle on the left, and drag icons to reorder them.</li>
+        <li>Right-click the strip for "Arrange vertically", "Reset position" and "Hide this bar". × also hides it.</li>
+        <li>Show a hidden strip again with Display → Windows → "Favorite tools (3D view)" or "Favorite tools (UV view)", each separately.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="hud" data-keywords="viewport corners overlay gizmo field-of-view fov focal-length zoom-lens perspective orthographic projection wide-angle telephoto">
+      <h2>Icons in the corners of the 3D view</h2>
+      <p>Icons for switching the display and the view line up in the four corners of the 3D view. For an icon with a ▼, click the ▼ below it to open its settings (press <kbd>Esc</kbd> or click outside to close).</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Location</th><th scope="col">What is there</th></tr></thead><tbody>
+        <tr><td>Top left</td><td>Mesh wireframe (<a href="/petanuri/en/manual/uv#wire">Mesh wireframe</a>), Shading (<a href="#light">How it looks</a>), single-sided/double-sided, Paint symmetrically X, Y, Z (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>), Visible area (<a href="/petanuri/en/manual/uv#isolate">Visible area</a>)</td></tr>
+        <tr><td>Top center</td><td>Toggle between paint and pose. In Pose mode it changes to bone controls (<a href="/petanuri/en/manual/pose#pose">Pose</a>), and while you are painting a paint target it changes to paint target controls (<a href="/petanuri/en/manual/material#channels">Paint targets</a>)</td></tr>
+        <tr><td>Top right</td><td>Front, Back, Right, Left, Top, Bottom, Perspective/orthographic ▼, Frame all. At first, the 3D navigator is also at the top right (<a href="#nav">3D navigator</a>)</td></tr>
+        <tr><td>Bottom right</td><td>The icon for when the 3D navigator is minimized, and the Alternate-angle mini view (<a href="#subview">Alternate-angle mini view</a>)</td></tr>
+        <tr><td>Bottom left</td><td>Switch on touch, the main and sub texture sets, and Paint across (<a href="/petanuri/en/manual/sets#cross">Paint across two sets</a>)</td></tr>
+        <tr><td>Bottom center</td><td>The selection bar (<a href="/petanuri/en/manual/edit#selbar">Selection bar</a>) and the bar shown while you are hiding (<a href="/petanuri/en/manual/uv#hidepen">Hide pen</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-hud-top.webp" width="1154" height="54" alt="The row of icons at the top of the 3D view" loading="lazy"><figcaption>Top-row icons</figcaption></figure>
+      <ul class="mn-list">
+        <li>You can move the top-center row anywhere by dragging the handle (⋮) on its left. Double-click the handle to return it to its original position.</li>
+        <li>If the 3D view is narrow, the icons at the top right form two rows. If they still do not fit, they are tucked into the "⋯" panel at the top left, in this order: View, Visible area, Symmetry, single-sided/double-sided, Shading, Mesh wireframe. Click "⋯" to show them.</li>
+        <li>If it is narrower still, the strip at the bottom left hides its text and shows only icons, and if it is narrower again it goes into the "⋯" panel. How narrow it is depends on the width of the 3D view, not the window.</li>
+      </ul>
+      <h3 id="hud-fov">Change the field of view</h3>
+      <p>With the ▼ on the perspective/orthographic icon at the top right, you can change the projection, and set the field of view of the perspective view from 5 to 120°. The smaller it is, the more telephoto the view; the larger it is, the wider the angle. "Reset to defaults" returns it to 30°.</p>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-fov-v112.webp" width="444" height="290" alt="The field-of-view slider that opens from the ▼ on the perspective/orthographic icon" loading="lazy"><figcaption>Field of view</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="nav" data-keywords="navigation-cube orbit rotate roll tilt canvas-rotation lock pen-only view-control navigation-gizmo">
+      <h2>Move the view with the 3D navigator</h2>
+      <p>The 3D navigator lets you move the view without using mouse buttons or keys. It is handy when you draw with only a pen.</p>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-navgizmo-v120.webp" width="163" height="191" alt="The 3D navigator, with axis circles, a sphere, a magnifier, a hand and a rotation control" loading="lazy"><figcaption>3D navigator</figcaption></figure></div>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Action</th><th scope="col">What it does</th></tr></thead><tbody>
+        <tr><td>Tap an axis circle (X, Y, Z)</td><td>Goes to the view along that axis (X = right, -Y = front, Z = top). Tap again for the opposite side</td></tr>
+        <tr><td>Drag the sphere</td><td>Rotate</td></tr>
+        <tr><td>Drag the magnifier up and down</td><td>Zoom</td></tr>
+        <tr><td>Drag the hand</td><td>Pan</td></tr>
+        <tr><td>Drag the round arrow left and right</td><td>View rotation (clockwise to the right; double-click to return to 0°)</td></tr>
+        <tr><td>⟲, the angle and ⟳ below the sphere</td><td>⟲ and ⟳ rotate the view 15° at a time. Click the angle to return to 0°</td></tr>
+        <tr><td>Square button</td><td>Frame all</td></tr>
+        <tr><td>Perspective/orthographic button</td><td>Toggles between perspective and orthographic</td></tr>
+        <tr><td>Padlock button</td><td>Locks the camera direction (see below)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>When you line up with an axis view, it becomes orthographic, and when you rotate it goes back to perspective (you can turn this off in File → Preferences → Controls → "Orthographic for axis views").</li>
+        <li>You can also change the view with the numpad (<a href="/petanuri/en/manual/keys#view">Views (numpad)</a>).</li>
+      </ul>
+      <h3 id="nav-lock">Lock the camera direction</h3>
+      <p>Click the padlock button to stop only the rotation of the view. Pan and zoom still work. Click it again to unlock. Use this when you want to move in close and move around while keeping the direction you chose.</p>
+      <h3 id="nav-roll">Tilt the screen (view rotation)</h3>
+      <p>You can tilt the 3D view like a sheet of paper, to an angle that is easy to draw at.</p>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+wheel rotates it 5° at a time, and ⟲ and ⟳ on the 3D navigator rotate it 15° at a time. You can also drag the round arrow left and right.</li>
+        <li>If the cursor is over the UV pane, it rotates the UV.</li>
+        <li>While the view is rotated, painting, selecting, panning and right-drag rotation all work as usual. Drags move in the direction you see.</li>
+        <li>In Key bindings, you can also assign keys to "Rotate view left (15°)", "Rotate view right (15°)" and "Reset view rotation" (no keys at first).</li>
+      </ul>
+      <h3 id="nav-move">Move or shrink the navigator</h3>
+      <ul class="mn-list">
+        <li>Drag the handle (…) at the top to move it anywhere. Double-click it to return the navigator to the top right.</li>
+        <li>Drag the left edge, the bottom edge or the bottom-left corner to resize it. You can also change it with "3D navigator size" in File → Preferences → Interface.</li>
+        <li>Click "—" to shrink it into an icon at the bottom right. Click the icon to bring it back (or use Display → Windows → "3D navigator (bring it back with the icon at bottom right)").</li>
+        <li>You can show rotation and zoom sliders below the navigator. Turn on "Show rotation/zoom sliders on the navigator" in File → Preferences → Interface (off at first). They appear on both the 3D navigator and the UV guide.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="subview" data-keywords="split-view dual-view second-camera opposite-side picture-in-picture back-view reference-view small-3d-preview">
+      <h2>View another angle at the same time in a small window</h2>
+      <p>Shows a small 3D view from a second camera inside the 3D view. While you draw, you can check how it looks from the opposite side or from the side. The small window is for viewing only. You draw in the large view.</p>
+      <ol class="mn-steps">
+        <li>Click the alternate-angle mini view icon at the bottom right of the 3D view (or use Display → Windows → "Alternate-angle mini view").</li>
+        <li>Choose the direction (Front, Right, Back, Left, Top, Opposite) from the small window's heading. "Opposite" is the opposite side of the viewpoint of the large view.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>Drag inside the small window to rotate it, and pan with the middle button or <kbd>Shift</kbd>+drag.</li>
+        <li>Zoom in and out with the wheel or <kbd>Ctrl</kbd>+drag (drag up to zoom in; handy with a pen), and double-click for Frame all.</li>
+        <li>Move it by its heading, and resize it from the left edge, the top edge and the top-left corner. Close it with ✕.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-shade-subview.webp" width="654" height="900" alt="A 3D view with shaded display, and the alternate-angle mini view at the bottom right" loading="lazy"><figcaption>The "Alternate-angle mini view" at the bottom right</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="miniwin" data-keywords="picture-in-picture pip swap-views small-window uv-small 3d-small float-view side-by-side">
+      <h2>Put 3D and UV in a small window</h2>
+      <p>When 3D and UV are shown side by side, you can turn one of them into a small window and give the other more room.</p>
+      <ol class="mn-steps">
+        <li>Press <kbd>U</kbd> to show UV next to 3D (<a href="/petanuri/en/manual/uv#uv">Show the UV pane</a>).</li>
+        <li>Click the button under the ✕ at the top right of the one you want as a small window. That one becomes a small window, and the other fills the whole area.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>You can do the same with Display → UV → "UV in a small window (3D full)" and "3D in a small window (UV full)", or from the ⋯ in the UV heading.</li>
+        <li>Move the small window by dragging its heading, and resize it from its four sides and four corners. Inside the app window, you can also place it over the panels.</li>
+        <li>⇄ swaps the small window and the full view, ▣ returns to the side-by-side display, and ✕ closes the small window.</li>
+        <li>Lock it with the padlock at the top right (it will not move or change size). Even if you hide the palettes with <kbd>Tab</kbd>, the small window stays.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-view-popup-v120.webp" width="1400" height="875" alt="The screen with 3D full size and UV in a small window" loading="lazy"><figcaption>3D full size, UV in a small window</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="light" data-keywords="shading lighting light render-mode unlit toon wireframe backface two-sided checkerboard alpha cutout transparent pixel nearest-neighbor blurry">
+      <h2>Change how it looks (shading and light direction)</h2>
+      <p>Switches how the 3D view looks. Only the look changes. The picture you painted and the images you export do not change.</p>
+      <ol class="mn-steps">
+        <li>Click the shading icon at the top left of the 3D view (you can also choose it from Display → Shading).</li>
+        <li>Choose the shading you want. The app opens with the same shading next time.</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Shading</th><th scope="col">How it looks</th></tr></thead><tbody>
+        <tr><td>Painted colors as-is (unlit)</td><td>Shows the painted colors as they are, without lighting. Use it to check colors</td></tr>
+        <tr><td>Two-tone toon</td><td>Shows two colors: lit areas and shadow</td></tr>
+        <tr><td>Shaded (shows surface relief)</td><td>Lights the model so that bumps are visible. When you use the app for the first time, it opens with this shading</td></tr>
+        <tr><td>Wireframe only</td><td>Hides the textures and shows only the mesh lines. The lines follow the mesh when its shape changes through a pose, blend shapes or a move</td></tr>
+        <tr><td>Final look (lilToon/MToon, beta) <span class="tier pro">Pro</span></td><td>The look through the material settings (<a href="/petanuri/en/manual/material#look">View Final look</a>)</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-wire-only-v112.webp" width="702" height="940" alt="A 3D view showing only the mesh lines" loading="lazy"><figcaption>Wireframe only</figcaption></figure>
+      <h3 id="light-side">Single-sided and double-sided display</h3>
+      <p>Choose from the same row of icons, or from Display → Shading. The choices are "Single-sided display (back faces are not drawn)" and "Double-sided display (paint visible back faces too)". When you paint the back side, such as the inside of clothing, use double-sided (<a href="/petanuri/en/manual/draw#through">Also paint back and hidden faces</a>).</p>
+      <h3 id="light-dir">Change the light direction</h3>
+      <ol class="mn-steps">
+        <li>Click the ▼ below the shading icon.</li>
+        <li>Drag the sphere to set the direction the light comes from. You can also change it with the handles for horizontal angle and height.</li>
+        <li>Turn on "Follow camera" and the light falls the same way even when you rotate the view. "Reset to default" restores the original.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-light-pop.webp" width="600" height="520" alt="The light direction window, with a sphere and handles for horizontal angle and height" loading="lazy"><figcaption>Light direction</figcaption></figure>
+      <ul class="mn-list">
+        <li>Two-tone toon, Shaded and Final look use the same light. In "Painted colors as-is", you cannot see the light.</li>
+        <li><span class="tier pro">Pro</span> These are the same values as "Display and lighting" in the Material panel.</li>
+        <li>When the camera control is "Alt + mouse buttons", <kbd>Shift</kbd>+right-drag rotates the light horizontally.</li>
+      </ul>
+      <h3 id="light-alpha">How transparent areas look</h3>
+      <ul class="mn-list">
+        <li>Areas you painted with the Eraser or a transparent color show a checkerboard underneath in 3D. Turn off Display → Shading → "Show transparent areas as a checkerboard" and they turn gray.</li>
+        <li>Right-click a texture set row (or "…") → "Alpha cutout (hide transparency in 3D)" to choose how transparency is shown: "None", "Cutout" (areas fainter than 50% opacity are cut out so you can see through them) and "Transparent" (see-through at the actual opacity).</li>
+        <li>Alpha cutout also changes only how it looks, and the exported images do not change. It is kept in the project file and can be undone. You cannot click cut-out areas in 3D, so paint them in the UV pane.</li>
+      </ul>
+      <h3 id="light-dot">Show textures as pixels</h3>
+      <p>Shows the texture in 3D without interpolation, as one square per pixel. It is meant for low-resolution textures such as 32 or 64 px, and for pixel art.</p>
+      <ul class="mn-list">
+        <li>Switch it for each texture set, using ⋯ on the set's row or right-click → "Show as pixels (no interpolation)". A set that has it on shows a square badge on its row (click the badge to turn it off).</li>
+        <li>Sets of 256 px or less have it on from the start (automatic). Sets you switched yourself are kept in the project file, and "Reset pixel display to automatic" returns them.</li>
+        <li>Display → Shading → "Show all sets' textures as pixels (no interpolation)" switches all the sets at once.</li>
+        <li>The UV pane always shows pixels when you zoom in.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-set-dot-v120.webp" width="473" height="579" alt="A texture set row with the pixel display badge, and its right-click menu" loading="lazy"><figcaption>Pixel display for each set</figcaption></figure></div>
+      <h3 id="light-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>Shadows make the painted colors hard to see</b>: Set the shading to "Painted colors as-is".</li>
+        <li><b>Changing the light direction changes nothing</b>: You cannot see the light in "Painted colors as-is". Use Two-tone toon or Shaded.</li>
+        <li><b>Areas I made transparent look gray or like a checkerboard</b>: That is only how they look. To see through them, set the texture set's "Alpha cutout" to Cutout or Transparent.</li>
+        <li><b>I turned on Alpha cutout and now I cannot paint there</b>: You cannot click cut-out areas in 3D. Paint them in the UV pane, or set Alpha cutout back to "None".</li>
+        <li><b>A low-resolution texture looks blurry in 3D</b>: Turn on "Show as pixels (no interpolation)" for that set.</li>
+        <li><b>I cannot choose "Final look"</b>: It is shown only in Pro (<a href="/petanuri/en/manual/start#editions">Edition comparison</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="ctx" data-keywords="context-menu right-click-menu long-press submenu menu-keeps-appearing menu-pops-up unwanted-menu">
+      <h2>Right-click menu</h2>
+      <p>A menu that suits the place you clicked appears. With a pen, you can also press and hold without moving the tip. After a right-drag (rotating in 3D, moving in UV), the menu does not appear.</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Where you click</th><th scope="col">Main items</th></tr></thead><tbody>
+        <tr><td>3D view</td><td>Show popup palette, Pick color here, Select layer painted here, Select this set, Select this island, Show only this island, Hide this island, Hide this object, Show only this object, Visible area, Selection, View, Display, Paint symmetrically, Undo</td></tr>
+        <tr><td>UV pane</td><td>Show popup palette, Select layer painted here, Frame all UV, UV lines, Island edges, Padding line, Select this island, Close UV pane (<a href="/petanuri/en/manual/uv">UV pane and visible area</a>)</td></tr>
+        <tr><td>Layer row</td><td>Duplicate, Rename, Export as PNG, Merge, Mask, Color tag and more (<a href="/petanuri/en/manual/layers#basic">Layers</a>)</td></tr>
+        <tr><td>Texture set row</td><td>Replace base image, Show as pixels, Alpha cutout, Move layers to another set, Delete this set and more (<a href="/petanuri/en/manual/sets">Texture sets</a>)</td></tr>
+        <tr><td>Toolbar button, sub tool</td><td>Add to favorites, Assign key, Reset order, Toolbar icon size, Toolbar columns, Toolbar position</td></tr>
+        <tr><td>Panel heading, tab</td><td>Collapse/Expand, Hide this panel, Detach this tab</td></tr>
+        <tr><td>History row</td><td>Jump to this step (undo/redo)</td></tr>
+        <tr><td>Color set</td><td>Add current foreground color and more (<a href="/petanuri/en/manual/draw#color">Choose colors</a>)</td></tr>
+        <tr><td>Object row</td><td>Show only this, Show/Hide, Highlight in 3D, Show all (<a href="/petanuri/en/manual/sets#objects">Objects</a>)</td></tr>
+        <tr><td>Alternate-angle mini view, 3D navigator</td><td>View, Frame all, Perspective/orthographic, Minimize</td></tr>
+        <tr><td>Text field</td><td>Undo, Cut, Copy, Paste, Select all</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-ctxmenu.webp" width="519" height="710" alt="The right-click menu in the 3D view" loading="lazy"><figcaption>Right-click menu in the 3D view</figcaption></figure>
+      <ul class="mn-list">
+        <li>Each item has an icon on the left and its current key on the right. A submenu opens with ▶.</li>
+        <li>You can also operate it with <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>, <kbd>Enter</kbd> and <kbd>Esc</kbd>.</li>
+        <li>A long menu that does not fit on the screen scrolls when you hold the mouse or pen at the top or bottom edge (▲ and ▼ appear at the edge when there are more items). The wheel and the up and down keys scroll it too.</li>
+        <li>You can also change it so that a mouse right-click shows the popup palette (<a href="#popup">Popup palette</a>).</li>
+      </ul>
+      <h3 id="ctx-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>A menu appears on its own while I am drawing small details</b>: It is caused by a long press with the pen. Turn off "Long press with the pen opens the menu" in File → Preferences → Pen &amp; input → Menus and buttons. Menus opened with a right-click or the pen side button do not change.</li>
+        <li><b>If I hold a button down, a menu appears and I cannot press it</b>: In the same place, set "Long press on buttons" to "Release to confirm (default)".</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="popup" data-keywords="pie-menu radial-menu side-button pen-only one-handed color-wheel hue-ring brush-size quick-palette">
+      <h2>Popup palette (pen-only controls)</h2>
+      <p>A round palette that lets you change the color, sub tool and brush size on the spot, while you keep holding the pen.</p>
+      <ol class="mn-steps">
+        <li>Over the 3D view or the UV pane, press the pen's side button.</li>
+        <li>Release it without moving the pen. The round palette appears right there (if you move the pen, it rotates or pans as before).</li>
+        <li>When you are done, click outside the palette (it does not draw). <kbd>Esc</kbd> or tapping the right button again also closes it.</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-popup.webp" width="400" height="390" alt="The round popup palette, with favorite sub tools around the edge and a hue ring inside" loading="lazy"><figcaption>Popup palette</figcaption></figure>
+      <ul class="mn-list">
+        <li><strong>Outer ring</strong>: Your favorite sub tools. Click one to switch to it and close the palette. Use "+" to add the current sub tool, and long-press or right-click to remove one (up to 10).</li>
+        <li><strong>Inside</strong>: Choose the foreground color with the hue ring and the saturation/brightness square. The small circles at the top are recent colors.</li>
+        <li><strong>Tab at the bottom</strong>: Drag up and down to change the brush size.</li>
+        <li>To open it with the mouse, set "Right-click" to "Popup palette" in File → Preferences → Controls → Mouse (it is "Menu" at first). You can also open it with "Show popup palette" at the top of the right-click menu.</li>
+        <li>If you turned off Windows Ink in your pen tablet's settings, the side button also arrives as a mouse right-click, so it follows the "Right-click" setting above.</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="reference" data-keywords="reference-image ref-image sketch mood-board look-while-drawing paste clipboard eyedropper-from-image import-reference">
+      <h2>Draw while looking at a reference image</h2>
+      <p>Show a reference image in a panel and draw while looking at it. You can also pick colors from the image.</p>
+      <ol class="mn-steps">
+        <li>Click "Open" in the Reference image panel and choose an image.</li>
+        <li>Switch between the images you opened with the thumbnails below. Close one with ×.</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-reference.webp" width="249" height="329" alt="The Reference image panel" loading="lazy"><figcaption>Reference image panel</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>You can also open one with File → Import → "Open reference image", by dropping a file onto the panel, or by clicking the panel and pressing <kbd>Ctrl</kbd>+<kbd>V</kbd>.</li>
+        <li><strong>Pick colors</strong>: With the Eyedropper, click or drag on the image. When you release, that color goes into Recent colors.</li>
+        <li><strong>Move</strong>: Pan with the hand, the middle button, the right button or <kbd>Space</kbd>+drag, and zoom with the wheel.</li>
+        <li><strong>Display</strong>: The buttons at the top give you Frame all, flip horizontally and rotate 90°. Zoom with the + and - of the magnifier (these work with a pen alone), and "100%" shows one pixel of the image as one point on the screen.</li>
+        <li>Images are saved with the long side reduced to 1600 px, and they come back the next time you start the app.</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="common" data-keywords="tooltip hint hover double-click double-tap eraser-end browser-keys reload print page-zoom cant-select-text">
+      <h2>Common controls</h2>
+      <p>These controls work the same way in every panel and window.</p>
+      <ul class="mn-list">
+        <li>Descriptions of buttons and items appear when you rest the cursor (or the pen tip) over the name.</li>
+        <li>You can move the Preferences, Shortcut list and confirmation windows by dragging their headings. Close them with the × at the top right or with <kbd>Esc</kbd>.</li>
+        <li>Menu items and buttons are also confirmed when you press down with the pen and then release (you can change this in <a href="#settings-pen">Pen &amp; input</a>).</li>
+        <li>A pen double-tap counts as a double-click even if the second tap lands slightly off (within 12 px and 0.5 seconds).</li>
+        <li>The eraser end of the pen also works the same as the pen tip for panel and window controls (buttons, sliders, reordering, dragging). Inside the drawing area, it acts as an eraser.</li>
+        <li>Browser shortcut keys (reload, print, page zoom and so on) do not work. Text on the screen cannot be selected (text fields can).</li>
+        <li>Features that are not available in your edition have dimmed menus and buttons with a lock icon (<a href="/petanuri/en/manual/start#editions">Edition comparison</a>).</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="theme" data-keywords="dark-theme light-theme dark-mode night-mode color-scheme change-colors background-color language english korean chinese japanese">
+      <h2>Change dark mode, colors and language</h2>
+      <p>Switches the screen colors between a bright "Light" and a dark "Dark".</p>
+      <ol class="mn-steps">
+        <li>Click the sun and moon switch at the very end of the toolbar (the bottom when it is vertical, the right end when it is horizontal).</li>
+        <li>Light and Dark switch.</li>
+      </ol>
+      <ul class="mn-list">
+        <li>File → Preferences → Interface → Display → "Theme color" does the same (Light at first).</li>
+        <li>To switch with a key, assign a key to "Dark mode" in the "Display" category of Key bindings (<a href="/petanuri/en/manual/keys#assign">Assign keys</a>).</li>
+      </ul>
+      <h3 id="theme-color">Change the color scheme</h3>
+      <p>In File → Preferences → Interface → Display → "Color scheme", you can change the colors of the background, panels, buttons, text, accent color, secondary color, 3D background, UV background and toolbar.</p>
+      <ul class="mn-list">
+        <li>Light and Dark are saved separately.</li>
+        <li>"Reset colors to defaults" returns to the original colors.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-dark.webp" width="1400" height="840" alt="The interface in dark mode" loading="lazy"><figcaption>Dark mode</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-theme-v112.webp" width="900" height="350" alt="The Color scheme section of Interface in Preferences" loading="lazy"><figcaption>Color scheme</figcaption></figure></div>
+      <h3 id="theme-lang">Change the display language</h3>
+      <p>Choose from "Language" under File → Preferences → Interface → Language. The choices are Japanese (<span lang="ja">日本語</span>), English, Korean (한국어), Chinese Simplified (<span lang="zh-Hans">中文（简体）</span>) and Chinese Traditional (<span lang="zh-Hant">中文（繁體）</span>).</p>
+    </section>
+
+    <section class="mn-sec" id="settings" data-keywords="preferences options configuration setup customize open-settings config settings-dialog defaults">
+      <h2>Preferences</h2>
+      <p>These are the settings for the whole app. Open them with File → Preferences (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>).</p>
+      <ul class="mn-list">
+        <li>Categories are on the left and sections are on the right. Click a section heading to open or collapse it (a collapsed section stays collapsed next time).</li>
+        <li>Rest the cursor on a name to see a description of the item.</li>
+        <li>Settings are kept the next time you start the app.</li>
+      </ul>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-settings.webp" width="900" height="640" alt="The Preferences window, with categories on the left and sections on the right" loading="lazy"><figcaption>Preferences</figcaption></figure>
+      <h3 id="settings-ui">Interface</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">Items</th></tr></thead><tbody>
+        <tr><td>Display</td><td>Theme color (Light (default) / Dark), Color scheme, 3D navigator size, Show rotation/zoom sliders on the navigator (off at first) (<a href="#theme">Dark mode and color scheme</a>, <a href="#nav-move">3D navigator</a>)</td></tr>
+        <tr><td>Language</td><td>Language (Japanese (<span lang="ja">日本語</span>), English, Korean (한국어), Chinese Simplified (<span lang="zh-Hans">中文（简体）</span>), Chinese Traditional (<span lang="zh-Hant">中文（繁體）</span>))</td></tr>
+      </tbody></table></div>
+      <h3 id="settings-pen">Pen &amp; input</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">Items</th></tr></thead><tbody>
+        <tr><td>Stroke feel</td><td>How tapering is made (Taper by pressure only (default) / Taper by length), Taper-out method (Thin afterwards (default) / Delayed output; used only with Taper by length)</td></tr>
+        <tr><td>Pen pressure</td><td>Response, Min, Max, Calibrate with test strokes. If you press the box with the pen, the current pressure and its path are shown (<a href="/petanuri/en/manual/keys#pressure">Calibrate pen pressure</a>)</td></tr>
+        <tr><td>Tablet</td><td>Read pen pressure directly (WinTab), Use WinTab pressure for Windows Ink pens too (on at first), Check WinTab status, WinTab connection (Search again) (<a href="/petanuri/en/manual/keys#pressure">Pen pressure doesn't work</a>)</td></tr>
+        <tr><td>Reduce lag</td><td>Show pen strokes early (reduce lag) (off at first), Predicted preview line (on at first), Let Windows draw the pen tip line first (shown only in supported environments; off at first)</td></tr>
+        <tr><td>Menus and buttons</td><td>Pressing and releasing with the pen also confirms (on at first), Long press with the pen opens the menu (on at first), Receive middle/right clicks from the pen side button (on at first), Long press on buttons (Release to confirm (default) / Long press opens the right-click menu)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>How tapering is made</strong>: "Taper by pressure only" makes light pressure thin sharply, and also tapers the start and end of a line by pressure (a mouse always uses length). "Taper by length" tapers the ends by the "Taper start" and "Taper end" lengths of the sub tool.</li>
+        <li><strong>Show pen strokes early</strong>: Shows the line you are drawing early, in a transparent overlay window, which speeds up what you see by about one frame. It works only when you draw with a pen (Windows Ink) using a round, hard pen or brush. While it is on, the "Predicted preview line" is not shown.</li>
+        <li><strong>Predicted preview line</strong>: Draws the end of the line you are drawing tentatively, as far as the predicted next movement, to hide lag. It is only for hard round pens.</li>
+        <li><strong>Long press on buttons</strong>: With "Release to confirm", a long press is confirmed when you release (open the menu with the pen side button). With "Long press opens the right-click menu", a long press opens the menu. In places that are not buttons, such as layer rows, a long press opens the menu either way.</li>
+        <li>Pen side buttons are covered in <a href="/petanuri/en/manual/keys#penbutton">Pen buttons and Windows Ink</a>.</li>
+      </ul>
+      <div class="mn-figs"><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-press-v112.webp" width="900" height="640" alt="The pen press and long-press settings in Preferences" loading="lazy"><figcaption>Pen press and long press</figcaption></figure><figure class="mn-fig"><img src="/petanuri/assets/img/m-pen-menu-v121.webp" width="700" height="165" alt="The Menus and buttons section in Preferences → Pen &amp; input" loading="lazy"><figcaption>Pen &amp; input → "Menus and buttons"</figcaption></figure></div>
+      <h3 id="settings-controls">Controls</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">Items</th></tr></thead><tbody>
+        <tr><td>Camera</td><td>Space+drag (Rotate (default) / Pan), Camera control template (Right-button style, Middle-button style, Alt + mouse buttons, Unity style), Orthographic for axis views (on at first), Key zoom centers on cursor (off at first), Orbit around the last painted spot (off at first), Orbit around the point under the cursor when orbiting starts (off at first) (<a href="/petanuri/en/manual/keys#camera">Camera controls</a>)</td></tr>
+        <tr><td>3D mouse</td><td>Shown only if you have connected a 3D mouse before (<a href="/petanuri/en/manual/keys#mouse3d">3D mouse</a>)</td></tr>
+        <tr><td>Mouse</td><td>Right-click (Menu (default) / Popup palette) (<a href="#popup">Popup palette</a>)</td></tr>
+        <tr><td>Keyboard</td><td>Hold a tool key to switch temporarily (on at first), Hold time (0.15 to 2 seconds; 0.5 seconds at first), Zoom presets (UV / 2D)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>Hold a tool key to switch temporarily</strong>: You get that tool only while you hold down its key (<a href="/petanuri/en/manual/keys#pen-hold">Switch tools temporarily</a>).</li>
+        <li><strong>Zoom presets (UV / 2D)</strong>: Set three zoom levels (100%, 200% and 50% at first), and <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>2</kbd> and <kbd>3</kbd> set the UV pane and the 2D canvas to those levels. At 100%, one pixel of the texture is one px on the screen.</li>
+      </ul>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-camera-unity-v112.webp" width="900" height="300" alt="The camera control section of Preferences with Unity style selected" loading="lazy"><figcaption>Controls → "Camera"</figcaption></figure>
+      <h3 id="settings-keys">Key bindings</h3>
+      <p>Actions and keys are listed by category. Reassigning, exporting, importing and resetting are covered in <a href="/petanuri/en/manual/keys#assign">Assign keys</a>.</p>
+      <h3 id="settings-paint">Painting</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">Items</th></tr></thead><tbody>
+        <tr><td>Brush</td><td>Brush size unit (screen px (default) / texture px)</td></tr>
+        <tr><td>Performance</td><td>Rest layers you aren't drawing on (on at first; <a href="/petanuri/en/manual/layers#sleep">Rest layers</a>), Save project files in the fast format (opens in v1.2.0 or later) (off at first; <a href="/petanuri/en/manual/start#save-fast">Save in the fast format</a>)</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li><strong>Brush size unit</strong>: "screen px" sets the thickness as you see it on the screen (the closer you zoom in, the thinner the paint). "texture px" sets it by the size on the painted picture (the same thickness whether you zoom in or out). Only sub tools whose "Size basis" in Tool properties is "Follow settings" follow this.</li>
+      </ul>
+      <h3 id="settings-system">System</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Section</th><th scope="col">Items</th></tr></thead><tbody>
+        <tr><td>Startup</td><td>Show the tutorial on next startup, Check for updates at startup (on at first), Automatically download and install new versions (on at first) (<a href="/petanuri/en/manual/start#version">Update to a new version</a>)</td></tr>
+      </tbody></table></div>
+      <h3 id="settings-ai">AI integration</h3>
+      <p>It has three sections: "AI integration (MCP)" (use it, and the current status), "How to connect" (what to register on the AI side; copy it with "Copy") and "run_js" (<span class="tier pro">Pro</span>). For details, see <a href="/petanuri/en/manual/unity#ai">AI integration</a>.</p>
+      <h3 id="settings-elsewhere">Settings that are not in Preferences</h3>
+      <p>The following settings are found only where you use them.</p>
+      <ul class="mn-list">
+        <li>Paint across two sets: "Paint across" at the bottom left of the 3D view (<a href="/petanuri/en/manual/sets#cross">Main and sub</a>)</li>
+        <li>Keep painting outside UV islands: the heading of the UV pane, and Display → UV (<a href="/petanuri/en/manual/uv#seam">When strokes go beyond an island</a>)</li>
+        <li>Move layers and sub tools by dragging with the pen: "…" on Layer</li>
+        <li>Export padding and destination: the export window (<a href="/petanuri/en/manual/export#pad">Export bleed</a>)</li>
+        <li>Mirror partner search range: the ▼ next to Symmetry at the top left of the 3D view (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>)</li>
+      </ul>
+      <h3 id="settings-trouble">If it doesn't work</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>There is no "3D mouse" section</b>: It does not appear until you have connected a 3D mouse once. It appears when you connect one.</li>
+        <li><b>I turned on "Show pen strokes early" but nothing changes</b>: It works only when you draw with a pen (Windows Ink). It does nothing with a mouse, with touch, or with a pen that uses "Read pen pressure directly (WinTab)". If it could not be started, the reason is shown at the bottom right and the setting turns off.</li>
+        <li><b>Key zoom goes to the center of the screen</b>: Turn on "Key zoom centers on cursor" in Controls → Camera.</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>Related pages</b><ul><li><a href="/petanuri/en/manual/keys">Shortcuts and pen controls</a></li><li><a href="/petanuri/en/manual/start">Getting started</a></li><li><a href="/petanuri/en/manual/draw#color">Choose colors and use the eyedropper</a></li><li><a href="/petanuri/en/manual/layers#history">History and Undo</a></li><li><a href="/petanuri/en/manual/uv#uv">Show the UV pane</a></li></ul></div>
+    <nav class="mn-pager" aria-label="Previous and next pages"><a class="prev" href="/petanuri/en/manual/start"><small>← Previous</small>Getting started</a><a class="next" href="/petanuri/en/manual/draw"><small>Next →</small>Draw</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +634,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>烘焙 AO | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="根据形状计算光线不易到达位置的暗部并生成图层。按纹理集或对象烘焙、阴影距离、lilToon 阴影 AO 与 PNG 导出。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="按形状计算光线难以到达之处的暗度，生成图层。按纹理集、对象分别烘焙、阴影距离、lilToon 的阴影 AO 与导出为 PNG。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/ao">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="烘焙 AO | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="根据形状计算光线不易到达位置的暗部并生成图层。按纹理集或对象烘焙、阴影距离、lilToon 阴影 AO 与 PNG 导出。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="按形状计算光线难以到达之处的暗度，生成图层。按纹理集、对象分别烘焙、阴影距离、lilToon 的阴影 AO 与导出为 PNG。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/ao">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "烘焙 AO Pro | PetaNuri3D 使用手册",
-   "description": "根据形状计算光线不易到达位置的暗部并生成图层。按纹理集或对象烘焙、阴影距离、lilToon 阴影 AO 与 PNG 导出。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "按形状计算光线难以到达之处的暗度，生成图层。按纹理集、对象分别烘焙、阴影距离、lilToon 的阴影 AO 与导出为 PNG。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/ao",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,131 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao" aria-current="page">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao" aria-current="page">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 烘焙 AO</p>
     <h1 class="mn-h1">烘焙 AO <span class="tier pro">Pro</span></h1>
-    <p class="mn-intro">按纹理集计算腋下、下巴下方、刘海下方、指缝、服装重叠处等被周围物体遮挡的暗部。此功能仅 Pro 可用。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#bake">烘焙方法</a></li><li><a href="#objects">选择对象烘焙</a></li><li><a href="#options">实用设置</a></li></ul></div>
-    <section class="mn-sec" id="bake"><h2>烘焙方法</h2><ol class="mn-steps"><li>打开 滤镜 → 烘焙 → 烘焙 AO。</li><li>在表格选择烘焙目标纹理集及投影纹理集（默认勾选可见纹理集）。</li><li>在“对象”栏选择烘焙对象（全部、无；点击名称时会在 3D 中短暂高亮）。</li><li>选择质量（射线数、像素内采样）和阴影距离（近 3cm、普通 8cm、广 20cm、自定义数值）。</li><li>点击“烘焙”。每个纹理集顶部会新增正片叠底图层“AO”。</li></ol><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="烘焙 AO 窗口" loading="lazy"><figcaption>烘焙 AO 窗口</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="烘焙 AO 后" loading="lazy"><figcaption>烘焙后</figcaption></figure></div><div class="mn-tip">按当前姿势和混合形状烘焙。烘焙期间也能操作 3D 视图。取消后不会产生变化。</div><div class="mn-tip">要让 AO 白色背景变透明并修改阴影颜色，可使用<a href="/petanuri/zh/manual/layers#alpha">亮度转为透明度</a>。如需根据面方向添加柔和阴影或光照投影，请参阅<a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影</a>页面。</div></section><section class="mn-sec" id="objects"><h2>选择对象烘焙</h2><ul class="mn-list"><li>仅写入选中对象的 UV 区域（及向 UV 岛外少量扩展的区域）。同一纹理集内其他对象的区域会保留。</li><li>阴影计算可选择“仅用所选对象计算阴影”（默认）或“用整体形状计算阴影”（未选中对象也投射阴影）。</li><li>选择设置会按模型保存。</li></ul></section><section class="mn-sec" id="options"><h2>实用设置</h2><ul class="mn-list"><li>“不接收其他阴影”：适合被遮住后变得过黑的服装下方身体等。</li><li>“按模型高度调整”：距离会按模型大小同比缩放。</li><li>通过最终效果强度和对比度调整浓度。</li><li>镂空、半透明材质中，光线可穿过图片透明区域（如发梢）。</li><li>导出：也可写入 lilToon 的“阴影 AO”（导出材质时一并导出）。还可保存为 PNG（&lt;纹理集名&gt;_AO.png）。若阴影过浓，可将强度设为 0.6〜0.8 后重新烘焙。</li></ul><div class="mn-tip">撤销一次即可撤销所有纹理集的烘焙结果。</div></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/material"><small>← 上一页</small>最终效果与 lilToon 材质</a><a class="next" href="/petanuri/zh/manual/bake"><small>下一页 →</small>轻松烘焙、质感与阴影</a></nav>
+    <p class="mn-intro">计算腋下、下巴下面、刘海下面、指缝、衣服重叠处等被周围物体遮挡而变暗的位置（AO），并烘焙到图层上。会按当前的姿势和混合形状的形态进行烘焙。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <p class="mn-proof">这是 Pro 的功能。Lite 版中菜单上会带有锁形标记，Standard 版中菜单里不会显示（<a href="/petanuri/zh/manual/start#editions">版本对比</a>）。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>打开 滤镜 → 烘焙 →“烘焙 AO（被周围遮挡而变暗的区域）”（<a href="#bake">详细说明</a>）。</li>
+      <li>在表格中确认要烘焙的纹理集，然后点击“烘焙”。每个纹理集的最上方会添加正片叠底图层“AO”（<a href="#bake">详细说明</a>）。</li>
+      <li>太深时，降低图层“AO”的不透明度，或降低“强度”后重新烘焙（<a href="#options">详细说明</a>）。</li>
+      <li>只想对小物件等一部分烘焙时，在“对象”中选择（<a href="#objects">详细说明</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#bake">烘焙 AO</a></li><li><a href="#objects">只对部分对象烘焙</a></li><li><a href="#options">调整浓度与质量</a></li><li><a href="#output">制作 lilToon 的阴影 AO、PNG</a></li></ul></div>
+
+    <section class="mn-sec" id="bake" data-keywords="环境光遮蔽 环境遮挡 暗部 缝隙 阴影底色 烘焙AO ambient occlusion 立体感">
+      <h2>烘焙 AO</h2>
+      <p>根据模型的形状，生成把光线难以到达之处变暗的图像。用于做明暗的底涂，或增加立体感。</p>
+      <ol class="mn-steps">
+        <li>打开 滤镜 → 烘焙 →“烘焙 AO（被周围遮挡而变暗的区域）”。</li>
+        <li>在“要烘焙的纹理集”表格中，勾选要烘焙的纹理集。初始状态下已勾选当前可见的纹理集。</li>
+        <li>选择“质量”和“阴影距离”。拿不准时保持初始值即可。</li>
+        <li>点击“烘焙”。每个纹理集的最上方会添加正片叠底图层“AO”。</li>
+        <li>点击“关闭”或 × 关闭窗口。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-dialog.webp" width="448" height="910" alt="烘焙 AO 窗口" loading="lazy"><figcaption>烘焙 AO 窗口</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-before.webp" width="550" height="810" alt="烘焙 AO 前的模型" loading="lazy"><figcaption>烘焙前</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/ao-after.webp" width="550" height="810" alt="烘焙 AO 后。腋下和下巴下面变暗了" loading="lazy"><figcaption>烘焙后</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>烘焙过程中也可以操作 3D 视图。点击“取消”中止，不会有任何改变。</li>
+        <li>撤销一次，所有纹理集的烘焙结果都会被撤销。</li>
+        <li>耗时参考：6 个纹理集、分辨率 2048 的虚拟形象，保持初始设置约 30 秒（用 GPU 计算时）。</li>
+        <li>渲染模式为“镂空”或“半透明”的纹理集，光线会从图像镂空处穿过（如发梢）。“不透明”则不考虑透明度（<a href="/petanuri/zh/manual/material#look-panel">渲染模式</a>）。</li>
+      </ul>
+
+      <h3 id="bake-sets">要烘焙的纹理集一览</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">列</th><th scope="col">含义</th></tr></thead><tbody>
+        <tr><td>烘焙</td><td>在此纹理集的纹理上烘焙 AO（会接收其他物体的阴影）</td></tr>
+        <tr><td>投射阴影</td><td>此纹理集也会向其他纹理集投射阴影。取消勾选则只向自身投射</td></tr>
+        <tr><td>不接收其他阴影</td><td>不接收其他纹理集的阴影。身体被衣服覆盖而变成全黑时勾选</td></tr>
+      </tbody></table></div>
+      <p>例如烘焙身体（body），头发和衣服只勾选“投射阴影”，头发和衣服的阴影就会落在身体上。</p>
+
+      <h3 id="bake-quality">质量与阴影距离</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">可选项</th></tr></thead><tbody>
+        <tr><td>光线数</td><td>每纹素 64～4096 条（初始 512 条）。越多颗粒越少，但耗时越长</td></tr>
+        <tr><td>纹素内</td><td>1×1（仅中心，速度快）、2×2、4×4（检查 16 处，边缘平滑，初始）</td></tr>
+        <tr><td>距离</td><td>近距离（3cm，仅指缝、领口、发际线等相接处）、普通（8cm，刘海下、腋下、下巴下、裙摆等，初始）、大范围（20cm，偏写实，手臂也会使身体侧面变暗）、数值（下方的数字，单位 cm）</td></tr>
+        <tr><td>按模型高度调整（以高 1.5m 时的距离为准）</td><td>使距离与模型高度成比例。窗口中会显示实际到达的距离</td></tr>
+      </tbody></table></div>
+
+      <h3 id="bake-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>衣服下面的身体变成全黑</b>：勾选身体纹理集的“不接收其他阴影”，重新烘焙。</li>
+        <li><b>颗粒（噪点）明显</b>：增加“光线数”，或把“纹素内”设为 4×4。在“详细设置”的“抖动”中，也能让浓淡的色阶不那么明显。</li>
+        <li><b>光线无法从发梢穿过</b>：把头发材质的渲染模式设为“镂空”或“半透明”后再烘焙。</li>
+        <li><b>菜单里没有，或带有锁形标记</b>：这是 Pro 的功能。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="objects" data-keywords="网格 局部 部分烘焙 道具 铃铛 饰品 选择对象 单个物体">
+      <h2>只对部分对象烘焙</h2>
+      <p>在窗口的“对象”中，可以按对象（网格）为单位选择要烘焙的内容。例如示例模型“Shinobu”只选择 furin，就只会烘焙铃铛。</p>
+      <ol class="mn-steps">
+        <li>在“对象”栏中点击“无”，全部取消勾选。</li>
+        <li>勾选想烘焙的对象。点击名称，3D 视图中该对象会稍微发亮。</li>
+        <li>选择阴影的计算方式，然后点击“烘焙”。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>写入的只有所选对象的 UV 部分（以及向 UV 岛外稍微扩展的部分）。同一纹理集中其他对象的部分保持原样。</li>
+        <li>“仅用所选对象计算阴影”（初始）：只用所选对象的形状计算。不会带入身体等其他物体的阴影。</li>
+        <li>“用整体形状计算阴影”：未选中的物体也会投射阴影。靠近身体的位置会变暗。</li>
+        <li>不含所选对象的纹理集不会烘焙。全部选中时，按整个模型烘焙。</li>
+        <li>选择内容会按模型保存。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="options" data-keywords="强度 变淡 减弱 对比度 衰减 GPU CPU CUDA 扩边 浓度">
+      <h2>调整浓度与质量</h2>
+      <p>烘焙出的 AO 太深或太浅时，烘焙后和烘焙前都可以调整。</p>
+      <ul class="mn-list">
+        <li><b>烘焙后</b>：降低图层“AO”的不透明度。也可以用蒙版或橡皮擦，只擦掉不需要的位置。</li>
+        <li><b>烘焙前</b>：用“最终效果”中的“强度”（0 为白色）和“对比”改变浓度。</li>
+        <li>点击“恢复默认值”，可以把设置恢复为初始状态（纹理集的选择保持不变）。</li>
+      </ul>
+      <h3 id="options-detail">详细设置</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>衰减方式</td><td>平滑（越远的碰撞越弱，初始）、线性、无（距离内强度相同）</td></tr>
+        <tr><td>法线</td><td>平滑（插值后的法线周围，初始）、表面方向</td></tr>
+        <tr><td>计算</td><td>自动（GPU，不可用时使用 CPU）、CUDA（NVIDIA 的 GPU。仅限应用（exe）版，试验中）、CPU（非常慢）</td></tr>
+        <tr><td>用 CPU 核对 GPU 的结果</td><td>每个纹理集抽查少量计算结果</td></tr>
+        <tr><td>不属于纹理集的网格也投射阴影</td><td>无法绘制的网格（没有 UV 的等）也算作投射阴影的对象</td></tr>
+        <tr><td>UV 岛外</td><td>向 UV 岛外扩展的宽度（px）。选“自动”则自动决定</td></tr>
+        <tr><td>填满 UV 岛外的全部区域</td><td>即使缩小，边缘也不会混入背景</td></tr>
+        <tr><td>抖动</td><td>让平滑浓淡的色阶不那么明显</td></tr>
+        <tr><td>表面偏移</td><td>开始检测的位置距离表面的偏移量（mm，以身高 1.5m 计）</td></tr>
+        <tr><td>附近的半透明</td><td>忽略此 mm 范围内的半透明物（脸颊红晕等的面片）</td></tr>
+      </tbody></table></div>
+      <div class="mn-tip">想把 AO 的白色部分变透明、改变阴影的颜色时，可以使用<a href="/petanuri/zh/manual/layers#alpha">亮度转为透明度</a>。想添加基于表面方向的柔和明暗或投射阴影时，请看<a href="/petanuri/zh/manual/bake">轻松烘焙、质感与明暗</a>。</div>
+    </section>
+
+    <section class="mn-sec" id="output" data-keywords="阴影AO AO贴图 AO Map ShadowBorderMask 导出 png 保存 lilToon 输出">
+      <h2>制作 lilToon 的阴影 AO、PNG</h2>
+      <p>在窗口的“导出”中，可以选择把烘焙的 AO 放到哪里。可以同时选择多项。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">写入位置</th></tr></thead><tbody>
+        <tr><td>添加图层“AO”（正片叠底，位于纹理集最上方）</td><td>烘焙进纹理的颜色中（初始）</td></tr>
+        <tr><td>同时写入 lilToon 的“阴影 AO”（AO Map）</td><td>在材质绘制目标“阴影 AO”文件夹的最上方添加 AO 图层。越暗的位置越容易出现阴影，并会随<a href="/petanuri/zh/manual/material#export">材质导出</a>一起导出</td></tr>
+        <tr><td>烘焙后同时保存为 PNG（&lt;纹理集名&gt;_AO.png）</td><td>保存仅含 AO 的图像</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>之后也可以通过 滤镜 → 烘焙 →“将 AO 导出为 PNG（最后一次烘焙的结果）”来保存。UV 岛外按 AO 设置中的扩展方式填充（如果导出扩边更宽，则按导出扩边）。</li>
+        <li>写入阴影 AO 时，如果该纹理集没有使用阴影，会切换为“使用阴影”（撤销后会恢复）。</li>
+      </ul>
+      <div class="mn-tip">lilToon 的 AO Map 起到移动阴影边界的作用。觉得阴影太强时，请把“强度”设为 0.6～0.8 后重新烘焙。</div>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与明暗</a></li><li><a href="/petanuri/zh/manual/material#channels">绘制阴影色、蒙版（绘制目标）</a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状</a></li><li><a href="/petanuri/zh/manual/layers#props">图层属性</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/material"><small>← 上一页</small>lilToon 材质</a><a class="next" href="/petanuri/zh/manual/bake"><small>下一页 →</small>轻松烘焙</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +266,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

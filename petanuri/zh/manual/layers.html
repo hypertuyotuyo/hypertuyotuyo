@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/layers",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,540 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers" aria-current="page">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers" aria-current="page">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 图层</p>
     <h1 class="mn-h1">图层</h1>
-    <p class="mn-intro">图层按纹理集叠放。可以像绘制 2D 插画一样分层上色。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p><p class="mn-proof">Lite、Standard、Pro 和 Pro 升级包均已在 BOOTH 提供。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#basic">图层基础</a></li><li><a href="#folder">文件夹、图层蒙版</a></li><li><a href="#props">图层属性</a></li><li><a href="#stroke">描边（图层轮廓）</a></li><li><a href="#adjust">调整图层、滤镜</a></li><li><a href="#alpha">亮度转为透明度</a></li><li><a href="#gradmap">渐变映射</a></li><li><a href="#autofill">自动上色（从线稿生成底色）</a></li><li><a href="#history">历史记录与撤销</a></li><li><a href="#sleep">图层休眠（节省内存）</a></li></ul></div>
-    <section class="mn-sec" id="basic"><h2>图层基础</h2><ul class="mn-list"><li>可从面板顶部标题行切换纹理集（有两个以上时，右侧显示分辨率）。</li><li>下方为混合模式、不透明度，以及剪贴、锁定透明像素、锁定图标（点击切换，有颜色表示开启）。</li><li>底部图标按钮：添加、文件夹、调整、复制、删除、合并、蒙版、上移一层、下移一层、其他（悬停笔尖显示名称和当前按键）。</li><li>最下方“底色”保存新建时设置的颜色或图片，也能直接绘制到底色。</li><li>28种混合模式（正常、正片叠底、滤色、叠加、相加、相加（发光）、颜色减淡（发光）、柔光、强光、色相、颜色、明度等）。</li><li><strong>多选</strong>：对名称使用 <kbd>Ctrl</kbd>＋点击逐个选择，用<kbd>Shift</kbd>＋点击选择连续范围。显示、混合模式、不透明度、剪贴、保护、锁定、删除、复制、放入文件夹、合并均可批量执行（一次撤销）。</li><li>仅用按键选择：<kbd>Alt</kbd>＋<kbd>]</kbd>（上方图层）、<kbd>Alt</kbd>＋<kbd>[</kbd>（下方图层）。3D 右键 →“选择在此处绘制的图层”可选择点击位置上已绘制且可见的图层（被蒙版遮住的部分、不透明度 0% 等不可见的内容不会被选中）。</li><li>用数位笔直接拖动图层行可排序。列表滚动使用 <kbd>Space</kbd>＋拖动。</li></ul><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="图层面板。脸颊、手臂星形、底色" loading="lazy"><figcaption>脸颊和手臂星形分别放在不同图层</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="图层右键菜单" loading="lazy"><figcaption>右键菜单</figcaption></figure></div><div class="mn-tip warn">Lite 每个纹理集<strong>最多4个图层（含底色）</strong>（计算绘制和调整图层，不计算文件夹、蒙版）。达到4个时，下方显示“图层 4 / 4（含底色・Lite）”，“添加”“复制”显示锁标记。Standard 起不限图层数。</div><div class="mn-tip">图层较多时，可向下拖动面板边界扩展列表。停靠、选项卡和独立窗口均会随高度扩展，保留顶部设置和底部操作按钮。</div><div class="mn-tip">颜色标签（所有版本）：用图层行左侧的颜色框，或右键 → 颜色标签，从无、红、橙、黄、绿、青、蓝、紫、灰中选择。选中多个图层时一起添加，撤销一次即可。带标签的行以左侧色条和行颜色显示，文件夹的颜色会以线条延伸到其中的图层。</div><div class="mn-tip">有图层带颜色标签时，列表上方会显示“按颜色显示”和正在使用的颜色圆点。点击圆点即可只列出该颜色的图层。标签保存在项目中，PSD 导出与导入（Standard、Pro）时与 Photoshop 图层颜色互通（青色会变为蓝色）。</div><div class="mn-tip">在 …（更多）的“缩略图大小”中可选择小（24px）、中（40px）、大（64px）、特大（96px）。同处的“将按钮栏放在上方”可把底部按钮栏移到列表上方。两者在重启后都会保留。</div><div class="mn-tip">拖动多选图层中的任意一个，所有选中图层会按顺序一起移动（放在文件夹行中间即可放入文件夹）。重命名时可用鼠标拖动选择文字。</div><div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="带颜色标签的图层面板" loading="lazy"><figcaption>颜色标签与按颜色显示</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="颜色标签选择窗口" loading="lazy"><figcaption>选择颜色标签</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="缩略图放大后的图层面板" loading="lazy"><figcaption>缩略图大小“大”</figcaption></figure></div><div class="mn-tip">左右镜像复制（所有版本）：用图层 →“左右镜像复制”（图层行的右键菜单中也有）将一侧画的颜色复制到 3D 模型的另一侧：“左半身 → 右半身”“右半身 → 左半身”（以模型自身为准）。即使左右 UV 不同也会复制到对应位置；有选区时以选区内为目标。勾选“复制到新图层”则只把复制的部分放到新图层。Ctrl+Z 一次即可还原。</div><div class="mn-tip">还可以将选区内的绘画复制到另一侧（以选区为复制源），以及将蒙版左右镜像复制（v1.3.0 起）。</div><div class="mn-tip">改为前景色（所有版本，v1.3.0 起）：通过编辑 →“改为前景色（保持透明度）”（图层右键菜单中也有），可将所选图层中已绘制部分的颜色一次性改为当前前景色。浓度（透明度）和透明部分保持不变，适合为线稿换色。有选区时只改变选区内。不能用于法线贴图图像图层。</div><div class="mn-tip">合并法线贴图图像（Pro，v1.3.0 起）：可以合并从法线贴图文件夹最底部开始连续的可见图层。请将文件夹不透明度设为 100%，并停用文件夹蒙版。无法合并的组合会在更改前提示。</div><div class="mn-tip">相加（发光）・颜色减淡（发光）（所有版本）：位于混合模式的“变亮”组中。可用于图层、文件夹、调整图层的混合模式，边框的混合，以及画笔的绘制模式。与普通的相加、颜色减淡不同，即使在降低不透明度的地方或柔软笔刷的边缘，相加（发光）也会强力叠加直到光线饱和，颜色减淡（发光）则越亮的地方发光越强（暗处不会明显变亮）。即使下方是透明区域，图层的颜色也会像照亮自身一样明亮发光。</div><div class="mn-tip">PSD（Standard、Pro）中会以相近的混合模式（线性减淡、颜色减淡）写入，并在图层名称末尾加上“[glow]”。在 PetaNuri3D 中导入时会恢复为发光版本（在其他软件中，半透明处和下方透明处的显示效果会有所不同）。</div><div class="mn-tip">滚动列表直到能看到所选图层（所有版本）：用按键（Alt+]・Alt+[）、3D 右键的“选择在此处绘制的图层”、移动工具的“自动选择图层”等在列表外选择图层时，如果该行不可见，会将列表滚动到可见位置（若在关闭的文件夹中则展开文件夹）。可在图层面板的 …（其他）或列表右键菜单中的“滚动列表直到能看到用按键等选中的图层”关闭（默认开启）。</div></section><section class="mn-sec" id="folder"><h2>文件夹、图层蒙版</h2><ul class="mn-list"><li><strong>文件夹</strong>：点击“文件夹”按钮（<kbd>Ctrl</kbd>＋<kbd>G</kbd>）创建。<kbd>Shift</kbd>＋按钮（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>G</kbd>）将所选图层放入文件夹。将图层行拖到文件夹中央也可放入。除“穿透”（默认）外的混合模式，会先合成内部图层再叠加。</li><li><strong>图层蒙版</strong>：“蒙版”按钮 → 添加全显示／全隐藏蒙版（也可从选区创建）。点击蒙版缩略图即可绘制到蒙版（绘制＝显示、橡皮擦＝隐藏）。</li><li><kbd>Shift</kbd>＋蒙版缩略图可启用／禁用。还可“显示蒙版范围”、反转、应用（烘焙到像素）、删除。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="含文件夹、蒙版、调整图层的图层面板" loading="lazy"><figcaption>文件夹、蒙版、调整图层</figcaption></figure><div class="mn-tip">蒙版（所有版本）：用“蒙版”按钮或右键“蒙版”→“复制蒙版”，再在其他图层上“粘贴蒙版”（也可贴到其他纹理集）。把蒙版缩略图拖到其他图层行即可移动，Alt＋拖动则复制。</div><div class="mn-tip">在蒙版上绘制时，颜色的亮度直接决定显示程度（白 = 显示、黑 = 隐藏、灰 = 一半）。如需旧方式，关闭“蒙版”→“用绘制色的亮度绘制蒙版”。“以黑白显示蒙版”（或 Alt＋蒙版缩略图）可只看蒙版，“将此图层的亮度复制为蒙版”可把画好的黑白图变成蒙版。</div></section><section class="mn-sec" id="props"><h2>图层属性</h2><p>集中显示当前图层设置的面板（默认布局在图层面板正上方）。</p><ul class="mn-list"><li>标题显示图层类型（图层、文件夹、文字图层、调整图层、绘制目标文件夹等）和名称。</li><li>调整图层：参数区域。拖滑块期间仅更新图像，松开后作为一次撤销步骤。</li><li>像素图层、文件夹、文字图层：“描边”显示、“添加”“设置”。</li><li>文字图层显示“重新输入文字”，带蒙版图层显示蒙版状态。</li><li>混合模式、不透明度、剪贴、锁定透明像素、锁定在图层面板调整。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="图层属性面板" loading="lazy"><figcaption>图层属性</figcaption></figure><div class="mn-tip">重复图案（所有版本）：在像素图层的图层属性“重复图案”中，通过“选择图案并铺满…”选择图像文件、参考图像或图案（使用绘制色），即可以上下左右重复的方式铺满图层（会替换现有像素，可撤销）。也可对齐 UV 接缝。</div><figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="铺设重复图案的图层及其属性" loading="lazy"><figcaption>重复图案</figcaption></figure><div class="mn-tip">重复图案：最上面一行显示当前图案的图像和名称，点击即打开图案列表。下方的“用前景色重新上色”保留图案形状改为当前前景色，“恢复图像颜色”则恢复原色。</div></section><section class="mn-sec" id="stroke"><h2>描边（图层轮廓） <span class="tier std">Standard</span></h2><p>不改变图层图像本身，而在合成时添加描边。之后可改粗细、颜色或关闭。</p><ul class="mn-list"><li>打开方式：图层右键 →“描边”、菜单“图层”→“描边”、图层属性“添加”“设置”。有描边的图层行显示“fx”，点击也可打开同一窗口。</li><li>设置：大小（粗细，纹理 px）、位置（外侧、内侧、居中）、混合、不透明度、颜色。改值即时预览，OK（<kbd>Enter</kbd>）确认，取消（<kbd>Esc</kbd>）恢复原状。</li><li>描边作用于蒙版后的形状。剪贴图层限制在底层已绘制区域内。也可用于文件夹和文字图层。</li><li>右键 →“描边”：切换显示、复制、粘贴（多选则全部）、清除、烘焙到像素。</li><li>保存：工程文件保留参数。PNG、材质导出为含描边的合成图，PSD 则将描边烘焙到图层像素。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="描边窗口与带描边的图像" loading="lazy"><figcaption>描边</figcaption></figure><div class="mn-tip">描边在 UV 上计算，因此超出 UV 岛边缘的描边可能在 3D 中显示为在岛边缘断开。</div><div class="mn-tip warn">添加、修改描边从 Standard 起可用。Lite 打开工程文件时保留描边显示，也可显示、隐藏、复制、清除、烘焙到像素。</div></section><section class="mn-sec" id="adjust"><h2>调整图层、滤镜 <span class="tier std">Standard</span></h2><ul class="mn-list"><li><strong>调整图层</strong>：“调整”按钮 → 色相、饱和度、明度／亮度、对比度／色阶／反相／灰度／色调分离／阈值／渐变映射。不会改写下方图像。参数在图层属性面板调整，可用蒙版限定范围，或剪贴到正下方图层。</li><li><strong>滤镜</strong>（“滤镜”菜单）：色相、饱和度、明度／亮度、对比度／色阶／色调分离／阈值／渐变映射／模糊（高斯）／锐化（USM）／反相／灰度。作用于选中图层（也可“应用于所有显示中的纹理集”）。</li><li>滤镜窗口中，改值即时更新模型效果，OK（<kbd>Enter</kbd>）确认，取消（<kbd>Esc</kbd>）恢复原状。窗口打开时仍可调整视角。</li><li>模糊和锐化仅在 UV 岛内计算，不会使岛边缘变暗。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="用“色相/饱和度/明度”滤镜更改披风颜色" loading="lazy"><figcaption>色相、饱和度、明度滤镜</figcaption></figure><div class="mn-tip">滤镜（Standard、Pro）：“滤镜”菜单整理为色调调整、色调范围、模糊、锐化、杂色、效果等子菜单，并新增色调曲线、色彩平衡、色温、自然饱和度、替换颜色、曝光度、动感模糊、径向模糊、高反差保留、添加杂色、减少杂色（中间值）、马赛克、提取线稿、浮雕。</div><div class="mn-tip">调整图层也新增色调曲线、色彩平衡、色温、自然饱和度、替换颜色、曝光度和添加杂色。PSD 中，色调曲线、色彩平衡、自然饱和度和曝光度以调整图层形式导出与导入。调整图层的蒙版可从选区创建（替换当前蒙版）。</div><div class="mn-tip">透明区域上的线条与滤镜（Standard、Pro）：马赛克会按格子对 Alpha（透明度）也取平均，锐化（USM 锐化）也会让 Alpha 更清晰。减少杂色（中间值）也会去除透明区域上的杂点，提取线稿、浮雕、高反差保留会把透明处视为白纸来计算亮度（提取线稿的线条和高反差保留的结果也会出现在原本透明的地方）。应用高反差保留后，平坦处和大片透明处会变为 50% 灰色，因此可将混合模式设为叠加或柔光叠加使用。在锁定透明像素的图层上，Alpha 保持不变。</div><div class="mn-tip">有选区时，滤镜窗口会显示“只应用于选区内”。若有没有选区的纹理集，会显示“没有选区，因此不变”及纹理集名称。</div></section><section class="mn-sec" id="alpha"><h2>亮度转为透明度</h2><p><strong>滤镜 → 亮度转为透明度</strong>从 Lite 起可用。将白色背景变透明，暗部保留为黑色阴影，适合仅为 AO 阴影换色。</p><ol class="mn-steps"><li>选择 AO 等非底色的绘制图层。若已锁定或锁定透明像素，请先解除。</li><li>执行“亮度转为透明度”。白色变透明，越暗的区域成为越不透明的黑色。</li><li>修改阴影色时，在转换后锁定透明像素，再用自选颜色绘制。阴影浓淡会保留为透明度。</li></ol><div class="mn-tip">这是转换当前图层像素的滤镜，不是调整图层。不能用于底色、蒙版、调整图层，也不是保留原色进行透化的功能。<kbd>Ctrl</kbd>＋<kbd>Z</kbd> 可撤销。</div></section><section class="mn-sec" id="gradmap"><h2>渐变映射 <span class="tier std">Standard</span></h2><ul class="mn-list"><li>将暗部→亮部替换为渐变左侧→右侧的颜色。滤镜与调整图层均可使用。</li><li>最多32个色标：点击色带添加、拖动移动、向下拖离删除、双击选色。可调整各点不透明度、均匀分布、左右互换。</li><li>240个预设（蓝、红、夕阳、彩虹、柔彩、霓虹、金属、肌肤、季节、照片调色、动漫上色等）。可按名称查找。“保存当前”可将当前渐变加入个人预设。</li><li>工程文件和 PSD 均保留色标。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="渐变映射窗口。色标与预设列表" loading="lazy"><figcaption>渐变映射</figcaption></figure><p>绘制工具和烘焙也提供相同的颜色、透明度色标编辑与预设。绘制工具从 Lite 起可用，烘焙仅 Pro（<a href="/petanuri/zh/manual/draw#gradient">绘制工具渐变</a>／<a href="/petanuri/zh/manual/bake#gradient">烘焙渐变</a>）。</p></section><section class="mn-sec" id="autofill"><h2>自动上色（从线稿生成底色）</h2><ol class="mn-steps"><li>打开 图层 → 自动上色，点击“创建提示图层”。</li><li>在提示图层各位置粗略放置要使用的颜色。</li><li>点击“执行”，在线稿正下方创建按线条分区并使用提示色填充的图层（延伸到线条下方）。</li></ol><figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="自动上色窗口与根据提示色上色的效果" loading="lazy"><figcaption>自动上色</figcaption></figure><div class="mn-tip">请在可见面上画闭合线条，断线处可能漏色。“跨越 UV 接缝填充”可让身体前后分属不同 UV 岛时也连续填充。</div></section><section class="mn-sec" id="history"><h2>历史记录与撤销</h2><ul class="mn-list"><li>右侧“历史记录”面板列出操作。点击一行即可一次撤销或前进到该操作之后。</li><li>撤销 <kbd>Ctrl</kbd>＋<kbd>Z</kbd>、重做 <kbd>Ctrl</kbd>＋<kbd>Y</kbd>（<kbd>Ctrl</kbd>＋<kbd>Shift</kbd>＋<kbd>Z</kbd>）。最多保留30步。</li><li>改变图像的操作（图层、蒙版、绘制目标、材质设置）可撤销。仅改变显示的操作（显示范围、对象可见性、混合形状、视角、显示方式等）和应用设置不计入历史。</li><li>改变分辨率会清空全部撤销历史（更改前需确认）。</li></ul><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="历史记录面板" loading="lazy"><figcaption>历史记录</figcaption></figure></section><section class="mn-sec" id="sleep"><h2>图层休眠（节省内存）</h2><ul class="mn-list"><li>为便于叠加大量4096图层，暂时未使用的图层会在空闲时压缩保存，节省 GPU 内存。显示、导出和保存均不变。</li><li>选中休眠图层或开始绘制时会立即恢复。重新加载大量图层时会显示“正在准备…”后切换。</li><li>可在 文件 → 偏好设置 → 绘制 →“性能”关闭（默认开启）。</li></ul></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/edit"><small>← 上一页</small>选区、变换、文字、尺子</a><a class="next" href="/petanuri/zh/manual/uv"><small>下一页 →</small>UV 区域与显示范围</a></nav>
+    <p class="mn-intro">图层在每个纹理集中层层叠放。把底涂、阴影、图案分在不同的图层上，之后就可以再调整颜色和浓淡。叠加方式、蒙版、滤镜等作用于图层的功能也汇总在本页。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>点图层面板中的“添加”（<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>），添加新图层（<a href="#basic">详情</a>）。</li>
+      <li>点击一行选中图层，就可以在其上绘制。用眼睛图标切换显示/隐藏，用不透明度调整浓淡（<a href="#basic">详情</a>）。</li>
+      <li>画阴影时，给位于底涂之上的图层开启“剪贴”，并把混合模式设为“正片叠底”，就不会涂出范围（<a href="#clip">详情</a>）。</li>
+      <li>想不擦除而是隐藏一部分时，使用图层蒙版（<a href="#mask">详情</a>）。</li>
+      <li>出错时按 <kbd>Ctrl</kbd>+<kbd>Z</kbd>。在历史记录面板中，可以一次退回到前面好几步（<a href="#history">详情</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#basic">添加图层，分开绘制</a></li><li><a href="#blend">叠加阴影与光（混合模式、不透明度）</a></li><li><a href="#clip">不超出范围地绘制（剪贴、锁定透明像素、锁定）</a></li><li><a href="#folder">整理到文件夹</a></li><li><a href="#mask">隐藏一部分（图层蒙版）</a></li><li><a href="#tag">让列表更易读（颜色标签、缩略图）</a></li><li><a href="#props">图层属性面板</a></li><li><a href="#tile">铺重复图案</a></li><li><a href="#mirrorcopy">把一侧的内容复制到另一侧（左右镜像复制）</a></li><li><a href="#stroke">给边缘加上线条（描边）</a></li><li><a href="#adjust">事后更改颜色（调整图层）</a></li><li><a href="#filter">应用滤镜</a></li><li><a href="#gradmap">用渐变映射替换颜色</a></li><li><a href="#alpha">将白色变透明（亮度转为透明度）</a></li><li><a href="#padlayer">创建把颜色扩展到 UV 岛外的图层（在新图层上生成边距）</a></li><li><a href="#autofill">根据线稿做底涂（自动上色）</a></li><li><a href="#history">撤销、历史记录</a></li><li><a href="#sleep">图层休眠（节省内存）</a></li></ul></div>
+
+    <section class="mn-sec" id="basic" data-keywords="添加图层 新建图层 复制图层 删除图层 图层顺序 重命名 合并图层 眼睛图标 隐藏 无法添加">
+      <h2>添加图层，分开绘制</h2>
+      <p>绘制的内容会进入当前选中的图层。按部位分开图层，之后更容易删除或更改颜色。</p>
+      <ol class="mn-steps">
+        <li>点图层面板下方的“添加”。会在当前选中图层的上方新建一个图层。</li>
+        <li>点击想要绘制的图层所在的行，选中它。</li>
+        <li>开始绘制。</li>
+        <li>点击眼睛图标，可以切换显示/隐藏。</li>
+        <li>双击名称可以重命名（按 <kbd>Enter</kbd> 确定）。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/layers-outfit.webp" width="289" height="390" alt="图层面板。脸颊、手臂上的星星、底色" loading="lazy"><figcaption>脸颊和手臂上的星星，分别放在各自的图层上</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-ctx-layer.webp" width="305" height="653" alt="图层所在行的右键菜单" loading="lazy"><figcaption>图层的右键菜单</figcaption></figure></div>
+      <div class="mn-tip warn">Lite 版每个纹理集<strong>包括底色最多 4 个图层</strong>（计入绘制图层和调整图层，不计入文件夹和蒙版）。达到 4 个后，面板下方会显示“图层 4 / 4 张（含底色，Lite）”，并且“添加”“复制”上会出现小锁标记。</div>
+      <h3 id="basic-panel">面板说明</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">位置</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>最上方的标题行</td><td>切换纹理集（有 2 个以上时显示，右侧是分辨率）。与纹理集面板并排显示时不会出现</td></tr>
+        <tr><td>其下的一行</td><td>混合模式和不透明度。剪贴（↳）、锁定透明像素、锁定的图标（带颜色表示已开启）。如果有蒙版，还有绘制到的对象（像素/蒙版）和蒙版的启用</td></tr>
+        <tr><td>列表</td><td>越靠上的行，叠放得越靠前。文件夹用 ▶/▼ 展开或折叠</td></tr>
+        <tr><td>最下方的“底色”</td><td>放置新建时所选颜色或图像的图层。也可以直接在底色上绘制</td></tr>
+        <tr><td>下方的按钮</td><td>添加、文件夹、调整、复制、删除、合并、蒙版、上移一层、下移一层、…（其他）。把笔尖停在按钮上，会显示名称和当前的按键</td></tr>
+      </tbody></table></div>
+      <h3 id="basic-ops">图层操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想做的事</th><th scope="col">操作</th><th scope="col">按键</th></tr></thead><tbody>
+        <tr><td>添加</td><td>“添加”、图层 → “新建图层”</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td></tr>
+        <tr><td>复制</td><td>“复制”、图层 → “复制图层”</td><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td></tr>
+        <tr><td>连图层一起删除</td><td>“删除”、图层 → “删除图层”</td><td>—</td></tr>
+        <tr><td>只清除图层中的内容</td><td>图层 → “清除图层”（有选区时只清除选区内）</td><td><kbd>Delete</kbd></td></tr>
+        <tr><td>更改叠放顺序</td><td>拖动行、“上移一层”“下移一层”（图层 → 叠放顺序）</td><td>—</td></tr>
+        <tr><td>重命名</td><td>双击名称、右键 → “重命名”</td><td>—</td></tr>
+        <tr><td>将已绘制的部分设为选区</td><td><kbd>Ctrl</kbd>+点击缩略图（<kbd>Shift</kbd> 为添加，<kbd>Alt</kbd> 为减去）、右键 → “选择已绘制部分”</td><td>—</td></tr>
+        <tr><td>导出为 PNG</td><td>右键 → “将此图层导出为 PNG”。选了多个图层时是“将所选图层导出为 PNG”（<a href="/petanuri/zh/manual/export#png">导出</a>）</td><td>—</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>文字图层双击后可重新输入文字。名称请从右键菜单中更改（<a href="/petanuri/zh/manual/edit#retext">重新输入文字</a>）。</li>
+        <li>已锁定或已隐藏的图层不能清除（原因会显示在下方的提示中）。</li>
+        <li>用笔也可以拖动行来调整顺序。滚动列表请用 <kbd>Space</kbd>+拖动。</li>
+      </ul>
+      <h3 id="merge">合并</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目（图层 → 合并）</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>与下方图层合并（<kbd>Ctrl</kbd>+<kbd>E</kbd>）</td><td>把当前图层叠到紧邻的下方图层上，合并为一个图层</td></tr>
+        <tr><td>合并所选图层</td><td>把选中的 2 个以上图层合并为一个图层</td></tr>
+        <tr><td>合并文件夹</td><td>把文件夹合并为一个图层（右键菜单中是“将文件夹合并为一个图层”）</td></tr>
+        <tr><td>合并可见图层</td><td>把所有看得见的图层合并为一个图层</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>面板中的“合并”按钮，通常是向下合并；选中文件夹时是把文件夹合并为一个图层；选了多个图层时是合并所选图层。</li>
+        <li>带描边的图层，会先把描边烘焙为像素，再进行合并。</li>
+        <li>把调整图层向下合并，可以把调整效果烘焙进下方图层的像素。</li>
+        <li><span class="tier pro">Pro</span> 在法线贴图文件夹中，可以合并从最下方起连续的可见图层。文件夹的不透明度须为 100%，文件夹的蒙版须保持停用（<a href="/petanuri/zh/manual/material#channels">绘制目标</a>）。</li>
+      </ul>
+      <h3 id="multi">同时选择多个图层</h3>
+      <ul class="mn-list">
+        <li>按住 <kbd>Ctrl</kbd> 点击名称，可逐个添加或取消；按住 <kbd>Shift</kbd> 点击，可选中中间的所有图层（<kbd>Ctrl</kbd>+点击缩略图是选区，两者不同）。</li>
+        <li>选中多个图层时，显示、混合模式、不透明度、剪贴、锁定透明像素、锁定、颜色标签、删除、复制、放入文件夹（<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>）、合并都会对它们一起生效。撤销一次即可还原。</li>
+        <li>拖动所选图层中的任意一个，全部图层会保持原有排列顺序一起移动。在文件夹所在行的中间松开，全部图层都会进入该文件夹。</li>
+        <li>“上移一层”“下移一层”一次只移动一个图层。复制、剪切也只对当前选中的一个图层生效。</li>
+      </ul>
+      <h3 id="pick">通过按键或 3D 视图选择</h3>
+      <ul class="mn-list">
+        <li>按 <kbd>Alt</kbd>+<kbd>]</kbd> 选中上方的图层，按 <kbd>Alt</kbd>+<kbd>[</kbd> 选中下方的图层。</li>
+        <li>在 3D 视图或 UV 视图中右键 → “选择在此处绘制的图层”，会列出点击处所绘制的可见图层。最上面的一个带有标记。被蒙版遮住的地方、不透明度为 0% 等看不见的图层不会列出。</li>
+        <li>用移动·变形工具的“自动选择图层”也可以选择（<a href="/petanuri/zh/manual/edit#move">移动·变形工具</a>）。</li>
+        <li>如果这样选中的行不在可见范围内，列表会滚动到能看到它的位置（已折叠的文件夹会展开）。要关闭这一行为，请取消勾选 …（其他）或列表右键菜单中的“滚动列表直到能看到用按键等选中的图层”。</li>
+      </ul>
+      <h3 id="basic-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>无法添加图层（Lite）</b>：Lite 版每个纹理集最多 4 个图层（含底色）。删除或合并图层后，又可以添加了（<a href="/petanuri/zh/manual/start#editions">版本</a>）。</li>
+        <li><b>画了却没有出现颜色</b>：检查选中的图层是否被隐藏或锁定，以及绘制到的对象是否变成了蒙版。也可能是被上方的图层遮住了。</li>
+        <li><b>画到了别的图层上</b>：按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销，然后在 3D 视图中右键 → “选择在此处绘制的图层”，重新选择想要绘制的图层。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="blend" data-keywords="混合模式 图层模式 叠加方式 正片叠底 阴影 发光 线性减淡 不透明度 透明度">
+      <h2>叠加阴影与光（混合模式、不透明度）</h2>
+      <p>混合模式决定图层与下方画面的混合方式。阴影常用“正片叠底”，光常用“滤色”或“相加（发光）”。</p>
+      <ol class="mn-steps">
+        <li>选中要绘制阴影或光的图层。</li>
+        <li>在面板上方的混合模式栏中选择混合模式。</li>
+        <li>用不透明度调整浓淡。</li>
+      </ol>
+      <h3 id="blend-list">混合模式一览</h3>
+      <p>共 28 种。在栏中，它们按以下分组排列。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分组</th><th scope="col">混合模式</th></tr></thead><tbody>
+        <tr><td>—</td><td>正常</td></tr>
+        <tr><td>变暗</td><td>变暗、正片叠底、颜色加深、线性加深、深色</td></tr>
+        <tr><td>变亮</td><td>变亮、滤色、颜色减淡、相加（线性减淡）、相加（发光）、颜色减淡（发光）、浅色</td></tr>
+        <tr><td>对比</td><td>叠加、柔光、强光、亮光、线性光、点光、实色混合</td></tr>
+        <tr><td>差值</td><td>差值、排除、减去、划分</td></tr>
+        <tr><td>色彩</td><td>色相、饱和度、颜色、明度</td></tr>
+      </tbody></table></div>
+      <p>文件夹还有一个“穿透”（初始值）（<a href="#folder">文件夹</a>）。</p>
+      <h3 id="glow">相加（发光）、颜色减淡（发光）</h3>
+      <ul class="mn-list">
+        <li>与普通的相加、颜色减淡不同，即使在降低了不透明度的地方，或柔和画笔的边缘，也会强烈发光。</li>
+        <li>相加（发光）会一直叠加到光饱和为止，颜色减淡（发光）则是越亮的地方发光越强。即使下方是透明的地方，也会以图层的颜色发光。</li>
+        <li>可用作图层、文件夹、调整图层的混合模式，描边的混合，以及画笔的渲染模式。</li>
+        <li>写入 PSD 时会使用相近的混合模式（线性减淡、颜色减淡），并在图层名后加上“[glow]”。在 PetaNuri3D 中导入时会还原为发光。在其他软件中，半透明部分的外观会有变化。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="clip" data-keywords="剪贴蒙版 剪贴 锁定透明像素 不超出 涂出界 保护透明 锁定图层 阿尔法锁定">
+      <h2>不超出范围地绘制（剪贴、锁定透明像素、锁定）</h2>
+      <p>在底涂之上涂阴影或图案时，可以避免涂到已涂区域之外。每一项都通过面板上方的图标开启或关闭。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">功能</th><th scope="col">作用</th><th scope="col">其他切换方式</th></tr></thead><tbody>
+        <tr><td>剪贴（↳）</td><td>仅在紧邻的下方图层已绘制的地方显示此图层（以下方图层为基底）</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd>、右键 → “剪贴到下方图层”</td></tr>
+        <tr><td>锁定透明像素</td><td>绘制时，透明的地方仍保持透明（只改变颜色）</td><td>图层 → 剪贴与保护 → “切换锁定透明像素”</td></tr>
+        <tr><td>锁定</td><td>使图层无法绘制</td><td>图层 → 剪贴与保护 → “切换锁定”</td></tr>
+      </tbody></table></div>
+      <ol class="mn-steps">
+        <li>选中底涂图层，用“添加”在其上方添加图层。</li>
+        <li>点击面板上方的剪贴（↳）图标。</li>
+        <li>把混合模式设为“正片叠底”，涂阴影。不会涂到底涂之外。</li>
+      </ol>
+      <div class="mn-tip">剪贴图层的内容依然保留，所以扩大底涂后，这些内容也会出现在扩大的部分。锁定透明像素则是保护该图层内容本身的形状。</div>
+    </section>
+
+    <section class="mn-sec" id="folder" data-keywords="组 编组 整理 分组 穿透 文件夹 Ctrl+G">
+      <h2>整理到文件夹</h2>
+      <p>把相关的图层整理到文件夹中，列表会变短，还能一起切换显示/隐藏或调整不透明度。</p>
+      <ol class="mn-steps">
+        <li>选中要整理的图层（数量不限）。</li>
+        <li>按住 <kbd>Shift</kbd> 点击“文件夹”按钮（<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>）。所选图层会进入文件夹。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>只点“文件夹”按钮（<kbd>Ctrl</kbd>+<kbd>G</kbd>）的话，会创建空文件夹。</li>
+        <li>把图层行拖到文件夹行的中间，会放入其中；拖到上半部分或下半部分，则放到文件夹的上方或下方。</li>
+        <li>混合模式“穿透”（初始值）会把内容直接叠加到文件夹外部的画面上。其他模式则先把内容合成为一个图层，再进行叠加。</li>
+        <li>要取消文件夹，可用 …（其他）或右键菜单中的“解散文件夹”。内容会移到文件夹外。</li>
+        <li>文件夹上也可以添加蒙版和描边。</li>
+      </ul>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layers-tree.webp" width="289" height="491" alt="含有文件夹、蒙版和调整图层的图层面板" loading="lazy"><figcaption>文件夹、蒙版、调整图层</figcaption></figure>
+    </section>
+
+    <section class="mn-sec" id="mask" data-keywords="图层蒙版 隐藏 不删除 非破坏性 局部显示 绘制蒙版 黑白 反转蒙版">
+      <h2>隐藏一部分（图层蒙版）</h2>
+      <p>蒙版可以在不擦除图层内容的情况下将其隐藏。被隐藏的部分，之后随时可以恢复。</p>
+      <ol class="mn-steps">
+        <li>选中要隐藏内容的图层。</li>
+        <li>点“蒙版”按钮 → 选择“添加显示全部蒙版”。该行会出现蒙版缩略图。</li>
+        <li>点击蒙版缩略图。绘制到的对象就变成蒙版。</li>
+        <li>用黑色绘制会隐藏，用白色绘制则显示。灰色为半透明显示。</li>
+        <li>点击像素缩略图，绘制对象就回到画面。</li>
+      </ol>
+      <h3 id="mask-menu">蒙版菜单</h3>
+      <p>“蒙版”按钮、图层 → “蒙版”、右键菜单中的“蒙版”里，都有相同的项目。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>添加显示全部蒙版、添加隐藏全部蒙版</td><td>添加白色（全部可见）或黑色（全部隐藏）的蒙版</td></tr>
+        <tr><td>从选区创建蒙版</td><td>添加只显示选区内部的蒙版。对于调整图层，会替换现有的蒙版</td></tr>
+        <tr><td>绘制到蒙版</td><td>将绘制对象设为蒙版</td></tr>
+        <tr><td>启用蒙版</td><td>关闭后，蒙版不起作用，全部显示</td></tr>
+        <tr><td>显示蒙版范围</td><td>给被隐藏的部分上色，使其显示出来</td></tr>
+        <tr><td>反转蒙版</td><td>对调可见和隐藏的部分</td></tr>
+        <tr><td>左右镜像复制蒙版</td><td>把蒙版的黑白内容复制到 3D 模型的另一侧（<a href="#mirrorcopy">左右镜像复制</a>）</td></tr>
+        <tr><td>应用蒙版（烘焙到像素）</td><td>从画面中删除被隐藏的部分，并移除蒙版</td></tr>
+        <tr><td>删除蒙版</td><td>移除蒙版（画面保持不变）</td></tr>
+        <tr><td>复制蒙版、粘贴蒙版</td><td>把蒙版复制到其他图层。也可以粘贴到其他纹理集</td></tr>
+        <tr><td>将此图层的亮度复制为蒙版</td><td>绘制出的黑白图像，可以用“粘贴蒙版”变成蒙版（透明的地方会被隐藏）</td></tr>
+        <tr><td>以黑白显示蒙版</td><td>只把蒙版以黑白显示在 3D 和 UV 中</td></tr>
+        <tr><td>用绘制色的亮度绘制蒙版（白 = 显示、黑 = 隐藏）</td><td>关闭后，无论颜色如何，画过的地方都会显示（隐藏要用橡皮擦）</td></tr>
+      </tbody></table></div>
+      <h3 id="mask-tips">蒙版操作技巧</h3>
+      <ul class="mn-list">
+        <li><kbd>Shift</kbd>+点击蒙版缩略图，可切换启用/停用（停用期间显示红色斜线）。</li>
+        <li><kbd>Alt</kbd>+点击蒙版缩略图，以黑白显示蒙版。</li>
+        <li>把蒙版缩略图拖到其他图层的行上是移动，<kbd>Alt</kbd>+拖动是复制。调整图层的蒙版则是复制。</li>
+        <li>如果粘贴目标已有蒙版，会被替换。大小不同的话，会拉伸后放入。</li>
+        <li>选区的填充、<kbd>Alt</kbd>/<kbd>Ctrl</kbd>+<kbd>Backspace</kbd> 的填充，在蒙版中也是按颜色的亮度写入。</li>
+        <li>蒙版的操作可以在偏好设置的键位设置中分配按键。</li>
+      </ul>
+      <h3 id="mask-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>画了但画面没有变化</b>：绘制对象仍是蒙版。点击像素缩略图，回到画面。</li>
+        <li><b>蒙版不起作用</b>：蒙版处于停用状态（红色斜线）。<kbd>Shift</kbd>+点击蒙版缩略图即可启用。</li>
+        <li><b>在蒙版上绘制，显示效果没有变化</b>：用白色绘制是“显示”。要隐藏的话，请用黑色绘制，或使用橡皮擦。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="tag" data-keywords="颜色标签 标记 分类 筛选 缩略图 放大 缩小 图层列表 一览">
+      <h2>让列表更易读（颜色标签、缩略图）</h2>
+      <p>图层变多以后，可以用颜色标签分类，或放大缩略图，方便查找。</p>
+      <ol class="mn-steps">
+        <li>选中要加颜色的图层（数量不限）。</li>
+        <li>点击剪贴、锁定图标所在行最左侧的彩色圆点和 ▾ 框（也可以右键 → “颜色标签”）。</li>
+        <li>从无、红、橙、黄、绿、青、蓝色、紫、灰中选择。行的左侧会出现一条粗的彩色带。</li>
+      </ol>
+      <div class="mn-figs"><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-v112.webp" width="289" height="460" alt="带颜色标签的图层面板" loading="lazy"><figcaption>颜色标签与“按颜色显示”</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-colortag-pick-v112.webp" width="289" height="340" alt="颜色标签选择窗口" loading="lazy"><figcaption>选择颜色标签</figcaption></figure><figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-thumbsize-v112.webp" width="289" height="588" alt="缩略图放大后的图层面板" loading="lazy"><figcaption>缩略图大小“大”</figcaption></figure></div>
+      <ul class="mn-list">
+        <li>文件夹的颜色，会以细线延续到里面图层的左侧。撤销一次即可还原。</li>
+        <li>有颜色标签时，列表上方会显示“按颜色显示：全”和所用颜色的圆点。点击圆点，列表中只显示该颜色的图层（画面不会改变）。再点一次或点“全”即可恢复。</li>
+        <li>颜色标签会保存在工程文件中。在 PSD 的导出、导入 <span class="tier std">Standard</span> 中，它们会对应 PSD 图层的颜色（青会变成蓝色）。</li>
+      </ul>
+      <h3 id="tag-view">列表的大小与排列</h3>
+      <ul class="mn-list">
+        <li>用 …（其他）或右键菜单中的“缩略图大小”，可以选择小（24px）、中（40px，初始值）、大（64px）、特大（96px）。</li>
+        <li>用 …（其他）中的“将按钮栏放在上方”，可以把下方的按钮栏移到列表上方。</li>
+        <li>关闭 …（其他）中的“用笔拖动来移动图层和辅助工具”后，用笔拖动将变为滚动列表。<kbd>Space</kbd>+拖动始终是滚动。</li>
+        <li>向下拖动面板的边界，可以扩大列表。</li>
+        <li>这些设置在下次启动后也保持不变。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="props" data-keywords="属性 设置面板 图层设置 详细设置">
+      <h2>图层属性面板</h2>
+      <p>这是汇总所选图层设置的面板。在初始布局中，它位于图层面板的正上方。</p>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-layerprops.webp" width="289" height="250" alt="图层属性面板" loading="lazy"><figcaption>图层属性</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">所选对象</th><th scope="col">显示的设置</th></tr></thead><tbody>
+        <tr><td>任何对象</td><td>标题处显示类型（图层、文件夹、文字图层、调整图层、绘制目标文件夹等）和名称</td></tr>
+        <tr><td>调整图层</td><td>数值栏（<a href="#adjust">调整图层</a>）</td></tr>
+        <tr><td>像素图层、文件夹、文字图层</td><td>“描边”的“显示”勾选，以及“添加”“设置”（<a href="#stroke">描边</a>）</td></tr>
+        <tr><td>文字图层</td><td>“重新输入文字”</td></tr>
+        <tr><td>带蒙版的图层</td><td>蒙版是否启用、绘制到的对象</td></tr>
+        <tr><td>像素图层（文字图层除外）</td><td>“重复图案”（<a href="#tile">重复图案</a>）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>混合模式、不透明度、剪贴、锁定透明像素、锁定在图层面板中更改。</li>
+        <li>什么都没选时，会显示“选择图层后，这里会显示其设置”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="tile" data-keywords="平铺 图案 花纹 布料 格子 重复 铺满 无缝 连续图案">
+      <h2>铺重复图案</h2>
+      <p>把图像或图案在上下左右方向重复，铺满整个图层。可用于衣服布料的花纹等。</p>
+      <ol class="mn-steps">
+        <li>选中要铺设花纹的像素图层。当前的画面会被花纹替换。</li>
+        <li>在图层属性的“重复图案”中点“选择图案并铺满”。会打开花纹列表。</li>
+        <li>从“图像文件…”“参考图”，或下方排列的图案画面中选择。图案会成为用前景色绘制的花纹。</li>
+        <li>用下表中的项目调整排列方式。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-tile-v112.webp" width="992" height="726" alt="铺设重复图案的图层及其属性" loading="lazy"><figcaption>重复图案</figcaption></figure>
+      <h3 id="tile-options">排列方式与颜色</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">作用</th></tr></thead><tbody>
+        <tr><td>横向重复、纵向重复</td><td>横向、纵向排列的数量（开启“保持纵横比”，则按相同比例更改）</td></tr>
+        <tr><td>横向偏移、纵向偏移、旋转（°）</td><td>更改花纹的位置和方向</td></tr>
+        <tr><td>融合接缝</td><td>让花纹的接缝不明显</td></tr>
+        <tr><td>镜像重复</td><td>每隔一块左右、上下翻转排列。边缘不连续的图像也不会出现接缝</td></tr>
+        <tr><td>对齐 UV 接缝</td><td>自动寻找接缝容易与花纹接缝对齐的大小（当前的 1/2～2 倍）和偏移</td></tr>
+        <tr><td>用前景色重新上色、恢复图像颜色</td><td>保持花纹形状不变，改为当前的前景色。恢复后回到原来的颜色</td></tr>
+        <tr><td>转为普通图层</td><td>移除排列设置，保留当前像素并转为普通图层</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>最上面一行显示当前花纹的图和名称，点击会打开花纹列表。</li>
+        <li>花纹显示在哪些位置，可以用蒙版来决定。</li>
+        <li>排列方式和花纹会保存在工程文件中。可以用撤销还原。</li>
+      </ul>
+      <h3 id="tile-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>补画的部分消失了</b>：铺设花纹之后补画的内容，在更改排列方式时会消失（更改前会弹出确认）。按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 可以还原。</li>
+        <li><b>花纹在接缝处没有连上</b>：在两侧 UV 岛的方向、形状不同的接缝处，即使对齐也无法连接。</li>
+        <li><b>无法铺设</b>：已锁定、锁定透明像素、已隐藏的图层，以及文字图层、法线贴图图像图层，都无法铺设。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="mirrorcopy" data-keywords="镜像复制 左右翻转复制 复制到另一侧 忘了开对称 镜像 对称 单侧">
+      <h2>把一侧的内容复制到另一侧（左右镜像复制）</h2>
+      <p>把忘了开启对称绘制而涂的内容，复制到 3D 模型的另一侧。即使左右的 UV 不同，也会按形状找到对应位置来复制。</p>
+      <ol class="mn-steps">
+        <li>选中要复制的图层。</li>
+        <li>选择 图层 → “左右镜像复制”（图层所在行的右键菜单中也有）。</li>
+        <li>点“左半身 → 右半身”或“右半身 → 左半身”。复制目标一侧的颜色会被替换。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>左右以模型自身的方向为准（从正面看则相反）。中心与“对称绘制”的中心相同（<a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a>）。</li>
+        <li>勾选“复制到新图层（仅包含复制的部分）”后，复制出的部分会放进新图层。</li>
+        <li>有选区时，选择“将选区内容复制到另一侧”或“复制到选区内”（用另一侧的颜色替换选区内的内容）。</li>
+        <li>蒙版请用蒙版菜单中的“左右镜像复制蒙版”来复制。</li>
+        <li>找不到左右对应位置的地方（只存在于一侧的部分等）保持不变。按一次 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 即可还原。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="stroke" data-keywords="描边 轮廓 轮廓线 外轮廓 图层效果 图层样式 fx">
+      <h2>给边缘加上线条（描边） <span class="tier std">Standard</span></h2>
+      <p>不改变图层内容本身，只在叠放时加上描边。之后还可以更改粗细和颜色，或关闭它。</p>
+      <ol class="mn-steps">
+        <li>选中要加描边的图层。</li>
+        <li>点图层属性中的“添加”。会出现描边窗口。</li>
+        <li>设置大小、位置、颜色等。数值一动，外观就会立即变化。</li>
+        <li>点 OK（<kbd>Enter</kbd>）确定。点取消（<kbd>Esc</kbd>）则恢复原状。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-fx-stroke.webp" width="654" height="900" alt="描边窗口与带描边的图像" loading="lazy"><figcaption>描边</figcaption></figure>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>大小</td><td>粗细（纹理的 px）</td></tr>
+        <tr><td>位置</td><td>外侧、内侧、居中</td></tr>
+        <tr><td>混合、不透明度、颜色</td><td>描边的叠放方式、浓淡、颜色</td></tr>
+        <tr><td>恢复默认值</td><td>将所有数值恢复默认值。双击标签，则只将该项恢复默认值</td></tr>
+      </tbody></table></div>
+      <h3 id="stroke-menu">描边菜单</h3>
+      <p>位于 图层 → 描边，或图层的右键菜单 → “描边”中。带描边的图层，其行上会出现“fx”标记，点击会打开设置窗口。</p>
+      <ul class="mn-list">
+        <li>“描边设置”：打开窗口。</li>
+        <li>“显示描边”：保留数值，切换显示/隐藏（与图层属性中的“显示”相同）。</li>
+        <li>“复制描边”“粘贴描边”：复制到其他图层。如果选了多个图层，会粘贴到全部图层。</li>
+        <li>“清除描边”：移除描边。</li>
+        <li>“将描边烘焙为像素”：变成包含描边的画面，并移除描边（文件夹则连同描边合并为一个图层）。</li>
+      </ul>
+      <h3 id="stroke-detail">生成的形状与保存</h3>
+      <ul class="mn-list">
+        <li>描边会加在应用蒙版之后的形状上。剪贴的图层，描边会收在基底已绘制的范围内。</li>
+        <li>文件夹（内容合起来的形状）和文字图层（重新输入文字后也保持不变）也可以添加描边。</li>
+        <li>向下合并和合并文件夹，会先烘焙描边再合并。</li>
+        <li>工程文件中会连数值一起保存。导出 PNG、导出材质时是包含描边的画面，导出 PSD 时则是烘焙为像素的图层（<a href="/petanuri/zh/manual/export#psd">PSD</a>）。</li>
+        <li>旧版本或 PSD 中带有的其他效果（投影等），会保持原有外观打开。不能更改，但可以在图层属性中“烘焙为像素”或“移除”。</li>
+      </ul>
+      <div class="mn-tip warn">添加、更改、粘贴描边需要 Standard 及以上版本。即使在 Lite 中，已打开的工程文件里的描边也保持原有外观，并且可以显示/隐藏、复制、清除、烘焙为像素。</div>
+      <h3 id="stroke-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>描边在 UV 岛边缘被截断，或延伸到相邻的岛上</b>：描边是在 UV 上计算的。超出岛边缘的部分，在 3D 中可能会在岛边缘处被截断。导出后，岛外的部分与外扩（填充）的处理方式相同。</li>
+      </ul>
+    </section>
+<section class="mn-sec" id="adjust" data-keywords="调整图层 校正 色调调整 非破坏 事后改色 换色 亮度 饱和度 曲线 换配色">
+      <h2>事后更改颜色（调整图层） <span class="tier std">Standard</span></h2>
+      <p>在不改写下方画面的情况下，叠加亮度和颜色的调整。数值随时可以重新调整。</p>
+      <ol class="mn-steps">
+        <li>选中位于要调整画面正上方的图层。</li>
+        <li>点面板中的“调整”按钮，选择类型。会创建调整图层。</li>
+        <li>在图层属性面板中拖动数值。拖动过程中只有画面在变化，松开后可以一步撤销。</li>
+      </ol>
+      <p>共有 15 种：色相/饱和度/明度、亮度/对比度、色阶、反相、灰度、色调分离、阈值、渐变映射、色调曲线、色彩平衡、曝光度、色温、自然饱和度、替换颜色、添加杂色。数值内容与<a href="#filter-each">滤镜</a>相同。</p>
+      <ul class="mn-list">
+        <li>调整图层对下方看得见的全部画面生效。</li>
+        <li>生效范围可以用蒙版限定。选中调整图层后，绘制到的对象就是蒙版。用“从选区创建蒙版”可以替换现有的蒙版。</li>
+        <li>开启剪贴后，只对紧邻的下方图层生效。</li>
+        <li>用“与下方图层合并”，可以把调整烘焙进下方图层的像素。</li>
+        <li>在 PSD 中，色调曲线、色彩平衡、自然饱和度、曝光度、渐变映射会以调整图层的形式导出、导入。</li>
+        <li>在 Lite 中，已打开的工程文件里的调整图层，数值可以看到，但不能更改（带小锁标记）。</li>
+      </ul>
+      <div class="mn-tip">模糊、锐化、马赛克等需要读取周围画面的效果，不能做成调整图层（会变得很卡）。请用<a href="#filter">滤镜</a>来应用。</div>
+    </section>
+
+    <section class="mn-sec" id="filter" data-keywords="滤镜 高斯模糊 锐化 马赛克 浮雕 色阶 曲线 二值化 黑白 反相">
+      <h2>应用滤镜 <span class="tier std">Standard</span></h2>
+      <p>对所选图层的画面本身进行颜色调整或模糊。与调整图层不同，画面会被改写（按一次 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 即可还原）。</p>
+      <ol class="mn-steps">
+        <li>选中要应用滤镜的图层。</li>
+        <li>选择菜单“滤镜”→ 分组 → 滤镜名称。会出现一个小窗口。</li>
+        <li>拖动数值。模型的外观会即时变化。</li>
+        <li>点 OK（<kbd>Enter</kbd>）确定。要放弃时，点取消（<kbd>Esc</kbd>）。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-filter.webp" width="471" height="558" alt="用“色相/饱和度/明度”滤镜更改披风颜色" loading="lazy"><figcaption>色相、饱和度、明度滤镜</figcaption></figure>
+      <h3 id="filter-list">滤镜一览</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分组</th><th scope="col">滤镜</th></tr></thead><tbody>
+        <tr><td>色调调整</td><td>色相/饱和度/明度、亮度/对比度、色阶、色调曲线、色彩平衡、曝光度、色温、自然饱和度、替换颜色</td></tr>
+        <tr><td>色调范围</td><td>反相、灰度、色调分离、阈值、渐变映射（<a href="#gradmap">下文</a>）</td></tr>
+        <tr><td>模糊、锐化</td><td>高斯模糊、动感模糊、径向模糊、锐化（USM 锐化）、高反差保留</td></tr>
+        <tr><td>杂色</td><td>添加杂色、减少杂色（中间值）、马赛克</td></tr>
+        <tr><td>风格化</td><td>提取线稿、浮雕</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>反相、灰度不会弹出窗口，直接应用。</li>
+        <li>菜单下方还有“应用于所有显示中的纹理集”、<a href="#alpha">亮度转为透明度</a>、<a href="#padlayer">在新图层上生成边距</a>，以及烘焙 <span class="tier pro">Pro</span>（<a href="/petanuri/zh/manual/bake">轻松烘焙</a>、<a href="/petanuri/zh/manual/ao">烘焙 AO</a>）。</li>
+      </ul>
+      <h3 id="filter-window">滤镜窗口</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>对象</td><td>应用的纹理集和图层。被隐藏、已锁定等不会应用的项，原因会显示在“不应用：”中</td></tr>
+        <tr><td>预览</td><td>每次拖动数值，都会反映到外观上</td></tr>
+        <tr><td>应用于所有显示中的纹理集</td><td>对所有显示中纹理集的所选图层应用（有 2 个以上纹理集时。与菜单中的同名项相同）</td></tr>
+        <tr><td>下次以上次的数值打开</td><td>从上次点 OK 时的数值开始（所有滤镜通用）</td></tr>
+        <tr><td>恢复默认值</td><td>将所有数值恢复默认值。双击标签，则只恢复该项数值</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>打开窗口期间无法绘制。视角可以用右键拖动、<kbd>Space</kbd>+拖动、滚轮、3D 导航来移动。</li>
+        <li>有选区时会显示“只应用于选区内”。没有选区的纹理集，会显示名称和“没有选区，不会改变”。</li>
+      </ul>
+      <h3 id="filter-each">各滤镜的数值</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">滤镜</th><th scope="col">数值与用法</th></tr></thead><tbody>
+        <tr><td>曝光度</td><td>曝光度（+1 时光量为 2 倍）、位移（提亮、压低暗部）、伽马</td></tr>
+        <tr><td>色调曲线</td><td>选择通道（RGB、R、G、B），点击曲线添加点，拖动来移动。拖到外面或双击即可删除。按 R、G、B → RGB 的顺序应用</td></tr>
+        <tr><td>色彩平衡</td><td>对阴影、中间调、高光分别调整 青色 ⇔ 红色、洋红 ⇔ 绿色、黄色 ⇔ 蓝色。开启“保持明度”，明暗就不会改变</td></tr>
+        <tr><td>色温</td><td>色温（+为偏暖）、色调（+为偏洋红）</td></tr>
+        <tr><td>自然饱和度</td><td>自然饱和度（越暗淡的颜色效果越强）、饱和度</td></tr>
+        <tr><td>替换颜色</td><td>仅对接近所选颜色的地方（容差）更改色相、饱和度、明度</td></tr>
+        <tr><td>动感模糊、径向模糊、马赛克</td><td>角度、距离／缩放、旋转与中心／方格大小。方向、位置、网格是在 UV 上确定的，所以对于各个岛方向不同的模型，各个岛的效果会不同</td></tr>
+        <tr><td>添加杂色</td><td>数量、单色、图案编号</td></tr>
+        <tr><td>减少杂色（中间值）</td><td>半径 1～2</td></tr>
+        <tr><td>提取线稿</td><td>阈值、粗细、白色处设为透明</td></tr>
+        <tr><td>浮雕</td><td>光照角度、高度、数量、保留颜色</td></tr>
+        <tr><td>高反差保留</td><td>半径。平坦处会变成 50% 的灰色，所以请把混合模式设为叠加或柔光后叠加</td></tr>
+        <tr><td>渐变映射</td><td>色标、预设、“反转（亮部使用左侧颜色）”、“使用绘图工具的渐变”（<a href="#gradmap">下文</a>）</td></tr>
+      </tbody></table></div>
+      <h3 id="filter-alpha">UV 岛边缘与透明部分的处理</h3>
+      <ul class="mn-list">
+        <li>模糊、锐化只在 UV 岛内部计算。岛的边缘不会变暗或变淡。要跨越接缝进行模糊时，请使用混色工具（<a href="/petanuri/zh/manual/draw#blend">模糊、涂抹、混色</a>）。</li>
+        <li>马赛克会按方格对透明度也求平均，锐化会让透明度也更清晰。减少杂色（中间值）也会消除透明部分上的点。</li>
+        <li>提取线稿、浮雕、高反差保留，会把透明处当作白纸来判断明暗。提取线稿的线和高反差保留的结果，也会出现在原本透明的地方。</li>
+        <li>在锁定透明像素的图层上，透明度保持原样。</li>
+      </ul>
+      <h3 id="filter-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>应用了滤镜但没有变化</b>：对被隐藏或已锁定的图层不会应用。选区仅位于其他纹理集时，也不会有变化。请查看窗口中的“对象”和“不应用：”。</li>
+        <li><b>菜单上带有小锁标记（Lite）</b>：滤镜需要 Standard 及以上版本。亮度转为透明度、在新图层上生成边距，在 Lite 中也能使用。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="gradmap" data-keywords="渐变映射 渐变替换 按明暗上色 双色 双色调 棕褐色 预设">
+      <h2>用渐变映射替换颜色 <span class="tier std">Standard</span></h2>
+      <p>把从暗部到亮部的范围，替换为渐变中从左到右的颜色。滤镜（色调范围）和调整图层中都有。</p>
+      <ol class="mn-steps">
+        <li>选择 滤镜 → 色调范围 → “渐变映射”（调整图层则用“调整”按钮）。初始为 前景色 → 背景色 两种颜色。</li>
+        <li>从预设中选择，或添加色标来决定颜色。</li>
+        <li>点 OK（<kbd>Enter</kbd>）确定。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-gradmap.webp" width="418" height="761" alt="渐变映射窗口。色标与预设列表" loading="lazy"><figcaption>渐变映射</figcaption></figure>
+      <h3 id="gradmap-edit">色标操作</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想做的事</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>添加色标</td><td>点击（轻触）渐变条。最多 32 个</td></tr>
+        <tr><td>移动色标</td><td>拖动</td></tr>
+        <tr><td>删除色标</td><td>向下拖离、<kbd>Delete</kbd></td></tr>
+        <tr><td>更改颜色</td><td>双击（再次轻触选中的色标）、“使用前景色”</td></tr>
+        <tr><td>设置位置和不透明度</td><td>所选色标的栏（不透明度为 0 时，保持原来的颜色）</td></tr>
+        <tr><td>重新排列</td><td>“均匀分布”“左右互换”</td></tr>
+      </tbody></table></div>
+      <h3 id="gradmap-preset">预设</h3>
+      <ul class="mn-list">
+        <li>共有 240 个。可以从分组（基础 / 单色、晚霞 / 朝霞、粉彩、霓虹、金属、肤色 / 人物、季节、照片调色、插画 / 动画上色等）中选择，或按名称查找。</li>
+        <li>当前的渐变可以用“保存当前”保存为我的预设（用 × 删除）。</li>
+        <li>在工程文件和 PSD 中，也会以色标的形式保留。</li>
+      </ul>
+      <p>绘制工具的渐变和烘焙中，也有相同的颜色与不透明度色标编辑和预设。绘制工具从 Lite 起可用，烘焙为 Pro（<a href="/petanuri/zh/manual/draw#gradient">绘制工具渐变</a>、<a href="/petanuri/zh/manual/bake#gradient">烘焙渐变</a>）。</p>
+    </section>
+<section class="mn-sec" id="alpha" data-keywords="白色变透明 去除背景 抠白 白底透明 AO 阴影 只留阴影 透明化">
+      <h2>将白色变透明（亮度转为透明度）</h2>
+      <p>把白色的地方变透明，把暗处作为黑色阴影保留下来。想把 AO 的阴影单独换成别的颜色时可以使用。从 Lite 起就能使用。</p>
+      <ol class="mn-steps">
+        <li>选中 AO 等底色之外的绘制图层。如果开启了锁定或锁定透明像素，请先关闭。</li>
+        <li>选择 滤镜 → “亮度转为透明度”。白色变透明，越暗的地方越是不透明的黑色。</li>
+        <li>要更改阴影颜色时，开启锁定透明像素，用喜欢的颜色涂。阴影的浓淡会作为透明度保留下来。</li>
+      </ol>
+      <div class="mn-tip">会改写所选图层的像素（可用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 还原）。不能用于底色、蒙版、调整图层。它不是保持原来的颜色而变透明的功能。</div>
+    </section>
+
+    <section class="mn-sec" id="padlayer" data-keywords="边距 外扩 留白 超出 UV岛外 接缝 扩展边缘颜色 出血">
+      <h2>创建把颜色扩展到 UV 岛外的图层（在新图层上生成边距）</h2>
+      <p>把当前画面中 UV 岛边缘的颜色向岛外扩展出的部分，单独放进一个新图层。想把导出时的外扩（填充）当作图层来查看或重新绘制时使用。所有版本都能使用。</p>
+      <ol class="mn-steps">
+        <li>选择 滤镜 → “在新图层上生成边距”。</li>
+        <li>把“宽度（px）”设为 1～32。</li>
+        <li>点“创建”。在所选图层的正上方，会生成名为“边距（8px）”之类的图层。</li>
+      </ol>
+      <figure class="mn-fig mid"><img src="/petanuri/assets/img/m-padlayer-v112.webp" width="480" height="232" alt="在新图层上生成边距窗口" loading="lazy"><figcaption>在新图层上生成边距</figcaption></figure>
+      <ul class="mn-list">
+        <li>根据叠加所有图层后的颜色生成。岛的内部是透明的。</li>
+        <li>按一次 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 即可还原。无法在 2D 画布上创建。</li>
+        <li>关于导出时的外扩，请参阅<a href="/petanuri/zh/manual/export#pad">导出扩边（填充）</a>。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="autofill" data-keywords="自动上色 自动着色 分区上色 底涂 油漆桶 填色 平涂 线稿 提示">
+      <h2>根据线稿做底涂（自动上色）</h2>
+      <p>按线稿划分的区域，根据放置的颜色提示分别上色。快速做出底涂时使用。</p>
+      <ol class="mn-steps">
+        <li>选择 图层 → “自动上色（根据颜色提示分区填色）”。3D 视图左上角会出现窗口。</li>
+        <li>在“线稿”中选择线稿图层。</li>
+        <li>点“创建提示图层”。会选中新建的提示用图层。</li>
+        <li>在提示图层上，把想涂的颜色大致放在各个区域。</li>
+        <li>点“执行”。线稿的正下方会生成“自动上色”图层（连线条下方也会涂满）。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="自动上色窗口与根据提示色上色的效果" loading="lazy"><figcaption>自动上色</figcaption></figure>
+      <h3 id="autofill-options">窗口选项</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>线稿、提示</td><td>线稿图层和提示图层</td></tr>
+        <tr><td>线条参照</td><td>将“线稿图层”或“可见图像的暗部”视为线条</td></tr>
+        <tr><td>视为线条的浓度</td><td>多深的地方视为线条</td></tr>
+        <tr><td>封闭间隙</td><td>填补线条的断口</td></tr>
+        <tr><td>没有提示的区域也用相近的颜色填充</td><td>没有放提示的地方也会涂色</td></tr>
+        <tr><td>跨越 UV 接缝填充</td><td>即使身体的正面和背面是不同的岛，也只需一个提示就能连续上色（初始为开）</td></tr>
+        <tr><td>填充后隐藏提示图层</td><td>执行后，隐藏提示图层（按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 可恢复）</td></tr>
+      </tbody></table></div>
+      <p>窗口可以抓住标题来移动（会记住位置）。要关闭，可点 ×、“关闭”，或点击窗口后按 <kbd>Esc</kbd>。</p>
+      <h3 id="autofill-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>颜色漏到了相邻区域</b>：线条有断口。线条要在可见的面上闭合（如果延伸到身体之外而中断，就会从那里漏出去）。调高“封闭间隙”也能防止。</li>
+        <li><b>有些地方没有涂上</b>：没有提示的地方不会涂色。请放置提示，或开启“没有提示的区域也用相近的颜色填充”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="history" data-keywords="撤销 重做 取消 返回 历史 历史记录 Ctrl+Z Ctrl+Y 无法撤销">
+      <h2>撤销、历史记录</h2>
+      <p>出错的操作可以用撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）还原。使用历史记录面板，可以一次退回到前面好几步。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">想做的事</th><th scope="col">操作</th></tr></thead><tbody>
+        <tr><td>撤销一步</td><td>撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>。按住不放会连续撤销）</td></tr>
+        <tr><td>重做被撤销的操作</td><td>重做（<kbd>Ctrl</kbd>+<kbd>Y</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>）</td></tr>
+        <tr><td>退回或前进到几步之前</td><td>点击“历史记录”面板中的行。会一次退回或前进到该操作之后的状态</td></tr>
+      </tbody></table></div>
+      <figure class="mn-fig narrow"><img src="/petanuri/assets/img/m-history.webp" width="259" height="420" alt="历史记录面板" loading="lazy"><figcaption>历史记录</figcaption></figure>
+      <ul class="mn-list">
+        <li>历史记录按从旧到新的顺序列出至今的操作。▶ 是当前位置，颜色较淡的行是可以重做的操作。</li>
+        <li>最多记录 30 步，旧的会被删除。</li>
+        <li>面板可通过 显示 → 窗口 显示或隐藏。</li>
+      </ul>
+      <h3 id="undo-limits">无法撤销的操作</h3>
+      <p>修改画面（图层、蒙版、绘制目标、材质设置）的操作可以撤销。只改变显示效果的操作和应用设置，不会进入撤销历史。</p>
+      <ul class="mn-list">
+        <li>不会记录的项：纹理集显示的开关、显示范围（隐藏、仅显示所选部分、全部显示）、对象的显示、混合形状、视角、显示方式、网格线、颜色集的添加与排序、辅助工具、设置、键位设置。图层的显示属于画面的一部分，所以可以撤销。</li>
+        <li>隐藏所选部分（<kbd>H</kbd>）时，只有被取消的选区会记为 1 步。恢复被隐藏的部分要用“全部显示”（<kbd>Alt</kbd>+<kbd>H</kbd>）（<a href="/petanuri/zh/manual/uv#isolate">显示范围</a>）。隐藏之后立刻按 <kbd>Ctrl</kbd>+<kbd>Z</kbd>，第一次只是提示，再按一次才会撤销之前的绘制。</li>
+        <li>删除颜色集中的色板可以撤销。</li>
+      </ul>
+      <div class="mn-tip warn">下列操作无法撤销，所以会先进行确认：删除辅助工具、删除颜色集、初始化按键设置、初始化画笔大小列表。更改纹理的分辨率会清空全部撤销历史。</div>
+    </section>
+
+    <section class="mn-sec" id="sleep" data-keywords="内存不足 卡顿 4K 4096 显存 GPU内存 减轻负担 速度慢 正在准备">
+      <h2>图层休眠（节省内存）</h2>
+      <p>为了在叠放大量分辨率 4096 的图层时也不卡顿，会把一段时间没有操作的图层从 GPU 内存中移出并另行保存。外观、导出和保存都不受影响。</p>
+      <ul class="mn-list">
+        <li>GPU 中只放所选图层，以及下方合并后的画面和上方合并后的画面。其他图层在不绘制期间会逐个缩小保存（未绘制的部分不保存）。</li>
+        <li>选中、绘制、撤销、合并、导出处于休眠的图层时，会当场恢复。在需要重新加载大量图层的选择方式下，会先显示“正在准备…”再切换（4096 的 80 个图层约需 0.1～0.3 秒）。</li>
+        <li>如果上方有混合模式不是正常的图层或调整图层，这部分会留在 GPU 中。</li>
+        <li>打开工程文件时，图层也是以休眠状态打开的。</li>
+        <li>要关闭，请取消勾选 文件 → 偏好设置 → 绘制 → 性能 中的“让未绘制的图层休眠”（初始为开启）。关闭后，所有图层都会放在 GPU 中。</li>
+      </ul>
+      <div class="mn-tip">也有把未选中的纹理集整个休眠的机制（<a href="/petanuri/zh/manual/sets#sleep">节省纹理集的内存</a>）。</div>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/edit#select">选区</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/material#channels">绘制目标（法线贴图、阴影色等）</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/edit"><small>← 上一页</small>选区、变换、文字</a><a class="next" href="/petanuri/zh/manual/uv"><small>下一页 →</small>UV 与显示范围</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +675,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>

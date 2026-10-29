@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>从 Unity 绘制、AI 联动 | PetaNuri3D 使用手册 | HYPERtuyotuyo</title>
-  <meta name="description" content="在 Unity 选择 prefab 并点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制）、保存后反映到 Unity、安装插件、保存位置、不修改原文件、从 AI（MCP 客户端）操作。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta name="description" content="选择 Unity 的 prefab 并点击“用 PetaNuri3D 绘制”、保存后即反映到 Unity、插件安装方法、保存位置、不改写原文件、通过 AI（MCP 客户端）操作。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <link rel="canonical" href="https://hyper-tuyotuyo.com/petanuri/zh/manual/unity">
   <link rel="icon" href="/petanuri/assets/img/brand/icon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/petanuri/assets/img/brand/icon-180.png">
@@ -25,7 +25,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:site" content="@Yak_HyperTYTY">
   <meta property="og:title" content="从 Unity 绘制、AI 联动 | PetaNuri3D 使用手册 | HYPERtuyotuyo">
-  <meta property="og:description" content="在 Unity 选择 prefab 并点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制）、保存后反映到 Unity、安装插件、保存位置、不修改原文件、从 AI（MCP 客户端）操作。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
+  <meta property="og:description" content="选择 Unity 的 prefab 并点击“用 PetaNuri3D 绘制”、保存后即反映到 Unity、插件安装方法、保存位置、不改写原文件、通过 AI（MCP 客户端）操作。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。">
   <meta property="og:url" content="https://hyper-tuyotuyo.com/petanuri/zh/manual/unity">
   <meta property="og:image" content="https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg">
   <meta property="og:type" content="article">
@@ -66,11 +66,11 @@
   {
    "@type": "TechArticle",
    "headline": "从 Unity 绘制、AI 联动 | PetaNuri3D 使用手册",
-   "description": "在 Unity 选择 prefab 并点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制）、保存后反映到 Unity、安装插件、保存位置、不修改原文件、从 AI（MCP 客户端）操作。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
+   "description": "选择 Unity 的 prefab 并点击“用 PetaNuri3D 绘制”、保存后即反映到 Unity、插件安装方法、保存位置、不改写原文件、通过 AI（MCP 客户端）操作。PetaNuri3D 是可直接为 VRChat 等 3D 虚拟形象、服装和道具绘制纹理的工具，本页介绍其用法。",
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/unity",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-25",
+   "dateModified": "2026-10-30",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -123,19 +123,185 @@
   </div>
 </nav>
 <div class="mn-wrap">
-  <aside class="mn-side" aria-label="手册目录">
-    <p class="mn-side-title">使用手册</p>
+  <aside class="mn-side has-search" aria-label="手册目录">
+    <form class="mn-search" role="search" action="/petanuri/zh/manual/search" data-index="/petanuri/assets/data/manual-search.zh.json">
+      <label class="mn-search-label" for="mn-q">搜索手册</label>
+      <div class="mn-search-box"><input id="mn-q" type="search" name="q" placeholder="例如：左右对称、笔压、导出" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="mn-results"><kbd class="mn-search-key" aria-hidden="true">/</kbd></div>
+      <div class="mn-results" id="mn-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </form>
+    <p class="mn-side-title"><a href="/petanuri/zh/manual">使用手册</a></p>
     <button class="mn-toggle" type="button" aria-expanded="false">手册目录</button>
-    <nav><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线与 2D 画布</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字、尺子</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 区域与显示范围</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/sets">纹理集与对象</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙、质感与阴影 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状、顶点组 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity" aria-current="page">从 Unity 绘制、AI 联动</a></li><li><a href="/petanuri/zh/manual/keys">快捷键与数位笔操作</a></li></ol><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
+    <nav><p class="mn-group">从这里开始</p><ul class="mn-plain"><li><a href="/petanuri/zh/manual/first">初次使用</a></li><li><a href="/petanuri/zh/manual/howto">按目的查找</a></li><li><a href="/petanuri/zh/manual/trouble">遇到问题时</a></li></ul><p class="mn-group">基础</p><ol><li><a href="/petanuri/zh/manual/start">入门</a></li><li><a href="/petanuri/zh/manual/screen">界面、面板、偏好设置</a></li><li><a href="/petanuri/zh/manual/draw">绘制</a></li></ol><p class="mn-group">工具与范围</p><ol><li><a href="/petanuri/zh/manual/deco">图章、图案、缝线</a></li><li><a href="/petanuri/zh/manual/edit">选区、变换、文字</a></li><li><a href="/petanuri/zh/manual/layers">图层</a></li><li><a href="/petanuri/zh/manual/uv">UV 与显示范围</a></li><li><a href="/petanuri/zh/manual/sets">纹理集</a></li></ol><p class="mn-group">收尾</p><ol><li><a href="/petanuri/zh/manual/material">lilToon 材质 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/ao">烘焙 AO <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/bake">轻松烘焙 <span class="tier pro">Pro</span></a></li><li><a href="/petanuri/zh/manual/pose">姿势、混合形状 <span class="tier pro">Pro</span></a></li></ol><p class="mn-group">导出与联动</p><ol><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/unity" aria-current="page">Unity、AI 联动</a></li></ol><p class="mn-group">查阅</p><ol><li><a href="/petanuri/zh/manual/keys">快捷键</a></li></ol><ul class="mn-plain"><li><a href="/petanuri/zh/manual/glossary">术语表</a></li></ul><a class="mn-back" href="/petanuri/zh/manual">← 手册首页</a></nav>
   </aside>
   <main class="mn-main">
     <p class="mn-crumb"><a href="/petanuri/zh">PetaNuri3D</a> ／ <a href="/petanuri/zh/manual">使用手册</a> ／ 从 Unity 绘制、AI 联动</p>
     <h1 class="mn-h1">从 Unity 绘制、AI 联动</h1>
-    <p class="mn-intro">在 Unity 选择虚拟形象并启动 PetaNuri3D，即可绘制。Lite、Standard、Pro 均可使用。</p>
-    <p class="mn-proof">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
-    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#unity">从 Unity 启动绘制</a></li><li><a href="#ai">AI 联动（MCP）</a></li></ul></div>
-    <section class="mn-sec" id="unity"><h2>从 Unity 启动绘制</h2><ul class="mn-list"><li>在 Unity 选择 prefab（虚拟形象等），点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制），即可启动 PetaNuri3D 并绘制该模型。</li><li>绘制内容会在<strong>PetaNuri3D 或 Unity 保存时</strong> 反映到 Unity 场景，纹理存入 Unity 项目（绘制期间 Unity 外观不变）。</li><li>适用于 Unity 2022.3（制作 VRChat 虚拟形象的 Unity），仅连接同一电脑上的 Unity。</li></ul><h3>仅首次需要：在 Unity 安装插件</h3><ol class="mn-steps"><li>PetaNuri3D 目录的“unity”文件夹中有 PetaNuri3D-Unity.unitypackage。</li><li>保持 Unity 项目打开，将 PetaNuri3D-Unity.unitypackage 拖到 Project 面板（也可 Assets →“Import Package”→“Custom Package”）。</li><li>点击“Import”，上方菜单栏出现“ぺたぬり3D”即安装成功（仅在编辑器内运行，不加入上传的虚拟形象）。</li></ol><h3>绘制</h3><ol class="mn-steps"><li>在 Unity 选择 Hierarchy 中的虚拟形象（场景对象），或 Project 中的 prefab。</li><li>点击菜单栏“ぺたぬり3D”→“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制，右键也有）。仅首次需选择 PetaNuri3D 文件夹中的 PetaNuri3D-win_x64.exe。</li><li>PetaNuri3D 启动并显示 Unity 模型。按材质主纹理建立纹理集，原纹理直接作为底色（分辨率保留原值，Lite 最高 2048）。</li><li>在 PetaNuri3D 或 Unity 保存（<kbd>Ctrl</kbd>＋<kbd>S</kbd>）时，两边均会保存，绘制内容反映到 Unity。</li></ol><ul class="mn-list"><li>工程文件位于 Assets/PetaNuri/（名称）/（名称）.petanuri；纹理为 Assets/PetaNuri/（名称）/Textures/ 中的 PNG（导入设置与原纹理一致）；材质使用同目录 Materials/ 中的副本。</li><li><strong>不会改写原 FBX、材质、纹理或 prefab</strong>。从 Project prefab 开始时，会创建 Prefab Variant，并绘制该变体。</li><li>从 Unity 启动的 PetaNuri3D 为专用绘制界面（不显示新建、打开工程文件、重新加载模型、另存为）。</li><li>关闭 PetaNuri3D 后联动结束，Unity 会询问“保持使用／恢复原效果”（绘制场景内虚拟形象时）。</li><li>再次点击“ぺたぬり3D で塗る”（用 PetaNuri3D 绘制），会打开工程文件并继续绘制。</li></ul><div class="mn-tip">详细步骤或连接问题请参阅 PetaNuri3D 的 unity 文件夹中“Unity連携の使い方.txt”。</div><div class="mn-tip">Unity 联动插件的版本（与 PetaNuri3D 相同）显示在 Unity 中 PetaNuri3D 窗口下方及连接时的通知中。通过 Unity 联动发送的纹理与导出的 PNG 逐像素一致。</div><div class="mn-tip">主颜色 2nd／3rd（Pro，v1.3.0 起）：lilToon 材质使用“主颜色 2nd”“主颜色 3rd”时，通过联动打开会同时读取其图像（包括 PSD）、蒙版、混合模式等设置，绘制并保存后也会写回 Unity（不会改写原 PSD 和材质）。需要 v1.3.0 的插件（旧插件仍可连接，但不会传递 2nd／3rd）。</div></section><section class="mn-sec" id="ai"><h2>AI 联动（MCP）</h2><ul class="mn-list"><li>可从 AI（MCP 客户端）操作 PetaNuri3D（绘制、颜色与画笔、视角、图层、截图、导出 PNG 等）。</li><li>默认 OFF。使用时在 文件 → 偏好设置 →“AI 联动”开启“使用 AI 联动（MCP）”。</li><li>在 MCP 客户端注册为 stdio 服务器：命令 node，参数 &lt;PetaNuri3D 文件夹&gt;\mcp\server.mjs（node v20 及以上）。配置示例在同一区域“连接方法”中，可用“复制”获取。</li><li>由 AI 侧启动服务器，PetaNuri3D 会自动连接本机固定端口，连接成功在下方提示区通知。其他网站无法连接。</li><li><strong>run_js</strong>（在应用中运行任意程序的命令）仅 <span class="tier pro">Pro</span> 可用。仅开启联动不会运行，必须勾选“允许 run_js（执行任意程序）”。请仅注册可信 AI 客户端。</li></ul><figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="偏好设置 AI 联动小节" loading="lazy"><figcaption>文件 → 偏好设置 →“AI 联动”</figcaption></figure></section>
-    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/export"><small>← 上一页</small>导出</a><a class="next" href="/petanuri/zh/manual/keys"><small>下一页 →</small>快捷键与数位笔操作</a></nav>
+    <p class="mn-intro">在 Unity 中选择虚拟形象并启动 PetaNuri3D，就能直接绘制。保存后，绘制的内容会反映到 Unity。也可以通过 AI（MCP 客户端）操作 PetaNuri3D。</p>
+    <p class="mn-proof mn-ui-note">截图使用日语界面，正文中的菜单名称与所选应用语言一致。</p>
+    <p class="mn-proof">Unity 联动和 AI 联动在任何版本（Lite、Standard、Pro）中都可以使用。只有 AI 联动的 run_js 需要 Pro 版本（<a href="/petanuri/zh/manual/start#editions">版本对比</a>）。</p>
+    <div class="mn-quick"><b>先看这几点</b><ol>
+      <li>仅首次：把 PetaNuri3D 文件夹中的 unity\PetaNuri3D-Unity.unitypackage 导入 Unity（<a href="#unity-install">详细说明</a>）。</li>
+      <li>在 Unity 中选择虚拟形象，点击菜单栏的“<span lang="ja">ぺたぬり3D</span>”→“<span lang="ja">ぺたぬり3D で塗る</span>”（即“用 PetaNuri3D 绘制”，<a href="#unity">详细说明</a>）。</li>
+      <li>绘制后，在 PetaNuri3D 或 Unity 中按 <kbd>Ctrl</kbd>+<kbd>S</kbd>。绘制的内容就会反映到 Unity（<a href="#unity-save">详细说明</a>）。</li>
+      <li>如果更改了 PetaNuri3D 的存放位置，请在 Unity 中重新选择 PetaNuri3D 的位置（<a href="#exe">详细说明</a>）。</li>
+      <li>要通过 AI 操作，请在 文件 → 偏好设置 →“AI 联动”中开启（<a href="#ai">详细说明</a>）。</li>
+    </ol></div>
+    <div class="mn-toc"><b>本页内容</b><ul><li><a href="#unity">从 Unity 启动绘制</a></li><li><a href="#unity-save">将绘制内容反映到 Unity、结束</a></li><li><a href="#exe">重新选择 PetaNuri3D 的位置</a></li><li><a href="#ai">通过 AI 操作（MCP）</a></li></ul></div>
+
+    <section class="mn-sec" id="unity" data-keywords="avatar 角色 预制体 插件 扩展 编辑器 联动 导入包 打开 启动 模型联动">
+      <h2>从 Unity 启动绘制</h2>
+      <p>无需导出 FBX，就能直接绘制 Unity 中的虚拟形象。不会改写原来的 FBX、材质、纹理和 prefab。</p>
+      <ul class="mn-list">
+        <li>适用环境：Unity 2022.3（制作 VRChat 虚拟形象所用的 Unity）。只能与同一台电脑上的 Unity 联动。</li>
+        <li>只能绘制 FBX 的网格（不是 FBX 的形状不会显示在 PetaNuri3D 中）。</li>
+      </ul>
+      <h3 id="unity-install">仅首次：在 Unity 中安装插件</h3>
+      <ol class="mn-steps">
+        <li>打开 PetaNuri3D 文件夹中的“unity”文件夹。里面有 PetaNuri3D-Unity.unitypackage。</li>
+        <li>保持 Unity 项目打开，将 PetaNuri3D-Unity.unitypackage 拖到 Project 面板（也可以用 Assets →“Import Package”→“Custom Package”）。</li>
+        <li>在弹出的窗口中点击“Import”。</li>
+        <li>上方菜单栏出现“<span lang="ja">ぺたぬり3D</span>”（即 PetaNuri3D）就表示安装好了。</li>
+      </ol>
+      <p>插件会安装到 Assets/PetaNuri3D。它只在编辑器内运行，不会包含在上传的虚拟形象中。</p>
+      <h3 id="unity-paint">绘制</h3>
+      <ol class="mn-steps">
+        <li>在 Unity 中，选择 Hierarchy 里的虚拟形象（场景中的对象），或 Project 里的 prefab。</li>
+        <li>点击菜单栏的“<span lang="ja">ぺたぬり3D</span>”→“<span lang="ja">ぺたぬり3D で塗る</span>”（意为“用 PetaNuri3D 绘制”）。Hierarchy 和 Project 的右键菜单中也有同名项目。Unity 的菜单名称只以日语显示。</li>
+        <li>仅首次会出现“Choose the PetaNuri3D program”（请选择 PetaNuri3D 的位置）的提示，请选择 PetaNuri3D 文件夹中的 PetaNuri3D-win_x64.exe。</li>
+        <li>PetaNuri3D 启动，并显示 Unity 中的模型。像平时一样绘制即可。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>纹理集按材质的主纹理生成。使用同一纹理的材质会合为 1 个纹理集，绘制的内容会反映到所有这些材质。</li>
+        <li>原来的纹理会直接作为底色。分辨率也与原纹理相同（Lite 最高 2048）。没有纹理的材质，从材质的颜色开始绘制。</li>
+        <li>在 Unity 中隐藏的对象，在 PetaNuri3D 中也是隐藏的（可在“对象”面板中显示）。</li>
+        <li>从 Unity 启动的 PetaNuri3D 是专用于绘制的界面。标题为“PetaNuri3D — Unity 联动（虚拟形象名称）”，不会出现新建、打开工程文件、最近使用的文件、重新加载模型和另存为。</li>
+        <li>再次点击“Paint with PetaNuri3D”（用 PetaNuri3D 绘制），已打开的 PetaNuri3D 会显示到最前面（不会启动第二个）。</li>
+        <li><span class="tier pro">Pro</span> lilToon 材质如果使用了“主颜色 2nd”“主颜色 3rd”，其图像（包括 PSD）、蒙版、混合模式和颜色也会一并导入，并放入图层面板中对应的文件夹（<a href="/petanuri/zh/manual/material#main2">主颜色 2nd、3rd</a>）。Lite 和 Standard 不会导入（在 Unity 中仍按原来的 2nd、3rd 显示）。</li>
+      </ul>
+      <h3 id="unity-window">PetaNuri3D 窗口（推荐初次使用者）</h3>
+      <p>在 Unity 菜单栏的“<span lang="ja">ぺたぬり3D</span>”→“<span lang="ja">ぺたぬり3D の窓を開く</span>”（意为“打开 PetaNuri3D 窗口”）中，会打开一个可以从上到下逐项确认、再开始绘制的窗口。</p>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">栏</th><th scope="col">内容</th></tr></thead><tbody>
+        <tr><td>1. PetaNuri3D program (exe)（PetaNuri3D 的位置）</td><td>显示当前位置以及能否使用。有“Choose…”（选择）、“Search”（查找）、“Show in Explorer”（打开位置）（<a href="#exe">重新选择位置</a>）</td></tr>
+        <tr><td>2. What to paint (prefab or scene avatar)（要绘制的对象）</td><td>把 prefab 或虚拟形象拖到栏中，或选中后点击“Use selection”（放入所选对象）。会显示可绘制的网格数量和纹理集。无法绘制时也会显示原因</td></tr>
+        <tr><td>3. Paint（绘制）</td><td>“Paint with PetaNuri3D”（用 PetaNuri3D 绘制）按钮，以及当前状态（Not connected：未连接、Starting：启动中、Connected：已连接、Disconnected：已断开、Saved：已保存、Finished：已结束）。绘制期间还有“Bring PetaNuri3D to front”（把 PetaNuri3D 调到前面）、“Save and show in Unity”（保存并映射到 Unity）、“Finish”（结束）、“Revert and finish”（恢复原样并结束）、“Show painted files”（查看已绘制物的文件夹）</td></tr>
+        <tr><td>4. Where files go / Settings（保存位置与设置）</td><td>绘制内容的保存位置（Assets/PetaNuri/）、“Open Preferences”（打开 Preferences）、语言切换</td></tr>
+      </tbody></table></div>
+      <p>窗口最下方会显示插件的版本（与 PetaNuri3D 的版本号相同）。</p>
+    </section>
+
+    <section class="mn-sec" id="unity-save" data-keywords="反映 不显示 没变化 同步 保存 写回 撤销 终止 关闭 变体 Prefab Variant 不生效">
+      <h2>将绘制内容反映到 Unity、结束</h2>
+      <p>绘制期间，Unity 中的外观不会改变。在 PetaNuri3D 或 Unity 中保存后，当时绘制的内容才会反映到 Unity。</p>
+      <ol class="mn-steps">
+        <li>在 PetaNuri3D 或 Unity 中按 <kbd>Ctrl</kbd>+<kbd>S</kbd>。两边都会保存。</li>
+        <li>在 Unity 的场景视图中，确认绘制的内容已经反映出来。</li>
+      </ol>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">生成的内容</th><th scope="col">位置（在 Unity 项目中）</th></tr></thead><tbody>
+        <tr><td>工程文件</td><td>Assets/PetaNuri/（名称）/（名称）.petanuri</td></tr>
+        <tr><td>绘制后的纹理</td><td>Assets/PetaNuri/（名称）/Textures/ 中的 PNG（仅限绘制过的纹理。导入设置与原纹理保持一致）</td></tr>
+        <tr><td>材质</td><td>Assets/PetaNuri/（名称）/Materials/（原材质的副本，使用绘制后的纹理）</td></tr>
+        <tr><td>主颜色 2nd／3rd <span class="tier pro">Pro</span></td><td>Textures/ 中的 _main2nd.png、_main3rd.png（仅在修改了从 Unity 导入的内容时生成。蒙版不会写回）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>从 Project 中的 prefab 开始时，会在 Assets/PetaNuri/（名称）/ 中创建该 prefab 的变体（Prefab Variant），并在变体上绘制。上传时，请把生成的“（名称） (PetaNuri)”prefab 放进场景使用。</li>
+        <li>下次再点击“Paint with PetaNuri3D”（用 PetaNuri3D 绘制），会打开工程文件，保留图层并接着绘制。</li>
+        <li>发送给 Unity 联动的纹理，与导出的 PNG 在像素上完全一致。</li>
+      </ul>
+      <h3 id="unity-end">结束</h3>
+      <ul class="mn-list">
+        <li>关闭 PetaNuri3D 即结束联动。关闭时选择“保存并退出”，会先把绘制的内容发送到 Unity，再关闭。</li>
+        <li>绘制的是场景中的虚拟形象时，Unity 会询问“Keep”（直接使用）或“Revert to original”（恢复原样）。即使选择“Revert to original”，Assets/PetaNuri/ 中的内容也会保留，再次绘制即可接着来。也可以用 Unity 的撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）重新来过。</li>
+        <li>一次也没保存就关闭时，不会询问，直接恢复原样，并删除已生成的内容。</li>
+        <li>先关闭 Unity 时，会询问“Save and Close”（保存并关闭）、“Keep Open”（不关闭）或“Close Without Saving”（不保存并关闭）。</li>
+      </ul>
+      <h3 id="unity-note">注意事项</h3>
+      <ul class="mn-list">
+        <li>切换材质的动画（如换衣服颜色）指向的是原来的材质。使用绘制后的内容时，请把动画中的材质也换掉。</li>
+        <li>请不要在两个 Unity 中同时绘制同一个虚拟形象。</li>
+        <li>Unity 重新加载脚本期间（编译、开始 Play 时），连接会短暂中断，但很快会重新连上。</li>
+      </ul>
+      <h3 id="unity-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>画了但 Unity 里的外观没有变化</b>：保存时才会反映。请在 PetaNuri3D 或 Unity 中按 <kbd>Ctrl</kbd>+<kbd>S</kbd>。</li>
+        <li><b>点击“Paint with PetaNuri3D”（用 PetaNuri3D 绘制）后没有启动，或打开了英文页面</b>：所选的 exe 不对。请通过<a href="#exe">重新选择 PetaNuri3D 的位置</a>，选择 ZIP 解压后文件夹中的 PetaNuri3D-win_x64.exe。</li>
+        <li><b>提示“The PetaNuri3D program files (resources.neu) are not next to the selected file”（PetaNuri3D 的内容不存在）</b>：所选 exe 旁边没有 resources.neu。请重新选择已完整解压的文件夹中的 exe。</li>
+        <li><b>提示“Unity 插件与 PetaNuri3D 的版本不一致”</b>：请重新导入 PetaNuri3D 附带的 PetaNuri3D-Unity.unitypackage。要传递主颜色 2nd／3rd，需要同一版本的插件。</li>
+        <li><b>提示“All link ports (47360-47369) are in use”（用于连接的端口已全部被占用）</b>：请先关闭其他 Unity，再点击一次。</li>
+        <li><b>提示“The selection has no paintable meshes (FBX meshes)”（所选对象中没有可绘制的 FBX 网格）</b>：请选择含有 FBX 网格的 prefab 或虚拟形象。</li>
+        <li><b>仍然连不上</b>：请重新启动 Unity 和 PetaNuri3D。详情请参阅 PetaNuri3D 的 unity 文件夹中的“<span lang="ja">Unity連携の使い方.txt</span>”。</li>
+      </ul>
+    </section>
+
+    <section class="mn-sec" id="exe" data-keywords="路径 位置 移动 搬家 文件夹 打不开 无法启动 设置 重新设置 exe 重新选择 更新后 换了文件夹">
+      <h2>重新选择 PetaNuri3D 的位置</h2>
+      <p>Unity 插件会记住最初选择的 PetaNuri3D-win_x64.exe 的位置。移动了 PetaNuri3D 文件夹，或把新版本解压到了其他文件夹时，需要重新选择位置。</p>
+      <ol class="mn-steps">
+        <li>点击 Unity 菜单栏的“<span lang="ja">ぺたぬり3D</span>”→“<span lang="ja">ぺたぬり3D の窓を開く</span>”（意为“打开 PetaNuri3D 窗口”）。</li>
+        <li>点击“1. PetaNuri3D program (exe)”（PetaNuri3D 的位置）中的“Choose…”（选择）。</li>
+        <li>选择新位置的“PetaNuri3D”文件夹中的 PetaNuri3D-win_x64.exe。</li>
+        <li>栏下方显示“Found.”（已找到）就完成了。如果显示“No file at this location”（此位置没有文件），请重新选择。</li>
+      </ol>
+      <ul class="mn-list">
+        <li>点击“Search”（查找），会在桌面、下载、文档、Program Files 以及各驱动器根目录下名为“PetaNuri3D”的文件夹中查找。点击找到项的“Use this”（使用此项），就会把它设为当前位置。</li>
+        <li>也可以在 Unity 的 Edit →“Preferences”→“PetaNuri3D”中的“PetaNuri3D program”（PetaNuri3D 的位置）里修改。</li>
+        <li>记住的位置上没有 exe 时，点击“Paint with PetaNuri3D”（用 PetaNuri3D 绘制）会出现“Choose the PetaNuri3D program”（请选择 PetaNuri3D 的位置）的提示。</li>
+        <li>用 setup.exe 安装时的位置是 %LOCALAPPDATA%\Programs\PetaNuri3D（<a href="/petanuri/zh/manual/start#launch">安装与启动</a>）。</li>
+      </ul>
+      <div class="mn-tip warn">不能选择 ZIP 中的 exe 或其他 exe。下载的 ZIP 请先右键 →“全部提取”，再选择解压后文件夹中的 exe。</div>
+    </section>
+
+    <section class="mn-sec" id="ai" data-keywords="MCP AI 智能体 Claude Codex 自动化 脚本 程序 node 外部控制 API 服务器 接口 ChatGPT">
+      <h2>通过 AI 操作（MCP）</h2>
+      <p>可以通过 AI（MCP 客户端）操作 PetaNuri3D。绘制、颜色与画笔、视角、图层、屏幕截图、PNG 导出等，都可以拜托 AI 完成。</p>
+      <ol class="mn-steps">
+        <li>打开 文件 → 偏好设置，点击左侧的“AI 联动”。</li>
+        <li>勾选“使用 AI 联动（MCP）”。开启状态会保留到下次启动。</li>
+        <li>点击“连接方法”下“设置示例”中的“复制”。</li>
+        <li>在 AI 一侧（MCP 客户端）的 MCP 设置中，粘贴复制的内容并注册。</li>
+        <li>开始使用 AI。连接成功后，屏幕下方会显示“AI 联动：已连接到 MCP 服务器”。</li>
+      </ol>
+      <figure class="mn-fig"><img src="/petanuri/assets/img/m-ai-prefs.webp" width="900" height="640" alt="偏好设置中的 AI 联动小节" loading="lazy"><figcaption>文件 → 偏好设置 →“AI 联动”</figcaption></figure>
+      <h3 id="ai-setup">连接方式的具体内容</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">项目</th><th scope="col">值</th></tr></thead><tbody>
+        <tr><td>名称</td><td>petanuri3d</td></tr>
+        <tr><td>命令</td><td>node（需要 20 或更高版本）</td></tr>
+        <tr><td>参数</td><td>&lt;PetaNuri3D 文件夹&gt;\mcp\server.mjs（窗口中会显示实际位置）</td></tr>
+      </tbody></table></div>
+      <ul class="mn-list">
+        <li>作为 stdio 服务器注册。服务器由 AI 一侧启动，PetaNuri3D 会自动连接到同一台电脑内（127.0.0.1 的 47321–47330 号端口）。</li>
+        <li>“状态”会显示 ON 或 OFF，以及是否已连接。点击“立即查找”会马上尝试连接。</li>
+        <li>无论有多少个 AI 会话，都会全部连接。同时打开了 2 个 PetaNuri3D 时，可以在 AI 一侧用 list_instances 选择发送目标。</li>
+        <li>无法从其他网站连接。不使用时，请取消勾选“使用 AI 联动（MCP）”，将其设为 OFF。</li>
+      </ul>
+      <h3 id="ai-tools">可以拜托 AI 做的事</h3>
+      <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">分类</th><th scope="col">命令</th></tr></thead><tbody>
+        <tr><td>查看状态</td><td>get_state（当前状态）、list_layers、screenshot（截取 3D 视图）、pick（屏幕上某一点有什么）、uv_to_screen、read_pixel（纹理的 1 个像素）</td></tr>
+        <tr><td>打开、导出</td><td>open_fbx（打开 3D 模型）、export_png</td></tr>
+        <tr><td>绘制</td><td>select_tool、set_color、set_brush、stroke（画 1 条线）、fill_at（填充 UV 岛）、pick_color（吸管）</td></tr>
+        <tr><td>图层与纹理集</td><td>add_layer、select_layer、set_layer、select_set</td></tr>
+        <tr><td>视角与模式</td><td>view（视角）、set_mode（切换绘制/姿势）</td></tr>
+        <tr><td>撤销</td><td>undo、redo</td></tr>
+        <tr><td><span class="tier pro">Pro</span></td><td>list_materials、material_edit（材质操作）、bake_ao（烘焙 AO）、run_js（见下）</td></tr>
+      </tbody></table></div>
+      <h3 id="ai-runjs">允许 run_js <span class="tier pro">Pro</span></h3>
+      <p>run_js 是在应用内运行任意程序（JavaScript）的命令。仅开启 AI 联动时，它不会运行。</p>
+      <ol class="mn-steps">
+        <li>打开 文件 → 偏好设置 →“AI 联动”。</li>
+        <li>勾选“run_js”小节中的“允许 run_js（执行任意程序）”。</li>
+      </ol>
+      <div class="mn-tip warn">在应用（exe）中，甚至可以删除文件、执行命令。请只注册可信任的 AI 客户端。Standard 版不显示 run_js 小节。</div>
+      <h3 id="ai-trouble">操作不顺利时</h3>
+      <ul class="mn-list mn-trouble">
+        <li><b>AI 提示“无法连接”</b>：多半是“使用 AI 联动（MCP）”处于 OFF。开启后几秒内就会连上。</li>
+        <li><b>提示“找不到此文件”</b>：请把发行包中的 mcp 文件夹放在与应用（exe）相同的文件夹中。</li>
+        <li><b>AI 一侧的服务器无法启动</b>：请确认已安装 node（20 或更高版本）。</li>
+        <li><b>run_js 被拒绝</b>：只有在 Pro 版本中勾选了“允许 run_js（执行任意程序）”后才能运行。</li>
+        <li><b>AI 说无法绘制</b>：处于姿势模式时，不能使用 stroke 和 fill_at。请切换回绘制模式。</li>
+      </ul>
+    </section>
+
+    <div class="mn-related"><b>相关页面</b><ul><li><a href="/petanuri/zh/manual/start#launch">安装与启动</a></li><li><a href="/petanuri/zh/manual/material">最终效果与 lilToon 材质</a></li><li><a href="/petanuri/zh/manual/export">导出</a></li><li><a href="/petanuri/zh/manual/screen#settings">偏好设置</a></li></ul></div>
+    <nav class="mn-pager" aria-label="相邻页面"><a class="prev" href="/petanuri/zh/manual/export"><small>← 上一页</small>导出</a><a class="next" href="/petanuri/zh/manual/keys"><small>下一页 →</small>快捷键</a></nav>
   </main>
 </div>
 <footer class="pn-footer">
@@ -154,5 +320,6 @@
   </div>
 </footer>
 <script src="/petanuri/assets/js/petanuri.js"></script>
+<script src="/petanuri/assets/js/manual-search.js" defer></script>
 </body>
 </html>
