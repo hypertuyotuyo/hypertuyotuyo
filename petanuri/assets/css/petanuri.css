@@ -330,7 +330,7 @@ html[lang="ko"] .pn-body { word-break: keep-all; }
 .mn-side .mn-back::before { content: none; }
 .mn-toggle { display: none; }
 
-.mn-main { min-width: 0; max-width: 820px; }
+.mn-main { min-width: 0; max-width: 820px; overflow-wrap: break-word; }  /* 長いパス（%LOCALAPPDATA%\…）は、はみ出すときだけ途中で折る。韓国語は keep-all なので語尾までつながって 1 語になる */
 .mn-crumb { font-size: 0.78rem; color: var(--ink-3); margin-bottom: 0.8rem; }
 .mn-crumb a { color: var(--ink-2); border-bottom: 1px solid var(--line-2); }
 .mn-h1 { font-family: var(--pn-display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.3; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
