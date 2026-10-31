@@ -87,7 +87,8 @@
     <p class="pn-history-lead">새 기능, 그리기 느낌과 조작 개선, 수정한 버그를 정리했습니다.</p>
     <p class="pn-history-note">BOOTH에서 업데이트할 때 다운로드 파일 이름에 v1.3.0이 표시되어 있는지 확인해 주세요.</p>
     <p class="pn-history-note">받은 요청의 대응 현황은 <a class="pn-textlink" href="/petanuri/ko/requests">요청과 대응 현황</a> 페이지에 정리했습니다.</p>
-    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-3-0">v1.3.0 <span>최신</span></a>
+    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-3-1">v1.3.1 <span>v1.3.1 공개 준비 중</span></a>
+      <a href="#v1-3-0">v1.3.0 <span>최신</span></a>
       <a href="#v1-2-1">v1.2.1 <span>배포 완료</span></a>
       <a href="#v1-2-0">v1.2.0 <span>배포 완료</span></a>
       <a href="#v1-1-2">v1.1.2 <span>배포 완료</span></a>
@@ -99,7 +100,40 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-25">2026-10-25</time></p></div><p class="pn-release-title">앱 안에서 자동 업데이트, 화면에서 색 가져오기 수정, 레이스 브러시, UV가 바뀌었을 때 그림 맞추기</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status upcoming">v1.3.1 공개 준비 중</span><p>공개일 미정</p></div><p class="pn-release-title">흐리기 버그 수정, Photoshop 단색 레이어, 휠로 합성 모드 전환</p></header>
+<p class="pn-release-tip">이 페이지의 v1.3.1 내용은 공개 전 안내입니다. 현재 배포 버전은 v1.3.0입니다.</p>
+<p class="pn-release-summary">흐리기 버그 수정을 중심으로 한 업데이트입니다. Photoshop 단색 레이어 지원과 합성 모드 전환 추가도 들어 있습니다. 특별히 적지 않은 것은 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v131-update"><h4 id="v131-update">업데이트 방법</h4>
+<ul>
+<li>v1.3.0에서는 앱 안에서 자동으로 업데이트할 수 있습니다</li>
+<li>v1.2.1 이전 버전에서는 직접 업데이트해 주세요<span class="pn-release-sub">작업을 저장하고 앱을 닫은 뒤, ZIP을 풀고 안에 있는 setup.exe를 더블 클릭합니다</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v131-fix"><h3 class="pn-release-part-title" id="v131-fix">버그 수정</h3>
+<section class="pn-release-group" aria-labelledby="v131-blur"><h4 id="v131-blur">흐리기</h4>
+<ul>
+<li>흐리기를 쓰면 색 경계에 자잘한 알갱이와 블록 모양의 얼룩이 생겼습니다<span class="pn-release-sub">같은 색 면을 문지르기만 해도 색이 바뀌는 일이 있었지만, 이제 거의 바뀌지 않습니다. 3D 영역과 UV 영역 모두에서 수정되었습니다</span></li>
+<li>같은 곳을 다시 문지르면 흐리기가 비늘이나 그물 무늬처럼 되었습니다</li>
+<li>강한 흐리기에서 원래 선의 딱딱한 윤곽과 외딴 알갱이가 남았습니다<span class="pn-release-sub">같은 설정에서도 경계의 색이 전보다 넓고 매끄럽게 섞입니다. 3D 영역과 UV 영역 모두에서 수정되었습니다</span></li>
+<li>펜을 떼지 않고 같은 곳을 문지르면 흐리기가 도중부터 듣지 않게 되었습니다<span class="pn-release-sub">계속 문지를수록 섞입니다. 한 번 왕복했을 때의 흐려지는 폭은 전보다 조금 넓어집니다</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v131-paint"><h4 id="v131-paint">그리기</h4>
+<ul>
+<li>크게 확대해서 그리면 초크·스프레이처럼 팁 이미지를 쓰는 브러시가 알갱이처럼 되었습니다<span class="pn-release-sub">크게 확대했을 때는 전보다 조금 옅어집니다</span></li>
+<li>수채 번짐에 알갱이 느낌이 나타났습니다<span class="pn-release-sub">기본 간격을 15에서 5로 바꿨습니다. 이전 기본값 그대로 쓰고 있었다면 자동으로 바뀝니다. 직접 바꾼 간격은 그대로입니다</span></li>
+<li>거의 옆을 향한 면이 한 칸 걸러서만 칠해지는 일이 있었습니다<span class="pn-release-sub">펜에서는 흰 알갱이가, 흐리기에서는 원래 색의 점과 짧은 막대가 남았습니다. 펜·지우개·흐리기·색 혼합·손가락 등 3D 영역에서 칠하는 도구 모두에서 수정되었습니다</span></li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v131-changed"><h3 class="pn-release-part-title" id="v131-changed">변경 사항</h3>
+<section class="pn-release-group" aria-labelledby="v131-behavior"><h4 id="v131-behavior">표시·레이어·조작</h4>
+<ul>
+<li>텍스처의 도트 표시를 해상도와 관계없이 처음부터 켜짐으로<span class="pn-release-sub">축소해서 잘게 보이는 곳은 지금까지처럼 보간합니다. 세트마다 끌 수 있습니다(텍스처 세트의 ⋯·우클릭). 표시만 바뀌며 칠한 그림과 내보내기는 바뀌지 않습니다</span></li>
+<li>Photoshop의 단색 레이어를 단색 레이어 그대로 읽고 쓸 수 있도록 <span class="tier std">Standard</span><span class="pn-release-sub">지금까지는 불러오면 이미지 레이어가 되고, Photoshop으로 돌려보내면 단색 레이어가 아니게 되었습니다. 색 값·마스크·합성 모드·불투명도·클리핑을 유지합니다. 색은 레이어 속성에서 바꿀 수 있고, 조정 레이어 메뉴에서도 만들 수 있습니다. 셰이프(벡터 마스크 포함)·문자·그라데이션·패턴·레이어 효과가 붙은 단색 레이어는 지금까지처럼 이미지 레이어로 읽습니다</span></li>
+<li>레이어 패널의 합성 모드 칸에 커서를 올리고 휠을 돌리면 위아래 합성 모드로 전환되도록<span class="pn-release-sub">연속해서 돌린 만큼은 하나로 묶여, Ctrl+Z 한 번으로 돌리기 전으로 돌아갑니다</span></li>
+<li>카메라 조작이 &quot;Alt + 마우스 버튼&quot;·&quot;Unity 방식&quot;일 때는 3D 위에서 Alt를 눌러도 스포이트 확대경을 표시하지 않도록<span class="pn-release-sub">I 키 스포이트에서는 지금까지처럼 표시됩니다. UV 영역에서는 Alt로도 표시됩니다</span></li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-25">2026-10-25</time></p></div><p class="pn-release-title">앱 안에서 자동 업데이트, 화면에서 색 가져오기 수정, 레이스 브러시, UV가 바뀌었을 때 그림 맞추기</p></header>
 <p class="pn-release-summary">앱 안에서 자동으로 업데이트할 수 있게 되었습니다. 그리기 기능·연동 추가와 많은 버그 수정을 넣었습니다. 특별히 적지 않은 것은 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
 <section class="pn-release-part" aria-labelledby="v130-major"><h3 class="pn-release-part-title" id="v130-major">큰 변경</h3>
 <section class="pn-release-group" aria-labelledby="v130-update"><h4 id="v130-update">앱 안에서 자동으로 업데이트할 수 있게 되었습니다(Windows)</h4>

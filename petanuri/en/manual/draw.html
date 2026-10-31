@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/draw",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -369,6 +369,7 @@
         <li>You can also pick a color with right-click in the 3D view → "Pick color here".</li>
         <li>Raising "Sample area" takes the average of the surrounding colors.</li>
         <li>While the eyedropper is in use, a round magnifier appears at the cursor. The frame in the middle is where the color is taken from, and the outer ring is the color you get. You can turn it off with "Show magnifier" in Tool properties.</li>
+        <li>With the Alt + mouse buttons and Unity style camera controls, pressing <kbd>Alt</kbd> over 3D does not show the magnifier (it appears for the <kbd>I</kbd> key eyedropper, and in the UV pane it also appears with <kbd>Alt</kbd>).</li>
       </ul>
       <h3 id="screen-pick">Pick a color from anywhere on the screen</h3>
       <ol class="mn-steps">
@@ -486,7 +487,7 @@
       <ul class="mn-list">
         <li>How strongly it acts is set with "Strength" (it corresponds to opacity for other brushes).</li>
         <li>"Paint amount" is the proportion of foreground color. At 0, it only blends the colors that are already painted. Raising "Color stretch" carries the picked-up color further.</li>
-        <li>"Blend more with each pass" (on by default): The more times you trace the same spot, the more it melts together. There is a limit so that continuing to rub in one stroke doesn't melt even the line art. When it is off, going over the same spot within one stroke does not make it stronger.</li>
+        <li>"Blend more with each pass" (on by default): The more times you trace the same spot, the more it melts together. It keeps working even if you keep rubbing without lifting the pen (once the amount moved in one stroke passes a limit, it works at half strength). When it is off, going over the same spot within one stroke does not make it stronger.</li>
         <li>When "3D brush projection" for Blur is "Follow the surface", the area that gets blurred has the same shape as the pen.</li>
         <li>You can also choose a tip in Tool properties for Blur, Smudge and Blend.</li>
         <li>Blur and Smudge can also be used in the UV view. Blend is available only in the 3D view.</li>

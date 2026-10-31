@@ -87,7 +87,8 @@
     <p class="pn-history-lead">汇总新增功能、绘制手感与操作改进，以及已修复的问题。</p>
     <p class="pn-history-note">从 BOOTH 更新时，请确认下载文件名包含 v1.3.0。</p>
     <p class="pn-history-note">收到的需求的处理状况汇总在<a class="pn-textlink" href="/petanuri/zh/requests">需求与处理状况</a>页面中。</p>
-    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-3-0">v1.3.0 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-3-1">v1.3.1 <span>v1.3.1 准备发布中</span></a>
+      <a href="#v1-3-0">v1.3.0 <span>最新</span></a>
       <a href="#v1-2-1">v1.2.1 <span>已发布</span></a>
       <a href="#v1-2-0">v1.2.0 <span>已发布</span></a>
       <a href="#v1-1-2">v1.1.2 <span>已发布</span></a>
@@ -99,7 +100,40 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-25">2026-10-25</time></p></div><p class="pn-release-title">在应用内自动更新、修复从屏幕取色、蕾丝笔刷、UV 改变时对齐绘画</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status upcoming">v1.3.1 准备发布中</span><p>发布日期未定</p></div><p class="pn-release-title">修复模糊问题、支持 Photoshop 纯色图层、用滚轮切换混合模式</p></header>
+<p class="pn-release-tip">本页中 v1.3.1 的内容是发布前的预告。当前发布版本为 v1.3.0。</p>
+<p class="pn-release-summary">本次更新以修复模糊问题为主，还加入了对 Photoshop 纯色图层的支持，并新增了切换混合模式的方式。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v131-update"><h4 id="v131-update">更新方法</h4>
+<ul>
+<li>从 v1.3.0 起，可以在应用内自动更新</li>
+<li>从 v1.2.1 或更早版本更新时，请手动更新<span class="pn-release-sub">保存工作并关闭应用，解压 ZIP，然后双击其中的 setup.exe</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v131-fix"><h3 class="pn-release-part-title" id="v131-fix">问题修复</h3>
+<section class="pn-release-group" aria-labelledby="v131-blur"><h4 id="v131-blur">模糊</h4>
+<ul>
+<li>模糊时，颜色交界处会出现细小颗粒和块状不均<span class="pn-release-sub">以前只是描过同一颜色的区域，颜色也可能改变，现在几乎不会变了。3D 区域和 UV 区域都已修复</span></li>
+<li>重复描同一位置时，模糊会变成鳞片状或网格状</li>
+<li>强模糊时，会残留原线条的硬边和孤立的颗粒<span class="pn-release-sub">即使设置相同，交界处的颜色也会比以前混合得更广、更平滑。3D 区域和 UV 区域都已修复</span></li>
+<li>不抬笔反复涂擦同一位置时，模糊会中途失效<span class="pn-release-sub">涂擦得越久，融合得越深。来回一次的模糊范围比以前稍宽</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v131-paint"><h4 id="v131-paint">绘制</h4>
+<ul>
+<li>大幅放大绘制时，粉笔、喷枪等使用笔尖图像的笔刷会变成颗粒状<span class="pn-release-sub">大幅放大时，会比以前稍淡</span></li>
+<li>水彩晕染有颗粒感<span class="pn-release-sub">默认间距由 15 改为 5。如果一直使用以前的默认值，会自动改变。自己改过的间距保持不变</span></li>
+<li>接近侧面朝向的面，有时只能隔一个像素涂上<span class="pn-release-sub">钢笔会留下白色颗粒，模糊会留下原色的点和短条。钢笔、橡皮擦、模糊、混色、涂抹等在 3D 区域绘制的所有工具都已修复</span></li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v131-changed"><h3 class="pn-release-part-title" id="v131-changed">变更</h3>
+<section class="pn-release-group" aria-labelledby="v131-behavior"><h4 id="v131-behavior">显示、图层与操作</h4>
+<ul>
+<li>纹理的像素显示现在不论分辨率，一开始就是开启的<span class="pn-release-sub">缩小后看起来很细的部分仍和以前一样插值。可以按纹理集分别关闭（纹理集的 ⋯ 或右键）。只影响显示，已绘制的内容和导出结果不变</span></li>
+<li>Photoshop 的纯色图层现在可以按纯色图层读写 <span class="tier std">Standard</span><span class="pn-release-sub">以前读入后会变成图像图层，回到 Photoshop 时就不再是纯色图层。现在会保留颜色值、蒙版、混合模式、不透明度和剪贴。颜色可以在图层属性中更改，也可以从调整图层的菜单创建。形状（带矢量蒙版）、文字、渐变、图案以及带图层效果的纯色图层，仍和以前一样读取为图像图层</span></li>
+<li>将光标移到图层面板的混合模式栏并转动滚轮，即可切换到上一个或下一个混合模式<span class="pn-release-sub">连续转动的操作会合并为一步，按 1 次 Ctrl+Z 即可回到转动之前</span></li>
+<li>相机操作为“Alt＋鼠标按钮”和“Unity 方式”时，在 3D 上按 Alt 不再显示吸管放大镜<span class="pn-release-sub">用 I 键吸管时仍和以前一样显示。在 UV 区域按 Alt 也会显示</span></li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-3-0" aria-labelledby="v1-3-0-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-0-title">v1.3.0</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-25">2026-10-25</time></p></div><p class="pn-release-title">在应用内自动更新、修复从屏幕取色、蕾丝笔刷、UV 改变时对齐绘画</p></header>
 <p class="pn-release-summary">现在可以在应用内自动更新。此版本新增了绘制功能和联动功能，并修复了大量问题。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
 <section class="pn-release-part" aria-labelledby="v130-major"><h3 class="pn-release-part-title" id="v130-major">重大变更</h3>
 <section class="pn-release-group" aria-labelledby="v130-update"><h4 id="v130-update">现在可以在应用内自动更新（Windows）</h4>

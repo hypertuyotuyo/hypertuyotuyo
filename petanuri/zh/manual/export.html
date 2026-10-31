@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/export",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -263,6 +263,7 @@
       <ul class="mn-list">
         <li>图层、显示状态、不透明度、混合模式、剪贴、锁定透明像素、文件夹、图层蒙版和颜色标签（图层的颜色）都会保留。</li>
         <li>调整图层也会以调整图层的形式保留（渐变映射保持为色点形式）。色相/饱和度/明度中的“着色”不会保留。</li>
+        <li>纯色图层也会以纯色图层的形式保留（保留颜色值、蒙版、混合模式、不透明度和剪贴）。</li>
         <li>描边会作为已栅格化到像素上的图层写入。文字图层会变成普通图层。</li>
         <li>仅有描边、投影、外发光的基底图层，以及被剪贴的图层，会分别写入。另外会在上方添加只烘焙了效果的“（图层名称）（效果）”图层。存在填充不透明度、内侧效果等时，会合并为 1 个图层。</li>
         <li><span class="tier pro">Pro</span> 绘制目标、法线贴图、主颜色 2nd／3rd 的文件夹，会作为隐藏的组写入。用 PetaNuri3D 导入时会恢复原样。</li>
@@ -279,6 +280,7 @@
         <li>把 PSD 拖放到窗口中，也会同样导入。拖放到纹理集所在行，则导入到该纹理集（<a href="/petanuri/zh/manual/sets#files">添加图像或 PSD</a>）。</li>
         <li>大小不同时，会按纹理集的分辨率缩放。文件夹、蒙版和支持的调整图层保持不变。</li>
         <li>不支持的混合模式会改为“正常”，不支持的调整图层会被跳过，并在右下角显示提示。</li>
+        <li>纯色图层会按纯色图层读取。形状（带矢量蒙版）、文字、渐变、图案以及带图层效果的纯色图层，会读取为图像图层。</li>
         <li>撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）一次即可还原。</li>
         <li>新建时，也可以把起始内容设为“PSD”来导入（<a href="/petanuri/zh/manual/start#new">打开 3D 模型</a>）。</li>
       </ul>

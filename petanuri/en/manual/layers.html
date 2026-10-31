@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/layers",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -223,7 +223,7 @@
       <p>The blend mode is how a layer mixes with the picture below it. "Multiply" is commonly used for shadows, and "Screen" or "Add (glow)" for light.</p>
       <ol class="mn-steps">
         <li>Select the layer you'll draw shadows or light on.</li>
-        <li>Choose a blend mode in the blend mode field at the top of the panel.</li>
+        <li>Choose a blend mode in the blend mode field at the top of the panel. You can also hover over the field and turn the wheel to switch to the previous or next blend mode (consecutive turns are undone with one <kbd>Ctrl</kbd>＋<kbd>Z</kbd>).</li>
         <li>Adjust the strength with Opacity.</li>
       </ol>
       <h3 id="blend-list">List of blend modes</h3>
@@ -468,6 +468,7 @@
         <li>With clipping on, it applies only to the layer just below it.</li>
         <li>"Merge with layer below" bakes the correction into the pixels of the layer below.</li>
         <li>In a PSD, Curves, Color Balance, Vibrance, Exposure and Gradation map are exported and imported as adjustment layers.</li>
+        <li>"Solid color" in the Adjust button's list creates a layer of one color. You can change the color in Layer properties. In a PSD, it is also read and written as a solid color layer.</li>
         <li>In Lite, you can see the values of adjustment layers in project files you open, but you can't change them (a lock icon appears).</li>
       </ul>
       <div class="mn-tip">Features that read the surrounding picture, such as Blur, Sharpen and Mosaic, don't become adjustment layers (they would be too heavy). Apply them as <a href="#filter">filters</a>.</div>

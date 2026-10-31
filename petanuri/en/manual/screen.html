@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/screen",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -420,10 +420,10 @@
         <li>Alpha cutout also changes only how it looks, and the exported images do not change. It is kept in the project file and can be undone. You cannot click cut-out areas in 3D, so paint them in the UV pane.</li>
       </ul>
       <h3 id="light-dot">Show textures as pixels</h3>
-      <p>Shows the texture in 3D without interpolation, as one square per pixel. It is meant for low-resolution textures such as 32 or 64 px, and for pixel art.</p>
+      <p>Shows the texture in 3D without interpolation, as one square per pixel. Areas that look fine when zoomed out are still interpolated.</p>
       <ul class="mn-list">
         <li>Switch it for each texture set, using ⋯ on the set's row or right-click → "Show as pixels (no interpolation)". A set that has it on shows a square badge on its row (click the badge to turn it off).</li>
-        <li>Sets of 256 px or less have it on from the start (automatic). Sets you switched yourself are kept in the project file, and "Reset pixel display to automatic" returns them.</li>
+        <li>Every set has it on from the start. Sets you switched yourself are kept in the project file. This only affects the display; your painting and exports do not change.</li>
         <li>Display → Shading → "Show all sets' textures as pixels (no interpolation)" switches all the sets at once.</li>
         <li>The UV pane always shows pixels when you zoom in.</li>
       </ul>

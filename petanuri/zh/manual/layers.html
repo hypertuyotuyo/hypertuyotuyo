@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/layers",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -222,7 +222,7 @@
       <p>混合模式决定图层与下方画面的混合方式。阴影常用“正片叠底”，光常用“滤色”或“相加（发光）”。</p>
       <ol class="mn-steps">
         <li>选中要绘制阴影或光的图层。</li>
-        <li>在面板上方的混合模式栏中选择混合模式。</li>
+        <li>在面板上方的混合模式栏中选择混合模式。也可以将光标移到该栏并转动滚轮，切换到上一个或下一个混合模式（连续转动的操作按 1 次 <kbd>Ctrl</kbd>＋<kbd>Z</kbd> 即可恢复）。</li>
         <li>用不透明度调整浓淡。</li>
       </ol>
       <h3 id="blend-list">混合模式一览</h3>
@@ -467,6 +467,7 @@
         <li>开启剪贴后，只对紧邻的下方图层生效。</li>
         <li>用“与下方图层合并”，可以把调整烘焙进下方图层的像素。</li>
         <li>在 PSD 中，色调曲线、色彩平衡、自然饱和度、曝光度、渐变映射会以调整图层的形式导出、导入。</li>
+        <li>用“调整”按钮列表中的“纯色”可以创建单色图层。颜色可以在图层属性中更改。在 PSD 中也按纯色图层读写。</li>
         <li>在 Lite 中，已打开的工程文件里的调整图层，数值可以看到，但不能更改（带小锁标记）。</li>
       </ul>
       <div class="mn-tip">模糊、锐化、马赛克等需要读取周围画面的效果，不能做成调整图层（会变得很卡）。请用<a href="#filter">滤镜</a>来应用。</div>

@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/export",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -262,6 +262,7 @@
       <ul class="mn-list">
         <li>Layers, visibility, opacity, blend modes, clipping, Lock transparency, folders, layer masks and color tags (layer colors) are kept.</li>
         <li>Adjustment layers go in as adjustment layers (a Gradation map keeps its color stops). The "Colorize" option of Hue/Saturation/Lightness is not included.</li>
+        <li>Solid color layers also go in as solid color layers (the color value, mask, blend mode, opacity, and clipping are kept).</li>
         <li>Stroke is written as a layer baked into pixels. Text layers become ordinary layers.</li>
         <li>A base layer that has only Stroke, Drop shadow or Outer glow, and clipped layers, are written separately as they are. A layer named "(layer name)<span lang="ja">（効果）</span>" (the Japanese word for "effects") is added above, with only the effects baked in. When there is a fill opacity, an inner effect or the like, everything is merged into one layer.</li>
         <li><span class="tier pro">Pro</span> The folders for paint targets, Normal map and Main color 2nd/3rd are written as hidden groups. They are restored when you import into PetaNuri3D.</li>
@@ -278,6 +279,7 @@
         <li>You can also drop a PSD onto the window. If you drop it on a texture set row, it goes into that set (<a href="/petanuri/en/manual/sets#files">Add images or PSDs</a>).</li>
         <li>If the size is different, it is scaled to the set's resolution. Folders, masks and supported adjustment layers stay as they are.</li>
         <li>Blend modes that do not match become "Normal", unsupported adjustment layers are skipped, and a notice appears at the bottom right.</li>
+        <li>Solid color layers are read as solid color layers. Shapes (with a vector mask), text, gradients, patterns, and solid color layers with layer effects are read as image layers.</li>
         <li>One Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>) brings it back.</li>
         <li>When you create a new project, you can also set the starting point (Base) to "PSD" and import it (<a href="/petanuri/en/manual/start#new">Open a 3D model</a>).</li>
       </ul>

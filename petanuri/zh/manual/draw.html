@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/draw",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -369,6 +369,7 @@
         <li>在 3D 视图中右键 →“吸取此处颜色”也可以取色。</li>
         <li>调大“取样范围”，会取周围颜色的平均值。</li>
         <li>使用吸管时，光标处会出现圆形放大镜。中间的框是取色的位置，外圈是取到的颜色。可以用工具属性的“显示放大镜”关闭。</li>
+        <li>相机操作为 Alt＋鼠标按钮和 Unity 方式时，在 3D 上按 <kbd>Alt</kbd> 不会显示放大镜（用 <kbd>I</kbd> 键吸管时会显示，在 UV 区域按 <kbd>Alt</kbd> 也会显示）。</li>
       </ul>
       <h3 id="screen-pick">从屏幕任意位置取色</h3>
       <ol class="mn-steps">
@@ -486,7 +487,7 @@
       <ul class="mn-list">
         <li>作用的强弱由“强度”决定（相当于其他画笔的不透明度）。</li>
         <li>颜料量是前景色的比例。为 0 时，只会融合已涂好的颜色。调高颜色延伸，会把拾取的颜色带得更远。</li>
-        <li>“越叠越融合”（初始为开启）：同一位置描的次数越多，融合得越深。即使在一条线里不停地涂擦，也设有上限，不会把线稿也融没。关闭后，在一条线内叠加也不会变强。</li>
+        <li>“越叠越融合”（初始为开启）：同一位置描的次数越多，融合得越深。不抬笔持续涂擦时也会一直起作用（一条线内移动的量超过上限后，强度减半）。关闭后，在一条线内叠加也不会变强。</li>
         <li>模糊的“3D 绘画方式”为“沿表面绘画”时，模糊作用的范围与钢笔的形状相同。</li>
         <li>模糊、涂抹、混色也可以在工具属性中选择笔尖。</li>
         <li>模糊、涂抹也可用于 UV 视图。混色仅限 3D 视图。</li>

@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/screen",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-10-31",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -419,10 +419,10 @@
         <li>Alpha 镂空也只影响外观，导出的图像不会改变。它会保存在工程文件中，也可以撤销。被镂空的地方在 3D 中无法点击，请在 UV 区域中绘制。</li>
       </ul>
       <h3 id="light-dot">按像素显示纹理</h3>
-      <p>在 3D 中不对纹理插值，而是按 1 个像素一个方块显示。适用于 32、64px 等低分辨率纹理和像素画。</p>
+      <p>在 3D 中不对纹理插值，而是按 1 个像素一个方块显示。缩小后看起来很细的部分仍会插值。</p>
       <ul class="mn-list">
         <li>按纹理集分别切换：在纹理集行的 ⋯ 或右键 →“按像素显示（不插值）”。已开启的纹理集，该行会出现方块标记（点击可关闭）。</li>
-        <li>256px 以下的纹理集一开始就是开启的（自动）。自己切换过的纹理集会保存在工程文件中，可以用“像素显示恢复为自动”恢复。</li>
+        <li>所有纹理集一开始都是开启的。自己切换过的纹理集会保存在工程文件中。只影响显示，已绘制的内容和导出结果不变。</li>
         <li>通过 显示 → 显示方式 →“所有纹理集按像素显示（不插值）”，可以一次切换所有纹理集。</li>
         <li>UV 区域在放大时始终按像素显示。</li>
       </ul>
