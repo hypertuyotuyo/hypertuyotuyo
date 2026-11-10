@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/draw",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-31",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -192,7 +192,7 @@
         <tr><td>缝线</td><td>—</td><td>绘制针脚、褶皱</td><td>缝线（虚线）、滚边、铆钉等 9 种（<a href="/petanuri/zh/manual/deco#bump">缝线</a>）</td></tr>
         <tr><td>混色</td><td>J</td><td>模糊、涂抹、混合</td><td>模糊、涂抹、混色（各 3 种，以及内置的 3 种）（<a href="#blend">混色</a>）</td></tr>
         <tr><td>液化</td><td>—</td><td>扭曲已绘制的内容</td><td>推动、膨胀、收缩、漩涡（右）、漩涡（左）、撤销（<a href="#distort">液化</a>）</td></tr>
-        <tr><td>填充</td><td>G</td><td>整块填充 UV 岛、封闭区域等</td><td>填充 UV 岛、整个材质、填充封闭区域、套索填充、多边形填充（<a href="#fill">填充</a>）</td></tr>
+        <tr><td>填充</td><td>G</td><td>整块填充 UV 岛、封闭区域等</td><td>填充 UV 岛、填充相连的部件、整个材质、填充封闭区域、套索填充、多边形填充（<a href="#fill">填充</a>）</td></tr>
         <tr><td>渐变</td><td>—</td><td>让颜色渐变过渡地上色</td><td>颜色和不透明度、前景色→背景色、前景色→透明、圆形（前景色→透明）（<a href="#gradient">渐变</a>）</td></tr>
         <tr><td>图形</td><td>—</td><td>绘制直线、矩形、圆、曲线</td><td>直线、矩形、矩形（描边）、椭圆、椭圆（描边）、多边形、多边形（描边）、曲线、曲线（连接点）（<a href="#shape">图形</a>）</td></tr>
         <tr><td>吸管</td><td>I</td><td>取色</td><td>获取显示颜色、从图层获取（<a href="#eyedropper">吸管</a>）</td></tr>
@@ -366,6 +366,7 @@
       <ul class="mn-list">
         <li>用吸管（<kbd>I</kbd>）取点击处的颜色。辅助工具有“获取显示颜色”（看到的颜色）和“从图层获取”（所选图层的颜色）。</li>
         <li>按住 <kbd>Alt</kbd> 期间，任何工具都会变成吸管。相机操作为“Alt＋鼠标按钮”方式时，在 3D 视图中请使用 <kbd>I</kbd>。</li>
+        <li>编辑蒙版时（绘制目标为蒙版），吸管和放大镜会在彩色显示下直接吸取蒙版的黑白值（<kbd>Alt</kbd>、<kbd>I</kbd>、UV 区域、弹出调色板均如此）。选中调整图层和纯色图层期间，吸取看到的颜色（以黑白显示蒙版期间，吸取蒙版的值）。</li>
         <li>在 3D 视图中右键 →“吸取此处颜色”也可以取色。</li>
         <li>调大“取样范围”，会取周围颜色的平均值。</li>
         <li>使用吸管时，光标处会出现圆形放大镜。中间的框是取色的位置，外圈是取到的颜色。可以用工具属性的“显示放大镜”关闭。</li>
@@ -451,13 +452,13 @@
         <tr><td>模糊、涂抹</td><td>○</td><td>○</td></tr>
         <tr><td>混色</td><td>○</td><td>―（UV 视图中无法使用的工具）</td></tr>
         <tr><td>液化</td><td>○</td><td>○</td></tr>
-        <tr><td>填充（填充 UV 岛、整个材质）、填充封闭区域</td><td>○</td><td>○</td></tr>
+        <tr><td>填充（填充 UV 岛、填充相连的部件、整个材质）、填充封闭区域</td><td>○</td><td>○</td></tr>
         <tr><td>多边形填充</td><td>○</td><td>○</td></tr>
         <tr><td>图形</td><td>○</td><td>○</td></tr>
         <tr><td>渐变</td><td>△</td><td>△</td></tr>
         <tr><td>文字、贴图像</td><td>○</td><td>○（确认时也会写入镜像侧）</td></tr>
         <tr><td>选区笔、选区橡皮擦、按面选择</td><td>○</td><td>○</td></tr>
-        <tr><td>选区（矩形、椭圆、套索、折线、自动选择、按 UV 岛选择）</td><td>×</td><td>×（通过圈出范围来选择的工具）</td></tr>
+        <tr><td>选区（矩形、椭圆、套索、折线、自动选择、按 UV 岛选择）、套索填充</td><td>○</td><td>○</td></tr>
         <tr><td>移动·变形</td><td>―</td><td>×（移动已有图像的操作）</td></tr>
         <tr><td>吸管、放置尺子</td><td>―</td><td>―（沿尺子绘制的线支持对称）</td></tr>
         <tr><td>隐藏笔</td><td>×</td><td>×（隐藏显示的工具）</td></tr>
@@ -518,12 +519,13 @@
       <p>用填充（<kbd>G</kbd>）一次涂满 UV 岛或线条围住的区域等。把用于上色的图层建在线稿图层下方，线条就能干净地保留下来。</p>
       <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">辅助工具</th><th scope="col">涂的位置</th></tr></thead><tbody>
         <tr><td>填充 UV 岛</td><td>点击处的整个 UV 岛</td></tr>
+        <tr><td>填充相连的部件</td><td>与点击处通过顶点相连的 UV 岛一起填充。UV 分开的金属配件、纽扣等也能一次填充</td></tr>
         <tr><td>整个材质</td><td>点击处的整个材质</td></tr>
         <tr><td>填充封闭区域</td><td>线条围住的区域。该 UV 岛内颜色相近且相连的部分（<a href="#fill-region">详细说明</a>）</td></tr>
         <tr><td>套索填充</td><td>拖动圈出的区域（<a href="#fill-lasso">详细说明</a>）</td></tr>
         <tr><td>多边形填充</td><td>描过的整个面（<a href="#fill-poly">详细说明</a>）</td></tr>
       </tbody></table></div>
-      <p>填充 UV 岛、整个材质可以更改“抗锯齿（UV 岛边缘）”和不透明度。</p>
+      <p>填充 UV 岛、填充相连的部件、整个材质可以更改“抗锯齿（UV 岛边缘）”和不透明度。开启“3D 中也绘制到岛外的填充区”后，在 3D 视图中填充时，也会向 UV 岛外扩展填充宽度（与钢笔、毛笔、橡皮擦共用此设置）。</p>
       <h3 id="fill-region">填充线条围住的区域</h3>
       <ol class="mn-steps">
         <li>在线稿图层下方新建用于上色的图层并选中。</li>
@@ -542,6 +544,7 @@
       <h3 id="fill-lasso">用套索圈住后填色</h3>
       <p>在 3D 视图、UV 视图、2D 画布上拖动圈出范围，圈出的位置会用前景色填充。当前选区保持不变，撤销一次即可撤销。</p>
       <p>在 3D 视图中圈住其他纹理集时，会先切换到圈出范围内出现最多的纹理集，再上色。</p>
+      <p>开启对称绘制时，镜像一侧也会一起填充。只想填一侧时，请关闭对称。</p>
       <h3 id="fill-poly">按面填色（多边形填充）</h3>
       <p>把描过的整个面用前景色填充。拾取范围是笔尖圆圈的大小。关闭“按四边形填充（2 个三角形视为 1 个面）”后，按三角形分别填充。</p>
       <p>显示 3D 视图左上角的“网格线”后，就能看到面的划分（<a href="/petanuri/zh/manual/uv#wire">网格线</a>）。</p>

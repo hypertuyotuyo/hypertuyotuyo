@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/start",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -285,6 +285,8 @@
         <tr><td>新模型中没有的材质</td><td>该纹理集不会被删除，而是带着 <strong>!</strong> 标记保留。点击它，可以把图层移到其他纹理集（<a href="/petanuri/zh/manual/sets#orphan">无对应材质的纹理集</a>）</td></tr>
       </tbody></table></div>
       <div class="mn-tip warn">重新加载后可以按一次 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销（前提是手头还有之前模型的内容）。但重新加载之前的操作历史会被清除。</div>
+      <div class="mn-tip">形状和 UV 都改变了的面，在对齐绘画时会从之前模型中相近的面取得绘画内容。因为是从不同形状移过来的，细节部分请重新绘制。</div>
+      <div class="mn-tip">想保留当前模型、加入另一个 FBX 一起绘制时，使用文件 →“添加模型”。添加的模型的材质会成为新的纹理集（同名时改为“名称 (文件名)”），并保存在工程文件中。添加的模型按 FBX 中的位置放置，无法移动。不能添加到正在与 Blender、Unity 联动的模型。要移除时，使用文件 →“移除添加的模型”（该纹理集会带 <strong>!</strong> 标记保留）。</div>
     </section>
 
     <section class="mn-sec" id="editions" data-keywords="免费版 付费版 试用版 版本区别 对比 功能限制 锁定 价格 购买 Standard Pro Lite">

@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/layers",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-31",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -171,6 +171,8 @@
       <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">To do this</th><th scope="col">How</th><th scope="col">Key</th></tr></thead><tbody>
         <tr><td>Add a layer</td><td>"Add"; Layer → "New layer"</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td></tr>
         <tr><td>Duplicate a layer</td><td>"Duplicate"; Layer → "Duplicate layer"</td><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td></tr>
+        <tr><td>Copy to another texture set</td><td>Right-click → "Copy", switch texture sets and "Paste"; Layer → "Copy layer" / "Paste layer". Adjustment layer settings, folder contents, masks and strokes are copied too. In a set with a different resolution, it is fitted to that set's size</td><td><kbd>Ctrl</kbd>+<kbd>C</kbd>, <kbd>Ctrl</kbd>+<kbd>V</kbd> (after selecting layers in the panel)</td></tr>
+        <tr><td>Show only one layer (solo view)</td><td><kbd>Alt</kbd>+click the thumbnail or the eye icon. Do it again to go back. It only affects what you see on screen; exports and the Blender/Unity link get the picture with all layers combined</td><td>—</td></tr>
         <tr><td>Delete a layer entirely</td><td>"Delete"; Layer → "Delete layer"</td><td>—</td></tr>
         <tr><td>Erase only the drawing inside</td><td>Layer → "Clear layer" (inside the selection, if there is one)</td><td><kbd>Delete</kbd></td></tr>
         <tr><td>Change the stacking order</td><td>Drag a row; "Move up one", "Move down one" (Layer → Stacking order)</td><td>—</td></tr>
@@ -201,7 +203,7 @@
         <li><kbd>Ctrl</kbd>+click names to add or remove layers one at a time, and <kbd>Shift</kbd>+click to select everything in between (<kbd>Ctrl</kbd>+click on a thumbnail makes a selection, which is a different thing).</li>
         <li>While several are selected, visibility, blend mode, opacity, clipping, lock transparency, lock, color tag, delete, duplicate, put in folder (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>) and merge apply to all of them at once. Undo is a single step.</li>
         <li>Drag any one of the selected layers and all of them move together, keeping their order. Release in the middle of a folder row and they all go into the folder.</li>
-        <li>"Move up one" and "Move down one" work on one layer at a time. Copy and cut also work on only the one active layer.</li>
+        <li>"Move up one" and "Move down one" work on one layer at a time. Copying and cutting the picture in a selection also work on only the one active layer. Copying whole layers (Layer → "Copy layer") copies all the selected layers. With two or more layers selected, <kbd>Ctrl</kbd>+<kbd>X</kbd> cuts the selected layers whole (not when a locked layer is included).</li>
       </ul>
       <h3 id="pick">Select with keys or from 3D</h3>
       <ul class="mn-list">
@@ -438,6 +440,7 @@
         <li>"Copy stroke" and "Paste stroke": Copy the stroke to other layers. If you've selected several layers, it's pasted onto all of them.</li>
         <li>"Clear stroke": Removes the stroke.</li>
         <li>"Bake stroke into pixels": Makes the picture include the stroke and removes the stroke itself (for a folder, the folder is merged into one layer together with its stroke).</li>
+        <li>"Export stroke to a layer": Creates a new layer containing only the stroke and turns the original stroke off while keeping its settings. You can erase parts of it with the Eraser (where sleeves overlap, for example). It inherits the original layer's blend mode and visibility, so the look does not change. The width and color of the exported line can't be changed afterwards.</li>
       </ul>
       <h3 id="stroke-detail">Resulting shape and saving</h3>
       <ul class="mn-list">
@@ -469,6 +472,7 @@
         <li>"Merge with layer below" bakes the correction into the pixels of the layer below.</li>
         <li>In a PSD, Curves, Color Balance, Vibrance, Exposure and Gradation map are exported and imported as adjustment layers.</li>
         <li>"Solid color" in the Adjust button's list creates a layer of one color. You can change the color in Layer properties. In a PSD, it is also read and written as a solid color layer.</li>
+        <li>For a solid color layer, "Change to foreground color" in the right-click menu sets its color to the current foreground color. With the eyedropper button next to the color in Layer properties, you can pick a color from anywhere on the screen (the foreground color does not change). You can also create one with Layer → "New solid color layer".</li>
         <li>In Lite, you can see the values of adjustment layers in project files you open, but you can't change them (a lock icon appears).</li>
       </ul>
       <div class="mn-tip">Features that read the surrounding picture, such as Blur, Sharpen and Mosaic, don't become adjustment layers (they would be too heavy). Apply them as <a href="#filter">filters</a>.</div>
@@ -527,6 +531,7 @@
       <h3 id="filter-alpha">Island edges and transparent areas</h3>
       <ul class="mn-list">
         <li>Blur and sharpen are calculated only inside UV islands, so island edges don't get darker or fainter. To blur across seams, use the Blend tool (<a href="/petanuri/en/manual/draw#blend">Blur, Smudge and Blend</a>).</li>
+        <li>Filters also apply to anything painted outside the islands (in the padding), regardless of the padding width. Unpainted areas stay transparent. Blur at island edges also mixes in colors painted in the padding.</li>
         <li>Mosaic also averages opacity for each cell, and Sharpen also sharpens opacity. Reduce Noise (Median) also removes dots on top of transparent areas.</li>
         <li>Extract Lines, Emboss and High Pass read brightness by treating transparent areas as white paper. The lines from Extract Lines and the result of High Pass also appear on areas that were transparent.</li>
         <li>On a layer with lock transparency, opacity stays as it was.</li>
@@ -599,7 +604,7 @@
         <li>Choose the line art layer in "Line art".</li>
         <li>Click "Create hint layer". A new layer for hints is selected.</li>
         <li>On the hint layer, roughly place the colors you want in each area.</li>
-        <li>Click "Run". An "Auto fill" layer is created right below the line art (it paints under the lines too).</li>
+        <li>Click "Fill regions". An "Auto fill" layer is created right below the line art (it paints under the lines too).</li>
       </ol>
       <figure class="mn-fig"><img src="/petanuri/assets/img/m-autofill.webp" width="654" height="900" alt="The Auto fill window and areas colored from the hints" loading="lazy"><figcaption>Auto fill</figcaption></figure>
       <h3 id="autofill-options">Window options</h3>
@@ -610,7 +615,7 @@
         <tr><td>Close gaps</td><td>Plugs breaks in the lines</td></tr>
         <tr><td>Also fill areas without hints with the nearest color</td><td>Fills areas where you haven't placed a hint too</td></tr>
         <tr><td>Fill across UV seams</td><td>Even if the front and back of the body are separate islands, one hint fills them continuously (on by default)</td></tr>
-        <tr><td>Hide the hint layer after filling</td><td>Hides the hint layer after Run (<kbd>Ctrl</kbd>+<kbd>Z</kbd> brings it back)</td></tr>
+        <tr><td>Hide the hint layer after filling</td><td>Hides the hint layer after filling (<kbd>Ctrl</kbd>+<kbd>Z</kbd> brings it back)</td></tr>
       </tbody></table></div>
       <p>You can move the window by dragging its heading (it remembers the position). Close it with ×, "Close", or <kbd>Esc</kbd> after clicking the window.</p>
       <h3 id="autofill-trouble">If it doesn't work</h3>

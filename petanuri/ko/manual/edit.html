@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/ko/manual/edit",
    "inLanguage": "ko",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -172,6 +172,7 @@
         <li>3D 뷰에서는 보이는 면만 선택합니다. 도구 속성에서 "뒷면·가려진 면도 선택"을 켜면, 화면에서 겹치는 부분을 뒷면까지 모두 선택합니다. <strong>몸을 한 바퀴 빙 둘러</strong> 선택해서 옷의 줄무늬를 칠할 때 편리합니다.</li>
         <li>자동 선택은 도구 속성에서 "참조"(모든 레이어 / 선택한 레이어)·"허용 오차"·"안티에일리어싱 (가장자리를 1px 부드럽게)"을 정합니다.</li>
         <li>면으로 선택은 "인식 범위"와 "사각형 단위로 선택 (삼각형 2개를 1면으로)"을 정합니다.</li>
+        <li>그리기의 대칭이 켜져 있으면 사각형·타원·올가미·꺾은선·자동 선택·아일랜드로 선택에서도 반대쪽을 함께 선택합니다(추가·빼기도). 숨겨 둔 반대쪽은 선택하지 않습니다. 2D 캔버스에서는 캔버스 가운데에서 뒤집어 선택합니다(<a href="/petanuri/ko/manual/draw#mirror">좌우 대칭으로 그리기</a>).</li>
       </ul>
       <h3 id="select-add">선택 범위에 더하기·빼기</h3>
       <p>도구 속성의 "선택 방식"에서 새로·추가·삭제·교차 중에서 고릅니다. 누르기 시작할 때 키를 누르고 있으면 그 1회만 바꿀 수 있습니다.</p>
@@ -344,7 +345,8 @@
         <tr><td>선택 범위 → "선택 범위를 복사하여 새 레이어로", "선택 범위를 잘라내어 새 레이어로"</td><td>—</td><td>틀을 표시하지 않고 바로 같은 위치의 새 레이어에 넣습니다</td></tr>
       </tbody></table></div>
       <ul class="mn-list">
-        <li>레이어를 여러 장 선택하고 있어도 대상은 선택 중인 1장뿐입니다.</li>
+        <li>레이어를 여러 장 선택하고 있어도 그림의 복사·잘라내기 대상은 선택 중인 1장뿐입니다.</li>
+        <li>레이어 패널에서 레이어를 선택한 뒤의 <kbd>Ctrl</kbd>+<kbd>C</kbd>·<kbd>Ctrl</kbd>+<kbd>V</kbd>는 레이어를 통째로 복사·붙여넣기합니다. 2장 이상 선택했을 때의 <kbd>Ctrl</kbd>+<kbd>X</kbd>는 선택한 레이어를 통째로 잘라냅니다. 3D 위를 누른 뒤나 선택 범위가 있을 때는 그림을 복사·붙여넣기합니다(<a href="/petanuri/ko/manual/layers#basic-ops">레이어 조작</a>).</li>
         <li>다른 앱에서 복사한 이미지를 <kbd>Ctrl</kbd>+<kbd>V</kbd>로 붙여넣으면 틀을 맞춰 붙일 수 있습니다(<a href="#image">이미지 추가</a>).</li>
       </ul>
       <h3 id="copy-trouble">잘 안 될 때</h3>

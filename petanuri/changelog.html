@@ -87,7 +87,8 @@
     <p class="pn-history-lead">新しくできること、描き味や操作の改善、直した不具合をまとめています。</p>
     <p class="pn-history-note">BOOTH から更新するときは、ダウンロードするファイル名が v1.3.1 になっていることを確認してください。</p>
     <p class="pn-history-note">いただいた要望の対応状況は、<a class="pn-textlink" href="/petanuri/requests">要望と対応状況</a>のページにまとめています。</p>
-    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-3-1">v1.3.1 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="バージョンへ移動"><a href="#v1-3-2">v1.3.2 <span>v1.3.2 公開準備中</span></a>
+      <a href="#v1-3-1">v1.3.1 <span>最新</span></a>
       <a href="#v1-3-0">v1.3.0 <span>配布済み</span></a>
       <a href="#v1-2-1">v1.2.1 <span>配布済み</span></a>
       <a href="#v1-2-0">v1.2.0 <span>配布済み</span></a>
@@ -100,7 +101,74 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-31">2026-10-31</time></p></div><p class="pn-release-title">ぼかしの不具合の修正、Photoshop のべた塗りレイヤー、合成モードのホイール切り替え</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-2" aria-labelledby="v1-3-2-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-2-title">v1.3.2</h2><span class="pn-release-status upcoming">v1.3.2 公開準備中</span><p>公開日未定</p></div><p class="pn-release-title">モデルを追加、右クリックへのツールの割り当て、レイヤーの丸ごとコピー</p></header>
+<p class="pn-release-tip">このページの v1.3.2 の内容は公開前の案内です。現在の配布版は v1.3.1 です。</p>
+<p class="pn-release-summary">FBX を後から足して一緒に塗る「モデルを追加」を中心にした更新です。右クリックへのツールの割り当てや、レイヤーを丸ごとコピーなど、小さな要望も入っています。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v132-update"><h4 id="v132-update">更新のしかた</h4>
+<ul>
+<li>v1.3.0 からは、アプリの中で自動で更新できます</li>
+<li>v1.2.1 以前からは、手で更新してください<span class="pn-release-sub">作業を保存してアプリを閉じ、ZIP を展開して、中の setup.exe をダブルクリックします</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v132-new"><h3 class="pn-release-part-title" id="v132-new">新機能</h3>
+<section class="pn-release-group" aria-labelledby="v132-model"><h4 id="v132-model">モデル・塗る</h4>
+<ul>
+<li>FBX を後から足して、一緒に塗れるように（ファイル →「モデルを追加」）<span class="pn-release-sub">今のモデルと描いた物はそのまま、別の 3D モデルを足せます。足したモデルのマテリアルは新しいテクスチャセットになります（同じ名前は「名前 (ファイル名)」にします）。足したモデルは作業ファイルに入り、開き直しても絵ごと残ります。元に戻せます。「足したモデルを外す」で外すと、そのセットは ! の印で残ります。足したモデルは FBX の位置のまま置かれ、動かせません。Blender・Unity とつないでいるモデルには足せません</span></li>
+<li>選択範囲にも対称が効くように<span class="pn-release-sub">長方形・楕円・投げ縄・折れ線・自動選択・島の選択で、対称で描くが入っていれば相手の側も選びます（隠している相手の側は選びません）。塗りつぶしの「投げ縄で塗る」も、対称で描くが入っていれば鏡の側も一緒に塗るようになりました（前は片側だけ。片側だけ塗りたいときは対称を切ってください）</span></li>
+<li>メッシュが繋がったパーツを 1 回で塗れるように（塗りつぶし →「メッシュが繋がったパーツを塗る」）<span class="pn-release-sub">UV が分かれていても、頂点でつながる島をまとめて塗ります</span></li>
+<li>3D で塗りつぶしたときも、パディングまで広げられるように<span class="pn-release-sub">塗りつぶしのツールプロパティの「3D でも島の外へパディングまで塗る」で。ペン・筆・消しゴムと共通の設定で、幅も同じ値です</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-layer"><h4 id="v132-layer">レイヤー</h4>
+<ul>
+<li>レイヤーを丸ごとコピーして、ほかのテクスチャセットに貼り付けられるように<span class="pn-release-sub">調整レイヤーの値、フォルダの中身、マスク、境界線ごと写します。レイヤーの右クリックの「コピー」「貼り付け」、レイヤーのメニュー、レイヤーを選んだ後の Ctrl+C・Ctrl+V で使えます（2 枚以上を選んでいるときは Ctrl+X で丸ごと切り取り）。これまでは調整レイヤーやフォルダをコピーすると、真っ白なレイヤーが貼られていました</span></li>
+<li>境界線の一部を消せるように <span class="tier std">Standard</span><span class="pn-release-sub">右クリック → 境界線 →「境界線をレイヤーに書き出す」で線だけのレイヤーにすると、消しゴムで消せます</span></li>
+<li>ふつうのレイヤーを単独表示できるように<span class="pn-release-sub">サムネイルか目を Alt＋クリック。もう一度で戻ります</span></li>
+<li>べた塗りレイヤーの色を描画色に変えられるように <span class="tier std">Standard</span><span class="pn-release-sub">「描画色に変える」と右クリックから。レイヤーのメニューに「新規べた塗りレイヤー」も足しました</span></li>
+<li>べた塗りレイヤーの色をスポイトで取れるように <span class="tier std">Standard</span><span class="pn-release-sub">レイヤープロパティの「べた塗り」の色の横のスポイトのボタンで、画面のどこからでも取った色がべた塗りの色になります（描画色は変わりません）。色の欄を押して出る窓の中のスポイトは、アプリでは開いてすぐに取り消されて使えなかったので、こちらを使ってください</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-ui"><h4 id="v132-ui">操作・表示・書き出し</h4>
+<ul>
+<li>マウスの右クリックにツールを割り当てられるように<span class="pn-release-sub">環境設定 → 操作 → マウスの「右クリック」で、メニュー・ポップアップパレットのほかに、スポイト（その場の色を取る）と、ペン・筆・消しゴム・色混ぜ・塗りつぶしへの切り替えを選べます。割り当てていても、Shift＋右クリックでメニューを出せます。右ドラッグの回転・移動は変わりません</span></li>
+<li>R を押している間のドラッグで画面を回せるように<span class="pn-release-sub">3D の区画と UV の区画で使えます。ツールは変わりません。キーは割り当てを変えられます</span></li>
+<li>参考画像を 3D の区画に半透明で重ねられるように<span class="pn-release-sub">参考画像のパネルの「3D に重ねる」で、濃さ・大きさ・位置を変えられます。塗る操作はそのまま下のモデルに届きます</span></li>
+<li>選んだレイヤーの PNG を、背景を白で埋めて書き出せるように<span class="pn-release-sub">書き出しの窓の「背景を白で埋める（不透明で書き出す）」で。白黒のマスクの画像として渡すときに使います</span></li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v132-changed"><h3 class="pn-release-part-title" id="v132-changed">変更点</h3>
+<section class="pn-release-group" aria-labelledby="v132-behavior"><h4 id="v132-behavior">描き方・フィルター・モデル</h4>
+<ul>
+<li>マスクの編集中のスポイトで、マスクの白黒の値を取るように<span class="pn-release-sub">Alt・I のスポイト、UV の区画、拡大鏡、ポップアップパレットのどれでも、カラー表示のまま、マスクの値を取ります。調整レイヤーとべた塗りレイヤーを選んでいる間は、今までどおり見えている色を取ります（マスクを白黒で表示している間は、マスクの値）</span></li>
+<li>形も UV も変わったモデルを読み直しても、絵を近い面から移すように<span class="pn-release-sub">これまで移せなかった形の変わった面は、前のモデルの近い面から絵を取ります。別の形から移すので、細かい所は描き直してください</span></li>
+<li>パディングに描いた所にも、ぼかし・ノイズなどのフィルターが掛かるように<span class="pn-release-sub">島の外に描いてある所には、パディングの幅によらず掛かります。描いていない所は透明のままです。島の縁のぼかしは、パディングに描いてある色も混ぜるようになったので、前の版と少し変わります</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-screen"><h4 id="v132-screen">画面の使いやすさ</h4>
+<ul>
+<li>F10 でメニューを開けるように。起動画面で Tab を押すと「新規作成」から順に選べます</li>
+<li>PNG・PSD の書き出しに、キーを割り当てられるように（環境設定 → キー割り当て。はじめは空です）</li>
+<li>うまくいかなかったときの知らせを、分かりやすい文に。下の知らせは、マウスを載せると全文が出ます</li>
+<li>元に戻せない操作の確かめは、ボタンを赤くして、する事の名前にしました（解像度を変える・上書きする）</li>
+<li>選択範囲を広げる・狭める・境界をぼかすで、使えない数を入れたときに知らせるように</li>
+<li>自動塗りのボタンを「実行」から「塗り分ける」に。線画とヒントが同じレイヤーのときは、わけを出します</li>
+<li>ダークで選んでいるツールが見えにくい・色の値の欄の末尾が切れる、などの見た目を直しました</li>
+<li>3D ビューの上の ▼ と「よく使う」の × を押しやすく。「線だけ」のアイコンを「メッシュの線」と別の絵に</li>
+<li>Windows の「アニメーション効果」を切っていると、窓や知らせの動きも止まります</li>
+<li>Lite のヘルプに「BOOTH で Standard・Pro を見る」を足しました。鍵の付いた項目に、何の機能かの説明も出ます</li>
+<li>英語・韓国語の表示の直し（英語で対称の X・Y・Z が隠れていた、訳されていない文、言い回しのゆれ）</li>
+<li>画面の文（知らせ・メニュー・説明・エラー）のうち、言葉が足りない・読みにくい所を約 190 か所直しました</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v132-fix"><h3 class="pn-release-part-title" id="v132-fix">不具合修正</h3>
+<section class="pn-release-group" aria-labelledby="v132-fixes"><h4 id="v132-fixes">表示・ファイル・描く</h4>
+<ul>
+<li>Lite で光の向きを変えられなかった<span class="pn-release-sub">3D の左上の ▼ →「光の向き」で、球・つまみが効かず、「カメラについてくる」のチェックも外せませんでした</span></li>
+<li>名前に「'」の入ったフォルダの作業ファイルをダブルクリックで開くと、書き出し先のフォルダを選べなかった（「ブラウザでは…」と出た）</li>
+<li>カットアウト・半透明で表示しているセットの透明な所に、3D で描けなかった<span class="pn-release-sub">「描き始めた所のセットへ自動で移る」を切っているときは、選んでいるセットの透明な所にも描けます（塗りつぶしも同じ）。入れているときは、今までどおり見えている物へ移ります</span></li>
+<li>テクスチャセットの「サブ」の行で、右端の「…」が行の外へ少し出ていた</li>
+<li>ポーズのパネルで、ウェイトの無いボーンが一覧に出ないことがあった <span class="tier pro">Pro</span><span class="pn-release-sub">スキンに入っていないボーンと、ボーンの間の Null も一覧に出て、動かせます</span></li>
+<li>UV の区画で対称で描くとき、島の縁をなぞると反対側が点々になった<span class="pn-release-sub">筆の中心が島の外に出ても、筆の中に島があれば反対側にも描きます（ポーズ中も）。ぼかし・指先・画像のスタンプ・ゆがみも同じです。継ぎ目の外をなぞっても反対側の正しい島に描き、塗る範囲が「パディング」「全体」のときは島から離れた所も反対側に写します</span></li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-31">2026-10-31</time></p></div><p class="pn-release-title">ぼかしの不具合の修正、Photoshop のべた塗りレイヤー、合成モードのホイール切り替え</p></header>
 <p class="pn-release-summary">ぼかしの不具合の修正を中心にした更新です。Photoshop のべた塗りレイヤーへの対応と、合成モードの切り替えの追加も入っています。とくに書いていない物は全版（Lite・Standard・Pro）で使えます。</p>
 <section class="pn-release-group pn-release-notice" aria-labelledby="v131-update"><h4 id="v131-update">更新のしかた</h4>
 <ul>

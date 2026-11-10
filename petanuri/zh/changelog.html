@@ -87,7 +87,8 @@
     <p class="pn-history-lead">汇总新增功能、绘制手感与操作改进，以及已修复的问题。</p>
     <p class="pn-history-note">从 BOOTH 更新时，请确认下载文件名包含 v1.3.1。</p>
     <p class="pn-history-note">收到的需求的处理状况汇总在<a class="pn-textlink" href="/petanuri/zh/requests">需求与处理状况</a>页面中。</p>
-    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-3-1">v1.3.1 <span>最新</span></a>
+    <nav class="pn-history-jump" aria-label="跳转到版本"><a href="#v1-3-2">v1.3.2 <span>v1.3.2 准备发布中</span></a>
+      <a href="#v1-3-1">v1.3.1 <span>最新</span></a>
       <a href="#v1-3-0">v1.3.0 <span>已发布</span></a>
       <a href="#v1-2-1">v1.2.1 <span>已发布</span></a>
       <a href="#v1-2-0">v1.2.0 <span>已发布</span></a>
@@ -100,7 +101,74 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-31">2026-10-31</time></p></div><p class="pn-release-title">修复模糊问题、支持 Photoshop 纯色图层、用滚轮切换混合模式</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-2" aria-labelledby="v1-3-2-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-2-title">v1.3.2</h2><span class="pn-release-status upcoming">v1.3.2 准备发布中</span><p>发布日期未定</p></div><p class="pn-release-title">添加模型、为右键分配工具、整体复制图层</p></header>
+<p class="pn-release-tip">本页中 v1.3.2 的内容是发布前的预告。当前发布版本为 v1.3.1。</p>
+<p class="pn-release-summary">本次更新以“添加模型”为主，可以之后再加入 FBX 并一起绘制。还加入了为右键分配工具、整体复制图层等较小的需求。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v132-update"><h4 id="v132-update">更新方法</h4>
+<ul>
+<li>从 v1.3.0 起，可以在应用内自动更新</li>
+<li>从 v1.2.1 或更早版本更新时，请手动更新<span class="pn-release-sub">保存工作并关闭应用，解压 ZIP，然后双击其中的 setup.exe</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v132-new"><h3 class="pn-release-part-title" id="v132-new">新功能</h3>
+<section class="pn-release-group" aria-labelledby="v132-model"><h4 id="v132-model">模型与绘制</h4>
+<ul>
+<li>现在可以之后再加入 FBX 并一起绘制（文件 →“添加模型”）<span class="pn-release-sub">可以在保留当前模型和已绘制内容的同时，加入另一个 3D 模型。添加的模型的材质会成为新的纹理集（同名时改为“名称 (文件名)”）。添加的模型会保存在工程文件中，重新打开后连同绘画内容一起保留。可以撤销。用“移除添加的模型”移除后，该纹理集会带 ! 标记保留。添加的模型按 FBX 中的位置放置，无法移动。不能添加到正在与 Blender、Unity 联动的模型</span></li>
+<li>选区现在也支持对称<span class="pn-release-sub">使用矩形、椭圆、套索、折线、自动选择、按 UV 岛选择时，如果开启了对称绘制，也会选中另一侧（隐藏的另一侧不会选中）。填充的“套索填充”在开启对称绘制时，现在也会同时填充镜像一侧（以前只填一侧。只想填一侧时请关闭对称）</span></li>
+<li>现在可以一次填充网格相连的部件（填充 →“填充相连的部件”）<span class="pn-release-sub">即使 UV 是分开的，也会一起填充通过顶点相连的 UV 岛</span></li>
+<li>在 3D 中填充时，现在也可以扩展到填充区<span class="pn-release-sub">使用填充工具属性中的“3D 中也绘制到岛外的填充区”。与钢笔、毛笔、橡皮擦共用此设置，宽度也是同一个值</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-layer"><h4 id="v132-layer">图层</h4>
+<ul>
+<li>现在可以整体复制图层并粘贴到其他纹理集<span class="pn-release-sub">会连同调整图层的数值、文件夹内容、蒙版、描边一起复制。可以使用图层右键菜单的“复制”“粘贴”、图层菜单，或选中图层后按 Ctrl+C、Ctrl+V（选中 2 个以上时，按 Ctrl+X 整体剪切）。以前复制调整图层或文件夹时，粘贴出来的是纯白图层</span></li>
+<li>现在可以擦除描边的一部分 <span class="tier std">Standard</span><span class="pn-release-sub">右键 → 描边 →“将描边导出到图层”生成只含线条的图层后，就可以用橡皮擦擦除</span></li>
+<li>现在可以单独显示普通图层<span class="pn-release-sub">Alt+点击缩略图或眼睛图标。再点一次即可恢复</span></li>
+<li>现在可以把纯色图层的颜色改为前景色 <span class="tier std">Standard</span><span class="pn-release-sub">可从“改为前景色”和右键菜单操作。图层菜单中也新增了“新建纯色图层”</span></li>
+<li>现在可以用吸管吸取纯色图层的颜色 <span class="tier std">Standard</span><span class="pn-release-sub">用图层属性中“纯色”颜色旁边的吸管按钮，从屏幕任意位置吸取的颜色会成为纯色图层的颜色（前景色不变）。点击颜色栏后出现的窗口中的吸管，在应用中一打开就会被取消而无法使用，请改用这个按钮</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-ui"><h4 id="v132-ui">操作、显示与导出</h4>
+<ul>
+<li>现在可以为鼠标右键分配工具<span class="pn-release-sub">在偏好设置 → 操作 → 鼠标的“右键”中，除菜单、弹出调色板外，还可以选择吸管（吸取该处颜色），以及切换到钢笔、毛笔、橡皮擦、混色、填充。即使分配了工具，也可以用 Shift+右键打开菜单。右键拖动的旋转、平移不变</span></li>
+<li>现在按住 R 拖动即可旋转画面<span class="pn-release-sub">可在 3D 区域和 UV 区域中使用。工具不变。可以更改按键分配</span></li>
+<li>现在可以把参考图半透明地叠加到 3D 区域<span class="pn-release-sub">用参考图面板中的“叠加到 3D”，可以更改浓度、大小和位置。绘制操作会直接作用到下方的模型</span></li>
+<li>现在导出所选图层的 PNG 时，可以用白色填充背景<span class="pn-release-sub">使用导出窗口中的“用白色填充背景（以不透明导出）”。在作为黑白蒙版图像交付时使用</span></li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v132-changed"><h3 class="pn-release-part-title" id="v132-changed">变更</h3>
+<section class="pn-release-group" aria-labelledby="v132-behavior"><h4 id="v132-behavior">绘制、滤镜与模型</h4>
+<ul>
+<li>编辑蒙版时，吸管现在会吸取蒙版的黑白值<span class="pn-release-sub">无论是 Alt、I 吸管，UV 区域，放大镜，还是弹出调色板，都会在彩色显示下吸取蒙版的值。选中调整图层和纯色图层期间，仍和以前一样吸取看到的颜色（以黑白显示蒙版期间，吸取蒙版的值）</span></li>
+<li>重新加载形状和 UV 都改变了的模型时，现在会从相近的面移植绘画内容<span class="pn-release-sub">以前无法移植的形状改变的面，现在会从之前模型中相近的面取得绘画内容。因为是从不同形状移过来的，细节部分请重新绘制</span></li>
+<li>模糊、杂色等滤镜现在也会应用到填充区中画过的地方<span class="pn-release-sub">无论填充区宽度多少，UV 岛外画过的地方都会应用。没画过的地方保持透明。UV 岛边缘的模糊现在也会混入填充区中画过的颜色，因此与之前版本略有不同</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-screen"><h4 id="v132-screen">界面易用性</h4>
+<ul>
+<li>现在可以用 F10 打开菜单。在启动画面按 Tab，可从“新建”开始依次选择</li>
+<li>现在可以为 PNG、PSD 导出分配按键（偏好设置 → 键位设置。初始为空）</li>
+<li>操作失败时的提示改为更易懂的文字。将鼠标移到下方的提示上，会显示全文</li>
+<li>无法撤销的操作的确认，按钮改为红色，并以要执行的操作命名（更改分辨率、覆盖）</li>
+<li>扩展选区、收缩选区、羽化边缘时，输入无法使用的数值会给出提示</li>
+<li>自动上色的按钮由“执行”改为“分区上色”。线稿和提示在同一图层时，会显示原因</li>
+<li>修正了深色模式下所选工具不易看清、颜色数值栏末尾被截断等显示问题</li>
+<li>3D 视图上方的 ▼ 和“常用”的 × 更容易点击。“仅线框”的图标改为与“网格线”不同的图案</li>
+<li>关闭 Windows 的“动画效果”后，窗口和提示的动画也会停止</li>
+<li>在 Lite 的帮助中新增了“在 BOOTH 查看 Standard、Pro”。带锁的项目也会显示该功能的说明</li>
+<li>修正英语、韩语的显示（英语中对称的 X、Y、Z 被遮住、未翻译的文字、用词不统一）</li>
+<li>修改了界面文字（提示、菜单、说明、错误）中约 190 处用词不足或难以阅读的地方</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v132-fix"><h3 class="pn-release-part-title" id="v132-fix">问题修复</h3>
+<section class="pn-release-group" aria-labelledby="v132-fixes"><h4 id="v132-fixes">显示、文件与绘制</h4>
+<ul>
+<li>在 Lite 中无法更改光照方向<span class="pn-release-sub">在 3D 左上角的 ▼ →“光照方向”中，球体和滑块不起作用，“跟随相机”也无法取消勾选</span></li>
+<li>双击打开名称中含有撇号（&#x27;）的文件夹中的工程文件时，无法选择导出文件夹（显示“在浏览器中…”）</li>
+<li>无法在 3D 中绘制以镂空、半透明显示的纹理集的透明部分<span class="pn-release-sub">关闭“自动切换到开始绘制处的纹理集”时，也可以在所选纹理集的透明部分绘制（填充也一样）。开启时，仍和以前一样切换到看得见的对象</span></li>
+<li>在纹理集的“副”行中，右端的“…”稍微超出了行外</li>
+<li>在姿势面板中，没有权重的骨骼有时不会出现在列表中 <span class="tier pro">Pro</span><span class="pn-release-sub">未包含在蒙皮中的骨骼和骨骼之间的 Null 也会出现在列表中，并且可以移动</span></li>
+<li>在 UV 区域对称绘制时，沿 UV 岛边缘描画，另一侧会变成断断续续的点<span class="pn-release-sub">即使笔刷中心超出 UV 岛，只要笔刷内有 UV 岛，也会在另一侧绘制（摆姿势时也一样）。模糊、涂抹、图像图章、液化也相同。沿接缝外侧描画时，也会画到另一侧正确的 UV 岛上；绘制范围为“填充区”“全部”时，离开 UV 岛的地方也会复制到另一侧</span></li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status released">最新</span><p><time datetime="2026-10-31">2026-10-31</time></p></div><p class="pn-release-title">修复模糊问题、支持 Photoshop 纯色图层、用滚轮切换混合模式</p></header>
 <p class="pn-release-summary">本次更新以修复模糊问题为主，还加入了对 Photoshop 纯色图层的支持，并新增了切换混合模式的方式。未特别注明的功能在所有版本（Lite、Standard、Pro）中均可使用。</p>
 <section class="pn-release-group pn-release-notice" aria-labelledby="v131-update"><h4 id="v131-update">更新方法</h4>
 <ul>

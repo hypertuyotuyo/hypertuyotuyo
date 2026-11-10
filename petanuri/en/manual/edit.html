@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/edit",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -172,6 +172,7 @@
         <li>In the 3D view, only visible faces are selected. Turn on "Also select back and hidden faces" in tool properties to select everything that overlaps the shape on screen, including the back. This is handy when you select <strong>all the way around the body</strong> to paint clothing stripes.</li>
         <li>For Auto select, set "Reference" (All layers / Selected layer), "Tolerance" and "Anti-aliasing (smooth edges by 1px)" in tool properties.</li>
         <li>For Select by face, set "Pick radius" and "Select by quads (treat 2 triangles as 1 face)".</li>
+        <li>If symmetry is on for painting, Rectangle, Ellipse, Lasso, Polyline, Auto select and Select by island also select the opposite side (when adding and subtracting too). Hidden opposite sides are not selected. On the 2D canvas, the selection is mirrored at the center of the canvas (<a href="/petanuri/en/manual/draw#mirror">Paint symmetrically</a>).</li>
       </ul>
       <h3 id="select-add">Add to or subtract from a selection</h3>
       <p>In tool properties, choose New, Add, Subtract or Intersect under "Selection mode". If you hold a key before you start dragging, the mode changes for that one stroke only.</p>
@@ -344,7 +345,8 @@
         <tr><td>Selection → "Copy selection to new layer" / "Cut selection to new layer"</td><td>—</td><td>Puts the artwork into a new layer at the same position immediately, without showing a frame</td></tr>
       </tbody></table></div>
       <ul class="mn-list">
-        <li>Even when several layers are selected, only one selected layer is affected.</li>
+        <li>Even when several layers are selected, copying and cutting the picture affect only the one active layer.</li>
+        <li>After you select layers in the Layers panel, <kbd>Ctrl</kbd>+<kbd>C</kbd> and <kbd>Ctrl</kbd>+<kbd>V</kbd> copy and paste whole layers. With two or more layers selected, <kbd>Ctrl</kbd>+<kbd>X</kbd> cuts the selected layers whole. After you click on the 3D view, or while there is a selection, they copy and paste the picture (<a href="/petanuri/en/manual/layers#basic-ops">Layer operations</a>).</li>
         <li>If you press <kbd>Ctrl</kbd>+<kbd>V</kbd> on an image copied in another app, you can paste it and line up its frame (<a href="#image">Add image</a>).</li>
       </ul>
       <h3 id="copy-trouble">If it doesn't work</h3>

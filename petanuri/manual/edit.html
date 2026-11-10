@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/manual/edit",
    "inLanguage": "ja",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -171,6 +171,7 @@
         <li>3D ビューでは、見えている面だけを選びます。ツールプロパティの「裏側・隠れた面も選ぶ」を入れると、画面の形に重なる所を裏まで全部選びます。<strong>体をぐるっと一周</strong>選んで、服のしましまを塗るときにべんりです。</li>
         <li>自動選択は、ツールプロパティで「参照」（すべてのレイヤー／選択中のレイヤー）・「許容差」・「アンチエイリアス（縁を 1px なだらかに）」を決めます。</li>
         <li>面で選択は、「拾う範囲」と「四角形ごとに選ぶ（三角形 2 つを 1 面に）」を決めます。</li>
+        <li>描画の対称が入っていれば、長方形・楕円・投げ縄・折れ線・自動選択・島で選択でも、反対側を一緒に選びます（足す・削るも）。隠している反対側は選びません。2D キャンバスでは、キャンバスの真ん中で折り返します（<a href="/petanuri/manual/draw#mirror">左右対称で描く</a>）。</li>
       </ul>
       <h3 id="select-add">選択範囲に足す・削る</h3>
       <p>ツールプロパティの「選び方」で、新規・追加・削除・共通を選びます。押し始めにキーを押しておくと、その 1 回だけ変えられます。</p>
@@ -344,7 +345,8 @@
         <tr><td>選択範囲 →「選択範囲をコピーして新しいレイヤー」「選択範囲を切り取って新しいレイヤー」</td><td>—</td><td>枠を出さずに、すぐ同じ位置の新しいレイヤーに入れます</td></tr>
       </tbody></table></div>
       <ul class="mn-list">
-        <li>レイヤーを何枚か選んでいるときも、対象は選択中の 1 枚だけです。</li>
+        <li>レイヤーを何枚か選んでいるときも、絵のコピー・切り取りの対象は選択中の 1 枚だけです。</li>
+        <li>レイヤーのパネルでレイヤーを選んだ後の <kbd>Ctrl</kbd>＋<kbd>C</kbd>・<kbd>Ctrl</kbd>＋<kbd>V</kbd> は、レイヤーを丸ごとコピー・貼り付けします。2 枚以上を選んでいるときの <kbd>Ctrl</kbd>＋<kbd>X</kbd> は、選んだレイヤーを丸ごと切り取ります。3D の上を押した後や、選択範囲があるときは、絵のコピー・貼り付けです（<a href="/petanuri/manual/layers#basic-ops">レイヤーの操作</a>）。</li>
         <li>ほかのアプリでコピーした画像を <kbd>Ctrl</kbd>＋<kbd>V</kbd> すると、枠を合わせて貼れます（<a href="#image">画像を追加</a>）。</li>
       </ul>
       <h3 id="copy-trouble">うまくいかないとき</h3>

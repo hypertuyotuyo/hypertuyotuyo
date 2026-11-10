@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/start",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -285,6 +285,8 @@
         <tr><td>A material is missing from the new model</td><td>That set isn't deleted; it stays with a <strong>!</strong> mark. Click it to move its layers to another set (<a href="/petanuri/en/manual/sets#orphan">Orphaned sets</a>)</td></tr>
       </tbody></table></div>
       <div class="mn-tip warn">You can undo a reload with one <kbd>Ctrl</kbd>+<kbd>Z</kbd> (when the previous model's contents are still available). However, the history of operations from before the reload is cleared.</div>
+      <div class="mn-tip">For faces whose shape and UVs both changed, fitting takes the painting from the nearest faces of the previous model. Because it comes from a different shape, please repaint the fine details.</div>
+      <div class="mn-tip">To add another FBX and paint it together while keeping the current model, use File → "Add model". The added model's materials become new texture sets (a duplicate name becomes "Name (file name)"), and the model is stored in the project file. The added model stays where it is in the FBX and can't be moved. You can't add to a model that is linked with Blender or Unity. To remove it, use File → "Remove added model" (its sets remain, marked with <strong>!</strong>).</div>
     </section>
 
     <section class="mn-sec" id="editions" data-keywords="free paid trial full version difference comparison limits locked price standard pro lite">

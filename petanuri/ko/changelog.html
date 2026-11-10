@@ -87,7 +87,8 @@
     <p class="pn-history-lead">새 기능, 그리기 느낌과 조작 개선, 수정한 버그를 정리했습니다.</p>
     <p class="pn-history-note">BOOTH에서 업데이트할 때 다운로드 파일 이름에 v1.3.1이 표시되어 있는지 확인해 주세요.</p>
     <p class="pn-history-note">받은 요청의 대응 현황은 <a class="pn-textlink" href="/petanuri/ko/requests">요청과 대응 현황</a> 페이지에 정리했습니다.</p>
-    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-3-1">v1.3.1 <span>최신</span></a>
+    <nav class="pn-history-jump" aria-label="버전으로 이동"><a href="#v1-3-2">v1.3.2 <span>v1.3.2 공개 준비 중</span></a>
+      <a href="#v1-3-1">v1.3.1 <span>최신</span></a>
       <a href="#v1-3-0">v1.3.0 <span>배포 완료</span></a>
       <a href="#v1-2-1">v1.2.1 <span>배포 완료</span></a>
       <a href="#v1-2-0">v1.2.0 <span>배포 완료</span></a>
@@ -100,7 +101,74 @@
     </nav>
   </header>
 
-  <article class="pn-release" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-31">2026-10-31</time></p></div><p class="pn-release-title">흐리기 버그 수정, Photoshop 단색 레이어, 휠로 합성 모드 전환</p></header>
+  <article class="pn-release pn-release-upcoming" id="v1-3-2" aria-labelledby="v1-3-2-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-2-title">v1.3.2</h2><span class="pn-release-status upcoming">v1.3.2 공개 준비 중</span><p>공개일 미정</p></div><p class="pn-release-title">모델 추가, 오른쪽 클릭에 도구 할당, 레이어 통째로 복사</p></header>
+<p class="pn-release-tip">이 페이지의 v1.3.2 내용은 공개 전 안내입니다. 현재 배포 버전은 v1.3.1입니다.</p>
+<p class="pn-release-summary">FBX를 나중에 추가해 함께 칠하는 &quot;모델 추가&quot;를 중심으로 한 업데이트입니다. 오른쪽 클릭에 도구 할당, 레이어 통째로 복사 등 작은 요청도 들어 있습니다. 특별히 적지 않은 것은 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
+<section class="pn-release-group pn-release-notice" aria-labelledby="v132-update"><h4 id="v132-update">업데이트 방법</h4>
+<ul>
+<li>v1.3.0에서는 앱 안에서 자동으로 업데이트할 수 있습니다</li>
+<li>v1.2.1 이전 버전에서는 직접 업데이트해 주세요<span class="pn-release-sub">작업을 저장하고 앱을 닫은 뒤, ZIP을 풀고 안에 있는 setup.exe를 더블 클릭합니다</span></li>
+</ul></section>
+<section class="pn-release-part" aria-labelledby="v132-new"><h3 class="pn-release-part-title" id="v132-new">새 기능</h3>
+<section class="pn-release-group" aria-labelledby="v132-model"><h4 id="v132-model">모델·칠하기</h4>
+<ul>
+<li>FBX를 나중에 추가해 함께 칠할 수 있도록(파일 → &quot;모델 추가&quot;)<span class="pn-release-sub">지금 모델과 그린 것은 그대로 두고 다른 3D 모델을 추가할 수 있습니다. 추가한 모델의 머티리얼은 새 텍스처 세트가 됩니다(같은 이름은 &quot;이름 (파일 이름)&quot;으로 합니다). 추가한 모델은 작업 파일에 들어가며, 다시 열어도 그림째로 남습니다. 실행 취소할 수 있습니다. &quot;추가한 모델 제거&quot;로 제거하면 그 세트는 ! 표시로 남습니다. 추가한 모델은 FBX의 위치 그대로 놓이며 움직일 수 없습니다. Blender·Unity와 연동 중인 모델에는 추가할 수 없습니다</span></li>
+<li>선택 범위에도 대칭이 적용되도록<span class="pn-release-sub">사각형·타원·올가미·꺾은선·자동 선택·아일랜드 선택에서 대칭 그리기가 켜져 있으면 반대쪽도 선택합니다(숨겨 둔 반대쪽은 선택하지 않습니다). 채우기의 &quot;올가미로 칠하기&quot;도 대칭 그리기가 켜져 있으면 거울 쪽도 함께 칠하게 되었습니다(이전에는 한쪽만. 한쪽만 칠하고 싶을 때는 대칭을 꺼 주세요)</span></li>
+<li>메시가 이어진 파츠를 한 번에 칠할 수 있도록(채우기 → &quot;이어진 파츠 칠하기&quot;)<span class="pn-release-sub">UV가 나뉘어 있어도 정점으로 이어진 아일랜드를 한꺼번에 칠합니다</span></li>
+<li>3D에서 채우기를 할 때도 패딩까지 넓힐 수 있도록<span class="pn-release-sub">채우기 도구 속성의 &quot;3D에서도 섬 바깥 패딩까지 칠하기&quot;로 합니다. 펜·붓·지우개와 공통 설정이며, 폭도 같은 값입니다</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-layer"><h4 id="v132-layer">레이어</h4>
+<ul>
+<li>레이어를 통째로 복사해 다른 텍스처 세트에 붙여넣을 수 있도록<span class="pn-release-sub">조정 레이어의 값, 폴더의 내용, 마스크, 테두리까지 통째로 옮깁니다. 레이어 우클릭의 &quot;복사&quot;·&quot;붙여넣기&quot;, 레이어 메뉴, 레이어를 선택한 뒤의 Ctrl+C·Ctrl+V로 사용할 수 있습니다(2장 이상 선택했을 때는 Ctrl+X로 통째로 잘라내기). 지금까지는 조정 레이어나 폴더를 복사하면 새하얀 레이어가 붙여졌습니다</span></li>
+<li>테두리의 일부를 지울 수 있도록 <span class="tier std">Standard</span><span class="pn-release-sub">우클릭 → 테두리 → &quot;테두리를 레이어로 내보내기&quot;로 선만 있는 레이어로 만들면 지우개로 지울 수 있습니다</span></li>
+<li>일반 레이어를 단독 표시할 수 있도록<span class="pn-release-sub">썸네일이나 눈 아이콘을 Alt+클릭. 한 번 더 하면 돌아옵니다</span></li>
+<li>단색 레이어의 색을 전경색으로 바꿀 수 있도록 <span class="tier std">Standard</span><span class="pn-release-sub">&quot;전경색으로 바꾸기&quot;와 우클릭에서 합니다. 레이어 메뉴에 &quot;새 단색 레이어&quot;도 추가했습니다</span></li>
+<li>단색 레이어의 색을 스포이트로 가져올 수 있도록 <span class="tier std">Standard</span><span class="pn-release-sub">레이어 속성의 &quot;단색&quot; 색 옆에 있는 스포이트 버튼으로, 화면 어디서든 가져온 색이 단색 레이어의 색이 됩니다(전경색은 바뀌지 않습니다). 색 칸을 누르면 나오는 창 안의 스포이트는 앱에서는 열자마자 취소되어 쓸 수 없었으므로, 이쪽을 사용해 주세요</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-ui"><h4 id="v132-ui">조작·표시·내보내기</h4>
+<ul>
+<li>마우스 오른쪽 클릭에 도구를 할당할 수 있도록<span class="pn-release-sub">환경 설정 → 조작 → 마우스의 &quot;오른쪽 클릭&quot;에서 메뉴·팝업 팔레트 외에 스포이트(그 자리의 색 가져오기)와 펜·붓·지우개·색 혼합·채우기로의 전환을 선택할 수 있습니다. 할당해 두어도 Shift+오른쪽 클릭으로 메뉴를 열 수 있습니다. 오른쪽 드래그의 회전·이동은 바뀌지 않습니다</span></li>
+<li>R을 누르고 있는 동안 드래그해 화면을 돌릴 수 있도록<span class="pn-release-sub">3D 영역과 UV 영역에서 사용할 수 있습니다. 도구는 바뀌지 않습니다. 키는 할당을 바꿀 수 있습니다</span></li>
+<li>참고 이미지를 3D 영역에 반투명하게 겹칠 수 있도록<span class="pn-release-sub">참고 이미지 패널의 &quot;3D에 겹치기&quot;로 진하기·크기·위치를 바꿀 수 있습니다. 칠하는 조작은 그대로 아래의 모델에 전달됩니다</span></li>
+<li>선택한 레이어의 PNG를 배경을 흰색으로 채워 내보낼 수 있도록<span class="pn-release-sub">내보내기 창의 &quot;배경을 흰색으로 채우기 (불투명으로 내보내기)&quot;로 합니다. 흑백 마스크 이미지로 넘길 때 사용합니다</span></li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v132-changed"><h3 class="pn-release-part-title" id="v132-changed">변경 사항</h3>
+<section class="pn-release-group" aria-labelledby="v132-behavior"><h4 id="v132-behavior">그리기·필터·모델</h4>
+<ul>
+<li>마스크를 편집하는 중에는 스포이트로 마스크의 흑백 값을 가져오도록<span class="pn-release-sub">Alt·I 스포이트, UV 영역, 확대경, 팝업 팔레트 어디서나 컬러 표시 그대로 마스크 값을 가져옵니다. 조정 레이어와 단색 레이어를 선택하고 있는 동안은 지금까지처럼 보이는 색을 가져옵니다(마스크를 흑백으로 표시하는 동안은 마스크 값)</span></li>
+<li>모양과 UV가 모두 바뀐 모델을 다시 불러와도 가까운 면에서 그림을 옮기도록<span class="pn-release-sub">지금까지 옮기지 못했던 모양이 바뀐 면은 이전 모델의 가까운 면에서 그림을 가져옵니다. 다른 모양에서 옮기므로 세밀한 곳은 다시 그려 주세요</span></li>
+<li>패딩에 그린 곳에도 흐림·노이즈 등의 필터가 적용되도록<span class="pn-release-sub">아일랜드 바깥에 그려 둔 곳에는 패딩 폭과 관계없이 적용됩니다. 그리지 않은 곳은 투명한 그대로입니다. 아일랜드 가장자리의 흐림은 패딩에 그려 둔 색도 섞게 되었으므로 이전 버전과 조금 달라집니다</span></li>
+</ul></section>
+<section class="pn-release-group" aria-labelledby="v132-screen"><h4 id="v132-screen">화면 사용 편의성</h4>
+<ul>
+<li>F10으로 메뉴를 열 수 있도록. 시작 화면에서 Tab을 누르면 &quot;새로 만들기&quot;부터 차례로 선택할 수 있습니다</li>
+<li>PNG·PSD 내보내기에 키를 할당할 수 있도록(환경 설정 → 키 할당. 처음에는 비어 있습니다)</li>
+<li>잘 되지 않았을 때의 알림을 알기 쉬운 문장으로. 아래쪽 알림은 마우스를 올리면 전체 문장이 나옵니다</li>
+<li>실행 취소할 수 없는 조작의 확인은 버튼을 빨갛게 하고, 할 일의 이름으로 했습니다(해상도 변경·덮어쓰기)</li>
+<li>선택 범위 확장·축소·경계 흐리기에서 쓸 수 없는 수를 넣었을 때 알리도록</li>
+<li>자동 채색 버튼을 &quot;실행&quot;에서 &quot;영역별 채색&quot;으로. 선화와 힌트가 같은 레이어일 때는 이유를 표시합니다</li>
+<li>다크에서 선택한 도구가 잘 보이지 않는 문제, 색 값 칸의 끝이 잘리는 문제 등 겉모습을 고쳤습니다</li>
+<li>3D 뷰 위의 ▼와 &quot;즐겨찾기&quot;의 ×를 누르기 쉽게. &quot;선만&quot; 아이콘을 &quot;메시 선&quot;과 다른 그림으로</li>
+<li>Windows의 &quot;애니메이션 효과&quot;를 끄면 창과 알림의 움직임도 멈춥니다</li>
+<li>Lite의 도움말에 &quot;BOOTH에서 Standard·Pro 보기&quot;를 추가했습니다. 자물쇠가 붙은 항목에 어떤 기능인지 설명도 나옵니다</li>
+<li>영어·한국어 표시 수정(영어에서 대칭 X·Y·Z가 가려져 있던 문제, 번역되지 않은 문장, 표현의 불일치)</li>
+<li>화면의 문장(알림·메뉴·설명·오류) 중 말이 부족하거나 읽기 어려운 곳을 약 190곳 고쳤습니다</li>
+</ul></section>
+</section>
+<section class="pn-release-part" aria-labelledby="v132-fix"><h3 class="pn-release-part-title" id="v132-fix">버그 수정</h3>
+<section class="pn-release-group" aria-labelledby="v132-fixes"><h4 id="v132-fixes">표시·파일·그리기</h4>
+<ul>
+<li>Lite에서 빛의 방향을 바꿀 수 없었습니다<span class="pn-release-sub">3D 왼쪽 위의 ▼ → &quot;빛의 방향&quot;에서 구·슬라이더가 듣지 않았고, &quot;카메라 따라가기&quot; 체크도 해제할 수 없었습니다</span></li>
+<li>이름에 아포스트로피(&#x27;)가 들어간 폴더의 작업 파일을 더블 클릭으로 열면 내보낼 폴더를 선택할 수 없었습니다(&quot;브라우저에서는…&quot;이라고 표시됨)</li>
+<li>컷아웃·반투명으로 표시하는 세트의 투명한 곳에 3D에서 그릴 수 없었습니다<span class="pn-release-sub">&quot;그리기 시작한 곳의 세트로 자동 전환&quot;을 끈 경우에는 선택한 세트의 투명한 곳에도 그릴 수 있습니다(채우기도 같음). 켠 경우에는 지금까지처럼 보이는 것으로 전환합니다</span></li>
+<li>텍스처 세트의 &quot;서브&quot; 행에서 오른쪽 끝의 &quot;…&quot;가 행 밖으로 조금 나와 있었습니다</li>
+<li>포즈 패널에서 웨이트가 없는 본이 목록에 나오지 않는 경우가 있었습니다 <span class="tier pro">Pro</span><span class="pn-release-sub">스킨에 들어 있지 않은 본과 본 사이의 Null도 목록에 나오며 움직일 수 있습니다</span></li>
+<li>UV 영역에서 대칭으로 그릴 때 아일랜드 가장자리를 따라 그리면 반대쪽이 점점이 되었습니다<span class="pn-release-sub">붓의 중심이 아일랜드 밖으로 나가도 붓 안에 아일랜드가 있으면 반대쪽에도 그립니다(포즈 중에도). 흐리기·손가락·이미지 스탬프·픽셀 유동화도 같습니다. 이음매 밖을 따라 그려도 반대쪽의 올바른 아일랜드에 그리며, 칠하는 범위가 &quot;패딩&quot;·&quot;전체&quot;일 때는 아일랜드에서 떨어진 곳도 반대쪽에 옮깁니다</span></li>
+</ul></section>
+</section>
+</article>
+<article class="pn-release" id="v1-3-1" aria-labelledby="v1-3-1-title"><header class="pn-release-head"><div class="pn-release-meta"><h2 id="v1-3-1-title">v1.3.1</h2><span class="pn-release-status released">최신</span><p><time datetime="2026-10-31">2026-10-31</time></p></div><p class="pn-release-title">흐리기 버그 수정, Photoshop 단색 레이어, 휠로 합성 모드 전환</p></header>
 <p class="pn-release-summary">흐리기 버그 수정을 중심으로 한 업데이트입니다. Photoshop 단색 레이어 지원과 합성 모드 전환 추가도 들어 있습니다. 특별히 적지 않은 것은 모든 버전(Lite·Standard·Pro)에서 사용할 수 있습니다.</p>
 <section class="pn-release-group pn-release-notice" aria-labelledby="v131-update"><h4 id="v131-update">업데이트 방법</h4>
 <ul>

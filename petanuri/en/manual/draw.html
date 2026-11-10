@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/en/manual/draw",
    "inLanguage": "en",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-31",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -192,7 +192,7 @@
         <tr><td>Stitch</td><td>—</td><td>Draws seams and wrinkles</td><td>9 in all, including Stitches (dotted), Piping and Studs (rivets) (<a href="/petanuri/en/manual/deco#bump">Stitch</a>)</td></tr>
         <tr><td>Blend</td><td>J</td><td>Blurs, smears and mixes</td><td>Blur, Smudge and Blend (3 of each, plus 3 bundled ones) (<a href="#blend">Blend</a>)</td></tr>
         <tr><td>Liquify</td><td>—</td><td>Distorts what you drew</td><td>Push, Bloat, Pinch, Twirl (right), Twirl (left), Undo (<a href="#distort">Liquify</a>)</td></tr>
-        <tr><td>Fill</td><td>G</td><td>Fills islands, enclosed areas and so on in one go</td><td>Fill island, Whole material, Fill enclosed area, Lasso fill, Polygon fill (<a href="#fill">Fill</a>)</td></tr>
+        <tr><td>Fill</td><td>G</td><td>Fills islands, enclosed areas and so on in one go</td><td>Fill island, Fill connected part, Whole material, Fill enclosed area, Lasso fill, Polygon fill (<a href="#fill">Fill</a>)</td></tr>
         <tr><td>Gradient</td><td>—</td><td>Paints so that colors fade into each other</td><td>Color and opacity, Foreground → background, Foreground → transparent, Radial (foreground color to transparent) (<a href="#gradient">Gradient</a>)</td></tr>
         <tr><td>Shape</td><td>—</td><td>Draws lines, rectangles, circles and curves</td><td>Linear, Rectangle, Rectangle (outline), Ellipse, Ellipse (outline), Polygon, Polygon (outline), Curve, Curve (connect points) (<a href="#shape">Shape</a>)</td></tr>
         <tr><td>Eyedropper</td><td>I</td><td>Picks up a color</td><td>Sample displayed color, Sample from layer (<a href="#eyedropper">Eyedropper</a>)</td></tr>
@@ -366,6 +366,7 @@
       <ul class="mn-list">
         <li>The eyedropper (<kbd>I</kbd>) picks the color where you click. The sub tools are "Sample displayed color" (the color you see) and "Sample from layer" (the color of the selected layer).</li>
         <li>While you hold <kbd>Alt</kbd>, any tool acts as the eyedropper. If the camera controls are set to Alt + mouse buttons, use <kbd>I</kbd> in the 3D view.</li>
+        <li>While you are editing a mask (painting on the mask), the eyedropper and the magnifier pick the mask's black-and-white value even in color display (with <kbd>Alt</kbd>, <kbd>I</kbd>, in the UV pane and from the popup palette). While an adjustment layer or a solid color layer is selected, they pick the displayed color (the mask value while the mask is shown in black and white).</li>
         <li>You can also pick a color with right-click in the 3D view → "Pick color here".</li>
         <li>Raising "Sample area" takes the average of the surrounding colors.</li>
         <li>While the eyedropper is in use, a round magnifier appears at the cursor. The frame in the middle is where the color is taken from, and the outer ring is the color you get. You can turn it off with "Show magnifier" in Tool properties.</li>
@@ -451,13 +452,13 @@
         <tr><td>Blur, Smudge</td><td>○</td><td>○</td></tr>
         <tr><td>Blend</td><td>○</td><td>― (a tool you can't use in the UV view)</td></tr>
         <tr><td>Liquify</td><td>○</td><td>○</td></tr>
-        <tr><td>Fill (island, whole material), Fill enclosed area</td><td>○</td><td>○</td></tr>
+        <tr><td>Fill (island, connected part, whole material), Fill enclosed area</td><td>○</td><td>○</td></tr>
         <tr><td>Polygon fill</td><td>○</td><td>○</td></tr>
         <tr><td>Shape</td><td>○</td><td>○</td></tr>
         <tr><td>Gradient</td><td>△</td><td>△</td></tr>
         <tr><td>Text, Paste image</td><td>○</td><td>○ (also applied to the mirrored side when you confirm)</td></tr>
         <tr><td>Selection pen, Selection eraser, Select by face</td><td>○</td><td>○</td></tr>
-        <tr><td>Selection (Rectangle, Ellipse, Lasso, Polyline, Auto select, Select by island)</td><td>×</td><td>× (tools that define an area by enclosing it)</td></tr>
+        <tr><td>Selection (Rectangle, Ellipse, Lasso, Polyline, Auto select, Select by island), Lasso fill</td><td>○</td><td>○</td></tr>
         <tr><td>Move/transform</td><td>―</td><td>× (an operation that moves existing artwork)</td></tr>
         <tr><td>Eyedropper, placing a ruler</td><td>―</td><td>― (lines drawn along a ruler are symmetric)</td></tr>
         <tr><td>Hide pen</td><td>×</td><td>× (a tool that hides parts of the display)</td></tr>
@@ -518,12 +519,13 @@
       <p>Fill (<kbd>G</kbd>) fills a UV island, an area enclosed by lines and so on in one go. If you create the layer to fill below the line layer, the lines stay clean.</p>
       <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th scope="col">Sub tool</th><th scope="col">What it fills</th></tr></thead><tbody>
         <tr><td>Fill island</td><td>The whole UV island you click</td></tr>
+        <tr><td>Fill connected part</td><td>All islands joined by vertices to the place you click. Parts whose UVs are split, such as metal fittings and buttons, are filled in one click</td></tr>
         <tr><td>Whole material</td><td>The whole material you click</td></tr>
         <tr><td>Fill enclosed area</td><td>An area enclosed by lines: the connected area of similar color within that island (<a href="#fill-region">Details</a>)</td></tr>
         <tr><td>Lasso fill</td><td>The area you enclose by dragging (<a href="#fill-lasso">Details</a>)</td></tr>
         <tr><td>Polygon fill</td><td>The whole face you trace (<a href="#fill-poly">Details</a>)</td></tr>
       </tbody></table></div>
-      <p>With Fill island and Whole material, you can change "Anti-aliasing (island edges)" and the opacity.</p>
+      <p>With Fill island, Fill connected part and Whole material, you can change "Anti-aliasing (island edges)" and the opacity. Turn on "Paint into padding outside islands in 3D too" to extend fills in the 3D view outside the island by the padding width as well (this setting is shared with the Pen, Brush and Eraser).</p>
       <h3 id="fill-region">Fill an area enclosed by lines</h3>
       <ol class="mn-steps">
         <li>Create a layer to fill below the line art layer and select it.</li>
@@ -542,6 +544,7 @@
       <h3 id="fill-lasso">Fill an area with the lasso</h3>
       <p>Drag to enclose an area in the 3D view, UV view or 2D canvas, and the enclosed area is filled with the foreground color. The current selection is kept as it is, and one Undo reverts the fill.</p>
       <p>If you enclose an area on a different texture set in the 3D view, it switches to the set that appears most in the enclosed area and then fills.</p>
+      <p>If symmetric painting is on, the mirrored side is filled too. To fill only one side, turn symmetry off.</p>
       <h3 id="fill-poly">Fill face by face (Polygon fill)</h3>
       <p>This fills the whole face you trace with the foreground color. The pick radius is the size of the circle at the pen tip. If you turn off "Fill per quad (2 triangles as 1 face)", it fills triangle by triangle.</p>
       <p>If you turn on "Mesh wireframe" at the top left of the 3D view, you can see the face boundaries (<a href="/petanuri/en/manual/uv#wire">Mesh wireframe</a>).</p>

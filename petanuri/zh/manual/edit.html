@@ -70,7 +70,7 @@
    "url": "https://hyper-tuyotuyo.com/petanuri/zh/manual/edit",
    "inLanguage": "zh-Hans",
    "image": "https://hyper-tuyotuyo.com/petanuri/assets/img/og.jpg",
-   "dateModified": "2026-10-30",
+   "dateModified": "2026-11-11",
    "about": {
     "@id": "https://hyper-tuyotuyo.com/petanuri#app",
     "@type": "SoftwareApplication",
@@ -172,6 +172,7 @@
         <li>在 3D 视图中，只选择可见的面。勾选工具属性中的“也选择背面和被遮挡的面”，就会把与画面形状重叠的部分连背面一起全部选中。需要<strong>绕身体选一整圈</strong>、绘制服装条纹时，这样很方便。</li>
         <li>自动选择要在工具属性中设定“参考”（所有图层／所选图层）、“容差”和“抗锯齿（边缘平滑 1px）”。</li>
         <li>按面选择要设定“拾取范围”和“按四边形选择（将 2 个三角形视为 1 个面）”。</li>
+        <li>开启绘制对称时，矩形、椭圆、套索、折线、自动选择、按 UV 岛选择也会同时选中另一侧（添加、减去也一样）。隐藏的另一侧不会被选中。在 2D 画布中，以画布中央为轴翻转选择（<a href="/petanuri/zh/manual/draw#mirror">左右对称绘制</a>）。</li>
       </ul>
       <h3 id="select-add">添加到选区、从选区减去</h3>
       <p>在工具属性的“选择方式”中，选择新建、添加、删除或交叉。开始按下时先按住按键，则只对这一次生效。</p>
@@ -344,7 +345,8 @@
         <tr><td>选区 →“将选区复制为新图层”“将选区剪切为新图层”</td><td>—</td><td>不显示边框，立即放入相同位置的新图层</td></tr>
       </tbody></table></div>
       <ul class="mn-list">
-        <li>即使选中了多个图层，对象也只是所选的那 1 个图层。</li>
+        <li>即使选中了多个图层，复制、剪切画面的对象也只是所选的那 1 个图层。</li>
+        <li>在图层面板中选中图层后，<kbd>Ctrl</kbd>+<kbd>C</kbd>、<kbd>Ctrl</kbd>+<kbd>V</kbd> 会整体复制、粘贴图层。选中 2 个以上图层时，<kbd>Ctrl</kbd>+<kbd>X</kbd> 会整体剪切所选图层。点击 3D 视图之后，或有选区时，则复制、粘贴画面（<a href="/petanuri/zh/manual/layers#basic-ops">图层操作</a>）。</li>
         <li>把在其他应用中复制的图像按 <kbd>Ctrl</kbd>+<kbd>V</kbd>，可对齐边框后贴上（<a href="#image">添加图像</a>）。</li>
       </ul>
       <h3 id="copy-trouble">操作不顺利时</h3>
